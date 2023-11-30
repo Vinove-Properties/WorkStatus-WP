@@ -1,0 +1,14 @@
+*/\.htaccess
+data/*
+__server/*
+uploads/*
+wp-content/wp-rocket-config/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/upgrade-temp-backup/*
+wp-content/uploads/db-backup/*
+wp-content/uploads/wp-file-manager-pro/*
+.htaccess
+robots.txt
+wp-config.php
+.DS_Store

@@ -1,0 +1,209 @@
+[08-Feb-2023 10:20:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:48:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:48:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:48:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:49:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:50:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:50:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:50:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page-templates\time-tracking.php(13): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
+[08-Feb-2023 10:51:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ws_permalink() in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php:220
+Stack trace:
+#0 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(783): require_once()
+#1 C:\xampp\htdocs\workstatus-wp\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\workstatus-wp\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\page.php(38): get_footer()
+#4 C:\xampp\htdocs\workstatus-wp\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\workstatus-wp\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\workstatus-wp\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\workstatus-wp\wp-content\themes\workstatus\footer.php on line 220
