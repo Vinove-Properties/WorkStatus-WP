@@ -430,7 +430,7 @@ function getWSipinfo( $ipAddr ){
     global $wpdb;
     $ipdb = $wpdb;
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost") ){
-    $ipdb = new wpdb( 'workforestc_ipinfo', 'wsIPinfo@2023#', 'workforestc_ipinfo', 'localhost' );
+    $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', 'wsIPinfo@2023#', '7DsEMIA5ppFAAyK', 'localhost' );
     }
     $hasIP  = $ipdb->get_row( "SELECT * FROM ipinfo_logs WHERE ip = '".$ipAddr."' ", OBJECT );    
     if( $hasIP ){

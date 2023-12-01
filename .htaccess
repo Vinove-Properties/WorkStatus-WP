@@ -1,0 +1,381 @@
+# BEGIN WP Rocket v3.10.10
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset UTF-8
+# Force UTF-8 for a number of file formats
+<IfModule mod_mime.c>
+AddCharset UTF-8 .atom .css .js .json .rss .vtt .xml
+</IfModule>
+
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+Header unset ETag
+</IfModule>
+
+# Since we’re sending far-future expires, we don’t need ETags for static content.
+# developer.yahoo.com/performance/rules.html#etags
+FileETag None
+
+<IfModule mod_alias.c>
+<FilesMatch "\.(html|htm|rtf|rtx|txt|xsd|xsl|xml)$">
+<IfModule mod_headers.c>
+Header set X-Powered-By "WP Rocket/3.10.10"
+Header unset Pragma
+Header append Cache-Control "public"
+Header unset Last-Modified
+</IfModule>
+</FilesMatch>
+
+<FilesMatch "\.(css|htc|js|asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|xla|xls|xlsx|xlt|xlw|zip)$">
+<IfModule mod_headers.c>
+Header unset Pragma
+Header append Cache-Control "public"
+</IfModule>
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+	AddType image/avif                                  avif
+    AddType image/avif-sequence                         avifs
+</IfModule>
+# Expires headers (for better cache control)
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault                              "access plus 1 month"
+	# cache.appcache needs re-requests in FF 3.6 (thanks Remy ~Introducing HTML5)
+	ExpiresByType text/cache-manifest           "access plus 0 seconds"
+	# Your document html
+	ExpiresByType text/html                     "access plus 0 seconds"
+	# Data
+	ExpiresByType text/xml                      "access plus 0 seconds"
+	ExpiresByType application/xml               "access plus 0 seconds"
+	ExpiresByType application/json              "access plus 0 seconds"
+	# Feed
+	ExpiresByType application/rss+xml           "access plus 1 hour"
+	ExpiresByType application/atom+xml          "access plus 1 hour"
+	# Favicon (cannot be renamed)
+	ExpiresByType image/x-icon                  "access plus 1 week"
+	# Media: images, video, audio
+	ExpiresByType image/gif                     "access plus 4 months"
+	ExpiresByType image/png                     "access plus 4 months"
+	ExpiresByType image/jpeg                    "access plus 4 months"
+	ExpiresByType image/webp                    "access plus 4 months"
+	ExpiresByType video/ogg                     "access plus 4 months"
+	ExpiresByType audio/ogg                     "access plus 4 months"
+	ExpiresByType video/mp4                     "access plus 4 months"
+	ExpiresByType video/webm                    "access plus 4 months"
+	ExpiresByType image/avif                    "access plus 4 months"
+	ExpiresByType image/avif-sequence           "access plus 4 months"
+	# HTC files  (css3pie)
+	ExpiresByType text/x-component              "access plus 1 month"
+	# Webfonts
+	ExpiresByType font/ttf                      "access plus 4 months"
+	ExpiresByType font/otf                      "access plus 4 months"
+	ExpiresByType font/woff                     "access plus 4 months"
+	ExpiresByType font/woff2                    "access plus 4 months"
+	ExpiresByType image/svg+xml                 "access plus 4 months"
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+	# CSS and JavaScript
+	ExpiresByType text/css                      "access plus 1 year"
+	ExpiresByType application/javascript        "access plus 1 year"
+</IfModule>
+# Gzip compression
+<IfModule mod_deflate.c>
+# Active compression
+SetOutputFilter DEFLATE
+# Force deflate for mangled headers
+<IfModule mod_setenvif.c>
+<IfModule mod_headers.c>
+SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+# Don’t compress images and other uncompressible content
+SetEnvIfNoCase Request_URI \
+\.(?:gif|jpe?g|png|rar|zip|exe|flv|mov|wma|mp3|avi|swf|mp?g|mp4|webm|webp|pdf)$ no-gzip dont-vary
+</IfModule>
+</IfModule>
+
+# Compress all output labeled with one of the following MIME-types
+<IfModule mod_filter.c>
+AddOutputFilterByType DEFLATE application/atom+xml \
+		                          application/javascript \
+		                          application/json \
+		                          application/rss+xml \
+		                          application/vnd.ms-fontobject \
+		                          application/x-font-ttf \
+		                          application/xhtml+xml \
+		                          application/xml \
+		                          font/opentype \
+		                          image/svg+xml \
+		                          image/x-icon \
+		                          text/css \
+		                          text/html \
+		                          text/plain \
+		                          text/x-component \
+		                          text/xml
+</IfModule>
+<IfModule mod_headers.c>
+Header append Vary: Accept-Encoding
+</IfModule>
+</IfModule>
+
+<IfModule mod_mime.c>
+AddType text/html .html_gzip
+AddEncoding gzip .html_gzip
+</IfModule>
+<IfModule mod_setenvif.c>
+SetEnvIfNoCase Request_URI \.html_gzip$ no-gzip
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTPS} on [OR]
+RewriteCond %{SERVER_PORT} ^443$ [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} https
+RewriteRule .* - [E=WPR_SSL:-https]
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteRule .* - [E=WPR_ENC:_gzip]
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} =""
+RewriteCond %{HTTP:Cookie} !(wordpress_logged_in_.+|wp-postpass_|wptouch_switch_toggle|comment_author_|comment_author_email_) [NC]
+RewriteCond %{REQUEST_URI} !^(/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index\.php/)?wp\-json(/.*|$)|/kurkure)$ [NC]
+RewriteCond %{HTTP_USER_AGENT} !^(https//www.workstatus.io/pricing|https//www.workstatus.io/pricing-i|facebookexternalhit|WhatsApp).* [NC]
+RewriteCond "%{DOCUMENT_ROOT}/wp-content/cache/wp-rocket/%{HTTP_HOST}%{REQUEST_URI}/index%{ENV:WPR_SSL}%{ENV:WPR_WEBP}.html%{ENV:WPR_ENC}" -f
+RewriteRule .* "/wp-content/cache/wp-rocket/%{HTTP_HOST}%{REQUEST_URI}/index%{ENV:WPR_SSL}%{ENV:WPR_WEBP}.html%{ENV:WPR_ENC}" [L]
+</IfModule>
+# END WP Rocket
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+
+#Redirect Rules
+RewriteRule contact https://support.workstatus.io/en/
+RewriteRule solutions/kids-students-activty-monitoring https://www.workstatus.io/solutions/kids-students-activity-monitoring
+RewriteRule employee-monitoring-productivity/page/2 https://www.workstatus.io/best-employee-monitoring-software-online
+
+RewriteRule employee-monitoring-productivity https://www.workstatus.io/best-employee-monitoring-software-online
+#RewriteRule blog https://www.workstatus.io/blog/index.php
+#RewriteRule ^blog2$ blog/index.php
+RedirectMatch "^/blog2$" "https://www.workstatus.io/blog/"
+RewriteRule ^blog2/(.*)$ https://www.workstatus.io/blog/
+
+RedirectMatch 301 "^/blog$" "https://www.workstatus.io/blog/"
+#RedirectMatch "^/careers$" "https://www.workstatus.io/careers/"
+#RedirectMatch "^/customers$" "https://www.workstatus.io/customers/"
+#RedirectMatch "^/resources$" "https://www.workstatus.io/resources/"
+
+RedirectMatch 301 "^/careers/([^\.]+)$" "https://www.workstatus.io/"
+RedirectMatch 301 "^/careers/$" "https://www.workstatus.io/"
+#RedirectMatch 301 "^/resources/$" "https://www.workstatus.io/"
+RedirectMatch 301 "^/customers/$" "https://www.workstatus.io/"
+RedirectMatch 301 "^/thankyou$" "https://www.workstatus.io/"
+RedirectMatch 301 "^/pricing-new.php$" "https://www.workstatus.io/"
+
+RedirectMatch 301 "^/best-payroll-software$" "https://www.workstatus.io/best-online-invoicing-software"
+#RedirectMatch 301 "^/integrations$" "https://www.workstatus.io/404"
+ 
+
+RewriteRule ^solutions$ solutions/index.php
+RedirectMatch "^/affiliate$" "https://www.workstatus.io/affiliates"
+RedirectMatch "^/best-online-payroll-software$" "https://www.workstatus.io/best-payroll-software"
+#RedirectMatch "^/best-online-invoicing-software$" "https://www.workstatus.io/best-invoicing-software"
+RedirectMatch "^/best-invoicing-software$" "https://www.workstatus.io/best-online-invoicing-software"
+RedirectMatch "^/job-sites$" "https://www.workstatus.io"
+RedirectMatch "^/best-attendance-management-software$" "https://www.workstatus.io/best-attendance-tracking-software"
+RedirectMatch "^/selfie-validation$" "https://www.workstatus.io/best-facial-recognition-software"
+
+#RedirectMatch 301 "^/demo" "https://calendly.com/workstatus/product-demo"
+
+RedirectMatch 301 "^/workforce-management-software" "https://www.workstatus.io/solutions/workforce-management-software"
+RedirectMatch 301 "^/remote-employee-actvity-monitoring-attendance" "https://www.workstatus.io/solutions/remote-employee-actvity-monitoring-attendance"
+RedirectMatch 301 "^/kids-students-activity-monitoring" "https://www.workstatus.io/solutions/kids-students-activity-monitoring"
+
+#new Redirections added 4May22
+RedirectMatch 301 "^/solutions/productivity-attendance-monitoring" "https://www.workstatus.io/best-employee-productivity-cloud-software"
+RedirectMatch 301 "^/solutions/remote-employee-actvity-monitoring-attendance" "https://www.workstatus.io/remote-team-management"
+RedirectMatch 301 "^/solutions/workforce-management-software" "https://www.workstatus.io/"
+RedirectMatch 301 "^/solutions/workforce-attendance-activity-monitoring" "https://www.workstatus.io/best-attendance-tracking-software"
+RedirectMatch 301 "^/solutions/employee-productivity-attendance-monitoring" "https://www.workstatus.io/best-employee-productivity-cloud-software"
+RedirectMatch 301 "^/solutions/time-attendance-tracking-software" "https://www.workstatus.io/best-time-tracking-software-online"
+RedirectMatch 301 "^/solutions/business-productivity-monitoring" "https://www.workstatus.io/best-employee-productivity-cloud-software"
+#RedirectMatch 301 "^/solution" "https://www.workstatus.io/features"
+RedirectMatch 301 /sitemap.xml https://www.workstatus.io/page-sitemap.xml
+
+RedirectMatch 301 "^/report-bugs$" https://www.workstatus.io/report-bugs.php
+RedirectMatch 301 "^/suggest-feature$" https://www.workstatus.io/suggest-feature.php
+#RedirectMatch 301 "^/industry" "https://www.workstatus.io/"
+#RedirectMatch 301 /industry https://www.workstatus.io/
+#Test Commit Check.
+
+#New Redirections 04.09.2023 Asked By Gayathri
+Redirect 301 /work-hours-tracker https://www.workstatus.io/time-attendance/work-hours-tracker
+Redirect 301 /workforce-optimization https://www.workstatus.io/workforce-management/workforce-optimization
+Redirect 301 /average-working-hours	https://www.workstatus.io/time-attendance/average-working-hours
+Redirect 301 /working-off-the-clock	https://www.workstatus.io/time-attendance/working-off-the-clock
+Redirect 301 /to-do-list-templates https://www.workstatus.io/project-management/to-do-list
+Redirect 301 /repetitive-tasks https://www.workstatus.io/workforce-management/repetitive-tasks-in-hr-management
+Redirect 301 /workforce-analytics-software https://www.workstatus.io/reporting-analytics/workforce-analytics-software
+Redirect 301 /time-tracking-spreadsheet	https://www.workstatus.io/time-attendance/spreadsheet-time-tracking
+Redirect 301 /automatic-time-mapping https://www.workstatus.io/time-attendance/automatic-time-mapping
+Redirect 301 /employee-performance-master-time-management https://www.workstatus.io/project-management/productive-things-to-do
+Redirect 301 /time-tracking-statistics https://www.workstatus.io/time-attendance/time-tracking-statistics
+Redirect 301 /travel-time-pay-policies https://www.workstatus.io/time-attendance/travel-time-pay-policies
+Redirect 301 /hourly-rate-calculator https://www.workstatus.io/time-attendance/hourly-rate-calculator
+Redirect 301 /fair-labor-standards-act https://www.workstatus.io/time-attendance/fair-labor-standards-act
+Redirect 301 /time-tracking-guide https://www.workstatus.io/time-attendance/time-tracking-guide
+Redirect 301 /workforce-analytics https://www.workstatus.io/workforce-management/workforce-analytics
+
+Redirect 301 /features https://www.workstatus.io/product
+
+Redirect 301 /phone https://www.workstatus.io/apps
+Redirect 301 /contact https://app.workstatus.io/auth/register
+Redirect 301 /aws  https://www.workstatus.io/integrations/aws
+
+# New Redirections added on 19 SEP 2023
+Redirect 301 /best-time-tracking-software-online https://www.workstatus.io/time-attendance/time-tracking-software
+Redirect 301 /best-employee-timesheets-cloud-software https://www.workstatus.io/time-attendance/timesheet-software
+Redirect 301 /best-attendance-tracking-software https://www.workstatus.io/time-attendance/attendance-management
+Redirect 301 /geofence-time-clock-software-online https://www.workstatus.io/time-attendance/geofencing-software
+Redirect 301 /best-employee-task-scheduling-software https://www.workstatus.io/workforce-management/employee-scheduling-software
+#Redirect 301 /best-employee-productivity-cloud-software https://www.workstatus.io/workforce-management/best-employee-productivity-cloud-software
+Redirect 301 /best-employee-monitoring-software-online  https://www.workstatus.io/workforce-management/employee-monitoring-software
+Redirect 301 /best-gps-time-tracking-software-online https://www.workstatus.io/reporting-analytics/gps-tracking
+Redirect 301 /best-project-cost-management-software-online  https://www.workstatus.io/project-management/project-budgeting-software
+Redirect 301 /best-online-invoicing-software https://www.workstatus.io/project-management/online-invoicing-software
+Redirect 301 /remote-team-management https://www.workstatus.io/workplace-mode/remote-work-management
+Redirect 301 /hybrid-workforce-management https://www.workstatus.io/workplace-mode/hybrid-work-management
+Redirect 301 /work-from-home-monitoring https://www.workstatus.io/workforce-management/work-from-home-monitoring
+Redirect 301 /on-premise-teams-management https://www.workstatus.io/workforce-management/on-premise-teams-management
+Redirect 301 /field-service-management-software https://www.workstatus.io/workforce-management/field-service-management
+Redirect 301 /freelance-time-tracking-cloud-software https://www.workstatus.io/time-attendance/freelance-time-management
+Redirect 301 /insights-for-business-analytics https://www.workstatus.io/reporting-analytics/insights-for-business
+Redirect 301 /mac https://www.workstatus.io/apps/mac
+Redirect 301 /windows https://www.workstatus.io/apps/windows
+Redirect 301 /linux https://www.workstatus.io/apps/linux
+Redirect 301 /iphone https://www.workstatus.io/apps/iphone
+Redirect 301 /android https://www.workstatus.io/apps/android
+Redirect 301 /best-employee-productivity-cloud-software https://www.workstatus.io/workforce-management/employee-productivity-monitoring
+Redirect 301 /time-clock-app https://www.workstatus.io/time-attendance/time-clock-app
+Redirect 301 /best-time-report-software-online https://www.workstatus.io/time-attendance/time-reporting
+
+#20.09 Gayatri
+Redirect 301 /best-facial-recognition-software https://www.workstatus.io/time-attendance/facial-recognition-software
+Redirect 301 /workforce-management/best-employee-monitoring-software-online	https://www.workstatus.io/workforce-management/employee-monitoring-software
+Redirect 301 /time-reporting https://www.workstatus.io/time-attendance/online-time-reporting
+Redirect 301 /time-attendance/best-employee-timesheets-cloud-software https://www.workstatus.io/time-attendance/timesheet-software
+Redirect 301 /reporting-analytics/best-gps-time-tracking-software-online https://www.workstatus.io/best-gps-time-tracking-software-online
+Redirect 301 /project-management/best-online-invoicing-software	https://www.workstatus.io/project-management/online-invoicing-software
+Redirect 301 /workforce-management/best-employee-productivity-cloud-software https://www.workstatus.io/workforce-management/employee-productivity-monitoring
+Redirect 301 /workforce-management/best-employee-task-scheduling-software https://www.workstatus.io/workforce-management/employee-scheduling-software
+Redirect 301 /best-attendance-tracking-software	https://www.workstatus.io/time-attendance/attendance-management
+Redirect 301 /geofence-time-clock-software-online https://www.workstatus.io/time-attendance/geofencing-software
+#09.10 Gayatri
+Redirect 301 /industry/software-development https://www.workstatus.io/industry/technology-companies
+Redirect 301 /industry/architects-and-engineers https://www.workstatus.io/industry/architects-and-interior-designers
+Redirect 301 /industry/agency https://www.workstatus.io/industry/digital-agencies
+Redirect 301 /industry/consultant https://www.workstatus.io/industry/consulting-firms
+
+Redirect 301 /solutions/user-activity-attendance-monitoring https://www.workstatus.io/time-attendance/attendance-management
+Redirect 301 /validate-timesheets-finance-managers https://www.workstatus.io/project-management/validate-timesheets-finance-managers
+Redirect 301 /selfie-validation-for-field-workers https://www.workstatus.io/time-attendance/selfie-validation-attendance
+Redirect 301 /time https://www.workstatus.io/time-attendance
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+ # Images
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Video
+  ExpiresByType video/webm "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType video/mpeg "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/otf "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff "access plus 1 year"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+  # Others
+  ExpiresByType application/pdf "access plus 1 year"
+  ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+</IfModule>
+# END EXPIRES
+
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/opentype
+
+# For Olders Browsers Which Can't Handle Compression
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+# END WordPress
+
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php80” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php80 .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
