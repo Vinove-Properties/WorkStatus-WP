@@ -631,19 +631,21 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
                 $response  = curl_exec($curl);
                 curl_close( $curl );
                 $response   = json_decode( $response );
+                /*
                 $file       = fopen("/home/workforestc/calendly-log/zoho-logs.txt","a");
                 $zlead      = PHP_EOL.$email.":".print_r($response,1);
                 fwrite( $file, $zlead );
                 fclose( $file );
+                */
             }           
         endif;
         $err = curl_error( $curl );
         curl_close($curl);
         if( !$err ){
-            $file       = fopen("/home/workforestc/calendly-log/zoho-logs.txt","a");
+            /*$file       = fopen("/home/workforestc/calendly-log/zoho-logs.txt","a");
             $zlead      = PHP_EOL.$email.":".print_r($response,1);
             fwrite( $file, $zlead );
-            fclose( $file );
+            fclose( $file );*/
         }
     }
 }
