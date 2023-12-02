@@ -1,6 +1,6 @@
 <?php 
 $siteUrl = "https://www.workstatus.io/";
-$siteDir = '/home/workforestc/public_html/timesheet/';
+$siteDir = '/home/workstatus-io/public_html/timesheet/';
 if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
     $siteUrl = "http://localhost/workstatus/";
     $siteDir = '/var/www/html/workstatus/timesheet/';

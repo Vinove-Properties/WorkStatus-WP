@@ -255,7 +255,7 @@ function getCTAstatus(){
         global $wpdb;
         $ipdb = $wpdb;
     }else{
-        $ipdb = new wpdb( 'workforestc_ipinfo', 'wsIPinfo@2023#', 'workforestc_ipinfo', 'localhost' ); 
+        $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' ); 
     }
 
     $ipAddr     = getUserIP();
@@ -268,7 +268,7 @@ function getCTAstatus(){
             $ipdb->insert( 'ipinfo_logs', array( 'ip' => $ipAddr, 'data' => $isLocation, 'created_at' => date('Y-m-d H:i:s')));
         }
     }
-    $liveDir = "/home/workforestc/public_html/data-json/results.json";
+    $liveDir = "/home/workstatus-io/public_html/data-json/results.json";
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
         $jsonDir = "/var/www/html/workstatus/data-json/results.json"; 
     }
@@ -430,7 +430,7 @@ function getWSipinfo( $ipAddr ){
     global $wpdb;
     $ipdb = $wpdb;
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost") ){
-    $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', 'wsIPinfo@2023#', '7DsEMIA5ppFAAyK', 'localhost' );
+    $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' );
     }
     $hasIP  = $ipdb->get_row( "SELECT * FROM ipinfo_logs WHERE ip = '".$ipAddr."' ", OBJECT );    
     if( $hasIP ){
@@ -442,7 +442,7 @@ function getWSipinfo( $ipAddr ){
             $ipdb->insert( 'ipinfo_logs', array( 'ip' => $ipAddr, 'data' => $isLocation, 'created_at' => date('Y-m-d H:i:s')));
             return $isLocation;
         }else{
-            return false;    
+            return false;
         }       
     }
 }

@@ -7,7 +7,7 @@ function isBetaVersion(){
   return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'w2wp' ) !== false) )  ?  true : false;
 }
 
-$dir      = '/home/workforestc/public_html/uploads/';
+$dir      = '/home/workstatus-io/public_html/uploads/';
 if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
   $site_url = 'http://localhost/workstatus-wp/';
   $tpl_url  = 'http://localhost/workstatus-wp/wp-content/themes/workstatus/';

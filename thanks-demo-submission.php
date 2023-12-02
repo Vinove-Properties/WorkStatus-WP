@@ -30,12 +30,12 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         }
         
         $mail->isSMTP();
-        $mail->Host         = "mail.workstatus.io"; // SMTP server
+        $mail->Host         = "smtp.gmail.com"; // SMTP server
         $mail->SMTPSecure   = 'ssl';
         $mail->Port         = 465;
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'donotreply@workstatus.io';
-        $mail->Password     = 'bbmMBq5RMQ3-';
+        $mail->Username     = 'do-not-reply@vinove.com';
+        $mail->Password     = 'lekqxyifwlgiuyqi';
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );

@@ -660,7 +660,7 @@ function es_addsubscriber_cb( \WP_REST_Request $req ){
 function getCTAstatus(){
     return array( 'show_this' => true, 'country' => 'default', 'cta_text' => "Start Free Trial", 'pid' => 42, 'type' => 'monthly' );
     
-    $jsonDir = "/home/workforestc/public_html/data-json/results.json";
+    $jsonDir = "/home/workstatus-io/public_html/data-json/results.json";
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
         $jsonDir = "/var/www/html/workstatus/data-json/results.json"; 
     }
@@ -1978,7 +1978,7 @@ function getWSipinfo( $ipAddr ){
     global $wpdb;
     $ipdb = $wpdb;
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost") ){
-    $ipdb = new wpdb( 'workforestc_ipinfo', 'wsIPinfo@2023#', 'workforestc_ipinfo', 'localhost' );
+    $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' ); 
     }
     $hasIP  = $ipdb->get_row( "SELECT * FROM ipinfo_logs WHERE ip = '".$ipAddr."' ", OBJECT );
     if( $hasIP ){

@@ -35,7 +35,7 @@ foreach( $_FILES['ffile'] as $key => $value ){
         $updated_name = time().'_'.$name_of_file.".".$ext;
         $datastr = $datastr.$updated_name.',';
         
-        $dir = '/home/workforestc/public_html/uploads/';
+        $dir = '/home/workstatus-io/public_html/uploads/';
         if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
         $dir = '/var/www/html/workstatus-wp/uploads/';    
         }

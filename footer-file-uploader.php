@@ -36,7 +36,7 @@ foreach( $_FILES['ffile'] as $key => $value ){
         }
         */
         $datastr = $datastr.$updated_name.',';
-        if( move_uploaded_file( $_FILES['ffile']['tmp_name'], '/home/workforestc/public_html/uploads/'.$updated_name ) ){
+        if( move_uploaded_file( $_FILES['ffile']['tmp_name'], '/home/workstatus-io/public_html/uploads/'.$updated_name ) ){
             echo json_encode( array( 'status' => true, 'file' => $datastr ) ); die;
         }else{
             echo json_encode( array( 'status' => false, 'message' => "Error in file uploading." ) ); die;

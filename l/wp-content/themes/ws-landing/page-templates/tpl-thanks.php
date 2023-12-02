@@ -19,7 +19,7 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-$rootDir = (isset( $_SERVER['DOCUMENT_ROOT'] ) && !empty( $_SERVER['DOCUMENT_ROOT'] )) ? $_SERVER['DOCUMENT_ROOT'] : '/home/workforestc/public_html';
+$rootDir = (isset( $_SERVER['DOCUMENT_ROOT'] ) && !empty( $_SERVER['DOCUMENT_ROOT'] )) ? $_SERVER['DOCUMENT_ROOT'] : '/home/workstatus-io/public_html';
 
 if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
 $rootDir = "/var/www/html/workstatus-wp";    

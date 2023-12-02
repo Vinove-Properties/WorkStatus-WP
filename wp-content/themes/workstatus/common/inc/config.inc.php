@@ -1,7 +1,7 @@
 <?php
 @session_start();
 function getCTAstatus(){
-    $liveDir = "/home/workforestc/public_html/data-json/results.json";
+    $liveDir = "/home/workstatus-io/public_html/data-json/results.json";
     if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
         $jsonDir = "/var/www/html/workstatus/data-json/results.json"; 
     }
