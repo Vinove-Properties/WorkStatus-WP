@@ -8,5 +8,6 @@ wp-content/upgrade/*
 wp-content/upgrade-temp-backup/*
 wp-content/uploads/db-backup/*
 wp-content/uploads/wp-file-manager-pro/*
+wp-content/uploads/*
 robots.txt
 .DS_Store
