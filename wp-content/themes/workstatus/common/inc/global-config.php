@@ -237,7 +237,7 @@ function get_ws_ipdata( $ip ){
         global $wpdb;
         $ipdb = $wpdb;
     }else{
-        $ipdb = new wpdb( 'workforestc_ipinfo', 'wsIPinfo@2023#', 'workforestc_ipinfo', 'localhost' );    
+        $ipdb = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' );    
     }
     $hasIP  = $ipdb->get_row( "SELECT * FROM ipinfo_logs WHERE ip = '".$ip."' ", OBJECT );
     if( $hasIP ){

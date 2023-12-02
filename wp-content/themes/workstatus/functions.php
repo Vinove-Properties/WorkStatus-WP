@@ -392,7 +392,8 @@ function pixelShowLatestPosts($pslug = "",$bposts){
 		}
 	}	
 	}
-	$loop = array_merge( $wsBposts, $rPosts );
+	//$loop = array_merge( $wsBposts, $rPosts );
+	$loop = false;
 	if( $loop ){
 	?>
  	<section class="useful-resources-blog-section bglight for-heading-center">
