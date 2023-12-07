@@ -32,25 +32,25 @@ global $ws_ctas, $RegLink, $LogLink;
       <div class="part-col">
         <i class="part-logo part-logo2"></i>
         <p><strong>4.3</strong>/5</p>
-        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/star-icon2.svg"
+        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/star-icon2.svg"
           alt="star" width="112" height="17"></i>
       </div>
       <div class="part-col">
         <i class="part-logo part-logo3"></i>
         <p><strong>4.4</strong>/5</p>
-        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/star-icon3.svg"
+        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/star-icon3.svg"
           alt="star" width="112" height="17"></i>
       </div>
       <div class="part-col">
         <i class="part-logo part-logo4"></i>
         <p><strong>4.7</strong>/5</p>
-        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/star-icon4.svg"
+        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/star-icon4.svg"
           alt="star" width="112" height="17"></i>
       </div>
       <div class="part-col">
         <i class="part-logo part-logo5"></i>
         <p><strong>4.5</strong>/5</p>
-        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/star-icon3.svg"
+        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/star-icon3.svg"
           alt="star" width="112" height="17"></i>
       </div>
     </div>

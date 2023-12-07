@@ -733,18 +733,18 @@ $thisPostID = $post->ID;
     <div class="stealthRow">
       <div class="col">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests//images/steath-01.webp">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests//images/steath-01.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests//images/steath-01.png" alt="Time Report software" width="72" height="70">
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/steath-01.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/steath-01.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/steath-01.png" alt="Time Report software" width="72" height="70">
         </picture>
         <h3>Stealth Mode</h3>
         <p>In this setting, the Workstatus app is not visible to users. The tracking starts as the user starts the system and stops when the user switches off the system.</p>
       </div>
       <div class="col">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests//images/steath-02.webp">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests//images/steath-02.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests//images/steath-02.png" alt="Time Report software" width="72" height="70">
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/steath-02.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/steath-02.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/steath-02.png" alt="Time Report software" width="72" height="70">
         </picture>
         <h3>Visible Mode</h3>
         <p>In this setting, the Workstatus app is visible to users. They can start, stop or take a break as per their preferences.</p>
