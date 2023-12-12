@@ -1,4 +1,5 @@
 <?php
+define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 
@@ -96,7 +97,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $comment    = $flds[3]['answer'];
     $email      = $json['payload']['email'];
     
-    $tempLog = fopen("/home/workforestc/calendly-log/calendly-init.txt","a");
+    $tempLog = fopen(CL_LOGFILE,"a");
     fwrite($tempLog, $email.print_r($json, true)."\n");
     fclose($tempLog);
 
@@ -197,7 +198,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $response   = curl_exec($curl);
     
     $responseLL   = json_decode( $response );
-    $file       = fopen("/home/workforestc/calendly-log/calendlytocrm.txt","a");
+    $file       = fopen(CL_LOGFILE,"a");
     fwrite( $file, PHP_EOL.$email."_:_".print_r($responseLL,1) );
     fclose( $file ); 
                     
@@ -247,11 +248,11 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                 $err        = curl_error($curl);
                 if( !$err ){
                     $response   = json_decode( $response );
-                    $file       = fopen("/home/workforestc/calendly-log/calendlytocrm.txt","a");
+                    $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, PHP_EOL.$email.":".print_r($response,1) );
                     fclose( $file );    
                 }else{
-                    $file       = fopen("/home/workforestc/calendly-log/calendlytocrm.txt","a");
+                    $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, "Error in Zoho Entry :".$err );
                     fclose( $file );    
                 }
@@ -264,6 +265,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     }
     curl_close($curl);
     }
+    $file       = fopen(CL_LOGFILE,"a");
+    fwrite( $file, PHP_EOL."ADMIN API REQ : ".print_r($apiRequest,1) );
+    fclose( $file );
+
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query( $apiRequest ));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
