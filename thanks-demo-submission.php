@@ -34,8 +34,8 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         $mail->SMTPSecure   = 'ssl';
         $mail->Port         = 465;
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'do-not-reply@vinove.com';
-        $mail->Password     = 'lekqxyifwlgiuyqi';
+        $mail->Username     = 'do-not-reply@workstatus.io';
+        $mail->Password     = 'zskxyarbhduvicwf';
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );
@@ -143,20 +143,20 @@ $uname);
 header('location:thanks');
 die;
 }
-/*Spam check here : END*/
+    /*Spam check here : END*/
     $leadStatus     = "Not Contacted";
     $autoEmailBody  = "Dear ".$name.",<br><br>
     Greetings for the day!<br><br>
-    We're thrilled to have caught your interest in our workforce management tool! - our workforce management platform designed to simplify and streamline the way you manage your team.<br><br>
-    As a new user, you now have access to an array of tools and features that can help you better track time, monitor projects, and manage your team's workflow - all in one centralized location.<br><br>
-    Whether you are a freelancer, small business owner, or large enterprise, Workstatus.io is designed to provide you with the flexibility and functionality you need to run your operations more efficiently.<br><br>
-    If you have any questions about how to get started or how to make the most of our platform, please don't hesitate to reach out to our support team. Please find the contact details as below;<br><br>
+    Thank you for showing your interest in Workstatus! Our workforce management platform is designed to simplify and streamline the way you manage your team.<br><br>
+    Whether you are a freelancer, small business owner, or large enterprise, Workstatus is designed to provide you with the flexibility and functionality you need to run your operations more efficiently.<br><br>
+    If not done yet - <a href='https://calendly.com/workstatus/product-demo/'>Schedule a Demo</a> at your convenience!<br><br>
+    Explore more with our <a href='https://support.workstatus.io/en/'>Product Guide</a>.<br><br>
+    If you have any questions about how to get started or how to make the most of our platform, please don't hesitate to reach out to our support team. Please find the contact details below:<br><br>
     Name: Prachi Kala<br>
     Email: prachi@workstatus.io<br>
     Contact: +918595620285<br><br>
 
-    Product Guide - https://support.workstatus.io/en/<br><br>
-    We look forward to helping you achieve your goals and grow your business.<br><br>
+    We look forward to helping you achieve your goals and grow your business.<br><br>    
     Best Regards,<br>
     Team Workstatus";
     if(
@@ -178,8 +178,8 @@ die;
     "first_name"     => $fname,
     "email"          => $email,
     "contact_no"     => $phoneNo,
-    "company_name"   => "",
-    "team_size"      => "",
+    "company_name"   => $company,
+    "team_size"      => $temSize,
     "demo_date"      => "",
     "demo_time"      => "",
     "time_zone"      => "",
