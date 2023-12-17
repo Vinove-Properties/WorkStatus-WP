@@ -2137,9 +2137,9 @@ h3 a {
   font-size: 11px;
   font-weight: 500;
   position: absolute;
-  top: -120px;
-  left: -166px;
-  width: 230px;
+  top: -157px;
+  left: -135px;
+  width: 200px;
   border-radius: 3px;
   background: #525F7F;
   color: #ffffff !important;
@@ -2262,9 +2262,7 @@ h3 a {
       display: none; }
   .wsf-signup .info-lbl span.tolltip {
     top: -155px;
-    left: 0; }
-    .wsf-signup .info-lbl span.tolltip:after {
-      display: none; } }
+    left: 0; } }
 @media (max-width: 767px) {
   .wsf-signup .form-wrap {
     padding-bottom: 0; }
@@ -3504,7 +3502,7 @@ section {
 
 .whitetxt {
   color: #fff; }
-  .whitetxt p, .whitetxt h2, .whitetxt a {
+  .whitetxt p, .whitetxt h2, .whitetxt h3, .whitetxt a {
     color: #fff; }
   .whitetxt .top-section p, .whitetxt h2 {
     color: #fff !important; }
@@ -7756,89 +7754,30 @@ h3 a {
     border-radius: 10px;
     background: #faf8fe;
     padding: 25px; }
+    .benifits-section .column-three img.space {
+      margin: 0 0 20px; }
+    .benifits-section .column-three ul {
+      padding: 0; }
+      .benifits-section .column-three ul li {
+        position: relative;
+        color: #5E6373;
+        padding-left: 30px;
+        margin: 10px 0 0; }
+        .benifits-section .column-three ul li:before {
+          content: '';
+          display: inline-block;
+          background: url(../images/list-icon-small.png) no-repeat;
+          width: 30px;
+          height: 30px;
+          top: 3px;
+          left: 0;
+          position: absolute; }
     @media screen and (max-width: 575px) {
       .benifits-section .column-three {
         flex-basis: 100%;
-        margin: 15px 0 0; } }
-    .benifits-section .column-three i {
-      background: url(../images/benifits-sprite-images.webp) no-repeat;
-      width: 92px;
-      height: 89px;
-      margin: 0;
-      margin-right: 14px;
-      display: block; }
-    .benifits-section .column-three .icon1 {
-      background-position: -10px -10px; }
-    .benifits-section .column-three .icon2 {
-      background-position: -10px -119px; }
-    .benifits-section .column-three .icon3 {
-      background-position: -10px -228px; }
-    .benifits-section .column-three .icon4 {
-      background-position: -10px -337px; }
-    .benifits-section .column-three .icon5 {
-      background-position: -10px -446px; }
-    .benifits-section .column-three .icon6 {
-      background-position: -10px -555px; }
-    .benifits-section .column-three .icon7 {
-      background-position: -10px -664px; }
-    .benifits-section .column-three .icon8 {
-      background-position: -10px -773px; }
-    .benifits-section .column-three .icon9 {
-      background-position: -10px -882px; }
-    .benifits-section .column-three .icon10 {
-      background-position: -10px -991px; }
-    .benifits-section .column-three .icon11 {
-      background-position: -10px -1100px; }
-    .benifits-section .column-three .icon12 {
-      background-position: -10px -1209px; }
-    .benifits-section .column-three .icon13 {
-      background-position: -10px -1318px; }
-    .benifits-section .column-three .icon14 {
-      background-position: -10px -1427px; }
-    .benifits-section .column-three .icon15 {
-      background-position: -10px -1536px; }
-    .benifits-section .column-three .icon16 {
-      background-position: -10px -1645px; }
-    .benifits-section .column-three .icon17 {
-      background-position: -10px -1754px; }
-    .benifits-section .column-three .icon18 {
-      background-position: -10px -1863px; }
-    .benifits-section .column-three .icon19 {
-      background-position: -10px -1972px; }
-    .benifits-section .column-three .icon20 {
-      background-position: -10px -2081px; }
-    .benifits-section .column-three .icon21 {
-      background-position: -10px -2190px; }
-    .benifits-section .column-three .icon22 {
-      background-position: -10px -2299px; }
-    .benifits-section .column-three .icon23 {
-      background-position: -10px -2408px; }
-    .benifits-section .column-three .icon24 {
-      background-position: -10px -2517px; }
-    .benifits-section .column-three .icon25 {
-      background-position: -10px -2626px; }
-    .benifits-section .column-three .icon26 {
-      background-position: -10px -2735px; }
-    .benifits-section .column-three .icon27 {
-      background-position: -10px -2844px; }
-    .benifits-section .column-three .icon28 {
-      background-position: -10px -2953px; }
-    .benifits-section .column-three .icon29 {
-      background-position: -10px -3062px; }
-    .benifits-section .column-three .icon30 {
-      background-position: -10px -3171px; }
-    .benifits-section .column-three .icon31 {
-      background-position: -10px -3389px; }
-    .benifits-section .column-three .icon32 {
-      background-position: -10px -3275px; }
-    .benifits-section .column-three .icon33 {
-      background-position: -10px -3498px; }
-    .benifits-section .column-three .icon34 {
-      background-position: -10px -3607px; }
-    .benifits-section .column-three .icon35 {
-      background-position: -10px -3716px; }
-    .benifits-section .column-three .icon36 {
-      background-position: -10px -3825px; }
+        margin: 15px 0 0; }
+        .benifits-section .column-three img.space {
+          margin: 0 0 15px; } }
 
 .case-section {
   background: #6754e2; }
