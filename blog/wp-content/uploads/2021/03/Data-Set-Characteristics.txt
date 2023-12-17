@@ -1,5 +1,0 @@
-*Data Set Characteristics:**
-
-    :Number of Instances: 569  (no OF ROW)
-
-    :Number of Attributes: 30 numeric, predictive attributes and the class (NO OF FEATUTRE)

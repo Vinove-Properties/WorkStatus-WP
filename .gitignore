@@ -2,6 +2,20 @@
 data/*
 __server/*
 uploads/*
+wp-admin/
+wp-includes/
+wp-content/
+!wp-content/themes/**
+
+blog/wp-admin/
+blog/wp-includes/
+blog/wp-content/
+!blog/wp-content/themes/**
+
+l/wp-admin/
+l/wp-includes/
+l/wp-content/
+!l/wp-content/themes/**
 
 staging/*
 l/*
