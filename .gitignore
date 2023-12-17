@@ -2,15 +2,23 @@
 data/*
 __server/*
 uploads/*
+
 wp-admin/
 wp-includes/
-wp-content/
-!wp-content/themes/**
+/wp-content/wp-rocket-config/*
+/wp-content/cache/*
+/wp-content/upgrade/*
+/wp-content/upgrade-temp-backup/*
+/wp-content/uploads/db-backup/*
+/wp-content/uploads/wp-file-manager-pro/*
+/wp-content/uploads/*
+!wp-content/themes/*
+wp-config.php
 
 blog/wp-admin/
 blog/wp-includes/
 blog/wp-content/
-!blog/wp-content/themes/**
+!blog/wp-content/themes/*
 
 l/wp-admin/
 l/wp-includes/
@@ -18,7 +26,7 @@ l/wp-content/
 !l/wp-content/themes/**
 
 staging/*
-l/*
+l/
 /l/wp-content/plugins/*
 #!l/wp-content/themes/**
 
@@ -33,12 +41,6 @@ l/*
 # staging/wp-content/uploads-webpc/
 !staging/wp-content/themes/**
 
-/wp-content/wp-rocket-config/*
-/wp-content/cache/*
-/wp-content/upgrade/*
-/wp-content/upgrade-temp-backup/*
-/wp-content/uploads/db-backup/*
-/wp-content/uploads/wp-file-manager-pro/*
-/wp-content/uploads/*
+
 robots.txt
 .DS_Store
