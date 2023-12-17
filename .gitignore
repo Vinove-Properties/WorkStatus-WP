@@ -4,6 +4,9 @@ __server/*
 uploads/*
 
 staging/*
+l/
+#!l/wp-content/themes/**
+
 # staging/PHPMailer/
 # staging/wp-admin/
 # staging/wp-includes/
