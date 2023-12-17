@@ -4,7 +4,8 @@ __server/*
 uploads/*
 
 staging/*
-l/
+l/*
+/l/wp-content/plugins/*
 #!l/wp-content/themes/**
 
 # staging/PHPMailer/
