@@ -29,7 +29,7 @@ curl_close($ch);
 <?php 
 //print_r( $data ); die;
 if( isset( $data->code ) && ($data->code == 200) ) : ?>
-<div class="table_section">
+<div class="table_section git-update">
     <div class="container">
     <table class="table1">
         <thead>
