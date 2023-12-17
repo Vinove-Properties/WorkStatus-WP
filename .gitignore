@@ -12,6 +12,7 @@ wp-includes/
 /wp-content/uploads/db-backup/*
 /wp-content/uploads/wp-file-manager-pro/*
 /wp-content/uploads/*
+/wp-content/uploads-webpc/
 !wp-content/themes/*
 wp-config.php
 
