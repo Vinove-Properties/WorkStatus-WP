@@ -61,7 +61,7 @@
       #elm-maps.sel-mobile .box-wrap.sel-desktop,
       #elm-maps.sel-mobile .box-wrap.sel-web{display:none;}
       #elm-maps.sel-mobile .box-wrap.sel-mobile{display:block;}
-
+      body.modal-open{overflow:hidden;}
    
 
     </style>

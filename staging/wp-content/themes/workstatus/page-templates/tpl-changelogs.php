@@ -209,6 +209,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
  // });
 
 function popReleaseNote( indx ){
+    document.body.classList.add("modal-open");
     var thisDom     = document.getElementById('node-log-'+indx);
     var clContent   = document.getElementById('cl-content');
 
@@ -227,11 +228,13 @@ function popReleaseNote( indx ){
 }
 
 function _hideCLpopup(){
+    document.body.classList.remove("modal-open");
     document.getElementById('chlog-popup').style.display = 'none';
 }
 const clPopup = document.getElementById('close-cl-pop');
 clPopup.addEventListener("click", function(){
+    document.body.classList.remove("modal-open");
     document.getElementById('chlog-popup').style.display = 'none';
 });
-</script>                   
+</script>
 <?php get_footer(); ?>
