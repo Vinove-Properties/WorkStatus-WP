@@ -51,7 +51,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
         //echo '<pre>'; print_r( $row ); die; ?>    
             <tr id="tr-row-<?php echo $index; ?>" class="row1">
                 <td class="first"><h5><?php echo $row->phase ?></h5>
-                <i><p>Published on<br><?php echo date('jS M\'Y', strtotime($row->date)); ?></p></i>
+                <i><p>Published on <br><?php echo date('jS M\'Y', strtotime($row->date)); ?></p></i>
                 </td>
                 <td>
                     <?php 
@@ -158,7 +158,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
   <div id="chlog-popup" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content">
-      <!-- <span class="closeicon" onclick="_hideCLpopup();"></span> -->
+      <span class="closeicon" id="close-cl-pop"></span>
         <div class="head-top">
           <h3>Release Notes </h3>
           <div class="phase-sec">
@@ -229,5 +229,9 @@ function popReleaseNote( indx ){
 function _hideCLpopup(){
     document.getElementById('chlog-popup').style.display = 'none';
 }
+const clPopup = document.getElementById('close-cl-pop');
+clPopup.addEventListener("click", function(){
+    document.getElementById('chlog-popup').style.display = 'none';
+});
 </script>                   
 <?php get_footer(); ?>

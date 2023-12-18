@@ -7219,7 +7219,7 @@ h3 a {
     border-radius: 15px 15px 0 0;
     padding: 14px 40px; }
     .chlog-popup .popup-content .head-top h3 {
-      font-size: 18px;
+      font-size: 20px;
       margin: 0 0 10px;
       line-height: 1.2; }
     .chlog-popup .popup-content .head-top .phase-sec {
@@ -7230,18 +7230,25 @@ h3 a {
         .chlog-popup .popup-content .head-top .phase-sec .flex-2:first-child {
           padding-left: 0; }
         .chlog-popup .popup-content .head-top .phase-sec .flex-2 h4 {
-          font-size: 14px;
+          font-size: 16px;
           color: #624DE3;
           margin: 0;
           line-height: 1.2; }
         .chlog-popup .popup-content .head-top .phase-sec .flex-2 p {
-          font-size: 12px;
+          font-size: 14px;
           color: #525F7F; }
   .chlog-popup .popup-content .change-content {
     padding: 15px 40px 40px; }
     .chlog-popup .popup-content .change-content .content-wrap {
       overflow-y: scroll;
       height: 300px; }
+      .chlog-popup .popup-content .change-content .content-wrap p {
+        font-size: 14px;
+        padding-right: 40px;
+        color: #5E6373;
+        font-weight: 500;
+        line-height: 22px;
+        margin: 0 0 10px; }
       .chlog-popup .popup-content .change-content .content-wrap ul {
         padding: 0 40px 0 0; }
         .chlog-popup .popup-content .change-content .content-wrap ul li {
@@ -7261,7 +7268,9 @@ h3 a {
             background: #5E6373;
             position: absolute;
             left: 0;
-            top: 7px; }
+            top: 9px; }
+        .chlog-popup .popup-content .change-content .content-wrap ul ul {
+          margin: 20px 0; }
     .chlog-popup .popup-content .change-content .ctasec {
       margin: 50px 0 0; }
       .chlog-popup .popup-content .change-content .ctasec .primary_btn1 {
@@ -7302,6 +7311,8 @@ h3 a {
     padding: 15px 30px 30px; }
     .chlog-popup .popup-content .change-content .content-wrap {
       height: 200px; }
+      .chlog-popup .popup-content .change-content .content-wrap p {
+        padding-right: 20px; }
       .chlog-popup .popup-content .change-content .content-wrap ul {
         padding: 0 20px 0 0; }
     .chlog-popup .popup-content .change-content .ctasec {
