@@ -368,8 +368,10 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
-function pixelShowLatestPosts($pslug = "",$bposts){
- 	//if( empty($pslug) ) return; 
+
+
+function pixelShowLatestPosts( $pslug = "",$bposts){
+ 	if( empty($pslug) ) return; 
  	$rPosts = $wsBposts = [];
  	if( $pslug ){
  	$ar = explode('|',$pslug);
