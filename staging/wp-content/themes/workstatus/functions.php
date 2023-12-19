@@ -3,7 +3,7 @@ require_once get_template_directory() .'/common/inc/global-config.php';
 function isBetaVersion(){
 	if( isset( $_SERVER['HTTP_HOST'] ) && ( $_SERVER['HTTP_HOST'] == "localhost" ) ) return true;
 
-    return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'w2wp' ) !== false) )  ?  true : false;
+    return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'staging' ) !== false) )  ?  true : false;
 }
 
 if( ! defined( '_S_VERSION' ) ){
