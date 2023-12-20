@@ -214,11 +214,11 @@ global $ws_ctas, $RegLink, $LogLink;
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon16.svg" width="20"
                           height="20" alt="Menu Icon">Enterprise
                         </a>
-                        <a href="<?php echo site_url(); ?>/workforce-management/security-compliance/data-loss-prevention">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/dlp.svg" width="20"
-                          height="20" alt="Menu Icon">Data Loss Prevention (DLP)
+                        <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/dlp.svg" 
+                          width="20" height="20" alt="Menu Icon">Data Loss Prevention (DLP)
                         </a>
-                        <a href="<?php echo site_url(); ?>/workforce-management/workstatus-uam-discover-actionable-insights">
+                        <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring">
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/uam.svg" width="20"
                           height="20" alt="Menu Icon">User Activity Monitoring (UAM)
                         </a>
