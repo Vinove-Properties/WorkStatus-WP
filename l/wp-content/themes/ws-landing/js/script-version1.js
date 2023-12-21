@@ -583,10 +583,10 @@ if (
         initialCountry: "auto",
         geoIpLookup: function (e) {
             let t = "";
-            fetch("https://www.workstatus.io/?ws-action=ipinfo")
+            fetch("https://www.workstatus.io/wp-json/ws-api/v1/ipinfo")
                 .then((e) => e.json())
                 .then((n) => {
-                    let o = (t = n && n.country ? n.country : "gb").toLowerCase();
+                    let o = (t = n && n.country ? n.country : "in").toLowerCase();
                     e(o),
                         setTimeout(function () {
                             let e = ws_getdialCode(o);
