@@ -2090,12 +2090,12 @@ function ws_smtp_phpemailer( $phpmailer ){
 	$phpmailer->From    		= "no-reply@workstatus.io";
 	$phpmailer->FromName 		= "Workstatus";
 	*/
-	$phpmailer->Host         	= 'mail.workstatus.io';
+	$phpmailer->Host         	= 'smtp.gmail.com';
 	$phpmailer->SMTPSecure   	= 'ssl';
 	$phpmailer->Port         	= 465;
 	$phpmailer->SMTPAuth     	= true;
-	$phpmailer->Username     	= 'donotreply@workstatus.io';
-	$phpmailer->Password     	= 'bbmMBq5RMQ3-';
+	$phpmailer->Username     	= 'do-not-reply@workstatus.io';
+	$phpmailer->Password     	= 'avchvvlnqmtihxbp';
 	$phpmailer->From    		= "donotreply@workstatus.io";
 	$phpmailer->FromName 		= "Workstatus";
 }
@@ -2134,8 +2134,6 @@ function ws_log_mailer_errors( $wp_error ){
 	echo $wp_error->get_error_message();
 }
 */
-
-
 add_action( 'wp_ajax_ws-dosignup', 'ws_dosignupcb' );
 add_action( 'wp_ajax_nopriv_ws-dosignup', 'ws_dosignupcb' );
 function ws_dosignupcb(){
@@ -2179,21 +2177,18 @@ function ws_dosignupcb(){
 	$subject 	= "Workstatus - We've received your request";
 	$body 		= "Dear Workstatus Enthusiast,<br><br>
 	Greetings for the day!<br><br>
-	We're thrilled to have caught your interest in our workforce management tool! - our workforce management platform designed to simplify and streamline the way you manage your team.<br><br>
-	As a new user, you now have access to an array of tools and features that can help you better track time, monitor projects, and manage your team's workflow - all in one centralized location.<br><br>
-	Whether you are a freelancer, small business owner, or large enterprise, Workstatus.io is designed to provide you with the flexibility and functionality you need to run your operations more efficiently.<br><br>
-	If you have any questions about how to get started or how to make the most of our platform, please don't hesitate to reach out to our support team. Please find the contact details as below;<br><br>
-	Name: Prachi Kala<br>
-	Email: prachi@workstatus.io<br>
-	Contact: +918595620285<br><br>
+    Thank you for showing your interest in Workstatus! Our workforce management platform is designed to simplify and streamline the way you manage your team.<br><br>
+    Whether you are a freelancer, small business owner, or large enterprise, Workstatus is designed to provide you with the flexibility and functionality you need to run your operations more efficiently.<br><br>
+    If not done yet - <a href='https://calendly.com/workstatus/product-demo/'>Schedule a Demo</a> at your convenience!<br><br>
+    Explore more with our <a href='https://support.workstatus.io/en/'>Product Guide</a>.<br><br>
+    If you have any questions about how to get started or how to make the most of our platform, please don't hesitate to reach out to our support team. Please find the contact details below:<br><br>
+    Name: Prachi Kala<br>
+    Email: prachi@workstatus.io<br>
+    Contact: +918595620285<br><br>
 
-	Name: Mudit Bhatnagar<br>
-	Email:  mudit@workstatus.io<br>
-	Contact:+919582957066<br><br>
-	Product Guide - https://support.workstatus.io/en/<br><br>
-	We look forward to helping you achieve your goals and grow your business.<br><br>
-	Best Regards,<br>
-	Team Workstatus";
+    We look forward to helping you achieve your goals and grow your business.<br><br>    
+    Best Regards,<br>
+    Team Workstatus";
 	$headers = array('Content-Type: text/html; charset=UTF-8','From: Workstatus<no-reply@workstatus.io>');
 	if( wp_mail( $emailTo, $subject, $body, $headers ) ){
 	$leadStatus = "Attempted to Contact";
@@ -2268,7 +2263,7 @@ if( !empty( $referalurl ) && empty( $utm_src ) ){
     }
 }
 $lead_id 	= 0;
-$owner_id 	= 809367812;
+$owner_id 	= 681646179; //809367812
 $postData 	= 'refresh_token='.lpREFRESH_TOKEN.'&client_id='.lpCLIENT_ID.'&client_secret='.lpCLIENT_SECRET.'&grant_type='.'refresh_token';
     $curl = curl_init();
     curl_setopt_array($curl, array(
@@ -2336,11 +2331,11 @@ $postData 	= 'refresh_token='.lpREFRESH_TOKEN.'&client_id='.lpCLIENT_ID.'&client
 	        $response 	= json_decode( $response );
 	        $lead_id 	= ( isset( $response->data[0] ) ) ? $response->data[0]->details->id : 0;
 
-	        $file       = fopen("/home/workforestc/calendly-log/temp-lp.txt","a");
+	        //$file       = fopen("/home/workforestc/calendly-log/temp-lp.txt","a");
 
-            $zlead      = PHP_EOL.$appUrl.$email.":".$postLeadData.print_r($response,1);
-            fwrite( $file, $zlead );
-            fclose( $file );
+            //$zlead      = PHP_EOL.$appUrl.$email.":".$postLeadData.print_r($response,1);
+            //fwrite( $file, $zlead );
+            //fclose( $file );
         }
     }
     echo $appUrl.'&lead_id='.$lead_id.'&lead_phone='.$inputPhone.'&ws-rowid='.$ws_dataCode.$planStr.'&dev-check'.$leadStatus;
@@ -2421,6 +2416,7 @@ if( ! function_exists( 'get_current_page_url_cb' ) ) {
 	  return add_query_arg( $_SERVER['QUERY_STRING'], '', home_url( $wp->request ) );
 	}
 }
+
 if( ! function_exists( 'ws_current_page_url' ) ) {
 	function ws_current_page_url() {
 	  echo get_current_page_url_cb();
