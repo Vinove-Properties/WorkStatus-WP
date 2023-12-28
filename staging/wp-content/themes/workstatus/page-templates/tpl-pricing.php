@@ -798,10 +798,11 @@ global $ws_ctas, $RegLink, $LogLink;
                       const article = {};
                       <?php } 
 
-                      if( is_page(6254) ){ ?>
-                        const wsBaseUrl = "https://www.workstatus.io/ws-pricing.json";
+                      if( isset($_SERVER['REQUEST_URI']) && (stripos($_SERVER['REQUEST_URI'], "pricing-noapi") !== false) ){
+                      ?>
+                      const wsBaseUrl = "https://www.workstatus.io/ws-pricing.json";
                       <?php }else{ ?>
-                        const wsBaseUrl = this.baseurl + "api/v1/sa/getplan/list";
+                      const wsBaseUrl = this.baseurl + "api/v1/sa/getplan/list";
                       <?php } ?>
       
                       //console.log(this.params[1]);
