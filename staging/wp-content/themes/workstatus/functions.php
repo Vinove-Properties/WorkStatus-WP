@@ -1815,7 +1815,7 @@ function ws_signup_api_cb(){
 		'source_url' 	=> $data['src_page']
 	);
 	
-	$apiCall = "https://app.staging.workstatus.io/api/v1/signUp";
+	$apiCall = "https://api.staging.workstatus.io/api/v1/signUp";
 	if( !isBetaVersion() ){
 		$apiCall = "https://api.workstatus.io/api/v1/signUp";
 	}
