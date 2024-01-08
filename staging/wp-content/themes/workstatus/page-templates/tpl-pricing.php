@@ -782,7 +782,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   plans: [],
                   params: [],
                   baseurl: 'https://superadmin.workstatus.io/',
-                  baseurlfrontend: '<?php echo (isBetaVersion()) ? 'app.staging.workstatus.io' : 'https://app.workstatus.io'; ?>'
+                  baseurlfrontend: '<?php echo (isBetaVersion()) ? 'https://app.staging.workstatus.io' : 'https://app.workstatus.io'; ?>'
                       //baseurl: 'https://superadmin.newstaging.workstatus.io/',
                       //baseurlfrontend: 'https://app.newstaging.workstatus.io'
                   }
