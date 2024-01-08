@@ -778,11 +778,11 @@ global $ws_ctas, $RegLink, $LogLink;
               el: '#dummytest',
               data() {
                   return {
-                      loading: true,
-                      plans: [],
-                      params: [],
-                      baseurl: 'https://superadmin.workstatus.io/',
-                      baseurlfrontend: 'https://app.workstatus.io'
+                  loading: true,
+                  plans: [],
+                  params: [],
+                  baseurl: 'https://superadmin.workstatus.io/',
+                  baseurlfrontend: '<?php echo (isBetaVersion()) ? 'app.staging.workstatus.io' : 'https://app.workstatus.io'; ?>'
                       //baseurl: 'https://superadmin.newstaging.workstatus.io/',
                       //baseurlfrontend: 'https://app.newstaging.workstatus.io'
                   }
