@@ -106,7 +106,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
                   alt="flag" width="35" height="35">
             <!--<p>2nd Floor, 55P, Sector 44, Gurugram 122003, Haryana</p>-->
-            <p>1053A, 10th Floor, Tower-B, Unitech Cyber Park Sector - 39, Gurgaon 122001, Haryana</p>
+            <p>Regus, 1053A, 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
         </div>
           </div>
           <div class="flex-4">
