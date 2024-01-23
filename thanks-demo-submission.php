@@ -143,6 +143,12 @@ $uname);
 header('location:thanks');
 die;
 }
+$spamEmails = ['shriramdahotre@gmail.com'];
+if( in_array($email, $spamEmails) ){
+    header('location:thanks');
+    die;
+}
+
     /*Spam check here : END*/
     $leadStatus     = "Not Contacted";
     $autoEmailBody  = "Dear ".$name.",<br><br>
