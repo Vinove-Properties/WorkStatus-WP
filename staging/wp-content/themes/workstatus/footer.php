@@ -182,7 +182,7 @@ global $ws_ctas, $RegLink, $LogLink;
 <?php get_template_part('common/demo', 'form'); ?>
 <?php get_template_part('common/signup', 'form'); ?>
 
-<?php if( is_single() ){ ?>
+<?php if( is_single() || is_page_template(['page-templates/tpl-best-employee.php']) ){ ?>
 <div class="banner-form super-form">
   <div id="ws-intent-popup" class="popup-wrapper exit-intent-popup in-resource">
     <div class="popWrap">
@@ -210,7 +210,6 @@ global $ws_ctas, $RegLink, $LogLink;
 <?php 
 }else{ 
 $ftIntent_popup = get_field('wsintent-popup');
-
 if( isset($ftIntent_popup['is_enable']) && ($ftIntent_popup['is_enable'] == "yes") ) :
 ?>
 <div class="banner-form chat-popup">
