@@ -30,8 +30,10 @@ if( function_exists('get_fields') ){
 
     <div class="blog-content">
       <div class="author-mid-row">
+      
+      <!--
       <span class="auth-date"><?php the_time( get_option('date_format') ); ?></span>
-      <!--<span class="view-comment">
+      <span class="view-comment">
       <a href="#"><i class="postview"></i> <?php echo absint( $views ); ?></a>    
       </span>-->
       </div>
