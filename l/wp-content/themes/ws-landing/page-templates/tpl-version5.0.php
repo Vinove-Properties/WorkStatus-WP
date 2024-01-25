@@ -671,7 +671,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
           <div class="addwrap">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/flag-icon02.svg"
               alt="flag" width="30" height="22">
-            <p>2nd Floor, 55P, Sector 44, Gurugram 122003, Haryana, India</p>
+            <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurgaon, Haryana, India- 122001</p>
           </div>
         </div>
       </div>  
@@ -691,8 +691,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
           <div class="addwrap">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/flag-icon02.svg"
               alt="flag" width="30" height="22">
-            <p>2nd Floor, 55P, Sector 44, Gurugram 122003, Haryana
-            </p>
+            <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurgaon, Haryana, India- 122001</p>
           </div>
         </div>
         <div class="flex-4">

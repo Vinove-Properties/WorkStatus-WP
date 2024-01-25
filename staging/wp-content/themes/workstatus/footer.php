@@ -104,17 +104,15 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="flex-4">
           <div class="addwrap">
           <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-                  alt="flag" width="35" height="35">
-            <!--<p>2nd Floor, 55P, Sector 44, Gurugram 122003, Haryana</p>-->
-            <p>Regus, 1053A, 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
+          alt="flag" width="35" height="35">
+          <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
         </div>
           </div>
           <div class="flex-4">
           <div class="addwrap">
           <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-                  alt="flag" width="35" height="35">
-            <p>3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303
-            </p>
+          alt="flag" width="35" height="35">
+          <p>3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303</p>
         </div>
           </div>
         </div>
@@ -181,8 +179,10 @@ global $ws_ctas, $RegLink, $LogLink;
 </footer>
 <?php get_template_part('common/demo', 'form'); ?>
 <?php get_template_part('common/signup', 'form'); ?>
-
-<?php if( is_single() || is_page_template(['page-templates/tpl-best-employee.php']) ){ ?>
+<?php 
+//if( is_single() || is_page_template(['page-templates/tpl-best-employee.php']) ){ 
+if( is_single() ){
+?>
 <div class="banner-form super-form">
   <div id="ws-intent-popup" class="popup-wrapper exit-intent-popup in-resource">
     <div class="popWrap">
@@ -210,7 +210,7 @@ global $ws_ctas, $RegLink, $LogLink;
 <?php 
 }else{ 
 $ftIntent_popup = get_field('wsintent-popup');
-if( isset($ftIntent_popup['is_enable']) && ($ftIntent_popup['is_enable'] == "yes") ) :
+if( isset( $ftIntent_popup['is_enable'] ) && ($ftIntent_popup['is_enable'] == "yes") ) :
 ?>
 <div class="banner-form chat-popup">
   <div id="ws-intent-popup" class="popup-wrapper exit-intent-popup in-feature">

@@ -63,7 +63,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 $json = json_decode( $response );
 
-if(property_exists($json, 'errors')){
+if( property_exists($json, 'errors') ){
   foreach( $json->errors as $error ){
     echo '<span style="color:red;">'.$error[0].'</span>';
   }

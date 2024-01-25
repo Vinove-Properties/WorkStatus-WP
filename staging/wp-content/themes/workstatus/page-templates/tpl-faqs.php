@@ -70,7 +70,7 @@ global $ws_ctas, $RegLink, $LogLink;
         </section>
     <?php endif; ?>
     <section class="wsMobile whitetxt">
-        <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
+    <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
     </section>
     <?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
 </main>

@@ -777,14 +777,14 @@ global $ws_ctas, $RegLink, $LogLink;
         var vm = new Vue({
               el: '#dummytest',
               data() {
-                  return {
-                  loading: true,
-                  plans: [],
-                  params: [],
-                  baseurl: 'https://superadmin.workstatus.io/',
-                  baseurlfrontend: '<?php echo (isBetaVersion()) ? 'https://app.staging.workstatus.io' : 'https://app.workstatus.io'; ?>'
-                      //baseurl: 'https://superadmin.newstaging.workstatus.io/',
-                      //baseurlfrontend: 'https://app.newstaging.workstatus.io'
+              return {
+              loading: true,
+              plans: [],
+              params: [],
+              baseurl: 'https://superadmin.workstatus.io/',
+              baseurlfrontend: '<?php echo (isBetaVersion()) ? 'https://app.staging.workstatus.io' : 'https://app.workstatus.io'; ?>'
+              //baseurl: 'https://superadmin.newstaging.workstatus.io/',
+              //baseurlfrontend: 'https://app.newstaging.workstatus.io'
                   }
               },
               mounted() {
