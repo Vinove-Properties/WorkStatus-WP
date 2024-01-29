@@ -122,7 +122,7 @@ global $ws_ctas, $RegLink, $LogLink;
       <?php
       $copyRight  = "&copy;";
       $suPopup    = "Copyright";
-      $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'w2wp') !== false)) ? true : false;
+      $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'staging') !== false)) ? true : false;
       if( is_user_logged_in() ){
         if( $is_staging === true ){
           $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";    
