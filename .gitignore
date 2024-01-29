@@ -33,6 +33,13 @@ blog/wp-content/uploads-webpc/
 !blog/wp-content/themes/*
 blog/wp-config.php
 
+blog/staging/*
+!blog/staging/wp-content/
+blog/staging/wp-content/*
+!blog/staging/wp-content/themes/
+blog/staging/wp-content/themes/*
+!blog/staging/wp-content/themes/ws-blog/
+
 l/wp-admin/
 l/wp-includes/
 l/wp-content/wp-rocket-config/*
