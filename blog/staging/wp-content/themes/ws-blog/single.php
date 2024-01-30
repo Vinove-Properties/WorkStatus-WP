@@ -1,53 +1,117 @@
-<?php 
-get_header(); 
-/*if( function_exists('get_field') && function_exists('get_fields') ){
-    $post_id = get_the_ID();
-    $views = absint( get_field('views_counter') );
-    
-    if(!$views) $views = 0;
-    update_post_meta($post_id, 'views_counter', ++$views);
-}*/
-?>
-<main id="single" class="detail-page">
-	<div class="container">
-  <div class="center content">
-    <div class="top-row">
-      <div class="entry-header">
-        <?php 
-        $category = get_the_category();
-        //$firstCategory = $category[0]->cat_name;
-        if( $category ){
-        echo '<div class="cat"><a href="'.get_category_link($category[0]->term_id).'" rel="category tag">'.$category[0]->cat_name.'</a></div>';    
-        }
-        ?>  
-        <h1><?php 
-        $month = get_post_meta( get_the_ID(), 'wms-post', true );
-        $inMonth = '';
-        if( $month && ($month == "yes") ){
-        $inMonth = " in ".date("F, Y");
-        }
-        the_title(); echo $inMonth; ?></h1>
+<?php get_header(); ?>
+<main id="single" class="detail-page banner-section">
+  <div class="container">
+    <div class="cta-section">
+      <div class="top-cta">
+        <div class="colLeft">
+          <div class="ct-head">Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit, sed do.
+          </div>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="colMid">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/cta-image.svg" alt="workstatus" 
+              width="400" height="200"></noscript>
+          </picture>
+        </div>
+        <div class="ctaRit"><a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a></div>
       </div>
-      <div class="blog-image">
-        <div class="blog-thumb">
-          <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
+    </div>
+    <div class="top-header-section">
+      <div class="searchdiv">
+        <div class="breadcrumbs">
+          <a href="https://www.workstatus.io/blog/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer" class="pxl-ext">Blog</a><a href="#" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer" class="pxl-ext">Workforce management</a><a class="active pxl-ext" href="https://www.pixelcrayons.com/blog/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">Monitask Alternative: Why Workstatus Outshines Monitask</a> 
+        </div>
+        <div class="btn-section dis-flex">
+          <button  class="searchsubmit" value="search" id="myBtn"></button>
+          <div id="contentPopup" class="popup-wrapper">
+            <div class="popWrap">
+              <div class="popup-content">
+                <span class="close"></span>
+                <?php $site_url = trailingslashit( get_bloginfo('url') ); ?>   
+                <form action="<?php echo $site_url; ?>" method="get" class="search_box">
+                  <input type="search" placeholder="Type to start your search..." class="search" name="s" id="search" value="<?php the_search_query(); ?>" />
+                  <button  class="searchsubmit" value="search"></button>
+                </form>
+              </div>
+              <div></div>
+            </div>
+          </div>
+          <div id="newsletter-col">
+            <button class="newsletter" value="search" id="myBtn2"></button>
+            <div id="newsletterPopup" class="popup-wrapper">
+              <div class="popWrap">
+                <div class="popup-content">
+                  <span class="closeicon" onclick="closeNewsLetter('newsletterPopup');"></span>
+                  <h3>Like What You’re Reading?</h3>
+                  <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="second-row" id="stickytoc">
-      <div class="buyers-guide">
-  
-      <div class="vcb-col-left" id="vcb-col-left">
-        <div class="tocsec">
-          <h3>Table of Contents</h3>
-          <?php dynamic_sidebar('ws-toc'); ?>
+    <div class="single-post-container">
+      <div class="top-header-banner">
+        <h1><?php echo get_the_title()?></h1>
+        <div class="entery-wrap">
+          <div class="meta-wrap">
+            <div class="author-img">
+              <img loading="lazy" src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" width="52" height="52" alt="Pixelcrayons" data-lazy-src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" data-ll-status="loaded" class="entered lazyloaded">
+              <noscript><img loading="lazy" src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" width="52" height="52" alt="Pixelcrayons"/></noscript>
+            </div>
+            <ul class="entry-meta">
+              <li class="meta author vcard">
+                <span class="author-name fn">Written by
+                <a href="https://www.valuecoders.com/blog" title="https://www.valuecoders.com/blog" rel="author follow noopener noreferrer" data-wpel-link="exclude" target="_self">Varun Bhagat</a></span>
+              </li>
+              <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
+            </ul>
+          </div>
+          <div class="social-icon-box">
+            <div class="share-head">
+              Share Article:
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/sharer?u='.get_the_permalink().'&t='.get_the_title().'.." class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url='.get_the_permalink().'&title='.get_the_title().'" class="a2a_button_linkedin" target="_blank" rel="noopener noreferrer"></a>
+              <a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_the_permalink().'" class="a2a_button_twitter" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+          </div>
         </div>
       </div>
-  
-    
-
-  
-      <div class="vcb-col-right" id="vcb-col-right">
+    </div>
+    <div class="detail-thumb">
+      <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
+    </div>
+  <div class="center content">
+    <div class="second-row" id="stickytoc">
+      <div class="buyers-guide">
+        <div class="vcb-col-left" id="vcb-col-left">
+          <div class="customcta">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="pixel" 
+                width="299" height="142">
+            </picture>
+            <div class="cushed">Lorem ipsum dolor<br>  sit amet, </div>
+            <div class="btn-container">
+              <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
+            </div>
+          </div>
+          <div class="table-c">
+            <h3>Table of Contents</h3>
+            <div class="tocsec">
+              <?php dynamic_sidebar('ws-toc'); ?>
+            </div>
+          </div>
+          <div class="detail-subsbox">
+            <h3>Subscribe to our blog</h3>
+            <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
+          </div>
+        </div>
+        <div class="vcb-col-right" id="vcb-col-right">
           <section class="post-content">
             <div class="text">
               <?php 
@@ -74,9 +138,9 @@ get_header();
         </div>
         <!-- .right -->
       </div>
-     
     </div>
   </div>
-</div>
+
+  </div>
 </main>
 <?php get_footer(); ?>

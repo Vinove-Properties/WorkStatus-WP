@@ -74,7 +74,8 @@ function workstatus_scripts(){
         'admin_ajax'    => admin_url( 'admin-ajax.php' )
         )
     );
-    wp_enqueue_style( 'ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION); 
+    wp_enqueue_style( 'ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
+    wp_enqueue_style( 'ws-blogdetail', get_stylesheet_directory_uri() .'/assets/css/blog-detail.css', array(), _S_VERSION);  
     wp_enqueue_style( 'ws-footer', get_stylesheet_directory_uri() .'/assets/css/ws-footer.css',  array(), _S_VERSION); 
     wp_enqueue_style( 'ws-all-forms', get_stylesheet_directory_uri() .'/forms-style.css',  array(), _S_VERSION);
 
@@ -324,9 +325,9 @@ wp_reset_postdata();
 die;
 }
 
-define('CLIENT_ID','1000.T83TEYWHZDWOQRL8JUXBD4XT8UWI5U');
-define('CLIENT_SECRET','74d994015f78e8efbebe00f3ce5bb00fe3f35a0c97');
-define('REFRESH_TOKEN','1000.a9b9e2c14490efa501b74a5bd12c8867.d029cc4c0e9f00477074b4c0963adefa');
+//define('CLIENT_ID','1000.T83TEYWHZDWOQRL8JUXBD4XT8UWI5U');
+//define('CLIENT_SECRET','74d994015f78e8efbebe00f3ce5bb00fe3f35a0c97');
+//define('REFRESH_TOKEN','1000.a9b9e2c14490efa501b74a5bd12c8867.d029cc4c0e9f00477074b4c0963adefa');
 function createZohoLeads($argArrData){
 $fname = ( isset( $argArrData['fname'] ) && !empty( $argArrData['fname'] ) ) ? $argArrData['fname'] : 'WS Blog';
 $lname = ( isset( $argArrData['lname'] ) && !empty( $argArrData['lname'] ) ) ? $argArrData['lname'] : 'Subscription';

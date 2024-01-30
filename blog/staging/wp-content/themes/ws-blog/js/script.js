@@ -339,3 +339,50 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("orientationChange", lazyload);
   }
 })
+
+
+
+//popup script//
+var contentPopup = document.getElementById('contentPopup');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+if (btn) {
+	btn.onclick = function() {
+		contentPopup.style.display = "block";
+	}
+}
+if (span) {
+	span.onclick = function() {
+		contentPopup.style.display = "none";
+	}
+}
+
+
+window.onclick = function(event) {
+	if (event.target == contentPopup) {
+		contentPopup.style.display = "none";
+	}
+}
+
+
+var newsletterPopup = document.getElementById('newsletterPopup');
+let btn2 = document.getElementById("myBtn2");
+
+if (btn2) {
+	btn2.onclick = function() {
+		newsletterPopup.style.display = "block";
+	}
+}
+
+
+function closeNewsLetter(elm) {
+	let clelm = document.getElementById(elm);
+	clelm.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+	if (event.target == newsletterPopup) {
+		newsletterPopup.style.display = "none";
+	}
+}

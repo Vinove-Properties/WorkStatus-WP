@@ -22,7 +22,7 @@
       .inner-banner-bg .bannerwrap {padding:0;}
       .inner-banner-bg{height:initial;}
       .hero-banner {padding:100px 0 50px;}
-      .site__header {top:30px;}
+   
       body.single .blog-thumb,
       .desk-only{ display:none; }
     
