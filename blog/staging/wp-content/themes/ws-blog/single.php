@@ -59,13 +59,12 @@
         <div class="entery-wrap">
           <div class="meta-wrap">
             <div class="author-img">
-              <img loading="lazy" src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" width="52" height="52" alt="Pixelcrayons" data-lazy-src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" data-ll-status="loaded" class="entered lazyloaded">
-              <noscript><img loading="lazy" src="http://localhost/pixelcrayons.com/blog/staging/wp-content/themes/pxlblog/assets/images/author.png" width="52" height="52" alt="Pixelcrayons"/></noscript>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/author.png" width="52" height="52" alt="workstatus">
             </div>
             <ul class="entry-meta">
               <li class="meta author vcard">
                 <span class="author-name fn">Written by
-                <a href="https://www.valuecoders.com/blog" title="https://www.valuecoders.com/blog" rel="author follow noopener noreferrer" data-wpel-link="exclude" target="_self">Varun Bhagat</a></span>
+                <a href="https://www.workstatus.io/blog/">Varun Bhagat</a></span>
               </li>
               <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
             </ul>
@@ -92,7 +91,7 @@
         <div class="vcb-col-left" id="vcb-col-left">
           <div class="customcta">
             <picture>
-              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="pixel" 
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="workstatus" 
                 width="299" height="142">
             </picture>
             <div class="cushed">Lorem ipsum dolor<br>  sit amet, </div>
@@ -140,7 +139,6 @@
       </div>
     </div>
   </div>
-
   </div>
 </main>
 <?php get_footer(); ?>
