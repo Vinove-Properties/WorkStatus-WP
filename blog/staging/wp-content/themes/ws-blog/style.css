@@ -178,7 +178,7 @@ a {
  text-align: center;
 }
 .error-404 .buttons a {
- background: #6754e2;
+ background: #4231AC;
  color: #fff;
  padding: 13px 12px;
  height: 50px;
@@ -511,7 +511,7 @@ body form.search-form input.search-field {
  line-clamp: 2;
 }
 .blog-outer .title a:hover {
- color: #6754e2;
+ color: #4231AC;
 }
 .blog-outer .post-excerpt p {
  display: inline;
@@ -525,7 +525,7 @@ body form.search-form input.search-field {
  margin: 0 0 20px;
 }
 .rdmore {
- color: #6754e2 !important;
+ color: #4231AC !important;
  font-size: 16px;
  display: flex;
  position: relative;
@@ -547,7 +547,7 @@ body form.search-form input.search-field {
 .blog-outer .category-row a {
  min-width: auto;
  background: #ebe8fd;
- color: #6754e2;
+ color: #4231AC;
  font-weight: 600;
  letter-spacing: 1px;
  font-size: 10px;
@@ -559,7 +559,7 @@ body form.search-form input.search-field {
  line-height: 16px;
 }
 .blog-outer .category-row a:hover{
-background: #6754e2;
+background: #4231AC;
  color: #ebe8fd;    
 }
 .blog-outer .category-row {
@@ -601,7 +601,7 @@ transition: 0.3s;
 
 }
 .posts-navigation .nav-links .nav-next a{ padding: 20px 20px 20px 30px; }
-.posts-navigation .nav-links a:hover{ background: #6754E20F; color: #624DE3;     transition: 0.3s; } 
+.posts-navigation .nav-links a:hover{ background: #4231AC0F; color: #624DE3;     transition: 0.3s; } 
 
 .posts-navigation .nav-previous a:hover:after{
  /*left: 12px; */
@@ -647,7 +647,7 @@ transition: 0.3s;
  bottom: 0;
  left: 0;
  height: 150px;
- background: linear-gradient(90deg, #4461d7 0, #407be7 42%, #39a1ff 100%);
+ background: linear-gradient(90deg, #4231AC0, #407be7 42%, #39a1ff 100%);
 }
 .cus-wrap {
  position: relative;
@@ -899,7 +899,7 @@ table th {
  margin: 50px auto 80px;
 }
 .vcb-col-right a {
- color: #6754e2;
+ color: #4231AC;
 }
 .vcb-col-right a:hover {
  text-decoration: none;
@@ -957,7 +957,7 @@ th {
  background: url("images/menu-arrow.svg") center center no-repeat;
 }
 .single .site_nav .login a {
- background: #4461d7;
+ background: #4231AC;
  color: #fff !important;
 }
 .single {
@@ -1005,7 +1005,7 @@ div.text blockquote {
 div.text blockquote::before {
  width: 4px;
  border-radius: 4px;
- background-color: #6754e2;
+ background-color: #4231AC;
 }
 div.text b,
 div.text strong {
@@ -1028,7 +1028,7 @@ div.text strong {
  text-transform: uppercase;
  padding: 6px 10px;
  border-radius: 5px;
- background: #6754e2;
+ background: #4231AC;
 }
 .single-post .cat a:hover{background: #051441;}
 hr {
@@ -1040,7 +1040,7 @@ hr {
 }
 .cta-compact {
  margin: 30px 0 0;
- background: linear-gradient(90deg, #4461d7 0, #407be7 42%, #39a1ff 100%);
+ background: linear-gradient(90deg, #4231AC0, #407be7 42%, #39a1ff 100%);
  padding: 15px;
  text-align: center;
 }
@@ -1101,10 +1101,10 @@ div.epcl-share-container {
  padding-top: 30px;
 }
 #sidebar .es_subscription_form .ig_es_form_field_email::-webkit-input-placeholder {
- color: #6754e2 !important;
+ color: #4231AC !important;
 }
 #sidebar .es_subscription_form .ig_es_form_field_email::-moz-placeholder {
- color: #6754e2 !important;
+ color: #4231AC !important;
 }
 .post-rel-sec {
  margin: 0 0 50px;
@@ -1140,7 +1140,7 @@ div.epcl-share-container {
 }
 .post-rel-sec .blog-entry-title a:hover {
  text-decoration: underline;
- color: #6754e2;
+ color: #4231AC;
 }
 @media screen and (max-width: 1640px) {
  .blog-thumb img {
@@ -1505,14 +1505,14 @@ img.lazy{background: #F1F1FA;}
 
     display: flex;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 20px;
     line-height: 1;
     height: 45px;
     font-size: 16px;
     border: 1px solid #fff;
     border-radius: 8px;
     background: #fff;
-    color: #6754e2;
+    color: #4231AC;
     border-radius: 50px;
 
 }
@@ -1529,9 +1529,9 @@ img.lazy{background: #F1F1FA;}
 .site_nav .logindiv .ctsales:hover{background: #051441; color: #fff!important; border:1px solid #051441 !important;}    
 
 .single .site_nav .logindiv a {
-    background: #4461d7;
+    background: #4231AC;
     color: #fff !important;
-    border:1px solid #4461d7 !important; 
+    border:1px solid #4231AC!important; 
     border-radius: 50px;
 }
 
@@ -1540,9 +1540,9 @@ img.lazy{background: #F1F1FA;}
 
 
 .single .site_nav .logindiv .signin{color: #4f525c!important; background: transparent; border: 1px solid transparent !important;}
-.single .site_nav .logindiv .signin:hover{color: #4461d7 !important; background: transparent; border: 1px solid transparent !important;}
-.single .site_nav .logindiv .ctsales{border: 1px solid #4461d7 !important;
-    color: #4461d7 !important;
+.single .site_nav .logindiv .signin:hover{color: #4231AC!important; background: transparent; border: 1px solid transparent !important;}
+.single .site_nav .logindiv .ctsales{border: 1px solid #4231AC!important;
+    color: #4231AC!important;
     background: transparent; border-radius:50px;}
 .single .site_nav .logindiv .ctsales:hover{background: #051441; color: #fff!important; border:1px solid #051441 !important;}  
 
@@ -1554,16 +1554,16 @@ img.lazy{background: #F1F1FA;}
 
 
 
-.shady  .site_nav .logindiv a{background: #4461d7;
+.shady  .site_nav .logindiv a{background: #4231AC;
     color: #fff !important;
-    border:1px solid #4461d7 !important; }
+    border:1px solid #4231AC!important; }
 
 .shady  .site_nav .logindiv a:hover{background: #051441; border-color:#051441!important;}
 
 
 
-.shady .site_nav .logindiv .ctsales{border: 1px solid #4461d7 !important;
-    color: #4461d7 !important;
+.shady .site_nav .logindiv .ctsales{border: 1px solid #4231AC!important;
+    color: #4231AC!important;
     background: transparent}
 .shady .site_nav .logindiv .ctsales:hover{background: #051441; color: #fff!important; border:1px solid #051441 !important;}  
 
@@ -1572,24 +1572,24 @@ img.lazy{background: #F1F1FA;}
 .shady .site_nav .logindiv .signin{color: #4f525c!important;
     background: #ffffff3d;
     border: 1px solid transparent !important;}
-.shady .site_nav .logindiv .signin:hover{color: #4461d7 !important;   background: #f2f8ff; border: 1px solid transparent !important;}
-.shady .site_nav .login .ctsales{border: 1px solid #4461d7 !important;
-    color: #4461d7 !important;
+.shady .site_nav .logindiv .signin:hover{color: #4231AC!important;   background: #f2f8ff; border: 1px solid transparent !important;}
+.shady .site_nav .login .ctsales{border: 1px solid #4231AC!important;
+    color: #4231AC!important;
     background: transparent}
 .shady .site_nav .logindiv .ctsales:hover{background: #051441; color: #fff!important; border:1px solid #051441 !important;}    
 
 .shady .single .site_nav .logindiv a {
-    background: #4461d7;
+    background: #4231AC;
     color: #fff !important;
-    border:1px solid #4461d7 !important; border-radius: 50px; 
+    border:1px solid #4231AC!important; border-radius: 50px; 
 }
 
 .single .site_nav .logindiv a:hover{background:#051441; color:#fff !important; border:1px solid #051441 !important; }
 
 .shady .single .site_nav .logindiv .signin{color: #4f525c!important; background: transparent; border: 1px solid transparent !important;}
-.shady .single .site_nav .logindiv .signin:hover{color: #4461d7 !important; background: transparent; border:0 !important;}
-.shady single .site_nav .logindiv .ctsales{border: 1px solid #4461d7 !important;
-    color: #4461d7 !important;
+.shady .single .site_nav .logindiv .signin:hover{color: #4231AC!important; background: transparent; border:0 !important;}
+.shady single .site_nav .logindiv .ctsales{border: 1px solid #4231AC!important;
+    color: #4231AC!important;
     background: transparent}
 .shady .single .site_nav .logindiv .ctsales:hover{background: #051441; color: #fff!important; border:1px solid #051441 !important;}  
 
@@ -1599,7 +1599,7 @@ img.lazy{background: #F1F1FA;}
 
 .single .site_nav .logindiv .signin:hover,
 .shady .site_nav .logindiv a.signin:hover,
-.shady .site_nav .logindiv a.signin:hover{color: #4461d7 !important; background: #ebe8fd !important;
+.shady .site_nav .logindiv a.signin:hover{color: #4231AC!important; background: #ebe8fd !important;
     border: 1px solid transparent !important;}
 
 .cmn-filter .filters{padding: 25px 0; background: 0 0; border-top-left-radius: 0; border-top-right-radius: 0; display: block;}
@@ -1612,7 +1612,7 @@ img.lazy{background: #F1F1FA;}
 .cmn-filter ul li{list-style:none; display: inline-flex; margin-left: 20px;}
 .cmn-filter ul li a{color: #110302}
 .cmn-filter ul li a:hover,
-.cmn-filter ul li a.active{color: #6754e2}
+.cmn-filter ul li a.active{color: #4231AC}
 .cmn-filter .search-fld a.search-close,
 .cmn-filter .search-btn a.search-act{position: absolute;
     border: 0;
@@ -1643,14 +1643,14 @@ filter:inherit;
 
     .site_nav .logindiv{text-align: center; padding:5px 15px 0;}
     .site_nav .logindiv a{
-        text-align: center; border: 1px solid #4461d7 !important; background:#4461d7 !important;
+        text-align: center; border: 1px solid #4231AC!important; background:#4231AC!important;
         color: #fff !important; flex-basis: 100%;
         margin: 0 0 15px;
         text-align: center;} 
-        .site_nav .logindiv .signin:hover{border: 1px solid #4461d7 !important; color: #4461d7 !important;}
+        .site_nav .logindiv .signin:hover{border: 1px solid #4231AC!important; color: #4231AC!important;}
 
         .site_nav .logindiv a:hover{border: 1px solid #051441 !important; background:#051441 !important;}
-        .site_nav .logindiv .ctsales{background:transparent !important; border:1px solid #4461d7 !important; color:#4461d7 !important;}
+        .site_nav .logindiv .ctsales{background:transparent !important; border:1px solid #4231AC!important; color:#4231AC!important;}
         .site_nav .logindiv .ctsales:hover{background:#051441 !important; color:#fff !important; border:1px solid #051441 !important;}
 }
 
