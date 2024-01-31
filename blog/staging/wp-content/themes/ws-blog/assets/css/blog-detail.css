@@ -55,7 +55,7 @@ button.newsletter:hover{border-color: #fff;}
 
 
 .second-row {width: 100%; position: relative;   margin: 80px 0 0; display: flex; justify-content: space-between;}
-.buyers-guide {overflow: hidden; position: relative; }
+.buyers-guide {position: relative; }
 .vcb-col-left {float: left; width:300px;}
 
 .customcta {width:100%; padding:15px 15px 30px; text-align: center;  position: relative; border-radius:15px; background: #4231AC;}
@@ -75,7 +75,7 @@ right:0; top:0;}
 left: 0; bottom: 0;}
 .customcta.padd1{padding:30px; margin:0 0 20px;}
 
-.table-c{width:100%; margin:50px 0 0;}
+.table-c{width:100%; margin:25px 0 0;}
 .tocsec{overflow-y: auto; height:180px; padding-left:0; direction: rtl; text-align: left;}
 .table-c h3 {color: rgba(65, 65, 65, 1); font-size: 20px; font-weight:400; text-transform: uppercase; margin:0 0 15px;}
 .table-c h3 {
