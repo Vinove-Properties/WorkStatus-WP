@@ -188,7 +188,7 @@ if( $bannerType && ($bannerType === "form") ){
           $pid = get_the_ID();
           $relPostThumb = get_the_post_thumbnail_url($pid);
           if( !$relPostThumb ){
-            $relPostThumb = 'https://www.workstatus.io/betablog/wp-content/uploads/2023/02/Challenges-vs.-Solutions_-Boost-Your-Agencys-ROI-min.jpg';
+            $relPostThumb = 'https://www.workstatus.io/blog/wp-content/uploads/2023/02/Challenges-vs.-Solutions_-Boost-Your-Agencys-ROI-min.jpg';
           }
           ?>
           <article class="default index-6 grid-33 tablet-grid-50">
