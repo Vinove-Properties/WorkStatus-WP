@@ -93,7 +93,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           <div class="road-col">
             <h3>
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/road-02.svg" alt="Testimonials" width="24" height="24">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/road-02.svg" alt="Testimonials" width="24" height="24">
               </picture>About to launch
             </h3>
             <div id="elm-aboutlaunch">
@@ -111,7 +111,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           <div class="road-col">
             <h3>
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>//assests/images/road-03.svg" alt="Testimonials" width="24" height="24">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/road-03.svg" alt="Testimonials" width="24" height="24">
               </picture>Recently Launched
             </h3>
             <div id="elm-recentlaunch">
