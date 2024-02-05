@@ -38,9 +38,9 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="flex_row">
       <div class="column-left">
         <picture>
-          <source type="image/webp" srcset="<?php echo SITE_URL; ?>/assests/images/ebook.png">
-          <source type="image/png" srcset="<?php echo SITE_URL; ?>/assests/images/ebook.png">
-          <img loading="lazy" src="<?php echo SITE_URL; ?>/assests/images/ebook.png"
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/ebook.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/ebook.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ebook.png"
             alt="Ebook" width="602" height="457">
         </picture>
       </div>
