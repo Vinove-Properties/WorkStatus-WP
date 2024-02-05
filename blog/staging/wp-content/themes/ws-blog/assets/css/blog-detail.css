@@ -55,7 +55,7 @@ button.newsletter:hover{border-color: #fff;}
 
 
 .second-row {width: 100%; position: relative;   margin: 80px 0 0; display: flex; justify-content: space-between;}
-.buyers-guide {position: relative; }
+.buyers-guide {position: relative; overflow:hidden; }
 .vcb-col-left {float: left; width:300px;}
 
 .customcta {width:100%; padding:15px 15px 30px; text-align: center;  position: relative; border-radius:15px; background: #4231AC;}

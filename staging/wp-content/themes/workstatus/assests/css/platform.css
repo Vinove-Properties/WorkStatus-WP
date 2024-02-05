@@ -7627,7 +7627,7 @@ h3 a {
 h3 a {
   color: #110302; }
   h3 a:hover {
-    color: #6754E2;
+    color: #6754e2;
     text-decoration: underline; }
 
 .page-template-tpl-affiliates .testmHome:before {
@@ -7845,136 +7845,6 @@ h3 a {
 h6.inherit, p.inherit {
   text-transform: initial; }
 
-.overview {
-  margin: 80px 0 0; }
-  @media screen and (max-width: 1023px) {
-    .overview {
-      margin: 100px 0 0; } }
-  @media screen and (max-width: 767px) {
-    .overview {
-      margin: 130px 0 0; } }
-  .overview .top-section {
-    padding: 0; }
-  .overview .dis-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .overview .dis-flex .colleft {
-      flex-basis: 55%; }
-      @media screen and (max-width: 1399px) {
-        .overview .dis-flex .colleft {
-          flex-basis: 50%; } }
-      .overview .dis-flex .colleft span {
-        color: #000; }
-      @media screen and (max-width: 575px) {
-        .overview .dis-flex .colleft {
-          flex-basis: 100%; } }
-      .overview .dis-flex .colleft .box {
-        margin: 50px 0 0; }
-        @media screen and (max-width: 575px) {
-          .overview .dis-flex .colleft .box {
-            margin: 30px 0 0; } }
-      .overview .dis-flex .colleft ul {
-        margin: 0;
-        padding: 0; }
-        .overview .dis-flex .colleft ul li {
-          color: #5e6373;
-          margin: 0 0 15px;
-          position: relative;
-          padding-left: 20px; }
-          .overview .dis-flex .colleft ul li:before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            background: #5e6373;
-            position: absolute;
-            top: 8px;
-            left: 0; }
-    .overview .dis-flex .colRit {
-      flex-basis: 38%; }
-      @media screen and (max-width: 1399px) {
-        .overview .dis-flex .colRit {
-          flex-basis: 45%; } }
-      @media screen and (max-width: 575px) {
-        .overview .dis-flex .colRit {
-          flex-basis: 100%; } }
-      .overview .dis-flex .colRit .formbox {
-        width: 100%;
-        background: #ffffff;
-        box-shadow: 0px 4px 35px rgba(22, 101, 216, 0.1);
-        border-radius: 30px;
-        padding: 30px; }
-        @media screen and (max-width: 575px) {
-          .overview .dis-flex .colRit .formbox {
-            padding: 30px 20px; } }
-        .overview .dis-flex .colRit .formbox h3 {
-          text-align: center; }
-        .overview .dis-flex .colRit .formbox .form-wrap {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between; }
-          .overview .dis-flex .colRit .formbox .form-wrap .form-group {
-            position: relative;
-            width: 100%;
-            margin: 0 0 20px; }
-            .overview .dis-flex .colRit .formbox .form-wrap .form-group #phone-error {
-              position: initial; }
-            @media screen and (max-width: 575px) {
-              .overview .dis-flex .colRit .formbox .form-wrap .form-group {
-                margin: 0 0 18px; } }
-            .overview .dis-flex .colRit .formbox .form-wrap .form-group.formhalf {
-              width: 48%; }
-              @media screen and (max-width: 575px) {
-                .overview .dis-flex .colRit .formbox .form-wrap .form-group.formhalf {
-                  width: 100%; } }
-            .overview .dis-flex .colRit .formbox .form-wrap .form-group input {
-              width: 100%;
-              color: #737b7d;
-              height: 40px;
-              border: 0;
-              border-bottom: 1px solid #ebe5fe; }
-              @media screen and (max-width: 575px) {
-                .overview .dis-flex .colRit .formbox .form-wrap .form-group input {
-                  height: 35px; } }
-            .overview .dis-flex .colRit .formbox .form-wrap .form-group input:focus {
-              border-bottom: 1px solid #643bdf;
-              border-bottom-color: #643bdf;
-              background: none !important; }
-            .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
-              border: 0;
-              min-width: 100%;
-              background: #643bdf;
-              font-family: "Lato";
-              font-size: 20px;
-              font-weight: 600;
-              color: #fff;
-              height: 55px;
-              display: block;
-              cursor: pointer;
-              margin: 40px 0 0;
-              border-radius: 100px; }
-              @media screen and (max-width: 575px) {
-                .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
-                  font-size: 18px;
-                  margin: 25px 0 0; } }
-              .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn:hover {
-                background: #333333; }
-          .overview .dis-flex .colRit .formbox .form-wrap .padd {
-            position: relative; }
-            .overview .dis-flex .colRit .formbox .form-wrap .padd p {
-              font-size: 13px;
-              color: #3f4041;
-              line-height: 20px;
-              padding-left: 25px; }
-            .overview .dis-flex .colRit .formbox .form-wrap .padd .mcheck {
-              position: absolute;
-              width: 15px;
-              height: 15px;
-              top: 0;
-              left: 0; }
-
 .page-id-3493 .top-plateform .flex_row ul li {
   width: 100%; }
 
@@ -8065,7 +7935,7 @@ h6.inherit, p.inherit {
     .one-solution .column-three h3 a {
       color: #110302; }
       .one-solution .column-three h3 a:hover {
-        color: #6754E2;
+        color: #6754e2;
         text-decoration: underline; }
     .one-solution .column-three ul {
       margin: 0;
@@ -8125,6 +7995,188 @@ h6.inherit, p.inherit {
       height: 30px;
       top: 3px; }
 
+.sd-banner {
+  width: 100%;
+  height: 625px;
+  padding: 0;
+  background: #4231ac;
+  color: #fff;
+  position: relative; }
+
+.overview {
+  padding: 0;
+  padding-bottom: 80px;
+  margin-top: -270px; }
+  @media screen and (max-width: 575px) {
+    .overview {
+      padding: 50px 0; } }
+  .overview .dis-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(to left, #f5f4ff 50%, #fff 50%);
+    border-radius: 20px;
+    box-shadow: 0px 4px 35px rgba(22, 101, 216, 0.1); }
+    @media screen and (max-width: 575px) {
+      .overview .dis-flex {
+        background: #fff;
+        border-radius: 0; } }
+    .overview .dis-flex .colleft {
+      flex-basis: 50%;
+      padding: 30px; }
+      .overview .dis-flex .colleft span {
+        color: #000; }
+      @media screen and (max-width: 575px) {
+        .overview .dis-flex .colleft {
+          flex-basis: 100%; } }
+      .overview .dis-flex .colleft .box {
+        margin: 30px 0 0; }
+        @media screen and (max-width: 575px) {
+          .overview .dis-flex .colleft .box {
+            margin: 20px 0 0; } }
+      .overview .dis-flex .colleft p {
+        font-size: 18px;
+        line-height: 27px;
+        color: #5e6373;
+        font-weight: 500; }
+        @media screen and (max-width: 575px) {
+          .overview .dis-flex .colleft p {
+            font-size: 16px;
+            line-height: 26px; } }
+      .overview .dis-flex .colleft ul {
+        margin: 0;
+        padding: 0; }
+        .overview .dis-flex .colleft ul li {
+          color: #5e6373;
+          margin: 0 0 15px;
+          position: relative;
+          padding-left: 20px; }
+          .overview .dis-flex .colleft ul li:before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
+            background: #5e6373;
+            position: absolute;
+            top: 8px;
+            left: 0; }
+    .overview .dis-flex .colRit {
+      flex-basis: 50%;
+      padding: 30px; }
+      @media screen and (max-width: 575px) {
+        .overview .dis-flex .colRit {
+          flex-basis: 100%;
+          padding: 0; } }
+      .overview .dis-flex .colRit .formbox {
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0px 4px 35px rgba(22, 101, 216, 0.1);
+        border-radius: 30px;
+        padding: 0; }
+        .overview .dis-flex .colRit .formbox form {
+          padding: 10px 40px 40px; }
+          @media screen and (max-width: 575px) {
+            .overview .dis-flex .colRit .formbox form {
+              padding: 10px 0px 30px; } }
+        @media screen and (max-width: 575px) {
+          .overview .dis-flex .colRit .formbox {
+            padding: 0 20px 0;
+            background: #fff;
+            border-radius: 0; } }
+        .overview .dis-flex .colRit .formbox h3 {
+          text-align: center;
+          padding: 20px;
+          border-bottom: 3px solid rgba(74, 61, 155, 0.04); }
+        .overview .dis-flex .colRit .formbox .form-wrap {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between; }
+          .overview .dis-flex .colRit .formbox .form-wrap .form-group {
+            position: relative;
+            width: 100%;
+            margin: 0 0 15px; }
+            .overview .dis-flex .colRit .formbox .form-wrap .form-group #phone-error {
+              position: initial; }
+            @media screen and (max-width: 575px) {
+              .overview .dis-flex .colRit .formbox .form-wrap .form-group {
+                margin: 0 0 12px; } }
+            .overview .dis-flex .colRit .formbox .form-wrap .form-group.formhalf {
+              width: 48%; }
+              @media screen and (max-width: 575px) {
+                .overview .dis-flex .colRit .formbox .form-wrap .form-group.formhalf {
+                  width: 100%; } }
+            .overview .dis-flex .colRit .formbox .form-wrap .form-group input {
+              width: 100%;
+              color: #737b7d;
+              height: 50px;
+              border: 0;
+              border: 1px solid #d4e0ed;
+              border-radius: 10px;
+              padding: 0 20px;
+              font-weight: 600; }
+              @media screen and (max-width: 575px) {
+                .overview .dis-flex .colRit .formbox .form-wrap .form-group input {
+                  height: 45px; } }
+            .overview .dis-flex .colRit .formbox .form-wrap .form-group input:focus {
+              border: 1px solid #643bdf;
+              background: none !important;
+              font-size: 14px; }
+            .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
+              border: 0;
+              min-width: 100%;
+              background: #643bdf;
+              font-family: "Noto Sans";
+              font-size: 20px;
+              font-weight: 600;
+              color: #fff;
+              height: 55px;
+              display: block;
+              cursor: pointer;
+              margin: 25px 0 0;
+              border-radius: 100px; }
+              @media screen and (max-width: 575px) {
+                .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
+                  font-size: 18px;
+                  margin: 20px 0 0; } }
+              .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn:hover {
+                background: #333333; }
+          .overview .dis-flex .colRit .formbox .form-wrap .padd {
+            position: relative; }
+            .overview .dis-flex .colRit .formbox .form-wrap .padd p {
+              font-size: 13px;
+              color: #3f4041;
+              line-height: 20px;
+              padding-left: 25px; }
+            .overview .dis-flex .colRit .formbox .form-wrap .padd .mcheck {
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              top: 0;
+              left: 0; }
+
+.overview input::placeholder {
+  font-weight: 600; }
+
+.ebook .flex_row ul li {
+  flex-basis: 100%; }
+
+@media screen and (max-width: 1220px) {
+  .overview {
+    margin-top: -220px; } }
+@media screen and (max-width: 980px) {
+  .sd-banner {
+    height: initial;
+    padding: 100px 0; }
+
+  .overview {
+    margin-top: 0; } }
 @media screen and (max-width: 767px) {
   .hero-banner .inner-wrap .actionBtn {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .sd-banner {
+    height: initial;
+    padding: 100px 0 50px; } }
+
+/*# sourceMappingURL=platform.css.map */
