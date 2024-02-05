@@ -112,14 +112,27 @@ sgphone3.addEventListener( "keydown", ws_checkphonenumber );
 function wslpSignup(e){
 	let varElm = e.dataset.wform;
 	if( varElm == 1 ){
-		checkRequiredTF( [sgemail1, sgphone1] );
+		if( document.body.classList.contains('nr-phone') ){
+			checkRequiredTF( [sgemail1] );	
+		}else{
+			checkRequiredTF( [sgemail1, sgphone1] );
+		}		
 	}
 	else if( varElm == 2 ){
-		checkRequiredTF([sgemail2, sgphone2]);
+		if( document.body.classList.contains('nr-phone') ){
+			checkRequiredTF([sgemail2]);
+		}else{
+			checkRequiredTF([sgemail2, sgphone2]);
+		}		
 	}
 
 	else if( varElm == 3 ){
-		checkRequiredTF([sgemail3, sgphone3]);
+		if( document.body.classList.contains('nr-phone') ){
+			checkRequiredTF([sgemail3]);
+		}else{
+			checkRequiredTF([sgemail3, sgphone3]);
+		}
+		
 	}
 	
 	let fldElm 		= document.querySelectorAll( ".wssgl-form"+varElm+" .form-group" );

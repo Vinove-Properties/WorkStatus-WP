@@ -1,82 +1,4 @@
 <?php get_header(); ?>
-<script type="text/javascript">
-function ws_calculateHourly(e){
-  const hourly  = document.getElementById("ws-hourly");  
-  //console.log(e.value);
-}  
-
-function ws_calculator_cb(value, type){
-  const wage    = document.getElementById("ws-wages");
-  const monthly = document.getElementById("ws-monthly");
-  const weekly  = document.getElementById("ws-weekly");
-  const daily   = document.getElementById("ws-daily");
-  const hourly  = document.getElementById("ws-hourly");
-  if( type == "anual" ){
-    let monthlyVal  = ( value / 12 );    
-    let weeklyVal   = ( value / 52 );
-    let dailyVal    = ( weeklyVal / 5 );
-    let hourlyVal   = ( dailyVal / 8 );
-
-    monthly.value   = parseFloat( monthlyVal ).toFixed(2);
-    weekly.value    = parseFloat( weeklyVal ).toFixed(2);
-    daily.value     = parseFloat( dailyVal ).toFixed(2);
-    hourly.value    = parseFloat( hourlyVal ).toFixed(2);    
-  }
-
-  if( type == "monthly" ){
-    let yearlyVal   = ( value * 12 );
-    
-    let weeklyVal   = ( yearlyVal / 52 );
-    let dailyVal    = ( weeklyVal / 5 );
-    let hourlyVal   = ( dailyVal / 8 );
-    wage.value      = yearlyVal;
-    weekly.value    = parseFloat( weeklyVal ).toFixed(2);
-    daily.value     = parseFloat( dailyVal ).toFixed(2);
-    hourly.value    = parseFloat( hourlyVal ).toFixed(2);    
-  }
-
-  if( type == "weekly" ){
-    let yearlyVal   = ( value * 52 );
-    let monthlyVal  = ( yearlyVal / 12 );
-    let dailyVal    = ( value / 5 );
-    let hourlyVal   = ( dailyVal / 8 );
-
-    monthly.value   = parseFloat( monthlyVal ).toFixed(2);
-    wage.value      = yearlyVal;
-    daily.value     = parseFloat( dailyVal ).toFixed(2);
-    hourly.value    = parseFloat( hourlyVal ).toFixed(2);    
-  }
-
-  if( type == "daily" ){
-    let yearlyVal   = ( (value * 5) * 52 );
-    let monthlyVal  = ( yearlyVal / 12 );
-    let weeklyVal   = ( yearlyVal / 52 );
-    let hourlyVal   = ( value / 8 );
-
-    wage.value      = yearlyVal;
-    monthly.value   = parseFloat( monthlyVal ).toFixed(2);    
-    weekly.value    = parseFloat( weeklyVal ).toFixed(2);
-    hourly.value    = parseFloat( hourlyVal ).toFixed(2);    
-  }
-
-  if( type == "hourly" ){
-    let yearlyVal   = ( value * 40 * 52 );
-    let monthlyVal  = ( yearlyVal / 12 );
-    let weeklyVal   = ( yearlyVal / 52 );
-    let dailyVal    = ( weeklyVal / 5 );
-
-    wage.value      = yearlyVal;
-    monthly.value   = parseFloat( monthlyVal ).toFixed(2);    
-    weekly.value    = parseFloat( weeklyVal ).toFixed(2);
-    daily.value     = parseFloat( dailyVal ).toFixed(2);    
-  }
-
-}
-
-function ws_calculate_wages(e, type, ws_wage_calc){
-  ws_wage_calc( e.value, type );  
-}  
-</script>
 <main class="site__content">
 <?php 
 global $post;
@@ -90,48 +12,9 @@ if( $bannerType && ($bannerType === "form") ){
         <h1><?php the_title(); ?></h1>
       </div>
    <div class="salary-calculator">
-    <form id="wage-calculator" onsubmit="return false;">
-      <fieldset class="calculator">
-        <label class="salary">Annual salary</label>
-        <input id="ws-wages" type="number" value="0" onkeyup="ws_calculate_wages(this, 'anual', ws_calculator_cb);" class="numberfiled">
-        <span class="footnote">$</span>
-      </fieldset>
-
-      <fieldset class="calculator">
-        <label class="salary">Monthly wage</label>
-        <input id="ws-monthly" type="number" value="0" onkeyup="ws_calculate_wages(this, 'monthly', ws_calculator_cb);" class="numberfiled">
-        <span class="footnote">$</span>
-      </fieldset>
-
-      <fieldset class="calculator">
-        <label class="salary">Weekly wage</label>
-        <input id="ws-weekly" type="number" value="0" onkeyup="ws_calculate_wages(this, 'weekly', ws_calculator_cb);" class="numberfiled">
-        <span class="footnote">$</span>
-      </fieldset>
-
-      <fieldset class="calculator">
-        <label class="salary">Daily wage</label>
-        <input id="ws-daily" type="number" value="0" onkeyup="ws_calculate_wages(this, 'daily', ws_calculator_cb);" class="numberfiled">
-        <span class="footnote">$</span>
-      </fieldset>
-
-      <fieldset class="calculator">
-        <label class="salary">Hourly wage</label>
-        <input id="ws-hourly" type="number" value="0" onkeyup="ws_calculate_wages(this, 'hourly', ws_calculator_cb);" class="numberfiled">
-        <span class="footnote">$</span>
-      </fieldset>
-
-      <fieldset class="calculator">
-        <label class="salary">Hours per week</label>
-        <input type="number" value="40" onkeyup="ws_calculateHourly(this);" class="numberfiled">
-        <span class="footnote">H</span>
-      </fieldset>
-
-        <fieldset class="calculator">
-        <button type="submit" onclick="document.getElementById('wage-calculator').reset();" class="btn" name="submit">Clear</button>
-        </fieldset>
-      </form>  
-      </div>
+      <?php get_template_part('inc/calc/productivity', 'calculator'); ?>
+      <?php //get_template_part('inc/calc/wagerate', 'calculator'); ?>
+    </div>
     </div>
   </div>
 </section>

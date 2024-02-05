@@ -555,6 +555,7 @@ return $pcodes;
 }
 
 add_filter( 'body_class', function( $classes ){
+	global $post;
     if( issglFldForm() === true ){
 		$classes[] 	= 'free-tiral-ctemplate';
 	}
@@ -563,6 +564,10 @@ add_filter( 'body_class', function( $classes ){
 	}
 	if( is_page_template( 'page-templates/tpl-thanks.php' ) ){
 		$classes[] 	= 'thankyou';
+	}
+	$ranMeta = get_post_meta( $post->ID, 'opt-pfld', true );
+	if( $ranMeta == "yes" ){
+		$classes[] 	= 'nr-phone';
 	}
 	return $classes;
 });

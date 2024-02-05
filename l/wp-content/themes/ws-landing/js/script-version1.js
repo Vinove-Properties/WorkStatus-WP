@@ -186,7 +186,9 @@ function checkPhone(e) {
 }
 
 function fixed_checkPhone( sgphone, errorelm ){
-    phonenumber(sgphone, errorelm);
+    if( !document.body.classList.contains('nr-phone') ){
+        phonenumber(sgphone, errorelm);
+    }
 }
 
 function checkRequired(inputArr){
