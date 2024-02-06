@@ -913,48 +913,46 @@ function downloadEbookHandler(e){
     let ePhone  = document.getElementById("ephone");
     var formBtn = document.getElementById("download");        
     
-    checkRequired([eName, eEmail, ePhone]);
-    if(
-        ( vcSpaceChecker(eName.value.trim()) === true ) &&
-        ( vcSpaceChecker(eEmail.value.trim()) === true ) &&
-        ( vcSpaceChecker(ePhone.value.trim()) === true )
-    ){
+    //checkRequired([eName, eEmail, ePhone]);
+    checkRequired([eName, eEmail]);
+    if( ( vcSpaceChecker(eName.value.trim()) === true ) && ( vcSpaceChecker(eEmail.value.trim()) === true ) ){
     const vEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if( !vEmail.test(eEmail.value.trim()) ){
         return false;
     }
-    if( checkLength(ePhone, 8, 20) === false ){
+    
+    /*if( checkLength(ePhone, 8, 20) === false ){
         return false;
-    }
+    }*/
             
-        formBtn.innerText = "Please Wait...";
-        formBtn.disabled  = true;
-        var formData    = JSON.stringify( wsSerializeForm(e) );
-        var xhttp       = new XMLHttpRequest();
-        xhttp.open("POST", ws_site_url+'/common/inc/ajax-handler.php', true); 
-        xhttp.setRequestHeader("Content-Type", "application/json");
-        xhttp.onreadystatechange = function() {
-           if (this.readyState == 4 && this.status == 200) {
-                let response = JSON.parse(this.responseText);
-                if( response.success == true ){
-                    let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
-                    let ePdfUrl     = ws_site_url+'ebook-docs/'+ebookElm;
+    formBtn.innerText = "Please Wait...";
+    formBtn.disabled  = true;
+    var formData    = JSON.stringify( wsSerializeForm(e) );
+    var xhttp       = new XMLHttpRequest();
+    xhttp.open("POST", ws_site_url+'common/inc/ajax-handler.php', true); 
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+            let response = JSON.parse(this.responseText);
+            if( response.success == true ){
+                let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
+                let ePdfUrl     = ws_site_url+'ebook-docs/'+ebookElm;
 
-                    let elink = document.createElement('a');
-                    elink.href = ePdfUrl;
-                    elink.download = ebookElm;
-                    elink.dispatchEvent(new MouseEvent('click'));
-                    formBtn.innerText       = "Download";
-                    formBtn.disabled        = false;
-                    e.reset();
-                    return false;
-                }else{
-                    alert("Something Went Wrong. Please try again");
-                    return false;
-                }
-           }
-        };
-        xhttp.send(formData);
+                let elink = document.createElement('a');
+                elink.href = ePdfUrl;
+                elink.download = ebookElm;
+                elink.dispatchEvent(new MouseEvent('click'));
+                formBtn.innerText       = "Download";
+                formBtn.disabled        = false;
+                e.reset();
+                return false;
+            }else{
+                alert("Something Went Wrong. Please try again");
+                return false;
+            }
+       }
+    };
+    xhttp.send(formData);
     }else{
         return false;
     }    

@@ -12,10 +12,12 @@
       <span class="error"></span>
     </div>
     
-    <!--<div class="form-group"> 
+    <!-- 
+    <div class="form-group"> 
       <input type="tel" id="ephone" class="ephone-cls" placeholder="Enter your Phone Number" name="phone" maxlength="30" />
       <span class="error" id="ephone-error"></span>
-    </div>-->
+    </div> 
+    -->
     
     <div class="form-group">
       <div class="padd">
