@@ -33,29 +33,27 @@ global $ws_ctas, $RegLink, $LogLink;
   </div>
 </section>
 
+<?php 
+$plateformSec = get_field('bc-section');
+if( isset( $plateformSec['enable'] ) && ($plateformSec['enable'] == "yes") ) :
+?>
 <section class="top-plateform p50 post-animation ebook">
   <div class="container">
     <div class="flex_row">
       <div class="column-left">
-        <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/ebook.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/ebook.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ebook.png"
-            alt="Ebook" width="602" height="457">
-        </picture>
+        <?php 
+        if( $plateformSec['image'] ){
+          echo pxlGetPtag( $plateformSec['image'] );
+        }
+        ?>
       </div>
       <div class="column-right">
-        <h2>Lorem ipusm sit</h2>
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </li>
-        </ul>
+        <?php echo $plateformSec['content']; ?>        
       </div>
     </div>
   </div>
 </section>
+<?php endif; ?>
 <section class="wsMobile whitetxt">
 <?php require_once get_template_directory().'/common/workstatus-device.php';?>
 </section>
