@@ -562,7 +562,7 @@ add_filter( 'body_class', function( $classes ){
 	if( is_page_template( 'page-templates/tpl-version5.0.php' ) ){
 		$classes[] 	= 'free-tiral-ctemplate';
 	}
-	if( is_page_template( 'page-templates/tpl-thanks.php' ) ){
+	if( is_page_template( ['page-templates/tpl-thanks.php', 'page-templates/tpl-calendly.php'] ) ){
 		$classes[] 	= 'thankyou';
 	}
 	$ranMeta = get_post_meta( $post->ID, 'opt-pfld', true );
