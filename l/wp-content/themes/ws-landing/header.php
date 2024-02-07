@@ -25,6 +25,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 if(
   !is_page_template([
     'page-templates/tpl-thanks.php',
+    'page-templates/tpl-calendly.php',
     'page-templates/tpl-version5.0.php',
     'page-templates/tpl-version6.0.php'
   ])
