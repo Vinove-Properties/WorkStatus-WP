@@ -22,9 +22,10 @@ require 'PHPMailer/src/SMTP.php';
 $rootDir = (isset( $_SERVER['DOCUMENT_ROOT'] ) && !empty( $_SERVER['DOCUMENT_ROOT'] )) ? $_SERVER['DOCUMENT_ROOT'] : '/home/workstatus-io/public_html';
 
 if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
-$rootDir = "/var/www/html/workstatus-wp";    
+    $rootDir = "/var/www/html/workstatus-wp/website";    
+}else{
+    $rootDir = "/home/workstatus-io/public_html";
 }
-
 require $rootDir.'/common/inc/config.inc.php';
 
 function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $emailCC = [], $emailBCC = [], $attachments = [], $cname = null ){
@@ -38,12 +39,12 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         }  
 
         $mail->isSMTP();
-        $mail->Host         = "mail.workstatus.io"; // SMTP server
-        $mail->SMTPSecure   = 'SSL';
-        $mail->Port         = 587;
+        $mail->Host         = "smtp.gmail.com"; // SMTP server
+        $mail->SMTPSecure   = 'ssl';
+        $mail->Port         = 465;
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'donotreply@workstatus.io';
-        $mail->Password     = 'bbmMBq5RMQ3-';
+        $mail->Username     = 'do-not-reply@workstatus.io';
+        $mail->Password     = 'avchvvlnqmtihxbp'; //zskxyarbhduvicwf
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );
