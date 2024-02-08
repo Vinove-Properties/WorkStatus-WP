@@ -125,7 +125,7 @@ get_header();
             </picture>
             <div class="cushed"><?php echo $sbText; ?></div>
             <div class="btn-container">
-              <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
+            <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
             </div>
           </div>
           <?php endif; ?>
