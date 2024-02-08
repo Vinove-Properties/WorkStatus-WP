@@ -6,8 +6,8 @@ get_header();
     <?php 
     $topCTA = get_field('ptop-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
-    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Where Creativity Meets Technology';
-    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Let's collaborate to create unforgettable digital experiences that drive results.";
+    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
+    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
     ?>
     <div class="cta-section">
       <div class="top-cta">
@@ -116,7 +116,7 @@ get_header();
           <?php 
           $sbCTA = get_field('sb-cta');  
           if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
-          $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Want to Outshine Competitors?';
+          $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Reduce Your Payroll Processing Time By 41%.';
           ?>
           <div class="customcta">
             <picture>
