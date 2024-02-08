@@ -15,12 +15,20 @@ if( function_exists('get_fields') ){
         rel="follow">
         </a>
         <?php 
-        if( has_post_thumbnail() ){
-          $postThumbnail = get_the_post_thumbnail_url( get_the_ID(), 'webp_thumb' );
-          echo '<picture>
-          <img loading="lazy" class="lazy" data-src="'.$postThumbnail.'" alt="'.get_the_title().'">
-          </picture>';
+        $pinThumb = get_field('post-cthumb');
+        if( isset( $pinThumb['url'] ) && !empty($pinThumb['url']) ){
+            echo '<picture>
+            <img loading="lazy" class="lazy" data-src="'.$pinThumb['url'].'" alt="'.get_the_title().'">
+            </picture>';
+        }else{
+          if( has_post_thumbnail() ){
+            $postThumbnail = get_the_post_thumbnail_url( get_the_ID(), 'webp_thumb' );
+            echo '<picture>
+            <img loading="lazy" class="lazy" data-src="'.$postThumbnail.'" alt="'.get_the_title().'">
+            </picture>';
+          }  
         }
+        
         ?>
         <?php //the_post_thumbnail('webp_thumb'); ?>          
         </a>
