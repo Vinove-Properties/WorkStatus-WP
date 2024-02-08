@@ -36,10 +36,14 @@ function showProductItem() {
 window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
     document.getElementById("masthead").classList.add("shady");
-    document.getElementById("ws-cmn-filter").classList.add("shady");
+    if( document.getElementById("ws-cmn-filter") ){
+    document.getElementById("ws-cmn-filter").classList.add("shady");  
+    }     
   }else{
     document.getElementById("masthead").classList.remove("shady");
-    document.getElementById("ws-cmn-filter").classList.remove("shady");
+    if( document.getElementById("ws-cmn-filter") ){
+      document.getElementById("ws-cmn-filter").classList.remove("shady");
+    }
   }
 });
 
@@ -376,6 +380,7 @@ if (btn2) {
 
 
 function closeNewsLetter(elm) {
+  //alert("Bingoo");
 	let clelm = document.getElementById(elm);
 	clelm.style.display = "none";
 }

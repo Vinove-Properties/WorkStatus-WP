@@ -1,7 +1,7 @@
 <?php
 if( ! defined( '_S_VERSION' ) ){
-    define( '_S_VERSION', '26.345.345' );
-    //define( '_S_VERSION', time() );
+    //define( '_S_VERSION', '26.345.345' );
+    define( '_S_VERSION', time() );
 }
 
 function ws_blog_setup() {

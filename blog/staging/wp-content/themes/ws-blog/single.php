@@ -4,9 +4,7 @@
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
-          <div class="ct-head">Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do.
-          </div>
+          <div class="ct-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="colMid">
@@ -43,7 +41,7 @@
             <div id="newsletterPopup" class="popup-wrapper">
               <div class="popWrap">
                 <div class="popup-content">
-                  <span class="closeicon" onclick="closeNewsLetter('newsletterPopup');"></span>
+                  <span class="closeicon-nw" onclick="closeNewsLetter('newsletterPopup');"></span>
                   <h3>Like What You’re Reading?</h3>
                   <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
                 </div>
@@ -66,7 +64,7 @@
                 <span class="author-name fn">Written by
                 <a href="https://www.workstatus.io/blog/">Varun Bhagat</a></span>
               </li>
-              <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
+              <!-- <li class="posted-on">Published <span class="dt">November 30, 2023</span></li> -->
             </ul>
           </div>
           <div class="social-icon-box">
@@ -88,7 +86,13 @@
   <div class="center content">
     <div class="second-row" id="stickytoc">
       <div class="buyers-guide">
-        <div class="vcb-col-left" id="vcb-col-left">
+        <div class="vcb-col-left" id="vcb-col-left">          
+          <div class="table-c">
+            <h3>Table of Contents</h3>
+            <div class="tocsec">
+              <?php dynamic_sidebar('ws-toc'); ?>
+            </div>
+          </div>
           <div class="customcta">
             <picture>
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="workstatus" 
@@ -97,12 +101,6 @@
             <div class="cushed">Lorem ipsum dolor<br>  sit amet, </div>
             <div class="btn-container">
               <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
-            </div>
-          </div>
-          <div class="table-c">
-            <h3>Table of Contents</h3>
-            <div class="tocsec">
-              <?php dynamic_sidebar('ws-toc'); ?>
             </div>
           </div>
           <div class="detail-subsbox">
