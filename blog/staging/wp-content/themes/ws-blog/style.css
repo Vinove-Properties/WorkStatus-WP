@@ -1002,6 +1002,8 @@ div.text blockquote {
  padding: 20px 30px;
  margin: 40px 0;
  background: #f3f1ff;
+ border-radius: 10px;
+
 }
 div.text blockquote::before {
  width: 4px;
@@ -1717,7 +1719,7 @@ filter:inherit;
 .ws-blogo a{display: inline-block; font-size: 18px; margin-left: 5px; color: #05164d;}
 .logo-white.ws-blogo a{color: #ffffff;}
 
-#ez-toc-container + h2{margin-top:0px;}
+#ez-toc-container + h2{margin-top:0px; padding-top: 20px;}
 
 
 
