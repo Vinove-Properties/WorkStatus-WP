@@ -19,7 +19,10 @@
           <div class="column column-content">
             <h6><span class="bg-purple"><?php echo $top_section['top-heading']; ?></span></h6>
             <h1>
-                              Maximize<br>  Productivity With 
+            <strong>Maximize Team 
+Productivity: </strong>From 
+Remote to In-Office
+                              <!--
                               <div class="bold-head">
                               
                                  <div class="hdtitle">
@@ -79,8 +82,9 @@
 
                                     
                                  </div>
-                              </div>
+                              </div>-->
                            </h1>
+                           <p>Elevate your business with our integrated time tracking and workforce management solutions, designed to boost efficiency and unlock peak productivity.</p>
             <div class="cont-wrap">
               <div class="actionBtn">
                 <?php if( geoCTAcheck() === true ) : ?>
