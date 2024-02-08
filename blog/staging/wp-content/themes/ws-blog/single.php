@@ -1,25 +1,47 @@
-<?php get_header(); ?>
+<?php 
+get_header(); 
+?>
 <main id="single" class="detail-page banner-section">
   <div class="container">
+    <?php 
+    $topCTA = get_field('ptop-cta');  
+    if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
+    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Where Creativity Meets Technology';
+    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Let's collaborate to create unforgettable digital experiences that drive results.";
+    ?>
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
-          <div class="ct-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="ct-head"><?php echo $heading; ?></div>
+          <p><?php echo $text; ?></p>
         </div>
         <div class="colMid">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/cta-image.svg" alt="workstatus" 
-              width="400" height="200"></noscript>
+              width="400" height="200">
           </picture>
         </div>
         <div class="ctaRit"><a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a></div>
       </div>
     </div>
+    <?php endif; ?>
     <div class="top-header-section">
       <div class="searchdiv">
         <div class="breadcrumbs">
-          <a href="https://www.workstatus.io/blog/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer" class="pxl-ext">Blog</a><a href="#" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer" class="pxl-ext">Workforce management</a><a class="active pxl-ext" href="https://www.pixelcrayons.com/blog/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">Monitask Alternative: Why Workstatus Outshines Monitask</a> 
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Blog</a>
+        <?php
+        $categories = get_the_category();
+        if ( ! empty( $categories ) ) {
+        foreach ( $categories as $category ) {
+          echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) .'</a>';
+        }
+        }
+        if( get_field('bc-title') ){
+        the_field('bc-title');
+        }else{
+        the_title();
+        }
+        ?>
         </div>
         <div class="btn-section dis-flex">
           <button  class="searchsubmit" value="search" id="myBtn"></button>
@@ -80,9 +102,7 @@
         </div>
       </div>
     </div>
-    <div class="detail-thumb">
-      <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
-    </div>
+    <div class="detail-thumb"><?php the_post_thumbnail( 'single-post-thumbnail' ); ?></div>
   <div class="center content">
     <div class="second-row" id="stickytoc">
       <div class="buyers-guide">
@@ -93,16 +113,22 @@
               <?php dynamic_sidebar('ws-toc'); ?>
             </div>
           </div>
+          <?php 
+          $sbCTA = get_field('sb-cta');  
+          if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
+          $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Want to Outshine Competitors?';
+          ?>
           <div class="customcta">
             <picture>
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="workstatus" 
-                width="299" height="142">
+                width="299" height="129">
             </picture>
-            <div class="cushed">Lorem ipsum dolor<br>  sit amet, </div>
+            <div class="cushed"><?php echo $sbText; ?></div>
             <div class="btn-container">
               <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
             </div>
           </div>
+          <?php endif; ?>
           <div class="detail-subsbox">
             <h3>Subscribe to our blog</h3>
             <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
