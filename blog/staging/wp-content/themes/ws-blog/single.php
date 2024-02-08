@@ -155,9 +155,13 @@ get_header();
             <?php the_tags('<h4 class="tag-title title usmall">'.esc_html__('Tags:', 'reco').'</h4>', ' '); ?>
           </div>
           <?php endif; ?>
+
+          <?php /* ?>
           <section class="upd-cusbanner email-subscribe" style="margin-top:0;">
             <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
           </section>
+          <?php */ ?>
+          
         </div>
         <!-- .right -->
       </div>
