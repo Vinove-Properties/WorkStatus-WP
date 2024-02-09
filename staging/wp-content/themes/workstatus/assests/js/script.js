@@ -959,12 +959,13 @@ function downloadEbookHandler(e){
     return false;
 }
 
-const su_name   = document.getElementById("su-name");
-const su_email  = document.getElementById("su-email");
-const su_pcode  = document.getElementById("su-pcode");
-const su_phone  = document.getElementById("su-phone");
-const su_pass   = document.getElementById("su-password");
-const su_cpass  = document.getElementById("su-cpassword");
+const su_name       = document.getElementById("su-name");
+const su_email      = document.getElementById("su-email");
+const su_pcode      = document.getElementById("su-pcode");
+const su_phone      = document.getElementById("su-phone");
+const su_pass       = document.getElementById("su-password");
+const su_cpass      = document.getElementById("su-cpassword");
+const wrap_suform   = document.getElementById("formPopup-su");
 
 function nameCheck_su(event){
   checkLength(su_name,1,15);
@@ -974,14 +975,17 @@ function emailCheck_su(event){
     checkEmail(su_email);
 }
 
+if( su_pcode ){
 su_pcode.addEventListener('change', function(){
     if( this.value !== "" ){
         showSucces( su_pcode );
     }else{
         showError( su_pcode, "Pleasee select country code." )
-    }
-  
-});
+    }  
+});    
+}
+
+
 function phoneCheck_su(event){
     checkLength(su_phone,7,20);
     //phonenumber(su_phone);
@@ -1031,10 +1035,13 @@ su_email.addEventListener("focusin", function(){
     doNotingonFocus( su_email );
 });
 
-su_phone.addEventListener("keyup", phoneCheck_su);
-su_phone.addEventListener("keypress", phoneCheck_su);
-su_phone.addEventListener("keydown", ws_checkphonenumber);
-su_phone.addEventListener("focusout", phoneCheck_su);
+if( su_phone ){
+    su_phone.addEventListener("keyup", phoneCheck_su);
+    su_phone.addEventListener("keypress", phoneCheck_su);
+    su_phone.addEventListener("keydown", ws_checkphonenumber);
+    su_phone.addEventListener("focusout", phoneCheck_su);    
+}
+
 
 su_pass.addEventListener("keyup", passCheck_su);
 su_pass.addEventListener("keypress", passCheck_su);
@@ -1055,34 +1062,48 @@ suchkPolicy.addEventListener('change', (event) => {
     if( elm.classList.contains('ws-error') ) errCount =  false;
   });    
 
+
   if(event.currentTarget.checked && (errCount === true) ){
-    if( 
-    ( vcSpaceChecker(su_email.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_cpass.value.trim()) === true )
-    ){
-        suformBtn.disabled = false;
-    }    
-  }else{
-    suformBtn.disabled = true;
-  }
+    if( wrap_suform.classList.contains('locate-in') ){
+        if(
+        ( vcSpaceChecker(su_email.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_name.value.trim()) === true ) &&
+        
+        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
+
+        ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_cpass.value.trim()) === true )
+        ){
+            suformBtn.disabled = false;
+        }
+    }else{
+        if(
+        ( vcSpaceChecker(su_email.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_name.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_cpass.value.trim()) === true )
+        ){
+            suformBtn.disabled = false;
+        }
+        
+    }
+ }else{
+        suformBtn.disabled = true;
+    }
 })
 
 let sup_inputs  = document.querySelectorAll('#formPopup-su .form-group input');
-let inputValidator = {
-    "uname": false,
-    "uemail": false,
-    "phone": false,
-    "password": false,
-    "cnf_password": false
+
+let inputValidator = { "uname":false, "uemail": false, "password":false, "cnf_password":false}
+if( wrap_suform.classList.contains('locate-in') ){
+inputValidator = { "uname":false, "uemail": false, "phone":false, "password":false, "cnf_password":false}    
 }
+console.log( inputValidator );
+
 let buttonSend = document.getElementById('su-submitButton');
 sup_inputs.forEach((input) => {
     input.addEventListener('focusout', () => {
-        console.log("Working...UIUIUI");
         let name = event.target.getAttribute('name');
         if( input.parentElement.classList.contains('ws-error') ){
             inputValidator[name] = false;
@@ -1097,16 +1118,11 @@ sup_inputs.forEach((input) => {
         if(allTrue){
             if( suchkPolicy.checked ){
                 buttonSend.disabled = false;
-                console.log("Bingooo..111");
             }else{
                 buttonSend.disabled = true;
-                console.log("Bingooo..222");
-            }            
-        //console.log("Bingooo..");
+            }
         }else{
             buttonSend.disabled = true;
-            console.log("Bingooo..333");
-            //console.log("Bingooo..1122@@@");
         }
     });
 });
@@ -1130,12 +1146,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function signupFrmValidation(e){
-    checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
+    let geocheck = true;
+    if( wrap_suform.classList.contains('locate-in') ){
+        checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
+        if( ( vcSpaceChecker(su_pcode.value.trim()) === false ) || ( vcSpaceChecker(su_phone.value.trim()) === false ) ){
+        geocheck = false;
+        }
+    }else{
+        checkRequired([su_name, su_email, su_pass, su_cpass]);
+    }
     if(
         ( vcSpaceChecker(su_email.value.trim()) === true ) &&
         ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
+        ( geocheck === true ) &&
+        //( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
+        //( vcSpaceChecker(su_phone.value.trim()) === true ) &&        
         ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
         ( vcSpaceChecker(su_cpass.value.trim()) === true )
     ){
@@ -1144,7 +1169,7 @@ function signupFrmValidation(e){
             return false;
         }
 
-        if( checkLength(su_phone,7,20) === false ){
+        if( su_phone && (checkLength(su_phone,7,20) === false) ){
             return false;
         }
 
