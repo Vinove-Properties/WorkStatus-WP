@@ -1805,15 +1805,15 @@ function ws_signup_api_cb(){
 	//print_r($data); die;
 	$userIP 	= (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == "localhost")) ? '47.31.154.223' : ws_get_userIPaddr();
 	$reqData 	= array(
-		'name' 			=> $data['uname'],
-		'email' 		=> $data['uemail'],
-		'password' 		=> $data['password'],
-		'phone' 		=> $data['phone'],
-		'phone_country_code_id' => tempWsPhoneCode($data['pcode']),
-		'ip_address' 	=> $userIP,
-		'pid' 			=> $data['pid'],
-		'type' 			=> $data['type'],
-		'source_url' 	=> $data['src_page']
+	'name' 			=> $data['uname'],
+	'email' 		=> $data['uemail'],
+	'password' 		=> $data['password'],
+	'phone' 		=> (isset($data['phone']) && !empty($data['phone'])) ? $data['phone'] : '',
+	'phone_country_code_id' => (isset($data['pcode']) && !empty($data['pcode'])) ? tempWsPhoneCode($data['pcode']) : '',
+	'ip_address' 	=> $userIP,
+	'pid' 			=> $data['pid'],
+	'type' 			=> $data['type'],
+	'source_url' 	=> $data['src_page']
 	);
 	
 	$apiCall = "https://api.staging.workstatus.io/api/v1/signUp";
