@@ -82,3 +82,25 @@ function wsGetProducitivityCalc( e, type ){
     var productivityPerHour = ( (hoursWorked * numTeamMembers) / costOfGoodsSold ) / hoursWorked;
     document.getElementById("pro-output").innerHTML = productivityPerHour.toFixed(2);
 }
+
+function ws_calculateROI(){
+    var numEmployees = parseFloat(document.getElementById("numEmployees").value);
+    var hourlyWage = parseFloat(document.getElementById("hourlyWage").value);
+    var hoursPerWeek = parseFloat(document.getElementById("hoursPerWeek").value);
+    var unproductivePercentage = parseFloat(document.getElementById("unproductivePercentage").value) / 100;
+    var timesheetErrorPercentage = parseFloat(document.getElementById("timesheetErrorPercentage").value) / 100;
+    var timeSpentHR = parseFloat(document.getElementById("timeSpentHR").value);
+    var softwareCost = parseFloat(document.getElementById("softwareCost").value);
+    
+    var weeklyCostUnproductive = numEmployees * hourlyWage * hoursPerWeek * unproductivePercentage;
+    var productivityGains = weeklyCostUnproductive * 0.5; // Assuming 50% reduction
+    var weeklyCostTimesheetErrors = numEmployees * hourlyWage * hoursPerWeek * timesheetErrorPercentage;
+    var timesheetSavings = weeklyCostTimesheetErrors * 0.9; // Assuming 90% reduction
+    var timeSavingsHR = timeSpentHR * hourlyWage;
+    var totalPotentialWeeklySavings = productivityGains + timesheetSavings + timeSavingsHR;
+    var totalPotentialAnnualSavings = totalPotentialWeeklySavings * 52;
+    var netROI = totalPotentialAnnualSavings - softwareCost;
+
+    document.getElementById("potentialSavings").innerHTML = "$" + totalPotentialAnnualSavings.toFixed(2);
+    document.getElementById("netROI").innerHTML = "$" + netROI.toFixed(2);
+}

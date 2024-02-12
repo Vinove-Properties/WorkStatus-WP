@@ -62,7 +62,9 @@ global $ws_ctas, $RegLink, $LogLink;
     #elm-maps.sel-mobile .box-wrap.sel-web{display:none;}
     #elm-maps.sel-mobile .box-wrap.sel-mobile{display:block;}
     body.modal-open{overflow:hidden;}
- 
+     
+    .hero-banner .inner-wrap #wsroi-calculator .calculator{margin-bottom: 20px;}
+    .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
 
   </style>
   <?php if( isBetaVersion() === false ) : ?>

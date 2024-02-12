@@ -12,8 +12,9 @@ if( $bannerType && ($bannerType === "form") ){
         <h1><?php the_title(); ?></h1>
       </div>
    <div class="salary-calculator">
-      <?php get_template_part('inc/calc/productivity', 'calculator'); ?>
+      <?php //get_template_part('inc/calc/productivity', 'calculator'); ?>
       <?php //get_template_part('inc/calc/wagerate', 'calculator'); ?>
+      <?php get_template_part('inc/calc/roi', 'calculator'); ?>
     </div>
     </div>
   </div>
@@ -22,9 +23,7 @@ if( $bannerType && ($bannerType === "form") ){
 <div class="banner-option">
   <div class="container">
   <div class="entry-header">
-    <div class="cat">
-      <a href="javascript:void(0);" rel="category tag"><?php echo get_field('rpost-type'); ?></a>
-    </div>
+    <div class="cat"><a href="javascript:void(0);" rel="category tag"><?php echo get_field('rpost-type'); ?></a></div>
     <h1><?php the_title(); ?></h1>
   </div>
   <div class="blog-image">
@@ -38,7 +37,7 @@ if( $bannerType && ($bannerType === "form") ){
       </div>
   </div>
   </div>
-  </div>
+</div>
 <?php } ?>
 <div class="resource-wrap">
   <div class="container">
