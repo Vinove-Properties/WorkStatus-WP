@@ -93,7 +93,7 @@ $conArray   = $conData->response->data;
             </div>
             <div id="xd-form" class="right-section">
                <div class="sucmsg">
-                  <h3>THANK YOU</h3>
+                  <h3>THANK YOU!</h3>
                   <p>Your registration was successful. As a next step, we've sent you an email to confirm your email address. Once confirmed, you will be good to login & use the system.</p>
                </div>
                <h2>Empower Your Team: Get Started Now</h2>

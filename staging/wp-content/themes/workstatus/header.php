@@ -65,6 +65,8 @@ global $ws_ctas, $RegLink, $LogLink;
      
     .hero-banner .inner-wrap #wsroi-calculator .calculator{margin-bottom: 20px;}
     .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
+    .wsf-signup .popup-content .right-section.signup-success .sucmsg h3{color: #110302 !important; }
+    .wsf-signup .popup-content .right-section.signup-success .sucmsg p{color: #737b7d !important; }
 
   </style>
   <?php if( isBetaVersion() === false ) : ?>
