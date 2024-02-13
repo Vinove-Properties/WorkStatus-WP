@@ -4032,16 +4032,16 @@ h3 a {
         color: red; }
       .wsf-signup .popup-content .right-section .sucmsg {
         display: none; }
-      .wsf-signup .popup-content .right-section .signup-success form {
+      .wsf-signup .popup-content .right-section.signup-success form {
         display: none; }
-      .wsf-signup .popup-content .right-section .signup-success h2 {
+      .wsf-signup .popup-content .right-section.signup-success h2 {
         display: none; }
-      .wsf-signup .popup-content .right-section .signup-success .sucmsg {
+      .wsf-signup .popup-content .right-section.signup-success .sucmsg {
         display: block;
         padding-top: 50%; }
-        .wsf-signup .popup-content .right-section .signup-success .sucmsg h3 {
+        .wsf-signup .popup-content .right-section.signup-success .sucmsg h3 {
           font-weight: 600; }
-        .wsf-signup .popup-content .right-section .signup-success .sucmsg p {
+        .wsf-signup .popup-content .right-section.signup-success .sucmsg p {
           font-size: 16px;
           color: green; }
     .wsf-signup .popup-content .ws-error .infiled {
@@ -4177,9 +4177,9 @@ h3 a {
           padding: 0 10px !important; }
           .wsf-signup .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
             padding: 6px 0; }
-        .wsf-signup .wsf-signup .popup-content .right-section .signup-success .sucmsg {
+        .wsf-signup .wsf-signup .popup-content .right-section.signup-success .sucmsg {
           padding-top: 0; }
-          .wsf-signup .wsf-signup .popup-content .right-section .signup-success .sucmsg p {
+          .wsf-signup .wsf-signup .popup-content .right-section.signup-success .sucmsg p {
             font-size: 14px; }
     .wsf-signup .wsf-signup:after {
       display: none; }
