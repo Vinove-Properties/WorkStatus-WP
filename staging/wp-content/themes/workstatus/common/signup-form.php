@@ -8,7 +8,7 @@ $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
 ?>
 <div class="banner-form wsf-signup">
-<div id="formPopup-su" class="popup-wrapper <?php echo (isset($_GET['free-trial'])) ? 'is-active' : ''; echo $popClass; ?>" style="display:block;">
+<div id="formPopup-su" class="popup-wrapper <?php echo (isset($_GET['free-trial'])) ? 'is-active' : ''; echo $popClass; ?>" style="display:none;">
       <div class="popWrap">
          <div class="popup-content p-0">
             <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
@@ -91,7 +91,7 @@ $conArray   = $conData->response->data;
                   </div>
                </div>
             </div>
-            <div id="xd-form" class="right-section signup-success">
+            <div id="xd-form" class="right-section">
                <div class="sucmsg">
                   <h3>THANK YOU</h3>
                   <p>Your registration was successful. As a next step, we've sent you an email to confirm your email address. Once confirmed, you will be good to login & use the system.</p>
