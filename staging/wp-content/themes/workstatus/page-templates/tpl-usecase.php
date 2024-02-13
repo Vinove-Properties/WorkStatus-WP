@@ -112,7 +112,7 @@ global $ws_ctas, $RegLink, $LogLink;
         $bsEnabled         = $financialmanage['is_enabled'];
         if ($bsEnabled == 'yes') :
         ?>
-            <div class="item">
+            <div class="item" id="acf-financial_management">
                 <div class="container">
                     <div class="top-section">
                         <h6><span class="bg-purple"><?php echo $financialmanage['heading']; ?></span></h6>
@@ -185,7 +185,7 @@ global $ws_ctas, $RegLink, $LogLink;
         $bsEnabled         = $expense_management['is_enabled'];
         if ($bsEnabled == 'yes') :
         ?>
-            <div class="item">
+            <div class="item" id="acf-expense_management">
                 <div class="container">
                     <div class="top-section">
                         <h6><span class="bg-purple"><?php echo $expense_management['heading']; ?></span></h6>
@@ -253,16 +253,27 @@ global $ws_ctas, $RegLink, $LogLink;
                     </div>
                 </div>
             </div>
-        <?php
-
-        endif; ?>
+        <?php endif; ?>
+        <section class="dwnload post-animation">
+        <div class="container">
+        <div class="dis-flex">
+        <div class="dwnleft">
+        <h2>Boost Development Teams’ Productivity By 42%</h2>
+        <p>Transform Team Challenges into Opportunities for Growth</p>
+        </div>
+        <div class="dwnright">
+        <a href="https://www.workstatus.io/staging/productivity-ebook" rel="nofollow" class="primary_btn1">Download Now</a>
+        </div>
+        </div>
+        </div>
+        </section>
         <?php
         $attendance_management = get_field('attendance_management');
         $bsEnabled         = $attendance_management['is_enabled'];
         if ($bsEnabled == 'yes') :
         ?>
 
-            <div class="item">
+            <div class="item" id="acf-attendance_management">
                 <div class="container">
                     <div class="top-section">
                         <h6><span class="bg-purple"><?php echo $attendance_management['heading']; ?></span></h6>
@@ -337,7 +348,7 @@ global $ws_ctas, $RegLink, $LogLink;
         $bsEnabled         = $focus_management['is_enabled'];
         if ($bsEnabled == 'yes') :
         ?>
-            <div class="item">
+            <div class="item" id="acf-focus_management">
                 <div class="container">
                     <div class="top-section">
                         <h6><span class="bg-purple"><?php echo $focus_management['heading']; ?></span></h6>
