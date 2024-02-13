@@ -12,9 +12,9 @@ if( $bannerType && ($bannerType === "form") ){
         <h1><?php the_title(); ?></h1>
       </div>
    <div class="salary-calculator">
-      <?php //get_template_part('inc/calc/productivity', 'calculator'); ?>
+      <?php get_template_part('inc/calc/productivity', 'calculator'); ?>
       <?php //get_template_part('inc/calc/wagerate', 'calculator'); ?>
-      <?php get_template_part('inc/calc/roi', 'calculator'); ?>
+      <?php //get_template_part('inc/calc/roi', 'calculator'); ?>
     </div>
     </div>
   </div>
