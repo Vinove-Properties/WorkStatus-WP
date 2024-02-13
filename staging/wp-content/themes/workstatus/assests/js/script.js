@@ -1194,6 +1194,7 @@ function signupFrmValidation(e){
                 //console.log( response.resp );
                 if( response.response.code == "200" ){
                     const xdForm = document.getElementById("xd-form");
+                    xdForm.classList.add('signup-success');
                     spnMsg.classList.add('success');                    
                     e.reset();
                 }else{
