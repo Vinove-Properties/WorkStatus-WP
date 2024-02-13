@@ -7622,7 +7622,7 @@ h3 a {
   .hero-banner br {
     display: none; } }
 .ebookhead .site__header {
-  background: #6754e2; }
+  background: transparent; }
 
 h3 a {
   color: #110302; }
@@ -8059,16 +8059,16 @@ h6.inherit, p.inherit {
           color: #5e6373;
           margin: 0 0 10px;
           position: relative;
-          padding-left: 20px; }
+          padding-left: 30px; }
           .overview .dis-flex .colleft ul li:before {
-            content: "";
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            background: #5e6373;
-            position: absolute;
-            top: 8px;
-            left: 0; }
+            content: '';
+            display: inline-block;
+            background: url(../images/list-icon-small.png) no-repeat;
+            width: 30px;
+            height: 30px;
+            top: 3px;
+            left: 0;
+            position: absolute; }
     .overview .dis-flex .colRit {
       flex-basis: 50%;
       padding: 30px; }
@@ -8191,6 +8191,9 @@ h6.inherit, p.inherit {
 
   .sd-banner {
     height: initial;
-    padding: 100px 0 50px; } }
+    padding: 100px 0 50px; }
+
+  .overview .dis-flex .colleft ul li:before {
+    top: 1px; } }
 
 /*# sourceMappingURL=platform.css.map */
