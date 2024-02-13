@@ -2105,7 +2105,8 @@ h3 a {
         color: #fff;
         border: 0;
         font-size: 16px;
-        margin: 20px 0 0; }
+        margin: 20px 0 0;
+        cursor: pointer; }
         .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn:hover {
           background: #333; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group button[disabled="disabled"],
@@ -2481,7 +2482,8 @@ a:-webkit-any-link:focus-visible {
     color: #fff;
     height: 52px;
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 30px; }
     .banner-form .btn:hover {
       background: #333333; }
     .banner-form .btn:focus {
@@ -7482,3 +7484,5 @@ input[placeholder],
 
   .timecalcuator .time-table .input-group span {
     padding: 0 3px; } }
+
+/*# sourceMappingURL=time-calculator.css.map */

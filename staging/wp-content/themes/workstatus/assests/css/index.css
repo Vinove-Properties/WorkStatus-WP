@@ -2105,7 +2105,8 @@ h3 a {
         color: #fff;
         border: 0;
         font-size: 16px;
-        margin: 20px 0 0; }
+        margin: 20px 0 0;
+        cursor: pointer; }
         .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn:hover {
           background: #333; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group button[disabled="disabled"],
@@ -2137,9 +2138,9 @@ h3 a {
   font-size: 11px;
   font-weight: 500;
   position: absolute;
-  top: -120px;
-  left: -166px;
-  width: 230px;
+  top: -157px;
+  left: -135px;
+  width: 200px;
   border-radius: 3px;
   background: #525F7F;
   color: #ffffff !important;
@@ -2262,9 +2263,7 @@ h3 a {
       display: none; }
   .wsf-signup .info-lbl span.tolltip {
     top: -155px;
-    left: 0; }
-    .wsf-signup .info-lbl span.tolltip:after {
-      display: none; } }
+    left: 0; } }
 @media (max-width: 767px) {
   .wsf-signup .form-wrap {
     padding-bottom: 0; }
@@ -2483,7 +2482,8 @@ a:-webkit-any-link:focus-visible {
     color: #fff;
     height: 52px;
     display: block;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 30px; }
     .banner-form .btn:hover {
       background: #333333; }
     .banner-form .btn:focus {
@@ -3191,6 +3191,7 @@ ul li {
     border-radius: 5px;
     font-size: 18px;
     text-align: center;
+    border-radius: 30px;
     font-weight: 500; }
     .btnSc .ctbtn:hover {
       background: #051441;
@@ -3255,7 +3256,8 @@ ul li {
   border-radius: 5px;
   font-size: 18px;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 500;
+  border-radius: 30px; }
   .ctbtn:hover {
     background: #051441;
     border-color: #051441;
@@ -3502,7 +3504,7 @@ section {
 
 .whitetxt {
   color: #fff; }
-  .whitetxt p, .whitetxt h2, .whitetxt a {
+  .whitetxt p, .whitetxt h2, .whitetxt h3, .whitetxt a {
     color: #fff; }
   .whitetxt .top-section p, .whitetxt h2 {
     color: #fff !important; }
@@ -3540,9 +3542,11 @@ section {
   text-align: center;
   margin-top: 40px; }
   .actionBtn .primary_btn1 {
-    padding: 14px 24px 16px; }
+    padding: 14px 24px 16px;
+    border-radius: 30px; }
   .actionBtn .primary_btn2 {
-    padding: 14px 24px 15px; }
+    padding: 14px 24px 15px;
+    border-radius: 30px; }
   .actionBtn a:hover {
     text-decoration: none; }
 
@@ -5780,7 +5784,7 @@ h3 a {
   height: 41px;
   line-height: 1.2;
   border: 0;
-  border-radius: 4px; }
+  border-radius: 20px; }
   @media screen and (max-width: 767px) {
     .regBtn .primary_btn1 {
       padding: 12px 20px; } }
@@ -6429,14 +6433,24 @@ h3 a {
     margin-left: 20px; }
     .site_nav .login a {
       background: #fff;
-      color: #6754e2 !important;
+      color: #171227 !important;
+      border-radius: 30px;
       display: flex;
       align-items: center;
-      padding: 13px 12px;
+      padding: 13px 30px;
       line-height: 1;
       height: 50px;
       font-size: 16px;
       border: 1px solid transparent; }
+      .site_nav .login a:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-size: 24px !important;
+        vertical-align: middle;
+        background: url(../images/button-arw.png) no-repeat; }
       .site_nav .login a i {
         background: url("../images/icon-login.png") no-repeat;
         background-position: 0 -39px;
@@ -6446,6 +6460,8 @@ h3 a {
       .site_nav .login a:hover {
         background: #051441;
         color: #fff !important; }
+        .site_nav .login a:hover:after {
+          background: url(../images/button-arwhover.png) no-repeat; }
         .site_nav .login a:hover i {
           background: url("../images/login-icon.png") no-repeat;
           width: 14px;
@@ -6627,6 +6643,15 @@ h3 a {
     display: flex;
     align-items: center;
     background: #624de3; }
+    .site__header.shady .login a:after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      background-size: 24px !important;
+      vertical-align: middle;
+      background: url(../images/button-arwhover.png) no-repeat; }
   .site__header.shady .login:hover a {
     background: #051441; }
 
@@ -6963,7 +6988,10 @@ h3 a {
     top: 50px; }
 
   .site_nav .dropdown:hover > a:after {
-    display: none; } }
+    display: none; }
+
+  .site_nav .login a:after {
+    background: url(../images/button-arwhover.png) no-repeat; } }
 @media (max-width: 979px) {
   .site_nav .mega-menu .mega-menu-box li {
     width: 100%;
@@ -8078,3 +8106,5 @@ h3 a {
     top: -30px; } }
 .home .slide_shape_section .shape {
   display: none; }
+
+/*# sourceMappingURL=index.css.map */
