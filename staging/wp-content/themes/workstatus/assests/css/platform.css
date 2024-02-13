@@ -7997,7 +7997,7 @@ h6.inherit, p.inherit {
 
 .sd-banner {
   width: 100%;
-  height: 625px;
+  height: 550px;
   padding: 0;
   background: #4231ac;
   color: #fff;
@@ -8008,7 +8008,7 @@ h6.inherit, p.inherit {
 .overview {
   padding: 0;
   padding-bottom: 80px;
-  margin-top: -270px; }
+  margin-top: -256px; }
   @media screen and (max-width: 575px) {
     .overview {
       padding: 50px 0; } }
@@ -8032,7 +8032,7 @@ h6.inherit, p.inherit {
         .overview .dis-flex .colleft {
           flex-basis: 100%; } }
       .overview .dis-flex .colleft .box {
-        margin: 30px 0 0; }
+        margin: 20px 0 0; }
         @media screen and (max-width: 575px) {
           .overview .dis-flex .colleft .box {
             margin: 20px 0 0; } }
@@ -8050,7 +8050,7 @@ h6.inherit, p.inherit {
         padding: 0; }
         .overview .dis-flex .colleft ul li {
           color: #5e6373;
-          margin: 0 0 15px;
+          margin: 0 0 10px;
           position: relative;
           padding-left: 20px; }
           .overview .dis-flex .colleft ul li:before {
@@ -8076,7 +8076,7 @@ h6.inherit, p.inherit {
         border-radius: 30px;
         padding: 0; }
         .overview .dis-flex .colRit .formbox form {
-          padding: 10px 40px 40px; }
+          padding: 5px 40px 40px; }
           @media screen and (max-width: 575px) {
             .overview .dis-flex .colRit .formbox form {
               padding: 10px 0px 30px; } }
@@ -8087,7 +8087,7 @@ h6.inherit, p.inherit {
             border-radius: 0; } }
         .overview .dis-flex .colRit .formbox h3 {
           text-align: center;
-          padding: 20px;
+          padding: 15px;
           border-bottom: 3px solid rgba(74, 61, 155, 0.04); }
         .overview .dis-flex .colRit .formbox .form-wrap {
           width: 100%;
@@ -8097,7 +8097,7 @@ h6.inherit, p.inherit {
           .overview .dis-flex .colRit .formbox .form-wrap .form-group {
             position: relative;
             width: 100%;
-            margin: 0 0 15px; }
+            margin: 0 0 12px; }
             .overview .dis-flex .colRit .formbox .form-wrap .form-group #phone-error {
               position: initial; }
             @media screen and (max-width: 575px) {
@@ -8111,7 +8111,7 @@ h6.inherit, p.inherit {
             .overview .dis-flex .colRit .formbox .form-wrap .form-group input {
               width: 100%;
               color: #737b7d;
-              height: 50px;
+              height: 47px;
               border: 0;
               border: 1px solid #d4e0ed;
               border-radius: 10px;
@@ -8135,7 +8135,7 @@ h6.inherit, p.inherit {
               height: 55px;
               display: block;
               cursor: pointer;
-              margin: 25px 0 0;
+              margin: 20px 0 0;
               border-radius: 100px; }
               @media screen and (max-width: 575px) {
                 .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
@@ -8163,6 +8163,11 @@ h6.inherit, p.inherit {
 .ebook .flex_row ul li {
   flex-basis: 100%; }
 
+@media screen and (max-width: 1440px) {
+  .overview .dis-flex .colRit .formbox .form-wrap .form-group .btn {
+    font-size: 18px;
+    margin: 15px 0 0;
+    height: 50px; } }
 @media screen and (max-width: 1220px) {
   .overview {
     margin-top: -220px; } }
