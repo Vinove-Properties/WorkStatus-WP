@@ -1193,6 +1193,7 @@ function signupFrmValidation(e){
                 let response = JSON.parse( this.responseText );
                 //console.log( response.resp );
                 if( response.response.code == "200" ){
+                    const xdForm = document.getElementById("xd-form");
                     spnMsg.classList.add('success');                    
                     e.reset();
                 }else{
