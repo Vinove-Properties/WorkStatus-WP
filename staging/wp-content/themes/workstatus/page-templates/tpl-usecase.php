@@ -254,19 +254,23 @@ global $ws_ctas, $RegLink, $LogLink;
                 </div>
             </div>
         <?php endif; ?>
+        
+        <?php 
+        $dwnloadSection = get_field('download_section');
+        if( isset($dwnloadSection['is_enabled']) && ($dwnloadSection['is_enabled'] == "yes") ) : 
+        ?>
         <section class="dwnload post-animation">
         <div class="container">
         <div class="dis-flex">
-        <div class="dwnleft">
-        <h2>Boost Development Teams’ Productivity By 42%</h2>
-        <p>Transform Team Challenges into Opportunities for Growth</p>
-        </div>
+        <div class="dwnleft"><?php echo $dwnloadSection['content']; ?></div>
         <div class="dwnright">
-        <a href="https://www.workstatus.io/staging/productivity-ebook" rel="nofollow" class="primary_btn1">Download Now</a>
+        <a href="<?php echo site_url( $dwnloadSection['link'] ); ?>" class="primary_btn1">Download Now</a>
         </div>
         </div>
         </div>
         </section>
+        <?php endif; ?>
+
         <?php
         $attendance_management = get_field('attendance_management');
         $bsEnabled         = $attendance_management['is_enabled'];
