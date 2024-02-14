@@ -139,8 +139,11 @@ get_header();
             <div class="text">
               <?php 
                 while(have_posts()) : the_post();
+                  echo '<div class="wp-content-dt">';
                 	the_content();
+                  echo '</div>';
                 endwhile;	
+                do_action('ws_sgl_condata');
                 ?>
             </div>
             <div class="clear"></div>

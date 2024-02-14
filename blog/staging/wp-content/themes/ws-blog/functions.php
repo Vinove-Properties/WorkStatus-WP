@@ -536,6 +536,7 @@ $haspostPdflink = get_post_meta( $post->ID, 'vc-post-pdf', true );
 /*
 Code to display related posts on single post.
 */
+/*
 add_filter( 'the_content', function( $content ){
   if ( is_singular() ){
         $data = '<div class="upd-cusbanner cmn-vbanner">
@@ -579,6 +580,51 @@ add_filter( 'the_content', function( $content ){
       }
   }
   return $content;
+});
+*/
+
+add_action('ws_sgl_condata', function(){
+    $data = '<div class="upd-cusbanner cmn-vbanner">
+    <div class="cta-title">Finding it hard to maintain team efficiency in today’s dynamic work environment?</div>
+    <p class="heading">Learn how to adapt and thrive with our actionable tips in this insightful video.</p>
+    <div class="ctasec">
+    <a class="bkdemo" onclick="showIntoVideo();" href="javascript:void(0);">Watch the Video</a>
+    </div>
+    </div>';
+    if ( is_singular() ){        
+      global $post;
+      $thisPost = $post->ID;
+      $cats = wp_get_post_categories( $thisPost );
+      if( $cats ){
+      $args = array( 'category__in' => $cats, 'post__not_in' => array( $thisPost ), 'posts_per_page' => 3 );
+      $loop = new WP_Query($args);
+      
+      if( $loop->have_posts() ) {
+        $data .= '<div class="nv-tags-list"><span>Tags:</span>';
+        $tags = get_the_tags($post->ID);
+        if( $tags ){
+        foreach ( $tags as $tag ) {
+        $data .= '<a href="'.get_tag_link($tag->term_id).'">'.$tag->name.'</a>';
+        }     
+        }
+
+        $data .= '</div>';
+        $data .= '<div class="row"><div class="post-rel-sec">';
+        $data .= '<h3>Related Stories</h3>';
+        $data .= '<div class="row">';
+        while($loop->have_posts()) : $loop->the_post();
+          $pid = get_the_ID();
+          $data .= '<div id="post-'.$pid.'" class="col-md-4 col-sm-12 col-12 reBox">
+          <a href="'.esc_url(get_permalink($pid)).'" rel="bookmark follow noopener" title="" data-wpel-link="internal" target="_self">'.get_the_post_thumbnail($pid).'</a>
+          <h5 class="blog-entry-title entry-title"><a href="'.esc_url(get_permalink($pid)).'" rel="bookmark follow noopener" data-wpel-link="internal" target="_self">'.get_the_title($pid).'</a></h5>
+          </div>';
+        endwhile;
+        wp_reset_postdata();    
+        $data .= '</div></div></div>';
+      }
+      }
+  }
+  echo $data;
 });
 
 function wsBlogUserIP(){
