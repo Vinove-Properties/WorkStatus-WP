@@ -837,7 +837,7 @@ if( isset( $sup_devices['is_enable'] ) && ($sup_devices['is_enable'] == "yes") )
         <p>UAE : 541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p>
       </div>
       <div class="flex-4">
-        <p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurgaon, Haryana, India- 122001
+        <p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001
         </p>
       </div>
       <div class="flex-4">
