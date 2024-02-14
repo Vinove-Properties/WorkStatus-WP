@@ -116,7 +116,7 @@ get_header();
           <?php 
           $sbCTA = get_field('sb-cta');  
           if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
-          $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Reduce Your Payroll Processing Time By 41%.';
+          $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Reduce Your Payroll Processing Time By 41%';
           ?>
           <div class="customcta">
             <picture>

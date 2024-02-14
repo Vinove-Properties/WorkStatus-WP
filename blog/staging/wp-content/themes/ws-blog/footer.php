@@ -160,11 +160,16 @@
 </footer>
 <?php 
 
-/*
+
 if( is_single() ){
-  get_template_part('inc/pdownload', 'form'); 
+echo '<div class="banner-form inv-pop">
+<div id="sgl-vpop" class="popup-wrapper">
+<div class="popWrap">
+<div class="popup-content">
+<span onclick="gblClosePopup(\'sgl-vpop\')" class="closeicon-vc"></span>
+<iframe id="sgl-video" class="videoIframe js-videoIframe" allowfullscreen data-src="https://www.youtube.com/embed/UId2lnLDJ20?enablejsapi=1&html5=1&mute=1"></iframe>
+</div></div></div></div>';
 }
-*/
 
 get_template_part('inc/demo', 'form'); 
 get_template_part('inc/signup', 'form');

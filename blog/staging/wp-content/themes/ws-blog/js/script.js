@@ -391,3 +391,19 @@ window.onclick = function(event) {
 		newsletterPopup.style.display = "none";
 	}
 }
+
+function showIntoVideo(){
+  var elm = document.getElementById("sgl-vpop");
+  if( elm ){
+    elm.style.display = "block";    
+    let e = document.getElementById("sgl-video").getAttribute("data-src");
+    document.getElementById("sgl-video").setAttribute("src", e);
+  }
+}
+
+function gblClosePopup(elm){
+  var elmClose = document.getElementById(elm);
+  if( elmClose ){
+    elmClose.style.display = "none";
+  }
+}

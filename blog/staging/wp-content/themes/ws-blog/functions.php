@@ -475,7 +475,7 @@ function wsBannerShortcode_cb( $atts ){
     if( $hasLogin !== false ){
     $FreeTrialCta = '<a href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
     }
-    $div = '<div class="upd-cusbanner">
+    $div = '<div class="upd-cusbanner sc-col">
     <div class="cta-title">'.esc_html($atts['title']).'</div>
     <p class="heading">'.esc_html($atts['body']).'</p>
     <div class="ctasec">
@@ -538,7 +538,13 @@ Code to display related posts on single post.
 */
 add_filter( 'the_content', function( $content ){
   if ( is_singular() ){
-      $data = '';
+        $data = '<div class="upd-cusbanner cmn-vbanner">
+        <div class="cta-title">Finding it hard to maintain team efficiency in today’s dynamic work environment?</div>
+        <p class="heading">Learn how to adapt and thrive with our actionable tips in this insightful video.</p>
+        <div class="ctasec">
+        <a class="bkdemo" onclick="showIntoVideo();" href="javascript:void(0);">Watch the Video</a>
+        </div>
+        </div>';
       global $post;
       $thisPost = $post->ID;
       $cats = wp_get_post_categories( $thisPost );

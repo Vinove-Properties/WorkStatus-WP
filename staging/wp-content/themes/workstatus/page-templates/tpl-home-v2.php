@@ -266,7 +266,7 @@ Remote to In-Office
         <div class="number-col is-first">
           <div class="card-wrapper">
             <div class="card-content">
-              <h3>Discover How Workstatus Can Drive Your Business Success</h3>
+              <h3>Achieve More: Optimize Time Tracking & Workforce Coordination</h3>
               <div class="card-image">
                 <picture>
                   <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/number-01.png">
@@ -277,7 +277,7 @@ Remote to In-Office
               </div>
             </div>
             <div class="button-group">
-              <a href="<?php bloginfo('url'); ?>/reporting-analytics/insights-for-business" class="btn">Insights</a>
+              <a href="<?php echo site_url('/use-cases'); ?>" class="btn">Explore all Use Cases</a>
             </div>
           </div>
         </div>
@@ -293,7 +293,7 @@ Remote to In-Office
           <h2>70%</h2>
           <div class="is-grey">INCREASED EFFICIENCY</div>
           <p>A multi-national marketing firm, boosted overall efficiency.</p>
-          <a href="<?php bloginfo('url'); ?>/workforce-management/employee-productivity-monitoring" class="btn">Boost Your Productivity</a>
+          <a href="<?php echo site_url('/workforce-management/employee-productivity-monitoring'); ?>" class="btn">Increase Your Team Productivity</a>
         </div>
         <div class="number-col">
           <div class="card-image">
@@ -307,7 +307,7 @@ Remote to In-Office
           <h2>35%</h2>
           <div class="is-grey">INCREASED ROI</div>
           <p>A Delhi-based startup achieved 30%+ increased ROI with Workstatus.</p>
-          <a href="<?php bloginfo('url'); ?>/reporting-analytics/insights-for-business" class="btn">Boost Your ROI</a>
+          <a href="<?php echo site_url('/reporting-analytics/insights-for-business'); ?>" class="btn">Enhance Your ROI</a>
         </div>
       </div>
       <?php if( geoCTAcheck() === true ) : ?>
