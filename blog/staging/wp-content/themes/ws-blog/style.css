@@ -1763,7 +1763,7 @@ border: none; transition: all 0.3s ease-in-out;  min-width: 120px;}
         .upd-cusbanner.email-subscribe{margin-top: 15px !important;}
 }
 
-
+.wp-content-dt .upd-cusbanner:last-child{display: none!important;}
 
 
 
