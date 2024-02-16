@@ -20,8 +20,22 @@ get_header();
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/cta-image.svg" alt="workstatus" 
               width="400" height="200">
           </picture>
-        </div>
-        <div class="ctaRit"><a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a></div>
+        </div>        
+        <?php 
+        if( isset($topCTA['cs-button']) && !empty($topCTA['cs-button']) ){
+        if( isset( $topCTA['cs-link'] ) && !empty($topCTA['cs-link']) ){
+        echo '<div class="ctaRit"><a href="'.$topCTA['cs-link'].'" class="white-btn blue">'.$topCTA['cs-button'].'</a></div>';  
+        }else{
+        echo '<div class="ctaRit">
+        <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, \'monthly\');">'.$topCTA['cs-button'].'</a>
+        </div>';  
+        }        
+        }else{ 
+        echo '<div class="ctaRit">
+        <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, \'monthly\');">Start Free Trial</a>
+        </div>';  
+        } 
+        ?>
       </div>
     </div>
     <?php endif; ?>
