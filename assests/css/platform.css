@@ -8002,6 +8002,8 @@ h6.inherit, p.inherit {
   background: #4231ac;
   color: #fff;
   position: relative; }
+  .sd-banner h2 {
+    color: #fff; }
 
 .overview {
   padding: 0;
