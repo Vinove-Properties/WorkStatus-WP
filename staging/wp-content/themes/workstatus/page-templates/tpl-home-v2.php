@@ -178,7 +178,7 @@ if( $mServicesRows ){
           <img class="show" loading="lazy" src="'.$row['icon']['url'].'" alt="Icon" width="25" height="25">
           <img class="hide" loading="lazy" src="'.$row['hicon']['url'].'" alt="Icon" width="25" height="25">
           </span>'.$row['title'].'</a>
-          </li>'  
+          </li>';
           }
           ?>
         </ul>
