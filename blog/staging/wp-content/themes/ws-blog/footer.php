@@ -167,7 +167,7 @@ echo '<div class="banner-form inv-pop">
 <div class="popWrap">
 <div class="popup-content">
 <span onclick="gblClosePopup(\'sgl-vpop\')" class="closeicon-vc"></span>
-<iframe id="sgl-video" class="videoIframe js-videoIframe" allowfullscreen data-src="https://www.youtube.com/embed/UId2lnLDJ20?enablejsapi=1&html5=1&mute=1"></iframe>
+<iframe id="sgl-video" class="videoIframe js-videoIframe" allowfullscreen data-src="https://www.youtube.com/embed/UId2lnLDJ20?enablejsapi=1&html5=1&mute=0"></iframe>
 </div></div></div></div>';
 }
 

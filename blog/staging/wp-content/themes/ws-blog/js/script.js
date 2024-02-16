@@ -404,10 +404,7 @@ function showIntoVideo(){
 function gblClosePopup(elm){
   var elmClose = document.getElementById(elm);
   if( elmClose ){
-    let e = document.getElementById("sgl-video").getAttribute("src");
-    document.getElementById("sgl-video").setAttribute("data-src", e);
-
+    document.getElementById("sgl-video").setAttribute("src", "");
     elmClose.style.display = "none";
-
   }
 }
