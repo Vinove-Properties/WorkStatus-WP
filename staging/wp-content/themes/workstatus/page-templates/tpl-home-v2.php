@@ -188,11 +188,10 @@ if( $mServicesRows ){
         $vn = 0;
         foreach( $mServicesRows as $row ){ $vn++;
         $isActive = ( $vn === 1 )  ? 'active' : '';
+        $secImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
         echo '<div id="tab0'.$vn.'" class="tab-contents '.$isActive.'">
           <div class="dis-flex">
-            <div class="content-box">
-              '.$row['content'].pxlGetPtag($row['image']).'              
-            </div>
+            <div class="content-box">'.$row['content'].$secImage.'</div>
           </div>
         </div>'; 
         } 
