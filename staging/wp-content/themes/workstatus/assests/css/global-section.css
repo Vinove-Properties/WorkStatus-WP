@@ -5143,5 +5143,117 @@ a:hover h3,
 @media (max-width: 1024px) {
   .ft-partner {
     display: none; } }
+/*Downlaod form start from here*/
+.dis-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.dwnload {
+  padding: 90px 0;
+  background: url(../images/down-bg.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+  .dwnload .dis-flex {
+    justify-content: space-between; }
+    .dwnload .dis-flex .dwnleft {
+      flex-basis: 65%; }
+      .dwnload .dis-flex .dwnleft h2,
+      .dwnload .dis-flex .dwnleft p {
+        color: #fff; }
+    .dwnload .dis-flex .dwnright {
+      flex-basis: 30%;
+      text-align: right; }
+      .dwnload .dis-flex .dwnright a {
+        background: #ffffff;
+        color: #4334a4;
+        border-color: #fff; }
+        .dwnload .dis-flex .dwnright a:hover {
+          background: #051441;
+          border-color: #051441;
+          color: #fff; }
+
+.down-form .popup-content {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(to left, #fff 65%, #643bdf 35%); }
+  .down-form .popup-content .leftsc {
+    background: #643bdf;
+    flex-basis: 35%;
+    padding: 60px 0 60px 28px;
+    border-radius: 15px 0px 0px 15px; }
+    .down-form .popup-content .leftsc .lftwrap {
+      background: url(../images/blue-bg.webp);
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      padding: 30px 20px;
+      min-height: 332px; }
+      .down-form .popup-content .leftsc .lftwrap .ebook {
+        display: inline-block;
+        background: #00b7c9;
+        color: #fff;
+        padding: 3px 10px;
+        font-size: 10px;
+        width: auto;
+        border-radius: 2px 0 0 2px;
+        text-align: right;
+        position: absolute;
+        right: 0; }
+    .down-form .popup-content .leftsc h3 {
+      margin: 50px 0 0;
+      color: #fff;
+      font-size: 15px;
+      line-height: 22px;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .down-form .popup-content .leftsc p {
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.2;
+      margin: 5px 0 0; }
+    .down-form .popup-content .leftsc .smllogo {
+      margin: 45px 0 0;
+      display: block; }
+  .down-form .popup-content .rightsc {
+    flex-basis: 65%;
+    padding: 50px 60px 50px 40px;
+    border-radius: 0 15px 15px 0; }
+    .down-form .popup-content .rightsc .top-section {
+      margin: 0;
+      text-align: left; }
+      .down-form .popup-content .rightsc .top-section h2 {
+        text-transform: uppercase;
+        color: #110302;
+        margin: 0;
+        font-size: 24px; }
+      .down-form .popup-content .rightsc .top-section p {
+        font-size: 16px; }
+    .down-form .popup-content .rightsc .form-wrap {
+      margin: 40px 0 0; }
+      .down-form .popup-content .rightsc .form-wrap .form-group {
+        width: 100%;
+        padding: 0; }
+        .down-form .popup-content .rightsc .form-wrap .form-group .btn {
+          margin: 10px 0 0; }
+
+@media (max-width: 1440px) {
+  .down-form .popup-content {
+    width: 55%; }
+    .down-form .popup-content .leftsc {
+      padding: 40px 0 40px 28px; }
+    .down-form .popup-content .rightsc {
+      padding: 40px 50px 40px 40px; }
+      .down-form .popup-content .rightsc .top-section h2 {
+        font-size: 20px; }
+      .down-form .popup-content .rightsc .top-section p {
+        font-size: 14px; }
+      .down-form .popup-content .rightsc .form-wrap {
+        margin: 30px 0 0; } }
+/*Downlaod form End  here*/
 
 /*# sourceMappingURL=global-section.css.map */
