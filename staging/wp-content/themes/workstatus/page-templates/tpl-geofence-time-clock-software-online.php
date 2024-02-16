@@ -213,8 +213,8 @@ $thisPostID = $post->ID;
 		  <?php } endif; 
       }
       ?>
-
-		  <?php  
+    <?php leadMgtBlock( get_the_ID() ); ?>
+		<?php  
 		$boost_profitability = get_field('boost_profitability');
 		
 		if( $boost_profitability ) :

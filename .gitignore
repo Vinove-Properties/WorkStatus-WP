@@ -55,20 +55,12 @@ l/wp-content/uploads-webpc/
 !l/wp-content/themes/*
 l/wp-config.php
 
-staging/wp-admin/
-staging/wp-includes/
-staging/wp-content/wp-rocket-config/*
-staging/wp-content/cache/*
-staging/wp-content/upgrade/*
-staging/wp-content/upgrade-temp-backup/*
-staging/wp-content/uploads/db-backup/*
-staging/wp-content/uploads/wp-file-manager-pro/*
-staging/wp-content/uploads/*
-staging/wp-content/plugins/*
-staging/wp-content/updraft/*
-staging/wp-content/uploads-webpc/
-staging/l/wp-content/themes/*
-staging/l/wp-config.php
+staging/*
+!staging/wp-content/
+staging/wp-content/*
+!staging/wp-content/themes/
+staging/wp-content/themes/*
+!staging/wp-content/themes/workstatus/
 
 #!l/wp-content/themes/**
 # staging/PHPMailer/

@@ -182,6 +182,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     </div>
                 </div>
             </div>
+        <?php leadMgtBlock( get_the_ID() ); ?>
         <?php
         endif; ?>
         <?php
