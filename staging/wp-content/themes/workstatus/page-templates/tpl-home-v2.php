@@ -146,9 +146,9 @@ Remote to In-Office
                     </div>
                   </div>
                 </div>
-               <button style="background-image: url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg" alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">
-                Play video
-                </button>
+               
+               <button style="background-image:url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg)" 
+                alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
               </div>
             </div>
           </div>
@@ -157,6 +157,55 @@ Remote to In-Office
     </div>
   </section>
   <?php } endif; ?>
+
+<?php 
+$mServices = get_field('wsc-block');
+if( isset( $mServices['is_enabled'] ) && ($mServices['is_enabled'] == "yes") ) :
+$mServicesRows = $mServices['services'];
+if( $mServicesRows ){
+?>  
+<section class="business-tab bglight post-animation">
+<div class="container">
+  <div class="feature-tabs">
+    <div class="tab-row">
+      <nav id="tabs">
+        <ul>
+          <?php 
+          $nv = 0;
+          foreach( $mServicesRows as $row ){ $nv++;
+          $isActive = ( $nv === 1 )  ? 'active' : '';
+          echo '<li class="'.$isActive.'"><a href="#tab0'.$nv.'"><span class="icon">
+          <img class="show" loading="lazy" src="'.$row['icon']['url'].'" alt="Icon" width="25" height="25">
+          <img class="hide" loading="lazy" src="'.$row['hicon']['url'].'" alt="Icon" width="25" height="25">
+          </span>'.$row['title'].'</a>
+          </li>'  
+          }
+          ?>
+        </ul>
+      </nav>      
+      <div id="tab-contents">
+        <?php 
+        $vn = 0;
+        foreach( $mServicesRows as $row ){ $vn++;
+        $isActive = ( $vn === 1 )  ? 'active' : '';
+        echo '<div id="tab0'.$vn.'" class="tab-contents '.$isActive.'">
+          <div class="dis-flex">
+            <div class="content-box">
+              '.$row['content'].pxlGetPtag($row['image']).'              
+            </div>
+          </div>
+        </div>'; 
+        } 
+        ?>      
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<?php 
+}
+endif; ?>
+
   <?php 
     $ws_services = get_field('ws-offers');
     if( isset( $ws_services['is_enabled'] ) && ( $ws_services['is_enabled'] == "yes" ) ) :
