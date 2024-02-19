@@ -14,18 +14,15 @@ function myChat() {
 // tabs//
 var tabLabels   = document.querySelectorAll("#tabs li");
 var tabPanes    = document.getElementsByClassName("tab-contents");
-
 function activateTab(e) {
-  e.preventDefault();
-  
+  e.preventDefault();  
   // Deactivate all tabs
   tabLabels.forEach(function(label, index){
     label.classList.remove("active");
   });
   [].forEach.call(tabPanes, function(pane, index){
     pane.classList.remove("active");
-  });
-  
+  });  
   // Activate current tab
   e.target.parentNode.classList.add("active");
   var clickedTab = e.target.getAttribute("href");
@@ -37,7 +34,32 @@ tabLabels.forEach(function(label, index){
   label.addEventListener("click", activateTab);
 });
 
-// tabs end//
+var tabMC   = document.querySelectorAll("#tabs-mc li");
+var tabPanesMc    = document.getElementsByClassName("tab-contents");
+function activateTabFx(e) {
+    e.preventDefault();  
+
+    tabMC.forEach(function(label, index){
+        label.classList.remove("active");
+    });
+
+    [].forEach.call(tabPanesMc, function(pane, index){
+        pane.classList.remove("active");
+    }); 
+
+    if(e.target === this || this.contains(e.target)) {
+        e.target.classList.add("active");
+        var clickedTab = e.target.getAttribute("data-tab");
+        alert( "clickedTab" );
+        //document.querySelector(clickedTab).classList.add("active");
+    }    
+}
+
+tabMC.forEach(function(label, index){
+  label.addEventListener("click", activateTab);
+});
+
+
 
 
 //var faqItem = document.getElementsByClassName("faq-accordion-item-outer"),

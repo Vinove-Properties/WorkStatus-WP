@@ -168,13 +168,13 @@ if( $mServicesRows ){
 <div class="container">
   <div class="feature-tabs">
     <div class="tab-row">
-      <nav id="tabs">
+      <nav id="tabs-mc" class="tab-nav">
         <ul>
           <?php 
           $nv = 0;
           foreach( $mServicesRows as $row ){ $nv++;
           $isActive = ( $nv === 1 )  ? 'active' : '';
-          echo '<li class="'.$isActive.'"><a href="#tab0'.$nv.'"><span class="icon">
+          echo '<li class="'.$isActive.'" data-tab="#tab0'.$nv.'"><a href="#tab0'.$nv.'"><span class="icon">
           <img class="show" loading="lazy" src="'.$row['icon']['url'].'" alt="Icon" width="25" height="25">
           <img class="hide" loading="lazy" src="'.$row['hicon']['url'].'" alt="Icon" width="25" height="25">
           </span>'.$row['title'].'</a>
@@ -183,7 +183,7 @@ if( $mServicesRows ){
           ?>
         </ul>
       </nav>      
-      <div id="tab-contents">
+      <div class="bcontents">
         <?php 
         $vn = 0;
         foreach( $mServicesRows as $row ){ $vn++;
