@@ -26,9 +26,9 @@ $conArray   = $conData->response->data;
                <div class="performer-box">
                   <div class="list-box">
                      <ul>
-                        <li>AI-Powered Insights</li>
-                        <li>Streamline Operations</li>
-                        <li>Best-in-class Support</li>
+                        <li>AI-powered Insights</li>
+                        <li>Stealth or Visible Tracking</li>
+                        <li>Automated Timesheet</li>
                      </ul>
                   </div>
                   <div class="second_box">
