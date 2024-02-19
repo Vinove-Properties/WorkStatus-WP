@@ -34,11 +34,11 @@ tabLabels.forEach(function(label, index){
   label.addEventListener("click", activateTab);
 });
 
-var tabMC   = document.querySelectorAll("#tabs-mc li");
-var tabPanesMc    = document.getElementsByClassName("tab-contents");
-function activateTabFx(e) {
-    e.preventDefault();  
 
+var tabMC       = document.querySelectorAll("#tabs-mc li");
+var tabPanesMc  = document.getElementsByClassName("tab-contents");
+function activateTabFx(e){
+    e.preventDefault();  
     tabMC.forEach(function(label, index){
         label.classList.remove("active");
     });
@@ -47,16 +47,15 @@ function activateTabFx(e) {
         pane.classList.remove("active");
     }); 
 
-    if(e.target === this || this.contains(e.target)) {
-        e.target.classList.add("active");
-        var clickedTab = e.target.getAttribute("data-tab");
-        alert( "clickedTab" );
-        //document.querySelector(clickedTab).classList.add("active");
+    if( e.target === this || this.contains(e.target)){
+        var clickedTab = this.getAttribute("data-tab");
+        this.classList.add("active");
+        document.querySelector(clickedTab).classList.add("active");
     }    
 }
 
 tabMC.forEach(function(label, index){
-  label.addEventListener("click", activateTab);
+  label.addEventListener("click", activateTabFx);
 });
 
 
