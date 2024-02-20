@@ -260,7 +260,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <p><?php echo $dwnloadSection['content']; ?></p>
         </div>
         <div class="dwnright">
-        <a href="<?php echo site_url( $dwnloadSection['link'] ); ?>" rel="nofollow" class="primary_btn1">Download Now</a>
+        <a href="<?php echo site_url( $dwnloadSection['link'] ); ?>" rel="nofollow" class="primary_btn1">Download eBook</a>
         </div>
         </div>
         </div>

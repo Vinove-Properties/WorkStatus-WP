@@ -264,7 +264,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <div class="dis-flex">
         <div class="dwnleft"><?php echo $dwnloadSection['content']; ?></div>
         <div class="dwnright">
-        <a href="<?php echo site_url( $dwnloadSection['link'] ); ?>" class="primary_btn1">Download Now</a>
+        <a href="<?php echo site_url( $dwnloadSection['link'] ); ?>" class="primary_btn1">Download eBook</a>
         </div>
         </div>
         </div>
