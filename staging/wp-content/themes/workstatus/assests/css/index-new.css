@@ -5545,7 +5545,7 @@ a:hover h3,
         line-height: 26px;
         margin-bottom: 0;
         margin-top: 0;
-        font-size: 20px;
+        font-size: 18px;
         padding-right: 20px;
         padding: 20px 20px 20px 0;
         border-top: 1px solid #E4E6EA; }
@@ -7977,8 +7977,8 @@ h3 a {
                 background: url(../images/button-arwhover.png) no-repeat; }
             @media screen and (max-width: 575px) {
               .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1 {
-                padding: 13px 10px 12px !important;
-                font-size: 15px !important; } }
+                padding: 10px 10px 8px !important;
+                font-size: 12px !important; } }
           .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
             border: 1px solid #ffffff;
             cursor: pointer;
@@ -7999,8 +7999,8 @@ h3 a {
               border-color: #051441; }
             @media screen and (max-width: 575px) {
               .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
-                padding: 13px 10px 12px !important;
-                font-size: 16px !important; } }
+                padding: 10px 10px 8px !important;
+                font-size: 12px !important; } }
           .banner-section .home-section .flex_row .column-content .actionBtn small {
             display: block;
             text-align: center;
