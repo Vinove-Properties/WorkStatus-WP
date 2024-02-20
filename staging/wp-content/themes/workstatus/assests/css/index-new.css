@@ -5570,6 +5570,9 @@ a:hover h3,
           margin: 20px 0; }
         .business-mobile .column .b-accordion .baccordion-content p {
           margin: 15px 0 0; }
+        .business-mobile .column .b-accordion .baccordion-content h2 {
+          font-size: 22px;
+          line-height: 32px; }
         .business-mobile .column .b-accordion .baccordion-content ul,
         .business-mobile .column .b-accordion .baccordion-content ol {
           padding: 0; }
