@@ -5528,30 +5528,108 @@ a:hover h3,
     .business-tab .feature-tabs .bcontents .tab-contents.active {
       display: block; }
 
+.business-mobile {
+  display: none; }
+  .business-mobile .flex_row {
+    padding: 0 0 40px; }
+  .business-mobile .column {
+    width: 100%;
+    margin: 0; }
+    .business-mobile .column .b-accordion {
+      margin-left: 0; }
+      .business-mobile .column .b-accordion .head-row {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        display: inline-block;
+        line-height: 26px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 20px;
+        padding-right: 20px;
+        padding: 20px 20px 20px 0;
+        border-top: 1px solid #E4E6EA; }
+        .business-mobile .column .b-accordion .head-row img {
+          margin-right: 10px;
+          margin-top: -8px;
+          vertical-align: middle; }
+        .business-mobile .column .b-accordion .head-row::before {
+          content: "";
+          display: inline-block;
+          background: url(../images/angle-top.png) no-repeat;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          right: 0;
+          top: 30px; }
+      .business-mobile .column .b-accordion .baccordion-content {
+        display: none;
+        margin: 15px 0 0;
+        text-align: center; }
+        .business-mobile .column .b-accordion .baccordion-content img {
+          margin: 20px 0; }
+        .business-mobile .column .b-accordion .baccordion-content p {
+          margin: 15px 0 0; }
+        .business-mobile .column .b-accordion .baccordion-content ul,
+        .business-mobile .column .b-accordion .baccordion-content ol {
+          padding: 0; }
+          .business-mobile .column .b-accordion .baccordion-content ul li,
+          .business-mobile .column .b-accordion .baccordion-content ol li {
+            color: #5e6373;
+            margin: 0 0 2px;
+            padding-left: 20px;
+            position: relative; }
+            .business-mobile .column .b-accordion .baccordion-content ul li:before,
+            .business-mobile .column .b-accordion .baccordion-content ol li:before {
+              content: "";
+              position: absolute;
+              width: 14px;
+              height: 13px;
+              top: 7px;
+              background: url(../images/check-icon.png) no-repeat;
+              left: 0; }
+      .business-mobile .column .b-accordion.open .baccordion-content {
+        display: block; }
+      .business-mobile .column .b-accordion.open .head-row {
+        position: relative; }
+        .business-mobile .column .b-accordion.open .head-row::before {
+          background: url(../images/angle-top.png) no-repeat;
+          width: 15px;
+          height: 15px;
+          transform: rotate(180deg);
+          top: 22px; }
+    .business-mobile .column .b-accordion:first-child .head-row {
+      border-top: 0; }
+
 @media (max-width: 767px) {
-  .business-tab .feature-tabs .tab-nav ul {
-    align-items: baseline;
-    margin: 0 0 15px;
-    padding: 0; }
-    .business-tab .feature-tabs .tab-nav ul li {
-      flex-basis: 25%;
-      padding: 4px; }
-      .business-tab .feature-tabs .tab-nav ul li a {
-        font-size: 12px;
-        line-height: 18px;
-        margin: 0 0 5px;
-        padding: 0; }
-        .business-tab .feature-tabs .tab-nav ul li a .icon {
-          width: 48px;
-          height: 48px; }
-          .business-tab .feature-tabs .tab-nav ul li a .icon img {
-            width: 20px;
-            height: 20px; }
-  .business-tab .feature-tabs .bcontents .tab-contents .dis-flex p {
-    margin: 0 0 15px; }
-  .business-tab .feature-tabs .bcontents .tab-contents .dis-flex ul {
-    margin: 0 0 20px;
-    gap: 10px; } }
+  .business-tab {
+    display: none; }
+    .business-tab .feature-tabs .tab-nav ul {
+      align-items: baseline;
+      margin: 0 0 15px;
+      padding: 0; }
+      .business-tab .feature-tabs .tab-nav ul li {
+        flex-basis: 25%;
+        padding: 4px; }
+        .business-tab .feature-tabs .tab-nav ul li a {
+          font-size: 12px;
+          line-height: 18px;
+          margin: 0 0 5px;
+          padding: 0; }
+          .business-tab .feature-tabs .tab-nav ul li a .icon {
+            width: 48px;
+            height: 48px; }
+            .business-tab .feature-tabs .tab-nav ul li a .icon img {
+              width: 20px;
+              height: 20px; }
+    .business-tab .feature-tabs .bcontents .tab-contents .dis-flex p {
+      margin: 0 0 15px; }
+    .business-tab .feature-tabs .bcontents .tab-contents .dis-flex ul {
+      margin: 0 0 20px;
+      gap: 10px; }
+
+  .business-mobile {
+    display: block; } }
 .testimonial-section .testimonial-slider .glider-dots {
   margin-top: 60px;
   display: flex; }
