@@ -2033,7 +2033,10 @@ function loadMoreRM_cb(){
 
 function leadMgtBlock( $id ){
 	$dwnloadSection = get_field( 'download_section', $id );
-	if( isset($dwnloadSection['is_enabled']) && ($dwnloadSection['is_enabled'] == "yes") ){
+	if( isset(c['is_enabled']) && ($dwnloadSection['is_enabled'] == "yes") ){
+		$ctaText = (isset($dwnloadSection['link-text']) && !empty($dwnloadSection['link-text'])) ? $dwnloadSection['link-text'] : 
+		'Download eBook';
+
 		echo '<section class="dwnload post-animation">
 	    <div class="container">
 	    <div class="dis-flex">
@@ -2042,7 +2045,7 @@ function leadMgtBlock( $id ){
 	    <p>'.$dwnloadSection['content'].'</p>
 	    </div>
 	    <div class="dwnright">
-	    <a href="'.site_url($dwnloadSection['link']).'" rel="nofollow" class="primary_btn1">Download Ebook</a>
+	    <a href="'.site_url($dwnloadSection['link']).'" rel="nofollow" class="primary_btn1">'.$ctaText.'</a>
 	    </div>
 	    </div>
 	    </div>
