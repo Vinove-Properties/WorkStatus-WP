@@ -4,9 +4,7 @@ Template Name: Best employee Template
 Author : Neeraj Rai
 */ 
 get_header();	
-global $ws_ctas, $RegLink, $LogLink, $post;
-
-$thisPostID = $post->ID;
+global $ws_ctas, $RegLink, $LogLink;
 ?>
 
 <main class="site__content">
@@ -277,7 +275,7 @@ $thisPostID = $post->ID;
             </div>
           </div>
 		  <?php } endif; ?>
-      <?php getCommonSolutions($thisPostID); ?>
+      <?php leadMgtBlock( get_the_ID() ); ?>
       <?php  
 		$stay_in_control_section = get_field('stay_in_control_section');
 		
