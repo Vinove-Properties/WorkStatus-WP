@@ -1,5 +1,9 @@
+<?php 
+$frmHeading = get_field('frm-heading', get_the_ID());
+$frmHeading = ( !empty($frmHeading) ) ? $frmHeading : 'Download eBook';
+?>
 <div class="formbox">
-<h3>Download eBook</h3>
+<h3><?php echo $frmHeading; ?></h3>
 <form action="" onsubmit="return downloadEbookHandler(this);">
 <div class="form-wrap">  
     <div class="form-group"> 
