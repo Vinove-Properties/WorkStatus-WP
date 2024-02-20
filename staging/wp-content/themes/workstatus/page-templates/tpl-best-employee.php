@@ -275,7 +275,9 @@ global $ws_ctas, $RegLink, $LogLink;
             </div>
           </div>
 		  <?php } endif; ?>
+
       <?php leadMgtBlock( get_the_ID() ); ?>
+      
       <?php  
 		$stay_in_control_section = get_field('stay_in_control_section');
 		

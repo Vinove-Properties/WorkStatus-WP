@@ -2033,9 +2033,8 @@ function loadMoreRM_cb(){
 
 function leadMgtBlock( $id ){
 	$dwnloadSection = get_field( 'download_section', $id );
-	if( isset(c['is_enabled']) && ($dwnloadSection['is_enabled'] == "yes") ){
-		$ctaText = (isset($dwnloadSection['link-text']) && !empty($dwnloadSection['link-text'])) ? $dwnloadSection['link-text'] : 
-		'Download eBook';
+	if( isset($dwnloadSection['is_enabled']) && ($dwnloadSection['is_enabled'] == "yes") ){
+		$ctaText = (isset($dwnloadSection['link-text']) && !empty($dwnloadSection['link-text'])) ? $dwnloadSection['link-text'] : 'Download eBook';
 
 		echo '<section class="dwnload post-animation">
 	    <div class="container">
