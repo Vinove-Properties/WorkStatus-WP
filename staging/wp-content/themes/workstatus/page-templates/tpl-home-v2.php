@@ -201,6 +201,35 @@ if( $mServicesRows ){
   </div>
 </div>
 </section>
+<section class="business-mobile">
+<div class="container">
+  <div class="column">
+    <?php 
+    $vn = 0;
+    foreach( $mServicesRows as $row ){ $vn++;
+    $isActive = ( $vn === 1 )  ? 'open' : '';
+    $secImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
+    ?>
+    <div class="b-accordion <?php echo $isActive; ?>">
+      <div class="head-row">
+        <img class="show" loading="lazy" src="<?php echo $row['icon']['url']; ?>" alt="Icon" width="25" height="25">
+        <span><?php echo $row['title']; ?></span>
+     </div>
+      <div class="baccordion-content">
+        <div class="dis-flex">
+          <div class="content-box">
+            <?php 
+            echo $row['content'];
+            echo $secImage; 
+            ?>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php } ?>
+  </div>
+</div>
+</section>
 <?php 
 }
 endif; ?>

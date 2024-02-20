@@ -59,6 +59,19 @@ tabMC.forEach(function(label, index){
 });
 
 
+var buiItem = document.getElementsByClassName("b-accordion");
+var bHD   = document.getElementsByClassName("head-row");
+for (i = 0; i < bHD.length; i++) {
+  bHD[i].addEventListener("click", togglebuiItem, false);
+}
+function togglebuiItem() {
+  for (i = 0; i < buiItem.length; i++) {
+      buiItem[i].className = "b-accordion";
+  }
+  if (this.parentNode.className == "b-accordion") {
+      this.parentNode.className = "b-accordion open";
+  }
+}
 
 
 //var faqItem = document.getElementsByClassName("faq-accordion-item-outer"),
