@@ -3,6 +3,18 @@ get_header();
 ?>
 <main id="single" class="detail-page banner-section">
   <div class="container">
+
+  <div class="social-icon-box">
+            <!--<div class="share-head">
+              Share Article:
+            </div>-->
+            <div class="social-icons">
+              <a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_the_permalink().'" class="a2a_button_twitter" target="_blank" rel="noopener noreferrer"></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url='.get_the_permalink().'&title='.get_the_title().'" class="a2a_button_linkedin" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://www.facebook.com/sharer?u='.get_the_permalink().'&t='.get_the_title().'.." class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+          </div>
+
     <?php 
     $topCTA = get_field('ptop-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
@@ -37,6 +49,8 @@ get_header();
         } 
         ?>
       </div>
+
+      
     </div>
     <?php endif; ?>
     <div class="top-header-section">
@@ -85,38 +99,35 @@ get_header();
             </div>
           </div>
         </div>
+
+        <div class="meta-wrap">
+            <div class="author-img">
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" alt="workstatus">
+            </div>
+            <ul class="entry-meta">
+              <li class="meta author vcard">
+                <span class="author-name fn">by
+                <a href="https://www.workstatus.io/blog/"><strong>Anna Sonnenberg</strong></a></span>
+              </li>
+              <!-- <li class="posted-on">Published <span class="dt">November 30, 2023</span></li> -->
+            </ul>
+          </div>
+
+
+        
+
+
       </div>
     </div>
     <div class="single-post-container">
       <div class="top-header-banner">
         <h1><?php echo get_the_title()?></h1>
-        <div class="entery-wrap">
-          <div class="meta-wrap">
-            <div class="author-img">
-              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/author.png" width="52" height="52" alt="workstatus">
-            </div>
-            <ul class="entry-meta">
-              <li class="meta author vcard">
-                <span class="author-name fn">Written by
-                <a href="https://www.workstatus.io/blog/">Varun Bhagat</a></span>
-              </li>
-              <!-- <li class="posted-on">Published <span class="dt">November 30, 2023</span></li> -->
-            </ul>
-          </div>
-          <div class="social-icon-box">
-            <div class="share-head">
-              Share Article:
-            </div>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/sharer?u='.get_the_permalink().'&t='.get_the_title().'.." class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
-              <a href="http://www.linkedin.com/shareArticle?mini=true&url='.get_the_permalink().'&title='.get_the_title().'" class="a2a_button_linkedin" target="_blank" rel="noopener noreferrer"></a>
-              <a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_the_permalink().'" class="a2a_button_twitter" target="_blank" rel="noopener noreferrer"></a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-    <div class="detail-thumb"><?php the_post_thumbnail( 'single-post-thumbnail' ); ?></div>
+
+    <!--<div class="detail-thumb"><?php the_post_thumbnail( 'single-post-thumbnail' ); ?></div>-->
+
+
   <div class="center content">
     <div class="second-row" id="stickytoc">
       <div class="buyers-guide">
@@ -133,14 +144,20 @@ get_header();
           $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Reduce Your Payroll Processing Time By 41%';
           ?>
           <div class="customcta">
+          <div class="cusimg">
             <picture>
-              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.svg" alt="workstatus" 
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/custom-image.png" alt="workstatus" 
                 width="299" height="129">
             </picture>
+          </div>
+          <div class="cus-cont">
             <div class="cushed"><?php echo $sbText; ?></div>
             <div class="btn-container">
             <a href="javascript:void(0);" class="white-btn blue" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>                     
             </div>
+          </div>
+
+
           </div>
           <?php endif; ?>
           <div class="detail-subsbox">
