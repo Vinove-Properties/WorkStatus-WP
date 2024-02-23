@@ -100,7 +100,7 @@ get_header();
           </div>
         </div>
 
-        <div class="meta-wrap">
+        <!--<div class="meta-wrap">
             <div class="author-img">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" alt="workstatus">
             </div>
@@ -109,9 +109,9 @@ get_header();
                 <span class="author-name fn">by
                 <a href="https://www.workstatus.io/blog/"><strong>Anna Sonnenberg</strong></a></span>
               </li>
-              <!-- <li class="posted-on">Published <span class="dt">November 30, 2023</span></li> -->
+             <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
             </ul>
-          </div>
+          </div>-->
 
 
         
