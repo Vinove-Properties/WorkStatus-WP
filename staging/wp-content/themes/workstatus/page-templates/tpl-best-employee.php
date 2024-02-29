@@ -526,10 +526,10 @@ global $ws_ctas, $RegLink, $LogLink;
 
             <?php  
             $blockLoop = get_field('block-loop');
-            if( isset( $recognize['is_enabled'] ) && ($recognize['is_enabled'] == "yes") ) :
+            if( isset( $blockLoop['is_enabled'] ) && ($blockLoop['is_enabled'] == "yes") ) :
             $z = 0;  
-            if( $recognize['block'] && (count($recognize['block']) > 0) ){
-            foreach( $recognize['block'] as $row ){ $z++;
+            if( $blockLoop['block'] && (count($blockLoop['block']) > 0) ){
+            foreach( $blockLoop['block'] as $row ){ $z++;
             echo '<div class="item" id="ws-bllop-"'.$z.'>';
             echo '<div class="container">
             <div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
