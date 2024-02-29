@@ -529,7 +529,8 @@ global $ws_ctas, $RegLink, $LogLink;
             if( isset( $blockLoop['is_enabled'] ) && ($blockLoop['is_enabled'] == "yes") ) :
             $z = 0;  
             if( $blockLoop['block'] && (count($blockLoop['block']) > 0) ){
-            foreach( $blockLoop['block'] as $row ){ $z++;
+            foreach( $blockLoop['block'] as $row ){ 
+            $z++;
             echo '<div class="item" id="ws-bllop-'.$z.'">';
             echo '<div class="container">
             
@@ -556,7 +557,7 @@ global $ws_ctas, $RegLink, $LogLink;
               }
             }
             
-            echo '</div>';
+            echo '</div>';//column-right
 
             echo '<div class="column-left"><div class="all-content">';
             if( $row['in-row'] ){
@@ -584,14 +585,11 @@ global $ws_ctas, $RegLink, $LogLink;
               $iTemp++;
               }
             }
-            echo '</div></div>';
             
-            echo '</div></div>';
-            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
-
-            echo '</div>';
-            echo '</div>';    
+            echo '</div></div>'; 
             }  
+            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+            echo '</div></div>'; //item & Container
             endif; ?>
 
             <?php  
