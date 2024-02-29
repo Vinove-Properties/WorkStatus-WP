@@ -564,7 +564,7 @@ global $ws_ctas, $RegLink, $LogLink;
               $active = ( $iTemp == $iConst ) ? "active" : "";
               $lsClass = (strpos($inrow['content'], '<ul') !== false) ? ' listing ' : '';
               echo '<div class="all-content">
-              <div class="text-column '.$active.$lsClass.' " id="t'.$z.'" data-section="active_Current_Tabs99-"'.$z.'>';
+              <div class="text-column '.$active.$lsClass.' " id="t'.$z.'" data-section="active_Current_Tabs99-'.$z.'">';
               echo $inrow['content'];
               if( $image ){
                 echo '<div class="mob-image">';
