@@ -530,7 +530,7 @@ global $ws_ctas, $RegLink, $LogLink;
             $z = 0;  
             if( $blockLoop['block'] && (count($blockLoop['block']) > 0) ){
             foreach( $blockLoop['block'] as $row ){ $z++;
-            echo '<div class="item" id="ws-bllop-"'.$z.'>';
+            echo '<div class="item" id="ws-bllop-'.$z.'">';
             echo '<div class="container">
             <div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
