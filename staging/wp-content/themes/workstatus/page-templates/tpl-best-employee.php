@@ -537,7 +537,7 @@ global $ws_ctas, $RegLink, $LogLink;
             echo '<div class="item" id="ws-bllop-'.$z.'">';
             echo '<div class="container">';
             
-            echo '<div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
+            /*echo '<div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
 
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
             
@@ -590,7 +590,7 @@ global $ws_ctas, $RegLink, $LogLink;
               echo '</div></div>';   
               }
             }  
-            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';*/
             echo '</div></div>'; //item & Container
             }
             endif; 
