@@ -541,7 +541,7 @@ global $ws_ctas, $RegLink, $LogLink;
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
             
             echo '<div class="column-right">';
-            if( $row['in-row'] ){
+            /*if( $row['in-row'] ){
               $iConst = 21+($z*6);
               $iTemp  = 21+($z*6);
               foreach( $row['in-row'] as $inrow){
@@ -557,7 +557,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   }  
                 $iTemp++;
               }
-            }            
+            }*/            
             echo '</div>';//column-right
 
 
@@ -589,6 +589,7 @@ global $ws_ctas, $RegLink, $LogLink;
               echo '</div></div>';   
               }
             echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+            
             echo '</div></div>'; //item & Container
             }  
             
