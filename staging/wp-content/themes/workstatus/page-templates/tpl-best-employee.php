@@ -577,7 +577,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 }
                 echo '</div>';
               }
-              echo '</div></div>'  
+              echo '</div></div>';
               $iTemp++;
               }
             }
