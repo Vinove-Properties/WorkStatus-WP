@@ -7888,7 +7888,8 @@ h3 a {
     flex-basis: 32%;
     border-radius: 10px;
     background: #faf8fe;
-    padding: 25px; }
+    padding: 25px;
+    margin: 0 0 25px; }
     .benifits-section .column-three img.space {
       margin: 0 0 20px; }
     .benifits-section .column-three ul {
