@@ -532,7 +532,9 @@ global $ws_ctas, $RegLink, $LogLink;
             foreach( $blockLoop['block'] as $row ){ $z++;
             echo '<div class="item" id="ws-bllop-'.$z.'">';
             echo '<div class="container">
+            
             <div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
+
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
             
             echo '<div class="column-right">';
@@ -555,7 +557,8 @@ global $ws_ctas, $RegLink, $LogLink;
             }
             
             echo '</div>';
-            echo '<div class="column-left">';
+
+            echo '<div class="column-left"><div class="all-content">';
             if( $row['in-row'] ){
               $iConst = 21+($z*6);
               $iTemp  = 21+($z*6);
@@ -563,7 +566,7 @@ global $ws_ctas, $RegLink, $LogLink;
               $image = $inrow['image'];
               $active = ( $iTemp == $iConst ) ? "active" : "";
               $lsClass = (strpos($inrow['content'], '<ul') !== false) ? ' listing ' : '';
-              echo '<div class="all-content">
+              echo '
               <div class="text-column '.$active.$lsClass.' " id="t'.$z.'" data-section="active_Current_Tabs99-'.$z.'">';
               echo $inrow['content'];
               if( $image ){
@@ -577,13 +580,15 @@ global $ws_ctas, $RegLink, $LogLink;
                 }
                 echo '</div>';
               }
-              echo '</div></div>';
+              echo '</div>';
               $iTemp++;
               }
             }
-            echo '</div>';
+            echo '</div></div>';
+            
             echo '</div></div>';
             echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+
             echo '</div>';
             echo '</div>';    
             }  
