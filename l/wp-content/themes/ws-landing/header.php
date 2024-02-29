@@ -17,8 +17,8 @@
   <?php endif; ?>
 </head>
 <body <?php body_class('mobile'); ?> >
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPPMGZH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPPMGZH" height="0" width="0" 
+style="display:none;visibility:hidden"></iframe></noscript>
 <?php wp_body_open(); ?>
 
 <?php 
@@ -27,9 +27,11 @@ if(
     'page-templates/tpl-thanks.php',
     'page-templates/tpl-calendly.php',
     'page-templates/tpl-version5.0.php',
+    'page-templates/tpl-version5.1.php',
     'page-templates/tpl-version6.0.php'
   ])
-  ){ ?>
+  ){
+?>
 <header class="main-header" id="mainHeader">
 <div class="container">
   <div id="topnav" class="top_nav">
@@ -140,7 +142,39 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
   </div>
 </div>
 </header>
-<?php } ?>
+<?php }elseif( is_page_template(['page-templates/tpl-version5.1.php']) ){ ?>
+<header class="main-header" id="mainHeader">
+<div class="container">
+  <div class="top-nav">
+    <div class="header-item-left">
+      <a href="index.html" class="logo-b">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="workstatus logo" width="230" 
+          height="31">
+        </picture>
+      </a>
+
+      <div class="flag-logo">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/img/flag-logo.svg" alt="workstatus logo" width="98" 
+          height="30">
+        </picture>
+      </div>
+
+    </div>
+    <div class="header-item-right">
+      <ul>
+        <li><a href="#howitworks">How it Works</a></li>
+        <li><a href="#feature">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="popup();">Book A Call</a></li>
+        <li class="freetrail"><a href="#starttrail" class="btn btn2">Free 7 days Trial</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</header>
+<?php } ?>  
 <style>
 .page-id-1422 .review-sec{display:none;}
 .page-id-1422 .badges{display:none;}

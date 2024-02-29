@@ -519,8 +519,75 @@ global $ws_ctas, $RegLink, $LogLink;
             </div>
             </div>
             </div>
+            <?php 
+            } 
+            endif; 
+            ?>
 
-            <?php } endif; ?>
+            <?php  
+            $blockLoop = get_field('block-loop');
+            if( isset( $recognize['is_enabled'] ) && ($recognize['is_enabled'] == "yes") ) :
+            $z = 0;  
+            if( $recognize['block'] && (count($recognize['block']) > 0) ){
+            foreach( $recognize['block'] as $row ){ $z++;
+            echo '<div class="item" id="ws-bllop-"'.$z.'>';
+            echo '<div class="container">
+            <div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
+            echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
+            
+            echo '<div class="column-right">';
+            if( $row['in-row'] ){
+              $iConst = 21+($z*6);
+              $iTemp  = 21+($z*6);
+              foreach( $row['in-row'] as $inrow){
+                if( $inrow['image'] ){
+                  $image = $inrow['image'];
+                  $active = ( $iTemp == $iConst ) ? "active" : "";
+                  echo '<picture class="page '.$active.'" id="p'.$iTemp.'" >
+                  '.getPxlWebpURL($image['ID']).'
+                  <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
+                  <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                  height="'.$image['height'].'"> 
+                  </picture>';
+                  }  
+                $iTemp++;
+              }
+            }
+            
+            echo '</div>';
+            echo '<div class="column-left">';
+            if( $row['in-row'] ){
+              $iConst = 21+($z*6);
+              $iTemp  = 21+($z*6);
+              foreach( $row['in-row'] as $inrow){                
+              $image = $inrow['image'];
+              $active = ( $iTemp == $iConst ) ? "active" : "";
+              $lsClass = (strpos($inrow['content'], '<ul') !== false) ? ' listing ' : '';
+              echo '<div class="all-content">
+              <div class="text-column '.$active.$lsClass.' " id="t'.$z.'" data-section="active_Current_Tabs99-"'.$z.'>';
+              echo $inrow['content'];
+              if( $image ){
+                echo '<div class="mob-image">';
+                echo '<picture>
+                '.getPxlWebpURL($image['ID']).'
+                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
+                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                height="'.$image['height'].'"> 
+                </picture>';
+                }
+                echo '</div>';
+              }
+              echo '</div></div>'  
+              $iTemp++;
+              }
+            }
+            echo '</div>';
+            echo '</div></div>';
+            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+            echo '</div>';
+            echo '</div>';    
+            }  
+            endif; ?>
 
             <?php  
             /*

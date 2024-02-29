@@ -1,6 +1,7 @@
 <?php 
 if(!is_page_template([
 	'page-templates/tpl-version5.0.php',
+	'page-templates/tpl-version5.1.php',
 	'page-templates/tpl-version6.0.php'
 	] ) ){ 
 	dynamic_sidebar('footer-widget'); 

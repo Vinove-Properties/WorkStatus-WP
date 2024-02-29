@@ -204,7 +204,7 @@ strong {
 
 .btn {
   background: #624DE3;
-  padding: 11px 28px;
+  padding: 13px 30px;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
@@ -248,14 +248,7 @@ input:-moz-placeholder {
 
 @media (max-width: 1780px) {
   .container {
-    max-width: 1520px; }
-
-  h1 {
-    font-size: 34px;
-    line-height: 45px; }
-
-  h2 {
-    font-size: 34px; } }
+    max-width: 1520px; } }
 @media (max-width: 1600px) {
   .container {
     max-width: 1380px; }
@@ -2408,7 +2401,7 @@ header {
     .free-demopop .popup-content .right-section .form-wrap .form-group {
       width: 100%;
       margin-bottom: 20px; }
-      .free-demopop .popup-content .right-section .form-wrap .form-group input {
+      .free-demopop .popup-content .right-section .form-wrap .form-group input, .free-demopop .popup-content .right-section .form-wrap .form-group .input-field {
         border: 0;
         border-bottom: 1px solid #cbd3dc;
         font-size: 14px;
@@ -2418,7 +2411,7 @@ header {
         border-radius: 0;
         padding: 8px 0;
         font-weight: 400; }
-        .free-demopop .popup-content .right-section .form-wrap .form-group input ::placeholder {
+        .free-demopop .popup-content .right-section .form-wrap .form-group input ::placeholder, .free-demopop .popup-content .right-section .form-wrap .form-group .input-field ::placeholder {
           color: #525f7f !important; }
       .free-demopop .popup-content .right-section .form-wrap .form-group input::-webkit-input-placeholder {
         color: #525f7f !important; }
@@ -2888,7 +2881,7 @@ button:focus {
 /*Form Section End here*/
 /*Media Query Start From Here*/
 @media (max-width: 1600px) {
-  .popup-form .form-wrap input {
+  .popup-form .form-wrap input, .popup-form .form-wrap .input-field {
     font-size: 13px;
     height: 40px;
     padding: 0 15px; }

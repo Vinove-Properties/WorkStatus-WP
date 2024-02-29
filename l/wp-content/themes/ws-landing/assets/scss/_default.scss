@@ -262,7 +262,7 @@ strong {
 }
 .btn {
   background: $blue;
-  padding: 11px 28px;
+  padding: 13px 30px;
   color: $white;
   text-decoration: none;
   border-radius: 8px;
@@ -319,13 +319,13 @@ input:-moz-placeholder {
   .container {
     max-width: 1520px;
   }
-  h1 {
-    font-size: 34px;
-    line-height: 45px;
-  }
-  h2 {
-    font-size: 34px;
-  }
+  //h1 {
+   // font-size: 34px;
+    //line-height: 45px;
+  //}
+  //h2 {
+    //font-size: 34px;
+  //}
 }
 
 @media (max-width: 1600px) {

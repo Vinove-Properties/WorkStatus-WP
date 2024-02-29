@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$black".
-        on line 102 of C:\xampp-1\htdocs\workstatus-lp\assets\scss\popup-form.scss
+        on line 102 of C:\xampp\htdocs\workstatus-lp\assets\scss\popup-form.scss
 
 97:         background-color: #643bdf;
 98:       }
@@ -15,7 +15,7 @@ Error: Undefined variable: "$black".
 107:     label {
 
 Backtrace:
-C:\xampp-1\htdocs\workstatus-lp\assets\scss\popup-form.scss:102
+C:\xampp\htdocs\workstatus-lp\assets\scss\popup-form.scss:102
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -106,4 +106,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$black\".\A         on line 102 of C:\xampp-1\htdocs\workstatus-lp\assets\scss\popup-form.scss\A \A 97:         background-color: #643bdf;\A 98:       }\A 99:       a {\A 100:         color: #333333;\A 101:         &:hover {\A 102:           color: $black;\A 103:         }\A 104:       }\A 105:     }\A 106: \A 107:     label {"; }
+  content: "Error: Undefined variable: \"$black\".\A         on line 102 of C:\xampp\htdocs\workstatus-lp\assets\scss\popup-form.scss\A \A 97:         background-color: #643bdf;\A 98:       }\A 99:       a {\A 100:         color: #333333;\A 101:         &:hover {\A 102:           color: $black;\A 103:         }\A 104:       }\A 105:     }\A 106: \A 107:     label {"; }

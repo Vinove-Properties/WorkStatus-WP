@@ -361,7 +361,7 @@
         .form-group {
           width: 100%;
           margin-bottom: 20px;
-          input {
+          input, .input-field {
             border: 0;
             border-bottom: 1px solid #cbd3dc;
             font-size: 14px;
@@ -927,7 +927,7 @@ button:focus {
 /*Media Query Start From Here*/
 
 @media (max-width: 1600px) {
-  .popup-form .form-wrap input {
+  .popup-form .form-wrap input, .popup-form .form-wrap .input-field {
     font-size: 13px;
     height: 40px;
     padding: 0 15px;
