@@ -524,6 +524,9 @@ global $ws_ctas, $RegLink, $LogLink;
             endif; 
             ?>
 
+
+
+
             <?php  
             $blockLoop = get_field('block-loop');
             if( isset( $blockLoop['is_enabled'] ) && ($blockLoop['is_enabled'] == "yes") ) :
@@ -532,9 +535,9 @@ global $ws_ctas, $RegLink, $LogLink;
             foreach( $blockLoop['block'] as $row ){ 
             $z++;
             echo '<div class="item" id="ws-bllop-'.$z.'">';
-            echo '<div class="container">
+            echo '<div class="container">';
             
-            <div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
+            echo '<div class="top-section"><h6><span class="bg-purple">'.$row['heading'].'</span></h6>'.$row['content'].'</div>';
 
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
             
@@ -555,12 +558,13 @@ global $ws_ctas, $RegLink, $LogLink;
                   }  
                 $iTemp++;
               }
-            }
-            
+            }            
             echo '</div>';//column-right
 
-            echo '<div class="column-left"><div class="all-content">';
+
+            
             if( $row['in-row'] ){
+              echo '<div class="column-left"><div class="all-content">';
               $iConst = 21+($z*6);
               $iTemp  = 21+($z*6);
               foreach( $row['in-row'] as $inrow){                
@@ -583,14 +587,14 @@ global $ws_ctas, $RegLink, $LogLink;
               }
               echo '</div>';
               $iTemp++;
+              echo '</div></div>';   
               }
-            }
-            
-            echo '</div></div>'; 
             }  
             echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
             echo '</div></div>'; //item & Container
-            endif; ?>
+            }
+            endif; 
+            ?>
 
             <?php  
             /*
