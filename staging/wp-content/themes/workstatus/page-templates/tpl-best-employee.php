@@ -540,8 +540,9 @@ global $ws_ctas, $RegLink, $LogLink;
 
             echo '<div id="active_Current_Tabs99-'.$z.'"><div class="flex_row">';
             
-            echo '<div class="column-right">';
+            
             if( $row['in-row'] ){
+              echo '<div class="column-right">';
               $iConst = 21+($z*6);
               $iTemp  = 21+($z*6);
               foreach( $row['in-row'] as $inrow){
@@ -557,12 +558,11 @@ global $ws_ctas, $RegLink, $LogLink;
                   }  
                 $iTemp++;
               }
-            }            
-            echo '</div>';//column-right
-
-
+              echo '</div>';//column-right
+              }            
             
-            if( $row['in-row'] ){
+            
+              if( $row['in-row'] ){
               echo '<div class="column-left"><div class="all-content">';
               $iConst = 21+($z*6);
               $iTemp  = 21+($z*6);
@@ -570,8 +570,10 @@ global $ws_ctas, $RegLink, $LogLink;
               $image = $inrow['image'];
               $active = ( $iTemp == $iConst ) ? "active" : "";
               $lsClass = (strpos($inrow['content'], '<ul') !== false) ? ' listing ' : '';
-              echo '<div class="text-column '.$active.$lsClass.' " id="t'.$iTemp.'" data-section="active_Current_Tabs99-'.$z.'">';
-              echo $inrow['content'];
+              echo '<div class="text-column '.$active.$lsClass.'" id="t'.$iTemp.'" data-section="active_Current_Tabs99-'.$z.'">';
+              echo $inrow['content'];              
+              echo '</div>';//text-column
+
               if( $image ){
                 echo '<div class="mob-image">';
                 echo '<picture>
@@ -581,15 +583,15 @@ global $ws_ctas, $RegLink, $LogLink;
                 height="'.$image['height'].'"> 
                 </picture>';
                 }
-                echo '</div>';
-              $iTemp++;
-              echo '</div>';
+                echo '</div>';                
+              $iTemp++;  
               }
-              echo '</div></div>';   
+              echo '</div></div>';//column-left & all-content
               }
-            echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+              echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+              echo '</div></div>'; //active_Current_Tabs99
 
-            echo '</div></div>'; //item & Container
+              echo '</div></div>'; //item & Container
             }  
             
             }
