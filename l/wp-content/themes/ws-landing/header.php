@@ -7,6 +7,7 @@
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <?php wp_head(); ?>
   <style type="text/css">
+  body.geo-international .form-group.sg-pcode,
   .flag-logo, h2.ct-demo,h2.ct-call{display:none;}
   body.geo-local .flag-logo, body.rq-call h2.ct-call,body.rq-demo h2.ct-demo{display:block;}
   </style>

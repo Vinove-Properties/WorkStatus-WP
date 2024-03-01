@@ -89,7 +89,9 @@
             $btnTxt = ( $btnTxt ) ? $btnTxt : "Book A Demo";  
           }
           echo $btnTxt;
-          ?></button>
+          ?>
+          <img class="clock" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/clock-white.png" alt=" Workstatus">  
+          </button>
       </div>
     </div>
 </div>    

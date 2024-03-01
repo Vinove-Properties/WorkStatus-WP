@@ -16,9 +16,8 @@ $appUrl = 'https://app.workstatus.io/auth/register';
 get_header(); ?>
 <!-- Banner Section -->
 <section class="banner-section">
-  <img class="bannerboy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" alt="Workstatus">
-  <img class="bannerboy inter-boy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" 
-  alt=" Workstatus">
+  <img class="bannerboy local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" alt="Workstatus">
+  <img class="bannerboy internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-v4intern.png" alt=" Workstatus">
   <div class="container">
     <div class="two-box">
       <div class="flex-2 content-box">
@@ -634,12 +633,12 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
       <picture>
         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
         <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
-        <img class="indianfot" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="666" height="631">
+        <img class="local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="666" height="631">
       </picture>
       <picture>
-         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
-         <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
-         <img class="interfot" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="666" height="631">
+         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
+         <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
+         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="547" height="631">
        </picture>
     </div>
   </div>
