@@ -2420,7 +2420,8 @@ function wsGetGEOInfo(){
 		if ( ( !is_wp_error($response)) && (200 === wp_remote_retrieve_response_code( $response ) ) ) {
 		$responseBody = json_decode($response['body']);
 		if( json_last_error() === JSON_ERROR_NONE ) {
-			return (isset($responseBody->country) && $responseBody->country == "IN" ) ? "geo-local" : "geo-international";	
+		return (isset($responseBody->country) && ($responseBody->country == "IN") ) ? "geo-local ".$responseBody->country : 
+		"geo-international ".$responseBody->country;	
 		}
 		}
 	}
