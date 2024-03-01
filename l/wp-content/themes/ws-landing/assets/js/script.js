@@ -113,18 +113,21 @@ document.addEventListener("scroll", () => {
 
 var formPopup   = document.getElementById('formPopup');
 var spanClose   = document.getElementsByClassName("closeicon")[1];
-function popup(){
-    document.getElementById('myhiddenid').value='1';
+function popup( bClass = 'rq-demo' ){
+    document.body.classList.remove("rq-demo");
+    document.body.classList.remove("rq-call");
 
+    document.getElementById('myhiddenid').value='1';
+    document.body.classList.add(bClass);
     formPopup.style.display = "block";    
 }
-if( spanClose ){
-    spanClose.onclick = function() {
-    document.getElementById('myhiddenid').value='1';
 
-        formPopup.style.display = "none";
-        formPopup.classList.remove("is-active");
-    }
+if( spanClose ){
+  spanClose.onclick = function(){
+  document.getElementById('myhiddenid').value='1';
+    formPopup.style.display = "none";
+    formPopup.classList.remove("is-active");
+  }
 }
     
 

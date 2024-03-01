@@ -207,6 +207,7 @@ function ws_landing_scripts(){
 	    	[
 	    	'page-templates/tpl-version2.php', 
 	    	'page-templates/tpl-version5.0.php',
+	    	'page-templates/tpl-version5.1.php',
 	    	'page-templates/tpl-version6.0.php'
 	    	] ) ){
 			wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
@@ -216,8 +217,12 @@ function ws_landing_scripts(){
 	if( is_page_template(['page-templates/tpl-version5.0.php', 'page-templates/tpl-version5.1.php']) ){
 		$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';
 		wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);
-		
-		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true );	
+		if( is_page_template('page-templates/tpl-version5.1.php') ){
+		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );	
+		}else{
+		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true );
+		}		
+
 		wp_enqueue_script( 'ws-ns-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, true );
 		wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation5.0.js', array(), _S_VERSION, true);
 		wp_localize_script( 'wssignup-script', 'wsObj', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
@@ -566,9 +571,19 @@ add_filter( 'body_class', function( $classes ){
 	if( is_page_template( ['page-templates/tpl-thanks.php', 'page-templates/tpl-calendly.php'] ) ){
 		$classes[] 	= 'thankyou';
 	}
-	$ranMeta = get_post_meta( $post->ID, 'opt-pfld', true );
-	if( $ranMeta == "yes" ){
-		$classes[] 	= 'nr-phone';
+	if( is_page_template( ['page-templates/tpl-version5.1.php'] ) ){
+		$localGeo 	= wsGetGEOInfo();
+		if( $localGeo == "geo-international" ){
+			$classes[] 	= 'nr-phone';
+		}
+		$classes[] 	= $localGeo;
+	}
+
+	if( !is_page_template( ['page-templates/tpl-version5.1.php'] ) ){
+		$ranMeta = get_post_meta( $post->ID, 'opt-pfld', true );
+		if( $ranMeta == "yes" ){
+			$classes[] 	= 'nr-phone';
+		}
 	}
 	return $classes;
 });
@@ -2106,40 +2121,6 @@ function ws_smtp_phpemailer( $phpmailer ){
 	$phpmailer->FromName 		= "Workstatus";
 }
 
-/*
-add_action('init', function(){
-	if( isset($_GET['action']) && $_GET['action'] == "email-check" ){
-		$to 		= "nitin.valuecoders@gmail.com";
-		$subject 	= "Workstatus - We've received your request";
-		$body 		= "Dear Workstatus Enthusiast,<br><br>
-		Greetings for the day!<br><br>
-		We're thrilled to have caught your interest in our workforce management tool! - our workforce management platform designed to simplify and streamline the way you manage your team.<br><br>
-		As a new user, you now have access to an array of tools and features that can help you better track time, monitor projects, and manage your team's workflow - all in one centralized location.<br><br>
-		Whether you are a freelancer, small business owner, or large enterprise, Workstatus.io is designed to provide you with the flexibility and functionality you need to run your operations more efficiently.<br><br>
-		If you have any questions about how to get started or how to make the most of our platform, please don't hesitate to reach out to our support team. Please find the contact details as below;<br><br>
-		Name: Prachi Kala<br>
-		Email: prachi@workstatus.io<br>
-		Contact: +918595620285<br><br>
-
-		Product Guide - https://support.workstatus.io/en/<br><br>
-		We look forward to helping you achieve your goals and grow your business.<br><br>
-		Best Regards,<br>
-		Team Workstatus";
-		$headers = array('Content-Type: text/html; charset=UTF-8','From: Workstatus<donotreply@workstatus.io>');
-		if( 
-		wp_mail( $to, $subject, $body, $headers ) 
-		){
-		echo "Email sent";
-		}
-		die;	
-	}	
-});
-
-add_action('wp_mail_failed', 'ws_log_mailer_errors', 10, 1);
-function ws_log_mailer_errors( $wp_error ){
-	echo $wp_error->get_error_message();
-}
-*/
 add_action( 'wp_ajax_ws-dosignup', 'ws_dosignupcb' );
 add_action( 'wp_ajax_nopriv_ws-dosignup', 'ws_dosignupcb' );
 function ws_dosignupcb(){
@@ -2426,5 +2407,24 @@ if( ! function_exists( 'get_current_page_url_cb' ) ) {
 if( ! function_exists( 'ws_current_page_url' ) ) {
 	function ws_current_page_url() {
 	  echo get_current_page_url_cb();
+	}
+}
+
+function wsGetGEOInfo(){
+	try {
+		$response = wp_remote_get( 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo', array(
+		'headers' => array(
+			'Accept' => 'application/json',
+		)
+		) );
+		if ( ( !is_wp_error($response)) && (200 === wp_remote_retrieve_response_code( $response ) ) ) {
+		$responseBody = json_decode($response['body']);
+		if( json_last_error() === JSON_ERROR_NONE ) {
+			return (isset($responseBody->country) && $responseBody->country == "IN" ) ? "geo-local" : "geo-international";	
+		}
+		}
+	}
+	catch( Exception $ex ) {
+		return 'geo-local';
 	}
 }

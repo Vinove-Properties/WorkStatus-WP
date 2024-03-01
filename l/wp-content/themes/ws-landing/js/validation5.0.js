@@ -171,7 +171,8 @@ function wslpSignup(e){
 	xhttp.send(formData);
 	return false;
 }
-// 9601301937
+
+
 function planpopup(planType){
 	let formPopup 	= document.getElementById("signupformPopup");
 	let hplan 		= document.getElementById("wsplan3");

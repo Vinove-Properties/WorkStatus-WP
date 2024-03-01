@@ -6,6 +6,10 @@
   <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/x-icon">
   <link rel="profile" href="https://gmpg.org/xfn/11">
   <?php wp_head(); ?>
+  <style type="text/css">
+  .flag-logo, h2.ct-demo,h2.ct-call{display:none;}
+  body.geo-local .flag-logo, body.rq-call h2.ct-call,body.rq-demo h2.ct-demo{display:block;}
+  </style>
   <?php 
   if( isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] != "localhost") ) :
   ?>   
@@ -167,8 +171,8 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
         <li><a href="#howitworks">How it Works</a></li>
         <li><a href="#feature">Features</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="popup();">Book A Call</a></li>
-        <li class="freetrail"><a href="#starttrail" class="btn btn2">Free 7 days Trial</a></li>
+        <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="popup('rq-call');">Book A Call</a></li>
+        <li class="freetrail"><a href="javascript:void(0)" onclick="planpopup('annually-paid');" class="btn btn2">Free 7 days Trial</a></li>
       </ul>
     </div>
   </div>

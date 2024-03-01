@@ -3,33 +3,28 @@
 Template Name: Page Template v 5.1
 */
 $userIP   = wslGetUserIP();
-$data     = wp_remote_post( 'https://superadmin.workstatus.io/api/v1/sa/getplan/list', array('body' => ['ip'=>$userIP]) );
+$data     = wp_remote_post('https://superadmin.workstatus.io/api/v1/sa/getplan/list', array('body' => ['ip'=>$userIP]));
 $currency = "&#8377;";
 $wsApiResponse = [];
 if( !is_wp_error( $data ) ){
-  $data = json_decode( wp_remote_retrieve_body( $data ) );  
-  $wsApiResponse = $data->response->data->values;
-  $currency = ( isset( $wsApiResponse[0]->price_type ) && ($wsApiResponse[0]->price_type == "USD Pricing") ) ? "$" : "&#8377;";
-  
-  /*
-  echo '<pre>';
-  print_r( $_SERVER );
-  print_r( $wsApiResponse ); 
-  die;
-  */
+  $data           = json_decode( wp_remote_retrieve_body($data) );
+  $wsApiResponse  = $data->response->data->values;
+  $currency       = (isset($wsApiResponse[0]->price_type) && ($wsApiResponse[0]->price_type == "USD Pricing")) ? "$" : "&#8377;";
+  //echo '<pre>';print_r( $_SERVER ); print_r( $wsApiResponse ); die;
 }
 $appUrl = 'https://app.workstatus.io/auth/register';
 get_header(); ?>
 <!-- Banner Section -->
 <section class="banner-section">
-  <img class="bannerboy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" alt=" Workstatus">
-  <img class="bannerboy inter-boy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" alt=" Workstatus">
+  <img class="bannerboy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" alt="Workstatus">
+  <img class="bannerboy inter-boy" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/banner-boy.png" 
+  alt=" Workstatus">
   <div class="container">
     <div class="two-box">
-      <div class="flex-2">
+      <div class="flex-2 content-box">
         <?php the_content();?>
         <div class="sigupform">
-        <?php get_template_part('inc/form', 'v5.0', ['slot' => 1]); ?>
+        <?php get_template_part('inc/bannerform', 'v5.1', ['slot' => 1]); ?>
         </div>
       </div>
       <div class="flex-2 image-sec">
@@ -217,7 +212,9 @@ $videoURL = $videoSection['video_url'];
         <source src="<?php echo $videoURL; ?>" type="video/mp4">
       </video>
     </div>
-    <div class="ctasec margin-t-70"><a href="#btm-form" class="btn">Start Free Trial</a> <span class="devide">OR</span> <a href="javascript:void(0)" class="btn nobg" onclick="popup();">Request Free Demo</a></div>
+    <div class="ctasec margin-t-70">
+      <a href="javascript:void(0);" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> <span class="devide">OR</span> 
+      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a></div>
   </div>
 </section>
 <?php endif; ?>
@@ -322,9 +319,9 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <?php endif; ?>
     <!--Customer Reviews Ends Here-->
     <div class="ctasec margin-t-70">
-      <a href="#btm-form" class="btn">Start Free Trial</a> 
+      <a href="javascript:void(0);" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> 
       <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="popup();">Request Free Demo</a>
+      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -451,7 +448,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
             <div class="toptext">
               <h3><?php echo ( isset($wsApiResponse[2]->name) ) ? $wsApiResponse[2]->name : 'Enterprise'; ?></h3>
               <p><?php echo ( isset($wsApiResponse[2]->description) ) ? $wsApiResponse[2]->description : ''; ?></p>
-              <a href="javascript:void(0);" onclick="popup();" class="price_btn">Request A Demo</a>
+              <a href="javascript:void(0);" onclick="popup('rq-demo');" class="price_btn">Request A Demo</a>
             </div>
             <div class="bottomtext">
               <div class="f-right">
@@ -506,7 +503,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
             <div class="toptext">
               <h3><?php echo ( isset($wsApiResponse[2]->name) ) ? $wsApiResponse[2]->name : 'Enterprise'; ?></h3>
               <p><?php echo ( isset($wsApiResponse[2]->description) ) ? $wsApiResponse[2]->description : ''; ?></p>
-              <a href="javascript:void(0);" onclick="popup();" class="price_btn">Request A Demo</a>
+              <a href="javascript:void(0);" onclick="popup('rq-demo');" class="price_btn">Request A Demo</a>
             </div>
             <div class="bottomtext">
               <div class="f-right">
@@ -629,7 +626,9 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <div class="flex-2 content-section">
       <h2>Start your Workstatus journey today!</h2>
       <p>Get detailed and clean activity reports of your team. Track time efficiently. </p>
-      <div class="ctasec margin-t-70"><a href="#starttrail" class="btn">Start Free Trial</a> <span class="devide">OR</span> <a href="javascript:void(0)" class="btn nobg" onclick="popup();">Request Free Demo</a></div>
+      <div class="ctasec margin-t-70">
+      <a href="javascript:void(0)" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> <span class="devide">OR</span> 
+      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a></div>
     </div>
     <div class="flex-2 img-section">
       <picture>
@@ -700,6 +699,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
 </div>
 <div class="footer-bottom text-center">© workstatus.io All rights reserved.</div>
 </section>
+
 <div class="popup-form free-demopop">
   <div id="formPopup" class="popup-wrapper" style="display:none">
     <div class="popWrap">
@@ -710,11 +710,9 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/logo-white.svg" alt="Logo" width="179" height="24">
           </picture>
           <div class="content">
-            <h2><span class="lt-blue">Schedule A Free Demo</span> <br>At 
-              Your Convenience
-            </h2>
-            <p>Get answers to all your queries. Learn about all features in Workstatus 
-              that can <span class="lt-blue">make your team 37% more productive.</span>
+            <h2 class="ct-demo"><span class="lt-blue">Schedule A Free Demo</span> <br>At Your Convenience</h2>
+            <h2 class="ct-call"><span class="lt-blue">Schedule A Free Call</span> <br>At Your Convenience</h2>
+            <p>Get answers to all your queries. Learn about all features in Workstatus that can <span class="lt-blue">make your team 37% more productive.</span>
             </p>
           </div>
           <div class="performer-box">
@@ -787,19 +785,21 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
         <div class="right-section">
           <div class="col">
             <div class="top-section">
-              <h2><?php 
-                $formHeading = get_field('form_heading', get_the_ID());
-                echo ($formHeading) ? $formHeading : "Request A Demo" ; 
-                ?></h2>
+              <?php 
+              //$formHeading = get_field('form_heading', get_the_ID());
+              //echo ($formHeading) ? $formHeading : "Request A Demo" ; 
+              ?>
+              <h2 class="ct-demo">Let Us Take You on a Personalized Virtual Tour Of Workstatus</h2>
+              <h2 class="ct-call">Enter your Details</h2>
             </div>
-            <?php get_template_part('inc/form', 'version1'); ?>
+            <?php get_template_part('inc/form', 'v5.1'); ?>
           </div>
           <!--//.col-->
         </div>
       </div>
     </div>
   </div>
-  <div id="signupformPopup" class="popup-wrapper">
+  <div id="signupformPopup" class="popup-wrapper nanovar5">
     <div class="popWrap">
       <div class="popup-content">
         <span class="closeicon-sg"></span>
