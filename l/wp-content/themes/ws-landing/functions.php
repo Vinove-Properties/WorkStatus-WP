@@ -2417,11 +2417,11 @@ function wsGetGEOInfo(){
 			'Accept' => 'application/json',
 		)
 		) );
-		if ( ( !is_wp_error($response)) && (200 === wp_remote_retrieve_response_code( $response ) ) ) {
+		if( (!is_wp_error($response)) && (200 === wp_remote_retrieve_response_code($response)) ){
 		$responseBody = json_decode($response['body']);
 		if( json_last_error() === JSON_ERROR_NONE ) {
-		return (isset($responseBody->country) && ($responseBody->country == "IN") ) ? "geo-local ".$responseBody->country : 
-		"geo-international ".$responseBody->country;	
+		return (isset($responseBody->country) && ($responseBody->country == "IN") ) ? 
+		"geo-local ".$responseBody->country : "geo-international ".$responseBody->country;	
 		}
 		}
 	}
@@ -2429,3 +2429,10 @@ function wsGetGEOInfo(){
 		return 'geo-local';
 	}
 }
+
+add_action('init', function(){
+	if( isset($_GET['ipcheck']) && ($_GET['ipcheck'] == "true") ){
+	$arrdum = wsGetGEOInfo();
+	echo $arrdum; die;	
+	}
+});
