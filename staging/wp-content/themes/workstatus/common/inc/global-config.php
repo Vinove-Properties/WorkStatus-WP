@@ -457,3 +457,21 @@ add_action( 'rest_api_init', function (){
         }
     ));
 });
+
+add_action( 'rest_api_init', function (){
+    register_rest_route( 'ws-api/v1', '/getipinfo/', array(
+        'methods' => 'GET',
+        'callback' => function( $request ){
+            $ip = $request->get_param( 'ip' );
+            if (filter_var($ip, FILTER_VALIDATE_IP) !== false) {
+                $ipinfo = getWSipinfo( $ip );
+                wp_send_json( $ipinfo );
+            }else{
+                wp_send_json( ['message' => 'Invalid Ip Address.' ] );
+            }
+        },
+        'args' => array(
+            'ip' => array( 'required' => true, 'validate_callback' => 'rest_validate_request_arg' )
+        )
+    ));
+});
