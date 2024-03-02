@@ -2412,7 +2412,8 @@ if( ! function_exists( 'ws_current_page_url' ) ) {
 
 function wsGetGEOInfo(){
 	try {
-		$response = wp_remote_get( 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo', array(
+		$reqURL = 'https://www.workstatus.io/wp-json/ws-api/v1/getipinfo/?ip='.wpgetUserIP();
+		$response = wp_remote_get( $reqURL, array(
 		'headers' => array(
 			'Accept' => 'application/json',
 		)
@@ -2433,21 +2434,22 @@ function wsGetGEOInfo(){
 add_action('init', function(){
 	if( isset($_GET['ipcheck']) && ($_GET['ipcheck'] == "true") ){
 		try {
-		$response = wp_remote_get( 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo', array(
+		$reqURL = 'https://www.workstatus.io/wp-json/ws-api/v1/getipinfo/?ip='.wpgetUserIP();
+		$response = wp_remote_get( $reqURL, array(
 		'headers' => array(
 			'Accept' => 'application/json',
 		)
 		) );
 		if( (!is_wp_error($response)) && (200 === wp_remote_retrieve_response_code($response)) ){
-			$responseBody = json_decode($response['body']);
-			if( json_last_error() === JSON_ERROR_NONE ) {
-				print_r($responseBody);
-			}
+		$responseBody = json_decode($response['body']);
+		if( json_last_error() === JSON_ERROR_NONE ) {
+		print_r($responseBody);
 		}
 		}
-		catch( Exception $ex ) {
+	}
+	catch( Exception $ex ) {
 		print_r($ex);
-		}	
+	}
 		echo wsGetGEOInfo();
 		die;
 	}
