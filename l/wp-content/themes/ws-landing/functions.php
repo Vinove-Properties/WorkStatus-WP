@@ -2432,7 +2432,23 @@ function wsGetGEOInfo(){
 
 add_action('init', function(){
 	if( isset($_GET['ipcheck']) && ($_GET['ipcheck'] == "true") ){
-	$arrdum = wsGetGEOInfo();
-	echo $arrdum; die;	
+		try {
+		$response = wp_remote_get( 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo', array(
+		'headers' => array(
+			'Accept' => 'application/json',
+		)
+		) );
+		if( (!is_wp_error($response)) && (200 === wp_remote_retrieve_response_code($response)) ){
+			$responseBody = json_decode($response['body']);
+			if( json_last_error() === JSON_ERROR_NONE ) {
+				print_r($responseBody);
+			}
+		}
+		}
+		catch( Exception $ex ) {
+		print_r($ex);
+		}	
+		echo wsGetGEOInfo();
+		die;
 	}
 });
