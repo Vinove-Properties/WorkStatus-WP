@@ -52,7 +52,11 @@ if( function_exists('get_fields') ){
       <?php endif; ?>  
 
       <div class="post-excerpt">
-      <?php the_excerpt ();  ?>
+      <?php 
+      $exprt = wp_trim_words(get_the_excerpt(), 20, '...');
+      $exprt = str_replace("Introduction", " ", $exprt);
+      echo '<p>'.ltrim($exprt).'</p>';
+      ?>
       <a href="<?php the_permalink(); ?>" class="rdmore">Read More</a>
       </div>
 
