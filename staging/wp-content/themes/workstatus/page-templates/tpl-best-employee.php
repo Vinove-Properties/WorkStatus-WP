@@ -847,10 +847,11 @@ global $ws_ctas, $RegLink, $LogLink;
         </section>
 		<?php } endif; ?>
     
-            <section class="wsMobile whitetxt">
-            <?php require_once get_template_directory() .'/common/workstatus-device.php';?>
-            </section>
-
+    <?php if( !is_page(6785) ) : ?>
+    <section class="wsMobile whitetxt">
+      <?php require_once get_template_directory() .'/common/workstatus-device.php';?>
+    </section>
+    <?php endif; ?>
             
 		<?php  
 		$user_guide_section = get_field('user_guide_section');
