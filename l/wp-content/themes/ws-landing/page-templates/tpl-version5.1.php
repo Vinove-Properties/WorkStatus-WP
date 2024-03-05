@@ -152,7 +152,7 @@ get_header(); ?>
 $featureRow = get_field('abt-app-row');
 if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") ) :
 ?>
-<section class="feature-section bg-light padding-t-100 padding-b-70" id="feature">
+<section class="feature-section bg-light padding-t-100 padding-b-100" id="feature">
    <div class="container">
       <div class="head-txt text-center">
          <?php echo $featureRow['top_text']; ?>
@@ -178,6 +178,12 @@ if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") )
         ?> 
       </div>
    </div>
+   <div class="ctasec margin-t-70">
+      <a href="javascript:void(0);" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> 
+      <span class="devide">OR</span> 
+      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a>
+    </div>
+  </div>
 </section>
 <?php endif; ?>
 
@@ -212,25 +218,27 @@ $videoURL = $videoSection['video_url'];
       </video>
     </div>
     <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a></div>
+      <a href="javascript:void(0);" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> 
+      <span class="devide">OR</span> 
+      <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a>
+    </div>
   </div>
 </section>
 <?php endif; ?>
 
 <!--Counter Section Start From Here-->
 <div class="count-box-section padding-t-100 padding-b-100">
-  <div class="container">
+  <div class="container bg-light">
     <div class="head-txt text-center">
       <h3>What Makes Workstatus Different</h3>
     </div>
     <div class="count-box-outer dis-flex margin-t-70">
       <div class="count-box flex-4">
-        <span class="count-box-big">5K+</span>
+        <span class="count-box-big"><div class="txt-local">5K+</div><div class="txt-int">5M+</div></span>
         <span class="count-box-small">Companies using worldwide</span>
       </div>
       <div class="count-box flex-4">
-        <span class="count-box-big">+37%</span>
+        <span class="count-box-big"><div class="txt-local">+37%</div><div class="txt-int">+34%</div></span>
         <span class="count-box-small">Increased Productivity</span>
       </div>
       <div class="count-box flex-4">
@@ -416,7 +424,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
                 ?></h3>
               <div class="amount"><strong><?php echo $currency; ?>0</strong></div>
               <br>
-              <a href="javascript:void(0);" class="price_btn" onclick="setFreePlan('annually-free');">Start Free Trial</a>
+              <a href="javascript:void(0);" class="price_btn" onclick="planpopup('annually-free');">Start Free Trial</a>
             </div>
             <div class="bottomtext">
               <div class="f-right">
@@ -471,7 +479,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
                 ?></h3>
               <div class="amount"><strong><?php echo $currency; ?>0</strong></div>
               <br>
-              <a href="javascript:void(0);" class="price_btn" onclick="setFreePlan('monthly-free');">Start Free Trial</a>
+              <a href="javascript:void(0);" class="price_btn" onclick="planpopup('monthly-free');">Start Free Trial</a>
             </div>
             <div class="bottomtext">
               <div class="f-right">
@@ -633,12 +641,12 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
       <picture>
         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
         <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
-        <img class="local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="666" height="631">
+        <img class="local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="547" height="631">
       </picture>
       <picture>
          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
-         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="547" height="631">
+         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="547" height="494">
        </picture>
     </div>
   </div>
@@ -690,7 +698,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
       <div class="flex-4">
         <div class="addwrap">
           <img loading="lazy" src="https://www.workstatus.io/l/wp-content/themes/ws-landing/assets/images/flag-icon02.svg" alt="flag" width="30" height="22">
-          <p>2nd Floor, 55P, Sector 44, Gurugram 122003, Haryana, India</p>
+          <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
         </div>
       </div>
     </div>

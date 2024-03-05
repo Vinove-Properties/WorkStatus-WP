@@ -8,8 +8,15 @@
   <?php wp_head(); ?>
   <style type="text/css">
   body.geo-international .form-group.sg-pcode,
-  .flag-logo, h2.ct-demo,h2.ct-call{display:none;}
-  body.geo-local .flag-logo, body.rq-call h2.ct-call,body.rq-demo h2.ct-demo{display:block;}
+  .flag-logo, 
+  h2.ct-demo,
+  h2.ct-call,
+  body.geo-international .txt-local,
+  body.geo-local .txt-int{display:none;}
+  
+  body.geo-local .flag-logo, 
+  body.rq-call h2.ct-call,
+  body.rq-demo h2.ct-demo{display:block;}
   </style>
   <?php 
   if( isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] != "localhost") ) :

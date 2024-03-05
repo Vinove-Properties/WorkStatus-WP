@@ -189,6 +189,15 @@ function setFreePlan(planType){
 	sgemail2.focus();
  	element.scrollIntoView();
 }
+
+function setFreePlanFiveOne(planType){
+	let hplan 		= document.getElementById("wsplan2");
+	hplan.value		= planType;
+	let element 	= document.getElementById("btm-form");
+	sgemail2.focus();
+ 	element.scrollIntoView();
+}
+
 let spanCloseSG = document.getElementsByClassName("closeicon-sg")[0];
 spanCloseSG &&(spanCloseSG.onclick = function () {
 	let formPopup = document.getElementById("signupformPopup");
