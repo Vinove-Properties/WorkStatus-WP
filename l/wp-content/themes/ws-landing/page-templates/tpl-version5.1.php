@@ -646,7 +646,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
       <picture>
          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
-         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="547" height="494">
+         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="450" height="494">
        </picture>
     </div>
   </div>
