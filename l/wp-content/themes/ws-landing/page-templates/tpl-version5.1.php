@@ -631,8 +631,16 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
 <div class="container">
   <div class="dis-flex">
     <div class="flex-2 content-section">
-      <h2>Start your Workstatus journey today!</h2>
-      <p>Get detailed and clean activity reports of your team. Track time efficiently. </p>
+      <?php 
+      $fctaText = get_field('fcta-text');
+      if( $fctaText ){
+        echo $fctaText;
+      }else{
+        echo '<h2>Start your Workstatus journey today!</h2>
+      <p>Get detailed and clean activity reports of your team. Track time efficiently. </p>';  
+      }
+      ?>
+      
       <div class="ctasec margin-t-70">
       <a href="javascript:void(0)" class="btn" onclick="planpopup('annually-paid');">Start Free Trial</a> <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="popup('rq-demo');">Request Free Demo</a></div>

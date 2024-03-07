@@ -671,12 +671,15 @@ if (screen && screen.width < 768)
     function topFunction() {
         (document.body.scrollTop = 400), (document.documentElement.scrollTop = 400);
     }
+
+/*
 if( !document.body.classList.contains('free-tiral-ctemplate') ){
 	setTimeout(function () {
 	    let e = document.getElementById("formPopup");
 	    "none" === e.style.display && (e.classList.add("on-sidebar"), (e.style.display = "block"));
 	}, 6e4);	
-}    
+}
+*/
 
 
 document.addEventListener("DOMContentLoaded", function() {
