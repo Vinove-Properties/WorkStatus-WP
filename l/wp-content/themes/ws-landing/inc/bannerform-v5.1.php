@@ -46,7 +46,7 @@ data-wform="<?php echo $slot; ?>" data-check="<?php echo $cta_txt; ?>">
     <button type="submit" class="signupbtn VVVVV" id="cft-btn<?php echo $slot; ?>"><?php echo $cta_txt; ?></button>
     <?php 
     if( $slot !== 3 ){
-      echo '<div class="credcard">No credit card required</div>';
+      echo '<div class="credcard">OR</div>';
     }
     ?>
     <a href="javascript:void(0);" onclick="popup('rq-demo');" class="signupbtn bookdemo">Book A Demo</a>    
