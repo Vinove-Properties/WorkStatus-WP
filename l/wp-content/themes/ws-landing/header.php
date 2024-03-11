@@ -18,6 +18,9 @@
   body.rq-call h2.ct-call,
   body.rq-demo h2.ct-demo{display:block;}
   body.page-template-tpl-version5-1 .ws-journey .content-section{padding: 100px 0;}
+  
+  .banner-section .two-box .content-box .sigupform form .credcard:before,
+  .banner-section .two-box .content-box .sigupform form .credcard:after{width: 150px;}
   </style>
   <?php 
   if( isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] != "localhost") ) :
