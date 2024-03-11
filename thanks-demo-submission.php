@@ -35,7 +35,7 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         $mail->Port         = 465;
         $mail->SMTPAuth     = true;
         $mail->Username     = 'do-not-reply@workstatus.io';
-        $mail->Password     = 'avchvvlnqmtihxbp'; //zskxyarbhduvicwf
+        $mail->Password     = 'qqmwjodicsevwikm'; //zskxyarbhduvicwf
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );

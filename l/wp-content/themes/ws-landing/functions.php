@@ -2116,7 +2116,7 @@ function ws_smtp_phpemailer( $phpmailer ){
 	$phpmailer->Port         	= 465;
 	$phpmailer->SMTPAuth     	= true;
 	$phpmailer->Username     	= 'do-not-reply@workstatus.io';
-	$phpmailer->Password     	= 'avchvvlnqmtihxbp';
+	$phpmailer->Password     	= 'qqmwjodicsevwikm';
 	$phpmailer->From    		= "donotreply@workstatus.io";
 	$phpmailer->FromName 		= "Workstatus";
 }
