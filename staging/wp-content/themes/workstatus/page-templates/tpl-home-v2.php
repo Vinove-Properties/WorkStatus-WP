@@ -6,92 +6,87 @@
   global $ws_ctas, $RegLink, $LogLink;	
   ?>
 <main class="site__content">
-  <?php  
-    $top_section = get_field('top_section');
-    if( $top_section ) :
-    $isEnable = $top_section['is_enabled'];
-    if( $isEnable == "yes" ){ 
-    ?>
-  <section class="banner-section">
-    <div class="home-section">
-      <div class="container">
-        <div class="flex_row">
-          <div class="column column-content">
-            <h6><span class="bg-purple"><?php echo $top_section['top-heading']; ?></span></h6>
-            <h1><strong>Maximize Team Productivity: </strong>From Remote to In-Office</h1>
-            <p>Elevate your business with our integrated time tracking and workforce management solutions, designed to boost efficiency and unlock peak productivity.</p>
-            <div class="cont-wrap">
-              <div class="actionBtn">
-                <?php if( geoCTAcheck() === true ) : ?>
-                <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
-                  <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
-                </div>
-                <?php endif; ?>
-                <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
-                  <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
-                </div>
+<?php  
+$top_section = get_field('top_section');
+if( $top_section ) :
+$isEnable = $top_section['is_enabled'];
+if( $isEnable == "yes" ){ 
+?>
+<section class="banner-section">
+  <div class="home-section">
+    <div class="container">
+      <div class="flex_row">
+        <div class="column column-content">
+          <h6><span class="bg-purple"><?php echo $top_section['top-heading']; ?></span></h6>
+          <h1><strong>Maximize Team Productivity: </strong>From Remote to In-Office</h1>
+          <p>Elevate your business with our integrated time tracking and workforce management solutions, designed to boost efficiency and unlock peak productivity.</p>
+          <div class="cont-wrap">
+            <div class="actionBtn">
+              <?php if( geoCTAcheck() === true ) : ?>
+              <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
+                <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
               </div>
-              <div class="partwrap">
-                <div class="part-col">
-                  <i class="part-logo part-logo1"></i>
-                  <p>4.5/5</p>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star01.svg"
-                    alt="star" width="57" height="8"></i>
-                </div>
-                <div class="part-col">
-                  <i class="part-logo part-logo2"></i>
-                  <p>5/5</p>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star02.svg"
-                    alt="star" width="56" height="8"></i>
-                </div>
-                <div class="part-col">
-                  <i class="part-logo part-logo3"></i>
-                  <p>4.8/5</p>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star03.svg"
-                    alt="star" width="54" height="8"></i>
-                </div>
-                <div class="part-col">
-                  <i class="part-logo part-logo4"></i>
-                  <p>4.9/5</p>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star04.svg"
-                    alt="star" width="54" height="8"></i>
-                </div>
+              <?php endif; ?>
+              <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
+                <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="column videoSc" id="has-yt-video">
-        <div class="inner">
-          <button id="myBtn">
-            Open Modal  
-            <div class="playsc"><span class="playicon"></span></div>
-          </button>
-          <div class="topVideo srp-1">
-            <div id="myDIV" class="contbox2">
-              <div class="videoWrapper js-videoWrapper">
-                <div class="videoPopup">
-                  <div id="contentPopup" class="popup-wrapper">
-                    <div class="popWrap">
-                      <div class="popup-content">
-                        <span class="close"></span>
-                        <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen data-src="<?php echo $top_section['video_embed_url']; ?>">
-                        </iframe>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               
-               <button style="background-image:url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg)" 
-                alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
+            <div class="partwrap">
+              <div class="part-col">
+                <i class="part-logo part-logo1"></i>
+                <p>4.5/5</p>
+                <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star01.svg"
+                  alt="star" width="57" height="8"></i>
+              </div>
+              <div class="part-col">
+                <i class="part-logo part-logo2"></i>
+                <p>5/5</p>
+                <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star02.svg"
+                  alt="star" width="56" height="8"></i>
+              </div>
+              <div class="part-col">
+                <i class="part-logo part-logo3"></i>
+                <p>4.8/5</p>
+                <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star03.svg"
+                  alt="star" width="54" height="8"></i>
+              </div>
+              <div class="part-col">
+                <i class="part-logo part-logo4"></i>
+                <p>4.9/5</p>
+                <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/home-star04.svg"
+                  alt="star" width="54" height="8"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <?php } endif; ?>
+    <div class="column videoSc" id="has-yt-video">
+      <div class="inner">
+        <button id="myBtn">Open Modal  <div class="playsc"><span class="playicon"></span></div></button>
+        <div class="topVideo srp-1">
+          <div id="myDIV" class="contbox2">
+            <div class="videoWrapper js-videoWrapper">
+              <div class="videoPopup">
+                <div id="contentPopup" class="popup-wrapper">
+                  <div class="popWrap">
+                    <div class="popup-content">
+                      <span class="close"></span>
+                      <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen data-src="<?php echo $top_section['video_embed_url']; ?>">
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>               
+             <button style="" alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } endif; ?>
 
 <?php 
 $mServices = get_field('wsc-block');
