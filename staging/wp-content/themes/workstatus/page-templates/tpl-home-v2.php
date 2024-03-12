@@ -80,7 +80,7 @@ if( $isEnable == "yes" ){
                 </div>
               </div>               
              <button style="background-image:url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg)"
-              alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
+              alt="banner-image" class="videoPoster lazy-background wslazy nb-bg xd-dump-img" id="play-button">Play video</button>
             </div>
           </div>
         </div>

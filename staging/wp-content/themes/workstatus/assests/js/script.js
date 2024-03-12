@@ -1302,6 +1302,16 @@ function get_ws_signupform(e){
     return false;
 }
 
+document.addEventListener("DOMContentLoaded", function(){
+    var tempImageokay = document.querySelectorAll(".xd-dump-img");
+    if( tempImageokay ){    
+        //tempImageokay.forEach( function(entry){
+            setTimeout(function(){
+                tempImageokay[0].classList.remove("xd-dump-img");
+            }, 1000);
+        //});
+    }
+});
 /*Lazy Loading BG Image*/
 document.addEventListener("DOMContentLoaded", 
 function(){
@@ -1342,7 +1352,7 @@ function(){
           window.removeEventListener("resize", lazyload);
           window.removeEventListener("orientationChange", lazyload);
         }
-        }, 2000);
+        }, 20);
     }
     document.addEventListener("scroll", lazyload);
     window.addEventListener("resize", lazyload);
