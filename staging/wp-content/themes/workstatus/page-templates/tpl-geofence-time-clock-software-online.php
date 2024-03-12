@@ -60,6 +60,7 @@ $thisPostID = $post->ID;
                 isset( $top_section['video_background_image'] ) && 
                 !empty( $top_section['video_background_image'] ) 
               ){
+              $cScreenSrc   = wsGetWebpSrcUrl($top_section['video_background_image']['id']);  
               $vdScreenshot = ' style="background: url('.wsGetWebpSrcUrl($top_section['video_background_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
               }
               ?>
@@ -75,11 +76,12 @@ $thisPostID = $post->ID;
                           <iframe id="video" class="videoIframe" allowfullscreen
                             data-src="<?php echo $top_section['video_embed_url']; ?>">
                           </iframe>
-                          <button class="videoPoster lazy-background wslazy" id="play-button" <?php echo $vdScreenshot; ?>>Play video
+                          <button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="<?php echo $cScreenSrc; ?>" 
+                          id="play-button">Play video
                           <span class="playicon"></span></button>
                           <?php 
                           }else{
-                            echo '<button class="videoPoster lazy-background wslazy" id="play-button" '.$vdScreenshot.'></button>';
+                            echo '<button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="'.$cScreenSrc.'" id="play-button"></button>';
                           } 
                           ?>
                         </div>
