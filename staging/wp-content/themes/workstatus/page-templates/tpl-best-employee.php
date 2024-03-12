@@ -54,9 +54,11 @@ global $ws_ctas, $RegLink, $LogLink;
                           </iframe>
                           <button class="videoPoster lazy-background wslazy xd-dump-img" id="play-button" <?php echo $vdScreenshot; ?>>Play video
                           <span class="playicon"></span></button>
-                          <?php }else{
+                          <?php 
+                          }else{
                             echo '<button class="videoPoster lazy-background xd-dump-img" id="play-button" '.$vdScreenshot.'></button>';
-                          } ?>
+                          } 
+                          ?>
                         </div>
                       </div>
                     </div>
