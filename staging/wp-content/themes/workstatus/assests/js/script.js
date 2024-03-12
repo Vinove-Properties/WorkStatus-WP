@@ -1308,7 +1308,7 @@ document.addEventListener("DOMContentLoaded", function(){
         //tempImageokay.forEach( function(entry){
             setTimeout(function(){
                 tempImageokay[0].classList.remove("xd-dump-img");
-            }, 5000);
+            }, 2000);
         //});
     }
 });
