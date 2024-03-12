@@ -53,11 +53,12 @@ global $ws_ctas, $RegLink, $LogLink;
                           <iframe id="video" class="videoIframe" allowfullscreen
                             data-src="<?php echo $top_section['video_embed_url']; ?>">
                           </iframe>
-                          <button class="videoPoster lazy-background" id="play-button" <?php echo $vdScreenshot; ?>>Play video
+                          <button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="<?php echo $cScreenSrc; ?>" 
+                          id="play-button">Play video
                           <span class="playicon"></span></button>
                           <?php 
                           }else{
-                          echo '<button class="videoPoster lazy-background" id="play-button" '.$vdScreenshot.'></button>';
+                          echo '<button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="'.$cScreenSrc.'" id="play-button" '.$vdScreenshot.'></button>';
                           } 
                           ?>
                         </div>
