@@ -1345,7 +1345,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setTimeout(function(){
         wsLazyLoadImages();
-    }, 2500);
+    }, 5000);
 
     window.addEventListener('scroll', wsLazyLoadImages);
     window.addEventListener('touchmove', wsLazyLoadImages);
