@@ -23,7 +23,8 @@ if( $isEnable == "yes" ){
           <div class="cont-wrap">
             <div class="actionBtn">
               <?php if( geoCTAcheck() === true ) : ?>
-              <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
+              <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" 
+                onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
                 <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
               </div>
               <?php endif; ?>
@@ -78,7 +79,8 @@ if( $isEnable == "yes" ){
                   </div>
                 </div>
               </div>               
-             <button style="" alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
+             <button style="background-image:url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg)"
+              alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
             </div>
           </div>
         </div>

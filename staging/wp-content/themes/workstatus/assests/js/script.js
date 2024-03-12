@@ -1342,7 +1342,7 @@ function(){
           window.removeEventListener("resize", lazyload);
           window.removeEventListener("orientationChange", lazyload);
         }
-        }, 20);
+        }, 2000);
     }
     document.addEventListener("scroll", lazyload);
     window.addEventListener("resize", lazyload);
