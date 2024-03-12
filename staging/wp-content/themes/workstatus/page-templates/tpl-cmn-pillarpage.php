@@ -55,6 +55,7 @@ if( $hasbannerThumb && !empty( $hasbannerThumb ) ){
             }else{
                 $bthumb = get_bloginfo('template_url').'/assests/images/video-poster13.webp';
             }
+            $cScreenSrc   = $bthumb;            
             $vdScreenshot = ' style="background: url('.$bthumb.'); 
             background-size: contain; background-repeat: no-repeat; background-position: center;"';            
             ?>
@@ -70,7 +71,8 @@ if( $hasbannerThumb && !empty( $hasbannerThumb ) ){
                 echo '<iframe id="video" class="videoIframe" allowfullscreen data-src="'.$bannerVideo.'"></iframe>';
                 }
                 ?>                
-                <button class="videoPoster lazy-background wslazy" id="play-button" <?php echo $vdScreenshot; ?>>Play video</button>
+                <button class="videoPoster lazy-background wsbg-cover wsbg-img bg-trans" data-src="<?php echo $cScreenSrc; ?>" id="play-button">  
+                Play video</button>
                 </div>
                 </div>
                 </div>

@@ -41,6 +41,7 @@ global $ws_ctas, $RegLink, $LogLink;
                             isset($bannersec['video_bg_image']) &&
                             !empty($bannersec['video_bg_image'])
                         ) {
+                            $cScreenSrc   = wsGetWebpSrcUrl( $bannersec['video_bg_image']['id'] );
                             $vdScreenshot = ' style="background: url('.wsGetWebpSrcUrl($bannersec['video_bg_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
                         }
                         ?>
@@ -52,13 +53,14 @@ global $ws_ctas, $RegLink, $LogLink;
                                             <div class="videoWrapper">
                                                 <iframe id="video" class="videoIframe" allowfullscreen data-src="<?php echo $bannersec['video']; ?>">
                                                 </iframe>
-                                                <button class="videoPoster lazy-background wslazy" id="play-button" <?php echo $vdScreenshot; ?>>
+                                                <button class="videoPoster lazy-background wsbg-cover wsbg-img bg-trans" 
+                                                data-src="<?php echo $cScreenSrc; ?>" id="play-button">
                                                     Play video
-                                                    <?php 
-                                                    if( $bannersec['video'] ){
-                                                        echo '<span class="playicon"></span>';
-                                                    } 
-                                                    ?>                                                    
+                                                <?php 
+                                                if( $bannersec['video'] ){
+                                                    echo '<span class="playicon"></span>';
+                                                } 
+                                                ?>                                                    
                                                 </button>
                                             </div>
                                         </div>

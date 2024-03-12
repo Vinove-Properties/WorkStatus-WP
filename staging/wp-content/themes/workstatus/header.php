@@ -19,13 +19,17 @@ global $ws_ctas, $RegLink, $LogLink;
     var ws_site_url = "<?php echo trailingslashit(get_bloginfo('url')); ?>";
   </script>
   <style type="text/css">
+    /*Core Web Vital Starts*/
     .xd-dump-img,
     .wslazy{background-image:none !important; background-color:#F1F1FA !important; background:none !important;}
+    .inner-banner .videoSc .videoPoster,
     .wsbg-cover{background-size:contain; background-repeat:no-repeat; background-position:center;} 
     
     .inner-banner .videoSc .srp-1 .videoPoster.wsbg-img,
     .inner-banner .videoSc .srp-30 .videoPoster.wsbg-img{background-image:none;}
-    
+    .inner-banner .videoSc .videoPoster.bg-trans{background:transparent; background-repeat:no-repeat; background-position:center;}
+    /*Core Web Vital Ends*/
+
     #ws-apimsg.success{margin-top: 10px; display:inline-block; color:#007600;}
     #ws-apimsg.error{margin-top: 10px; display:inline-block; color:#ed1010;}
     .useful-resources-blog-section .thumb img{height:200px!important;}

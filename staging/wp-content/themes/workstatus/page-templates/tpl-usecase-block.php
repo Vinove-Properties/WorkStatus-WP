@@ -40,8 +40,9 @@ global $ws_ctas, $RegLink, $LogLink;
                         if (
                             isset($inner_banner['video_bg_image']) &&
                             !empty($inner_banner['video_bg_image'])
-                        ) {
-                            $vdScreenshot = ' style="background:url('.wsGetWebpSrcUrl($inner_banner['video_bg_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
+                        ){
+                        $cScreenSrc   = wsGetWebpSrcUrl( $inner_banner['video_bg_image']['id'] );
+                        $vdScreenshot = ' style="background:url('.wsGetWebpSrcUrl($inner_banner['video_bg_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
                         }
                         ?>
                     <div class="video-wrap">
@@ -53,7 +54,8 @@ global $ws_ctas, $RegLink, $LogLink;
                                         <div class="videoWrapper">
                                             <!-- <iframe id="video" class="videoIframe" allowfullscreen data-src="<?php echo $inner_banner['video']; ?>">
                                             </iframe> -->
-                                            <button class="videoPoster lazy-background" id="play-button" <?php echo $vdScreenshot; ?>>
+                                            <button class="videoPoster lazy-background wsbg-cover wsbg-img bg-trans" 
+                                                data-src="<?php echo $cScreenSrc; ?>" id="play-button">    
                                                 Play video
                                                 <!-- <span class="playicon"></span> -->
                                             </button>
