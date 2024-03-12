@@ -1302,6 +1302,7 @@ function get_ws_signupform(e){
     return false;
 }
 
+/*
 document.addEventListener("DOMContentLoaded", function(){
     var tempImageokay = document.querySelectorAll(".xd-dump-img");
     if( tempImageokay ){
@@ -1327,6 +1328,33 @@ document.addEventListener("DOMContentLoaded", function() {
             lazyBackgroundObserver.observe(lazyBackground);
         });
     }
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to check if element is in viewport
+    function isInViewport(element){
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Lazy load images on scroll
+    function lazyLoadImages() {
+      var images = document.querySelectorAll('.wsbg-img');
+      images.forEach(function(image) {
+        if( !image.getAttribute('data-loaded') ){
+          console.log( image );  
+          image.style.backgroundImage = 'url(' + image.getAttribute('data-src') + ')';
+          image.setAttribute('data-loaded', 'true');
+        }
+      });
+    }
+    window.addEventListener('scroll', lazyLoadImages);
+    window.addEventListener('touchmove', lazyLoadImages);
 });
 
 
