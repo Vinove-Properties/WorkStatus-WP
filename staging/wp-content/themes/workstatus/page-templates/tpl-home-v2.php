@@ -18,73 +18,8 @@
         <div class="flex_row">
           <div class="column column-content">
             <h6><span class="bg-purple"><?php echo $top_section['top-heading']; ?></span></h6>
-            <h1>
-            <strong>Maximize Team 
-Productivity: </strong>From 
-Remote to In-Office
-                              <!--
-                              <div class="bold-head">
-                              
-                                 <div class="hdtitle">
-                                    <div class="word workforce">
-                                    <span>S</span>
-                                    <span>m</span>
-                                    <span>a</span>
-                                    <span>r</span>
-                                    <span class="spc">t</span>
-                                       <span>W</span>
-                                       <span>o</span>
-                                       <span>r</span>
-                                       <span>k</span>
-                                       <span>f</span>
-                                       <span>o</span>
-                                       <span>r</span>
-                                       <span>c</span>
-                                       <span>e</span>
-                                    </div>
-                                    <div class="word solutions">
-                                       <span>T</span>
-                                       <span>i</span>
-                                       <span>m</span>
-                                       <span class="spc">e</span>
-                                       <span>M</span>
-                                       <span>a</span>
-                                       <span>n</span>
-                                       <span>a</span>
-                                       <span>g</span>
-                                       <span>e</span>
-                                       <span>m</span>
-                                       <span>e</span>
-                                       <span>n</span>
-                                       <span>t</span>
-                                    </div>
-                                    <div class="word analytics">
-                                       <span>R</span>
-                                       <span>e</span>
-                                       <span>p</span>
-                                       <span>o</span>
-                                       <span>r</span>
-                                       <span>t</span>
-                                       <span>i</span>
-                                       <span>n</span>
-                                       <span class="spc">g</span>
-                                       <span class="spc">&</span>
-                                       <span>A</span>
-                                       <span>n</span>
-                                       <span>a</span>
-                                       <span>l</span>
-                                       <span>y</span>
-                                       <span>t</span>
-                                       <span>i</span>
-                                       <span>c</span>
-                                       <span>s</span>
-                                    </div>
-
-                                    
-                                 </div>
-                              </div>-->
-                           </h1>
-                           <p>Elevate your business with our integrated time tracking and workforce management solutions, designed to boost efficiency and unlock peak productivity.</p>
+            <h1><strong>Maximize Team Productivity: </strong>From Remote to In-Office</h1>
+            <p>Elevate your business with our integrated time tracking and workforce management solutions, designed to boost efficiency and unlock peak productivity.</p>
             <div class="cont-wrap">
               <div class="actionBtn">
                 <?php if( geoCTAcheck() === true ) : ?>
@@ -148,7 +83,7 @@ Remote to In-Office
                 </div>
                
                <button style="background-image:url(<?php bloginfo('template_url'); ?>/dev-images/home-bannerthumb.svg)" 
-                alt="banner-image" class="videoPoster lazy-background wslazy nb-bg" id="play-button">Play video</button>
+                alt="banner-image" class="videoPoster nb-bg" id="play-button">Play video</button>
               </div>
             </div>
           </div>
