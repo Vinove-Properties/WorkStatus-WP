@@ -37,6 +37,7 @@ global $ws_ctas, $RegLink, $LogLink;
               $vdScreenshot = '';
               if( isset( $top_section['video_background_image'] ) && !empty( $top_section['video_background_image'] ) 
               ){
+              $cScreenSrc   = wsGetWebpSrcUrl($top_section['video_background_image']['id']);
               $vdScreenshot = ' style="background: url('.wsGetWebpSrcUrl($top_section['video_background_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
               }
               ?>
@@ -52,11 +53,11 @@ global $ws_ctas, $RegLink, $LogLink;
                           <iframe id="video" class="videoIframe" allowfullscreen
                             data-src="<?php echo $top_section['video_embed_url']; ?>">
                           </iframe>
-                          <button class="videoPoster lazy-background wslazy xd-dump-img" id="play-button" <?php echo $vdScreenshot; ?>>Play video
+                          <button class="videoPoster lazy-background" id="play-button" <?php echo $vdScreenshot; ?>>Play video
                           <span class="playicon"></span></button>
                           <?php 
                           }else{
-                            echo '<button class="videoPoster lazy-background xd-dump-img" id="play-button" '.$vdScreenshot.'></button>';
+                          echo '<button class="videoPoster lazy-background" id="play-button" '.$vdScreenshot.'></button>';
                           } 
                           ?>
                         </div>

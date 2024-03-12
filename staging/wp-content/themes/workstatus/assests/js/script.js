@@ -1331,30 +1331,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });*/
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to check if element is in viewport
-    function isInViewport(element){
-      var rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+    function wsLazyLoadImages() {
+      var images = document.querySelectorAll('.wsbg-img');
+      if( images ){
+        images.forEach(function(image){
+            if( !image.getAttribute('data-loaded') ){
+              image.style.backgroundImage = 'url(' + image.getAttribute('data-src') + ')';
+              image.setAttribute('data-loaded', 'true');
+            }
+        });  
+      }      
     }
 
-    // Lazy load images on scroll
-    function lazyLoadImages() {
-      var images = document.querySelectorAll('.wsbg-img');
-      images.forEach(function(image) {
-        if( !image.getAttribute('data-loaded') ){
-          console.log( image );  
-          image.style.backgroundImage = 'url(' + image.getAttribute('data-src') + ')';
-          image.setAttribute('data-loaded', 'true');
-        }
-      });
-    }
-    window.addEventListener('scroll', lazyLoadImages);
-    window.addEventListener('touchmove', lazyLoadImages);
+    setTimeout(function(){
+        wsLazyLoadImages();
+    }, 2500);
+
+    window.addEventListener('scroll', wsLazyLoadImages);
+    window.addEventListener('touchmove', wsLazyLoadImages);
+    document.addEventListener("click", wsLazyLoadImages);
 });
 
 
