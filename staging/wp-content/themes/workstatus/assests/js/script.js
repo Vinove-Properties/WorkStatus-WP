@@ -1304,12 +1304,10 @@ function get_ws_signupform(e){
 
 document.addEventListener("DOMContentLoaded", function(){
     var tempImageokay = document.querySelectorAll(".xd-dump-img");
-    if( tempImageokay ){    
-        //tempImageokay.forEach( function(entry){
-            setTimeout(function(){
-                tempImageokay[0].classList.remove("xd-dump-img");
-            }, 2000);
-        //});
+    if( tempImageokay ){
+        setTimeout(function(){
+            tempImageokay[0].classList.remove("xd-dump-img");
+        }, 2000);
     }
 });
 /*Lazy Loading BG Image*/
