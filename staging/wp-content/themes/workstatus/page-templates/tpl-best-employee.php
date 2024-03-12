@@ -58,7 +58,7 @@ global $ws_ctas, $RegLink, $LogLink;
                           <span class="playicon"></span></button>
                           <?php 
                           }else{
-                          echo '<button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="'.$cScreenSrc.'" id="play-button" '.$vdScreenshot.'></button>';
+                          echo '<button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="'.$cScreenSrc.'" id="play-button"></button>';
                           } 
                           ?>
                         </div>
