@@ -125,10 +125,9 @@ get_header();
       </div>
       <?php 
       $keyAway = get_field('col-keyaway');
-      $takeText = '';
       if( isset($keyAway['required']) && ($keyAway['required'] == "yes") ){
         if( isset( $keyAway['content'] ) && !empty($keyAway['content']) ){
-          $takeText = '<div class="row-key-takeaway">'.$keyAway['content'].'<div>';  
+          echo '<div class="row-key-takeaway">'.$keyAway['content'].'<div>';  
         }  
       } 
       ?>
