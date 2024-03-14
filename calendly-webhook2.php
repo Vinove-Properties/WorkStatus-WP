@@ -2,6 +2,7 @@
 
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
+define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
 
 function get_visitor_ip(){
     if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
@@ -27,7 +28,49 @@ function get_visitor_ip(){
     return $ip;
 }
 
-define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
+function dupLeadNote( $varAccessToken, $lead_id, $requirement ){
+    date_default_timezone_set('Asia/Kolkata'); // Set the timezone to IST
+    $currentDateTime = new DateTime();
+    $formattedDate = $currentDateTime->format('jS F Y \a\t g:i A');
+    $notesRequest = 'https://www.zohoapis.com/crm/v2/Leads/'.$lead_id.'/Notes';
+    $notes_data = [
+    'Note_Content'  => 'New Inquiry Received from Workstatus on '.$formattedDate.'. Content below:'."\n ".$requirement,
+    'se_module'     => 'Leads'
+    ];
+    $nJSON  = json_encode( $notes_data );
+    $nJSON  = str_replace('{','[{',$nJSON);
+    $nJSON  = str_replace('}','}]',$nJSON);
+    $postNotesData = '{"data":' . $nJSON . '}';
+
+    $curl   = curl_init();
+    curl_setopt_array($curl, array(
+    CURLOPT_URL => $notesRequest,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION    => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST   => "POST",
+    CURLOPT_POSTFIELDS      => $postNotesData,
+    CURLOPT_HTTPHEADER      => array( "authorization: Zoho-oauthtoken $varAccessToken", "cache-control: no-cache",
+    "content-type: application/json"),
+    ));
+
+    $response   = curl_exec($curl);
+    $err        = curl_error($curl);
+    if( !$err ){
+        $response   = json_decode( $response );
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, PHP_EOL."Duplicate Lead Notes : ".print_r($response,1) );
+        fclose( $file );
+    }else{
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, "Error Notes : ".$err );
+        fclose( $file );    
+    }
+    curl_close( $curl );
+}
+
 $file       = fopen(CL_LOGFILE,"a");
 fwrite( $file, PHP_EOL."ADMIN API REQ - updated : ".time().print_r($json,true) );
 fclose( $file );
@@ -44,7 +87,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
       CURLOPT_CUSTOMREQUEST => "GET",
       CURLOPT_HTTPHEADER => [
-        "Authorization: Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzAwNzI3MDE1LCJqdGkiOiIwNTczNzVmZC1mMjVmLTQ4MTItODE0Ny03MmRiMmJiZjM1MjUiLCJ1c2VyX3V1aWQiOiJmZjI0ZTE3MC1lODMwLTQ2ODUtOTkwZS1iNzVjZDVlMTEzZGMifQ.1YjzaNm8rRhrviDKZZrA5KC_4YY7N9KqOn2ef2pTR9TdporoRXjyzMrgjkyQges-Tai6ZdjR8NvZfKYW1lZ26A",
+        "Authorization: Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzAyMzczMjg2LCJqdGkiOiI5NDk5YWNjMC05YjI3LTRkZWEtODg3Mi1jYjZjNzI2ZWFkNDgiLCJ1c2VyX3V1aWQiOiJmZjI0ZTE3MC1lODMwLTQ2ODUtOTkwZS1iNzVjZDVlMTEzZGMifQ.kQnJv0kPyPUOChBtkgqA7CyueLFM7AO15Pvhzcq3aC0lorpHON7S-RTIcxHBDmaC10i_coS6fIbiVh6yyaa1KQ",
         "Content-Type: application/json"
       ],
     ]);
@@ -255,7 +298,8 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                     $response   = json_decode( $response );
                     $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, PHP_EOL.$email.":".print_r($response,1) );
-                    fclose( $file );    
+                    fclose( $file );
+                    dupLeadNote( $varAccessToken, $lead_id, $comment );
                 }else{
                     $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, "Error in Zoho Entry :".$err );
