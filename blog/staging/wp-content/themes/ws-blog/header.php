@@ -24,9 +24,14 @@
       .hero-banner {padding:100px 0 50px;}
    
       body.single .blog-thumb,
-      .desk-only{ display:none; }
-    
+      .desk-only{ display:none; }    
       }
+      body.single-post .row-key-takeaway{background: #f7f6fe; padding:30px; border-radius: 10px; border-left: 5px solid #624DE3; 
+      color: #414141; margin: 30px 0;}
+      body.single-post .row-key-takeaway ul li{ line-height: 20px; margin: 0 0 10px; list-style-position: inside; padding-left: 25px;
+      position: relative; list-style: none ;}
+      body.single-post .row-key-takeaway ul li:before{content: ''; width: 13px; height: 14px; 
+      background:url(<?php bloginfo('template_url') ?>/images/keyli.png); position: absolute; left: 0; top: 4px;}
       
     </style>
     <!-- Google Tag Manager -->

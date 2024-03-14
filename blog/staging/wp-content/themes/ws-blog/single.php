@@ -123,6 +123,15 @@ get_header();
       <div class="top-header-banner">
         <h1><?php echo get_the_title()?></h1>
       </div>
+      <?php 
+      $keyAway = get_field('col-keyaway');
+      $takeText = '';
+      if( isset($keyAway['required']) && ($keyAway['required'] == "yes") ){
+        if( isset( $keyAway['content'] ) && !empty($keyAway['content']) ){
+          $takeText = '<div class="row-key-takeaway">'.$keyAway['content'].'<div>';  
+        }  
+      } 
+      ?>
     </div>
 
     <!--<div class="detail-thumb"><?php the_post_thumbnail( 'single-post-thumbnail' ); ?></div>-->
