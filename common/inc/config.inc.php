@@ -462,6 +462,51 @@ define('CLIENT_ID','1000.ED227T6HEN6WAZRH1O48BU5VI96MVR');
 define('CLIENT_SECRET','c0fe2e3c254b4d2d7851267acf6b62bce66deead0d');
 define('ACCESS_TOKEN','');
 define('REFRESH_TOKEN','1000.4a964cbd2983c2dd57da83472dd0e96d.c0c7a5b9cb27092b71e2d6687c140dda');
+
+define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
+function dupLeadNote( $varAccessToken, $lead_id, $requirement ){
+    date_default_timezone_set('Asia/Kolkata'); // Set the timezone to IST
+    $currentDateTime = new DateTime();
+    $formattedDate = $currentDateTime->format('jS F Y \a\t g:i A');
+    $notesRequest = 'https://www.zohoapis.com/crm/v2/Leads/'.$lead_id.'/Notes';
+    $notes_data = [
+    'Note_Content'  => 'New Inquiry Received from Workstatus on '.$formattedDate.'. Content below:'."\n ".$requirement,
+    'se_module'     => 'Leads'
+    ];
+    $nJSON  = json_encode( $notes_data );
+    $nJSON  = str_replace('{','[{',$nJSON);
+    $nJSON  = str_replace('}','}]',$nJSON);
+    $postNotesData = '{"data":' . $nJSON . '}';
+
+    $curl   = curl_init();
+    curl_setopt_array($curl, array(
+    CURLOPT_URL => $notesRequest,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION    => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST   => "POST",
+    CURLOPT_POSTFIELDS      => $postNotesData,
+    CURLOPT_HTTPHEADER      => array( "authorization: Zoho-oauthtoken $varAccessToken", "cache-control: no-cache",
+    "content-type: application/json"),
+    ));
+
+    $response   = curl_exec($curl);
+    $err        = curl_error($curl);
+    if( !$err ){
+        $response   = json_decode( $response );
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, PHP_EOL."Duplicate Lead Notes : ".print_r($response,1) );
+        fclose( $file );
+    }else{
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, "Error Notes : ".$err );
+        fclose( $file );    
+    }
+    curl_close( $curl );
+}
+
 function getzoholeads($argArrData, $lead_status = "Not Contacted"){ 
 //echo '<pre>'; print_r($argArrData); die;    
 $fname = ( isset( $argArrData['fname'] ) && !empty( $argArrData['fname'] ) ) ? $argArrData['fname'] : '';
@@ -631,6 +676,7 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
                 $response  = curl_exec($curl);
                 curl_close( $curl );
                 $response   = json_decode( $response );
+                dupLeadNote( $varAccessToken, $lead_id, $requirement );
                 /*
                 $file       = fopen("/home/workforestc/calendly-log/zoho-logs.txt","a");
                 $zlead      = PHP_EOL.$email.":".print_r($response,1);
