@@ -125,7 +125,7 @@ $appUrl = 'https://app.workstatus.io/auth/register';
 get_header();
 
 $tplversion       = get_field('tpl-stype');
-$isBannerFormTpl  = ( $tplversion && ($tplversion == "6.1") ) ? true : false;
+$isBannerFormTpl  = ( $tplversion && (($tplversion == "6.1") || ($tplversion == "6.2")) ) ? true : false;
 //$isBannerFormTpl = true;
 ?>
 

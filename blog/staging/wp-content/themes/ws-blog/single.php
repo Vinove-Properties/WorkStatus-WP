@@ -140,8 +140,11 @@ get_header();
     <div class="second-row" id="stickytoc">
       <div class="buyers-guide">
         <div class="vcb-col-left" id="vcb-col-left">          
-          <div class="table-c">
-            <h3>Table of Contents</h3>
+          <div class="table-c" id="elm-toc">
+            <h3>Table of Contents <a class="sw-hd" href="javascript:void(0);" onclick="document.getElementById('elm-toc').classList.toggle('active');">
+              <span class="hide">(Hide)</span>
+              <span class="show">(Show)</span>
+            </a></h3>
             <div class="tocsec">
               <?php dynamic_sidebar('ws-toc'); ?>
             </div>
