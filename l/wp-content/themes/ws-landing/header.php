@@ -163,7 +163,7 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
 <div class="container">
   <div class="top-nav">
     <div class="header-item-left">
-      <a href="index.html" class="logo-b">
+      <a href="javascript:void(0);" class="logo-b">
         <picture>
           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="workstatus logo" width="230" 
           height="31">
