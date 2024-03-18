@@ -80,10 +80,16 @@ global $ws_ctas, $RegLink, $LogLink;
 
 
 /*Diwali Banner Css Start From Here*/
-.banner-section{padding: 170px 0 80px !important;}
-.inner-banner{padding:150px 0 0 !important;}
+.banner-section{padding:200px 0 80px !important;}
+.inner-banner{padding:200px 0 0 !important;}
+.holi-banner img{width:100%;}
 .desk-holi{display:block;}
 .phone-holi{display:none;}
+
+@media (max-width:1660px){
+  .banner-section{padding:170px 0 80px !important;}
+.inner-banner{padding:170px 0 0 !important;}
+}
 
 @media (max-width:979px){
 .inner-banner{padding:150px 0 0 !important;}
