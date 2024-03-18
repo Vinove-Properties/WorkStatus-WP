@@ -73,10 +73,32 @@ global $ws_ctas, $RegLink, $LogLink;
     #elm-maps.sel-mobile .box-wrap.sel-mobile{display:block;}
     body.modal-open{overflow:hidden;}
      
-    .hero-banner .inner-wrap #wsroi-calculator .calculator{margin-bottom: 20px;}
-    .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
-    .wsf-signup .popup-content .right-section.signup-success .sucmsg h3{color: #110302 !important; }
-    .wsf-signup .popup-content .right-section.signup-success .sucmsg p{color: #737b7d !important; }
+  .hero-banner .inner-wrap #wsroi-calculator .calculator{margin-bottom: 20px;}
+  .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
+  .wsf-signup .popup-content .right-section.signup-success .sucmsg h3{color: #110302 !important; }
+  .wsf-signup .popup-content .right-section.signup-success .sucmsg p{color: #737b7d !important; }
+
+
+/*Diwali Banner Css Start From Here*/
+.banner-section{padding: 170px 0 80px !important;}
+.inner-banner{padding:150px 0 0 !important;}
+.desk-holi{display:block;}
+.phone-holi{display:none;}
+
+@media (max-width:979px){
+.inner-banner{padding:150px 0 0 !important;}
+}
+
+@media (max-width: 767px){
+.banner-section{padding:150px 0 50px !important;}
+.hero-banner, .inner-banner-bg{padding:150px 0 50px !important;}
+.desk-holi{display:none;}
+.phone-holi{display:block;}
+}
+/*Diwali Banner CSS ends Here*/
+
+
+
 
   </style>
   <?php if( isBetaVersion() === false ) : ?>
@@ -101,6 +123,15 @@ global $ws_ctas, $RegLink, $LogLink;
   <?php //wp_body_open(); ?>
   <?php  echo ( wsFeaturedHeader() ) ? '<div class="feature-header">' : ''; ?>
   <header class="site__header" id="masthead">
+
+   <div class="holi-banner"><picture>
+              <img class="desk-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-banner.gif" alt="Workstatus" width="" height="60"> 
+              <img class="phone-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-phone.gif" alt="Workstatus" width="" height="60"> 
+
+            </picture>
+          
+          </div>
+
     <div class="container">
       <?php //echo '<pre>'.get_page_template().'</pre>'; ?>
       <div id="topnav" class="top_nav">
