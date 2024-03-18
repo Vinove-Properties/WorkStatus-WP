@@ -61,7 +61,7 @@
 
 @media (max-width:2500px){
 .cmn-filter{top: 177px !important;} 
-.cmn-filter.shady{top: 120px !important;}
+.cmn-filter.shady{top: 158px !important;}
 .hero-banner.in-banner {padding-top:330px !important;} 
 }
 
@@ -71,11 +71,13 @@
 .hero-banner.in-banner {padding-top:280px !important;} 
 }
 
-
 @media (max-width:1920px){
+  .cmn-filter {top: 151px !important;}
+.cmn-filter.shady{top: 140px !important;}
+}
+@media (max-width:1880px){
 .cmn-filter {top: 151px !important;}
-.cmn-filter.shady{top: 132px !important;}
-
+.cmn-filter.shady{top: 133px !important;}
 .hero-banner.in-banner {padding-top: 250px !important;}
 
 }
@@ -93,8 +95,8 @@
 }
 
 @media (max-width:1380px){
-.cmn-filter {top: 130px !important;}
-.cmn-filter.shady{top: 110px !important;}
+.cmn-filter {top: 135px !important;}
+.cmn-filter.shady{top: 119px !important;}
 }
 
 @media (max-width:1024px){
