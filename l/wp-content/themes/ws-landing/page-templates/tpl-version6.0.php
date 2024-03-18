@@ -125,7 +125,7 @@ $appUrl = 'https://app.workstatus.io/auth/register';
 get_header();
 
 $tplversion       = get_field('tpl-stype');
-$isBannerFormTpl  = ( $tplversion && (($tplversion == "6.1") || ($tplversion == "6.2")) ) ? true : false;
+$isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "6.2"))) ? true : false;
 //$isBannerFormTpl = true;
 ?>
 
@@ -197,12 +197,14 @@ $isBannerFormTpl  = ( $tplversion && (($tplversion == "6.1") || ($tplversion == 
         <?php 
         if( $isBannerFormTpl === true ){
           $bfCta = get_field('bf-cta');
-          echo '<div class="col">';
+          echo ( sixTwoTpl() === true ) ? '<div class="banner-form-bg">' : '';
+          echo ( sixTwoTpl() === true ) ? '<div class="form-box">' : '<div class="col">';
           echo '<h3>';
           echo (isset($bfCta['title']) && !empty($bfCta['title'])) ? $bfCta['title'] : 'Request a Demo';
           echo '</h3>';
           $btnCta = (isset($bfCta['cta-button']) && !empty($bfCta['cta-button'])) ? $bfCta['cta-button'] : 'Book A Demo';
           get_template_part('inc/form', 'version6', ['cta-text' => $btnCta ]);
+          echo ( sixTwoTpl() === true ) ? '</div>' : '';
           echo '</div>';
         }else{
           $bannerImage = get_field('top-banner');

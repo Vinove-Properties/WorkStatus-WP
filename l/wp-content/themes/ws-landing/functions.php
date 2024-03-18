@@ -156,14 +156,26 @@ function issglFldForm(){
 		return false;
 	}
 }
-/**
- * Enqueue scripts and styles.
- */
+
+function sixTwoTpl(){
+	global $post;	
+	$tplversion = get_post_meta( $post->ID, 'tpl-stype', true );
+	if( $tplversion && ($tplversion == "6.2") ){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+/*
+Enqueue scripts and styles.
+*/
 function ws_landing_scripts(){
 	//wp_enqueue_style( 'ws-landing-style', get_stylesheet_uri(), array(), _S_VERSION );
 	//wp_style_add_data( 'ws-landing-style', 'rtl', 'replace' );
 	//wp_enqueue_script( 'ws-landing-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	global $post;
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -227,8 +239,12 @@ function ws_landing_scripts(){
 		wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation5.0.js', array(), _S_VERSION, true);
 		wp_localize_script( 'wssignup-script', 'wsObj', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
 	}elseif( is_page_template( 'page-templates/tpl-version6.0.php' ) ){
-		wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/assets/css/version-6.0-min.css' );
-
+		//$tplversion = get_post_meta( $post->ID, 'tpl-stype', true );
+		if( sixTwoTpl() === true ){
+			wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/assets/css/version-6.2-min.css' );
+		}else{
+			wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/assets/css/version-6.0-min.css' );
+		}
 		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true );
 		wp_enqueue_script( 'ws-ns-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, true );	
 		wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation6.0.js', array(), time(), true);
@@ -584,6 +600,10 @@ add_filter( 'body_class', function( $classes ){
 		if( $ranMeta == "yes" ){
 			$classes[] 	= 'nr-phone';
 		}
+	}
+
+	if( is_page_template(['page-templates/tpl-version6.0.php']) && (sixTwoTpl() === true) ){
+		$classes[] 	= 'employee-monitoring-page';		
 	}
 	return $classes;
 });

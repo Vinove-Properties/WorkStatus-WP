@@ -132,14 +132,21 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
   }            
 }
 
-}elseif( is_page_template(['page-templates/tpl-version6.0.php']) ){ ?>
+}elseif( is_page_template(['page-templates/tpl-version6.0.php']) ){ 
+?>
 <header class="main-header" id="mainHeader">
 <div class="container">
   <div class="top-nav">
     <div class="header-item-left">
       <span class="logo-a">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/img/logo-white.svg" alt="workstatus logo" width="230" height="31">
+          <?php 
+          if( sixTwoTpl() ){
+          echo '<img loading="lazy" src="'.get_bloginfo('template_url').'/img/logo.svg" alt="workstatus logo" width="230" height="31">';
+          }else{
+          echo '<img loading="lazy" src="'.get_bloginfo('template_url').'/img/logo-white.svg" alt="workstatus logo" width="230" height="31">';  
+          }
+          ?>
         </picture>
       </span>
       <span class="logo-b">
@@ -150,9 +157,19 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
     </div>
     <div class="header-item-right">
       <ul>
-        <li><a href="#feature">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li class="bookdemo"><a href="#bookdemo" class="btn">Book A Demo</a></li>
+        <?php 
+        if(sixTwoTpl()){
+          echo '<li><a href="#feature">How it Works</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="bookdemo getqutmob"><a href="#bookdemo" class="btn roundbtn getqut">Get a Quote </a></li>
+          <li class="bookdemo bkdemomob"><a href="#bookdemo" class="btn roundbtn roundbtnclr bkdemo">Book A Demo</a></li>';
+        }else{
+          echo '<li><a href="#feature">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="bookdemo"><a href="#bookdemo" class="btn">Book A Demo</a></li>';  
+        }
+        ?>        
       </ul>
     </div>
   </div>

@@ -29,6 +29,38 @@ onsubmit="return wsCmnFormValidation();">
         placeholder="Company Name*" />
       <span class="error"></span>
     </div>
+    
+    <?php if( sixTwoTpl() ) : ?>
+    <div class="form-group companygroup company-headcount">
+    <div id="hcount" class="form-text-cont width-full">
+    <div class="select-box active input-field" onclick="apnSelect('hcount');">
+    <input type="hidden" id="team-size" name="team-size" value="">
+    <span class="error"></span>
+    <a href="javascript:void(0);" class="select-first" id="label-wehelp">Select company headcount</a>
+    <span class="arrow-btn"></span>
+    </div>
+    <div class="select-list">
+      <ul class="in-options">
+      <li onclick="setoptValue('Self-employed', 'label-wehelp', 'team-size', 'hcount');">Self-employed</li>
+      <li onclick="setoptValue('1-10', 'label-wehelp', 'team-size', 'hcount');">1-10</li>
+      <li onclick="setoptValue('11-50', 'label-wehelp', 'team-size', 'hcount');">11-50</li>
+      <li onclick="setoptValue('51-200', 'label-wehelp', 'team-size', 'hcount');">51-200</li>
+      <li onclick="setoptValue('201-500', 'label-wehelp', 'team-size', 'hcount');">201-500</li>
+      <li onclick="setoptValue('501-1000', 'label-wehelp', 'team-size', 'hcount');">501-1000</li>
+      <li onclick="setoptValue('1001-5000', 'label-wehelp', 'team-size', 'hcount');">1001-5000</li>
+      <li onclick="setoptValue('5001-10000', 'label-wehelp', 'team-size', 'hcount');">5001-10000</li>
+      <li onclick="setoptValue('10000+', 'label-wehelp', 'team-size', 'hcount');">10000+</li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div class="form-group companygroup company-headcount">
+      <textarea class="form-control" name="requirement" id="ws-requirement" placeholder="Please tell us about your requirements"></textarea>
+      <span class="error"></span>
+    </div>
+    <?php endif; ?>
+
     <div class="form-group popfull">
       <div class="padd">
         <p><input class="mcheck" id="vs_checkId" name="checkbox" type="checkbox" value="1" checked="">By filling this form, you agree to our&nbsp;<a href="https://www.workstatus.io/privacy-policy" rel=" noopener">Privacy Policy</a></p>
