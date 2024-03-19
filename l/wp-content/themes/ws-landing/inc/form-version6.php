@@ -3,7 +3,7 @@ global $ws_utm;
 $cta_txt = ( isset( $args['cta-text'] ) && !empty( $args['cta-text'] ) ) ? $args['cta-text'] : "Book A Demo";
 ?>
 <form name="ws-theForm" method="post" id="wsleadform" action="<?php echo site_url('/thanks'); ?>" 
-onsubmit="return wsCmnFormValidation();">
+onsubmit="return wsCmnFormValidation(<?php echo ( sixTwoTpl() ) ? 'true' : '';  ?>);">
 <div class="form-wrap">
     <div class="form-group">
       <input type="text" id="vs_first_name" placeholder="Full Name*" name="fname"
@@ -41,23 +41,23 @@ onsubmit="return wsCmnFormValidation();">
     </div>
     <div class="select-list">
       <ul class="in-options">
-      <li onclick="setoptValue('Self-employed', 'label-wehelp', 'team-size', 'hcount');">Self-employed</li>
-      <li onclick="setoptValue('1-10', 'label-wehelp', 'team-size', 'hcount');">1-10</li>
-      <li onclick="setoptValue('11-50', 'label-wehelp', 'team-size', 'hcount');">11-50</li>
-      <li onclick="setoptValue('51-200', 'label-wehelp', 'team-size', 'hcount');">51-200</li>
-      <li onclick="setoptValue('201-500', 'label-wehelp', 'team-size', 'hcount');">201-500</li>
-      <li onclick="setoptValue('501-1000', 'label-wehelp', 'team-size', 'hcount');">501-1000</li>
-      <li onclick="setoptValue('1001-5000', 'label-wehelp', 'team-size', 'hcount');">1001-5000</li>
-      <li onclick="setoptValue('5001-10000', 'label-wehelp', 'team-size', 'hcount');">5001-10000</li>
-      <li onclick="setoptValue('10000+', 'label-wehelp', 'team-size', 'hcount');">10000+</li>
+        <li onclick="setoptValue('Self-employed', 'label-wehelp', 'team-size', 'hcount');">Self-employed</li>
+        <li onclick="setoptValue('1-10', 'label-wehelp', 'team-size', 'hcount');">1-10</li>
+        <li onclick="setoptValue('11-50', 'label-wehelp', 'team-size', 'hcount');">11-50</li>
+        <li onclick="setoptValue('51-200', 'label-wehelp', 'team-size', 'hcount');">51-200</li>
+        <li onclick="setoptValue('201-500', 'label-wehelp', 'team-size', 'hcount');">201-500</li>
+        <li onclick="setoptValue('501-1000', 'label-wehelp', 'team-size', 'hcount');">501-1000</li>
+        <li onclick="setoptValue('1001-5000', 'label-wehelp', 'team-size', 'hcount');">1001-5000</li>
+        <li onclick="setoptValue('5001-10000', 'label-wehelp', 'team-size', 'hcount');">5001-10000</li>
+        <li onclick="setoptValue('10000+', 'label-wehelp', 'team-size', 'hcount');">10000+</li>
       </ul>
     </div>
     </div>
     </div>
-    
+
     <div class="form-group companygroup company-headcount">
-      <textarea class="form-control" name="requirement" id="ws-requirement" placeholder="Please tell us about your requirements"></textarea>
-      <span class="error"></span>
+    <textarea class="form-control" name="requirement" id="ws-requirement" placeholder="Please tell us about your requirements"></textarea>
+    <span class="error"></span>
     </div>
     <?php endif; ?>
 

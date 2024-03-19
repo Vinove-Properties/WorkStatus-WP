@@ -133,7 +133,7 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
 <section class="banner-section <?php echo ( $isBannerFormTpl === true ) ? 'banner-div' : ''; ?>">
   <div class="container">
     <div class="two-box">
-      <div class="flex-2">
+      <div class="flex-2 <?php echo ( sixTwoTpl() ) ? 'content-section' : '';  ?>">
         <?php 
         the_content(); 
         if( $isBannerFormTpl === true ){ 
@@ -141,10 +141,10 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
         <div class="badge-wrap desktop">
         <h3>Trusted by 100,000+ companies to across the Globe</h3>
         <div class="badges">
-        <div class="col">
+        <div class="col">        
         <div class="badgebar">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/bd-logo01.svg" alt="badge" width="125" height="43">
+          <img loading="lazy" src="<?php echo get_bloginfo('template_url').'/assets/images/bd-logo01.svg'; ?>" alt="badge" width="125" height="43">
         </picture>
         4.5/5
         <i class="icon1"></i>
@@ -153,7 +153,9 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
         <div class="col">
         <div class="badgebar">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/bd-logo02.svg" alt="badge" width="125" height="43">
+          <img loading="lazy" src="<?php 
+          echo get_bloginfo('template_url').'/assets/images/'; echo ( sixTwoTpl() ) ? 'logo-02.png' : 'bd-logo01.svg'; 
+          ?>" alt="badge" width="125" height="43">
         </picture>
         5/5
         <i class="icon2"></i>
@@ -162,7 +164,9 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
         <div class="col">
         <div class="badgebar">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/bd-logo03.svg" alt="badge" width="125" height="43">
+          <img loading="lazy" src="<?php 
+          echo get_bloginfo('template_url').'/assets/images/'; echo ( sixTwoTpl() ) ? 'logo-03.png' : 'bd-logo03.svg'; 
+          ?>" alt="badge" width="125" height="43">
         </picture>
         4.8/5
         <i class="icon3"></i>
@@ -171,7 +175,9 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
         <div class="col">
         <div class="badgebar">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/bd-logo04.svg" alt="badge" width="125" height="43">
+          <img loading="lazy" src="<?php 
+          echo get_bloginfo('template_url').'/assets/images/'; echo ( sixTwoTpl() ) ? 'logo-04.png' : 'bd-logo04.svg'; 
+          ?>" alt="badge" width="125" height="43">
         </picture>
         4.9/5
         <i class="icon4"></i>
@@ -180,7 +186,9 @@ $isBannerFormTpl  = ($tplversion && (($tplversion == "6.1") || ($tplversion == "
         <div class="col">
         <div class="badgebar">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/bd-logo05.svg" alt="badge" width="125" height="43">
+          <img loading="lazy" src="<?php 
+          echo get_bloginfo('template_url').'/assets/images/'; echo ( sixTwoTpl() ) ? 'Services-Categories.png' : 'bd-logo05.svg'; 
+          ?>" alt="badge" width="125" height="43">
         </picture>
         4.9/5
         <i class="icon5"></i>

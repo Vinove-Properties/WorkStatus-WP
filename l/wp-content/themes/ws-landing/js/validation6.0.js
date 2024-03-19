@@ -148,7 +148,8 @@ vs_fname 		= document.getElementById("vs_first_name"),
 vs_email 		= document.getElementById("vs_cont_email"),
 vs_phone 		= document.getElementById("vs_cont_phpne"),
 vs_company 		= document.getElementById("vs_company_name"),
-vs_captcha 		= document.getElementById("vs_j-quiz-ans");
+vs_captcha 		= document.getElementById("vs_j-quiz-ans"),
+vs_requirement 	= document.getElementById("ws-requirement");
 
 function vs_checkUseName(e) {
     checkLength(vs_fname, 1, 15);
@@ -156,6 +157,10 @@ function vs_checkUseName(e) {
 
 function vs_checkCompany(e) {
     checkLength(vs_company, 2, 255);
+}
+
+function vs_checkRequirement(e) {
+    checkLength(vs_requirement, 2, 500);
 }
 
 function vs_checkPhone(e) {
@@ -183,9 +188,16 @@ vs_phone.addEventListener("keydown", ws_checkphonenumber),
 vs_phone.addEventListener("focusout", vs_checkPhone),
 
 vs_email.addEventListener("focusout", vs_checkEmailEvent),
-vs_email.addEventListener("focusin", function () {
-    doNotingonFocus(vs_email);
+vs_email.addEventListener("focusin", function(){
+	doNotingonFocus( vs_email );
 });
+
+if( vs_requirement ){
+	vs_requirement.addEventListener("keyup", vs_checkRequirement),
+	vs_requirement.addEventListener("keypress", vs_checkRequirement),
+	vs_requirement.addEventListener("keydown", vs_checkRequirement),
+	vs_requirement.addEventListener("focusout", vs_checkRequirement);
+}
 
 var vs_jQuizExists = document.getElementById("vs_j-quiz");
 function vs_generateWsQuiz() {
@@ -247,11 +259,22 @@ vs_chkPolicy.addEventListener('change', (event) => {
   }
 })
 
-function wsCmnFormValidation(){
+function wsCmnFormValidation( isSixTwo = false ){
 	//checkRequired([vs_email, vs_fname, vs_company, vs_phone, vs_captcha]);
 	//return false;
+	var fldsArry	= [vs_email, vs_fname, vs_phone, vs_company, vs_captcha];
+	let tSize 		= document.getElementById("team-size");
+	let req 		= document.getElementById("ws-requirement");
+	if( tSize && (isSixTwo === true) ){
+		fldsArry.push( tSize );
+	}
+
+	if( req && (isSixTwo === true) ){
+		fldsArry.push( req );
+	}
+	
     if(
-    (vs_checkRequired([vs_email, vs_fname, vs_phone, vs_company, vs_captcha]), 
+    (vs_checkRequired(fldsArry), 
     !0 != document.getElementById("vs_checkId").checked)) 
     return (document.getElementById("vs_checkerror").innerHTML = "Please complete this required field."),
     (document.getElementById("vs_checkerror").style.display ="block"),

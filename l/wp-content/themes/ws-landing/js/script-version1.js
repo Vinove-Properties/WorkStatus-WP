@@ -139,12 +139,13 @@ function handleTabletChange(e) {
     e.matches && (document.body.classList.remove("mobile"), document.body.classList.add("desktop"), loop());
 }
 mediaQuery.addEventListener("change", handleTabletChange), handleTabletChange(mediaQuery);
-const form = document.getElementById("ws-lead-form"),
-fname = document.getElementById("first_name"),
-email = document.getElementById("cont_email"),
-phone = document.getElementById("cont_phpne"),
-company = document.getElementById("company_name"),
-captcha = document.getElementById("j-quiz-ans");
+const form  = document.getElementById("ws-lead-form"),
+fname       = document.getElementById("first_name"),
+email       = document.getElementById("cont_email"),
+phone       = document.getElementById("cont_phpne"),
+company     = document.getElementById("company_name"),
+captcha     = document.getElementById("j-quiz-ans"),
+ftRequirement = document.getElementById("ft-requirement");
 
 captcha.addEventListener("focusout", validateMquiz);
 
@@ -183,6 +184,10 @@ function checkCompany(e) {
 function checkPhone(e) {
     checkLength(phone, 6, 20), 
     phonenumber(phone);
+}
+
+function checkFtReq(e) {
+    checkLength(ftRequirement, 2, 500);
 }
 
 function fixed_checkPhone( sgphone, errorelm ){
@@ -245,9 +250,21 @@ chkPolicy.addEventListener('change', (event) => {
   }
 })
 
-function vcCmnFormValidation(){
+function vcCmnFormValidation( isSixTwo = false ){
+    var fldsArry    = [email, fname, phone, company, captcha];
+    let tSize       = document.getElementById("ft-size");
+    let req         = document.getElementById("ft-requirement");
+    
+    if( tSize && (isSixTwo === true) ){
+        fldsArry.push( tSize );
+    }
+
+    if( req && (isSixTwo === true) ){
+        fldsArry.push( req );
+    }
+
     if(
-    (checkRequired([email, fname, phone, company, captcha]), 
+    (checkRequired(fldsArry), 
     !0 != document.getElementById("checkId").checked)) 
     return (document.getElementById("checkerror").innerHTML = "Please complete this required field."),
     (document.getElementById("checkerror").style.display ="block"),
@@ -281,6 +298,14 @@ email.addEventListener("focusout", checkEmailEvent),
 email.addEventListener("focusin", function () {
     doNotingonFocus(email);
 });
+
+if( ftRequirement ){
+    ftRequirement.addEventListener("keyup", checkFtReq),
+    ftRequirement.addEventListener("keypress", checkFtReq),
+    ftRequirement.addEventListener("keydown", checkFtReq),
+    ftRequirement.addEventListener("focusout", checkFtReq);
+}
+
 var jQuizExists = document.getElementById("j-quiz");
 function generateWsQuiz() {
     let e = Math.floor(9 * Math.random()) + 1,

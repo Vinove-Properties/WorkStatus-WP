@@ -162,7 +162,7 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
           echo '<li><a href="#feature">How it Works</a></li>
           <li><a href="#feature">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li class="bookdemo getqutmob"><a href="#bookdemo" class="btn roundbtn getqut">Get a Quote </a></li>
+          <li class="bookdemo getqutmob"><a href="javascript:void(0);" onclick="popup();" class="btn roundbtn getqut">Get a Quote </a></li>
           <li class="bookdemo bkdemomob"><a href="#bookdemo" class="btn roundbtn roundbtnclr bkdemo">Book A Demo</a></li>';
         }else{
           echo '<li><a href="#feature">Features</a></li>
