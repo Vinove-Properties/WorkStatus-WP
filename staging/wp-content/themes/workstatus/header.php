@@ -51,8 +51,6 @@ global $ws_ctas, $RegLink, $LogLink;
     .hero-banner {padding:100px 0 50px;}
     body.single .blog-thumb,
     .desk-only{ display:none; }
-
-
     }
     .tool-tip-wrap{position: relative;}
     .wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl{pointer-events: inherit;}
@@ -77,7 +75,8 @@ global $ws_ctas, $RegLink, $LogLink;
   .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
   .wsf-signup .popup-content .right-section.signup-success .sucmsg h3{color: #110302 !important; }
   .wsf-signup .popup-content .right-section.signup-success .sucmsg p{color: #737b7d !important; }
-
+  body.page-id-6785 .actionBtn.ws-journey div{display: none;}
+  body.page-id-6785 .actionBtn.ws-journey div:last-child{display: block;}
 
 /*Diwali Banner Css Start From Here*/
 .banner-section{padding:200px 0 80px !important;}
