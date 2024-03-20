@@ -3524,6 +3524,41 @@ button:focus {
 .employee-monitoring-page .popup-form .popup-wrapper {
   background-color: transparent; }
 
+/*New Banner CSS issues fixed*/
+.employee-monitoring-page .banner-section .select-box {
+  border-radius: 7px;
+  border: 1px solid #cbd3dc;
+  padding: 11px 9px;
+  height: 40px;
+  font-size: 14px !important;
+  color: #525f7f; }
+.employee-monitoring-page .banner-section .select-list ul {
+  margin-top: 0 !important; }
+  .employee-monitoring-page .banner-section .select-list ul li {
+    font-size: 14px !important;
+    color: #373658 !important;
+    margin: 0;
+    padding: 7px 18px !important; }
+    .employee-monitoring-page .banner-section .select-list ul li:hover {
+      color: #fff !important; }
+    .employee-monitoring-page .banner-section .select-list ul li:before {
+      display: none; }
+.employee-monitoring-page .form-control {
+  border-radius: 7px;
+  border: 1px solid #cbd3dc;
+  padding: 11px 9px;
+  width: 100%;
+  resize: none;
+  height: 43px;
+  color: #525f7f; }
+.employee-monitoring-page input[placeholder], .employee-monitoring-page [placeholder], .employee-monitoring-page *[placeholder] {
+  color: #525f7f; }
+
+.employee-monitoring-page .demo-footer-form .popup-content .right-section .form-control {
+  border: 0;
+  border-bottom: 1px solid #cbd3dc;
+  border-radius: 0; }
+
 .slide-item {
   display: none; }
 
