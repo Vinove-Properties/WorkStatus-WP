@@ -3431,7 +3431,7 @@ button:focus {
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-top: 50px; }
-.employee-monitoring-page .right-section.Schedule-box input {
+.employee-monitoring-page .right-section input {
   border-radius: 7px !important;
   border: 1px solid #CBD3DC !important;
   padding: 11px 9px !important; }
