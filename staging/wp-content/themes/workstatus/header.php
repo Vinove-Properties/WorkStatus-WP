@@ -84,7 +84,8 @@ global $ws_ctas, $RegLink, $LogLink;
   body.page-id-6785 .actionBtn.ws-journey div:last-child{display: block;}
   
   body.page-id-7306 #ws-comprehensive_dashboard_section .btnSc,
-  body.page-id-7306 #ws-boost_profitability .btnSc{display: none;}
+  body.page-id-7306 #ws-boost_profitability .btnSc,
+  body.page-id-7306 .wsMobile{display: none;}
 
 
 /*Diwali Banner Css Start From Here*/
