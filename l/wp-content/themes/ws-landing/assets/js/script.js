@@ -133,6 +133,13 @@ function six_popup( bClass = 'rq-demo' ){
     
 }
 
+function sixPclose(){
+  let form   = document.getElementById('bookdemo');
+  form.classList.add("demo-footer-form");  
+  document.body.classList.remove("rq-demo");
+  document.getElementById('myhiddenid').value='0';
+}
+
 if( spanClose ){
   spanClose.onclick = function(){
   document.getElementById('myhiddenid').value='1';

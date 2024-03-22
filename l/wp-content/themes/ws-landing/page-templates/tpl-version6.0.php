@@ -738,6 +738,7 @@ if( isset( $sup_devices['is_enable'] ) && ($sup_devices['is_enable'] == "yes") )
     <div id="formPopup" class="popup-wrapper">
       <div class="popWrap">
       <div class="popup-content p-0">
+        <span class="cross-btn" onclick="sixPclose();"></span>
         <div class="left-section">
               <picture>
                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/logo-white.svg" alt="Logo" width="179" height="24">
