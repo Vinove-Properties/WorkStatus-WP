@@ -75,8 +75,14 @@ global $ws_ctas, $RegLink, $LogLink;
   .hero-banner .inner-wrap #wsroi-calculator .salary{top:-75px; left: 0; font-size:12px;}
   .wsf-signup .popup-content .right-section.signup-success .sucmsg h3{color: #110302 !important; }
   .wsf-signup .popup-content .right-section.signup-success .sucmsg p{color: #737b7d !important; }
+  
+  body.page-id-7306 .feature_section,
+  body.page-id-7306 .actionBtn.ws-journey div,
   body.page-id-6785 .actionBtn.ws-journey div{display: none;}
+
+  body.page-id-7306 .actionBtn.ws-journey div:last-child,
   body.page-id-6785 .actionBtn.ws-journey div:last-child{display: block;}
+
 
 /*Diwali Banner Css Start From Here*/
 .banner-section{padding:200px 0 80px !important;}
