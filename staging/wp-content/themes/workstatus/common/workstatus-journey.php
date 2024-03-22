@@ -3,7 +3,7 @@ $work_status_journey = get_field('work_status_journey', 'option');
 if( $work_status_journey ) :
 $isEnable = $work_status_journey['is_enabled'];
 if( $isEnable == "yes" ){
-global $ws_ctas, $RegLink, $LogLink; 
+global $ws_ctas, $RegLink, $LogLink, $post; 
 ?>	
 <section class="journey-bg background_lightblue text_center slide_shape_section heading-white whitetxt">
   <div class="shape"></div>
@@ -11,8 +11,13 @@ global $ws_ctas, $RegLink, $LogLink;
   <div class="container">
     <div class="top-section">
       <h6><span class="bg-white"><?php echo $work_status_journey['heading']; ?></span></h6>
+      <?php 
+      if( is_page(7306) ){
+      echo '<h2>Customize Your Tasks With Workstatus Efficiently</h2><p>Explore More Customization Possibilities With Us</p>';
+      }else{ ?>
       <h2><?php echo $work_status_journey['sub_heading']; ?></h2>
       <p><?php echo $work_status_journey['content']; ?></p>
+      <?php } ?>
     </div>
     <div class="actionBtn center white ws-journey">
       <div>
