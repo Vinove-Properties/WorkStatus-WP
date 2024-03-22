@@ -13,14 +13,17 @@
   h2.ct-call,
   body.geo-international .txt-local,
   body.geo-local .txt-int{display:none;}
-  
+
   body.geo-local .flag-logo, 
   body.rq-call h2.ct-call,
   body.rq-demo h2.ct-demo{display:block;}
   body.page-template-tpl-version5-1 .ws-journey .content-section{padding: 100px 0;}
-  
+
   .banner-section .two-box .content-box .sigupform form .credcard:before,
   .banner-section .two-box .content-box .sigupform form .credcard:after{width: 150px;}
+  .page-id-1422 .review-sec{display:none;}
+  .page-id-1422 .badges{display:none;}
+  .pricing-tabs #pricing-contents .price-cards .column h3{text-transform: uppercase;}
   </style>
   <?php 
   if( isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] != "localhost") ) :
@@ -162,7 +165,7 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
           echo '<li><a href="#feature">How it Works</a></li>
           <li><a href="#feature">Features</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li class="bookdemo getqutmob"><a href="javascript:void(0);" onclick="popup();" class="btn roundbtn getqut">Get a Quote </a></li>
+          <li class="bookdemo getqutmob"><a href="javascript:void(0);" onclick="six_popup();" class="btn roundbtn getqut">Get a Quote </a></li>
           <li class="bookdemo bkdemomob"><a href="#bookdemo" class="btn roundbtn roundbtnclr bkdemo">Book A Demo</a></li>';
         }else{
           echo '<li><a href="#feature">Features</a></li>
@@ -207,9 +210,4 @@ if( isset($hasPhone['enable']) && ($hasPhone['enable'] == "yes") ){
   </div>
 </div>
 </header>
-<?php } ?>  
-<style>
-.page-id-1422 .review-sec{display:none;}
-.page-id-1422 .badges{display:none;}
-.pricing-tabs #pricing-contents .price-cards .column h3{text-transform: uppercase;}
-</style>
+<?php } ?>
