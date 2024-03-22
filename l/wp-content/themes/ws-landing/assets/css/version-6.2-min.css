@@ -3536,8 +3536,9 @@ button:focus {
   background: linear-gradient(90deg, rgba(199, 230, 244, 0.25) 0%, #f2f9fc 80%); }
 .employee-monitoring-page .feature-section .feature-outer .flex-row ul li:before {
   top: 4px; }
-.employee-monitoring-page .popup-form .popup-wrapper {
-  background-color: transparent; }
+
+.demo-footer-form .popup-wrapper .closeicon {
+  display: none; }
 
 /*New Banner CSS issues fixed*/
 .employee-monitoring-page .banner-section .select-box {
