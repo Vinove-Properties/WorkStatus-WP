@@ -2503,6 +2503,21 @@ textarea::-webkit-input-placeholder {
   .closeicon-sg:hover {
     opacity: 0.8; }
 
+.cross-btn {
+  background: url("../images/cross-black.png") no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  float: right;
+  z-index: 1;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  border-radius: 100%;
+  cursor: pointer; }
+  .cross-btn:hover {
+    opacity: 0.8; }
+
 .captForm {
   width: 100%;
   position: relative;
@@ -3537,7 +3552,7 @@ button:focus {
 .employee-monitoring-page .feature-section .feature-outer .flex-row ul li:before {
   top: 4px; }
 
-.demo-footer-form .popup-wrapper .closeicon {
+.demo-footer-form .popup-wrapper .cross-btn {
   display: none; }
 
 /*New Banner CSS issues fixed*/
