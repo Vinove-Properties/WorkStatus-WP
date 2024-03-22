@@ -122,6 +122,17 @@ function popup( bClass = 'rq-demo' ){
     formPopup.style.display = "block";    
 }
 
+function six_popup( bClass = 'rq-demo' ){
+    let form   = document.getElementById('bookdemo');
+    document.body.classList.remove("rq-demo");
+    document.body.classList.remove("rq-call");    
+    form.classList.remove("demo-footer-form");
+    formPopup.style.display = "block";
+    document.getElementById('myhiddenid').value='1';
+    document.body.classList.add(bClass);
+    
+}
+
 if( spanClose ){
   spanClose.onclick = function(){
   document.getElementById('myhiddenid').value='1';
