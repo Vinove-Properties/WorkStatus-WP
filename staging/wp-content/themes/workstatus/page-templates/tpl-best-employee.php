@@ -198,7 +198,7 @@ if( $isEnable == "yes" ){
                 <a href="<?php echo $RegLink; ?>"
                   class="primary_btn1"><?php echo $ws_ctas['cta_text']; ?></a>
                 <small>Quickly get your team on board!</small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
               </div>
               <?php endif; ?>
             </div>
@@ -283,7 +283,7 @@ if( $isEnable == "yes" ){
                 <!-- <p>Don't Wait! Start Today</p>
                 <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
                 <small>Get queries answered by experts</small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
           </div>
@@ -367,7 +367,7 @@ if( $isEnable == "yes" ){
                 <a href="javascript:void(0)" onclick="call_demows();" rel="nofollow"
                   class="primary_btn1">Book A Demo</a>
                 <small>Get queries answered by experts</small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
           </div>
@@ -450,7 +450,7 @@ if( $isEnable == "yes" ){
                 <a href="<?php echo $RegLink; ?>"
                   class="primary_btn1"><?php echo $ws_ctas['cta_text']; ?></a>
                 <small>No credit card required</small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
               </div>
               <?php endif; ?>
             </div>
@@ -528,7 +528,7 @@ if( $isEnable == "yes" ){
                     class="primary_btn1">Book A Demo</a>
                 <small>Get all your queries answered from our experts<br> on a secure online meeting
                 </small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
             </div>
             </div>
             </div>
@@ -601,7 +601,7 @@ if( $isEnable == "yes" ){
               }
               echo '</div></div>';//column-left & all-content
               }
-              echo '<div class="mt40 btnSc">'.wsDemoCta().'</div>';
+              echo '<div class="mt40 btnSc">'.wsDemoCtaCP().'</div>';
               echo '</div></div>'; //active_Current_Tabs99
 
               echo '</div></div>'; //item & Container
@@ -675,7 +675,7 @@ if( $isEnable == "yes" ){
                   </div>
                 </div>
             </div>
-            <div class="mt40 btnSc"><?php echo wsDemoCta(); ?></div>
+            <div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>
             </div>
             </div>
             <?php 
@@ -852,7 +852,7 @@ if( $isEnable == "yes" ){
                 <a href="<?php echo $RegLink; ?>"
                   class="primary_btn1 btnbg2"><?php echo $ws_ctas['cta_text']; ?></a>
                 <small>No credit card required</small> -->
-                <?php echo wsDemoCta(); ?>
+                <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
             <?php endif; ?>

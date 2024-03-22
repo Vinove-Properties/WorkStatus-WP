@@ -546,6 +546,28 @@ function wsDemoCta(){
 	</div>';
 }
 
+function wsDemoCtaCP(){
+	//global $RegLink;
+	global $ws_ctas, $RegLink, $post;
+	if( $post->ID == 7306 ){
+	return '<div><a href="https://calendly.com/workstatus/sales" onclick="call_demows();" 
+	class="primary_btn2">Talk to Sales</a>
+	<small>Let\'s connect for a quick call</small>
+	</div>';
+	}else{
+	$cta_lbl = ( isset( $ws_ctas['cta_text'] ) && !empty( $ws_ctas['cta_text'] ) ) ? $ws_ctas['cta_text'] : 'Start Free Trial';
+	return '<div class="cmn-democta ctasec">
+	<div>
+	<a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	<span class="nccr">No credit card required</span>
+	</div>
+	<span class="devide">OR</span>
+	<div><a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a></div>
+	</div>';	
+	}
+	
+}
+
 add_action( 'wp_ajax_nopriv_rateus', 'rateus_cb' );
 add_action( 'wp_ajax_rateus', 'rateus_cb' );
 function rateus_cb(){
