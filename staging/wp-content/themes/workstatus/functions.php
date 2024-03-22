@@ -549,7 +549,8 @@ function wsDemoCta(){
 function wsDemoCtaCP(){
 	//global $RegLink;
 	global $ws_ctas, $RegLink, $post;
-	if( !$post->ID == 7306 ){
+	if( $post->ID == 7306 ) return;
+
 	$cta_lbl = ( isset( $ws_ctas['cta_text'] ) && !empty( $ws_ctas['cta_text'] ) ) ? $ws_ctas['cta_text'] : 'Start Free Trial';
 	return '<div class="cmn-democta ctasec">
 	<div>
@@ -558,8 +559,14 @@ function wsDemoCtaCP(){
 	</div>
 	<span class="devide">OR</span>
 	<div><a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a></div>
-	</div>';	
-	}
+	</div>';
+
+	/*if( !$post->ID == 7306 ){
+	return '<div class="cmn-democta ctasec"><div><a href="https://calendly.com/workstatus/sales" class="ctbtn">Talk to Sales</a>
+	<span class="nccr">Let\'s connect for a quick call</span>
+	</div></div>';
+	}else{		
+	}*/
 	
 }
 
