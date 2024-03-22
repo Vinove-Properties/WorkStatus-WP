@@ -13,6 +13,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/resources">Resources</a></li>
           <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
           <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
         </ul>
       </div>
       <div class="column fcol2">
