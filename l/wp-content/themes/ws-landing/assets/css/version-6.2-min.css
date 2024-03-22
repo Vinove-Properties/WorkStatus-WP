@@ -3474,6 +3474,8 @@ button:focus {
     right: 18px; }
 .employee-monitoring-page .right-section .form-wrap .form-group {
   margin-bottom: 10px !important; }
+.employee-monitoring-page .popup-form textarea.input-field {
+  height: 50px !important; }
 .employee-monitoring-page .pagmainbtn {
   position: relative;
   padding: 10px 23px !important; }
@@ -3569,6 +3571,17 @@ button:focus {
 .employee-monitoring-page .clock {
   margin-left: 5px; }
 
+@media (max-width: 1400px) {
+  .employee-monitoring-page .free-demopop .popup-content {
+    overflow-y: scroll;
+    width: 1100px;
+    background: -webkit-linear-gradient(left, #4535a7 59.3%, white 39.1%);
+    height: 90%; } }
+@media (max-width: 1160px) {
+  .employee-monitoring-page .free-demopop .popup-content {
+    width: 90%;
+    background: #fff;
+    flex-wrap: wrap; } }
 @media (max-width: 767px) {
   ::placeholder, input, textarea {
     font-family: sans-serif !important; }
