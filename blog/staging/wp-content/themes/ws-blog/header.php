@@ -44,78 +44,6 @@
       #elm-toc .tocsec{display:none;}
 
 
-
-
-/*Diwali Banner Css Start From Here*/
-
-
-
-.cmn-filter{top: 208px !important;} 
-.cmn-filter.shady{top: 190px !important;}
-.hero-banner.in-banner {padding-top:330px !important;} 
-.holi-banner img{width:100%;}
-.desk-holi{display:block;}
-.phone-holi{display:none;}
-
-.banner-section{padding: 200px 0 100px;}
-
-@media (max-width:2500px){
-.cmn-filter{top: 177px !important;} 
-.cmn-filter.shady{top: 158px !important;}
-.hero-banner.in-banner {padding-top:330px !important;} 
-}
-
-@media (max-width:2100px){
-  .cmn-filter{top: 166px !important;} 
-.cmn-filter.shady{top: 145px !important;}
-.hero-banner.in-banner {padding-top:280px !important;} 
-}
-
-@media (max-width:1920px){
-  .cmn-filter {top: 151px !important;}
-.cmn-filter.shady{top: 140px !important;}
-}
-@media (max-width:1880px){
-.cmn-filter {top: 151px !important;}
-.cmn-filter.shady{top: 133px !important;}
-.hero-banner.in-banner {padding-top: 250px !important;}
-
-}
-
-@media (max-width:1680px){
-  .cmn-filter {top: 144px !important;}
-.cmn-filter.shady{top: 125px !important;}
-
-.hero-banner.in-banner {padding-top: 250px !important;}
-}
-
-@media (max-width:1440px){
-.cmn-filter {top: 138px !important;}
-.cmn-filter.shady{top: 121px !important;}  
-}
-
-@media (max-width:1380px){
-.cmn-filter {top: 135px !important;}
-.cmn-filter.shady{top: 119px !important;}
-}
-
-@media (max-width:1024px){
-  .cmn-filter {top: 123px !important;}
-.cmn-filter.shady{top: 105px !important;}
-}
-
-@media (max-width: 991px) {
-  .banner-section{padding: 130px 0 50px;}
-}
-
-@media (max-width: 767px){
-  .hero-banner.in-banner{padding-top: 150px !important;}
-.desk-holi{display:none;}
-.phone-holi{display:block;}
-}
-/*Diwali Banner CSS ends Here*/
-
-
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -132,11 +60,6 @@
     
     <div class="feature-header">
       <header class="site__header" id="masthead">
-      <div class="holi-banner"><picture>
-              <img class="desk-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-banner.gif" alt="Workstatus" width="" height="60"> 
-              <img class="phone-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-phone.gif" alt="Workstatus" width="" height="60"> 
-            </picture>
-          </div>
       <div class="container">
         <?php //echo '<pre>'.get_page_template().'</pre>'; ?>
         <div id="topnav" class="top_nav">
