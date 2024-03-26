@@ -87,34 +87,6 @@ global $ws_ctas, $RegLink, $LogLink;
   body.page-id-7306 #ws-boost_profitability .btnSc,
   body.page-id-7306 .wsMobile{display: none;}
 
-
-/*Diwali Banner Css Start From Here*/
-.banner-section{padding:200px 0 80px !important;}
-.inner-banner{padding:200px 0 0 !important;}
-.holi-banner img{width:100%;}
-.desk-holi{display:block;}
-.phone-holi{display:none;}
-
-@media (max-width:1660px){
-  .banner-section{padding:170px 0 80px !important;}
-.inner-banner{padding:170px 0 0 !important;}
-}
-
-@media (max-width:979px){
-.inner-banner{padding:150px 0 0 !important;}
-}
-
-@media (max-width: 767px){
-.banner-section{padding:150px 0 50px !important;}
-.hero-banner, .inner-banner-bg{padding:150px 0 50px !important;}
-.desk-holi{display:none;}
-.phone-holi{display:block;}
-}
-/*Diwali Banner CSS ends Here*/
-
-
-
-
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
@@ -138,15 +110,6 @@ global $ws_ctas, $RegLink, $LogLink;
   <?php //wp_body_open(); ?>
   <?php  echo ( wsFeaturedHeader() ) ? '<div class="feature-header">' : ''; ?>
   <header class="site__header" id="masthead">
-
-   <div class="holi-banner"><picture>
-              <img class="desk-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-banner.gif" alt="Workstatus" width="" height="60"> 
-              <img class="phone-holi" src="<?php echo get_template_directory_uri(); ?>/assests/images/holi-phone.gif" alt="Workstatus" width="" height="60"> 
-
-            </picture>
-          
-          </div>
-
     <div class="container">
       <?php //echo '<pre>'.get_page_template().'</pre>'; ?>
       <div id="topnav" class="top_nav">
