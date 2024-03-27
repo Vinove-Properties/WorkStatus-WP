@@ -23,8 +23,7 @@ if( $isEnable == "yes" ){
               <div class="actionBtn">
                 <?php 
                 if( is_page(7306) ){
-                echo '<div><a href="https://calendly.com/workstatus/sales" onclick="call_demows();" 
-                class="primary_btn2">Talk to Sales</a>
+                echo '<div><a href="https://calendly.com/workstatus/sales" class="primary_btn2">Talk to Sales</a>
                 <small>Let\'s connect for a quick call</small>
                 </div>';
                 }else{
