@@ -11,6 +11,7 @@ global $ws_ctas, $RegLink, $LogLink;
     $inner_banner = get_field('inner_banner');
     $bsEnabled         = $inner_banner['is_enabled'];
     if ($bsEnabled == 'yes') :
+    $hasBannerVideo = (isset( $inner_banner['video'] ) && !empty( $inner_banner['video'] )) ? true : false;    
     ?>
         <section class="inner-banner">
             <div class="container">
@@ -52,11 +53,23 @@ global $ws_ctas, $RegLink, $LogLink;
                                     <div id="myDIV" class="contbox2">
 
                                         <div class="videoWrapper">
-                                            <!-- <iframe id="video" class="videoIframe" allowfullscreen data-src="<?php echo $inner_banner['video']; ?>">
-                                            </iframe> -->
+                                            <?php
+                                            if( $hasBannerVideo ){
+                                            echo '<iframe id="video" class="videoIframe" allowfullscreen 
+                                            data-src="'.$inner_banner['video'].'"></iframe>';
+                                            }
+                                            ?>
+                                            
+
                                             <button class="videoPoster lazy-background wsbg-cover wsbg-img bg-trans" 
                                                 data-src="<?php echo $cScreenSrc; ?>" id="play-button">    
                                                 Play video
+                                                <?php 
+                                                if( $hasBannerVideo ){
+                                                    echo '<span class="playicon"></span>';    
+                                                } 
+
+                                                ?>
                                                 <!-- <span class="playicon"></span> -->
                                             </button>
                                         </div>
