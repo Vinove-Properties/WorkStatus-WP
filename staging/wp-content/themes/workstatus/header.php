@@ -27,7 +27,7 @@ global $ws_ctas, $RegLink, $LogLink;
     
     .inner-banner .videoSc .srp-1 .videoPoster.wsbg-img,
     .inner-banner .videoSc .srp-30 .videoPoster.wsbg-img{background-image:none;}
-    .inner-banner .videoSc .videoPoster.bg-trans{background:transparent; background-repeat:no-repeat; background-position:center;}
+    .inner-banner .videoSc .videoPoster.bg-trans{background-color:transparent; background-repeat:no-repeat; background-position:center;}
     /*Core Web Vital Ends*/
 
     #ws-apimsg.success{margin-top: 10px; display:inline-block; color:#007600;}
