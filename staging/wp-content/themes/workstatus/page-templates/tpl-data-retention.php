@@ -67,41 +67,6 @@ foreach( $rowBlocks as $row ){ $r++;
 <?php
 $faq = get_field("faq");
 if (isset($faq["is_enabled"]) && $faq["is_enabled"] == "yes"): ?>
-<div class="buyers-guide-answer ans_5" id="ans_faq">
-   <div class="container">
-   <div class="top-section">
-   <h6><span class="bg-purple"><?php echo $faq["heading"]; ?></span></h6>
-   <h2><?php echo $faq["sub_heading"]; ?></h2>
-   </div>
-   <div class="flex_row">
-   <div itemscope itemtype="https://schema.org/FAQPage">
-    <div class="column">
-      <?php if ($faq["question_answer_repeater"]) {
-        $i = 1;
-        foreach ($faq["question_answer_repeater"] as $row) {
-            $active = $i <= 3 ? "open" : ""; ?>
-      <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
-        itemtype="https://schema.org/Question">
-        <h3 itemprop="name"><?php echo $row["question"]; ?></h3>
-        <div class="faq-accordion-content">
-          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><?php echo $row["answer"]; ?></div>
-          </div>
-        </div>
-      </div>
-      <?php $i++;
-        }
-        } ?>          
-    </div>
-   </div>
-   </div>
-   </div>
-</div>
-<?php endif; ?>
-
-<?php
-$faq = get_field("faq");
-if (isset($faq["is_enabled"]) && $faq["is_enabled"] == "yes"): ?>
    <div class="buyers-guide-answer ans_5" id="ans_faq">
    <h3 class="guide-question">FAQs</h3>
       <div class="guide-answer">
