@@ -52,10 +52,10 @@ foreach( $rowBlocks as $row ){ $r++;
    if( $row['pointers'] ){
       $pointer .= '<div class="process-step">';
       $p = 0;
-      foreach( $row['pointers'] as $pointer){ $p++;
+      foreach( $row['pointers'] as $rw){ $p++;
       $pointer .= '<div class="step-sec dis-flex">
          <div class="step-num">0'.$p.'</div>
-         <div class="step-desc">'.$pointer['cblock'].'</div>
+         <div class="step-desc">'.$rw['cblock'].'</div>
       </div>';
       }
       $pointer .= '</div>';
