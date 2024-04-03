@@ -80,7 +80,7 @@ if (isset($faq["is_enabled"]) && $faq["is_enabled"] == "yes"): ?>
                foreach( $faq['qna'] as $fq ){ $f++;
                $isopen = ( $f === 1 ) ? ' open' : '';
                echo '<div class="faq-accordion-item-outer '.$isopen.'">
-                  <h3 itemprop="name">'.$fq['question'].'</h3>
+                  <h3>'.$fq['question'].'</h3>
                   <div class="faq-accordion-content">'.$fq['answer'].'</div>
                </div>';
                }   
