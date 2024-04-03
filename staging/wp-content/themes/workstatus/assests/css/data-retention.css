@@ -7828,6 +7828,8 @@ h3 a {
     width: 100%;
     border: 1px solid rgba(98, 77, 227, 0.3);
     border-radius: 15px; }
+  .buyers-guide-answer p {
+    margin: 0 0 15px; }
   .buyers-guide-answer th {
     color: #05164d;
     font-weight: 500; }
