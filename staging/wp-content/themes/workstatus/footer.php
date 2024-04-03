@@ -53,6 +53,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
           <li><a href="<?php echo site_url(); ?>/affiliates">Affiliates</a></li>
           <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
+          <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
       </div>
       <div  class="column fcol6">

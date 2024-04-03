@@ -27,6 +27,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                   <li class="tablinks <?php echo ( $post->post_name == "privacy-policy" ) ? 'active' : ''; ?>">
                   <a href="<?php echo site_url('/privacy-policy'); ?>">Privacy Policy</a>
                   </li>
+                  <li class="tablinks"><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
                   <li class="tablinks <?php echo ( $post->post_name == "gdpr" ) ? 'active' : ''; ?>">
                   <a href="<?php echo site_url('/gdpr'); ?>">GDPR Compliance</a>
                   </li>
@@ -50,6 +51,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                   <li class="tablinks <?php echo ( $post->post_name == "spam-guidelines" ) ? 'active' : ''; ?>">
                   <a href="<?php echo site_url('/spam-guidelines'); ?>">Spam Guidelines</a>
                   </li>
+
+                  
                 </ul>
               </div>
               <div id="Privacy-Policy" class="tabcontent">
