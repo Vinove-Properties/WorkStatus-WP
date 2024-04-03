@@ -7982,6 +7982,12 @@ h3 a {
     padding: 0; } }
 @media (max-width: 767px) {
   .hero-banner .inner-wrap .actionBtn {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .buyers-guide-answer th, .buyers-guide-answer td {
+    padding: 11px; }
+
+  .buyers-guide-answer table {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=data-retention.css.map */
