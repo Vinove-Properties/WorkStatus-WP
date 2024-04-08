@@ -4357,7 +4357,13 @@ button:focus {
       font-size: 12px;
       line-height: 22px; }
   .footer-sec .footer-bottom {
-    font-size: 13px; } }
+    font-size: 13px; }
+
+  .employee-monitoring-page .free-demopop.demo-footer-form .popup-content {
+    overflow-y: hidden;
+    width: 100%;
+    background: #fff !important;
+    height: 100%; } }
 @media (max-width: 1280px) {
   .demo-footer-form .popup-content {
     background: #fff;
