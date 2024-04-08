@@ -493,7 +493,7 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
             </li>
             <li><a href="<?php echo site_url(); ?>/pricing">Pricing</a></li>
-            <li><a href="<?php echo $LogLink; ?>"><i></i>Sign-In</a></li>
+            <li><a href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>"><i></i>Sign-In</a></li>
           </ul>
           <?php  
             if( geoCTAcheck() === true ){
