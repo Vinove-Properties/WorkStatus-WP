@@ -4358,6 +4358,9 @@ button:focus {
   background: url(../images/arrow-hover.svg) no-repeat;
   background-position: center; }
 
+.employee-monitoring-page .demo-footer-form .form-group .user-input .pcode-prefix {
+  z-index: auto !important; }
+
 /*Footer Ends Here*/
 /*Footer Ends Here*/
 @media (max-width: 1440px) {
