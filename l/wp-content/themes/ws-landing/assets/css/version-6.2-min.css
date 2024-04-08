@@ -3253,9 +3253,9 @@ button:focus {
     color: #624DE3; }
   .employee-monitoring-page .main-header .top-nav .header-item-right ul li a.roundbtnclr {
     color: #fff;
-    border-color: 624DE3; }
+    border-color: #05164D; }
     .employee-monitoring-page .main-header .top-nav .header-item-right ul li a.roundbtnclr:hover {
-      border-color: #05164D; }
+      border-color: #624DE3; }
 .employee-monitoring-page .main-header .top-nav .header-item-right ul li .getqut {
   position: relative; }
   .employee-monitoring-page .main-header .top-nav .header-item-right ul li .getqut:after {
