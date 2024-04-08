@@ -841,12 +841,39 @@ if( isset( $sup_devices['is_enable'] ) && ($sup_devices['is_enable'] == "yes") )
 <div class="footer-top">
   <div class="container">
     <?php if( sixTwoTpl() ){ ?>  
-    <div class="dis-flex" style="display:none;">
-      <div class="flex-4"><p>Our Offices:</p></div>
-      <div class="flex-4"><p>UAE : 541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p></div>
-      <div class="flex-4"><p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001</p></div>
-      <div class="flex-4"><p>Noida : 3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303</p></div>
-    </div>  
+      <div class="dis-flex other-con">
+        <div class="flex-4">
+          <p><strong>Our Offices:</strong></p>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/us-flag.svg"
+              alt="flag" width="30" height="22">
+            <p>5900 Balcones Drive, STE 100, Austin, TX 78731, USA</p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/uk-flag.svg"
+              alt="flag" width="30" height="22">
+            <p>167-169 Great Portland Street, 5th Floor, London W1W 5PF, UK</p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/flag-icon01.svg"
+              alt="flag" width="30" height="22">
+            <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/flag-icon02.svg"
+              alt="flag" width="30" height="22">
+            <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001</p>
+          </div>
+        </div>
+      </div>  
     <?php }else{ ?>
     <div class="dis-flex">
       <div class="flex-4"><p>Our Offices:</p></div>
