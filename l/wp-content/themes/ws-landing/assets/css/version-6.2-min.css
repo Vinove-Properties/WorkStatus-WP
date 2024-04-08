@@ -3887,6 +3887,32 @@ button:focus {
   min-width: 215px;
   margin-top: 30px; }
 
+.employee-monitoring-page .ctasec h2 {
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: normal; }
+.employee-monitoring-page .ctasec .btn {
+  min-width: 215px;
+  margin-top: 10px;
+  background: #624DE3;
+  border: 1px solid #624DE3;
+  border-radius: 100px;
+  position: relative; }
+  .employee-monitoring-page .ctasec .btn:after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-size: 24px !important;
+    vertical-align: middle;
+    background: url(../images/schedule.png) no-repeat; }
+  .employee-monitoring-page .ctasec .btn:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff; }
+
 /*Customer Reviews Section Ends  Here*/
 /*Learn About the App Start From Here*/
 .learn-app .prod-tabs #tabs {
