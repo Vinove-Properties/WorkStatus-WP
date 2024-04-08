@@ -840,23 +840,21 @@ if( isset( $sup_devices['is_enable'] ) && ($sup_devices['is_enable'] == "yes") )
 <section class="footer-sec">
 <div class="footer-top">
   <div class="container">
+    <?php if( sixTwoTpl() ){ ?>  
+    <div class="dis-flex" style="display:none;">
+      <div class="flex-4"><p>Our Offices:</p></div>
+      <div class="flex-4"><p>UAE : 541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p></div>
+      <div class="flex-4"><p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001</p></div>
+      <div class="flex-4"><p>Noida : 3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303</p></div>
+    </div>  
+    <?php }else{ ?>
     <div class="dis-flex">
-      <div class="flex-4">
-        <p>Our Offices:</p>
-      </div>
-      <div class="flex-4">
-        <p>UAE : 541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p>
-      </div>
-      <div class="flex-4">
-        <p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001
-        </p>
-      </div>
-      <div class="flex-4">
-        <p>Noida : 3rd Floor, Fusion Square, 5A & 
-          5B, Sector 126, Noida 201303
-        </p>
-      </div>
-    </div>
+      <div class="flex-4"><p>Our Offices:</p></div>
+      <div class="flex-4"><p>UAE : 541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p></div>
+      <div class="flex-4"><p>Gurugram : 10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana, India- 122001</p></div>
+      <div class="flex-4"><p>Noida : 3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303</p></div>
+    </div>  
+    <?php } ?>
   </div>
 </div>
 <div class="footer-bottom text-center">&copy; workstatus.io All rights reserved.</div>
