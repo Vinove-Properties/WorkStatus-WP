@@ -210,7 +210,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'Country_1'     => "",
     'Phone'         => $phone,
     'Lead_Source'   => "Calendly Direct",
-    'Lead_Status'   => "Not Contacted",
+    //'Lead_Status'   => "Not Contacted",
     'Owner'         => $owner_id,
     'SQL'               => "Yes",
     'IP_Address1'   => get_visitor_ip(),
