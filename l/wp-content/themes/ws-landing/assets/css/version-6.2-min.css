@@ -3404,8 +3404,6 @@ button:focus {
   background: transparent; }
   .employee-monitoring-page .user-input .iti__flag-container .iti__selected-flag {
     background: transparent; }
-  .employee-monitoring-page .user-input .iti__flag-container .iti__flag {
-    background-image: url(../images/Flag_of_India_2.png); }
 .employee-monitoring-page .badge-wrap .badges .col .badgebar {
   color: #333030; }
 .employee-monitoring-page .badge-wrap h3 {
@@ -3420,8 +3418,6 @@ button:focus {
 .employee-monitoring-page .banner-section .two-box .flex-2.banner-form h3 {
   padding-top: 29px;
   padding-bottom: 6px; }
-.employee-monitoring-page .banner-section .two-box .flex-2.banner-form .form-wrap .form-group .iti__arrow {
-  margin-left: 9px !important; }
 .employee-monitoring-page .demo-footer-form .popup-content .right-section {
   padding: 40px 0 20px 30px; }
 .employee-monitoring-page .demo-footer-form .popup-content .btn {
@@ -4337,12 +4333,18 @@ button:focus {
   font-size: 14px;
   background: #fff; }
 
-.employee-monitoring-page #submitButton {
+.employee-monitoring-page #submitButton, .employee-monitoring-page #vs_submitButton {
   position: relative;
   padding: 10px 23px !important;
-  border-radius: 30px; }
+  border-radius: 30px;
+  background-color: #624DE3;
+  border: 1px solid #624DE3; }
 
-.employee-monitoring-page #submitButton:after {
+.employee-monitoring-page #vs_submitButton:hover {
+  background-color: #05164D;
+  border-color: #05164D; }
+
+.employee-monitoring-page #submitButton:after, .employee-monitoring-page #vs_submitButton:after {
   content: "";
   display: inline-block;
   width: 24px;
