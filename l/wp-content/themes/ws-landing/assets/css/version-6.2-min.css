@@ -4337,6 +4337,22 @@ button:focus {
   font-size: 14px;
   background: #fff; }
 
+.employee-monitoring-page #submitButton {
+  position: relative;
+  padding: 10px 23px !important;
+  border-radius: 30px; }
+
+.employee-monitoring-page #submitButton:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 11px;
+  background-size: 17px !important;
+  vertical-align: middle;
+  background: url(../images/arrow-hover.svg) no-repeat;
+  background-position: center; }
+
 /*Footer Ends Here*/
 /*Footer Ends Here*/
 @media (max-width: 1440px) {
