@@ -261,7 +261,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                 'First_Name'        => $firtName,
                 'Last_Name'         => (!empty($lastName)) ? $lastName : "NA",
                 'Company'           => $company,
-                'Lead_Status'       => "Not Contacted",
+                //'Lead_Status'       => "Not Contacted",
                 //'Lead_Source'       => "",
                 'Is_Duplicate'      => "Yes",
                 'Calendly_Booked'   => "Yes",
