@@ -6,7 +6,7 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="flex_row">
       <div class="column fcol1">
         <h6>Workstatus</h6>
-        <ul>
+        <ul>          
           <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
           <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
           <li><a href="<?php echo site_url(); ?>/press">Press</a></li>
@@ -14,6 +14,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
           <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
           <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
+          <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
         </ul>
       </div>
       <div class="column fcol2">
