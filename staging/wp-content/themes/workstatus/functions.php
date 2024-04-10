@@ -241,12 +241,18 @@ function workstatus_scripts() {
   elseif( is_page_template(['page-templates/tpl-affiliates.php']) ){
 		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/affiliates.css', array(), _S_VERSION);
 	}
-	elseif( is_single() ){
+	elseif( is_single() ){ 
+		if( is_singular('survey') ){
+		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/assests/css/survey.css', array(), _S_VERSION );	
+		}else{
 		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/assests/css/resources-detail.css', array(), _S_VERSION );
-		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );
+		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );	
+		}
+		
 	}
-
-	wp_enqueue_style( 'ws-glider', get_stylesheet_directory_uri().'/assests/css/glider.css');
+	if( !is_singular('survey') ){
+		wp_enqueue_style( 'ws-glider', get_stylesheet_directory_uri().'/assests/css/glider.css');
+	}
 	wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );	
 	
 	wp_enqueue_script( 'ws-glider-script', get_stylesheet_directory_uri() .'/assests/js/glider.min.js', array(), _S_VERSION, true );
@@ -2074,4 +2080,54 @@ function leadMgtBlock( $id ){
 	    </div>
 	    </section>';
 	}
+}
+
+add_action( 'init', 'registerSurvey_post_type', 0 );
+function registerSurvey_post_type(){
+	$sy_labels = array(
+        'name'                  => _x( 'Survey', 'Post Type General Name', 'workstatus' ),
+        'singular_name'         => _x( 'Survey', 'Post Type Singular Name', 'workstatus' ),
+        'menu_name'             => __( 'Survey', 'workstatus' ),
+        'name_admin_bar'        => __( 'Survey', 'workstatus' ),
+        'archives'              => __( 'Survey Archives', 'workstatus' ),
+        'attributes'            => __( 'Survey Attributes', 'workstatus' ),
+        'parent_item_colon'     => __( 'Parent Survey:', 'workstatus' ),
+        'all_items'             => __( 'All Survey', 'workstatus' ),
+        'add_new_item'          => __( 'Add New Survey', 'workstatus' ),
+        'add_new'               => __( 'Add New', 'workstatus' ),
+        'new_item'              => __( 'New Survey', 'workstatus' ),
+        'edit_item'             => __( 'Edit Survey', 'workstatus' ),
+        'update_item'           => __( 'Update Survey', 'workstatus' ),
+        'view_item'             => __( 'View Survey', 'workstatus' ),
+        'view_items'            => __( 'View Survey', 'workstatus' ),
+        'search_items'          => __( 'Search Survey', 'workstatus' ),
+        'not_found'             => __( 'Survey Not found', 'workstatus' ),
+        'not_found_in_trash'    => __( 'Survey Not found in Trash', 'workstatus' ),
+        'featured_image'        => __( 'Featured Image', 'workstatus' ),
+        'set_featured_image'    => __( 'Set featured image', 'workstatus' ),
+        'remove_featured_image' => __( 'Remove featured image', 'workstatus' ),
+        'use_featured_image'    => __( 'Use as featured image', 'workstatus' ),
+        'insert_into_item'      => __( 'Insert into Survey', 'workstatus' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this Survey', 'workstatus' ),
+        'items_list'            => __( 'Survey list', 'workstatus' ),
+        'items_list_navigation' => __( 'Survey list navigation', 'workstatus' ),
+        'filter_items_list'     => __( 'Filter Survey list', 'workstatus' ),
+    );
+    $sr_args = array(
+        'label'                 => __( 'Survey', 'workstatus' ),
+        'description'           => __( 'Post Type Description', 'workstatus' ),
+        'labels'                => $sy_labels,
+        'supports'              => array( 'title', 'custom-fields' ),
+        //'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => true,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'survey', $sr_args );
 }
