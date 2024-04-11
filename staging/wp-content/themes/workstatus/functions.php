@@ -243,7 +243,7 @@ function workstatus_scripts() {
 	}
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
-		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/assests/css/survey.css', array(), _S_VERSION );	
+		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/survey-style.css', array(), _S_VERSION );	
 		}else{
 		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/assests/css/resources-detail.css', array(), _S_VERSION );
 		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );	
