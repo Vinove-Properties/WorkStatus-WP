@@ -2131,3 +2131,31 @@ function registerSurvey_post_type(){
     );
     register_post_type( 'survey', $sr_args );
 }
+
+
+function _hanldeSurveyRequest( $data ){
+if( isset($_POST['su-nonce']) && !empty($_POST['su-nonce']) ){
+	$nonce = $_POST['su-nonce'];
+	if ( ! wp_verify_nonce( $nonce, 'post_survey-'.$_POST['post_id'] ) ) {
+		die( __( 'Security check', 'textdomain' ) ); 
+	}
+	global $wpdb;
+	$post_id = $data['post_id'];
+	unset($data['post_id']);
+	unset($data['email_addr']);
+	unset($data['su-nonce']);
+	
+	$inserted = $wpdb->insert('ws_survey_data',[
+		'survey_id' => $post_id,
+		'email' => 'nitin.baluni@mail.vinove.com',
+		'data' => json_encode($data),
+		'created_at' => date('Y-m-d H:i:s')
+	],
+	['%d', '%s', '%s', '%s']);
+	if( $inserted ){
+		return true;
+	}else{
+		return false;
+	}
+}
+}
