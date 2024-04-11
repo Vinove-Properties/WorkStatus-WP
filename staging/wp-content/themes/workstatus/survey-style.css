@@ -1,0 +1,213 @@
+body {
+	box-sizing: border-box;
+	height: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+	padding: 0;
+	font-family: 'Noto Sans';
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('assests/fonts/NotoSans-Regular.woff2') format('woff2'),
+		url('assests/fonts/NotoSans-Regular.woff') format('woff'),
+		url('assests/fonts/NotoSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('assests/fonts/NotoSans-Medium.woff2') format('woff2'),
+		url('assests/fonts/NotoSans-Medium.woff') format('woff'),
+		url('assests/fonts/NotoSans-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	position: relative;
+}
+
+.survey-sec {
+	padding: 60px 0;
+}
+
+.survey-box {
+	padding: 50px 0 0;
+	text-align: left;
+}
+
+.survey-box h1 {
+	margin: 0;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 35px;
+}
+
+surform {
+	max-width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+	padding: 30px 0 0;
+	margin: 30px 0 0;
+	border-top: 1px dashed rgba(5, 22, 77, 0.3);
+}
+
+.question h3 {
+	font-size: 20px;
+	color: rgba(70, 74, 108, 1);
+	font-weight: 500;
+	margin: 0 0 20px;
+	padding: 0;
+}
+
+.question:first-child {
+	border-top: 0;
+	padding: 0;
+}
+
+.form-field {
+	margin: 0 0 10px;
+	display: flex;
+	align-items: center;
+}
+
+
+input[type="radio"] {
+	margin: 0 8px 0 0;
+	width: 15px;
+	height: 15px;
+
+}
+
+label {
+	font-size: 16px;
+	color: rgba(70, 74, 108, 1);
+}
+
+
+.conclusion {
+	background: rgba(246, 245, 255, 1);
+	border-radius: 20px;
+	padding: 25px;
+	margin: 40px 0 60px;
+}
+
+.conclusion h3 {
+	color: rgba(5, 22, 77, 1);
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.conclusion ul {
+	padding: 0 0 0 20px;
+	margin: 5px 0 0;
+}
+
+.conclusion ul li {
+	color: #464A6C;
+	margin: 10px 0 0;
+}
+
+.conclusion ul li strong {
+	color: #624de3;
+}
+
+button[type="submit"] {
+	display: block;
+	min-width: 208px;
+	padding: 16px 30px;
+	background: #624de3;
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+	background: #051441;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+}
+
+@media screen and (max-width:767px) {
+
+	body {
+		font-family: "arial";
+	}
+
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.survey-sec {
+		padding: 50px 0;
+	}
+
+	.survey-box {
+		padding: 30px 0 0;
+	}
+
+	.survey-box h1 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+
+	.question {
+		margin: 20px 0 0;
+		padding: 20px 0 0;
+	}
+
+	.question h3 {
+		font-size: 17px;
+		line-height: 24px;
+		margin: 0 0 15px;
+	}
+
+	.form-field {
+		margin: 0 0 8px;
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	.conclusion {
+		margin: 25px 0 40px;
+	}
+
+	.conclusion ul li {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+}
+
+}
