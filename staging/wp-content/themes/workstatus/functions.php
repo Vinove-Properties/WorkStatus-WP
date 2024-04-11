@@ -2134,28 +2134,36 @@ function registerSurvey_post_type(){
 
 
 function _hanldeSurveyRequest( $data ){
-if( isset($_POST['su-nonce']) && !empty($_POST['su-nonce']) ){
-	$nonce = $_POST['su-nonce'];
-	if ( ! wp_verify_nonce( $nonce, 'post_survey-'.$_POST['post_id'] ) ) {
-		die( __( 'Security check', 'textdomain' ) ); 
-	}
-	global $wpdb;
-	$post_id = $data['post_id'];
-	unset($data['post_id']);
-	unset($data['email_addr']);
-	unset($data['su-nonce']);
-	
-	$inserted = $wpdb->insert('ws_survey_data',[
-		'survey_id' => $post_id,
-		'email' => 'nitin.baluni@mail.vinove.com',
-		'data' => json_encode($data),
-		'created_at' => date('Y-m-d H:i:s')
-	],
-	['%d', '%s', '%s', '%s']);
-	if( $inserted ){
-		return true;
+	if( isset($_POST['su-nonce']) && !empty($_POST['su-nonce']) ){
+		$nonce = $_POST['su-nonce'];
+		if ( ! wp_verify_nonce( $nonce, 'post_survey-'.$_POST['post_id'] ) ) {
+			die( __( 'Security check', 'textdomain' ) ); 
+		}
+		global $wpdb;
+	    $dbObj = $wpdb;
+	    if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost") ){
+	    $dbObj = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' );
+	    }
+
+		$post_id 	= $data['post_id'];
+		$email 		= (isset($data['email_addr']) && !empty($data['email_addr'])) ? $data['email_addr'] : 'nitin.baluni@mail.vinove.com';
+		unset($data['post_id']);
+		unset($data['email_addr']);
+		unset($data['su-nonce']);
+		
+		$inserted = $dbObj->insert('ws_survey_data',[
+			'survey_id' => $post_id,
+			'email' => $email,
+			'data' => json_encode($data),
+			'created_at' => date('Y-m-d H:i:s')
+		],
+		['%d', '%s', '%s', '%s']);
+		if( $inserted ){
+			return true;
+		}else{
+			return false;
+		}
 	}else{
 		return false;
 	}
-}
 }
