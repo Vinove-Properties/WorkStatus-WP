@@ -1,110 +1,122 @@
+<?php 
+/*
+if( isset($_POST) ){
+   echo '<pre>';
+   print_r($_POST);
+   echo '</pre>';
+}
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <?php wp_head(); ?>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <?php wp_head(); ?>
+   <style type="text/css">
+   span.error{color: red; display: none;}   
+   .question.err span.error{display: block;}   
+   </style>
+   
    </head>
    <body>
       <section class="survey-sec">
          <div class="container">
             <div class="logo">
-               <a href="<?php echo site_url(); ?>/" title="Workstatus">
-                  <picture>
-                     <img src="<?php echo get_template_directory_uri(); ?>/assests/images/logo.svg" alt="Workstatus" width="186" height="25"> 
-                  </picture>
+               <a href="<?php echo site_url(); ?>" title="Workstatus">
+               <picture>
+                  <img src="<?php echo get_template_directory_uri(); ?>/assests/images/logo.svg" alt="Workstatus" width="186" height="25">
+               </picture>
                </a>
             </div>
+            <?php 
+            $ws_survey = get_field('ws-survery');
+            ?>
             <div class="survey-box">
-               <h1>Here are a few questions to help us understand your experience better:</h1>
-               <form action="#" class="surform" method="POST">
-                  <div class="question">
-                     <h3>What initially attracted you to try out Workstatus?</h3>
-                     <div class="form-field">
-                        <input type="radio" id="color1" name="color" value="red">
-                        <label for="color1">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color2" name="color" value="red">
-                        <label for="color2">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color3" name="color" value="red">
-                        <label for="color3">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color4" name="color" value="red">
-                        <label for="color4">Positive reviews from other users</label>
-                     </div>
-                  </div>
-                  <div class="question">
-                     <h3>What initially attracted you to try out Workstatus?</h3>
-                     <div class="form-field">
-                        <input type="radio" id="color5" name="color" value="red">
-                        <label for="color5">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color6" name="color" value="red">
-                        <label for="color6">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color7" name="color" value="red">
-                        <label for="color7">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color8" name="color" value="red">
-                        <label for="color8">Positive reviews from other users</label>
-                     </div>
-                  </div>
-                  <div class="question">
-                     <h3>What initially attracted you to try out Workstatus?</h3>
-                     <div class="form-field">
-                        <input type="radio" id="color9" name="color" value="red">
-                        <label for="color9">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color10" name="color" value="red">
-                        <label for="color10">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color11" name="color" value="red">
-                        <label for="color11">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color12" name="color" value="red">
-                        <label for="color12">Positive reviews from other users</label>
-                     </div>
-                  </div>
-                  <div class="question">
-                     <h3>What initially attracted you to try out Workstatus?</h3>
-                     <div class="form-field">
-                        <input type="radio" id="color13" name="color" value="red">
-                        <label for="color13">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color14" name="color" value="red">
-                        <label for="color14">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color15" name="color" value="red">
-                        <label for="color15">Positive reviews from other users</label>
-                     </div>
-                     <div class="form-field">
-                        <input type="radio" id="color16" name="color" value="red">
-                        <label for="color16">Positive reviews from other users</label>
-                     </div>
-                  </div>
+               <h1><?php echo get_field('sy-title'); ?></h1>
+               <form action="<?php echo get_permalink(); ?>" class="surform" method="POST" onsubmit="return _handle_survey(this);">
+                  <?php 
+                  if( $ws_survey ){
+                     //echo '<pre>'; print_r($ws_survey); die;
+                     $q = 0;
+                     foreach( $ws_survey as $que ){ $q++;
+                        $qu   = 'que-'.$q;
+                        $ans  = 'ans-'.$q;
+                        echo '<div id="ans-'.$q.'" class="question"><h3>'.$que['question'].'</h3>';
+                        echo '<input type="hidden" name="'.$qu.'" value="'.$que['question'].'">';
+                        if( $que['answears'] ){
+                           $op = 0;
+                           foreach( $que['answears'] as $opt){ $op++;
+                              echo '<div class="form-field">
+                              <input type="radio" id="'.$qu.'-'.$op.'" name="'.$ans.'" value="'.$opt['options'].'">
+                              <label for="'.$qu.'-'.$op.'">'.$opt['options'].'</label>
+                              </div>';
+                           }
+                        }
+                     echo '<span class="error">Please answer this question.</span>';
+                     echo '</div>';
+                     }
+                  }
+                  ?>
                   <div class="conclusion">
-                     <h3>Special Offer</h3>
-                     <ul>
-                        <li>As a token of appreciation for your valuable feedback, we'd like to offer you a <strong>30%</strong> discount on our annual plan. Simply use the coupon code <strong>WS30March</strong> at checkout to redeem your discount.</li>
-                        <li>Thank you for participating in our survey! Your feedback helps us tailor our product to better meet your needs.</li>
-                     </ul>
+                     <?php echo get_field('ws-offers'); ?>                     
                   </div>
+                  <input type="hidden" name="post_id" value="<?php echo get_the_ID(); ?>">
+                  <input type="hidden" name="email_addr" 
+                  value="<?php echo (isset($_GET['uid']) && !empty($_GET['uid'])) ? $_GET['uid'] : ''; ?>">
                   <button type="submit">Submit My Feedback</button>
                </form>
             </div>
          </div>
       </section>
+      <script type="text/javascript">
+      const radioButtons = document.querySelectorAll('input[type="radio"]');
+      radioButtons.forEach(function(radioButton) {
+      radioButton.addEventListener('change', function(){
+         document.getElementById(this.name).classList.remove('err');
+      });
+      });
+      function _handle_survey(e){
+      var questions  = document.querySelectorAll('div > input[type="radio"]');      
+      var elList = document.querySelectorAll('.question');
+      elList.forEach(el => el.classList.remove('err'));   
+
+      var allChecked = true;
+      var opts = [];
+      questions.forEach(function(question){
+      var isChecked = false;
+      var radios = document.querySelectorAll('input[name="' + question.name + '"]');
+
+      for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+          isChecked = true;
+          break;
+      }
+      }
+      if(!isChecked){
+      allChecked = false;
+      if( !opts.includes( question.name ) ){
+         opts.push( question.name );   
+      }
+      }
+      });
+
+      if( allChecked !== false ){
+      var formData = new FormData(e);
+      var jsonData = {};
+      formData.forEach(function(value, key) {
+      jsonData[key] = value;
+      });
+      }else{
+      opts.forEach(function(elm){
+         document.getElementById(elm).classList.add('err');
+         console.log(elm);
+      });
+
+      }
+
+      return false;
+      }   
+   </script>
    </body>
 </html>
