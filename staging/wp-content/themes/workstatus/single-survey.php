@@ -102,19 +102,17 @@ if( isset($_POST) ){
       });
 
       if( allChecked !== false ){
-      var formData = new FormData(e);
-      var jsonData = {};
-      formData.forEach(function(value, key) {
-      jsonData[key] = value;
-      });
+         var formData = new FormData(e);
+         var jsonData = {};
+         formData.forEach(function(value, key) {
+         jsonData[key] = value;            
+         });
+         console.log( jsonData );
       }else{
       opts.forEach(function(elm){
          document.getElementById(elm).classList.add('err');
-         console.log(elm);
       });
-
       }
-
       return false;
       }   
    </script>
