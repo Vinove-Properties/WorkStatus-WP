@@ -1,5 +1,6 @@
 <?php 
 $postRequest = _hanldeSurveyRequest( $_POST );
+//echo decryptEmailData($_GET['uid']); die;
 ?>
 <!DOCTYPE html>
 <html lang="en">

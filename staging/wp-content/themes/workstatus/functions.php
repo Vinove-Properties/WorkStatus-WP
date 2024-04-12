@@ -2167,3 +2167,12 @@ function _hanldeSurveyRequest( $data ){
 		return false;
 	}
 }
+
+function decryptEmailData($input) {
+    $result = "";
+    for ($i = 0; $i < strlen($input); $i++) {
+        $charCode = ord($input[$i]);
+        $result .= chr($charCode - 1); // Inverse of encryption (substitution cipher)
+    }
+    return $result;
+}
