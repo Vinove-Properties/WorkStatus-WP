@@ -74,14 +74,17 @@
                }
               }
               ?>
-            <!--<div class="question">
+            <?php 
+            /*
+            <div class="question">
               <div class="form-field checkfield">
                 <label for="myCheck">Other</label><input type="checkbox" id="myCheck" />
                 <div class="check-area" id="chkarea">
                   <textarea name="other-text" class="textbox"></textarea>
                 </div>
               </div>
-            </div>-->
+            </div> 
+            */ ?>
             <input type="hidden" name="post_id" value="<?php echo get_the_ID(); ?>">
             <?php 
               $csrfNonce = wp_create_nonce( 'post_survey-'.get_the_ID() ); 
@@ -116,7 +119,7 @@
           }else{
             elm.classList.remove('err');
             elm.nextElementSibling.style.display = "none";
-          }          
+          }
         }
         elm.addEventListener("keyup", checkURequirement);
         elm.addEventListener("keypress", checkURequirement);
