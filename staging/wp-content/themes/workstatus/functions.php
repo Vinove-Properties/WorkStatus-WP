@@ -2147,13 +2147,14 @@ function _hanldeSurveyRequest( $data ){
 
 		$post_id 	= $data['post_id'];
 		$email 		= (isset($data['email_addr']) && !empty($data['email_addr'])) ? $data['email_addr'] : 'nitin.baluni@mail.vinove.com';
+		$emailVal 	= decryptEmailData( $email );
 		unset($data['post_id']);
 		unset($data['email_addr']);
 		unset($data['su-nonce']);
 		
 		$inserted = $dbObj->insert('ws_survey_data',[
 			'survey_id' => $post_id,
-			'email' => $email,
+			'email' => $emailVal,
 			'data' => json_encode($data),
 			'created_at' => date('Y-m-d H:i:s')
 		],
