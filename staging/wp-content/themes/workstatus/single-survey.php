@@ -62,10 +62,10 @@
                         <label for="'.$qu.'-'.$op.'">'.$opt['options'].'</label>
                         </div>';
                      }
-                     echo '<div class="form-field">
+                     echo '<div class="form-field checkfield">
+                     <label for="'.$qu.'-other'.'">Other</label>
                       <input class="ot-option" type="radio" id="'.$qu.'-other'.'" name="'.$ans.'" value="other">
-                      <label for="'.$qu.'-other'.'">Other</label>
-                      <input type="text" name="other-'.$ans.'">
+                      <input type="text" class="textbox" name="other-'.$ans.'">
                       </div>';
                   }
                echo '<span class="error">Please answer this question.</span>';
@@ -73,15 +73,14 @@
                }
               }
               ?>
-            <div class="question">
+            <!--<div class="question">
               <div class="form-field checkfield">
-                
                 <label for="myCheck">Other</label><input type="checkbox" id="myCheck" />
                 <div class="check-area" id="chkarea">
                   <textarea name="other-text" class="textbox"></textarea>
                 </div>
               </div>
-            </div>
+            </div>-->
             <input type="hidden" name="post_id" value="<?php echo get_the_ID(); ?>">
             <?php 
               $csrfNonce = wp_create_nonce( 'post_survey-'.get_the_ID() ); 

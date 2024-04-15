@@ -203,14 +203,15 @@ button[type="submit"]:hover {
 .survey-thank h2{font-size: 45px; font-weight: 600; color:#05164D;     margin: 20px 0 0; line-height: 1.2;}
 .survey-thank p{color:#464A6C;  margin:15px 0 0;}
 
-.checkfield{flex-wrap: wrap; color: rgba(70, 74, 108, 1);font-weight: 500; margin: 0 0 20px; padding: 0; position: relative;}
-.checkfield label{position: absolute; left: 25px; top: -6px;}
-#chkarea{display:none;}
-#myCheck:checked + #chkarea {display: block !important; width: 100%; margin: 20px 0;}
-#myCheck{margin:0 8px 0 0;}
-.textbox{height: 100px; width: 460px; border: 1px solid #bae; border-radius: 5px; padding: 0 18px 0; color: #110302;
-font-size: 14px; font-family: "Noto Sans"; font-weight: 500; resize: none;}
+.checkfield{flex-wrap: wrap;  margin: 0 0 20px; padding: 0; position: relative; display: inline-block;}
+.input-wrap{display: flex; width: 100%; flex-basis: 100%; align-items: center;}
 
+.textbox{height: 40px;width: 460px; border: 1px solid #bae; border-radius: 5px; padding: 0 18px 0; color: #110302;
+font-size: 14px; font-family: "Noto Sans"; font-weight: 500; resize: none; margin:15px 0 0; display: none;}
+.checkfield label{ position: absolute; left: 23px; top: -3px;}
+input[type=radio]:checked .textbox{display:block;}
+
+input[type=radio]:checked + .textbox{display:block;}
 
 /*Popup Style Section Ends  here*/
 
