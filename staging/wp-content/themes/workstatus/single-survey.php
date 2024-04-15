@@ -66,7 +66,7 @@
                      <label for="'.$qu.'-other'.'">Other</label>
                       <input class="ot-option" type="radio" id="'.$qu.'-other'.'" name="'.$ans.'" value="other">
                       <input type="text" class="textbox input-other" name="other-'.$ans.'">
-                      <span class="i-error" style="display:none;">Please answer this question.</span> 
+                      <span class="i-error" style="display:none;">This field is required.</span> 
                       </div>';
                   }
                echo '<span class="error">Please answer this question.</span>';
@@ -111,8 +111,10 @@
         elm.nextElementSibling.style.display = "none";
         if( elm.offsetParent !== null ){
           if( elm.value == "" ){
+            elm.classList.add('err');
             elm.nextElementSibling.style.display = "block";  
           }else{
+            elm.classList.remove('err');
             elm.nextElementSibling.style.display = "none";
           }          
         }
@@ -126,8 +128,10 @@
       function checkURequirement(ev){
         var val = ev.currentTarget.value;        
         if( val == "" ){
+          ev.currentTarget.classList.add('err');
           ev.currentTarget.nextElementSibling.style.display = "block";  
         }else{
+          ev.currentTarget.classList.remove('err');
           ev.currentTarget.nextElementSibling.style.display = "none";  
         }
       }
@@ -141,8 +145,10 @@
       if( elm.offsetParent !== null ){
         if( elm.value == "" ){
           otInput = false;
+          elm.classList.add('err');
           elm.nextElementSibling.style.display = "block";
         }else{
+          elm.classList.remove('err');
           elm.nextElementSibling.style.display = "none";          
         }          
       }        
