@@ -69,8 +69,8 @@
               ?>
             <div class="question">
               <div class="form-field checkfield">
-                <input type="checkbox" id="myCheck" />
-                Other
+                
+                <label for="myCheck">Other</label><input type="checkbox" id="myCheck" />
                 <div class="check-area" id="chkarea">
                   <textarea name="other-text" class="textbox"></textarea>
                 </div>
