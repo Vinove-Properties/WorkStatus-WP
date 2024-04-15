@@ -102,8 +102,6 @@ label {
 	color: rgba(70, 74, 108, 1);
 }
 
-
-
 .conclusion {
 	background: rgba(246, 245, 255, 1);
 	border-radius: 20px;
@@ -213,6 +211,10 @@ input[type=radio]:checked .textbox{display:block;}
 
 input[type=radio]:checked + .textbox{display:block;}
 
+.i-error{color: red; display: none;  margin:20px 0  0;}
+input[type=radio]:checked + .i-error{color: red; display: block;  margin:20px 0  0;}
+input[type=radio]:not(:checked)~.i-error {display: none !important;}  
+.err{border-color:red;}
 /*Popup Style Section Ends  here*/
 
 @media screen and (max-width: 1280px) {
