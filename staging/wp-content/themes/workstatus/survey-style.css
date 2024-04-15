@@ -131,6 +131,8 @@ label {
 	color: #624de3;
 }
 
+.conclusion a:hover{color: #464A6C; text-decoration: none;}
+
 button[type="submit"] {
 	display: block;
 	min-width: 208px;
