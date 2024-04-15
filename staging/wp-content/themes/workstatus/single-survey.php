@@ -7,6 +7,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/favicon.png" type="image/x-icon">
     <?php wp_head(); ?>
     <style type="text/css">
       span.error{color: red; display: none;}   
@@ -61,6 +62,11 @@
                         <label for="'.$qu.'-'.$op.'">'.$opt['options'].'</label>
                         </div>';
                      }
+                     echo '<div class="form-field">
+                      <input class="ot-option" type="radio" id="'.$qu.'-other'.'" name="'.$ans.'" value="other">
+                      <label for="'.$qu.'-other'.'">Other</label>
+                      <input type="text" name="other-'.$ans.'">
+                      </div>';
                   }
                echo '<span class="error">Please answer this question.</span>';
                echo '</div>';
