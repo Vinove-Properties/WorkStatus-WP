@@ -24,8 +24,8 @@
             <picture>
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/thank-img.svg" width="127" height="136" alt="Workstatus">
             </picture>
-            <h2>Thank You</h2>
-            <p>Thank you for participating in our survey! Your feedback helps us tailor our product to better meet your needs.</p>
+            <h2>Thank you for participating in our survey!</h2>
+            <p>Your feedback helps us tailor our product to better meet your needs.</p>
           </div>
         </div>
       </div>
@@ -65,7 +65,8 @@
                      echo '<div class="form-field checkfield">
                      <label for="'.$qu.'-other'.'">Other</label>
                       <input class="ot-option" type="radio" id="'.$qu.'-other'.'" name="'.$ans.'" value="other">
-                      <input type="text" class="textbox" name="other-'.$ans.'">
+                      <input type="text" class="textbox input-other" name="other-'.$ans.'">
+                      <span class="i-error" style="display:none;">Please answer this question.</span> 
                       </div>';
                   }
                echo '<span class="error">Please answer this question.</span>';
@@ -97,13 +98,56 @@
       </div>
     </section>
     <script type="text/javascript">
+
       const radioButtons = document.querySelectorAll('input[type="radio"]');
       radioButtons.forEach(function(radioButton) {
       radioButton.addEventListener('change', function(){
          document.getElementById(this.name).classList.remove('err');
       });
       });
+      
+      var inputOther = document.querySelectorAll(".input-other");
+      inputOther.forEach( function(elm){
+        elm.nextElementSibling.style.display = "none";
+        if( elm.offsetParent !== null ){
+          if( elm.value == "" ){
+            elm.nextElementSibling.style.display = "block";  
+          }else{
+            elm.nextElementSibling.style.display = "none";
+          }          
+        }
+        elm.addEventListener("keyup", checkURequirement);
+        elm.addEventListener("keypress", checkURequirement);
+        elm.addEventListener("keydown", checkURequirement);
+        elm.addEventListener("focusout", checkURequirement);
+        elm.addEventListener("focusin", checkURequirement);
+      });
+
+      function checkURequirement(ev){
+        var val = ev.currentTarget.value;        
+        if( val == "" ){
+          ev.currentTarget.nextElementSibling.style.display = "block";  
+        }else{
+          ev.currentTarget.nextElementSibling.style.display = "none";  
+        }
+      }
+
+      
+
       function _handle_survey(e){
+      var otInput = true;      
+      var inputOther = document.querySelectorAll(".input-other");
+      inputOther.forEach( function(elm){
+      if( elm.offsetParent !== null ){
+        if( elm.value == "" ){
+          otInput = false;
+          elm.nextElementSibling.style.display = "block";
+        }else{
+          elm.nextElementSibling.style.display = "none";          
+        }          
+      }        
+      });
+        
       var questions  = document.querySelectorAll('div > input[type="radio"]');      
       var elList = document.querySelectorAll('.question');
       elList.forEach(el => el.classList.remove('err'));   
@@ -126,16 +170,15 @@
          opts.push( question.name );   
       }
       }
-      });
-      
-      if( allChecked !== false ){
-         var formData = new FormData(e);
-         var jsonData = {};
-         formData.forEach(function(value, key) {
-         jsonData[key] = value;            
-         });
-         console.log( jsonData );
-         return true;
+      });          
+
+      if( (allChecked !== false) && (otInput === true) ){        
+        var formData = new FormData(e);
+        var jsonData = {};
+        formData.forEach(function(value, key){
+          jsonData[key] = value;
+        });
+        return true;
       }else{
       opts.forEach(function(elm){
          document.getElementById(elm).classList.add('err');
