@@ -74,6 +74,42 @@ global $ws_ctas, $RegLink, $LogLink;
     <?php
         }
     endif; ?>
+
+
+    <?php 
+    $wsBenifits = get_field('ws-benefits');
+    if( isset( $wsBenifits['is_enabled'] ) && ($wsBenifits['is_enabled'] == "yes") ){ 
+    ?>
+    <section class="benifits-section">
+    <div class="container">
+    <div class="top-section">
+      <h6><span class="bg-purple"><?php echo $wsBenifits['heading']; ?></span></h6>
+      <h2><?php echo $wsBenifits['sub_heading']; ?></h2>
+    </div>
+    <div class="flex_row">
+    <?php 
+    if( $wsBenifits['blocks'] ){  
+    $i = 19;
+    foreach( $wsBenifits['blocks'] as $row ) { 
+    ?>    
+      <div class="column-three">
+        <?php
+        if($row['icon']){
+            echo pxlGetPtag($row['icon']);
+        }else{
+            echo '<i class="icon' . $i . '"></i>';
+        }        
+        echo $row['content'];
+        ?>
+      </div>
+    <?php $i++; } } ?>
+    </div>
+    </div>
+    </section>
+    <?php 
+    }
+    ?>
+
     <section class="middle-section feature-section">
         <?php
         $financialmanage = get_field('financial_management');
