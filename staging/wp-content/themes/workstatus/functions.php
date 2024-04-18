@@ -157,7 +157,7 @@ function workstatus_scripts() {
 		){
 		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/assests/css/reviews.css', array(), _S_VERSION );
 	}
-	elseif(is_page_template(['page-templates/tpl-pricing.php'])){
+	elseif( is_page_template(['page-templates/tpl-pricing.php', 'page-templates/tpl-static-pricing.php']) ){
 		wp_enqueue_style('pricingnew', get_stylesheet_directory_uri().'/assests/css/pricing-new.css', array(), _S_VERSION );
 		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/pricing.css', array(), _S_VERSION );
 	}

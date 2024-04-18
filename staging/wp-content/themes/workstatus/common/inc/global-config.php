@@ -440,7 +440,7 @@ function getWSipinfo( $ipAddr ){
         $ws_userip      = json_decode( $isLocation ); 
         if( $ws_userip ){
             $ipdb->insert( 'ipinfo_logs', array( 'ip' => $ipAddr, 'data' => $isLocation, 'created_at' => date('Y-m-d H:i:s')));
-            return $isLocation;
+            return $ws_userip;
         }else{
             return false;
         }       
@@ -451,7 +451,7 @@ add_action( 'rest_api_init', function (){
     register_rest_route( 'ws-api/v1', '/ipinfo', array(
         'methods' => 'GET',
         'callback' => function(){
-        $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : '84.17.47.122';
+        $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : '101.0.63.255';
         $ipinfo = getWSipinfo( $ipaddr );
         wp_send_json( $ipinfo );
         }
