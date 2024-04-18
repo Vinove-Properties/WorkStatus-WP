@@ -7805,7 +7805,9 @@ h3 a {
             font-weight: 600;
             font-size: 12px;
             border-radius: 6px;
-            margin: 0 0 30px; }
+            margin: 0 0 30px;
+            display: flex;
+            gap: 5px; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu {
             font-size: 14px;
             font-weight: 600;
@@ -8209,31 +8211,33 @@ h3 a {
                   left: 0;
                   top: 8px; }
 
-.all-partners .part-row {
-  grid-gap: 15px;
-  grid-template-rows: auto auto;
-  grid-template-columns: repeat(6, 1fr);
-  display: grid; }
-  .all-partners .part-row .part-col {
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #eadfff;
-    background: #fff;
-    padding: 17px 30px; }
-    .all-partners .part-row .part-col .img-wrap {
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .all-partners .part-row .part-col .img-wrap img {
+.all-partners {
+  background-color: #F7F6F9; }
+  .all-partners .part-row {
+    grid-gap: 15px;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(6, 1fr);
+    display: grid; }
+    .all-partners .part-row .part-col {
+      text-align: center;
+      border-radius: 10px;
+      border: 1px solid #eadfff;
+      background: #fff;
+      padding: 17px 30px; }
+      .all-partners .part-row .part-col .img-wrap {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .all-partners .part-row .part-col .img-wrap img {
+          display: block; }
+      .all-partners .part-row .part-col .star {
+        background: url(../images/part-star.png) no-repeat center;
+        width: 91px;
+        margin: 0 auto;
+        height: 16px;
+        transition: all 0.3s ease-in-out;
         display: block; }
-    .all-partners .part-row .part-col .star {
-      background: url(../images/part-star.png) no-repeat center;
-      width: 91px;
-      margin: 0 auto;
-      height: 16px;
-      transition: all 0.3s ease-in-out;
-      display: block; }
 
 @media (max-width: 1380px) {
   .ws-pricing .price-flex .price-column .price-box .price_btn {
