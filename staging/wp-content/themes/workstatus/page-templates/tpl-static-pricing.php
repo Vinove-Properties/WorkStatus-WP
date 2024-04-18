@@ -14,6 +14,823 @@ Please wait, while we load the pricing plans for you.
 </span>
 </div>
 </div>      
+<section class="ws-pricing">
+      <div class="container">
+      <div class="price-flex">
+        <div class="price-column">
+          <div class="price-box">
+            <div class="pr-plan">
+              <h3>BASIC</h3>
+              <div class="card-plan">
+                <div class="wph" id="pl-basic">$4</div>
+                <span>/ user / month</span>
+              </div>
+              <div class="total"><div class="wph" id="pl-basic-total">$7,140</div> monthly total</div>
+            </div>
+            <a class="price_btn" href="#">Choose Plan</a>
+            <div class="price-wrapper">
+              <div class="price-options">
+                <h4>Includes:</h4>
+                <div class="option-list">
+                  <div class="option">
+                    Time tracking
+                  </div>
+                  <div class="option">
+                    Timesheets
+                  </div>
+                  <div class="option">
+                    Activity Levels
+                  </div>
+                  <div class="option">
+                    Limited screenshots
+                  </div>
+                  <div class="option">
+                    Limited app & URL tracking
+                  </div>
+                  <div class="option">
+                    Limited reports
+                  </div>
+                  <div class="option">
+                    Limited payments
+                  </div>
+                  <div class="option">
+                    Clients & Invoices
+                  </div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Limited SLA</p>
+                  </div>
+                </div>
+              </div>
+              <button onclick="togglePrice()"  class="price-accordion" type="button" aria-expanded="false">
+              Features
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="price-column">
+          <div class="price-box">
+            <div class="pr-plan">
+              <h3>PROFESSIONAL</h3>
+              <div class="card-plan">
+              <div class="wph" id="pl-pro">$6</div>  
+              <span>/ user / month</span></div>
+              <div class="total"><div class="wph" id="pl-pro-total">$7,140</div> monthly total</div>
+            </div>
+            <a class="price_btn" href="#">Choose Plan</a>
+            <div class="price-wrapper">
+              <div class="price-options">
+                <h4>Everything in Basic +</h4>
+                <div class="option-list">
+                  <div class="option">
+                    Tasks (Add-on)
+                  </div>
+                  <div class="option">
+                    Reports
+                  </div>
+                  <div class="option">
+                    1 integration
+                  </div>
+                  <div class="option">
+                    Idle timeout
+                  </div>
+                  <div class="option">
+                    Project budgets
+                  </div>
+                  <div class="option">
+                    Work breaks
+                  </div>
+                  <div class="option">
+                    Expenses
+                  </div>
+                  <div class="option">
+                    Clients & Invoices
+                  </div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Two-day email support SLA</p>
+                  </div>
+                </div>
+              </div>
+              <button onclick="togglePrice()"   class="price-accordion" type="button" aria-expanded="false">
+              Features
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="price-column">
+          <div class="price-box">
+            <div class="pr-plan">
+              <h3>BUSINESS</h3>
+              <div class="card-plan"><div class="wph" id="pl-buss">$8</div><span>/ user / month</span></div>
+              <div class="total"><div class="wph" id="pl-buss-total">$10,820</div> monthly total</div>
+            </div>
+            <a class="price_btn" href="#">Choose Plan</a>
+            <div class="price-wrapper">
+              <div class="price-options">
+                <h4>Everything in Professional +</h4>
+                <div class="option-list">
+                  <div class="option">
+                    Insights (Add-on)
+                  </div>
+                  <div class="option">
+                    Tasks (Add-on)
+                  </div>
+                  <div class="option">
+                    Unlimited screenshots
+                  </div>
+                  <div class="option">
+                    Unlimited app & URL tracking
+                  </div>
+                  <div class="option">
+                    Aduto discard idle time
+                  </div>
+                  <div class="option">
+                    Teams
+                  </div>
+                  <div class="option">
+                    Payments & payroll
+                  </div>
+                  <div class="option">
+                    Unlimited integrations
+                  </div>
+                  <div class="option">
+                    Overtime
+                  </div>
+                  <div class="option">
+                    Time off & holidays
+                  </div>
+                  <div class="option">
+                    Scheduling & attendance
+                  </div>
+                  <div class="option">
+                    Client budgets
+                  </div>
+                  <div class="option">
+                    Timesheet approvals
+                  </div>
+                  <div class="option">
+                    Daily & weekly limits
+                  </div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Chat support</p>
+                    <p>One-day email support SLA</p>
+                  </div>
+                </div>
+              </div>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">
+              Features
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="price-column">
+          <div class="price-box">
+            <div class="pr-plan">
+              <h3>ENTERPRISE</h3>
+              <div class="card-plan">Custom</div>
+              <div class="b-anu"><strong>Billed annually.</strong> Switch the Billing cycle to Annual to view Enterprise.</div>
+            </div>
+            <a class="price_btn" href="#">Let’s Talk</a>
+            <div class="price-wrapper">
+              <div class="price-options">
+                <h4>Everything in Basic +</h4>
+                <div class="option-list">
+                  <div class="option">
+                    Locations (Add-on)
+                  </div>
+                  <div class="option">
+                    Insights (Add-on)
+                  </div>
+                  <div class="option">
+                    Tasks (Add-on)
+                  </div>
+                  <div class="option">
+                    Corporate App (Add-on)
+                  </div>
+                  <div class="option">
+                    Private Cloud (Add-on)
+                  </div>
+                  <div class="option">
+                    Higher limit on public API
+                  </div>
+                  <div class="option">
+                    HIPAA compliance
+                  </div>
+                  <div class="option">
+                    SOC-2 Type II Compliance
+                  </div>
+                  <div class="option">
+                    Enterprise deployments
+                  </div>
+                  <div class="option">
+                    Account provisioning
+                  </div>
+                  <div class="option">
+                    Single sign-on
+                  </div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Concierge setup</p>
+                    <p>Assigned Account Representative</p>
+                    <p>Two-hour email support SLA</p>
+                  </div>
+                </div>
+              </div>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">
+              Features
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
+    </div>
+     <section class="comparison-panel">
+      <div class="container">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th><span class="plan-label">FREE</span><a class="button" href="#">Choose plan</a></th>
+              <th><span class="plan-label">BASIC</span><a class="button" href="#">Choose plan</a></th>
+              <th><span class="plan-label">PROFESSIONAL</span><a class="button" href="#">Choose plan</a></th>
+              <th><span class="plan-label">BUSINESS</span><a class="button" href="#">Choose plan</a></th>
+              <th><span class="plan-label">ENTERPRISE</span><a class="button" href="#">Choose plan</a></th>
+            </tr>
+          </thead>
+        </table>
+        <div class="comp-row">
+          <h5>Time Tracking</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>Multi platform timer app</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Timesheets</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Timesheet approvals</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Idle time out</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Custom Idle time out</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Auto discard idle time</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Background timer *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comp-row">
+          <h5>Productivity monitoring</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>Screenshots</td>
+                <td>100/user/mo</td>
+                <td>500/user/mo</td>
+                <td>1,500/user/mo</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Activity levels</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Apps & URLs tracking</td>
+                <td>-</td>
+                <td>500/user/mo</td>
+                <td>1,500/user/mo</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Achievement badges</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Overtime</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comp-row">
+          <h5>Workforce Management</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>Dashboard</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Scheduling & attendance</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Daily & weekly limits</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Time off & holidays</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Overtime</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Work breaks</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Teams</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Clients</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Client invoices</td>
+                <td>3</td>
+                <td>5</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Team invoices</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Expense tracking</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Per user settings</td>
+                <td></td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Payments & payroll</td>
+                <td>Limited</td>
+                <td>Limited</td>
+                <td></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Pay by bank debit (ACH)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Account provisioning *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comp-row">
+          <h5>Security & Privacy</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>HIPAA compliance</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>SOC-2 Type II Compliance</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Single sign-on</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Two-factor authentication</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comp-row">
+          <h5>Data & Compliance</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>Public API</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>Limited</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Scheduled reports</td>
+                <td>-</td>
+                <td>-</td>
+                <td>3</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Custom fields *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Historical bill/pay rates *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Departments/cost centers *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Private Cloud*</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="comp-row">
+          <h5>Support</h5>
+          <table class="comp-tablerow">
+            <tbody>
+              <tr>
+                <td>Help center</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Learning center</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Chat support</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Email support SLA (24x5)</td>
+                <td>Limited support</td>
+                <td>2 days</td>
+                <td>1 day</td>
+                <td>1 day</td>
+                <td>2 hours</td>
+              </tr>
+              <tr>
+                <td>Assigned account representative</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Concierge set up</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="option-data">
+      <div class="container">
+        <div class="top-section">
+          <h2>Optional add-ons</h2>
+          <p>Choose your plan above, and then select the add-ons that are right for you.<br>
+            Features marked with * can be added via add-ons below.
+          </p>
+        </div>
+        <div class="addons-row">
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Insights</h4>
+                  <span class="price">Starts at $2</span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>Categorized work time</li>
+                  <li>Smart notifications</li>
+                  <li>Focus & meeting time</li>
+                  <li>Suspicious activity detection</li>
+                  <li>Behavioral highlights</li>
+                  <li>Work time classification</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 <section class="faqsRow wfull for-heading-center" style="padding-top:0;">
   <div class="container">
     <div class="top-section">
@@ -248,13 +1065,33 @@ Please wait, while we load the pricing plans for you.
         if( (this.readyState == 4) && (this.status == 200) ){
           let response = JSON.parse(this.responseText);
           if( pricingData.hasOwnProperty( response.country ) ){
+            let plans = pricingData[response.country];
+            for (const key in plans){
+                if( plans.hasOwnProperty(key) ){
+                  const value = plans[key];
+                  let elmPricing  = document.getElementById("pl-"+key);
+                  let elmTotal    = document.getElementById("pl-"+key+"-total");
+                  elmPricing.innerHTML = value.amount;
+                  elmTotal.innerHTML = value.total;
+                    //console.log(key);
+                    //console.log(value);
+                }
+            }
+            /*
+            plans.forEach(function(idx){
+              console.log(idx);
+            })
+            */
             console.log( pricingData[response.country] );
           }
         }
     }
     xhttp.send();
   });
-
+  function togglePrice() {
+    var element = document.querySelector('.price-options');
+    element.classList.toggle('is-visible');
+  }
   /*
   if(document.readyState !== 'loading') {
       console.log('document is already ready, just execute code here');
@@ -269,5 +1106,8 @@ Please wait, while we load the pricing plans for you.
       document.getElementById("pricing-loading-issue").style.display = "block";
     }, 4000);
   }*/
-</script>    
+</script>
+<style type="text/css">
+.wph{display: inline;}  
+</style>
 <?php get_footer(); ?>
