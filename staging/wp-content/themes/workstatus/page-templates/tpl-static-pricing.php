@@ -72,9 +72,10 @@ Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click
           <div class="price-box">
             <div class="pr-plan">
               <h3>PROFESSIONAL</h3>
-              <div class="card-plan">
-              <div class="wph" id="pl-pro">$6</div>  
-              <span>/ user / month</span></div>
+              <div class="card-plan">              
+              <span class="wph" id="pl-pro">$4</span>  
+              <span class="prio">/ user / month</span>
+              </div>
               <div class="total"><div class="wph" id="pl-pro-total">$7,140</div> monthly total</div>
             </div>
             <a class="price_btn" href="#">Choose Plan</a>
@@ -122,7 +123,10 @@ Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click
           <div class="price-box">
             <div class="pr-plan">
               <h3>BUSINESS</h3>
-              <div class="card-plan"><div class="wph" id="pl-buss">$8</div><span>/ user / month</span></div>
+              <div class="card-plan">
+                <span class="wph" id="pl-buss">$4</span>  
+                <span class="prio">/ user / month</span>
+              </div>
               <div class="total"><div class="wph" id="pl-buss-total">$10,820</div> monthly total</div>
             </div>
             <a class="price_btn" href="#">Choose Plan</a>
@@ -1107,7 +1111,4 @@ Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click
     }, 4000);
   }*/
 </script>
-<style type="text/css">
-.wph{display: inline;}  
-</style>
 <?php get_footer(); ?>
