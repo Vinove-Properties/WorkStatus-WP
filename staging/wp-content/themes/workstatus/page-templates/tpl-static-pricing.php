@@ -1120,7 +1120,7 @@
                   var t = tableRow.offsetHeight;
                   t += parseInt(window.getComputedStyle(tableRow).getPropertyValue("margin-top"));
                   var n = e + (t += parseInt(window.getComputedStyle(tableRow).getPropertyValue("margin-bottom")));
-                  document.documentElement.scrollTop + (stickytable.offsetHeight + 20) > n ? stickytable.classList.add("btomfixed") : stickytable.classList.remove("btomfixed");
+                  document.documentElement.scrollTop + (stickytable.offsetHeight + 200) > n ? stickytable.classList.add("btomfixed") : stickytable.classList.remove("btomfixed");
               } else stickytable.classList.remove("sticky"), stickytable.classList.remove("btomfixed");
           });
       }
