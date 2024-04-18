@@ -8054,9 +8054,12 @@ h3 a {
     z-index: -1; }
 
 .comparison-panel {
-  padding-top: 60px;
+  padding-top: 0;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  display: none; }
+  .comparison-panel.toggle {
+    display: block; }
   .comparison-panel .comp-table {
     table-layout: fixed;
     width: 100%;
@@ -8305,7 +8308,7 @@ h3 a {
 
   .comparison-outer .plan-btn {
     font-size: 16px;
-    margin-bottom: 40px; }
+    margin-bottom: 60px; }
 
   .option-data .addons-row .addond-col {
     padding: 0 10px;
@@ -8386,7 +8389,7 @@ h3 a {
       margin: 0 0 20px; }
 
   .comparison-panel {
-    padding-top: 50px; }
+    padding-top: 0; }
     .comparison-panel .comp-table tr th .button {
       padding: 11px 15px;
       font-size: 14px; }
