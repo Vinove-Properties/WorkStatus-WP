@@ -9,8 +9,8 @@ global $ws_ctas, $RegLink, $LogLink;
 <div id="dummytest">
 <div v-if="loading" id="pre-loader">
 Please wait, while we load the pricing plans for you.
-<span id="pricing-loading-issue" style="display:none; margin-top: 10px;">
-  Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click here</a>
+<span id="pricing-loading-issue" style="display:none; margin-top: 10px;"> 
+Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click here</a>
 </span>
 </div>
 </div>      
@@ -22,8 +22,8 @@ Please wait, while we load the pricing plans for you.
             <div class="pr-plan">
               <h3>BASIC</h3>
               <div class="card-plan">
-                <div class="wph" id="pl-basic">$4</div>
-                <span>/ user / month</span>
+                <span class="wph" id="pl-basic">$4</span>
+                <span class="prio">/ user / month</span>
               </div>
               <div class="total"><div class="wph" id="pl-basic-total">$7,140</div> monthly total</div>
             </div>
