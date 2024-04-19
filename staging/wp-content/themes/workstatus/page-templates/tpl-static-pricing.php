@@ -1067,21 +1067,22 @@
 
   "DEFAULT": {
   "basic":{
-  'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
+  'monthly':{"amount":299, "total":3588, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200},
+  'yearly':{"amount":199, "total":2388, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200} 
   },
   "pro":{
-  'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
+  'monthly':{"amount":399, "total":4788, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
+  'yearly':{"amount":299, "total":3588, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
   },
   "buss":{
-  'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
+  'monthly':{"amount":599, "total":7188, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
+  'yearly':{"amount":499, "total":5988, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
   },
   "ent":{
   'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
   'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  }
+  },
+  'currency' : '$'
   }
   };
 
@@ -1102,33 +1103,30 @@
     }
     };
     */
+
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", wsObj.ipinfo, true); 
     xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.onreadystatechange = function() {
-        /*if (this.readyState === XMLHttpRequest.LOADING) {
-          console.log("Request is in progress...");
-        }else */
+    xhttp.onreadystatechange = function(){
         if( (this.readyState == 4) && (this.status == 200) ){
           let response = JSON.parse(this.responseText);
-          if( pricingData.hasOwnProperty( response.country ) ){
-            let plans = pricingData[response.country];
+          //if( pricingData.hasOwnProperty( response.country ) ){
+            let plans = ( response.country == "IN" ) ? pricingData[response.country] : pricingData['DEFAULT'];
+            console.log( plans );
             var currency = plans['currency'];
-            //console.log(currency);
             for (const key in plans){
                 if( plans.hasOwnProperty(key) ){
                   if( key !== "currency" ){
                     const value = plans[key];
-                    //console.log( value.yearly.amount );
-                    //console.log( currency );
+                    
                     let elmPricing  = document.getElementById("pl-"+key);
                     let elmTotal    = document.getElementById("pl-"+key+"-total");                  
 
                     if( elmPricing ){
-                    elmPricing.innerHTML = currency + value.yearly.amount;  
+                      elmPricing.innerHTML = currency + value.yearly.amount;  
                     }
                     if( elmTotal ){
-                    elmTotal.innerHTML = currency + value.yearly.total;  
+                      elmTotal.innerHTML = currency + value.yearly.total;  
                     }
 
                     /*
@@ -1147,19 +1145,11 @@
                     elmLocation.innerHTML = currency + value.yearly.location;
                     elmCorapp.innerHTML   = currency + value.yearly.app;
                     elmCloud.innerHTML    = currency + value.yearly.cloud;
-                    */
-                    
-                  }
-                  
+                    */                    
+                  }                  
                 }
             }
-            /*
-            plans.forEach(function(idx){
-              console.log(idx);
-            })
-            */
-            //console.log( pricingData[response.country] );
-          }
+          //}
         }
     }
     xhttp.send();
