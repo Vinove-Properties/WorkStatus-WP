@@ -198,12 +198,31 @@ const pricingData = {
 }
 };
 
-function setPlanPricing( conCode, type = 'yearly' ){
+function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
+    const locInput = document.getElementById("current-geo");
     if( laCountries.includes( conCode ) ){
       conCode = "LA";
     }else if( eurCountries.includes( conCode ) ){
       conCode = "EUR";
     }
+
+    if( pricingData.hasOwnProperty(conCode) ){
+      locInput.value = conCode;
+    }
+    if(  isAjax === true){
+      [...document.querySelectorAll('.pc-option')].forEach(function(elm) {
+      
+      if( elm.getAttribute( 'data-cod' ) === conCode ){
+      //console.log(elm.getAttribute('data-country'));
+      let iSrc        = elm.querySelectorAll("img")[0].getAttribute('src');
+      let pcCountry   = document.getElementById("pc-country");
+      document.getElementById("pflag-icon").setAttribute('src', iSrc);
+      pcCountry.innerText = elm.getAttribute('data-country');      
+      }
+      });  
+    }
+    
+
     let plans = (!pricingData.hasOwnProperty(conCode)) ? pricingData['US'] : pricingData[conCode];
     
     var currency    = plans['meta']['currency'];
@@ -232,6 +251,7 @@ function setPlanPricing( conCode, type = 'yearly' ){
         let planBtn     = document.getElementById("ws-plan-"+key);
         if( planBtn ){
           let pType = ( type == "yearly" ) ? "annual" : "monthly";
+          //console.log( value )
           planBtn.setAttribute("href", getwsPlanurl( value[type].plan_id, pType ) );  
         }        
         if( elmPricing ){
@@ -255,7 +275,7 @@ window.addEventListener("load", function (){
         let response = JSON.parse(this.responseText);
           console.log( response );
           var conCode = response.country;
-          setPlanPricing( conCode, "yearly" );
+          setPlanPricing( conCode, "yearly", true );
       }
   }
   xhttp.send();
@@ -309,20 +329,20 @@ if( pricingFltrt ){
         })
     }
 
-    /*fltrOn('click', '.selectBtn', item => {
+    /*
+    fltrOn('click', '.selectBtn', item => {
         let next = item.target.nextElementSibling;
         item.target.classList.toggle('active');
         next.classList.toggle('toggle');
         next.style.zIndex = index++;
-    });*/
+    });
+    */
 
     fltrOn('click', '.select-list .pc-option', item => {
-      let crArray     = ['dv-usd', 'dv-aed', 'dv-aud', 'dv-gbp', 'dv-eur', 'dv-zar'];
-      crArray.forEach( function(itm){
-      document.body.classList.remove( itm );    
-      });
-      console.log( item.target.getAttribute('data-cod') );
-      setPlanPricing( item.target.getAttribute('data-cod') );
+      let prSlider = document.getElementById('ps-switcher');
+      let planType = prSlider.checked ? "monthly" : "yearly";
+      setPlanPricing( item.target.getAttribute('data-cod'), planType );
+
       let iSrc        = item.target.querySelectorAll("img")[0].getAttribute('src');
       let pcCountry   = document.getElementById("pc-country");
       document.getElementById("pflag-icon").setAttribute('src', iSrc);
@@ -333,4 +353,16 @@ if( pricingFltrt ){
       parent.classList.remove("active");
       
     })
+}
+
+var prSlider = document.getElementById('ps-switcher');
+  if( prSlider ){
+    prSlider.addEventListener('change', (event) => {
+    var inputLoc = document.getElementById("current-geo");
+    if(event.currentTarget.checked){
+      setPlanPricing( inputLoc.value, "monthly" );
+    }else{
+      setPlanPricing( inputLoc.value, "yearly" );
+    }
+  });
 }

@@ -31,28 +31,31 @@ global $ws_ctas, $RegLink, $LogLink;
           </div>
 
           <div class="selectDropdown" style="z-index: 2;">
-            <div class="pc-option" data-cod="AU">
+            <div class="pc-option" data-cod="AU" data-country="AUD (Aus & NZ)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/au.svg" alt="Workstatus" width="13" height="13">AUD (Aus & NZ)
             </div>
-            <div class="pc-option" data-cod="AE">
+            <div class="pc-option" data-cod="AE" data-country="AED (United Arab Emirates)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/aed.svg" alt="Workstatus" width="13" height="13">AED (United Arab Emirates)
             </div>
-            <div class="pc-option" data-cod="EUR">
+            <div class="pc-option" data-cod="EUR" data-country="EUR (Europe)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/eur.svg" alt="Workstatus" width="13" height="13">EUR (Europe)
             </div>
-            <div class="pc-option" data-cod="GB">
+            <div class="pc-option" data-cod="GB" data-country="GBP (United Kingdom)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/gbp.svg" alt="Workstatus" width="13" height="13">GBP (United Kingdom)
             </div>
-            <div class="pc-option" data-cod="US">
+            <div class="pc-option" data-cod="IN" data-country="India">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/ind.svg" alt="Workstatus" width="13" height="13">India
+            </div>
+            <div class="pc-option" data-cod="US" data-country="USD (United States)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (United States)
             </div>
-            <div class="pc-option" data-cod="LA">
+            <div class="pc-option" data-cod="LA" data-country="USD (Latin America)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (Latin America)
             </div>
-            <div class="pc-option" data-cod="SA">
+            <div class="pc-option" data-cod="SA" data-country="ZAR (African Region)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/zar.svg" alt="Workstatus" width="13" height="13">ZAR (African Region)
             </div>
-            <div class="pc-option" data-cod="ZA">
+            <div class="pc-option" data-cod="ZA" data-country="SAR (Saudi Arab)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/sar.svg" alt="Workstatus" width="13" height="13">SAR (Saudi Arab)
             </div>
           </div>
@@ -61,7 +64,11 @@ global $ws_ctas, $RegLink, $LogLink;
       <div class="switch-btn-box">
         <!-- <h2>How often would you like to billed?</h2> -->
         <span class="monthly">Monthly</span>
-        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+        <label class="switch">
+          <input id="current-geo" value="US" type="hidden">
+          <input id="ps-switcher" type="checkbox">
+          <span class="slider"></span>
+        </label>
         <span class="annualy">Annual (2 Months Free)</span>
       </div>
     </div>
