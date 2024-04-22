@@ -451,7 +451,7 @@ add_action( 'rest_api_init', function (){
     register_rest_route( 'ws-api/v1', '/ipinfo', array(
         'methods' => 'GET',
         'callback' => function(){
-        $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : '100.42.255.255';
+        $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : '101.0.32.0';
         $ipinfo = getWSipinfo( $ipaddr );
         wp_send_json( $ipinfo );
         }

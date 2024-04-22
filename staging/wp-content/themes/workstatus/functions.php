@@ -162,8 +162,9 @@ function workstatus_scripts() {
 		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/pricing.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-static-pricing.php']) ){
-		//wp_enqueue_style('pricingnew', get_stylesheet_directory_uri().'/assests/css/pricing-new.css', array(), _S_VERSION );
 		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/ws-pricing.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', [], _S_VERSION, true);
 	}
 	
 	elseif(is_page_template([

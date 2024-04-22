@@ -1,20 +1,75 @@
 <?php
-  /* 
-  Template Name: Pricing - Static Template 
-  Author : Nitin Baluni.
-  */
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink;
-  ?>
-<div id="dummytest">
-  <div v-if="loading" id="pre-loader">
-    Please wait, while we load the pricing plans for you.
-    <span id="pricing-loading-issue" style="display:none; margin-top: 10px;"> 
-    Not able to see pricing, <a href="https://www.workstatus.io/pricing-noapi">Click here</a>
-    </span>
+/* 
+Template Name: Pricing - Static Template 
+Author : Nitin Baluni.
+*/
+get_header();
+global $ws_ctas, $RegLink, $LogLink;
+?>
+<section class="hero-banner no-af-bg">
+  <div class="container">
+    <div class="inner-wrap">
+      <h1>Choose the plan that's right for your team</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="mt40"></div>
+    </div>
   </div>
+</section>
+<div id="wsio-preloader" style="display:none;">
+  <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
-<section class="ws-pricing">
+
+<section id="inv-price-fltr" class="plan-section post-animation" style="padding-top:0; margin-top:110px;">
+  <div class="container">
+    <div class="switcher-sec">
+      <div class="country-select">
+        <span class="chose">Choose currency:</span>
+        <div class="select-list">
+          
+          <div class="selectBtn">
+            <img class="flgicon" id="pflag-icon" src="https://www.invoicera.com/staging/wp-content/themes/invoicera/assests/images/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
+          </div>
+
+          <div class="selectDropdown" style="z-index: 2;">
+            <div class="pc-option" data-cod="AU">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/au.svg" alt="Workstatus" width="13" height="13">AUD (Aus & NZ)
+            </div>
+            <div class="pc-option" data-cod="AE">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/aed.svg" alt="Workstatus" width="13" height="13">AED (United Arab Emirates)
+            </div>
+            <div class="pc-option" data-cod="EUR">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/eur.svg" alt="Workstatus" width="13" height="13">EUR (Europe)
+            </div>
+            <div class="pc-option" data-cod="GB">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/gbp.svg" alt="Workstatus" width="13" height="13">GBP (United Kingdom)
+            </div>
+            <div class="pc-option" data-cod="US">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (United States)
+            </div>
+            <div class="pc-option" data-cod="LA">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (Latin America)
+            </div>
+            <div class="pc-option" data-cod="SA">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/zar.svg" alt="Workstatus" width="13" height="13">ZAR (African Region)
+            </div>
+            <div class="pc-option" data-cod="ZA">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/sar.svg" alt="Workstatus" width="13" height="13">SAR (Saudi Arab)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="switch-btn-box">
+        <!-- <h2>How often would you like to billed?</h2> -->
+        <span class="monthly">Monthly</span>
+        <label class="switch"><input type="checkbox"><span class="slider"></span></label>
+        <span class="annualy">Annual (2 Months Free)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="wsio-pricing" class="pricing-wrapper">
+<section class="ws-pricing" style="padding-top:0px;">
   <div class="container">
     <div class="price-flex">
       <div class="price-column">
@@ -30,35 +85,27 @@
               monthly total
             </div>
           </div>
-          <a class="price_btn" href="#">Choose Plan</a>
+          <a class="price_btn" id="ws-plan-basic" href="#">Choose Plan</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Includes:</h4>
               <div class="option-list">
-                <div class="option">
-                  Time tracking
-                </div>
-                <div class="option">
-                  Timesheets
-                </div>
-                <div class="option">
-                  Activity Levels
-                </div>
-                <div class="option">
-                  Limited screenshots
-                </div>
-                <div class="option">
-                  Limited app & URL tracking
-                </div>
-                <div class="option">
-                  Limited reports
-                </div>
-                <div class="option">
-                  Limited payments
-                </div>
-                <div class="option">
-                  Clients & Invoices
-                </div>
+                <div class="option">Time Tracking</div>
+                <div class="option">Timesheets</div>
+                <div class="option">Activity Levels</div>
+                <div class="option">Limited screenshots</div>
+                <div class="option">Limited app & URL tracking</div>
+                <div class="option">Limited reports</div>
+                <div class="option">Productivity Analysis</div>
+                <div class="option">HRIS Integrations</div>
+                <div class="option">User Management</div>
+                <div class="option">Online Support</div>
+                <div class="option">Attendance</div>
+                <div class="option">Idle timeout</div>
+                <div class="option">Limited payments <span class="cs">Coming Soon</span></div>
+                <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div>
+                <div class="option">2FA <span class="cs">Coming Soon</span></div>                
+
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Limited SLA</p>
@@ -84,35 +131,18 @@
               monthly total
             </div>
           </div>
-          <a class="price_btn" href="#">Choose Plan</a>
+          <a class="price_btn" id="ws-plan-pro" href="#">Choose Plan</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Basic +</h4>
               <div class="option-list">
-                <div class="option">
-                  Tasks (Add-on)
-                </div>
-                <div class="option">
-                  Reports
-                </div>
-                <div class="option">
-                  1 integration
-                </div>
-                <div class="option">
-                  Idle timeout
-                </div>
-                <div class="option">
-                  Project budgets
-                </div>
-                <div class="option">
-                  Work breaks
-                </div>
-                <div class="option">
-                  Expenses
-                </div>
-                <div class="option">
-                  Clients & Invoices
-                </div>
+                <div class="option">Project Management</div>
+                <div class="option">Reports</div>
+                <div class="option">2 integration</div>
+                <div class="option">Idle timeout</div>                
+                <div class="option">Work breaks</div>
+                <div class="option">Project budgets <span class="cs">Coming Soon</span></div>
+                <div class="option">Expenses <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Two-day email support SLA</p>
@@ -138,53 +168,25 @@
               monthly total
             </div>
           </div>
-          <a class="price_btn" href="#">Choose Plan</a>
+          <a class="price_btn" id="ws-plan-buss" href="#">Choose Plan</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Professional +</h4>
-              <div class="option-list">
-                <div class="option">
-                  Insights (Add-on)
-                </div>
-                <div class="option">
-                  Tasks (Add-on)
-                </div>
-                <div class="option">
-                  Unlimited screenshots
-                </div>
-                <div class="option">
-                  Unlimited app & URL tracking
-                </div>
-                <div class="option">
-                  Aduto discard idle time
-                </div>
-                <div class="option">
-                  Teams
-                </div>
-                <div class="option">
-                  Payments & payroll
-                </div>
-                <div class="option">
-                  Unlimited integrations
-                </div>
-                <div class="option">
-                  Overtime
-                </div>
-                <div class="option">
-                  Time off & holidays
-                </div>
-                <div class="option">
-                  Scheduling & attendance
-                </div>
-                <div class="option">
-                  Client budgets
-                </div>
-                <div class="option">
-                  Timesheet approvals
-                </div>
-                <div class="option">
-                  Daily & weekly limits
-                </div>
+              <div class="option-list">                 
+                <div class="option">Project Management</div>
+                <div class="option">Unlimited screenshots</div>
+                <div class="option">Unlimited app & URL tracking</div>
+                <div class="option">Auto discard idle time</div>
+                <div class="option">Teams</div>
+                <div class="option">Unlimited integrations</div>
+                <div class="option">Time off & holidays</div>
+                <div class="option">Scheduling & attendance</div>
+                <div class="option">Timesheet approvals</div>
+                <div class="option">Insights <span class="cs">Coming Soon</span></div>
+                <div class="option">Payments & payroll <span class="cs">Coming Soon</span></div>
+                <div class="option">Overtime <span class="cs">Coming Soon</span></div> 
+                <div class="option">Client budgets <span class="cs">Coming Soon</span></div>
+                <div class="option">Daily & weekly limits <span class="cs">Coming Soon</span></div> 
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Chat support</p>
@@ -202,47 +204,27 @@
         <div class="price-box">
           <div class="pr-plan">
             <h3>ENTERPRISE</h3>
-            <div class="card-plan">Custom</div>
+            <div class="card-plan">
+            <span class="wph" id="pl-ent">$4</span>  
+            <span class="prio">/ user / month</span>
+            </div>
             <div class="b-anu"><strong>Billed annually.</strong> Switch the Billing cycle to Annual to view Enterprise.</div>
           </div>
-          <a class="price_btn" href="#">Let’s Talk</a>
+          <a class="price_btn" id="ws-plan-ent" href="#">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Basic +</h4>
-              <div class="option-list">
-                <div class="option">
-                  Locations (Add-on)
-                </div>
-                <div class="option">
-                  Insights (Add-on)
-                </div>
-                <div class="option">
-                  Tasks (Add-on)
-                </div>
-                <div class="option">
-                  Corporate App (Add-on)
-                </div>
-                <div class="option">
-                  Private Cloud (Add-on)
-                </div>
-                <div class="option">
-                  Higher limit on public API
-                </div>
-                <div class="option">
-                  HIPAA compliance
-                </div>
-                <div class="option">
-                  SOC-2 Type II Compliance
-                </div>
-                <div class="option">
-                  Enterprise deployments
-                </div>
-                <div class="option">
-                  Account provisioning
-                </div>
-                <div class="option">
-                  Single sign-on
-                </div>
+              <div class="option-list">                
+                <div class="option">Projey Management</div>
+                <div class="option">Private Cloud</div> 
+                <div class="option">Enterprise deployments</div>
+                <div class="option">Account provisioning</div>
+                <div class="option">Locations <span class="cs">Coming Soon</span></div> 
+                <div class="option">Insights <span class="cs">Coming Soon</span></div> 
+                <div class="option">Corporate App <span class="cs">Coming Soon</span></div>
+                <div class="option">HIPAA compliance <span class="cs">Coming Soon</span></div> 
+                <div class="option">SOC-2 Type II Compliance <span class="cs">Coming Soon</span></div> 
+                <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Concierge setup</p>
@@ -369,9 +351,82 @@
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                 </tr>
+                <tr>
+                  <td>Automatic Time Tracking</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
               </tbody>
             </table>
           </div>
+
+          <div class="comp-row">
+            <h5>Attendance</h5>
+            <table class="comp-tablerow">
+              <tbody>
+                <tr>
+                  <td>Manual Clock In/Out</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Automatic Clock In/Out</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Break Time Capture</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Manual/Offline Time Capture</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Shift Scheduling</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Automatic Timesheets</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Absence Alerts</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>                
+              </tbody>
+            </table>
+          </div>
+
           <div class="comp-row">
             <h5>Productivity monitoring</h5>
             <table class="comp-tablerow">
@@ -408,6 +463,7 @@
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
+                <!-- 
                 <tr>
                   <td>Overtime</td>
                   <td>-</td>
@@ -415,7 +471,8 @@
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
-                </tr>
+                </tr> 
+                -->
               </tbody>
             </table>
           </div>
@@ -432,14 +489,6 @@
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Scheduling & attendance</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
                   <td>Daily & weekly limits</td>
                   <td>-</td>
                   <td>-</td>
@@ -451,7 +500,7 @@
                   <td>Time off & holidays</td>
                   <td>-</td>
                   <td>-</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
@@ -463,6 +512,16 @@
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
+                <!-- 
+                <tr>
+                  <td>Scheduling & attendance</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr> 
+                -->
                 <tr>
                   <td>Work breaks</td>
                   <td>-</td>
@@ -482,24 +541,24 @@
                 <tr>
                   <td>Clients</td>
                   <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
-                  <td>Client invoices</td>
-                  <td>3</td>
                   <td>5</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
+                  <td>Client invoices</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
                   <td>Team invoices</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
@@ -514,7 +573,7 @@
                 <tr>
                   <td>Per user settings</td>
                   <td></td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -523,7 +582,7 @@
                   <td>Payments & payroll</td>
                   <td>Limited</td>
                   <td>Limited</td>
-                  <td></td>
+                  <td>Limited</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
@@ -543,9 +602,316 @@
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                 </tr>
+
+                <tr>
+                  <td>Employee Burnout</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Habit Tracker</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>User Activity Monitoring (UAM)</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
               </tbody>
             </table>
           </div>
+          <div class="comp-row">
+            <h5>Workforce analytics</h5>
+            <table class="comp-tablerow">
+              <tbody>
+              <tr>
+                <td>Categorized work time *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Smart notifications *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Benchmarks & trends *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Employee utilization *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Focus time *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Meeting time *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Behavioral highlights *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Suspicious activity detection *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Work time classification *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Team leaderboard *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Daily timeline *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              </tbody>
+            </table>    
+          </div>
+
+          <div class="comp-row">
+            <h5>Project management</h5>
+            <table class="comp-tablerow">
+              <tbody>
+              <tr>
+                <td>Project budgets</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+
+              <tr>
+                <td>Client budgets</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Tasks / To-dos</td>
+                <td>-</td>
+                <td>500</td>
+                <td>1,500</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Time on Projects & Tasks</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Work orders & jobs *</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Integrations</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Daily StandUp</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              <tr>
+                <td>Agile WorkFlows</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Agile Sprint</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>
+              <tr>
+                <td>Epics</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+              </tr>  
+              </tbody>
+            </table>    
+          </div>
+
+          <div class="comp-row">
+            <h5>Reports</h5>
+            <table class="comp-tablerow">
+              <tbody>
+                <tr>
+                  <td>Productivity Time</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>App and Website Usage</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Location Analytics</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Impact Analysis</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Hybrid Work Insights</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Workload Management / Capacity Analysis</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+
+                <tr>
+                  <td>Benchmark & Goals</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Software Utilization</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Workforce Analytics</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Compliance Reporting</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>OverTime Tracker</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+
+              </tbody>
+            </table>  
+          </div>  
           <div class="comp-row">
             <h5>Security & Privacy</h5>
             <table class="comp-tablerow">
@@ -752,6 +1118,7 @@
               </div>
             </div>
           </div>
+
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
@@ -759,7 +1126,7 @@
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Tasks</h4>
+                  <h4>Project management</h4>
                   <span class="price">Starts at <span id="pl-task">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
@@ -791,6 +1158,7 @@
                 <ul>
                   <li>Data retention extended to 6 years for</li>
                   <ul>
+                    <li>Data retention extended to 6 years for:</li>
                     <li>Time & activity data</li>
                     <li>Calendar & limits</li>
                     <li>Finances</li>
@@ -828,15 +1196,15 @@
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Corporate app</h4>
+                  <h4>Corporate app (Stealth Mode)</h4>
                   <span class="price">Starts at <span id="pl-corapp">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Track time and activity in the background on company</li>
-                  <li>Add new members through provisioning & manage email</li>
+                  <li>Track time and activity in the background on company-owned devices</li>
+                  <li>Add new members through account provisioning and manage email notifications</li>
                 </ul>
               </div>
             </div>
@@ -855,10 +1223,8 @@
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Location tracking on mobile</li>
-                  <li>Job sites with geofences</li>
-                  <li>Work orders</li>
-                  <li>Jobs</li>
+                  <li>Host the sensitive employee data e.g. screenshots in your private cloud (supported AWS or S3 compliant data storage)</li>
+                  
                 </ul>
               </div>
             </div>
@@ -866,7 +1232,8 @@
         </div>
       </div>
     </section>
-    <section class="faqsRow wfull for-heading-center">
+</div> 
+<section class="faqsRow wfull for-heading-center">
   <div class="container">
     <div class="top-section">
       <h6><span class="bg-purple">Get Answers For</span></h6>
@@ -1042,162 +1409,5 @@
 <?php require_once get_template_directory() .'/common/all-brands.php';?>
 <?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
 </main>
-</div>    
-<script data-cfasync="false">
-  const pricingData = {
-  "IN": {
-  "basic":{
-  'monthly':{"amount":299, "total":3588, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200},
-  'yearly':{"amount":199, "total":2388, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200}    
-  },
-  "pro":{
-  'monthly':{"amount":399, "total":4788, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":299, "total":3588, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  "buss":{
-  'monthly':{"amount":599, "total":7188, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":499, "total":5988, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  "ent":{
-  'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  'currency' : '₹'
-  },
-
-  "DEFAULT": {
-  "basic":{
-  'monthly':{"amount":299, "total":3588, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200},
-  'yearly':{"amount":199, "total":2388, "link":"#", "insight":50, "screenshot":50, "tasks":60, "data":70, "location":20, "app":100, "cloud": 200} 
-  },
-  "pro":{
-  'monthly':{"amount":399, "total":4788, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":299, "total":3588, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  "buss":{
-  'monthly':{"amount":599, "total":7188, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":499, "total":5988, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  "ent":{
-  'monthly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-  'yearly':{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}    
-  },
-  'currency' : '$'
-  }
-  };
-
-  window.addEventListener("load", function (){
-    /*
-    const pricingData = {
-    "IN": {
-    "basic":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "pro":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "buss":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "ent":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}
-    },
-    "default":{
-    "basic":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "pro":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "buss":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3},
-    "ent":{"amount":4, "total":4, "link":"#", "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud": 3}
-    }
-    };
-    */
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", wsObj.ipinfo, true); 
-    xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.onreadystatechange = function(){
-        if( (this.readyState == 4) && (this.status == 200) ){
-          let response = JSON.parse(this.responseText);
-          //if( pricingData.hasOwnProperty( response.country ) ){
-            let plans = ( response.country == "IN" ) ? pricingData[response.country] : pricingData['DEFAULT'];
-            console.log( plans );
-            var currency = plans['currency'];
-            for (const key in plans){
-                if( plans.hasOwnProperty(key) ){
-                  if( key !== "currency" ){
-                    const value = plans[key];
-                    
-                    let elmPricing  = document.getElementById("pl-"+key);
-                    let elmTotal    = document.getElementById("pl-"+key+"-total");                  
-
-                    if( elmPricing ){
-                      elmPricing.innerHTML = currency + value.yearly.amount;  
-                    }
-                    if( elmTotal ){
-                      elmTotal.innerHTML = currency + value.yearly.total;  
-                    }
-
-                    /*
-                    let elmInsight  = document.getElementById("pl-insight");
-                    let elmScreen   = document.getElementById("pl-screenshot");
-                    let elmTask     = document.getElementById("pl-task");
-                    let elmData     = document.getElementById("pl-data");
-                    let elmLocation = document.getElementById("pl-location");
-                    let elmCorapp   = document.getElementById("pl-corapp");
-                    let elmCloud    = document.getElementById("pl-cloud");
-                    
-                    elmInsight.innerHTML  = currency + value.yearly.insight;
-                    elmScreen.innerHTML   = currency + value.yearly.screenshot;
-                    elmTask.innerHTML     = currency + value.yearly.tasks;
-                    elmData.innerHTML     = currency + value.yearly.data;
-                    elmLocation.innerHTML = currency + value.yearly.location;
-                    elmCorapp.innerHTML   = currency + value.yearly.app;
-                    elmCloud.innerHTML    = currency + value.yearly.cloud;
-                    */                    
-                  }                  
-                }
-            }
-          //}
-        }
-    }
-    xhttp.send();
-  });
-  
-  if( document.body.classList.contains('page-template-tpl-static-pricing') ){
-    let planBtn = document.querySelector('.comparison-outer .plan-btn');
-    let columnBox = document.querySelector('.comparison-panel');
-    planBtn.addEventListener('click', ()=>{
-        planBtn.classList.toggle('rotate');
-        columnBox.classList.toggle('toggle');
-    });
-
-  }
-
-
-
-      var $window = window,
-          compTable = document.getElementById("div-comparison");
-      if (compTable) {
-          var stickytable = document.getElementById("comp-table-sticky"),
-              tableRow = document.getElementById("comp-row");
-          window.addEventListener("scroll", function () {
-              if (screen.width > 991) {
-                  var e = tableRow.getBoundingClientRect().top + window.scrollY;
-                  document.documentElement.scrollTop > e - 10 ? stickytable.classList.add("sticky") : stickytable.classList.remove("sticky");
-                  var t = tableRow.offsetHeight;
-                  t += parseInt(window.getComputedStyle(tableRow).getPropertyValue("margin-top"));
-                  var n = e + (t += parseInt(window.getComputedStyle(tableRow).getPropertyValue("margin-bottom")));
-                  document.documentElement.scrollTop + (stickytable.offsetHeight + 200) > n ? stickytable.classList.add("btomfixed") : stickytable.classList.remove("btomfixed");
-              } else stickytable.classList.remove("sticky"), stickytable.classList.remove("btomfixed");
-          });
-      }
-      
-      
-      
-           
-const showDivButtons = document.querySelectorAll('.price-accordion');
-const hiddenDivs = document.querySelectorAll('.price-options');
-
-showDivButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-    
-        hiddenDivs[index].classList.toggle('is-visible');
-    });
-});
-      
-
-
-</script>
+</div>
 <?php get_footer(); ?>
