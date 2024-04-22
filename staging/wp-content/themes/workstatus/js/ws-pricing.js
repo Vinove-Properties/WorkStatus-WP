@@ -23,7 +23,8 @@ const pricingData = {
   'monthly':{"amount":999, "total":4, "plan_id" : 461},
   'yearly':{"amount":899, "total":4, "plan_id" : 461}    
   },
-  'meta':{"currency":'₹', "insight":100, "screenshot":140, "tasks":140, "data":100, "location":180, "app":140, "cloud":140}
+  'meta':{"currency":'₹', "insight":100, "screenshot":140, "tasks":140, "data":100, "location":180, "app":140, "cloud":140, 
+  "basic" : 139, "pro" : 459, "buss" : 460, "ent" : 461 }
 },
 "LA": {
   "basic":{
@@ -42,7 +43,8 @@ const pricingData = {
   'monthly':{"amount":12.99, "total":4, "plan_id" : 0},
   'yearly':{"amount":10.99, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'$', "insight":1.49, "screenshot":2.49, "tasks":2.49, "data":1.49, "location":3.09, "app":2.49, "cloud":2.49}
+  'meta':{"currency":'$', "insight":1.49, "screenshot":2.49, "tasks":2.49, "data":1.49, "location":3.09, "app":2.49, "cloud":2.49,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "GB": {
   "basic":{
@@ -61,7 +63,8 @@ const pricingData = {
   'monthly':{"amount":12.09, "total":4, "plan_id" : 0},
   'yearly':{"amount":10.49, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'£', "insight":1.59, "screenshot":2.39, "tasks":2.39, "data":1.59, "location":3.19, "app":2.39, "cloud":2.39}
+  'meta':{"currency":'£', "insight":1.59, "screenshot":2.39, "tasks":2.39, "data":1.59, "location":3.19, "app":2.39, "cloud":2.39,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "US": {
   "basic":{
@@ -80,7 +83,8 @@ const pricingData = {
   'monthly':{"amount":14.99, "total":4, "plan_id" : 0},
   'yearly':{"amount":12.99, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'$', "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud":3}
+  'meta':{"currency":'$', "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud":3,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "AU": {
   "basic":{
@@ -99,7 +103,8 @@ const pricingData = {
   'monthly':{"amount":23.39, "total":4, "plan_id" : 0},
   'yearly':{"amount":20.29, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'AU$', "insight":3.09, "screenshot":4.69, "tasks":4.69, "data":3.09, "location":6.19, "app":4.69, "cloud":4.69}
+  'meta':{"currency":'AU$', "insight":3.09, "screenshot":4.69, "tasks":4.69, "data":3.09, "location":6.19, "app":4.69, "cloud":4.69,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "SA": {
   "basic":{
@@ -118,7 +123,8 @@ const pricingData = {
   'monthly':{"amount":56.19, "total":4, "plan_id" : 0},
   'yearly':{"amount":48.69, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'SAR', "insight":7.49, "screenshot":11.19, "tasks":11.19, "data":7.49, "location":14.99, "app":11.19, "cloud":11.19}
+  'meta':{"currency":'SAR', "insight":7.49, "screenshot":11.19, "tasks":11.19, "data":7.49, "location":14.99, "app":11.19, "cloud":11.19,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "AE": {
   "basic":{
@@ -137,7 +143,8 @@ const pricingData = {
   'monthly':{"amount":55.49, "total":4, "plan_id" : 0},
   'yearly':{"amount":47.69, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'AE', "insight":7.29, "screenshot":10.99, "tasks":10.99, "data":7.29, "location":14.69, "app":10.99, "cloud":10.99}
+  'meta':{"currency":'AE', "insight":7.29, "screenshot":10.99, "tasks":10.99, "data":7.29, "location":14.69, "app":10.99, "cloud":10.99,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "CA": {
   "basic":{
@@ -156,7 +163,8 @@ const pricingData = {
   'monthly':{"amount":20.59, "total":4, "plan_id" : 0},
   'yearly':{"amount":17.89, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'CA$', "insight":2.69, "screenshot":4.09, "tasks":4.09, "data":2.69, "location":5.49, "app":4.09, "cloud":4.09}
+  'meta':{"currency":'CA$', "insight":2.69, "screenshot":4.09, "tasks":4.09, "data":2.69, "location":5.49, "app":4.09, "cloud":4.09,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "ZA": {
   "basic":{
@@ -175,7 +183,8 @@ const pricingData = {
   'monthly':{"amount":288.39, "total":4, "plan_id" : 0},
   'yearly':{"amount":249.99, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'ZAR', "insight":38.39, "screenshot":57.59, "tasks":57.59, "data":38.39, "location":75.99, "app":57.59, "cloud":57.59}
+  'meta':{"currency":'ZAR', "insight":38.39, "screenshot":57.59, "tasks":57.59, "data":38.39, "location":75.99, "app":57.59, "cloud":57.59,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464}
 },
 "EUR": {
   "basic":{
@@ -194,7 +203,9 @@ const pricingData = {
   'monthly':{"amount":14.09, "total":4, "plan_id" : 0},
   'yearly':{"amount":12.19, "total":4, "plan_id" : 0}    
   },
-  'meta':{"currency":'€', "insight":1.89, "screenshot":2.79, "tasks":2.79, "data":1.89, "location":3.79, "app":2.79, "cloud":2.79}
+  'meta':{"currency":'€', "insight":1.89, "screenshot":2.79, "tasks":2.79, "data":1.89, "location":3.79, "app":2.79, "cloud":2.79,
+  "basic" : 140, "pro" : 462, "buss" : 463, "ent" : 464
+  }
 }
 };
 
@@ -242,17 +253,21 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     elmCorapp.innerHTML   = currency + plans['meta']['app'];
     elmCloud.innerHTML    = currency + plans['meta']['cloud'];
     
+    var plan_meta         =  plans['meta'];
+
     for (const key in plans){
     if( plans.hasOwnProperty(key) ){
+      
       if( key !== "currency" ){
-        const value = plans[key];
+        //console.log(key);
+        const value     = plans[key];
         let elmPricing  = document.getElementById("pl-"+key);
         let elmTotal    = document.getElementById("pl-"+key+"-total");
         let planBtn     = document.getElementById("ws-plan-"+key);
         if( planBtn ){
           let pType = ( type == "yearly" ) ? "annual" : "monthly";
-          //console.log( value )
-          planBtn.setAttribute("href", getwsPlanurl( value[type].plan_id, pType ) );  
+          //planBtn.setAttribute("href", getwsPlanurl( value[type].plan_id, pType ) );
+          planBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );  
         }        
         if( elmPricing ){
           elmPricing.innerHTML = currency + value[type].amount;  
