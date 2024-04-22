@@ -52,10 +52,10 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="pc-option" data-cod="LA" data-country="USD (Latin America)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (Latin America)
             </div>
-            <div class="pc-option" data-cod="SA" data-country="ZAR (African Region)">
+            <div class="pc-option" data-cod="ZA" data-country="ZAR (African Region)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/zar.svg" alt="Workstatus" width="13" height="13">ZAR (African Region)
             </div>
-            <div class="pc-option" data-cod="ZA" data-country="SAR (Saudi Arab)">
+            <div class="pc-option" data-cod="SA" data-country="SAR (Saudi Arab)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/sar.svg" alt="Workstatus" width="13" height="13">SAR (Saudi Arab)
             </div>
           </div>
