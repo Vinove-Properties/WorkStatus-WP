@@ -292,10 +292,10 @@ global $ws_ctas, $RegLink, $LogLink;
               <tr>
                 <th></th>
                 <th><span class="plan-label">FREE</span><a class="button" href="#">Choose plan</a></th>
-                <th><span class="plan-label">BASIC</span><a class="button" href="#">Choose plan</a></th>
-                <th><span class="plan-label">PROFESSIONAL</span><a class="button" href="#">Choose plan</a></th>
-                <th><span class="plan-label">BUSINESS</span><a class="button" href="#">Choose plan</a></th>
-                <th><span class="plan-label">ENTERPRISE</span><a class="button" href="#">Choose plan</a></th>
+                <th><span class="plan-label">BASIC</span><a class="button" id="ws-coplan-basic" href="#">Choose plan</a></th>
+                <th><span class="plan-label">PROFESSIONAL</span><a class="button" id="ws-coplan-pro" href="#">Choose plan</a></th>
+                <th><span class="plan-label">BUSINESS</span><a class="button" id="ws-coplan-buss" href="#">Choose plan</a></th>
+                <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" href="#">Choose plan</a></th>
               </tr>
             </thead>
           </table>
