@@ -7795,7 +7795,7 @@ h3 a {
         box-sizing: border-box;
         width: 100%;
         border: 1px solid #e4e6ea;
-        padding: 20px;
+        padding: 20px 13px;
         border-radius: 15px;
         margin-right: -1px;
         margin-bottom: 32px;
@@ -7812,7 +7812,7 @@ h3 a {
             margin: 0 0 15px;
             line-height: 1.2; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-            font-size: 42px;
+            font-size: 36px;
             color: #2f3a5e;
             font-weight: 600;
             margin: 0 0 20px; }
@@ -7960,7 +7960,7 @@ h3 a {
         margin: 0 0 15px;
         line-height: 1.2; }
       .free-price .fdflex .colLeft .pr-plan .card-plan {
-        font-size: 42px;
+        font-size: 36px;
         color: #2f3a5e;
         font-weight: 600;
         margin: 0 0 20px; }
@@ -8262,7 +8262,9 @@ h3 a {
         transition: all 0.3s ease-in-out;
         display: block; }
 
-@media (max-width: 1380px) {
+@media (max-width: 1390px) {
+  .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
+    font-size: 33px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; } }
 @media (max-width: 1280px) {
@@ -8275,7 +8277,7 @@ h3 a {
         .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
           font-size: 18px; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-          font-size: 35px;
+          font-size: 31px;
           margin: 0 0 15px; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan .prio {
             font-size: 12px; }
