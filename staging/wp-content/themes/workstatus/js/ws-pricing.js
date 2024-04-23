@@ -384,11 +384,11 @@ const ws_SelectOn = (listener, query, fn) => {
     })
   });
 }
-let SelectIndex = 1;
+let pcSelectIndex = 1;
 ws_SelectOn('click', '.pcselectBtn', item => {
   console.log( item.target );
   const next = item.target.nextElementSibling;
   next.classList.toggle('toggle');
-  next.style.zIndex = SelectIndex++;
+  next.style.zIndex = pcSelectIndex++;
   item.target.classList.toggle('active');
 });
