@@ -60,6 +60,12 @@
 
 .ws-pricing{margin: 30px 0 0;}     
 #pre-loader{font-size: 20px;}
+
+.switch-btn-box .switch{    height: 25px;     width: 51px;}
+.switch-btn-box .switch .slider::before{    width: 17px;
+    height: 17px;}
+
+
 }
 .switch-btn-box .monthly{margin-right:6px}
 .switch-btn-box .annualy{margin-left:6px;color:#05164D;}
