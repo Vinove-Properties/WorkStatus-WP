@@ -250,6 +250,10 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     var isLocal           = ( conCode === "IN" ) ? "local" : "international";
     var plan_meta         =  WS_PLAN_ID[isLocal];
 
+    [...document.querySelectorAll('.free-zero')].forEach(function(elm){
+      elm.innerHTML = currency+"0";
+    });
+
     for (const key in plans){
     if( plans.hasOwnProperty(key) ){
       
@@ -364,9 +368,27 @@ var prSlider = document.getElementById('ps-switcher');
     prSlider.addEventListener('change', (event) => {
     var inputLoc = document.getElementById("current-geo");
     if(event.currentTarget.checked){
+      document.body.classList.add("ps-monthly");
       setPlanPricing( inputLoc.value, "monthly" );
     }else{
+      document.body.classList.remove("ps-monthly");
       setPlanPricing( inputLoc.value, "yearly" );
     }
   });
 }
+
+const ws_SelectOn = (listener, query, fn) => {
+  document.querySelectorAll(query).forEach(item => {
+    item.addEventListener(listener, el => {
+      fn(el);
+    })
+  });
+}
+let SelectIndex = 1;
+ws_SelectOn('click', '.pcselectBtn', item => {
+  console.log( item.target );
+  const next = item.target.nextElementSibling;
+  next.classList.toggle('toggle');
+  next.style.zIndex = SelectIndex++;
+  item.target.classList.toggle('active');
+});

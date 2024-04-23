@@ -11,6 +11,9 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="inner-wrap">
       <h1>Choose the plan that's right for your team</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <div class="actionBtn">
+        <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Book A Demo</a>
+      </div>
       <div class="mt40"></div>
     </div>
   </div>
@@ -27,7 +30,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <span class="chose">Choose currency:</span>
         <div class="select-list">
           
-          <div class="selectBtn">
+          <div class="pcselectBtn">
             <img class="flgicon" id="pflag-icon" src="https://www.invoicera.com/staging/wp-content/themes/invoicera/assests/images/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
           </div>
 
@@ -38,14 +41,19 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="pc-option" data-cod="AE" data-country="AED (United Arab Emirates)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/aed.svg" alt="Workstatus" width="13" height="13">AED (United Arab Emirates)
             </div>
+
+            <div class="pc-option" data-cod="CA" data-country="CAD (Canada)">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/cad.svg" alt="Workstatus" width="13" height="13">CAD (Canada)
+            </div>
+
             <div class="pc-option" data-cod="EUR" data-country="EUR (Europe)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/eur.svg" alt="Workstatus" width="13" height="13">EUR (Europe)
             </div>
             <div class="pc-option" data-cod="GB" data-country="GBP (United Kingdom)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/gbp.svg" alt="Workstatus" width="13" height="13">GBP (United Kingdom)
             </div>
-            <div class="pc-option" data-cod="IN" data-country="India">
-              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/ind.svg" alt="Workstatus" width="13" height="13">India
+            <div class="pc-option" data-cod="IN" data-country="INR (India)">
+              <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/ind.svg" alt="Workstatus" width="13" height="13">INR (India)
             </div>
             <div class="pc-option" data-cod="US" data-country="USD (United States)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (United States)
@@ -254,8 +262,8 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="colLeft">
             <div class="pr-plan">
               <h3>FREE</h3>
-              <div class="card-plan"><span>$0</span><span class="prio">For single user only</span></div>
-              <div class="total">$0 monthly total</div>
+              <div class="card-plan"><span class="free-zero">$0</span><span class="prio">For single user only</span></div>
+              <div class="total"><span class="free-zero">$0</span> monthly total</div>
             </div>
           </div>
           <div class="colRit">
@@ -1161,14 +1169,12 @@ global $ws_ctas, $RegLink, $LogLink;
                 </div>
               </div>
               <div class="bottomDiv">
-                <ul>
-                  <li>Data retention extended to 6 years for</li>
+
                   <ul>
                     <li>Data retention extended to 6 years for:</li>
                     <li>Time & activity data</li>
                     <li>Calendar & limits</li>
                     <li>Finances</li>
-                  </ul>
                 </ul>
               </div>
             </div>

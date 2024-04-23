@@ -1,6 +1,7 @@
 .hero-banner.no-af-bg:after{background: none;}
 .hero-banner.no-af-bg{padding: 170px 0 100px}
-#pre-loader{    padding: 100px 0;text-align: center; font-size: 24px;}
+#pre-loader{ padding: 100px 0;text-align: center; font-size: 24px;}
+#pc-country{position:relative; z-index:-1;}
 .plan-section{padding-bottom:30px}
 .plan-section .switcher-sec{background:#f9f9f9;border-radius:5px;justify-content:space-between;display:flex;padding:16px 20px;width:100%;margin:0 auto;gap:110px}
 .plan-section .flex_row{justify-content:center;gap:20px}
@@ -27,17 +28,17 @@
 .country-select .chose{font-size:18px;color:#00234b;font-weight:500;margin-right:10px}
 
 .country-select .select-list{position:relative;min-width:290px}
-.country-select .select-list .selectBtn{padding:3px 10px;box-sizing:border-box;border-radius:60px;width:100%;cursor:pointer;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:transparent;border:1px solid rgba(5, 22, 77, 0.3);font-weight:500;color:#00234b;font-size:18px}
-.country-select .select-list .selectBtn:after{content:"";position:absolute;top:45%;right:10px;z-index:1;background:url(dev-images/arrow-shape.png) 0 0 no-repeat;width:10px;height:6px;background-size:100%}
-.country-select .select-list .selectBtn.active:after{transform:rotate(180deg)}
-.country-select .select-list .selectBtn.toggle{border-radius:3px 3px 0 0}
-.country-select .select-list .selectBtn.toggle:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
+.country-select .select-list .pcselectBtn{padding:3px 10px;box-sizing:border-box;border-radius:60px;width:100%;cursor:pointer;position:relative;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background:transparent;border:1px solid rgba(5, 22, 77, 0.3);font-weight:500;color:#00234b;font-size:18px; z-index:9;}
+.country-select .select-list .pcselectBtn:after{content:"";position:absolute;top:45%;right:10px;z-index:1;background:url(dev-images/arrow-shape.png) 0 0 no-repeat;width:10px;height:6px;background-size:100%}
+.country-select .select-list .pcselectBtn.active:after{transform:rotate(180deg)}
+.country-select .select-list .pcselectBtn.toggle{border-radius:3px 3px 0 0}
+.country-select .select-list .pcselectBtn.toggle:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .country-select .select-list .selectDropdown{position:absolute;margin-top:5px;top:100%;width:100%;border-radius:5px;font-size:14px;font-weight:500;color:#00234b;overflow:hidden;background:var(--bg1);border-top:1px solid #eee;z-index:1;background:#fff;-webkit-transform:scale(1,0);transform:scale(1,0);-webkit-transform-origin:top center;transform-origin:top center;visibility:hidden;transition:.2s ease;box-shadow:0 3px 3px rgba(0,0,0,0.2)}
 .country-select .select-list .selectDropdown .pc-option{padding:10px;box-sizing:border-box;cursor:pointer}
 .country-select .select-list .selectDropdown .pc-option:hover{background:rgba(242, 240, 255, 0.7);color:#6754E2
 }
 .country-select .select-list .selectDropdown.toggle{visibility:visible;-webkit-transform:scale(1,1);transform:scale(1,1)}
-.country-select .flgicon{margin-right:5px;vertical-align:middle;margin-top:-3px}
+.country-select .flgicon{margin-right:5px;vertical-align:middle;margin-top:-3px; position: relative; z-index: -1}
 
 .switch-btn-box .switch{width:54px;height:28px;position:relative;display:inline-block;vertical-align:middle}
 .switch-btn-box .switch input{display:none}
@@ -58,3 +59,5 @@
 span.cs{background: #F4F9FF; color: #979797; border-radius: 10px; padding: 5px 10px; font-size: 10px; text-transform: uppercase;}
 .ws-pricing .price-flex .price-column:nth-child(3n) span.cs{background: #ffffff; color: #979797;}
 .ws-pricing .price-flex .price-column .price-box .price_btn{border-radius: 50px;}
+
+body.ps-monthly .ws-pricing .price-flex .price-column .price-box .pr-plan div.total{display: none;}
