@@ -9,8 +9,8 @@ global $ws_ctas, $RegLink, $LogLink;
 <section class="hero-banner no-af-bg">
   <div class="container">
     <div class="inner-wrap">
-      <h1>Choose the plan that's right for your team</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <h1>Flexible Pricing for Modern Workforce Management</h1>
+      <p>Start with a 7-Day Free Trial. Enjoy a Risk-Free 30-Day Money-Back Guarantee.</p>
     </div>
   </div>
 </section>
