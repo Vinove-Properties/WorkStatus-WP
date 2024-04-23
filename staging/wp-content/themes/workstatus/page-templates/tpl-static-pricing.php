@@ -12,7 +12,7 @@ global $ws_ctas, $RegLink, $LogLink;
       <h1>Choose the plan that's right for your team</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       <div class="actionBtn">
-        <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Book A Demo</a>
+        <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Talk to sales</a>
       </div>
       <div class="mt40"></div>
     </div>
