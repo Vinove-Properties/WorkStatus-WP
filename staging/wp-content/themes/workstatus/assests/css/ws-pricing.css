@@ -7855,9 +7855,9 @@ h3 a {
           border-radius: 100px;
           margin: 0 0 25px; }
           .ws-pricing .price-flex .price-column .price-box .price_btn:hover {
-            background-color: #051441;
+            background-color: #624DE3;
             color: #fff;
-            border-color: #051441; }
+            border-color: #624DE3; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper {
           flex: 1; }
           .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
@@ -8031,9 +8031,9 @@ h3 a {
         border-radius: 100px;
         margin: 0 0 25px; }
         .free-price .fdflex .colRit .btn .price_btn:hover {
-          background-color: #051441;
+          background-color: #624DE3;
           color: #fff;
-          border-color: #051441; }
+          border-color: #624DE3; }
 
 .comparison-outer {
   position: relative; }
