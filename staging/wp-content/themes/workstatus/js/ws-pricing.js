@@ -265,9 +265,14 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let planBtn     = document.getElementById("ws-plan-"+key);
         if( planBtn ){
           let pType = ( type == "yearly" ) ? "annual" : "monthly";
-          //planBtn.setAttribute("href", getwsPlanurl( value[type].plan_id, pType ) );
           planBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );  
-        }        
+          let coPlanBtn     = document.getElementById("ws-coplan-"+key);
+          if( coPlanBtn ){
+            coPlanBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );    
+          }
+        }
+        
+
         if( elmPricing ){
           elmPricing.innerHTML = currency + value[type].amount;  
         }
