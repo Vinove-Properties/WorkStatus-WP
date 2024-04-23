@@ -1255,160 +1255,158 @@ global $ws_ctas, $RegLink, $LogLink;
       <div itemscope="" itemtype="https://schema.org/FAQPage">
         <div class="column">
           <div class="faq-accordion-item-outer open" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">Can I cancel at any time?</h3>
+            <h3 itemprop="name">Does Workstatus offer a free plan?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Yes, you can cancel and upgrade or downgrade your plan at any time.</p>
+                  <p>Yes, Workstatus provides a complimentary plan featuring essential time and activity tracking tools, ideal for individual users exploring our service.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">Are there larger plans?</h3>
+            <h3 itemprop="name">How can I cancel my Workstatus subscription?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Yes there are. We can serve any size team. We have plans for up to 350 users.
-                    If that's not big enough please contact us and we will set up a plan that is
-                    right for you.
+                  <p>You can effortlessly cancel your subscription by either:\na. Reaching out to hello@workstatus.io with a cancellation request.\nb. Archiving the organization linked to your subscription, which will automatically terminate it.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">How are users counted?</h3>
+            <h3 itemprop="name">Can I redistribute or rent Workstatus products or services?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Users, managers, and organization owners are considered members and count
-                    toward the
-                    total price of your subscription. Client viewers do not count as members.
+                  <p>No, redistributing, renting, or subleasing of our services and products is strictly prohibited as per our terms of service to ensure the integrity and security of our solutions.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">Can I export my data?</h3>
+            <h3 itemprop="name">Does Workstatus offer any discounts or special pricing plans?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Yes. Your data is just that, yours. We provide several export options.
-                    We make it easy for you to get your data.
+                  <p>Absolutely, we provide competitive pricing plans tailored to various team sizes and requirements, along with annual payment options to maximize the value you receive from our services.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name"> Can I invite clients?</h3>
+            <h3 itemprop="name">Is there an affiliate program available with Workstatus?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Yes, you can invite as many clients as you want, and you will not be charged
-                    for them.
+                  <p>Yes, we have a lucrative affiliate program where partners can earn a significant percentage of revenue from referrals who opt for a paid plan. Registration is quick, easy, and free. For more details, visit [Workstatus Affiliates](https://www.workstatus.io/affiliates).
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">Do you track keystrokes?</h3>
+            <h3 itemprop="name">What is the policy on adding or removing users during an annual plan?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>We only assign true and false values to record activity. We do not track the
-                    keys
-                    being hit.
+                  <p>Workstatus has a clear pro-ration policy for adding or removing users during an annual plan, ensuring fair billing and flexibility for your evolving team needs.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">How can I contact Workstatus support?</h3>
+            <h3 itemprop="name">Are there any roles available for users who only want to view reports?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Please email us at <a href="mailto:hello@workstatus.io">hello@workstatus.io</a> and we will get back to you as soon
-                    as possible.
+                  <p>Yes, users who prefer not to track time but wish to view reports can be assigned a specific role, allowing them access to necessary information without additional costs.
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">Can I watch a demo?</h3>
+            <h3 itemprop="name">Is Workstatus compliant with data protection regulations?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p class="dmo-lnk">Sure! Check out our <a href="https://www.workstatus.io/demo">demo</a> right here.</p>
+                  <p>Yes, Workstatus adheres to stringent data protection laws and employs robust security measures to safeguard user data and ensure privacy.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">How Workstatus ensures data security?</h3>
+            <h3 itemprop="name">How does Workstatus handle data security?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>These certifications assure clients that Workstatus has the expertise to handle their data center needs effectively and securely.</p>
-                  <p>Some common data center certifications of Workstatus include:</p>
-                  <ul>
-                    <li>ISO 9001 Quality management</li>
-                    <li>ISO 14001 Environmental management</li>
-                    <li>ISO 22301 Security and resilience</li>
-                    <li>ISO 27001 Information security management</li>
-                    <li>ISO 50001 Energy management</li>
-                    <li>SOC 2 Type II Data Security and Privacy</li>
-                    <li>PCI-DSS Information security</li>
-                  </ul>
+                  <p>We prioritize data security, utilizing advanced encryption and security protocols to protect user information and prevent unauthorized access.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">What are the company certifications of Workstatus?</h3>
+            <h3 itemprop="name">Can Workstatus integrate with other software and tools?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>The company certifications of Workstatus include:</p>
-                  <ul>
-                    <li>ISO 27001 Information security management</li>
-                    <li>ISO 9001:2015 Quality Management System</li>
-                  </ul>
-                  <p>These certifications demonstrate our commitment to data security and delivering high-quality services to our clients.</p>
+                  <p>Absolutely, Workstatus offers seamless integration with a variety of software and tools, enhancing productivity and workflow efficiency.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name">How does Workstatus address privacy concerns?</h3>
+            <h3 itemprop="name">Is there customer support available for Workstatus users?</h3>
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Protecting employee privacy is one of Workstatus’ core principles. Employees have complete control over when they want to track time, and they receive notifications when time tracking starts and when Workstatus takes screenshots.</p>
-                  <p>Furthermore, employees have full access to their tracked data. If there is any accidental tracking of non-work-related tasks, employees can delete the data, including screenshots, directly from their activity dashboard without requiring admin permissions.</p>
-                  <p>Transparency, access, and control over personal data are fundamental values at Workstatus. To learn more about how tracking works with Workstatus, we invite you to explore our detailed documentation.</p>
-                  <p><strong>Employee monitoring laws in India:</strong></p>
-                  <p>In India, employee monitoring is generally allowed, but it is important to comply with applicable laws and regulations. Employers should ensure they have a clear monitoring policy in place and obtain consent from employees. Employees should have access to their collected data, and monitoring should be done for appropriate purposes.</p>
-                  <p><strong>Employee monitoring laws in the Middle East:</strong></p>
-                  <p>Employee monitoring laws in the Middle East can vary by country. It is important for employers to familiarize themselves with local labor laws and regulations. Generally, employers should establish clear monitoring policies, obtain employee consent, and ensure that monitoring is done for appropriate purposes. Employees should have access to their collected data.</p>
-                  <p><strong>Employee monitoring laws in the United States</strong></p>
-                  <p>Employee monitoring is generally legal in the United States, but it requires employee consent. The Electronic Communications Privacy Act of 1986 cover monitoring in the workplace under 18 U.S. Code § 2511:</p>
-                  <p>“(iv) such use or endeavor to use (A) takes place on the premises of any business or other commercial establishment, the operations of which affect interstate or foreign commerce; or (B) obtains or is for the purpose of obtaining information relating to the operations of any business or other commercial establishment the operations of which affect interstate or foreign commerce.”</p>
-                  <p>While federal laws do not require businesses to obtain permission to monitor employees, the specific regulations depend on the state in which you operate.</p>
-                  <p>For example, in New York, businesses are required to provide written notice to employees upon hiring and annually stating that monitoring will take place (NY A1920A). The method of monitoring should also be clearly specified.</p>
-                  <p>Workstatus does not violate any laws in this scenario or in other states with similar guidelines to New York. Only team members have control over when they track their work, and they must provide consent and grant permissions when downloading the app.</p>
-                  <p>However, we advise consulting with legal counsel for any specific questions or concerns you may have.</p>
-                  <p><strong>Monitoring laws in the European Union (EU)</strong></p>
-                  <p>Monitoring laws in the EU are primarily governed by the General Data Protection Regulation (GDPR). Monitoring is permitted as long as employee consent is obtained and users have full access to their data. Workstatus never tracks activity without your knowledge, and you have complete control over your data. To learn more, please refer to our GDPR compliance details.</p>
-                  <p><strong>Monitoring laws in Canada</strong></p>
-                  <p>In Canada, businesses are allowed to record their employees’ work as long as they establish a clear monitoring policy and obtain consent. Employees have the right to refuse to monitor and should have full access to their collected data, including tracked time, screenshots, and activity reports. According to section 5(3) of the Personal Information Protection and Electronic Documents Act (PIPEDA):</p>
-                  <p>“An organization may collect, use or disclose personal information only for purposes that a reasonable person would consider appropriate in the circumstances.”</p>
-                  <p>Workstatus complies with all applicable laws and guidelines in this regard.</p>
+                  <p>Yes, our dedicated customer support team is available to assist you with any inquiries or issues, ensuring a smooth and hassle-free experience with Workstatus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">How can I access Workstatus on mobile devices?</h3>
+            <div class="faq-accordion-content">
+              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                  <p>Workstatus offers a user-friendly mobile application, allowing you to manage and track time and activities conveniently from your mobile devices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Can Workstatus handle payroll and invoicing?</h3>
+            <div class="faq-accordion-content">
+              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                  <p>Yes, Workstatus is equipped with advanced features to manage payroll and create invoices efficiently, streamlining your financial processes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">Does Workstatus offer customizable reports?</h3>
+            <div class="faq-accordion-content">
+              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                  <p>Absolutely, Workstatus allows you to customize reports to suit your needs, providing insights and analytics that are most relevant to your organization.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name">How can I give feedback or suggest new features for Workstatus?</h3>
+            <div class="faq-accordion-content">
+              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text">
+                  <p>We welcome feedback and suggestions at feedback@workstatus.io. Your input is valuable in helping us enhance our services and cater to your needs effectively.</p>
                 </div>
               </div>
             </div>
