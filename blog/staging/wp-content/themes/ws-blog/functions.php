@@ -2085,3 +2085,11 @@ add_filter( 'wpseo_title', function($title){
     }
     return $title;
 }, 10, 1 );
+
+
+add_filter( 'wpseo_robots', function( $robotsstr ){
+    if( is_paged() ){
+        return 'noindex,follow';
+    }
+    return $robotsstr;
+});
