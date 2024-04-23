@@ -8490,7 +8490,7 @@ h3 a {
     padding-bottom: 80px; }
     .all-partners .part-row {
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 3px; }
+      grid-gap: 4px; }
       .all-partners .part-row .part-col {
         padding: 10px 10px; }
         .all-partners .part-row .part-col .star {
