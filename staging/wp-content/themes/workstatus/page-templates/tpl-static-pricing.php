@@ -260,7 +260,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <li>Clients & Invoices</li>
               </ul>
             </div>
-            <div class="btn"><a class="price_btn" href="#">Choose Plan</a></div>
+            <div class="btn"><a class="price_btn" onclick="return get_ws_signupform(this);"" href="#">Sign Up</a></div>
           </div>
         </div>
       </div>
