@@ -112,9 +112,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Online Support</div>
                 <div class="option">Attendance</div>
                 <div class="option">Idle timeout</div>
-                <div class="option">Limited payments <span class="cs">Coming Soon</span></div>
-                <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div>
-                <div class="option">2FA <span class="cs">Coming Soon</span></div>                
+                             
 
                 <div class="support-options">
                   <h4>Support:</h4>
@@ -152,7 +150,6 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Idle timeout</div>                
                 <div class="option">Work breaks</div>
                 <div class="option">Project budgets <span class="cs">Coming Soon</span></div>
-                <div class="option">Expenses <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Two-day email support SLA</p>
@@ -183,7 +180,6 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="price-options">
               <h4>Everything in Professional +</h4>
               <div class="option-list">                 
-                <div class="option">Project Management</div>
                 <div class="option">Unlimited screenshots</div>
                 <div class="option">Unlimited app & URL tracking</div>
                 <div class="option">Auto discard idle time</div>
@@ -192,11 +188,6 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Time off & holidays</div>
                 <div class="option">Scheduling & attendance</div>
                 <div class="option">Timesheet approvals</div>
-                <div class="option">Insights <span class="cs">Coming Soon</span></div>
-                <div class="option">Payments & payroll <span class="cs">Coming Soon</span></div>
-                <div class="option">Overtime <span class="cs">Coming Soon</span></div> 
-                <div class="option">Client budgets <span class="cs">Coming Soon</span></div>
-                <div class="option">Daily & weekly limits <span class="cs">Coming Soon</span></div> 
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Chat support</p>
@@ -218,23 +209,18 @@ global $ws_ctas, $RegLink, $LogLink;
             <span class="wph" id="pl-ent">$4</span>  
             <span class="prio">/ user / month</span>
             </div>
-            <div class="b-anu"><strong>Billed annually.</strong> Switch the Billing cycle to Annual to view Enterprise.</div>
-          </div>
+            <div class="total nodata">
+              <div class="wph" id="pl-buss-total">₹3588</div>
+              monthly total
+            </div>          </div>
           <a class="price_btn" id="ws-plan-ent" href="#">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">
-              <h4>Everything in Basic +</h4>
+              <h4>Everything in Professional +</h4>
               <div class="option-list">                
-                <div class="option">Projey Management</div>
                 <div class="option">Private Cloud</div> 
                 <div class="option">Enterprise deployments</div>
                 <div class="option">Account provisioning</div>
-                <div class="option">Locations <span class="cs">Coming Soon</span></div> 
-                <div class="option">Insights <span class="cs">Coming Soon</span></div> 
-                <div class="option">Corporate App <span class="cs">Coming Soon</span></div>
-                <div class="option">HIPAA compliance <span class="cs">Coming Soon</span></div> 
-                <div class="option">SOC-2 Type II Compliance <span class="cs">Coming Soon</span></div> 
-                <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Concierge setup</p>

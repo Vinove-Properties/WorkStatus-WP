@@ -7781,10 +7781,10 @@ h3 a {
   display: none; }
 
 .hero-banner.no-af-bg {
-  padding: 130px 0 80px; }
+  padding: 130px 0 50px; }
 
 .ws-pricing {
-  margin: 50px 0 0; }
+  margin: 40px 0 0; }
   .ws-pricing .price-flex {
     display: flex; }
     .ws-pricing .price-flex .price-column {
@@ -7831,6 +7831,9 @@ h3 a {
             margin: 0 0 30px;
             display: flex;
             gap: 5px; }
+            .ws-pricing .price-flex .price-column .price-box .pr-plan .total.nodata {
+              opacity: 0;
+              background: transparent; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu {
             font-size: 14px;
             font-weight: 600;
@@ -7929,7 +7932,8 @@ h3 a {
           .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan h3 {
             margin: 0 0 33px; }
           .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan .total {
-            background: #fff; }
+            background: #fff;
+            margin: 0 0 40px; }
           .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan:before {
             content: "";
             background: url(../images/band.png) no-repeat;
@@ -8263,8 +8267,10 @@ h3 a {
         display: block; }
 
 @media (max-width: 1420px) {
-  .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-    font-size: 30px; }
+  .ws-pricing .price-flex .price-column .price-box .pr-plan {
+    min-height: 172px; }
+    .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
+      font-size: 30px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; } }
 @media (max-width: 1280px) {
