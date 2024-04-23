@@ -15,10 +15,11 @@ global $ws_ctas, $RegLink, $LogLink;
     </div>
   </div>
 </section>
-<div id="wsio-preloader" style="display:none;">
+<div id="wsio-preloader">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
 
+<div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
 <section id="inv-price-fltr" class="plan-section post-animation" style="padding-top:0; margin-top:110px;">
   <div class="container">
     <div class="switcher-sec">
@@ -73,9 +74,7 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
     </div>
   </div>
-</section>
-
-<div id="wsio-pricing" class="pricing-wrapper">
+</section>  
 <section class="ws-pricing" style="padding-top:0px;">
   <div class="container">
     <div class="price-flex">

@@ -288,9 +288,12 @@ window.addEventListener("load", function (){
   xhttp.onreadystatechange = function(){
       if( (this.readyState == 4) && (this.status == 200) ){
         let response = JSON.parse(this.responseText);
+          document.getElementById("wsio-pricing").style.display = "block";
+          document.getElementById("wsio-preloader").style.display = "none";
           console.log( response );
           var conCode = response.country;
           setPlanPricing( conCode, "yearly", true );
+
       }
   }
   xhttp.send();
@@ -343,15 +346,6 @@ if( pricingFltrt ){
         })
         })
     }
-
-    /*
-    fltrOn('click', '.selectBtn', item => {
-        let next = item.target.nextElementSibling;
-        item.target.classList.toggle('active');
-        next.classList.toggle('toggle');
-        next.style.zIndex = index++;
-    });
-    */
 
     fltrOn('click', '.select-list .pc-option', item => {
       let prSlider = document.getElementById('ps-switcher');
