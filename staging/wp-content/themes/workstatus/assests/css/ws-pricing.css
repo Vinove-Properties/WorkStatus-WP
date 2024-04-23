@@ -8262,7 +8262,7 @@ h3 a {
         transition: all 0.3s ease-in-out;
         display: block; }
 
-@media (max-width: 1390px) {
+@media (max-width: 1420px) {
   .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
     font-size: 33px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
