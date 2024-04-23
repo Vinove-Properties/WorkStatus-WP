@@ -26,7 +26,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <span class="chose">Choose currency:</span>
         <div class="select-list">
           
-          <div class="pcselectBtn">
+          <div id="elm-selectBtn" class="pcselectBtn">
             <img class="flgicon" id="pflag-icon" src="https://www.invoicera.com/staging/wp-content/themes/invoicera/assests/images/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
           </div>
 

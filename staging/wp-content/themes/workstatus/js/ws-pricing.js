@@ -382,6 +382,8 @@ var prSlider = document.getElementById('ps-switcher');
   });
 }
 
+
+
 const ws_SelectOn = (listener, query, fn) => {
   document.querySelectorAll(query).forEach(item => {
     item.addEventListener(listener, el => {
@@ -389,11 +391,43 @@ const ws_SelectOn = (listener, query, fn) => {
     })
   });
 }
+
 let pcSelectIndex = 1;
+const clickOutsideHandler = (event) => {
+  // Check if the clicked element is not part of the popup or the button
+  const popups = document.querySelectorAll('.pcselectBtn + .toggle');
+  const buttons = document.querySelectorAll('.pcselectBtn');
+  
+  let clickedInsidePopup = false;
+  popups.forEach(popup => {
+    if (popup.contains(event.target)) {
+      clickedInsidePopup = true;
+    }
+  });
+
+  let clickedOnButton = false;
+  buttons.forEach(button => {
+    if (button.contains(event.target)) {
+      clickedOnButton = true;
+    }
+  });
+
+  // If clicked outside popup and not on the button, close the popup
+  if (!clickedInsidePopup && !clickedOnButton) {
+    document.querySelectorAll('.toggle').forEach(popup => {
+      popup.classList.remove('toggle');
+    });
+    document.querySelectorAll('.pcselectBtn.active').forEach(button => {
+      button.classList.remove('active');
+    });
+    document.body.removeEventListener("click", clickOutsideHandler);
+  }
+};
+
 ws_SelectOn('click', '.pcselectBtn', item => {
-  console.log( item.target );
   const next = item.target.nextElementSibling;
   next.classList.toggle('toggle');
   next.style.zIndex = pcSelectIndex++;
   item.target.classList.toggle('active');
+  document.body.addEventListener("click", clickOutsideHandler);
 });
