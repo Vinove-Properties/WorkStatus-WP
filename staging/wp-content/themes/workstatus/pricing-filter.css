@@ -46,7 +46,8 @@
 .switch-btn-box .switch .slider{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:30px;cursor:pointer;overflow:hidden;transition:all .2s ease-in-out;background:#6754E2
 }
 .switch-btn-box .switch .slider::before{position:absolute;content:"";width:20px;height:20px;background-color:#fff;border-radius:20px;transform:translate(30px,4px);transition:all .2s ease-in-out}
-.switch-btn-box span{color:#05164D;font-size:20px;font-weight:500;line-height:normal}
+.switch-btn-box .monthly{color: rgba(5, 22, 77, 0.5);}
+.switch-btn-box span{    color: #00234b;font-size:20px;font-weight:500;line-height:normal}
 @media (max-width: 991px){
 
 .hero-banner.no-af-bg{padding: 130px 0 50px;}
@@ -62,9 +63,10 @@
 #pre-loader{font-size: 20px;}
 }
 .switch-btn-box .monthly{margin-right:6px}
-.switch-btn-box .annualy{margin-left:6px;color:rgba(5,22,77,0.5)}
+.switch-btn-box .annualy{margin-left:6px;color:#05164D;}
 .switch-btn-box .annualy.active{color:#05164D}
-.ps-monthly .switch-btn-box .annualy{color:#05164D;}
+.ps-monthly .switch-btn-box .annualy{color: rgba(5, 22, 77, 0.5);}
+.ps-monthly .switch-btn-box .monthly{color: #05164D;}
 .switch-btn-box h2{color:#05164D;font-size:20px;font-weight:500;line-height:normal}
 .switch-btn-box .switch .slider{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:30px;cursor:pointer;overflow:hidden;transition:all .2s ease-in-out;background:#6754E2
 }
