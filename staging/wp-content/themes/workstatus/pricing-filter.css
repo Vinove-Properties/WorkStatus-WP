@@ -1,8 +1,7 @@
-.hero-banner.no-af-bg:after{background: none; display:none;}
-.hero-banner.no-af-bg{padding: 170px 0 100px}
+
 #pre-loader{ padding: 100px 0;text-align: center; font-size: 24px;}
 #pc-country{position:relative; z-index:-1;}
-.plan-section{padding-bottom:30px}
+.plan-section{padding-bottom:30px;padding-top:0;}
 .plan-section .switcher-sec{background:#f8f5ff;border-radius:5px;justify-content:space-between;display:flex;padding:16px 20px;width:100%;margin:0 auto;gap:110px}
 .plan-section .flex_row{justify-content:center;gap:20px}
 .plan-section .col-box{border-radius:15px;border:.983px solid #E4E6EA;background:#FFF;padding:26px 20px;position:relative}
@@ -50,7 +49,7 @@
 .switch-btn-box span{    color: #00234b;font-size:20px;font-weight:500;line-height:normal}
 @media (max-width: 991px){
 
-.hero-banner.no-af-bg{padding: 130px 0 50px;}
+
 
 .plan-section .switcher-sec {gap: 0; flex-wrap: wrap; justify-content: center; }
 .country-select .chose{font-size: 16px;}
@@ -58,7 +57,7 @@
 .country-select{flex-basis: 100%; flex-direction: column; gap: 10px;}   
 .switch-btn-box{flex-basis: 100%;margin:25px 0 0; justify-content: center; display: flex;}
 .switch-btn-box span {font-size: 15px;}
-.plan-section{margin-top: 60px !important;}
+
 .ws-pricing{margin: 30px 0 0;}     
 #pre-loader{font-size: 20px;}
 }
@@ -70,7 +69,7 @@
 .switch-btn-box h2{color:#05164D;font-size:20px;font-weight:500;line-height:normal}
 .switch-btn-box .switch .slider{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:30px;cursor:pointer;overflow:hidden;transition:all .2s ease-in-out;background:#6754E2
 }
-span.cs{background: #F4F9FF; color: #979797; border-radius: 10px; padding: 5px 10px; font-size: 10px; text-transform: uppercase;}
+span.cs{background: #F4F9FF; color: #979797; border-radius: 10px; display: inline-block; padding: 5px 10px; font-size:9px; text-transform: uppercase;}
 .ws-pricing .price-flex .price-column:nth-child(3n) span.cs{background: #ffffff; color: #979797;}
 .ws-pricing .price-flex .price-column .price-box .price_btn{border-radius: 50px;}
 

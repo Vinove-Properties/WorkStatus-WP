@@ -11,10 +11,6 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="inner-wrap">
       <h1>Choose the plan that's right for your team</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <div class="actionBtn">
-        <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Talk to sales</a>
-      </div>
-      <div class="mt40"></div>
     </div>
   </div>
 </section>
@@ -23,7 +19,7 @@ global $ws_ctas, $RegLink, $LogLink;
 </div>
 
 <div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
-<section id="inv-price-fltr" class="plan-section post-animation" style="padding-top:0; margin-top:110px;">
+<section id="inv-price-fltr" class="plan-section post-animation">
   <div class="container">
     <div class="switcher-sec">
       <div class="country-select">
