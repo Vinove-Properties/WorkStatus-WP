@@ -27,7 +27,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <div class="select-list">
           
           <div id="elm-selectBtn" class="pcselectBtn">
-            <img class="flgicon" id="pflag-icon" src="https://www.invoicera.com/staging/wp-content/themes/invoicera/assests/images/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
+            <img class="flgicon" id="pflag-icon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
           </div>
 
           <div class="selectDropdown" style="z-index: 2;">
@@ -260,7 +260,8 @@ global $ws_ctas, $RegLink, $LogLink;
                 <li>Clients & Invoices</li>
               </ul>
             </div>
-            <div class="btn"><a class="price_btn" onclick="return get_ws_signupform(this);"" href="#">Sign Up</a></div>
+            <div class="btn"><a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" class="price_btn" 
+              onclick="return get_ws_signupform(this);" href="javascript:void(0);">Sign Up</a></div>
           </div>
         </div>
       </div>
@@ -277,7 +278,9 @@ global $ws_ctas, $RegLink, $LogLink;
             <thead>
               <tr>
                 <th></th>
-                <th><span class="plan-label">FREE</span><a class="button" href="#">Choose plan</a></th>
+                <th><span class="plan-label">FREE</span>
+                <a class="button" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
+                onclick="return get_ws_signupform(this);" href="javascript:void(0);">Choose plan</a></th>
                 <th><span class="plan-label">BASIC</span><a class="button" id="ws-coplan-basic" href="#">Choose plan</a></th>
                 <th><span class="plan-label">PROFESSIONAL</span><a class="button" id="ws-coplan-pro" href="#">Choose plan</a></th>
                 <th><span class="plan-label">BUSINESS</span><a class="button" id="ws-coplan-buss" href="#">Choose plan</a></th>
