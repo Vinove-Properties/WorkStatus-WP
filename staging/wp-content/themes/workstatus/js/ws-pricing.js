@@ -1,5 +1,6 @@
 const laCountries   = [ "AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "SV", "GT", "HN", "MX", "NI", "PA", "PY", "PE", "UY", "VE" ];
 const eurCountries  = [ "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE" ];
+const afCountries   = [ "DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CD", "CG", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "CI", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW" ];
 
 function getwsPlanurl(plan_id = 0, type = "annual"){
   return 'https://app.staging.workstatus.io/auth/register?pid='+plan_id+'&type='+type;
@@ -209,7 +210,10 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
       conCode = "LA";
     }else if( eurCountries.includes( conCode ) ){
       conCode = "EUR";
+    }else if( afCountries.includes( conCode ) ){
+      conCode = "ZA";
     }
+    
 
     if( pricingData.hasOwnProperty(conCode) ){
       locInput.value = conCode;
@@ -218,11 +222,10 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
       [...document.querySelectorAll('.pc-option')].forEach(function(elm) {
       
       if( elm.getAttribute( 'data-cod' ) === conCode ){
-      //console.log(elm.getAttribute('data-country'));
-      let iSrc        = elm.querySelectorAll("img")[0].getAttribute('src');
-      let pcCountry   = document.getElementById("pc-country");
-      document.getElementById("pflag-icon").setAttribute('src', iSrc);
-      pcCountry.innerText = elm.getAttribute('data-country');      
+        let iSrc        = elm.querySelectorAll("img")[0].getAttribute('src');
+        let pcCountry   = document.getElementById("pc-country");
+        document.getElementById("pflag-icon").setAttribute('src', iSrc);
+        pcCountry.innerText = elm.getAttribute('data-country');      
       }
       });  
     }
@@ -258,7 +261,6 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     if( plans.hasOwnProperty(key) ){
       
       if( key !== "currency" ){
-        //console.log(key);
         const value     = plans[key];
         let elmPricing  = document.getElementById("pl-"+key);
         let elmTotal    = document.getElementById("pl-"+key+"-total");
@@ -292,7 +294,7 @@ window.addEventListener("load", function (){
   xhttp.onreadystatechange = function(){
       if( (this.readyState == 4) && (this.status == 200) ){
         let response = JSON.parse(this.responseText);
-          document.getElementById("wsio-pricing").style.display = "block";
+          document.getElementById("wsio-pricing").style.display   = "block";
           document.getElementById("wsio-preloader").style.display = "none";
           console.log( response );
           var conCode = response.country;

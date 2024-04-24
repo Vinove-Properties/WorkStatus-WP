@@ -306,7 +306,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Multi platform timer app</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
