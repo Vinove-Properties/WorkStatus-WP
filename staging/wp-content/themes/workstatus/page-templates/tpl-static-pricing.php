@@ -112,8 +112,6 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Online Support</div>
                 <div class="option">Attendance</div>
                 <div class="option">Idle timeout</div>
-                             
-
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Limited SLA</p>
@@ -149,7 +147,9 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">2 integration</div>
                 <div class="option">Idle timeout</div>                
                 <div class="option">Work breaks</div>
-                <div class="option">Project budgets <span class="cs">Coming Soon</span></div>
+                <div class="option">Project budgets</div>
+                <div class="option">Expenses <span class="cs">Coming Soon</span></div>
+                <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Two-day email support SLA</p>
@@ -188,6 +188,10 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Time off & holidays</div>
                 <div class="option">Scheduling & attendance</div>
                 <div class="option">Timesheet approvals</div>
+                <div class="option">Payments & payroll <span class="cs">Coming Soon</span></div>
+                <div class="option">Overtime <span class="cs">Coming Soon</span></div>
+                <div class="option">Client budgets <span class="cs">Coming Soon</span></div>
+                <div class="option">Daily & weekly limits <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Chat support</p>
@@ -221,6 +225,12 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Private Cloud</div> 
                 <div class="option">Enterprise deployments</div>
                 <div class="option">Account provisioning</div>
+                <div class="option">Locations <span class="cs">Coming Soon</span></div>
+                <div class="option">Insights <span class="cs">Coming Soon</span></div>
+                <div class="option">Corporate App <span class="cs">Coming Soon</span></div>
+                <div class="option">HIPAA compliance <span class="cs">Coming Soon</span></div>
+                <div class="option">SOC-2 Type II Compliance <span class="cs">Coming Soon</span></div>
+                <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Concierge setup</p>
@@ -244,7 +254,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="colLeft">
             <div class="pr-plan">
               <h3>FREE</h3>
-              <div class="card-plan"><span class="free-zero">$0</span><span class="prio">For single user only</span></div>
+              <div class="card-plan"><span class="free-zero">$0</span><span class="prio"> For single user only</span></div>
               <div class="total"><span class="free-zero">$0</span> monthly total</div>
             </div>
           </div>
@@ -296,7 +306,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Multi platform timer app</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -368,7 +378,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Manual Clock In/Out</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -376,7 +386,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Automatic Clock In/Out</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -384,7 +394,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Break Time Capture</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -392,7 +402,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Manual/Offline Time Capture</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -400,7 +410,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Shift Scheduling</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -408,7 +418,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Automatic Timesheets</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -416,7 +426,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Absence Alerts</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -481,7 +491,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Dashboard</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -748,7 +758,7 @@ global $ws_ctas, $RegLink, $LogLink;
               </tr>  
               <tr>
                 <td>Tasks / To-dos</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td>500</td>
                 <td>1,500</td>
                 <td><i class="chkicon"></i></td>
@@ -820,7 +830,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Productivity Time</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -828,7 +838,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>App and Website Usage</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -836,7 +846,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Location Analytics</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -844,7 +854,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Impact Analysis</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -1011,7 +1021,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Help center</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -1019,7 +1029,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Learning center</td>
-                  <td><i class="chkicon"></i></td>
+                  <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
