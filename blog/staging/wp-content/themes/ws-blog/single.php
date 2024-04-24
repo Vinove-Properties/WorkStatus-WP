@@ -9,9 +9,9 @@ get_header();
               Share Article:
             </div>-->
             <div class="social-icons">
-              <a href="http://twitter.com/intent/tweet?text='.get_the_title().'&url='.get_the_permalink().'" class="a2a_button_twitter" target="_blank" rel="noopener noreferrer"></a>
-              <a href="http://www.linkedin.com/shareArticle?mini=true&url='.get_the_permalink().'&title='.get_the_title().'" class="a2a_button_linkedin" target="_blank" rel="noopener noreferrer"></a>
-              <a href="https://www.facebook.com/sharer?u='.get_the_permalink().'&t='.get_the_title().'.." class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
+              <a href="http://twitter.com/intent/tweet?text=<?php echo get_the_title(); ?>'&url=<?php echo get_the_permalink(); ?>" class="a2a_button_twitter" target="_blank" rel="noopener noreferrer"></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo get_the_permalink(); ?>&title=<?php echo get_the_title(); ?>" class="a2a_button_linkedin" target="_blank" rel="noopener noreferrer"></a>
+              <a href="https://www.facebook.com/sharer?u=<?php echo get_the_permalink(); ?>&t=<?php echo get_the_title(); ?>" class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
             </div>
           </div>
 
