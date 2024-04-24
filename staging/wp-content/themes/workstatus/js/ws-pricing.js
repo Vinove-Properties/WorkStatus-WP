@@ -7,8 +7,8 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
 }
 
 const WS_PLAN_ID = {
-  "local" : {"basic" : 459, "pro" : 139, "buss" : 460, "ent" : 461},
-  "international" : {"basic" : 462, "pro" : 140, "buss" : 463, "ent" : 464}
+  "local" : {"basic" : 459, "pro" : 466, "buss" : 460, "ent" : 461},
+  "international" : {"basic" : 462, "pro" : 467, "buss" : 463, "ent" : 464}
 }
 
 const pricingData = {
