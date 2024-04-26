@@ -14,191 +14,191 @@ const WS_PLAN_ID = {
 const pricingData = {
 "IN": {
   "basic":{
-  'monthly':{"amount":199, "total":3588},
-  'yearly':{"amount":99, "total":2388}    
+  'monthly':{"amount":99, "total":3588},
+  'yearly':{"amount":69, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":299, "total":4788},
-  'yearly':{"amount":199, "total":3588}    
+  'monthly':{"amount":249, "total":4788},
+  'yearly':{"amount":169, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":399, "total":7188},
-  'yearly':{"amount":299, "total":5988}    
+  'monthly':{"amount":349, "total":7188},
+  'yearly':{"amount":199, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":999, "total":4},
-  'yearly':{"amount":899, "total":4}    
+  'monthly':{"amount":649, "total":4},
+  'yearly':{"amount":499, "total":4}    
   },
   'meta':{"currency":'₹', "insight":100, "screenshot":140, "tasks":140, "data":100, "location":180, "app":140, "cloud":140}
 },
 "LA": {
   "basic":{
-  'monthly':{"amount":2.29, "total":3588},
-  'yearly':{"amount":1.69, "total":2388}    
+  'monthly':{"amount":1.89, "total":3588},
+  'yearly':{"amount":1.49, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":3.09, "total":4788},
-  'yearly':{"amount":2.29, "total":3588}    
+  'monthly':{"amount":3.39, "total":4788},
+  'yearly':{"amount":2.69, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":4.99, "total":7188},
-  'yearly':{"amount":4.19, "total":5988}    
+  'monthly':{"amount":4.09, "total":7188},
+  'yearly':{"amount":3.29, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":12.99, "total":4},
-  'yearly':{"amount":10.99, "total":4}    
+  'monthly':{"amount":8.59, "total":4},
+  'yearly':{"amount":6.89, "total":4}    
   },
   'meta':{"currency":'$', "insight":1.49, "screenshot":2.49, "tasks":2.49, "data":1.49, "location":3.09, "app":2.49, "cloud":2.49}
 },
 "GB": {
   "basic":{
-  'monthly':{"amount":2.39, "total":3588},
+  'monthly':{"amount":1.79, "total":3588},
   'yearly':{"amount":1.59, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":3.19, "total":4788},
-  'yearly':{"amount":2.39, "total":3588}    
+  'monthly':{"amount":3.59, "total":4788},
+  'yearly':{"amount":2.89, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":4.79, "total":7188},
-  'yearly':{"amount":3.99, "total":5988}    
+  'monthly':{"amount":4.39, "total":7188},
+  'yearly':{"amount":3.49, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":12.09, "total":4},
-  'yearly':{"amount":10.49, "total":4}    
+  'monthly':{"amount":9.19, "total":4},
+  'yearly':{"amount":7.39, "total":4}    
   },
   'meta':{"currency":'£', "insight":1.59, "screenshot":2.39, "tasks":2.39, "data":1.59, "location":3.19, "app":2.39, "cloud":2.39}
 },
 "US": {
   "basic":{
-  'monthly':{"amount":2.99, "total":3588},
+  'monthly':{"amount":2.49, "total":3588},
   'yearly':{"amount":1.99, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":3.99, "total":4788},
-  'yearly':{"amount":2.99, "total":3588}    
+  'monthly':{"amount":4.49, "total":4788},
+  'yearly':{"amount":3.59, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":5.99, "total":7188},
-  'yearly':{"amount":4.99, "total":5988}    
+  'monthly':{"amount":5.49, "total":7188},
+  'yearly':{"amount":4.39, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":14.99, "total":4},
-  'yearly':{"amount":12.99, "total":4}    
+  'monthly':{"amount":11.49, "total":4},
+  'yearly':{"amount":9.19, "total":4}    
   },
   'meta':{"currency":'$', "insight":2, "screenshot":3, "tasks":3, "data":2, "location":4, "app":3, "cloud":3}
 },
 "AU": {
   "basic":{
-  'monthly':{"amount":4.69, "total":3588},
+  'monthly':{"amount":3.79, "total":3588},
   'yearly':{"amount":2.09, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":6.19, "total":4788},
-  'yearly':{"amount":4.69, "total":3588}    
+  'monthly':{"amount":6.89, "total":4788},
+  'yearly':{"amount":5.49, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":9.29, "total":7188},
-  'yearly':{"amount":7.79, "total":5988}    
+  'monthly':{"amount":8.49, "total":7188},
+  'yearly':{"amount":6.69, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":23.39, "total":4},
-  'yearly':{"amount":20.29, "total":4}    
+  'monthly':{"amount":17.69, "total":4},
+  'yearly':{"amount":14.09, "total":4}    
   },
   'meta':{"currency":'AU$', "insight":3.09, "screenshot":4.69, "tasks":4.69, "data":3.09, "location":6.19, "app":4.69, "cloud":4.69}
 },
 "SA": {
   "basic":{
-  'monthly':{"amount":11.19, "total":3588},
+  'monthly':{"amount":9.29, "total":3588},
   'yearly':{"amount":7.49, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":14.99, "total":4788},
-  'yearly':{"amount":11.19, "total":3588}    
+  'monthly':{"amount":16.79, "total":4788},
+  'yearly':{"amount":13.49, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":22.49, "total":7188},
-  'yearly':{"amount":18.69, "total":5988}    
+  'monthly':{"amount":20.59, "total":7188},
+  'yearly':{"amount":16.49, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":56.19, "total":4},
-  'yearly':{"amount":48.69, "total":4}    
+  'monthly':{"amount":43.09, "total":4},
+  'yearly':{"amount":34.49, "total":4}    
   },
   'meta':{"currency":'SAR', "insight":7.49, "screenshot":11.19, "tasks":11.19, "data":7.49, "location":14.99, "app":11.19, "cloud":11.19}
 },
 "AE": {
   "basic":{
-  'monthly':{"amount":10.99, "total":3588},
+  'monthly':{"amount":9.09, "total":3588},
   'yearly':{"amount":7.29, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":14.59, "total":4788},
-  'yearly':{"amount":10.99, "total":3588}    
+  'monthly':{"amount":16.49, "total":4788},
+  'yearly':{"amount":13.19, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":21.99, "total":7188},
-  'yearly':{"amount":18.29, "total":5988}    
+  'monthly':{"amount":20.19, "total":7188},
+  'yearly':{"amount":16.09, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":55.49, "total":4},
-  'yearly':{"amount":47.69, "total":4}    
+  'monthly':{"amount":42.19, "total":4},
+  'yearly':{"amount":33.69, "total":4}    
   },
   'meta':{"currency":'AE', "insight":7.29, "screenshot":10.99, "tasks":10.99, "data":7.29, "location":14.69, "app":10.99, "cloud":10.99}
 },
 "CA": {
   "basic":{
-  'monthly':{"amount":4.09, "total":3588},
+  'monthly':{"amount":3.39, "total":3588},
   'yearly':{"amount":2.69, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":5.49, "total":4788},
-  'yearly':{"amount":4.09, "total":3588}    
+  'monthly':{"amount":6.19, "total":4788},
+  'yearly':{"amount":4.89, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":8.19, "total":7188},
-  'yearly':{"amount":6.79, "total":5988}    
+  'monthly':{"amount":7.49, "total":7188},
+  'yearly':{"amount":5.99, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":20.59, "total":4},
-  'yearly':{"amount":17.89, "total":4}    
+  'monthly':{"amount":15.69, "total":4},
+  'yearly':{"amount":12.59, "total":4}    
   },
   'meta':{"currency":'CA$', "insight":2.69, "screenshot":4.09, "tasks":4.09, "data":2.69, "location":5.49, "app":4.09, "cloud":4.09}
 },
 "ZA": {
   "basic":{
-  'monthly':{"amount":57.49, "total":3588},
-  'yearly':{"amount":38.29, "total":2388}    
+  'monthly':{"amount":28.39, "total":3588},
+  'yearly':{"amount":22.69, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":76.69, "total":4788},
-  'yearly':{"amount":57.49, "total":3588}    
+  'monthly':{"amount":47.79, "total":4788},
+  'yearly':{"amount":40.99, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":115.19, "total":7188},
-  'yearly':{"amount":95.99, "total":5988}    
+  'monthly':{"amount":62.59, "total":7188},
+  'yearly':{"amount":50.09, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":288.39, "total":4},
-  'yearly':{"amount":249.99, "total":4}    
+  'monthly':{"amount":131.09, "total":4},
+  'yearly':{"amount":104.89, "total":4}    
   },
   'meta':{"currency":'ZAR', "insight":38.39, "screenshot":57.59, "tasks":57.59, "data":38.39, "location":75.99, "app":57.59, "cloud":57.59}
 },
 "EUR": {
   "basic":{
-  'monthly':{"amount":2.79, "total":3588},
+  'monthly':{"amount":1.99, "total":3588},
   'yearly':{"amount":1.79, "total":2388}    
   },
   "pro":{
-  'monthly':{"amount":3.69, "total":4788},
-  'yearly':{"amount":2.79, "total":3588}    
+  'monthly':{"amount":4.19, "total":4788},
+  'yearly':{"amount":3.29, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":5.59, "total":7188},
-  'yearly':{"amount":4.69, "total":5988}    
+  'monthly':{"amount":5.09, "total":7188},
+  'yearly':{"amount":4.09, "total":5988}    
   },
   "ent":{
-  'monthly':{"amount":14.09, "total":4},
-  'yearly':{"amount":12.19, "total":4}    
+  'monthly':{"amount":10.69, "total":4},
+  'yearly':{"amount":8.59, "total":4}    
   },
   'meta':{"currency":'€', "insight":1.89, "screenshot":2.79, "tasks":2.79, "data":1.89, "location":3.79, "app":2.79, "cloud":2.79}
 }
