@@ -229,8 +229,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Selfie Based Attendance</div> 
                 <div class="option">Jobsite ( Geofencing ) - Automatic</div>
                 <div class="option">Schedules</div> 
-                <div class="option">Expenses <span class="cs">Coming Soon</span></div>
-                <div class="option">Auto discard idle time <span class="cs">Coming Soon</span></div>
+                <div class="option">Expenses <span class="cs">Coming Soon</span></div>                
                 <div class="option">Productivity Analysis <span class="cs">Coming Soon</span></div>
                 <div class="option">Insights <span class="cs">Coming Soon</span></div>
                 <div class="option">Auto discard idle time <span class="cs">Coming Soon</span></div>
@@ -368,15 +367,15 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Timesheet approvals</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
                   <td>Idle time out</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -465,7 +464,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Screenshots</td>
-                  <td>-</td>
+                  <td>Limited</td>
                   <td>4 Per Hour</td>
                   <td>6 Per Hour</td>
                   <td>12 Per Hour</td>
@@ -514,7 +513,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Dashboard</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -621,7 +620,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 
                 <tr>
                   <td>User Activity Monitoring (UAM)</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -670,16 +669,16 @@ global $ws_ctas, $RegLink, $LogLink;
               </tr>  
               <tr>
                 <td>Tasks / To-dos</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>  
               <tr>
                 <td>Time on Projects & Tasks</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
