@@ -98,7 +98,8 @@ $dwnLink = wp_nonce_url( $url, 'exp-logs' );
             global $wpdb;
             $dbObj = $wpdb;
 		    if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost") ){
-		    $dbObj = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 'localhost' );
+		    $dbObj = new wpdb( 'workstatus-io-crm-prod-db-user', '7DsEMIA5ppFAAyK', 'workstatus-io-crm-prod-db', 
+            'localhost' );
 		    }
             $results = $dbObj->get_results("SELECT * FROM ws_survey_data where survey_id = {$post_id} ORDER BY ID DESC",
             ARRAY_A);

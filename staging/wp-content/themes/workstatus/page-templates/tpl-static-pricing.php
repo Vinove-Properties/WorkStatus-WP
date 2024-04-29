@@ -338,23 +338,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
-                  <td>Custom Idle time out</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
-                  <td>Auto discard idle time</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
+                </tr>                
                 <tr>
                   <td>Background timer *</td>
                   <td>-</td>
@@ -403,14 +387,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
-                <tr>
-                  <td>Manual/Offline Time Capture</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
+                
                 <tr>
                   <td>Shift Scheduling</td>
                   <td>-</td>
@@ -598,39 +575,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                 </tr>
-                <tr>
-                  <td>Pay by bank debit (ACH)</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
-                  <td>Account provisioning *</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-
-                <tr>
-                  <td>Employee Burnout</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
-                <tr>
-                  <td>Habit Tracker</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td><i class="chkicon"></i></td>
-                  <td><i class="chkicon"></i></td>
-                </tr>
+                
                 <tr>
                   <td>User Activity Monitoring (UAM)</td>
                   <td>-</td>
@@ -646,86 +591,7 @@ global $ws_ctas, $RegLink, $LogLink;
             <h5>Workforce analytics</h5>
             <table class="comp-tablerow">
               <tbody>
-              <tr>
-                <td>Categorized work time *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Smart notifications *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>  
-              <tr>
-                <td>Benchmarks & trends *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Employee utilization *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Focus time *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Meeting time *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Behavioral highlights *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Suspicious activity detection *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Work time classification *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
-              <tr>
-                <td>Team leaderboard *</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
-              </tr>
+              
               <tr>
                 <td>Daily timeline *</td>
                 <td>-</td>
@@ -791,7 +657,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <td>10</td>
                 <td><i class="chkicon"></i></td>
               </tr>  
-              <tr>
+              <!-- <tr>
                 <td>Daily StandUp</td>
                 <td>-</td>
                 <td>-</td>
@@ -822,7 +688,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
-              </tr>  
+              </tr>   -->
               </tbody>
             </table>    
           </div>
@@ -855,6 +721,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
+                <!-- 
                 <tr>
                   <td>Impact Analysis</td>
                   <td>-</td>
@@ -919,7 +786,8 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
-                </tr>
+                </tr> 
+                -->
 
               </tbody>
             </table>  
@@ -928,7 +796,7 @@ global $ws_ctas, $RegLink, $LogLink;
             <h5>Security & Privacy</h5>
             <table class="comp-tablerow">
               <tbody>
-                <tr>
+                <!-- <tr> 
                   <td>HIPAA compliance</td>
                   <td>-</td>
                   <td>-</td>
@@ -943,7 +811,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td>-</td>
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td>Single sign-on</td>
                   <td>-</td>
@@ -983,14 +851,14 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td>Custom fields *</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td>Historical bill/pay rates *</td>
                   <td>-</td>
@@ -1062,14 +930,14 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td>Concierge set up</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
-                </tr>
+                </tr> -->
               </tbody>
             </table>
           </div>
@@ -1086,30 +954,79 @@ global $ws_ctas, $RegLink, $LogLink;
           </p>
         </div>
         <div class="addons-row">
+          
+        <div class="addond-col">
+        <div class="add-box">
+          <div class="topDiv">
+            <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+              alt="ws" width="45" height="45">
+            </div>
+            <div class="tcon">
+              <h4>Project management</h4>
+              <span class="price">Starts at <span id="pl-pm">$2</span></span>
+              <span class="unit">/ user / mo</span>
+            </div>
+          </div>
+          <div class="bottomDiv">
+            <ul>
+              <li>Task Management</li>
+              <li>Gantt View </li>
+              <li>Message Board</li>
+              <li>Comments</li>
+              <li>Kanban view</li>
+              <li>Project budget</li>
+              <li>Individual Project Settings (Coming Soon)</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-01.svg"
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/adon-06.svg"
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Insights</h4>
-                  <span class="price">Starts at <span id="pl-insight">$2</span></span>
+                  <h4>Corporate app</h4>
+                  <span class="price">Starts at <span id="pl-corapp">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Categorized work time</li>
-                  <li>Smart notifications</li>
-                  <li>Focus & meeting time</li>
-                  <li>Suspicious activity detection</li>
-                  <li>Behavioral highlights</li>
-                  <li>Work time classification</li>
+                  <li>Run your application in stealth mode in background</li>
+                  <li>Add new members through account provisioning and manage email notifications</li>
                 </ul>
               </div>
             </div>
           </div>
+
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/adon-04.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Data retention</h4>
+                  <span class="price">Starts at <span id="pl-data">$2</span> </span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+
+                  <ul>
+                    <li>Data retention extended to 3 years for:</li>
+                    <li>Time & activity data</li>
+                    <li>Screenshots</li>
+                    <li>Reports</li>
+                    <li><a href="#">view more </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
@@ -1124,14 +1041,34 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Allow up to 10 screenshots team members</li>
-                  <li>Includes all secondary monitors in use</li>
+                  <li>18 Screenshots Per Hour</li>
+                  <li>SS intervals - 5, 10 & 15 Minutes</li>
+                  <li>Screenshot frequncy - 2x & 3x</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="addond-col">
+            <div class="add-box">
+              <div class="topDiv">
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-07.svg"
+                  alt="ws" width="45" height="45">
+                </div>
+                <div class="tcon">
+                  <h4>Private Cloud</h4>
+                  <span class="price">Starts at <span id="pl-cloud">$2</span></span>
+                  <span class="unit">/ user / mo</span>
+                </div>
+              </div>
+              <div class="bottomDiv">
+                <ul>
+                  <li>AWS S3 Bucket as private cloud</li>                  
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="addond-col">
+          <!-- <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
                 <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-03.svg"
@@ -1154,29 +1091,9 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
             </div>
           </div>
-          <div class="addond-col">
-            <div class="add-box">
-              <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/adon-04.svg"
-                  alt="ws" width="45" height="45">
-                </div>
-                <div class="tcon">
-                  <h4>Data retention</h4>
-                  <span class="price">Starts at <span id="pl-data">$2</span> </span>
-                  <span class="unit">/ user / mo</span>
-                </div>
-              </div>
-              <div class="bottomDiv">
+          
+          
 
-                  <ul>
-                    <li>Data retention extended to 6 years for:</li>
-                    <li>Time & activity data</li>
-                    <li>Calendar & limits</li>
-                    <li>Finances</li>
-                </ul>
-              </div>
-            </div>
-          </div>
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
@@ -1198,47 +1115,9 @@ global $ws_ctas, $RegLink, $LogLink;
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="addond-col">
-            <div class="add-box">
-              <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/adon-06.svg"
-                  alt="ws" width="45" height="45">
-                </div>
-                <div class="tcon">
-                  <h4>Corporate app (Stealth Mode)</h4>
-                  <span class="price">Starts at <span id="pl-corapp">$2</span></span>
-                  <span class="unit">/ user / mo</span>
-                </div>
-              </div>
-              <div class="bottomDiv">
-                <ul>
-                  <li>Track time and activity in the background on company-owned devices</li>
-                  <li>Add new members through account provisioning and manage email notifications</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="addond-col">
-            <div class="add-box">
-              <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-07.svg"
-                  alt="ws" width="45" height="45">
-                </div>
-                <div class="tcon">
-                  <h4>Private Cloud</h4>
-                  <span class="price">Starts at <span id="pl-cloud">$2</span></span>
-                  <span class="unit">/ user / mo</span>
-                </div>
-              </div>
-              <div class="bottomDiv">
-                <ul>
-                  <li>Host the sensitive employee data e.g. screenshots in your private cloud (supported AWS or S3 compliant data storage)</li>
-                  
-                </ul>
-              </div>
-            </div>
-          </div>
+          </div> -->
+          
+          
         </div>
       </div>
     </section>
