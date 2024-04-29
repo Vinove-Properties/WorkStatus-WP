@@ -104,14 +104,17 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Timesheets</div>
                 <div class="option">Activity Levels</div>
                 <div class="option">Limited screenshots</div>
+                <div class="option">SS Interval (15 Minutes ) </div>
                 <div class="option">Limited app & URL tracking</div>
-                <div class="option">Limited reports</div>
+                <h5>Reports</h5>                
+                <div class="option">Time & Activity</div>
+                <div class="option">Weekly Report</div>
+                <div class="option">Attendance Basic & Advance Report</div>
+                <div class="option">Manual Edit Report</div>
+                <br>
                 <div class="option">Idle timeout</div>
-                <div class="option">Online Support</div>
-                <div class="option">Productivity Analysis</div>
-                <div class="option">HRIS Integrations</div>
-                <div class="option">User Management</div>                
-                <div class="option">Attendance</div>                
+                <div class="option">Attendance</div>
+
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Limited SLA</p>
