@@ -106,7 +106,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Limited screenshots</div>
                 <div class="option">SS Interval (15 Minutes ) </div>
                 <div class="option">Limited app & URL tracking</div>
-                <h5>Reports</h5>                
+                <div class="option hrd"><strong>Reports</strong></div>                
                 <div class="option">Time & Activity</div>
                 <div class="option">Weekly Report</div>
                 <div class="option">Attendance Basic & Advance Report</div>
@@ -149,14 +149,38 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="price-options">
               <h4>Everything in Basic +</h4>
               <div class="option-list">
-                <div class="option">Project Management</div>
+                <div class="option hrd"><strong>Project Management</strong></div>
+                <div class="option">Limit of 60 Projects</div>
+                <div class="option">Simple & Advance Task List Views</div>
+                <div class="option">Comments </div>
+                <div class="option">Task Management</div>
+                <div class="option">Filter & Sorting with multiple saved filter views</div>
+                <div class="option">Individual Project Timesheets</div>
+                <div class="option">Report ( Project & Todo )</div>
+                <br>
+                <div class="option">Screenshot Frequency</div>
+                <div class="option">SS Interval ( 10 & 15 Minutes )</div> 
+                <div class="option">2 Integrations</div>
+                <div class="option">Work Breaks</div> 
+                <div class="option hrd"><strong>Clients Portal</strong></div>
+                <div class="option">Track Timesheets</div>
+                <div class="option">Track Activities</div>
+                <div class="option">Track Projects</div> 
+                <br>
+                <div class="option">SS Interval ( 10 & 15 Minutes )</div> 
+                <div class="option">Timesheet approvals</div>
+                <div class="option">Teams</div>
+                <div class="option">Jobsite ( Geofencing ) - Manual</div>
+                <div class="option">Productive / Unproductive Apps & URLs Tracking</div> 
+                <div class="option">Emplloyee Onboarding Status</div>
+                <!-- 
                 <div class="option">Reports</div>
                 <div class="option">2 integration</div>
                 <div class="option">Idle timeout</div>                
                 <div class="option">Work breaks</div>
                 <div class="option">Project budgets <span class="cs">Coming Soon</span></div>
                 <div class="option">Expenses <span class="cs">Coming Soon</span></div>
-                <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div>
+                <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div> -->
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Two-day email support SLA</p>
@@ -187,19 +211,32 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="price-options">
               <h4>Everything in Professional +</h4>
               <div class="option-list">                 
+                <div class="option hrd"><strong>Project Management</strong></div>
+                <div class="option">Limit 150 Projects</div>
+                <div class="option">Gaintt View <span class="cs">Coming Soon</span></div>
+                <div class="option">Project budget</div>
+                <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
+                <br>
+                <div class="option">Achievement Module</div>
                 <div class="option">Unlimited screenshots</div>
+                <div class="option">SS Interval (5, 10 & 15 Minutes )</div> 
                 <div class="option">Unlimited app & URL tracking</div>
-                <div class="option">Auto discard idle time</div>
-                <div class="option">Teams</div>
-                <div class="option">Unlimited integrations</div>
+                <div class="option">Screenshot Blur</div>
+                <div class="option">HRIS</div>
                 <div class="option">Time off & holidays</div>
-                <div class="option">Scheduling & attendance</div>
-                <div class="option">Timesheet approvals</div>                                
+                <div class="option">10 Integrations</div>
+                <div class="option">Departments</div>
+                <div class="option">Selfie Based Attendance</div> 
+                <div class="option">Jobsite ( Geofencing ) - Automatic</div>
+                <div class="option">Schedules</div> 
+                <div class="option">Expenses <span class="cs">Coming Soon</span></div>
+                <div class="option">Auto discard idle time <span class="cs">Coming Soon</span></div>
+                <div class="option">Productivity Analysis <span class="cs">Coming Soon</span></div>
                 <div class="option">Insights <span class="cs">Coming Soon</span></div>
-                <div class="option">Payments & payroll <span class="cs">Coming Soon</span></div>
-                <div class="option">Overtime <span class="cs">Coming Soon</span></div>
-                <div class="option">Client budgets <span class="cs">Coming Soon</span></div>
-                <div class="option">Daily & weekly limits <span class="cs">Coming Soon</span></div>
+                <div class="option">Auto discard idle time <span class="cs">Coming Soon</span></div>
+                <div class="option">Daily & Weekly Limit <span class="cs">Coming Soon</span></div>
+                <div class="option">Invoicing <span class="cs">Coming Soon</span></div>
+
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Chat support</p>
@@ -208,8 +245,7 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
             </div>
             <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">
-            Features
-            </button>
+            Features</button>
           </div>
         </div>
       </div>
@@ -228,19 +264,19 @@ global $ws_ctas, $RegLink, $LogLink;
           <a class="price_btn" id="ws-plan-ent" href="#">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">
-              <h4>Everything in Professional +</h4>
-              <div class="option-list">                
-                <div class="option">Private Cloud</div> 
-                <div class="option">Enterprise deployments</div>
-                <div class="option">Account provisioning</div>
-
-                <div class="option">Locations <span class="cs">Coming Soon</span></div>
-                <div class="option">Insights <span class="cs">Coming Soon</span></div>
-                <div class="option">Corporate App <span class="cs">Coming Soon</span></div>
-                <div class="option">HIPAA compliance <span class="cs">Coming Soon</span></div>
-                <div class="option">SOC-2 Type II Compliance <span class="cs">Coming Soon</span></div>
+              <h4>Everything in Business  +</h4>
+              <div class="option-list">
+                <div class="option">Unlimted Integrations</div>
+                <div class="option">API Access</div>
+                <div class="option">Customization(s)</div>
                 <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
                 <div class="option">2FA <span class="cs">Coming Soon</span></div>
+
+                <div class="option hrd"><strong>Locations</strong><span class="cs">Coming Soon</span></div>
+                <div class="option">Live Location Tracking</div> 
+                <div class="option">Route & Distance Tracking</div>
+                <br>
+                <div class="option">Payments & Payroll <span class="cs">Coming Soon</span></div>                
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Concierge setup</p>

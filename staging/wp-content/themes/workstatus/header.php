@@ -86,7 +86,9 @@ global $ws_ctas, $RegLink, $LogLink;
   body.page-id-7306 #ws-comprehensive_dashboard_section .btnSc,
   body.page-id-7306 #ws-boost_profitability .btnSc,
   body.page-id-7306 .wsMobile{display: none;}
-
+  .option.hrd:before{background: none !important;}
+  .option.hrd{padding-left: 0 !important;}
+  .option.hrd strong{font-size: 20px;}
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
