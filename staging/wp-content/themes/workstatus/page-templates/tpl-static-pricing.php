@@ -114,6 +114,10 @@ global $ws_ctas, $RegLink, $LogLink;
                 <br>
                 <div class="option">Idle timeout</div>
                 <div class="option">Attendance</div>
+                <div class="option">Employee Management</div>
+                <div class="option">Per User Settings</div>
+                <div class="option">Activity levels</div>
+                <div class="option">Manual Time Entry</div>
 
                 <div class="support-options">
                   <h4>Support:</h4>
