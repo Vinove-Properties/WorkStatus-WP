@@ -106,12 +106,14 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Limited screenshots</div>
                 <div class="option">Screenshot interval (15 Minutes ) </div>
                 <div class="option">Limited app & URL tracking</div>
-                <div class="option hrd"><strong>Reports</strong></div>                
+                
+                <!-- <div class="option hrd"><strong>Reports</strong></div>                
                 <div class="option">Time & Activity</div>
                 <div class="option">Weekly Report</div>
                 <div class="option">Attendance Basic & Advance Report</div>
                 <div class="option">Manual Edit Report</div>
-                <br>
+                <br> -->
+
                 <div class="option">Idle timeout</div>
                 <div class="option">Attendance</div>
                 <div class="option">Employee Management</div>
@@ -150,6 +152,17 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="price-options">
               <h4>Everything in Basic +</h4>
               <div class="option-list">
+                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
+                <div class="option">Timesheet approvals</div>
+                <div class="option">Teams</div>
+                <div class="option">Jobsite ( Geofencing ) - Manual</div>
+                <div class="option">Tracking Productive/Unproductive Apps & URLs</div> 
+                <div class="option">Employee Onboarding Status</div>
+                <!-- <div class="option">Screenshot Frequency</div> -->
+                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
+                <div class="option">2 Integrations</div>
+                <div class="option">Work Breaks</div> 
+
                 <div class="option hrd"><strong>Project Management</strong></div>
                 <div class="option">Limit of 60 Projects</div>
                 <div class="option">Simple & Advance Task List Views</div>
@@ -158,22 +171,14 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Filter & Sorting with multiple saved filter views</div>
                 <div class="option">Individual Project Timesheets</div>
                 <div class="option">Report ( Project & Todo )</div>
-                <br>
-                <div class="option">Screenshot Frequency</div>
-                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
-                <div class="option">2 Integrations</div>
-                <div class="option">Work Breaks</div> 
+                
+                
                 <div class="option hrd"><strong>Clients Portal</strong></div>
                 <div class="option">Track Timesheets</div>
                 <div class="option">Track Activities</div>
                 <div class="option">Track Projects</div> 
                 <br>
-                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
-                <div class="option">Timesheet approvals</div>
-                <div class="option">Teams</div>
-                <div class="option">Jobsite ( Geofencing ) - Manual</div>
-                <div class="option">Tracking Productive/Unproductive Apps & URLs</div> 
-                <div class="option">Employee Onboarding Status</div>
+                
                 <!-- 
                 <div class="option">Reports</div>
                 <div class="option">2 integration</div>
@@ -212,13 +217,8 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Professional +</h4>
-              <div class="option-list">                 
-                <div class="option hrd"><strong>Project Management</strong></div>
-                <div class="option">Limit 150 Projects</div>
-                <div class="option">Gantt View <span class="cs">Coming Soon</span></div>
-                <div class="option">Project budget</div>
-                <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
-                <br>
+              <div class="option-list">
+
                 <div class="option">Achievement Module</div>
                 <div class="option">Unlimited screenshots</div>
                 <div class="option">Screenshot interval (5, 10 & 15 Minutes )</div> 
@@ -237,6 +237,11 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Auto discard idle time <span class="cs">Coming Soon</span></div>
                 <div class="option">Daily & Weekly Limit <span class="cs">Coming Soon</span></div>
                 <div class="option">Invoicing <span class="cs">Coming Soon</span></div>
+                <div class="option hrd"><strong>Project Management</strong></div>
+                <div class="option">Limit 150 Projects</div>
+                <div class="option">Gantt View <span class="cs">Coming Soon</span></div>
+                <div class="option">Project budget</div>
+                <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
 
                 <div class="support-options">
                   <h4>Support:</h4>
@@ -272,12 +277,12 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Customization(s)</div>
                 <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
                 <div class="option">2FA <span class="cs">Coming Soon</span></div>
-
+                <div class="option">Payments & Payroll <span class="cs">Coming Soon</span></div>
                 <div class="option hrd"><strong>Locations</strong><span class="cs">Coming Soon</span></div>
                 <div class="option">Live Location Tracking</div> 
                 <div class="option">Route & Distance Tracking</div>
-                <br>
-                <div class="option">Payments & Payroll <span class="cs">Coming Soon</span></div>                
+                
+                                
                 <div class="support-options">
                   <h4>Support:</h4>
                   <p>Email / Chat / Phone / Whatsapp Support</p>
@@ -761,6 +766,38 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td>Location Analytics</td>
                   <td>-</td>
                   <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Time & Activity</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Weekly Report</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Attendance Basic & Advance Report</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>Manual Edit Report</td>
+                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
