@@ -13,7 +13,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       <h6><span class="bg-white"><?php echo $work_status_journey['heading']; ?></span></h6>
       <?php 
       if( is_page(7306) ){
-      echo '<h2>Customize Your Tasks With Workstatus Efficiently</h2><p>Explore More Customization Possibilities With Us</p>';
+      echo '<h2>Streamline with Smart Customization</h2>
+      <p>Discover how our solutions can seamlessly integrate into your operation</p>';
       }else{ ?>
       <h2><?php echo $work_status_journey['sub_heading']; ?></h2>
       <p><?php echo $work_status_journey['content']; ?></p>
