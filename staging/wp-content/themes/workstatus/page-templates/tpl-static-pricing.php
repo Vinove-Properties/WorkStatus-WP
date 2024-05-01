@@ -172,7 +172,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Timesheet approvals</div>
                 <div class="option">Teams</div>
                 <div class="option">Jobsite ( Geofencing ) - Manual</div>
-                <div class="option">Productive / Unproductive Apps & URLs Tracking</div> 
+                <div class="option">Tracking Productive/Unproductive Apps & URLs</div> 
                 <div class="option">Employee Onboarding Status</div>
                 <!-- 
                 <div class="option">Reports</div>
