@@ -389,6 +389,7 @@ if( function_exists('acf_add_options_page') ) {
 
 function pixelShowLatestPosts( $pslug = "",$bposts){
  	if( empty($pslug) ) return; 
+
  	$rPosts = $wsBposts = [];
  	if( $pslug ){
  	$ar = explode('|',$pslug);
@@ -411,8 +412,8 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 		}
 	}	
 	}
-	//$loop = array_merge( $wsBposts, $rPosts );
-	$loop = false;
+	$loop = array_merge( $wsBposts, $rPosts );
+	//$loop = false;
 	if( $loop ){
 	?>
  	<section class="useful-resources-blog-section bglight for-heading-center">
