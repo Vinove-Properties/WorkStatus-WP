@@ -1104,7 +1104,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <li>Screenshots</li>
                     <li>Reports</li>
                 </ul>
-                <a href="<?php echo site_url('/data-retention#ans_2'); ?>">view more </a>
+                <a href="<?php echo site_url('/data-retention#ans_3'); ?>">view more </a>
               </div>
             </div>
           </div>
