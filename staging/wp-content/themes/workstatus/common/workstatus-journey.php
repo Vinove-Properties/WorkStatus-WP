@@ -9,13 +9,14 @@ global $ws_ctas, $RegLink, $LogLink, $post;
   <div class="shape"></div>
   <div class="trianglefeaturedetail-right"></div>
   <div class="container">
-    <div class="top-section">
-      <h6><span class="bg-white"><?php echo $work_status_journey['heading']; ?></span></h6>
+    <div class="top-section">      
       <?php 
       if( is_page(7306) ){
+      echo '<h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>';
       echo '<h2>Streamline with Smart Customization</h2>
       <p>Discover how our solutions can seamlessly integrate into your operation</p>';
       }else{ ?>
+      <h6><span class="bg-white"><?php echo $work_status_journey['heading']; ?></span></h6>  
       <h2><?php echo $work_status_journey['sub_heading']; ?></h2>
       <p><?php echo $work_status_journey['content']; ?></p>
       <?php } ?>
