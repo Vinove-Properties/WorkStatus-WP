@@ -107,12 +107,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Screenshot interval (15 Minutes ) </div>
                 <div class="option">Limited app & URL tracking</div>
                 
-                <!-- <div class="option hrd"><strong>Reports</strong></div>                
-                <div class="option">Time & Activity</div>
-                <div class="option">Weekly Report</div>
-                <div class="option">Attendance Basic & Advance Report</div>
-                <div class="option">Manual Edit Report</div>
-                <br> -->
+                
 
                 <div class="option">Idle timeout</div>
                 <div class="option">Attendance</div>
@@ -120,6 +115,13 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Per User Settings</div>
                 <div class="option">Activity levels</div>
                 <div class="option">Manual Time Entry</div>
+
+                <div class="option hrd"><strong>Reports</strong></div>                
+                <div class="option">Time & Activity</div>
+                <div class="option">Weekly Report</div>
+                <div class="option">Attendance Reports</div>
+                <div class="option">Manual Edit Report</div>
+                <br>
 
                 <div class="support-options">
                   <h4>Support:</h4>
