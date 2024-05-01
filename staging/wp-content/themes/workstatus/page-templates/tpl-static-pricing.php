@@ -121,7 +121,7 @@ global $ws_ctas, $RegLink, $LogLink;
 
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>Limited SLA</p>
+                  <p>Two-day email support SLA</p>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Teams</div>
                 <div class="option">Jobsite ( Geofencing ) - Manual</div>
                 <div class="option">Productive / Unproductive Apps & URLs Tracking</div> 
-                <div class="option">Emplloyee Onboarding Status</div>
+                <div class="option">Employee Onboarding Status</div>
                 <!-- 
                 <div class="option">Reports</div>
                 <div class="option">2 integration</div>
@@ -183,7 +183,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div> -->
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>Two-day email support SLA</p>
+                  <p>One-day email support SLA</p>
                 </div>
               </div>
             </div>
@@ -864,10 +864,10 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Two-factor authentication</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
               </tbody>
@@ -1057,14 +1057,13 @@ global $ws_ctas, $RegLink, $LogLink;
                 </div>
               </div>
               <div class="bottomDiv">
-
                   <ul>
                     <li>Data retention extended to 3 years for:</li>
                     <li>Time & activity data</li>
                     <li>Screenshots</li>
                     <li>Reports</li>
-                    <li><a href="#">view more </a></li>
                 </ul>
+                <a href="<?php echo site_url('/data-retention#ans_2'); ?>">view more </a>
               </div>
             </div>
           </div>
@@ -1085,7 +1084,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <ul>
                   <li>18 Screenshots Per Hour</li>
                   <li>SS intervals - 5, 10 & 15 Minutes</li>
-                  <li>Screenshot frequncy - 2x & 3x</li>
+                  <li>Screenshot frequency - 2x & 3x</li>
                 </ul>
               </div>
             </div>

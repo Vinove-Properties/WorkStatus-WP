@@ -434,7 +434,7 @@ function getWSipinfo( $ipAddr ){
     }
     $hasIP  = $ipdb->get_row( "SELECT * FROM ipinfo_logs WHERE ip = '".$ipAddr."' ", OBJECT );    
     if( $hasIP ){
-        return json_decode($hasIP->data);
+        return json_decode( $hasIP->data );
     }else{
         $isLocation     = file_get_contents( 'https://ipinfo.io/'.$ipAddr.'?token=58f4668796ee68' );
         $ws_userip      = json_decode( $isLocation ); 
