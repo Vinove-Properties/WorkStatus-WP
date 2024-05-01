@@ -166,7 +166,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Work Breaks</div> 
 
                 <div class="option hrd"><strong>Project Management</strong></div>
-                <div class="option">Limit of 60 Projects</div>
+                <div class="option">Upto 60 Projects</div>
                 <div class="option">Simple & Advance Task List Views</div>
                 <div class="option">Comments </div>
                 <div class="option">Task Management</div>
@@ -375,7 +375,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Timesheet approvals</td>
+                  <td>Timesheet Approvals</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -383,7 +383,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Idle time out</td>
+                  <td>Idle Time Out</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -391,7 +391,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>                
                 <tr>
-                  <td>Background timer *</td>
+                  <td>Background Timer *</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -468,7 +468,7 @@ global $ws_ctas, $RegLink, $LogLink;
           </div>
 
           <div class="comp-row">
-            <h5>Productivity monitoring</h5>
+            <h5>Productivity Monitoring</h5>
             <table class="comp-tablerow">
               <tbody>
                 <tr>
@@ -488,7 +488,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Apps & URLs tracking</td>
+                  <td>Apps & URLs Tracking</td>
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -496,7 +496,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Achievement badges</td>
+                  <td>Achievement Badges</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -529,7 +529,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Daily & weekly limits</td>
+                  <td>Daily & Weekly Limits</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -537,7 +537,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Time off & holidays</td>
+                  <td>Time Off & Holidays</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -563,7 +563,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr> 
                 -->
                 <tr>
-                  <td>Work breaks</td>
+                  <td>Work Breaks</td>
                   <td>-</td>
                   <td>-</td>
                   <td><i class="chkicon"></i></td>
@@ -587,7 +587,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Client invoices</td>
+                  <td>Client Invoices</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -595,7 +595,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Team invoices</td>
+                  <td>Team Invoices</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -603,7 +603,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Expense tracking</td>
+                  <td>Expense Tracking</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -611,7 +611,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Per user settings</td>
+                  <td>Per User Settings</td>
                   <td></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -619,7 +619,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Payments & payroll</td>
+                  <td>Payments & Payroll</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -639,12 +639,12 @@ global $ws_ctas, $RegLink, $LogLink;
             </table>
           </div>
           <div class="comp-row">
-            <h5>Workforce analytics</h5>
+            <h5>Workforce Analytics</h5>
             <table class="comp-tablerow">
               <tbody>
               
               <tr>
-                <td>Daily timeline *</td>
+                <td>Daily Timeline *</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -656,11 +656,11 @@ global $ws_ctas, $RegLink, $LogLink;
           </div>
 
           <div class="comp-row">
-            <h5>Project management</h5>
+            <h5>Project Management</h5>
             <table class="comp-tablerow">
               <tbody>
               <tr>
-                <td>Project budgets</td>
+                <td>Project Budgets</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -669,7 +669,7 @@ global $ws_ctas, $RegLink, $LogLink;
               </tr>
 
               <tr>
-                <td>Client budgets</td>
+                <td>Client Budgets</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -693,7 +693,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <td><i class="chkicon"></i></td>
               </tr>  
               <tr>
-                <td>Work orders & jobs *</td>
+                <td>Work Orders & Jobs *</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -896,7 +896,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr> -->
                 <tr>
-                  <td>Single sign-on</td>
+                  <td>Single Sign-on</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -904,7 +904,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Two-factor authentication</td>
+                  <td>Two-factor Authentication</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -927,7 +927,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Scheduled reports</td>
+                  <td>Scheduled Reports</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -943,7 +943,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr> -->
                 <tr>
-                  <td>Historical bill/pay rates *</td>
+                  <td>Historical Bill/pay Rates *</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -951,7 +951,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Departments/cost centers *</td>
+                  <td>Departments/cost Centers *</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -974,7 +974,7 @@ global $ws_ctas, $RegLink, $LogLink;
             <table class="comp-tablerow">
               <tbody>
                 <tr>
-                  <td>Help center</td>
+                  <td>Help Center</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -982,7 +982,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Learning center</td>
+                  <td>Learning Center</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -990,7 +990,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Chat support</td>
+                  <td>Chat Support</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -998,7 +998,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>Email support SLA (24x5)</td>
+                  <td>Email Support SLA (24x5)</td>
                   <td>Limited support</td>
                   <td>2 days</td>
                   <td>1 day</td>
@@ -1006,7 +1006,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <td>2 hours</td>
                 </tr>
                 <tr>
-                  <td>Assigned account representative</td>
+                  <td>Assigned Account Representative</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -1045,7 +1045,7 @@ global $ws_ctas, $RegLink, $LogLink;
               alt="ws" width="45" height="45">
             </div>
             <div class="tcon">
-              <h4>Project management</h4>
+              <h4>Project Management</h4>
               <span class="price">Starts at <span id="pl-pm">$2</span></span>
               <span class="unit">/ user / mo</span>
             </div>
