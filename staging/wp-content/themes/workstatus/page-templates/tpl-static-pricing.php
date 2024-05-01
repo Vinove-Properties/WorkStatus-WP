@@ -104,7 +104,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Timesheets</div>
                 <div class="option">Activity Levels</div>
                 <div class="option">Limited screenshots</div>
-                <div class="option">SS Interval (15 Minutes ) </div>
+                <div class="option">Screenshot interval (15 Minutes ) </div>
                 <div class="option">Limited app & URL tracking</div>
                 <div class="option hrd"><strong>Reports</strong></div>                
                 <div class="option">Time & Activity</div>
@@ -160,7 +160,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Report ( Project & Todo )</div>
                 <br>
                 <div class="option">Screenshot Frequency</div>
-                <div class="option">SS Interval ( 10 & 15 Minutes )</div> 
+                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
                 <div class="option">2 Integrations</div>
                 <div class="option">Work Breaks</div> 
                 <div class="option hrd"><strong>Clients Portal</strong></div>
@@ -168,7 +168,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Track Activities</div>
                 <div class="option">Track Projects</div> 
                 <br>
-                <div class="option">SS Interval ( 10 & 15 Minutes )</div> 
+                <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
                 <div class="option">Timesheet approvals</div>
                 <div class="option">Teams</div>
                 <div class="option">Jobsite ( Geofencing ) - Manual</div>
@@ -215,13 +215,13 @@ global $ws_ctas, $RegLink, $LogLink;
               <div class="option-list">                 
                 <div class="option hrd"><strong>Project Management</strong></div>
                 <div class="option">Limit 150 Projects</div>
-                <div class="option">Gaintt View <span class="cs">Coming Soon</span></div>
+                <div class="option">Gantt View <span class="cs">Coming Soon</span></div>
                 <div class="option">Project budget</div>
                 <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
                 <br>
                 <div class="option">Achievement Module</div>
                 <div class="option">Unlimited screenshots</div>
-                <div class="option">SS Interval (5, 10 & 15 Minutes )</div> 
+                <div class="option">Screenshot interval (5, 10 & 15 Minutes )</div> 
                 <div class="option">Unlimited app & URL tracking</div>
                 <div class="option">Screenshot Blur</div>
                 <div class="option">HRIS</div>
@@ -267,7 +267,7 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="price-options">
               <h4>Everything in Business  +</h4>
               <div class="option-list">
-                <div class="option">Unlimted Integrations</div>
+                <div class="option">Unlimited Integrations</div>
                 <div class="option">API Access</div>
                 <div class="option">Customization(s)</div>
                 <div class="option">Single sign-on <span class="cs">Coming Soon</span></div>
@@ -1085,7 +1085,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <div class="bottomDiv">
                 <ul>
                   <li>18 Screenshots Per Hour</li>
-                  <li>SS intervals - 5, 10 & 15 Minutes</li>
+                  <li>Screenshot intervals - 5, 10 & 15 Minutes</li>
                   <li>Screenshot frequency - 2x & 3x</li>
                 </ul>
               </div>
