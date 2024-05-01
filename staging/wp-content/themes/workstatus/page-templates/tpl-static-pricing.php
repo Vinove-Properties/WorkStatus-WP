@@ -121,7 +121,8 @@ global $ws_ctas, $RegLink, $LogLink;
 
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>Two-day email support SLA</p>
+                  <p>Email / Chat / Phone / Whatsapp Support</p>
+                  <p>SLA - 6-8 Business Hours</p>
                 </div>
               </div>
             </div>
@@ -183,7 +184,8 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Clients & Invoices <span class="cs">Coming Soon</span></div> -->
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>One-day email support SLA</p>
+                  <p>Email / Chat / Phone / Whatsapp Support</p>
+                  <p>SLA - 4-6 Business Hours</p>
                 </div>
               </div>
             </div>
@@ -238,8 +240,8 @@ global $ws_ctas, $RegLink, $LogLink;
 
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>Chat support</p>
-                  <p>One-day email support SLA</p>
+                  <p>Email / Chat / Phone / Whatsapp Support</p>
+                  <p>SLA - 3-4 Business Hours</p>
                 </div>
               </div>
             </div>
@@ -278,9 +280,9 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Payments & Payroll <span class="cs">Coming Soon</span></div>                
                 <div class="support-options">
                   <h4>Support:</h4>
-                  <p>Concierge setup</p>
+                  <p>Email / Chat / Phone / Whatsapp Support</p>
+                  <p>SLA - 2 Business Hours</p>
                   <p>Assigned Account Representative</p>
-                  <p>Two-hour email support SLA</p>
                 </div>
               </div>
             </div>
@@ -934,7 +936,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <tbody>
                 <tr>
                   <td>Help center</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -942,7 +944,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Learning center</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -950,7 +952,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 </tr>
                 <tr>
                   <td>Chat support</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
