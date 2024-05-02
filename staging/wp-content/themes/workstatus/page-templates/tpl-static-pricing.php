@@ -1117,7 +1117,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="tcon">
                   <h4>Have More Projects</h4>
                   <span class="price">Starts at <span id="pl-project">$0.5</span></span>
-                  <span class="unit">/ project / mo</span>
+                  <span class="unit">/ 10 Projects / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
