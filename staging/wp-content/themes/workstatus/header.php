@@ -100,6 +100,7 @@ global $ws_ctas, $RegLink, $LogLink;
   .option.hrd:before{background: none !important;}
   .option.hrd{padding-left: 0 !important;}
   .option.hrd strong{font-size: 20px;}
+  body.geo-india .int-only{display: none !important;} 
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->

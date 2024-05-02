@@ -6,24 +6,25 @@ Author : Nitin Baluni.
 get_header();
 global $ws_ctas, $RegLink, $LogLink;
 ?>
+<div id="wsio-preloader" style="margin-top:100px;">
+  <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
+</div>
+
+<div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
 <section class="hero-banner no-af-bg">
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
       <h1>Choose the plan that's right </h1>
-      <p>Start with a 7-Day Free Trial. Enjoy a Risk-Free 30-Day Money-Back Guarantee.</p>
+      <p>Start with a 7-Day Free Trial. <span class="int-only">Enjoy a Risk-Free 30-Day Money-Back Guarantee.</span></p>
      </div>
-     <div class="right"><img src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
-</div>
+     <div class="right">
+      <img class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
+    </div>
     </div>
   </div>
-</section>
-<div id="wsio-preloader">
-  <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
-</div>
-
-<div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
-<section id="inv-price-fltr" class="plan-section post-animation">
+</section>  
+<section id="inv-price-fltr" class="plan-section post-animation int-only">
   <div class="container">
     <div class="switcher-sec">
       <div class="country-select">
@@ -52,9 +53,13 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="pc-option" data-cod="GB" data-country="GBP (United Kingdom)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/gbp.svg" alt="Workstatus" width="13" height="13">GBP (United Kingdom)
             </div>
+            
+            <!-- 
             <div class="pc-option" data-cod="IN" data-country="INR (India)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/ind.svg" alt="Workstatus" width="13" height="13">INR (India)
-            </div>
+            </div> 
+            -->
+
             <div class="pc-option" data-cod="US" data-country="USD (United States)">
               <img class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/usa.svg" alt="Workstatus" width="13" height="13">USD (United States)
             </div>
@@ -94,10 +99,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="wph" id="pl-basic">$4</span>
               <span class="prio">/ user / month</span>
             </div>
-            <div class="total">
-              <div class="wph" id="pl-basic-total">$7,140</div>
-              monthly total
-            </div>
+            <div class="total">2 Seat Minimum</div>
           </div>
           <a class="price_btn" id="ws-plan-basic" href="#">Choose Plan</a>
           <div class="price-wrapper">
@@ -148,10 +150,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="wph" id="pl-pro">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <div class="total">
-              <div class="wph" id="pl-pro-total">$7,140</div>
-              monthly total
-            </div>
+            <div class="total">2 Seat Minimum</div>
           </div>
           <a class="price_btn" id="ws-plan-pro" href="#">Choose Plan</a>
           <div class="price-wrapper">
@@ -214,10 +213,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="wph" id="pl-buss">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <div class="total">
-              <div class="wph" id="pl-buss-total">$10,820</div>
-              monthly total
-            </div>
+            <div class="total">2 Seat Minimum</div>
           </div>
           <a class="price_btn" id="ws-plan-buss" href="#">Choose Plan</a>
           <div class="price-wrapper">
@@ -269,10 +265,8 @@ global $ws_ctas, $RegLink, $LogLink;
             <span class="wph" id="pl-ent">$4</span>  
             <span class="prio">/ user / month</span>
             </div>
-            <div class="total nodata">
-              <div class="wph" id="pl-buss-total">₹3588</div>
-              monthly total
-            </div>          </div>
+            <div class="total">Billed annually</div>          
+          </div>
           <a class="price_btn" id="ws-plan-ent" href="#">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">

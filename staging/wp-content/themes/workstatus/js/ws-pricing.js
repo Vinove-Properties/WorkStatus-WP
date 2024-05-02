@@ -213,7 +213,10 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     }else if( afCountries.includes( conCode ) ){
       conCode = "ZA";
     }
-    
+
+    if( conCode === "IN" ){
+      document.body.classList.add("geo-india");
+    }
 
     if( pricingData.hasOwnProperty(conCode) ){
       locInput.value = conCode;
@@ -226,6 +229,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let pcCountry   = document.getElementById("pc-country");
         document.getElementById("pflag-icon").setAttribute('src', iSrc);
         pcCountry.innerText = elm.getAttribute('data-country');      
+        elm.classList.add("active");
       }
       });  
     }
@@ -288,21 +292,27 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 }
 
 window.addEventListener("load", function (){
-  var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", wsObj.ipinfo, true); 
-  xhttp.setRequestHeader("Content-Type", "application/json");
-  xhttp.onreadystatechange = function(){
-      if( (this.readyState == 4) && (this.status == 200) ){
-        let response = JSON.parse(this.responseText);
-          document.getElementById("wsio-pricing").style.display   = "block";
-          document.getElementById("wsio-preloader").style.display = "none";
-          console.log( response );
-          var conCode = response.country;
-          setPlanPricing( conCode, "yearly", true );
-
-      }
+  if( !document.body.classList.contains('page-id-3484') ){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", wsObj.ipinfo, true); 
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.onreadystatechange = function(){
+        if( (this.readyState == 4) && (this.status == 200) ){
+          let response = JSON.parse(this.responseText);
+            document.getElementById("wsio-pricing").style.display   = "block";
+            document.getElementById("wsio-preloader").style.display = "none";
+            console.log( response );
+            var conCode = response.country;
+            setPlanPricing( conCode, "yearly", true );
+        }
+    }
+    xhttp.send();  
+  }else{
+    document.getElementById("wsio-pricing").style.display   = "block";
+    document.getElementById("wsio-preloader").style.display = "none";
+    setPlanPricing( "US", "yearly", true );
   }
-  xhttp.send();
+  
 });
 
 if( document.body.classList.contains('page-template-tpl-static-pricing') ){
@@ -354,6 +364,12 @@ if( pricingFltrt ){
     }
 
     fltrOn('click', '.select-list .pc-option', item => {
+      
+      [...document.querySelectorAll('.pc-option')].forEach(function(elm){
+      elm.classList.remove("active");
+      });      
+      item.target.classList.add("active");
+
       let prSlider = document.getElementById('ps-switcher');
       let planType = prSlider.checked ? "monthly" : "yearly";
       setPlanPricing( item.target.getAttribute('data-cod'), planType );
