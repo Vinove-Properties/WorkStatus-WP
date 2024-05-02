@@ -243,7 +243,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Upto 150 Projects</div>
                 <div class="option">Gantt View <span class="cs">Coming Soon</span></div>
                 <div class="option">Project budget</div>
-                <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
+                <!-- <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div> -->
 
                 <div class="support-options">
                   <h4>Support:</h4>
@@ -1057,7 +1057,8 @@ global $ws_ctas, $RegLink, $LogLink;
               <li>Comments</li>
               <li>Kanban View</li>
               <li>Project Budget</li>
-              <li>Individual Project Settings (Coming Soon)</li>
+              <li>Unlimited Projects</li>
+              <!--<li>Individual Project Settings (Coming Soon)</li>-->
             </ul>
           </div>
         </div>
@@ -1149,25 +1150,21 @@ global $ws_ctas, $RegLink, $LogLink;
             </div>
           </div>
 
-          <!-- <div class="addond-col">
+          <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
                 <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-03.svg"
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Project management</h4>
-                  <span class="price">Starts at <span id="pl-task">$2</span></span>
+                  <h4>Add Ons Project</h4>
+                  <span class="price">Starts at <span id="pl-project">$0.5</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Kanban view</li>
-                  <li>Timeline view</li>
-                  <li>Task comments</li>
-                  <li>Start / Due dates</li>
-                  <li>Labels and attachments</li>
+                  <li>Add as many projects you want to add in your account </li>                  
                 </ul>
               </div>
             </div>
@@ -1175,6 +1172,7 @@ global $ws_ctas, $RegLink, $LogLink;
           
           
 
+          <!--
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">

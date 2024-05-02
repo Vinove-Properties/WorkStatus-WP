@@ -29,7 +29,7 @@ const pricingData = {
   'monthly':{"amount":649, "total":4},
   'yearly':{"amount":499, "total":4}    
   },
-  'meta':{"currency":'₹', "pm":169, "app":69, "data":99, "screenshot":49, "cloud":79}
+  'meta':{"currency":'₹', "pm":169, "app":69, "data":99, "screenshot":49, "cloud":79, "project":25}
 },
 "LA": {
   "basic":{
@@ -48,7 +48,7 @@ const pricingData = {
   'monthly':{"amount":8.59, "total":4},
   'yearly':{"amount":6.89, "total":4}    
   },
-  'meta':{"currency":'$', "pm":1.49, "app":0.69, "data":0.69, "screenshot":0.69, "cloud":0.69}
+  'meta':{"currency":'$', "pm":1.49, "app":0.69, "data":0.69, "screenshot":0.69, "cloud":0.69, "project":0.35}
 },
 "GB": {
   "basic":{
@@ -67,7 +67,7 @@ const pricingData = {
   'monthly':{"amount":9.19, "total":4},
   'yearly':{"amount":7.39, "total":4}    
   },
-  'meta':{"currency":'£', "pm":1.9, "app":0.9, "data":0.9, "screenshot":0.9, "cloud":0.9}
+  'meta':{"currency":'£', "pm":1.9, "app":0.9, "data":0.9, "screenshot":0.9, "cloud":0.9, "project":0.45}
 },
 "US": {
   "basic":{
@@ -86,7 +86,7 @@ const pricingData = {
   'monthly':{"amount":11.49, "total":4},
   'yearly':{"amount":9.19, "total":4}    
   },
-  'meta':{"currency":'$', "pm":2, "app":1, "data":1, "screenshot":1, "cloud":1}
+  'meta':{"currency":'$', "pm":2, "app":1, "data":1, "screenshot":1, "cloud":1, "project":0.50}
 },
 "AU": {
   "basic":{
@@ -105,7 +105,7 @@ const pricingData = {
   'monthly':{"amount":17.69, "total":4},
   'yearly':{"amount":14.09, "total":4}    
   },
-  'meta':{"currency":'AU$', "pm":3.09, "app":1.49, "data":1.49, "screenshot":1.49, "cloud":1.49}
+  'meta':{"currency":'AU$', "pm":3.09, "app":1.49, "data":1.49, "screenshot":1.49, "cloud":1.49, "project":0.75}
 },
 "SA": {
   "basic":{
@@ -124,7 +124,7 @@ const pricingData = {
   'monthly':{"amount":43.09, "total":4},
   'yearly':{"amount":34.49, "total":4}    
   },
-  'meta':{"currency":'SAR', "pm":7.49, "app":3.79, "data":3.79, "screenshot":3.79, "cloud":3.79}
+  'meta':{"currency":'SAR', "pm":7.49, "app":3.79, "data":3.79, "screenshot":3.79, "cloud":3.79, "project":1.90}
 },
 "AE": {
   "basic":{
@@ -143,7 +143,7 @@ const pricingData = {
   'monthly':{"amount":42.19, "total":4},
   'yearly':{"amount":33.69, "total":4}    
   },
-  'meta':{"currency":'AE', "pm":7.29, "app":3.69, "data":3.69, "screenshot":3.69, "cloud":3.69}
+  'meta':{"currency":'AE', "pm":7.29, "app":3.69, "data":3.69, "screenshot":3.69, "cloud":3.69, "project":1.85}
 },
 "CA": {
   "basic":{
@@ -162,7 +162,7 @@ const pricingData = {
   'monthly':{"amount":15.69, "total":4},
   'yearly':{"amount":12.59, "total":4}    
   },
-  'meta':{"currency":'CA$', "pm":2.69, "app":1.39, "data":1.39, "screenshot":1.39, "cloud":1.39}
+  'meta':{"currency":'CA$', "pm":2.69, "app":1.39, "data":1.39, "screenshot":1.39, "cloud":1.39, "project":0.70}
 },
 "ZA": {
   "basic":{
@@ -181,7 +181,7 @@ const pricingData = {
   'monthly':{"amount":131.09, "total":4},
   'yearly':{"amount":104.89, "total":4}    
   },
-  'meta':{"currency":'ZAR', "pm":22.89, "app":11.39, "data":11.39, "screenshot":11.39, "cloud":11.39}
+  'meta':{"currency":'ZAR', "pm":22.89, "app":11.39, "data":11.39, "screenshot":11.39, "cloud":11.39, "project":5.70}
 },
 "EUR": {
   "basic":{
@@ -200,7 +200,7 @@ const pricingData = {
   'monthly':{"amount":10.69, "total":4},
   'yearly':{"amount":8.59, "total":4}    
   },
-  'meta':{"currency":'€', "pm":1.89, "app":0.99, "data":0.99, "screenshot":0.99, "cloud":0.99}
+  'meta':{"currency":'€', "pm":1.89, "app":0.99, "data":0.99, "screenshot":0.99, "cloud":0.99, "project":0.45}
 }
 };
 
@@ -218,9 +218,13 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
       document.body.classList.add("geo-india");
     }
 
-    if( pricingData.hasOwnProperty(conCode) ){
-      locInput.value = conCode;
+
+    if( !pricingData.hasOwnProperty(conCode) ){
+      conCode = "US";      
     }
+
+    locInput.value = conCode;
+
     if(  isAjax === true){
       [...document.querySelectorAll('.pc-option')].forEach(function(elm) {
       
@@ -242,7 +246,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     let elmScreen   = document.getElementById("pl-screenshot");
     let elmTask     = document.getElementById("pl-pm");
     let elmData     = document.getElementById("pl-data");
-    //let elmLocation = document.getElementById("pl-location");
+    let elmProject  = document.getElementById("pl-project");
     let elmCorapp   = document.getElementById("pl-corapp");
     let elmCloud    = document.getElementById("pl-cloud");
     
@@ -250,7 +254,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     elmScreen.innerHTML   = currency + plans['meta']['screenshot'];
     elmTask.innerHTML     = currency + plans['meta']['pm'];
     elmData.innerHTML     = currency + plans['meta']['data'];
-    //elmLocation.innerHTML = currency + plans['meta']['location'];
+    elmProject.innerHTML = currency + plans['meta']['project'];
     elmCorapp.innerHTML   = currency + plans['meta']['app'];
     elmCloud.innerHTML    = currency + plans['meta']['cloud'];
     
