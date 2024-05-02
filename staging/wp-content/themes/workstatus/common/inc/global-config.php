@@ -451,15 +451,14 @@ add_action( 'rest_api_init', function (){
     register_rest_route( 'ws-api/v1', '/ipinfo', array(
         'methods' => 'GET',
         'callback' => function(){
-        /*
-        if( isset( $_GET['sip'] ) && !empty( $_GET['sip'] ) ){
-            $ipaddr = $_GET['sip'];
+        $globIP = (isset($_GET['ip']) && !empty($_GET['ip'])) ? $_GET['ip'] : false;
+
+        if( $globIP !== false ){
+        $ipaddr = $globIP;
         }else{
-            $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : '101.0.32.0';    
-        }
-        */
         $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : 
-        '103.1.48.0';
+        '1.44.255.255';    
+        }
         $ipinfo = getWSipinfo( $ipaddr );
         wp_send_json( $ipinfo );
         }
