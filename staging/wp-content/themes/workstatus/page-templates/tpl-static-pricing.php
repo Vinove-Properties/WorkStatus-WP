@@ -240,7 +240,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option">Daily & Weekly Limit <span class="cs">Coming Soon</span></div>
                 <div class="option">Invoicing <span class="cs">Coming Soon</span></div>
                 <div class="option hrd"><strong>Project Management</strong></div>
-                <div class="option">Limit 150 Projects</div>
+                <div class="option">Upto 150 Projects</div>
                 <div class="option">Gantt View <span class="cs">Coming Soon</span></div>
                 <div class="option">Project budget</div>
                 <div class="option">Individual Project Settings <span class="cs">Coming Soon</span></div>
