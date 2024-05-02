@@ -271,7 +271,8 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Business  +</h4>
-              <div class="option-list">
+              <div class="option-list">                
+                <div class="option">Unlimited Projects</div>
                 <div class="option">Unlimited Integrations</div>
                 <div class="option">API Access</div>
                 <div class="option">Customization(s)</div>
