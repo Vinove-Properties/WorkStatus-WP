@@ -15,7 +15,7 @@ global $ws_ctas, $RegLink, $LogLink;
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
-      <h1>Transform Your Team's Productivity</h1>
+      <h1>Empower Your Workforce, Boost Your Productivity</h1>
       <p>From startups to enterprises, our plans scale with your needs. Join thousands of successful teams who enhance their productivity with us.</p>
      </div>
      <div class="right">
