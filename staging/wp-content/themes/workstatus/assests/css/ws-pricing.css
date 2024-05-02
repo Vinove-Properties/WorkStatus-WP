@@ -8178,10 +8178,10 @@ h3 a {
     display: flex;
     flex-wrap: wrap; }
     .option-data .addons-row .addond-col {
-      flex-basis: 25%;
+      flex-basis: 33.33%;
       padding: 0 12px;
       margin: 0 0 24px;
-      min-height: 366px; }
+      min-height: initial; }
       .option-data .addons-row .addond-col .add-box {
         border: 1px solid #e4e6ea;
         border-radius: 15px;
@@ -8189,7 +8189,7 @@ h3 a {
         flex-direction: column;
         height: 100%; }
         .option-data .addons-row .addond-col .add-box .topDiv {
-          padding: 15px;
+          padding: 20px;
           text-align: center;
           background: #fff;
           border-radius: 20px;

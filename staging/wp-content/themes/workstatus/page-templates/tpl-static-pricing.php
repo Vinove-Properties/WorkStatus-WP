@@ -1060,8 +1060,8 @@ global $ws_ctas, $RegLink, $LogLink;
               <li>Gantt View </li>
               <li>Message Board</li>
               <li>Comments</li>
-              <li>Kanban view</li>
-              <li>Project budget</li>
+              <li>Kanban View</li>
+              <li>Project Budget</li>
               <li>Individual Project Settings (Coming Soon)</li>
             </ul>
           </div>
@@ -1075,7 +1075,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Corporate app</h4>
+                  <h4>Corporate App</h4>
                   <span class="price">Starts at <span id="pl-corapp">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
@@ -1096,19 +1096,19 @@ global $ws_ctas, $RegLink, $LogLink;
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Data retention</h4>
+                  <h4>Data Retention</h4>
                   <span class="price">Starts at <span id="pl-data">$2</span> </span>
                   <span class="unit">/ user / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                   <ul>
-                    <li>Data retention extended to 3 years for:</li>
-                    <li>Time & activity data</li>
+                    <li>Data Retention Extended to 3 Years For:</li>
+                    <li>Time & Activity Data</li>
                     <li>Screenshots</li>
                     <li>Reports</li>
                 </ul>
-                <a href="<?php echo site_url('/data-retention#ans_3'); ?>">view more </a>
+                <a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>
               </div>
             </div>
           </div>
@@ -1120,7 +1120,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>More screenshots</h4>
+                  <h4>More Screenshots</h4>
                   <span class="price">Starts at <span id="pl-screenshot">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
@@ -1128,8 +1128,8 @@ global $ws_ctas, $RegLink, $LogLink;
               <div class="bottomDiv">
                 <ul>
                   <li>18 Screenshots Per Hour</li>
-                  <li>Screenshot intervals - 5, 10 & 15 Minutes</li>
-                  <li>Screenshot frequency - 2x & 3x</li>
+                  <li>Screenshot Intervals - 5, 10 & 15 Minutes</li>
+                  <li>Screenshot Frequency - 2x & 3x</li>
                 </ul>
               </div>
             </div>
