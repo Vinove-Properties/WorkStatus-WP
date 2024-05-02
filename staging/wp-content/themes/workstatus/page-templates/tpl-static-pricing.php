@@ -15,7 +15,7 @@ global $ws_ctas, $RegLink, $LogLink;
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
-      <h1>Enhance Workforce Efficiency and Productivity</h1>
+      <h1>Enhance Workforce Efficiency & Productivity</h1>
       <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Begin with a 7-day free trial and witness the transformation firsthand!</p>
      </div>
      <div class="right">
