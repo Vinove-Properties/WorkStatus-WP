@@ -8189,7 +8189,7 @@ h3 a {
         flex-direction: column;
         height: 100%; }
         .option-data .addons-row .addond-col .add-box .topDiv {
-          padding: 20px;
+          padding: 15px;
           text-align: center;
           background: #fff;
           border-radius: 20px;
@@ -8197,9 +8197,9 @@ h3 a {
           align-items: center;
           justify-content: space-between; }
           .option-data .addons-row .addond-col .add-box .topDiv .icon {
-            width: 45px; }
+            width: 40px; }
           .option-data .addons-row .addond-col .add-box .topDiv .tcon {
-            width: calc(100% - 62px);
+            width: calc(100% - 50px);
             text-align: left; }
             .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
               margin: 0; }
@@ -8277,7 +8277,10 @@ h3 a {
     .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
       font-size: 30px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
-    min-width: 100%; } }
+    min-width: 100%; }
+
+  .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
+    font-size: 18px; } }
 @media (max-width: 1280px) {
   .ws-pricing .price-flex .price-column {
     padding: 0 5px; }
