@@ -1108,28 +1108,27 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
             </div>
           </div>
-
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-02.svg"
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-03.svg"
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>More Screenshots</h4>
-                  <span class="price">Starts at <span id="pl-screenshot">$2</span></span>
-                  <span class="unit">/ user / mo</span>
+                  <h4>Have More Projects</h4>
+                  <span class="price">Starts at <span id="pl-project">$0.5</span></span>
+                  <span class="unit">/ project / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>18 Screenshots Per Hour</li>
-                  <li>Screenshot Intervals - 5, 10 & 15 Minutes</li>
-                  <li>Screenshot Frequency - 2x & 3x</li>
+                  <li>Add as many projects you want to add in your account </li>                  
                 </ul>
               </div>
             </div>
           </div>
+
+          
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
@@ -1153,22 +1152,25 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="addond-col">
             <div class="add-box">
               <div class="topDiv">
-                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-03.svg"
+                <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/addon-02.svg"
                   alt="ws" width="45" height="45">
                 </div>
                 <div class="tcon">
-                  <h4>Add Ons Project</h4>
-                  <span class="price">Starts at <span id="pl-project">$0.5</span></span>
+                  <h4>More Screenshots</h4>
+                  <span class="price">Starts at <span id="pl-screenshot">$2</span></span>
                   <span class="unit">/ user / mo</span>
                 </div>
               </div>
               <div class="bottomDiv">
                 <ul>
-                  <li>Add as many projects you want to add in your account </li>                  
+                  <li>18 Screenshots Per Hour</li>
+                  <li>Screenshot Intervals - 5, 10 & 15 Minutes</li>
+                  <li>Screenshot Frequency - 2x & 3x</li>
                 </ul>
               </div>
             </div>
           </div>
+          
           
           
 

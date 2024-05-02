@@ -22,8 +22,8 @@ const pricingData = {
   'yearly':{"amount":169, "total":3588}    
   },
   "buss":{
-  'monthly':{"amount":349, "total":7188},
-  'yearly':{"amount":199, "total":5988}    
+  'monthly':{"amount":359, "total":7188},
+  'yearly':{"amount":249, "total":5988}    
   },
   "ent":{
   'monthly':{"amount":649, "total":4},
