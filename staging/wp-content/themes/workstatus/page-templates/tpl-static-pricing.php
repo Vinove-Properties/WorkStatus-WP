@@ -24,12 +24,12 @@ global $ws_ctas, $RegLink, $LogLink;
     </div>
   </div>
 </section>  
-<section id="inv-price-fltr" class="plan-section post-animation int-only">
+<section id="inv-price-fltr" class="plan-section post-animation">
   <div class="container">
     <div class="switcher-sec">
       <div class="country-select">
-        <span class="chose">Choose currency:</span>
-        <div class="select-list">
+        <span class="chose int-only">Choose currency:</span>
+        <div class="select-list int-only">
           
           <div id="elm-selectBtn" class="pcselectBtn">
             <img class="flgicon" id="pflag-icon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/eur.svg" alt="Workstatus" width="13" height="13"><span id="pc-country">EUR (Europe)<br></span>
@@ -83,7 +83,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <input id="ps-switcher" type="checkbox">
           <span class="slider"></span>
         </label>
-        <span class="annualy">Annual (2 Months Free)</span>
+        <span class="annualy">Annual <span class="int-only">(20% Discount)</span><span class="int-local">(30% Discount)</span></span>
       </div>
     </div>
   </div>
@@ -267,7 +267,7 @@ global $ws_ctas, $RegLink, $LogLink;
             </div>
             <div class="total">Billed annually</div>          
           </div>
-          <a class="price_btn" id="ws-plan-ent" href="#">Let’s Talk</a>
+          <a class="price_btn" href="https://calendly.com/workstatus/sales">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Business  +</h4>

@@ -459,7 +459,7 @@ add_action( 'rest_api_init', function (){
         }
         */
         $ipaddr = (isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] != "localhost")) ? getUserIP() : 
-        '101.112.0.0';
+        '103.1.48.0';
         $ipinfo = getWSipinfo( $ipaddr );
         wp_send_json( $ipinfo );
         }

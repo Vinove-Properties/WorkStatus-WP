@@ -101,6 +101,8 @@ global $ws_ctas, $RegLink, $LogLink;
   .option.hrd{padding-left: 0 !important;}
   .option.hrd strong{font-size: 20px;}
   body.geo-india .int-only{display: none !important;} 
+  .int-local{display: none;}
+  body.geo-india .int-local{display: inline-block;}
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
