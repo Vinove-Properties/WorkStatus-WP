@@ -34,7 +34,8 @@
 .country-select .select-list .pcselectBtn.toggle:after{-webkit-transform:translateY(-50%) rotate(-135deg);transform:translateY(-50%) rotate(-135deg)}
 .country-select .select-list .selectDropdown{position:absolute;margin-top:5px;top:100%;width:100%;border-radius:5px;font-size:14px;font-weight:500;color:#00234b;overflow:hidden;background:var(--bg1);border-top:1px solid #eee;z-index:1;background:#fff;-webkit-transform:scale(1,0);transform:scale(1,0);-webkit-transform-origin:top center;transform-origin:top center;visibility:hidden;transition:.2s ease;box-shadow:0 3px 3px rgba(0,0,0,0.2)}
 .country-select .select-list .selectDropdown .pc-option{padding:10px;box-sizing:border-box;cursor:pointer}
-.country-select .select-list .selectDropdown .pc-option:hover{background:rgba(242, 240, 255, 0.7);color:#6754E2
+.country-select .select-list .selectDropdown .pc-option:hover,
+.country-select .select-list .selectDropdown .pc-option.active{background:rgba(242, 240, 255, 0.7);color:#6754E2
 }
 .country-select .select-list .selectDropdown.toggle{visibility:visible;-webkit-transform:scale(1,1);transform:scale(1,1)}
 .country-select .flgicon{margin-right:5px;vertical-align:middle;margin-top:-3px; position: relative; z-index: -1}
