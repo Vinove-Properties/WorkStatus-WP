@@ -9,8 +9,12 @@ global $ws_ctas, $RegLink, $LogLink;
 <section class="hero-banner no-af-bg">
   <div class="container">
     <div class="inner-wrap">
-      <h1>Flexible Pricing for Modern Workforce Management</h1>
+      <div class="left">
+      <h1>Choose the plan that's right </h1>
       <p>Start with a 7-Day Free Trial. Enjoy a Risk-Free 30-Day Money-Back Guarantee.</p>
+     </div>
+     <div class="right"><img src="<?php bloginfo('template_url'); ?>/dev-images/pricing-img.svg" alt="Workstatus" width="156" height="156">
+</div>
     </div>
   </div>
 </section>
@@ -152,7 +156,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <a class="price_btn" id="ws-plan-pro" href="#">Choose Plan</a>
           <div class="price-wrapper">
             <div class="price-options">
-              <h4>Everything in Basic +</h4>
+              <h4>Everything <span class="perp">in</span> Basic +</h4>
               <div class="option-list">
                 <div class="option">Screenshot interval ( 10 & 15 Minutes )</div> 
                 <div class="option">Timesheet approvals</div>
@@ -218,7 +222,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <a class="price_btn" id="ws-plan-buss" href="#">Choose Plan</a>
           <div class="price-wrapper">
             <div class="price-options">
-              <h4>Everything in Professional +</h4>
+              <h4>Everything <span class="perp">in</span> Professional +</h4>
               <div class="option-list">
 
                 <div class="option">Achievement Module</div>

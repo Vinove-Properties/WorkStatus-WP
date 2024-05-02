@@ -7781,10 +7781,11 @@ h3 a {
   display: none; }
 
 .hero-banner.no-af-bg {
-  padding: 130px 0 50px; }
+  padding: 100px 0 50px; }
 
 .ws-pricing {
-  margin: 40px 0 0; }
+  margin: 40px 0 0;
+  text-transform: capitalize; }
   .ws-pricing .price-flex {
     display: flex; }
     .ws-pricing .price-flex .price-column {
@@ -7812,7 +7813,7 @@ h3 a {
             margin: 0 0 15px;
             line-height: 1.2; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-            font-size: 36px;
+            font-size: 32px;
             color: #2f3a5e;
             font-weight: 600;
             margin: 0 0 20px; }
@@ -7944,7 +7945,11 @@ h3 a {
             right: -5px;
             top: -7px; }
 
+.perp {
+  text-transform: lowercase !important; }
+
 .free-price {
+  text-transform: capitalize;
   padding-top: 0; }
   .free-price .fdflex {
     display: flex;

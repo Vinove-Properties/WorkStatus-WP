@@ -37,6 +37,10 @@ global $ws_ctas, $RegLink, $LogLink;
     .wsf-signup .popup-wrapper.is-active{display:block !important;}
     .latest-offer img{width:100%; height: 80px;}
     .latest-offer .mobile{display:none;}
+
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap{display:flex; justify-content:space-between; align-items:center;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .left{flex-basis:70%; text-align: left;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .right{flex-basis:25%;}
    
     @media (max-width: 979px) {
     .reviews{padding:50px 0 0;}
@@ -51,6 +55,13 @@ global $ws_ctas, $RegLink, $LogLink;
     .hero-banner {padding:100px 0 50px;}
     body.single .blog-thumb,
     .desk-only{ display:none; }
+
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap{flex-wrap:wrap;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .left{flex-basis:100%; text-align: center;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .right{flex-basis:100%; text-align:center;}
+
+
+
     }
     .tool-tip-wrap{position: relative;}
     .wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl{pointer-events: inherit;}
