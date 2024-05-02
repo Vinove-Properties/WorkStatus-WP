@@ -13,7 +13,7 @@ global $ws_ctas, $RegLink, $LogLink;
       <h1>Choose the plan that's right </h1>
       <p>Start with a 7-Day Free Trial. Enjoy a Risk-Free 30-Day Money-Back Guarantee.</p>
      </div>
-     <div class="right"><img src="<?php bloginfo('template_url'); ?>/dev-images/pricing-img.svg" alt="Workstatus" width="156" height="156">
+     <div class="right"><img src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
 </div>
     </div>
   </div>
