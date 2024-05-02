@@ -15,8 +15,8 @@ global $ws_ctas, $RegLink, $LogLink;
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
-      <h1>Choose the plan that's right </h1>
-      <p>Start with a 7-Day Free Trial. <span class="int-only">Enjoy a Risk-Free 30-Day Money-Back Guarantee.</span></p>
+      <h1>Transform Your Team's Productivity</h1>
+      <p>From startups to enterprises, our plans scale with your needs. Join thousands of successful teams who enhance their productivity with us.</p>
      </div>
      <div class="right">
       <img class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
