@@ -15,8 +15,8 @@ global $ws_ctas, $RegLink, $LogLink;
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
-      <h1>Empower Your Workforce, Boost Your Productivity</h1>
-      <p>From startups to enterprises, our plans scale with your needs. Join thousands of successful teams who enhance their productivity with us.</p>
+      <h1>Enhance Workforce Efficiency and Productivity</h1>
+      <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Begin with a 7-day free trial and witness the transformation firsthand!</p>
      </div>
      <div class="right">
       <img class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
