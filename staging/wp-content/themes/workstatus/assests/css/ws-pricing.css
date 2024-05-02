@@ -7763,7 +7763,9 @@ h3 a {
 .hero-banner {
   background: #fff; }
   .hero-banner .inner-wrap h1 {
-    color: #110302; }
+    color: #110302;
+    font-size: 40px;
+    line-height: 54px; }
   .hero-banner .inner-wrap p {
     color: #5E6373; }
   .hero-banner .inner-wrap .actionBtn {
@@ -8376,6 +8378,10 @@ h3 a {
     .all-partners .part-row .part-col {
       padding: 15px 20px; } }
 @media (max-width: 1024px) {
+  .hero-banner .inner-wrap h1 {
+    font-size: 30px;
+    line-height: 40px; }
+
   .ws-pricing .price-flex {
     flex-wrap: wrap; }
     .ws-pricing .price-flex .price-column {

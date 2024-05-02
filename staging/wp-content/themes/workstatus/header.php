@@ -39,8 +39,8 @@ global $ws_ctas, $RegLink, $LogLink;
     .latest-offer .mobile{display:none;}
 
     .page-template-tpl-static-pricing .hero-banner .inner-wrap{display:flex; justify-content:space-between; align-items:center;}
-    .page-template-tpl-static-pricing .hero-banner .inner-wrap .left{flex-basis:70%; text-align: left;}
-    .page-template-tpl-static-pricing .hero-banner .inner-wrap .right{flex-basis:25%;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .left{flex-basis:80%; text-align: left;}
+    .page-template-tpl-static-pricing .hero-banner .inner-wrap .right{flex-basis:20%;}
    
     @media (max-width: 979px) {
     .reviews{padding:50px 0 0;}
