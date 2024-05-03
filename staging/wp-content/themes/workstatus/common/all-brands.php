@@ -83,10 +83,7 @@
           </a>
         </div>
         <i class="star"></i>
-      </div>
-      
-      
-      
+      </div>      
       <div class="part-col">
         <div class="img-wrap">
           <a href="https://www.cloudfindr.co/software/workstatus-review/" rel="nofollow">
@@ -151,8 +148,7 @@
           </a>
         </div>
         <i class="star"></i>
-      </div>
-      
+      </div>      
       <div class="part-col">
         <div class="img-wrap">
           <a href="https://www.saasworthy.com/product/workstatus-io" rel="nofollow">
@@ -166,6 +162,35 @@
         </div>
         <i class="star"></i>
       </div>
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.gartner.com/reviews/market/employee-productivity-monitoring-software/vendor/workstatus" 
+          rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/gartner.webp">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/gartner.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/gartner.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.capterra.com/p/231900/WorkStatus/" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.webp">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/capterra.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      
     </div>
   </div>
 </section>
