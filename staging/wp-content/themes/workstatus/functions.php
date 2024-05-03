@@ -266,10 +266,13 @@ function workstatus_scripts() {
 	wp_localize_script('ws-script', 'wsObj', [
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
 	: site_url('/wp-json/ws-api/v1/ipinfo')
-	]);
-	
-	wp_enqueue_script( 'workstatus-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'ws-signup','https://bluzky.github.io/nice-select2/dist/js/nice-select2.js', array(), _S_VERSION, true );
+	]);	
+	/*
+	wp_enqueue_script('workstatus-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), 
+	_S_VERSION, true);
+	*/
+	wp_enqueue_script( 'ws-signup','https://bluzky.github.io/nice-select2/dist/js/nice-select2.js', array(), 
+	_S_VERSION, true );
 	wp_enqueue_style( 'ws-glider', 'https://bluzky.github.io/nice-select2/dist/css/nice-select2.css');
 }
 add_action( 'wp_enqueue_scripts', 'workstatus_scripts' );

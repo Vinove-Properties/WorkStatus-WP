@@ -8,133 +8,161 @@
     <div class="part-row">
       <div class="part-col">
         <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png"
-              alt="Testimonials" width="133" height="31">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
+          <a href="https://www.goodfirms.co/software/workstatus" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png"
               alt="Testimonials" width="" height="">
           </picture>
+          </a>
         </div>
         <i class="star"></i>
       </div>
       <div class="part-col">
         <div class="img-wrap">
+          <a href="https://www.g2.com/products/valuecoders-workstatus/reviews" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png"
               alt="Testimonials" width="" height="">
           </picture>
+          </a>
         </div>
         <i class="star"></i>
       </div>
       <div class="part-col">
         <div class="img-wrap">
+          <a href="https://www.producthunt.com/products/workstatus" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png"
               alt="Testimonials" width="" height="">
           </picture>
+          </a>
         </div>
         <i class="star"></i>
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png"
-              alt="Testimonials" width="" height="">
-          </picture>
-        </div>
-        <i class="star"></i>
-      </div>
-      <div class="part-col">
-        <div class="img-wrap">
+          <a href="https://www.trustpilot.com/review/www.workstatus.io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png"
               alt="Testimonials" width="" height="">
           </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      <div class="part-col">
+        <a href="https://www.sitejabber.com/reviews/workstatus.io" rel="nofollow">
+        <div class="img-wrap">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png"
+              alt="Testimonials" width="133" height="31">
+          </picture>
+        </a>
         </div>
         <i class="star"></i>
       </div>
       <div class="part-col">
         <div class="img-wrap">
+          <a href="https://sourceforge.net/software/product/Workstatus/" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      
+      
+      
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.cloudfindr.co/software/workstatus-review/" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+        </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.techjockey.com/detail/workstatus" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.wesuggestsoftware.com/project-management/workstatus/" rel="nofollow">
+          <picture>            
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.saashub.com/workstatus-io-reviews" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://alternativeto.net/software/workstatus/" rel="nofollow">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png"
+              alt="Testimonials" width="" height="">
+          </picture>
+          </a>
+        </div>
+        <i class="star"></i>
+      </div>
+      
+      <div class="part-col">
+        <div class="img-wrap">
+          <a href="https://www.saasworthy.com/product/workstatus-io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png"
               alt="Testimonials" width="" height="">
           </picture>
+          </a>
         </div>
         <i class="star"></i>
       </div>

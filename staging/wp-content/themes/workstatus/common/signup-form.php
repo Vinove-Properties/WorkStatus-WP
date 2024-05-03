@@ -1,5 +1,5 @@
 <?php 
-$ws_userip  = get_ws_ipdata( getUserIP() );
+$ws_userip   = get_ws_ipdata( getUserIP() );
 $defLocation = (isset($ws_userip->country) && !empty($ws_userip->country)) ? $ws_userip->country : 'IN';
 //$defLocation = "IN";
 $popClass   = ( $defLocation === "IN" ) ? " locate-in " : " locate-other ";
@@ -16,7 +16,8 @@ $conArray   = $conData->response->data;
             </span>
             <div class="left-section">
                <picture>
-                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/logo-white.svg" alt="Logo" width="179" height="24">
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/logo-white.svg" 
+                  alt="Logo" width="179" height="24">
                </picture>
                <div class="content">
                   <h2>Experience the <span class="lt-blue">Power of Productivity </span></h2>

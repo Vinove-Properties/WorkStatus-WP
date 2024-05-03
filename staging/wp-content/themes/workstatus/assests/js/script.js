@@ -1133,8 +1133,7 @@ let inputValidator = { "uname":false, "uemail": false, "password":false, "cnf_pa
 if( wrap_suform.classList.contains('locate-in') ){
 inputValidator = { "uname":false, "uemail": false, "phone":false, "password":false, "cnf_password":false}    
 }
-console.log( inputValidator );
-
+//console.log( inputValidator );
 let buttonSend = document.getElementById('su-submitButton');
 sup_inputs.forEach((input) => {
     input.addEventListener('focusout', () => {
