@@ -2482,14 +2482,26 @@ add_action('init', function(){
 
 
 function getLmOffierStrip(){
+	global $post;
+	$hasOfferElm = get_post_meta( $post->ID, 'offer-strip', true );
+	if( $hasOfferElm === "yes" ){
+	$text 		= get_field('st-text', $post->ID);	
+	$textone 	= (isset($text['lt-text'])) ? $text['lt-text'] : 'Limited Time Offer';
+	$texttwo 	= (isset($text['cc-text'])) ? $text['cc-text'] : 'Get 30% Off! Use Code';
+	$coupon 	= (isset($text['code'])) ? $text['code'] : 'WELCOME30';
+	$lText 		= (isset($text['ch-text'])) ? $text['ch-text'] : 'at CHECKOUT or TAKE A DEMO';
 	return '<div class="top-stripe">
       <div class="container">
-         Limited Time Offer 
+        '.$textone.'  
         <div class="timer"><img src="'.get_bloginfo('template_url').'/assets/images/clock.svg" alt="clock" 
         width="20" height="20"> 
         <span class="tm">00</span>:<span class="tm" id="of-min">45</span>:<span class="tm" id="of-sec">00</span>
         </div>
-        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
+        '.$texttwo.' <span class="bgbl">'.$coupon.'</span> <span class="no-f">'.$lText.'</span>
       </div>
-    </div>';
+    </div>';	
+	}else{
+		return false;
+	}
+	
 }
