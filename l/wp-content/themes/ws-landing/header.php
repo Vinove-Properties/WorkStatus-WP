@@ -25,14 +25,15 @@
       /*Top Stripe CSS start from here*/
     
       .top-stripe{background:#000; padding: 6px 0; text-align:center; font-size:16px; text-transform:uppercase; color:#fff;
-      font-weight: 700; display: flex; align-items: center; justify-content: center; line-height: 20px; padding: 10px 0;}
+      font-weight: 700; display: flex; align-items: center; justify-content: center; line-height: 20px; padding: 10px 0; display:none;}
       .top-stripe .timer{display:inline-block; border:0.5px solid #FFFFFF; border-radius:4px; padding: 10px 5px 10px 10px; margin: 0 14px; position: relative;}
       .top-stripe .timer img{vertical-align:middle;}
       .top-stripe .timer .tm{background:#624DE3; padding: 3px 6px; margin: 0 5px; border-radius:1px;}
       .top-stripe .bgbl   {background:#624DE3; padding: 3px 6px; margin: 0 5px; margin: 0 14px; border-radius:1px;}
-      .main-header .top-nav{padding:18px 0 0;}
-      .main-header{padding:0 0 18px;}
+      .clock-stripe .main-header .top-nav{padding:18px 0 0;}
+      .clock-stripe .main-header{padding:0 0 18px;}
       .top-stripe .small{text-transform:lowercase;}
+      .clock-stripe .top-stripe{display:flex;}
 
       @media (max-width: 979px) {
       .top-stripe{font-size: 13px; padding: 10px 0;}
