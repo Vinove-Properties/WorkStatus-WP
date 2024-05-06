@@ -282,7 +282,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="option hrd"><strong>Locations</strong><span class="cs">Coming Soon</span></div>
                 <div class="option">Live Location Tracking</div> 
                 <div class="option">Route & Distance Tracking</div>
-                
+                <strong>All add-ons included</strong>
                                 
                 <div class="support-options">
                   <h4>Support:</h4>
