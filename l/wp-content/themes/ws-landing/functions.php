@@ -606,7 +606,7 @@ add_filter( 'body_class', function( $classes ){
 		$classes[] 	= 'employee-monitoring-page';		
 	}
 	
-	$hasOfferElm = get_post_meta( $post->ID, 'opt-pfld', true );
+	$hasOfferElm = get_post_meta( $post->ID, 'offer-strip', true );
 	if( $hasOfferElm == "yes" ){
 		$classes[] 	= 'clock-stripe';
 	}
