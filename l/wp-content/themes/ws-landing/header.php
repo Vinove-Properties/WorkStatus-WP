@@ -65,7 +65,7 @@
     </script>
     <?php endif; ?>
   </head>
-  <body <?php body_class('mobile'); ?> class="clock-stripe" >
+  <body <?php body_class('mobile'); ?>>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPPMGZH" height="0" width="0" 
       style="display:none;visibility:hidden"></iframe></noscript>
     <?php wp_body_open(); ?>
@@ -82,15 +82,7 @@
       ?>
    
     <header class="main-header" id="mainHeader">
-    <div class="top-stripe">
-      <div class="container">
-         Limited Time Offer 
-        <div class="timer"><img src="<?php bloginfo('template_url'); ?>/assets/images/clock.svg" alt="clock" width="20" height="20"> 
-          <span class="tm">12</span>:<span class="tm">12</span>:<span class="tm">00</span>
-        </div>
-        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
-      </div>
-    </div>
+      <?php echo getLmOffierStrip(); ?>
       <div class="container">
         <div id="topnav" class="top_nav">
           <a href="javascript:void(0);" class="logo-a">
@@ -118,15 +110,7 @@
       }elseif( is_page_template(['page-templates/tpl-version5.0.php']) ){
       ?>
     <header class="main-header" id="mainHeader">
-    <div class="top-stripe">
-      <div class="container">
-         Limited Time Offer 
-        <div class="timer"><img src="<?php bloginfo('template_url'); ?>/assets/images/clock.svg" alt="clock" width="20" height="20"> 
-          <span class="tm">12</span>:<span class="tm">12</span>:<span class="tm">00</span>
-        </div>
-        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
-      </div>
-    </div>
+    <?php echo getLmOffierStrip(); ?>
       <div class="container">
         <div class="top-nav">
           <div class="header-item-left">
@@ -185,15 +169,7 @@
       }elseif( is_page_template(['page-templates/tpl-version6.0.php']) ){ 
       ?>
     <header class="main-header" id="mainHeader">
-    <div class="top-stripe">
-      <div class="container">
-         Limited Time Offer 
-        <div class="timer"><img src="<?php bloginfo('template_url'); ?>/assets/images/clock.svg" alt="clock" width="20" height="20"> 
-          <span class="tm">12</span>:<span class="tm">12</span>:<span class="tm">00</span>
-        </div>
-        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
-      </div>
-    </div>
+    <?php echo getLmOffierStrip(); ?>
       <div class="container">
         <div class="top-nav">
           <div class="header-item-left">
@@ -237,15 +213,7 @@
     </header>
     <?php }elseif( is_page_template(['page-templates/tpl-version5.1.php']) ){ ?>
     <header class="main-header" id="mainHeader">
-    <div class="top-stripe">
-      <div class="container">
-         Limited Time Offer 
-        <div class="timer"><img src="<?php bloginfo('template_url'); ?>/assets/images/clock.svg" alt="clock" width="20" height="20"> 
-          <span class="tm">12</span>:<span class="tm">12</span>:<span class="tm">00</span>
-        </div>
-        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
-      </div>
-    </div>
+    <?php echo getLmOffierStrip(); ?>
       <div class="container">
         <div class="top-nav">
           <div class="header-item-left">

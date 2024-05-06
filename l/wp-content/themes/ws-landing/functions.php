@@ -605,6 +605,12 @@ add_filter( 'body_class', function( $classes ){
 	if( is_page_template(['page-templates/tpl-version6.0.php']) && (sixTwoTpl() === true) ){
 		$classes[] 	= 'employee-monitoring-page';		
 	}
+	
+	$hasOfferElm = get_post_meta( $post->ID, 'opt-pfld', true );
+	if( $hasOfferElm == "yes" ){
+		$classes[] 	= 'clock-stripe';
+	}
+
 	return $classes;
 });
 
@@ -2473,3 +2479,17 @@ add_action('init', function(){
 		die;
 	}
 });
+
+
+function getLmOffierStrip(){
+	return '<div class="top-stripe">
+      <div class="container">
+         Limited Time Offer 
+        <div class="timer"><img src="'.get_bloginfo('template_url').'/assets/images/clock.svg" alt="clock" 
+        width="20" height="20"> 
+        <span class="tm">00</span>:<span class="tm" id="of-min">45</span>:<span class="tm" id="of-sec">00</span>
+        </div>
+        Get 30% Off! Use Code <span class="bgbl">WELCOME30</span> <span class="small">at</span> Checkout  <span class="small">or</span> Take a Demo
+      </div>
+    </div>';
+}

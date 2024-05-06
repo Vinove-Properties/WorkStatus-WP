@@ -32,11 +32,13 @@ function startCountdown(duration, min, sec) {
 }
 
 window.onload = function () {
-    var cnMin = document.getElementById("of-min");
-    var cnSec = document.getElementById("of-sec");
-    var duration = 45 * 60; // 45 minutes in seconds
-
-    startCountdown(duration, cnMin, cnSec);
+	if( document.body.classList.contains('clock-stripe') ){
+		var cnMin = document.getElementById("of-min");
+	    var cnSec = document.getElementById("of-sec");
+	    var duration = 45 * 60; // 45 minutes in seconds
+	    startCountdown(duration, cnMin, cnSec);
+	}
+    
 };	
 </script>
 </body>
