@@ -34,7 +34,7 @@
       .clock-stripe .main-header{padding:0 0 18px;}
       .top-stripe .small{text-transform:lowercase;}
       .clock-stripe .top-stripe{display:flex;}
-
+      span.no-f{text-transform: initial !important;}
       @media (max-width: 979px) {
       .top-stripe{font-size: 13px; padding: 10px 0;}
       .top-stripe .timer{padding: 8px 5px 8px 10px; margin: 0 5px;}
