@@ -347,6 +347,180 @@ ul {
 .text_center {
   text-align: center; }
 
+.works-journey {
+  background: #624de3;
+  position: relative; }
+  .works-journey .ws-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .works-journey .ws-flex .jour-col {
+      flex-basis: 45%; }
+      .works-journey .ws-flex .jour-col .top-section {
+        margin: 0 !important;
+        padding: 0 !important; }
+      .works-journey .ws-flex .jour-col h2 {
+        font-size: 30px;
+        color: #fff; }
+      .works-journey .ws-flex .jour-col p {
+        color: #fff; }
+      .works-journey .ws-flex .jour-col .actionBtn {
+        margin: 40px 0 0;
+        justify-content: center; }
+        @media screen and (max-width: 575px) {
+          .works-journey .ws-flex .jour-col .actionBtn {
+            flex-wrap: wrap;
+            margin: 30px 0 0;
+            align-items: flex-start; } }
+        .works-journey .ws-flex .jour-col .actionBtn div {
+          margin: 0 23px 0 0; }
+          @media screen and (max-width: 1024px) {
+            .works-journey .ws-flex .jour-col .actionBtn div {
+              margin: 0 10px; } }
+          @media screen and (max-width: 575px) {
+            .works-journey .ws-flex .jour-col .actionBtn div {
+              margin: 0 auto 15px;
+              width: 48%; } }
+          .works-journey .ws-flex .jour-col .actionBtn div:last-child {
+            margin: 0; }
+        .works-journey .ws-flex .jour-col .actionBtn a {
+          min-width: 210px;
+          display: block !important;
+          margin: 0 0 8px 0;
+          border-radius: 30px; }
+          @media screen and (max-width: 1024px) {
+            .works-journey .ws-flex .jour-col .actionBtn a {
+              margin: 0 0 10px 0; } }
+        .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1 {
+          background: #fff;
+          color: #171227;
+          border: 1px solid #ffffff;
+          padding: 14px 30px;
+          position: relative; }
+          .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            background-size: 24px !important;
+            vertical-align: middle;
+            background: url(../images/button-arw.png) no-repeat; }
+          .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+            .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1:hover:after {
+              background: url(../images/button-arwhover.png) no-repeat; }
+          @media screen and (max-width: 575px) {
+            .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1 {
+              padding: 10px 10px 8px !important;
+              font-size: 12px !important; } }
+        .works-journey .ws-flex .jour-col .actionBtn a.primary_btn2 {
+          border: 1px solid #ffffff;
+          cursor: pointer;
+          color: #fff;
+          padding: 14px 30px; }
+          .works-journey .ws-flex .jour-col .actionBtn a.primary_btn2:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            background-size: 24px !important;
+            vertical-align: middle;
+            background: url(../images/clock-icon.png) no-repeat; }
+          .works-journey .ws-flex .jour-col .actionBtn a.primary_btn2:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+          @media screen and (max-width: 575px) {
+            .works-journey .ws-flex .jour-col .actionBtn a.primary_btn2 {
+              padding: 10px 10px 8px !important;
+              font-size: 12px !important; } }
+        .works-journey .ws-flex .jour-col .actionBtn small {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+          color: #f1efff;
+          line-height: 18px;
+          font-weight: 500; }
+          @media screen and (max-width: 1024px) {
+            .works-journey .ws-flex .jour-col .actionBtn small {
+              font-size: 11px;
+              line-height: 14px; }
+              .works-journey .ws-flex .jour-col .actionBtn small br {
+                display: none; } }
+          @media screen and (max-width: 575px) {
+            .works-journey .ws-flex .jour-col .actionBtn small {
+              text-align: center;
+              padding: 0 10px; } }
+    .works-journey .ws-flex .devide {
+      padding: 0 10px;
+      display: inline-block;
+      position: relative;
+      color: #cdcdcd;
+      opacity: 0.6;
+      font-size: 12px; }
+      .works-journey .ws-flex .devide:before {
+        content: "";
+        clear: both;
+        display: block;
+        width: 1px;
+        height: 100px;
+        position: absolute;
+        background: #cdcdcd;
+        opacity: 0.6;
+        top: -105px;
+        left: 19px; }
+      .works-journey .ws-flex .devide:after {
+        content: "";
+        clear: both;
+        display: block;
+        width: 1px;
+        height: 100px;
+        background: #cdcdcd;
+        position: absolute;
+        bottom: -105px;
+        left: 19px;
+        opacity: 0.6; }
+
+@media (max-width: 1440px) {
+  .works-journey .ws-flex .jour-col {
+    flex-basis: 47%; } }
+@media (max-width: 1160px) {
+  .works-journey .ws-flex .jour-col {
+    flex-basis: 48%; }
+    .works-journey .ws-flex .jour-col h2 {
+      font-size: 28px;
+      line-height: 1.2; } }
+@media (max-width: 979px) {
+  .works-journey .ws-flex {
+    flex-wrap: wrap; }
+    .works-journey .ws-flex .jour-col {
+      flex-basis: 100%; }
+    .works-journey .ws-flex .devide {
+      flex-basis: 100%;
+      margin: 30px 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .works-journey .ws-flex .devide:before {
+        width: 80px;
+        height: 1px;
+        position: initial;
+        display: inline-block;
+        margin: 0 5px 0 0; }
+      .works-journey .ws-flex .devide:after {
+        width: 80px;
+        height: 1px;
+        position: initial;
+        display: inline-block;
+        margin: 0 0 0 5px; } }
+@media (max-width: 479px) {
+  .works-journey .ws-flex .jour-col .actionBtn a {
+    min-width: auto; } }
 .top-section {
   padding: 0 12%; }
   @media screen and (max-width: 1023px) {
@@ -4821,5 +4995,3 @@ ul.indList li {
     padding-top: 0;
     line-height: 30px;
     padding-bottom: 10px; } }
-
-/*# sourceMappingURL=featureDetail.css.map */
