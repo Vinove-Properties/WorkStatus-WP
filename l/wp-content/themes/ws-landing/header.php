@@ -36,6 +36,7 @@
       .clock-stripe .top-stripe{display:flex;}
       span.no-f{text-transform: initial !important;}
       .clock-stripe .banner-section{padding: 180px 0 40px;}
+      .clock-stripe header{z-index: 9999;}
       @media (max-width: 979px) {
       .top-stripe{font-size: 13px; padding: 10px 0;}
       .top-stripe .timer{padding: 8px 5px 8px 10px; margin: 0 5px;}
@@ -44,6 +45,13 @@
 
       @media (max-width: 1440px) {
         .clock-stripe .banner-section{padding: 150px 0 40px;}
+      }
+      
+      @media (max-width: 1320px){
+        .clock-stripe .banner-section .bannerboy{bottom:0;}
+      }
+      @media (max-width: 1160px) {
+        .clock-stripe .banner-section .bannerboy{bottom: -70px;}
       }
 
       @media (max-width: 767px) {
