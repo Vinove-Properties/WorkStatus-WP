@@ -956,7 +956,7 @@
             </div>
             <div class="tcon">
               <h4>Locations</h4>
-              <span class="price">Starts at <span id="pl-pm">$1</span></span>
+              <span class="price">Starts at <span id="pl-location">$1</span></span>
               <span class="unit">/ user / mo</span>
             </div>
           </div>
@@ -978,7 +978,7 @@
             </div>
             <div class="tcon">
               <h4>Project management</h4>
-              <span class="price">Starts at <span id="pl-corapp">$2</span></span>
+              <span class="price">Starts at <span id="pl-pm">$2</span></span>
               <span class="unit">/ user / mo</span>
             </div>
           </div>
@@ -999,7 +999,7 @@
             </div>
             <div class="tcon">
               <h4>Insights</h4>
-              <span class="price">Starts at <span id="pl-data">$2</span> </span>
+              <span class="price">Starts at <span id="pl-insights">$2</span> </span>
               <span class="unit">/ user / mo</span>
             </div>
           </div>

@@ -25,14 +25,14 @@ const pricingData = {
   'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
 },
 "LA": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'$', "location":1, "pm":2, "insights":2}  
+  "product":{'yearly':{"amount":2.99}, 'monthly':{"amount":3.99}},
+  "project":{'yearly':{"amount":3.99}, 'monthly':{"amount":4.99}},  
+  'meta':{"currency":'$', "location":0.69, "pm":1.49, "insights":1.49}  
 },
 "GB": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'£', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":2.49}, 'monthly':{"amount":3.49}},
+  "project":{'yearly':{"amount":3.99}, 'monthly':{"amount":5.49}},  
+  'meta':{"currency":'£', "location":0.9, "pm":1.9, "insights":1.9}
 },
 "US": {
   "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
@@ -40,34 +40,34 @@ const pricingData = {
   'meta':{"currency":'£', "location":1, "pm":2, "insights":2}
 },
 "AU": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},
-  'meta':{"currency":'AU$', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":5.99}, 'monthly':{"amount":7.49}},
+  "project":{'yearly':{"amount":7.99}, 'monthly':{"amount":10.49}},
+  'meta':{"currency":'AU$', "location":1.49, "pm":3.09, "insights":3.09}
 },
 "SA": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'SAR', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":14.49}, 'monthly':{"amount":18.49}},
+  "project":{'yearly':{"amount":19.99}, 'monthly':{"amount":25.99}},  
+  'meta':{"currency":'SAR', "location":3.79, "pm":7.49, "insights":7.49}
 },
 "AE": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'AE', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":13.99}, 'monthly':{"amount":17.99}},
+  "project":{'yearly':{"amount":19.99}, 'monthly':{"amount":24.99}},  
+  'meta':{"currency":'AE', "location":3.69, "pm":7.29, "insights":7.29}
 },
 "CA": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'CA$', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":4.99}, 'monthly':{"amount":6.49}},
+  "project":{'yearly':{"amount":7.49}, 'monthly':{"amount":9.49}},  
+  'meta':{"currency":'CA$', "location":1.39, "pm":2.69, "insights":2.69}
 },
 "ZA": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'ZAR', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":59.00}, 'monthly':{"amount":79.00}},
+  "project":{'yearly':{"amount":89.00}, 'monthly':{"amount":119.00}},  
+  'meta':{"currency":'ZAR', "location":11.39, "pm":22.89, "insights":22.89}
 },
 "EUR": {
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'€', "location":1, "pm":2, "insights":2}
+  "product":{'yearly':{"amount":3.49}, 'monthly':{"amount":4.49}},
+  "project":{'yearly':{"amount":4.99}, 'monthly':{"amount":6.49}},  
+  'meta':{"currency":'€', "location":0.99, "pm":1.89, "insights":1.89}
 }
 };
 
@@ -110,20 +110,23 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     plans.ent   = '';
     var currency    = plans['meta']['currency'];
     //let elmInsight  = document.getElementById("pl-insight");
-    let elmScreen   = document.getElementById("pl-screenshot");
-    let elmTask     = document.getElementById("pl-pm");
-    let elmData     = document.getElementById("pl-data");
-    let elmProject  = document.getElementById("pl-project");
-    let elmCorapp   = document.getElementById("pl-corapp");
-    let elmCloud    = document.getElementById("pl-cloud");
+    //let elmScreen   = document.getElementById("pl-screenshot");
+    //let elmTask     = document.getElementById("pl-pm");
+    //let elmData     = document.getElementById("pl-data");
+
+    let elmLocation = document.getElementById("pl-location");
+    let elmPm       = document.getElementById("pl-pm");
+    let elmInsights = document.getElementById("pl-insights");
     
     //elmInsight.innerHTML  = currency + plans['meta']['insight'];
     //elmScreen.innerHTML   = currency + plans['meta']['screenshot'];
-    elmTask.innerHTML     = currency + plans['meta']['pm'];
-    elmData.innerHTML     = currency + plans['meta']['data'];
     //elmProject.innerHTML = currency + plans['meta']['project'];
-    elmCorapp.innerHTML   = currency + plans['meta']['app'];
     //elmCloud.innerHTML    = currency + plans['meta']['cloud'];
+
+    elmLocation.innerHTML    = currency + plans['meta']['location'];
+    elmPm.innerHTML         = currency + plans['meta']['pm'];    
+    elmInsights.innerHTML   = currency + plans['meta']['insights'];
+    
     
     var isLocal           = ( conCode === "IN" ) ? "local" : "international";
     var plan_meta         =  WS_PLAN_ID[isLocal];
