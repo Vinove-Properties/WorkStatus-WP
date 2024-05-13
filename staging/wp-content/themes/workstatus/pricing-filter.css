@@ -2,7 +2,7 @@
 #pre-loader{ padding: 100px 0;text-align: center; font-size: 24px;}
 #pc-country{position:relative; z-index:-1;}
 .plan-section{padding-bottom:30px;padding-top:0;}
-.plan-section .switcher-sec{background:#f8f5ff;border-radius:5px;justify-content:space-between;display:flex;padding:16px 20px;width:100%;margin:0 auto;gap:110px}
+.plan-section .switcher-sec{background:#f8f5ff;border-radius:10px;justify-content:space-between;display:flex;padding:16px 20px;width:100%;margin:0 auto;gap:110px}
 .plan-section .flex_row{justify-content:center;gap:20px}
 .plan-section .col-box{border-radius:15px;border:.983px solid #E4E6EA;background:#FFF;padding:26px 20px;position:relative}
 .plan-section .col-box:nth-child(3){transform:scale(1.02);border:1px solid #6754E2;background:rgba(247,102,0,0.04)}

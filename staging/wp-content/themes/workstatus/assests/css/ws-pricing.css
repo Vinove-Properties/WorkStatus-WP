@@ -7958,7 +7958,7 @@ h3 a {
     display: none; } }
 .feature-header .site__header {
   transition: 0.5s;
-  background: #4231AC; }
+  background: #4231ac; }
 
 .hero-banner {
   background: #fff; }
@@ -7967,7 +7967,7 @@ h3 a {
     font-size: 40px;
     line-height: 54px; }
   .hero-banner .inner-wrap p {
-    color: #5E6373; }
+    color: #5e6373; }
   .hero-banner .inner-wrap .actionBtn {
     margin: 30px 0 0; }
     .hero-banner .inner-wrap .actionBtn .primary_btn2 {
@@ -7975,8 +7975,8 @@ h3 a {
       border-color: #051441;
       background: #051441; }
       .hero-banner .inner-wrap .actionBtn .primary_btn2:hover {
-        background: #4231AC;
-        border-color: #4231AC; }
+        background: #4231ac;
+        border-color: #4231ac; }
 
 .hero-banner.no-af-bg:after {
   background: none;
@@ -7991,14 +7991,14 @@ h3 a {
   .ws-pricing .price-flex {
     display: flex; }
     .ws-pricing .price-flex .price-column {
-      flex-basis: 25%;
-      padding: 0 7px; }
+      flex-basis: 33.33%;
+      padding: 0 10px; }
       .ws-pricing .price-flex .price-column .price-box {
         position: relative;
         box-sizing: border-box;
         width: 100%;
         border: 1px solid #e4e6ea;
-        padding: 20px 13px;
+        padding: 30px 25px;
         border-radius: 15px;
         margin-right: -1px;
         margin-bottom: 32px;
@@ -8007,36 +8007,35 @@ h3 a {
         flex-direction: column;
         height: 100%; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan {
-          min-height: 180px; }
+          width: 90%;
+          margin: 0 0 40px;
+          position: relative; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
-            font-size: 22px;
+            font-size: 25px;
             color: #2f3a5e;
             font-weight: 600;
             margin: 0 0 15px;
-            line-height: 1.2; }
-          .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-            font-size: 32px;
-            color: #2f3a5e;
-            font-weight: 600;
-            margin: 0 0 20px; }
-            .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan .prio {
-              font-size: 14px;
-              font-weight: normal; }
+            line-height: 35px; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .total {
             background: rgba(103, 84, 226, 0.05);
-            color: rgba(5, 22, 77, 0.7);
-            padding: 6px 8px;
-            width: 200px;
+            color: #6754e2;
+            border: 1.5px transparent;
+            text-align: center;
+            padding: 6px 10px;
+            width: 160px;
             text-transform: uppercase;
             font-weight: 600;
             font-size: 12px;
-            border-radius: 6px;
-            margin: 0 0 30px;
-            display: flex;
-            gap: 5px; }
+            border-radius: 10px;
+            justify-content: center;
+            margin: 0 0 25px;
+            display: flex; }
             .ws-pricing .price-flex .price-column .price-box .pr-plan .total.nodata {
               opacity: 0;
               background: transparent; }
+          .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+            font-weight: 500;
+            color: rgba(5, 22, 77, 0.6); }
           .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu {
             font-size: 14px;
             font-weight: 600;
@@ -8044,9 +8043,33 @@ h3 a {
             color: rgba(5, 22, 77, 0.7); }
             .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu strong {
               color: #6754e2; }
+          .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
+            position: absolute;
+            right: -28px;
+            top: 0; }
+        .ws-pricing .price-flex .price-column .price-box .card-plan {
+          font-size: 42px;
+          color: #2f3a5e;
+          font-weight: 600;
+          padding: 30px 0 0;
+          border-top: 1px solid #e7edf6; }
+          .ws-pricing .price-flex .price-column .price-box .card-plan span {
+            display: block; }
+          .ws-pricing .price-flex .price-column .price-box .card-plan .wph {
+            line-height: 58px;
+            margin: 0 0 5px; }
+          .ws-pricing .price-flex .price-column .price-box .card-plan .prio {
+            color: rgba(47, 58, 94, 0.6);
+            font-weight: 600;
+            font-size: 16px; }
+            .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
+              font-size: 14px; }
+              .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext strong {
+                color: #6754e2;
+                font-weight: 600; }
         .ws-pricing .price-flex .price-column .price-box .price_btn {
-          color: #6754e2;
-          background-color: #ffffff;
+          color: #fff;
+          background-color: #6754e2;
           white-space: nowrap;
           text-transform: capitalize;
           padding: 17px 20px;
@@ -8059,11 +8082,11 @@ h3 a {
           font-size: 18px;
           font-weight: 600;
           border-radius: 100px;
-          margin: 0 0 25px; }
+          margin: 20px 0 30px; }
           .ws-pricing .price-flex .price-column .price-box .price_btn:hover {
-            background-color: #624DE3;
+            background: #051441;
             color: #fff;
-            border-color: #624DE3; }
+            border-color: #051441; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper {
           flex: 1; }
           .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
@@ -8072,8 +8095,8 @@ h3 a {
             height: 100%; }
             .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options h4 {
               font-size: 18px;
-              color: #05164d;
-              font-weight: 500;
+              color: #6754e2;
+              font-weight: 600;
               line-height: 25px;
               margin: 0 0 25px; }
             .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list {
@@ -8099,8 +8122,6 @@ h3 a {
                 padding-top: 30px;
                 min-height: 215px;
                 margin-top: auto; }
-                .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options h4 {
-                  color: #05164d; }
                 .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
                   color: #4a4c55;
                   margin: 0 0 20px; }
@@ -8128,16 +8149,17 @@ h3 a {
             color: #253053;
             top: 20px;
             right: 22px; }
-      .ws-pricing .price-flex .price-column:nth-child(3n) {
+      .ws-pricing .price-flex .price-column:nth-child(2n) {
         margin-top: -15px; }
-        .ws-pricing .price-flex .price-column:nth-child(3n) .price-box {
-          background: rgba(242, 240, 255, 0.7); }
-          .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan h3 {
-            margin: 0 0 33px; }
-          .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan .total {
+        .ws-pricing .price-flex .price-column:nth-child(2n) .price-box {
+          background: rgba(242, 240, 255, 0.2);
+          border-color: #6754e2;
+          position: relative;
+          padding-top: 45px; }
+          .ws-pricing .price-flex .price-column:nth-child(2n) .price-box .pr-plan .total {
             background: #fff;
-            margin: 0 0 40px; }
-          .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan:before {
+            border: 1.5px solid rgba(98, 77, 227, 0.1); }
+          .ws-pricing .price-flex .price-column:nth-child(2n) .price-box:before {
             content: "";
             background: url(../images/band.png) no-repeat;
             background-size: 100%;
@@ -8168,16 +8190,22 @@ h3 a {
         font-size: 22px;
         color: #2f3a5e;
         font-weight: 600;
-        margin: 0 0 15px;
+        margin: 0 0 5px;
         line-height: 1.2; }
+      .free-price .fdflex .colLeft .pr-plan span {
+        display: block; }
       .free-price .fdflex .colLeft .pr-plan .card-plan {
-        font-size: 36px;
+        font-size: 42px;
         color: #2f3a5e;
         font-weight: 600;
         margin: 0 0 20px; }
+        .free-price .fdflex .colLeft .pr-plan .card-plan .free-zero {
+          line-height: 58px;
+          margin: 0 0 5px; }
         .free-price .fdflex .colLeft .pr-plan .card-plan .prio {
-          font-size: 14px;
-          font-weight: normal; }
+          color: rgba(47, 58, 94, 0.6);
+          font-weight: 600;
+          font-size: 16px; }
       .free-price .fdflex .colLeft .pr-plan .total {
         background: #fff;
         border: 1px solid #624de31a;
@@ -8242,9 +8270,9 @@ h3 a {
         border-radius: 100px;
         margin: 0 0 25px; }
         .free-price .fdflex .colRit .btn .price_btn:hover {
-          background-color: #624DE3;
+          background-color: #624de3;
           color: #fff;
-          border-color: #624DE3; }
+          border-color: #624de3; }
 
 .comparison-outer {
   position: relative; }
@@ -8446,7 +8474,7 @@ h3 a {
                   top: 8px; }
 
 .all-partners {
-  background-color: #F7F6F9; }
+  background-color: #f7f6f9; }
   .all-partners .part-row {
     grid-gap: 15px;
     grid-template-rows: auto auto;
@@ -8474,54 +8502,45 @@ h3 a {
         display: block; }
 
 @media (max-width: 1420px) {
-  .ws-pricing .price-flex .price-column .price-box .pr-plan {
-    min-height: 172px; }
-    .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-      font-size: 30px; }
+  .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
+    font-size: 13px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; }
 
   .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
     font-size: 18px; } }
 @media (max-width: 1280px) {
-  .ws-pricing .price-flex .price-column {
-    padding: 0 5px; }
-    .ws-pricing .price-flex .price-column .price-box {
-      padding: 15px; }
-      .ws-pricing .price-flex .price-column .price-box .pr-plan {
-        min-height: 180px; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
-          font-size: 18px; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan {
-          font-size: 31px;
-          margin: 0 0 15px; }
-          .ws-pricing .price-flex .price-column .price-box .pr-plan .card-plan .prio {
-            font-size: 12px; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan .total {
-          padding: 4px 8px;
-          font-size: 12px;
-          margin: 0 0 15px; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu {
-          font-size: 12px;
-          line-height: 18px; }
-      .ws-pricing .price-flex .price-column .price-box .price_btn {
-        padding: 14px 20px;
-        min-width: 100%;
-        font-size: 16px;
-        margin: 0 0 20px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options h4 {
-        font-size: 16px;
-        margin: 0 0 20px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option {
-        margin: 0 0 15px;
-        font-size: 15px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
-        padding-top: 25px; }
-        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
-          margin: 0 0 15px;
-          font-size: 15px; }
-    .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .price_btn {
-      margin-top: 15px; }
+  .ws-pricing .price-flex .price-column .price-box .pr-plan {
+    margin: 0 0 30px; }
+    .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
+      font-size: 22px;
+      line-height: 30px; }
+    .ws-pricing .price-flex .price-column .price-box .pr-plan .total {
+      padding: 4px 8px;
+      font-size: 12px;
+      margin: 0 0 15px; }
+    .ws-pricing .price-flex .price-column .price-box .pr-plan .b-anu {
+      font-size: 12px;
+      line-height: 18px; }
+  .ws-pricing .price-flex .price-column .price-box .card-plan {
+    font-size: 38px;
+    margin: 0 0 15px; }
+  .ws-pricing .price-flex .price-column .price-box .price_btn {
+    padding: 14px 20px;
+    min-width: 100%;
+    font-size: 16px;
+    margin: 20px 0 25px; }
+  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options h4 {
+    font-size: 16px;
+    margin: 0 0 20px; }
+  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option {
+    margin: 0 0 15px;
+    font-size: 15px; }
+  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
+    padding-top: 25px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
+      margin: 0 0 15px;
+      font-size: 15px; }
 
   .free-price .fdflex .colLeft {
     padding: 30px;
@@ -8529,7 +8548,7 @@ h3 a {
     .free-price .fdflex .colLeft .pr-plan h3 {
       font-size: 18px; }
     .free-price .fdflex .colLeft .pr-plan .card-plan {
-      font-size: 35px;
+      font-size: 38px;
       margin: 0 0 15px; }
       .free-price .fdflex .colLeft .pr-plan .card-plan .prio {
         font-size: 12px; }
@@ -8588,37 +8607,27 @@ h3 a {
       flex-basis: 50%;
       margin: 0 0 30px;
       padding: 0 15px; }
-      .ws-pricing .price-flex .price-column .price-box {
-        padding: 20px; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan {
-          min-height: 150px; }
-        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
-          display: none; }
-          .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible {
-            display: block; }
-        .ws-pricing .price-flex .price-column .price-box .price-accordion {
-          display: block;
-          width: 100%;
-          font-size: 15px;
-          text-align: left; }
-          .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
-            content: "";
-            display: inline-block;
-            background: url(../images/arrowpr.svg) 0 0 no-repeat;
-            background-size: auto;
-            background-size: 100%;
-            width: 14px;
-            height: 17px;
-            right: 14px;
-            position: absolute;
-            top: 16px;
-            transform: rotateX(180deg); }
-      .ws-pricing .price-flex .price-column:nth-child(3n) .price-box {
-        margin-top: 15px; }
-        .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .pr-plan h3 {
-          margin: 0 0 15px; }
-        .ws-pricing .price-flex .price-column:nth-child(3n) .price-box .price_btn {
-          margin-top: 0; }
+      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
+        display: none; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible {
+          display: block; }
+      .ws-pricing .price-flex .price-column .price-box .price-accordion {
+        display: block;
+        width: 100%;
+        font-size: 15px;
+        text-align: left; }
+        .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
+          content: "";
+          display: inline-block;
+          background: url(../images/arrowpr.svg) 0 0 no-repeat;
+          background-size: auto;
+          background-size: 100%;
+          width: 14px;
+          height: 17px;
+          right: 14px;
+          position: absolute;
+          top: 16px;
+          transform: rotateX(180deg); }
 
   .free-price .fdflex .colLeft {
     flex-basis: 30%;
@@ -8683,19 +8692,36 @@ h3 a {
   .ws-pricing .price-flex .price-column {
     flex-basis: 100%;
     margin: 0 0 30px;
-    padding: 0 10px; }
-    .ws-pricing .price-flex .price-column .price-box .pr-plan {
-      min-height: initial;
-      padding: 0 0 20px; }
-    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
-      display: none; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible {
-        display: block; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
-        min-height: initial;
-        padding-top: 15px; }
-    .ws-pricing .price-flex .price-column:nth-child(3n) .price-box {
-      margin-top: 10px; }
+    padding: 0; }
+    .ws-pricing .price-flex .price-column .price-box {
+      padding: 25px 20px; }
+      .ws-pricing .price-flex .price-column .price-box .pr-plan {
+        width: 100%;
+        margin: 0 0 20px; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan h3 br {
+          display: none; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
+          right: 0;
+          position: initial;
+          margin: 0 0 10px;
+          display: block; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan .price_btn {
+          margin: 20px 0; }
+      .ws-pricing .price-flex .price-column .price-box .card-plan {
+        padding: 20px 0 0;
+        margin: 0;
+        font-size: 35px; }
+        .ws-pricing .price-flex .price-column .price-box .card-plan .wph {
+          line-height: 45px; }
+      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
+        display: none; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible {
+          display: block; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
+          min-height: initial;
+          padding-top: 15px; }
+    .ws-pricing .price-flex .price-column:nth-child(2n) {
+      margin-top: 0; }
 
   .free-price .fdflex {
     flex-wrap: wrap; }
@@ -8703,6 +8729,8 @@ h3 a {
       flex-basis: 100%;
       padding: 20px;
       min-height: initial; }
+      .free-price .fdflex .colLeft .pr-plan .card-plan {
+        font-size: 35px; }
     .free-price .fdflex .colRit {
       flex-basis: 100%;
       flex-wrap: wrap;
@@ -8723,7 +8751,8 @@ h3 a {
           font-size: 14px;
           margin: 0; }
 
-  .comparison-outer, .comparison-panel {
+  .comparison-outer,
+  .comparison-panel {
     display: none; }
 
   .option-data .addons-row .addond-col {
