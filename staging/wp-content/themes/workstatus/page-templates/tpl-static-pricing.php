@@ -98,10 +98,10 @@
               <p>For teams who want to improve productivity and accountability via increased visibility.</p>
             </div>
             <div class="card-plan">
-              <span class="wph" id="pl-basic">$4</span>
+              <span class="wph" id="pl-product">$4</span>
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-basic" href="#">Choose Plan</a>
+            <a class="price_btn" id="ws-plan-product" href="#">Choose Plan</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
@@ -148,10 +148,10 @@
               <p>For teams who want to improve productivity and accountability via increased visibility.</p>
             </div>
             <div class="card-plan">              
-              <span class="wph" id="pl-pro">$4</span>  
+              <span class="wph" id="pl-project">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-pro" href="#">Choose Plan</a>
+            <a class="price_btn" id="ws-plan-project" href="#">Choose Plan</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Productivity +</h4>
@@ -191,10 +191,10 @@
               <p>For teams who want to improve productivity and accountability via increased visibility.</p>
             </div>
             <div class="card-plan">
-              <span class="wph" id="pl-buss">$4</span>  
-              <span class="prio">/ user / month</span>
+              <span class="wph" id="pl-ent-blank">Custom</span>  
+              <span class="prio">Billed anually. Switch the billing cycle to annual</span>
             </div>
-            <a class="price_btn" id="ws-plan-buss" href="#">Request a Quote</a>
+            <a class="price_btn" id="ws-plan-ent" href="#">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>

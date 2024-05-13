@@ -6,201 +6,68 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
   return 'https://app.staging.workstatus.io/auth/register?pid='+plan_id+'&type='+type;
 }
 
+/*
 const WS_PLAN_ID = {
   "local" : {"basic" : 459, "pro" : 466, "buss" : 460, "ent" : 461},
   "international" : {"basic" : 462, "pro" : 467, "buss" : 463, "ent" : 464}
 }
+*/
+
+const WS_PLAN_ID = {
+  "local" : {"product" : 466, "project" : 460, "ent" : 461},
+  "international" : {"product" : 467, "project" : 463, "ent" : 464}
+}
 
 const pricingData = {
 "IN": {
-  "basic":{
-  'monthly':{"amount":99, "total":3588},
-  'yearly':{"amount":69, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":249, "total":4788},
-  'yearly':{"amount":169, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":359, "total":7188},
-  'yearly':{"amount":249, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":649, "total":4},
-  'yearly':{"amount":499, "total":4}    
-  },
-  'meta':{"currency":'₹', "pm":169, "app":69, "data":99, "screenshot":49, "cloud":79, "project":25}
+  "product":{'yearly':{"amount":199.00}, 'monthly':{"amount":299}},
+  "project":{'yearly':{"amount":199.00}, 'monthly':{"amount":299}},  
+  'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
 },
 "LA": {
-  "basic":{
-  'monthly':{"amount":1.89, "total":3588},
-  'yearly':{"amount":1.49, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":3.39, "total":4788},
-  'yearly':{"amount":2.69, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":4.09, "total":7188},
-  'yearly':{"amount":3.29, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":8.59, "total":4},
-  'yearly':{"amount":6.89, "total":4}    
-  },
-  'meta':{"currency":'$', "pm":1.49, "app":0.69, "data":0.69, "screenshot":0.69, "cloud":0.69, "project":0.35}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'$', "location":1, "pm":2, "insights":2}  
 },
 "GB": {
-  "basic":{
-  'monthly':{"amount":1.79, "total":3588},
-  'yearly':{"amount":1.59, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":3.59, "total":4788},
-  'yearly':{"amount":2.89, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":4.39, "total":7188},
-  'yearly':{"amount":3.49, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":9.19, "total":4},
-  'yearly':{"amount":7.39, "total":4}    
-  },
-  'meta':{"currency":'£', "pm":1.9, "app":0.9, "data":0.9, "screenshot":0.9, "cloud":0.9, "project":0.45}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'£', "location":1, "pm":2, "insights":2}
 },
 "US": {
-  "basic":{
-  'monthly':{"amount":2.49, "total":3588},
-  'yearly':{"amount":1.99, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":4.49, "total":4788},
-  'yearly':{"amount":3.59, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":5.49, "total":7188},
-  'yearly':{"amount":4.39, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":11.49, "total":4},
-  'yearly':{"amount":9.19, "total":4}    
-  },
-  'meta':{"currency":'$', "pm":2, "app":1, "data":1, "screenshot":1, "cloud":1, "project":0.50}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'£', "location":1, "pm":2, "insights":2}
 },
 "AU": {
-  "basic":{
-  'monthly':{"amount":3.79, "total":3588},
-  'yearly':{"amount":2.09, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":6.89, "total":4788},
-  'yearly':{"amount":5.49, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":8.49, "total":7188},
-  'yearly':{"amount":6.69, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":17.69, "total":4},
-  'yearly':{"amount":14.09, "total":4}    
-  },
-  'meta':{"currency":'AU$', "pm":3.09, "app":1.49, "data":1.49, "screenshot":1.49, "cloud":1.49, "project":0.75}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},
+  'meta':{"currency":'AU$', "location":1, "pm":2, "insights":2}
 },
 "SA": {
-  "basic":{
-  'monthly':{"amount":9.29, "total":3588},
-  'yearly':{"amount":7.49, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":16.79, "total":4788},
-  'yearly':{"amount":13.49, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":20.59, "total":7188},
-  'yearly':{"amount":16.49, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":43.09, "total":4},
-  'yearly':{"amount":34.49, "total":4}    
-  },
-  'meta':{"currency":'SAR', "pm":7.49, "app":3.79, "data":3.79, "screenshot":3.79, "cloud":3.79, "project":1.90}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'SAR', "location":1, "pm":2, "insights":2}
 },
 "AE": {
-  "basic":{
-  'monthly':{"amount":9.09, "total":3588},
-  'yearly':{"amount":7.29, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":16.49, "total":4788},
-  'yearly':{"amount":13.19, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":20.19, "total":7188},
-  'yearly':{"amount":16.09, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":42.19, "total":4},
-  'yearly':{"amount":33.69, "total":4}    
-  },
-  'meta':{"currency":'AE', "pm":7.29, "app":3.69, "data":3.69, "screenshot":3.69, "cloud":3.69, "project":1.85}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'AE', "location":1, "pm":2, "insights":2}
 },
 "CA": {
-  "basic":{
-  'monthly':{"amount":3.39, "total":3588},
-  'yearly':{"amount":2.69, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":6.19, "total":4788},
-  'yearly':{"amount":4.89, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":7.49, "total":7188},
-  'yearly':{"amount":5.99, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":15.69, "total":4},
-  'yearly':{"amount":12.59, "total":4}    
-  },
-  'meta':{"currency":'CA$', "pm":2.69, "app":1.39, "data":1.39, "screenshot":1.39, "cloud":1.39, "project":0.70}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'CA$', "location":1, "pm":2, "insights":2}
 },
 "ZA": {
-  "basic":{
-  'monthly':{"amount":28.39, "total":3588},
-  'yearly':{"amount":22.69, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":47.79, "total":4788},
-  'yearly':{"amount":40.99, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":62.59, "total":7188},
-  'yearly':{"amount":50.09, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":131.09, "total":4},
-  'yearly':{"amount":104.89, "total":4}    
-  },
-  'meta':{"currency":'ZAR', "pm":22.89, "app":11.39, "data":11.39, "screenshot":11.39, "cloud":11.39, "project":5.70}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'ZAR', "location":1, "pm":2, "insights":2}
 },
 "EUR": {
-  "basic":{
-  'monthly':{"amount":1.99, "total":3588},
-  'yearly':{"amount":1.79, "total":2388}    
-  },
-  "pro":{
-  'monthly':{"amount":4.19, "total":4788},
-  'yearly':{"amount":3.29, "total":3588}    
-  },
-  "buss":{
-  'monthly':{"amount":5.09, "total":7188},
-  'yearly':{"amount":4.09, "total":5988}    
-  },
-  "ent":{
-  'monthly':{"amount":10.69, "total":4},
-  'yearly':{"amount":8.59, "total":4}    
-  },
-  'meta':{"currency":'€', "pm":1.89, "app":0.99, "data":0.99, "screenshot":0.99, "cloud":0.99, "project":0.45}
+  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
+  'meta':{"currency":'€', "location":1, "pm":2, "insights":2}
 }
 };
 
@@ -239,8 +106,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     }
     
 
-    let plans = (!pricingData.hasOwnProperty(conCode)) ? pricingData['US'] : pricingData[conCode];
-    
+    let plans   = (!pricingData.hasOwnProperty(conCode)) ? pricingData['US'] : pricingData[conCode];
+    plans.ent   = '';
     var currency    = plans['meta']['currency'];
     //let elmInsight  = document.getElementById("pl-insight");
     let elmScreen   = document.getElementById("pl-screenshot");
@@ -251,15 +118,16 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     let elmCloud    = document.getElementById("pl-cloud");
     
     //elmInsight.innerHTML  = currency + plans['meta']['insight'];
-    elmScreen.innerHTML   = currency + plans['meta']['screenshot'];
+    //elmScreen.innerHTML   = currency + plans['meta']['screenshot'];
     elmTask.innerHTML     = currency + plans['meta']['pm'];
     elmData.innerHTML     = currency + plans['meta']['data'];
-    elmProject.innerHTML = currency + plans['meta']['project'];
+    //elmProject.innerHTML = currency + plans['meta']['project'];
     elmCorapp.innerHTML   = currency + plans['meta']['app'];
-    elmCloud.innerHTML    = currency + plans['meta']['cloud'];
+    //elmCloud.innerHTML    = currency + plans['meta']['cloud'];
     
     var isLocal           = ( conCode === "IN" ) ? "local" : "international";
     var plan_meta         =  WS_PLAN_ID[isLocal];
+
 
     [...document.querySelectorAll('.free-zero')].forEach(function(elm){
       elm.innerHTML = currency+"0";
@@ -269,6 +137,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     if( plans.hasOwnProperty(key) ){
       
       if( key !== "currency" ){
+        console.log( key );
+
         const value     = plans[key];
         let elmPricing  = document.getElementById("pl-"+key);
         let elmTotal    = document.getElementById("pl-"+key+"-total");
