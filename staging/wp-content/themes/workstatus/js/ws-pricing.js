@@ -220,7 +220,7 @@ window.addEventListener("scroll", function () {
 }
     
 const showDivButtons = document.querySelectorAll('.price-accordion');
-const hiddenDivs = document.querySelectorAll('.price-options');
+const hiddenDivs = document.querySelectorAll('.price-wrapper');
 
 showDivButtons.forEach((button, index) => {
   button.addEventListener('click', () => {  
