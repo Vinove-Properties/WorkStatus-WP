@@ -37,7 +37,7 @@ const pricingData = {
 "US": {
   "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
   "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'£', "location":1, "pm":2, "insights":2}
+  'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
 },
 "AU": {
   "product":{'yearly':{"amount":5.99}, 'monthly':{"amount":7.49}},
