@@ -977,7 +977,7 @@
               alt="ws" width="45" height="45">
             </div>
             <div class="tcon">
-              <h4>Project management</h4>
+              <h4>Field Force Tracking</h4>
               <span class="price">Starts at <span id="pl-pm">$2</span></span>
               <span class="unit">/ user / mo</span>
             </div>
