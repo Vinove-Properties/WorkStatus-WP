@@ -76,7 +76,7 @@
           <input id="ps-switcher" type="checkbox">
           <span class="slider"></span>
           </label>
-          <span class="annualy">Annual <span class="int-only">(20% Discount)</span><span class="int-local">(30% Discount)</span></span>
+          <span class="annualy">Annual <span class="int-only">(20% Discount)</span><span class="int-local">(25% Discount)</span></span>
         </div>
       </div>
     </div>
