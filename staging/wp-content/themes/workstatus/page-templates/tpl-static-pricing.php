@@ -195,7 +195,7 @@
               <!-- <p><strong>Billed anually</strong>. Switch the billing cycle to annual</p> -->
               <span class="prio smtext"><strong>Billed annually.</strong> Switch the Billing cycle to Annual</span>
             </div>
-            <a class="price_btn" id="ws-plan-ent" href="#">Request a Quote</a>
+            <a class="price_btn" onclick="call_demows();" id="ws-plan-ent" href="#">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -269,7 +269,8 @@
             </th>
             <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-product" href="#">Choose plan</a></th>
             <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
-            <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" href="#">Choose plan</a></th>
+            <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" onclick="call_demows();" 
+              href="javascript:void(0);">Choose plan</a></th>
           </tr>
         </thead>
       </table>

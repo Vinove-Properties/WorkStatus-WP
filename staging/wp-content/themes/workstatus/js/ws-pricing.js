@@ -107,7 +107,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     
 
     let plans   = (!pricingData.hasOwnProperty(conCode)) ? pricingData['US'] : pricingData[conCode];
-    plans.ent   = '';
+    //plans.ent   = '';
     var currency    = plans['meta']['currency'];
     //let elmInsight  = document.getElementById("pl-insight");
     //let elmScreen   = document.getElementById("pl-screenshot");
