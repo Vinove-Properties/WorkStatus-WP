@@ -267,8 +267,8 @@
               <a class="button" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
                 onclick="return get_ws_signupform(this);" href="javascript:void(0);">Choose plan</a>
             </th>
-            <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-pro" href="#">Choose plan</a></th>
-            <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-buss" href="#">Choose plan</a></th>
+            <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-product" href="#">Choose plan</a></th>
+            <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
             <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" href="#">Choose plan</a></th>
           </tr>
         </thead>
