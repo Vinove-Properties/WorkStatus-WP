@@ -21,7 +21,7 @@ const WS_PLAN_ID = {
 const pricingData = {
 "IN": {
   "product":{'yearly':{"amount":199.00}, 'monthly':{"amount":299}},
-  "project":{'yearly':{"amount":199.00}, 'monthly':{"amount":299}},  
+  "project":{'yearly':{"amount":299.00}, 'monthly':{"amount":399}},  
   'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
 },
 "LA": {
