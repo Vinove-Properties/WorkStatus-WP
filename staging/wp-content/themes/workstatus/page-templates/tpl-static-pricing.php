@@ -192,7 +192,7 @@
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-ent-blank">Custom</span>  
-              <span class="prio">Billed anually. Switch the billing cycle to annual</span>
+              <span class="prio"><strong>Billed anually</strong>. Switch the billing cycle to annual</span>
             </div>
             <a class="price_btn" id="ws-plan-ent" href="#">Request a Quote</a>
             <div class="price-wrapper">
