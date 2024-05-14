@@ -14,8 +14,8 @@ const WS_PLAN_ID = {
 */
 
 const WS_PLAN_ID = {
-  "local" : {"product" : 466, "project" : 460, "ent" : 461},
-  "international" : {"product" : 467, "project" : 463, "ent" : 464}
+  "local" : {"product" : 466, "project" : 460, "ent" : 461, "free" : 137},
+  "international" : {"product" : 467, "project" : 463, "ent" : 464, "free" : 138}
 }
 
 const pricingData = {
@@ -108,6 +108,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
     let plans   = (!pricingData.hasOwnProperty(conCode)) ? pricingData['US'] : pricingData[conCode];
     //plans.ent   = '';
+    plans.free   = '';
     var currency    = plans['meta']['currency'];
     //let elmInsight  = document.getElementById("pl-insight");
     //let elmScreen   = document.getElementById("pl-screenshot");

@@ -247,8 +247,7 @@
             <li>Clients & Invoices</li>
           </ul>
         </div>
-        <div class="btn"><a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" class="price_btn" 
-          id="ws-plan-pro" href="#">Choose Plan</a></div>
+        <div class="btn"><a id="ws-plan-free" href="#" class="price_btn">Choose Plan</a></div>
       </div>
     </div>
   </div>
@@ -264,8 +263,7 @@
           <tr>
             <th></th>
             <th><span class="plan-label">FREE</span>
-              <a class="button" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
-                onclick="return get_ws_signupform(this);" href="javascript:void(0);">Choose plan</a>
+              <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
             </th>
             <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-product" href="#">Choose plan</a></th>
             <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
