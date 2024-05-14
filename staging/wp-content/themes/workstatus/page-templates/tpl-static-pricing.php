@@ -268,7 +268,7 @@
             <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-product" href="#">Choose plan</a></th>
             <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
             <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" onclick="call_demows();" 
-              href="javascript:void(0);">Choose plan</a></th>
+              href="javascript:void(0);">Request a Quote</a></th>
           </tr>
         </thead>
       </table>
