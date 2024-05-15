@@ -8330,7 +8330,8 @@ h3 a {
   overflow: hidden;
   display: none; }
   .comparison-panel.toggle {
-    display: block; }
+    display: block;
+    z-index: 9; }
   .comparison-panel .comp-table {
     table-layout: fixed;
     width: 100%;
