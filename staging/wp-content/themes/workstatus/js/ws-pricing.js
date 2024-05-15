@@ -196,9 +196,13 @@ window.addEventListener("load", function (){
 if( document.body.classList.contains('page-template-tpl-static-pricing') ){
   let planBtn = document.querySelector('.comparison-outer .plan-btn');
   let columnBox = document.querySelector('.comparison-panel');
-  planBtn.addEventListener('click', ()=>{
+  planBtn.addEventListener('click', (elm)=>{
       planBtn.classList.toggle('rotate');
       columnBox.classList.toggle('toggle');
+
+      if( elm.target.classList.contains("rotate") ){
+        document.getElementById("comp-table-sticky").classList.remove("sticky");
+      }
   });
 
 }
