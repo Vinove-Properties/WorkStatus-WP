@@ -4,10 +4,8 @@
     <div class="popWrap">
       <div class="popup-content">
         <span class="closeicon"></span>
-        <div class="top-section">
-          <div class="top-section">
-            <h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>
-          </div>
+        <div id="demo-popup" class="top-section">
+        <h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>
         </div>
         <form method="post" id="ws-lead-form" action="<?php bloginfo('url'); ?>/thanks-demo-submission.php" onsubmit="return vcCmnFormValidation();">
           <div class="form-wrap">

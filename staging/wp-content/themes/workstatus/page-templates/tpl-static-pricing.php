@@ -95,7 +95,7 @@
               </span>
               <h3>Productivity <br>Management</h3>
               <div class="total">NO USER MINIMUM</div>
-              <p>For teams who want to improve productivity and accountability via increased visibility.</p>
+              <p>For small teams to increase productivity & accountability with proof-of-work based worksheets.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-product">$4</span>
@@ -144,7 +144,7 @@
               </span>
               <h3>Project <br>Management</h3>
               <div class="total">NO USER MINIMUM</div>
-              <p>For teams who want to improve productivity and accountability via increased visibility.</p>
+              <p>For growing businesses to analyze workflows, automate time tracking, and manage multiple projects.</p>
             </div>
             <div class="card-plan">              
               <span class="wph" id="pl-project">$4</span>  
@@ -186,14 +186,14 @@
               </span>
               <h3>Enterprise<br>Solution</h3>
               <div class="total">OVER 100 USERS</div>
-              <p>For teams who want to improve productivity and accountability via increased visibility.</p>
+              <p>For large organizations who need secure workforce analytics and time & productivity tracking platform.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-ent-blank">Custom</span>  
               <!-- <p><strong>Billed anually</strong>. Switch the billing cycle to annual</p> -->
               <span class="prio smtext"><strong>Billed annually.</strong> Switch the Billing cycle to Annual</span>
             </div>
-            <a class="price_btn" onclick="call_demows();" id="ws-plan-ent" href="#">Request a Quote</a>
+            <a class="price_btn" onclick="call_demows('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -265,7 +265,12 @@
             </th>
             <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Choose plan</a></th>
             <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
-            <th><span class="plan-label">Enterprise</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
+            <th>
+              <span class="plan-label">Enterprise</span>
+              <a class="button" id="ws-coplan-project" 
+              onclick="call_demows('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" 
+              href="javascript:void(0);">Choose plan</a>
+            </th>
           </tr>
         </thead>
       </table>
