@@ -109,7 +109,7 @@ global $ws_ctas, $RegLink, $LogLink;
   .career_row .row .job-row{ width:70%; }
   .career_row .row .apply-row{width:30%; text-align: right;}
   .career_row .row .apply-row .primary_btn1{border-radius: 30px; height: 50px; line-height: 16px;}
-  .tt-inherit{text-transform: inherit;}
+  .tt-inherit{text-transform: initial;}
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
