@@ -391,7 +391,7 @@
         </table>
       </div>
       <div class="comp-row">
-        <h5>Productivity monitoring</h5>
+        <h5>Productivity Monitoring</h5>
         <table class="comp-tablerow">
           <tbody>
             <tr>
@@ -559,7 +559,7 @@
         </table>
       </div>
       <div class="comp-row">
-        <h5>Workforce analytics</h5>
+        <h5>Workforce Analytics</h5>
         <table class="comp-tablerow">
           <tbody>
             <tr>
@@ -725,7 +725,7 @@
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
-              <td>App and Website Usage</td>
+              <td>App <span class="perp">and</span> Website Usage</td>
               <td>-</td>
               <td>-</td>
               <td>-</td>
