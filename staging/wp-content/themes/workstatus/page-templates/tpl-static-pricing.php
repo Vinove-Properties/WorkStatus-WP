@@ -127,9 +127,7 @@
                   </div>
                 </div>
               </div>
-              <button onclick="togglePrice()"  class="price-accordion" type="button" aria-expanded="false">
-              Features
-              </button>
+              <button class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
           </div>
         </div>
@@ -169,9 +167,7 @@
                   </div>
                 </div>
               </div>
-              <button onclick="togglePrice()"   class="price-accordion" type="button" aria-expanded="false">
-              Features
-              </button>
+              <button class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
           </div>
         </div>
@@ -216,8 +212,7 @@
                   </div>
                 </div>
               </div>
-              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">
-              Features</button>
+              <button class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
           </div>
         </div>
