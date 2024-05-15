@@ -8052,7 +8052,8 @@ h3 a {
           color: #2f3a5e;
           font-weight: 600;
           padding: 30px 0 0;
-          border-top: 1px solid #e7edf6; }
+          border-top: 1px solid #e7edf6;
+          min-height: 115px; }
           .ws-pricing .price-flex .price-column .price-box .card-plan span {
             display: block; }
           .ws-pricing .price-flex .price-column .price-box .card-plan .wph {
@@ -8519,7 +8520,7 @@ h3 a {
 
 @media (max-width: 1420px) {
   .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
-    font-size: 13px; }
+    font-size: 12px; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; }
 
@@ -8540,7 +8541,8 @@ h3 a {
       line-height: 18px; }
   .ws-pricing .price-flex .price-column .price-box .card-plan {
     font-size: 38px;
-    margin: 0 0 15px; }
+    margin: 0 0 15px;
+    min-height: initial; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     padding: 14px 20px;
     min-width: 100%;
@@ -8669,10 +8671,12 @@ h3 a {
 
   .comparison-panel {
     padding-top: 0; }
-    .comparison-panel .comp-table tr th .button {
-      padding: 11px 15px;
-      font-size: 14px;
-      min-width: auto; }
+    .comparison-panel .comp-table tr th {
+      font-size: 12px; }
+      .comparison-panel .comp-table tr th .button {
+        padding: 11px 15px;
+        font-size: 14px;
+        min-width: auto; }
     .comparison-panel .comp-row {
       margin: 60px 0 0; }
       .comparison-panel .comp-row h4 {

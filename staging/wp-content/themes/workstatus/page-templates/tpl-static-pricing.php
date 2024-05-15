@@ -93,7 +93,7 @@
                     alt="workstatus" width="29" height="29">
                 </picture>
               </span>
-              <h3>Productivity Management</h3>
+              <h3>Productivity <br>Management</h3>
               <div class="total">NO USER MINIMUM</div>
               <p>For teams who want to improve productivity and accountability via increased visibility.</p>
             </div>
