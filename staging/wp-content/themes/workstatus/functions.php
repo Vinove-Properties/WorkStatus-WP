@@ -164,7 +164,7 @@ function workstatus_scripts() {
 	elseif( is_page_template(['page-templates/tpl-static-pricing.php']) ){
 		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/ws-pricing.css', array(), _S_VERSION );
 		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', [], _S_VERSION, true);
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
 	}
 	
 	elseif(is_page_template([
@@ -265,7 +265,8 @@ function workstatus_scripts() {
 	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/assests/js/script.js', array(), _S_VERSION, true );
 	wp_localize_script('ws-script', 'wsObj', [
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
-	: site_url('/wp-json/ws-api/v1/ipinfo')
+	: site_url('/wp-json/ws-api/v1/ipinfo'),
+	'app_url' => ( isBetaVersion() ) ? 'app.staging.workstatus.io' : 'app.workstatus.io'
 	]);	
 	/*
 	wp_enqueue_script('workstatus-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), 
