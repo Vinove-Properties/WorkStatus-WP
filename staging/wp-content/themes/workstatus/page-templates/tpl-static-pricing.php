@@ -960,8 +960,8 @@
           </div>
           <div class="bottomDiv">
             <ul>
-              <li>Geo-fenced jobsites</li>
-              <li>Selfie based Attendance</li>
+              <li>Geo-fenced Jobsites</li>
+              <li>Selfie Based Attendance</li>
               <li>Work Orders</li>
               <li>Jobs</li>
             </ul>
@@ -1003,12 +1003,12 @@
           </div>
           <div class="bottomDiv">
             <ul>
-              <li>Categorized work time</li>
-              <li>Smart notifications</li>
-              <li>Focus & meeting time</li>
-              <li>Suspicious activity detection</li>
-              <li>Behavioral highlights</li>
-              <li>Work time classification</li>
+              <li>Categorized Work Time</li>
+              <li>Smart Notifications</li>
+              <li>Focus & Meeting Time</li>
+              <li>Suspicious Activity Detection</li>
+              <li>Behavioral Highlights</li>
+              <li>Work Time Classification</li>
             </ul>
             <!--<a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>-->
           </div>
