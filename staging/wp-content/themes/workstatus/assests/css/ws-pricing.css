@@ -8625,6 +8625,8 @@ h3 a {
       padding: 0 15px; }
       .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
         display: none; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
+          margin-top: 20px; }
       .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-options {
         display: block; }
       .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
