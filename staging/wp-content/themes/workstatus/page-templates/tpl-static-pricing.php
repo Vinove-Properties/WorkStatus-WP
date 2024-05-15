@@ -260,12 +260,12 @@
         <thead>
           <tr>
             <th></th>
-            <th><span class="plan-label">FREE</span>
+            <th><span class="plan-label">Free</span>
               <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
             </th>
-            <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button higlit" id="ws-coplan-product" href="#">Choose plan</a></th>
-            <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
-            <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
+            <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Choose plan</a></th>
+            <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
+            <th><span class="plan-label">Enterprise</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
           </tr>
         </thead>
       </table>
