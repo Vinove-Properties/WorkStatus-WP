@@ -119,12 +119,11 @@
                   <div class="option">Stealth mode</div>
                   <div class="option">Clients Portal</div>
                   <div class="option">Gamification</div>
-                  <div class="option">Free on-boarding support</div>
-                  <br>
+                  <div class="option m0">Free on-boarding support</div>
                   <div class="support-options">
                     <h4>Support:</h4>
                     <p>Email / Chat / Phone / Whatsapp Support</p>
-                    <p>SLA: 8 Business Hours</p>
+                    <p><strong>SLA:</strong> 8 Business Hours</p>
                   </div>
                 </div>
               </div>
@@ -162,12 +161,11 @@
                   <div class="option">Invoicing</div>
                   <div class="option">Project Management Integrations</div>
                   <div class="option">Customer Service Integrations </div>
-                  <div class="option">Invoicing Integrations</div>
-                  <br>
+                  <div class="option m0">Invoicing Integrations</div>
                   <div class="support-options">
                     <h4>Support:</h4>
                     <p>Email / Chat / Phone / Whatsapp Support</p>
-                    <p>SLA: 4 Business Hours</p>
+                    <p><strong>SLA:</strong> 4 Business Hours</p>
                   </div>
                 </div>
               </div>
@@ -183,7 +181,7 @@
               <span class="pr-icon">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/wsp-03.svg"
-                    alt="workstatus" width="29" height="29">
+                    alt="workstatus" width="24" height="24">
                 </picture>
               </span>
               <h3>Enterprise<br>Solution</h3>
@@ -210,11 +208,11 @@
                   <div class="option">Customized Onboarding & Support</div>
                   <div class="option">On-Premise Deployment</div>
                   <div class="option">2FA</div>
-                  <div class="option">Dedicated Account Manager</div>
+                  <div class="option m0">Dedicated Account Manager</div>
                   <div class="support-options">
                     <h4>Support:</h4>
                     <p>Email / Chat / Phone / Whatsapp Support</p>
-                    <p>SLA: 2 Business Hours</p>
+                    <p><strong>SLA:</strong> 2 Business Hours</p>
                   </div>
                 </div>
               </div>
@@ -265,10 +263,9 @@
             <th><span class="plan-label">FREE</span>
               <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
             </th>
-            <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button" id="ws-coplan-product" href="#">Choose plan</a></th>
+            <th><span class="plan-label">PRODUCTIVITY MANAGEMENT</span><a class="button higlit" id="ws-coplan-product" href="#">Choose plan</a></th>
             <th><span class="plan-label">PROJECT MANAGEMENT</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
-            <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-ent" onclick="call_demows();" 
-              href="javascript:void(0);">Request a Quote</a></th>
+            <th><span class="plan-label">ENTERPRISE</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
           </tr>
         </thead>
       </table>

@@ -40,12 +40,12 @@
 .country-select .select-list .selectDropdown.toggle{visibility:visible;-webkit-transform:scale(1,1);transform:scale(1,1)}
 .country-select .flgicon{margin-right:5px;vertical-align:middle;margin-top:-3px; position: relative; z-index: -1}
 
-.switch-btn-box .switch{width:54px;height:28px;position:relative;display:inline-block;vertical-align:middle}
+.switch-btn-box .switch{width:53px;height:27px;position:relative;display:inline-block;vertical-align:middle; margin-top: -2px;}
 .switch-btn-box .switch input{display:none}
 .switch-btn-box .switch input:checked + .slider:before{transform:translate(5px,4px)}
 .switch-btn-box .switch .slider{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:30px;cursor:pointer;overflow:hidden;transition:all .2s ease-in-out;background:#6754E2
 }
-.switch-btn-box .switch .slider::before{position:absolute;content:"";width:20px;height:20px;background-color:#fff;border-radius:20px;transform:translate(30px,4px);transition:all .2s ease-in-out}
+.switch-btn-box .switch .slider::before{position:absolute;content:"";width:19px;height:19px;background-color:#fff;border-radius:20px;transform:translate(30px,4px);transition:all .2s ease-in-out}
 .switch-btn-box .monthly{color: rgba(5, 22, 77, 0.5);}
 .switch-btn-box span{    color: #00234b;font-size:20px;font-weight:500;line-height:normal}
 @media (max-width: 991px){

@@ -8108,6 +8108,8 @@ h3 a {
                 margin: 0 0 20px;
                 position: relative;
                 padding: 0 0 0 15px; }
+                .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option.m0 {
+                  margin: 0; }
                 .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option:before {
                   content: "";
                   width: 5px;
@@ -8118,13 +8120,15 @@ h3 a {
                   left: 0;
                   top: 8px; }
               .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
-                border-top: 1px solid #e7edf6;
+                border-top: 2px solid #e7edf6;
                 padding-top: 30px;
-                min-height: 215px;
+                min-height: 150px;
                 margin-top: auto; }
                 .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
                   color: #4a4c55;
-                  margin: 0 0 20px; }
+                  margin: 20px 0 0; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p strong {
+                    font-weight: 500; }
             .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible .price-accordion:after {
               top: 20px;
               transform: none; }
@@ -8164,7 +8168,7 @@ h3 a {
             border: 1.5px solid rgba(98, 77, 227, 0.1); }
           .ws-pricing .price-flex .price-column:nth-child(2n) .price-box:before {
             content: "";
-            background: url(../images/band.png) no-repeat;
+            background: url(../images/band.svg) no-repeat;
             background-size: 100%;
             position: absolute;
             width: 73px;
@@ -8185,8 +8189,8 @@ h3 a {
     align-items: center; }
     .free-price .fdflex .colLeft {
       flex-basis: 25%;
-      padding: 60px 40px;
-      background: #fbfbfe;
+      padding: 50px 40px;
+      background: rgba(228, 228, 228, 0.2);
       border-right: 1px solid #dfdcff;
       border-radius: 15px 0 0 15px; }
       .free-price .fdflex .colLeft .pr-plan h3 {
@@ -8244,7 +8248,7 @@ h3 a {
           .free-price .fdflex .colRit .cont ul li {
             color: #4a4c55;
             flex-basis: 48%;
-            margin: 0 0 20px;
+            margin: 0 0 15px;
             position: relative;
             padding: 0 0 0 15px; }
             .free-price .fdflex .colRit .cont ul li:before {
@@ -8257,25 +8261,25 @@ h3 a {
               left: 0;
               top: 8px; }
       .free-price .fdflex .colRit .btn .price_btn {
-        color: #6754e2;
-        background-color: #ffffff;
+        color: #fff;
+        background-color: #6754e2;
         white-space: nowrap;
         text-transform: capitalize;
         padding: 17px 20px;
         text-decoration: none;
         transition: 0.3s ease;
         display: inline-block;
-        min-width: 238px;
-        border: 1px solid #6754e2;
+        min-width: 300px;
+        border: 1px solid #fff;
         text-align: center;
         font-size: 18px;
         font-weight: 600;
         border-radius: 100px;
         margin: 0 0 25px; }
         .free-price .fdflex .colRit .btn .price_btn:hover {
-          background-color: #624de3;
+          background: #051441;
           color: #fff;
-          border-color: #624de3; }
+          border-color: #051441; }
 
 .comparison-outer {
   position: relative; }
@@ -8356,7 +8360,15 @@ h3 a {
         font-size: 16px;
         font-weight: 600;
         border-radius: 100px;
-        margin: 0 0 10px; }
+        margin: 0 0 10px;
+        min-width: 180px; }
+        .comparison-panel .comp-table tr th .button.higlit {
+          background: #6754e2;
+          color: #fff; }
+          .comparison-panel .comp-table tr th .button.higlit:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
         .comparison-panel .comp-table tr th .button:hover {
           background: #6754e2;
           color: #fff; }
@@ -8542,7 +8554,7 @@ h3 a {
   .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
     padding-top: 25px; }
     .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
-      margin: 0 0 15px;
+      margin: 15px 0 0;
       font-size: 15px; }
 
   .free-price .fdflex .colLeft {
@@ -8569,7 +8581,7 @@ h3 a {
       margin: 0 0 15px; }
     .free-price .fdflex .colRit .btn .price_btn {
       padding: 14px 20px;
-      min-width: 200px;
+      min-width: 250px;
       font-size: 16px;
       margin: 0 0 20px; }
 
@@ -8656,7 +8668,8 @@ h3 a {
     padding-top: 0; }
     .comparison-panel .comp-table tr th .button {
       padding: 11px 15px;
-      font-size: 14px; }
+      font-size: 14px;
+      min-width: auto; }
     .comparison-panel .comp-row {
       margin: 60px 0 0; }
       .comparison-panel .comp-row h4 {
