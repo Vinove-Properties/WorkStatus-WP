@@ -95,7 +95,7 @@
               </span>
               <h3>Productivity <br>Management</h3>
               <div class="total">NO USER MINIMUM</div>
-              <p>For small teams to increase productivity & accountability with proof-of-work based worksheets.</p>
+              <p class="tt-inherit">For small teams to increase productivity & accountability with proof-of-work based worksheets.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-product">$4</span>
@@ -144,7 +144,7 @@
               </span>
               <h3>Project <br>Management</h3>
               <div class="total">NO USER MINIMUM</div>
-              <p>For growing businesses to analyze workflows, automate time tracking, and manage multiple projects.</p>
+              <p class="tt-inherit">For growing businesses to analyze workflows, automate time tracking, and manage multiple projects.</p>
             </div>
             <div class="card-plan">              
               <span class="wph" id="pl-project">$4</span>  
@@ -186,7 +186,7 @@
               </span>
               <h3>Enterprise<br>Solution</h3>
               <div class="total">OVER 100 USERS</div>
-              <p>For large organizations who need secure workforce analytics and time & productivity tracking platform.</p>
+              <p class="tt-inherit">For large organizations who need secure workforce analytics and time & productivity tracking platform.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-ent-blank">Custom</span>  
