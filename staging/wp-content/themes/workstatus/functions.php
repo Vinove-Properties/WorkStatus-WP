@@ -132,7 +132,7 @@ function workstatus_scripts() {
 		wp_enqueue_style('plateform', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
 	}elseif( 
 		is_page_template(
-			['page-templates/tpl-support.php']
+			['page-templates/tpl-support.php','page-templates/tpl-careers.php']
 		) 
 	){
 		wp_enqueue_style('support', get_stylesheet_directory_uri().'/assests/css/downloads.css', array(), _S_VERSION );

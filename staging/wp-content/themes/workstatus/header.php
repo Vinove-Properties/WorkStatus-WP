@@ -60,7 +60,9 @@ global $ws_ctas, $RegLink, $LogLink;
     .page-template-tpl-static-pricing .hero-banner .inner-wrap .left{flex-basis:100%; text-align: center;}
     .page-template-tpl-static-pricing .hero-banner .inner-wrap .right{flex-basis:100%; text-align:center;}
 
-
+    .career_row .row{flex-wrap:wrap; justify-content: center !important;}
+    .career_row .row .job-row, .career_row .row .apply-row{width: 100% !important; text-align: center !important;}
+    .career_row .row .apply-row{margin-top: 20px; }
 
     }
     .tool-tip-wrap{position: relative;}
@@ -103,6 +105,11 @@ global $ws_ctas, $RegLink, $LogLink;
   body.geo-india .int-only{display: none !important;} 
   .int-local{display: none;}
   body.geo-india .int-local{display: inline-block;}
+  .career_row .row{display: flex; justify-content: space-between; background:#f6f4ff; margin-bottom: 20px; padding: 30px; border-radius: 10px; border: 1px solid #aea4e7;}
+  .career_row .row .job-row{ width:70%; }
+  .career_row .row .apply-row{width:30%; text-align: right;}
+  .career_row .row .apply-row .primary_btn1{border-radius: 30px; height: 50px; line-height: 16px;}
+
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
