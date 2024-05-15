@@ -262,9 +262,10 @@
             <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
             <th>
               <span class="plan-label">Enterprise</span>
-              <a class="button" id="ws-coplan-project" 
-              onclick="call_demows('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" 
-              href="javascript:void(0);">Choose plan</a>
+             
+
+              <a class="button" onclick="call_demows('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+
             </th>
           </tr>
         </thead>
