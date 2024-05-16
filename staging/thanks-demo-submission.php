@@ -87,7 +87,7 @@ $pageurl        = ( isset( $_POST['pageurl'] ) && !empty( $_POST['pageurl'] ) ) 
 $tracking_ip    = getUserIP();
 $referalurl     = ( isset( $_POST['referalurl'] ) && !empty( $_POST['referalurl'] ) ) ? $_POST['referalurl'] : '';
 
-$isEnterprise   = ( isset( $_POST['is-ent-query'] ) && ($_POST['is-ent-query'] != 0) ) ? true : false;
+$isEnterprise   = ( isset( $_POST['ent-pln'] ) && ($_POST['ent-pln'] != 0) ) ? true : false;
 
 $phoneNo        = $pcode.$phone;
 //$phoneNo        = str_replace("+","",$phoneNo);
