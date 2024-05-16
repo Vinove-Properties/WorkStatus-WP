@@ -82,7 +82,7 @@ span.cs{background: #F4F9FF; color: #979797; border-radius: 10px; display: inlin
 .ws-pricing .price-flex .price-column:nth-child(3n) span.cs{background: #ffffff; color: #979797;}
 .ws-pricing .price-flex .price-column .price-box .price_btn{border-radius: 50px;}
 
-body.ps-monthly .ws-pricing .price-flex .price-column .price-box .pr-plan div.total{opacity: 0;     background: transparent; display:none;}
+/*body.ps-monthly .ws-pricing .price-flex .price-column .price-box .pr-plan div.total{opacity: 0;     background: transparent; display:none;}*/
 
 
 @media (max-width:767px){

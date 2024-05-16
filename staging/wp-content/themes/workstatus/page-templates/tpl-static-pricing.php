@@ -94,7 +94,7 @@
                 </picture>
               </span>
               <h3>Productivity <br>Management</h3>
-              <div class="total">NO USER MINIMUM</div>
+              <div class="total">2 USER MINIMUM</div>
               <p class="tt-inherit">For small teams to increase productivity & accountability with proof-of-work based worksheets.</p>
             </div>
             <div class="card-plan">
@@ -141,7 +141,7 @@
                 </picture>
               </span>
               <h3>Project <br>Management</h3>
-              <div class="total">NO USER MINIMUM</div>
+              <div class="total">2 USER MINIMUM</div>
               <p class="tt-inherit">For growing businesses to analyze workflows, automate time tracking, and manage multiple projects.</p>
             </div>
             <div class="card-plan">              
@@ -293,7 +293,7 @@
             <tr>
               <td>Timesheet Approvals</td>
               <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -328,7 +328,7 @@
             <tr>
               <td>Automatic Time Tracking</td>
               <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -341,14 +341,14 @@
           <tbody>
             <tr>
               <td>Manual Clock In/Out</td>
-              <td>100/user/mo</td>
-              <td>1,500/user/mo</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
               <td>Automatic Clock In/Out</td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
@@ -356,14 +356,14 @@
             <tr>
               <td>Break Time Capture</td>
               <td>-</td>
-              <td>1,500/user/mo</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
               <td>Manual/Offline Time Capture</td>
               <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -412,7 +412,7 @@
             <tr>
               <td>Apps & URLs tracking</td>
               <td>-</td>
-              <td>1,500/user/mo</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -488,14 +488,14 @@
             </tr>
             <tr>
               <td>Client Invoices</td>
-              <td>3</td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
+              <td>5</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
               <td>Team Invoices</td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
@@ -690,13 +690,13 @@
               <td><i class="chkicon"></i></td>
             </tr>
            
-              <tr>
+              <!-- <tr>
               <td>Agile WorkFlows</td>
               <td>100</td>
               <td>1,500</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
-              </tr>
+              </tr> -->
               <tr>
               <td>Agile Sprint</td>
               <td>-</td>
@@ -707,7 +707,7 @@
               <tr>
               <td>Epics</td>
               <td>-</td>
-              <td>1 integration</td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               </tr> 
@@ -721,15 +721,15 @@
             <tr>
               <td>Productivity Time</td>
               <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
               <td>App <span class="perp">and</span> Website Usage</td>
               <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
             <tr>
@@ -739,13 +739,13 @@
               <td>-</td>
               <td><i class="chkicon"></i></td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td>Impact Analysis</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
-            </tr>
+            </tr> -->
             <tr>
               <td>Hybrid Work Insights</td>
               <td>-</td>
@@ -778,8 +778,8 @@
               <tr>
                 <td>Workforce Analytics</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <tr>
@@ -808,16 +808,16 @@
           <tbody>
            <tr> 
               <td>HIPAA compliance</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               </tr>
               <tr>
               <td>SOC-2 Type II Compliance</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               </tr>
             <tr>
@@ -829,9 +829,9 @@
             </tr>
             <tr>
               <td>Two-factor Authentication</td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
             </tr>
           </tbody>
@@ -914,9 +914,9 @@
             <tr>
               <td>Email Support SLA (24x5)</td>
               <td>Limited support</td>
-              <td>1 day</td>
-              <td>1 day</td>
-              <td>2 hours</td>
+              <td>8 Business Hours</td>
+              <td>4 Business Hours</td>
+              <td>2 Business Hours</td>
             </tr>
             <tr>
               <td>Assigned Account Representative</td>
