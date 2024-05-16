@@ -35,7 +35,7 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         $mail->Port         = 465;
         $mail->SMTPAuth     = true;
         $mail->Username     = 'do-not-reply@workstatus.io';
-        $mail->Password     = 'avchvvlnqmtihxbp'; //zskxyarbhduvicwf
+        $mail->Password     = 'qqmwjodicsevwikm'; //zskxyarbhduvicwf
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );
@@ -86,6 +86,8 @@ $temSize        = ( isset( $_POST['team-size'] ) && !empty( $_POST['team-size'] 
 $pageurl        = ( isset( $_POST['pageurl'] ) && !empty( $_POST['pageurl'] ) ) ? $_POST['pageurl'] : '';
 $tracking_ip    = getUserIP();
 $referalurl     = ( isset( $_POST['referalurl'] ) && !empty( $_POST['referalurl'] ) ) ? $_POST['referalurl'] : '';
+
+$isEnterprise   = ( isset( $_POST['is-ent-query'] ) && ($_POST['is-ent-query'] != 0) ) ? true : false;
 
 $phoneNo        = $pcode.$phone;
 //$phoneNo        = str_replace("+","",$phoneNo);
@@ -143,6 +145,12 @@ $uname);
 header('location:thanks');
 die;
 }
+$spamEmails = ['shriramdahotre@gmail.com'];
+if( in_array($email, $spamEmails) ){
+    header('location:thanks');
+    die;
+}
+
     /*Spam check here : END*/
     $leadStatus     = "Not Contacted";
     $autoEmailBody  = "Dear ".$name.",<br><br>
@@ -165,7 +173,9 @@ die;
     $leadStatus = "Attempted to Contact";
     }
 
-    smtpEmailFunction("hello@workstatus.io", "Demo request - Workstatus", $body, "lead",$email, [], $bccEmails,[], 
+    $emailSubject = ( $isEnterprise === true ) ? 'Enterprise Plan Quote Request' : 'Demo request - Workstatus';
+
+    smtpEmailFunction("hello@workstatus.io", $emailSubject, $body, "lead",$email, [], $bccEmails,[], 
     $uname);
 
     $_POST['user-country'] = $country;
@@ -192,6 +202,10 @@ die;
    );
    if( $lname ){
    $apiRequest['last_name'] = $lname;
+   }
+
+   if( $isEnterprise ){
+   $apiRequest['plan_type'] = 'enterprise'; 
    }
 
    $ch = curl_init();
@@ -261,8 +275,8 @@ die;
   <body>
 <section class="thank-section">
 <div class="container">
-<h1>Choose a Date & Time</h1>
-<p>Please schedule the demo as per your availability.</p>
+    <h1>Choose a Date & Time</h1>
+    <p>Please schedule the demo as per your availability.</p>
 </div>
 </section>
 <div class="calendly-inline-widget" data-url="<?php echo $iLink; ?>" style="min-width:320px;height:630px;"></div>

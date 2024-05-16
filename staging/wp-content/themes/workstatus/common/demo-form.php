@@ -98,6 +98,7 @@
                 <input type="hidden" name="utm_campaign" value="<?php echo isset( $_SESSION['_utmcampaign'] ) ? $_SESSION['_utmcampaign'] : ''; ?>">
                 <input type="hidden" name="is-submitted" value="true">
                 <input type="hidden" name="user-country" id="cont_country" value="">
+                <input type="hidden" name="ent-pln" id="is-ent-query" value="0">
                 <button type="submit" class="btn" id="submitButton" name="submit">Book My Demo Now</button>
               </div>
             </div>

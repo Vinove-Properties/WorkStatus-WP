@@ -377,6 +377,21 @@ function call_demows( cont = '<h2>Let us take you on a personalized <span class=
     formPopup.style.display = "block";    
 }
 
+function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
+    let wsIntentForm    = document.getElementById("ws-intent-popup");
+    let popHeader       = document.getElementById("demo-popup");
+    let entQuery        = document.getElementById("is-ent-query");
+    
+    if( wsIntentForm ){
+        if( wsIntentForm.classList.contains('visible') ){
+            wsIntentForm.classList.remove('visible');
+        }
+    }
+    entQuery.value = 1;
+    popHeader.innerHTML = cont;
+    formPopup.style.display = "block";    
+}
+
 if( spanClose ){
     spanClose.onclick = function() {
         formPopup.style.display = "none";
