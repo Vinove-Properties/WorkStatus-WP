@@ -180,9 +180,15 @@ if( in_array($email, $spamEmails) ){
 
     $_POST['user-country'] = $country;
     getzoholeads( $_POST, $leadStatus );
-    /* Send Email End */
-   $dataID = 0;
-   $iLink = 'https://calendly.com/workstatus/product-demo';
+    /*Send Email End*/
+   $dataID  = 0;
+
+   if( $isEnterprise === true ){
+    $iLink   = 'https://calendly.com/workstatus/sales';
+   }else{
+   $iLink   = 'https://calendly.com/workstatus/product-demo'; 
+   }
+   
 
    $apiRequest = array(
     "first_name"     => $fname,
@@ -275,8 +281,14 @@ if( in_array($email, $spamEmails) ){
   <body>
 <section class="thank-section">
 <div class="container">
-    <h1>Choose a Date & Time</h1>
-    <p>Please schedule the demo as per your availability.</p>
+    <?php 
+    if( $isEnterprise === false ){
+    echo '<h1>Choose a Date & Time</h1><p>Please schedule the demo as per your availability.</p>';
+    }else{
+    echo '<h1>Thank You!<br>Your quotation request has been received.</h1>
+    <p>If you want to schedule a free consultation call with our team, please choose a slot.</p>';
+    }
+    ?>    
 </div>
 </section>
 <div class="calendly-inline-widget" data-url="<?php echo $iLink; ?>" style="min-width:320px;height:630px;"></div>

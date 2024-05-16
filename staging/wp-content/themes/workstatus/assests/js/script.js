@@ -365,15 +365,17 @@ var formPopup   = document.getElementById('formPopup');
 var formbtn     = document.getElementById("myBtn2");
 var spanClose   = document.getElementsByClassName("closeicon")[0];
 function call_demows( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    let wsIntentForm = document.getElementById("ws-intent-popup");
-    let popHeader = document.getElementById("demo-popup");
+    let wsIntentForm    = document.getElementById("ws-intent-popup");
+    let popHeader       = document.getElementById("demo-popup");
+    let demoBtn         = document.getElementById("submitButton");
 
     if( wsIntentForm ){
         if( wsIntentForm.classList.contains('visible') ){
             wsIntentForm.classList.remove('visible');
         }
     }
-    popHeader.innerHTML = cont;
+    popHeader.innerHTML     = cont;
+    demoBtn.innerText       = "Book My Demo Now";
     formPopup.style.display = "block";    
 }
 
@@ -381,6 +383,7 @@ function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class
     let wsIntentForm    = document.getElementById("ws-intent-popup");
     let popHeader       = document.getElementById("demo-popup");
     let entQuery        = document.getElementById("is-ent-query");
+    let demoBtn         = document.getElementById("submitButton");
     
     if( wsIntentForm ){
         if( wsIntentForm.classList.contains('visible') ){
@@ -389,6 +392,7 @@ function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class
     }
     entQuery.value = 1;
     popHeader.innerHTML = cont;
+    demoBtn.innerText = "Request a Quote";
     formPopup.style.display = "block";    
 }
 

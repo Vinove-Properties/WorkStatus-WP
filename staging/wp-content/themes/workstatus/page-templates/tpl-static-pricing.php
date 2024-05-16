@@ -1042,7 +1042,7 @@
               <div class="faq-accordion-content">
                 <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>You can effortlessly cancel your subscription by either Reaching out to hello@workstatus.io with a cancellation request or archiving the organization linked to your subscription, which will automatically terminate it.
+                    <p>You can effortlessly cancel your subscription by either reaching out to hello@workstatus.io with a cancellation request or archiving the organization linked to your subscription, which will automatically terminate it.
                     </p>
                   </div>
                 </div>
