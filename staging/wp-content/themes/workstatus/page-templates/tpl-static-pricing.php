@@ -1042,7 +1042,7 @@
               <div class="faq-accordion-content">
                 <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>You can effortlessly cancel your subscription by either Reaching out to hello@workstatus.io with a cancellation request. Archiving the organization linked to your subscription, which will automatically terminate it.
+                    <p>You can effortlessly cancel your subscription by either Reaching out to hello@workstatus.io with a cancellation request or archiving the organization linked to your subscription, which will automatically terminate it.
                     </p>
                   </div>
                 </div>
@@ -1075,7 +1075,8 @@
               <div class="faq-accordion-content">
                 <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div itemprop="text">
-                    <p>Yes, we have a lucrative affiliate program where partners can earn a significant percentage of revenue from referrals who opt for a paid plan. Registration is quick, easy, and free. For more details, visit [Workstatus Affiliates](https://www.workstatus.io/affiliates).
+                    <p>Yes, we have a lucrative affiliate program where partners can earn a significant percentage of revenue from referrals who opt for a paid plan. Registration is quick, easy, and free. For more details, visit 
+                      <a href="https://www.workstatus.io/affiliates">[Workstatus Affiliates]</a>(https://www.workstatus.io/affiliates).
                     </p>
                   </div>
                 </div>
