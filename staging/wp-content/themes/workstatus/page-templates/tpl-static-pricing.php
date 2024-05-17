@@ -808,16 +808,16 @@
           <tbody>
            <tr> 
               <td>HIPAA compliance</td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               </tr>
               <tr>
               <td>SOC-2 Type II Compliance</td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               </tr>
             <tr>
