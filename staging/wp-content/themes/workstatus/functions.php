@@ -349,6 +349,8 @@ function wsGetWebpSrcUrl( $mid ){
 		$icwebpDir 	= $webpDir.$icMeta.".webp";
 		if( file_exists( $icwebpDir ) ){
 			$src 	= $webpUrl.$icMeta.".webp";
+		}else{
+			$src = wp_get_attachment_url( $mid );	
 		}
 	}else{
 		$src = wp_get_attachment_url( $mid );	
