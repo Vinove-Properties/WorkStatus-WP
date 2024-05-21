@@ -227,6 +227,14 @@ global $ws_ctas, $RegLink, $LogLink;
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon08.svg" width="20"
                           height="20" alt="Menu Icon">Automatic Time Mapping
                         </a>
+                        <a href="<?php echo site_url(); ?>/time-attendance/web-time-tracking">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-03.svg" width="20"
+                          height="20" alt="Menu Icon">Web Based Tracker
+                        </a>
+                        <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-04.svg" width="20"
+                          height="20" alt="Menu Icon">Live Location Tracking
+                        </a>
                       </div>
                     </div>
                     <div class="col-menu">
@@ -346,6 +354,14 @@ global $ws_ctas, $RegLink, $LogLink;
                         <a href="<?php echo site_url(); ?>/project-management/task-management">
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
                           height="20" alt="Menu Icon">Task Management
+                        </a>
+                        <a href="<?php echo site_url(); ?>/project-management/project-timeline">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-01.svg" width="20"
+                          height="20" alt="Menu Icon"> project Timeline
+                        </a>
+                        <a href="<?php echo site_url(); ?>/project-management/gantt-charts">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20"
+                          height="20" alt="Menu Icon">Gantt Chart
                         </a>
                       </div>
                     </div>
