@@ -1,5 +1,4 @@
 <?php
-
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
@@ -210,7 +209,8 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'Country_1'     => "",
     'Phone'         => $phone,
     'Lead_Source'   => "Calendly Direct",
-    //'Lead_Status'   => "Not Contacted",
+    'Lead_Status'   => "Demo Scheduled",
+    //'Lead_Status'   => "Demo Scheduled";  
     'Owner'         => $owner_id,
     'SQL'               => "Yes",
     'IP_Address1'   => get_visitor_ip(),
@@ -261,7 +261,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                 'First_Name'        => $firtName,
                 'Last_Name'         => (!empty($lastName)) ? $lastName : "NA",
                 'Company'           => $company,
-                //'Lead_Status'       => "Not Contacted",
+                'Lead_Status'       => "Demo Scheduled",
                 //'Lead_Source'       => "",
                 'Is_Duplicate'      => "Yes",
                 'Calendly_Booked'   => "Yes",

@@ -16,12 +16,12 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
         }
         
         $mail->isSMTP();
-        $mail->Host         = "mail.workstatus.io"; // SMTP server
+        $mail->Host         = "smtp.gmail.com"; // SMTP server
         $mail->SMTPSecure   = 'ssl';
         $mail->Port         = 465;
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'donotreply@workstatus.io';
-        $mail->Password     = 'bbmMBq5RMQ3-';
+        $mail->Username     = 'do-not-reply@workstatus.io';
+        $mail->Password     = 'qqmwjodicsevwikm';
 
         if( $type == "lead" ){
             $mail->setFrom( $userEmail, $cname );
@@ -193,7 +193,7 @@ if(
             if( $lead_id !== 0 ){
                 $zoho_data = array(
                 'id'                => $lead_id,
-                'Lead_Status'       => "Not Contacted",
+                //'Lead_Status'       => "Not Contacted",
                 'Calendly_Booked'   => "Yes"
                 );
 

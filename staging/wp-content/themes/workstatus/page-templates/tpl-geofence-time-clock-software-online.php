@@ -808,9 +808,67 @@ $thisPostID = $post->ID;
         </section>
 		<?php } endif; ?>
 
-           <?php getWsCmnFeatures(); ?>   
+    <?php 
+    if( $thisPostID != 7476 ){
+      getWsCmnFeatures();   
+    } 
 
+    if( $thisPostID === 7476 ) :
+    ?>
+<?php  
+    $user_guide_section = get_field('user_guide_section');
+    
+    if( $user_guide_section ) :
+    $isEnable = $user_guide_section['is_enabled'];
+    if( $isEnable == "yes" ){ 
+    ?>
 
+        <section class="userguide">
+          <div class="container">
+            <div class="top-section">
+              <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
+              <h2><?php echo $user_guide_section['sub_heading']; ?></h2>
+            </div>
+            <div class="buyers-guide-section" id="div-buyer-guide">
+              <div class="buyers-guide">
+                <div class="buyers-guide-question" id="buyers-guide-question">
+                  <ul class="question-list">
+          <?php 
+          if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
+          foreach( $user_guide_section['question_answer_repeater'] as $row ) {
+            $image      = $row['image_'];
+            $active = ($i==1) ? "active" : "";
+          ?>
+                    <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
+                    </li>
+                    <?php $i++; } } ?>
+                  </ul>
+                </div>
+                <div class="buyers-guide-answer-part" id="buyers-guide-answer-part">
+
+        <?php 
+          if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
+          foreach( $user_guide_section['question_answer_repeater'] as $row ) {
+            $image      = $row['image_'];
+            $active = ($i==1) ? "active" : "";
+          ?>
+
+                  <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
+                    <h3 class="guide-question"><?php echo $row['question']; ?>
+                    </h3>
+                    <div class="guide-answer">
+          <?php echo $row['answer']; ?>
+                    </div>
+                  </div>
+          <?php $i++; } } ?>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    <?php } endif; ?>
+    <?php endif; ?>
 		<?php  
 		$scalable = get_field('scalable');
 		//echo '<pre>';
@@ -912,8 +970,11 @@ $thisPostID = $post->ID;
         </section>
 
 		<?php  
-		$user_guide_section = get_field('user_guide_section');
-		
+    if( $thisPostID == 7476 ){
+      getWsCmnFeatures();   
+    } 
+    if( $thisPostID != 7476 ) :      
+		$user_guide_section = get_field('user_guide_section');		
 		if( $user_guide_section ) :
 		$isEnable = $user_guide_section['is_enabled'];
 		if( $isEnable == "yes" ){ 
@@ -963,7 +1024,9 @@ $thisPostID = $post->ID;
             </div>
           </div>
         </section>
-		<?php } endif; ?>
+		  <?php } endif; 
+      endif;
+      ?>
 
         <?php if( !isMobile() ) : ?>
 
