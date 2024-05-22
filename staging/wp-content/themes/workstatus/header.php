@@ -353,14 +353,15 @@ global $ws_ctas, $RegLink, $LogLink;
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
                           height="20" alt="Menu Icon">Task Management
                         </a>
+
+                        <!-- 
                         <a href="<?php echo site_url(); ?>/project-management/project-timeline">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-01.svg" width="20"
-                          height="20" alt="Menu Icon"> project Timeline
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-01.svg" width="20" height="20" alt="Menu Icon"> project Timeline
                         </a>
                         <a href="<?php echo site_url(); ?>/project-management/gantt-charts">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20"
-                          height="20" alt="Menu Icon">Gantt Chart
-                        </a>
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20" height="20" alt="Menu Icon">Gantt Chart
+                        </a> 
+                        -->
                       </div>
                     </div>
                   </div>
