@@ -8152,11 +8152,11 @@ h3 a {
   left: 0;
   top: 2px; }
 
-.middle-section .item .column-left .text-column h3 {
+.middle-section .item .column-left .text-column h3, .trackEm .trackRow .trackContent .row h3 {
   position: relative;
   padding-left: 44px; }
 
-.middle-section .item .column-left .text-column h3 i {
+.middle-section .item .column-left .text-column h3 i, .trackEm .trackRow .trackContent .row h3 i {
   content: "";
   background: url(../images/list-icon.png) no-repeat;
   width: 30px;
@@ -8540,11 +8540,11 @@ h6.inherit, p.inherit {
   .overview {
     margin-top: 0; }
 
-  .feature-section .item .column-left .text-column h3 {
+  .feature-section .item .column-left .text-column h3, .trackEm .trackRow .trackContent .row h3 {
     position: relative;
     padding-left: 39px; }
 
-  .feature-section .item .column-left .text-column h3 i {
+  .feature-section .item .column-left .text-column h3 i, .trackEm .trackRow .trackContent .row h3 i {
     position: absolute;
     left: 0;
     top: 2px; }
