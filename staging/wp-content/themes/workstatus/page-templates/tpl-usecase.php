@@ -79,7 +79,6 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h6><span class="bg-purple"><?php echo $secret_to_success['heading']; ?></span></h6>
                     <h2><?php echo $secret_to_success['sub_heading']; ?></h2>
                     <?php if ($secret_to_success['content']) : ?>
-                       <p> <?php echo $secret_to_success['content']; ?></p>
                     <?php endif; ?>
                 </div>
                 <div class="trackRow">
