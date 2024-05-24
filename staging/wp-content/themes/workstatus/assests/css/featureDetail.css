@@ -4075,6 +4075,12 @@ h3 a {
   .site_nav .dropdown:hover > a:after {
     display: none; }
 
+  .site_nav > ul > li#howitworksitem {
+    position: relative; }
+
+  .feature-header .site__header .site_nav > ul > li#howitworksitem > a::before {
+    display: none; }
+
   .site_nav .login a:after {
     background: url(../images/button-arwhover.png) no-repeat; } }
 @media (max-width: 979px) {

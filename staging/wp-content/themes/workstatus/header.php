@@ -110,6 +110,14 @@ global $ws_ctas, $RegLink, $LogLink;
   .career_row .row .apply-row{width:30%; text-align: right;}
   .career_row .row .apply-row .primary_btn1{border-radius: 30px; height: 50px; line-height: 16px;}
   .tt-inherit{text-transform: initial;}
+
+
+  @media screen and (max-width: 1023px) {
+    .site_nav > ul > li#howitworksitem{position: relative;}
+    .feature-header .site__header .site_nav > ul > li#howitworksitem > a::before {display:none;}
+  }
+
+
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->
@@ -369,7 +377,7 @@ global $ws_ctas, $RegLink, $LogLink;
               </div>
             </li>
             <li id="howitworksitem" class="dropdown how-works">
-              <a href="<?php echo site_url(); ?>/solution" onclick="showHowitworkItem();">Solutions</a>
+              <a href="<?php echo site_url(); ?>/solution">Solutions</a><span class="trigger" onclick="showHowitworkItem();"></span>
               <div class="full-menu">
                 <div class="container">
                   <div class="menu-small">
