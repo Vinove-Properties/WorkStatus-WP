@@ -8143,10 +8143,14 @@ h3 a {
         color: #fff;
         border-color: #fff; }
 
+.feature-section .item .column-left .text-column h3 {
+  position: relative;
+  padding-left: 44px; }
+
 .feature-section .item .column-left .text-column h3 i {
-  background: url(../images/list-icon.png) no-repeat;
-  width: 40px;
-  height: 30px; }
+  position: absolute;
+  left: 0;
+  top: 2px; }
 
 .timeline .trackRow .trackContent .row h5 {
   margin: 0 0 5px; }
@@ -8520,7 +8524,16 @@ h6.inherit, p.inherit {
     padding: 100px 0; }
 
   .overview {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .feature-section .item .column-left .text-column h3 {
+    position: relative;
+    padding-left: 39px; }
+
+  .feature-section .item .column-left .text-column h3 i {
+    position: absolute;
+    left: 0;
+    top: 2px; } }
 @media screen and (max-width: 767px) {
   .hero-banner .inner-wrap .actionBtn {
     justify-content: center; }
