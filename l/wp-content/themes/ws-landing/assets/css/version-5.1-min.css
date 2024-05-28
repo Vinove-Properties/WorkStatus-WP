@@ -4235,6 +4235,9 @@ button:focus {
   height: 95%; }
 
 /*IP Based Css ends Here*/
+.page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content:after {
+  display: none !important; }
+
 @media (max-width: 1600px) {
   .banner-section .bannerboy {
     height: 88%; } }
