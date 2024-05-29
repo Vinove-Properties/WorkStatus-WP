@@ -7,13 +7,15 @@ if( spanClose ){
     }
 }
 function call_demows(){
-    let wsIntentForm = document.getElementById("ws-intent-popup");
-    if( wsIntentForm ){
-        if( wsIntentForm.classList.contains('visible') ){
-            wsIntentForm.classList.remove('visible');
-        }
-    }
-    formPopup.style.display = "block";    
+    window.location.href = "https://calendly.com/workstatus/demo";
+    
+    // let wsIntentForm = document.getElementById("ws-intent-popup");
+    // if( wsIntentForm ){
+    //     if( wsIntentForm.classList.contains('visible') ){
+    //         wsIntentForm.classList.remove('visible');
+    //     }
+    // }
+    // formPopup.style.display = "block";    
 }
 function setoptValueDM( val, label, input, parent_col){
     //console.log( parent_col );
