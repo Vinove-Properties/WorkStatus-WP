@@ -3,6 +3,68 @@ $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+function clSendMail( $emailTo, $subject, $body, $type, $userEmail, $emailCC = [], 
+    $emailBCC = [], $attachments = [], $cname = null ){
+   $mail = new PHPMailer(true);
+   $smtp = new SMTP;
+    try{
+        if (!$smtp->connect('smtp.gmail.com', 587)) {
+            print_r($smtp->getError());
+            throw new Exception('Connect failed!');
+        }
+        
+        $mail->isSMTP();
+        $mail->Host         = "smtp.gmail.com";
+        $mail->SMTPSecure   = 'ssl';
+        $mail->Port         = 465;
+        $mail->SMTPAuth     = true;
+        $mail->Username     = 'do-not-reply@workstatus.io';
+        $mail->Password     = 'qqmwjodicsevwikm';
+
+        if( $type == "lead" ){
+            $mail->setFrom( $userEmail, $cname );
+        }else{
+            $mail->setFrom( "donotreply@workstatus.io", 'Workstatus');
+        }
+        $mail->addAddress($emailTo);
+        if( $emailCC ){
+            foreach( $emailCC as $emailC ){
+                $mail->addCC( $emailC );
+            }
+        }
+        if( $emailBCC ){
+            foreach( $emailBCC as $emailBC ){
+                $mail->addBCC( $emailBC );        
+            }
+        }
+        if( $type == "lead" ){
+            $mail->addReplyTo( $userEmail );
+        }else{
+            $mail->addReplyTo( 'donotreply@workstatus.io' );
+        }
+        
+        if( $attachments ){
+            foreach( $attachments as $attachment ){
+                $mail->addAttachment( $attachment );
+            }
+        }
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $body;    
+        $mail->send();
+        return true;
+    }catch(Exception $e){
+        return false;
+    }
+}
+
 function get_visitor_ip(){
     if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
               $_SERVER['REMOTE_ADDR']       = $_SERVER["HTTP_CF_CONNECTING_IP"];
@@ -144,6 +206,30 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $comment    = $flds[3]['answer'];
     $email      = $json['payload']['email'];
     
+
+    $varDeliminator = "<br>";
+    $body = "";
+    $body .= "Name : ".$json['payload']['name'].$varDeliminator;
+    $body .= "Email : ".$email.$varDeliminator;
+    $body .= "Contact No. : ".$phone.$varDeliminator;
+
+    $body .= "Company Name. : ".$company.$varDeliminator;
+    $body .= "Team size : ".$teamSize.$varDeliminator;
+    $body .= "Requirement : ".$comment.$varDeliminator;
+
+    $body .= "IP Address : ".$tracking_ip.$varDeliminator;
+    $body .= "Page Url : ".$pageurl.$varDeliminator;
+    $body .= "Lead Source : ".$varLeadSource.$varDeliminator;
+    $body .= "Referer Url : ".$referalurl.$varDeliminator;
+
+    $body .= "UTM Source : ".$utm_source.$varDeliminator;
+    $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
+    $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
+
+    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], 
+    ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+
+
     $tempLog = fopen(CL_LOGFILE,"a");
     fwrite($tempLog, $email.print_r($json, true)."\n");
     fclose($tempLog);
