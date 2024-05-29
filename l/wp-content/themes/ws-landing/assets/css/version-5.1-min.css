@@ -3942,6 +3942,8 @@ button:focus {
         display: none; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options.is-visible {
           display: block; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option.m0 {
+          margin: 0 0 15px; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
           min-height: initial;
           padding-top: 15px; }
