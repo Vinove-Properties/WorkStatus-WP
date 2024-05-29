@@ -3177,7 +3177,7 @@ button:focus {
         box-sizing: border-box;
         width: 100%;
         border: 1px solid #e4e6ea;
-        padding: 30px 25px;
+        padding: 30px 23px;
         border-radius: 15px;
         margin-right: -1px;
         margin-bottom: 32px;
@@ -3189,6 +3189,10 @@ button:focus {
           width: 90%;
           margin: 0 0 40px;
           position: relative; }
+          .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+            font-size: 15px;
+            line-height: 24px;
+            min-height: 96px; }
           .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
             font-size: 25px;
             color: #2f3a5e;
@@ -3715,6 +3719,8 @@ button:focus {
     padding: 30px 18px; }
     .ws-pricing .price-flex .price-column .price-box .pr-plan {
       margin: 0 0 30px; }
+      .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+        min-height: 120px; }
       .ws-pricing .price-flex .price-column .price-box .pr-plan h3 {
         font-size: 22px;
         line-height: 30px; }
@@ -3814,7 +3820,8 @@ button:focus {
       .ws-pricing .price-flex .price-column .price-box .card-plan {
         min-height: initial; }
       .ws-pricing .price-flex .price-column .price-box .pr-plan p {
-        font-size: 15px; }
+        font-size: 15px;
+        min-height: initial; }
       .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
         display: none; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
@@ -3914,6 +3921,8 @@ button:focus {
       .ws-pricing .price-flex .price-column .price-box .pr-plan {
         width: 100%;
         margin: 0 0 20px; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+          min-height: initial; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan h3 br {
           display: none; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
