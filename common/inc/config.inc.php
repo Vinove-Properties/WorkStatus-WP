@@ -618,6 +618,7 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         'Lead_Status'   => $lead_status,
         'Is_Duplicate'  => "No",
         'SQL'           => "Yes",
+        'Sales_Qualified_Lead' => "Yes",
         'Owner'         => $owner_id,
         'Description'   => $requirement, //$zohoDesc
         'IP_Address1'   => getConfigUserIP(),

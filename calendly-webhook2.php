@@ -299,6 +299,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     //'Lead_Status'   => "Demo Scheduled";  
     'Owner'         => $owner_id,
     'SQL'               => "Yes",
+    'Sales_Qualified_Lead' => "Yes",
     'IP_Address1'   => get_visitor_ip(),
     'IP_Address'    => get_visitor_ip(),
     'UTM_Source'    => $utm_source,
@@ -352,6 +353,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                 'Is_Duplicate'      => "Yes",
                 'Calendly_Booked'   => "Yes",
                 'SQL'               => "Yes",
+                'Sales_Qualified_Lead' => "Yes",
                 'Phone'             => $phone,
                 'Company_Headcount' => $teamSize,
                 'Description'       => $comment
