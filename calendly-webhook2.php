@@ -217,7 +217,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "Team size : ".$teamSize.$varDeliminator;
     $body .= "Requirement : ".$comment.$varDeliminator;
 
-    $body .= "IP Address : ".$tracking_ip.$varDeliminator;
+    $body .= "IP Address : ".get_visitor_ip().$varDeliminator;
     $body .= "Page Url : ".$pageurl.$varDeliminator;
     $body .= "Lead Source : ".$varLeadSource.$varDeliminator;
     $body .= "Referer Url : ".$referalurl.$varDeliminator;
