@@ -507,6 +507,13 @@ function dupLeadNote( $varAccessToken, $lead_id, $requirement ){
     curl_close( $curl );
 }
 
+function limitStringLength($string, $maxLength = 255 ) {
+    if (strlen($string) > $maxLength){
+        return substr($string, 0, $maxLength - strlen($suffix));
+    }
+    return $string;
+}
+
 function getzoholeads($argArrData, $lead_status = "Not Contacted"){ 
 //echo '<pre>'; print_r($argArrData); die;    
 $fname = ( isset( $argArrData['fname'] ) && !empty( $argArrData['fname'] ) ) ? $argArrData['fname'] : '';
@@ -618,7 +625,7 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         'UTM_Source'    => $utm_src,
         'UTM_Medium'    => $utm_mdm,
         'UTM_Campaign'  => $utm_cmp,
-        'Website_URL'   => $pageurl,
+        'Website_URL'   => limitStringLength($pageurl, 250),
         'Ref_Url'       => $referalurl,
         'Company_Headcount' => $teamSize
         ));
@@ -644,6 +651,11 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         ));
         $response   = curl_exec( $curl );
         $response   = json_decode( $response );
+
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, PHP_EOL."ZOHO CRM #".$email.print_r($response,1) );
+        fclose( $file );
+        
         if( isset( $response->data[0] ) &&  ($response->data[0]->code == "DUPLICATE_DATA") ) :
             $lead_id = ( isset( $response->data[0] ) ) ? $response->data[0]->details->id : 0;
             if( $lead_id !== 0 ){
