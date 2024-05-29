@@ -227,20 +227,22 @@ function ws_landing_scripts(){
 	}
 
 	if( is_page_template(['page-templates/tpl-version5.0.php', 'page-templates/tpl-version5.1.php']) ){
-		$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';
-    wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);
-		if( is_page_template('page-templates/tpl-version5.1.php') ){
-		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );	
-		}else{
-		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true );
-		}		
-
-
-
-		wp_enqueue_script( 'ws-ns-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, true );
-		wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation5.0.js', array(), _S_VERSION, true);
-		wp_localize_script( 'wssignup-script', 'wsObj', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
+	$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';    
+	wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);
+	
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+	wp_enqueue_script('ws-pricing', 'https://www.workstatus.io/wp-content/themes/workstatus/js/ws-pricing.js', [], time(), true);
+	
+	if( is_page_template('page-templates/tpl-version5.1.php') ){
+	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );	
+	}else{
+	wp_enqueue_script('ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true);
+	}
+	wp_enqueue_script( 'ws-ns-script', get_stylesheet_directory_uri() . '/assets/js/script.js', array(), _S_VERSION, 
+	true );
+	wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation5.0.js', array(), _S_VERSION, 
+	true);
+	wp_localize_script( 'wssignup-script', 'wsObj', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
 	}elseif( is_page_template( 'page-templates/tpl-version6.0.php' ) ){
 		//$tplversion = get_post_meta( $post->ID, 'tpl-stype', true );
 		if( sixTwoTpl() === true ){
