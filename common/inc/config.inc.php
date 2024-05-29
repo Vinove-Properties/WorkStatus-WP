@@ -644,6 +644,11 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         ));
         $response   = curl_exec( $curl );
         $response   = json_decode( $response );
+
+        $file       = fopen(CL_LOGFILE,"a");
+        fwrite( $file, PHP_EOL."ZOHO CRM #".$email.print_r($response,1) );
+        fclose( $file );
+        
         if( isset( $response->data[0] ) &&  ($response->data[0]->code == "DUPLICATE_DATA") ) :
             $lead_id = ( isset( $response->data[0] ) ) ? $response->data[0]->details->id : 0;
             if( $lead_id !== 0 ){
