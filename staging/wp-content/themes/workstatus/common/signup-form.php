@@ -97,7 +97,7 @@ $conArray   = $conData->response->data;
                   <h3>THANK YOU!</h3>
                   <p>Your registration was successful. As a next step, we've sent you an email to confirm your email address. Once confirmed, you will be good to login & use the system.</p>
                </div>
-               <h2>Empower Your Team: Get Started Now</h2>
+               <h2>Start Your 7-Day Free Trial</h2>
                <form onsubmit="return signupFrmValidation(this)" method="post">
                   <div class="form-wrap">
                      <div class="form-group">
