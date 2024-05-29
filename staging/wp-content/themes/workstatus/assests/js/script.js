@@ -382,20 +382,22 @@ function call_demows( cont = '<h2>Let us take you on a personalized <span class=
 }
 
 function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    let wsIntentForm    = document.getElementById("ws-intent-popup");
-    let popHeader       = document.getElementById("demo-popup");
-    let entQuery        = document.getElementById("is-ent-query");
-    let demoBtn         = document.getElementById("submitButton");
+    window.location.href = "https://calendly.com/workstatus/demo";
     
-    if( wsIntentForm ){
-        if( wsIntentForm.classList.contains('visible') ){
-            wsIntentForm.classList.remove('visible');
-        }
-    }
-    entQuery.value = 1;
-    popHeader.innerHTML = cont;
-    demoBtn.innerText = "Request a Quote";
-    formPopup.style.display = "block";    
+    // let wsIntentForm    = document.getElementById("ws-intent-popup");
+    // let popHeader       = document.getElementById("demo-popup");
+    // let entQuery        = document.getElementById("is-ent-query");
+    // let demoBtn         = document.getElementById("submitButton");
+    
+    // if( wsIntentForm ){
+    //     if( wsIntentForm.classList.contains('visible') ){
+    //         wsIntentForm.classList.remove('visible');
+    //     }
+    // }
+    // entQuery.value = 1;
+    // popHeader.innerHTML = cont;
+    // demoBtn.innerText = "Request a Quote";
+    // formPopup.style.display = "block";    
 }
 
 if( spanClose ){
