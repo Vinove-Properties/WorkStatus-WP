@@ -62,7 +62,7 @@
       <div class="pr-plan">
         <span class="pr-icon">
           <picture>
-            <img loading="lazy" src="assets/images/wsp-01.svg"
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/wsp-01.svg"
               alt="workstatus" width="25" height="25">
           </picture>
         </span>
@@ -120,7 +120,7 @@
       <div class="pr-plan">
         <span class="pr-icon">
           <picture>
-            <img loading="lazy" src="assets/images/wsp-02.svg"
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/wsp-02.svg"
               alt="workstatus" width="29" height="29">
           </picture>
         </span>
@@ -178,7 +178,7 @@
       <div class="pr-plan">
         <span class="pr-icon">
           <picture>
-            <img loading="lazy" src="assets/images/wsp-03.svg"
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/wsp-03.svg"
               alt="workstatus" width="29" height="29">
           </picture>
         </span>
@@ -236,7 +236,7 @@
       <div class="pr-plan">
         <span class="pr-icon">
           <picture>
-            <img loading="lazy" src="assets/images/wsp-04.svg"
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/wsp-04.svg"
               alt="workstatus" width="24" height="24">
           </picture>
         </span>
