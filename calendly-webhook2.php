@@ -222,7 +222,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "Requirement : ".$comment.$varDeliminator;
 
     $body .= "IP Address : ".get_visitor_ip().$varDeliminator;
-    $body .= "Page Url : ".$pageurl.$varDeliminator;
+    $body .= "Page Url : ".$pageUrl.$varDeliminator;
     $body .= "Lead Source : ".$varLeadSource.$varDeliminator;
     $body .= "Referer Url : ".$referalurl.$varDeliminator;
 
@@ -310,7 +310,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'Description'   => $comment,
     'UTM_Medium'    => $utm_medium,
     'UTM_Campaign'  => $utm_campaign,
-    'Website_URL'   => $pageurl,
+    'Website_URL'   => $pageUrl,
     //'Ref_Url'       => $referalurl,
     'Company_Headcount' => $teamSize,
     'Calendly_Booked'   => "Yes"
