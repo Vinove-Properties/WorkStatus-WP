@@ -66,7 +66,7 @@
                 alt="workstatus" width="25" height="25">
             </picture>
           </span>
-          <h3>Free</h3>
+          <h3 style="text-align:center;">Free<br><br></h3>
           <div class="total">1 USER MINIMUM</div>
           <p>Avail free trial & get full access to all features & streamline your team's productivity and efficiency </p>
         </div>
@@ -221,7 +221,7 @@
           <span class="wph" id="pl-basic">Custom</span>
           <span class="prio smtext"><strong>Billed annually.</strong> Switch the Billing cycle to Annual</span>
         </div>
-        <a class="price_btn" href="#">Try For Free</a>
+        <a class="price_btn" href="#">Request a Quote</a>
         <div class="price-wrapper">
           <div class="price-options">
             <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -267,11 +267,8 @@
             <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Try For Free</a></th>
             <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
             <th>
-              <span class="plan-label">Enterprise</span>
-             
-
-              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
-
+            <span class="plan-label">Enterprise</span>
+            <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
             </th>
           </tr>
         </thead>

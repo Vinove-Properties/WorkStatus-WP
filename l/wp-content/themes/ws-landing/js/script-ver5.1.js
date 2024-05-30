@@ -3,11 +3,12 @@ var myTabs1,
     spanClose = document.getElementsByClassName("closeicon")[0];
 
 function popup(e = "Book A Demo" ){
+    var refUrl  = document.body.getAttribute('data-url');
     var utmParm = document.body.getAttribute('data-utm');
     if( utmParm ){
-    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm;
+    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
     }else{
-    window.location.href = "https://calendly.com/workstatus/demo";
+    window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
     }
 
     // document.getElementById("myhiddenid").value = "1";

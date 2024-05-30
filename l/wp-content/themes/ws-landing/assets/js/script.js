@@ -114,11 +114,12 @@ document.addEventListener("scroll", () => {
 var formPopup   = document.getElementById('formPopup');
 var spanClose   = document.getElementsByClassName("closeicon")[1];
 function popup( bClass = 'rq-demo' ){
+    var refUrl  = document.body.getAttribute('data-url');
     var utmParm = document.body.getAttribute('data-utm');
     if( utmParm ){
-    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm;
+    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
     }else{
-    window.location.href = "https://calendly.com/workstatus/demo";
+    window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
     }
     
     // document.body.classList.remove("rq-demo");

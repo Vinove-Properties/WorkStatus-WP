@@ -452,6 +452,73 @@ if( $cards && count( $cards ) > 0 ) :
 <?php endif; endif; ?>
 
 <?php 
+if( is_page(4285) ){
+$productsInt = get_field('pro-int');
+if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes") ) :   
+  echo '<section class="one-solution p50 list-icon">';
+  echo '<div class="container">';
+    echo '<div class="top-section">';
+    if( !empty($productsInt['top_heading']) ){
+      echo '<h6><span class="bg-purple">'.$productsInt['top_heading'].'</span></h6>';
+    }
+    echo $productsInt['top_content'];        
+    echo '</div>';
+    echo '<div class="usecase-tabs"><div class="tab-row">';
+    echo '<nav id="tabs" class="tab-nav">
+    <ul>
+    <li class="">
+    <a href="#tab01">
+    <span class="icon">
+    <img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>Time & Attendance</a>
+    </li>
+    <li><a href="#tab02">
+    <span class="icon active"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30">
+    </span>
+    Use 02</a>
+    </li>
+    <li class=""><a href="#tab03">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>
+    Use 03</a>
+    </li>
+    <li class="active"><a href="#tab04">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>
+    Use 04</a>
+    </li>
+    </ul>
+    </nav>';
+    echo '<div id="tab-contents" class="bcontents">';
+    $cat  = ['cat-1', 'cat-2', 'cat-3', 'cat-4'];
+    $c    = 0;
+    foreach ($cat as $ca){ $c++;      
+      echo '<div id="tab0'.$c.'" class="tab-contents"><div class="flex_row">';
+      if( $productsInt['cards'] ){
+          foreach( $productsInt['cards'] as $row ){
+              $row['cat'] = 'cat-1';
+              if( $row['cat'] == $ca ){
+                echo '<div class="column-three"><div class="box">';
+                echo '<div class="bx-content">';
+                if( $row['icon'] ){
+                    echo pxlGetPtag( $row['icon'] );
+                }
+                echo $row['content'];
+                echo '</div>';
+                if( $row['link'] ){
+                  echo '<a href="'.vc_siteurl($row['link']).'" class="view-more">Explore</a>';
+                }
+                echo '</div></div>';  
+              }
+              
+          }
+      }
+      echo '</div></div>';    
+    }
+    echo '</div>';
+    echo '</div></div>';
+    if( geoCTAcheck() === true ){
+      echo '<div class="mt80 btnSc">'.wsDemoCta().'</div>';
+    }
+  echo '</div>';
+  echo '</section>';
+endif;
+}else{
 if( !is_page(4295) ) :
 $productsInt = get_field('pro-int');
 if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes") ) : 
@@ -495,8 +562,9 @@ $cardColumn = ( $cardCount === 4 ) ? 'column' : 'column-three';
   </div>
 </section>
 <?php 
-endif; 
 endif;
+endif;
+}
 ?>
 
 
