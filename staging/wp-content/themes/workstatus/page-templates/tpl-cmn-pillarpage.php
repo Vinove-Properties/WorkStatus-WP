@@ -491,7 +491,6 @@ if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes")
       echo '<div id="tab0'.$c.'" class="tab-contents"><div class="flex_row">';
       if( $productsInt['cards'] ){
           foreach( $productsInt['cards'] as $row ){
-              $row['cat'] = 'cat-1';
               if( $row['cat'] == $ca ){
                 echo '<div class="column-three"><div class="box">';
                 echo '<div class="bx-content">';
