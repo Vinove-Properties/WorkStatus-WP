@@ -1,64 +1,15 @@
 <?php
-/**
- * ws-landing functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package ws-landing
- */
-
 if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '16.11.0' );
+	//define( '_S_VERSION', '16.11.0' );
+	define( '_S_VERSION', time() );
 }
 
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- *
- * Note that this function is hooked into the after_setup_theme hook, which
- * runs before the init hook. The init hook is too late for some features, such
- * as indicating support for post thumbnails.
- */
 function ws_landing_setup() {
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on ws-landing, use a find and replace
-		* to change 'ws-landing' to the name of your theme in all the template files.
-		*/
 	load_theme_textdomain( 'ws-landing', get_template_directory() . '/languages' );
-
-	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
-
-	/*
-		* Let WordPress manage the document title.
-		* By adding theme support, we declare that this theme does not use a
-		* hard-coded <title> tag in the document head, and expect WordPress to
-		* provide it for us.
-		*/
 	add_theme_support( 'title-tag' );
-
-	/*
-		* Enable support for Post Thumbnails on posts and pages.
-		*
-		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
-		*/
 	add_theme_support( 'post-thumbnails' );
-
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'ws-landing' ),
-		)
-	);
-
-	/*
-		* Switch default core markup for search form, comment form, and comments
-		* to output valid HTML5.
-		*/
-	add_theme_support(
-		'html5',
+	add_theme_support( 'html5',
 		array(
 			'search-form',
 			'comment-form',
@@ -183,7 +134,7 @@ function ws_landing_scripts(){
 	wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
 	if( !wp_is_mobile() ){
-		wp_enqueue_style( 'ws-typekit', 'https://use.typekit.net/wzh0tzc.css' );
+		//wp_enqueue_style( 'ws-typekit', 'https://use.typekit.net/wzh0tzc.css' );
 		//wp_enqueue_script('jquery');
 		//wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array(), _S_VERSION, true );
 	}else{
@@ -227,12 +178,20 @@ function ws_landing_scripts(){
 	}
 
 	if( is_page_template(['page-templates/tpl-version5.0.php', 'page-templates/tpl-version5.1.php']) ){
-	$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';    
-	wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);
-	
+
+	$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';    	
+	/*Pricing Table Stuff : Starts*/
+	wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);	
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-	wp_enqueue_script('ws-pricing', 'https://www.workstatus.io/wp-content/themes/workstatus/js/ws-pricing.js', [], time(), true);
 	
+	wp_enqueue_script('ws-pricing', get_bloginfo('template_url').'/js/ws-pricing.js', [], time(), true);
+	wp_localize_script('ws-pricing', 'prObj', [
+	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
+	: site_url('/wp-json/ws-api/v1/ipinfo'),
+	'app_url' => 'app.workstatus.io'
+	]);	
+	/*Pricing Table Stuff : Ends*/
+
 	if( is_page_template('page-templates/tpl-version5.1.php') ){
 	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );	
 	}else{
