@@ -182,7 +182,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     if( isset( $json['payload']['tracking']['utm_source'] ) ){
         $utm_source = $json['payload']['tracking']['utm_source'];
         $utmsrc     = explode( "!!", $utm_source );
-        $pageUrl    = $utmsrc[0];
+        //$pageUrl    = $utmsrc[0];
         $ipAddress  = $utmsrc[1];
         $hasDataID  = ( isset( $utmsrc[2] ) ) ? $utmsrc[2] : 0;
     }
@@ -193,6 +193,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
 
     if( isset( $json['payload']['tracking']['utm_medium'] ) ){
         $utm_medium = $json['payload']['tracking']['utm_medium'];
+    }
+
+    if( isset( $json['payload']['tracking']['utm_term'] ) ){
+        $pageUrl = $json['payload']['tracking']['utm_term'];
     }
 
     /*
@@ -306,7 +310,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'Description'   => $comment,
     'UTM_Medium'    => $utm_medium,
     'UTM_Campaign'  => $utm_campaign,
-    //'Website_URL'   => $pageurl,
+    'Website_URL'   => $pageurl,
     //'Ref_Url'       => $referalurl,
     'Company_Headcount' => $teamSize,
     'Calendly_Booked'   => "Yes"
