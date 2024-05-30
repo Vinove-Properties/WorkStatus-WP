@@ -3723,6 +3723,9 @@ body.geo-india .int-local {
 
   .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
     font-size: 18px; } }
+@media (max-width: 1380px) {
+  .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+    min-height: 120px; } }
 @media (max-width: 1280px) {
   .ws-pricing .price-flex .price-column .price-box {
     padding: 30px 18px; }
