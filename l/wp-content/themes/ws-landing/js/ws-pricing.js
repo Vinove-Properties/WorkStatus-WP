@@ -3,7 +3,13 @@ const eurCountries  = [ "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "F
 const afCountries   = [ "DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CD", "CG", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "CI", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW" ];
 
 function getwsPlanurl(plan_id = 0, type = "annual"){
-  return 'https://'+prObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;
+  var utmParm = document.body.getAttribute('data-utm');
+  if( utmParm ){
+    return 'https://'+prObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&'+utmParm;
+  }else{
+    return 'https://'+prObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;
+  }
+  
 }
 
 /*
@@ -156,10 +162,9 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 }
 
 window.addEventListener("load", function (){
-
     var xhttp = new XMLHttpRequest();
     //xhttp.open("GET", prObj.ipinfo, true); 
-    xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo', true);     
+    xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo?ip=103.178.60.215', true);     
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function(){
         if( (this.readyState == 4) && (this.status == 200) ){
