@@ -401,7 +401,11 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
   </div>
 </section>
 <?php endif; ?>
-<?php get_template_part('inc/ws', 'pricing'); ?>
+<?php 
+if( get_field('ws-pctable') === "yes" ){
+  get_template_part('inc/ws', 'pricing');   
+}
+?>
 <!--Supported Device Start From Here-->
 <section class="supported-device padding-t-100 padding-b-100">
   <div class="container">
