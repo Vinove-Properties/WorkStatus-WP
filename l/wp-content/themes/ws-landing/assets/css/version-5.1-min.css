@@ -3706,6 +3706,15 @@ button:focus {
         transition: all 0.3s ease-in-out;
         display: block; }
 
+body.geo-india .int-only {
+  display: none !important; }
+
+.int-local {
+  display: none; }
+
+body.geo-india .int-local {
+  display: inline-block; }
+
 @media (max-width: 1420px) {
   .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
     font-size: 12px; }

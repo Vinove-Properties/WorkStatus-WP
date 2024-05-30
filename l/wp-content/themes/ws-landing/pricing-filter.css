@@ -1,7 +1,7 @@
 
 #pre-loader{ padding: 100px 0;text-align: center; font-size: 24px;}
 #pc-country{position:relative; z-index:-1;}
-.plan-section{padding-bottom:30px;padding-top:0;}
+.plan-section{padding-bottom:30px;}
 .plan-section .switcher-sec{background:#f8f5ff;border-radius:10px;justify-content:space-between;display:flex;padding:16px 20px;width:100%;margin:0 auto;gap:110px}
 .plan-section .flex_row{justify-content:center;gap:20px}
 .plan-section .col-box{border-radius:15px;border:.983px solid #E4E6EA;background:#FFF;padding:26px 20px;position:relative}
@@ -48,6 +48,11 @@
 .switch-btn-box .switch .slider::before{position:absolute;content:"";width:19px;height:19px;background-color:#fff;border-radius:20px;transform:translate(30px,4px);transition:all .2s ease-in-out}
 .switch-btn-box .monthly{color: rgba(5, 22, 77, 0.5);}
 .switch-btn-box span{    color: #00234b;font-size:20px;font-weight:500;line-height:normal}
+
+
+
+
+
 @media (max-width: 991px){
 
 
