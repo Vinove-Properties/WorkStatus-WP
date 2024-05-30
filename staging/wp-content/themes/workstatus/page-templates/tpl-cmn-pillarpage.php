@@ -466,7 +466,7 @@ if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes")
     echo '<div class="usecase-tabs"><div class="tab-row">';
     echo '<nav id="tabs" class="tab-nav">
     <ul>
-    <li class="">
+    <li class="active">
     <a href="#tab01">
     <span class="icon">
     <img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>Time & Attendance</a>
@@ -479,7 +479,7 @@ if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes")
     <li class=""><a href="#tab03">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>
     Use 03</a>
     </li>
-    <li class="active"><a href="#tab04">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>
+    <li class=""><a href="#tab04">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>
     Use 04</a>
     </li>
     </ul>
