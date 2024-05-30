@@ -331,7 +331,7 @@ global $ws_ctas, $RegLink, $LogLink;
                       </div>
                     </div>
                     <div class="col-menu">
-                      <h3><a href="<?php echo site_url(); ?>/project-management">Project Management</a></h3>
+                      <h3><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></h3>
                       <div class="menu-box">
                         <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software">
                         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon22.svg" width="20"

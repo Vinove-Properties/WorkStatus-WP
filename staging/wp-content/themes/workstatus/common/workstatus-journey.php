@@ -13,8 +13,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         <?php 
       if( is_page(7306) ){
       echo '<h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>';
-      echo '<h2>Streamline with Smart Customization</h2>
-      <p>Discover how our solutions can seamlessly integrate into your operation</p>';
+      echo '<h2>Transform Your Workforce Management</h2>
+      <p>Tailored Solutions for Enhanced Productivity</p>';
       }else{ ?>
       <h6><span class="bg-white"><?php echo $work_status_journey['heading']; ?></span></h6>  
       <h2><?php echo $work_status_journey['sub_heading']; ?></h2>
@@ -36,9 +36,16 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       <span class="devide">OR</span>
       <div class="jour-col">
         <div class="top-section">
-          <h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>
-          <h2>Streamline with Smart Customization</h2>
-          <p>Integrating seamlessly with your operations.</p>
+        <?php 
+        if( is_page(7306) ){
+        echo '<h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>';
+        echo '<h2>Streamline and Automate Your Workflow</h2>
+        <p>Customized Solutions for Maximum Productivity</p>';
+        }else{ ?>
+        <h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>
+        <h2>Streamline with Smart Customization</h2>
+        <p>Integrating seamlessly with your operations.</p>
+        <?php } ?>    
         </div>
         <div class="actionBtn">
           <div><a href="https://calendly.com/workstatus/sales" href="javascript:void(0);" class="primary_btn1">Talk to Sales</a>
@@ -48,15 +55,4 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
 <?php } endif; ?>
