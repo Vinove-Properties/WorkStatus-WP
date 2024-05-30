@@ -469,15 +469,15 @@ if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes")
     <li class="active">
     <a href="#tab01">
     <span class="icon">
-    <img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>Time & Attendance</a>
+    <img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h01.svg" alt="Icon" width="30" height="30"></span>Time & Attendance</a>
     </li>
     <li><a href="#tab02">
-    <span class="icon active"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30">
+    <span class="icon active"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h02.svg" alt="Icon" width="30" height="30">
     </span>Workforce Management</a>
     </li>
-    <li class=""><a href="#tab03">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>Project and Task Management</a>
+    <li class=""><a href="#tab03">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h03.svg" alt="Icon" width="30" height="30"></span>Project and Task Management</a>
     </li>
-    <li class=""><a href="#tab04">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/home-tab01.svg" alt="Icon" width="30" height="30"></span>Reporting & Analytics</a>
+    <li class=""><a href="#tab04">  <span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h04.svg" alt="Icon" width="30" height="30"></span>Reporting & Analytics</a>
     </li>
     </ul>
     </nav>';
