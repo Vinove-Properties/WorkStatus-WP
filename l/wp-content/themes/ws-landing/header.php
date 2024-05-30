@@ -80,7 +80,9 @@
     <?php endif; ?>
   </head>
 <body <?php body_class('mobile'); ?> 
-data-utm="<?php echo (isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING'])) ? $_SERVER['QUERY_STRING'] : ''; ?>">
+data-utm="<?php echo (isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING'])) ? $_SERVER['QUERY_STRING'] : ''; ?>"
+data-url="<?php the_permalink(); ?>"
+>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPPMGZH" height="0" width="0" 
       style="display:none;visibility:hidden"></iframe></noscript>
     <?php wp_body_open(); ?>

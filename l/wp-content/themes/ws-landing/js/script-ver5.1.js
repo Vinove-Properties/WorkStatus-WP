@@ -3,12 +3,19 @@ var myTabs1,
     spanClose = document.getElementsByClassName("closeicon")[0];
 
 function popup(e = "Book A Demo" ){
-    document.getElementById("myhiddenid").value = "1";
-    let t = document.getElementById("submitButton");    
-    if( !document.body.classList.contains('free-tiral-ctemplate') ){
-    "" != e ? (t.innerHTML = e) : (t.innerHTML = "Book A Demo")     
-    }    
-    formPopup.style.display = "block";
+    var utmParm = document.body.getAttribute('data-utm');
+    if( utmParm ){
+    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm;
+    }else{
+    window.location.href = "https://calendly.com/workstatus/demo";
+    }
+
+    // document.getElementById("myhiddenid").value = "1";
+    // let t = document.getElementById("submitButton");    
+    // if( !document.body.classList.contains('free-tiral-ctemplate') ){
+    // "" != e ? (t.innerHTML = e) : (t.innerHTML = "Book A Demo")     
+    // }    
+    // formPopup.style.display = "block";
 }
 
 spanClose &&

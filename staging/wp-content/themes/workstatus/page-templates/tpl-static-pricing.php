@@ -101,7 +101,7 @@
               <span class="wph" id="pl-product">$4</span>
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-product" href="#">Choose Plan</a>
+            <a class="price_btn" id="ws-plan-product" href="#">Try For Free</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
@@ -148,7 +148,7 @@
               <span class="wph" id="pl-project">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-project" href="#">Choose Plan</a>
+            <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Productivity +</h4>
@@ -258,8 +258,8 @@
             <th><span class="plan-label">Free</span>
               <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
             </th>
-            <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Choose plan</a></th>
-            <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Choose plan</a></th>
+            <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Try For Free</a></th>
+            <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
             <th>
               <span class="plan-label">Enterprise</span>
              

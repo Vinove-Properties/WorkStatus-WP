@@ -114,12 +114,19 @@ document.addEventListener("scroll", () => {
 var formPopup   = document.getElementById('formPopup');
 var spanClose   = document.getElementsByClassName("closeicon")[1];
 function popup( bClass = 'rq-demo' ){
-    document.body.classList.remove("rq-demo");
-    document.body.classList.remove("rq-call");
+    var utmParm = document.body.getAttribute('data-utm');
+    if( utmParm ){
+    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm;
+    }else{
+    window.location.href = "https://calendly.com/workstatus/demo";
+    }
+    
+    // document.body.classList.remove("rq-demo");
+    // document.body.classList.remove("rq-call");
 
-    document.getElementById('myhiddenid').value='1';
-    document.body.classList.add(bClass);
-    formPopup.style.display = "block";    
+    // document.getElementById('myhiddenid').value='1';
+    // document.body.classList.add(bClass);
+    // formPopup.style.display = "block";    
 }
 
 function six_popup( bClass = 'rq-demo' ){
