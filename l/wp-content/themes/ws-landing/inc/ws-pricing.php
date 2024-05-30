@@ -254,7 +254,7 @@
   <div class="comparison-outer margin-t-100"><span class="plan-btn">View Full plan comparison</span></div>
 </div>
 
-<section class="comparison-panel" id="div-comparison">
+<section class="comparison-panel padding-b-100" id="div-comparison">
   <div class="container">
     <div class="comp-table-sticky" id="comp-table-sticky">
       <table class="comp-table">
