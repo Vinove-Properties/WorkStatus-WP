@@ -365,7 +365,15 @@ var formPopup   = document.getElementById('formPopup');
 var formbtn     = document.getElementById("myBtn2");
 var spanClose   = document.getElementsByClassName("closeicon")[0];
 function call_demows( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    window.location.href = "https://calendly.com/workstatus/demo";
+    var refUrl  = document.body.getAttribute('data-url');
+    var utmParm = document.body.getAttribute('data-utm');
+    if( utmParm ){
+    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
+    }else{
+    window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
+    }
+
+    //window.location.href = "https://calendly.com/workstatus/demo";
 
     // let wsIntentForm    = document.getElementById("ws-intent-popup");
     // let popHeader       = document.getElementById("demo-popup");

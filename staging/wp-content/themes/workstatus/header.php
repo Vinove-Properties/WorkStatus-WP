@@ -130,7 +130,11 @@ global $ws_ctas, $RegLink, $LogLink;
   <!-- End Google Tag Manager -->  
   <?php endif; ?>
 </head>
-<body <?php body_class(); ?> data-ptemplate="<?php echo basename( get_page_template() ); ?>">
+<body <?php body_class(); ?> 
+data-ptemplate="<?php echo basename( get_page_template() ); ?>"
+data-utm="<?php echo (isset($_SERVER['QUERY_STRING']) && !empty($_SERVER['QUERY_STRING'])) ? 
+$_SERVER['QUERY_STRING'] : ''; ?>"
+data-url="<?php the_permalink(); ?>">
   <?php if(isBetaVersion() === false) : ?>
   <!-- Google Tag Manager (noscript) -->
   <noscript>

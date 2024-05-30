@@ -43,8 +43,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         <p>Customized Solutions for Maximum Productivity</p>';
         }else{ ?>
         <h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>
-        <h2>Streamline with Smart Customization</h2>
-        <p>Integrating seamlessly with your operations.</p>
+        <h2>Streamline and Automate Your Workflow</h2>
+        <p>Customized Solutions for Maximum Productivity</p>
         <?php } ?>    
         </div>
         <div class="actionBtn">
