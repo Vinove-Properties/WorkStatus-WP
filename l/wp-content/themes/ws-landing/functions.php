@@ -179,16 +179,14 @@ function ws_landing_scripts(){
 
 	if( is_page_template(['page-templates/tpl-version5.0.php', 'page-templates/tpl-version5.1.php']) ){
 
-	$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';    	
+	$styleFive = (is_page_template('page-templates/tpl-version5.0.php')) ? 'version-5.0-min.css' : 'version-5.1-min.css';
+	wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);	    	
 	/*Pricing Table Stuff : Starts*/
-	$reqPricingTable = get_field('ws-pctable', $post->ID);
-	if( $reqPricingTable === "yes" ){		
-	wp_enqueue_style('ws-style', get_stylesheet_directory_uri().'/assets/css/'.$styleFive, [], _S_VERSION);	
-	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-	
+	$reqPricingTable = get_post_meta($post->ID, 'ws-pctable', true);
+	if( $reqPricingTable === "yes" ){	
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );	
 	wp_enqueue_script('ws-pricing', get_bloginfo('template_url').'/js/ws-pricing.js', [], time(), true);
-	wp_localize_script('ws-pricing', 'prObj', [
-	
+	wp_localize_script('ws-pricing', 'prObj', [	
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? 
 	'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip'] : 
 	'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo',
