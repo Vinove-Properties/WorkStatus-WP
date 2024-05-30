@@ -3580,7 +3580,7 @@ button:focus {
           text-align: left;
           color: #4a4c55; }
         .comparison-panel .comp-row .comp-tablerow tr td .chkicon {
-          background: url(../images/check-mark.svg) no-repeat;
+          background: url(../images/check-mark-new.svg) no-repeat;
           display: block;
           width: 21px;
           height: 20px;
