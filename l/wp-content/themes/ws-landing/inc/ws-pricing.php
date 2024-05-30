@@ -56,7 +56,7 @@
     <h2>Enhance Workforce Efficiency & Productivity</h2>
     <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Start your 7-day free trial today!</p>
   </div>
-  <div class="price-flex margin-t-70">
+  <div class="price-flex margin-t-100">
     <div class="price-column">
       <div class="price-box">
         <div class="pr-plan">
