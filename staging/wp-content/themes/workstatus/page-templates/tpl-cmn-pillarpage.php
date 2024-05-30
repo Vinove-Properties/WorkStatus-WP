@@ -487,8 +487,9 @@ if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes")
     echo '<div id="tab-contents" class="bcontents">';
     $cat  = ['cat-1', 'cat-2', 'cat-3', 'cat-4'];
     $c    = 0;
-    foreach ($cat as $ca){ $c++;      
-      echo '<div id="tab0'.$c.'" class="tab-contents"><div class="flex_row">';
+    foreach ($cat as $ca){ $c++;
+      $activeTb = ( $c == 1 ) ? 'active' : '';
+      echo '<div id="tab0'.$c.'" class="tab-contents '.$activeTb.'"><div class="flex_row">';      
       if( $productsInt['cards'] ){
           foreach( $productsInt['cards'] as $row ){
               if( $row['cat'] == $ca ){
