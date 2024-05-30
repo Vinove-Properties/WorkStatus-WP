@@ -23,8 +23,8 @@
       <div class="jour-col">
         <div class="top-section">
           <h6><span class="bg-white">CUSTOMIZE YOUR WORKFLOW</span></h6>
-          <h2>Streamline with Smart Customization</h2>
-          <p>Integrating seamlessly with your operations.</p>
+          <h2>Streamline and Automate Your Workflow</h2>
+        <p>Customized Solutions for Maximum Productivity</p>
         </div>
         <div class="actionBtn">
           <div><a href="https://calendly.com/workstatus/sales" href="javascript:void(0);" class="primary_btn1">Talk to Sales</a>
