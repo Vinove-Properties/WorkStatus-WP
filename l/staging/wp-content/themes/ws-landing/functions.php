@@ -214,7 +214,7 @@ function ws_landing_scripts(){
 	wp_enqueue_script( 'wssignup-script', get_stylesheet_directory_uri().'/js/validation6.0.js', array(), time(), true);
 	wp_localize_script( 'wssignup-script', 'wsObj', ['ajaxurl' => admin_url( 'admin-ajax.php' )] );
 	}else{
-		wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/css/style.css' );	
+		//wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/css/style.css' );	
 	}	
 }
 add_action( 'wp_enqueue_scripts', 'ws_landing_scripts' );
