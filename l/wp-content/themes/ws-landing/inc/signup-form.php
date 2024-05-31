@@ -147,8 +147,8 @@ $conArray   = $conData->response->data;
                 </div>
               </div>
               <div class="form-group">
-                <input type="hidden" id="ws_pid" name="pid" value="">
-                <input type="hidden" id="ws_stype" name="type" value="">
+                <input type="hidden" id="ws_pid" name="pid" value="42">
+                <input type="hidden" id="ws_stype" name="type" value="monthly">
                 <input type="hidden" name="src_page" value="<?php the_permalink(); ?>">
                 <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit" disabled>Create My Account</button>
                 <span id="ws-apimsg"></span>
