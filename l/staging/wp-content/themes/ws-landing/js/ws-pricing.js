@@ -141,10 +141,10 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let planBtn     = document.getElementById("ws-plan-"+key);
         if( planBtn ){
           let pType = ( type == "yearly" ) ? "annual" : "monthly";
-          planBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );  
+          planBtn.setAttribute("data-href", getwsPlanurl( plan_meta[key], pType ) );  
           let coPlanBtn     = document.getElementById("ws-coplan-"+key);
           if( coPlanBtn ){
-            coPlanBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );    
+            coPlanBtn.setAttribute("data-href", getwsPlanurl( plan_meta[key], pType ) );    
           }
         }
         
@@ -163,8 +163,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
 window.addEventListener("load", function (){
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", prObj.ipinfo, true); 
-    //xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo?ip=103.178.60.215', true);     
+    //xhttp.open("GET", prObj.ipinfo, true); 
+    xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo?ip=103.178.60.215', true);     
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function(){
         if( (this.readyState == 4) && (this.status == 200) ){

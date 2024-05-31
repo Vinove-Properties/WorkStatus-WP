@@ -74,7 +74,7 @@
           <span class="wph free-zero">USD 4</span>
           <span class="prio">/ user / month</span>
         </div>
-        <a class="price_btn" id="ws-plan-free" href="#">Start Free Trial</a>
+        <a class="price_btn" id="ws-plan-free" href="javascript:void(0)" onclick="glob_signup(this)">Start Free Trial</a>
         <div class="price-wrapper">
           <div class="price-options">
             <h4>Includes:</h4>
@@ -91,9 +91,9 @@
               <div class="option">
                 Clients & Invoices
               </div>
-              <div class="option">
+              <!-- <div class="option">
                 Limited app & URL tracking
-              </div>
+              </div> -->
               <div class="option">
                 Limited Screenshots
               </div>
@@ -132,7 +132,7 @@
           <span class="wph" id="pl-product">USD 5.5</span>
           <span class="prio">/ user / month</span>
         </div>
-        <a class="price_btn" id="ws-plan-product" href="#">Try For Free</a>
+        <a class="price_btn" id="ws-plan-product" href="javascript:void(0);" onclick="glob_signup(this)">Try For Free</a>
         <div class="price-wrapper">
           <div class="price-options">
             <h4>Includes:</h4>
@@ -181,7 +181,7 @@
           <span class="wph" id="pl-project">USD 5.5</span>
           <span class="prio">/ user / month</span>
         </div>
-        <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
+        <a class="price_btn" id="ws-plan-project" href="javascript:void(0);" onclick="glob_signup(this);">Try For Free</a>
         <div class="price-wrapper">
           <div class="price-options">
             <h4>Everything <span class="perp">in</span> Productivity +</h4>
@@ -221,7 +221,7 @@
           <span class="wph" id="pl-basic">Custom</span>
           <span class="prio smtext"><strong>Billed annually.</strong> Switch the Billing cycle to Annual</span>
         </div>
-        <a class="price_btn" href="javascript:void(0);" onclick="popup('rq-call');">Request a Quote</a>
+        <a class="price_btn" href="javascript:void(0);" onclick="calendlyCTA();">Request a Quote</a>
         <div class="price-wrapper">
           <div class="price-options">
             <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -262,13 +262,16 @@
           <tr>
             <th></th>
             <th><span class="plan-label">Free</span>
-              <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
+            <a class="button" id="ws-coplan-free" href="javascript:void(0);" onclick="glob_signup(this);">Choose plan</a>
             </th>
-            <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Try For Free</a></th>
-            <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
+            <th><span class="plan-label">Productivity Management</span>
+              <a class="button higlit" id="ws-coplan-product" href="javascript:void(0);" onclick="glob_signup(this);">Try For Free</a>
+            </th>
+            <th><span class="plan-label">Project Management</span>
+              <a class="button" id="ws-coplan-project" href="javascript:void(0);" onclick="glob_signup(this);">Try For Free</a></th>
             <th>
             <span class="plan-label">Enterprise</span>
-            <a class="button" onclick="popup('rq-call');" href="javascript:void(0);">Request a Quote</a>
+            <a class="button" onclick="calendlyCTA();" href="javascript:void(0);">Request a Quote</a>
             </th>
           </tr>
         </thead>
