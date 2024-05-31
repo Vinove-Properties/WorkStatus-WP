@@ -4022,6 +4022,12 @@ body.geo-india .int-local {
   height: 100%;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.6); }
+.ws-signupform .popWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 .ws-signupform .popup-content {
   width: 1120px !important;
   position: relative;
