@@ -1226,11 +1226,19 @@ $array = [
 	return ( $key ) ? $array[$key]['id'] : false;
 }
 
+function getUTMCookies($param) {
+    if (isset($_COOKIE[$param])) {
+        return sanitize_text_field($_COOKIE[$param]);
+    }
+    return '';
+}
+
 add_action( 'wp_ajax_nopriv_ws_signup_api', 'ws_signup_api_cb' );
 function ws_signup_api_cb(){
 	$data 		= (array) json_decode( file_get_contents("php://input") );
-	//print_r($data); die;
-	$userIP 	= (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == "localhost")) ? '47.31.154.223' : glob_userIPaddr();
+	
+	$userIP 	= (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == "localhost")) ? '47.31.154.223' : 
+  glob_userIPaddr();
 	$reqData 	= array(
 	'name' 			=> $data['uname'],
 	'email' 		=> $data['uemail'],
@@ -1238,11 +1246,15 @@ function ws_signup_api_cb(){
 	'phone' 		=> (isset($data['phone']) && !empty($data['phone'])) ? $data['phone'] : '',
 	'phone_country_code_id' => (isset($data['pcode']) && !empty($data['pcode'])) ? globalPhoneCode($data['pcode']) : '',
 	'ip_address' 	=> $userIP,
-	'pid' 			=> $data['pid'],
-	'type' 			=> $data['type'],
-	'source_url' 	=> $data['src_page']
+	'pid' 			  => $data['pid'],
+	'type' 			  => $data['type'],
+	'source_url' 	=> $data['src_page'],
+
+  'utm_source'    => getUTMCookies('utm_source'),
+  'utm_medium'    => getUTMCookies('utm_medium'),
+  'utm_campaign'  => getUTMCookies('utm_campaign')
 	);
-	
+	//print_r($reqData); die;
 	
 	$apiCall = "https://api.workstatus.io/api/v1/signUp";
 	if( isset( $_SERVER['HTTP_HOST'] ) && ( $_SERVER['HTTP_HOST'] == "localhost" ) ){
