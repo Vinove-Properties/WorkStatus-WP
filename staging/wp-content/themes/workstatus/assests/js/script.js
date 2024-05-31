@@ -379,8 +379,9 @@ function utm_setCookie(name, value, days) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-const params = utm_getQueryParams();
+const params    = utm_getQueryParams();
 const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+const utmValues = {};
 
 utmParams.forEach(param => {
 if (params[param]) {
@@ -393,7 +394,7 @@ function utm_getCookie(name) {
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(';').shift();
 }
-const utmValues = {};
+
 utmParams.forEach(param => {
     const value = utm_getCookie(param);
     if (value) {
