@@ -33,7 +33,9 @@
       .clock-stripe .main-header .top-nav{padding:18px 0 0;}
       .clock-stripe .main-header{padding:0 0 18px;}
       .top-stripe .small{text-transform:lowercase;}
-      .clock-stripe .top-stripe{display:flex;}
+      /*new style added 31-05-24*/
+      .clock-stripe .top-stripe{display:flex; display:none;}
+      /*new style added 31-05-24*/
       span.no-f{text-transform: initial !important;}
       .clock-stripe .banner-section{padding: 180px 0 40px;}
       .clock-stripe header{z-index: 9999;}
