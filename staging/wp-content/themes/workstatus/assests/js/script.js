@@ -1271,15 +1271,16 @@ function signupFrmValidation(e){
                     xdForm.classList.add('signup-success');
                     spnMsg.classList.add('success');                    
                     e.reset();
+                    window.location.href = ws_site_url+'/signup-thanks';
                 }else{
                     spnMsg.classList.add('error');
+                    spnMsg.innerHTML    = response.response.message;
+                    setTimeout( () => {
+                        spnMsg.innerHTML = "";
+                    }, 5000 );
                 }
                 formBtn.innerText   = "Create My Account";
                 formBtn.disabled    = false;                
-                spnMsg.innerHTML    = response.response.message;
-                setTimeout( () => {
-                    spnMsg.innerHTML = "";
-                }, 5000 );
             }
         }
         xhttp.send(formData);
