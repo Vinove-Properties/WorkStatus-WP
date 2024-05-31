@@ -164,14 +164,16 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 window.addEventListener("load", function (){
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", prObj.ipinfo, true); 
-    //xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo?ip=103.178.60.215', true);     
+    //xhttp.open("GET", 'http://localhost/workstatus-wp/website/staging/wp-json/ws-api/v1/ipinfo?ip=103.108.168.255', true);     
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function(){
         if( (this.readyState == 4) && (this.status == 200) ){
           let response = JSON.parse(this.responseText);
-            //document.getElementById("wsio-pricing").style.display   = "block";
-            //document.getElementById("wsio-preloader").style.display = "none";
-            console.log( response );
+            let selectElement = document.getElementById('su-pcode');
+            if(document.getElementById('su-pcode')){
+            const optionToSelect = selectElement.querySelector(`option[data-code="`+response.country+`"]`);
+            optionToSelect.selected = true;
+            }
             var conCode = response.country;
             setPlanPricing( conCode, "yearly", true );
         }

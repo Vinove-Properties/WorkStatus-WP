@@ -108,7 +108,7 @@ $conArray   = $conData->response->data;
                     foreach( $conArray as $row ){
                     //$is_selected = ( $defLocation == $row->code ) ? ' selected' : '';
                     //echo '<option value="'.$row->dial_code.'"'.$is_selected.'>'.$row->name.' '.$row->dial_code.'</option>';
-                    echo '<option value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
+                    echo '<option data-code="'.$row->code.'" value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
                     }
                     ?>                           
                 </select>
