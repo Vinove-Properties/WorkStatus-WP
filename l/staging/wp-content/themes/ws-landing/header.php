@@ -92,6 +92,7 @@ data-url="<?php the_permalink(); ?>"
       if(
         !is_page_template([
           'page-templates/tpl-thanks.php',
+          'page-templates/tpl-thanks-signup.php',
           'page-templates/tpl-calendly.php',
           'page-templates/tpl-version5.0.php',
           'page-templates/tpl-version5.1.php',
