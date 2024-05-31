@@ -5851,15 +5851,19 @@ input:placeholder {
 
 .geo-international .bannerboy {
   height: 100%;
-  bottom: -49px; }
+  bottom: -72px; }
 
 /*IP Based Css ends Here*/
 .page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content:after {
   display: none !important; }
 
+@media (max-width: 1920px) {
+  .geo-international .bannerboy {
+    bottom: -55px; } }
 @media (max-width: 1600px) {
   .banner-section .bannerboy {
-    height: 90%; } }
+    height: 90%;
+    bottom: -48px; } }
 @media (max-width: 1440px) {
   .banner-section {
     padding: 120px 0 40px; }
