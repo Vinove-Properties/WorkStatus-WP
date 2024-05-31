@@ -4677,7 +4677,7 @@ body.geo-india .int-local {
     right: 0;
     bottom: 0;
     transform: translateX(0%);
-    height: 94%;
+    height: 85%;
     width: auto; }
   .banner-section .inter-boy {
     display: none; }
@@ -5862,7 +5862,8 @@ input:placeholder {
     bottom: -55px; } }
 @media (max-width: 1600px) {
   .banner-section .bannerboy {
-    bottom: -48px; } }
+    bottom: 0;
+    height: 87%; } }
 @media (max-width: 1440px) {
   .banner-section {
     padding: 120px 0 40px; }
@@ -5881,7 +5882,7 @@ input:placeholder {
         margin: 0 0 8px; }
 
   .geo-international .bannerboy {
-    bottom: -46px;
+    bottom: 0;
     height: 90%; }
 
   .count-box-section .count-box-big {
@@ -5987,7 +5988,7 @@ input:placeholder {
     height: 564px; } }
 @media (max-width: 1320px) {
   .banner-section .bannerboy {
-    bottom: -46px;
+    bottom: 0;
     width: 750px;
     object-fit: contain; }
 
@@ -5995,7 +5996,7 @@ input:placeholder {
     bottom: -40px; } }
 @media (max-width: 1160px) {
   .banner-section .bannerboy {
-    bottom: -110px;
+    bottom: 0;
     width: 588px; }
 
   .geo-international .bannerboy {
