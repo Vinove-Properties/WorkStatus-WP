@@ -5,7 +5,7 @@ Template Name: Thanks Template
 get_header();
 ?>
 <main class="site__content">
-<section class="background_blue thank_you">
+<section class="background_blue thank_you <?php echo (!is_page(3407)) ? 'signup-thanks' : ''; ?>">
     <div class="firstbox">
     <?php 
     if( is_page(3407) ){
