@@ -1,0 +1,51 @@
+
+@media only screen and (min-width: 768px) {
+    @font-face {
+      font-family: "Noto Sans";
+      src: url("../fonts/NotoSans-Regular.eot");
+      src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/NotoSans-Regular.woff2") format("woff2"),
+        url("../fonts/NotoSans-Regular.woff") format("woff"),
+        url("../fonts/NotoSans-Regular.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+  
+    @font-face {
+      font-family: "Noto Sans";
+      src: url("../fonts/NotoSans-Bold.eot");
+      src: url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/NotoSans-Bold.woff2") format("woff2"),
+        url("../fonts/NotoSans-Bold.woff") format("woff"),
+        url("../fonts/NotoSans-Bold.ttf") format("truetype");
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+}
+
+.main-header{padding:0 20px;}
+
+.main-content{width:100%; text-align: center; font-family: "Noto Sans";     padding: 0 20px; padding:120px 0 20px;}
+.main-content h1{ font-size: 42px; line-height: 53px; color: #fff; font-weight: bold; margin: 0 0 20px;}
+.main-content p{line-height: 28px; font-size: 20px; margin:0 0 20px;}
+.main-content .firstbox{width:70%; margin:0 auto; background: #4535a7; border-radius: 10px; min-height:300px; color:#fff; display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    padding: 50px;}
+.page-template-tpl-thanks-signup{position: relative;}
+.main-footer{ width: 100%; font-size: 14px; background: #fff; text-align: center;     font-family: "Noto Sans";  text-align: center; }
+
+
+@media (max-width: 768px) {
+
+    .main-header{padding:0 20px;}
+
+    .main-content{  font-family: sans-serif;    padding: 0 20px; padding:100px 0 20px;}
+    .main-content h1{ font-size:35px; line-height:45px;}
+    .main-content p{font-size: 18px;}
+    .main-content .firstbox{width: 80%; margin:0 auto; min-height:initial;   padding:30px;}
+    
+    .main-footer{ font-family: sans-serif;  text-align: center; }
+}
