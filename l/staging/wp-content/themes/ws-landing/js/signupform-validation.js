@@ -229,8 +229,8 @@ function signupFrmValidation(e){
                 if( response.response.code == "200" ){
                     const xdForm = document.getElementById("xd-form");
                     e.reset();
-                    //window.location.href = suObj.siteurl+'/signup-thanks';
-                    window.location.href = 'https://www.workstatus.io/l/staging/?page_id=2680';
+                    window.location.href = suObj.siteurl+'/signup-thanks';
+                    //window.location.href = 'https://www.workstatus.io/l/staging/?page_id=2680';
                 }else{
                     spnMsg.classList.add('error');
                     spnMsg.innerHTML    = response.response.message;
