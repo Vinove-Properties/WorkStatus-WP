@@ -2,12 +2,9 @@
 $conData    = file_get_contents(get_template_directory_uri().'/getCountryDetails.json', FILE_USE_INCLUDE_PATH);
 $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
-// echo '<pre>';
-// print_r($conArray);
-// echo '</pre>';
 ?>
 <div class="banner-form ws-signupform">
-  <div id="formPopup-su" class="popup-wrapper" style="display:block;">
+  <div id="formPopup-su" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content p-0">
         <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
