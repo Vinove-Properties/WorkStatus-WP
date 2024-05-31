@@ -4593,6 +4593,64 @@ body.geo-india .int-local {
           .banner-section .two-box .content-box .sigupform form .bookdemo:hover {
             background: #624DE3;
             color: #fff; }
+      .banner-section .two-box .content-box .cont-wrap .actionBtn {
+        margin: 50px 0 0;
+        display: flex;
+        align-items: center;
+        text-align: center; }
+        .banner-section .two-box .content-box .cont-wrap .actionBtn div {
+          margin: 0 15px 0 0; }
+        .banner-section .two-box .content-box .cont-wrap .actionBtn a {
+          min-width: 210px;
+          display: block;
+          margin: 0 0 8px 0;
+          border-radius: 30px;
+          padding: 14px 30px; }
+        .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn1 {
+          background: #624DE3;
+          color: #fff;
+          border: 1px solid #624DE3;
+          position: relative; }
+          .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn1:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            background-size: 24px !important;
+            vertical-align: middle;
+            background: url(../images/button-arwhover.png) no-repeat; }
+          .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn1:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+            .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn1:hover:after {
+              background: url(../images/button-arwhover.png) no-repeat; }
+        .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn2 {
+          color: #624DE3;
+          background: transparent;
+          border: 1px solid #624DE3; }
+          .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn2:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+            background-size: 20px !important;
+            vertical-align: middle;
+            background: url(../images/clock-icon.svg) no-repeat 2px; }
+          .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn2:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+            .banner-section .two-box .content-box .cont-wrap .actionBtn a.primary_btn2:hover:after {
+              background: url(../images/clock.svg) no-repeat 1px; }
+        .banner-section .two-box .content-box .cont-wrap .actionBtn small {
+          display: block;
+          text-align: center;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 500; }
   .banner-section p {
     display: block;
     font-weight: 500;
@@ -5451,23 +5509,41 @@ body.geo-india .int-local {
   width: initial !important;
   padding: 0; }
 
-.page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content .sigupform {
+.page-template-tpl-version5-1
+.free-demopop
+.nanovar5
+.popup-content
+.sigupform {
   border: 0;
   padding: 30px 40px;
   width: 500px; }
 
-.page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content .top-section {
+.page-template-tpl-version5-1
+.free-demopop
+.nanovar5
+.popup-content
+.top-section {
   background: #f7faff;
   padding: 20px 0;
   margin: 0; }
 
-.page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content .top-section h2 {
+.page-template-tpl-version5-1
+.free-demopop
+.nanovar5
+.popup-content
+.top-section
+h2 {
   font-weight: 700; }
 
 .page-template-tpl-version5-1 .free-demopop .nanovar5 .sigupform form input {
   border: 1px solid #525f7f; }
 
-.page-template-tpl-version5-1 .free-demopop .nanovar5 .sigupform form input:placeholder {
+.page-template-tpl-version5-1
+.free-demopop
+.nanovar5
+.sigupform
+form
+input:placeholder {
   color: black; }
 
 .page-template-tpl-version5-1 .sigupform form .signupbtn {
@@ -5490,20 +5566,47 @@ body.geo-india .int-local {
   .free-demopop .popup-content .btn {
     margin: 10px 0 0; }
 
-  .free-demopop .error, .free-demopop .errors {
+  .free-demopop .error,
+  .free-demopop .errors {
     margin: 5px 0 0; }
 
-  .free-demopop .popup-content .right-section .form-wrap .form-group .captForm .quizQ {
+  .free-demopop
+  .popup-content
+  .right-section
+  .form-wrap
+  .form-group
+  .captForm
+  .quizQ {
     height: 42px;
     line-height: 42px; }
 
-  .free-demopop .popup-content .right-section .form-wrap .form-group .captForm .quizQ:after {
+  .free-demopop
+  .popup-content
+  .right-section
+  .form-wrap
+  .form-group
+  .captForm
+  .quizQ:after {
     height: 23px; }
 
-  .free-demopop .popup-content .right-section .form-wrap .form-group .captForm .quizQ .refreshbtn {
+  .free-demopop
+  .popup-content
+  .right-section
+  .form-wrap
+  .form-group
+  .captForm
+  .quizQ
+  .refreshbtn {
     top: 13px; }
 
-  .free-demopop .popup-content .right-section .form-wrap .form-group .captForm .quizAns input {
+  .free-demopop
+  .popup-content
+  .right-section
+  .form-wrap
+  .form-group
+  .captForm
+  .quizAns
+  input {
     height: 42px; }
 
   .captForm .quizAns:before {
@@ -5605,7 +5708,8 @@ body.geo-india .int-local {
   display: block; }
 
 .geo-international .bannerboy {
-  height: 95%; }
+  height: 100%;
+  bottom: -49px; }
 
 /*IP Based Css ends Here*/
 .page-template-tpl-version5-1 .free-demopop .nanovar5 .popup-content:after {
@@ -5613,7 +5717,7 @@ body.geo-india .int-local {
 
 @media (max-width: 1600px) {
   .banner-section .bannerboy {
-    height: 88%; } }
+    height: 90%; } }
 @media (max-width: 1440px) {
   .banner-section {
     padding: 120px 0 40px; }
@@ -5630,6 +5734,10 @@ body.geo-india .int-local {
       .banner-section ul li {
         font-size: 16px;
         margin: 0 0 8px; }
+
+  .geo-international .bannerboy {
+    bottom: -46px;
+    height: 90%; }
 
   .count-box-section .count-box-big {
     font-size: 35px; }
@@ -5736,11 +5844,17 @@ body.geo-india .int-local {
   .banner-section .bannerboy {
     bottom: -46px;
     width: 750px;
-    object-fit: contain; } }
+    object-fit: contain; }
+
+  .geo-international .bannerboy {
+    bottom: -40px; } }
 @media (max-width: 1160px) {
   .banner-section .bannerboy {
     bottom: -110px;
     width: 588px; }
+
+  .geo-international .bannerboy {
+    bottom: -97px; }
 
   .pricing-tabs #pricing-contents .price-cards .column {
     width: 28%;
@@ -5768,10 +5882,15 @@ body.geo-india .int-local {
   .customer-testimonial-section .content-box p {
     min-height: 300px; } }
 @media (max-width: 980px) {
-  .banner-section .bannerboy {
-    display: none; }
-  .banner-section .two-box .content-box .sigupform {
-    width: 100%; } }
+  .banner-section {
+    padding: 120px 0 50px;
+    min-height: initial; }
+    .banner-section .bannerboy {
+      display: none; }
+    .banner-section .two-box .content-box {
+      flex-basis: 100%; }
+      .banner-section .two-box .content-box .sigupform {
+        width: 100%; } }
 @media (max-width: 979px) {
   .banner-section .two-box .content-box {
     flex-basis: 100%; }
@@ -5862,7 +5981,7 @@ body.geo-india .int-local {
     width: 100%; } }
 @media (max-width: 767px) {
   .banner-section {
-    padding: 90px 0 40px; }
+    padding: 90px 0 50px; }
     .banner-section p {
       font-size: 15px;
       line-height: 24px; }
@@ -5874,6 +5993,20 @@ body.geo-india .int-local {
         width: 15px;
         height: 15px;
         top: 5px; }
+    .banner-section .two-box .content-box .cont-wrap .actionBtn {
+      margin: 30px 0 0;
+      justify-content: space-between;
+      align-items: flex-start; }
+      .banner-section .two-box .content-box .cont-wrap .actionBtn div {
+        margin: 0 4px;
+        width: 48%; }
+      .banner-section .two-box .content-box .cont-wrap .actionBtn a {
+        min-width: initial;
+        margin: 0 0 6px 0;
+        padding: 10px 10px 8px;
+        font-size: 13px; }
+      .banner-section .two-box .content-box .cont-wrap .actionBtn small {
+        font-size: 11px; }
 
   .trusted-comp .dis-flex {
     padding: 0; }

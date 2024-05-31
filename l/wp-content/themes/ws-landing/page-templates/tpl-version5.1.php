@@ -11,9 +11,22 @@ get_header(); ?>
     <div class="two-box">
       <div class="flex-2 content-box">
         <?php the_content();?>
-        <div class="sigupform">
+        <!--<div class="sigupform">
         <?php get_template_part('inc/bannerform', 'v5.1', ['slot' => 1]); ?>
-        </div>
+        </div>-->
+
+          <div class="cont-wrap">
+              <div class="actionBtn">
+                 <div><a  href="javascript:void(0)" onclick="glob_signup();" class="primary_btn1">Start Free Trial</a>
+                    <small>No credit card required</small>
+                 </div>
+                 <div><a href="javascript:void(0)"  onclick="calendlyCTA();" class="primary_btn2">Book A Demo</a>
+                    <small>Get queries answered from experts</small>
+                 </div>
+              </div>
+           </div>
+
+
       </div>
       <div class="flex-2 image-sec">
         <?php  
