@@ -5859,11 +5859,15 @@ input:placeholder {
 
 @media (max-width: 1920px) {
   .geo-international .bannerboy {
-    bottom: -55px; } }
+    bottom: -60px; } }
 @media (max-width: 1600px) {
   .banner-section .bannerboy {
     bottom: 0;
-    height: 87%; } }
+    height: 87%; }
+
+  .geo-international .bannerboy {
+    height: 100%;
+    bottom: -57px; } }
 @media (max-width: 1440px) {
   .banner-section {
     padding: 120px 0 40px; }
@@ -5882,7 +5886,7 @@ input:placeholder {
         margin: 0 0 8px; }
 
   .geo-international .bannerboy {
-    bottom: 0;
+    bottom: -48px;
     height: 90%; }
 
   .count-box-section .count-box-big {
