@@ -174,6 +174,7 @@ function ws_landing_scripts(){
 	'siteurl' => get_bloginfo('url'),
 	]);		
 
+
 	/*Pricing Table Stuff : Starts*/
 	$reqPricingTable = get_post_meta($post->ID, 'ws-pctable', true);
 	if( $reqPricingTable === "yes" ){	
@@ -212,6 +213,11 @@ function ws_landing_scripts(){
 	}else{
 		wp_enqueue_style( 'ws-style', get_stylesheet_directory_uri().'/css/style.css' );	
 	}	
+
+
+
+
+
 }
 add_action( 'wp_enqueue_scripts', 'ws_landing_scripts' );
 
@@ -224,6 +230,8 @@ require get_template_directory() . '/inc/signup-functions.php';
 if ( defined( 'JETPACK__VERSION' ) ){
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
 
 /*Optoins Page Optoins Here*/
 if( function_exists('acf_add_options_page') ) { 
