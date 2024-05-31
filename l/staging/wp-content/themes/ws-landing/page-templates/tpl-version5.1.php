@@ -17,7 +17,7 @@ get_header(); ?>
 
           <div class="cont-wrap">
               <div class="actionBtn">
-                 <div><a  href="javascript:void(0)" onclick="glob_signup();" class="primary_btn1">Start Free Trial</a>
+                 <div><a  href="javascript:void(0)" onclick="glob_signup(this);" class="primary_btn1">Start Free Trial</a>
                     <small>No credit card required</small>
                  </div>
                  <div><a href="javascript:void(0)"  onclick="calendlyCTA();" class="primary_btn2">Book A Demo</a>
@@ -181,7 +181,7 @@ if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") )
       </div>
    </div>
    <div class="ctasec margin-t-70">
-   <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a>
+   <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup(this);">Start Free Trial</a>
    <span>No credit card. No hassles.</span>
   </div>
       <span class="devide">OR</span> 
@@ -222,7 +222,7 @@ $videoURL = $videoSection['video_url'];
       </video>
     </div>
     <div class="ctasec margin-t-70">
-    <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a>
+    <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup(this);">Start Free Trial</a>
     <span>No credit card. No hassles.</span>
   </div>
       <span class="devide">OR</span> 
@@ -332,7 +332,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <?php endif; ?>
     <!--Customer Reviews Ends Here-->
     <div class="ctasec margin-t-70">
-    <div class="free-trial"> <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a><span>No credit card. No hassles.</span> </div>
+    <div class="free-trial"> <a href="javascript:void(0);" class="btn" onclick="glob_signup(this);">Start Free Trial</a><span>No credit card. No hassles.</span> </div>
       <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
@@ -527,7 +527,7 @@ if( get_field('ws-pctable') === "yes" ){
       ?>
       
       <div class="ctasec margin-t-40">
-      <div class="free-trial"><a href="javascript:void(0)" class="btn" onclick="glob_signup();">Start Free Trial</a>
+      <div class="free-trial"><a href="javascript:void(0)" class="btn" onclick="glob_signup(this);">Start Free Trial</a>
       <span>No credit card. No hassles.</span>
     </div>
       
