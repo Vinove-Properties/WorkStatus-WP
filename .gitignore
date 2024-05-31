@@ -55,6 +55,13 @@ l/wp-content/uploads-webpc/
 !l/wp-content/themes/*
 l/wp-config.php
 
+l/staging/*
+!l/staging/wp-content/
+l/staging/wp-content/*
+!l/staging/wp-content/themes/
+l/staging/wp-content/themes/*
+!l/staging/wp-content/themes/ws-landing/
+
 staging/*
 !staging/wp-content/
 staging/wp-content/*
