@@ -360,18 +360,75 @@ if( spanClosef ){
 
 
 //Feature Popup Script End//
+/*UTM Tracking*/
+function utm_getQueryParams() {
+    const params = {};
+    const queryString = window.location.search.substring(1);
+    const queryArray = queryString.split("&");
+    queryArray.forEach(function(item) {
+        const [key, value] = item.split("=");
+        params[key] = decodeURIComponent(value);
+    });
+    return params;
+}
+
+function utm_setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+const params = utm_getQueryParams();
+const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+
+utmParams.forEach(param => {
+if (params[param]) {
+    utm_setCookie(param, params[param], 1);
+}
+});
+
+function utm_getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+const utmValues = {};
+utmParams.forEach(param => {
+    const value = utm_getCookie(param);
+    if (value) {
+        utmValues[param] = value;
+    }
+});
+utmValues['utm_term'] = document.body.getAttribute('data-url');
+function generateUtmLink(baseUrl, utmParams) {
+    const url = new URL(baseUrl);
+    Object.keys(utmParams).forEach(param => {
+        if( utmValues[utmParams[param]] ){
+            url.searchParams.append(utmParams[param], utmValues[utmParams[param]]);    
+        }        
+    });
+    return url.toString();
+}
+
+//console.log( generateUtmLink( 'https://calendly.com/workstatus/demo',utmParams ) );
 
 var formPopup   = document.getElementById('formPopup');
 var formbtn     = document.getElementById("myBtn2");
 var spanClose   = document.getElementsByClassName("closeicon")[0];
 function call_demows( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
+    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+    
+    /*
     var refUrl  = document.body.getAttribute('data-url');
     var utmParm = document.body.getAttribute('data-utm');
+
     if( utmParm ){
     window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
     }else{
     window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
     }
+    */
 
     //window.location.href = "https://calendly.com/workstatus/demo";
 
@@ -390,13 +447,15 @@ function call_demows( cont = '<h2>Let us take you on a personalized <span class=
 }
 
 function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    var refUrl  = document.body.getAttribute('data-url');
-    var utmParm = document.body.getAttribute('data-utm');
-    if( utmParm ){
-    window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
-    }else{
-    window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
-    }
+    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+    
+    // var refUrl  = document.body.getAttribute('data-url');
+    // var utmParm = document.body.getAttribute('data-utm');
+    // if( utmParm ){
+    // window.location.href = "https://calendly.com/workstatus/demo?"+utmParm+'&utm_term='+refUrl;
+    // }else{
+    // window.location.href = "https://calendly.com/workstatus/demo?utm_term="+refUrl;
+    // }
     
     //window.location.href = "https://calendly.com/workstatus/demo";
     
