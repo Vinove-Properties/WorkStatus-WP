@@ -53,7 +53,29 @@ function calendlyCTA(){
     window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
 }
 
-function glob_signup(){
+function getAllQueryParams(url) {
+    const urlObj = new URL(url);
+    const params = new URLSearchParams(urlObj.search);
+    const paramObj = {};    
+    params.forEach((value, key) => {
+        paramObj[key] = value;
+    });
+    
+    return paramObj;
+}
+
+function glob_signup(e = this ){
+    if( e.getAttribute('data-href') ){
+        let str         = e.getAttribute('data-href');
+        let allParams   = getAllQueryParams( str );
+        if( "pid" in allParams ) {
+            document.getElementById("ws_pid").value = allParams.pid;
+        }
+        if( "type" in allParams ) {
+            document.getElementById("ws_stype").value = allParams.type;
+        }
+    }    
     let suForm = document.getElementById("formPopup-su");
     suForm.style.display = "block";
+    return false;
 }

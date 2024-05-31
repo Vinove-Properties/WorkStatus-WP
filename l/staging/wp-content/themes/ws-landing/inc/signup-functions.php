@@ -1257,7 +1257,7 @@ function ws_signup_api_cb(){
 	//print_r($reqData); die;
 	
 	$apiCall = "https://api.workstatus.io/api/v1/signUp";
-	if( isset( $_SERVER['HTTP_HOST'] ) && ( $_SERVER['HTTP_HOST'] == "localhost" ) ){
+	if( ENV_STATUS === 'dev' ){
 	$apiCall = "https://api.staging.workstatus.io/api/v1/signUp";
 	}
 	
