@@ -1268,8 +1268,8 @@ function signupFrmValidation(e){
                 //console.log( response.resp );
                 if( response.response.code == "200" ){
                     const xdForm = document.getElementById("xd-form");
-                    xdForm.classList.add('signup-success');
-                    spnMsg.classList.add('success');                    
+                    // xdForm.classList.add('signup-success');
+                    // spnMsg.classList.add('success');                    
                     e.reset();
                     window.location.href = ws_site_url+'/signup-thanks';
                 }else{
@@ -1278,9 +1278,9 @@ function signupFrmValidation(e){
                     setTimeout( () => {
                         spnMsg.innerHTML = "";
                     }, 5000 );
-                }
-                formBtn.innerText   = "Create My Account";
-                formBtn.disabled    = false;                
+                    formBtn.innerText   = "Create My Account";
+                    formBtn.disabled    = false;    
+                }                            
             }
         }
         xhttp.send(formData);
