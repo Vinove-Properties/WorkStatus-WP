@@ -4368,11 +4368,11 @@ body.geo-india .int-local {
   left: -135px;
   width: 200px;
   border-radius: 3px;
-  background: #525F7F;
+  background: #525f7f;
   color: #ffffff !important;
   padding: 8px; }
   .ws-signupform .info-lbl span.tolltip:after {
-    content: '';
+    content: "";
     background: url(../menu-images/pols.png) no-repeat;
     width: 10px;
     height: 8px;
