@@ -2,9 +2,12 @@
 $conData    = file_get_contents(get_template_directory_uri().'/getCountryDetails.json', FILE_USE_INCLUDE_PATH);
 $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
+// echo '<pre>';
+// print_r($conArray);
+// echo '</pre>';
 ?>
 <div class="banner-form ws-signupform">
-  <div id="formPopup-su" class="popup-wrapper" style="display:none;">
+  <div id="formPopup-su" class="popup-wrapper" style="display:block;">
     <div class="popWrap">
       <div class="popup-content p-0">
         <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
@@ -108,7 +111,7 @@ $conArray   = $conData->response->data;
                     foreach( $conArray as $row ){
                     //$is_selected = ( $defLocation == $row->code ) ? ' selected' : '';
                     //echo '<option value="'.$row->dial_code.'"'.$is_selected.'>'.$row->name.' '.$row->dial_code.'</option>';
-                    echo '<option value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
+                    echo '<option data-code="'.$row->code.'" value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
                     }
                     ?>                           
                 </select>
