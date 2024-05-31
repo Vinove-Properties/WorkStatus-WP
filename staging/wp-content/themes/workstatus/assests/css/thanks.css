@@ -7413,3 +7413,30 @@ h3 a {
 
 .thank_youbtn {
   border-radius: 6px; }
+
+.signup-thanks {
+  width: 90%;
+  height: 100%;
+  padding: 50px; }
+
+.signup-thanks h1 {
+  line-height: 70px;
+  font-size: 60px; }
+
+.signup-thanks p {
+  font-size: 20px; }
+
+@media screen and (max-width: 768px) {
+  .signup-thanks {
+    width: 95%;
+    height: 100%;
+    padding: 30px; }
+
+  .signup-thanks h1 {
+    line-height: 50px;
+    font-size: 40px; }
+
+  .signup-thanks {
+    font-size: 16px;
+    width: 100%;
+    margin: auto; } }
