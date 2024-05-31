@@ -252,8 +252,10 @@ data-url="<?php the_permalink(); ?>"
               <li><a href="#howitworks">How it Works</a></li>
               <li><a href="#feature">Features</a></li>
               <li><a href="#pricing">Pricing</a></li>
-              <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="popup('rq-call');">Book A Call</a></li>
-              <li class="freetrail"><a href="javascript:void(0)" onclick="planpopup('annually-paid');" class="btn btn2">Free 7 days Trial</a></li>
+              <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="calendlyCTA();">Book A Call</a></li>
+              <li class="freetrail">
+              <a href="javascript:void(0)" onclick="glob_signup();" class="btn btn2">Free 7 days Trial</a>
+              </li>
             </ul>
           </div>
         </div>

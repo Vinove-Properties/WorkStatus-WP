@@ -1,6 +1,10 @@
-
+<?php 
+$conData    = file_get_contents(get_template_directory_uri().'/getCountryDetails.json', FILE_USE_INCLUDE_PATH);
+$conData    = json_decode( $conData );
+$conArray   = $conData->response->data;
+?>
 <div class="banner-form ws-signupform">
-  <div id="formPopup-su" class="popup-wrapper" style="display:block;">
+  <div id="formPopup-su" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content p-0">
         <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
@@ -24,7 +28,7 @@
               </ul>
             </div>
             <div class="second_box">
-              <img src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/g2-main-image.svg" alt="">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/g2-main-image.svg" alt="">
             </div>
           </div>
           <div class="badges">

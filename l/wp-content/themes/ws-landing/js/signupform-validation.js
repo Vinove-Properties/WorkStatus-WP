@@ -7,21 +7,8 @@ var wsSerializeForm = function(form){
     return obj;
 }
 
-function get_ws_signupform(pid, ptype){
-    document.getElementById("ws_pid").value = pid;
-    document.getElementById("ws_stype").value = ptype;
-
-    let suForm = document.getElementById("formPopup-su");
-    
-    suForm.style.display = "block";
-
-    let wsIntentForm = document.getElementById("ws-intent-popup");
-    if( wsIntentForm ){
-        if( wsIntentForm.classList.contains('visible') ){
-            wsIntentForm.classList.remove('visible');
-        }
-    }
-    return false;
+function strSpaceChecker(e) {
+    return !!/^[A-Za-z0-9!@#$%^&*()".,;:{}<>?\[\]\-+=' ]{1,}/.test(e);
 }
 
 function togglewsPassword( e, elm ){
@@ -155,12 +142,12 @@ suchkPolicy.addEventListener('change', (event) => {
 
   if(event.currentTarget.checked && (errCount === true) ){
     if( 
-    ( vcSpaceChecker(su_email.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
-    ( vcSpaceChecker(su_cpass.value.trim()) === true )
+    ( strSpaceChecker(su_email.value.trim()) === true ) &&
+    ( strSpaceChecker(su_name.value.trim()) === true ) &&
+    ( strSpaceChecker(su_pcode.value.trim()) === true ) &&
+    ( strSpaceChecker(su_phone.value.trim()) === true ) &&
+    ( strSpaceChecker(su_pass.value.trim()) === true ) &&
+    ( strSpaceChecker(su_cpass.value.trim()) === true )
     ){
         suformBtn.disabled = false;
     }    
@@ -195,16 +182,11 @@ sup_inputs.forEach((input) => {
         if(allTrue){
             if( suchkPolicy.checked ){
                 buttonSend.disabled = false;
-                console.log("Bingooo..111");
             }else{
                 buttonSend.disabled = true;
-                console.log("Bingooo..222");
             }            
-        //console.log("Bingooo..");
         }else{
             buttonSend.disabled = true;
-            console.log("Bingooo..333");
-            //console.log("Bingooo..1122@@@");
         }
     });
 });
@@ -213,12 +195,12 @@ sup_inputs.forEach((input) => {
 function signupFrmValidation(e){
     checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
     if(
-        ( vcSpaceChecker(su_email.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_cpass.value.trim()) === true )
+        ( strSpaceChecker(su_email.value.trim()) === true ) &&
+        ( strSpaceChecker(su_name.value.trim()) === true ) &&
+        ( strSpaceChecker(su_pcode.value.trim()) === true ) &&
+        ( strSpaceChecker(su_phone.value.trim()) === true ) &&
+        ( strSpaceChecker(su_pass.value.trim()) === true ) &&
+        ( strSpaceChecker(su_cpass.value.trim()) === true )
     ){
         const sre = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if( !sre.test(su_email.value.trim()) ){
@@ -227,11 +209,6 @@ function signupFrmValidation(e){
 
         if( checkLength(su_phone,7,20) === false ){
             return false;
-        }
-
-        if( su_pass.value.trim() !== su_cpass.value.trim() ){
-            //passCheck_su();
-            //passCheckc_su();
         }
 
         var spnMsg          = document.getElementById("ws-apimsg");
@@ -243,24 +220,25 @@ function signupFrmValidation(e){
 
         var formData        = JSON.stringify( wsSerializeForm(e) );
         var xhttp           = new XMLHttpRequest();
-        xhttp.open("POST", wsObj.admin_ajax+'?action=ws_signup_api', true); 
+        xhttp.open("POST", suObj.ajaxurl+'?action=ws_signup_api', true); 
         xhttp.setRequestHeader("Content-Type", "application/json");
         xhttp.onreadystatechange = function(){
             if( (this.readyState == 4) && (this.status == 200) ){
                 let response = JSON.parse( this.responseText );
-                console.log( response );
+                //console.log( response.resp );
                 if( response.response.code == "200" ){
-                    spnMsg.classList.add('success');                    
+                    const xdForm = document.getElementById("xd-form");
                     e.reset();
+                    window.location.href = suObj.siteurl+'/signup-thanks';
                 }else{
                     spnMsg.classList.add('error');
-                }
-                formBtn.innerText   = "Create My Account";
-                formBtn.disabled    = false;                
-                spnMsg.innerHTML    = response.response.message;
-                setTimeout( () => {
-                    spnMsg.innerHTML = "";
-                }, 5000 );
+                    spnMsg.innerHTML    = response.response.message;
+                    setTimeout( () => {
+                        spnMsg.innerHTML = "";
+                    }, 5000 );
+                    formBtn.innerText   = "Create My Account";
+                    formBtn.disabled    = false;    
+                }                            
             }
         }
         xhttp.send(formData);

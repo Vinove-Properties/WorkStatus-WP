@@ -52,3 +52,8 @@ function generateUtmLink(baseUrl, utmParams) {
 function calendlyCTA(){
     window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
 }
+
+function glob_signup(){
+    let suForm = document.getElementById("formPopup-su");
+    suForm.style.display = "block";
+}
