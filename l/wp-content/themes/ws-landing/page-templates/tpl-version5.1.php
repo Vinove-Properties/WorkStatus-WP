@@ -594,6 +594,13 @@ if( get_field('ws-pctable') === "yes" ){
 <div class="footer-bottom text-center">© workstatus.io All rights reserved.</div>
 </section>
 
+
+<?php get_template_part('inc/signup', 'form');
+?>
+
+
+
+
 <div class="popup-form free-demopop">
   <div id="formPopup" class="popup-wrapper" style="display:none">
     <div class="popWrap">
