@@ -3134,6 +3134,125 @@ button:focus {
           width: 15px;
           height: 15px;
           top: 5px; } }
+/*Learn About the App Start From Here*/
+.learn-app .prod-tabs #tabs {
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto; }
+  .learn-app .prod-tabs #tabs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(195, 191, 254, 0.15);
+    border-radius: 55px; }
+    .learn-app .prod-tabs #tabs ul li {
+      flex-basis: 20%;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      margin: 0; }
+      .learn-app .prod-tabs #tabs ul li a {
+        display: flex;
+        height: 100%;
+        padding: 20px 12px;
+        margin: 0 5px 0 0;
+        color: #282a30;
+        border-radius: 55px;
+        position: relative;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 500; }
+        .learn-app .prod-tabs #tabs ul li a .icon {
+          margin-right: 8px;
+          margin-top: -1px; }
+      .learn-app .prod-tabs #tabs ul li:last-child a {
+        margin-right: 0; }
+      .learn-app .prod-tabs #tabs ul li:hover a, .learn-app .prod-tabs #tabs ul li.active a {
+        background: #ffffff; }
+.learn-app .prod-tabs #tab-contents .tab-contents {
+  padding: 10px;
+  display: none; }
+  .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex {
+    align-items: center; }
+    .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex .content-box {
+      padding-left: 20px; }
+      .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex .content-box h3 {
+        color: #0e0b3d;
+        margin: 0 0 10px; }
+    .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex p {
+      line-height: 27px;
+      margin: 0 0 10px;
+      font-weight: 400; }
+    .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex ul {
+      margin-top: 15px; }
+      .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex ul li {
+        margin: 0 0 10px;
+        color: #4a4c55;
+        list-style-position: inside; }
+    .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex:hover {
+      background: none; }
+  .learn-app .prod-tabs #tab-contents .tab-contents.active {
+    display: block; }
+
+/*Learn About the App Ends Here*/
+@media (max-width: 1440px) {
+  .learn-app .prod-tabs #tabs {
+    width: 100%; }
+    .learn-app .prod-tabs #tabs ul li a {
+      padding: 15px 10px;
+      font-size: 14px; }
+  .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex p {
+    line-height: 26px; } }
+@media (max-width: 1024px) {
+  .learn-app .prod-tabs #tabs ul li a {
+    padding: 12px 10px;
+    font-size: 12px; } }
+@media (max-width: 979px) {
+  .learn-app .prod-tabs #tabs ul {
+    background: none;
+    border-radius: none; }
+    .learn-app .prod-tabs #tabs ul li {
+      background: rgba(195, 191, 254, 0.15);
+      flex-basis: 25%;
+      border-radius: 55px;
+      margin: 0 5px 10px 0; }
+      .learn-app .prod-tabs #tabs ul li a {
+        margin: 0; } }
+@media (max-width: 767px) {
+  .learn-app .prod-tabs {
+    display: flex; }
+    .learn-app .prod-tabs #tabs {
+      flex-basis: 28%; }
+      .learn-app .prod-tabs #tabs ul li {
+        flex-basis: 100%;
+        border-radius: 8px; }
+        .learn-app .prod-tabs #tabs ul li a {
+          flex-wrap: wrap;
+          text-align: center;
+          border-radius: 8px;
+          line-height: 16px; }
+          .learn-app .prod-tabs #tabs ul li a .icon {
+            display: block;
+            margin: 0 auto 5px; }
+    .learn-app .prod-tabs #tab-contents {
+      margin: 0;
+      flex-basis: 72%; }
+      .learn-app .prod-tabs #tab-contents .tab-contents {
+        padding: 0;
+        display: none; }
+        .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex {
+          align-items: center; }
+          .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex .flex-2:first-child {
+            order: 2; }
+          .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex .content-box {
+            order: 1;
+            padding-left: 20px;
+            margin: 0 0 20px; }
+          .learn-app .prod-tabs #tab-contents .tab-contents .dis-flex p {
+            line-height: 22px; } }
 .feature-header .site__header {
   transition: 0.5s;
   background: #4231ac; }
@@ -4500,7 +4619,16 @@ body.geo-india .int-local {
   .ws-signupform .popup-content {
     width: 90% !important; }
     .ws-signupform .popup-content .right-section {
-      height: initial; } }
+      height: initial; }
+
+  .ws-signupform .popup-content .right-section .form-wrap .form-group .infiled {
+    font-family: sans-serif; }
+
+  .ws-signupform .popup-content .right-section .form-wrap .form-group label {
+    font-family: sans-serif; }
+
+  .ws-signupform .popup-content .right-section .form-wrap .form-group .submtbtn {
+    font-family: sans-serif; } }
 @media (max-width: 479px) {
   .ws-signupform .popup-content .right-section .form-wrap .form-group .infiled {
     font-size: 13px; }
@@ -4875,6 +5003,16 @@ body.geo-india .int-local {
   display: flex;
   align-items: center;
   justify-content: center; }
+  .ctasec .free-trial {
+    display: flex;
+    flex-direction: column; }
+    .ctasec .free-trial .btn {
+      margin: 20px 0 0; }
+    .ctasec .free-trial span {
+      font-size: 13px;
+      text-align: center;
+      margin: 5px 0 0;
+      display: block; }
   .ctasec .btn {
     min-width: 196px;
     background: #624DE3;
@@ -5263,6 +5401,10 @@ body.geo-india .int-local {
       display: block; }
     .ws-journey .img-section .interfot {
       display: none; }
+  .ws-journey .ctasec .free-trial .btn {
+    margin: 30px 0 0; }
+  .ws-journey .ctasec .free-trial span {
+    color: #fff; }
 
 /*WS Journey Ends Here*/
 /*Transform Data Section Start From Here*/
@@ -6148,6 +6290,12 @@ input:placeholder {
     .how-ws .col-box-outer .box-3:nth-child(3n) {
       padding-right: 0; }
 
+  .ctasec .free-trial .btn {
+    margin: 25px 0 0;
+    display: inline-block; }
+  .ctasec .free-trial span {
+    margin: 3px 0 0;
+    font-size: 12px; }
   .ctasec .btn {
     min-width: auto; }
   .ctasec .devide {

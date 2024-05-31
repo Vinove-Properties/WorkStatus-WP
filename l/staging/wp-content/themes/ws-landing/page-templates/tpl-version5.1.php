@@ -181,7 +181,9 @@ if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") )
       </div>
    </div>
    <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+   <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a>
+   <span>No credit card. No hassles.</span>
+  </div>
       <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
@@ -220,7 +222,9 @@ $videoURL = $videoSection['video_url'];
       </video>
     </div>
     <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+    <div class="free-trial"><a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a>
+    <span>No credit card. No hassles.</span>
+  </div>
       <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
@@ -328,7 +332,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <?php endif; ?>
     <!--Customer Reviews Ends Here-->
     <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+    <div class="free-trial"> <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a><span>No credit card. No hassles.</span> </div>
       <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
@@ -522,20 +526,24 @@ if( get_field('ws-pctable') === "yes" ){
       }
       ?>
       
-      <div class="ctasec margin-t-70">
-      <a href="javascript:void(0)" class="btn" onclick="glob_signup();">Start Free Trial</a> <span class="devide">OR</span> 
+      <div class="ctasec margin-t-40">
+      <div class="free-trial"><a href="javascript:void(0)" class="btn" onclick="glob_signup();">Start Free Trial</a>
+      <span>No credit card. No hassles.</span>
+    </div>
+      
+      <span class="devide">OR</span> 
       <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a></div>
     </div>
     <div class="flex-2 img-section">
       <picture>
         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
         <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png">
-        <img class="local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="547" height="631">
+        <img class="local" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/footer-boy.png" alt="Invoicera" width="599" height="472">
       </picture>
       <picture>
          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png">
-         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="450" height="494">
+         <img class="internat" loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/fotintern-boy.png" alt="Invoicera" width="536" height="480">
        </picture>
     </div>
   </div>
