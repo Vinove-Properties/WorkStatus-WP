@@ -68,6 +68,7 @@ function glob_signup(e = this ){
     if( e.getAttribute('data-href') ){
         let str         = e.getAttribute('data-href');
         let allParams   = getAllQueryParams( str );
+        console.log(allParams);
         if( "pid" in allParams ) {
             document.getElementById("ws_pid").value = allParams.pid;
         }
