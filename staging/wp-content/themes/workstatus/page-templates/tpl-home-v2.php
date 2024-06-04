@@ -258,9 +258,8 @@ endif; ?>
           <h6><span class="bg-purple"><?php echo $ws_results['top-heading']; ?></span></h6>
           <?php echo $ws_results['content']; ?>
         </div>
-        <div class="data-flow" style="position:relative;">
-          <div class="playsc"style="position: absolute; top: 40%; height: 100px; width: 100px; background: #624DE3; 
-          left: 50%; border-radius: 50%;" onclick="return callinVideo();">
+        <div class="data-flow">
+          <div class="playsc" onclick="return callinVideo();">
           <span class="playicon">Play</span>
           </div>
           <iframe id="dflow-iframe" class="dflow-iframe" data-src="https://www.youtube.com/watch?v=KoU_OvfX4As" style="display:none;"></iframe>
