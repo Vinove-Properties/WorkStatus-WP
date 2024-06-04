@@ -343,6 +343,23 @@ if( hasYTvideo ){
         }    
 } 
 
+function callinVideo(){    
+    let elm = document.getElementById("dflow-iframe");
+    let e   = elm.getAttribute("data-src");
+    elm.setAttribute("src", "https://www.youtube.com/embed/KoU_OvfX4As?enablejsapi=1&html5=1&mute=1");
+    elm.style.display = "block";
+    // if(typeof YT === 'undefined' && typeof YT.Player !== 'undefined'){
+    //     var tag = document.createElement("script");
+    //     tag.src = "//www.youtube.com/player_api";
+    //     var player,
+    //     firstScriptTag = document.getElementsByTagName("script")[0];
+    //     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    //     function onPlayerReady(e){
+    //         player.playVideo();
+    //     }
+    // }
+}
+//callinVideo();
 //Feature Popup Script//
 
 var featurePopup    = document.getElementById('featurePopup');
