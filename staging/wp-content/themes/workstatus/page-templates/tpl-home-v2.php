@@ -264,7 +264,7 @@ endif; ?>
           <span class="playicon">Play</span>
           </div>
           <iframe id="dflow-iframe" class="dflow-iframe" data-src="https://www.youtube.com/watch?v=KoU_OvfX4As" style="display:none;"></iframe>
-          <picture>
+          <picture id="dflow-picture">
           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/dflow-image.svg" 
           alt="Data Flow" width="1380" height="754">
           </picture>

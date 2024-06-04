@@ -345,9 +345,12 @@ if( hasYTvideo ){
 
 function callinVideo(){    
     let elm = document.getElementById("dflow-iframe");
+    let pcElm = document.getElementById("dflow-picture");
+    
     let e   = elm.getAttribute("data-src");
     elm.setAttribute("src", "https://www.youtube.com/embed/KoU_OvfX4As?enablejsapi=1&html5=1&mute=1");
-    elm.style.display = "block";
+    elm.style.display   = "block";
+    pcElm.style.display = "none";
     // if(typeof YT === 'undefined' && typeof YT.Player !== 'undefined'){
     //     var tag = document.createElement("script");
     //     tag.src = "//www.youtube.com/player_api";
