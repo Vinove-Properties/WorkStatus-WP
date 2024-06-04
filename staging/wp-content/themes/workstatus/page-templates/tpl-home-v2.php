@@ -259,7 +259,7 @@ endif; ?>
           <?php echo $ws_results['content']; ?>
         </div>
         <div class="data-flow">
-          <div class="playsc" onclick="return callinVideo();">
+          <div class="playsc" onclick="return callinVideo(this);">
           <span class="playicon">Play</span>
           </div>
           <iframe id="dflow-iframe" class="dflow-iframe" data-src="https://www.youtube.com/watch?v=KoU_OvfX4As" style="display:none;"></iframe>
