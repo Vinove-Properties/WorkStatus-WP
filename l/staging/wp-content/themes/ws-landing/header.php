@@ -255,8 +255,8 @@ data-url="<?php the_permalink(); ?>"
               <li><a href="#howitworks">How it Works</a></li>
               <li><a href="#feature">Features</a></li>
               <li><a href="#pricing">Pricing</a></li>
-              <li class="bookdemo">
-                <a href="javascript:void(0)" class="btn btn1" 
+              <li class="freetrail">
+                <a href="javascript:void(0)" class="btn btn2" 
                 onclick="calendlyCTA('https://calendly.com/workstatus/');">Contact Us</a>
               </li>
               <!-- 
