@@ -5626,7 +5626,7 @@ body.geo-india .int-local {
 
 /*Footer Ends Here*/
 /*Pricing Section Code added from here*/
-.page-template-tpl-version5-1 .ws-pricing .price-flex .price-column {
+.page-template-tpl-version5-1 .ws-pricing .price-flex .price-column:first-child {
   display: none !important; }
 
 /*Pricing Section code ends here*/
