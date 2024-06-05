@@ -5629,6 +5629,17 @@ body.geo-india .int-local {
 .page-template-tpl-version5-1 .ws-pricing .price-flex .price-column:first-child {
   display: none !important; }
 
+.main-header .top-nav .header-item-right ul li.bookdemo a.cu-btn {
+  color: #fff;
+  background: #624DE3; }
+  .main-header .top-nav .header-item-right ul li.bookdemo a.cu-btn:after {
+    background: url(../images/arrow-hover.svg) no-repeat;
+    background-size: 16px; }
+  .main-header .top-nav .header-item-right ul li.bookdemo a.cu-btn:hover {
+    background: #051441; }
+    .main-header .top-nav .header-item-right ul li.bookdemo a.cu-btn:hover:after {
+      background: url(../images/arrow-hover.svg) no-repeat; }
+
 /*Pricing Section code ends here*/
 /*Popup form start from here*/
 .popup-form textarea.input-field {
