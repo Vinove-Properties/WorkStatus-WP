@@ -5625,6 +5625,11 @@ body.geo-india .int-local {
   background: #fff; }
 
 /*Footer Ends Here*/
+/*Pricing Section Code added from here*/
+body.page-template-tpl-version5-1 .ws-pricing .price-flex .price-column {
+  display: none; }
+
+/*Pricing Section code ends here*/
 /*Popup form start from here*/
 .popup-form textarea.input-field {
   height: 50px !important; }
