@@ -17,9 +17,11 @@ get_header(); ?>
 
           <div class="cont-wrap">
               <div class="actionBtn">
+                 <!-- 
                  <div><a  href="javascript:void(0)" onclick="glob_signup();" class="primary_btn1">Start Free Trial</a>
                     <small>No credit card required</small>
-                 </div>
+                 </div> 
+                  -->
                  <div><a href="javascript:void(0)"  onclick="calendlyCTA();" class="primary_btn2">Book A Demo</a>
                     <small>Get queries answered from experts</small>
                  </div>
@@ -181,9 +183,9 @@ if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") )
       </div>
    </div>
    <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
-      <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
+      <!-- <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+      <span class="devide">OR</span> --> 
+      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -220,9 +222,9 @@ $videoURL = $videoSection['video_url'];
       </video>
     </div>
     <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
-      <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
+      <!-- <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+      <span class="devide">OR</span> --> 
+      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -328,9 +330,9 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <?php endif; ?>
     <!--Customer Reviews Ends Here-->
     <div class="ctasec margin-t-70">
-      <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
-      <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
+      <!-- <a href="javascript:void(0);" class="btn" onclick="glob_signup();">Start Free Trial</a> 
+      <span class="devide">OR</span> --> 
+      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -405,8 +407,9 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
 <?php endif; ?>
 <?php 
 if( get_field('ws-pctable') === "yes" ){
-  get_template_part('inc/ws', 'pricing');   
+  get_template_part('inc/ws', 'pricing');
 }
+get_template_part('inc/ws', 'pricing');
 ?>
 <!--Supported Device Start From Here-->
 <section class="supported-device padding-t-100 padding-b-100">
@@ -523,8 +526,8 @@ if( get_field('ws-pctable') === "yes" ){
       ?>
       
       <div class="ctasec margin-t-70">
-      <a href="javascript:void(0)" class="btn" onclick="glob_signup();">Start Free Trial</a> <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a></div>
+      <!-- <a href="javascript:void(0)" class="btn" onclick="glob_signup();">Start Free Trial</a> <span class="devide">OR</span>  -->
+      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a></div>
     </div>
     <div class="flex-2 img-section">
       <picture>

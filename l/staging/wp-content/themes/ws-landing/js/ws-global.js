@@ -49,8 +49,8 @@ function generateUtmLink(baseUrl, utmParams) {
     return url.toString();
 }
 
-function calendlyCTA(){
-    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+function calendlyCTA( link = 'https://calendly.com/workstatus/demo' ){
+    window.location.href = generateUtmLink( link, utmParams );
 }
 
 function getAllQueryParams(url) {

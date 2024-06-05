@@ -252,10 +252,15 @@ data-url="<?php the_permalink(); ?>"
               <li><a href="#howitworks">How it Works</a></li>
               <li><a href="#feature">Features</a></li>
               <li><a href="#pricing">Pricing</a></li>
-              <li class="bookdemo"><a href="javascript:void(0)" class="btn btn1" onclick="calendlyCTA();">Book A Call</a></li>
+              <li class="bookdemo">
+                <a href="javascript:void(0)" class="btn btn1" 
+                onclick="calendlyCTA('https://calendly.com/workstatus/');">Contact Us</a>
+              </li>
+              <!-- 
               <li class="freetrail">
               <a href="javascript:void(0)" onclick="glob_signup();" class="btn btn2">Free 7 days Trial</a>
-              </li>
+              </li> 
+              -->
             </ul>
           </div>
         </div>
