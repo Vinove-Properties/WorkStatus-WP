@@ -1633,14 +1633,14 @@ h3 a {
   .how-works .full-menu .container {
     position: relative; }
     .how-works .full-menu .container .menu-small {
-      width: 1000px;
+      width: 100%;
       background: #FFFFFF;
       border-radius: 10px;
       position: absolute;
-      right: 100px;
+      right: 0;
       box-shadow: 0px 4px 40px rgba(68, 97, 215, 0.2); }
   .how-works .full-menu .col-menu {
-    flex-basis: 33.33%;
+    flex-basis: 25%;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     padding: 25px 30px; }
     .how-works .full-menu .col-menu:last-child {
