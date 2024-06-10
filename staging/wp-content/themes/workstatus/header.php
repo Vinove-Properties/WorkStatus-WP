@@ -467,19 +467,19 @@ data-url="<?php the_permalink(); ?>">
                       <div class="col-menu">
                         <h3>By ROLE</h3>
                         <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/hr-managers">
+                        <a href="<?php echo site_url(); ?>/by-role/business-owners">
+                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-03.svg" width="20"
+                            height="20" alt="Menu Icon">Business Owners
+                          </a>
+                          <a href="<?php echo site_url(); ?>/by-role/hr-managers">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-01.svg" width="20"
                             height="20" alt="Menu Icon">HR Managers
                           </a>
-                          <a href="<?php echo site_url(); ?>/it-managers">
+                          <a href="<?php echo site_url(); ?>/by-role/it-managers">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-02.svg" width="20"
                             height="20" alt="Menu Icon">IT Managers
                           </a>
-                          <a href="<?php echo site_url(); ?>/business-owners">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-03.svg" width="20"
-                            height="20" alt="Menu Icon">Business Managers
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-managers">
+                          <a href="<?php echo site_url(); ?>/by-role/project-managers">
                             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-04.svg" width="20"
                               height="20" alt="Menu Icon">Project Managers
                             </a>
