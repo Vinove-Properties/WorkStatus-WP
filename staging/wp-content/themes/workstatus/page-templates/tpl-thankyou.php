@@ -12,8 +12,9 @@ get_header();
     echo '<h1 class="text_center white">THANK YOU!</h1>
     <p class="para_big text_center white">Thanks for your query. Our representative will get in touch with you soon</p>';
     }else{
+    $email = ( isset($_GET['email']) && !empty( $_GET['email'] ) ) ? $_GET['email'] : 'address';    
     echo '<h1 class="text_center white">Thank You - Your registration was successful.</h1>
-    <p class="para_big text_center white">As a next step, we\'ve sent you an email to confirm your email address. Once confirmed, you will be good to login & use the system.</p>';    
+    <p class="para_big text_center white">As a next step, we\'ve sent you an email to confirm your email '.$email.'. Once confirmed, you will be good to login & use the system.</p>';    
     }
     ?>        
     </div>
