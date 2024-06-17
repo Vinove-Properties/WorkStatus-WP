@@ -817,33 +817,38 @@ if( $isEnable == "yes" ){
               <h2><?php echo $use_cases_section['sub_heading']; ?></h2>
             </div>
             <div class="flex_row justify-center">
-			<?php 
-					if( $use_cases_section['content_repeater'] ){  $i = 7;
-					foreach( $use_cases_section['content_repeater'] as $row ) {
-						$image      = $row['image'];
-						$active = ($i==7) ? "active" : "";
-					?> 
-			<div class="column-three">
-                <div class="thumb">
-				<?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-                </div>
-                <div class="blog-title">
-                  <h3><?php echo $row['heading'];?></h3>
-                  <p class="font18"><?php echo $row['content'];?>
-                  </p>
-                </div>
-              </div>
-			  <?php $i++; } } ?>			
-
-              
+            <?php 
+            if( $use_cases_section['content_repeater'] ){  $i = 7;
+            foreach( $use_cases_section['content_repeater'] as $row ) {
+            $image      = $row['image'];
+            $active = ($i==7) ? "active" : "";
+            ?> 
+            <div class="column-three">
+            <div class="thumb">
+            <?php if( $image ){
+                echo '<picture>
+                '.getPxlWebpURL($image['ID']).'
+                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
+                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                height="'.$image['height'].'"> 
+                </picture>';
+                } ?>
             </div>
+            <div class="blog-title">
+            <?php 
+            if(isset($row['link']) && !empty($row['link'])){
+              echo '<h3><a href="'.$row['link'].'">'.$row['heading'];.'</a></h3>';
+            }else{
+              echo '<h3>'.$row['heading'];.'</h3>';
+            }
+            ?>  
+            <p class="font18"><?php echo $row['content'];?>
+            </p>
+            </div>
+            </div>
+            <?php $i++; } } ?>			
+            </div>
+
             <?php if( geoCTAcheck() === true ) : ?>
             <div class="mt70 text_center for-link-blue link-text">
               <div class="mt70 text_center btnSc">
