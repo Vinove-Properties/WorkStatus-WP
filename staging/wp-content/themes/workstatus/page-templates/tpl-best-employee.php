@@ -839,7 +839,7 @@ if( $isEnable == "yes" ){
             if(isset($row['link']) && !empty($row['link'])){
               echo '<h3><a href="'.$row['link'].'">'.$row['heading'].'</a></h3>';
             }else{
-              echo '<h3>'.$row['heading'];.'</h3>';
+              echo '<h3>'.$row['heading'].'</h3>';
             }
             ?>  
             <p class="font18"><?php echo $row['content'];?>

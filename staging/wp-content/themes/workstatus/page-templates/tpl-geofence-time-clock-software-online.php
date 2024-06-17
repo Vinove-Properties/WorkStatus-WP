@@ -943,12 +943,12 @@ $thisPostID = $post->ID;
                 </div>
                 <div class="blog-title">
                   <?php 
-                  if(isset($row['link']) && !empty($row['link'])){
-                  echo '<h3><a href="'.$row['link'].'">'.$row['heading'].'</a></h3>';
-                  }else{
-                  echo '<h3>'.$row['heading'];.'</h3>';
-                  }
-                  ?>  
+            if(isset($row['link']) && !empty($row['link'])){
+              echo '<h3><a href="'.$row['link'].'">'.$row['heading'].'</a></h3>';
+            }else{
+              echo '<h3>'.$row['heading'].'</h3>';
+            }
+            ?>  
                   <?php echo $row['content'];?>
                 </div>
               </div>
