@@ -726,4 +726,7 @@ if( get_field('ws-pctable') === "yes" ){
   </div>
 </div>
 <input type="hidden" value="0" id="myhiddenid">
-<?php get_footer();?>
+<?php 
+get_template_part('inc/cmn','leadform');
+get_footer();
+?>
