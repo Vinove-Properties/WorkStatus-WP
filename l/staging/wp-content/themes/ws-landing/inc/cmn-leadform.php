@@ -4,9 +4,7 @@
   <div class="popup-content">
     <span class="closeicon-sg"></span>
     <div class="col">
-      <div class="top-section">
-        <h2>Contact US</h2>
-      </div>
+      <div class="top-section"><h2>Contact US</h2></div>
       <div class="sigupform">
         <form>
           <div class="signwrap d-flex">

@@ -469,7 +469,7 @@ function call_demows( cont = '<h2>Let us take you on a personalized <span class=
 }
 
 function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams );
     
     // var refUrl  = document.body.getAttribute('data-url');
     // var utmParm = document.body.getAttribute('data-utm');
