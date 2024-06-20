@@ -436,7 +436,7 @@ function getWSipinfo( $ipAddr ){
     if( $hasIP ){
         return json_decode( $hasIP->data );
     }else{
-        $isLocation     = file_get_contents( 'https://ipinfo.io/'.$ipAddr.'?token=58f4668796ee68' );
+        $isLocation     = file_get_contents( 'https://ipinfo.io/'.$ipAddr.'?token=6e9a3b50b603c1' );
         $ws_userip      = json_decode( $isLocation ); 
         if( $ws_userip ){
             $ipdb->insert( 'ipinfo_logs', array( 'ip' => $ipAddr, 'data' => $isLocation, 'created_at' => date('Y-m-d H:i:s')));
