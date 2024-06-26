@@ -194,7 +194,8 @@ function ws_landing_scripts(){
 	/*Pricing Table Stuff : Ends*/
 
 	if( is_page_template('page-templates/tpl-version5.1.php') ){
-	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );	
+	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/script-ver5.1.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'ws-ldform', get_stylesheet_directory_uri() . '/js/cmn-leadform.js', array(), _S_VERSION, true );
 	}else{
 	wp_enqueue_script('ws-script', get_stylesheet_directory_uri() . '/js/script-version1.js', array(), _S_VERSION, true);
 	}

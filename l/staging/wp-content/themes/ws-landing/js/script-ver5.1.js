@@ -1,6 +1,6 @@
 var myTabs1,
-    formPopup = document.getElementById("formPopup"),
-    spanClose = document.getElementsByClassName("closeicon")[0];
+formPopup = document.getElementById("formPopup"),
+spanClose = document.getElementsByClassName("closeicon")[0];
 
 function popup(e = "Book A Demo" ){
     var refUrl  = document.body.getAttribute('data-url');

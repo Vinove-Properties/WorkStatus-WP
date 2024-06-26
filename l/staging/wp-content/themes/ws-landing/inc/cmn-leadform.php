@@ -1,37 +1,44 @@
 <div class="popup-form free-demopop">
-<div id="signupformPopup" class="popup-wrapper nanovar5" style="display:block">
+<div id="cmnLeadForm" class="popup-wrapper nanovar5" style="display:none">
 <div class="popWrap">
   <div class="popup-content">
-    <span class="closeicon-sg"></span>
+    <span class="closeicon-sg" onclick="getCmnLeadForm(false);"></span>
     <div class="col">
-      <div class="top-section"><h2>Contact US</h2></div>
+      <div class="top-section"><h2>Contact Us</h2></div>
       <div class="sigupform">
-        <form>
+        <form id="cmn-lead-form" onsubmit="return cmnFormHandler();">
           <div class="signwrap d-flex">
             <div class="form-group">
-              <input type="text" class="" placeholder="Full Name">
+              <input type="text" id="cmn-name" name="fname" class="" placeholder="Full Name">
+              <span class="error"></span>
             </div>
+
             <div class="form-group">
-              <input type="email" name="ws-email" id="sgemail1" class="emailfld" placeholder="Email">
+              <input type="email" name="ws-email" id="cmn-email" class="emailfld" placeholder="Email">
+              <span class="error"></span>
             </div>
+
             <div class="form-group">
-            <div class="user-input">
-            <input id="pcode" type="tel" name="cprefix" maxlength="5" class="pcode-prefix" onkeydown="javascript:if(event.keyCode != 9) return false;" tabindex="-1" onmousedown="return false;">
-            <input id="cont_phpne" type="tel" name="phone" maxlength="12" class="input-field" placeholder="Phone Number*">
-            <span class="errors" id="phone-error"></span>
+            <div class="user-input" id="incmn-pcode">
+            <input id="cmn-pcode" type="tel" name="cprefix" maxlength="5" class="pcode-prefix" onkeydown="javascript:if(event.keyCode != 9) return false;" tabindex="-1" onmousedown="return false;">
+            <input id="cmn-phone" type="tel" name="phone" maxlength="12" class="input-field" placeholder="Phone Number*">
+            <span class="errors" id="cmn-phone-error"></span>
             </div>
             </div>
+
             <div class="form-group">
-              <textarea class="textarea-input" placeholder="Project Brief" name="requirement"></textarea>
-            </div>
+              <textarea class="textarea-input" id="cmn-req" placeholder="Project Brief" name="requirement"></textarea>
+              <span class="error"></span>
+            </div>            
           </div>
+
           <div class="signwrap">
             <div class="formcheck">
               <p><input class="mcheck" name="checkbox" type="checkbox" value="1" checked="">By filling this form, you agree to our&nbsp;<a href="https://www.workstatus.io/privacy-policy" rel=" noopener">Privacy Policy</a></p>
             </div>
           </div>
           <div class="signwrap">
-            <button type="submit" class="signupbtn">Submitt</button>
+            <button type="submit" id="cmn-frm-btn" class="signupbtn">Submit</button>
           </div>
         </form>
       </div>
