@@ -334,7 +334,7 @@ function pxlGetPtag(array $marray, $title = "", $class = "", $id = "" ){
 	return '<picture '.$hasID.' '.$hasClass.'>
 	'.getPxlWebpURL($marray['ID']).'
 	<source type="'.$marray['mime_type'].'" srcset="'.$marray['url'].'">
-	<img loading="lazy" src="'.$marray['url'].'" alt="'.$marray['title'].'" width="'.$marray['width'].'" 
+	<img loading="lazy" src="'.$marray['url'].'" title="'.$marray['title'].'" alt="'.$marray['title'].'" width="'.$marray['width'].'" 
 	height="'.$marray['height'].'">
 	</picture>';
 }
