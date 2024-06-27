@@ -167,7 +167,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -195,7 +195,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -249,7 +249,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -280,7 +280,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -335,7 +335,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -367,7 +367,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -423,7 +423,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -451,7 +451,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -501,7 +501,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -533,7 +533,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -589,7 +589,7 @@ $thisPostID = $post->ID;
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -619,7 +619,7 @@ $thisPostID = $post->ID;
                               echo '<picture>
                               '.getPxlWebpURL($image['ID']).'
                               <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                              <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                              <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                               height="'.$image['height'].'"> 
                               </picture>';
                               } ?>
@@ -783,7 +783,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -936,7 +936,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
@@ -1073,7 +1073,7 @@ $thisPostID = $post->ID;
                             echo '<picture>
                             '.getPxlWebpURL($image['ID']).'
                             <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+                            <img loading="lazy" src="'.$image['url'].'" title="'.$image['title'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
                             height="'.$image['height'].'"> 
                             </picture>';
                             } ?>
