@@ -8,6 +8,47 @@ function getCmnLeadForm( tgr = true ){
 	}
 	
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+const phoneInputField   = document.querySelector("#cmn-pcode");
+//const phoneInputFields  = document.querySelector("#fpcode");
+if( phoneInputField ){
+    setTimeout( function(){
+    intlTelInput(
+    phoneInputField, {
+    initialCountry: "auto",
+    geoIpLookup: function(cb){
+    let inCountry   = "";
+    let countryInp  = document.getElementById('cont_country');
+    fetch(wsObj.ipinfo)
+    .then( res => res.json() )
+    .then(
+        data => {
+        inCountry = (data && data.country) ? data.country : "gb";
+        let conCode = inCountry.toLowerCase();      
+        cb(conCode);
+        setTimeout( 
+            function(){
+            let iDialCode = ws_getdialCode( conCode );
+            let phoneInp  = document.getElementById('cmn-pcode');
+            phoneInp.value = '+'+iDialCode;
+            countryInp.value = conCode;
+        }, 10 );    
+        }
+    )
+    },
+    });
+    setTimeout( function(){
+        let title       = document.getElementsByClassName('iti__selected-flag');
+        let phoneInp    = document.getElementById('cmn-pcode');
+        title           = title[0].getAttribute('title');
+        let res       	= title.replace(/\D/g, "");
+        phoneInp.value = '+'+res + ' ';
+    }, 1000 );
+    }, 1000 );
+}
+});
+/*
 document.addEventListener("DOMContentLoaded", function(){
 	const cmnPhnCode = document.querySelector("#cmn-pcode");
 	if( cmnPhnCode ){
@@ -39,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function(){
 	    });
 	}
 });
+*/
+
 const 
 cmnForm 	= document.getElementById("cmn-lead-form"),
 cmnName   	= document.getElementById("cmn-name"),
