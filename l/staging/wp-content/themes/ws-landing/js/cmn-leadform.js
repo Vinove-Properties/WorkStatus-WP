@@ -44,8 +44,8 @@ if( phoneInputField ){
         title           = title[0].getAttribute('title');
         let res       	= title.replace(/\D/g, "");
         phoneInp.value = '+'+res + ' ';
-    }, 100 );
-    }, 100 );
+    }, 1000 );
+    }, 1000 );
 }
 });
 /*
