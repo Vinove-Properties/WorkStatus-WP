@@ -626,12 +626,12 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         $err = curl_error( $curl );
         curl_close($curl);
     }
-    header('location:thanks');
+    header('location:https://www.workstatus.io/thanks');
     die;
 }
 if( isset($_POST['is-submitted']) && ($_POST['is-submitted'] == 1) ){
 	getzoholeads( $_POST );	
 }else{
-	header('location:thanks?ws-spamer=true');
+	header('location:https://www.workstatus.io/thanks?ws-spamer=true');
     die;
 }

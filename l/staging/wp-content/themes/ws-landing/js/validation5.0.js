@@ -58,9 +58,9 @@ function ws_getdialCode( code ){
 	return dialCode;
 }
 
-intlTelInput(pCodeInput,{initialCountry: "auto"});
-intlTelInput(pCodeInput2,{initialCountry: "auto"});
-intlTelInput(pCodeInput3,{initialCountry: "auto"});
+// intlTelInput(pCodeInput,{initialCountry: "auto"});
+// intlTelInput(pCodeInput2,{initialCountry: "auto"});
+// intlTelInput(pCodeInput3,{initialCountry: "auto"});
 
 
 // 1.
