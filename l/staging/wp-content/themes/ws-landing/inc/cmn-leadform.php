@@ -22,7 +22,7 @@
             <div class="form-group">
             <div class="user-input" id="incmn-pcode">
             <input id="cmn-pcode" type="tel" name="cprefix" maxlength="5" class="pcode-prefix" onkeydown="javascript:if(event.keyCode != 9) return false;" tabindex="-1" onmousedown="return false;">
-            <input id="cmn-phone" type="tel" name="phone" maxlength="12" class="input-field" placeholder="Phone Number*">
+            <input id="cmn-phone" type="tel" name="phone" maxlength="12" class="input-field phone-field" placeholder="Phone Number*">
             <span class="errors" id="cmn-phone-error"></span>
             </div>
             </div>
