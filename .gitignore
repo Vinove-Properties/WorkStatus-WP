@@ -59,6 +59,8 @@ l/staging/*
 !l/staging/wp-content/
 l/staging/wp-content/*
 !l/staging/wp-content/themes/
+!l/staging/PHPMailer/
+!l/staging/sendmail.php
 l/staging/wp-content/themes/*
 !l/staging/wp-content/themes/ws-landing/
 

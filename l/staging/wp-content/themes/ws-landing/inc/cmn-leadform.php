@@ -6,7 +6,8 @@
     <div class="col">
       <div class="top-section"><h2>Contact Us</h2></div>
       <div class="sigupform">
-        <form id="cmn-lead-form" onsubmit="return cmnFormHandler();">
+        <form id="cmn-lead-form" method="POST" action="<?php echo site_url('/sendmail.php'); ?>" 
+          onsubmit="return cmnFormHandler();">
           <div class="signwrap d-flex">
             <div class="form-group">
               <input type="text" id="cmn-name" name="fname" class="" placeholder="Full Name">
@@ -38,6 +39,8 @@
             </div>
           </div>
           <div class="signwrap">
+            <input type="hidden" name="pageurl" value="<?php the_permalink(); ?>">
+            <input type="hidden" name="is-submitted" value="1">
             <button type="submit" id="cmn-frm-btn" class="signupbtn">Submit</button>
           </div>
         </form>
