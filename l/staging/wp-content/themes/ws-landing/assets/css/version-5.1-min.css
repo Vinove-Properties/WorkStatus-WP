@@ -2047,6 +2047,8 @@ header {
       width: 100%; }
     .sigupform form .ws-error .phone-field {
       border-color: red; }
+    .sigupform form .ws-error .textarea-input {
+      border-color: red; }
     .sigupform form .error, .sigupform form .errors {
       color: red;
       margin: 4px 0 0;
