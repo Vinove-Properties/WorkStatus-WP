@@ -8,37 +8,37 @@ function getCmnLeadForm( tgr = true ){
 	}
 	
 }
-
-const cmnPhnCode = document.querySelector("#cmn-pcode");
-if( cmnPhnCode ){
-	intlTelInput(cmnPhnCode, {
-	initialCountry: "auto",
-	geoIpLookup:function (e){
-	let t = "";
-	fetch("https://www.workstatus.io/wp-json/ws-api/v1/ipinfo")
-	.then((e) => e.json())
-	.then((n) => {
-	    let o = (t = n && n.country ? n.country : "in").toLowerCase();
-	    e(o),
-        setTimeout(function(){
-        let e = ws_getdialCode(o);
-        document.getElementById("cmn-pcode").value = "+" + e;
-        }, 10);
-	});
+document.addEventListener("DOMContentLoaded", function(){
+	const cmnPhnCode = document.querySelector("#cmn-pcode");
+	if( cmnPhnCode ){
+		intlTelInput(cmnPhnCode, {
+		initialCountry: "auto",
+		geoIpLookup:function (e){ alert("OK");
+		let t = "";
+		fetch("https://www.workstatus.io/wp-json/ws-api/v1/ipinfo")
+		.then((e) => e.json())
+		.then((n) => {
+		    let o = (t = n && n.country ? n.country : "in").toLowerCase();
+		    e(o),
+	        setTimeout(function(){
+	        let e = ws_getdialCode(o);
+	        document.getElementById("cmn-pcode").value = "+" + e;
+	        }, 10);
+		});
+		}
+		});
+		document.addEventListener( "click", function(e){
+	    let t = document.getElementById("cmn-pcode");
+	    if (e.target.matches("#incmn-pcode .iti__country")){
+	        let n = document.getElementById("incmn-pcode").getElementsByClassName("iti__selected-flag"),
+	        o = (n = n[0].getAttribute("title")).replace(/\D/g, "");
+	        (t.value = "+" + o + " "), 
+	        document.getElementById("cmn-phone").focus(), 
+	        e.preventDefault();
+	    }
+	    });
 	}
-	});
-	document.addEventListener( "click", function(e){
-    let t = document.getElementById("cmn-pcode");
-    if (e.target.matches("#incmn-pcode .iti__country")){
-        let n = document.getElementById("incmn-pcode").getElementsByClassName("iti__selected-flag"),
-        o = (n = n[0].getAttribute("title")).replace(/\D/g, "");
-        (t.value = "+" + o + " "), 
-        document.getElementById("cmn-phone").focus(), 
-        e.preventDefault();
-    }
-    });
-}
-
+});
 const 
 cmnForm 	= document.getElementById("cmn-lead-form"),
 cmnName   	= document.getElementById("cmn-name"),
