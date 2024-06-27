@@ -76,7 +76,7 @@ function getCommonSolutions( $post_id, $sec_class = '', $needDefault = true ){
       <div class="container">
       <div class="top-section">
       <h6><span class="bg-purple">Meant For Every Business</span></h6>
-      <h2>Workstatus: One Solution for All Businesses</h2>
+      <h2>Workstatus is One Solution for All Businesses</h2>
       </div>
       <div class="flex_row">
       <div class="column-three">
