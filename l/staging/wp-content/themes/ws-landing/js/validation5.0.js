@@ -64,6 +64,7 @@ function ws_getdialCode( code ){
 
 
 // 1.
+/*
 sgemail1.addEventListener("focusout", function(){
 	checkEmail( sgemail1 );
 }),
@@ -108,6 +109,7 @@ sgemail3.addEventListener("focusin", function(){
 });
 sgphone3.addEventListener( "keydown", ws_checkphonenumber );
 
+*/
 
 function wslpSignup(e){
 	let varElm = e.dataset.wform;
