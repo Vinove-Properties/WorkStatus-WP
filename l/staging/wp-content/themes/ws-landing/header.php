@@ -255,15 +255,12 @@ data-url="<?php the_permalink(); ?>"
               <li><a href="#howitworks">How it Works</a></li>
               <li><a href="#feature">Features</a></li>
               <!-- <li><a href="#pricing">Pricing</a></li> -->
+              <li class="freetrail">
+              <a href="javascript:void(0)" onclick="glob_signup(this);" class="btn btn2">Starts Free Trial</a>
+              </li>
               <li class="bookdemo">
               <a href="javascript:void(0)" class="btn btn2 cu-btn"onclick="getCmnLeadForm();">Contact Us</a>
               </li>
-              <!-- 
-              onclick="calendlyCTA('https://calendly.com/workstatus/');"
-              <li class="freetrail">
-              <a href="javascript:void(0)" onclick="glob_signup();" class="btn btn2">Free 7 days Trial</a>
-              </li> 
-              -->
             </ul>
           </div>
         </div>
