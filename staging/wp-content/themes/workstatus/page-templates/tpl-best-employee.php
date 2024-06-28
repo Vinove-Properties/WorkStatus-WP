@@ -288,7 +288,10 @@ if( $isEnable == "yes" ){
           </div>
 		  <?php } endif; ?>
 
-      <?php leadMgtBlock( get_the_ID() ); ?>
+      <?php 
+      get_template_part('common/cmn', 'usps');
+      leadMgtBlock( get_the_ID() ); 
+      ?>
       
       <?php  
 		$stay_in_control_section = get_field('stay_in_control_section');
@@ -723,9 +726,6 @@ if( $isEnable == "yes" ){
     <?php } endif; ?>
 
     <?php  
-    
-    get_template_part('common/cmn', 'usps');
-
 		$time_tracker = get_field('time_tracker');		
 		if( $time_tracker ) :
 		$isEnable = $time_tracker['is_enabled'];
