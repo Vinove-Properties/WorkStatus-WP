@@ -133,6 +133,13 @@ su_cpass.addEventListener("focusout", passCheckc_sufu);
 
 const suchkPolicy = document.getElementById('su-accept');
 suchkPolicy.addEventListener('change', (event) => {
+  let supolicyElm = document.getElementById("supolicy");  
+  if( !event.currentTarget.checked ){
+    supolicyElm.style.display = "block";
+  }else{
+    supolicyElm.style.display = "none";
+  }
+    
   var suformBtn     = document.getElementById("su-submitButton");
   let errCheck      = document.querySelectorAll('#formPopup-su .form-group');
   let errCount      = true;
@@ -152,7 +159,7 @@ suchkPolicy.addEventListener('change', (event) => {
         suformBtn.disabled = false;
     }    
   }else{
-    suformBtn.disabled = true;
+    //suformBtn.disabled = true;
   }
 })
 
@@ -181,12 +188,12 @@ sup_inputs.forEach((input) => {
 
         if(allTrue){
             if( suchkPolicy.checked ){
-                buttonSend.disabled = false;
+                //buttonSend.disabled = false;
             }else{
-                buttonSend.disabled = true;
+                //buttonSend.disabled = true;
             }            
         }else{
-            buttonSend.disabled = true;
+            //buttonSend.disabled = true;
         }
     });
 });
@@ -194,6 +201,10 @@ sup_inputs.forEach((input) => {
 
 function signupFrmValidation(e){
     checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
+    if( !suchkPolicy.checked ){
+        return false;
+    }
+
     if(
         ( strSpaceChecker(su_email.value.trim()) === true ) &&
         ( strSpaceChecker(su_name.value.trim()) === true ) &&
