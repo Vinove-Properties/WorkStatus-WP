@@ -720,11 +720,13 @@ if( $isEnable == "yes" ){
             </div>
           </div>
         </section>
-            <?php } endif; ?>
+    <?php } endif; ?>
 
-            <?php  
-		$time_tracker = get_field('time_tracker');
-		
+    <?php  
+    
+    get_template_part('common/cmn', 'usps');
+
+		$time_tracker = get_field('time_tracker');		
 		if( $time_tracker ) :
 		$isEnable = $time_tracker['is_enabled'];
 		if( $isEnable == "yes" ){ 
