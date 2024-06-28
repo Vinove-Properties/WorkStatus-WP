@@ -22,7 +22,7 @@ get_header(); ?>
                     <small>No credit card required</small>
                  </div>
                 
-                 <div><a href="javascript:void(0)"  onclick="calendlyCTA();" class="primary_btn1">Book A Demo</a>
+                 <div><a href="javascript:void(0)"  onclick="calendlyCTA();" class="primary_btn2">Book A Demo</a>
                     <small>Get queries answered from experts</small>
                  </div>
               </div>
@@ -188,7 +188,7 @@ if( isset( $featureRow['is_enabled'] ) && ($featureRow['is_enabled'] == "yes") )
   </div>
       <span class="devide">OR</span>
 
-      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
+      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -229,7 +229,7 @@ $videoURL = $videoSection['video_url'];
     <span>No credit card. No hassles.</span>
   </div>
       <span class="devide">OR</span>
-      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
+      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -337,7 +337,7 @@ if( isset( $benefitsRow['is_enabled'] ) && ($benefitsRow['is_enabled'] == "yes")
     <div class="ctasec margin-t-70">
     <div class="free-trial"> <a href="javascript:void(0);" class="btn" onclick="glob_signup(this);">Start Free Trial</a><span>No credit card. No hassles.</span> </div>
       <span class="devide">OR</span> 
-      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
+      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
     </div>
   </div>
 </section>
@@ -533,9 +533,12 @@ if( get_field('ws-pctable') === "yes" ){
       <div class="free-trial">
       <a href="javascript:void(0)" class="btn" onclick="glob_signup(this);">Start Free Trial</a>
       <span>No credit card. No hassles.</span>
-      <a href="javascript:void(0)" class="btn" onclick="calendlyCTA()">Request Free Demo</a>
+      
+      
       </div>         
-      <!-- <span class="devide">OR</span> -->
+      <span class="devide">OR</span>
+      <a href="javascript:void(0)" class="btn nobg" onclick="calendlyCTA()">Request Free Demo</a>
+      <!--  -->
 
       
       </div>
