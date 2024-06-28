@@ -178,16 +178,17 @@ $conArray   = $conData->response->data;
                      <div class="form-group">
                         <div class="padd">
                            <p>
-                           <input class="mcheck" id="su-accept" name="checkbox" type="checkbox" value="1">
+                           <input class="mcheck" id="su-accept" name="checkbox" type="checkbox" value="1" checked>
                            I've read and accept <a href="https://www.workstatus.io/terms-of-service" rel="noopener" target="_blank">terms and conditions</a>
                            </p>
+                           <span id="supolicy" class="error" style="text-align:left; display: none;">Please tick this box if you want to proceed.</span>
                         </div>
                      </div>
                      <div class="form-group">
                         <input type="hidden" id="ws_pid" name="pid" value="">
                         <input type="hidden" id="ws_stype" name="type" value="">
                         <input type="hidden" name="src_page" value="<?php the_permalink(); ?>">
-                        <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit" disabled>Create My Account</button>
+                        <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit">Create My Account</button>
                         <span id="ws-apimsg"></span>
                      </div>
                   </div>

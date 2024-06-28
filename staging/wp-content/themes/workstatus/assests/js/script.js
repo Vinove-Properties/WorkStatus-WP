@@ -1211,6 +1211,12 @@ su_cpass.addEventListener("focusout", passCheckc_sufu);
 
 const suchkPolicy = document.getElementById('su-accept');
 suchkPolicy.addEventListener('change', (event) => {
+  let supolicyElm = document.getElementById("supolicy");  
+  if( !event.currentTarget.checked ){
+    supolicyElm.style.display = "block";
+  }else{
+    supolicyElm.style.display = "none";
+  }  
   var suformBtn     = document.getElementById("su-submitButton");
   let errCheck      = document.querySelectorAll('#formPopup-su .form-group');
   let errCount      = true;
@@ -1245,7 +1251,7 @@ suchkPolicy.addEventListener('change', (event) => {
         
     }
  }else{
-        suformBtn.disabled = true;
+        //suformBtn.disabled = true;
     }
 })
 
@@ -1258,26 +1264,27 @@ inputValidator = { "uname":false, "uemail": false, "phone":false, "password":fal
 //console.log( inputValidator );
 let buttonSend = document.getElementById('su-submitButton');
 sup_inputs.forEach((input) => {
-    input.addEventListener('focusout', () => {
+    //console.log( input );
+    input.addEventListener('focusout', () => { 
         let name = event.target.getAttribute('name');
         if( input.parentElement.classList.contains('ws-error') ){
             inputValidator[name] = false;
         }else{
             inputValidator[name] = true;            
         }
-        
+        //console.log( "Echo "+ inputValidator );
         let allTrue = Object.keys(inputValidator).every((item) => {
             return inputValidator[item] === true
         });
 
         if(allTrue){
             if( suchkPolicy.checked ){
-                buttonSend.disabled = false;
+                //buttonSend.disabled = false;
             }else{
-                buttonSend.disabled = true;
+                //buttonSend.disabled = true;
             }
         }else{
-            buttonSend.disabled = true;
+            //buttonSend.disabled = true;
         }
     });
 });
@@ -1309,6 +1316,9 @@ function signupFrmValidation(e){
         }
     }else{
         checkRequired([su_name, su_email, su_pass, su_cpass]);
+    }
+    if( !suchkPolicy.checked ){
+        return false;
     }
     if(
         ( vcSpaceChecker(su_email.value.trim()) === true ) &&
