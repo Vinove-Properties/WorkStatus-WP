@@ -32,7 +32,7 @@ global $ws_ctas, $RegLink, $LogLink;
     /*Core Web Vital Ends*/
     #ws-apimsg.success{margin-top: 10px; display:inline-block; color:#007600;}
     #ws-apimsg.error{margin-top: 10px; display:inline-block; color:#ed1010;}
-    .useful-resources-blog-section .thumb img{height:200px!important;}
+  
     .popup-wrapper.is-active{display:block;}
     .wsf-signup .popup-wrapper.is-active{display:block !important;}
     .latest-offer img{width:100%; height: 80px;}
