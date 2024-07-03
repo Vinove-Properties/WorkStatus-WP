@@ -393,6 +393,12 @@ document.addEventListener( "DOMContentLoaded",function(){
             //console.log("API DATA IS : " + data);    
             inCountry = (data && data.country) ? data.country : "gb";
             let conCode = inCountry.toLowerCase();      
+            if( conCode == "in"){
+            let sgFrm = document.getElementById("formPopup-su");
+            if( sgFrm ){
+                sgFrm.classList.add('locate-in');
+            }
+            }
             callback(conCode);
             setTimeout( 
                 function(){

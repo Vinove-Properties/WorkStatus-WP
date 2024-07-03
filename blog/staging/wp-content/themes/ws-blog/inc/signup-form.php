@@ -93,21 +93,20 @@
           </div>
         </div>
         <div class="right-section">
-          <h2>Empower Your Team: Get Started Now
-          </h2>
+          <h2>Empower Your Team: Get Started Now</h2>
           <form onsubmit="return signupFrmValidation(this)" method="post">
             <div class="form-wrap">
               <div class="form-group">
-                <input type="text" class="infiled"  id="su-name" placeholder="Full Name" name="uname" maxlength="30">
-                <label>Full Name</label>
+                <input type="text" class="infiled"  id="su-name" placeholder="Full Name *" name="uname" maxlength="30">
+                <label>Full Name*</label>
                 <span class="error"></span>
               </div>
               <div class="form-group">
-                <input  type="text" class="infiled" id="su-email" placeholder="Email Address" name="uemail" maxlength="50" autocomplete="off">
-                <label>Email Address</label>
+                <input  type="text" class="infiled" id="su-email" placeholder="Email Address *" name="uemail" maxlength="50" autocomplete="off">
+                <label>Email Address*</label>
                 <span class="error"></span>
               </div>
-              <div class="form-group w-45">
+              <div class="form-group w-45 cnd-phone">
                 <select name="pcode" id="su-pcode" class="infiled">
                   <option value="">Select Country Code</option>
                   <?php 
@@ -121,42 +120,43 @@
                 <label>Country Code*</label>
                 <span class="error"></span>
               </div>
-              <div class="form-group w-55">
-                <input  type="tel" id="su-phone" class="infiled su-phone"  placeholder="Phone No" name="phone" maxlength="50">
-                <label>Phone No</label>
+              <div class="form-group w-55 cnd-phone">
+                <input type="tel" id="su-phone" class="infiled su-phone"  placeholder="Phone No*" name="phone" maxlength="50">
+                <label>Phone No*</label>
                 <span class="error" id="su-phone-err"></span>
               </div>
               <div class="form-group">
-                <input type="password" class="infiled" name="password" placeholder="Password" autocomplete="current-password" id="su-password">
+                <input type="password" class="infiled" name="password" placeholder="Password *" autocomplete="current-password" id="su-password">
                 <i onclick="togglewsPassword(this, 'su-password')" style="margin-left: -30px; cursor: pointer;">
                 <img class="eye-slash" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye-slash.png"  alt="">
                 <img class="eye" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye.png"  alt="">
                 </i>
-                <label>Password</label>
+                <label>Password*</label>
                 <span class="error"></span>
               </div>
               <div class="form-group">
-                <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password" autocomplete="current-password" id="su-cpassword">
+                <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password*" autocomplete="current-password" id="su-cpassword">
                 <i onclick="togglewsPassword(this, 'su-cpassword')" style="margin-left: -30px; cursor: pointer;">
                 <img class="eye-slash" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye-slash.png"  alt="">
                 <img class="eye" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye.png"  alt="">
                 </i>
-                <label>Confirm Password</label>
+                <label>Confirm Password*</label>
                 <span class="error"></span>
               </div>
               <div class="form-group">
                 <div class="padd">
                   <p>
-                    <input class="mcheck" id="su-accept" name="checkbox" type="checkbox" value="1">
+                    <input class="mcheck" id="su-accept" name="checkbox" type="checkbox" value="1" checked>
                     I've read and accept <a href="https://www.workstatus.io/terms-of-service" rel="noopener" target="_blank">terms and conditions</a>
                   </p>
+                  <span id="supolicy" class="error" style="text-align:left; display: none;">Please tick this box if you want to proceed.</span>
                 </div>
               </div>
               <div class="form-group">
                 <input type="hidden" id="ws_pid" name="pid" value="">
                 <input type="hidden" id="ws_stype" name="type" value="">
                 <input type="hidden" name="src_page" value="<?php the_permalink(); ?>">
-                <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit" disabled>Create My Account</button>
+                <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit">Create My Account</button>
                 <span id="ws-apimsg"></span>
               </div>
             </div>

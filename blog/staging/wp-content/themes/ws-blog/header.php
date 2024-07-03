@@ -42,7 +42,8 @@
       #elm-toc .sw-hd span.hide,
       #elm-toc.active .sw-hd span.show,
       #elm-toc .tocsec{display:none;}
-
+      .cnd-phone{display: none;}
+      .locate-in .cnd-phone{display: block;}
 
     </style>
     <!-- Google Tag Manager -->
