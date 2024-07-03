@@ -1343,9 +1343,9 @@ function signupFrmValidation(e){
             return false;
         }
 
-        if( su_phone && (checkLength(su_phone,7,20) === false) ){
-            return false;
-        }
+        // if( su_phone && (checkLength(su_phone,7,20) === false) ){
+        //     return false;
+        // }
 
         if( su_pass.value.trim() !== su_cpass.value.trim() ){
             //passCheck_su();
