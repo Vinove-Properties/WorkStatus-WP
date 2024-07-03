@@ -452,6 +452,7 @@ global $ws_ctas, $RegLink, $LogLink;
         </section>
         <?php } endif; ?>
         <?php require_once get_template_directory() .'/common/blog.php'; ?>
+        <?php get_template_part('common/home', 'testimonials'); ?>
         <?php require_once get_template_directory() .'/common/workstatus-journey.php';?>
       </main>
 
