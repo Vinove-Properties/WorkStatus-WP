@@ -1366,7 +1366,7 @@ function signupFrmValidation(e){
         xhttp.onreadystatechange = function(){
             if( (this.readyState == 4) && (this.status == 200) ){
                 let response = JSON.parse( this.responseText );
-                console.log( response.resp );
+                //console.log( response.resp );
                 if( response.response.code == "200" ){
                     const xdForm = document.getElementById("xd-form");
                     // xdForm.classList.add('signup-success');
@@ -1381,7 +1381,7 @@ function signupFrmValidation(e){
                     }, 5000 );
                     formBtn.innerText   = "Create My Account";
                     formBtn.disabled    = false;    
-                }                            
+                }
             }
         }
         xhttp.send(formData);

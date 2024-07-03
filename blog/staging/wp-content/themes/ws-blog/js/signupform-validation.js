@@ -254,17 +254,18 @@ function signupFrmValidation(e){
                 let response = JSON.parse( this.responseText );
                 console.log( response );
                 if( response.response.code == "200" ){
-                    spnMsg.classList.add('success');                    
+                    const xdForm = document.getElementById("xd-form");
                     e.reset();
+                    window.location.href = 'https://www.workstatus.io/signup-thanks?email='+response.response.email;
                 }else{
                     spnMsg.classList.add('error');
-                }
-                formBtn.innerText   = "Create My Account";
-                formBtn.disabled    = false;                
-                spnMsg.innerHTML    = response.response.message;
-                setTimeout( () => {
-                    spnMsg.innerHTML = "";
-                }, 5000 );
+                    spnMsg.innerHTML    = response.response.message;
+                    setTimeout( () => {
+                        spnMsg.innerHTML = "";
+                    }, 5000 );
+                    formBtn.innerText   = "Create My Account";
+                    formBtn.disabled    = false;    
+                }                
             }
         }
         xhttp.send(formData);
@@ -272,5 +273,5 @@ function signupFrmValidation(e){
     }else{
         return false;
     }
-    return false;  
+    return false;
 }
