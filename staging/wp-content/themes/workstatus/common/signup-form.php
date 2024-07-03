@@ -134,7 +134,7 @@ $conArray   = $conData->response->data;
                      <?php //endif; ?>
 
                      <div class="form-group">
-                        <input type="password" class="infiled" name="password" placeholder="Password" 
+                        <input type="password" class="infiled" name="password" placeholder="Password*" 
                         autocomplete="current-password" id="su-password">
                         <i onclick="togglewsPassword(this, 'su-password')" style="margin-left: -30px; cursor: pointer;">
                         <img loading="lazy" class="eye-slash" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye-slash.png"  alt="">
@@ -152,7 +152,7 @@ $conArray   = $conData->response->data;
                      </div>
 
                      <div class="form-group">
-                        <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password" autocomplete="current-password" id="su-cpassword">
+                        <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password*" autocomplete="current-password" id="su-cpassword">
                         <i onclick="togglewsPassword(this, 'su-cpassword')" style="margin-left: -30px; cursor: pointer;">
                         <img loading="lazy"  class="eye-slash" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye-slash.png"  alt="">
                         <img loading="lazy" class="eye" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye.png"  alt="">
