@@ -116,7 +116,8 @@ global $ws_ctas, $RegLink, $LogLink;
     .site_nav > ul > li#howitworksitem{position: relative;}
     .feature-header .site__header .site_nav > ul > li#howitworksitem > a::before {display:none;}
   }
-
+  .cnd-phone{display: none;}
+  .locate-in .cnd-phone{display: block;}
 
   </style>
   <?php if( isBetaVersion() === false ) : ?>

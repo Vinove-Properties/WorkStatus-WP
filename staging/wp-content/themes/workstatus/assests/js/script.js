@@ -912,6 +912,12 @@ if( phoneInputField ){
         data => {
         inCountry = (data && data.country) ? data.country : "gb";
         let conCode = inCountry.toLowerCase();      
+        if( conCode == "in"){
+            let sgFrm = document.getElementById("formPopup-su");
+            if( sgFrm ){
+                sgFrm.classList.add('locate-in')
+            }
+        }
         cb(conCode);
         setTimeout( 
             function(){
@@ -1311,7 +1317,10 @@ function signupFrmValidation(e){
     let geocheck = true;
     if( wrap_suform.classList.contains('locate-in') ){
         checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
-        if( ( vcSpaceChecker(su_pcode.value.trim()) === false ) || ( vcSpaceChecker(su_phone.value.trim()) === false ) ){
+        if( 
+        ( vcSpaceChecker(su_pcode.value.trim()) === false ) || 
+        ( vcSpaceChecker(su_phone.value.trim()) === false ) 
+        ){
         geocheck = false;
         }
     }else{

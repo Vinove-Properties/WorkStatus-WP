@@ -8,7 +8,8 @@ $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
 ?>
 <div class="banner-form wsf-signup">
-<div id="formPopup-su" class="popup-wrapper <?php echo (isset($_GET['free-trial'])) ? 'is-active' : ''; echo $popClass; ?>" style="display:none;">
+<div id="formPopup-su" class="popup-wrapper <?php echo (isset($_GET['free-trial'])) ? 'is-active' : ''; 
+//echo $popClass; ?>" style="display:none;">
       <div class="popWrap">
          <div class="popup-content p-0">
             <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
@@ -102,16 +103,16 @@ $conArray   = $conData->response->data;
                   <div class="form-wrap">
                      <div class="form-group">
                         <input type="text" class="infiled"  id="su-name" placeholder="Full Name" name="uname" maxlength="30">
-                        <label>Full Name</label>
+                        <label>Full Name*</label>
                         <span class="error"></span>
                      </div>
                      <div class="form-group">
                         <input  type="text" class="infiled" id="su-email" placeholder="Email Address" name="uemail" maxlength="50" autocomplete="off">
-                        <label>Email Address</label>
+                        <label>Email Address*</label>
                         <span class="error"></span>
                      </div>
-                     <?php if( $defLocation == "IN" ) : ?>
-                     <div class="form-group w-45">
+                     <?php //if( $defLocation == "IN" ) : ?>
+                     <div class="form-group w-45 cnd-phone">
                         <select name="pcode" id="su-pcode" class="infiled">
                            <option value="">Select Country Code</option>
                            <?php 
@@ -125,12 +126,13 @@ $conArray   = $conData->response->data;
                         <label>Country Code*</label>
                         <span class="error"></span>
                      </div>
-                     <div class="form-group w-55">
+                     <div class="form-group w-55 cnd-phone">
                         <input type="tel" id="su-phone" class="infiled su-phone"  placeholder="Phone No" name="phone" maxlength="50">
-                        <label>Phone No</label>
+                        <label>Phone No*</label>
                         <span class="error" id="su-phone-err"></span>
                      </div>
-                     <?php endif; ?>
+                     <?php //endif; ?>
+
                      <div class="form-group">
                         <input type="password" class="infiled" name="password" placeholder="Password" 
                         autocomplete="current-password" id="su-password">
