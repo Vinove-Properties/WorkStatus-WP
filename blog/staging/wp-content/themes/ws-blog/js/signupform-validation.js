@@ -99,15 +99,20 @@ function wscheckPassword(str){
 
 function passCheck_su(event){
     if( wscheckPassword(su_pass.value.trim()) === false ){
-        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols');        
+        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols (!,@,#,$,%,&,*,?)');        
     }else{
+        if( (wscheckPassword(su_cpass.value.trim()) !== false) && (su_pass.value.trim() === su_cpass.value.trim()) ){
+            showSucces( su_cpass );
+        }else{
+            showError( su_cpass, 'Both passwords must match');    
+        }
         showSucces( su_pass );
     }    
 }
 
 function passCheckc_su(event){
     if( wscheckPassword(su_cpass.value.trim()) === false ){
-        showError( su_cpass, 'Use 6 or more characters with a mix of letters, numbers & symbols');        
+        //showError( su_cpass, 'Use 6 or more characters with a mix of letters, numbers & symbols (!,@,#,$,%,&,*,?)');        
     }else{
         showSucces( su_cpass );        
     }
@@ -126,6 +131,7 @@ su_name.addEventListener("keypress", nameCheck_su);
 su_name.addEventListener("keydown", ws_validateStr);
 su_name.addEventListener("focusout", nameCheck_su);
 
+su_email.addEventListener("keydown", emailCheck_su);
 su_email.addEventListener("focusout", emailCheck_su);
 su_email.addEventListener("focusin", function(){
     doNotingonFocus( su_email );
