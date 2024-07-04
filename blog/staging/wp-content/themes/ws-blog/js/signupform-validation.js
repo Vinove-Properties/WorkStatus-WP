@@ -79,14 +79,17 @@ function emailCheck_su(event){
     checkEmail(su_email);
 }
 
+if( su_pcode ){
 su_pcode.addEventListener('change', function(){
     if( this.value !== "" ){
         showSucces( su_pcode );
     }else{
         showError( su_pcode, "Pleasee select country code." )
-    }
-  
-});
+    }  
+});    
+}
+
+
 function phoneCheck_su(event){
     checkLength(su_phone,7,20);
     //phonenumber(su_phone);
@@ -137,17 +140,20 @@ su_email.addEventListener("focusin", function(){
     doNotingonFocus( su_email );
 });
 
-su_phone.addEventListener("keyup", phoneCheck_su);
-su_phone.addEventListener("keypress", phoneCheck_su);
-su_phone.addEventListener("keydown", ws_checkphonenumber);
-su_phone.addEventListener("focusout", phoneCheck_su);
+if( su_phone ){
+    su_phone.addEventListener("keyup", phoneCheck_su);
+    su_phone.addEventListener("keypress", phoneCheck_su);
+    su_phone.addEventListener("keydown", ws_checkphonenumber);
+    su_phone.addEventListener("focusout", phoneCheck_su);    
+}
+
 
 su_pass.addEventListener("keyup", passCheck_su);
 su_pass.addEventListener("keypress", passCheck_su);
 su_pass.addEventListener("focusout", passCheck_su);
 
-su_cpass.addEventListener("keyup", passCheckc_su);
-su_cpass.addEventListener("keypress", passCheckc_su);
+su_cpass.addEventListener("keyup", passCheckc_sufu);
+su_cpass.addEventListener("keypress", passCheckc_sufu);
 su_cpass.addEventListener("focusout", passCheckc_sufu);
 
 
