@@ -146,7 +146,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
                 <div class="full-content-excerpt" style="display:block;">
                 <?php 
                 //echo substr($row->release_note, 0, 100).
-                echo '<a href="javascript:void(0)" onclick="popReleaseNote('.$index.')" class="note-link hide-excerpt" data-row="'.$index.'">Show Release Notes</a>';
+                echo substr($row->release_note, 0, 100).'...<a href="javascript:void(0)" onclick="popReleaseNote('.$index.')" class="note-link hide-excerpt" data-row="'.$index.'">Show Release Notes</a>';
                 ?>                                        
                 </div>
                 </div>
