@@ -52,7 +52,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
             <tr id="tr-row-<?php echo $index; ?>" class="row1">
                 <td class="first"><h5><?php echo $row->phase ?></h5>
                 <i><p>Published on <br><?php echo date('jS M\'Y', strtotime($row->date)); ?></p></i>
-                </td>
+                </td>                
                 <td>
                     <?php 
                     if( isset( $row->version_detail ) ){
@@ -63,21 +63,7 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
                         }
                         echo '</ul>';
                     }
-                    ?>
-
-                    <div id="showallnotes" class="allnotes" style="margin-top:15px;">
-                    <div class="full-content" 
-                    id="node-log-<?php echo $index; ?>"
-                    data-phase="<?php echo $row->phase ?>"
-                    data-platform="<?php echo isset( $row->version_detail ) ? $row->version_detail->{'Web Platform'}->version : ''; ?>"
-                    data-publish="<?php echo date('jS M\'Y', strtotime($row->date)); ?>"
-                    style="display:none"><?php echo $row->release_note; ?></div>
-                    <div class="full-content-excerpt" style="display:block;">
-                    <?php 
-                    echo substr($row->release_note, 0, 100).'... <a href="javascript:void(0)" onclick="popReleaseNote('.$index.')" class="note-link hide-excerpt" data-row="'.$index.'">Show Release Notes</a>';
-                    ?>                                        
-                    </div>
-                    </div>
+                    ?>                    
                 </td>
                 <td>
                     <?php 
@@ -146,7 +132,26 @@ if( isset( $data->code ) && ($data->code == 200) ) : ?>
                 </td>
                 
             </tr>
-            
+            <tr>
+            <td class="first"></td>    
+            <td colspan="6">
+                <div id="showallnotes" class="allnotes" style="margin-top:15px;">
+                <div class="full-content" 
+                id="node-log-<?php echo $index; ?>"
+                data-phase="<?php echo $row->phase ?>"
+                data-platform="<?php echo isset( $row->version_detail ) ? $row->version_detail->{'Web Platform'}->version : ''; ?>"
+                data-publish="<?php echo date('jS M\'Y', strtotime($row->date)); ?>"
+                style="display:none"><?php echo $row->release_note; ?></div>
+
+                <div class="full-content-excerpt" style="display:block;">
+                <?php 
+                //echo substr($row->release_note, 0, 100).
+                echo '<a href="javascript:void(0)" onclick="popReleaseNote('.$index.')" class="note-link hide-excerpt" data-row="'.$index.'">Show Release Notes</a>';
+                ?>                                        
+                </div>
+                </div>
+            </td>    
+            </tr>
             
             <?php endforeach; ?>
         </tbody>
