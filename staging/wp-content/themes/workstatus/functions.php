@@ -454,7 +454,7 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 			 </a>
 		   </div>		 		 
 		 <?php 
-		 if( $pcount === 3 ) break;
+		 if( $pcount === 6 ) break;
 		 endforeach; 
 		 ?>
 		</div>
