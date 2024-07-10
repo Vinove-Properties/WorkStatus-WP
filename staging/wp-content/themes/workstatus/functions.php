@@ -437,14 +437,13 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 		 $pcount++;	
 		 ?>
 		 <div class="blog-box column-three">
-			 <a href="<?php echo $row->permalink; ?>"
-			 class="blog-link">
+			 <a href="<?php echo $row->permalink; ?>" class="blog-link">
 			   <div class="thumb">
 				 <picture>
 				   <source type="image/webp" srcset="<?php echo  $row->thumbnail_m; ?>">
 				   <source type="image/png" srcset="<?php echo  $row->thumbnail_m; ?>">
-				   <img loading="lazy" src="<?php echo  $row->thumbnail_m;?>" alt="<?php echo $row->title; ?>" width="400" 
-				   height="242">
+				   <img loading="lazy" src="<?php echo  $row->thumbnail_m;?>" alt="<?php echo $row->title; ?>" 
+				   width="400" height="242">
 				 </picture>
 			   </div>
 			   <div class="blog-title">
@@ -460,8 +459,7 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 		</div>
 		</div>
 	</section>	
-	<?php } 
-		 
+	<?php } 		 
 }
 
 // Ebook Pdf Function
