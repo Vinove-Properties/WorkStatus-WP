@@ -53,7 +53,7 @@ define('lpCLIENT_SECRET','c0fe2e3c254b4d2d7851267acf6b62bce66deead0d');
 define('lpREFRESH_TOKEN','1000.4a964cbd2983c2dd57da83472dd0e96d.c0c7a5b9cb27092b71e2d6687c140dda');
 
 $name           = $data['fname'];
-$partName       = vcGetName( $ajxData['name'] );
+$partName       = wsGetName( $ajxData['name'] );
 $fname          = $partName[0];
 $lname          = ( !empty($partName[1]) ) ? $partName[1] : 'N/A';
 
