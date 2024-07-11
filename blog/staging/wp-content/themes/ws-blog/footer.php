@@ -114,8 +114,7 @@
           <div class="addwrap">
           <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
                   alt="flag" width="35" height="35">
-            <p>3rd Floor, Fusion Square, 5A & 5B, Sector 126, Noida 201303
-            </p>
+            <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304</p>
         </div>
           </div>
         </div>
