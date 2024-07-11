@@ -3,6 +3,37 @@ function wsVarCheck( $array, $key ){
 	return ( isset($array[$key]) && !empty($array[$key]) ) ? $array[$key] : '';
 }
 
+function wsGetName($name) {
+    $name = trim($name);
+    $last_name = (strpos($name, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $name);
+    $first_name = trim( preg_replace('#'.preg_quote($last_name,'#').'#', '', $name ) );
+    return array($first_name, $last_name);
+}
+
+function getWS_IPAddr(){
+    if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+              $_SERVER['REMOTE_ADDR']       = $_SERVER["HTTP_CF_CONNECTING_IP"];
+              $_SERVER['HTTP_CLIENT_IP']    = $_SERVER["HTTP_CF_CONNECTING_IP"];
+    }
+    $client  = @$_SERVER['HTTP_CLIENT_IP'];
+    $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+    $remote  = $_SERVER['REMOTE_ADDR'];
+
+    if(filter_var($client, FILTER_VALIDATE_IP))
+    {
+        $ip = $client;
+    }
+    elseif(filter_var($forward, FILTER_VALIDATE_IP))
+    {
+        $ip = $forward;
+    }
+    else
+    {
+        $ip = $remote;
+    }
+    return $ip;
+}
+
 $data = (array) json_decode(file_get_contents("php://input"));
 if( !isset( $data['email'] ) ) die("Go Boat");
 
@@ -16,13 +47,16 @@ foreach( $data as $key => $value ){
 	}	
 	$idx++;
 }
-//print_r($data); die;
+
 define('lpCLIENT_ID','1000.ED227T6HEN6WAZRH1O48BU5VI96MVR');
 define('lpCLIENT_SECRET','c0fe2e3c254b4d2d7851267acf6b62bce66deead0d');
 define('lpREFRESH_TOKEN','1000.4a964cbd2983c2dd57da83472dd0e96d.c0c7a5b9cb27092b71e2d6687c140dda');
-$fname 			= 'FNameLP';
-$lname 			= 'LNameLP';
-$name  			= $data['fname'];
+
+$name           = $data['fname'];
+$partName       = vcGetName( $ajxData['name'] );
+$fname          = $partName[0];
+$lname          = ( !empty($partName[1]) ) ? $partName[1] : 'N/A';
+
 $email 			= wsVarCheck($data, 'email');
 $company 		= '';
 $teamSize 		= '';
@@ -30,7 +64,7 @@ $requirement    = 'Download Case Study Page Only Name & Email Data';
 $user_country   = '';
 
 $pageurl 		= wsVarCheck($data, 'pageurl');
-$tracking_ip 	= wsVarCheck($data, 'tracking_ip');
+$tracking_ip 	= getWS_IPAddr();
 $referalurl 	= wsVarCheck($data, 'referalurl');
 $phoneNo 		= wsVarCheck($data, 'phone');
 $varLeadSource 	= 'Website';
@@ -83,7 +117,7 @@ if( !empty( $referalurl ) && empty( $utm_src ) ){
     }
 }
 $lead_id 	= 0;
-$owner_id 	= 658520861;
+$owner_id 	= 681646179;
 $postData 	= 'refresh_token='.lpREFRESH_TOKEN.'&client_id='.lpCLIENT_ID.'&client_secret='.lpCLIENT_SECRET.'&grant_type='.'refresh_token';
     $curl = curl_init();
     curl_setopt_array($curl, array(
