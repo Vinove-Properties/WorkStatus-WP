@@ -266,7 +266,8 @@ function workstatus_scripts() {
 	wp_localize_script('ws-script', 'wsObj', [
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
 	: site_url('/wp-json/ws-api/v1/ipinfo'),
-	'app_url' => ( isBetaVersion() ) ? 'app.workstatus.io' : 'app.workstatus.io'
+	'app_url' 		=> ( isBetaVersion() ) ? 'app.workstatus.io' : 'app.workstatus.io',
+	'admin_ajax' 	=> admin_url( 'admin-ajax.php' ),
 	]);	
 	/*
 	wp_enqueue_script('workstatus-navigation', get_stylesheet_directory_uri() . '/js/navigation.js', array(), 
@@ -400,7 +401,7 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 
  	$rPosts = $wsBposts = [];
  	if( $pslug ){
- 	$ar = explode('|',$pslug);
+ 	$ar 		= explode('|',$pslug);
 	$postOne 	= (isset($ar[0]) && !empty($ar[0])) ? $ar[0] : 'null';
 	$postTwo 	= (isset($ar[1]) && !empty($ar[1])) ? $ar[1] : 'null';
 	$postThree 	= (isset($ar[2]) && !empty($ar[2])) ? $ar[2] : 'null';

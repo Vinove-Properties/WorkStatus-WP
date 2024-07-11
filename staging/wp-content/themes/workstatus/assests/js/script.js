@@ -1081,20 +1081,18 @@ function downloadEbookHandler(e){
     const vEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if( !vEmail.test(eEmail.value.trim()) ){
         return false;
-    }
-    
+    }    
     /*if( checkLength(ePhone, 8, 20) === false ){
         return false;
-    }*/
-            
+    }*/            
     formBtn.innerText = "Please Wait...";
     formBtn.disabled  = true;
     var formData    = JSON.stringify( wsSerializeForm(e) );
     var xhttp       = new XMLHttpRequest();
-    xhttp.open("POST", ws_site_url+'common/inc/ajax-handler.php', true); 
+    xhttp.open("POST", wsObj.admin_ajax, true); 
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200) {
+       if (this.readyState == 4 && this.status == 200){
             let response = JSON.parse(this.responseText);
             if( response.success == true ){
                 let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
