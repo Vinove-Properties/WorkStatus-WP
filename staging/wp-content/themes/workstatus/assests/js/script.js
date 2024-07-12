@@ -1069,6 +1069,13 @@ if( ePhone ){
     ePhone.addEventListener("keydown", ws_checkphonenumber);
 }
 
+function vcGetName(name) {
+    name = name.trim();
+    let lastName = name.includes(' ') ? name.replace(/.*\s([\w-]*)$/, '$1') : '';
+    let firstName = name.replace(new RegExp(lastName + '$'), '').trim();
+    return [firstName, lastName];
+}
+
 function downloadEbookHandler(e){
     let eName   = document.getElementById("ename");
     let eEmail  = document.getElementById("eemail");
@@ -1082,39 +1089,68 @@ function downloadEbookHandler(e){
     if( !vEmail.test(eEmail.value.trim()) ){
         return false;
     }    
-    /*if( checkLength(ePhone, 8, 20) === false ){
-        return false;
-    }*/            
+    //if(checkLength(ePhone, 8, 20) === false ){return false;}
+
+    let namePart    = vcGetName( eName.value );
+    let firstName   = namePart[0];
+    let lastName    = (namePart[1] && (namePart[1] != "")) ? namePart[1] : '';
     formBtn.innerText = "Please Wait...";
     formBtn.disabled  = true;
-    var formData    = JSON.stringify( wsSerializeForm(e) );
-    var xhttp       = new XMLHttpRequest();
-    xhttp.open("POST", wsObj.admin_ajax, true); 
-    xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200){
-            let response = JSON.parse(this.responseText);
-            if( response.success == true ){
-                let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
-                let ePdfUrl     = ws_site_url+'ebook-docs/'+ebookElm;
+    const url = 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
+    //const url = 'http://localhost/workstatus-wp/website/blog/staging/wp-json/es_apicb/v1/addsubs';    
+    const data = { first_name: firstName, last_name: lastName, email: eEmail.value };
+    fetch(url, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json()) // Parse the JSON from the response
+    .then(data => {
+        console.log('Success:', data);
+        let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
+        let ePdfUrl     = ws_site_url+'ebook-docs/'+ebookElm;
 
-                let elink = document.createElement('a');
-                elink.href = ePdfUrl;
-                elink.download = ebookElm;
-                elink.dispatchEvent(new MouseEvent('click'));
-                formBtn.innerText       = "Download";
-                formBtn.disabled        = false;
-                e.reset();
-                return false;
-            }else{
-                alert("Something Went Wrong. Please try again");
-                return false;
-            }
-       }
-    };
-    xhttp.send(formData);
-    }else{
-        return false;
+        let elink = document.createElement('a');
+        elink.href = ePdfUrl;
+        elink.download = ebookElm;
+        elink.dispatchEvent(new MouseEvent('click'));
+        formBtn.innerText       = "Download";
+        formBtn.disabled        = false;
+        e.reset();
+    })
+    .catch((error) => {
+        formBtn.innerText       = "Download";
+        formBtn.disabled        = false;
+        e.reset();
+    });
+    // var formData    = JSON.stringify( wsSerializeForm(e) );
+    // var xhttp       = new XMLHttpRequest();
+    // xhttp.open("POST", wsObj.admin_ajax, true); 
+    // xhttp.setRequestHeader("Content-Type", "application/json");
+    // xhttp.onreadystatechange = function() {
+    //    if (this.readyState == 4 && this.status == 200){
+    //         let response = JSON.parse(this.responseText);
+    //         if( response.success == true ){
+    //             let ebookElm    = document.getElementById('ebook-pdf').dataset.edoc;
+    //             let ePdfUrl     = ws_site_url+'ebook-docs/'+ebookElm;
+
+    //             let elink = document.createElement('a');
+    //             elink.href = ePdfUrl;
+    //             elink.download = ebookElm;
+    //             elink.dispatchEvent(new MouseEvent('click'));
+    //             formBtn.innerText       = "Download";
+    //             formBtn.disabled        = false;
+    //             e.reset();
+    //             return false;
+    //         }else{
+    //             alert("Something Went Wrong. Please try again");
+    //             return false;
+    //         }
+    //    }
+    // };
+    // xhttp.send(formData);
+    // }else{
+    //     return false;
     }    
     return false;
 }

@@ -706,6 +706,7 @@ function es_addsubscriber_cb( \WP_REST_Request $req ){
                 $contact_data['last_name']  = $data['last_name'];
                 $contact_data['email']      = $data['email'];
                 $eobj->add_contact($contact_data, 2);
+                wp_send_json(['success'=> true, 'message'=> 'Data added..', 'form_data'=> $data]);
             }
         }    
     }    
