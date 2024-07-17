@@ -73,7 +73,7 @@
     </div>
   </div>
 </section>
-<section class="ws-pricing" style="padding-top:0px;">
+<section class="ws-pricing" style="padding-top:0px; padding-bottom: 120px;">
   <div class="container">
     <div class="price-flex">
       <div class="price-column">
@@ -210,7 +210,7 @@
       </div>
     </div>
 </section>
-<section class="free-price">
+<section class="free-price" style="display:none;">
   <div class="container">
     <div class="fdflex">
       <div class="colLeft">
@@ -237,7 +237,7 @@
     </div>
   </div>
 </section>
-<section class="option-data">
+<section class="option-data" style="display:none;">
   <div class="container">
     <div class="top-section">
       <h2>Optional add-ons</h2>
