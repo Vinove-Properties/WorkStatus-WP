@@ -2,7 +2,7 @@
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
 <div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
-  <section class="hero-banner no-af-bg">
+  <section class="feature-pricing">
     <div class="container">
       <div class="inner-wrap">
         <div class="left">
