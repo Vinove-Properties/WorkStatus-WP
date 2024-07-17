@@ -911,6 +911,7 @@ $thisPostID = $post->ID;
 		<?php } endif; ?>
 
 		<?php  
+    get_template_part('common/ws', 'pricing');
 		$use_cases_section = get_field('use_cases_section');
 		
 		if( $use_cases_section ) :
