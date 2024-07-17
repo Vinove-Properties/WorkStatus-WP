@@ -8084,8 +8084,7 @@ body.geo-international .int-only {
   text-transform: lowercase !important; }
 
 .free-price {
-  text-transform: capitalize;
-  padding-top: 0; }
+  text-transform: capitalize; }
   .free-price .fdflex {
     display: flex;
     border: 1px solid #dfdcff;
