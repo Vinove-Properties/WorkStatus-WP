@@ -237,6 +237,9 @@
     </div>
   </div>
 </section>
+<div class="container">
+<div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
+</div>
 <section class="option-data" style="display:none;">
   <div class="container">
     <div class="top-section">
