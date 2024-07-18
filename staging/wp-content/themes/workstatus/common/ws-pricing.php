@@ -242,7 +242,7 @@
 <div class="container this-block">
   <div class="comparison-outer">
     <span class="plan-btn" 
-    onclick="document.body.classList.add('show-wsaddon');">View Full plan comparison</span>
+    onclick="document.body.classList.add('show-wsaddon');">See More Details</span>
   </div>
 </div>
 
