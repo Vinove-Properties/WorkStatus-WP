@@ -118,7 +118,8 @@ global $ws_ctas, $RegLink, $LogLink;
   }
   .cnd-phone{display: none;}
   .locate-in .cnd-phone{display: block;}
-
+  body.show-wsaddon .this-block{display: none !important;}
+  body.show-wsaddon #ws-addon-data,body.show-wsaddon .support-options{display:block!important;}
   </style>
   <?php if( isBetaVersion() === false ) : ?>
   <!-- Google Tag Manager -->

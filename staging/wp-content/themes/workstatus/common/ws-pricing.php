@@ -112,7 +112,7 @@
                 <div class="option">Clients Portal</div>
                 <div class="option">Gamification</div>
                 <div class="option m0">Free on-boarding support</div>
-                <div class="support-options">
+                <div class="support-options" style="display:none;">
                   <h4>Support:</h4>
                   <p>Email / Chat / Phone / Whatsapp Support</p>
                   <p><strong>SLA:</strong> 8 Business Hours</p>
@@ -152,7 +152,7 @@
                 <div class="option">Project Management Integrations</div>
                 <div class="option">Customer Service Integrations </div>
                 <div class="option m0">Invoicing Integrations</div>
-                <div class="support-options">
+                <div class="support-options" style="display:none;">
                   <h4>Support:</h4>
                   <p>Email / Chat / Phone / Whatsapp Support</p>
                   <p><strong>SLA:</strong> 4 Business Hours</p>
@@ -197,7 +197,7 @@
                 <div class="option">On-Premise Deployment</div>
                 <div class="option">2FA</div>
                 <div class="option m0">Dedicated Account Manager</div>
-                <div class="support-options">
+                <div class="support-options" style="display:none;">
                   <h4>Support:</h4>
                   <p>Email / Chat / Phone / Whatsapp Support</p>
                   <p><strong>SLA:</strong> 2 Business Hours</p>
@@ -210,6 +210,7 @@
       </div>
     </div>
 </section>
+
 <section class="free-price" style="display:none;">
   <div class="container">
     <div class="fdflex">
@@ -237,16 +238,19 @@
     </div>
   </div>
 </section>
-<div class="container">
-<div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
+
+<div class="container this-block">
+  <div class="comparison-outer">
+    <span class="plan-btn" 
+    onclick="document.body.classList.add('show-wsaddon');">View Full plan comparison</span>
+  </div>
 </div>
-<section class="option-data" style="display:none;">
+
+<section id="ws-addon-data" class="option-data" style="display:none;">
   <div class="container">
     <div class="top-section">
       <h2>Optional add-ons</h2>
-      <p>Choose your plan above, and then select the add-ons that are right for you.<br>
-      Features marked with * can be added via add-ons below.
-      </p>
+      <p>Choose your plan above, and then select the add-ons that are right for you.<br>Features marked with * can be added via add-ons below.</p>
     </div>
     <div class="addons-row">
       <div class="addond-col">
