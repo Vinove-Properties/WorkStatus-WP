@@ -73,6 +73,7 @@
     </div>
   </div>
 </section><!-- //#inv-price-fltr -->
+
 <section class="ws-pricing">
   <div class="container">
     <div class="price-flex">
