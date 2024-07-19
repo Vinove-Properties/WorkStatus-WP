@@ -15,6 +15,7 @@
       </div>
     </div>
   </section>
+
 <section id="inv-price-fltr" class="plan-section post-animation">
   <div class="container">
     <div class="switcher-sec">
@@ -73,6 +74,7 @@
     </div>
   </div>
 </section>
+
 <section class="ws-pricing">
   <div class="container">
     <div class="price-flex">
@@ -209,6 +211,7 @@
         </div>
       </div>
     </div>
+  </div>  
 </section>
 <section class="free-price" style="display:none;" data-sec="section-alpha">
   <div class="container">
