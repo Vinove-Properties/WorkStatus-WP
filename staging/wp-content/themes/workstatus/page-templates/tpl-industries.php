@@ -643,7 +643,9 @@ global $ws_ctas, $RegLink, $LogLink;
             </section>
     <?php
         }
-    endif; ?>
+    endif; 
+    get_template_part('common/ws', 'pricing');
+    ?>
     <section class="wsMobile whitetxt">
         <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
     </section>
