@@ -228,12 +228,14 @@ function workstatus_scripts() {
 		wp_enqueue_style('ws-resource', get_stylesheet_directory_uri().'/assests/css/resource.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-cmn-pillarpage.php']) ){
-		$pageMode = get_post_meta( $post->ID, 'ws-pagemode', true );
-		if( $pageMode && ($pageMode == "app") ){
-		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
-		}else{
-		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );	
-		}
+	$pageMode = get_post_meta( $post->ID, 'ws-pagemode', true );
+	if( $pageMode && ($pageMode == "app") ){
+	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
+	}else{
+	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	}
 		
 	}elseif( is_page_template(['page-templates/tpl-integrations-details.php']) ){
 		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/integration-detail.css', array(), _S_VERSION);
