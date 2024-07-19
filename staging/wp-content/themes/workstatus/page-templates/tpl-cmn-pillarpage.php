@@ -171,9 +171,7 @@ isset( $plApp['is_enabled'] ) && ($plApp['is_enabled'] == "yes") ){
     </div>
   </div>
 </section>
-<?php } 
-get_template_part('common/ws', 'pricing');
-?>
+<?php } ?>
 
 
 <?php 
@@ -613,6 +611,7 @@ if( isset( $getStart['is_enabled'] ) && ($getStart['is_enabled'] == "yes") ) :
 <?php echo getEmpLeadership( $thisPostID, '', false ); ?>
 
 <?php 
+get_template_part('common/ws', 'pricing');
 $wsDevices = get_field('ws-cmn-devices');
 if( $wsDevices === 'yes' ) :
 ?>
