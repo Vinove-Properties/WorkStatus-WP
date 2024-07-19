@@ -952,7 +952,7 @@ if( $isEnable == "yes" ){
 					?>
 				
                   <div>
-                    <p class="white"><?php echo $row['content'];?></p>
+                    <?php echo $row['content'];?>
                     
                     <div class="border">
                       <div class="triangle"> </div>
