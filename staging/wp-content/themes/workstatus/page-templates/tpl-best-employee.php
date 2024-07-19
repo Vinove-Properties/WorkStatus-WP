@@ -795,7 +795,7 @@ if( $isEnable == "yes" ){
                 }
                 ?>
                 <h3><?php echo $row['scalable_heading'];?></h3>
-                <p><?php echo $row['scalable_content'];?></p>
+                <?php echo $row['scalable_content']; ?>
               </div>
 
               <?php $i++; } } ?>
