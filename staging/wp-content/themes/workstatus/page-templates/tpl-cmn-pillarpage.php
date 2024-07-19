@@ -171,7 +171,9 @@ isset( $plApp['is_enabled'] ) && ($plApp['is_enabled'] == "yes") ){
     </div>
   </div>
 </section>
-<?php } ?>
+<?php } 
+get_template_part('common/ws', 'pricing');
+?>
 
 
 <?php 

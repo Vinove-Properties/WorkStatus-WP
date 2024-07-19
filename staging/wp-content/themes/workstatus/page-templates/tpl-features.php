@@ -108,6 +108,8 @@
     <?php } endif; ?>
   </section>
   <?php
+    get_template_part('common/ws', 'pricing');
+    
     $productsInt = get_field("pro-int");
     if (
         isset($productsInt["is_enabled"]) &&
