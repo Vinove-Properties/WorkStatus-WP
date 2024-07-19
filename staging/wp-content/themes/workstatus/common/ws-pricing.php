@@ -73,7 +73,7 @@
     </div>
   </div>
 </section>
-<section class="ws-pricing" style="padding-top:0px; padding-bottom: 120px;">
+<section class="ws-pricing">
   <div class="container">
     <div class="price-flex">
       <div class="price-column">
