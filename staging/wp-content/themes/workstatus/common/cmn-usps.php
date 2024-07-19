@@ -56,7 +56,7 @@
         </div>
         <span class="devide">OR</span>
         <div>
-          <a href="javascript:void(0)" class="ctbtn nobg" href="#contactus" onclick="call_demows();" target="_self">Book A Demo</a>
+          <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
         </div>
       </div>
       <?php endif; ?>
