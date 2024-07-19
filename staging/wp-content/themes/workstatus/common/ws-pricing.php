@@ -2,19 +2,19 @@
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
 <div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
-<section class="feature-pricing">
-  <div class="container">
-    <div class="inner-wrap">
-      <div class="left">
-        <h1>Plans to Help Your Business Grow</h1>
-        <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Start your 7-day free trial today!</p>
-      </div>
-      <div class="right">
-        <img class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
+  <section class="feature-pricing">
+    <div class="container">
+      <div class="inner-wrap">
+        <div class="left">
+          <h1>Plans to Help Your Business Grow</h1>
+          <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Start your 7-day free trial today!</p>
+        </div>
+        <div class="right">
+          <img class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
+        </div>
       </div>
     </div>
-  </div>
-</section><!-- //.feature-pricing -->
+  </section>
 <section id="inv-price-fltr" class="plan-section post-animation">
   <div class="container">
     <div class="switcher-sec">
@@ -72,8 +72,7 @@
       </div>
     </div>
   </div>
-</section><!-- //#inv-price-fltr -->
-
+</section>
 <section class="ws-pricing">
   <div class="container">
     <div class="price-flex">
@@ -210,14 +209,8 @@
         </div>
       </div>
     </div>
-
-
-
-</section><!-- //.ws-pricing -->
-
-
-
-<section class="free-price" style="display:none;">
+</section>
+<section class="free-price" style="display:none;" data-sec="section-alpha">
   <div class="container">
     <div class="fdflex">
       <div class="colLeft">
@@ -243,7 +236,7 @@
       </div>
     </div>
   </div>
-</section><!-- //.free-price -->
+</section>
 
 <div class="container this-block">
   <div class="comparison-outer">
