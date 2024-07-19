@@ -845,8 +845,7 @@ if( $isEnable == "yes" ){
               echo '<h3>'.$row['heading'].'</h3>';
             }
             ?>  
-            <p class="font18"><?php echo $row['content'];?>
-            </p>
+            <?php echo $row['content'];?>            
             </div>
             </div>
             <?php $i++; } } ?>			
