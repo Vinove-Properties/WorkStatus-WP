@@ -6,7 +6,7 @@
     <div class="container">
       <div class="inner-wrap">
         <div class="left">
-          <h1>Enhance Workforce Efficiency & Productivity</h1>
+          <h1>Plans to Help Your Business Grow</h1>
           <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Start your 7-day free trial today!</p>
         </div>
         <div class="right">
