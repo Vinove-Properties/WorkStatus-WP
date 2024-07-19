@@ -107,7 +107,7 @@ if( $isEnable == "yes" ){
                 }
                 ?>
                 <h3><?php echo $row['heading'];?></h3>
-                <p><?php echo $row['content'];?></p>
+                <?php echo $row['content'];?>
               </div>
 			<?php $i++; } } ?>
               
