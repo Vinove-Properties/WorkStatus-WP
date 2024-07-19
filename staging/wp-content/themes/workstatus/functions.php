@@ -97,6 +97,11 @@ function workstatus_widgets_init(){
 }
 add_action( 'widgets_init', 'workstatus_widgets_init' );
 
+add_action('wp_footer', function(){ 
+	wp_dequeue_style('core-block-supports'); 
+});
+
+
 function workstatus_scripts() {
 	//wp_enqueue_style( 'workstatus-style', get_stylesheet_uri(), array(), _S_VERSION );
 	//wp_style_add_data( 'workstatus-style', 'rtl', 'replace' );
