@@ -211,7 +211,7 @@
     </div>
 </section><!-- //.ws-pricing -->
 
-<section class="free-price CLASS-CHECK" style="display:none;">
+<section class="free-price" style="display:none;">
   <div class="container">
     <div class="fdflex">
       <div class="colLeft">
