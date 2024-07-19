@@ -8583,6 +8583,10 @@ h3 a {
             right: -5px;
             top: -7px; }
 
+#pre-loader {
+  text-align: center;
+  font-weight: 500; }
+
 .perp {
   text-transform: lowercase !important; }
 
