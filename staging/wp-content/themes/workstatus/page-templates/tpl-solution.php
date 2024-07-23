@@ -375,11 +375,11 @@
   <?php endif;
     ?>
   <?php
-    $wsDevices = get_field("ws-cmn-devices");
-    if ($wsDevices === "yes"): ?>
+  get_template_part('common/ws', 'pricing');
+  $wsDevices = get_field("ws-cmn-devices");
+  if ($wsDevices === "yes"): ?>
   <section class="wsMobile whitetxt">
-    <?php require_once get_template_directory() .
-      "/common/workstatus-device.php"; ?>
+    <?php require_once get_template_directory()."/common/workstatus-device.php"; ?>
   </section>
   <?php endif;
     ?>
