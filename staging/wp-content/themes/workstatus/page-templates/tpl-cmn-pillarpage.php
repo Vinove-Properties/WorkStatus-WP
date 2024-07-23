@@ -439,7 +439,7 @@ if( $cards && count( $cards ) > 0 ) :
     echo '</div>';
 
     if( $row['link'] ){
-        echo '<a href="'.$row['link'].'" class="view-more">Explore</a>';
+        echo '<a href="'.vc_siteurl($row['link']).'" class="view-more">Explore</a>';
     }    
     echo '</div></div>';
     }
