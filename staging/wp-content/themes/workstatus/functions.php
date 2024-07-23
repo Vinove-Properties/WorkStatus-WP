@@ -248,13 +248,15 @@ function workstatus_scripts() {
 	elseif( is_page_template(['page-templates/tpl-roadmap.php']) ){
 		wp_enqueue_style('ws-roadmap', get_stylesheet_directory_uri().'/assests/css/roadmap.css', array(), _S_VERSION);
 	}
-  elseif( is_page_template(['page-templates/tpl-solution.php']) ){
+  	elseif( is_page_template(['page-templates/tpl-solution.php']) ){
 		wp_enqueue_style('ws-solution', get_stylesheet_directory_uri().'/assests/css/solution.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-data-retention.php']) ){
 		wp_enqueue_style('ws-retention', get_stylesheet_directory_uri().'/assests/css/data-retention.css', array(), _S_VERSION);
 	}	
-  elseif( is_page_template(['page-templates/tpl-affiliates.php']) ){
+  	elseif( is_page_template(['page-templates/tpl-affiliates.php']) ){
 		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/affiliates.css', array(), _S_VERSION);
 	}
 	elseif( is_single() ){ 
