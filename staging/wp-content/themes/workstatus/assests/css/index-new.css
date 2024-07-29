@@ -7869,14 +7869,14 @@ h3 a {
       box-shadow: 0px 4px 40px rgba(68, 97, 215, 0.2); }
   .how-works .full-menu .menu-column .menu-wrap {
     padding: 30px 40px;
-    width: 50%;
+    width: 55%;
     border-right: 1px solid rgba(0, 0, 0, 0.2); }
     .how-works .full-menu .menu-column .menu-wrap .menu-lside {
       width: 100%;
       display: flex;
       flex-wrap: wrap; }
   .how-works .full-menu .menu-column .col-menu {
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding: 0; }
     .how-works .full-menu .menu-column .col-menu .menu-box {
       display: flex;
