@@ -397,8 +397,8 @@
                                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon08.svg" width="20"
                                   height="20" alt="Menu Icon">Insights For Business Analytics
                                 </a>
-                                <a href="<?php echo site_url(); ?>/use-cases" class="view-more desktop">View More</a>
                               </div>
+                              <a href="<?php echo site_url(); ?>/use-cases" class="view-more desktop">View More</a>
                             </div>
                             <div class="col-menu">
                               <div class="menu-box">
@@ -420,8 +420,8 @@
                                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-05.svg" width="20"
                                   height="20" alt="Menu Icon">Automated Billing
                                 </a>
-                                <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
                               </div>
+                              <a href="<?php echo site_url(); ?>/use-cases" class="view-more mobile">View More</a>
                             </div>
                           </div>
                         </div>
@@ -504,8 +504,9 @@
                                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-05.svg" width="20"
                                   height="20" alt="Menu Icon">CX & Contact Center
                                 </a>
-                                <a href="<?php echo site_url(); ?>/industry" class="view-more desktop">View More</a>
                               </div>
+                              <a href="<?php echo site_url(); ?>/industry" class="view-more desktop">View More</a>
+
                             </div>
                             <div class="col-menu">
                               <div class="menu-box">
@@ -571,8 +572,9 @@
                                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-20.svg" width="20"
                                   height="20" alt="Menu Icon">Government
                                 </a>
-                                <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
                               </div>
+                              <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
+
                             </div>
                           </div>
                       

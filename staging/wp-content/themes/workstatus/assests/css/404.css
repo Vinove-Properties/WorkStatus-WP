@@ -979,11 +979,11 @@ h3 a {
       .how-works .full-menu .menu-column .col-menu .view-more.mobile {
         display: none; }
   .how-works .full-menu .menu-column .menu-rside {
-    padding: 30px 40px;
+    padding: 0;
     width: 45%;
     display: flex; }
     .how-works .full-menu .menu-column .menu-rside .col-menu {
-      padding: 0 40px;
+      padding: 30px 40px;
       border-right: 1px solid rgba(0, 0, 0, 0.2); }
       .how-works .full-menu .menu-column .menu-rside .col-menu .menu-box {
         padding: 0;
