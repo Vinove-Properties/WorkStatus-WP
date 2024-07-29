@@ -1383,8 +1383,8 @@ function signupFrmValidation(e){
         // }
 
         if( su_pass.value.trim() !== su_cpass.value.trim() ){
-            //passCheck_su();
-            //passCheckc_su();
+            return false;
+            passCheckc_sufu();
         }
         var spnMsg          = document.getElementById("ws-apimsg");
         var formBtn         = document.getElementById("su-submitButton");

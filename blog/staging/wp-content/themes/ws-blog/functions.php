@@ -596,7 +596,8 @@ add_action('ws_sgl_condata', function(){
       $thisPost = $post->ID;
       $cats = wp_get_post_categories( $thisPost );
       if( $cats ){
-      $args = array( 'category__in' => $cats, 'post__not_in' => array( $thisPost ), 'posts_per_page' => 3 );
+      $args = array( 'category__in' => $cats, 'post__not_in' => array( $thisPost ), 'posts_per_page' => 3, 
+      'post_status' => 'publish' );
       $loop = new WP_Query($args);
       
       if( $loop->have_posts() ) {
