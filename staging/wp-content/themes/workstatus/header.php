@@ -387,10 +387,10 @@
                                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon03.svg" width="20"
                                   height="20" alt="Menu Icon">Attendance & Shift Scheduling</a>
                                 <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon05.svg" width="20"
+                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/location.svg" width="20"
                                   height="20" alt="Menu Icon">Location & Impact Insights</a>  
                                 <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon06.svg" width="20"
+                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/premise.svg" width="20"
                                   height="20" alt="Menu Icon">On-Premise Teams Management
                                 </a>
                                 <a href="<?php echo site_url(); ?>/reporting-analytics/insights-for-business">
