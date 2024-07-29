@@ -197,6 +197,16 @@ function showWorkstatusItem() {
     var e = document.getElementById("whyWorkstatus");
     "dropdown dropdown-2" === e.className ? (e.className += " open") : (e.className = "dropdown dropdown-2");
 }
+
+function showindustryItem() {
+    var e = document.getElementById("industryitem");
+    "dropdown" === e.className ? (e.className += " open") : (e.className = "dropdown");
+}
+function showAppsItem() {
+    var e = document.getElementById("apps");
+    "dropdown" === e.className ? (e.className += " open") : (e.className = "dropdown");
+}
+
 function showProductItem() {
     var e = document.getElementById("productsitem");
     "dropdown dropdown-2" === e.className ? (e.className += " open") : (e.className = "dropdown dropdown-2");
