@@ -86,11 +86,10 @@ function workstatus_scripts(){
     _S_VERSION );
     */
     }
-    /*
-    wp_enqueue_script( 'intlTelInput', 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js', array(),  '17.0.8', true );    
+    /*wp_enqueue_script( 'intlTelInput', 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js', array(),  '17.0.8', true );*/
+    
     wp_enqueue_script( 'form-validation', get_stylesheet_directory_uri() . '/js/form-validation.js', array(), 
     _S_VERSION, true );
-    */
     wp_enqueue_script( 'su-validation', get_stylesheet_directory_uri() . '/js/signupform-validation.js', array(), 
     _S_VERSION, true);
 }
