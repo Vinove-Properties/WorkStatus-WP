@@ -169,7 +169,7 @@ echo '<div class="banner-form inv-pop">
 </div></div></div></div>';
 }
 
-get_template_part('inc/demo', 'form'); 
+//get_template_part('inc/demo', 'form'); 
 get_template_part('inc/signup', 'form');
 ?>
 <div class="banner-form super-form">
