@@ -27,9 +27,12 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <small><?php echo $work_status_journey['trial_button_bottom_text']; ?></small>
           </div>
           <?php } ?>
+          
+          <!-- 
           <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
-            <small><?php echo $work_status_journey['demo_bottom_text']; ?></small>
-          </div>
+            <small><?php //echo $work_status_journey['demo_bottom_text']; ?></small>
+          </div> 
+          -->
           
         </div>
       </div>

@@ -51,7 +51,8 @@ if( $isEnable == "yes" ){
                           <div class="star-rt">4.6 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.6star.svg" alt="Award" width="100" height="17"></div>
                           <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
                           <picture class="awimg">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw01.svg" alt="Capterra" width="130" height="29">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw01.svg" 
+                            alt="Capterra" width="130" height="29">
                           </picture>
                         </li>
                         <li>
