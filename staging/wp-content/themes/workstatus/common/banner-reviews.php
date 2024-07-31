@@ -7,7 +7,8 @@
           <?php for ($i=0; $i < 3; $i++) { ?>
           <li>
             <div class="star-rt">4.6 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.6star.svg" alt="Award" width="100" height="17"></div>
-            <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+            <p>I am so glad I found Workstatus. It has helped me become more productive, track my time and bill accurately while also responding to managers the way that works best for me!
+            </p>
             <picture class="awimg">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw01.svg" 
               alt="Capterra" width="130" height="29">
@@ -15,28 +16,32 @@
           </li>
           <li>
             <div class="star-rt">4.5 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.5star.svg" alt="Award" width="100" height="17"></div>
-            <p>Invoicera makes online billing incredibly easy. I can send unlimited invoices quickly and without any hassle. It's a fantastic tool that has simplified my invoicing process.</p>
+            <p>WorkStatus has been a game-changer for our team's productivity. Its real-time tracking features have brought transparency and accountability to a whole new level. The user-friendly interface made onboarding a breeze, and the in-depth analytics have empowered us to make data-driven decisions that optimize our workflow. What truly sets WorkStatus apart is its exceptional customer support – always ready to assist.
+            </p>
             <picture class="awimg">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw02.svg" alt="G2" width="130" height="29">
             </picture>
           </li>
           <li>
             <div class="star-rt">4.6 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.6star.svg" alt="Award" width="100" height="17"></div>
-            <p>I appreciate Invoicera's customization options, especially for branding my invoices. Granular permissions give me total peace of mind.</p>
+            <p>We are able to time track all our team members with screenshots and activity URLs, Task management as well as Project reports. We also have average productivity scores that help us make decisions on how we can improve our work environment for the better!
+            </p>
             <picture class="awimg">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw03.svg" alt="Software Advice" width="130" height="29">
             </picture>
           </li>
           <li>
             <div class="star-rt">4.6 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.6star.svg" alt="Award" width="100" height="17"></div>
-            <p>Invoicera has boosted my professionalism and saved me tons of time! I love the easy invoice customization and clear history.</p>
+            <p>Workstatus is an amazing tool to help me keep track of what my team is doing. It's very easy, gives powerful insights and makes it possible for us calculate how many hours a project can be done in advance!
+            </p>
             <picture class="awimg">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw04.svg" alt="GetApp" width="108" height="20">
             </picture>
           </li>
           <li>
             <div class="star-rt">4.6 Excellent <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/4.5star.svg" alt="Award" width="100" height="17"></div>
-            <p>I've been using Invoicera for over 3 years to manage my invoices. It's incredibly easy to use and gives total control over my cash flow.</p>
+            <p>The best thing about Workstatus is how easy it is to use. The app makes it simple for me to track the time I spend on different tasks and projects. I also really like the detailed reports it provides, which help me see where I'm spending my time.
+            </p>
             <picture class="awimg">
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/bnr-aw05.svg" alt="GoodFirms" width="119" height="18">
             </picture>
