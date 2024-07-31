@@ -411,36 +411,36 @@
           <?php */ ?>
           
           <div class="head-wrap">
-         <div class="banner-section">
-       <div class="btn-section dis-flex">
-          <button  class="searchsubmit" value="search" id="myBtn"></button>
-          <div id="contentPopup" class="popup-wrapper">
-            <div class="popWrap">
-              <div class="popup-content">
-                <span class="close"></span>
-                <?php $site_url = trailingslashit( get_bloginfo('url') ); ?>   
-                <form action="<?php echo $site_url; ?>" method="get" class="search_box">
-                  <input type="search" placeholder="Type to start your search..." class="search" name="s" id="search" value="<?php the_search_query(); ?>" />
-                  <button  class="searchsubmit" value="search"></button>
-                </form>
+          <div class="banner-section">
+            <div class="btn-section dis-flex">
+            <button  class="searchsubmit" value="search" id="myBtn"></button>
+              <div id="contentPopup" class="popup-wrapper">
+                <div class="popWrap">
+                  <div class="popup-content">
+                    <span class="close"></span>
+                    <?php $site_url = trailingslashit( get_bloginfo('url') ); ?>   
+                    <form action="<?php echo $site_url; ?>" method="get" class="search_box">
+                      <input type="search" placeholder="Type to start your search..." class="search" name="s" id="search" 
+                      value="<?php the_search_query(); ?>" />
+                      <button  class="searchsubmit" value="search"></button>
+                    </form>
+                  </div>
+                </div>
               </div>
-              <div></div>
-            </div>
-          </div>
-          <div id="newsletter-col">
-            <button class="newsletter" value="search" id="myBtn2"></button>
-            <div id="newsletterPopup" class="popup-wrapper">
-              <div class="popWrap">
-                <div class="popup-content">
-                  <span class="closeicon-nw" onclick="closeNewsLetter('newsletterPopup');"></span>
-                  <h3>Like What You’re Reading?</h3>
-                  <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
+              <div id="newsletter-col">
+              <button class="newsletter" value="search" id="myBtn2"></button>
+                <div id="newsletterPopup" class="popup-wrapper">
+                  <div class="popWrap">
+                    <div class="popup-content">
+                      <span class="closeicon-nw" onclick="closeNewsLetter('newsletterPopup');"></span>
+                      <h3>Like What You’re Reading?</h3>
+                      <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-            </div>
           <button  class="nav_btn" onclick="navFunction();"> <span>&#9776;</span> <span>&#10005;</span> </button>       
           <nav class="site_nav">
            <div class="logindiv">
