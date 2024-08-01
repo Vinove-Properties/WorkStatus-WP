@@ -30,9 +30,10 @@
           <?php 
             //if( !is_page( 2539 ) ){
             require_once get_template_directory().'/common/available-device.php';
-            require_once get_template_directory(). '/common/partners.php';     
+            //require_once get_template_directory(). '/common/partners.php';     
             //}                    
             ?>
+            <?php get_template_part('common/banner', 'reviews'); ?>
         </div>
       </div>
     </div>
