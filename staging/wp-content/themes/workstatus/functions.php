@@ -8,7 +8,7 @@ function isBetaVersion(){
 
 if( ! defined( '_S_VERSION' ) ){
     if( isBetaVersion() ){
-        define( '_S_VERSION', '2.4.'.rand(10,100) );
+        define( '_S_VERSION', '1.9.'.rand(10,100) );
     }else{
         define( '_S_VERSION', '1.45.45' );
     }
