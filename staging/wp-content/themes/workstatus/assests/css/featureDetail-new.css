@@ -8767,7 +8767,7 @@ body.geo-international .int-only {
     .banner-award .award-box .client-section .client-row {
       position: relative;
       overflow: hidden;
-      height: 210px; }
+      height: 190px; }
       .banner-award .award-box .client-section .client-row .client-stack ul {
         display: flex;
         min-width: 150%;
@@ -8781,7 +8781,7 @@ body.geo-international .int-only {
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          height: 210px; }
+          height: 190px; }
           .banner-award .award-box .client-section .client-row .client-stack ul li .star-rt {
             display: flex;
             font-weight: 700;
