@@ -35,17 +35,21 @@ global $ws_ctas, $RegLink, $LogLink;
                     </div>
 
                     <?php require_once get_template_directory() . '/common/available-device.php'; ?>
-                        <?php require_once get_template_directory() . '/common/partners.php'; ?>
-                        <?php
-                        $vdScreenshot = '';
-                        if (
-                            isset($inner_banner['video_bg_image']) &&
-                            !empty($inner_banner['video_bg_image'])
-                        ){
-                        $cScreenSrc   = wsGetWebpSrcUrl( $inner_banner['video_bg_image']['id'] );
-                        $vdScreenshot = ' style="background:url('.wsGetWebpSrcUrl($inner_banner['video_bg_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
-                        }
-                        ?>
+                    <?php 
+                    //require_once get_template_directory() . '/common/partners.php'; 
+                    get_template_part('common/banner', 'reviews');
+                    ?>
+
+                    <?php
+                    $vdScreenshot = '';
+                    if (
+                        isset($inner_banner['video_bg_image']) &&
+                        !empty($inner_banner['video_bg_image'])
+                    ){
+                    $cScreenSrc   = wsGetWebpSrcUrl( $inner_banner['video_bg_image']['id'] );
+                    $vdScreenshot = ' style="background:url('.wsGetWebpSrcUrl($inner_banner['video_bg_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
+                    }
+                    ?>
                     <div class="video-wrap">
                         <div class="videoSc" id="has-yt-video">
                             <div class="inner">
