@@ -237,7 +237,7 @@
             <li>Limited reports</li>
             <li>Activity Levels</li>
             <li>Limited payments</li>
-            <li>Clients & Invoices</li>
+            <!-- <li>Clients & Invoices</li> -->
           </ul>
         </div>
         <div class="btn"><a id="ws-plan-free" href="#" class="price_btn">Choose Plan</a></div>
@@ -327,7 +327,7 @@
             </tr>
             <tr>
               <td>Automatic Time Tracking</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
@@ -376,8 +376,8 @@
             </tr>
             <tr>
               <td>Automatic Timesheets</td>
-              <td>-</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -720,7 +720,7 @@
           <tbody>
             <tr>
               <td>Productivity Time</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
