@@ -34,7 +34,8 @@ global $ws_ctas, $RegLink, $LogLink;
                 </div>
               </div>
               <?php require_once get_template_directory().'/common/available-device.php';?>
-              <?php require_once get_template_directory(). '/common/partners.php'; ?>
+              <?php //require_once get_template_directory(). '/common/partners.php'; ?>
+              <?php get_template_part('common/banner', 'reviews'); ?>
               <div class="video-wrap">
                 <div class="videoSc" id="has-yt-video">
                   <div class="inner">

@@ -16,10 +16,10 @@
               <p>'.$row['text'].'</p>';
               if( $row['logo'] ){
                 echo '<picture class="awimg">
-                <img loading="lazy" src="'.$row['logo']['url'].'" alt="'.$row['logo']['alt'].'" 
-                width="'.$row['logo']['width'].'" height="'.$row['logo']['height'].'">
-              </picture>';
-              }            
+                <img loading="lazy" src="'.$row['logo']['url'].'" alt="'.$row['logo']['alt'].'" width="'.$row['logo']['width'].'"
+                height="'.$row['logo']['height'].'">
+                </picture>';
+              }
               echo '</li>';
               }
             }  
