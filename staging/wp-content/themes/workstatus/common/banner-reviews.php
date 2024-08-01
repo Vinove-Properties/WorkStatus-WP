@@ -6,7 +6,7 @@
         <ul>
           <?php 
           $reviewOpt = get_field('inv-breview', 'option');
-          for ($i=0; $i < 3; $i++){
+          for ($i=0; $i < 6; $i++){
             if( $reviewOpt ){
               foreach( $reviewOpt as $row ){
               echo '<li>
