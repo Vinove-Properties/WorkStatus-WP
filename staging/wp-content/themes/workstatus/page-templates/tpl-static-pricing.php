@@ -377,7 +377,7 @@
             <tr>
               <td>Automatic Timesheets</td>
               <td><i class="chkicon"></i></td>
-              <td><i class="chkicon"></i></td>
+              <td>-</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
             </tr>
@@ -439,7 +439,7 @@
             </tr>
             <tr>
               <td>Scheduling & attendance</td>
-              <td>-</td>
+              <td><i class="chkicon"></i></td>
               <td>-</td>
               <td><i class="chkicon"></i></td>
               <td><i class="chkicon"></i></td>
