@@ -43,7 +43,10 @@ if( $hasbannerThumb && !empty( $hasbannerThumb ) ){
                          
             <?php if( !is_page( [4295, 4250] ) ) : ?>
             <?php require_once get_template_directory() . '/common/available-device.php'; ?>
-            <?php require_once get_template_directory() . '/common/partners.php'; ?>            
+            <?php 
+            //require_once get_template_directory() . '/common/partners.php';
+            get_template_part('common/banner', 'reviews');
+            ?>            
             <?php endif; ?>
 
             <?php
