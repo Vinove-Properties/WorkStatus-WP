@@ -8013,7 +8013,8 @@ h3 a {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 5px 0 0; }
+          margin: 0 5px 0 0;
+          pointer-events: none; }
           .usecase-tabs .tab-nav ul li a .icon .show {
             display: block; }
       .usecase-tabs .tab-nav ul li:last-child a {
