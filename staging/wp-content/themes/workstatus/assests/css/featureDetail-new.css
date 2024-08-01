@@ -10068,7 +10068,10 @@ body.geo-international .int-only {
     right: 144px; }
 
   .dwnload {
-    padding: 60px 0; } }
+    padding: 60px 0; }
+
+  .inner-banner-bg {
+    height: 1000px; } }
 @media (max-width: 1140px) {
   .primary_btn1,
   .primary_btn2 {
