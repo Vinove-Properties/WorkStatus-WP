@@ -8767,7 +8767,7 @@ body.geo-international .int-only {
     .banner-award .award-box .client-section .client-row {
       position: relative;
       overflow: hidden;
-      height: 220px; }
+      height: 200px; }
       .banner-award .award-box .client-section .client-row .client-stack ul {
         display: flex;
         min-width: 150%;
@@ -8781,7 +8781,7 @@ body.geo-international .int-only {
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          height: 220px; }
+          height: 200px; }
           .banner-award .award-box .client-section .client-row .client-stack ul li .star-rt {
             display: flex;
             font-weight: 700;
@@ -8796,9 +8796,9 @@ body.geo-international .int-only {
             font-size: 14px;
             color: #FFFFFF;
             line-height: 23px;
-            min-height: 90px; }
+            min-height: 80px; }
           .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
-            margin: 20px 0 0;
+            margin: 8px 0 0;
             display: flex;
             height: 50px;
             vertical-align: middle;
@@ -8879,7 +8879,7 @@ body.geo-international .int-only {
 /*Media Query Ends Here*/
 .inner-banner-bg {
   width: 100%;
-  height: 1050px;
+  height: 1070px;
   padding: 0;
   background: #4231AC;
   color: #fff;
