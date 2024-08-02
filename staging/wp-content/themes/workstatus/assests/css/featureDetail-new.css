@@ -8865,17 +8865,40 @@ body.geo-international .int-only {
   animation-play-state: paused; }
 
 /*Media Query Start From Here*/
+@media (max-width: 1024px) {
+  .banner-award .award-box {
+    padding: 10px 0 0; }
+    .banner-award .award-box .client-section .client-row {
+      width: 850%;
+      height: 230px; }
+      .banner-award .award-box .client-section .client-row .client-stack ul li {
+        min-width: 280px;
+        width: 280px; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li p {
+          min-height: 92px;
+          height: 230px; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
+          margin: 15px 0 0; } }
 @media (max-width: 767px) {
   .banner-award .award-box {
     padding: 10px 0 0; }
-    .banner-award .award-box .client-section .client-row .client-stack ul {
-      column-gap: 20px; }
-      .banner-award .award-box .client-section .client-row .client-stack ul li {
-        min-width: 300px; }
-        .banner-award .award-box .client-section .client-row .client-stack ul li p {
-          min-height: auto; }
-        .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
-          margin: 15px 0 0; } }
+    .banner-award .award-box .client-section .client-row {
+      width: 850%;
+      height: 230px; }
+      .banner-award .award-box .client-section .client-row .client-stack ul {
+        min-width: 300%;
+        column-gap: 20px; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li {
+          min-width: 250px;
+          width: 250px; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li p {
+            min-height: 92px;
+            height: 230px; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
+            margin: 15px 0 0; }
+
+  .award-animate-slide-to-left {
+    animation: slide_to_left 12s linear infinite; } }
 /*Media Query Ends Here*/
 .inner-banner-bg {
   width: 100%;
