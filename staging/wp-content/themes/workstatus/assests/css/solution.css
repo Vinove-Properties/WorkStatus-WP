@@ -9257,6 +9257,127 @@ body.geo-international .int-only {
   .option-data .addons-row .addond-col {
     flex-basis: 100%;
     min-height: initial; } }
+.banner-award .award-box {
+  flex-basis: 100%;
+  padding: 30px 0 0; }
+  .banner-award .award-box .client-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px; }
+    .banner-award .award-box .client-section .client-row {
+      position: relative;
+      overflow: hidden;
+      height: 202px; }
+      .banner-award .award-box .client-section .client-row .client-stack ul {
+        display: flex;
+        min-width: 150%;
+        justify-content: space-around;
+        column-gap: 40px;
+        position: absolute; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li {
+          min-width: 300px;
+          width: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 202px; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li .star-rt {
+            display: flex;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 15px;
+            gap: 5px; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li p {
+            font-size: 14px;
+            color: #FFFFFF;
+            line-height: 23px;
+            min-height: 80px; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
+            margin: 8px 0 0;
+            display: flex;
+            height: 50px;
+            vertical-align: middle;
+            align-items: center;
+            width: 100%;
+            justify-content: center; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li img {
+            vertical-align: middle; }
+          .banner-award .award-box .client-section .client-row .client-stack ul li:hover {
+            color: red; }
+      .banner-award .award-box .client-section .client-row .hover:hover {
+        color: red; }
+  .banner-award .award-box .award-sc h5 {
+    font-size: 15px;
+    color: #0a1747; }
+  .banner-award .award-box .award-sc .award-row {
+    margin: 25px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .banner-award .award-box .award-sc .award-row .award-col {
+      flex-basis: 23%;
+      cursor: pointer;
+      text-align: center;
+      padding: 12px;
+      border: 1px solid #eee9e9;
+      border-radius: 5px;
+      margin: 0 0 14px; }
+      .banner-award .award-box .award-sc .award-row .award-col .aw-icon {
+        min-height: 50px;
+        margin: 0 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .banner-award .award-box .award-sc .award-row .award-col .aw-icon img.normal-mode {
+          display: block; }
+        .banner-award .award-box .award-sc .award-row .award-col .aw-icon img.hover-mode {
+          display: none; }
+      .banner-award .award-box .award-sc .award-row .award-col p {
+        font-size: 8px;
+        line-height: 10px;
+        color: #05164d;
+        opacity: 0.8;
+        font-weight: 500; }
+      .banner-award .award-box .award-sc .award-row .award-col:hover {
+        background: #fff;
+        cursor: default; }
+        .banner-award .award-box .award-sc .award-row .award-col:hover p {
+          opacity: 1; }
+        .banner-award .award-box .award-sc .award-row .award-col:hover .aw-icon img.normal-mode {
+          display: none; }
+        .banner-award .award-box .award-sc .award-row .award-col:hover .aw-icon img.hover-mode {
+          display: block; }
+
+@keyframes slide_to_left {
+  0% {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-50%); } }
+.award-animate-slide-to-left {
+  animation: slide_to_left 15s linear infinite; }
+
+.hover\:pause:hover {
+  animation-play-state: paused; }
+
+/*Media Query Start From Here*/
+@media (max-width: 767px) {
+  .banner-award .award-box {
+    padding: 10px 0 0; }
+    .banner-award .award-box .client-section .client-row .client-stack ul {
+      column-gap: 20px; }
+      .banner-award .award-box .client-section .client-row .client-stack ul li {
+        min-width: 300px; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li p {
+          min-height: auto; }
+        .banner-award .award-box .client-section .client-row .client-stack ul li .awimg {
+          margin: 15px 0 0; } }
+/*Media Query Ends Here*/
 .inner-banner-bg {
   height: 640px; }
   .inner-banner-bg .bannerwrap {
