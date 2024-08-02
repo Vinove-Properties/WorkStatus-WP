@@ -34,7 +34,8 @@ global $ws_ctas, $RegLink, $LogLink;
                         </div>
 
                         <?php require_once get_template_directory() . '/common/available-device.php'; ?>
-                        <?php require_once get_template_directory() . '/common/partners.php'; ?>
+                        <?php //require_once get_template_directory() . '/common/partners.php'; ?>
+                        <?php get_template_part('common/banner', 'reviews'); ?>
                         <?php
                         $vdScreenshot = '';
                         if (
