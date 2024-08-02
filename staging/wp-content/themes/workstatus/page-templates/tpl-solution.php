@@ -8,19 +8,20 @@
   ?>
 <main class="site__content">
   <section class="hero-banner inner-banner-bg">
-    <div class="bannerwrap">
-      <div class="container">
-        <div class="inner-wrap">
-          <?php the_content(); ?>
-          <div class="actionBtn">
-            <div><a href="https://calendly.com/workstatus/sales" class="primary_btn2">Talk To Sales</a>
-            </div>
-          </div>
-          <?php get_template_part('common/banner', 'reviews'); ?>
+  <div class="bannerwrap">
+    <div class="container">
+      <div class="inner-wrap">
+      <?php the_content(); ?>
+        <div class="actionBtn">
+          <div><a href="https://calendly.com/workstatus/sales" class="primary_btn2">Talk To Sales</a></div>
         </div>
+        <?php get_template_part('common/banner', 'reviews'); ?>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
   <?php
     $smrtMgt = get_field("smart-management");
     $industrySection = get_field("ind-section");
