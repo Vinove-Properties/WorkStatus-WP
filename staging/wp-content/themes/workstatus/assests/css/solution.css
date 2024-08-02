@@ -9379,9 +9379,12 @@ body.geo-international .int-only {
           margin: 15px 0 0; } }
 /*Media Query Ends Here*/
 .inner-banner-bg {
-  height: 640px; }
+  height: 950px; }
   .inner-banner-bg .bannerwrap {
     padding: 150px 0; }
+
+.banner-award .award-box {
+  padding: 0; }
 
 /*Step Section Start From Here*/
 .step-sec {
@@ -9567,9 +9570,14 @@ body.geo-international .int-only {
 .timeline {
   background: #FFFFFF; }
 
+@media screen and (max-width: 1180px) {
+  .inner-banner-bg {
+    height: 860px; } }
 @media screen and (max-width: 979px) {
-  .inner-banner-bg .bannerwrap {
-    padding: 90px 0; }
+  .inner-banner-bg {
+    height: 860px; }
+    .inner-banner-bg .bannerwrap {
+      padding: 90px 0; }
 
   .journey-bg .actionBtn {
     flex-wrap: wrap;
