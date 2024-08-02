@@ -6,17 +6,17 @@
         <ul>
           <?php 
           $reviewOpt = get_field('inv-breview', 'option');
-          for ($i=0; $i < 3; $i++){
+          for ($i=0; $i < 6; $i++){
             if( $reviewOpt ){
               foreach( $reviewOpt as $row ){
               echo '<li>
-              <div class="star-rt">'.$row['rating'].' <img loading="lazy" 
+              <div class="star-rt">'.$row['rating'].' <img 
               src="'.get_bloginfo('template_url').'/assests/images/4.6star.svg" alt="Award" width="100" height="17">
               </div>
               <p>'.$row['text'].'</p>';
               if( $row['logo'] ){
                 echo '<picture class="awimg">
-                <img loading="lazy" src="'.$row['logo']['url'].'" alt="'.$row['logo']['alt'].'" width="'.$row['logo']['width'].'"
+                <img src="'.$row['logo']['url'].'" alt="'.$row['logo']['alt'].'" width="'.$row['logo']['width'].'"
                 height="'.$row['logo']['height'].'">
                 </picture>';
               }
