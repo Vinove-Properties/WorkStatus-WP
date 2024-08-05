@@ -1784,3 +1784,22 @@ function loadMoreRM(e){
     }
     xhttp.send();
 }
+
+
+function _playYTmedia(video){
+    let iframe = document.getElementById("gen-video");
+    let ipopup = document.getElementById("gen-vpopup");
+    iframe.setAttribute('src', video+"?autoplay=1");
+    setTimeout(function(){        
+        ipopup.style.display = "block";    
+    }, 200);
+    
+}
+
+
+function closeGenVideo(){
+    let iframe = document.getElementById("gen-video");
+    let ipopup = document.getElementById("gen-vpopup");
+    iframe.setAttribute('src', "");    
+    ipopup.style.display = "none";
+}

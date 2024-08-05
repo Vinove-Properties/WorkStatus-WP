@@ -204,26 +204,11 @@ if( $isEnable == "yes" ){
             </div>
           </div>
 
-		  <?php } endif; ?>
+		<?php } endif; ?>
 
-<?php echo getResultsDriveSection( $post->ID ); ?>
-
-
-
-<div class="video-popup">
-   <div id="gen-vpopup" class="popup-wrapper" style="display:none;">
-      <div class="popWrap">
-         <div class="popup-content">
-            <span class="closeicon" onclick="closeGenVideo('gen-vpopup', false)">Close</span>
-            <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://www.youtube.com/embed/UId2lnLDJ20" allow="autoplay"></iframe>
-         </div>
-      </div>
-   </div>
-</div>
-
-
+    <?php echo getResultsDriveSection( $post->ID ); ?>
                 
-      <?php  
+    <?php  
 		$boost_profitability = get_field('boost_profitability');
 		
 		if( $boost_profitability ) :
