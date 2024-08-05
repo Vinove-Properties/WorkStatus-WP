@@ -271,17 +271,17 @@ function getResultsDriveSection( $post_id ){
                <div class="step-number">1</div>
                <h3>'.$elm['left-title'].'</h3>
             </div>
-            '.$elm['left-content'].'            
+            '.$elm['left-title'].'
          </div>
          <div class="column analyze">
             <div class="head-data">
                <div class="step-number">2</div>
-               <h3>'.$elm['right-title'].'</h3>
+               <h3>Analyze</h3>
             </div>
             <div class="analyze-button">
                <div class="play-icon"> 
-                <img loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/data-circle2.svg" alt="play" 
-                width="270" height="270">
+                <img loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/data-circle2.svg" 
+                alt="play" width="270" height="270">
                </div>
                <div class="playsc" onclick="return callinVideo();"><span class="playicon">Play</span></div>
                <p>Play to watch</p>
@@ -290,12 +290,12 @@ function getResultsDriveSection( $post_id ){
          <div class="column solutions">
             <div class="head-data">
                <div class="step-number">3</div>
-               <h3>'.$elm['left-title'].'</h3>
+               <h3>'.$elm['right-title'].'</h3>
             </div>
-            '.$elm['right-content'].'            
+            '.$elm['rt-content'].'
          </div>
       </div>
    </div>
-</section>';
-}
+  </section>';
+  }
 }
