@@ -271,7 +271,7 @@ function getResultsDriveSection( $post_id ){
                <div class="step-number">1</div>
                <h3>'.$elm['left-title'].'</h3>
             </div>
-            '.$elm['left-title'].'
+            '.$elm['left-content'].'
          </div>
          <div class="column analyze">
             <div class="head-data">
