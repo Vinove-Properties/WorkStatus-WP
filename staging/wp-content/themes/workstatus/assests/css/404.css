@@ -3706,6 +3706,11 @@ h3 a {
   .wsf-signup .info-lbl span.tolltip {
     top: -155px;
     left: 0; } }
+@media (max-width: 979px) {
+  .wsf-signup .popup-content {
+    width: 95% !important;
+    overflow-y: scroll !important;
+    height: 90% !important; } }
 @media (max-width: 767px) {
   .wsf-signup .form-wrap {
     padding-bottom: 0; }
@@ -3719,6 +3724,11 @@ h3 a {
 
   .infiled:focus {
     font-size: 13px !important; } }
+@media (max-width: 479px) {
+  .wsf-signup .popup-content {
+    width: 90% !important;
+    overflow-y: hidden !important;
+    height: initial !important; } }
 /*Media Query Start Ends here*/
 .chat-popup .popup-content {
   width: 400px !important;
