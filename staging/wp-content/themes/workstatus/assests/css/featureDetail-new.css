@@ -9003,14 +9003,24 @@ body.geo-international .int-only {
 @media (max-width: 1440px) {
   .data-driving .data-flex .column {
     width: 270px; }
-    .data-driving .data-flex .column.solutions ul li:before {
-      background: #fdcb68; }
+    .data-driving .data-flex .column.solutions ul li {
+      padding: 18px 20px 18px 40px; }
+      .data-driving .data-flex .column.solutions ul li:before {
+        background: #fdcb68; }
     .data-driving .data-flex .column.analyze {
       width: 570px; }
 
   .video-popup .popup-wrapper .popWrap .popup-content {
     width: 60%;
     height: 420px; } }
+@media (max-width: 1380px) {
+  .data-driving .data-flex .column {
+    width: 228px; }
+    .data-driving .data-flex .column.solutions ul li {
+      padding: 18px 20px 18px 40px;
+      min-height: 118px; }
+    .data-driving .data-flex .column.analyze {
+      width: 550px; } }
 @media (max-width: 1280px) {
   .data-driving .data-flex .column {
     width: 22%; }
