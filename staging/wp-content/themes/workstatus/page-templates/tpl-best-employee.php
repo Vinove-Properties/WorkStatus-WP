@@ -258,6 +258,19 @@ if( $isEnable == "yes" ){
    </div>
 </section>
 
+
+<div class="video-popup">
+   <div id="gen-vpopup" class="popup-wrapper" style="display:none;">
+      <div class="popWrap">
+         <div class="popup-content">
+            <span class="closeicon" onclick="closeGenVideo('gen-vpopup', false)">Close</span>
+            <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://www.youtube.com/embed/UId2lnLDJ20" allow="autoplay"></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+
+
                 
       <?php  
 		$boost_profitability = get_field('boost_profitability');
