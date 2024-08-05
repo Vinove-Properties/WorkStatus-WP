@@ -257,55 +257,45 @@ function getWsCmnFeatures(){
 }
 
 function getResultsDriveSection( $post_id ){
+  $elm = get_field( 'dd-result',$post_id );
+  if( isset($elm['required']) && ($elm['required'] == "yes") ){
   return '<section class="data-driving">
    <div class="container">
       <div class="top-section">
-         <h6><span class="bg-purple">Data Driving Results</span></h6>
-         <h2>Smart Decisions for Business Growth: Plan, Analyze, and Execute</h2>
-         <p>Stay one step ahead always, manage & track your workforce & workload, analyze data and ensure business growth.</p>
+         <h6><span class="bg-purple">'.$elm['heading'].'</span></h6>
+         '.$elm['heading-content'].'
       </div>
       <div class="data-flex">
          <div class="column challenges">
             <div class="head-data">
                <div class="step-number">1</div>
-               <h3>Challenges</h3>
+               <h3>'.$elm['left-title'].'</h3>
             </div>
-            <ul>
-               <li>Inefficient Time Tracking</li>
-               <li>Real-Time Project / Task Monitoring</li>
-               <li>Difficulties in Managing Remote Teams</li>
-               <li>Poor Resource Allocation Impacting Outcomes</li>
-            </ul>
+            '.$elm['left-content'].'            
          </div>
          <div class="column analyze">
             <div class="head-data">
                <div class="step-number">2</div>
-               <h3>Analyze</h3>
+               <h3>'.$elm['right-title'].'</h3>
             </div>
             <div class="analyze-button">
                <div class="play-icon"> 
                 <img loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/data-circle2.svg" alt="play" 
                 width="270" height="270">
                </div>
-               <div class="playsc" onclick="return callinVideo();">
-                  <span class="playicon">Play</span>
-               </div>
+               <div class="playsc" onclick="return callinVideo();"><span class="playicon">Play</span></div>
                <p>Play to watch</p>
             </div>
          </div>
          <div class="column solutions">
             <div class="head-data">
                <div class="step-number">3</div>
-               <h3>Solutions</h3>
+               <h3>'.$elm['left-title'].'</h3>
             </div>
-            <ul>
-               <li>Automated, accurate timekeeping reduces manual errors</li>
-               <li>Smart dashboards provide instant project and productivity insights</li>
-               <li>Tools track and analyze remote employee activities for better management</li>
-               <li>Optimize workforce deployment based on data-driven insights</li>
-            </ul>
+            '.$elm['right-content'].'            
          </div>
       </div>
    </div>
 </section>';
+}
 }
