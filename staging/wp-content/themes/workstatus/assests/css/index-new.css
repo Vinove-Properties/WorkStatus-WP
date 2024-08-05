@@ -2239,7 +2239,7 @@ h3 a {
     padding-bottom: 50px; }
   .wsf-signup .popup-content {
     overflow-y: scroll !important;
-    height: 90%;
+    height: 90% !important;
     background: -webkit-linear-gradient(left, #4535a7 55.3%, white 39.1%); }
     .wsf-signup .popup-content h2 {
       font-size: 30px;
