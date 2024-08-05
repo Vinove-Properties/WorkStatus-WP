@@ -8999,7 +8999,8 @@ body.geo-international .int-only {
     width: 30px !important;
     height: 30px !important;
     font-size: 0;
-    position: absolute; }
+    position: absolute;
+    cursor: pointer; }
 
 @media (max-width: 1440px) {
   .data-driving .data-flex .column {
