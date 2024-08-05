@@ -298,7 +298,7 @@ function getResultsDriveSection( $post_id ){
    </div>
   </section>
   <div class="video-popup">
-   <div id="gen-vpopup" class="popup-wrapper" style="display:block;">
+   <div id="gen-vpopup" class="popup-wrapper" style="display: none;">
       <div class="popWrap">
          <div class="popup-content">
             <span class="closeicon" onclick="closeGenVideo(\'gen-vpopup\', false)">Close</span>
