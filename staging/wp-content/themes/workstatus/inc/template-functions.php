@@ -283,7 +283,8 @@ function getResultsDriveSection( $post_id ){
                 <img loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/data-circle2.svg" 
                 alt="play" width="270" height="270">
                </div>
-               <div class="playsc" onclick="return _playYTmedia(\'https://www.youtube.com/embed/UId2lnLDJ20\');"><span class="playicon">Play</span></div>
+               <div class="playsc" onclick="return _playYTmedia(\''.$elm['yt-video'].'\');">
+               <span class="playicon">Play</span></div>
                <p>Play to watch</p>
             </div>
          </div>
@@ -301,7 +302,7 @@ function getResultsDriveSection( $post_id ){
    <div id="gen-vpopup" class="popup-wrapper" style="display: none;">
       <div class="popWrap">
          <div class="popup-content">
-            <span class="closeicon" onclick="closeGenVideo(\'gen-vpopup\', false)">Close</span>
+            <span class="gen-closeicon" onclick="closeGenVideo()">Close</span>
             <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="#" src="" allow="autoplay"></iframe>
          </div>
       </div>
