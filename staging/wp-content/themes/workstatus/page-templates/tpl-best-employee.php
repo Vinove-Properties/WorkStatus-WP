@@ -117,7 +117,10 @@ if( $isEnable == "yes" ){
           </div>
         </section>
 		<?php } endif; ?>
-            <section class="middle-section feature-section">
+
+    <?php echo getResultsDriveSection( $post->ID ); ?>
+
+    <section class="middle-section feature-section">
 
 
             <?php  
@@ -206,7 +209,7 @@ if( $isEnable == "yes" ){
 
 		<?php } endif; ?>
 
-    <?php echo getResultsDriveSection( $post->ID ); ?>
+    
                 
     <?php  
 		$boost_profitability = get_field('boost_profitability');
