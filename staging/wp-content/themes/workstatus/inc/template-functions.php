@@ -284,10 +284,9 @@ function getResultsDriveSection( $post_id ){
                 alt="play" width="270" height="270">
                </div>
                <div class="playsc" onclick="return _playYTmedia(\''.$elm['yt-video'].'\');">
-                 <span class="playicon">Play</span>
-                 <p>Play to watch</p>
+               <span class="playicon">Play</span>
                </div>
-               
+               <p onclick="return _playYTmedia(\''.$elm['yt-video'].'\');">Play to watch</p>
             </div>
          </div>
          <div class="column solutions">
