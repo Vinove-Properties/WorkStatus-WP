@@ -8211,6 +8211,13 @@ body.geo-international .int-only {
             background: #051441;
             color: #fff;
             border-color: #051441; }
+          .ws-pricing .price-flex .price-column .price-box .price_btn.green-btn {
+            background: #6ab518;
+            border-color: #6ab518; }
+            .ws-pricing .price-flex .price-column .price-box .price_btn.green-btn:hover {
+              background: #051441;
+              color: #fff;
+              border-color: #051441; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper {
           flex: 1; }
           .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
@@ -8243,6 +8250,54 @@ body.geo-international .int-only {
                   position: absolute;
                   left: 0;
                   top: 8px; }
+                .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp {
+                  position: relative;
+                  display: inline-block; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .info-box {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                    cursor: pointer; }
+                    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .info-box::after {
+                      content: "";
+                      clear: both;
+                      display: block;
+                      background: url(../images/info_icon.svg) no-repeat;
+                      background-size: 100%;
+                      width: 15px;
+                      height: 15px;
+                      position: absolute;
+                      top: -9px;
+                      right: -10px; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltiptext {
+                    visibility: hidden;
+                    position: absolute;
+                    width: 270px;
+                    background-color: #000;
+                    color: #fff !important;
+                    text-align: left;
+                    padding: 10px;
+                    border-radius: 6px;
+                    z-index: 999999;
+                    transition: opacity 0.6s;
+                    font-size: 11px !important;
+                    line-height: 17px !important;
+                    text-transform: none !important; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+                    top: 30px;
+                    left: -115px; }
+                    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+                      content: "";
+                      position: absolute;
+                      top: -9px;
+                      left: 46%;
+                      border-width: 5px;
+                      border-style: solid;
+                      transform: rotate(90deg);
+                      border-color: transparent #555 transparent transparent; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp:hover .tooltiptext {
+                    visibility: visible; }
               .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
                 border-top: 2px solid #e7edf6;
                 padding-top: 30px;
@@ -8522,6 +8577,11 @@ body.geo-international .int-only {
 @media (max-width: 1420px) {
   .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
     font-size: 12px; }
+  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+    top: 30px;
+    left: -200px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+      left: 77%; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; }
 
@@ -8555,6 +8615,13 @@ body.geo-international .int-only {
   .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option {
     margin: 0 0 15px;
     font-size: 15px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltiptext {
+      width: 240px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+      top: 30px;
+      left: -200px; }
+      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+        left: 87%; }
   .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
     padding-top: 25px; }
     .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
@@ -9789,6 +9856,181 @@ body.geo-international .int-only {
       @media screen and (max-width: 575px) {
         .inner-banner .videoSc .topVideo .videoWrapper {
           min-height: 300px; } }
+    .inner-banner .videoSc .srp-1 .videoPoster {
+      background: url(../images/video-poster1.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-2 .videoPoster {
+      background: url(../images/video-poster2.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-3 .videoPoster {
+      background: url(../images/video-poster3.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-4 .videoPoster {
+      background: url(../images/video-poster4.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-5 .videoPoster {
+      background: url(../images/video-poster5.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-6 .videoPoster {
+      background: url(../images/video-poster6.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-7 .videoPoster {
+      background: url(../images/video-poster7.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-8 .videoPoster {
+      background: url(../images/video-poster8.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-9 .videoPoster {
+      background: url(../images/video-poster9.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-10 .videoPoster {
+      background: url(../images/video-poster10.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-11 .videoPoster {
+      background: url(../images/video-poster11.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-12 .videoPoster {
+      background: url(../images/video-poster12.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-13 .videoPoster {
+      background: url(../images/video-poster13.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-14 .videoPoster {
+      background: url(../images/video-poster14.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-15 .videoPoster {
+      background: url(../images/video-poster15.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-16 .videoPoster {
+      background: url(../images/video-poster16.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-17 .videoPoster {
+      background: url(../images/video-poster17.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-18 .videoPoster {
+      background: url(../images/video-poster18.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-19 .videoPoster {
+      background: url(../images/video-poster19.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-20 .videoPoster {
+      background: url(../images/video-poster20.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-21 .videoPoster {
+      background: url(../images/video-poster21.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-22 .videoPoster {
+      background: url(../images/video-poster22.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-23 .videoPoster {
+      background: url(../images/video-poster23.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-24 .videoPoster {
+      background: url(../images/video-poster24.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-25 .videoPoster {
+      background: url(../images/video-poster25.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-26 .videoPoster {
+      background: url(../images/video-poster26.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-27 .videoPoster {
+      background: url(../images/video-poster27.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-28 .videoPoster {
+      background: url(../images/video-poster28.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-29 .videoPoster {
+      background: url(../images/video-poster29.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-30 .videoPoster {
+      background: url(../images/video-poster30.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-31 .videoPoster {
+      background: url(../images/video-poster31.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-32 .videoPoster {
+      background: url(../images/video-poster32.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-33 .videoPoster {
+      background: url(../images/video-poster33.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-34 .videoPoster {
+      background: url(../images/video-poster34.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inner-banner .videoSc .srp-35 .videoPoster {
+      background: url(../images/video-poster35.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center; }
     .inner-banner .videoSc:hover .inner {
       pointer-events: auto;
       opacity: 1; }
@@ -9861,6 +10103,18 @@ body.geo-international .int-only {
       @media screen and (max-width: 575px) {
         .time-data .column-three i {
           margin: 0 auto; } }
+    .time-data .column-three .icon1 {
+      background-position: -10px -222px; }
+    .time-data .column-three .icon2 {
+      background-position: -10px -10px; }
+    .time-data .column-three .icon3 {
+      background-position: -10px -116px; }
+    .time-data .column-three .icon4 {
+      background-position: -10px -543px; }
+    .time-data .column-three .icon5 {
+      background-position: -10px -222px; }
+    .time-data .column-three .icon6 {
+      background-position: -10px -328px; }
 
 .benifits-section {
   width: 100%;
