@@ -9,9 +9,15 @@
           for ($i=0; $i < 6; $i++){
             if( $reviewOpt ){
               foreach( $reviewOpt as $row ){
+              $rating = 'start-4.5.svg';
+              if( $row['rating'] == "4.6 Excellent" ){
+                $rating = 'start-4.6.svg';
+              }elseif( $row['rating'] == "4.8 Excellent" ){
+                $rating = 'start-4.8.svg';                
+              }
               echo '<li>
               <div class="star-rt">'.$row['rating'].' <img 
-              src="'.get_bloginfo('template_url').'/assests/images/4.6star.svg" alt="Award" width="100" height="17">
+              src="'.get_bloginfo('template_url').'/dev-images/'.$rating.'" alt="Award" width="100" height="17">
               </div>
               <p>'.$row['text'].'</p>';
               if( $row['logo'] ){
