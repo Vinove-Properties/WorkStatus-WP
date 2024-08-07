@@ -8713,6 +8713,13 @@ h3 a {
             background: #051441;
             color: #fff;
             border-color: #051441; }
+          .ws-pricing .price-flex .price-column .price-box .price_btn.green-btn {
+            background: #6ab518;
+            border-color: #6ab518; }
+            .ws-pricing .price-flex .price-column .price-box .price_btn.green-btn:hover {
+              background: #051441;
+              color: #fff;
+              border-color: #051441; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper {
           flex: 1; }
           .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
@@ -8734,6 +8741,54 @@ h3 a {
                 margin: 0 0 20px;
                 position: relative;
                 padding: 0 0 0 15px; }
+                .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp {
+                  position: relative;
+                  display: inline-block; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .info-box {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                    cursor: pointer; }
+                    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .info-box::after {
+                      content: "";
+                      clear: both;
+                      display: block;
+                      background: url(../images/info_icon.svg) no-repeat;
+                      background-size: 100%;
+                      width: 15px;
+                      height: 15px;
+                      position: absolute;
+                      top: -9px;
+                      right: -10px; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltiptext {
+                    visibility: hidden;
+                    position: absolute;
+                    width: 270px;
+                    background-color: #000;
+                    color: #fff !important;
+                    text-align: left;
+                    padding: 10px;
+                    border-radius: 6px;
+                    z-index: 999999;
+                    transition: opacity 0.6s;
+                    font-size: 11px !important;
+                    line-height: 17px !important;
+                    text-transform: none !important; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+                    top: 30px;
+                    left: -115px; }
+                    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+                      content: "";
+                      position: absolute;
+                      top: -9px;
+                      left: 46%;
+                      border-width: 5px;
+                      border-style: solid;
+                      transform: rotate(90deg);
+                      border-color: transparent #555 transparent transparent; }
+                  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp:hover .tooltiptext {
+                    visibility: visible; }
                 .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option.m0 {
                   margin: 0; }
                 .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option:before {
@@ -9151,6 +9206,11 @@ h3 a {
 @media (max-width: 1420px) {
   .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
     font-size: 12px; }
+  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+    top: 30px;
+    left: -200px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+      left: 77%; }
   .ws-pricing .price-flex .price-column .price-box .price_btn {
     min-width: 100%; }
 
@@ -9184,6 +9244,13 @@ h3 a {
   .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option {
     margin: 0 0 15px;
     font-size: 15px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltiptext {
+      width: 240px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+      top: 30px;
+      left: -200px; }
+      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+        left: 87%; }
   .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
     padding-top: 25px; }
     .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
@@ -9255,32 +9322,34 @@ h3 a {
       flex-basis: 50%;
       margin: 0 0 30px;
       padding: 0 15px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
-        display: none; }
-        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
-          margin-top: 20px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-options {
-        display: block; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
-        transform: rotateX(0);
-        top: 25px; }
-      .ws-pricing .price-flex .price-column .price-box .price-accordion {
-        display: block;
-        width: 100%;
-        font-size: 15px;
-        text-align: left; }
-        .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
-          content: "";
-          display: inline-block;
-          background: url(../images/arrowpr.svg) 0 0 no-repeat;
-          background-size: auto;
-          background-size: 100%;
-          width: 14px;
-          height: 17px;
-          right: 14px;
-          position: absolute;
-          top: 16px;
-          transform: rotateX(180deg); }
+      .ws-pricing .price-flex .price-column .price-box {
+        padding: 30px 15px; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
+          display: none; }
+          .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
+            margin-top: 20px; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-options {
+          display: block; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
+          transform: rotateX(0);
+          top: 25px; }
+        .ws-pricing .price-flex .price-column .price-box .price-accordion {
+          display: block;
+          width: 100%;
+          font-size: 15px;
+          text-align: left; }
+          .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
+            content: "";
+            display: inline-block;
+            background: url(../images/arrowpr.svg) 0 0 no-repeat;
+            background-size: auto;
+            background-size: 100%;
+            width: 14px;
+            height: 17px;
+            right: 14px;
+            position: absolute;
+            top: 16px;
+            transform: rotateX(180deg); }
 
   .free-price .fdflex .colLeft {
     flex-basis: 30%;

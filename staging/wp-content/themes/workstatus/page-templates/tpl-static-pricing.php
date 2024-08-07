@@ -189,7 +189,7 @@
               <!-- <p><strong>Billed anually</strong>. Switch the billing cycle to annual</p> -->
               <span class="prio smtext"><strong>Billed annually.</strong> Tailor-made offer</span>
             </div>
-            <a class="price_btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+            <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>
