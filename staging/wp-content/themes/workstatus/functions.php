@@ -259,6 +259,9 @@ function workstatus_scripts() {
   	elseif( is_page_template(['page-templates/tpl-affiliates.php']) ){
 		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/affiliates.css', array(), _S_VERSION);
 	}
+	elseif( is_page_template(['page-templates/tpl-tools-comparison.php']) ){
+		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/affiliates.css', array(), _S_VERSION);
+	}
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
 		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/survey-style.css', array(), _S_VERSION );	
