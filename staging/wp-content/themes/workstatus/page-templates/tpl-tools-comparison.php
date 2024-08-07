@@ -34,7 +34,218 @@ get_header();
      <?php the_content(); ?>
    </div>
  </div>
+</section>
+
+<section class="benifits-section tools-section">
+ <div class="container">
+   <div class="top-section">
+     <h6><span class="bg-purple">GET SMART</span></h6>
+     <h2>Know About Your Employee Monitoring Tools</h2>
+   </div>
+   <div class="flex_row">
+     <div class="column-three">
+       <picture>
+         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tools-img01.png"
+           alt="Alternative" width="397" height="263">
+       </picture>
+       <h3>Teramind</h3>
+       <p>Teramind assists organizations in overseeing employee behavior, and enhancing workplace efficiency and security.</p>
+     </div>
+     <div class="column-three">
+       <picture>
+         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tools-img01.png"
+           alt="Alternative" width="397" height="263">
+       </picture>
+       <h3>Teramind</h3>
+       <p>Teramind assists organizations in overseeing employee behavior, and enhancing workplace efficiency and security.</p>
+     </div>
+     <div class="column-three">
+       <picture>
+         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tools-img01.png"
+           alt="Alternative" width="397" height="263">
+       </picture>
+       <h3>Teramind</h3>
+       <p>Teramind assists organizations in overseeing employee behavior, and enhancing workplace efficiency and security.</p>
+     </div>
+   </div>
+ </div>
 </section>   
+
+<section class="ws-tabtop">
+ <div class="container">
+   <div class="top-section">
+     <h2>Comparison Table</h2>
+     <p> We know you might have questions, so here’s a clear comparison to help you understand the differences:</p>
+   </div>
+ </div>
+</section>
+
+<section class="ws-table">
+<div class="container">
+  <div class="table-block">
+    <div class="div-block-top">
+      <div class="logo-ws logovs" >
+        <h2>Features</h2>
+      </div>
+      <div class="logo-tb logovs">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-01.svg"
+            alt="logo" width="129" height="29">
+        </picture>
+        <div class="price">$3 / Month</div>
+      </div>
+      <div class="logo-tb  logovs">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-02.svg"
+            alt="logo" width="143" height="31">
+        </picture>
+        <div class="price">$3 / Month</div>
+      </div>
+      <div class="logo-tb  logovs">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg"
+            alt="logo" width="160" height="20">
+        </picture>
+        <div class="price">$3 / Month</div>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="ws-column ws-lftcolumn">
+        <p>App & Website Tracking</p>
+      </div>
+      <div class="ws-column"><i class="check-icon"></i></div>
+      <div class="ws-column"><i class="check-icon"></i></div>
+      <div class="ws-column"><i class="check-icon"></i></div>
+    </div>
+    <div class="table-row">
+      <div class="ws-column ws-lftcolumn">
+        <p>App & Website Tracking</p>
+      </div>
+      <div class="ws-column"><i class="cross-icon"></i></div>
+      <div class="ws-column"><i class="cross-icon"></i></div>
+      <div class="ws-column"><i class="check-icon"></i></div>
+    </div>
+    <div class="table-row">
+      <div class="ws-column ws-lftcolumn">
+        <p>Pricing (Per user/ Month)</p>
+      </div>
+      <div class="ws-column"><strong>$345</strong></div>
+      <div class="ws-column"><strong>$345</strong></div>
+      <div class="ws-column"><strong>$345</strong></div>
+    </div>
+  </div>
+  <div class="mt40 btnSc">
+    <div class="cmn-democta ctasec">
+      <div>
+        <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn" onclick="return get_ws_signupform(this);">Start Free Trial</a>
+        <span class="nccr">No credit card required</span>
+      </div>
+      <span class="devide">OR</span>
+      <div><a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="advanced-feature">
+<div class="container">
+  <div class="top-section">
+    <h6><span class="bg-purple">GET SMART</span></h6>
+    <h2>Know About Your Employee Monitoring Tools</h2>
+  </div>
+  <div class="flex_row">
+    <div class="column-two">
+      <picture>
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ad-01.png" alt="Alternative" width="92" height="89">
+      </picture>
+      <h3>Habit Tracker App</h3>
+      <p>Review screenshots, apps, and websites to help employees build and maintain productive habits that boost performance and efficiency.</p>
+    </div>
+    <div class="column-two">
+      <picture>
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ad-01.png" alt="Alternative" width="92" height="89">
+      </picture>
+      <h3>Habit Tracker App</h3>
+      <p>Review screenshots, apps, and websites to help employees build and maintain productive habits that boost performance and efficiency.</p>
+    </div>
+    <div class="column-two">
+      <picture>
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ad-01.png" alt="Alternative" width="92" height="89">
+      </picture>
+      <h3>Habit Tracker App</h3>
+      <p>Review screenshots, apps, and websites to help employees build and maintain productive habits that boost performance and efficiency.</p>
+    </div>
+    <div class="column-two">
+      <picture>
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ad-01.png" alt="Alternative" width="92" height="89">
+      </picture>
+      <h3>Habit Tracker App</h3>
+      <p>Review screenshots, apps, and websites to help employees build and maintain productive habits that boost performance and efficiency.</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- // Tab Section Render Here -->
+
+<section class="section-numbers">
+<div class="container">
+  <div class="top-section">
+    <h2>Use Cases</h2>
+    <p>Understand how Workstatus can be applied across different industries to streamline operations, boost productivity, and manage remote teams effectively.</p>
+  </div>
+  <div class="number-row">
+    <div class="number-col">
+      <div class="card-image">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-01.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-01.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/aluse-01.png" alt="Discover"
+            width="320" height="155">
+        </picture>
+      </div>
+      <h2>70%</h2>
+      <div class="is-grey">INCREASED EFFICIENCY</div>
+      <p>A multi-national marketing firm, boosted overall efficiency.</p>
+      <a href="#" class="btn">Boost Your Productivity</a>
+    </div>
+    <div class="number-col">
+      <div class="card-image">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-02.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-02.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/aluse-02.png" alt="Discover"
+            width="320" height="155">
+        </picture>
+      </div>
+      <h2>70%</h2>
+      <div class="is-grey">INCREASED EFFICIENCY</div>
+      <p>A multi-national marketing firm, boosted overall efficiency.</p>
+      <a href="#" class="btn">Boost Your Productivity</a>
+    </div>
+    <div class="number-col">
+      <div class="card-image">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-03.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/aluse-03.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/aluse-03.png" alt="Discover"
+            width="320" height="155">
+        </picture>
+      </div>
+      <h2>35%</h2>
+      <div class="is-grey">INCREASED ROI</div>
+      <p>A Delhi-based startup achieved 30%+ increased ROI with Workstatus.</p>
+      <a href="#" class="btn">Boost Your ROI</a>
+    </div>
+  </div>
+  <div class="ctasec mt100">
+    <div><a href="https://app.workstatus.io/auth/register/?pid=1&type=monthly" class="ctbtn">Start Free Trial</a>
+      <span class="nccr">No credit card required</span>
+    </div>
+    <span class="devide">OR</span>
+    <div><a href="javascript:void(0)" class="ctbtn nobg" href="#contactus" onclick="call_demows();" target="_self">Book A Demo</a></div>
+  </div>
+</div>
+</section>
 
 <?php  
    $recognition_section = get_field('recognition_section');
