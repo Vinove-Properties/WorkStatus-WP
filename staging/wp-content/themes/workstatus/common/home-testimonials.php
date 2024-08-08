@@ -2,8 +2,9 @@
   $front_page_id = get_option('page_on_front');
   $wstestimonial = get_field('ws-testimonials', $front_page_id);
   if( isset( $wstestimonial['is_enabled'] ) && $wstestimonial['is_enabled'] == "yes" ) :
+  $bg = (isset($args['bg']) && !empty($args['bg'])) ? $args['bg'] : 'bglight'; 
   ?>
-  <section class="testimonial-section bglight">
+  <section class="testimonial-section <?php echo $bg; ?>">
     <div class="container">
       <div class="top-section">
         <h6><span class="bg-purple"><?php echo $wstestimonial['heading']; ?></span></h6>
