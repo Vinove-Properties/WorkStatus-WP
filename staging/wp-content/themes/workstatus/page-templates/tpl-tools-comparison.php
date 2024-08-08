@@ -246,9 +246,9 @@ if( isset($faq['is_enabled']) && ($faq['is_enabled'] == "yes") ) :
          <div itemscope itemtype="https://schema.org/FAQPage">
             <div class="column">
               <?php 
-              if( $faq['faq-row'] ){  
+              if( $faq['question_answer_repeater'] ){  
               $i = 1;
-              foreach( $faq['faq-row'] as $row ) {
+              foreach( $faq['question_answer_repeater'] as $row ) {
               $active = ($i <= 3) ? "open" : "";
               ?>
               <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
