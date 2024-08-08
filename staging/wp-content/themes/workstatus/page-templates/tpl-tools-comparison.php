@@ -218,7 +218,7 @@ if( isset($useCases['required']) && ($useCases['required'] == "yes") ) :
       <h2>'.$card['percentage'].'</h2>
       <div class="is-grey">'.$card['title'].'</div>
       <p>'.$card['text'].'</p>
-      <a href="'.$card['link'].'" class="btn">'.$card['text'].'</a>
+      <a href="'.$card['link'].'" class="btn">'.$card['link-txt'].'</a>
     </div>';
     }
     echo '</div>';
