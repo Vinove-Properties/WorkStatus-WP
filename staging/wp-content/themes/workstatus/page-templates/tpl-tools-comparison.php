@@ -47,10 +47,7 @@ if( isset($wsOffer['is_enabled']) && ($wsOffer['is_enabled'] == "yes") ) :
 ?>
 <section class="benifits-section tools-section">
     <div class="container">
-     <div class="top-section">
-       <h6><span class="bg-purple"><?php echo $wsOffer['top-heading']; ?></span></h6>
-       <?php echo $wsOffer['content']; ?>
-     </div>
+     <div class="top-section"><?php echo $wsOffer['content']; ?></div>
      <?php 
      if( $wsOffer['cards'] ){
        echo '<div class="flex_row">';
