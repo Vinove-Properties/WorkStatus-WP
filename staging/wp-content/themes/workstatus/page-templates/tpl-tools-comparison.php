@@ -81,70 +81,61 @@ get_header();
 </section>
 
 <section class="ws-table">
-<div class="container">
-  <div class="table-block">
-    <div class="div-block-top">
-      <div class="logo-ws logovs" >
-        <h2>Features</h2>
+  <div class="container">
+    <div class="table-block">
+      <div class="div-block-top">
+        <div class="logo-ws logovs" >
+          <h2>Features</h2>
+        </div>
+        <div class="logo-tb logovs">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-01.svg"
+              alt="logo" width="129" height="29">
+          </picture>
+          <div class="price">$3 / Month</div>
+        </div>
+        <div class="logo-tb logovs">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-02.svg"
+              alt="logo" width="143" height="31">
+          </picture>
+          <div class="price">$3 / Month</div>
+        </div>
+        <div class="logo-tb logovs">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg"
+              alt="logo" width="160" height="20">
+          </picture>
+          <div class="price">$3 / Month</div>
+        </div>
       </div>
-      <div class="logo-tb logovs">
-        <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-01.svg"
-            alt="logo" width="129" height="29">
-        </picture>
-        <div class="price">$3 / Month</div>
+      <div class="table-row">
+        <div class="ws-column ws-lftcolumn">
+          <p>App & Website Tracking</p>
+        </div>
+        <div class="ws-column"><i class="check-icon"></i></div>
+        <div class="ws-column"><i class="check-icon"></i></div>
+        <div class="ws-column"><i class="check-icon"></i></div>
       </div>
-      <div class="logo-tb  logovs">
-        <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-02.svg"
-            alt="logo" width="143" height="31">
-        </picture>
-        <div class="price">$3 / Month</div>
+      <div class="table-row">
+        <div class="ws-column ws-lftcolumn">
+          <p>App & Website Tracking</p>
+        </div>
+        <div class="ws-column"><i class="cross-icon"></i></div>
+        <div class="ws-column"><i class="cross-icon"></i></div>
+        <div class="ws-column"><i class="check-icon"></i></div>
       </div>
-      <div class="logo-tb  logovs">
-        <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg"
-            alt="logo" width="160" height="20">
-        </picture>
-        <div class="price">$3 / Month</div>
+      <div class="table-row">
+        <div class="ws-column ws-lftcolumn">
+          <p>Pricing (Per user/ Month)</p>
+        </div>
+        <div class="ws-column"><strong>$345</strong></div>
+        <div class="ws-column"><strong>$345</strong></div>
+        <div class="ws-column"><strong>$345</strong></div>
       </div>
     </div>
-    <div class="table-row">
-      <div class="ws-column ws-lftcolumn">
-        <p>App & Website Tracking</p>
-      </div>
-      <div class="ws-column"><i class="check-icon"></i></div>
-      <div class="ws-column"><i class="check-icon"></i></div>
-      <div class="ws-column"><i class="check-icon"></i></div>
-    </div>
-    <div class="table-row">
-      <div class="ws-column ws-lftcolumn">
-        <p>App & Website Tracking</p>
-      </div>
-      <div class="ws-column"><i class="cross-icon"></i></div>
-      <div class="ws-column"><i class="cross-icon"></i></div>
-      <div class="ws-column"><i class="check-icon"></i></div>
-    </div>
-    <div class="table-row">
-      <div class="ws-column ws-lftcolumn">
-        <p>Pricing (Per user/ Month)</p>
-      </div>
-      <div class="ws-column"><strong>$345</strong></div>
-      <div class="ws-column"><strong>$345</strong></div>
-      <div class="ws-column"><strong>$345</strong></div>
-    </div>
+    <div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>
   </div>
-  <div class="mt40 btnSc">
-    <div class="cmn-democta ctasec">
-      <div>
-        <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn" onclick="return get_ws_signupform(this);">Start Free Trial</a>
-        <span class="nccr">No credit card required</span>
-      </div>
-      <span class="devide">OR</span>
-      <div><a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a></div>
-    </div>
-  </div>
-</div>
 </section>
 
 <section class="advanced-feature">
