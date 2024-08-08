@@ -342,7 +342,7 @@ function getPxlWebpURL( $mid ){
 	return $webpimg;
 }
 
-function pxlGetPtag(array $marray, $title = "", $class = "", $id = "" ){
+function pxlGetPtag( $marray, $title = "", $class = "", $id = "" ){
 	if( !is_array( $marray ) ) return;
 
 	$hasClass 	= ( !empty( $class ) ) ? 'class="'.$class.'"' : '';
@@ -2210,4 +2210,14 @@ function decryptEmailData($input){
         $result .= chr($charCode - 1); // Inverse of encryption (substitution cipher)
     }
     return $result;
+}
+
+function _compTableValue($str){
+	if( $str == "yes" ){
+		return '<i class="check-icon"></i>';
+	}elseif ($str == "no") {
+		return '<i class="cross-icon"></i>';
+	}else{
+		return $str;
+	}
 }
