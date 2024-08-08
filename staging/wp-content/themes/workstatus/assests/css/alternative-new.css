@@ -8692,9 +8692,6 @@ h3 a {
     width: 100%;
     margin: 0 auto 30px; }
 
-.ws-tabtop {
-  padding: 100px 0 0; }
-
 .ws-table {
   background: #f8f7ff; }
   .ws-table:before {
@@ -8753,6 +8750,10 @@ h3 a {
           justify-content: center;
           margin: 10px 0 0;
           display: flex; }
+        .ws-table .table-block .div-block-top .logovs .desktop {
+          display: block; }
+        .ws-table .table-block .div-block-top .logovs .mobile {
+          display: none; }
       .ws-table .table-block .div-block-top .logo-ws {
         background: #695eee;
         -webkit-transform: skew(-11deg, 0deg);
@@ -8791,9 +8792,11 @@ h3 a {
           height: 26px;
           margin: 0 auto; }
         .ws-table .table-block .table-row .ws-column i.check-icon {
-          background: url(../images/table-check.svg) no-repeat; }
+          background: url(../images/table-check.svg) no-repeat;
+          background-size: 100%; }
         .ws-table .table-block .table-row .ws-column i.cross-icon {
-          background: url(../images/table-cross.svg) no-repeat; }
+          background: url(../images/table-cross.svg) no-repeat;
+          background-size: 100%; }
         .ws-table .table-block .table-row .ws-column:last-child {
           border-right: 0; }
         .ws-table .table-block .table-row .ws-column.ws-lftcolumn {
@@ -8804,6 +8807,9 @@ h3 a {
             letter-spacing: 0; }
           .ws-table .table-block .table-row .ws-column.ws-lftcolumn strong {
             color: rgba(17, 3, 2, 0.8); }
+
+.ws-tabtop {
+  padding: 100px 0 0; }
 
 .advanced-feature .flex_row {
   gap: 30px; }
@@ -8860,23 +8866,14 @@ h3 a {
 
 /*All Partners Ends From Here*/
 @media (max-width: 1440px) {
-  .vs-sec .item {
-    padding: 40px 0; }
-
-  .vs-sec {
-    padding: 40px 0; }
+  .section-numbers {
+    padding-top: 80px; }
 
   .ws-tabtop {
-    padding: 80px 0 0; } }
-@media (max-width: 979px) {
-  .ws-table .table-block {
-    margin: -60px auto 60px; }
+    padding: 80px 0 0; }
 
   .ws-table .table-block {
-    max-width: 100%; }
-
-  .vs-sec .item {
-    padding: 40px 0 0; } }
+    margin: -90px auto 80px; } }
 @media (max-width: 1280) {
   .all-partners {
     padding-top: 0; }
@@ -8884,28 +8881,92 @@ h3 a {
       grid-template-columns: repeat(4, 1fr); }
       .all-partners .part-row .part-col {
         padding: 15px 20px; } }
+@media (max-width: 979px) {
+  .ws-table .table-block .div-block-top .logovs {
+    padding: 25px 30px; }
+
+  .ws-tabtop {
+    padding: 60px 0 0; }
+
+  .ws-table .table-block {
+    margin: -70px auto 60px; }
+
+  .section-numbers {
+    padding-top: 60px; } }
 @media (max-width: 767px) {
+  .alter-image {
+    margin: 0 0 20px;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .alter-image img {
+      margin: 0 8px 15px; }
+    .alter-image .verse {
+      display: block; }
+
+  .tools-section {
+    padding: 50px 0 0; }
+    .tools-section .flex_row .column-three {
+      margin: 0 0 20px; }
+      .tools-section .flex_row .column-three img {
+        margin: 0 auto 20px; }
+
   .ws-tabtop {
     padding: 50px 0 0; }
 
-  .ws-table .table-block .table-row {
-    grid-template-columns: 80px 1fr 80px; }
+  .ws-table {
+    padding-top: 0; }
+    .ws-table .table-block {
+      margin: 0px auto 60px; }
+      .ws-table .table-block .div-block-top .logo-ws {
+        padding: 10px 15px;
+        margin-left: -15px;
+        transform: skew(-4deg, 0deg); }
+        .ws-table .table-block .div-block-top .logo-ws h2 {
+          font-size: 18px;
+          margin-left: 10px; }
+      .ws-table .table-block .div-block-top .logovs {
+        padding: 10px 10px; }
+        .ws-table .table-block .div-block-top .logovs .price {
+          width: 60px;
+          font-size: 9px;
+          padding: 6px 10px; }
+        .ws-table .table-block .div-block-top .logovs .desktop {
+          display: none; }
+        .ws-table .table-block .div-block-top .logovs .mobile {
+          display: block; }
+      .ws-table .table-block .table-row .ws-column {
+        padding: 15px 9px; }
+        .ws-table .table-block .table-row .ws-column i {
+          width: 18px;
+          height: 18px; }
 
-  .ws-table .table-block .table-row .wscen-column p {
-    font-size: 16px; }
+  .advanced-feature .flex_row {
+    gap: 0; }
+    .advanced-feature .flex_row .column-two {
+      flex-basis: 100%;
+      margin: 0 0 20px; }
 
-  .ws-table .table-block .div-block-top .logovs {
-    padding: 30px 45px;
-    margin-left: -8px; }
+  .section-numbers .number-row {
+    display: flex;
+    flex-wrap: wrap; }
+    .section-numbers .number-row .number-col {
+      padding: 30px;
+      flex-basis: 100%; }
+      .section-numbers .number-row .number-col h2 {
+        font-size: 32px; }
+      .section-numbers .number-row .number-col h3 {
+        font-size: 18px; }
+      .section-numbers .number-row .number-col.is-first {
+        flex-basis: 100%; }
+      .section-numbers .number-row .number-col .card-image {
+        margin: 0 0 25px; }
+        .section-numbers .number-row .number-col .card-image img {
+          object-fit: cover; }
+      .section-numbers .number-row .number-col .btn {
+        margin: 0; }
 
-  .faqsRow {
-    padding: 50px 0 80px; }
-
-  .vs-sec .item {
-    padding: 20px 0 0; }
-
-  .alter-image {
-    margin: 0 0 20px; }
+  .faqsRow .flex_row {
+    padding: 0; }
 
   .all-partners .part-row {
     grid-template-columns: repeat(3, 1fr);
@@ -8913,28 +8974,6 @@ h3 a {
     .all-partners .part-row .part-col {
       padding: 10px 15px; } }
 @media (max-width: 479px) {
-  .ws-table .table-block .div-block-top .logovs {
-    padding: 25px 20px; }
-
-  .ws-table .table-block .table-row .wscen-column {
-    padding: 12px 0; }
-
-  .ws-table .table-block .table-row .wscen-column p {
-    font-size: 14px; }
-
-  .ws-table .table-block .table-row {
-    grid-template-columns: 60px 1fr 60px; }
-
-  .ws-table .table-block .table-row i.check-icon {
-    background-size: 100%;
-    width: 17px;
-    height: 17px; }
-
-  .ws-table .table-block .table-row i.cross-icon {
-    background-size: 100%;
-    width: 17px;
-    height: 17px; }
-
   .all-partners .part-row {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; } }
