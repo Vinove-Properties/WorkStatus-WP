@@ -79,7 +79,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="139" height="23">
           </picture>
           </a>
         </div>
@@ -92,7 +92,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="140" height="49">
           </picture>
         </a>
         </div>
@@ -105,7 +105,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="145" height="27">
           </picture>
           </a>
         </div>
@@ -118,7 +118,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="156" height="25">
           </picture>
           </a>
         </div>
@@ -131,7 +131,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="160" height="25">
           </picture>
           </a>
         </div>
@@ -144,7 +144,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="136" height="28">
           </picture>
           </a>
         </div>
@@ -157,7 +157,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="116" height="40">
           </picture>
           </a>
         </div>
@@ -171,7 +171,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/gartner.webp">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/gartner.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/gartner.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="94" height="22">
           </picture>
           </a>
         </div>
@@ -185,7 +185,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.webp">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/capterra.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="116" height="26">
           </picture>
           </a>
         </div>

@@ -27,7 +27,7 @@
         <p>Customized Solutions for Maximum Productivity</p>
         </div>
         <div class="actionBtn">
-          <div><a href="https://calendly.com/workstatus/sales" href="javascript:void(0);" class="primary_btn1">Talk to Sales</a>
+          <div><a href="https://calendly.com/workstatus/sales" class="primary_btn1">Talk to Sales</a>
           </div>
         </div>
       </div>
