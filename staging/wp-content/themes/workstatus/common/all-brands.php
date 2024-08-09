@@ -13,7 +13,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="132" height="21">
           </picture>
           </a>
         </div>
@@ -26,7 +26,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="30" height="31">
           </picture>
           </a>
         </div>
@@ -39,7 +39,7 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="132" height="48">
           </picture>
           </a>
         </div>
@@ -52,15 +52,16 @@
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png"
-              alt="Testimonials" width="" height="">
+              alt="Testimonials" width="116" height="29">
           </picture>
           </a>
         </div>
         <i class="star"></i>
       </div>
       <div class="part-col">
-        <a href="https://www.sitejabber.com/reviews/workstatus.io" rel="nofollow">
+        
         <div class="img-wrap">
+          <a href="https://www.sitejabber.com/reviews/workstatus.io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
