@@ -193,13 +193,12 @@
               <h4>Everything <span class="perp">in</span> Project +</h4>
               <div class="option-list">
                 <div class="option">
-                  Custom Integration & Development
-                  <div class="tooltipp">
-                  <span class="info-box"></span>
-                  <span class="tooltiptext tooltip-right">With our Custom Integration & Development Services, we extend beyond our standard API capabilities to meet your specific business needs. Whether it's a seamless integration with third-party or legacy systems for enhanced workforce automation, or the development of particular features to facilitate data import and other operational efficiencies, our dedicated team is here to tailor solutions precisely to your requirements. Opt for our expertise to ensure a smooth, hassle-free integration, or leverage our comprehensive API if you prefer to handle the integration in-house. Whatever your choice, we're here to ensure that Workstatus adapts perfectly to your business ecosystem.</span>
-                  </div>
-
-                  </div>
+                Custom Integration & Development
+                <div class="tooltipp">
+                <span class="info-box"></span>
+                <span class="tooltiptext tooltip-right">With our Custom Integration & Development Services, we extend beyond our standard API capabilities to meet your specific business needs. Whether it's a seamless integration with third-party or legacy systems for enhanced workforce automation, or the development of particular features to facilitate data import and other operational efficiencies, our dedicated team is here to tailor solutions precisely to your requirements. Opt for our expertise to ensure a smooth, hassle-free integration, or leverage our comprehensive API if you prefer to handle the integration in-house. Whatever your choice, we're here to ensure that Workstatus adapts perfectly to your business ecosystem.</span>
+                </div>
+                </div>
                 <div class="option">License Management</div>
                 <div class="option">Capacity Analysis</div>
                 <div class="option">Insider Threat Detection</div>
