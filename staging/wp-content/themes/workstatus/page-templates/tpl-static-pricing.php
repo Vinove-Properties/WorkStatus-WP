@@ -1,11 +1,12 @@
 <?php
-  /* 
-  Template Name: Pricing - Static Template 
-  Author : Nitin Baluni.
-  */
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink;
-  ?>
+/* 
+Template Name : Pricing - Static Template 
+Author : Nitin Baluni
+*/
+get_header();
+global $ws_ctas, $RegLink, $LogLink;
+?>
+<main class="site__content">  
 <div id="wsio-preloader" style="margin-top:100px;">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
@@ -191,7 +192,7 @@
               <!-- <p><strong>Billed anually</strong>. Switch the billing cycle to annual</p> -->
               <span class="prio smtext"><strong>Billed annually.</strong> Tailor-made offer</span>
             </div>
-            <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+            <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -272,10 +273,8 @@
             <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
             <th>
               <span class="plan-label">Enterprise</span>
-             
-
-              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
-
+              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" 
+              id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
             </th>
           </tr>
         </thead>
