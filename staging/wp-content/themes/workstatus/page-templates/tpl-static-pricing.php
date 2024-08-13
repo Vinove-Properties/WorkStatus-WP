@@ -149,7 +149,7 @@
               <span class="wph" id="pl-project">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
+            <a class="price_btn" id="ws-plan-project" href="#">Buy Now</a>
             <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
