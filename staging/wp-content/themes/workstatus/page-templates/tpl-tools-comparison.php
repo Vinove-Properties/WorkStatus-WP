@@ -89,7 +89,7 @@ $tbl = $compCol['cards'];
           if( isset($compCol['t1-logom']) && !empty($compCol['t1-logom']) ){
           echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t1-logom']['url'].'" 
           alt="'.$compCol['t1-logom']['alt'].'" 
-          width="'.$compCol['t1-logom']['width'].'" height="'.$compCol['t1-logom']['height'].'"></picture>';
+          width="25" height="25"></picture>';
           }
 
           echo '<div class="price">'.$compCol['t1-pricing'].'</div>';
@@ -105,7 +105,7 @@ $tbl = $compCol['cards'];
           if( isset($compCol['t2-logom']) && !empty($compCol['t2-logom']) ){
           echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t2-logom']['url'].'" 
           alt="'.$compCol['t2-logom']['alt'].'" 
-          width="'.$compCol['t2-logom']['width'].'" height="'.$compCol['t2-logom']['height'].'"></picture>';
+          width="25" height="25"></picture>';
           }
           echo '<div class="price">'.$compCol['t2-pricing'].'</div>';
           ?>
@@ -117,7 +117,7 @@ $tbl = $compCol['cards'];
           </picture>
           <picture>
             <img class="mobile" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablm-03.svg" 
-            alt="WorkStatus" width="160" height="20">
+            alt="WorkStatus" width="25" height="25">
           </picture>
           <?php echo '<div class="price">'.$compCol['ws-pricing'].'</div>'; ?>
         </div>
