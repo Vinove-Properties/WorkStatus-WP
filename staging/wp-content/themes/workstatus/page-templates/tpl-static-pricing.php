@@ -1031,6 +1031,7 @@ global $ws_ctas, $RegLink, $LogLink;
     </div>
   </div>
 </section>
+</div>
   <section class="faqsRow wfull for-heading-center">
     <div class="container">
       <div class="top-section">
