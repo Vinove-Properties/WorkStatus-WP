@@ -102,7 +102,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="prio">/ user / month</span>
             </div>
             <a class="price_btn" id="ws-plan-product" href="#">Buy Now</a>
-            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
@@ -149,8 +149,8 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="wph" id="pl-project">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
-            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
+            <a class="price_btn" id="ws-plan-project" href="#">Buy Now</a>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Productivity +</h4>
