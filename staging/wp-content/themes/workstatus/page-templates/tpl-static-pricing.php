@@ -1,12 +1,11 @@
 <?php
-/* 
-Template Name : Pricing - Static Template 
-Author : Nitin Baluni
-*/
-get_header();
-global $ws_ctas, $RegLink, $LogLink;
-?>
-<main class="site__content">  
+  /* 
+  Template Name: Pricing - Static Template 
+  Author : Nitin Baluni.
+  */
+  get_header();
+  global $ws_ctas, $RegLink, $LogLink;
+  ?>
 <div id="wsio-preloader" style="margin-top:100px;">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
@@ -103,7 +102,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="prio">/ user / month</span>
             </div>
             <a class="price_btn" id="ws-plan-product" href="#">Buy Now</a>
-            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
@@ -150,8 +149,8 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="wph" id="pl-project">$4</span>  
               <span class="prio">/ user / month</span>
             </div>
-            <a class="price_btn" id="ws-plan-project" href="#">Buy Now</a>
-            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+            <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Productivity +</h4>
@@ -192,7 +191,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <!-- <p><strong>Billed anually</strong>. Switch the billing cycle to annual</p> -->
               <span class="prio smtext"><strong>Billed annually.</strong> Tailor-made offer</span>
             </div>
-            <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
+            <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Project +</h4>
@@ -273,8 +272,10 @@ global $ws_ctas, $RegLink, $LogLink;
             <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
             <th>
               <span class="plan-label">Enterprise</span>
-              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" 
-              id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+             
+
+              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+
             </th>
           </tr>
         </thead>
