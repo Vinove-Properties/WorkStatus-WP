@@ -6,7 +6,6 @@ Author : Nitin Baluni.
 get_header();
 global $ws_ctas, $RegLink, $LogLink;
 ?>
-<main class="site__content">  
 <div id="wsio-preloader" style="margin-top:100px;">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
@@ -1032,7 +1031,8 @@ global $ws_ctas, $RegLink, $LogLink;
   </div>
 </section>
 </div>
-  <section class="faqsRow wfull for-heading-center">
+
+<section class="faqsRow wfull for-heading-center">
     <div class="container">
       <div class="top-section">
         <h6><span class="bg-purple">Get Answers For</span></h6>
@@ -1203,9 +1203,7 @@ global $ws_ctas, $RegLink, $LogLink;
         </div>
       </div>
     </div>
-  </section>
-  <?php require_once get_template_directory() .'/common/all-brands.php';?>
-  <?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
-  </main>
-</div>
+</section>
+<?php require_once get_template_directory() .'/common/all-brands.php';?>
+<?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
 <?php get_footer(); ?>
