@@ -102,7 +102,7 @@
               <span class="prio">/ user / month</span>
             </div>
             <a class="price_btn" id="ws-plan-product" href="#">Buy Now</a>
-            <span class="tryit">or <a href="#">or Try It Free</a></span>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
@@ -150,7 +150,7 @@
               <span class="prio">/ user / month</span>
             </div>
             <a class="price_btn" id="ws-plan-project" href="#">Try For Free</a>
-            <span class="tryit">or <a href="#">or Try It Free</a></span>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">or Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Everything <span class="perp">in</span> Productivity +</h4>
