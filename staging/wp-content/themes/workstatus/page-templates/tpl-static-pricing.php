@@ -1,11 +1,12 @@
 <?php
-  /* 
-  Template Name: Pricing - Static Template 
-  Author : Nitin Baluni.
-  */
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink;
-  ?>
+/* 
+Template Name: Pricing - Static Template 
+Author : Nitin Baluni.
+*/
+get_header();
+global $ws_ctas, $RegLink, $LogLink;
+?>
+<main class="site__content">  
 <div id="wsio-preloader" style="margin-top:100px;">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
