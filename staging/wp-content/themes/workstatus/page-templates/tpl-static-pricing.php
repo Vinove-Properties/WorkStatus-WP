@@ -229,6 +229,7 @@ global $ws_ctas, $RegLink, $LogLink;
           </div>
         </div>
       </div>
+    </div>    
   </section>
   <section class="free-price">
   <div class="container">
@@ -276,7 +277,7 @@ global $ws_ctas, $RegLink, $LogLink;
               <span class="plan-label">Enterprise</span>
              
 
-              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
+              <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
 
             </th>
           </tr>
