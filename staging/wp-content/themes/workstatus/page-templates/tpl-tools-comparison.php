@@ -81,9 +81,17 @@ $tbl = $compCol['cards'];
         <div class="logo-tb logovs">
           <?php 
           if( isset($compCol['t1-logo']) && !empty($compCol['t1-logo']) ){
-          echo '<picture><img loading="lazy" src="'.$compCol['t1-logo']['url'].'" alt="'.$compCol['t1-logo']['alt'].'" 
+          echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t1-logo']['url'].'" 
+          alt="'.$compCol['t1-logo']['alt'].'" 
           width="'.$compCol['t1-logo']['width'].'" height="'.$compCol['t1-logo']['height'].'"></picture>';
           }
+
+          if( isset($compCol['t1-logom']) && !empty($compCol['t1-logom']) ){
+          echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t1-logom']['url'].'" 
+          alt="'.$compCol['t1-logom']['alt'].'" 
+          width="'.$compCol['t1-logom']['width'].'" height="'.$compCol['t1-logom']['height'].'"></picture>';
+          }
+
           echo '<div class="price">'.$compCol['t1-pricing'].'</div>';
           ?>          
         </div>
@@ -93,12 +101,23 @@ $tbl = $compCol['cards'];
           echo '<picture><img loading="lazy" src="'.$compCol['t2-logo']['url'].'" alt="'.$compCol['t2-logo']['alt'].'" 
           width="'.$compCol['t2-logo']['width'].'" height="'.$compCol['t2-logo']['height'].'"></picture>';
           }
+
+          if( isset($compCol['t2-logom']) && !empty($compCol['t2-logom']) ){
+          echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t2-logom']['url'].'" 
+          alt="'.$compCol['t2-logom']['alt'].'" 
+          width="'.$compCol['t2-logom']['width'].'" height="'.$compCol['t2-logom']['height'].'"></picture>';
+          }
           echo '<div class="price">'.$compCol['t2-pricing'].'</div>';
           ?>
         </div>
         <div class="logo-tb logovs">
           <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg" alt="logo" width="160" height="20">
+            <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg" 
+            alt="WorkStatus" width="160" height="20">
+          </picture>
+          <picture>
+            <img class="mobile" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablm-03.svg" 
+            alt="WorkStatus" width="160" height="20">
           </picture>
           <?php echo '<div class="price">'.$compCol['ws-pricing'].'</div>'; ?>
         </div>
