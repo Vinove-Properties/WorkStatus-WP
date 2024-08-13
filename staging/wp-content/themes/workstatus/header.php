@@ -321,9 +321,13 @@
                       <div class="col-menu">
                         <h3><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></h3>
                         <div class="menu-box">
+                          <a href="<?php echo site_url(); ?>/project-management/task-management">
+                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
+                            height="20" alt="Menu Icon">Task Management
+                          </a>
+                          
                           <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon22.svg" width="20"
-                            height="20" alt="Menu Icon">Project Budgeting
+                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon22.svg" width="20" height="20" alt="Menu Icon">Project Budgeting
                           </a>
                           <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon23.svg" width="20"
@@ -345,10 +349,7 @@
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon27.svg" width="20"
                             height="20" alt="Menu Icon">Epics
                           </a>
-                          <a href="<?php echo site_url(); ?>/project-management/task-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
-                            height="20" alt="Menu Icon">Task Management
-                          </a>
+                          
                           <a href="<?php echo site_url(); ?>/project-management/gantt-charts">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20" height="20" alt="Menu Icon">Gantt Chart
                           </a>
