@@ -197,10 +197,11 @@ if( isset( $ws_services['required'] ) && ( $ws_services['required'] == "yes" ) )
             <?php 
               $iRow = 777;
               foreach( $services as $row ){
+              $active = ( $iRow == 777 ) ? "active" : "";  
               $image = $row['image'];
               ?>
             <div class="all-content">
-              <div class="text-column active" id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs_ws_services">
+              <div class="text-column <?php echo $active; ?>" id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs_ws_services">
               <?php echo $row['content']; ?>
               </div>
               <div class="mob-image">
