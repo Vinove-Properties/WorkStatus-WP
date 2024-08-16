@@ -98,7 +98,8 @@ $tbl = $compCol['cards'];
         <div class="logo-tb logovs">
           <?php 
           if( isset($compCol['t2-logo']) && !empty($compCol['t2-logo']) ){
-          echo '<picture><img loading="lazy" src="'.$compCol['t2-logo']['url'].'" alt="'.$compCol['t2-logo']['alt'].'" 
+          echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t2-logo']['url'].'" 
+          alt="'.$compCol['t2-logo']['alt'].'" 
           width="'.$compCol['t2-logo']['width'].'" height="'.$compCol['t2-logo']['height'].'"></picture>';
           }
 
