@@ -411,7 +411,7 @@ if( function_exists('acf_add_options_page') ) {
 
 
 
-function pixelShowLatestPosts( $pslug = "",$bposts){
+function pixelShowLatestPosts( $pslug = "", $bposts){
  	if( empty($pslug) ) return; 
 
  	$rPosts = $wsBposts = [];
@@ -420,7 +420,7 @@ function pixelShowLatestPosts( $pslug = "",$bposts){
 	$postOne 	= (isset($ar[0]) && !empty($ar[0])) ? $ar[0] : 'null';
 	$postTwo 	= (isset($ar[1]) && !empty($ar[1])) ? $ar[1] : 'null';
 	$postThree 	= (isset($ar[2]) && !empty($ar[2])) ? $ar[2] : 'null';
-	$response = wp_remote_get('https://www.workstatus.io/blog/wp-json/wsposts/v1/blogposts/'.$postOne.'/'.$postTwo.'/'.$postThree);	
+	$response 	= wp_remote_get('https://www.workstatus.io/blog/wp-json/wsposts/v1/blogposts/'.$postOne.'/'.$postTwo.'/'.$postThree);	
 	if( is_array( $response ) && ! is_wp_error( $response ) ){
 	$wsBposts   = json_decode( $response['body'] );
 	}	
