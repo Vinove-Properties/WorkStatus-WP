@@ -378,7 +378,7 @@ endif; ?>
                     $active 	= ( $iRow == $randIndx[$ft] ) ? "active" : "";
                     $icon 		= '';
                     if( $row['icon'] ){
-                  $icon = '<i><img loading="lazy" src="'.$row['icon']['url'].'" alt="icon" width="" height=""></i>';
+                  $icon = '<i><img loading="lazy" src="'.$row['icon']['url'].'" alt="icon" width="'.$row['icon']['width'].'" height="'.$row['icon']['height'].'"></i>';
                   }
                     ?>
                 <div class="all-content">
