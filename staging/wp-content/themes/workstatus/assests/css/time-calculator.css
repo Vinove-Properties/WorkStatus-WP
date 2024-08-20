@@ -2881,17 +2881,19 @@ h3 a {
   background-position: -53px 0; }
 
 @media (max-width: 36em) {
-  .glider::-webkit-scrollbar {
-    opacity: 1;
-    -webkit-appearance: none;
-    width: 7px;
-    height: 3px; }
-  .glider::-webkit-scrollbar-thumb {
-    opacity: 1;
-    border-radius: 99px;
-    background-color: rgba(156, 156, 156, 0.25);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
+  .glider {
+    overflow-x: scroll !important; }
+    .glider::-webkit-scrollbar {
+      opacity: 1;
+      -webkit-appearance: none;
+      width: 7px;
+      height: 3px; }
+    .glider::-webkit-scrollbar-thumb {
+      opacity: 1;
+      border-radius: 99px;
+      background-color: rgba(156, 156, 156, 0.25);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
 /*section-numbers Start From Here*/
 .section-numbers {
   padding-top: 0; }
@@ -6263,6 +6265,11 @@ h3 a {
           margin: 20px 0 0;
           align-items: flex-start;
           justify-content: start; } }
+    @media screen and (max-width: 768px) {
+      .site__footer .flex_row .fcol7 {
+        width: calc(40% - 15px);
+        vertical-align: top;
+        margin: 20px 0 0; } }
   .site__footer .footer-sec .footer-top {
     padding: 20px 0;
     background: #201f3a;
@@ -7984,210 +7991,461 @@ h3 a {
     flex-basis: 100%;
     border-right: 0;
     padding: 0; } }
-/*Security page css and how it works page css rendering from here//
+.feature-header .site__header {
+  background: #6754e2; }
 
-/*Banner Section*/
-.inner-banner .videoSc:before {
-  top: -59px; }
+.timecalcuator {
+  padding: 150px 0 120px;
+  background: #f5f7fa; }
+  .timecalcuator.p-0 {
+    padding-top: 0;
+    background: #fff; }
+  .timecalcuator .top-content {
+    text-align: center; }
+    .timecalcuator .top-content h1 {
+      margin: 0 0 10px; }
+  .timecalcuator .form-wrapper .form-group {
+    width: 30%; }
+    .timecalcuator .form-wrapper .form-group:first-child .error {
+      padding-left: 30px; }
+  .timecalcuator .form-wrapper .frm-input {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 50px 0 0;
+    column-gap: 40px; }
+    .timecalcuator .form-wrapper .frm-input label {
+      margin-right: 10px; }
+    .timecalcuator .form-wrapper .frm-input input {
+      border: 1px solid #bae;
+      border-radius: 5px;
+      padding: 0 15px 0;
+      height: 50px;
+      color: #110302;
+      font-size: 14px;
+      font-family: "Noto Sans";
+      font-weight: 500;
+      width: 80%; }
+  .timecalcuator .form-wrapper .error {
+    width: 67%;
+    text-align: center; }
+  .timecalcuator .table-wrap {
+    overflow-x: auto; }
+  .timecalcuator .time-table {
+    width: 100%;
+    margin: 50px 0 0;
+    font-size: 18px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 0px 34px rgba(22, 101, 216, 0.08);
+    border-radius: 6px; }
+    .timecalcuator .time-table th {
+      padding: 20px 35px;
+      background: #051441;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 500; }
+    .timecalcuator .time-table .align-left {
+      text-align: left; }
+    .timecalcuator .time-table td {
+      padding: 17px 35px;
+      text-align: center; }
+    .timecalcuator .time-table .space {
+      padding: 28px 35px;
+      color: #000000;
+      font-size: 20px; }
+    .timecalcuator .time-table .dflex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+    .timecalcuator .time-table tr {
+      padding: 17px 35px;
+      border-bottom: 1px solid #ede9e9; }
+    .timecalcuator .time-table .input-group {
+      border: 0;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center; }
+      .timecalcuator .time-table .input-group span {
+        padding: 0 5px; }
+      .timecalcuator .time-table .input-group .calcfield {
+        width: 41px;
+        border: 1px solid #b8d2f5;
+        border-radius: 4px;
+        height: 46px;
+        text-align: center;
+        font-size: 14px;
+        color: #4a4c55;
+        padding: 0 5px;
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        line-height: 46px;
+        position: relative; }
+        .timecalcuator .time-table .input-group .calcfield:focus {
+          border-color: #624DE3; }
+        .timecalcuator .time-table .input-group .calcfield .select-sec {
+          position: relative;
+          display: none; }
+          .timecalcuator .time-table .input-group .calcfield .select-sec ul {
+            list-style-type: none;
+            background: #fff;
+            box-shadow: 0px 0px 34px rgba(22, 101, 216, 0.09);
+            border-radius: 0px 0px 0px 4px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+            left: -15px;
+            width: 68px;
+            margin: 0;
+            padding: 0;
+            height: 100px;
+            overflow-y: scroll; }
+            .timecalcuator .time-table .input-group .calcfield .select-sec ul li {
+              padding: 5px;
+              color: #373658;
+              font-size: 14px;
+              cursor: pointer;
+              position: relative;
+              font-weight: 500;
+              transition: all 0.3s ease-in-out;
+              text-transform: capitalize;
+              font-family: "Lato"; }
+        .timecalcuator .time-table .input-group .calcfield .open {
+          display: block !important; }
+      .timecalcuator .time-table .input-group .slctfld {
+        width: 64px;
+        -webkit-appearance: none;
+        cursor: pointer;
+        background: url(../images/angle-grey-down.png) no-repeat;
+        background-position: right 10px top 18px;
+        padding: 0 23px 0 4px;
+        color: #4a4c55; }
+  .timecalcuator .tbBtn {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 0;
+    flex-wrap: wrap;
+    align-items: center; }
+    .timecalcuator .tbBtn .allbtn .btn {
+      border: 1px solid #624DE3;
+      color: #624DE3;
+      padding: 10px 22px 9px;
+      margin: 0 12px 10px;
+      font-size: 16px;
+      white-space: nowrap;
+      cursor: pointer;
+      background: #fff; }
+      .timecalcuator .tbBtn .allbtn .btn:hover {
+        background: #624DE3;
+        color: #fff; }
+    .timecalcuator .tbBtn .social-share {
+      display: flex;
+      align-items: center; }
+      .timecalcuator .tbBtn .social-share .share {
+        border-radius: 3px;
+        border: 1px solid rgba(68, 97, 215, 0.2);
+        display: inline-block;
+        padding: 10px 12px;
+        color: #624DE3;
+        font-size: 14px;
+        position: relative;
+        background: #edf0f9;
+        display: flex;
+        align-items: center; }
+        .timecalcuator .tbBtn .social-share .share .sharediv {
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding-left: 44px; }
+          .timecalcuator .tbBtn .social-share .share .sharediv:before {
+            content: "";
+            display: block;
+            background: url(../images/share-icon.svg) top center no-repeat;
+            background-size: 100%;
+            width: 15px;
+            height: 16px;
+            position: absolute;
+            top: auto;
+            left: 0; }
+          .timecalcuator .tbBtn .social-share .share .sharediv:after {
+            content: "";
+            background: rgba(68, 97, 215, 0.2);
+            height: 25px;
+            width: 1px;
+            content: "";
+            position: absolute;
+            top: auto;
+            left: 30px; }
+        .timecalcuator .tbBtn .social-share .share:after {
+          content: "";
+          background: url(../images/plygon-icon.png) top center no-repeat;
+          background-size: 100%;
+          width: 12px;
+          height: 32px;
+          position: absolute;
+          top: 11px;
+          right: -12px; }
+      .timecalcuator .tbBtn .social-share .social-icons {
+        display: flex;
+        margin-left: 15px; }
+        .timecalcuator .tbBtn .social-share .social-icons a {
+          border: 1px solid #624DE3;
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          margin: 0 0 0 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .timecalcuator .tbBtn .social-share .social-icons a i {
+            background: url(../images/social-icons-sprite.png) no-repeat;
+            margin: 0 auto;
+            display: block;
+            width: 20px;
+            height: 20px; }
+            .timecalcuator .tbBtn .social-share .social-icons a i.icon1 {
+              background-position: -8px -38px; }
+            .timecalcuator .tbBtn .social-share .social-icons a i.icon2 {
+              background-position: -5px -142px; }
+            .timecalcuator .tbBtn .social-share .social-icons a i.icon3 {
+              background-position: -6px -72px; }
+            .timecalcuator .tbBtn .social-share .social-icons a i.icon4 {
+              background-position: -7px -5px; }
+            .timecalcuator .tbBtn .social-share .social-icons a i.icon5 {
+              background-position: -7px -106px; }
+          .timecalcuator .tbBtn .social-share .social-icons a:hover {
+            opacity: 0.8;
+            background: #fff; }
 
-.inner-banner {
-  padding: 150px 0; }
-  @media screen and (max-width: 767px) {
-    .inner-banner {
-      padding: 120px 0 0; } }
-  .inner-banner .video-wrap {
-    margin: 30px 0 0; }
-    @media screen and (max-width: 767px) {
-      .inner-banner .video-wrap {
-        margin: 10px 0 0; } }
+input[placeholder],
+[placeholder],
+*[placeholder] {
+  color: #4a4c55; }
 
-.inner-banner-bg {
-  height: 640px; }
-  .inner-banner-bg .bannerwrap {
-    padding: 150px 0; }
+.freetemp {
+  padding: 200px 0 120px;
+  background: #f5f7fa; }
+  .freetemp .top-content {
+    text-align: center; }
+    .freetemp .top-content h1 {
+      margin: 0 0 10px; }
+    .freetemp .top-content .temp-image {
+      margin: 60px 0 0;
+      display: block; }
 
-/*Banner Section*/
-/*Middle section Start*/
-.table-section {
-  background: #fcfbff; }
-  .table-section .table-container {
-    overflow: auto; }
-    .table-section .table-container .track-table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #ffffff;
-      box-shadow: 0px 4px 50px rgba(68, 97, 215, 0.1);
-      border-radius: 15px;
-      overflow: hidden; }
-      .table-section .table-container .track-table th {
-        padding: 25px 15px;
-        font-weight: bold;
-        background-color: #051441;
-        color: #fff;
-        font-weight: 600; }
-        @media screen and (max-width: 767px) {
-          .table-section .table-container .track-table th {
-            padding: 20px 15px; } }
-      .table-section .table-container .track-table tr {
-        padding: 0 30px; }
-        .table-section .table-container .track-table tr .check {
-          display: inline-block;
-          background: url(../images/check-tb.svg) no-repeat center center;
-          width: 21px;
-          height: 16px;
-          background-size: 100%; }
-        @media screen and (max-width: 767px) {
-          .table-section .table-container .track-table tr {
-            padding: 0 20px; } }
-      .table-section .table-container .track-table td {
-        padding: 25px 20px;
-        text-align: center; }
-        @media screen and (max-width: 767px) {
-          .table-section .table-container .track-table td {
-            padding: 15px 10px; } }
-      .table-section .table-container .track-table .td-data {
+.tempRow {
+  padding: 0; }
+  .tempRow .temp-content {
+    padding: 70px 0; }
+    .tempRow .temp-content h2 {
+      border-bottom: 1px solid #333333;
+      padding-bottom: 25px;
+      margin: 0; }
+    .tempRow .temp-content p {
+      margin: 0 0 30px; }
+      .tempRow .temp-content p:last-child {
+        margin: 0; }
+    .tempRow .temp-content h3 {
+      margin: 0 0 30px; }
+    .tempRow .temp-content .timerow {
+      padding: 40px 0;
+      border-bottom: 0.6px solid #e5e5e5; }
+      .tempRow .temp-content .timerow .dwnbtn {
         display: flex;
         align-items: center;
         flex-wrap: wrap; }
-        .table-section .table-container .track-table .td-data i {
-          margin-right: 20px; }
-          @media screen and (max-width: 767px) {
-            .table-section .table-container .track-table .td-data i {
-              margin: 0 10px 10px 0;
-              width: 35px; } }
-      .table-section .table-container .track-table h6, .table-section .table-container .track-table p {
-        font-size: 16px;
-        line-height: 20px;
-        color: #3f4041; }
-        @media screen and (max-width: 767px) {
-          .table-section .table-container .track-table h6, .table-section .table-container .track-table p {
-            font-size: 14px; } }
-      .table-section .table-container .track-table .first {
-        width: 25%;
-        text-align: left;
-        padding-left: 50px;
-        font-weight: bold; }
-        @media screen and (max-width: 767px) {
-          .table-section .table-container .track-table .first {
-            padding-left: 30px; } }
-      .table-section .table-container .track-table svg {
-        width: 22px;
-        height: 16px; }
-      .table-section .table-container .track-table tr:nth-child(even) {
-        background: rgba(245, 247, 250, 0.6); }
-
-/*Step Section Start From Here*/
-.how-step-sec .top-section {
-  margin: 0; }
-.how-step-sec .step-section .step-row {
-  padding: 100px 0 0;
-  align-items: center; }
-  @media screen and (max-width: 767px) {
-    .how-step-sec .step-section .step-row {
-      padding: 50px 0 0; } }
-  .how-step-sec .step-section .step-row .image-col {
-    flex-basis: 45%; }
-    @media screen and (max-width: 575px) {
-      .how-step-sec .step-section .step-row .image-col {
-        flex-basis: 100%;
-        margin: 20px 0; } }
-  .how-step-sec .step-section .step-row .content-col {
-    flex-basis: 48%; }
-    .how-step-sec .step-section .step-row .content-col .top-section {
-      margin: 0;
-      padding: 0;
-      text-align: left; }
-    .how-step-sec .step-section .step-row .content-col p {
-      margin: 20px 0 0; }
-    .how-step-sec .step-section .step-row .content-col ul {
-      padding: 0;
-      margin: 15px 0 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .how-step-sec .step-section .step-row .content-col ul li {
-        color: #5e6373;
-        padding-left: 30px;
-        position: relative;
-        margin: 15px 0 0;
-        flex-basis: 100%; }
-        .how-step-sec .step-section .step-row .content-col ul li:before {
-          content: "";
+        .tempRow .temp-content .timerow .dwnbtn h4 {
+          margin: 0; }
+        .tempRow .temp-content .timerow .dwnbtn a {
+          padding: 11px 20px;
+          color: #624DE3;
+          border: 1px solid #624DE3;
+          margin-left: 20px;
           display: inline-block;
-          background: url(../images/list-icon-small.png) no-repeat;
-          width: 20px;
-          height: 20px;
-          top: 2px;
-          left: 0;
-          position: absolute; }
-    .how-step-sec .step-section .step-row .content-col .read-more {
-      color: #6754E2;
-      display: flex;
-      align-items: center;
-      margin: 30px 0 0;
-      transition: all 0.3s ease-in-out;
-      font-weight: 500;
-      position: relative; }
-      .how-step-sec .step-section .step-row .content-col .read-more:after {
-        content: "";
-        background: url(../menu-images/ind-arrow.svg) no-repeat center;
-        width: 18px;
-        display: inline-block;
-        height: 14px;
-        margin-left: 10px;
-        transition: all 0.3s ease-in-out; }
-      .how-step-sec .step-section .step-row .content-col .read-more:hover:after {
-        margin-left: 14px; }
-    @media screen and (max-width: 575px) {
-      .how-step-sec .step-section .step-row .content-col {
-        flex-basis: 100%; }
-        .how-step-sec .step-section .step-row .content-col ul {
-          margin: 10px 0 0; }
-          .how-step-sec .step-section .step-row .content-col ul li {
-            margin: 10px 0 0; }
-        .how-step-sec .step-section .step-row .content-col .read-more {
-          margin: 20px 0 0; } }
-  .how-step-sec .step-section .step-row:nth-child(2n) {
-    flex-direction: row-reverse; }
-    .how-step-sec .step-section .step-row:nth-child(2n) ul li {
-      flex-basis: 100%; }
-    @media screen and (max-width: 575px) {
-      .how-step-sec .step-section .step-row:nth-child(2n) {
-        flex-direction: inherit; } }
-.how-step-sec.padd-reduc {
-  padding-top: 0; }
-  .how-step-sec.padd-reduc .step-section .step-row:first-child {
-    padding-top: 50px; }
+          min-width: 85px;
+          text-align: center; }
+          .tempRow .temp-content .timerow .dwnbtn a:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+      .tempRow .temp-content .timerow:last-child {
+        padding-bottom: 0;
+        border-bottom: 0; }
+    .tempRow .temp-content .timerow2 {
+      border-bottom: 0;
+      padding: 40px 0 0; }
+    .tempRow .temp-content .timerow3 {
+      border-bottom: 0;
+      padding: 40px 0 0; }
+      .tempRow .temp-content .timerow3 ul {
+        padding: 0;
+        margin: 0; }
+        .tempRow .temp-content .timerow3 ul li {
+          color: #5e6373;
+          margin: 0 0 15px;
+          padding-left: 20px;
+          position: relative; }
+          .tempRow .temp-content .timerow3 ul li:before {
+            width: 10px;
+            height: 10px;
+            background: #624DE3;
+            border-radius: 100%;
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0; }
+    .tempRow .temp-content:nth-child(2n) {
+      background: #f5f7fa; }
 
-.se-benifit {
-  padding: 120px 0;
-  background: #fcfbff; }
-  .se-benifit .column-three {
-    background: #FFFFFF; }
-
-/*Step Section Start From Here*/
-@media screen and (max-width: 1379px) {
-  .faqsRow {
-    padding-bottom: 80px; } }
-@media screen and (max-width: 767px) {
-  .mt0 {
-    padding-top: 20px; } }
-/*Middle section End*/
 @media (max-width: 1440px) {
-  .se-benifit {
-    padding: 80px 0; } }
-@media (max-width: 979px) {
-  .se-benifit {
-    padding: 50px 0; } }
-@media (max-width: 767px) {
-  .benifits-section .column-three {
-    padding: 20px;
-    text-align: left; }
+  .timecalcuator,
+  .freetemp {
+    padding: 120px 0 80px; } }
+@media (max-width: 1180px) {
+  .timecalcuator .form-wrapper .form-group {
+    width: 45%; }
+  .timecalcuator .form-wrapper .frm-input input {
+    width: 75%; } }
+@media (max-width: 1140px) {
+  .timecalcuator .time-table th,
+  .timecalcuator .time-table,
+  .timecalcuator .time-table .space {
+    font-size: 18px; }
 
-  .inner-banner-bg {
-    height: 640px; }
-    .inner-banner-bg .bannerwrap {
-      padding: 150px 0; }
-      .inner-banner-bg .bannerwrap .inner-wrap .actionBtn {
-        justify-content: center;
-        margin: 30px 0 0; } }
+  .tempRow .temp-content p {
+    margin: 0 0 15px; }
+
+  .tempRow .temp-content h2 {
+    padding-bottom: 20px; }
+
+  .tempRow .temp-content .timerow {
+    padding: 30px 0; }
+
+  .tempRow .temp-content h3 {
+    margin: 0 0 15px; }
+
+  .tempRow .temp-content {
+    padding: 40px 0; }
+
+  .freetemp .top-content .temp-image {
+    margin: 20px 0 0; } }
+@media (max-width: 979px) {
+  .timecalcuator,
+  .freetemp {
+    padding: 120px 0 60px; }
+
+  .timecalcuator .time-table,
+  .timecalcuator .tbBtn {
+    margin: 20px 0 0; } }
+@media (max-width: 767px) {
+  .timecalcuator .time-table th,
+  .timecalcuator .time-table,
+  .timecalcuator .time-table .space {
+    font-size: 16px; }
+
+  .timecalcuator .time-table th {
+    padding: 15px 20px; }
+
+  .timecalcuator .time-table td {
+    padding: 12px 20px; }
+
+  .timecalcuator .time-table .space {
+    padding: 20px 15px; }
+
+  .timecalcuator .form-wrapper .form-group {
+    width: 45%; }
+  .timecalcuator .frm-input input {
+    width: 76%; }
+  .timecalcuator .tbBtn .allbtn {
+    flex-basis: 100%; }
+    .timecalcuator .tbBtn .allbtn .btn {
+      padding: 10px 15px 9px;
+      margin: 0 3px 10px;
+      font-size: 14px; }
+  .timecalcuator .tbBtn .social-share {
+    margin: 20px 0 0;
+    flex-basis: 100%; }
+    .timecalcuator .tbBtn .social-share .share {
+      padding: 10px 10px;
+      color: #624DE3;
+      font-size: 13px; }
+      .timecalcuator .tbBtn .social-share .share .sharediv {
+        padding-left: 38px; }
+        .timecalcuator .tbBtn .social-share .share .sharediv:after {
+          content: "";
+          left: 28px; }
+    .timecalcuator .tbBtn .social-share .social-icons {
+      margin-left: 12px; }
+      .timecalcuator .tbBtn .social-share .social-icons a {
+        margin: 0 0 0 5px; }
+  .timecalcuator .form-wrapper .frm-input {
+    margin: 30px 0 0;
+    column-gap: 0; }
+    .timecalcuator .form-wrapper .frm-input .form-group {
+      width: 100%;
+      margin: 0 0 20px; }
+    .timecalcuator .form-wrapper .frm-input label {
+      margin-right: 10px; }
+    .timecalcuator .form-wrapper .frm-input input {
+      height: 45px;
+      width: 80%; }
+  .timecalcuator .form-wrapper .error {
+    width: 64%; } }
+@media (max-width: 497px) {
+  input:focus {
+    font-size: 14px !important; } }
+@media print {
+  .timecalcuator {
+    padding: 100px 0; }
+
+  h1 {
+    font-size: 35px;
+    line-height: 45px; }
+
+  .feature-header,
+  .site__footer,
+  .userguide,
+  .faqsRow,
+  .useful-resources-blog-section,
+  .journey-bg,
+  .timecalcuator .tbBtn {
+    display: none; }
+
+  .container {
+    max-width: 100%;
+    padding: 0; }
+
+  .timecalcuator .time-table td,
+  .timecalcuator .time-table tr {
+    padding: 15 10px; }
+
+  .timecalcuator .time-table th {
+    padding: 17px 10px; }
+
+  .timecalcuator .time-table {
+    font-size: 14px; }
+
+  .timecalcuator .time-table th {
+    font-size: 15px; }
+
+  .timecalcuator .time-table .input-group .calcfield {
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+
+  .timecalcuator .time-table .input-group .slctfld {
+    width: 35px;
+    padding: 0 5px;
+    background: none; }
+
+  .timecalcuator .time-table .space {
+    font-size: 16px; }
+
+  .timecalcuator .time-table .input-group span {
+    padding: 0 3px; } }

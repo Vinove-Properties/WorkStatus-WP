@@ -406,6 +406,11 @@ h3 a {
           margin: 20px 0 0;
           align-items: flex-start;
           justify-content: start; } }
+    @media screen and (max-width: 768px) {
+      .site__footer .flex_row .fcol7 {
+        width: calc(40% - 15px);
+        vertical-align: top;
+        margin: 20px 0 0; } }
   .site__footer .footer-sec .footer-top {
     padding: 20px 0;
     background: #201f3a;
