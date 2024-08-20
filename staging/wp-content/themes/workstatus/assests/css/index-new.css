@@ -2882,17 +2882,19 @@ h3 a {
   background-position: -53px 0; }
 
 @media (max-width: 36em) {
-  .glider::-webkit-scrollbar {
-    opacity: 1;
-    -webkit-appearance: none;
-    width: 7px;
-    height: 3px; }
-  .glider::-webkit-scrollbar-thumb {
-    opacity: 1;
-    border-radius: 99px;
-    background-color: rgba(156, 156, 156, 0.25);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
-    box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
+  .glider {
+    overflow-x: scroll !important; }
+    .glider::-webkit-scrollbar {
+      opacity: 1;
+      -webkit-appearance: none;
+      width: 7px;
+      height: 3px; }
+    .glider::-webkit-scrollbar-thumb {
+      opacity: 1;
+      border-radius: 99px;
+      background-color: rgba(156, 156, 156, 0.25);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
 /*section-numbers Start From Here*/
 .section-numbers {
   padding-top: 0; }
@@ -9411,12 +9413,10 @@ h3 a {
       .section-numbers .number-row .number-col p {
         margin: 0 0 15px; }
 
-  .all-partners {
-    padding-top: 0; }
-    .all-partners .part-row {
-      grid-template-columns: repeat(4, 1fr); }
-      .all-partners .part-row .part-col {
-        padding: 15px 20px; }
+  .all-partners .part-row {
+    grid-template-columns: repeat(4, 1fr); }
+    .all-partners .part-row .part-col {
+      padding: 15px 20px; }
 
   .banner-section .home-section .videoSc {
     top: -60px; }
