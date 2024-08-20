@@ -23,8 +23,6 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
           <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free timesheet templates</a></li>          
         </ul>
-      </div>
-      <div  class="column fcol3">
         <h6>Platforms</h6>
         <ul>
           <li><a href="<?php echo site_url(); ?>/apps/mac">Mac</a></li>
@@ -47,7 +45,20 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
-      <div  class="column fcol5">
+      <div  class="column fcol7">        
+        <ul style="margin-top:40px;">
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Interguard vs Teramind</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Clockify vs Hubstaff</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Insightful vs Hubstaff</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs DeskTime vs ActivTrak</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Timedoctor vs Insightful</a></li>
+          <li><a href="<?php echo site_url(); ?>">Workstatus vs Timedoctor vs Activtrak</a></li>          
+        </ul>
+      </div>
+      <!-- <div  class="column fcol5"></div> -->
+
+      <div  class="column fcol6">
         <h6>Support</h6>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
@@ -56,8 +67,6 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
           <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
-      </div>
-      <div  class="column fcol6">
         <div class="footer-logo">
           <a href="<?php echo site_url(); ?>/" title="Workstatus">
             <picture>
