@@ -448,8 +448,10 @@ function generateUtmLink(baseUrl, utmParams) {
 var formPopup   = document.getElementById('formPopup');
 var formbtn     = document.getElementById("myBtn2");
 var spanClose   = document.getElementsByClassName("closeicon")[0];
-function call_demows( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+function call_demows( 
+    cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
+    //window.location.href = generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams );
+    window.open( generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams ), '_blank' );
     
     /*
     var refUrl  = document.body.getAttribute('data-url');
