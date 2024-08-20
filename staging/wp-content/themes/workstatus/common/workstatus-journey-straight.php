@@ -5,7 +5,7 @@
       <div class="jour-col">
         <div class="top-section">
           <h6><span class="bg-white">Don’t Wait</span></h6>
-          <h2>Start your Workstatus journey today!</h2>
+          <h2>Start your Workstatus journey<br> today!</h2>
           <p>Get detailed and clean activity reports of your team.</p>
         </div>
         <div class="actionBtn">
