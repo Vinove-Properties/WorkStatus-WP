@@ -2141,7 +2141,33 @@ h3 a {
     display: none; }
 
   .site_nav .login a:after {
-    background: url(../images/button-arwhover.png) no-repeat; } }
+    background: url(../images/button-arwhover.png) no-repeat; }
+
+  .site-header.shady .login {
+    margin: 20px 0 0;
+    padding: 0 20px; }
+    .site-header.shady .login a {
+      padding: 12px 20px;
+      background: #624de3;
+      border-color: #624de3; }
+      .site-header.shady .login a.bg-none {
+        background: #624de3;
+        border-color: #624de3;
+        padding: 12px 20px; }
+        .site-header.shady .login a.bg-none:hover {
+          background: #051441;
+          color: #fff;
+          border-color: #051441;
+          opacity: 1; }
+      .site-header.shady .login a.for-free {
+        background: #624de3; }
+        .site-header.shady .login a.for-free:after {
+          width: 14px;
+          height: 13px;
+          background-size: 100%; }
+      .site-header.shady .login a:hover {
+        background: #051441;
+        color: #fff; } }
 @media (max-width: 979px) {
   .site_nav .mega-menu .mega-menu-box li {
     width: 100%;
