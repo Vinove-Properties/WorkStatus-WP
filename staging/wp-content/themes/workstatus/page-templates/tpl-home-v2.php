@@ -64,7 +64,7 @@ if( $isEnable == "yes" ){
     </div>
     <div class="column videoSc" id="has-yt-video">
       <div class="inner">
-        <button id="myBtn">Open Modal  <div class="playsc"><span class="playicon"></span></div></button>
+        <div id="myBtn">Open Modal  <div class="playsc"><span class="playicon"></span></div></div>
         <div class="topVideo srp-1">
           <div id="myDIV" class="contbox2">
             <div class="videoWrapper js-videoWrapper">
@@ -239,7 +239,7 @@ endif; ?>
           </div>
           <span class="devide">OR</span>
           <div>
-            <a href="javascript:void(0)" class="ctbtn nobg" href="#contactus" onclick="call_demows();" target="_self">Book A Demo</a>
+            <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
           </div>
         </div>
         <?php endif; ?>
@@ -339,7 +339,7 @@ endif; ?>
           </div>
           <span class="devide">OR</span>
           <div>
-            <a href="javascript:void(0)" class="ctbtn nobg" href="#contactus" onclick="call_demows();" target="_self">Book A Demo</a>
+            <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
           </div>
         </div>
         <?php endif; ?>
