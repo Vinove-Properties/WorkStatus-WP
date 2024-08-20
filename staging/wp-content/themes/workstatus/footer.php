@@ -54,7 +54,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
           <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
           <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/timedoctor-vs-activtrak-vs-workstatus'); ?>">Timedoctor vs Activtrak</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
       <!-- <div  class="column fcol5"></div> -->
