@@ -33,7 +33,7 @@ global $ws_ctas, $RegLink, $LogLink;
         </ul>
       </div>
       <div  class="column fcol4">
-        <h6>Compare</h6>
+        <h6>Alternatives</h6>
         <ul>          
           <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
@@ -45,15 +45,16 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
-      <div  class="column fcol7">        
-        <ul style="margin-top:40px;">
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Interguard vs Teramind</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Clockify vs Hubstaff</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Insightful vs Hubstaff</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs DeskTime vs ActivTrak</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Clockify vs MoniTask</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Timedoctor vs Insightful</a></li>
-          <li><a href="<?php echo site_url(); ?>">Workstatus vs Timedoctor vs Activtrak</a></li>          
+      <div  class="column fcol7">
+        <h6>Workstatus Comparison</h6>
+        <ul>
+          <li><a href="<?php echo site_url('/'); ?>">Interguard vs Teramind</a></li>
+          <li><a href="<?php echo site_url(); ?>">Clockify vs Hubstaff</a></li>
+          <li><a href="<?php echo site_url(); ?>">Insightful vs Hubstaff</a></li>
+          <li><a href="<?php echo site_url(); ?>">DeskTime vs ActivTrak</a></li>
+          <li><a href="<?php echo site_url(); ?>">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url(); ?>">Timedoctor vs Insightful</a></li>
+          <li><a href="<?php echo site_url(); ?>">Timedoctor vs Activtrak</a></li>          
         </ul>
       </div>
       <!-- <div  class="column fcol5"></div> -->
