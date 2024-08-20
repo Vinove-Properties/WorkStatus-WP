@@ -139,7 +139,7 @@ var gliderOne = document.getElementsByClassName("glider");
 if( gliderOne.length > 0 ){
     gliderOne &&
     window.addEventListener("load", function () {
-        new Glider(document.querySelector(".glider"), { slidesToShow: 1, dots: ".dots", draggable: 1, itemWidth: 100, duration: 1, arrows: { prev: ".glider-prev", next: ".glider-next" } });
+        new Glider(document.querySelector(".glider"), { slidesToShow: 1, dots: ".dots", draggable: true, itemWidth: 100, duration: 1, arrows: { prev: ".glider-prev", next: ".glider-next" } });
     });    
 }
 
