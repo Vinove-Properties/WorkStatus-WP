@@ -116,7 +116,7 @@
     background: #6754E2;
   }
   @media (max-width: 36em) {
-    .glider{overflow:scroll !important}
+    .glider{overflow:scroll !important;}
     .glider::-webkit-scrollbar {
       opacity: 1;
       -webkit-appearance: none;
