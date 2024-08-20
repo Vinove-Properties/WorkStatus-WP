@@ -7814,7 +7814,8 @@ h3 a {
           .site_nav .login a.bg-none:hover {
             background: #051441;
             color: #fff;
-            border-color: #051441; }
+            border-color: #051441;
+            opacity: 1; }
         .site_nav .login a.for-free {
           background: #624de3; }
           .site_nav .login a.for-free:after {
