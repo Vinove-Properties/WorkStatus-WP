@@ -325,7 +325,6 @@
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
                             height="20" alt="Menu Icon">Task Management
                           </a>
-                          
                           <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon22.svg" width="20" height="20" alt="Menu Icon">Project Budgeting
                           </a>
@@ -349,7 +348,6 @@
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon27.svg" width="20"
                             height="20" alt="Menu Icon">Epics
                           </a>
-                          
                           <a href="<?php echo site_url(); ?>/project-management/gantt-charts">
                           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20" height="20" alt="Menu Icon">Gantt Chart
                           </a>
@@ -475,199 +473,188 @@
                   </div>
                 </div>
               </li>
-
-
               <li id="industryitem" class="dropdown how-works">
                 <a href="<?php echo site_url(); ?>/industry">Industries</a><span class="trigger" onclick="showindustryItem();"></span>
                 <div class="full-menu">
                   <div class="container">
                     <div class="menu-small indmenu">
-                    <h3><a href="<?php echo site_url(); ?>/industry">Industries</a></h3>
+                      <h3><a href="<?php echo site_url(); ?>/industry">Industries</a></h3>
                       <div class="flex_row">
-                          <div class="menu-lside">
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/industry/technology-companies">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-01.svg" width="20"
-                                  height="20" alt="Menu Icon">IT Companies</a>
-                                
-                                <a href="<?php echo site_url(); ?>/industry/digital-agencies ">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-02.svg" width="20"
-                                  height="20" alt="Menu Icon">Digital Agencies</a>
-                                <a href="<?php echo site_url(); ?>/industry/staffing">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-03.svg" width="20"
-                                  height="20" alt="Menu Icon">Staffing & Recuriting</a>  
-                                <a href="<?php echo site_url(); ?>/industry/bpo">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-04.svg" width="20"
-                                  height="20" alt="Menu Icon">BPO & KPO
-                                </a>
-                                <a href="<?php echo site_url(); ?>/industry/contact-centers">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-05.svg" width="20"
-                                  height="20" alt="Menu Icon">CX & Contact Center
-                                </a>
-                              </div>
-                              <a href="<?php echo site_url(); ?>/industry" class="view-more desktop">View More</a>
-
+                        <div class="menu-lside">
+                          <div class="col-menu">
+                            <div class="menu-box">
+                              <a href="<?php echo site_url(); ?>/industry/technology-companies">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-01.svg" width="20"
+                                height="20" alt="Menu Icon">IT Companies</a>
+                              <a href="<?php echo site_url(); ?>/industry/digital-agencies ">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-02.svg" width="20"
+                                height="20" alt="Menu Icon">Digital Agencies</a>
+                              <a href="<?php echo site_url(); ?>/industry/staffing">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-03.svg" width="20"
+                                height="20" alt="Menu Icon">Staffing & Recuriting</a>  
+                              <a href="<?php echo site_url(); ?>/industry/bpo">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-04.svg" width="20"
+                                height="20" alt="Menu Icon">BPO & KPO
+                              </a>
+                              <a href="<?php echo site_url(); ?>/industry/contact-centers">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-05.svg" width="20"
+                                height="20" alt="Menu Icon">CX & Contact Center
+                              </a>
                             </div>
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/industry/real-estate">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-06.svg" width="20"
-                                  height="20" alt="Menu Icon">Real Estate</a>
-                                
-                                <a href="<?php echo site_url(); ?>/industry/accounting ">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-07.svg" width="20"
-                                  height="20" alt="Menu Icon">Accounting</a>
-                                <a href="<?php echo site_url(); ?>/industry/architects-and-interior-designers">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-08.svg" width="20"
-                                  height="20" alt="Menu Icon">Interior Designers</a>  
-                                <a href="<?php echo site_url(); ?>/industry/healthcare">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-09.svg" width="20"
-                                  height="20" alt="Menu Icon">Healthcare
-                                </a>
-                                <a href="<?php echo site_url(); ?>/industry/attorney">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-10.svg" width="20"
-                                  height="20" alt="Menu Icon">Legal
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/industry/consulting-firms">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-11.svg" width="20"
-                                  height="20" alt="Menu Icon">Consulting Firms</a>
-                                
-                                <a href="<?php echo site_url(); ?>/industry/landscaping">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-12.svg" width="20"
-                                  height="20" alt="Menu Icon">Landscaping</a>
-                                <a href="<?php echo site_url(); ?>/industry/construction">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-13.svg" width="20"
-                                  height="20" alt="Menu Icon">Construction</a>  
-                                <a href="<?php echo site_url(); ?>/industry/e-commerce">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-14.svg" width="20"
-                                  height="20" alt="Menu Icon">eCommerce
-                                </a>
-                                <a href="<?php echo site_url(); ?>/industry/time-tracking-app-for-janitorial-services">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-15.svg" width="20"
-                                  height="20" alt="Menu Icon">Janitorial
-                                </a>
-                              </div>
-                            </div>
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/industry/manufacturing">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-16.svg" width="20"
-                                  height="20" alt="Menu Icon">Manufacturing</a> 
-                                
-                                <a href="<?php echo site_url(); ?>/industry/startups">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-17.svg" width="20"
-                                  height="20" alt="Menu Icon">Startups</a>
-                                <a href="<?php echo site_url(); ?>/industry/sme">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-18.svg" width="20"
-                                  height="20" alt="Menu Icon">SME</a>  
-                                <a href="<?php echo site_url(); ?>/industry/educational-institutions">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-19.svg" width="20"
-                                  height="20" alt="Menu Icon">Educational Institutes
-                                </a>
-                                <a href="<?php echo site_url(); ?>/industry/government">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-20.svg" width="20"
-                                  height="20" alt="Menu Icon">Government
-                                </a>
-                              </div>
-                              <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
-
+                            <a href="<?php echo site_url(); ?>/industry" class="view-more desktop">View More</a>
+                          </div>
+                          <div class="col-menu">
+                            <div class="menu-box">
+                              <a href="<?php echo site_url(); ?>/industry/real-estate">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-06.svg" width="20"
+                                height="20" alt="Menu Icon">Real Estate</a>
+                              <a href="<?php echo site_url(); ?>/industry/accounting ">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-07.svg" width="20"
+                                height="20" alt="Menu Icon">Accounting</a>
+                              <a href="<?php echo site_url(); ?>/industry/architects-and-interior-designers">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-08.svg" width="20"
+                                height="20" alt="Menu Icon">Interior Designers</a>  
+                              <a href="<?php echo site_url(); ?>/industry/healthcare">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-09.svg" width="20"
+                                height="20" alt="Menu Icon">Healthcare
+                              </a>
+                              <a href="<?php echo site_url(); ?>/industry/attorney">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-10.svg" width="20"
+                                height="20" alt="Menu Icon">Legal
+                              </a>
                             </div>
                           </div>
-                      
-                        
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-
-              <li id="apps" class="dropdown">
-                <a href="<?php echo site_url(); ?>/apps" onclick="showAppsItem();">Apps</a><span class="trigger" onclick="showAppsItem();"></span>
-                <div class="full-menu">
-                  <div class="container">
-                    <div class="flex_row">
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/apps">Desktop</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/apps/mac">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon03.svg" width="20"
-                            height="20" alt="Menu Icon">Mac
-                          </a>
-                          <a href="<?php echo site_url(); ?>/apps/windows">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon04.svg" width="20"
-                            height="20" alt="Menu Icon">Windows
-                          </a>
-                          <a href="<?php echo site_url(); ?>/apps/linux">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon05.svg" width="20"
-                            height="20" alt="Menu Icon">Linux
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/apps">Mobile</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/apps/iphone">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon06.svg" width="20"
-                            height="20" alt="Menu Icon">iOS
-                          </a>
-                          <a href="<?php echo site_url(); ?>/apps/android">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon07.svg" width="20"
-                            height="20" alt="Menu Icon">Android
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3>Web</h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/browser-extension">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon01.svg" width="20"
-                            height="20" alt="Menu Icon">Browser Extension
-                          </a>
-                          <a href="<?php echo site_url(); ?>/chromebook-devices">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon02.svg" width="20"
-                            height="20" alt="Menu Icon">Chromebook
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/integrations">Integrations</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/integrations/zoho">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon08.svg" width="20"
-                            height="20" alt="Menu Icon">Zoho
-                          </a>
-                          <a href="<?php echo site_url(); ?>/integrations/trello">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon09.svg" width="20"
-                            height="20" alt="Menu Icon">Trello
-                          </a>
-                          <a href="<?php echo site_url(); ?>/integrations/aws">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon10.svg" width="20"
-                            height="20" alt="Menu Icon">AWS
-                          </a>
-                          <a href="<?php echo site_url(); ?>/integrations/smtp">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon11.svg" width="20"
-                            height="20" alt="Menu Icon">SMTP
-                          </a>
+                          <div class="col-menu">
+                            <div class="menu-box">
+                              <a href="<?php echo site_url(); ?>/industry/consulting-firms">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-11.svg" width="20"
+                                height="20" alt="Menu Icon">Consulting Firms</a>
+                              <a href="<?php echo site_url(); ?>/industry/landscaping">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-12.svg" width="20"
+                                height="20" alt="Menu Icon">Landscaping</a>
+                              <a href="<?php echo site_url(); ?>/industry/construction">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-13.svg" width="20"
+                                height="20" alt="Menu Icon">Construction</a>  
+                              <a href="<?php echo site_url(); ?>/industry/e-commerce">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-14.svg" width="20"
+                                height="20" alt="Menu Icon">eCommerce
+                              </a>
+                              <a href="<?php echo site_url(); ?>/industry/time-tracking-app-for-janitorial-services">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-15.svg" width="20"
+                                height="20" alt="Menu Icon">Janitorial
+                              </a>
+                            </div>
+                          </div>
+                          <div class="col-menu">
+                            <div class="menu-box">
+                              <a href="<?php echo site_url(); ?>/industry/manufacturing">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-16.svg" width="20"
+                                height="20" alt="Menu Icon">Manufacturing</a> 
+                              <a href="<?php echo site_url(); ?>/industry/startups">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-17.svg" width="20"
+                                height="20" alt="Menu Icon">Startups</a>
+                              <a href="<?php echo site_url(); ?>/industry/sme">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-18.svg" width="20"
+                                height="20" alt="Menu Icon">SME</a>  
+                              <a href="<?php echo site_url(); ?>/industry/educational-institutions">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-19.svg" width="20"
+                                height="20" alt="Menu Icon">Educational Institutes
+                              </a>
+                              <a href="<?php echo site_url(); ?>/industry/government">
+                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-20.svg" width="20"
+                                height="20" alt="Menu Icon">Government
+                              </a>
+                            </div>
+                            <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </li>
+              <!--
+                <li id="apps" class="dropdown">
+                  <a href="<?php echo site_url(); ?>/apps" onclick="showAppsItem();">Apps</a><span class="trigger" onclick="showAppsItem();"></span>
+                  <div class="full-menu">
+                    <div class="container">
+                      <div class="flex_row">
+                        <div class="col-menu">
+                          <h3><a href="<?php echo site_url(); ?>/apps">Desktop</a></h3>
+                          <div class="menu-box">
+                            <a href="<?php echo site_url(); ?>/apps/mac">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon03.svg" width="20"
+                              height="20" alt="Menu Icon">Mac
+                            </a>
+                            <a href="<?php echo site_url(); ?>/apps/windows">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon04.svg" width="20"
+                              height="20" alt="Menu Icon">Windows
+                            </a>
+                            <a href="<?php echo site_url(); ?>/apps/linux">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon05.svg" width="20"
+                              height="20" alt="Menu Icon">Linux
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-menu">
+                          <h3><a href="<?php echo site_url(); ?>/apps">Mobile</a></h3>
+                          <div class="menu-box">
+                            <a href="<?php echo site_url(); ?>/apps/iphone">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon06.svg" width="20"
+                              height="20" alt="Menu Icon">iOS
+                            </a>
+                            <a href="<?php echo site_url(); ?>/apps/android">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon07.svg" width="20"
+                              height="20" alt="Menu Icon">Android
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-menu">
+                          <h3>Web</h3>
+                          <div class="menu-box">
+                            <a href="<?php echo site_url(); ?>/browser-extension">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon01.svg" width="20"
+                              height="20" alt="Menu Icon">Browser Extension
+                            </a>
+                            <a href="<?php echo site_url(); ?>/chromebook-devices">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon02.svg" width="20"
+                              height="20" alt="Menu Icon">Chromebook
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-menu">
+                          <h3><a href="<?php echo site_url(); ?>/integrations">Integrations</a></h3>
+                          <div class="menu-box">
+                            <a href="<?php echo site_url(); ?>/integrations/zoho">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon08.svg" width="20"
+                              height="20" alt="Menu Icon">Zoho
+                            </a>
+                            <a href="<?php echo site_url(); ?>/integrations/trello">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon09.svg" width="20"
+                              height="20" alt="Menu Icon">Trello
+                            </a>
+                            <a href="<?php echo site_url(); ?>/integrations/aws">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon10.svg" width="20"
+                              height="20" alt="Menu Icon">AWS
+                            </a>
+                            <a href="<?php echo site_url(); ?>/integrations/smtp">
+                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon11.svg" width="20"
+                              height="20" alt="Menu Icon">SMTP
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>-->
               <li><a href="<?php echo site_url(); ?>/pricing">Pricing</a></li>
-              <li><a href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>"><i></i>Sign-In</a></li>
+              <li><a href="javascript:void(0)" onclick="call_demows();">Demo</a></li>
             </ul>
-            <?php  
-              if( geoCTAcheck() === true ){
-               echo '<div class="login"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">'.$ws_ctas['cta_text'].'</a></div>';
-              }  
-              ?>        
+            <div class="login">
+              <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
+              <a  href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a>
+              <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="for-free" onclick="return get_ws_signupform(this);">Try for free</a>
+            </div>
           </nav>
         </div>
       </div>

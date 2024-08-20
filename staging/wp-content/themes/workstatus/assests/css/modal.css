@@ -6388,7 +6388,9 @@ h3 a {
 
 .site_nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: calc(100% - 300px);
+  justify-content: space-between; }
   .site_nav h3 {
     font-size: 14px;
     font-weight: 500;
@@ -6434,7 +6436,7 @@ h3 a {
     align-items: center;
     justify-content: flex-end; }
     .site_nav > ul > li {
-      padding: 15px 20px; }
+      padding: 15px 15px; }
       .site_nav > ul > li:first-child {
         padding-left: 0; }
       .site_nav > ul > li > a {
@@ -6457,42 +6459,47 @@ h3 a {
         background-color: transparent; }
   .site_nav .login {
     padding: 0;
-    margin-left: 20px; }
+    margin-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center; }
     .site_nav .login a {
       background: #fff;
-      color: #171227 !important;
+      color: #171227;
       border-radius: 30px;
-      display: flex;
-      align-items: center;
-      padding: 13px 30px;
+      padding: 15px 25px;
       line-height: 1;
-      height: 50px;
       font-size: 16px;
-      border: 1px solid transparent; }
-      .site_nav .login a:after {
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        background-size: 24px !important;
-        vertical-align: middle;
-        background: url(../images/button-arw.png) no-repeat; }
-      .site_nav .login a i {
-        background: url("../images/icon-login.png") no-repeat;
-        background-position: 0 -39px;
-        width: 14px;
-        height: 18px;
-        margin-right: 5px; }
+      border: 1px solid #FFFFFF;
+      font-weight: 600;
+      cursor: pointer; }
+      .site_nav .login a.bg-none {
+        background: transparent;
+        border-color: transparent;
+        font-weight: 400;
+        color: #FFFFFF;
+        padding: 15px 10px; }
+        .site_nav .login a.bg-none:hover {
+          background: transparent;
+          border-color: transparent;
+          opacity: 0.8; }
+      .site_nav .login a.for-free {
+        height: initial;
+        background: transparent;
+        color: #FFFFFF;
+        font-weight: 400; }
+        .site_nav .login a.for-free:after {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 17px;
+          margin-left: 7px;
+          vertical-align: middle;
+          background: url(../menu-images/menu-arrow.svg) no-repeat; }
       .site_nav .login a:hover {
         background: #051441;
-        color: #fff !important; }
-        .site_nav .login a:hover:after {
-          background: url(../images/button-arwhover.png) no-repeat; }
-        .site_nav .login a:hover i {
-          background: url("../images/login-icon.png") no-repeat;
-          width: 14px;
-          height: 14px; }
+        border-color: #051441;
+        color: #fff; }
   .site_nav .dropdown > a {
     position: relative;
     padding-right: 13px; }
@@ -6659,28 +6666,34 @@ h3 a {
   z-index: 1;
   cursor: pointer; }
 
-.site__header.shady .login {
-  background: #fff; }
-  .site__header.shady .login i {
-    background: url("../images/login-icon.png") no-repeat;
-    width: 14px;
-    height: 14px; }
-  .site__header.shady .login a {
-    color: #fff !important;
-    display: flex;
-    align-items: center;
-    background: #624de3; }
-    .site__header.shady .login a:after {
-      content: "";
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      margin-left: 10px;
-      background-size: 24px !important;
-      vertical-align: middle;
-      background: url(../images/button-arwhover.png) no-repeat; }
-  .site__header.shady .login:hover a {
-    background: #051441; }
+.site__header.shady .login a {
+  background: #624de3;
+  color: #fff;
+  border: 1px solid #624de3; }
+  .site__header.shady .login a:hover {
+    background: #171227;
+    border-color: #171227; }
+  .site__header.shady .login a.bg-none {
+    background: transparent;
+    border-color: transparent;
+    color: #333333; }
+    .site__header.shady .login a.bg-none:hover {
+      background: transparent;
+      border: transparent;
+      color: #171227;
+      opacity: 0.8; }
+  .site__header.shady .login a.for-free {
+    color: #624de3;
+    border-color: #624de3;
+    background: transparent; }
+    .site__header.shady .login a.for-free:after {
+      background: url(../menu-images/purple-arrow.svg) no-repeat; }
+  .site__header.shady .login a:hover {
+    background: #171227;
+    border-color: #171227;
+    color: #fff; }
+    .site__header.shady .login a:hover:after {
+      background: url(../menu-images/menu-arrow.svg) no-repeat; }
 
 .feature-header .logo {
   display: none;
@@ -6948,8 +6961,8 @@ h3 a {
   top: 115%; }
 
 @media (max-width: 1440px) {
-  .site_nav .login a {
-    height: 45px; }
+  .site_nav {
+    width: calc(100% - 250px); }
 
   .logo-white img {
     width: 190px; }
@@ -6989,6 +7002,9 @@ h3 a {
   .feature-header .nav_btn span {
     color: #fff !important; }
 
+  .site_nav {
+    width: calc(100% - 215px); }
+
   .site_nav .dropdown > ul li a {
     color: #333;
     opacity: 1 !important; }
@@ -7025,7 +7041,14 @@ h3 a {
     width: 100%; }
 
   .site_nav .dropdown-2 ul {
-    min-width: 100%; } }
+    min-width: 100%; }
+
+  .site_nav > ul > li > a {
+    font-size: 14px; }
+
+  .site_nav .login a {
+    font-size: 14px;
+    padding: 12px 15px; } }
 @media screen and (max-width: 1023px) {
   .site__header .top_nav {
     justify-content: space-between; }
@@ -7065,9 +7088,29 @@ h3 a {
           text-align: left;
           font-size: 17px; }
     .site_nav .login {
-      padding: 0 20px;
-      margin: 20px 0 0 !important;
-      background-position: 20px 20px; }
+      margin: 20px 0 0;
+      padding: 0 20px; }
+      .site_nav .login a {
+        padding: 12px 20px;
+        background: #624de3;
+        border-color: #624de3; }
+        .site_nav .login a.bg-none {
+          background: #624de3;
+          border-color: #624de3;
+          padding: 12px 20px; }
+          .site_nav .login a.bg-none:hover {
+            background: #051441;
+            color: #fff;
+            border-color: #051441; }
+        .site_nav .login a.for-free {
+          background: #624de3; }
+          .site_nav .login a.for-free:after {
+            width: 14px;
+            height: 13px;
+            background-size: 100%; }
+        .site_nav .login a:hover {
+          background: #051441;
+          color: #fff; }
     .site_nav .btn a {
       background: transparent;
       border: 0;
