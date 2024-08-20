@@ -48,13 +48,13 @@ global $ws_ctas, $RegLink, $LogLink;
       <div  class="column fcol7">
         <h6>Workstatus Comparison</h6>
         <ul>
-          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Interguard vs Teramind</a></li>
-          <li><a href="<?php echo site_url('/clockify-vs-hubstaff-vs-workstatus'); ?>">Clockify vs Hubstaff</a></li>
-          <li><a href="<?php echo site_url('/insightful-vs-hubstaff-vs-workstatus'); ?>">Insightful vs Hubstaff</a></li>
+          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
           <li><a href="<?php echo site_url('/desktime-vs-activtrak-vs-workstatus'); ?>">DeskTime vs ActivTrak</a></li>
-          <li><a href="<?php echo site_url('/monitask-vs-clockify-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
-          <li><a href="<?php echo site_url('/timedoctor-vs-insightful-vs-workstatus'); ?>">Timedoctor vs Insightful</a></li>
-          <li><a href="<?php echo site_url('/timedoctor-vs-activtrak-vs-workstatus'); ?>">Timedoctor vs Activtrak</a></li>          
+          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/timedoctor-vs-activtrak-vs-workstatus'); ?>">Timedoctor vs Activtrak</a></li>
         </ul>
       </div>
       <!-- <div  class="column fcol5"></div> -->
