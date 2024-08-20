@@ -6679,7 +6679,7 @@ h3 a {
     color: #333333; }
     .site__header.shady .login a.bg-none:hover {
       background: transparent;
-      border: transparent;
+      border-color: transparent;
       color: #171227;
       opacity: 0.8; }
   .site__header.shady .login a.for-free {
