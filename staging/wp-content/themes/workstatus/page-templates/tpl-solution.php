@@ -13,7 +13,7 @@
       <div class="inner-wrap">
       <?php the_content(); ?>
         <div class="actionBtn">
-          <div><a href="https://calendly.com/workstatus/sales" class="primary_btn2">Talk To Sales</a></div>
+          <div><a href="javascript:void();" onclick="call_demoEnt();" class="primary_btn2">Talk To Sales</a></div>
         </div>
         <?php get_template_part('common/banner', 'reviews'); ?>
       </div>

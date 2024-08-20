@@ -17,7 +17,7 @@ $rowBlocks = get_field('blocks');
 <div class="mt40"></div>
 <div class="actionBtn">
 <div>
-  <a href="https://calendly.com/workstatus/sales" class="primary_btn2">Talk To Sales</a>
+  <a href="javascript:void();" onclick="call_demoEnt();" class="primary_btn2">Talk To Sales</a>
 </div>
 </div>
 </div>

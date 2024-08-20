@@ -481,8 +481,8 @@ function call_demows(
 }
 
 function call_demoEnt( cont = '<h2>Let us take you on a personalized <span class="purple">virtual<br class="linebrk"> tour of Workstatus</span></h2>' ){
-    window.location.href = generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams );
-    
+    //window.location.href = generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams );
+    window.open( generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams ), '_blank' );
     // var refUrl  = document.body.getAttribute('data-url');
     // var utmParm = document.body.getAttribute('data-utm');
     // if( utmParm ){

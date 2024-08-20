@@ -33,7 +33,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       <small class="max-width-184"><?php echo $work_status_journey['trial_button_bottom_text']; ?></small>
       </div>
       <div>
-        <a href="https://calendly.com/workstatus/sales" class="primary_btn2 btnwhite"><?php echo $work_status_journey['talk_sales_text']; ?></a>
+        <a href="javascript:void();" onclick="call_demoEnt();" class="primary_btn2 btnwhite"><?php echo $work_status_journey['talk_sales_text']; ?></a>
         <small class="max-width-250"><?php echo $work_status_journey['talk_bottom_text']; ?></small>
       </div>
       <?php } ?>

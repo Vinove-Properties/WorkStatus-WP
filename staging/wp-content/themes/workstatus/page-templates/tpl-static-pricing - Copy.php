@@ -267,7 +267,7 @@ global $ws_ctas, $RegLink, $LogLink;
             </div>
             <div class="total">Billed annually</div>          
           </div>
-          <a class="price_btn" href="https://calendly.com/workstatus/sales">Let’s Talk</a>
+          <a class="price_btn" href="javascript:void();" onclick="call_demoEnt();">Let’s Talk</a>
           <div class="price-wrapper">
             <div class="price-options">
               <h4>Everything in Business  +</h4>
