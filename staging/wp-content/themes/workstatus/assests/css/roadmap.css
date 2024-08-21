@@ -1866,21 +1866,9 @@ h3 a {
   .site_nav .dropdown > ul li a:hover {
     color: #624de3; }
 
-  .site__header .login a {
-    background: #624de3;
-    color: #fff !important;
-    justify-content: center; }
-    .site__header .login a:hover {
-      background: #051441; }
-
   .site_nav .mega-menu .mega-menu-box li {
     font-weight: 500;
     font-family: "Lato" !important; }
-
-  .site_nav .login:hover {
-    background-position: 20px -22px !important; }
-    .site_nav .login:hover:a {
-      color: #fff !important; }
 
   .site_nav .dropdown-2 li {
     width: 100%; }
@@ -2203,6 +2191,12 @@ h3 a {
     flex-basis: 100%;
     border-right: 0;
     padding: 0; } }
+@media (max-width: 479px) {
+  .site_nav .login {
+    flex-wrap: wrap; }
+
+  .site_nav .login a {
+    width: 100%; } }
 @font-face {
   font-family: 'Noto Sans';
   src: url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype");
