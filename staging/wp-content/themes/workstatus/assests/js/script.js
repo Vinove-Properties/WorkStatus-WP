@@ -175,7 +175,15 @@ if (screen && screen.width < 768) {
 
 function navFunction() {
     var e = document.getElementById("topnav");
-    "top_nav" === e.className ? (e.className += " responsive") : (e.className = "top_nav");
+    var b = document.body;
+    if (e.className === "top_nav") {
+        e.className += " responsive";
+        b.classList.add("elm-fixed");
+    } else {
+        e.className = "top_nav";
+        b.classList.remove("elm-fixed");
+    }
+    //"top_nav" === e.className ? (e.className += " responsive") : (e.className = "top_nav");
 }
 function showProductItem() {
     var e = document.getElementById("productsitem");
