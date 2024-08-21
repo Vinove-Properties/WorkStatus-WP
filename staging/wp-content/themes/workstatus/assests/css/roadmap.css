@@ -2164,8 +2164,8 @@ h3 a {
         .site__header.shady .login a.for-free:after {
           width: 14px;
           height: 13px;
-          background-size: 100%;
-          background: url(../menu-images/menu-arrow.svg) no-repeat; }
+          background: url(../menu-images/menu-arrow.svg) no-repeat;
+          background-size: 100%; }
       .site__header.shady .login a:hover {
         background: #051441;
         color: #fff; } }
