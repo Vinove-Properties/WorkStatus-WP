@@ -7081,7 +7081,8 @@ h3 a {
       .site_nav .login a {
         padding: 12px 20px;
         background: #624de3;
-        border-color: #624de3; }
+        border-color: #624de3;
+        color: #fff; }
         .site_nav .login a.bg-none {
           background: #624de3;
           border-color: #624de3;
@@ -7283,7 +7284,8 @@ h3 a {
     .site__header.shady .login a {
       padding: 12px 20px;
       background: #624de3;
-      border-color: #624de3; }
+      border-color: #624de3;
+      color: #fff; }
       .site__header.shady .login a.bg-none {
         background: #624de3;
         border-color: #624de3;
