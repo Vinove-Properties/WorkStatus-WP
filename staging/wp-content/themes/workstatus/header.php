@@ -104,6 +104,8 @@
       .locate-in .cnd-phone{display: block;}
       body.show-wsaddon .this-block{display: none !important;}
       body.show-wsaddon #ws-addon-data,body.show-wsaddon .support-options{display:block!important;}
+      .prio.monthly, body.ps-monthly .prio.annual{ display:none !important; }
+      body.ps-monthly .prio.monthly{ display:block !important; }
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->

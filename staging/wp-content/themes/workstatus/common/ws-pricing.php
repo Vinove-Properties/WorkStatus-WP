@@ -93,7 +93,8 @@
           </div>
           <div class="card-plan">
             <span class="wph" id="pl-product">$4</span>
-            <span class="prio">/ user / month</span>
+            <span class="prio monthly">/ user / month</span>
+            <span class="prio annual">/ user / month / Billed Annually</span>
           </div>
           <a class="price_btn" id="ws-plan-product" href="#">Buy Now</a>
           <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
@@ -141,7 +142,8 @@
           </div>
           <div class="card-plan">              
             <span class="wph" id="pl-project">$4</span>  
-            <span class="prio">/ user / month</span>
+            <span class="prio monthly">/ user / month</span>
+            <span class="prio annual">/ user / month / Billed Annually</span>
           </div>
           <a class="price_btn" id="ws-plan-project" href="#">Buy Now</a>
           <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
