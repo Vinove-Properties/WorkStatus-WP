@@ -654,7 +654,7 @@
             </ul>
             <div class="login">
               <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
-              <a  href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a>
+              <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a>
               <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="for-free" onclick="return get_ws_signupform(this);">Try for free</a>
             </div>
           </nav>

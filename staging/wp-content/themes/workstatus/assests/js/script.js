@@ -918,6 +918,7 @@ function setoptValue( val, label, input, parent_col){
 document.addEventListener("DOMContentLoaded", function(){
 const phoneInputField   = document.querySelector("#pcode");
 //const phoneInputFields  = document.querySelector("#fpcode");
+const wsBuyNow          = document.getElementById("nv-buynow");
 if( phoneInputField ){
     setTimeout( function(){
     intlTelInput(
@@ -933,6 +934,7 @@ if( phoneInputField ){
         inCountry = (data && data.country) ? data.country : "gb";
         let conCode = inCountry.toLowerCase();      
         if( conCode == "in"){
+            wsBuyNow.href = "https://app.workstatus.io/auth/register?pid=460&type=annual";
             let sgFrm = document.getElementById("formPopup-su");
             if( sgFrm ){
                 sgFrm.classList.add('locate-in')
