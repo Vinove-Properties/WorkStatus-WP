@@ -650,12 +650,14 @@
                   </div>
                 </li>-->
               <li><a href="<?php echo site_url(); ?>/pricing">Pricing</a></li>
-              <li><a href="javascript:void(0)" onclick="call_demows();">Demo</a></li>
+              <!-- <li><a href="javascript:void(0)" onclick="call_demows();">Demo</a></li> -->
             </ul>
             <div class="login">
+              
               <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
-              <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a>
-              <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="for-free" onclick="return get_ws_signupform(this);">Try for free</a>
+              <!-- <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a> -->
+              <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Try for free</a>
+              <a class="for-free" href="javascript:void(0)" onclick="call_demows();">Demo</a>
             </div>
           </nav>
         </div>
