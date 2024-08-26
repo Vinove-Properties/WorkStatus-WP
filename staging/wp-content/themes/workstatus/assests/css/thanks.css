@@ -8073,9 +8073,8 @@ h3 a {
   .site_nav .login a {
     width: 100%;
     text-align: center; } }
-.site_nav .login a {
-  background: #4461d7;
-  color: #fff !important; }
+.feature-header .site__header {
+  background: #4231ac; }
 
 .thank_you {
   width: 75%;
@@ -8138,7 +8137,11 @@ h3 a {
   .signup-thanks {
     width: 95%;
     height: 100%;
-    padding: 30px; }
+    padding: 30px;
+    height: initial; }
+
+  .firstbox {
+    padding: 0 20px; }
 
   .signup-thanks h1 {
     line-height: 50px;
@@ -8147,4 +8150,7 @@ h3 a {
   .signup-thanks {
     font-size: 16px;
     width: 100%;
-    margin: auto; } }
+    margin: auto; }
+
+  .thank_you p {
+    width: 100%; } }

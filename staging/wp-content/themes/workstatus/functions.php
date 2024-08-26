@@ -504,14 +504,14 @@ if( $haspostPdf || $haspostPdflink){
 }
 
 function wsFeaturedHeader(){
-	if( is_404() ){
-		return false;
-	}elseif( is_page_template([
-		'page-templates/tpl-thankyou.php',
+	//if( is_404() ){
+		//return false;
+	//}elseif( is_page_template([
+		//'page-templates/tpl-thankyou.php',
 		//'page-templates/tpl-changelogs.php'
-	]) ){
-		return false;
-	}
+	//]) ){
+	//	return false;
+	//}
 	return true;
 	/*
 	if( is_page_template([
@@ -524,6 +524,7 @@ function wsFeaturedHeader(){
 		'page-templates/tpl-usecase-block.php',
 		'page-templates/tpl-time.php',
 		'page-templates/tpl-task.php',
+    'page-templates/tpl-thankyou.php',
 		'page-templates/tpl-how-tracking-works.php',
 		'page-templates/tpl-home.php'
 

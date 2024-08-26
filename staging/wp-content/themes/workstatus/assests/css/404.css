@@ -8073,12 +8073,8 @@ h3 a {
       flex-direction: column; }
       .site__footer .footer-sec .footer-top .dis-flex .flex-4 .addwrap img {
         margin: 0 0 10px; } }
-.site__header {
-  background: transparent; }
-
-.site_nav .login a {
-  background: #4231AC;
-  color: #fff !important; }
+.feature-header .site__header {
+  background: #4231ac; }
 
 .errorPg {
   width: 100%;
