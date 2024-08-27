@@ -419,12 +419,17 @@ function utm_setCookie(name, value, days) {
 }
 
 const params    = utm_getQueryParams();
-const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'r_id' ];
 const utmValues = {};
 
 utmParams.forEach(param => {
 if (params[param]) {
-    utm_setCookie(param, params[param], 1);
+    if( param === "r_id" ){
+    utm_setCookie("ws_reftoken", params[param], 1);    
+    }else{
+    utm_setCookie(param, params[param], 1);    
+    }
+    
 }
 });
 
