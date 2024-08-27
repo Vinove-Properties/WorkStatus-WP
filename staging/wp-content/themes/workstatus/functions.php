@@ -1885,7 +1885,7 @@ function ws_signup_api_cb(){
 	if( !isBetaVersion() ){
 		$apiCall = "https://api.workstatus.io/api/v1/signUp";
 	}
-	
+	print_r($reqData);
 	$response 	= wp_remote_post( $apiCall, array(
 	'method'	=> 'POST',
 	'timeout'	=> 60,
