@@ -1885,13 +1885,8 @@ function ws_signup_api_cb(){
 	if( !isBetaVersion() ){
 		$apiCall = "https://api.workstatus.io/api/v1/signUp";
 	}
-	print_r($reqData);
-	$response 	= wp_remote_post( $apiCall, array(
-	'method'	=> 'POST',
-	'timeout'	=> 60,
-	'body'      => $reqData
-	)
-	);
+	//print_r( $reqData );
+	$response 	= wp_remote_post( $apiCall, ['method' => 'POST', 'timeout' => 60, 'body' => $reqData] );
 	if ( is_wp_error( $response ) ) {
 		$error_message = $response->get_error_message();
 		echo "Something went wrong: $error_message";
