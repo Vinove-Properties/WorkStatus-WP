@@ -262,20 +262,21 @@ function workstatus_scripts() {
 	elseif( is_page_template(['page-templates/tpl-tools-comparison.php']) ){
 		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/alternative-new.css', array(), _S_VERSION);
 	}
+
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
 		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/survey-style.css', array(), _S_VERSION );	
 		}else{
 		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/assests/css/resources-detail.css', array(), _S_VERSION );
-		wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );	
+		wp_enqueue_script('ws-calc', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );
 		}
 		
 	}
+
 	if( !is_singular('survey') ){
 		wp_enqueue_style( 'ws-glider', get_stylesheet_directory_uri().'/assests/css/glider.css');
 	}
-	wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );	
-	
+	wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );		
 	wp_enqueue_script( 'ws-glider-script', get_stylesheet_directory_uri() .'/assests/js/glider.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/assests/js/script.js', array(), _S_VERSION, true );
 	wp_localize_script('ws-script', 'wsObj', [
