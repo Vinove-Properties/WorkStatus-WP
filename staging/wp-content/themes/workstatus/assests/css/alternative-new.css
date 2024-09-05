@@ -8825,16 +8825,19 @@ h3 a {
         align-items: center;
         justify-content: center;
         flex-direction: column; }
+        .ws-table .table-block .div-block-top .logovs:nth-child(4) .price {
+          background: #695eee;
+          color: #fff;
+          border-color: #695eee; }
         .ws-table .table-block .div-block-top .logovs .price {
-          background: rgba(103, 84, 226, 0.05);
-          color: #6754e2;
-          border: 1.5px transparent;
+          background: #F7F7F7;
+          color: #05164DCC;
+          border: 1.5px solid #EFEFEF;
           text-align: center;
           padding: 6px 10px;
           width: 110px;
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: 12px;
+          font-weight: 700;
+          font-size: 14px;
           border-radius: 10px;
           justify-content: center;
           margin: 10px 0 0;
@@ -8896,6 +8899,25 @@ h3 a {
             letter-spacing: 0; }
           .ws-table .table-block .table-row .ws-column.ws-lftcolumn strong {
             color: rgba(17, 3, 2, 0.8); }
+      .ws-table .table-block .table-row:last-child {
+        background: #F4F2FF;
+        border-bottom: 2px solid #6754E299;
+        border-radius: 0 0 10px 10px; }
+        .ws-table .table-block .table-row:last-child .ws-column {
+          padding: 28px 30px;
+          flex-wrap: wrap; }
+          .ws-table .table-block .table-row:last-child .ws-column strong {
+            color: #05164D;
+            font-weight: 700;
+            display: block;
+            width: 100%; }
+          .ws-table .table-block .table-row:last-child .ws-column .small-font {
+            color: #05164D;
+            font-weight: 600;
+            font-size: 13px;
+            display: block;
+            width: 100%;
+            margin: 5px 0 0; }
 
 .ws-tabtop {
   padding: 100px 0 0; }
@@ -9076,6 +9098,10 @@ h3 a {
         .ws-table .table-block .table-row .ws-column i {
           width: 18px;
           height: 18px; }
+      .ws-table .table-block .table-row:last-child .ws-column {
+        padding: 20px 9px; }
+        .ws-table .table-block .table-row:last-child .ws-column .small-font {
+          font-size: 12px; }
 
   .advanced-feature .flex_row {
     gap: 0; }
