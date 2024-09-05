@@ -9158,7 +9158,7 @@ h3 a {
   .ws-table .table-block .table-row:last-child .ws-column {
     font-size: 16px; }
 
-  .ws-table .table-block .table-row:last-child .ws-column:last-child strong {
+  .ws-table .table-block .table-row:last-child .ws-column strong {
     width: auto; } }
 @media (max-width: 479px) {
   .all-partners .part-row {
