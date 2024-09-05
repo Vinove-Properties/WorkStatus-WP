@@ -8825,8 +8825,6 @@ h3 a {
         align-items: center;
         justify-content: center;
         flex-direction: column; }
-        .ws-table .table-block .div-block-top .logovs picture {
-          height: 30px; }
         .ws-table .table-block .div-block-top .logovs:nth-child(4) .price {
           background: #695eee;
           color: #fff;
