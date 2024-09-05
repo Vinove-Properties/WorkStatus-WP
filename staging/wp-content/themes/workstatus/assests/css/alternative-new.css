@@ -8825,6 +8825,8 @@ h3 a {
         align-items: center;
         justify-content: center;
         flex-direction: column; }
+        .ws-table .table-block .div-block-top .logovs picture {
+          height: 30px; }
         .ws-table .table-block .div-block-top .logovs:nth-child(4) .price {
           background: #695eee;
           color: #fff;
@@ -8843,7 +8845,8 @@ h3 a {
           margin: 10px 0 0;
           display: flex; }
         .ws-table .table-block .div-block-top .logovs .desktop {
-          display: block; }
+          display: block;
+          height: 30px; }
         .ws-table .table-block .div-block-top .logovs .mobile {
           display: none; }
       .ws-table .table-block .div-block-top .logo-ws {
@@ -8905,19 +8908,24 @@ h3 a {
         border-radius: 0 0 10px 10px; }
         .ws-table .table-block .table-row:last-child .ws-column {
           padding: 28px 30px;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+          font-size: 20px; }
           .ws-table .table-block .table-row:last-child .ws-column strong {
             color: #05164D;
-            font-weight: 700;
+            font-weight: 600;
             display: block;
-            width: 100%; }
+            width: 100px;
+            padding: 5px 10px; }
           .ws-table .table-block .table-row:last-child .ws-column .small-font {
             color: #05164D;
             font-weight: 600;
             font-size: 13px;
             display: block;
-            width: 100%;
-            margin: 5px 0 0; }
+            width: 100%; }
+          .ws-table .table-block .table-row:last-child .ws-column:last-child strong {
+            color: #fff;
+            background: #6754E2;
+            border-radius: 5px; }
 
 .ws-tabtop {
   padding: 100px 0 0; }
@@ -9099,7 +9107,8 @@ h3 a {
           width: 18px;
           height: 18px; }
       .ws-table .table-block .table-row:last-child .ws-column {
-        padding: 20px 9px; }
+        padding: 20px 9px;
+        font-size: 18px; }
         .ws-table .table-block .table-row:last-child .ws-column .small-font {
           font-size: 12px; }
 
