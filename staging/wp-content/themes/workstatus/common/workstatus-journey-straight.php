@@ -4,9 +4,9 @@
     <div class="ws-flex">
       <div class="jour-col">
         <div class="top-section">
-          <h6><span class="bg-white">Don’t Wait</span></h6>
+          <h6><span class="bg-white">Boost Efficiency</span></h6>
           <h2>Start your Workstatus journey<br> today!</h2>
-          <p>Get detailed and clean activity reports of your team.</p>
+          <p>Track time and productivity effortlessly.</p>
         </div>
         <div class="actionBtn">
         <?php if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){ ?>
