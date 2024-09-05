@@ -125,17 +125,22 @@ $tbl = $compCol['cards'];
       </div>
       <?php 
       if( $tbl ){
-        foreach( $tbl as $data ){
+        //echo count( $tbl );
+        $lCounr = count($tbl);
+        $c = 0;
+        foreach( $tbl as $data ){ $c++;
+          $postFix    = ($lCounr == $c) ? '<span class="small-font">(Per user / Month)</span>' : '';
+          $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : $data['name'];
           $colOne = _compTableValue( $data['tl-1'] );
           $colTwo = _compTableValue( $data['tl-2'] );
           $colWs  = _compTableValue( $data['ws'] );
           echo '<div class="table-row">
           <div class="ws-column ws-lftcolumn">
-          <p>'.$data['name'].'</p>
+          <p>'.$lstPricing.'</p>
           </div>
-          <div class="ws-column">'.$colOne.'</div>
-          <div class="ws-column">'.$colTwo.'</div>
-          <div class="ws-column">'.$colWs.'</div>
+          <div class="ws-column">'.$colOne.$postFix.'</div>
+          <div class="ws-column">'.$colTwo.$postFix.'</div>
+          <div class="ws-column">'.$colWs.$postFix.'</div>
           </div>';
         }
       }
