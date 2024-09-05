@@ -131,9 +131,12 @@ $tbl = $compCol['cards'];
         foreach( $tbl as $data ){ $c++;
           $postFix    = ($lCounr == $c) ? '<span class="small-font">(Per user / Month)</span>' : '';
           $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : $data['name'];
-          $colOne = _compTableValue( $data['tl-1'] );
-          $colTwo = _compTableValue( $data['tl-2'] );
-          $colWs  = _compTableValue( $data['ws'] );
+          $lstClass   = ($lCounr == $c) ? 'lst-elm' : '';
+          
+          $colOne = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-1']).'</strong>' : _compTableValue($data['tl-1']);
+          $colTwo = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-2']).'</strong>' : _compTableValue($data['tl-2']);
+          $colWs  = ($lCounr == $c) ? '<strong>'._compTableValue($data['ws']).'</strong>' : _compTableValue($data['ws']);
+
           echo '<div class="table-row">
           <div class="ws-column ws-lftcolumn">
           <p>'.$lstPricing.'</p>
