@@ -9150,7 +9150,16 @@ h3 a {
       padding: 10px 15px; }
 
   .testimonial-section .top-section {
-    margin: 0; } }
+    margin: 0; }
+
+  .ws-table .table-block .div-block-top .logovs:nth-child(4) .price {
+    font-size: 10px; }
+
+  .ws-table .table-block .table-row:last-child .ws-column {
+    font-size: 16px; }
+
+  .ws-table .table-block .table-row:last-child .ws-column:last-child strong {
+    width: auto; } }
 @media (max-width: 479px) {
   .all-partners .part-row {
     grid-template-columns: repeat(2, 1fr);
