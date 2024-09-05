@@ -8829,7 +8829,7 @@ h3 a {
           background: #695eee;
           color: #fff;
           border-color: #695eee;
-          font-size: 16px; }
+          font-size: 18px; }
         .ws-table .table-block .div-block-top .logovs .price {
           background: #F7F7F7;
           color: #05164DCC;
@@ -8920,6 +8920,7 @@ h3 a {
             font-weight: 600;
             font-size: 13px;
             display: block;
+            margin: 5px 0 0;
             width: 100%; }
           .ws-table .table-block .table-row:last-child .ws-column:last-child strong {
             color: #fff;
