@@ -48,7 +48,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
 </section>
 <?php endif; ?>
 
-<section class="ready-earn">
+<section class="ready-earn" style="margin-top:80px;">
   <div class="container">
     <div class="dis-flex">
       <div class="earnleft"><h2>Ready to Earn? Join Us and Start Your Journey</h2></div>
