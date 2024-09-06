@@ -49,7 +49,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
 </section>
 <?php endif; ?>
 
-<!--<section class="ready-earn">
+<section class="ready-earn">
   <div class="container">
     <div class="dis-flex">
       <div class="earnleft">
@@ -62,7 +62,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
        </div>
     </div>
   </div>
-</section>-->
+</section>
 
 
 <?php
