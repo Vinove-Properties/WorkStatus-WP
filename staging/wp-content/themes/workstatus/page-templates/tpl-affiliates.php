@@ -194,5 +194,20 @@ if( $isEnable == "yes" ){
 </section>
 <?php } endif; ?>
 <?php //require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
+<section class="ready-earn" style="margin-top:80px;">
+  <div class="container">
+    <div class="dis-flex">
+      <div class="earnleft" style="flex-basis:100%; text-align: center;">
+        <h2>Partner with Workstatus</h2>
+        <p style="color:#ffffff; margin-top:10px;">Unlock new revenue streams and drive growth by joining our partner program.</p>
+        <div class="earnrit" style="flex-basis:100%; text-align: center; margin-top: 30px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" 
+        rel="nofollow" class="primary_btn1">Become a Partner</a>
+       </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
 </main>
 <?php get_footer(); ?>
