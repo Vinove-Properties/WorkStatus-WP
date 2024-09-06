@@ -9086,6 +9086,17 @@ h6.inherit, p.inherit {
 .hsds-form__radio--tasks .ws-radio-input:checked + .ws-radio-icon {
   border-color: #08ba98; }
 
+.affliate-section .flex_row .column-right.con-alf h3 {
+  padding-left: 0;
+  font-size: 26px; }
+
+.top-plateform .flex_row .column-right.con-alf p {
+  margin: 0; }
+
+.top-plateform .flex_row:nth-child(3n) {
+  background: #fff;
+  padding: 0; }
+
 @media (max-width: 1440px) {
   .affliate-section .flex_row {
     padding: 80px 0; } }
