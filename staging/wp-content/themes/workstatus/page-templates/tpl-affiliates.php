@@ -194,7 +194,7 @@ if( $isEnable == "yes" ){
 </section>
 <?php } endif; ?>
 <?php //require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
-<section class="ready-earn" style="margin-top:80px;">
+<section class="ready-earn">
   <div class="container">
     <div class="dis-flex">
       <div class="earnleft" style="flex-basis:100%; text-align: center;">
