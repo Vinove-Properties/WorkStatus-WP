@@ -193,6 +193,6 @@ if( $isEnable == "yes" ){
   </div>
 </section>
 <?php } endif; ?>
-<?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
+<?php //require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
 </main>
 <?php get_footer(); ?>
