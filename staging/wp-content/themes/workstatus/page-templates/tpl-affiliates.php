@@ -16,6 +16,7 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="actionBtn">                
                 <div>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" class="primary_btn2" target="_blank">Apply Now</a>
+                <small>Start earning 30% commission today!</small>
                 </div>
                 </div>
                 <?php //require_once get_template_directory() . '/common/available-device.php'; ?>
