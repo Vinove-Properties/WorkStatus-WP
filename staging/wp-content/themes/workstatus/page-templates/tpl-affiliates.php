@@ -29,7 +29,6 @@ $bpSection = get_field('bp-section');
 if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
 ?>
 <section class="top-plateform padd-0 affliate-section">
-<div class="container">
   <?php 
   $programs = $bpSection['programs'];
   if( $programs ){
@@ -39,15 +38,13 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
     $headingContent = ( $row['hcontent'] ) ? '<div class="top-section">'.$row['hcontent'].'</div>' : '';
     echo '<div class="flex_row align-center"><div class="container">';
     echo $headingContent;
-    echo '<div class="column-left align-right">'.$image.'</div>
-      <div class="column-right">'.$row['content'].'
-      </div>
+    echo '<div class="column-left align-right">'.$image.'</div>';
+    echo '<div class="column-right">'.$row['content'].'</div>
       </div></div>';
   }
   echo '</div>';
   }
   ?>
-</div>  
 </section>
 <?php endif; ?>
 
