@@ -64,7 +64,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
           <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
-          <li><a href="<?php echo site_url(); ?>/affiliates">Affiliates</a></li>
+          <li><a href="<?php echo site_url(); ?>/partners">Partners</a></li>
           <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
           <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
