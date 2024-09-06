@@ -107,8 +107,8 @@
       .prio.monthly, body.ps-monthly .prio.annual{ display:none !important; }
       body.ps-monthly .prio.monthly{ display:block !important; }
 
-      .top-plateform .flex_row .column-right.con-alf h3:before{content:none;}
-      .top-plateform .flex_row .column-right.con-alf h3{padding-left: 0;}
+      /*.top-plateform .flex_row .column-right.con-alf h3:before{content:none;}
+      .top-plateform .flex_row .column-right.con-alf h3{padding-left: 0;}*/
 
     </style>
     <?php if( isBetaVersion() === false ) : ?>
