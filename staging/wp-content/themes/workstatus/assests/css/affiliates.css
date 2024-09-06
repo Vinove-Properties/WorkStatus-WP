@@ -9090,6 +9090,9 @@ h6.inherit, p.inherit {
   padding-left: 0;
   font-size: 26px; }
 
+.affliate-section .flex_row .column-right.con-alf h3:before {
+  display: none; }
+
 .top-plateform .flex_row .column-right.con-alf p {
   margin: 0; }
 
@@ -9108,4 +9111,8 @@ h6.inherit, p.inherit {
     padding-top: 50px; }
 
   .hero-banner .inner-wrap .actionBtn {
-    justify-content: center; } }
+    justify-content: center; }
+
+  .affliate-section .flex_row .column-right.con-alf h3 {
+    padding-left: 0;
+    font-size: 22px; } }
