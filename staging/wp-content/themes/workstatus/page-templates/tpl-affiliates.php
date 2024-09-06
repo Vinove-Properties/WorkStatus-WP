@@ -14,13 +14,11 @@ global $ws_ctas, $RegLink, $LogLink;
                 <?php the_content(); ?>
                 <div class="mt40"></div>
                 <div class="actionBtn">                
-                <div>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" class="primary_btn2" target="_blank">Apply Now</a>
-                <small>Start earning 30% commission today!</small>
+                    <div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" class="primary_btn2" target="_blank">Apply Now</a>
+                    <small>Start earning 30% commission today!</small>
+                    </div>
                 </div>
-                </div>
-                <?php //require_once get_template_directory() . '/common/available-device.php'; ?>
-                <?php //require_once get_template_directory() . '/common/partners.php'; ?>
             </div>
         </div>
     </div>
@@ -31,14 +29,17 @@ $bpSection = get_field('bp-section');
 if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
 ?>
 <section class="top-plateform padd-0 affliate-section">
+<div class="container">
   <?php 
   $programs = $bpSection['programs'];
   if( $programs ){
   echo '<div class="dis-flex">';
   foreach( $programs as $row ){
     $image = ( $row['image'] ) ? pxlGetPtag( $row['image'] ) : '';
-    echo '<div class="flex_row align-center"><div class="container">
-    <div class="column-left align-right">'.$image.'</div>
+    $headingContent = ( $row['hcontent'] ) ? '<div class="top-section">'.$row['hcontent'].'</div>' : '';
+    echo '<div class="flex_row align-center"><div class="container">';
+    echo $headingContent;
+    echo '<div class="column-left align-right">'.$image.'</div>
       <div class="column-right">'.$row['content'].'
       </div>
       </div></div>';
@@ -46,6 +47,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
   echo '</div>';
   }
   ?>
+</div>  
 </section>
 <?php endif; ?>
 
