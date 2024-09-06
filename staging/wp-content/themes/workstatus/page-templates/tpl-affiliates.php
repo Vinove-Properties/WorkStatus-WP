@@ -39,7 +39,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
     echo '<div class="flex_row align-center"><div class="container">';
     echo $headingContent;
     echo '<div class="column-left align-right">'.$image.'</div>';
-    echo '<div class="column-right">'.$row['content'].'</div>
+    echo '<div class="column-right con-alf">'.$row['content'].'</div>
       </div></div>';
   }
   echo '</div>';
