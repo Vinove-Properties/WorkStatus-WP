@@ -52,13 +52,10 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
 <section class="ready-earn">
   <div class="container">
     <div class="dis-flex">
-      <div class="earnleft">
-        <h2>Ready to Earn? Join Us and Start Your Journey</h2>
-      </div>
+      <div class="earnleft"><h2>Ready to Earn? Join Us and Start Your Journey</h2></div>
       <div class="earnrit">
-        <a href="<?php echo site_url('/downloads'); ?>" rel="nofollow" class="primary_btn1">Become Workstatus Partner</a>
-       <a href="mailto:hello@workstatus.io" rel="nofollow" class="primary_btn1">Become Workstatus Partner</a>
-        <a href="https://docs.google.com/forms/d/1na5nLh-0SO-o-T8gxqAn6oPjz7KuBv4WfBFQNQ3exNs/prefill" rel="nofollow" class="primary_btn1">Become Workstatus Partner</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" 
+        rel="nofollow" class="primary_btn1">Become Workstatus Partner</a>
        </div>
     </div>
   </div>
