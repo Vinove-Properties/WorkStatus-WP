@@ -32,7 +32,7 @@ if( isset( $bpSection['is_enabled'] ) && ($bpSection['is_enabled'] == 'yes')) :
   <?php 
   $programs = $bpSection['programs'];
   if( $programs ){
-  echo '<div class="dis-flex">';
+  echo '<div class="item">';
   foreach( $programs as $row ){
     $image = ( $row['image'] ) ? pxlGetPtag( $row['image'] ) : '';
     $headingContent = ( $row['hcontent'] ) ? '<div class="top-section">'.$row['hcontent'].'</div>' : '';
