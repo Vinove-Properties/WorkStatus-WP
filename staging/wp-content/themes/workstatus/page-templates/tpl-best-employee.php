@@ -111,94 +111,86 @@ if( $isEnable == "yes" ){
 		<?php } endif; ?>
 
     <?php echo getResultsDriveSection( $post->ID ); ?>
-
     <section class="middle-section feature-section">
-
-
-            <?php
-            /*  
-		$silent_tracking_section = get_field('silent_tracking_section');
-		
+    <?php
+    
+		$silent_tracking_section = get_field('silent_tracking_section');		
 		if( $silent_tracking_section ) :
 		$isEnable = $silent_tracking_section['is_enabled'];
 		if( $isEnable == "yes" ){ 
 		?>
-          <div class="item" id="ws-silent_tracking_section">
-            <div class="container">
-              <div class="top-section">
-                <h6><span class="bg-purple"><?php echo $silent_tracking_section['heading']; ?></span></h6>
-                <h2><?php echo $silent_tracking_section['sub_heading']; ?></h2>
-                <p><?php echo $silent_tracking_section['content']; ?>
-                </p>
-              </div>
-              <div id="active_Current_Tabs1">
-                <div class="flex_row">
-                  <div class="column-right">
-				  
-				  <?php 
-					if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
-					foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
-						$image      = $row['image'];
-						
-						//$link       = $row['link'];
-						//$wintitle   = $row['title'];
-						//$wincontent = $row['content']; 
-						$active = ($i==111) ? "active" : "";
-					
-					?>
-						<?php if( $image ){
-                            echo '<picture class="page '.$active.'" id="p'.$i.'" >
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
+    <div class="item" id="ws-silent_tracking_section">
+    <div class="container">
+    <div class="top-section">
+    <h6><span class="bg-purple"><?php echo $silent_tracking_section['heading']; ?></span></h6>
+    <h2><?php echo $silent_tracking_section['sub_heading']; ?></h2>
+    <p><?php echo $silent_tracking_section['content']; ?></p>
+    </div>
+    <div id="active_Current_Tabs1">
+    <div class="flex_row">
+    <div class="column-right">
 
-					<?php $i++; } } ?>
-				</div>
-                  <div class="column-left">
-				  <?php 
-					if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
-					foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
-						$image      = $row['image'];
-            $active = ($i==111) ? "active" : "";
-					?>
-                    <div class="all-content">
-                      <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs1">
-                        <!-- 
-                        <h3><i></i><?php //echo $row['heading'];?></h3> 
-                        -->
-                        <?php echo $row['content'];?>                        
-                      </div>
+    <?php 
+    if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
+    foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
+    $image      = $row['image'];
 
+    //$link       = $row['link'];
+    //$wintitle   = $row['title'];
+    //$wincontent = $row['content']; 
+    $active = ($i==111) ? "active" : "";
 
-                      <div class="mob-image">
-					  <?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-                      </div>
-                    </div>
-                    <?php $i++; } } ?>
-                  </div>
-                </div>
-              </div>
-              <?php if( geoCTAcheck() === true ) : ?>
-              <div class="mt40 btnSc">
-                <?php echo wsDemoCtaCP(); ?>
-              </div>
-              <?php endif; ?>
-            </div>
-          </div>
-
-		<?php } endif; 
-    */
     ?>
+    <?php if( $image ){
+            echo '<picture class="page '.$active.'" id="p'.$i.'" >
+            '.getPxlWebpURL($image['ID']).'
+            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
+            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+            height="'.$image['height'].'"> 
+            </picture>';
+            } ?>
+
+    <?php $i++; } } ?>
+    </div>
+    <div class="column-left">
+    <?php 
+    if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
+    foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
+    $image      = $row['image'];
+    $active = ($i==111) ? "active" : "";
+    ?>
+    <div class="all-content">
+      <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs1">
+        <!-- 
+        <h3><i></i><?php //echo $row['heading'];?></h3> 
+        -->
+        <?php echo $row['content'];?>                        
+      </div>
+
+
+      <div class="mob-image">
+    <?php if( $image ){
+            echo '<picture>
+            '.getPxlWebpURL($image['ID']).'
+            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
+            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
+            height="'.$image['height'].'"> 
+            </picture>';
+            } ?>
+      </div>
+    </div>
+    <?php $i++; } } ?>
+    </div>
+    </div>
+    </div>
+    <?php if( geoCTAcheck() === true ) : ?>
+    <div class="mt40 btnSc">
+    <?php echo wsDemoCtaCP(); ?>
+    </div>
+    <?php endif; ?>
+    </div>
+    </div>
+		<?php } endif; ?>
 
     
                 
