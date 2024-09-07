@@ -613,7 +613,7 @@ function cmnBannerCta(){
 	return '<div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
 	<small>Get queries answered from experts</small></div>
 	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn2" 
-	onclick="return get_ws_signupform(this);">Start Free Trail</a><small>No credit card required</small></div>';
+	onclick="return get_ws_signupform(this);">Start Free Trial</a><small>No credit card required</small></div>';
 }
 
 
