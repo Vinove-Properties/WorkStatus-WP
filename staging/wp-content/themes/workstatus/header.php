@@ -660,8 +660,8 @@
               
               <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
               <!-- <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a> -->
-              <a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Try for free</a>
-              <a class="for-free" href="javascript:void(0)" onclick="call_demows();">Demo</a>
+              <a href="javascript:void(0)" onclick="call_demows();">Demo</a>
+              <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Try for free</a>              
             </div>
           </nav>
         </div>
