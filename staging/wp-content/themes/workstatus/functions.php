@@ -609,6 +609,16 @@ function wsDemoCtaCP(){
 	
 }
 
+
+function cmnBannerCta(){
+	global $ws_ctas, $RegLink;
+	return '<div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
+	<small>Get queries answered from experts</small></div>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn2" 
+	onclick="return get_ws_signupform(this);">Start Free Trail</a><small>No credit card required</small></div>';
+}
+
+
 add_action( 'wp_ajax_nopriv_rateus', 'rateus_cb' );
 add_action( 'wp_ajax_rateus', 'rateus_cb' );
 function rateus_cb(){
