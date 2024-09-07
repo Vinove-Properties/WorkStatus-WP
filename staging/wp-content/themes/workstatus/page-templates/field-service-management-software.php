@@ -28,19 +28,8 @@ global $ws_ctas, $RegLink, $LogLink;
                 <li>Track Service Operations & Performance</li>
               </ul> 
               -->
-              <div class="actionBtn">                
-                <div>
-                  <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
-                  <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
-                </div>
-                <?php if( geoCTAcheck() === true ) : ?>
-                <div>
-                  <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn2" 
-                  onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
-                  <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
-                </div>
-                <?php endif; ?>
-
+              <div class="actionBtn">
+              <?php echo cmnBannerCta(); ?>
               </div>
               <?php require_once get_template_directory() .'/common/available-device.php';?>
               <?php //require_once get_template_directory(). '/common/partners.php'; ?>
