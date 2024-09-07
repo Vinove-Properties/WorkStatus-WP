@@ -132,6 +132,13 @@
       .ctbtn.nobg{border:1px solid #624DE3 !important; border-radius: 30px !important; min-width: 213px !important; 
       padding:15px 30px !important; color: #624DE3 !important; text-decoration: none !important;}
       .ctbtn.nobg:hover{border-color:#000 !important; color:#000 !important;}
+
+      .ws-ctav4 .btnSc .ctasec .ctbtn{border:1px solid #624DE3;}
+      .ws-ctav4 .btnSc .ctasec .ctbtn:hover{border-color:#fff;}
+
+      @media (max-width: 767px) {
+      .ws-ctav4 .btnSc .ctasec .nobg{padding:12px 18px !important; font-size:15px !important;}
+      }
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
