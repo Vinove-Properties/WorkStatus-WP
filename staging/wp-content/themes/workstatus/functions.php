@@ -577,7 +577,7 @@ function wsDemoCta(){
 	//global $RegLink;
 	global $ws_ctas, $RegLink;
 	$cta_lbl = ( isset( $ws_ctas['cta_text'] ) && !empty( $ws_ctas['cta_text'] ) ) ? $ws_ctas['cta_text'] : 'Start Free Trial';
-	return '<div class="cmn-democta ctasec">
+	return '<div class="cmn-democta ctasec cta-var4">
 	
 	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
 	</div>
@@ -592,13 +592,12 @@ function wsDemoCtaCP(){
 	//global $RegLink;
 	global $ws_ctas, $RegLink, $post;
 	if( $post->ID == 7306 ){
-	return '<div class="cmn-democta ctasec"><div><a href="javascript:void();" onclick="call_demoEnt();" class="ctbtn">Talk to Sales</a>
+	return '<div class="cmn-democta ctasec cta-var4"><div><a href="javascript:void();" onclick="call_demoEnt();" class="ctbtn">Talk to Sales</a>
 	<span class="nccr">Let\'s connect for a quick call</span>
 	</div></div>';
 	}else{
 	$cta_lbl = ( isset( $ws_ctas['cta_text'] ) && !empty( $ws_ctas['cta_text'] ) ) ? $ws_ctas['cta_text'] : 'Start Free Trial';
-	return '<div class="cmn-democta ctasec">
-	
+	return '<div class="cmn-democta ctasec cta-var4">	
 	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
 	</div>
 	<span class="devide">OR</span>
