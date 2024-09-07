@@ -220,7 +220,7 @@ function getWsCmnFeatures(){
   $cmnFeature = get_field('cmn-features', 1942);
   if( isset( $cmnFeature['is_enabled'] ) && ($cmnFeature['is_enabled'] == "yes") ) :
   ?>
-  <section class="feature_section for-heading-center whitetxt post-animation">
+  <section class="feature_section for-heading-center whitetxt post-animation ws-ctav4">
     <div class="container">
       <div class="top-section">
         <h6><span class="bg-white"><?php echo $cmnFeature['heading']; ?></span></h6>
