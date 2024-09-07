@@ -598,12 +598,12 @@ function wsDemoCtaCP(){
 	}else{
 	$cta_lbl = ( isset( $ws_ctas['cta_text'] ) && !empty( $ws_ctas['cta_text'] ) ) ? $ws_ctas['cta_text'] : 'Start Free Trial';
 	return '<div class="cmn-democta ctasec">
-	<div>
-	<a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn nobg" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
-	<span class="nccr">No credit card required</span>
+	
+	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
 	</div>
 	<span class="devide">OR</span>
-	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn nobg" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	<span class="nccr">No credit card required</span>
 	</div>';	
 	}
 	
