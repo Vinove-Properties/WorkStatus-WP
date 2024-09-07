@@ -1008,14 +1008,14 @@ window.addEventListener("load", function(){
 });
 */
 
-window.addEventListener("load", function(){
-    let cwsBtn  = document.getElementById('ip-crisp-cta'); 
-    if( cwsBtn ){
-        setTimeout(function(){
-            cwsBtn.style.display = "block";
-        }, 7000);
-    }
-});
+// window.addEventListener("load", function(){
+//     let cwsBtn  = document.getElementById('ip-crisp-cta'); 
+//     if( cwsBtn ){
+//         setTimeout(function(){
+//             cwsBtn.style.display = "block";
+//         }, 7000);
+//     }
+// });
 
 //Download Popup Script//
 

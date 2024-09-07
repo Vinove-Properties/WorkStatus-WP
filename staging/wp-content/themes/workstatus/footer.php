@@ -207,14 +207,9 @@ if( is_single() ){
         <h2>Supercharge Your Team's Productivity!</h2>
         <p>Get a 7-day free FULL FEATURE trial of Workstatus now. Boost efficiency, accountability, and results – anytime, anywhere. </p>
         <div class="ctasec">
-          <?php 
-          $hasLogin = getCTAstatus();
-          if($hasLogin !== false ){
-          echo '<a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" 
-          onclick="return get_ws_signupform(this);">'.$hasLogin['cta_text'].'</a>';
-          } 
-          ?>
-          <a class="bkdemo" onclick="call_demows();" href="javascript:void(0);">Book a Demo</a>
+          <a href="javascript:void(0);" onclick="call_demows();" id="ip-crisp-cta" class="primary_btn1">I want to request a demo</a>
+          <a href="javascript:void(0);" data-href="<?php echo $RegLink; ?>" onclick="return get_ws_signupform(this);" 
+          class="primary_btn1 chatbtn">Yes, I want to start free trial</a>
         </div>
       </div>
     </div>
@@ -249,9 +244,9 @@ if( isset( $ftIntent_popup['is_enable'] ) && ($ftIntent_popup['is_enable'] == "y
             <?php echo $ftIntent_popup['content']; ?>            
           </div>
           <div class="ctasec">
-            <a href="javascript:void(0);" data-href="<?php echo $RegLink; ?>" onclick="return get_ws_signupform(this);" class="primary_btn1">Yes, I want to start free trial</a>
-            <a href="javascript:void(0);" id="ip-crisp-cta" style="display:none;" class="primary_btn1 chatbtn" 
-            onclick="$crisp.push(['do', 'chat:open']); document.getElementById('ws-intent-popup').classList.remove('visible');">I want to Chat</a>
+          <a href="javascript:void(0);" onclick="call_demows();" id="ip-crisp-cta" class="primary_btn1">I want to request a demo</a>
+          <a href="javascript:void(0);" data-href="<?php echo $RegLink; ?>" onclick="return get_ws_signupform(this);" 
+          class="primary_btn1 chatbtn">Yes, I want to start free trial</a>
           </div>
         </div>
       </div>
