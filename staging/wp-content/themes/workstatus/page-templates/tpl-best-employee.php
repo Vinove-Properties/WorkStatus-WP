@@ -115,7 +115,8 @@ if( $isEnable == "yes" ){
     <section class="middle-section feature-section">
 
 
-            <?php  
+            <?php
+            /*  
 		$silent_tracking_section = get_field('silent_tracking_section');
 		
 		if( $silent_tracking_section ) :
@@ -189,17 +190,15 @@ if( $isEnable == "yes" ){
               </div>
               <?php if( geoCTAcheck() === true ) : ?>
               <div class="mt40 btnSc">
-                <!-- <p>Grow Your Business</p>
-                <a href="<?php echo $RegLink; ?>"
-                  class="primary_btn1"><?php echo $ws_ctas['cta_text']; ?></a>
-                <small>Quickly get your team on board!</small> -->
                 <?php echo wsDemoCtaCP(); ?>
               </div>
               <?php endif; ?>
             </div>
           </div>
 
-		<?php } endif; ?>
+		<?php } endif; 
+    */
+    ?>
 
     
                 
