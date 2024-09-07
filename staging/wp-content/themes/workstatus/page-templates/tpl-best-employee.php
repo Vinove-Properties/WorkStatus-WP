@@ -153,7 +153,6 @@ if( $isEnable == "yes" ){
     <?php $i++; } } ?>
     </div>
     <div class="column-left">
-    
     <?php 
     if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
     foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
@@ -181,7 +180,7 @@ if( $isEnable == "yes" ){
       </div>
     </div>
     <?php $i++; } } ?>
-
+    
     </div>
     </div>
     </div>
@@ -190,7 +189,6 @@ if( $isEnable == "yes" ){
     <?php echo wsDemoCtaCP(); ?>
     </div>
     <?php endif; ?>
-    </div>
     </div>
     </div>
 		<?php } endif; ?>
