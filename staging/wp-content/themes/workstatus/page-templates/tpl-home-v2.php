@@ -21,16 +21,16 @@ if( $isEnable == "yes" ){
           <h1><strong>Maximize Team Productivity: </strong>From Remote to In-Office</h1>
           <p>Enhance productivity with our all-in-one solution for time tracking, project and task management, and workforce optimization.</p>
           <div class="cont-wrap">
-            <div class="actionBtn">
+            <div class="actionBtn">              
+              <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1 formbtn">Book A Demo</a>
+                <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
+              </div>
               <?php if( geoCTAcheck() === true ) : ?>
-              <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" 
+              <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn2" 
                 onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
                 <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
               </div>
               <?php endif; ?>
-              <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
-                <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
-              </div>
             </div>
             <div class="partwrap">
               <div class="part-col">
@@ -232,13 +232,13 @@ endif; ?>
         <?php } ?>
         <?php if( geoCTAcheck() === true ) : ?>
         <div class="ctasec mt100">
-          <div>  
-            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
-            <span class="nccr">No credit card required</span>
+          <div>
+            <a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
           </div>
           <span class="devide">OR</span>
-          <div>
-            <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
+          <div>  
+            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn nobg"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
+            <span class="nccr">No credit card required</span>
           </div>
         </div>
         <?php endif; ?>
@@ -332,13 +332,13 @@ endif; ?>
         <?php endif; ?>
         <?php if( geoCTAcheck() === true ) : ?>
         <div class="ctasec mt100">
-          <div>  
-            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
-            <span class="nccr">No credit card required</span>
+          <div>
+            <a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
           </div>
           <span class="devide">OR</span>
-          <div>
-            <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
+          <div>  
+            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn nobg"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
+            <span class="nccr">No credit card required</span>
           </div>
         </div>
         <?php endif; ?>

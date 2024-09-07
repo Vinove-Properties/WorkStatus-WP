@@ -107,9 +107,31 @@
       .prio.monthly, body.ps-monthly .prio.annual{ display:none !important; }
       body.ps-monthly .prio.monthly{ display:block !important; }
 
-      /*.top-plateform .flex_row .column-right.con-alf h3:before{content:none;}
-      .top-plateform .flex_row .column-right.con-alf h3{padding-left: 0;}*/
+      /*
+      .top-plateform .flex_row .column-right.con-alf h3:before{content:none;}
+      .top-plateform .flex_row .column-right.con-alf h3{padding-left: 0;}
+      */
+      .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1:after,
+      .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1:after{
+      background-image:url(<?php bloginfo('template_url'); ?>/assests/images/clock-icon-black.svg) !important;}
 
+      .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1:hover:after,
+      .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1:hover:after{
+      background-image:url(<?php bloginfo('template_url'); ?>/assests/images/clock-icon.png) !important;  
+      }
+
+      .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1.tts:after{
+      background-image:url(<?php bloginfo('template_url'); ?>/assests/images/button-arw.png) !important;
+      }
+      .works-journey .ws-flex .jour-col .actionBtn a.primary_btn1.tts:hover:after,
+      .works-journey .ws-flex .jour-col .actionBtn a.primary_btn2:after,
+      .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2:after{
+      background-image:url(<?php bloginfo('template_url'); ?>/assests/images/button-arwhover.png) !important;
+      }
+
+      .ctbtn.nobg{border:1px solid #624DE3 !important; border-radius: 30px !important; min-width: 213px !important; 
+      padding:15px 30px !important; color: #624DE3 !important; text-decoration: none !important;}
+      .ctbtn.nobg:hover{border-color:#000 !important; color:#000 !important;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
@@ -660,8 +682,8 @@
               
               <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
               <!-- <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a> -->
-              <a href="javascript:void(0)" onclick="call_demows();">Demo</a>
-              <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Try for free</a>              
+              <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
+              <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>              
             </div>
           </nav>
         </div>

@@ -9,14 +9,16 @@
           <p>Track time and productivity effortlessly.</p>
         </div>
         <div class="actionBtn">
-        <?php if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){ ?>
-          <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
+          <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
+            <small>Get queries answered from experts</small>
+          </div>
+
+          <?php if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){ ?>
+          <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn2 formbtn"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
             <small>No credit card required</small>
           </div>
           <?php } ?>
-          <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
-            <small>Get queries answered from experts</small>
-          </div>
+          
         </div>
       </div>
       <span class="devide">OR</span>
@@ -27,7 +29,7 @@
         <p>Customized Solutions for Maximum Productivity</p>
         </div>
         <div class="actionBtn">
-          <div><a href="javascript:void();" onclick="call_demoEnt();" class="primary_btn1">Talk to Sales</a>
+          <div><a href="javascript:void();" onclick="call_demoEnt();" class="primary_btn1 tts">Talk to Sales</a>
           </div>
         </div>
       </div>

@@ -50,13 +50,14 @@
       </div>
       <?php if( geoCTAcheck() === true ) : ?>
       <div class="ctasec mt100">
-        <div>  
-          <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
-          <span class="nccr">No credit card required</span>
+        
+        <div>
+          <a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
         </div>
         <span class="devide">OR</span>
-        <div>
-          <a href="javascript:void(0)" class="ctbtn nobg" onclick="call_demows();" target="_self">Book A Demo</a>
+        <div>  
+          <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn nobg"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
+          <span class="nccr">No credit card required</span>
         </div>
       </div>
       <?php endif; ?>
