@@ -18,20 +18,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h1><?php echo $inner_banner['title']; ?></h1>
                     <?php echo $inner_banner['content']; ?>
 
-                    <div class="actionBtn">
-                        <?php if( geoCTAcheck() === true ) : ?>
-                        <div>
-                        <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" 
-                        onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
-                        <small><?php echo $inner_banner['trial_button_bottom_text']; ?></small>
-                        </div>
-                        <?php endif; ?>
-                        <?php if ($inner_banner['demo_button_text']) { ?>
-                            <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn"><?php echo $inner_banner['demo_button_text']; ?></a>
-                                <small><?php echo $inner_banner['demo_button_bottom_text']; ?></small>
-                            </div>
-                        <?php } ?>
-                    </div>
+                    <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
 
                         <?php require_once get_template_directory() . '/common/available-device.php'; ?>
                         <?php //require_once get_template_directory() . '/common/partners.php'; ?>

@@ -17,15 +17,7 @@
             endwhile;
             ?>
           <div class="actionBtn">
-            <?php if( geoCTAcheck() === true ) : ?>
-            <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
-              <small>No credit card required</small>
-            </div>
-            <?php endif; ?>
-            <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Book A
-              Demo</a>
-              <small>Get queries answered from experts</small>
-            </div>
+            <?php echo cmnBannerCta(); ?>
           </div>
           <?php 
             //if( !is_page( 2539 ) ){

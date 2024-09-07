@@ -19,18 +19,8 @@ global $ws_ctas, $RegLink, $LogLink;
                     <div class="inner-wrap">
                         <h1><?php echo $bannersec['title']; ?></h1>
                         <?php echo $bannersec['content']; ?>
-
                         <div class="actionBtn">
-                            <?php 
-                            /*
-                            if ($bannersec['demo_button_text']) { ?>
-                                <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn"><?php echo $bannersec['demo_button_text']; ?></a>
-                                    <small><?php echo $bannersec['demo_button_bottom_text']; ?></small>
-                                </div>
-                            <?php } 
-                            */
-                            ?>
-                            <?php echo wsDemoCta(); ?>
+                        <?php echo cmnBannerCta(); ?>
                         </div>
 
                         <?php require_once get_template_directory() . '/common/available-device.php'; ?>
