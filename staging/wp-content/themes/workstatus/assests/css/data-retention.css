@@ -9085,6 +9085,5 @@ img.info-img:hover + span.tolltip {
     display: block;
     overflow-x: auto;
     width: 100%;
-    /* Set the table to be responsive */
     -webkit-overflow-scrolling: touch;
     /* Smoother scrolling on iOS */ } }
