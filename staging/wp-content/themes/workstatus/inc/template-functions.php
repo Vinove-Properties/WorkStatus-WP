@@ -189,7 +189,7 @@ function getEmpLeadership( $post_id, $bg = 'bglight', $needDefault = true  ){
           <h3><a href="<?php site_url('/by-role/business-owners'); ?>">Business Owners</a></h3>
           <ul>
             <li>Gain a clear picture of overall business productivity</li>
-            <li>Identify areas for growth</li>
+            <li>Identify areas for growth & increase profits</li>
             <li>Track project progress, employee performance, and resource utilization to make informed decisions.</li>
           </ul>
         </div>
