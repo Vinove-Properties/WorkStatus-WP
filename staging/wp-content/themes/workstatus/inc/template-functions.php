@@ -178,7 +178,7 @@ function getEmpLeadership( $post_id, $bg = 'bglight', $needDefault = true  ){
       </div>
       <div class="trackContent">
         <div class="row">
-          <h3>HR Managers</h3>
+          <h3><a href="<?php site_url('/by-role/hr-managers'); ?>">HR Managers</a></h3>
           <ul>
             <li>Real-time insights on attendance and work hours</li>
             <li>Geofencing, GPS tracking, and selfie validation</li>
@@ -186,15 +186,15 @@ function getEmpLeadership( $post_id, $bg = 'bglight', $needDefault = true  ){
           </ul>
         </div>
         <div class="row">
-          <h3>Finance Managers</h3>
+          <h3><a href="<?php site_url('/by-role/business-owners'); ?>">Business Owners</a></h3>
           <ul>
-            <li>Detailed time tracking and project cost analysis</li>
-            <li>Accurate budget allocation and expense monitoring</li>
-            <li>Data-driven reports for better financial planning</li>
+            <li>Gain a clear picture of overall business productivity</li>
+            <li>Identify areas for growth</li>
+            <li>Track project progress, employee performance, and resource utilization to make informed decisions.</li>
           </ul>
         </div>
         <div class="row">
-          <h3>IT Managers</h3>
+          <h3><a href="<?php site_url('/by-role/it-managers'); ?>">IT Managers</a></h3>
           <ul>
             <li>Identify potential data theft threats by capturing screenshots.</li>
             <li>Monitor application usage to detect unauthorized software installations and potential security breaches.</li>
@@ -202,7 +202,7 @@ function getEmpLeadership( $post_id, $bg = 'bglight', $needDefault = true  ){
           </ul>
         </div>
         <div class="row">
-          <h3>Project Managers</h3>
+          <h3><a href="<?php site_url('/by-role/project-managers'); ?>">Project Managers</a></h3>
           <ul>
             <li>Centralized platform for monitoring project progress</li>
             <li>Real-time data and analytics for risk identification</li>
