@@ -1,3 +1,4 @@
+<?php global $RegLink; ?>
 <section class="section-numbers">
     <div class="container">
       <div class="number-row">
