@@ -8987,6 +8987,18 @@ img.info-img:hover + span.tolltip {
   display: block;
   cursor: pointer; }
 
+.page-template-tpl-data-retention .buyers-guide-answer .gttouch a {
+  cursor: default; }
+
+.crisp-loaded .buyers-guide-answer .gttouch a {
+  cursor: pointer; }
+
+.page-template-tpl-data-retention .earnrit a {
+  cursor: default; }
+
+.crisp-loaded .buyers-guide-answer .earnrit a {
+  cursor: pointer; }
+
 @media (max-width: 1024px) {
   .hero-banner {
     padding: 120px 0 180px; } }
@@ -9068,3 +9080,11 @@ img.info-img:hover + span.tolltip {
 
   .buyers-guide-answer table {
     font-size: 12px; } }
+@media (max-width: 479px) {
+  .buyers-guide-answer table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    /* Set the table to be responsive */
+    -webkit-overflow-scrolling: touch;
+    /* Smoother scrolling on iOS */ } }
