@@ -217,7 +217,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $boost_profitability['content_repeater'] ){  $i = 115;
 					foreach( $boost_profitability['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==115) ? "active" : "";
 					?>
 
@@ -236,7 +236,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $boost_profitability['content_repeater'] ){  $i = 115;
 					foreach( $boost_profitability['content_repeater'] as $row ) {
-					$image      = $row['image_'];
+					$image      = (isset($row['image_'])) ? $row['image_'] : false;
 					$active = ($i==115) ? "active" : "";
 					?>	
                     <div class="all-content">
@@ -304,7 +304,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $stay_in_control_section['content_repeater'] ){  $i = 7;
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 					?>
                    
@@ -323,7 +323,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $stay_in_control_section['content_repeater'] ){  $i = 7;
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 						
 					?>	
@@ -386,7 +386,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==10) ? "active" : "";
 					?>
                     <?php if( $image ){
@@ -405,7 +405,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==10) ? "active" : "";
 						
 					?>	
@@ -469,7 +469,7 @@ if( $isEnable == "yes" ){
                     <?php 
             if( $recognize['content_repeater'] ){  $i = 1141;
             foreach( $recognize['content_repeater'] as $row ) {
-            $image      = $row['image_'];
+            $image      = (isset($row['image_'])) ? $row['image_'] : false;
             $active = ($i==1141) ? "active" : "";
             ?>
             <?php if( $image ){
@@ -487,7 +487,7 @@ if( $isEnable == "yes" ){
                     <?php 
             if( $recognize['content_repeater'] ){  $i = 1141;
             foreach( $recognize['content_repeater'] as $row ) {
-            $image      = $row['image_'];
+            $image      = (isset($row['image_'])) ? $row['image_'] : false;
             $active = ($i==1141) ? "active" : "";
 
             ?>	
@@ -700,7 +700,7 @@ if( $isEnable == "yes" ){
               <?php 
 					if( $motivated_employees_section['content_repeater'] ){  $i = 13;
 					foreach( $motivated_employees_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==13) ? "active" : "";
 						
 					?>
@@ -738,7 +738,7 @@ if( $isEnable == "yes" ){
 			  <?php 
 					if( $time_tracker['content_repeater'] ){  $i = 7;
 					foreach( $time_tracker['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 			   ?>
                 <div class="row">
@@ -882,7 +882,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==1) ? "active" : "";
 					?>
                     <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
@@ -895,7 +895,7 @@ if( $isEnable == "yes" ){
 				<?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==1) ? "active" : "";
 					?>
 
@@ -995,7 +995,7 @@ if( $isEnable == "yes" ){
 				<?php 
 					if( $faq['question_answer_repeater'] ){  $i = 1;
 					foreach( $faq['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i <= 3) ? "open" : "";
 						//echo $i;
 					?>

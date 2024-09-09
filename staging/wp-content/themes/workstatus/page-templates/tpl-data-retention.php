@@ -102,11 +102,12 @@ if (isset($faq["is_enabled"]) && $faq["is_enabled"] == "yes"): ?>
   <div class="container">
     <div class="dis-flex">
       <div class="earnleft" style="flex-basis:100%; text-align: center;">
-        <h2>Partner with Workstatus</h2>
-        <p style="color:#ffffff; margin-top:10px;">Unlock new revenue streams and drive growth by joining our partner program.</p>
+        <h2>Have payment or upgrade related queries?</h2>
+        <!--
+         <p style="color:#ffffff; margin-top:10px;">Have payment or upgrade related queries?</p> 
+         -->
         <div class="earnrit" style="flex-basis:100%; text-align: center; margin-top: 30px;">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" 
-        rel="nofollow" class="primary_btn1">Become a Partner</a>
+        <a href="javascript:void(0);" onclick="$crisp.push(['do', 'chat:open'])" rel="nofollow" class="primary_btn1">Get in touch</a>
        </div>
       </div>      
     </div>

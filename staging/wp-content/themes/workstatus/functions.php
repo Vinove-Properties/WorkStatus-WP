@@ -412,7 +412,7 @@ if( function_exists('acf_add_options_page') ) {
 
 
 
-function pixelShowLatestPosts( $pslug = "", $bposts){
+function pixelShowLatestPosts( $bposts, $pslug = ""){
  	if( empty($pslug) ) return; 
 
  	$rPosts = $wsBposts = [];

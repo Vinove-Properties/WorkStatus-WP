@@ -256,7 +256,7 @@
             <?php 
                if( $testimonial_section['content_repeater'] ){  $i = 15;
                foreach( $testimonial_section['content_repeater'] as $row ) {
-               	$image      = $row['image'];
+               	$image      = (isset($row['image'])) ? $row['image'] : false;
                	$active = ($i==15) ? "active" : "";
                ?>
             <div class="column-three">
@@ -381,7 +381,7 @@
                   <?php 
                      if( $faq['faq-row'] ){  $i = 1;
                      foreach( $faq['faq-row'] as $row ) {
-                        $image      = $row['image_'];
+                        $image      = (isset($row['image_'])) ? $row['image_'] : false;
                         //$active = ($i==1) ? "open" : "";
                         $active = ($i <= 3) ? "open" : "";
                         //echo $i;

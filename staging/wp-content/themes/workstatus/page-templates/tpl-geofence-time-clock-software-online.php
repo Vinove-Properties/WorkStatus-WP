@@ -230,7 +230,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $boost_profitability['content_repeater'] ){  $i = 5;
 					foreach( $boost_profitability['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==5) ? "active" : "";
 					?>
 
@@ -249,7 +249,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $boost_profitability['content_repeater'] ){  $i = 5;
 					foreach( $boost_profitability['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==5) ? "active" : "";
 					?>	
                     <div class="all-content">
@@ -316,7 +316,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $stay_in_control_section['content_repeater'] ){  $i = 71;
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==71) ? "active" : "";
 					?>
                    
@@ -335,7 +335,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $stay_in_control_section['content_repeater'] ){  $i = 71;
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==71) ? "active" : "";
 						
 					?>	
@@ -483,7 +483,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==10) ? "active" : "";
 					?>
                     <?php if( $image ){
@@ -502,7 +502,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==10) ? "active" : "";
 						
 					?>	
@@ -571,7 +571,7 @@ $thisPostID = $post->ID;
                     <?php 
 					if( $recognize['content_repeater'] ){  $i = 1141;
 					foreach( $recognize['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==1141) ? "active" : "";
 					?>
                     <?php if( $image ){
@@ -590,7 +590,7 @@ $thisPostID = $post->ID;
                   if( $recognize['content_repeater'] ){
                   $i = 1141;
                     foreach( $recognize['content_repeater'] as $row ){
-                    $image      = $row['image_'];
+                    $image      = (isset($row['image_'])) ? $row['image_'] : false;
                     $active = ($i==1141) ? "active" : "";                    
                     ?>	
                       <div class="all-content">
@@ -662,7 +662,7 @@ $thisPostID = $post->ID;
               <?php 
 					if( $motivated_employees_section['content_repeater'] ){  $i = 13;
 					foreach( $motivated_employees_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==13) ? "active" : "";
 						
 					?>
@@ -700,7 +700,7 @@ $thisPostID = $post->ID;
 			  <?php 
 					if( $time_tracker['content_repeater'] ){  $i = 7;
 					foreach( $time_tracker['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 			   ?>
                 <div class="row">
@@ -765,7 +765,7 @@ $thisPostID = $post->ID;
 			  <?php 
 					if( $as_easy_as_section['content_repeater'] ){  $i = 7;
 					foreach( $as_easy_as_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 					?>
                 <?php if( $image ){
@@ -783,7 +783,7 @@ $thisPostID = $post->ID;
 			  <?php 
 					if( $as_easy_as_section['content_repeater'] ){  $i = 7;
 					foreach( $as_easy_as_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 					?>			
 			  <div class="row">
@@ -825,7 +825,7 @@ $thisPostID = $post->ID;
           <?php 
           if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
           foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-            $image      = $row['image_'];
+            $image      = (isset($row['image_'])) ? $row['image_'] : false;
             $active = ($i==1) ? "active" : "";
           ?>
                     <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
@@ -838,7 +838,7 @@ $thisPostID = $post->ID;
         <?php 
           if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
           foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-            $image      = $row['image_'];
+            $image      = (isset($row['image_'])) ? $row['image_'] : false;
             $active = ($i==1) ? "active" : "";
           ?>
 
@@ -989,7 +989,7 @@ $thisPostID = $post->ID;
 				  <?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==1) ? "active" : "";
 					?>
                     <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
@@ -1002,7 +1002,7 @@ $thisPostID = $post->ID;
 				<?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==1) ? "active" : "";
 					?>
 
@@ -1106,7 +1106,7 @@ $thisPostID = $post->ID;
 				<?php 
 					if( $faq['question_answer_repeater'] ){  $i = 1;
 					foreach( $faq['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						//$active = ($i==1) ? "open" : "";
             $active = ($i <= 3) ? "open" : "";
 						//echo $i;

@@ -173,7 +173,7 @@ if( $isEnable == "yes" ){
         if( $faq['faq-row'] ){  
         $i = 1;
         foreach( $faq['faq-row'] as $row ) {
-        $image  = $row['image_'];
+        //$image  = $row['image_'];
         //$active = ($i==1) ? "open" : "";
         $active = ($i <= 3) ? "open" : "";
         ?>
@@ -204,8 +204,7 @@ if( $isEnable == "yes" ){
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXKtuF9Xv4Mp2F7Q7cME2zMG6v1RO9E1eMCHz_x1xKzMbjfg/viewform" 
         rel="nofollow" class="primary_btn1">Become a Partner</a>
        </div>
-      </div>
-      
+      </div>      
     </div>
   </div>
 </section>
