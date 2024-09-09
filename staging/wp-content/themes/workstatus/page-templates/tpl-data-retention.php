@@ -103,9 +103,11 @@ if (isset($faq["is_enabled"]) && $faq["is_enabled"] == "yes"): ?>
     <div class="dis-flex">
       <div class="earnleft" style="flex-basis:100%; text-align: center;">
         <h2>Have payment or upgrade related queries?</h2>
-        <!-- <p style="color:#ffffff; margin-top:10px;">Have payment or upgrade related queries?</p> -->
+        <!--
+         <p style="color:#ffffff; margin-top:10px;">Have payment or upgrade related queries?</p> 
+         -->
         <div class="earnrit" style="flex-basis:100%; text-align: center; margin-top: 30px;">
-        <a href="javascript:void(0);" rel="nofollow" class="primary_btn1">Get in touch</a>
+        <a href="javascript:void(0);" onclick="$crisp.push(['do', 'chat:open'])" rel="nofollow" class="primary_btn1">Get in touch</a>
        </div>
       </div>      
     </div>
