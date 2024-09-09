@@ -173,7 +173,7 @@ if( $isEnable == "yes" ){
         if( $faq['faq-row'] ){  
         $i = 1;
         foreach( $faq['faq-row'] as $row ) {
-        $image  = $row['image_'];
+        //$image  = $row['image_'];
         //$active = ($i==1) ? "open" : "";
         $active = ($i <= 3) ? "open" : "";
         ?>

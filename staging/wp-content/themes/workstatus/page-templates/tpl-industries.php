@@ -152,7 +152,7 @@ global $ws_ctas, $RegLink, $LogLink;
                                                     <?php echo $row['content']; ?>
                                                     <!-- 
                                                     <ul class="checkList">
-                                                    <?php echo $row['checklist']; ?>
+                                                    <?php //echo $row['checklist']; ?>
                                                     </ul>
                                                     -->
                                                 </div>

@@ -17,7 +17,7 @@
    <?php 
 					if( $workstatus_for_all_devices['device_icons_upload'] ){  $i = 7;
 					foreach( $workstatus_for_all_devices['device_icons_upload'] as $row ) { 
-						$image      = $row['image'];
+						//$image      = $row['image'];
 						$active = ($i==7) ? "active" : "";
 					?>
       <a href="<?php echo $row['url']; ?>" download><img loading="lazy" src="<?php echo $row['icons_upload']['url'] ?>" alt="google play" width="200" height="50"></a> 
