@@ -8993,10 +8993,10 @@ img.info-img:hover + span.tolltip {
 .crisp-loaded .buyers-guide-answer .gttouch a {
   cursor: pointer; }
 
-.page-template-tpl-data-retention .earnrit a {
+.page-template-tpl-data-retention .earnrit .primary_btn1 {
   cursor: default; }
 
-.crisp-loaded .buyers-guide-answer .earnrit a {
+.crisp-loaded .buyers-guide-answer .earnrit .primary_btn1 {
   cursor: pointer; }
 
 @media (max-width: 1024px) {
