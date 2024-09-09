@@ -4,7 +4,7 @@ if( $bposts ) :
     $Enable = $bposts['is_enabled'];
     if($Enable == "yes" ) { 
         $posts =  $bposts['purl'];
-        pixelShowLatestPosts($posts,$bposts);
+        pixelShowLatestPosts($bposts, $posts);
     } 
 endif; 
 ?>
