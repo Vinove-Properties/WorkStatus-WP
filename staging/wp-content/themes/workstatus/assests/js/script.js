@@ -1008,14 +1008,19 @@ window.addEventListener("load", function(){
 });
 */
 
-// window.addEventListener("load", function(){
-//     let cwsBtn  = document.getElementById('ip-crisp-cta'); 
-//     if( cwsBtn ){
-//         setTimeout(function(){
-//             cwsBtn.style.display = "block";
-//         }, 7000);
-//     }
-// });
+window.addEventListener("load", function(){
+    if( document.body.classList.contains("page-template-tpl-data-retention") ){
+        setTimeout(function(){
+            document.body.classList.add("crisp-loaded");
+        }, 7000);
+    }
+    // let cwsBtn  = document.getElementById('ip-crisp-cta'); 
+    // if( cwsBtn ){
+    //     setTimeout(function(){
+    //         cwsBtn.style.display = "block";
+    //     }, 7000);
+    // }
+});
 
 //Download Popup Script//
 
