@@ -70,7 +70,7 @@
           <!--             
             <div class="column-right">
             <?php //echo $row['content']; ?>
-            <a href="<?php echo site_url($row['link']); ?>" class="primary_btn1">Explore more</a>
+            <a href="<?php //echo site_url($row['link']); ?>" class="primary_btn1">Explore more</a>
             </div> 
             -->
           <div class="column-right">
