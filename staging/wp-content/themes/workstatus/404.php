@@ -6,10 +6,10 @@ global $wp;
 $fslug = ( isset($wp->request) && ( $wp->request === "404" ) ) ? true : false;
 if( $fslug === false ){
 	header("HTTP/1.1 301 Moved Permanently");
-	if( $wp->query_vars['name'] == "suggest-feature" ){
+	if( isset( $wp->query_vars['name'] ) && ( $wp->query_vars['name'] == "suggest-feature" ) ){
 		header("Location: https://www.workstatus.io/suggest-feature.php");
 		die;
-	}elseif( $wp->query_vars['name'] == "report-bugs" ){
+	}elseif( isset( $wp->query_vars['name'] ) && ( $wp->query_vars['name'] == "report-bugs" ) ){
 		header("Location: https://www.workstatus.io/report-bugs.php");
 		die;
 	}
