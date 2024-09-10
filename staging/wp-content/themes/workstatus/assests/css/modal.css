@@ -1836,7 +1836,7 @@ h3 a {
   color: #fff; }
 
 .wsf-signup .popup-content {
-  width: 1120px !important;
+  width: 1150px !important;
   position: relative;
   overflow: hidden;
   background-color: #fff;
@@ -1997,7 +1997,8 @@ h3 a {
         line-height: 19px;
         font-weight: 400;
         transition: all 0.3s ease-in-out;
-        display: block; }
+        display: block;
+        padding: 0 5px; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
         width: 100%;
         border: 0;
@@ -2007,7 +2008,7 @@ h3 a {
         color: #525f7f;
         line-height: 19px;
         border-radius: 0;
-        padding: 8px 0;
+        padding: 8px 5px;
         font-weight: 400;
         height: 40px;
         -moz-appearance: none;
@@ -2016,6 +2017,8 @@ h3 a {
         transition: all 0.3s ease-in-out;
         background-color: transparent;
         padding-right: 25px; }
+      .wsf-signup .popup-content .right-section .form-wrap .form-group select.infield {
+        margin: 0 0 15px; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled:focus ~ label, .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled:not(:placeholder-shown) ~ label {
         top: -14px;
         font-size: 12px;
