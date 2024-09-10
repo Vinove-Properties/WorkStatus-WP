@@ -350,7 +350,11 @@
                   <div class="icon"><i class="icon<?php echo $i; ?>"></i></div>
                   <div class="textbox">
                      <h3><?php echo $row['heading']; ?></h3>
-                     <p><?php echo $row['content']; ?></p>
+                     <?php 
+                     if( isset($row['content']) && !empty($row['content']) ){
+                     echo '<p>'.$row['content'].'</p>';   
+                     }
+                     ?>                     
                   </div>
                </div>
                <?php $i++; } } ?> 

@@ -246,7 +246,6 @@ global $ws_ctas, $RegLink, $LogLink;
 				  <?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
 						$active = ($i==1) ? "active" : "";
 					?>
                     <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
@@ -259,7 +258,6 @@ global $ws_ctas, $RegLink, $LogLink;
 				<?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
 						$active = ($i==1) ? "active" : "";
 					?>
 
@@ -298,7 +296,6 @@ global $ws_ctas, $RegLink, $LogLink;
 				<?php 
 					if( $faq['question_answer_repeater'] ){  $i = 1;
 					foreach( $faq['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
 						//$active = ($i==1) ? "open" : "";
             $active = ($i <= 3) ? "open" : "";
 						//echo $i;

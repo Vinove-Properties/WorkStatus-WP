@@ -60,7 +60,11 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="container">
                 <div class="top-section">
                     <h6><span class="bg-purple"><?php echo $banner_section['heading']; ?></span></h6>
-                    <h2><?php echo $banner_section['sub_heading']; ?>Get More Done With Workstatus </h2>
+                    <?php 
+                    if( isset($banner_section['sub_heading']) && !empty($banner_section['sub_heading']) ){
+                    echo '<h2>'.$banner_section['sub_heading'].'</h2>'
+                    } 
+                    ?>
                 </div>
                 <div class="flex_row">
                     <div class="column-left">
@@ -115,7 +119,11 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="container">
                 <div class="top-section">
                     <h6><span class="bg-purple"><?php echo $timeline['heading']; ?>How It Works </span></h6>
-                    <h2><?php echo $timeline['sub_heading']; ?></h2>
+                    <?php 
+                    if( isset($timeline['sub_heading']) && !empty($timeline['sub_heading']) ){
+                    echo '<h2>'.$timeline['sub_heading'].'</h2>'
+                    } 
+                    ?>
                 </div>
                 <div class="trackRow">
                     <div class="trackImg">
@@ -219,7 +227,11 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="container">
                 <div class="top-section">
                     <h6><span class="bg-purple"><?php echo $features['heading']; ?></span></h6>
-                    <h2><?php echo $features['sub_heading']; ?></h2>
+                    <?php 
+                    if( isset($features['sub_heading']) && !empty($features['sub_heading']) ){
+                        echo '<h2>'.$features['sub_heading'].'</h2>'
+                    } 
+                    ?>
                     <?php echo $features['content']; ?>
                 </div>
                 <div class="table-container">
@@ -327,7 +339,11 @@ global $ws_ctas, $RegLink, $LogLink;
                 <div class="container">
                     <div class="top-section">
                         <h6><span class="bg-purple"><?php echo $time_tracking['heading']; ?></span></h6>
-                        <h2><?php echo $time_tracking['sub_heading']; ?></h2>
+                        <?php 
+                        if( isset($time_tracking['sub_heading']) && !empty($time_tracking['sub_heading']) ){
+                            echo '<h2>'.$time_tracking['sub_heading'].'</h2>'
+                        } 
+                        ?>
                         <p><?php echo $time_tracking['content']; ?></p>
                     </div>
                     <div id="active_Current_Tabs1">
@@ -408,7 +424,11 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="container">
                 <div class="top-section">
                     <h6><span class="bg-purple"><?php echo $faqs['heading']; ?></span></h6>
-                    <h2><?php echo $faqs['sub_heading']; ?></h2>
+                    <?php 
+                    if( isset($faqs['sub_heading']) && !empty($faqs['sub_heading']) ){
+                        echo '<h2>'.$faqs['sub_heading'].'</h2>'
+                    } 
+                    ?>
                 </div>
                 <div class="flex_row">
                     <div itemscope itemtype="https://schema.org/FAQPage">
