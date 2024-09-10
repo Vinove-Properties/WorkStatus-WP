@@ -140,7 +140,7 @@
       .ws-ctav4 .btnSc .ctasec .nobg{padding:12px 18px !important; font-size:15px !important;}
       }
     </style>
-    <?php //if( isBetaVersion() === false ) : ?>
+    <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -149,7 +149,7 @@
       })(window,document,'script','dataLayer','GTM-NPPMGZH');
     </script>
     <!-- End Google Tag Manager -->  
-    <?php //endif; ?>
+    <?php endif; ?>
   </head>
   <body <?php body_class(); ?> 
     data-ptemplate="<?php echo basename( get_page_template() ); ?>"
