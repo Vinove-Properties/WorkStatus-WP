@@ -2278,9 +2278,11 @@ h3 a {
       padding: 40px 20px;
       height: auto !important; }
       .wsf-signup .popup-content .right-section h2 {
-        text-align: center; }
+        text-align: center;
+        margin: 0 0 15px; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group {
-        padding: 0 10px !important; }
+        padding: 0 10px !important;
+        margin-bottom: 10px; }
         .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
           padding: 6px 0; }
       .wsf-signup .popup-content .right-section.signup-success .sucmsg {
@@ -2291,7 +2293,10 @@ h3 a {
       display: none; }
   .wsf-signup .info-lbl span.tolltip {
     top: -155px;
-    left: 0; } }
+    left: 0; }
+
+  .wsf-signup .popup-content .right-section .form-wrap .form-group label {
+    left: 5px; } }
 @media (max-width: 979px) {
   .wsf-signup .popup-content {
     width: 95% !important;
@@ -2307,6 +2312,11 @@ h3 a {
 @media (max-width: 479px) {
   .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
     font-size: 13px; }
+  .wsf-signup .popup-content .right-section .form-wrap .form-group label {
+    font-size: 13px; }
+
+  .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
+    padding: 12px 28px; }
 
   .infiled:focus {
     font-size: 13px !important; } }
