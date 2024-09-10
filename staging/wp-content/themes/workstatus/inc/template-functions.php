@@ -44,7 +44,7 @@ function getCommonSolutions( $post_id, $sec_class = '', $needDefault = true ){
       ?>
       <h2><?php echo $solution['sub_heading']; ?></h2>
       <?php 
-      if( $solution['content-heading'] ){
+      if( isset($solution['content-heading']) && !empty($solution['content-heading']) ){
         echo '<p>'.$solution['content-heading'].'</p>';
       }      
       ?>
