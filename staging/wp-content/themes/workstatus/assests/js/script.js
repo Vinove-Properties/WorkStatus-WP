@@ -1299,30 +1299,28 @@ suchkPolicy.addEventListener('change', (event) => {
 
 
   if(event.currentTarget.checked && (errCount === true) ){
-    if( wrap_suform.classList.contains('locate-in') ){
-        if(
-        ( vcSpaceChecker(su_email.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        
-        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
-
-        ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_cpass.value.trim()) === true )
-        ){
-            suformBtn.disabled = false;
-        }
-    }else{
-        if(
-        ( vcSpaceChecker(su_email.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
-        ( vcSpaceChecker(su_cpass.value.trim()) === true )
-        ){
-            suformBtn.disabled = false;
-        }
-        
+    //if( wrap_suform.classList.contains('locate-in') ){
+    if(
+    ( vcSpaceChecker(su_email.value.trim()) === true ) &&
+    ( vcSpaceChecker(su_name.value.trim()) === true ) &&    
+    ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
+    ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
+    ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
+    ( vcSpaceChecker(su_cpass.value.trim()) === true )
+    ){
+        suformBtn.disabled = false;
     }
+    // }else{
+    //     if(
+    //     ( vcSpaceChecker(su_email.value.trim()) === true ) &&
+    //     ( vcSpaceChecker(su_name.value.trim()) === true ) &&
+    //     ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
+    //     ( vcSpaceChecker(su_cpass.value.trim()) === true )
+    //     ){
+    //         suformBtn.disabled = false;
+    //     }
+        
+    // }
  }else{
         //suformBtn.disabled = true;
     }
@@ -1330,10 +1328,11 @@ suchkPolicy.addEventListener('change', (event) => {
 
 let sup_inputs  = document.querySelectorAll('#formPopup-su .form-group input');
 
-let inputValidator = { "uname":false, "uemail": false, "password":false, "cnf_password":false}
-if( wrap_suform.classList.contains('locate-in') ){
-inputValidator = { "uname":false, "uemail": false, "phone":false, "password":false, "cnf_password":false}    
-}
+// let inputValidator = { "uname":false, "uemail": false, "password":false, "cnf_password":false}
+// if( wrap_suform.classList.contains('locate-in') ){
+// }
+
+let inputValidator = { "uname":false, "uemail": false, "phone":false, "password":false, "cnf_password":false}    
 //console.log( inputValidator );
 let buttonSend = document.getElementById('su-submitButton');
 sup_inputs.forEach((input) => {
@@ -1382,26 +1381,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function signupFrmValidation(e){
     let geocheck = true;
-    if( wrap_suform.classList.contains('locate-in') ){
-        checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
-        if( 
-        ( vcSpaceChecker(su_pcode.value.trim()) === false ) || 
-        ( vcSpaceChecker(su_phone.value.trim()) === false ) 
-        ){
-        geocheck = false;
-        }
-    }else{
-        checkRequired([su_name, su_email, su_pass, su_cpass]);
-    }
+    //if( wrap_suform.classList.contains('locate-in') ){
+        //checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
+        // if( 
+        // ( vcSpaceChecker(su_pcode.value.trim()) === false ) || 
+        // ( vcSpaceChecker(su_phone.value.trim()) === false ) 
+        // ){
+        // geocheck = false;
+        // }
+    // }else{
+    //     checkRequired([su_name, su_email, su_pass, su_cpass]);
+    // }
+    checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
     if( !suchkPolicy.checked ){
         return false;
     }
     if(
         ( vcSpaceChecker(su_email.value.trim()) === true ) &&
         ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        ( geocheck === true ) &&
-        //( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-        //( vcSpaceChecker(su_phone.value.trim()) === true ) &&        
+        //( geocheck === true ) &&
+        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&        
         ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
         ( vcSpaceChecker(su_cpass.value.trim()) === true )
     ){
@@ -1409,10 +1409,6 @@ function signupFrmValidation(e){
         if( !sre.test(su_email.value.trim()) ){
             return false;
         }
-
-        // if( su_phone && (checkLength(su_phone,7,20) === false) ){
-        //     return false;
-        // }
 
         if( su_pass.value.trim() !== su_cpass.value.trim() ){
             return false;
