@@ -127,10 +127,10 @@ style="display:none;">
 
                      <div class="form-group" style="margin-top:10px;">
                         <select name="com-mode" class="infiled">
-                          <option value="1" selected>Phone or Email</option>
+                          <option value="0" selected>Phone or Email</option>
+                          <option value="1">Phone</option>
                           <option value="2">Email</option>
-                          <option value="3">Phone</option>
-                          <option value="4">Do not contact</option>
+                          <option value="3">Please Do Not Contact</option>
                         </select>
                         <label>Mode of communication</label>
                      </div>
