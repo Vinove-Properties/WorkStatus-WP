@@ -2306,6 +2306,8 @@ h3 a {
     padding-bottom: 0; }
   .wsf-signup .popup-content {
     width: 90% !important; }
+    .wsf-signup .popup-content .padd .mcheck {
+      top: 0; }
     .wsf-signup .popup-content .right-section {
       height: initial; } }
 @media (max-width: 479px) {
