@@ -125,7 +125,7 @@ style="display:none;">
                         <span class="error" id="su-phone-err"></span>
                      </div>
 
-                     <div class="form-group" style="margin-top:10px;">
+                     <div class="form-group">
                         <select name="com-mode" class="infiled">
                           <option value="0" selected>Phone or Email</option>
                           <option value="1">Phone</option>

@@ -3471,7 +3471,7 @@ h3 a {
       right: 30px; }
   .wsf-signup .popup-content .right-section {
     flex-basis: 48%;
-    padding: 40px;
+    padding: 40px 30px;
     height: 100%; }
     .wsf-signup .popup-content .right-section h2 {
       font-style: normal;
@@ -3676,6 +3676,9 @@ h3 a {
     position: absolute;
     bottom: -5px;
     right: 53px; }
+
+.wsf-signup .popup-content .right-section .form-wrap .form-group select.infiled {
+  margin: 0 0 15px; }
 
 /*Media Query Start from here*/
 @media (max-width: 1600px) {
