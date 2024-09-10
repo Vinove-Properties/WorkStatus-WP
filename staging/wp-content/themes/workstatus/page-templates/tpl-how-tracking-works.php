@@ -62,7 +62,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h6><span class="bg-purple"><?php echo $banner_section['heading']; ?></span></h6>
                     <?php 
                     if( isset($banner_section['sub_heading']) && !empty($banner_section['sub_heading']) ){
-                    echo '<h2>'.$banner_section['sub_heading'].'</h2>'
+                    echo '<h2>'.$banner_section['sub_heading'].'</h2>';
                     } 
                     ?>
                 </div>
@@ -121,7 +121,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h6><span class="bg-purple"><?php echo $timeline['heading']; ?>How It Works </span></h6>
                     <?php 
                     if( isset($timeline['sub_heading']) && !empty($timeline['sub_heading']) ){
-                    echo '<h2>'.$timeline['sub_heading'].'</h2>'
+                    echo '<h2>'.$timeline['sub_heading'].'</h2>';
                     } 
                     ?>
                 </div>
@@ -229,7 +229,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h6><span class="bg-purple"><?php echo $features['heading']; ?></span></h6>
                     <?php 
                     if( isset($features['sub_heading']) && !empty($features['sub_heading']) ){
-                        echo '<h2>'.$features['sub_heading'].'</h2>'
+                        echo '<h2>'.$features['sub_heading'].'</h2>';
                     } 
                     ?>
                     <?php echo $features['content']; ?>
@@ -341,7 +341,7 @@ global $ws_ctas, $RegLink, $LogLink;
                         <h6><span class="bg-purple"><?php echo $time_tracking['heading']; ?></span></h6>
                         <?php 
                         if( isset($time_tracking['sub_heading']) && !empty($time_tracking['sub_heading']) ){
-                            echo '<h2>'.$time_tracking['sub_heading'].'</h2>'
+                            echo '<h2>'.$time_tracking['sub_heading'].'</h2>';
                         } 
                         ?>
                         <p><?php echo $time_tracking['content']; ?></p>
@@ -426,7 +426,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <h6><span class="bg-purple"><?php echo $faqs['heading']; ?></span></h6>
                     <?php 
                     if( isset($faqs['sub_heading']) && !empty($faqs['sub_heading']) ){
-                        echo '<h2>'.$faqs['sub_heading'].'</h2>'
+                        echo '<h2>'.$faqs['sub_heading'].'</h2>';
                     } 
                     ?>
                 </div>
