@@ -136,7 +136,7 @@ $conArray   = $conData->response->data;
               <img loading="lazy" class="eye" src="<?php bloginfo('template_url'); ?>/assets/images/signup/eye.png"  alt="">
               </i>
               <label class="info-lbl">Password* 
-              <span class="tool-tip-wrap"><img src="<?php bloginfo('template_url'); ?>/assets/images/info_icon.svg" alt="" class="info-img" style="cursor: pointer;">
+              <span class="tool-tip-wrap"><img src="<?php bloginfo('template_url'); ?>/assests/images/info_icon.svg" alt="" class="info-img" style="cursor: pointer;">
               <span class="tolltip">Your Password must contain :<br>
               1- Minimum 6 characters are required<br>
               2- At least 1 number<br>
