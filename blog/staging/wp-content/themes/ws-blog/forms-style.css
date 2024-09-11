@@ -907,7 +907,7 @@ li.iti__country {
 }
 
 .wsf-signup .popup-content {
-    width: 1120px !important;
+    width: 1150px !important;
     position: relative;
     overflow: hidden;
     background-color: #fff;
@@ -1098,7 +1098,7 @@ li.iti__country {
 
 .wsf-signup .popup-content .right-section {
     flex-basis: 48%;
-    padding: 40px;
+    padding: 40px 30px;
     height: 100%
 }
 
@@ -1136,8 +1136,9 @@ li.iti__country {
     color: #525f7f;
     line-height: 19px;
     font-weight: 400;
-    transition: .3s ease-in-out;
-    display: block
+    transition: all 0.3s ease-in-out;
+    display: block;
+    padding:0 5px;
 }
 
 .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
@@ -1149,22 +1150,25 @@ li.iti__country {
     color: #525f7f;
     line-height: 19px;
     border-radius: 0;
-    padding: 8px 25px 8px 0;
+    padding: 8px 5px;
     font-weight: 400;
     height: 40px;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    transition: .3s ease-in-out;
-    background-color: transparent
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    padding-right: 25px;
 }
+
+select.infield{margin: 0 0 15px;}
 
 .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled:focus~label,
 .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled:not(:placeholder-shown)~label {
     top: -14px;
-    font-size: 12px;
-    color: #546181;
-    transition: .3s ease-in-out
+              font-size: 12px;
+              color: #546181;
+              transition: all 0.3s ease-in-out;
 }
 
 .wsf-signup .popup-content .right-section .form-wrap .form-group input.infiled:not(:placeholder-shown)+label+.error {
@@ -1304,173 +1308,16 @@ li.iti__country {
 .wsf-signup .errors {
     margin: 6px 0 0 !important;
     text-align: right;
-    font-size: 10px !important
+    font-size: 10px !important;
 }
 
-@media (max-width:1600px) {
-    .wsf-signup .popup-content .left-section {
-        padding: 30px 30px 50px
-    }
-    .wsf-signup .popup-content .left-section .content {
-        margin-top: 45px
-    }
-    .wsf-signup .popup-content .left-section .content h3 {
-        font-size: 18px
-    }
-    .wsf-signup .popup-content .left-section .performer-box {
-        margin: 30px 0 0;
-        padding: 20px
-    }
-    .wsf-signup .popup-content .left-section .badges {
-        margin: 40px 0 0
-    }
-    .wsf-signup .popup-content .right-section {
-        overflow-y: scroll !important;
-        height: 600px;
-        padding: 30px
-    }
-    .wsf-signup .popup-content .right-section h2 {
-        margin-bottom: 20px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group {
-        margin-bottom: 15px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
-        height: 35px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .comment-input {
-        height: 40px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
-        margin: 15px 0 0
-    }
-    .wsf-signup .popup-content:after {
-        background-size: 100% 100%;
-        height: 180px
-    }
-}
+.wsf-signup .popup-content .right-section .form-wrap .form-group select.infiled{margin: 0 0 15px;}
 
-@media (max-width:1440px) {
-    .wsf-signup .popup-content .left-section {
-        padding: 30px 30px 50px
-    }
-    .wsf-signup .popup-content .left-section .content {
-        margin-top: 35px
-    }
-    .wsf-signup .popup-content .left-section .content p {
-        font-size: 16px
-    }
-    .wsf-signup .popup-content .left-section .content h3 {
-        font-size: 18px
-    }
-    .wsf-signup .popup-content .left-section .performer-box {
-        margin: 30px 0 0;
-        padding: 20px
-    }
-    .wsf-signup .popup-content .right-section {
-        overflow-y: scroll !important;
-        height: 600px;
-        padding: 30px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group {
-        margin-bottom: 14px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
-        height: 35px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .comment-input {
-        height: 40px
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
-        margin: 15px 0 0
-    }
-    .wsf-signup .popup-content:after {
-        background-size: 100% 100%;
-        height: 180px
-    }
-}
 
-@media (max-width:1380px) {
-    .wsf-signup .popup-content {
-        width: 1120px !important;
-        overflow-y: hidden !important;
-        height: initial !important
-    }
-}
 
-@media (max-width:1280px) {
-    .wsf-signup .form-wrap {
-        padding-bottom: 50px
-    }
-    .wsf-signup .popup-content {
-        background: -webkit-linear-gradient(left, #4535a7 55.3%, #fff 39.1%)
-    }
-    .wsf-signup .popup-content .left-section .content h2 {
-        font-size: 30px;
-        line-height: 40px
-    }
-    .wsf-signup .popup-content .left-section .performer-box {
-        margin: 20px 0 0
-    }
-    .wsf-signup .popup-content .left-section .performer-box ul li {
-        margin: 0 0 10px
-    }
-    .wsf-signup .popup-content .left-section .badges {
-        margin: 30px 0 0
-    }
-    .wsf-signup .popup-content .left-section .content {
-        margin-top: 30px
-    }
-    .wsf-signup .popup-content .left-section .content p {
-        margin: 0 0 20px
-    }
-    .wsf-signup .popup-content .left-section:after,
-    .wsf-signup .popup-content .left-section:before {
-        display: none
-    }
-    .wsf-signup .popup-content:after {
-        height: 100px
-    }
-}
 
-@media (max-width:1160px) {
-    .wsf-signup .popup-content {
-        height: auto !important;
-        width: 90% !important;
-        background: #fff;
-        flex-wrap: wrap
-    }
-    .wsf-signup .popup-content .left-section,
-    .wsf-signup .popup-content:after {
-        display: none
-    }
-    .wsf-signup .popup-content .right-section {
-        flex-basis: 100%;
-        padding: 40px 20px
-    }
-    .wsf-signup .popup-content .right-section h2 {
-        text-align: center
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group {
-        padding: 0 10px !important
-    }
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
-        padding: 6px 0
-    }
-}
 
 @media (max-width:479px) {
-    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
-        font-size: 13px
-    }
-    .infiled:focus {
-        font-size: 13px !important
-    }
-}
-
-.fa-eye-slash:before {
-    display: none !important
-}
 
 #ws-apimsg.success {
     margin-top: 10px;
@@ -1537,6 +1384,8 @@ li.iti__country {
     border-color: #333 !important
 }
 
+}
+
 @media (max-width:1024px) {
     .super-form .popup-content {
         padding: 20px 30px
@@ -1546,75 +1395,6 @@ li.iti__country {
     }
 }
 
-@media (max-width:767px) {
-    .wsf-signup .form-wrap {
-        padding-bottom: 0
-    }
-    .wsf-signup .popup-content {
-        width: 90% !important
-    }
-    .wsf-signup .popup-content .right-section {
-        overflow-y: scroll !important;
-        height: initial
-    }
-    .site__header.shady .login a {
-        justify-content: center;
-        background: #4461d7;
-        color: #fff !important
-    }
-    .site_nav .login a {
-        justify-content: center
-    }
-    .design_pdf,
-    .pluginPdfTrigger,
-    .trigger {
-        padding: 9px 10px !important
-    }
-    .super-form .popup-content {
-        padding: 20px;
-        width: 90%;
-        border-radius: 20px;
-        overflow-y: scroll;
-        height: 550px
-    }
-    .super-form .popup-content img {
-        margin: 0 0 15px
-    }
-    .super-form .popup-content p {
-        font-size: 14px
-    }
-    .super-form .ctasec a {
-        min-width: 100%;
-        font-size: 14px
-    }
-}
-
-
-.inv-pop .popup-content{    width: 50%;
-    padding: 20px;
-    border-radius: 10px;
-
-}
-
-.inv-pop .popup-content iframe{width:100%; height:350px;}
-
-.inv-pop .popup-content .closeicon-vc {
-    background: url(images/cross-black.png) 0 0/100% no-repeat;
-    width:35px;
-    height: 35px;
-    background-color:#fff;
-    float: right;
-    z-index: 1;
-    position: absolute;
-    right: -10px;
-    top: -15px;
-    border-radius: 100%;
-    cursor: pointer;
-    background-size: 18px;
-    background-position: center;
-    box-shadow: 0 10px 50px rgba(68,97,215,.1);
-  
-}
 
 @media (max-width: 1380px) {
     .inv-pop .popup-content{overflow-y: initial;
@@ -1630,3 +1410,220 @@ li.iti__country {
         .inv-pop .popup-content .closeicon-vc{top:-21px;}
 }
 
+
+
+
+
+/*Media Query Start from here*/
+@media (max-width: 1600px) {
+    .wsf-signup .popup-content .left-section {
+        padding: 30px 30px 50px;
+   }
+    .wsf-signup .popup-content .left-section .content {
+        margin-top: 45px;
+   }
+    .wsf-signup .popup-content .left-section .content p {
+        font-size: 16px;
+   }
+    .wsf-signup .popup-content .left-section .content h3 {
+        font-size: 18px;
+   }
+    .wsf-signup .popup-content .left-section .performer-box {
+        margin: 30px 0 0;
+        padding: 20px;
+   }
+    .wsf-signup .popup-content .left-section .badges {
+        margin: 40px 0 0;
+   }
+    .wsf-signup .popup-content .right-section {
+        height: 600px;
+        padding: 30px;
+   }
+    .wsf-signup .popup-content .right-section h2 {
+        margin-bottom: 20px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group {
+        margin-bottom: 15px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
+        height: 35px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .comment-input {
+        height: 40px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
+        margin: 15px 0 0;
+   }
+    .wsf-signup .popup-content:after {
+        background-size: 100% 100%;
+        height: 180px;
+   }
+}
+@media (max-width: 1440px) {
+    .wsf-signup .popup-content .left-section {
+        padding: 30px 30px 50px;
+   }
+    .wsf-signup .popup-content .left-section .content {
+        margin-top: 35px;
+   }
+    .wsf-signup .popup-content .left-section .content p {
+        font-size: 16px;
+   }
+    .wsf-signup .popup-content .left-section .content h3 {
+        font-size: 18px;
+   }
+    .wsf-signup .popup-content .left-section .performer-box {
+        margin: 30px 0 0;
+        padding: 20px;
+   }
+    .wsf-signup .popup-content .right-section {
+        height: 600px;
+        padding: 30px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group {
+        margin-bottom: 14px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
+        height: 35px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .comment-input {
+        height: 40px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
+        margin: 15px 0 0;
+   }
+    .wsf-signup .popup-content:after {
+        background-size: 100% 100%;
+        height: 180px;
+   }
+}
+@media (max-width: 1380px) {
+    .wsf-signup .popup-content {
+        width: 1120px !important;
+        overflow-y: hidden !important;
+        height: initial !important;
+   }
+}
+@media (max-width: 1280px) {
+    .wsf-signup .form-wrap {
+        padding-bottom: 50px;
+   }
+    .wsf-signup .popup-content {
+        overflow-y: scroll !important;
+        height: 90% !important;
+        background: -webkit-linear-gradient(left, #4535a7 55.3%, white 39.1%);
+   }
+    .wsf-signup .popup-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+   }
+    .wsf-signup .popup-content .left-section .performer-box {
+        margin: 20px 0 0;
+   }
+    .wsf-signup .popup-content .left-section .performer-box ul li {
+        margin: 0 0 10px;
+   }
+    .wsf-signup .popup-content .left-section .badges {
+        margin: 30px 0 0;
+   }
+    .wsf-signup .popup-content .left-section .content {
+        margin-top: 30px;
+   }
+    .wsf-signup .popup-content .left-section .content p {
+        margin: 0 0 20px;
+   }
+    .wsf-signup .popup-content .left-section:before {
+        display: none;
+   }
+    .wsf-signup .popup-content .left-section:after {
+        display: none;
+   }
+    .wsf-signup .popup-content:after {
+        height: 100px;
+   }
+}
+@media (max-width: 1160px) {
+    .wsf-signup .popup-content {
+        width: 90% !important;
+        background: #fff;
+        flex-wrap: wrap;
+   }
+    .wsf-signup .popup-content .left-section {
+        display: none;
+   }
+    .wsf-signup .popup-content .right-section {
+        flex-basis: 100%;
+        padding: 40px 20px;
+        height: auto !important;
+   }
+    .wsf-signup .popup-content .right-section h2 {
+        text-align: center;
+        margin: 0 0 15px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group {
+        padding: 0 10px !important;
+        margin-bottom: 10px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
+        padding: 6px 0;
+   }
+    .wsf-signup .popup-content .right-section.signup-success .sucmsg {
+        padding-top: 0;
+   }
+    .wsf-signup .popup-content .right-section.signup-success .sucmsg p {
+        font-size: 14px;
+   }
+    .wsf-signup .popup-content:after {
+        display: none;
+   }
+    .wsf-signup .info-lbl span.tolltip {
+        top: -155px;
+        left: 0;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group label {
+        left: 5px;
+   }
+}
+@media (max-width: 979px) {
+    .wsf-signup .popup-content {
+        width: 95% !important;
+        overflow-y: scroll !important;
+        height: 90% !important;
+   }
+}
+@media (max-width: 767px) {
+    .wsf-signup .form-wrap {
+        padding-bottom: 0;
+   }
+    .wsf-signup .popup-content {
+        width: 90% !important;
+   }
+    .wsf-signup .popup-content .padd .mcheck {
+        top: 0;
+   }
+    .wsf-signup .popup-content .right-section {
+        height: initial;
+   }
+}
+@media (max-width: 479px) {
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
+        font-size: 13px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group label {
+        font-size: 13px;
+   }
+    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
+        padding: 12px 28px;
+   }
+    .infiled:focus {
+        font-size: 13px !important;
+   }
+}
+@media (max-width: 479px) {
+    .wsf-signup .popup-content {
+        width: 90% !important;
+        overflow-y: hidden !important;
+        height: initial !important;
+   }
+}
+/*Media Query Start Ends here*/
