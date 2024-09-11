@@ -126,24 +126,25 @@ $conArray   = $conData->response->data;
                 </select>
                 <label>Mode of communication</label>
               </div>
-              
+
               <div class="form-group">
-                <input type="password" class="infiled" name="password" placeholder="Password*" 
-                autocomplete="current-password" id="su-password">
-                <i onclick="togglewsPassword(this, 'su-password')" style="margin-left: -30px; cursor: pointer;">
-                <img loading="lazy" class="eye-slash" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye-slash.png"  alt="">
-                <img loading="lazy" class="eye" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye.png"  alt="">
-                </i>
-                <label class="info-lbl">Password* 
-                <span class="tool-tip-wrap"><img src="<?php bloginfo('template_url'); ?>/assests/images/info_icon.svg" alt="" class="info-img" style="cursor: pointer;">
-                <span class="tolltip">Your Password must contain :<br>
-                1- Minimum 6 characters are required<br>
-                2- At least 1 number<br>
-                3- At least 1 of the following special characters ( !, @, #, $, %, &, *, ? ) </span>
-                </span>
-                </label>
-                <span class="error"></span>
-             </div>
+              <input type="password" class="infiled" name="password" placeholder="Password*" 
+              autocomplete="current-password" id="su-password">
+              <i onclick="togglewsPassword(this, 'su-password')" style="margin-left: -30px; cursor: pointer;">
+              <img loading="lazy" class="eye-slash" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye-slash.png"  alt="">
+              <img loading="lazy" class="eye" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye.png"  alt="">
+              </i>
+              <label class="info-lbl">Password* 
+              <span class="tool-tip-wrap"><img src="<?php bloginfo('template_url'); ?>/assests/images/info_icon.svg" alt="" class="info-img" style="cursor: pointer;">
+              <span class="tolltip">Your Password must contain :<br>
+              1- Minimum 6 characters are required<br>
+              2- At least 1 number<br>
+              3- At least 1 of the following special characters ( !, #, $, %, &, *, -, @ )
+              </span>
+              </span>
+              </label>
+              <span class="error"></span>
+           </div>
               
               <div class="form-group">
                 <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password*" autocomplete="current-password" id="su-cpassword">

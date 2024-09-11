@@ -254,7 +254,7 @@ function wscheckPassword(str){
 
 function passCheck_su(event){
     if( wscheckPassword(su_pass.value.trim()) === false ){
-        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols (!,@,#,$,%,&,*,?)');        
+        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols(!,#,$,%,&,*,-,@)');        
     }else{
         if( (wscheckPassword(su_cpass.value.trim()) !== false) && (su_pass.value.trim() === su_cpass.value.trim()) ){
             showSucces( su_cpass );
