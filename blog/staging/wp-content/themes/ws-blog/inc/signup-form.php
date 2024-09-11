@@ -1,16 +1,10 @@
 <?php
-  //global $ws_userip;
-  
-  //$ws_userip  = get_ws_ipdata( getUserIP() );
-  //$defLocation = (isset($ws_userip->country) && !empty($ws_userip->country)) ? $ws_userip->country : 'IN';
-  $conData = file_get_contents(get_stylesheet_directory_uri().'/data-json/getCountryDetails.json',FILE_USE_INCLUDE_PATH);
-  $conData    = json_decode( $conData );
-  $conArray   = $conData->response->data;
-  //echo get_stylesheet_directory_uri(); die;
-  
-  ?>
+$conData = file_get_contents(get_stylesheet_directory_uri().'/data-json/getCountryDetails.json',FILE_USE_INCLUDE_PATH);
+$conData    = json_decode( $conData );
+$conArray   = $conData->response->data;
+?>
 <div class="banner-form wsf-signup">
-  <div id="formPopup-su" class="popup-wrapper" style="display:none;">
+  <div id="formPopup-su" class="popup-wrapper" style="display:block;">
     <div class="popWrap">
       <div class="popup-content p-0">
         <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
@@ -106,24 +100,31 @@
                 <label>Email Address*</label>
                 <span class="error"></span>
               </div>
-              <div class="form-group w-45 cnd-phone">
+              <div class="form-group w-45">
                 <select name="pcode" id="su-pcode" class="infiled">
                   <option value="">Select Country Code</option>
                   <?php 
                     foreach( $conArray as $row ){
-                    //$is_selected = ( $defLocation == $row->code ) ? ' selected' : '';
-                    //echo '<option value="'.$row->dial_code.'"'.$is_selected.'>'.$row->name.' '.$row->dial_code.'</option>';
-                    echo '<option value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
+                    echo '<option data-con="'.$row->code.'" value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
                     }
                     ?>                           
                 </select>
                 <label>Country Code*</label>
                 <span class="error"></span>
               </div>
-              <div class="form-group w-55 cnd-phone">
+              <div class="form-group w-55">
                 <input type="tel" id="su-phone" class="infiled su-phone"  placeholder="Phone No*" name="phone" maxlength="50">
                 <label>Phone No*</label>
                 <span class="error" id="su-phone-err"></span>
+              </div>
+              <div class="form-group" style="margin-top:10px;">
+                <select name="com-mode" class="infiled">
+                  <option value="0" selected>Phone or Email</option>
+                  <option value="1">Phone</option>
+                  <option value="2">Email</option>
+                  <option value="3">Please Do Not Contact</option>
+                </select>
+                <label>Mode of communication</label>
               </div>
               <div class="form-group">
                 <input type="password" class="infiled" name="password" placeholder="Password *" autocomplete="current-password" id="su-password">
@@ -134,6 +135,7 @@
                 <label>Password*</label>
                 <span class="error"></span>
               </div>
+              
               <div class="form-group">
                 <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password*" autocomplete="current-password" id="su-cpassword">
                 <i onclick="togglewsPassword(this, 'su-cpassword')" style="margin-left: -30px; cursor: pointer;">

@@ -71,7 +71,8 @@ function workstatus_scripts(){
         array(
         'tpl_url'       => get_bloginfo( 'template_url' ),
         'web_url'       => get_bloginfo( 'url' ),
-        'admin_ajax'    => admin_url( 'admin-ajax.php' )
+        'admin_ajax'    => admin_url( 'admin-ajax.php' ),
+        'ipinfo'        => 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo'
         )
     );
     wp_enqueue_style( 'ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
@@ -88,8 +89,8 @@ function workstatus_scripts(){
     }
     /*wp_enqueue_script( 'intlTelInput', 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js', array(),  '17.0.8', true );*/
     
-    wp_enqueue_script( 'form-validation', get_stylesheet_directory_uri() . '/js/form-validation.js', array(), 
-    _S_VERSION, true );
+    // wp_enqueue_script( 'form-validation', get_stylesheet_directory_uri() . '/js/form-validation.js', array(), 
+    // _S_VERSION, true );
     wp_enqueue_script( 'su-validation', get_stylesheet_directory_uri() . '/js/signupform-validation.js', array(), 
     _S_VERSION, true);
 }
@@ -1967,14 +1968,15 @@ function ws_signup_api_cb(){
         'phone'         => $data['phone'],
         'phone_country_code_id' => tempWsPhoneCode( $data['pcode'] ),
         'ip_address'    => $userIP,
+        'mode_of_communication' => (isset($data['com-mode']) && !empty($data['com-mode'])) ? $data['com-mode'] : '',
         'pid'           => $data['pid'],
         'type'          => $data['type'],
         'source_url'    => $data['src_page']
     );
     
-    $apiCall = "https://app.staging.workstatus.io/api/v1/signUp";
+    $apiCall = "https://app.staging.workstatus.io/api/v3/signUp";
     if( !isBetaVersion() ){
-    $apiCall = "https://api.workstatus.io/api/v1/signUp";
+    $apiCall = "https://api.workstatus.io/api/v3/signUp";
     }
     
     $response   = wp_remote_post( $apiCall, array(

@@ -1,3 +1,155 @@
+/*Cmn Functions*/
+function selectOptionByDataCode(code, selInput) {
+    const select = document.getElementById(selInput);   
+    for (let i = 0; i < select.options.length; i++) {
+        const option = select.options[i];
+        if(option.getAttribute('data-con') == code){
+          option.selected = true;
+        }
+    }
+}
+
+window.addEventListener("load", function (){
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET", wsObj.ipinfo, true); 
+xhttp.setRequestHeader("Content-Type", "application/json");
+xhttp.onreadystatechange = function(){
+  if( (this.readyState == 4) && (this.status == 200) ){
+      let response = JSON.parse(this.responseText);
+      console.log( response );
+      var conCode = response.country;
+      selectOptionByDataCode( conCode, "su-pcode");
+  }else{
+    selectOptionByDataCode( "IN", "su-pcode");
+  }
+}
+xhttp.send();
+});
+
+function showError(input, message, spDiv = false ) {
+    //console.log(input);
+    let formControl = input.parentElement;    
+    let small       = formControl.querySelector('span.error');    
+    if( spDiv !== false ){
+    small = document.getElementById(spDiv);
+    }    
+    formControl.classList.add('ws-error');
+    small.innerText = message;
+    //console.log( small );
+}
+
+function doNotingonFocus(input) {
+    const formControl = input.parentElement;
+}
+
+//show success colour
+function showSucces(input, spDiv = false){
+    let formControl = input.parentElement;
+    let small       = formControl.querySelector('span.error');    
+    if( spDiv !== false ){
+    small = document.getElementById(spDiv);
+    }
+    formControl.classList.remove('ws-error');
+    small.innerText = '';
+}
+
+function checkEmail(input){
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(input.value.trim())) {
+        showSucces(input)
+    }else {
+        if( input.value == '' ){
+            showError(input,'Please Fill Email');
+        }else{
+            showError(input,'Email is not valid');  
+        }
+    }
+}
+
+function phonenumber(inputtxt){
+    if( (/^[A-Za-z0123456789()\s.+-]+$/.test(inputtxt.value.trim()) && inputtxt.value.length >= 8) ){   
+        showSucces( inputtxt, "phone-error" )
+    }else{
+        if( inputtxt.value == '' ){
+            showError(inputtxt,'Please Fill Phone', "phone-error");
+        }else{
+            showError( inputtxt, 'Phone Number is not valid', "phone-error" );
+        }
+        
+    }
+}
+
+//checkRequired fields
+function checkRequired(inputArr){
+    inputArr.forEach(function(input){ 
+        console.log( input.name );
+        let e = input.value.trim();
+        if( !/^[A-Za-z0-9!@#$%^&*()".,;:{}<>?\[\]\-+=' ]{2,}/.test(e) ){
+            if( input.name == "uname" ){
+                showError(input, `Please Fill Name`);                
+            }else if( input.name == "phone" ){
+            let inpID = input.classList.contains('ephone-cls') ? 'ephone-error' : 'phone-error';
+            if( input.classList.contains('su-phone') ){
+                inpID = 'su-phone-err';
+            }
+            showError(input, `Please Fill Phone`, inpID);
+            }else if( input.name == "uemail" ){
+                showError(input, `Please Fill Email`);
+            }else{
+                showError(input,`This Field is required`);
+            }
+        }
+    });
+}
+
+function vcSpaceChecker( input ){
+    if( !/^[A-Za-z0-9!@#$%^&*()".,;:{}<>?\[\]\-+=' ]{1,}/.test( input ) ){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+//check input Length
+function checkLength(input, min, max){
+    if(input.value.length < min){
+        if( input.name == "fname" ){
+            //showError(input, `Please Fill First Name`);
+            if( input.classList.contains('tc-name') ){
+                showError(input, `Please Fill Name`);
+            }else{
+                showError(input, `Please Fill First Name`);
+            }
+        }else if( input.name == "phone" ){
+            let inpID = input.classList.contains('ephone-cls') ? 'ephone-error' : 'phone-error';
+            if( input.classList.contains('su-phone') ){
+                inpID = 'su-phone-err';
+            }
+            showError(input, `Please Fill Phone`, inpID);
+            //showError(input, `Please Fill Phone`, "phone-error");
+        }else if( input.name == "email" ){
+            showError(input, `Please Fill Email`);
+        }else if( input.name == "lname" ){
+            showError(input, `Please Fill Last Name`);    
+        }else if( (input.name == "password") || (input.name == "cnf_password") ){
+            showError(input, `Password must be at least ${min} characters`);
+        }else{
+            showError(input,`This Field is required`)   
+        } 
+        return false;
+    }else {
+        if( input.name == "phone" ){
+            let inpID = input.classList.contains('ephone-cls') ? 'ephone-error' : 'phone-error';
+            if( input.classList.contains('su-phone') ){
+                inpID = 'su-phone-err';
+            }
+            showSucces(input, inpID);
+        }else{
+            showSucces(input);
+        }
+        return true;
+    }
+}
 var wsSerializeForm = function(form){
     var obj = {};
     var formData = new FormData(form);
@@ -175,64 +327,17 @@ let inputValidator = {
     "password": false,
     "cnf_password": false
 }
-let buttonSend = document.getElementById('su-submitButton');
-/*
-sup_inputs.forEach((input) => {
-    input.addEventListener('focusout', () => {
-        console.log("Working...UIUIUI");
-        let name = event.target.getAttribute('name');
-        if( input.parentElement.classList.contains('ws-error') ){
-            inputValidator[name] = false;
-        }else{
-            inputValidator[name] = true;            
-        }
-        
-        let allTrue = Object.keys(inputValidator).every((item) => {
-            return inputValidator[item] === true
-        });
-
-        if(allTrue){
-            if( suchkPolicy.checked ){
-                buttonSend.disabled = false;
-                //console.log("Bingooo..111");
-            }else{
-                buttonSend.disabled = true;
-                //console.log("Bingooo..222");
-            }            
-        //console.log("Bingooo..");
-        }else{
-            buttonSend.disabled = true;
-            //console.log("Bingooo..333");
-            //console.log("Bingooo..1122@@@");
-        }
-    });
-});
-*/
-
 
 function signupFrmValidation(e){
-    let geocheck = true;
-    if( wrap_suform.classList.contains('locate-in') ){
-        checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
-        if( 
-        ( vcSpaceChecker(su_pcode.value.trim()) === false ) || 
-        ( vcSpaceChecker(su_phone.value.trim()) === false ) 
-        ){
-        geocheck = false;
-        }
-    }else{
-        checkRequired([su_name, su_email, su_pass, su_cpass]);
-    }
-    //checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
+    checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
     if( !suchkPolicy.checked ){
         return false;
     }
     if(
         ( vcSpaceChecker(su_email.value.trim()) === true ) &&
         ( vcSpaceChecker(su_name.value.trim()) === true ) &&
-        ( geocheck === true ) &&
-        // ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
-        // ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_pcode.value.trim()) === true ) &&
+        ( vcSpaceChecker(su_phone.value.trim()) === true ) &&
         ( vcSpaceChecker(su_pass.value.trim()) === true ) &&
         ( vcSpaceChecker(su_cpass.value.trim()) === true )
     ){
@@ -241,13 +346,9 @@ function signupFrmValidation(e){
             return false;
         }
 
-        // if( checkLength(su_phone,7,20) === false ){
-        //     return false;
-        // }
 
         if( su_pass.value.trim() !== su_cpass.value.trim() ){
-            //passCheck_su();
-            //passCheckc_su();
+            return false;
         }
 
         var spnMsg          = document.getElementById("ws-apimsg");
