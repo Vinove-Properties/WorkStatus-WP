@@ -3,6 +3,7 @@ $conData = file_get_contents(get_stylesheet_directory_uri().'/data-json/getCount
 $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
 ?>
+
 <div class="banner-form wsf-signup">
   <div id="formPopup-su" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
