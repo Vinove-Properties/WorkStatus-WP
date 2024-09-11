@@ -36,7 +36,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <div class="video-wrap">
                         <div class="videoSc" id="has-yt-video">
                             <div class="inner">
-                                <div class="topVideo <?php echo $srpclass; ?>">
+                                <div class="topVideo">
                                     <div id="myDIV" class="contbox2">
                                         <div class="videoWrapper">
                                             <!-- <iframe id="video" class="videoIframe" allowfullscreen data-src="<?php echo $inner_banner['video']; ?>">

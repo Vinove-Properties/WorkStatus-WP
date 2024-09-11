@@ -51,7 +51,6 @@ global $ws_ctas, $RegLink, $LogLink;
                             if ($buyers_guide['guide_repeater']) {
                                 $i = 1;
                                 foreach ($buyers_guide['guide_repeater'] as $row) {
-                                    $image      = $row['image_'];
                                     $active = ($i == 1) ? "active" : "";
                             ?>
 

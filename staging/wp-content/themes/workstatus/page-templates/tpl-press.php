@@ -65,7 +65,7 @@
                  }else{
                  echo '<span class="logo-name">'.$row['firm_name'].'</span>';    
                  }
-                 echo '<span class="date">'.$row['date'].$text.'</span>';
+                 echo '<span class="date">'.$row['date'].'</span>';
                  echo '</div>';
                  echo '</div></div>';
                 

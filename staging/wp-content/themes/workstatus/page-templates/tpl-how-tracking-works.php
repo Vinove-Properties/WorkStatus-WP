@@ -343,8 +343,10 @@ global $ws_ctas, $RegLink, $LogLink;
                         if( isset($time_tracking['sub_heading']) && !empty($time_tracking['sub_heading']) ){
                             echo '<h2>'.$time_tracking['sub_heading'].'</h2>';
                         } 
+                        if(isset($time_tracking['content']) && !empty($time_tracking['content'])){
+                            echo '<p>'.$time_tracking['content'].'</p>';
+                        }
                         ?>
-                        <p><?php echo $time_tracking['content']; ?></p>
                     </div>
                     <div id="active_Current_Tabs1">
                         <div class="flex_row">

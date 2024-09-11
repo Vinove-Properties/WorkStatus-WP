@@ -192,7 +192,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     <?php 
                     if( $boost_profitability['content_repeater'] ){  $i = 4;
                     foreach( $boost_profitability['content_repeater'] as $row ) {
-                    $image      = $row['image_'];
+                    $image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
                     $active = ($i==5) ? "active" : "";
                     if( $image ){
                             echo '<picture class="page '.$active.'" id="p'.$i.'" >
@@ -212,7 +212,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <?php 
                   if( $boost_profitability['content_repeater'] ){  $i = 4;
                   foreach( $boost_profitability['content_repeater'] as $row ) {
-                  $image      = $row['image_'];
+                  $image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
                   $active = ($i==5) ? "active" : "";
 					        ?>
                     <div class="all-content">
@@ -278,7 +278,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <?php 
                     if( $stay_in_control_section['content_repeater'] ){  $i = 7;
                     foreach( $stay_in_control_section['content_repeater'] as $row ) {
-                      $image      = $row['image_'];
+                      $image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
                       $active = ($i==7) ? "active" : "";
                     ?>
                     <?php if( $image ){
@@ -297,7 +297,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <?php 
 					if( $stay_in_control_section['content_repeater'] ){  $i = 7;
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
 						
 					?>	
@@ -359,7 +359,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 9;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==9) ? "active" : "";
 					?>
                     <?php if( $image ){
@@ -378,7 +378,7 @@ global $ws_ctas, $RegLink, $LogLink;
                   <?php 
 					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 9;
 					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==9) ? "active" : "";
 						
 					?>	
@@ -433,7 +433,7 @@ global $ws_ctas, $RegLink, $LogLink;
 				  <?php 
 					if( $motivated_employees_section['content_repeater'] ){  $i = 11;
 					foreach( $motivated_employees_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==11) ? "active" : "";
 						
 					?>	
@@ -451,7 +451,7 @@ global $ws_ctas, $RegLink, $LogLink;
 				  <?php 
 					if( $motivated_employees_section['content_repeater'] ){  $i = 11;
 					foreach( $motivated_employees_section['content_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==11) ? "active" : "";
 						
 					?>
@@ -531,10 +531,6 @@ global $ws_ctas, $RegLink, $LogLink;
             <?php if( geoCTAcheck() === true ) : ?>
             <div class="mt70 text_center for-link-blue link-text">
               <div class="mt70 text_center btnSc">
-                <!-- <p>Check How Workstatus™ Can Help<br> Your Business</p>
-                <a href="<?php echo $RegLink; ?>"
-                  class="primary_btn1 btnbg2"><?php echo $ws_ctas['cta_text']; ?></a>
-                <small>No credit card required</small> -->
                 <?php echo wsDemoCta(); ?>
               </div>
             </div>
@@ -631,7 +627,7 @@ global $ws_ctas, $RegLink, $LogLink;
 				<?php 
 					if( $faq['question_answer_repeater'] ){  $i = 1;
 					foreach( $faq['question_answer_repeater'] as $row ) {
-						$image      = $row['image_'];
+						$image      = (isset($row['image_']) && !empty($row['image_'])) ? $row['image_'] : false;
 						//$active = ($i==1) ? "open" : "";
             $active = ($i <= 3) ? "open" : "";
 						//echo $i;
