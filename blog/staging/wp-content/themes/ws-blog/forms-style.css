@@ -623,6 +623,46 @@ li.iti__country {
     bottom: -74px
 }
 
+
+
+.wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl{pointer-events: inherit;}
+.wsf-signup .tool-tip-wrap {
+    position: relative;
+}
+
+.wsf-signup .info-lbl span.tolltip {
+    display: none;
+    font-size: 11px;
+    font-weight: 500;
+    position: absolute;
+    top: -157px;
+    left: -135px;
+    width: 200px;
+    border-radius: 3px;
+    background: #525F7F;
+    color: #ffffff !important;
+    padding: 8px;
+}
+
+.wsf-signup .info-lbl span.tolltip:after {
+    content: '';
+    background: url(images/pols.png) no-repeat;
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    bottom: -5px;
+    right: 53px;
+}
+
+img.info-img{cursor: pointer;}
+
+img.info-img:hover + span.tolltip {
+    display: block;
+    cursor: pointer;
+}
+
+
+
 @media(max-width:1600px) {
     .banner-form .popup-content .top-section h2 {
         font-size: 25px;
@@ -770,6 +810,12 @@ li.iti__country {
     }
 }
 
+@media(max-width:1160px) {
+.wsf-signup .info-lbl span.tolltip{  top: -155px;
+    left: 0;}
+
+}
+
 @media(max-width:979px) {
     .banner-form .form-wrap label {
         font-size: 13px;
@@ -873,6 +919,9 @@ li.iti__country {
     .logo-white img {
         width: 180px
     }
+
+
+
 }
 
 @media(max-width:479px) {
@@ -1604,6 +1653,12 @@ select.infield{margin: 0 0 15px;}
     .wsf-signup .popup-content .right-section {
         height: initial;
    }
+
+   .wsf-signup .popup-content .right-section .form-wrap .form-group label{font-family: "arial";}
+   .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled{font-family: "arial";}
+   .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn{font-family: "arial";}
+   .wsf-signup .info-lbl span.tolltip{font-weight: 700;}
+
 }
 @media (max-width: 479px) {
     .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
