@@ -217,7 +217,14 @@ function getEmpLeadership( $post_id, $bg = 'bglight', $needDefault = true  ){
 }
 
 function getWsCmnFeatures(){
-  $cmnFeature = get_field('cmn-features', 1942);
+  global $post;
+  $cmnFeature = get_field('cmn-features', 1942); // Render Feature from home page
+  $psFeature  = get_field('ws-cmnfeature', $post->ID);
+  if( isset( $psFeature['ps-features'] ) && ($psFeature['ps-features'] == "yes") ){
+    $cmnFeature = $psFeature;
+    $cmnFeature['is_enabled'] = "yes";
+  }
+  
   if( isset( $cmnFeature['is_enabled'] ) && ($cmnFeature['is_enabled'] == "yes") ) :
   ?>
   <section class="feature_section for-heading-center whitetxt post-animation ws-ctav4">
