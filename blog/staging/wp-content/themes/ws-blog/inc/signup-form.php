@@ -22,9 +22,9 @@ $conArray   = $conData->response->data;
           <div class="performer-box">
             <div class="list-box">
               <ul>
-                <li>AI-Powered Insights</li>
-                <li>Streamline Operations</li>
-                <li>Best-in-class Support</li>
+                <li>AI-powered Insights</li>
+                <li>Stealth or Visible Tracking</li>
+                <li>Automated Timesheet</li>
               </ul>
             </div>
             <div class="second_box">
@@ -126,15 +126,24 @@ $conArray   = $conData->response->data;
                 </select>
                 <label>Mode of communication</label>
               </div>
+              
               <div class="form-group">
-                <input type="password" class="infiled" name="password" placeholder="Password *" autocomplete="current-password" id="su-password">
+                <input type="password" class="infiled" name="password" placeholder="Password*" 
+                autocomplete="current-password" id="su-password">
                 <i onclick="togglewsPassword(this, 'su-password')" style="margin-left: -30px; cursor: pointer;">
-                <img class="eye-slash" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye-slash.png"  alt="">
-                <img class="eye" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/signup/eye.png"  alt="">
+                <img loading="lazy" class="eye-slash" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye-slash.png"  alt="">
+                <img loading="lazy" class="eye" src="<?php bloginfo('template_url'); ?>/assests/images/signup/eye.png"  alt="">
                 </i>
-                <label>Password*</label>
+                <label class="info-lbl">Password* 
+                <span class="tool-tip-wrap"><img src="<?php bloginfo('template_url'); ?>/assests/images/info_icon.svg" alt="" class="info-img" style="cursor: pointer;">
+                <span class="tolltip">Your Password must contain :<br>
+                1- Minimum 6 characters are required<br>
+                2- At least 1 number<br>
+                3- At least 1 of the following special characters ( !, @, #, $, %, &, *, ? ) </span>
+                </span>
+                </label>
                 <span class="error"></span>
-              </div>
+             </div>
               
               <div class="form-group">
                 <input type="password" class="infiled"  name="cnf_password"  placeholder="Confirm Password*" autocomplete="current-password" id="su-cpassword">
