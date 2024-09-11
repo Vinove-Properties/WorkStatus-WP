@@ -1958,9 +1958,9 @@ $array = [
 add_action( 'wp_ajax_nopriv_ws_signup_api', 'ws_signup_api_cb' );
 function ws_signup_api_cb(){
     $data       = (array) json_decode( file_get_contents("php://input") );
-
     $userIP     = (isset($_SERVER['HTTP_HOST']) && ($_SERVER['HTTP_HOST'] == "localhost")) ? '47.31.154.223' : 
     wsBlogUserIP();
+    
     $reqData    = array(
         'name'          => $data['uname'],
         'email'         => $data['uemail'],

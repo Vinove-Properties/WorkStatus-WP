@@ -4,7 +4,7 @@ $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
 ?>
 <div class="banner-form wsf-signup">
-  <div id="formPopup-su" class="popup-wrapper" style="display:block;">
+  <div id="formPopup-su" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content p-0">
         <span class="cross-icon" onclick="close_suform();" style="z-index: 100;">
