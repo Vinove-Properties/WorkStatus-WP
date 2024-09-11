@@ -248,7 +248,7 @@ function phoneCheck_su(event){
 }
 
 function wscheckPassword(str){
-    var re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
+    var re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!#\$%&\*\-@])[A-Za-z\d!#\$%&\*\-@]{6,}$/;
     return re.test(str);
 }
 
