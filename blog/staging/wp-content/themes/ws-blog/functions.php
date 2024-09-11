@@ -1962,16 +1962,20 @@ function ws_signup_api_cb(){
     wsBlogUserIP();
     
     $reqData    = array(
-        'name'          => $data['uname'],
-        'email'         => $data['uemail'],
-        'password'      => $data['password'],
-        'phone'         => $data['phone'],
-        'phone_country_code_id' => tempWsPhoneCode( $data['pcode'] ),
-        'ip_address'    => $userIP,
-        'mode_of_communication' => (isset($data['com-mode']) && !empty($data['com-mode'])) ? $data['com-mode'] : '',
-        'pid'           => $data['pid'],
-        'type'          => $data['type'],
-        'source_url'    => $data['src_page']
+    'name'          => $data['uname'],
+    'email'         => $data['uemail'],
+    'password'      => $data['password'],
+    'phone'         => $data['phone'],
+    'phone_country_code_id' => tempWsPhoneCode( $data['pcode'] ),
+    'ip_address'    => $userIP,
+    'mode_of_communication' => (isset($data['com-mode']) && !empty($data['com-mode'])) ? $data['com-mode'] : '',
+    'pid'           => $data['pid'],
+    'type'          => $data['type'],
+    'source_url'    => $data['src_page'],
+    'referral_token' => (isset($_COOKIE['ws_reftoken']) && !empty($_COOKIE['ws_reftoken'])) ? $_COOKIE['ws_reftoken'] : '',
+    'utm_source'    => (isset($_COOKIE['utm_source']) && !empty($_COOKIE['utm_source'])) ? $_COOKIE['utm_source'] : '',
+    'utm_medium'    => (isset($_COOKIE['utm_medium']) && !empty($_COOKIE['utm_medium'])) ? $_COOKIE['utm_medium'] : '',
+    'utm_campaign'  => (isset($_COOKIE['utm_campaign']) && !empty($_COOKIE['utm_campaign'])) ? $_COOKIE['utm_campaign'] : ''
     );
     
     $apiCall = "https://app.staging.workstatus.io/api/v3/signUp";
