@@ -332,7 +332,8 @@ function signupFrmValidation(e){
     checkRequired([su_name, su_email, su_phone, su_pass, su_cpass, su_pcode]);
     if( !suchkPolicy.checked ){
         return false;
-    }
+    }        
+
     if(
         ( vcSpaceChecker(su_email.value.trim()) === true ) &&
         ( vcSpaceChecker(su_name.value.trim()) === true ) &&
@@ -346,8 +347,11 @@ function signupFrmValidation(e){
             return false;
         }
 
+        if( (wscheckPassword(su_pass.value.trim()) === false) ){
+            return false;
+        }
 
-        if( su_pass.value.trim() !== su_cpass.value.trim() ){
+        if( su_pass.value.trim() !== su_cpass.value.trim() ){            
             return false;
         }
 
