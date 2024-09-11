@@ -238,12 +238,15 @@ function getWsCmnFeatures(){
       if( $cards ){
         echo '<div class="flex_row">';
         foreach( $cards as $card ){
+          $icon = '';
+          if( $card['icon'] ){
+          $icon = '<img loading="lazy" src="'.$card['icon']['url'].'" alt="feature" width="'.$card['icon']['width'].'" 
+          height="'.$card['icon']['height'].'">';
+          }
           echo '<div class="column">
           <div class="content">
           <a href="'.vc_siteurl( $card['link'] ).'">
-          <img loading="lazy" src="'.$card['icon']['url'].'" alt="feature" 
-          width="'.$card['icon']['width'].'" height="'.$card['icon']['height'].'">
-          '.$card['content'].'
+          '.$icon.$card['content'].'
           <span class="small_anchor">Explore</span>
           </a>
           </div>
