@@ -245,11 +245,11 @@ function getWsCmnFeatures(){
           $icon = '<img loading="lazy" src="'.$card['icon']['url'].'" alt="feature" width="'.$card['icon']['width'].'" 
           height="'.$card['icon']['height'].'">';
           }
-          echo '<div class="column"><div class="content">'
+          echo '<div class="column"><div class="content">';
           if( $psLink === false ){
           echo '<a href="'.vc_siteurl( $card['link'] ).'">'.$icon.$card['content'].'<span class="small_anchor">Explore</span></a>';  
           }else{
-          echo $icon.$card['content'].'<a href="'.vc_siteurl( $card['link'] ).'"><span class="small_anchor">Explore</span></a>';    
+          echo $icon.$card['content'].'<a href="'.vc_siteurl($card['link']).'"><span class="small_anchor">Explore</span></a>';    
           }
           echo '</div></div>';
         }              
