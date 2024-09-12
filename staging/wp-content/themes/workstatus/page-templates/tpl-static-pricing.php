@@ -98,37 +98,23 @@
               <p class="tt-inherit">Tailored for companies seeking to improve productivity & track employee attendance.</p>
             </div>
             <div class="card-plan">
-              <span class="wph" id="pl-product">$1</span>
+              <span class="wph" id="pl-attendance">$1</span>
               <span class="prio monthly">/ user / month</span>
               <span class="prio annual">/ user / month / Billed Annually</span>
             </div>
-            <a class="price_btn" id="ws-plan-product" href="#">Buy Now</a>
+            <a class="price_btn" id="ws-plan-attendance" href="#">Buy Now</a>
             <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
                 <h4>Includes:</h4>
                 <div class="option-list">
-                  <div class="option">
-                    Mobile Check-in/Check-out
-                  </div>
-                  <div class="option">
-                    GPS-based Attendance Tracking
-                  </div>
-                  <div class="option">
-                    Geofencing for Field Employees
-                  </div>
-                  <div class="option">
-                    Attendance Reports & Analytics
-                  </div>
-                  <div class="option">
-                    Shift Management & Scheduling
-                  </div>
-                  <div class="option">
-                    Late Coming Management & Alerts
-                  </div>
-                  <div class="option m0">
-                    Leave & Overtime Management
-                  </div>
+                  <div class="option">Mobile Check-in/Check-out</div>
+                  <div class="option">GPS-based Attendance Tracking</div>
+                  <div class="option">Geofencing for Field Employees</div>
+                  <div class="option">Attendance Reports & Analytics</div>
+                  <div class="option">Shift Management & Scheduling</div>
+                  <div class="option">Late Coming Management & Alerts</div>
+                  <div class="option m0">Leave & Overtime Management</div>
                   <div class="support-options">
                     <h4>Support:</h4>
                     <p>Email / Chat / Phone / Whatsapp Support</p>
