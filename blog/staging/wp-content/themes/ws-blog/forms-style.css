@@ -1655,6 +1655,25 @@ select.infield{margin: 0 0 15px;}
    .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn{font-family: "arial";}
    .wsf-signup .info-lbl span.tolltip{font-weight: 700;}
 
+
+   .super-form .popup-content {
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    overflow-y: scroll;
+    height: 550px;
+}
+.super-form .popup-content img {
+    margin: 0 0 15px;
+}
+.super-form .popup-content p {
+    font-size: 14px;
+}
+.super-form .ctasec a {
+    min-width: 100%;
+    font-size: 14px;
+}
+
 }
 @media (max-width: 479px) {
     .wsf-signup .popup-content .right-section .form-wrap .form-group .infiled {
