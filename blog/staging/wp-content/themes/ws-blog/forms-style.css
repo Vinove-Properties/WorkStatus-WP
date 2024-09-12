@@ -1713,7 +1713,7 @@ select.infield{margin: 0 0 15px;}
     top: 3px;
     width: 30px !important;
     height: 30px !important;
-    font-size: 0;}
+    font-size: 0;     position: absolute; cursor: pointer;}
 
     .inv-pop .popWrap .popup-content iframe{    width: 100%;
         height: 100%;
@@ -1736,4 +1736,9 @@ select.infield{margin: 0 0 15px;}
         width: 95%;
         height: 80%;
     }
+
+    .inv-pop .popWrap .popup-content .closeicon-vc{     top: -24px;
+        width: 25px !important;
+        height: 25px !important;
+}
 }
