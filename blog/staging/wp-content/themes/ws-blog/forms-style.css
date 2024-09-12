@@ -1364,10 +1364,6 @@ select.infield{margin: 0 0 15px;}
 
 
 
-
-
-@media (max-width:479px) {
-
 #ws-apimsg.success {
     margin-top: 10px;
     display: inline-block;
@@ -1433,7 +1429,7 @@ select.infield{margin: 0 0 15px;}
     border-color: #333 !important
 }
 
-}
+
 
 @media (max-width:1024px) {
     .super-form .popup-content {
