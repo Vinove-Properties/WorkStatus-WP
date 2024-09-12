@@ -9356,19 +9356,26 @@ h3 a {
         display: block; }
 
 @media (max-width: 1420px) {
-  .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
-    font-size: 12px; }
-  .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
-    top: 30px;
-    left: -200px; }
-    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
-      left: 77%; }
-  .ws-pricing .price-flex .price-column .price-box .price_btn {
-    min-width: 100%; }
+  .ws-pricing .price-flex .price-column .price-box {
+    padding: 30px 15px; }
+    .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
+      right: -7px; }
+    .ws-pricing .price-flex .price-column .price-box .card-plan .prio.smtext {
+      font-size: 12px; }
+    .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right {
+      top: 30px;
+      left: -200px; }
+      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp .tooltip-right::after {
+        left: 77%; }
+    .ws-pricing .price-flex .price-column .price-box .price_btn {
+      min-width: 100%; }
 
   .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
     font-size: 18px; } }
 @media (max-width: 1380px) {
+  .ws-pricing .price-flex .price-column .price-box .card-plan .prio {
+    font-size: 15px; }
+
   .comparison-panel .comp-table tr th {
     font-size: 14px; } }
 @media (max-width: 1280px) {
