@@ -220,8 +220,10 @@ function getWsCmnFeatures(){
   global $post;
   $cmnFeature = get_field('cmn-features', 1942); // Render Feature from home page
   $psFeature  = get_field('ws-cmnfeature', $post->ID);
+  $psLink     = false;
   if( isset( $psFeature['ps-features'] ) && ($psFeature['ps-features'] == "yes") ){
     $cmnFeature = $psFeature;
+    $psLink = true;
     $cmnFeature['is_enabled'] = "yes";
   }
   
@@ -243,14 +245,13 @@ function getWsCmnFeatures(){
           $icon = '<img loading="lazy" src="'.$card['icon']['url'].'" alt="feature" width="'.$card['icon']['width'].'" 
           height="'.$card['icon']['height'].'">';
           }
-          echo '<div class="column">
-          <div class="content">
-          <a href="'.vc_siteurl( $card['link'] ).'">
-          '.$icon.$card['content'].'
-          <span class="small_anchor">Explore</span>
-          </a>
-          </div>
-          </div>';
+          echo '<div class="column"><div class="content">'
+          if( $psLink === false ){
+          echo '<a href="'.vc_siteurl( $card['link'] ).'">'.$icon.$card['content'].'<span class="small_anchor">Explore</span></a>';  
+          }else{
+          echo $icon.$card['content'].'<a href="'.vc_siteurl( $card['link'] ).'"><span class="small_anchor">Explore</span></a>';    
+          }
+          echo '</div></div>';
         }              
         echo '</div>';  
       }
