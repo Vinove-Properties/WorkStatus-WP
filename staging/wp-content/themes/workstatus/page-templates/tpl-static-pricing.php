@@ -111,6 +111,9 @@
                   <div class="option">Mobile Check-in/Check-out</div>
                   <div class="option">GPS-based Attendance Tracking</div>
                   <div class="option">Geofencing for Field Employees</div>
+                  <div class="option">Geo-fenced Jobsites</div>
+                  <div class="option">Selfie Based Attendance</div>
+
                   <div class="option">Attendance Reports & Analytics</div>
                   <div class="option">Shift Management & Scheduling</div>
                   <div class="option">Late Coming Management & Alerts</div>
@@ -118,7 +121,7 @@
                   <div class="support-options">
                     <h4>Support:</h4>
                     <p>Email / Chat / Phone / Whatsapp Support</p>
-                    <p><strong>SLA:</strong> 8 Business Hours</p>
+                    <p><strong>SLA:</strong> 8 - 12 Business Hours</p>
                   </div>
                 </div>
               </div>
@@ -148,12 +151,11 @@
             <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
             <div class="price-wrapper">
               <div class="price-options">
-                <h4>Includes:</h4>
+                <h4>Everything in Attendance +</h4>
                 <div class="option-list">
                   <div class="option">Time Tracking</div>
                   <div class="option">Timesheets</div>
-                  <div class="option">Apps & Web Activity Analysis</div>
-                  <div class="option">Attendance & Scheduling</div>
+                  <div class="option">Apps & Web Activity Analysis</div>                  
                   <div class="option">Activities Analysis</div>
                   <div class="option">Screenshots</div>
                   <div class="option">Productivity Reports</div>
@@ -350,7 +352,7 @@
               <tr>
                 <td>Timesheet Approvals</td>
                 <td>-</td>
-                <td><i class="chkicon"></i></td>
+                <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -358,7 +360,7 @@
               <tr>
                 <td>Idle Time Out</td>
                 <td>-</td>
-                <td><i class="chkicon"></i></td>
+                <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -413,7 +415,7 @@
               <tr>
                 <td>Automatic Clock In/Out</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -437,24 +439,24 @@
               <tr>
                 <td>Shift Scheduling</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <tr>
                 <td>Automatic Timesheets</td>
-                <td><i class="chkicon"></i></td>
-                <td><i class="chkicon"></i></td>
                 <td>-</td>
+                <td><i class="chkicon"></i></td>                
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <tr>
               <td>Absence Alerts</td>
-              <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -467,9 +469,9 @@
             <tbody>
               <tr>
               <td>Screenshots</td>
-              <td>100/user/mo</td>
                 <td>100/user/mo</td>
-                <td>1,500/user/mo</td>
+                <td>-</td>
+                <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -531,7 +533,7 @@
               <tr>
                 <td>Time Off & Holidays</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -539,8 +541,8 @@
               <tr>
                 <td>Overtime</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -769,7 +771,7 @@
               <tr>
                 <td>Tasks / To-dos</td>
                 <td>-</td>
-                <td>100</td>
+                <td>-</td>
                 <td>1,500</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -847,9 +849,9 @@
               <tr>
                 <td>Location Analytics</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <!-- <tr>
@@ -886,7 +888,7 @@
               <tr>
                 <td>Software Utilization</td>
                 <td>-</td>
-                <td><i class="chkicon"></i></td>
+                <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
@@ -1035,8 +1037,8 @@
               <tr>
                 <td>Chat Support</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -1078,29 +1080,7 @@
           Features marked with * can be added via add-ons below.
         </p>
       </div>
-      <div class="addons-row">
-        <div class="addond-col">
-          <div class="add-box">
-            <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
-                alt="ws" width="45" height="45">
-              </div>
-              <div class="tcon">
-                <h4>Locations</h4>
-                <span class="price">Starts at <span id="pl-location">$1</span></span>
-                <span class="unit">/ user / mo</span>
-              </div>
-            </div>
-            <div class="bottomDiv">
-              <ul>
-                <li>Geo-fenced Jobsites</li>
-                <li>Selfie Based Attendance</li>
-                <li>Work Orders</li>
-                <li>Jobs</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="addons-row">        
         <div class="addond-col">
           <div class="add-box">
             <div class="topDiv">
@@ -1144,6 +1124,28 @@
                 <li>Work Time Classification</li>
               </ul>
               <!--<a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>-->
+            </div>
+          </div>
+        </div>
+        <div class="addond-col" style="display:none;">
+          <div class="add-box">
+            <div class="topDiv">
+              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
+                alt="ws" width="45" height="45">
+              </div>
+              <div class="tcon">
+                <h4>Invoicing</h4>
+                <span class="price">Starts at <span id="pl-location">$1</span></span>
+                <span class="unit">/ user / mo</span>
+              </div>
+            </div>
+            <div class="bottomDiv">
+              <ul>
+                <li>Geo-fenced Jobsites</li>
+                <li>Selfie Based Attendance</li>
+                <li>Work Orders</li>
+                <li>Jobs</li>
+              </ul>
             </div>
           </div>
         </div>
