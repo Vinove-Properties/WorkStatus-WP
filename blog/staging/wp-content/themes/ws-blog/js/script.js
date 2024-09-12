@@ -466,3 +466,7 @@ function generateUtmLink(baseUrl, utmParams) {
     });
     return url.toString();
 }
+
+function call_demows(){
+    window.open( generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams ), '_blank' );
+}
