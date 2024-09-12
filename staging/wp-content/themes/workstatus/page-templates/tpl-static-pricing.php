@@ -95,7 +95,7 @@
               </span>
               <h3>Attendance <br>Management</h3>
               <div class="total">2 USER MINIMUM</div>
-              <p class="tt-inherit">Tailored for companies seeking to improve productivity & track employee attendance.</p>
+              <p class="tt-inherit">Tailored for companies seeking to track employee attendance.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-attendance">$1</span>
@@ -318,8 +318,8 @@
               <th><span class="plan-label">Attendance Management</span>
               <a class="button" id="ws-coplan-product" href="#">Try For Free</a>
               </th>
-              <th><span class="plan-label">Productivity Management</span><a class="button higlit" id="ws-coplan-product" href="#">Try For Free</a></th>
-              <th><span class="plan-label">Project Management</span><a class="button" id="ws-coplan-project" href="#">Try For Free</a></th>
+              <th><span class="plan-label">Productivity Management</span><a class="button" id="ws-coplan-product" href="#">Try For Free</a></th>
+              <th><span class="plan-label">Project Management</span><a class="button higlit" id="ws-coplan-project" href="#">Try For Free</a></th>
               <th>
                 <span class="plan-label">Enterprise</span>
                 <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
@@ -477,8 +477,8 @@
               </tr>
               <tr>
               <td>Activity levels</td>
-              <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
+                <td>-</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
