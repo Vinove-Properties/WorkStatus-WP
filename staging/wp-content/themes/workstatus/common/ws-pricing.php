@@ -79,6 +79,51 @@
   <div class="container">
     <div class="price-flex">
       <div class="price-column">
+          <div class="price-box">
+            <div class="pr-plan">
+              <span class="pr-icon">
+                <picture>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/date-range.svg"
+                    alt="workstatus" width="29" height="29">
+                </picture>
+              </span>
+              <h3>Attendance <br>Management</h3>
+              <div class="total">2 USER MINIMUM</div>
+              <p class="tt-inherit">Tailored for companies seeking to track employee attendance.</p>
+            </div>
+            <div class="card-plan">
+              <span class="wph" id="pl-attendance">$1</span>
+              <span class="prio monthly">/ user / month</span>
+              <span class="prio annual">/ user / month / Billed Annually</span>
+            </div>
+            <a class="price_btn" id="ws-plan-attendance" href="#">Buy Now</a>
+            <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+            <div class="price-wrapper">
+              <div class="price-options">
+                <h4>Includes:</h4>
+                <div class="option-list">
+                  <div class="option">Mobile Check-in/Check-out</div>
+                  <div class="option">GPS-based Attendance Tracking</div>
+                  <div class="option">Geofencing for Field Employees</div>
+                  <div class="option">Geo-fenced Jobsites</div>
+                  <div class="option">Selfie Based Attendance</div>
+
+                  <div class="option">Attendance Reports & Analytics</div>
+                  <div class="option">Shift Management & Scheduling</div>
+                  <div class="option">Late Coming Management & Alerts</div>
+                  <div class="option m0">Leave & Overtime Management</div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Email / Chat / Phone / Whatsapp Support</p>
+                    <p><strong>SLA:</strong> 8 - 12 Business Hours</p>
+                  </div>
+                </div>
+              </div>
+              <button class="price-accordion" type="button" aria-expanded="false">Features</button>
+            </div>
+          </div>
+        </div>
+      <div class="price-column">
         <div class="price-box">
           <div class="pr-plan">
             <span class="pr-icon">
@@ -102,25 +147,24 @@
             <div class="price-options">
               <h4>Includes:</h4>
               <div class="option-list">
-                <div class="option">Time Tracking</div>
-                <div class="option">Timesheets</div>
-                <div class="option">Apps & Web Activity Analysis</div>
-                <div class="option">Attendance & Scheduling</div>
-                <div class="option">Activities Analysis</div>
-                <div class="option">Screenshots</div>
-                <div class="option">Productivity Reports</div>
-                <div class="option">Work Type Reports</div>
-                <div class="option">HRIS</div>
-                <div class="option">HRIS Integrations</div>
-                <div class="option">Stealth mode</div>
-                <div class="option">Clients Portal</div>
-                <div class="option">Gamification</div>
-                <div class="option m0">Free on-boarding support</div>
-                <div class="support-options" style="display:none;">
-                  <h4>Support:</h4>
-                  <p>Email / Chat / Phone / Whatsapp Support</p>
-                  <p><strong>SLA:</strong> 8 Business Hours</p>
-                </div>
+                  <div class="option">Time Tracking</div>
+                  <div class="option">Timesheets</div>
+                  <div class="option">Apps & Web Activity Analysis</div>                  
+                  <div class="option">Activities Analysis</div>
+                  <div class="option">Screenshots</div>
+                  <div class="option">Productivity Reports</div>
+                  <div class="option">Work Type Reports</div>
+                  <div class="option">HRIS</div>
+                  <div class="option">HRIS Integrations</div>
+                  <div class="option">Stealth mode</div>
+                  <div class="option">Clients Portal</div>
+                  <div class="option">Gamification</div>
+                  <div class="option m0">Free on-boarding support</div>
+                  <div class="support-options">
+                    <h4>Support:</h4>
+                    <p>Email / Chat / Phone / Whatsapp Support</p>
+                    <p><strong>SLA:</strong> 8 Business Hours</p>
+                  </div>
               </div>
             </div>
             <button class="price-accordion" type="button" aria-expanded="false">Features</button>
@@ -267,7 +311,7 @@
       <p>Choose your plan above, and then select the add-ons that are right for you.<br>Features marked with * can be added via add-ons below.</p>
     </div>
     <div class="addons-row">
-      <div class="addond-col">
+      <div class="addond-col" style="display:none;">
         <div class="add-box">
           <div class="topDiv">
             <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
