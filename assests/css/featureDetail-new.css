@@ -8820,7 +8820,7 @@ body.geo-international .int-only {
       .ws-pricing .price-flex .price-column .price-box {
         padding: 30px 15px; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan p {
-          min-height: initial; }
+          min-height: 100px; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan h3 br {
           display: none; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
