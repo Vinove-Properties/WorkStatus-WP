@@ -662,6 +662,12 @@ img.info-img:hover + span.tolltip {
 }
 
 
+img.info-img:hover .wsf-signup .info-lbl span.tolltip  {
+    display: block;
+    cursor: pointer;
+}
+
+
 
 @media(max-width:1600px) {
     .banner-form .popup-content .top-section h2 {
