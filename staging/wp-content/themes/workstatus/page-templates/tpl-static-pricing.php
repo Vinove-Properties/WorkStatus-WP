@@ -316,7 +316,7 @@
                 <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
               </th>
               <th><span class="plan-label">Attendance Management</span>
-              <a class="button" id="ws-coplan-product" href="#">Try For Free</a>
+              <a class="button" id="ws-coplan-attendance" href="#">Try For Free</a>
               </th>
               <th><span class="plan-label">Productivity Management</span><a class="button" id="ws-coplan-product" href="#">Try For Free</a></th>
               <th><span class="plan-label">Project Management</span><a class="button higlit" id="ws-coplan-project" href="#">Try For Free</a></th>
