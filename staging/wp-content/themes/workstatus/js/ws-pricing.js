@@ -50,7 +50,7 @@ const pricingData = {
   'meta':{"currency":'AU$', "location":1.49, "pm":3.09, "insights":3.09}
 },
 "SA": {
-  "attendance":{'yearly':{"amount":17.99}, 'monthly':{"amount":26.98}},
+  "attendance":{'yearly':{"amount":3.75}, 'monthly':{"amount":5.63}},
   "product":{'yearly':{"amount":14.49}, 'monthly':{"amount":18.49}},
   "project":{'yearly':{"amount":19.99}, 'monthly':{"amount":25.99}},  
   'meta':{"currency":'SAR', "location":3.79, "pm":7.49, "insights":7.49}
