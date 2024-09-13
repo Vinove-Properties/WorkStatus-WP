@@ -21,7 +21,7 @@ global $ws_ctas, $RegLink, $LogLink;
         <h6>Tools</h6>
         <ul>
           <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-          <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free timesheet templates</a></li>          
+          <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
         <h6>Platforms</h6>
         <ul>

@@ -9226,7 +9226,8 @@ h3 a {
         text-transform: capitalize; }
         .comparison-panel .comp-row .comp-tablerow tr td:first-child {
           text-align: left;
-          color: #4a4c55; }
+          color: #4a4c55;
+          padding: 20px 6px; }
         .comparison-panel .comp-row .comp-tablerow tr td .chkicon {
           background: url(../images/check-mark.svg) no-repeat;
           display: block;
@@ -9555,8 +9556,10 @@ h3 a {
         border-spacing: 0; }
         .comparison-panel .comp-row .comp-tablerow tr td {
           padding: 20px 12px;
-          font-size: 15px;
+          font-size: 14px;
           text-align: center; }
+          .comparison-panel .comp-row .comp-tablerow tr td:first-child {
+            padding: 20px 6px; }
           .comparison-panel .comp-row .comp-tablerow tr td:first-child {
             text-align: left;
             color: #4a4c55; }
@@ -9619,7 +9622,7 @@ h3 a {
         .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
           min-height: initial;
           padding-top: 15px; }
-    .ws-pricing .price-flex .price-column:nth-child(2n) {
+    .ws-pricing .price-flex .price-column:nth-child(3n) {
       margin-top: 0; }
   .ws-pricing .tryit {
     margin: 0 0 20px; }

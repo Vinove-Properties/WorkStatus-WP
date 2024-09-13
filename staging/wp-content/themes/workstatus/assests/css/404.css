@@ -5515,8 +5515,8 @@ section {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
   position: relative; }
   @media screen and (max-width: 1379px) {
     .container {
@@ -5541,6 +5541,30 @@ section {
     color: #FFFFFF; }
   .feature_section p {
     color: #fff; }
+    .feature_section p a {
+      color: #fff;
+      text-decoration: underline; }
+      .feature_section p a:hover {
+        text-decoration: none;
+        color: #fff; }
+  .feature_section h3 a {
+    color: #fff; }
+    .feature_section h3 a:hover {
+      text-decoration: underline;
+      color: #fff; }
+  .feature_section ul {
+    margin: 0;
+    padding: 0; }
+    .feature_section ul li {
+      font-size: 16px !important;
+      line-height: 24px;
+      display: inline-block !important; }
+      .feature_section ul li a {
+        color: #fff;
+        text-decoration: underline; }
+        .feature_section ul li a:hover {
+          color: #fff;
+          text-decoration: none; }
   .feature_section .flex_row {
     display: -ms-grid;
     display: grid;
@@ -7257,6 +7281,8 @@ a:hover h3,
         background: url(../images/star-image04.svg) no-repeat; }
       .ft-partner .partcol .part-logo.part-logo5 {
         background: url(../images/star-image05.svg) no-repeat; }
+  .ft-partner .feature_section ul li {
+    font-size: 14px !important; }
 
 @media (max-width: 1024px) {
   .ft-partner {
