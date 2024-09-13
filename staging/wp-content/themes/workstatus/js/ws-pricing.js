@@ -14,8 +14,8 @@ const WS_PLAN_ID = {
 */
 
 const WS_PLAN_ID = {
-  "local" : {"product" : 466, "project" : 460, "ent" : 461, "free" : 137},
-  "international" : {"product" : 467, "project" : 463, "ent" : 464, "free" : 138}
+  "local" : {"attendance":5001, "product" : 466, "project" : 460, "ent" : 461, "free" : 137},
+  "international" : {"attendance":5002, "product" : 467, "project" : 463, "ent" : 464, "free" : 138}
 }
 
 const pricingData = {

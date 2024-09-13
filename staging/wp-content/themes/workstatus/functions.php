@@ -621,17 +621,17 @@ add_action( 'wp_ajax_nopriv_rateus', 'rateus_cb' );
 add_action( 'wp_ajax_rateus', 'rateus_cb' );
 function rateus_cb(){
 	global $wpdb; 
-	$data = $_POST;
-	$ip = $data['user_ip'];
-	$purl = $data['rating_page_url'];
+	$data 	= $_POST;
+	$ip 	= ws_get_userIPaddr();
+	$purl 	= $data['rating_page_url'];
 	$total_query = "SELECT COUNT(*) FROM post_rating where user_ip='".$ip."' and rating_page_url='".$purl."'";
-	$total = $wpdb->get_var( $total_query );
+	$total 	= $wpdb->get_var( $total_query );
 	if($total>0){
 		wp_send_json_success( 'Already Rated' );
 	}else{
 		$res = $wpdb->insert('post_rating', array(
 		'total_points' => $data['total_points'],
-		'user_ip' => $data['user_ip'],
+		'user_ip' => $ip,
 		'rating_page_url' => $data['rating_page_url'], 
 		));
 		if($res){
