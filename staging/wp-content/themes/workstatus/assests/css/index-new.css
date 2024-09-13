@@ -6076,7 +6076,7 @@ a:hover h3,
       border-radius: 30px;
       background: rgba(103, 84, 226, 0.19); }
       .business-tab .feature-tabs .tab-nav ul li {
-        flex-basis: 33.33%;
+        flex-basis: 25%;
         display: inline-block;
         margin: 0;
         padding: 0;
