@@ -9318,32 +9318,36 @@ body.geo-international .int-only {
       flex-basis: 50%;
       margin: 0 0 30px;
       padding: 0 15px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
-        display: none; }
-        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
-          margin-top: 20px; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-options {
-        display: block; }
-      .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
-        transform: rotateX(0);
-        top: 25px; }
-      .ws-pricing .price-flex .price-column .price-box .price-accordion {
-        display: block;
-        width: 100%;
-        font-size: 15px;
-        text-align: left; }
-        .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
-          content: "";
-          display: inline-block;
-          background: url(../images/arrowpr.svg) 0 0 no-repeat;
-          background-size: auto;
-          background-size: 100%;
-          width: 14px;
-          height: 17px;
-          right: 14px;
-          position: absolute;
-          top: 16px;
-          transform: rotateX(180deg); }
+      .ws-pricing .price-flex .price-column .price-box {
+        padding: 30px 15px; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+          min-height: initial; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
+          display: none; }
+          .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
+            margin-top: 20px; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-options {
+          display: block; }
+        .ws-pricing .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
+          transform: rotateX(0);
+          top: 25px; }
+        .ws-pricing .price-flex .price-column .price-box .price-accordion {
+          display: block;
+          width: 100%;
+          font-size: 15px;
+          text-align: left; }
+          .ws-pricing .price-flex .price-column .price-box .price-accordion:after {
+            content: "";
+            display: inline-block;
+            background: url(../images/arrowpr.svg) 0 0 no-repeat;
+            background-size: auto;
+            background-size: 100%;
+            width: 14px;
+            height: 17px;
+            right: 14px;
+            position: absolute;
+            top: 16px;
+            transform: rotateX(180deg); }
 
   .free-price .fdflex .colLeft {
     flex-basis: 30%;
