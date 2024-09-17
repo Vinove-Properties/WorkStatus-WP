@@ -993,6 +993,8 @@ window.addEventListener("load", function (){
             let conCode = response.country;
             if( conCode !== "IN" ){
                 document.body.classList.add('locate-int');
+            }else{
+                document.body.classList.add('locate-ind');
             }
         }
     }
