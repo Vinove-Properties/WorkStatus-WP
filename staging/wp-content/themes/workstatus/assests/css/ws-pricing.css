@@ -9491,7 +9491,7 @@ h3 a {
       .ws-pricing .price-flex .price-column .price-box {
         padding: 30px 15px; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan p {
-          min-height: initial; }
+          min-height: 100px; }
         .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options {
           display: none; }
           .ws-pricing .price-flex .price-column .price-box .price-wrapper .price-options .support-options {
@@ -9599,6 +9599,8 @@ h3 a {
       .ws-pricing .price-flex .price-column .price-box .pr-plan {
         width: 100%;
         margin: 0 0 20px; }
+        .ws-pricing .price-flex .price-column .price-box .pr-plan p {
+          min-height: initial; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan h3 br {
           display: none; }
         .ws-pricing .price-flex .price-column .price-box .pr-plan .pr-icon {
@@ -9606,8 +9608,8 @@ h3 a {
           position: initial;
           margin: 0 0 10px;
           display: block; }
-        .ws-pricing .price-flex .price-column .price-box .pr-plan .price_btn {
-          margin: 20px 0 8px; }
+      .ws-pricing .price-flex .price-column .price-box .price_btn {
+        margin: 20px 0 8px; }
       .ws-pricing .price-flex .price-column .price-box .card-plan {
         padding: 20px 0 0;
         margin: 0;
