@@ -173,9 +173,7 @@
          ?>
       <div class="item">
          <div class="container">
-            <div class="top-section">
-               <h2><?php echo $competitors_section['heading']; ?></h2>
-            </div>
+            <div class="top-section"><?php echo $competitors_section['heading']; ?></div>
             <div>
                <div class="flex_row">
                   <div class="column-right">
