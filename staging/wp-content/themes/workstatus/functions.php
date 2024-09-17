@@ -565,11 +565,12 @@ function stylePreloadFilter( $html, $handle ){
 	$html = str_replace("rel='stylesheet'", "rel='preload stylesheet' as='style' ", $html);
     return $html;
 }
-//<link rel="preload" href="large-desktop-image.jpg" as="image" media="(min-width: 1440px)">
 //Preload large image to page speed optimisation
 add_action( 'wp_head', function(){
 	$nr = "\r\n";
-	if(is_front_page()){}
+	if(is_front_page()){
+	echo '<link rel="preload" href="'.get_bloginfo('template_url').'/dev-images/home-bannerthumb.svg" as="image">';
+	}
 });
 
 function wsDemoCta(){
