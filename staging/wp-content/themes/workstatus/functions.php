@@ -567,9 +567,19 @@ function stylePreloadFilter( $html, $handle ){
 }
 //Preload large image to page speed optimisation
 add_action( 'wp_head', function(){
+	global $post;	
 	$nr = "\r\n";
 	if(is_front_page()){
 	echo '<link rel="preload" href="'.get_bloginfo('template_url').'/dev-images/home-bannerthumb.svg" as="image">';
+	}else{
+		$top_section = get_field('top_section', $post->ID);
+		if( 
+		isset( $top_section['video_background_image'] ) && 
+		!empty($top_section['video_background_image']) 
+	    ){
+		$cScreenSrc   = wsGetWebpSrcUrl($top_section['video_background_image']['id']);
+		echo '<link rel="preload" href="'.$cScreenSrc.'" as="image">';	
+		}	
 	}
 });
 
