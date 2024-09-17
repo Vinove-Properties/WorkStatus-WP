@@ -111,39 +111,32 @@ function workstatus_scripts() {
     global $post;
 	if( 
 	is_page_template([
-		'page-templates/time-tracking.php',
-		'page-templates/tpl-industries.php',
-		'page-templates/products.php', 
-		'page-templates/field-service-management-software.php',
-		'page-templates/tpl-field-service-management-software.php',	
-		'page-templates/tpl-geofence-time-clock-software-online.php',
-		'page-templates/tpl-usecase.php',
-		'page-templates/tpl-usecase-block.php',
-		'page-templates/tpl-time.php',
-		'page-templates/tpl-task.php',
-		'page-templates/tpl-features.php',
-		'page-templates/tpl-best-employee.php'
+	'page-templates/time-tracking.php',
+	'page-templates/tpl-industries.php',
+	'page-templates/products.php', 
+	'page-templates/field-service-management-software.php',
+	'page-templates/tpl-field-service-management-software.php',	
+	'page-templates/tpl-geofence-time-clock-software-online.php',
+	'page-templates/tpl-usecase.php',
+	'page-templates/tpl-usecase-block.php',
+	'page-templates/tpl-time.php',
+	'page-templates/tpl-task.php',
+	'page-templates/tpl-features.php',
+	'page-templates/tpl-best-employee.php'
 	])
 	){
-		wp_enqueue_style('features', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
-		
-	}elseif( 
-		is_page_template(
-			[
-			'page-templates/tpl-platform.php',
-			'page-templates/tpl-ebook.php'
-			]
-		) 
+	wp_enqueue_style('features', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), 
+	_S_VERSION );
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	}elseif(
+	is_page_template(['page-templates/tpl-platform.php','page-templates/tpl-ebook.php']) 
 	){
-		wp_enqueue_style('plateform', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
+	wp_enqueue_style('plateform', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION);
 	}elseif( 
-		is_page_template(
-			['page-templates/tpl-support.php','page-templates/tpl-careers.php']
-		) 
+	is_page_template(['page-templates/tpl-support.php','page-templates/tpl-careers.php']) 
 	){
-		wp_enqueue_style('support', get_stylesheet_directory_uri().'/assests/css/downloads.css', array(), _S_VERSION );
+	wp_enqueue_style('support', get_stylesheet_directory_uri().'/assests/css/downloads.css', array(), _S_VERSION);
 	}elseif( 
 		is_page_template(
 			['page-templates/tpl-faqs.php']) 
@@ -572,6 +565,12 @@ function stylePreloadFilter( $html, $handle ){
 	$html = str_replace("rel='stylesheet'", "rel='preload stylesheet' as='style' ", $html);
     return $html;
 }
+//<link rel="preload" href="large-desktop-image.jpg" as="image" media="(min-width: 1440px)">
+//Preload large image to page speed optimisation
+add_action( 'wp_head', function(){
+	$nr = "\r\n";
+	if(is_front_page()){}
+});
 
 function wsDemoCta(){
 	//global $RegLink;

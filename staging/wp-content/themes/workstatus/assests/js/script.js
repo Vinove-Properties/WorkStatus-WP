@@ -920,6 +920,7 @@ function setoptValue( val, label, input, parent_col){
     return dialCode;
     }
 
+/*
 document.addEventListener("DOMContentLoaded", function(){
 const phoneInputField   = document.querySelector("#pcode");
 //const phoneInputFields  = document.querySelector("#fpcode");
@@ -981,6 +982,23 @@ if( phoneInputField ){
 }
 
 });
+*/
+window.addEventListener("load", function (){
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", wsObj.ipinfo, true); 
+    xhttp.setRequestHeader("Content-Type", "application/json");
+    xhttp.onreadystatechange = function(){
+        if( (this.readyState == 4) && (this.status == 200) ){
+            let response = JSON.parse(this.responseText);
+            let conCode = response.country;
+            if( conCode !== "IN" ){
+                document.body.classList.add('locate-int');
+            }
+        }
+    }
+    xhttp.send();
+});    
+
 
 function ws_checkphonenumber(e) {
     let keyArray = [46, 8, 9, 27, 13, 187, 189, 16, 17];
