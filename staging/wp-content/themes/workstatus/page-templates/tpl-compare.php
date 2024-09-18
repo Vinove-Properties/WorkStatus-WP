@@ -312,55 +312,43 @@
       </div>
    </section>
    <?php } endif; ?>
+   
    <?php  
-      $glance_section = get_field('glance_section');
-      //	echo '<pre>';
-       //print_r($recognition_section);
-          
-      if( $glance_section ) :
-      $isEnable = $glance_section['is_enabled'];
-      if( $isEnable == "yes" ){ 
-      ?>
+   $glance_section = get_field('glance_section');
+   if( isset( $glance_section['is_enabled'] ) && ($glance_section['is_enabled'] == "yes") ){ 
+   ?>
    <section class="glance">
       <div class="container">
          <div class="flex_row">
             <div class="column-left">
-               <h2><?php echo $glance_section['heading']; ?></h2>
-               <p><?php echo $glance_section['sub_heading']; ?></p>
-               <ul class="checkList">
-                  <?php echo $glance_section['content']; ?>
-               </ul>
-               <div class="btnSc">
-                  <!-- <p><?php echo $glance_section['button_top_text']; ?></p>
-                     <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo
-                     </a>
-                     <small><?php echo $glance_section['button_bottom_text']; ?></small> -->
-                  <?php echo wsDemoCta(); ?>
-               </div>
+            <?php echo $glance_section['content']; ?>
+            <div class="btnSc"><?php echo wsDemoCta(); ?></div>
             </div>
             <div class="column-right">
                <?php 
-                  if( $glance_section['content_repeaters'] ){  $i = 1;
-                                  foreach( $glance_section['content_repeaters'] as $row ) {
-                                    
-                                  ?>
+               if( $glance_section['content_repeaters'] ){  
+               $i = 1;
+               foreach( $glance_section['content_repeaters'] as $row ){
+               ?>
                <div class="text-column">
                   <div class="icon"><i class="icon<?php echo $i; ?>"></i></div>
                   <div class="textbox">
-                     <h3><?php echo $row['heading']; ?></h3>
+                     <?php echo $row['heading']; ?>                     
                      <?php 
-                     if( isset($row['content']) && !empty($row['content']) ){
-                     echo '<p>'.$row['content'].'</p>';   
-                     }
+                     // if( isset($row['content']) && !empty($row['content']) ){
+                     // echo '<p>'.$row['content'].'</p>';   
+                     // }
                      ?>                     
                   </div>
                </div>
-               <?php $i++; } } ?> 
+               <?php $i++; } 
+               } ?> 
             </div>
          </div>
       </div>
    </section>
-   <?php } endif; ?>
+   <?php } ?>
+
    <section class="wsMobile whitetxt">
       <?php require_once get_template_directory() .'/common/workstatus-device.php';?>
    </section>
