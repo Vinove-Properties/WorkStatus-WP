@@ -8990,7 +8990,8 @@ h3 a {
         .glance .flex_row .column-left ul li {
           position: relative;
           padding-left: 30px;
-          color: #5E6373; }
+          color: #5E6373;
+          margin: 0 0 8px; }
           .glance .flex_row .column-left ul li:before {
             content: '';
             display: inline-block;
