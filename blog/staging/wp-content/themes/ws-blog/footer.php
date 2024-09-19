@@ -18,7 +18,7 @@
         <h6>Tools</h6>
         <ul>
           <li><a href="https://www.workstatus.io/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-          <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free timesheet templates</a></li>          
+          <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
       </div>
       <div  class="column fcol3">
