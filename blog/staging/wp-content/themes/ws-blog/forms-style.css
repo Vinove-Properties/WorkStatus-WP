@@ -625,10 +625,12 @@ li.iti__country {
 
 
 
-.wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl{pointer-events: inherit;}
+
 .wsf-signup .tool-tip-wrap {
     position: relative;
 }
+
+
 
 .wsf-signup .info-lbl span.tolltip {
     display: none;
@@ -666,6 +668,11 @@ img.info-img:hover .wsf-signup .info-lbl span.tolltip  {
     display: block;
     cursor: pointer;
 }
+
+
+.wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl{pointer-events: none !important;}
+
+.wsf-signup .popup-content .right-section .form-wrap .form-group label.info-lbl .tool-tip-wrap{pointer-events: visible !important;}
 
 
 
