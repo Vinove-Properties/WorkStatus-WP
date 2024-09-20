@@ -1240,13 +1240,13 @@ function phoneCheck_su(event){
 }
 
 function wscheckPassword(str){
-    var re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$/;
+    var re = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!#\$%&\*\-@])[A-Za-z\d!#\$%&\*\-@]{6,}$/;
     return re.test(str);
 }
 
 function passCheck_su(event){
     if( wscheckPassword(su_pass.value.trim()) === false ){
-        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols (!,@,#,$,%,&,*,?)');        
+        showError( su_pass, 'Use 6 or more characters with a mix of letters, numbers & symbols(!,#,$,%,&,*,-,@)');        
     }else{
         if( (wscheckPassword(su_cpass.value.trim()) !== false) && (su_pass.value.trim() === su_cpass.value.trim()) ){
             showSucces( su_cpass );
@@ -1427,6 +1427,10 @@ function signupFrmValidation(e){
     ){
         const sre = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if( !sre.test(su_email.value.trim()) ){
+            return false;
+        }
+
+        if( (wscheckPassword(su_pass.value.trim()) === false) ){
             return false;
         }
 

@@ -147,7 +147,8 @@ style="display:none;">
                         <span class="tolltip">Your Password must contain :<br>
                         1- Minimum 6 characters are required<br>
                         2- At least 1 number<br>
-                        3- At least 1 of the following special characters ( !, @, #, $, %, &, *, ? ) </span>
+                        3- At least 1 of the following special characters ( !, #, $, %, &, *, -, @ )
+                        </span>
                         </span>
                         </label>
                         <span class="error"></span>
