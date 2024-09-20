@@ -32,7 +32,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/app/android">Android</a></li>
         </ul>
       </div>
-      <div  class="column fcol4">
+      <div class="column fcol4">
         <h6>Alternatives</h6>
         <ul>          
           <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
@@ -45,7 +45,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
-      <div  class="column fcol7">
+      <div class="column fcol7">
         <h6>Workstatus Comparison</h6>
         <ul>
           <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
@@ -59,7 +59,7 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
       <!-- <div  class="column fcol5"></div> -->
 
-      <div  class="column fcol6">
+      <div class="column fcol6">
         <h6>Support</h6>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>

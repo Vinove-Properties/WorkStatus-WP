@@ -5,13 +5,15 @@
     <div class="flex_row">
       <div class="column fcol1">
         <h6>Workstatus</h6>
-        <ul>
+        <ul>          
           <li><a href="https://www.workstatus.io/about">About us</a></li>
           <li><a href="https://www.workstatus.io/reviews">Reviews</a></li>
           <li><a href="https://www.workstatus.io/press">Press</a></li>
           <li><a href="https://www.workstatus.io/resources">Resources</a></li>
           <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
           <li><a href="https://www.workstatus.io/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="https://www.workstatus.io/customization">Customization</a></li>
+          <li><a href="https://www.workstatus.io/demo">Product Tour</a></li>
         </ul>
       </div>
       <div class="column fcol2">
@@ -20,19 +22,17 @@
           <li><a href="https://www.workstatus.io/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
           <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
-      </div>
-      <div  class="column fcol3">
         <h6>Platforms</h6>
         <ul>
-          <li><a href="https://www.workstatus.io/mac">Mac</a></li>
-          <li><a href="https://www.workstatus.io/windows">Windows</a></li>
-          <li><a href="https://www.workstatus.io/linux">Linux</a></li>
-          <li><a href="https://www.workstatus.io/iphone">iOS</a></li>
-          <li><a href="https://www.workstatus.io/android">Android</a></li>
+          <li><a href="https://www.workstatus.io/apps/mac">Mac</a></li>
+          <li><a href="https://www.workstatus.io/apps/windows">Windows</a></li>
+          <li><a href="https://www.workstatus.io/apps/linux">Linux</a></li>
+          <li><a href="https://www.workstatus.io/apps/iphone">iOS</a></li>
+          <li><a href="https://www.workstatus.io/app/android">Android</a></li>
         </ul>
       </div>
-      <div  class="column fcol4">
-        <h6>Compare</h6>
+      <div class="column fcol4">
+        <h6>Alternatives</h6>
         <ul>          
           <li><a href="https://www.workstatus.io/hubstaff-alternative">Hubstaff Alternative</a></li>
           <li><a href="https://www.workstatus.io/desktime-alternative">Desktime Alternative</a></li>
@@ -44,16 +44,27 @@
           <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
-      <div  class="column fcol5">
+      <div class="column fcol7">
+        <h6>Workstatus Comparison</h6>
+        <ul>
+          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
+          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+        </ul>
+      </div>
+       <div class="column fcol6">
         <h6>Support</h6>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
           <li><a href="https://www.workstatus.io/downloads">Downloads</a></li>
-          <li><a href="https://www.workstatus.io/affiliates">Affiliates</a></li>
+          <li><a href="https://www.workstatus.io/partners">Partners</a></li>
           <li><a href="https://www.workstatus.io/faq">FAQs</a></li>
+          <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
-      </div>
-      <div  class="column fcol6">
         <div class="footer-logo">
           <a href="https://www.workstatus.io/" title="Workstatus">
             <picture>
@@ -71,14 +82,11 @@
         echo require_once get_template_directory() .'/common/inc/config.inc.php';  
         print_r($ws_ctas); die;
         */
-        // if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){
-        // echo '<div class="regBtn"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">'.$ws_ctas['cta_text'].'</a></div>';  
-        // }
+        if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){
+        echo '<div class="regBtn"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">'.$ws_ctas['cta_text'].'</a></div>';  
+        }
 
         ?>
-        <div class="regBtn">
-          <a href="javascript:void(0);" onclick="return get_ws_signupform(1, 'monthly');"  class="primary_btn1">Start Free Trial</a>
-        </div>
         <div class="social_icons">
           <a href="https://twitter.com/Workstatusapp" target="blank" rel="nofollow"><i class="icon1"></i></a>
           <a href="https://www.facebook.com/Workstatussoftware/" target="blank" rel="nofollow"><i class="icon2"></i></a>
@@ -89,6 +97,7 @@
           <i class="icon5"></i></a>
         </div>
       </div>
+      
     </div>
     <div class="footer-sec">
     <div class="footer-top">
