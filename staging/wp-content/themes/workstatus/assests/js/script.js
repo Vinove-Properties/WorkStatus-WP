@@ -980,17 +980,41 @@ if( phoneInputField ){
     }, 1000 );
     }, 1000 );
 }
-
 });
 */
+
+function selectOptionByDataCode(code, selInput) {
+    const select = document.getElementById(selInput);   
+    for (let i = 0; i < select.options.length; i++) {
+        const option = select.options[i];
+        if(option.getAttribute('data-con') == code){
+          option.selected = true;
+        }
+    }
+}
 window.addEventListener("load", function (){
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", wsObj.ipinfo, true); 
     xhttp.setRequestHeader("Content-Type", "application/json");
     xhttp.onreadystatechange = function(){
         if( (this.readyState == 4) && (this.status == 200) ){
-            let response = JSON.parse(this.responseText);
-            let conCode = response.country;
+            let response    = JSON.parse(this.responseText);
+            let conCode     = response.country;
+
+            if( !document.body.classList.contains('page-id-3484') ){
+                if( document.getElementById("wsio-pricing") && document.getElementById("wsio-preloader") ){
+                    document.getElementById("wsio-pricing").style.display   = "block";
+                    document.getElementById("wsio-preloader").style.display = "none";
+                    setPlanPricing( conCode, "yearly", true );    
+                }    
+            }else{
+                if( document.getElementById("wsio-pricing") && document.getElementById("wsio-preloader") ){
+                    document.getElementById("wsio-pricing").style.display   = "block";
+                    document.getElementById("wsio-preloader").style.display = "none";
+                    setPlanPricing( "US", "yearly", true );
+                }
+            }
+            selectOptionByDataCode( conCode, "su-pcode");
             if( conCode !== "IN" ){
                 document.body.classList.add('locate-int');
             }else{

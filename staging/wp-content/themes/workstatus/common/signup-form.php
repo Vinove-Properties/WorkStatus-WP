@@ -112,9 +112,9 @@ style="display:none;">
                            <option value="">Select Country Code</option>
                            <?php 
                            foreach( $conArray as $row ){
-                           echo '<option value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
+                           echo '<option data-con="'.$row->code.'" value="'.$row->dial_code.'">'.$row->name.' '.$row->dial_code.'</option>';
                            }
-                           ?>                           
+                           ?>                        
                         </select>
                         <label>Country Code*</label>
                         <span class="error"></span>

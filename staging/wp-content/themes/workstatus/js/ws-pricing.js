@@ -179,29 +179,28 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
   }
 }
 
-window.addEventListener("load", function (){
-  if( !document.body.classList.contains('page-id-3484') ){
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", wsObj.ipinfo, true); 
-    xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.onreadystatechange = function(){
-        if( (this.readyState == 4) && (this.status == 200) ){
-          let response = JSON.parse(this.responseText);
-            document.getElementById("wsio-pricing").style.display   = "block";
-            document.getElementById("wsio-preloader").style.display = "none";
-            console.log( response );
-            var conCode = response.country;
-            setPlanPricing( conCode, "yearly", true );
-        }
-    }
-    xhttp.send();  
-  }else{
-    document.getElementById("wsio-pricing").style.display   = "block";
-    document.getElementById("wsio-preloader").style.display = "none";
-    setPlanPricing( "US", "yearly", true );
-  }
-  
-});
+// window.addEventListener("load", function (){
+//   if( !document.body.classList.contains('page-id-3484') ){
+//     var xhttp = new XMLHttpRequest();
+//     xhttp.open("GET", wsObj.ipinfo, true); 
+//     xhttp.setRequestHeader("Content-Type", "application/json");
+//     xhttp.onreadystatechange = function(){
+//         if( (this.readyState == 4) && (this.status == 200) ){
+//           let response = JSON.parse(this.responseText);
+//             document.getElementById("wsio-pricing").style.display   = "block";
+//             document.getElementById("wsio-preloader").style.display = "none";
+//             console.log( response );
+//             var conCode = response.country;
+//             setPlanPricing( conCode, "yearly", true );
+//         }
+//     }
+//     xhttp.send();  
+//   }else{
+//     document.getElementById("wsio-pricing").style.display   = "block";
+//     document.getElementById("wsio-preloader").style.display = "none";
+//     setPlanPricing( "US", "yearly", true );
+//   }  
+// });
 
 if( document.body.classList.contains('page-template-tpl-static-pricing') ){
   let planBtn = document.querySelector('.comparison-outer .plan-btn');

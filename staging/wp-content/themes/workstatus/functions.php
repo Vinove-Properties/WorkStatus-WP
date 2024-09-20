@@ -103,9 +103,6 @@ add_action('wp_footer', function(){
 
 
 function workstatus_scripts() {
-	//wp_enqueue_style( 'workstatus-style', get_stylesheet_uri(), array(), _S_VERSION );
-	//wp_style_add_data( 'workstatus-style', 'rtl', 'replace' );
-    //wp_deregister_script( 'wp-embed' );
 	wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
     global $post;
