@@ -8127,8 +8127,8 @@ h3 a {
   background: #f5f7fa;
   margin-top: 80px; }
 
-.error404 {
-  padding: 160px 0 120px; }
+body.error404 .error404 {
+  padding: 120px 0; }
 
 .errorPg h1 {
   font-size: 40px;
@@ -8185,6 +8185,9 @@ h3 a {
 .page-content {
   margin: 40px 0 0; }
 
+body.error404 .error404 .background_grey {
+  background: #fff; }
+
 @media screen and (max-width: 767px) {
   .errorPg {
     padding: 60px 3%;
@@ -8215,5 +8218,5 @@ h3 a {
       width: 90%; } }
 
 @media (max-width: 979px) {
-  .error404 {
+  body.error404 .error404 {
     padding: 120px 0 50px; } }
