@@ -8127,6 +8127,9 @@ h3 a {
   background: #f5f7fa;
   margin-top: 80px; }
 
+.error404 {
+  padding: 160px 0 120px; }
+
 .errorPg h1 {
   font-size: 40px;
   margin: 0;
@@ -8210,3 +8213,7 @@ h3 a {
   @media screen and (max-width: 767px) {
     .error404 .not-found {
       width: 90%; } }
+
+@media (max-width: 979px) {
+  .error404 {
+    padding: 120px 0 50px; } }
