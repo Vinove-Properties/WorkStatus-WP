@@ -151,7 +151,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     if( plans.hasOwnProperty(key) ){
       
       if( key !== "currency" ){
-        console.log("This "+ key );
+        //console.log("This "+ key );
 
         const value     = plans[key];
         let elmPricing  = document.getElementById("pl-"+key);

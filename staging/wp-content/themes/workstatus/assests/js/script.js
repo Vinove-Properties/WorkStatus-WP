@@ -720,6 +720,9 @@ function checkRequired(inputArr){
                     showError(input, `Please Fill First Name`);
                 }
                 
+            }
+            else if( input.name == "uname" ){
+                showError(input, `Please Fill Name`);                
             }else if( input.name == "phone" ){
                 let inpID = input.classList.contains('ephone-cls') ? 'ephone-error' : 'phone-error';
                 if( input.classList.contains('su-phone') ){
