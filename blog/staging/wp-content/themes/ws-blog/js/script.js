@@ -470,3 +470,7 @@ function generateUtmLink(baseUrl, utmParams) {
 function call_demows(){
     window.open( generateUtmLink( 'https://calendly.com/workstatus/demo', utmParams ), '_blank' );
 }
+
+function callSalesWs(){
+    window.open( generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams ), '_blank' );
+}
