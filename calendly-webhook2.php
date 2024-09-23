@@ -1381,12 +1381,31 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     }
     $utm_source = $utm_medium = $utm_campaign = $pageUrl = $ipAddress = '';
     $hasDataID = 0;
-    if( isset( $json['payload']['tracking']['utm_source'] ) ){
-        $utm_source = $json['payload']['tracking']['utm_source'];
-        $utmsrc     = explode( "!!", $utm_source );
-        //$pageUrl    = $utmsrc[0];
-        $ipAddress  = $utmsrc[1];
-        $hasDataID  = ( isset( $utmsrc[2] ) ) ? $utmsrc[2] : 0;
+    // if( isset( $json['payload']['tracking']['utm_source'] ) ){
+    //     $utm_source = $json['payload']['tracking']['utm_source'];
+    //     $utmsrc     = explode( "!!", $utm_source );
+    //     //$pageUrl    = $utmsrc[0];
+    //     $ipAddress  = $utmsrc[1];
+    //     $hasDataID  = ( isset( $utmsrc[2] ) ) ? $utmsrc[2] : 0;
+    // }
+
+    if( isset($json['payload']['tracking']['utm_source']) && !empty($json['payload']['tracking']['utm_source']) ){
+        $getUTM_source = $json['payload']['tracking']['utm_source'];
+        if( $getUTM_source == "gglads" ){
+            $utm_source = "Advertisement: Google";
+        }elseif( $getUTM_source == "bingads" ){
+            $utm_source = "Advertisement: Bing";
+        }elseif( $getUTM_source == "facebookpaid" ){
+            $utm_source = "Advertisement: FaceBook";
+        }elseif( $getUTM_source == "quorapaid" ){
+            $utm_source = "Advertisement: Quora";
+        }elseif( $getUTM_source == "linkedinads" ){
+            $utm_source = "Advertisement: LinkedIN";
+        }elseif( $getUTM_source == "adroll" ){
+            $utm_source = "Advertisement: Adroll";
+        }else{
+            $utm_source = "Calendly Webhook";
+        }
     }
 
     if( isset( $json['payload']['tracking']['utm_campaign'] ) ){
@@ -1397,8 +1416,8 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $utm_medium = $json['payload']['tracking']['utm_medium'];
     }
 
-    if( isset( $json['payload']['tracking']['utm_term'] ) ){
-        $pageUrl = $json['payload']['tracking']['utm_term'];
+    if( isset( $json['payload']['tracking']['utm_term'] ) && !empty( $json['payload']['tracking']['utm_term'] ) ){
+        $pageUrl        = $json['payload']['tracking']['utm_term'];
     }
 
     /*
@@ -1520,7 +1539,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'UTM_Medium'    => $utm_medium,
     'UTM_Campaign'  => $utm_campaign,
     'Website_URL'   => $pageUrl,
-    //'Ref_Url'       => $referalurl,
+    'Ref_Url'       => $pageUrl,
     'Company_Headcount' => $teamSize,
     'Calendly_Booked'   => "Yes"
     ));
