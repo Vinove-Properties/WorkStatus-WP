@@ -232,6 +232,73 @@ if( isset( $ws_services['required'] ) && ( $ws_services['required'] == "yes" ) )
 <?php endif; ?>
 
 <?php 
+$mcBLocks = get_field('mc-block');
+if( isset($mcBLocks['required']) && ($mcBLocks['required'] == "yes") ){
+  if( isset( $mcBLocks['block'] ) && is_array( $mcBLocks['block'] ) && (count($mcBLocks['block']) > 0) ){
+    foreach( $mcBLocks['block'] as $row ){
+    $pxlImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
+    echo '<section class="trackEm"><div class="container">';
+    echo '<div class="top-section">'.$row['content'].'</div>';
+    echo '<div class="trackRow"><div class="trackImg">'.$pxlImage.'</div>';
+    if( $row['ls-blocks'] ){
+      echo '<div class="trackContent">';
+      foreach( $row['ls-blocks'] as $block ){
+        echo '<div class="row">'.$block['cont'].'</div>';
+      }
+      echo '</div>';
+    }
+    echo '</div>';
+    echo '</div></section>';    
+    }
+  }
+}
+?>
+
+<?php  
+$user_guide_section = get_field('user_guide_section');
+if( $user_guide_section ) :
+$isEnable = $user_guide_section['is_enabled'];
+if( $isEnable == "yes" ){ 
+?>
+<section class="userguide">
+  <div class="container">
+    <div class="top-section">
+      <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
+      <h2><?php echo $user_guide_section['sub_heading']; ?></h2>
+    </div>
+    <div class="buyers-guide-section" id="div-buyer-guide">
+      <div class="buyers-guide">
+        <div class="buyers-guide-question" id="buyers-guide-question">
+          <ul class="question-list">
+            <?php 
+            if( $user_guide_section['qna'] ){  $i = 1;
+            foreach( $user_guide_section['qna'] as $row ) {
+            $active = ($i==1) ? "active" : "";
+            ?>
+            <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
+            </li>
+            <?php $i++; } } ?>
+          </ul>
+        </div>
+        <div class="buyers-guide-answer-part" id="buyers-guide-answer-part">
+        <?php 
+        if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
+        foreach( $user_guide_section['question_answer_repeater'] as $row ) {
+        $active = ($i==1) ? "active" : "";
+        ?>
+        <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
+        <h3 class="guide-question"><?php echo $row['question']; ?></h3>
+        <div class="guide-answer"><?php echo $row['answer']; ?></dsiv>
+        </div>
+        <?php $i++; } } ?>                  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } endif; ?>
+
+<?php 
 $useCases = get_field('use-cases');
 if( isset($useCases['required']) && ($useCases['required'] == "yes") ) :
 ?>
