@@ -489,6 +489,28 @@ function wsBannerShortcode_cb( $atts ){
     return $div;
 }
 
+add_shortcode( 'cta_block', 'ctaBlock_cb' );
+function ctaBlock_cb( $atts ){
+    $atts = shortcode_atts( array(
+    'title'      => 'Want to save time & money?', 
+    'cta2_text'  => 'Book a Demo'    
+    ), $atts, 'bartag' );
+
+    $FreeTrialCta = '';
+    $hasLogin = getCTAstatus();
+    if( $hasLogin !== false ){
+    $FreeTrialCta = '<a href="javascript:void(0);" class="bkdemo" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
+    }
+    $div = '<div class="upd-cusbanner sc-col">
+    <div class="heading">'.esc_html($atts['title']).'</div>
+    <div class="ctasec">
+    <a class="primary_btn1" onclick="call_demows();" href="javascript:void(0);">'.esc_html($atts['cta2_text']).'</a>
+    '.$FreeTrialCta.'    
+    </div>
+    </div>';
+    return $div;
+}
+
 add_shortcode( 'ws_imgcta', 'ws_imgctaCB' );
 function ws_imgctaCB( $atts ){
     $atts = shortcode_atts( array(
