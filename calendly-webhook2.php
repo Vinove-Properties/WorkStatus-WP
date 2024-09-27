@@ -1393,9 +1393,9 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $getUTM_source = $json['payload']['tracking']['utm_source'];
         if( $getUTM_source == "gglads" ){
             $utm_source = "Advertisement: Google";
-        }elseif( $getUTM_source == "bingads" ){
+        }elseif( $getUTM_source == "bngads" ){
             $utm_source = "Advertisement: Bing";
-        }elseif( $getUTM_source == "facebookpaid" ){
+        }elseif( $getUTM_source == "fbads" ){
             $utm_source = "Advertisement: FaceBook";
         }elseif( $getUTM_source == "quorapaid" ){
             $utm_source = "Advertisement: Quora";
