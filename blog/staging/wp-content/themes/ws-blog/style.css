@@ -1757,6 +1757,7 @@ border: none; transition: all 0.3s ease-in-out;  min-width: 140px; margin: 5px 0
         .banner-section .popup-content label, .popup-content input[type="email"]{width:100% important;}
         .banner-section .ig_popup.ig_inspire .ig_headline{font-size: 25px !important;}
         .upd-cusbanner.email-subscribe{margin-top: 15px !important;}
+        .ws-blogo .lnk-blog{right: -50px;}
 }
 
 .wp-content-dt .upd-cusbanner:last-child{display: none!important;}

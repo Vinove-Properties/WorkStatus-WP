@@ -329,7 +329,7 @@ top:15%; right: 15%;}
 
 
 @media (max-width:767px){
-.cta-section .top-cta{padding: 28px 25px;}
+.cta-section .top-cta{padding: 25px 20px;}
 .cta-section .colLeft{flex-basis: 100%; text-align: center;}
 .cta-section .colLeft .ct-head{line-height: 28px; font-size: 18px;}
 .cta-section .colLeft p{margin: 0 0 15px;}
