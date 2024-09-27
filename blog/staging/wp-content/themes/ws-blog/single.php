@@ -14,11 +14,12 @@
       </div>
     </div>
     <?php 
-      $topCTA = get_field('ptop-cta');  
-      if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
-      $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
-      $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
-      ?>
+    /*
+    $topCTA = get_field('ptop-cta');  
+    if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
+    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
+    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
+    ?>
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
@@ -48,7 +49,9 @@
           ?>
       </div>
     </div>
-    <?php endif; ?>
+    <?php endif; 
+    */
+    ?>
     <div class="cta-section cta-accorpg">
       <div class="top-cta">
         <div class="colLeft">
