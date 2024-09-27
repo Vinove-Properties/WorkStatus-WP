@@ -14,12 +14,41 @@
       </div>
     </div>
     <?php 
-    /*
+    
     $topCTA = get_field('ptop-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
     $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
     $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
+    if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
     ?>
+    <div class="cta-section cta-accorpg">
+      <div class="top-cta">
+        <div class="colLeft">
+          <div class="ct-head"><?php echo $heading; ?></div>
+          <p><?php echo $text; ?></p>
+          <div class="cta-wrap">
+            <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
+            <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
+          </div>
+        </div>
+        <div class="colMid">
+          <?php 
+          if( isset( $topCTA['image'] ) && is_array( $topCTA['image'] ) ){
+          echo '<picture>
+          <img loading="lazy" src="'.$topCTA['image']['url'].'" alt="workstatus" width="'.$topCTA['image']['width'].'" height="'.$topCTA['image']['height'].'">
+          </picture>';  
+          }else{
+          echo '<picture>
+          <img loading="lazy" src="'.get_bloginfo('template_url').'/assets/images/cta-image2.svg" alt="workstatus" 
+          width="381" height="280">
+          </picture>';
+          }
+          ?>
+          
+        </div>
+      </div>
+    </div>
+    <?php }else{ ?>
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
@@ -49,27 +78,9 @@
           ?>
       </div>
     </div>
-    <?php endif; 
-    */
-    ?>
-    <div class="cta-section cta-accorpg">
-      <div class="top-cta">
-        <div class="colLeft">
-          <div class="ct-head">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</div>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="cta-wrap">
-            <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
-            <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
-          </div>
-        </div>
-        <div class="colMid">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/cta-image2.svg" alt="workstatus" 
-              width="381" height="280">
-          </picture>
-        </div>
-      </div>
-    </div>
+    <?php 
+    }
+    endif; ?>    
     <div class="top-header-section">
       <div class="searchdiv">
         <div class="breadcrumbs">
