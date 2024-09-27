@@ -1758,6 +1758,10 @@ border: none; transition: all 0.3s ease-in-out;  min-width: 140px; margin: 5px 0
         .banner-section .ig_popup.ig_inspire .ig_headline{font-size: 25px !important;}
         .upd-cusbanner.email-subscribe{margin-top: 15px !important;}
         .ws-blogo .lnk-blog{right: -50px;}
+
+        .upd-cusbanner .ctasec a{min-width: 135px; font-size: 14px;}
+
+
 }
 
 .wp-content-dt .upd-cusbanner:last-child{display: none!important;}
