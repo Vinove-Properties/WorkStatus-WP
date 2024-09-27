@@ -285,6 +285,8 @@ top:15%; right: 15%;}
 .cta-accorpg .colLeft{flex-basis: 60%;}
 .cta-section .colLeft .ct-head{font-size: 20px;}
 .cta-section .colLeft p{font-size: 13px;}
+
+.vcb-col-left.sticky{right: 30px;}
     
 }
 
@@ -372,8 +374,8 @@ div.ez-toc-widget-container{border:0;}
 .ez-toc-widget-container nav ol li, .ez-toc-widget-container nav ul li{padding:0;}
 
 .customcta .cusimg{display: none;}
-.customcta .cus-cont{width: 100%; padding:0; text-align: center;}
-.customcta .btn-container .white-btn{min-width: 180px;}
+.customcta .cus-cont{width: 100%; padding:20px; text-align: center; border-radius: 15px;}
+.customcta .btn-container .white-btn{min-width: 150px; text-align: center;}
 .vcb-col-right p{margin: 0 0 15px;}
 
 }
