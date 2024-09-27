@@ -323,7 +323,7 @@ top:15%; right: 15%;}
 .cta-accorpg .top-cta{padding:25px;}
 .cta-accorpg .cta-wrap .bkd{margin: 0;}
 
-.customcta .cusimg img {width: 100%; margin-top: -175px ;}
+.customcta .cusimg img {width: 100%; margin-top: -175px !important;}
 
 
 
