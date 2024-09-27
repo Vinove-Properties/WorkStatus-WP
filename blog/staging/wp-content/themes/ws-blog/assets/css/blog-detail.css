@@ -334,7 +334,7 @@ top:15%; right: 15%;}
 .cta-section .colLeft .ct-head{line-height: 28px; font-size: 18px;}
 .cta-section .colLeft p{margin: 0 0 15px;}
 .cta-section .ctaRit{flex-basis: 100%; text-align: center; justify-content: center;}
-.cta-section .white-btn{font-size: 15px; padding: 8px 20px; min-width: 150px; display: inline-block; margin: 0 5px; line-height:24px;}
+.cta-section .white-btn{font-size: 15px; padding: 8px 15px; min-width: initial; display: inline-block; margin: 0 5px; line-height:26px;}  
 .cta-section .white-btn::after {top:12px;}
 .banner-section .searchdiv{flex-wrap: wrap;}
 .banner-section .breadcrumbs{flex-basis:78%; font-size: 13px; line-height:22px;}
@@ -375,7 +375,7 @@ div.ez-toc-widget-container{border:0;}
 
 .customcta .cusimg{display: none;}
 .customcta .cus-cont{width: 100%; padding:20px; text-align: center; border-radius: 15px;}
-.customcta .btn-container .white-btn{min-width: 150px; text-align: center;}
+.customcta .btn-container .white-btn{min-width: 120px; text-align: center;}
 .vcb-col-right p{margin: 0 0 15px;}
 
 }
