@@ -334,7 +334,7 @@ top:15%; right: 15%;}
 .cta-section .colLeft .ct-head{line-height: 28px; font-size: 18px;}
 .cta-section .colLeft p{margin: 0 0 15px;}
 .cta-section .ctaRit{flex-basis: 100%; text-align: center; justify-content: center;}
-.cta-section .white-btn{font-size: 15px; padding: 8px 15px; min-width: initial; display: inline-block; margin: 0 5px; line-height:26px;}  
+.cta-section .white-btn{font-size: 15px; padding: 8px 15px; min-width: initial; display: inline-block; margin: 5px !important;  line-height:26px;}  
 .cta-section .white-btn::after {top:12px;}
 .banner-section .searchdiv{flex-wrap: wrap;}
 .banner-section .breadcrumbs{flex-basis:78%; font-size: 13px; line-height:22px;}
