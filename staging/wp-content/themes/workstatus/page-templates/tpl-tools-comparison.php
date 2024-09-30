@@ -282,8 +282,8 @@ if( $isEnable == "yes" ){
         </div>
         <div class="buyers-guide-answer-part" id="buyers-guide-answer-part">
         <?php 
-        if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
-        foreach( $user_guide_section['question_answer_repeater'] as $row ) {
+        if( $user_guide_section['qna'] ){  $i = 1;
+        foreach( $user_guide_section['qna'] as $row ) {
         $active = ($i==1) ? "active" : "";
         ?>
         <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
