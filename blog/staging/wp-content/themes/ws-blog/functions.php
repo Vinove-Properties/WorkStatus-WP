@@ -20,7 +20,7 @@ function ws_smtp_phpemailer( $phpmailer ){
 add_filter('ig_es_blacklist_ips', function( $array ){
     $array = [];
     return $array;
-})
+});
 
 function ws_blog_setup() {
     load_theme_textdomain( 'ws-blog', get_template_directory() . '/languages' );
