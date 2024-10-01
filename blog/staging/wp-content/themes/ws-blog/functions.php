@@ -17,8 +17,9 @@ function ws_smtp_phpemailer( $phpmailer ){
   $phpmailer->FromName      = "Workstatus";
 }
 
-add_filter('ig_es_blacklist_ips', function(){
-    return [];
+add_filter('ig_es_blacklist_ips', function( $array ){
+    $array = []
+    return $array;
 })
 
 function ws_blog_setup() {
