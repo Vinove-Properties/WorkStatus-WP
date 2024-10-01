@@ -18,7 +18,7 @@ function ws_smtp_phpemailer( $phpmailer ){
 }
 
 add_filter('ig_es_blacklist_ips', function( $array ){
-    $array = []
+    $array = [];
     return $array;
 })
 
