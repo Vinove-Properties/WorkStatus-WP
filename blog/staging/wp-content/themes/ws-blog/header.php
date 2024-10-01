@@ -11,9 +11,12 @@
     <style type="text/css">
     
       @media (max-width: 979px) {
-      .reviews{padding:50px 0 0;}
-     
+      .reviews{padding:50px 0 0;}      
       }
+      @media only screen and (min-device-width: 768px){
+      #elm-toc .sw-hd {z-index: 9; position:relative;}
+      }
+
       @media (max-width: 767px) {
       .inner-banner-bg .bannerwrap{background-size: 0 !important; background-image: none !important;}
       .inner-banner-bg::after, .hero-banner:after, .inner-banner:after {display:none;} 
@@ -22,9 +25,8 @@
       .inner-banner-bg .bannerwrap {padding:0;}
       .inner-banner-bg{height:initial;}
       .hero-banner {padding:100px 0 50px;}
-   
-      body.single .blog-thumb,
-      .desk-only{ display:none; }    
+      body.single .blog-thumb,.desk-only{ display:none; }    
+      
       }
       body.single-post .row-key-takeaway{background: #f7f6fe; padding:30px; border-radius: 10px; border-left: 5px solid #624DE3; 
       color: #414141; margin: 30px 0;}
