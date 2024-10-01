@@ -323,9 +323,9 @@ top:15%; right: 15%;}
 .cta-accorpg .top-cta{padding:25px;}
 .cta-accorpg .cta-wrap .bkd{margin: 0;}
 
-.customcta .cusimg img {width: 100%; margin-top: -175px !important;}
+.customcta .cusimg img {width: 100%; margin-top: -175px !important; display:none;}
 
-
+.subcribe-bottom .detail-subsbox{width:100%;  margin: 0;}
 
 }
 
@@ -360,7 +360,7 @@ button.newsletter{width: 28px; height: 28px;}
 .second-row{margin: 30px 0 0;}
 .customcta img{margin: 0 auto 10px !important;}
 
-.subcribe-bottom .detail-subsbox{width:100%;  margin: 0;}
+
 
 
 /*New CSS start from here*/
@@ -379,6 +379,7 @@ div.ez-toc-widget-container{border:0;}
 .customcta .cus-cont{width: 100%; padding:20px; text-align: center; border-radius: 15px;}
 .customcta .btn-container .white-btn{min-width: 120px; text-align: center;}
 .vcb-col-right p{margin: 0 0 15px;}
+
 
 }
 
