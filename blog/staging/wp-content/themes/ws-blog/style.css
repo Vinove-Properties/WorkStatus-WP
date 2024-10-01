@@ -1132,6 +1132,8 @@ div.epcl-share-container {
  padding-right: 10px;
  padding-left: 10px;
 }
+
+.post-rel-sec .reBox:first-child{padding-left:0;}
 .reBox img {
  margin: 0 0 15px !important;
  border-radius: 4px;
