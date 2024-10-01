@@ -4,6 +4,19 @@ if( ! defined( '_S_VERSION' ) ){
     define( '_S_VERSION', time() );
 }
 
+add_action( 'phpmailer_init', 'ws_smtp_phpemailer' );
+function ws_smtp_phpemailer( $phpmailer ){
+  $phpmailer->isSMTP();  
+  $phpmailer->Host          = 'smtp.gmail.com';
+  $phpmailer->SMTPSecure    = 'ssl';
+  $phpmailer->Port          = 465;
+  $phpmailer->SMTPAuth      = true;
+  $phpmailer->Username      = 'do-not-reply@workstatus.io';
+  $phpmailer->Password      = 'qqmwjodicsevwikm';
+  $phpmailer->From          = "donotreply@workstatus.io";
+  $phpmailer->FromName      = "Workstatus";
+}
+
 function ws_blog_setup() {
     load_theme_textdomain( 'ws-blog', get_template_directory() . '/languages' );
     add_theme_support( 'automatic-feed-links' );
