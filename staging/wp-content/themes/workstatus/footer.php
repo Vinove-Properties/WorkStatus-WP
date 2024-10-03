@@ -288,10 +288,10 @@ endif;
   "name": " Workstatus| Employee Management Software",
   "address": {
   "@type": "PostalAddress",
-  "streetAddress": "2nd Floor, 55P, Sector 44,",
-  "addressLocality": "Gurugram",
-  "addressRegion": "IN",
-  "postalCode": "122003",
+  "streetAddress" : "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
+  "addressLocality" : "Gurugram",
+  "addressRegion" : "IN",
+  "postalCode" : "122001",
   "addressCountry": "IN"
   },
   "review": {
@@ -330,10 +330,10 @@ endif;
   "image" : "https://www.workstatus.io/assests/images/ws-ogimage.png",
   "address" : {
   "@type" : "PostalAddress",
-  "streetAddress" : "2nd Floor, 55P, Sector 44,",
+  "streetAddress" : "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
   "addressLocality" : "Gurugram",
   "addressRegion" : "IN",
-  "postalCode" : "122003",
+  "postalCode" : "122001",
   "telephone" : "+917042020782",
   "addressCountry" : {
   "@type" : "Country",
@@ -344,24 +344,28 @@ endif;
   }
 </script>
 <script type="application/ld+json">
-  {
-  "@context": "http://schema.org",
-  "@type": "ProfessionalService",
-  "priceRange" : "$15 - $99",
-  "name": "Workstatus:Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software Company",
-  "url": "",
-  "image": "https://www.workstatus.io/assests/images/ws-ogimage.png",
-  "description": "Workstatus is one of the leading Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software.",
-  "telephone": "+917042020782",
-  "address": {
-  "@type": "PostalAddress",
-  "streetAddress": "2nd Floor, 55P, Sector 44,",
-  "addressLocality": "Gurugram",
-  "addressRegion": "IN",
-  "postalCode":"122003"
-  }
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Workstatus",
+  "url": "https://www.workstatus.io/",
+  "logo": "https://www.workstatus.io/wp-content/themes/workstatus/assests/images/logo.svg",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "9582957066",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": "en"
+  },
+  "sameAs": [
+    "https://www.facebook.com/Workstatussoftware/",
+    "https://twitter.com/Workstatusapp",
+    "https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw",
+    "https://www.linkedin.com/company/Workstatusapp/"
+  ]
+}
 </script>
+
 <script type="text/javascript">
 function changerate(starno){
 var starthover = document.getElementById("starthover");
