@@ -165,535 +165,491 @@
     <?php endif; ?>  
     <?php //wp_body_open(); ?>
     <?php  echo ( wsFeaturedHeader() ) ? '<div class="feature-header">' : ''; ?>
-    <header class="site__header" id="masthead">
-      <div class="container">
-        <?php //echo '<pre>'.get_page_template().'</pre>'; ?>
-        <div id="topnav" class="top_nav">
-          <div class="logo">
-            <a href="<?php echo site_url(); ?>/" title="Workstatus">
-              <picture>
-                <img src="<?php echo get_template_directory_uri(); ?>/assests/images/logo.svg" alt="Workstatus" width="230" height="31"> 
-              </picture>
-            </a>
+   
+  <header class="header-two" id="masthead">
+  <div class="container">
+    <div class="wrapper">
+      <div class="header-item-left">
+        <a href="<?php echo site_url(); ?>/" class="brand">
+          <div class="large">
+            <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="230" height="31">
+            <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="230" height="31">
           </div>
-          <div class="logo-white">
-            <a href="<?php echo site_url(); ?>/" title="Workstatus">
-              <picture>
-                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/logo-white.svg" width="230"
-                  height="31" alt="Workstatus">
-              </picture>
-            </a>
-          </div>
-          <button  class="nav_btn" onclick="navFunction();"> <span>&#9776;</span> <span>&#10005;</span> </button>
-          <nav class="site_nav">
-            <ul>
-              <?php /* ?>
-              <li id="productsitem" class="dropdown dropdown-2">
-                <a href="#" onclick="showProductItem();">Products</a>
-                <div class="small-menu">
-                  <div class="flex_row">
-                    <div class="col-menu">
-                      <h3>OVERVIEW</h3>
-                      <div class="menu-box">
-                        <a href="<?php echo site_url(); ?>/workstatus-platform">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/prod-01.svg" width="20"
-                          height="20" alt="Menu Icon">Workstatus Platform
-                        </a>
-                        <a href="<?php echo site_url(); ?>/how-it-works">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/prod-02.svg" width="20"
-                          height="20" alt="Menu Icon">How It Works
-                        </a>
-                        <a href="<?php echo site_url(); ?>/integrations">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/prod-03.svg" width="20"
-                          height="20" alt="Menu Icon">Integrations
-                        </a>
-                        <a href="<?php echo site_url(); ?>/data-security">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/prod-04.svg" width="20"
-                          height="20" alt="Menu Icon">Data Privacy & Security
-                        </a>
-                        <a href="<?php echo site_url(); ?>/pricing">
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/prod-05.svg" width="20"
-                          height="20" alt="Menu Icon">Pricing
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <?php */ ?>
-              <li id="featuresitem" class="dropdown">
-                <a href="<?php echo site_url(); ?>/product">Product</a><span class="trigger" onclick="showFeatureItem();"></span>
-                <div class="full-menu">
-                  <div class="container">
-                    <div class="flex_row">
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/time-attendance">Time & Attendance</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon01.svg" width="20"
-                            height="20" alt="Menu Icon">Time Tracking
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/timesheet-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon02.svg" width="20"
-                            height="20" alt="Menu Icon">Online Timesheets
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/attendance-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon03.svg" width="20"
-                            height="20" alt="Menu Icon">Attendance Management
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/shift-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon04.svg" width="20"
-                            height="20" alt="Menu Icon">Shift Management
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/time-off-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon05.svg" width="20" height="20" alt="Menu Icon">Time Off Management</a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon06.svg" width="20"
-                            height="20" alt="Menu Icon">Geofence Time Tracking
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/online-time-reporting">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon21.svg" width="20"
-                            height="20" alt="Menu Icon">Online Time Reporting
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/automatic-time-mapping">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon08.svg" width="20"
-                            height="20" alt="Menu Icon">Automatic Time Mapping
-                          </a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/web-based-time-tracker">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-03.svg" width="20" height="20" alt="Menu Icon">Web Based Time Tracker</a>
-                          <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-04.svg" width="20"
-                            height="20" alt="Menu Icon">Live Location Tracking
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/workforce-management">WorkForce  Management</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon09.svg" width="20"
-                            height="20" alt="Menu Icon">Employee Scheduling
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/employee-productivity-monitoring">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon10.svg" width="20"
-                            height="20" alt="Menu Icon">Employee Productivity
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/employee-monitoring-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon11.svg" width="20"
-                            height="20" alt="Menu Icon">Employee Monitoring
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/workforce-optimization">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon12.svg" width="20"
-                            height="20" alt="Menu Icon">WorkForce Optimization
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon13.svg" width="20"
-                            height="20" alt="Menu Icon">Employee Burnout
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon14.svg" width="20"
-                            height="20" alt="Menu Icon">Habit Tracker App
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/enterprise">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon16.svg" width="20"
-                            height="20" alt="Menu Icon">Enterprise
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/dlp.svg" 
-                            width="20" height="20" alt="Menu Icon">Data Loss Prevention (DLP)
-                          </a>
-                          <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/uam.svg" width="20"
-                            height="20" alt="Menu Icon">User Activity Monitoring (UAM)
-                          </a>
-                          <a href="javascript:void(0)">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon15.svg" width="20"
-                            height="20" alt="Menu Icon">Payroll<span class="comsoon">Coming Soon</span>
-                          </a> 
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/reporting-analytics">Reporting & Analytics</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/productivity-reports">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-01.svg" width="20"
-                            height="20" alt="Menu Icon">Productivity Reports
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/application-website-usage">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-02.svg" width="20"
-                            height="20" alt="Menu Icon">Application & Website Usage
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/location-analytics">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-03.svg" width="20"
-                            height="20" alt="Menu Icon">Location Analytics
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/impact-analysis">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/impact.svg" 
-                            width="20" height="20" alt="Menu Icon">Impact Analysis
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-05.svg" width="20"
-                            height="20" alt="Menu Icon">Workload Management
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/benchmark-goals">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-06.svg" width="20"
-                            height="20" alt="Menu Icon">Benchmark & Goals
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/workforce-analytics-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-07.svg" width="20"
-                            height="20" alt="Menu Icon">Workforce Analytics
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/overtime-tracker">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ra-08.svg" width="20"
-                            height="20" alt="Menu Icon">OverTime Tracker
-                          </a>
-                          <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-reporting">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/comp-r.svg" width="20"
-                            height="20" alt="Menu Icon">Compliance Reporting
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-menu">
-                        <h3><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></h3>
-                        <div class="menu-box">
-                          <a href="<?php echo site_url(); ?>/project-management/task-management">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon28.svg" width="20"
-                            height="20" alt="Menu Icon">Task Management
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon22.svg" width="20" height="20" alt="Menu Icon">Project Budgeting
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon23.svg" width="20"
-                            height="20" alt="Menu Icon">Online Invoicing
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/daily-standup">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon24.svg" width="20"
-                            height="20" alt="Menu Icon">Daily StandUp
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon25.svg" width="20"
-                            height="20" alt="Menu Icon">Agile WorkFlows
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/agile-sprint">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon26.svg" width="20"
-                            height="20" alt="Menu Icon">Agile Sprint
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/epics">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon27.svg" width="20"
-                            height="20" alt="Menu Icon">Epics
-                          </a>
-                          <a href="<?php echo site_url(); ?>/project-management/gantt-charts">
-                          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-02.svg" width="20" height="20" alt="Menu Icon">Gantt Chart
-                          </a>
-                          <!-- 
-                            <a href="<?php echo site_url(); ?>/project-management/project-timeline">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/new-01.svg" width="20" height="20" alt="Menu Icon"> project Timeline
-                            </a>
-                            -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li id="howitworksitem" class="dropdown how-works">
-                <a href="<?php echo site_url(); ?>/solution">Solutions</a><span class="trigger" onclick="showHowitworkItem();"></span>
-                <div class="full-menu">
-                  <div class="container">
-                    <div class="menu-small menu-column">
-                      <div class="flex_row">
-                        <div class="menu-wrap">
-                          <h3><a href="<?php echo site_url(); ?>/use-cases">Use Cases</a></h3>
-                          <div class="menu-lside">
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/workforce-management/employee-productivity-tracking">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sdm.svg" width="20"
-                                  height="20" alt="Menu Icon">Employee Productivity Tracking</a>
-                                <!--
-                                  <a href="<?php echo site_url(); ?>/time-attendance/freelance-time-management">
-                                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon05.svg" width="20"
-                                    height="20" alt="Menu Icon">Freelancers Time Management
-                                  </a> 
-                                  -->
-                                <a href="<?php echo site_url(); ?>/time-attendance/shift-scheduling">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ft-icon03.svg" width="20"
-                                  height="20" alt="Menu Icon">Attendance & Shift Scheduling</a>
-                                <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/location.svg" width="20"
-                                  height="20" alt="Menu Icon">Location & Impact Insights</a>  
-                                <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/premise.svg" width="20"
-                                  height="20" alt="Menu Icon">On-Premise Teams Management
-                                </a>
-                                <a href="<?php echo site_url(); ?>/reporting-analytics/insights-for-business">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon08.svg" width="20"
-                                  height="20" alt="Menu Icon">Insights For Business Analytics
-                                </a>
-                              </div>
-                              <a href="<?php echo site_url(); ?>/use-cases" class="view-more desktop">View More</a>
-                            </div>
-                            <div class="col-menu">
-                              <div class="menu-box">
-                                <a href="<?php echo site_url(); ?>/workforce-management/proprietary-information-protection">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-01.svg" width="20" height="20" alt="Menu Icon">Data Theft Prevention
-                                </a>
-                                <a href="<?php echo site_url(); ?>/time-attendance/automated-tracking ">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-02.svg" width="20" height="20" alt="Menu Icon">Payroll Management
-                                </a>
-                                <a href="<?php echo site_url(); ?>/time-attendance/integrate-geofencing">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-03.svg" width="20"
-                                  height="20" alt="Menu Icon">Geofencing
-                                </a>
-                                <a href="<?php echo site_url(); ?>/reporting-analytics/project-health-tracking">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-04.svg" width="20"
-                                  height="20" alt="Menu Icon">Project Management
-                                </a>
-                                <a href="<?php echo site_url(); ?>/project-management/billing-automation ">
-                                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/use-05.svg" width="20"
-                                  height="20" alt="Menu Icon">Automated Billing
-                                </a>
-                              </div>
-                              <a href="<?php echo site_url(); ?>/use-cases" class="view-more mobile">View More</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="menu-rside">
-                          <div class="col-menu">
-                            <h3><a href="<?php echo site_url(); ?>/workforce-management/workplace-mode">WorkPlace Mode</a></h3>
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon01.svg" width="20"
-                                height="20" alt="Menu Icon">Remote Work
-                              </a>
-                              <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon02.svg" width="20"
-                                height="20" alt="Menu Icon">Hybrid Work
-                              </a>
-                              <a href="<?php echo site_url(); ?>/workforce-management/field-service">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon07.svg" width="20"
-                                height="20" alt="Menu Icon">Field Work
-                              </a>
-                              <a href="<?php echo site_url(); ?>/workplace-mode/office-work">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/sol-icon03.svg" width="20"
-                                height="20" alt="Menu Icon">Office Work
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-menu">
-                            <h3>By ROLE</h3>
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/by-role/hr-managers">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-01.svg" width="20"
-                                height="20" alt="Menu Icon">HR Managers
-                              </a>
-                              <a href="<?php echo site_url(); ?>/by-role/it-managers">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-02.svg" width="20"
-                                height="20" alt="Menu Icon">IT Managers
-                              </a>
-                              <a href="<?php echo site_url(); ?>/by-role/business-owners">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-03.svg" width="20"
-                                height="20" alt="Menu Icon">Business Owners
-                              </a>
-                              <a href="<?php echo site_url(); ?>/by-role/project-managers">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/role-04.svg" width="20"
-                                height="20" alt="Menu Icon">Project Managers
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li id="industryitem" class="dropdown how-works">
-                <a href="<?php echo site_url(); ?>/industry">Industries</a><span class="trigger" onclick="showindustryItem();"></span>
-                <div class="full-menu">
-                  <div class="container">
-                    <div class="menu-small indmenu">
-                      <h3><a href="<?php echo site_url(); ?>/industry">Industries</a></h3>
-                      <div class="flex_row">
-                        <div class="menu-lside">
-                          <div class="col-menu">
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/industry/technology-companies">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-01.svg" width="20"
-                                height="20" alt="Menu Icon">IT Companies</a>
-                              <a href="<?php echo site_url(); ?>/industry/digital-agencies ">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-02.svg" width="20"
-                                height="20" alt="Menu Icon">Digital Agencies</a>
-                              <a href="<?php echo site_url(); ?>/industry/staffing">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-03.svg" width="20"
-                                height="20" alt="Menu Icon">Staffing & Recuriting</a>  
-                              <a href="<?php echo site_url(); ?>/industry/bpo">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-04.svg" width="20"
-                                height="20" alt="Menu Icon">BPO & KPO
-                              </a>
-                              <a href="<?php echo site_url(); ?>/industry/contact-centers">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-05.svg" width="20"
-                                height="20" alt="Menu Icon">CX & Contact Center
-                              </a>
-                            </div>
-                            <a href="<?php echo site_url(); ?>/industry" class="view-more desktop">View More</a>
-                          </div>
-                          <div class="col-menu">
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/industry/real-estate">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-06.svg" width="20"
-                                height="20" alt="Menu Icon">Real Estate</a>
-                              <a href="<?php echo site_url(); ?>/industry/accounting ">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-07.svg" width="20"
-                                height="20" alt="Menu Icon">Accounting</a>
-                              <a href="<?php echo site_url(); ?>/industry/architects-and-interior-designers">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-08.svg" width="20"
-                                height="20" alt="Menu Icon">Interior Designers</a>  
-                              <a href="<?php echo site_url(); ?>/industry/healthcare">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-09.svg" width="20"
-                                height="20" alt="Menu Icon">Healthcare
-                              </a>
-                              <a href="<?php echo site_url(); ?>/industry/attorney">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-10.svg" width="20"
-                                height="20" alt="Menu Icon">Legal
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-menu">
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/industry/consulting-firms">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-11.svg" width="20"
-                                height="20" alt="Menu Icon">Consulting Firms</a>
-                              <a href="<?php echo site_url(); ?>/industry/landscaping">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-12.svg" width="20"
-                                height="20" alt="Menu Icon">Landscaping</a>
-                              <a href="<?php echo site_url(); ?>/industry/construction">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-13.svg" width="20"
-                                height="20" alt="Menu Icon">Construction</a>  
-                              <a href="<?php echo site_url(); ?>/industry/e-commerce">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-14.svg" width="20"
-                                height="20" alt="Menu Icon">eCommerce
-                              </a>
-                              <a href="<?php echo site_url(); ?>/industry/time-tracking-app-for-janitorial-services">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-15.svg" width="20"
-                                height="20" alt="Menu Icon">Janitorial
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-menu">
-                            <div class="menu-box">
-                              <a href="<?php echo site_url(); ?>/industry/manufacturing">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-16.svg" width="20"
-                                height="20" alt="Menu Icon">Manufacturing</a> 
-                              <a href="<?php echo site_url(); ?>/industry/startups">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-17.svg" width="20"
-                                height="20" alt="Menu Icon">Startups</a>
-                              <a href="<?php echo site_url(); ?>/industry/sme">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-18.svg" width="20"
-                                height="20" alt="Menu Icon">SME</a>  
-                              <a href="<?php echo site_url(); ?>/industry/educational-institutions">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-19.svg" width="20"
-                                height="20" alt="Menu Icon">Educational Institutes
-                              </a>
-                              <a href="<?php echo site_url(); ?>/industry/government">
-                              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/ind-20.svg" width="20"
-                                height="20" alt="Menu Icon">Government
-                              </a>
-                            </div>
-                            <a href="<?php echo site_url(); ?>/industry" class="view-more mobile">View More</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <!--
-                <li id="apps" class="dropdown">
-                  <a href="<?php echo site_url(); ?>/apps" onclick="showAppsItem();">Apps</a><span class="trigger" onclick="showAppsItem();"></span>
-                  <div class="full-menu">
-                    <div class="container">
-                      <div class="flex_row">
-                        <div class="col-menu">
-                          <h3><a href="<?php echo site_url(); ?>/apps">Desktop</a></h3>
-                          <div class="menu-box">
-                            <a href="<?php echo site_url(); ?>/apps/mac">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon03.svg" width="20"
-                              height="20" alt="Menu Icon">Mac
-                            </a>
-                            <a href="<?php echo site_url(); ?>/apps/windows">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon04.svg" width="20"
-                              height="20" alt="Menu Icon">Windows
-                            </a>
-                            <a href="<?php echo site_url(); ?>/apps/linux">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon05.svg" width="20"
-                              height="20" alt="Menu Icon">Linux
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-menu">
-                          <h3><a href="<?php echo site_url(); ?>/apps">Mobile</a></h3>
-                          <div class="menu-box">
-                            <a href="<?php echo site_url(); ?>/apps/iphone">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon06.svg" width="20"
-                              height="20" alt="Menu Icon">iOS
-                            </a>
-                            <a href="<?php echo site_url(); ?>/apps/android">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon07.svg" width="20"
-                              height="20" alt="Menu Icon">Android
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-menu">
-                          <h3>Web</h3>
-                          <div class="menu-box">
-                            <a href="<?php echo site_url(); ?>/browser-extension">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon01.svg" width="20"
-                              height="20" alt="Menu Icon">Browser Extension
-                            </a>
-                            <a href="<?php echo site_url(); ?>/chromebook-devices">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon02.svg" width="20"
-                              height="20" alt="Menu Icon">Chromebook
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-menu">
-                          <h3><a href="<?php echo site_url(); ?>/integrations">Integrations</a></h3>
-                          <div class="menu-box">
-                            <a href="<?php echo site_url(); ?>/integrations/zoho">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon08.svg" width="20"
-                              height="20" alt="Menu Icon">Zoho
-                            </a>
-                            <a href="<?php echo site_url(); ?>/integrations/trello">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon09.svg" width="20"
-                              height="20" alt="Menu Icon">Trello
-                            </a>
-                            <a href="<?php echo site_url(); ?>/integrations/aws">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon10.svg" width="20"
-                              height="20" alt="Menu Icon">AWS
-                            </a>
-                            <a href="<?php echo site_url(); ?>/integrations/smtp">
-                            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/menu-images/app-icon11.svg" width="20"
-                              height="20" alt="Menu Icon">SMTP
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>-->
-              <li><a href="<?php echo site_url(); ?>/pricing">Pricing</a></li>
-              <!-- <li><a href="javascript:void(0)" onclick="call_demows();">Demo</a></li> -->
-            </ul>
-            <div class="login">
-              
-              <a class="bg-none" href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
-              <!-- <a id="nv-buynow" href="https://app.workstatus.io/auth/register?pid=463&type=annual">Buy Now</a> -->
-              <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
-              <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>              
-            </div>
-          </nav>
+        </a>
+        <div class="hamberger-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
       </div>
-    </header>
+      <div class="header-item-right">
+        <nav class="menu mob-nav" id="menu">
+          <ul>
+            <li class="menu-item-has-children">
+              <a class="mst-link" href="#">Product</a> <span class="arrow-btn"></span>
+              <div class="menu-mega bg-purple">
+                <div class="container">
+                  <div class="dis-flex tab-menu">
+                    <div id="menu-serv" class="dis-flex tab-contents">
+                      <div class="left-tabs">
+                        <ul class="tab-nav">
+                          <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/time-attendance">Time & Attendance</a></li>
+                          <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">WorkForce Management</a></li>
+                          <li class="tab-link"><a href="<?php echo site_url(); ?>/reporting-analytics">Reporting & Analytics</a></li>
+                          <li class="tab-link"><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></li>
+                        </ul>
+                      </div>
+                      <div class="right-tabs">
+                        <div class="tab-content is-active">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time & Attendance</span>
+                              Effortless Time Tracking
+                              </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-service">
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Time Tracking</span>
+                                Track time, boost productivity</a>
+                                <a href="#"><span class="title">Online Timesheets</span>
+                                Accurate timesheet, effortless tracking</a>
+                                <a href="#"><span class="title">Online Time Reporting</span>
+                                Stay informed with real-time reporting</a>
+                                <a href="#"><span class="title">Attendance Management</span>
+                                Track attendance, optimize workforce</a>
+                                <a href="#"><span class="title">Shift Management</span>
+                                Manage shifts, empower team</a>
+                              </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Live Location Tracking</span>
+                                Enhanced visibility, increased security</a>
+                                <a href="#"><span class="title">Time Off Management</span>
+                                Simplify time-off, improve work-life balance</a>
+                                <a href="#"><span class="title">Geofence Time Tracking</span>
+                                Secure, accurate time tracking</a>
+                                <a href="#"><span class="title">Automatic Time Mapping</span>
+                                Save time & effort with smart time mapping</a>
+                                <a href="#"><span class="title">Web Based Time Tracker</span>
+                                Track time, anytime, anywhere
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu mob-hide">
+                            <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                              </span>
+                              Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="flex-1 menu-column sub-service">
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-content">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-02.svg" class="menuicon" alt="menuicon"><span class="title">WorkForce Management</span>
+                              Manage teams, boost productivity
+                              </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-service">
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Employee Scheduling</span>
+                                Maximize efficiency with easy scheduling
+                                </a>
+                                <a href="#"><span class="title">Employee Productivity</span>
+                                Boost productivity, drive results</a>
+                                <a href="#"><span class="title">Employee Monitoring</span>
+                                Insightful monitoring that drives improvement</a>
+                                <a href="#"><span class="title">WorkForce Optimization</span>
+                                Optimize workforce, achieve excellence</a>
+                                <a href="#"><span class="title">Employee Burnout</span>
+                                Prevent burnout, promote well-being</a>
+                              </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Habit Tracker App</span>
+                                Track habits, achieve goals</a>
+                                <a href="#"><span class="title">Enterprise</span>
+                                Scalable solutions, empowering enterprises</a>
+                                <a href="#"><span class="title">Data Loss Prevention (DLP)</span>
+                                Data protection you can trust</a>
+                                <a href="#"><span class="title">User Activity Monitoring (UAM)</span>
+                                Enhanced insights, optimized workflow</a>
+                                <a href="#"><span class="title">Payroll</span>
+                                Streamlined payroll, effortless management</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu mob-hide">
+                            <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                              </span>
+                              Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="flex-1 menu-column sub-service">
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-content">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-03.svg" class="menuicon" alt="menuicon"><span class="title">Reporting & Analytics</span>
+                              Data-driven Insights, Informed Decisions
+                              </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-service">
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Productivity Reports</span>
+                                Track progress, boost results</a>
+                                <a href="#"><span class="title">Application & Website Usage</span>
+                                Optimize digital workflows</a>
+                                <a href="#"><span class="title">Location Analytics</span>
+                                Real-time location insights</a>
+                                <a href="#"><span class="title">Impact Analysis</span>
+                                Track impact, drive results</a>
+                                <a href="#"><span class="title">Workload Management</span>
+                                Manage tasks, prioritize goals</a>
+                              </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Benchmark & Goals</span>
+                                Track progress, set new goals</a>
+                                <a href="#"><span class="title">Workforce Analytics</span>
+                                Gain insights, make better decisions</a>
+                                <a href="#"><span class="title">OverTime Tracker</span>
+                                Track extra hours, stay compliant</a>
+                                <a href="#"><span class="title">Compliance Reporting</span>
+                                Stay compliant, avoid risks</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu mob-hide">
+                            <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                              </span>
+                              Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="flex-1 menu-column sub-service">
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-content">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-04.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
+                              Plan & manage tasks better</a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-service">
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Task Management</span>
+                                Prioritize, track, & collaborate</a>
+                                <a href="#"><span class="title">Project Budgeting</span>
+                                Track costs, maximize ROI</a>
+                                <a href="#"><span class="title">Online Invoicing</span>
+                                Manage invoices, track payments</a>
+                                <a href="#"><span class="title">Daily StandUp</span>
+                                Track daily progress, stay on track</a>
+                                <a href="#"><span class="title">Agile WorkFlows</span>
+                                Flexible workflows, fast results</a>
+                              </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Agile Sprint</span>
+                                Deliver value, iterate fast</a>
+                                <a href="#"><span class="title">Epics</span>
+                                Focus on key initiatives</a>
+                                <a href="#"><span class="title">Gantt Chart</span>
+                                Visualize progress, stay on track</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu mob-hide">
+                            <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                              </span>
+                              Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="flex-1 menu-column sub-service">
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                              </a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a class="mst-link" href="#">Solutions</a> <span class="arrow-btn"></span>
+              <div class="menu-mega">
+                <div class="container">
+                  <div class="dis-flex tab-menu">
+                    <div id="mnu-sol" class="dis-flex tab-contents">
+                      <div class="right-tabs flex-full">
+                        <div class="tab-content is-active">
+                          <div class="four-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/solution.svg" class="menuicon" alt="menuicon"><span class="title">Solutions</span>
+                              Workforce Management Solutions, Simplified!</a>
+                            </div>
+                            <div class="dis-flex menu-column">
+                              <div class="flex-4">
+                                <span class="head">Time & Attendance</span>
+                                <a href="#"><span class="title">Time Management for Freelancers</span>
+                                Manage time efficiently, get paid better</a>
+                                <a href="#"><span class="title">GPS Workforce Management</span>
+                                Track, manage - anytime, anywhere</a>
+                                <a href="#"><span class="title">Geofence Attendance Management</span>
+                                Precise, automated attendance tracking</a>
+                                <a href="#"><span class="title">Attendance Management</span>
+                                Effortless attendance management</a>
+                                <a href="#"><span class="title">Automated Time Tracking</span>
+                                Bid adieu to manual entries</a>
+                                <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                              </div>
+                              <div class="flex-4">
+                                <span class="head">Workforce Management</span>
+                                <a href="#"><span class="title">On-premise Team Management</span>
+                                Streamline on-site team management</a>
+                                <a href="#"><span class="title">Proprietary Information Protection</span>
+                                Robust server/client expertise</a>
+                                <a href="#"><span class="title">Work From Home Monitoring</span>
+                                Track remote work effectively</a>
+                                <a href="#"><span class="title">Employee Productivity Tracking</span>
+                                Metrics to track employee performance</a>
+                                <a href="#"><span class="title">Selfie Validation</span>
+                                Verify time and attendance</a>
+                                <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                              </div>
+                              <div class="flex-4">
+                                <span class="head">Project & Task Management</span>
+                                <a href="#"><span class="title">Project Prioritization</span>
+                                Align projects strategically, maximize impact
+                                </a>
+                                <a href="#"><span class="title">Agile Resource Allocation
+                                </span>
+                                Optimize team resources</a>
+                                <a href="#"><span class="title">Client Relationship Management</span>
+                                Manage clients more effectively</a>
+                                <a href="#"><span class="title">Expense Reduction
+                                </span>
+                                Cut costs, boost profits
+                                </a>
+                                <a href="#"><span class="title">Billing Automation</span>
+                                Faster payments, less hassle</a>
+                                <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                              </div>
+                              <div class="flex-4">
+                                <span class="head">Reporting & Analytics</span>
+                                <a href="#"><span class="title">Business Insights
+                                </span>
+                                Make better, data-driven decisions</a>
+                                <a href="#"><span class="title">Project Progress Tracking
+                                </span>
+                                Get real-time project visibility</a>
+                                <a href="#"><span class="title">Resource Management</span>
+                                Maximise resource utilisation</a>
+                                <a href="#"><span class="title">Client Reporting</span>
+                                Share insights with clients, the easy way</a>
+                                <a href="#"><span class="title">Compliance Regulations Tracking</span>
+                                Stay compliant, manage better</a>
+                                <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a class="mst-link" href="#">Who we serve</a> <span class="arrow-btn"></span>
+              <div class="menu-mega">
+                <div class="container">
+                  <div class="dis-flex tab-menu">
+                    <div id="menu-inds" class="dis-flex tab-contents">
+                      <div class="left-tabs">
+                        <ul class="tab-nav">
+                          <li class="tab-link is-active"><a href="#">Industries</a></li>
+                          <li class="tab-link"><a href="#">By Role</a></li>
+                        </ul>
+                      </div>
+                      <div class="right-tabs">
+                        <div class="tab-content is-active">
+                          <div class="four-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/ind-icon.svg" class="menuicon" alt="menuicon"><span class="title">Industries</span>
+                              Leading the Way in Every Sector</a><span class="ind-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-ind">
+                              <div class="flex-4">
+                                <a href="#"><span class="title">IT Companies</span>
+                                Streamline workflows, exceed client goals</a>
+                                <a href="#"><span class="title">Digital Agencies</span>
+                                Deliver exceptional campaigns, fast</a>
+                                <a href="#"><span class="title">Staffing & Recruiting</span>
+                                Manage candidates, optimize placements
+                                </a>
+                                <a href="#"><span class="title">BPO & KPO
+                                </span>
+                                Boost productivity, streamline operations
+                                </a>
+                                <a href="#"><span class="title">CX & Contact Center
+                                </span>
+                                Analyze data, drive agent efficiency</a>
+                              </div>
+                              <div class="flex-4">
+                                <a href="#"><span class="title">Real Estate</span>
+                                Manage agents, drive sales</a>
+                                <a href="#"><span class="title">Accounting</span>
+                                Accurate billing, improved efficiency.</a>
+                                <a href="#"><span class="title">Interior Designs</span>
+                                Deliver exceptional design, on time</a>
+                                <a href="#"><span class="title">Healthcare</span>
+                                Optimize patient care, streamline operations
+                                </a>
+                                <a href="#"><span class="title">Legal
+                                </span>
+                                Optimize billing, ensure compliance
+                                </a>
+                              </div>
+                              <div class="flex-4">
+                                <a href="#"><span class="title">Consulting Firms</span>
+                                Drive client success, impactful results</a>
+                                <a href="#"><span class="title">Landscaping
+                                </span>
+                                Exceptional landscaping, maximized profits</a>
+                                <a href="#"><span class="title">Construction</span>
+                                Track projects, manage teams, on time</a>
+                                <a href="#"><span class="title">eCommerce</span>
+                                Optimize fulfillment, drive sales
+                                </a>
+                                <a href="#"><span class="title">Janitorial
+                                </span>
+                                Optimize workflows, manage budgets
+                                </a>
+                              </div>
+                              <div class="flex-4">
+                                <a href="#"><span class="title">Manufacturing</span>
+                                Maximize profitability, track production</a>
+                                <a href="#"><span class="title">Startups</span>
+                                Track projects, drive growth, optimize workflows.</a>
+                                <a href="#"><span class="title">SME</span>
+                                Streamline operations, boost profitability
+                                </a>
+                                <a href="#"><span class="title">Educational Institutes
+                                </span>
+                                Optimize learning, streamline operations
+                                </a>
+                                <a href="#"><span class="title">Government
+                                </span>
+                                Track projects, ensure transparency.
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-content">
+                          <div class="three-column">
+                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">By Role</span>
+                              Innovative, future-proof software solutions</a><span class="ind-arrow-btn"></span>
+                            </div>
+                            <div class="dis-flex menu-column sub-ind">
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Time Tracking</span>
+                                Innovative browser applications</a>
+                                <a href="#"><span class="title">Online Timesheets</span>
+                                Robust server/client expertise</a>
+                                <a href="#"><span class="title">Online Time Reporting</span>
+                                Secure, user-centric solutions</a>
+                                <a href="#"><span class="title">Attendance Management</span>
+                                Flawless UI/UX creation</a>
+                                <a href="#"><span class="title">Shift Management</span>
+                                Flawless UI/UX creation</a>
+                              </div>
+                              <div class="flex-2">
+                                <a href="#"><span class="title">Time Tracking</span>
+                                Innovative browser applications</a>
+                                <a href="#"><span class="title">Online Timesheets</span>
+                                Robust server/client expertise</a>
+                                <a href="#"><span class="title">Online Time Reporting</span>
+                                Secure, user-centric solutions</a>
+                                <a href="#"><span class="title">Attendance Management</span>
+                                Flawless UI/UX creation</a>
+                                <a href="#"><span class="title">Shift Management</span>
+                                Flawless UI/UX creation</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="other-menu mob-hide">
+                            <div class="tab-title"><a href="javascript:void(0);"><span class="title">Other Services</span>
+                              Innovative, future-proof software </a><span class="ser-arrow-btn"></span>
+                            </div>
+                            <div class="flex-1 menu-column sub-service">
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/os-01.svg" class="menuicon" alt="menuicon"><span class="title">OTT App Development</span>OTT App Development</a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/os-02.svg" class="menuicon" alt="menuicon"><span class="title">Application Modernization</span>Update your applications</a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/os-03.svg" class="menuicon" alt="menuicon"><span class="title">OTT App Development</span>OTT App Development</a>
+                              <a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/os-04.svg" class="menuicon" alt="menuicon"><span class="title">Application Modernization</span>Update your applications</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="menu-item-has-children">
+              <a class="mst-link" href="#">Pricing</a>
+            </li>
+            <li class="cta-wrap small-reso">
+              <div class="login">
+                <a class="bg-none" href="https://app.staging.workstatus.io/">Log In</a>
+                <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
+                <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Free Trial</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="cta-wrap large-reso">
+          <div class="login">
+            <a class="bg-none" href="https://app.staging.workstatus.io/">Log In</a>
+            <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
+            <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+
+
+
+
+
+
     <?php  echo ( wsFeaturedHeader() ) ? '</div>' : ''; ?>
