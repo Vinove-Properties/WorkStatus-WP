@@ -34,7 +34,7 @@
           //   echo '<p>'.$text.'</p>';
           // }
           ?>
-          <p>Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.</p>
+          <p>Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.s</p>
           <div class="cta-wrap">
             <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
             <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
@@ -188,7 +188,10 @@
               ?>
             <div class="customcta">
               <div class="cus-cont">
-                <div class="cushed"><?php echo $sbText; ?></div>
+                <div class="cushed">
+                <?php //echo $sbText; ?>                    
+                Optimize, Streamline & Automate with Workstatus
+                </div>
                 <div class="btn-container">
                   <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
                   <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
