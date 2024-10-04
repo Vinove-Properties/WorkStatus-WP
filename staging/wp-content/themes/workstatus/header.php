@@ -614,7 +614,7 @@
                 </li>
                 <li class="cta-wrap small-reso">
                   <div class="login">
-                    <a class="bg-none" href="href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
+                     <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
                     <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
                     <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>  
                   </div>
@@ -623,7 +623,7 @@
             </nav>
             <div class="cta-wrap large-reso">
               <div class="login">
-                <a class="bg-none" href="href="<?php echo ( isBetaVersion() ) ? 'https://app.staging.workstatus.io/' : $LogLink; ?>">Log In</a>
+              <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
                 <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
                 <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>  
               </div>
