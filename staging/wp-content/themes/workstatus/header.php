@@ -202,7 +202,7 @@
                       <div class="right-tabs">
                         <div class="tab-content is-active">
                           <div class="three-column">
-                            <div class="tab-title"><a href="#"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time & Attendance</span>
+                            <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time & Attendance</span>
                               Effortless Time Tracking
                               </a><span class="ser-arrow-btn"></span>
                             </div>
@@ -622,7 +622,7 @@
               </div>
             </li>
             <li class="menu-item-has-children">
-              <a class="mst-link" href="#">Pricing</a>
+              <a href="<?php echo site_url(); ?>/pricing">Pricing</a>
             </li>
             <li class="cta-wrap small-reso">
               <div class="login">
