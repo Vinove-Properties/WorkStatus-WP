@@ -17,10 +17,9 @@
     
     $topCTA = get_field('ptop-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
-    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
-    /*
-    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";*/
-    $text = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : false;
+    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';    
+    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
+    //$text = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : false;
     //if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
     ?>
     <div class="cta-section cta-accorpg">
