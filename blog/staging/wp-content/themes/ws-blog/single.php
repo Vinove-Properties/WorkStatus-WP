@@ -39,8 +39,8 @@
           </picture>';  
           }else{
           echo '<picture>
-          <img loading="lazy" src="'.get_bloginfo('template_url').'/assets/images/cta-image2.svg" alt="workstatus" 
-          width="381" height="280">
+          <img loading="lazy" src="'.get_bloginfo('template_url').'/dev-images/ppc-defbanner.svg" alt="workstatus" 
+          width="488" height="202">
           </picture>';
           }
           ?>
