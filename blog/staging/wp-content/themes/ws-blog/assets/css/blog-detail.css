@@ -23,7 +23,7 @@ background-size: 24px; vertical-align: middle;}
 .cta-accorpg  .colLeft{flex-basis: 70%;}
 .cta-accorpg  .cta-wrap{margin-top:20px;}
 .cta-accorpg  .cta-wrap .bkd{margin-right:10px;}
-.cta-accorpg .colMid{flex-basis: 40%; left: auto !important; text-align: center; position: absolute; right: 5px; margin: 0 auto; bottom: -102px;}
+.cta-accorpg .colMid{flex-basis: 40%; left: auto !important; text-align: center; position: absolute; right: 5px; margin: 0 auto; bottom: 0px;}
 .cta-accorpg .white-btn.sft{background:transparent; border-color:#fff; color:#fff; text-align: center;}
 .cta-accorpg .white-btn.sft:after{display:none; color:#fff;}
 
