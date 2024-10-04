@@ -25,12 +25,16 @@
     <div class="cta-section cta-accorpg">
       <div class="top-cta">
         <div class="colLeft">
-          <div class="ct-head"><?php echo $heading; ?></div>
+          <div class="ct-head">
+            <?php //echo $heading; ?>
+            Want to Streamline Workforce & Project Management?
+            </div>
           <?php 
-          if( $text ){
-            echo '<p>'.$text.'</p>';
-          }
+          // if( $text ){
+          //   echo '<p>'.$text.'</p>';
+          // }
           ?>
+          <p>Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.</p>
           <div class="cta-wrap">
             <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
             <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
