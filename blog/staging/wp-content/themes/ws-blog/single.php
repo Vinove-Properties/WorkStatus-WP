@@ -18,14 +18,20 @@
     $topCTA = get_field('ptop-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
     $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Struggling With Managing Remote, Hybrid, And In-Office Employees?';
-    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";
-    if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
+    /*
+    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Easy shift scheduling, automated time tracking, and actionable insights help managers adapt to evolving work patterns while driving performance.";*/
+    $text = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : false;
+    //if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
     ?>
     <div class="cta-section cta-accorpg">
       <div class="top-cta">
         <div class="colLeft">
           <div class="ct-head"><?php echo $heading; ?></div>
-          <p><?php echo $text; ?></p>
+          <?php 
+          if( $text ){
+            echo '<p>'.$text.'</p>';
+          }
+          ?>
           <div class="cta-wrap">
             <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
             <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
@@ -48,7 +54,9 @@
         </div>
       </div>
     </div>
-    <?php }else{ ?>
+    <?php 
+    /*
+    }else{ ?>
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
@@ -80,6 +88,7 @@
     </div>
     <?php 
     }
+    */
     endif; ?>    
     <div class="top-header-section">
       <div class="searchdiv">
