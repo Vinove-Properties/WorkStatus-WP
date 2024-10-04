@@ -104,10 +104,10 @@ global $ws_ctas, $RegLink, $LogLink;
     <p>Workstatus for mobile allows your remote or mobile workforce to keep track of their time from anywhere. The app runs in the background of the device and maintains accurate timesheets.This can be helpful when billing clients or tracking productivity. With GPS tracking and geofences, anyone can clock in automatically when they enter a job site or get reminders based on location.</p>
     <div class="wsdevice">
       <a href="https://play.google.com/store/apps/details?id=com.vinove.workstatus&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/dgoogleplay.svg" alt="google play" width="149" height="44">
-      <small>(Android 8.x & above)<br>Version 6.6(83)</small>
+      <small>(Android 8.x & above)<br>Version 6.9.6(118)</small>
       </a> 
       <a href="https://apps.apple.com/us/app/Workstatus-tm/id1570416295"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/dappstore.svg" alt="apple" width="133" height="44">
-      <small>(iOS 12.x & above)<br>Version 5.0(23)</small>
+      <small>(iOS 12.x & above)<br>Version 6.2.7(26)</small>
       </a> 
     </div>
     <picture class="dImg">
