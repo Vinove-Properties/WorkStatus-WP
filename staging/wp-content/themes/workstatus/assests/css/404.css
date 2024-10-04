@@ -74,6 +74,8 @@
             transition: all 0.2s ease; }
           .header-two .header-item-right .menu ul li.menu-item-has-children a.mst-link:hover:before {
             transform: rotate(180deg); }
+          .header-two .header-item-right .menu ul li.menu-item-has-children a.mst-link.price:before {
+            display: none; }
           .header-two .header-item-right .menu ul li.menu-item-has-children a.active:after {
             content: "";
             background: #624de3;
