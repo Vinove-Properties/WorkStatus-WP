@@ -101,15 +101,15 @@ position: absolute; left: 0; top: 4px; width: 14px; height: 14px; border-radius:
 .ez-toc-widget-container nav ul li { list-style-type: none; margin: 0 0 5px; padding: 0 0 0 13px; border-radius: 5px;
 background: transparent; height: auto !important;}
 .ez-toc-widget-container nav ol li a,
-.ez-toc-widget-container nav ul li a {padding: 0;color: rgba(65, 65, 65, 0.5); position: relative; display: block;
+.ez-toc-widget-container nav ul li a {padding: 0;color: #05164D; position: relative; display: block;
 font-weight: 400; font-size:14px; line-height:22px;}
 .ez-toc-widget-container nav ol li a:hover,
-.ez-toc-widget-container nav ul li a:hover {color: #05164D;background:transparent;}
-#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active{background: #fff;  color: #05164D;}
-#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li:hover{background: #fff; color: #05164D;}
+.ez-toc-widget-container nav ul li a:hover {color: #4231AC;background:transparent;}
+#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active{background: #fff;  color: #4231AC;}
+#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li:hover{background: #fff; color: #4231AC;}
 .ez-toc-widget-container ul li.active a,
-.ez-toc-widget-container ol li.active a {color: #05164D; font-weight:400;}
-.ez-toc-widget-container nav ol li:hover{color: #05164D; background:transparent;}
+.ez-toc-widget-container ol li.active a {color: #4231AC; font-weight:400;}
+.ez-toc-widget-container nav ol li:hover{color: #4231AC; background:transparent;}
 .vcb-col-left.sticky {position: fixed; top:70px;}
 .es_caption {display: none;}
 .tocsec::-webkit-scrollbar {width:3px; background-color: #414141; height: 100%; overflow: scroll;}
