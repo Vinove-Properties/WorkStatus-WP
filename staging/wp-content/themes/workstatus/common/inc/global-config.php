@@ -348,7 +348,7 @@ add_action( 'init', function(){
 	if( isset( $_SERVER['HTTP_REFERER'] ) && !empty( $_SERVER['HTTP_REFERER'] ) ){
     $ref        = $_SERVER['HTTP_REFERER'];
     $refData    = parse_url($ref);
-	    if( (strpos($refData['host'], "workstatus.io") === false) ){
+	    if( isset( $refData['host'] ) && (strpos($refData['host'], "workstatus.io") === false) ){
 	        $_SESSION['referer']  = $_SERVER['HTTP_REFERER']; 
 	    }
 	}
