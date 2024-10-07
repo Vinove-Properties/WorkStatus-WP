@@ -216,11 +216,11 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">Live Location Tracking</span>
                                     Enhanced visibility, increased security</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time Off Management</span>
-                                    Simplify time-off, improve work-life balance</a>
+                                    Manage time for work-life balance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
                                     Secure, accurate time tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/automatic-time-mapping"><span class="title">Automatic Time Mapping</span>
-                                    Save time & effort with smart time mapping</a>
+                                    Track time spent on tasks</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/web-based-time-tracker"><span class="title">Web Based Time Tracker</span>
                                     Track time, anytime, anywhere
                                     </a>
@@ -233,13 +233,13 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
                                 </div>
                               </div>
@@ -253,12 +253,12 @@
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling"><span class="title">Employee Scheduling</span>
-                                    Maximize efficiency with easy scheduling
+                                    Easy scheduling for efficiency boost
                                     </a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-productivity-monitoring"><span class="title">Employee Productivity</span>
                                     Boost productivity, drive results</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-monitoring-software"><span class="title">Employee Monitoring</span>
-                                    Insightful monitoring that drives improvement</a>
+                                    Better accountability & performance</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/workforce-optimization"><span class="title">WorkForce Optimization</span>
                                     Optimize workforce, achieve excellence</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout"><span class="title">Employee Burnout</span>
@@ -268,13 +268,13 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app"><span class="title">Habit Tracker App</span>
                                     Track habits, achieve goals</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/enterprise"><span class="title">Enterprise</span>
-                                    Scalable solutions, empowering enterprises</a>
+                                    Scalable solutions for enterprises</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention"><span class="title">Data Loss Prevention (DLP)</span>
                                     Data protection you can trust</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring (UAM)</span>
                                     Enhanced insights, optimized workflow</a>
-                                    <a href="javascript:void(0)"><span class="title">Payroll</span>
-                                    Streamlined payroll, effortless management <span class="comsoon">Coming Soon</span></a>
+                                    <a href="javascript:void(0)"><span class="title">Payroll <span class="comsoon">Coming Soon</span></span>
+                                    Streamlined payroll, easy management</a>
                                   </div>
                                 </div>
                               </div>
@@ -284,13 +284,13 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
                                 </div>
                               </div>
@@ -332,13 +332,13 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
                                 </div>
                               </div>
@@ -377,13 +377,13 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
                                 </div>
                               </div>
@@ -438,7 +438,7 @@
                                   <div class="flex-4">
                                     <span class="head">Project & Task Management</span>
                                     <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization"><span class="title">Project Prioritization</span>
-                                    Align projects strategically, maximize impact
+                                    Align projects strategically
                                     </a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/agile-resource-allocation"><span class="title">Agile Resource Allocation
                                     </span>
@@ -499,66 +499,66 @@
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-4">
                                     <a href="<?php echo site_url(); ?>/industry/technology-companies"><span class="title">IT Companies</span>
-                                    Streamline workflows, exceed client goals</a>
+                                    Streamline workflows</a>
                                     <a href="<?php echo site_url(); ?>/industry/digital-agencies"><span class="title">Digital Agencies</span>
-                                    Deliver exceptional campaigns, fast</a>
+                                    Manage multiple projects</a>
                                     <a href="<?php echo site_url(); ?>/industry/staffing"><span class="title">Staffing & Recruiting</span>
-                                    Manage candidates, optimize placements
+                                    Track employee hours
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/bpo"><span class="title">BPO & KPO
                                     </span>
-                                    Boost productivity, streamline operations
+                                    Manage large teams
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/contact-centers"><span class="title">CX & Contact Center
                                     </span>
-                                    Analyze data, drive agent efficiency</a>
+                                    Analyze data for efficiency</a>
                                   </div>
                                   <div class="flex-4">
                                     <a href="<?php echo site_url(); ?>/industry/real-estate"><span class="title">Real Estate</span>
-                                    Manage agents, drive sales</a>
+                                    Compliance monitoring</a>
                                     <a href="<?php echo site_url(); ?>/industry/accounting"><span class="title">Accounting</span>
-                                    Accurate billing, improved efficiency.</a>
+                                    Easy billing & payments</a>
                                     <a href="<?php echo site_url(); ?>/industry/architects-and-interior-designers"><span class="title">Interior Designs</span>
-                                    Deliver exceptional design, on time</a>
+                                    Manage project timelines</a>
                                     <a href="<?php echo site_url(); ?>/industry/healthcare"><span class="title">Healthcare</span>
-                                    Optimize patient care, streamline operations
+                                    Manage staff schedules
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/attorney"><span class="title">Legal
                                     </span>
-                                    Optimize billing, ensure compliance
+                                    Track billable hours
                                     </a>
                                   </div>
                                   <div class="flex-4">
                                     <a href="<?php echo site_url(); ?>/industry/consulting-firms"><span class="title">Consulting Firms</span>
-                                    Drive client success, impactful results</a>
+                                    Track billable hours</a>
                                     <a href="<?php echo site_url(); ?>/industry/landscaping"><span class="title">Landscaping
                                     </span>
-                                    Exceptional landscaping, maximized profits</a>
+                                    Easy client management</a>
                                     <a href="<?php echo site_url(); ?>/industry/construction"><span class="title">Construction</span>
-                                    Track projects, manage teams, on time</a>
+                                    Manage projects better</a>
                                     <a href="<?php echo site_url(); ?>/industry/e-commerce"><span class="title">eCommerce</span>
-                                    Optimize fulfillment, drive sales
+                                    Improve team operations
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/time-tracking-app-for-janitorial-services"><span class="title">Janitorial
                                     </span>
-                                    Optimize workflows, manage budgets
+                                    Manage staff schedules
                                     </a>
                                   </div>
                                   <div class="flex-4">
                                     <a href="<?php echo site_url(); ?>/industry/manufacturing"><span class="title">Manufacturing</span>
-                                    Maximize profitability, track production</a>
+                                    Track productivity easily</a>
                                     <a href="<?php echo site_url(); ?>/industry/startups"><span class="title">Startups</span>
-                                    Track projects, drive growth, optimize workflows.</a>
+                                    Real-time progress update</a>
                                     <a href="<?php echo site_url(); ?>/industry/sme"><span class="title">SME</span>
-                                    Streamline operations, boost profitability
+                                    Improve operations
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/educational-institutions"><span class="title">Educational Institutes
                                     </span>
-                                    Optimize learning, streamline operations
+                                    Manage staff effortlessly
                                     </a>
                                     <a href="<?php echo site_url(); ?>/industry/government"><span class="title">Government
                                     </span>
-                                    Track projects, ensure transparency.
+                                    Improve govt. operations
                                     </a>
                                   </div>
                                 </div>
@@ -574,7 +574,7 @@
                                     <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>
                                     Simple HR, empower your people</a>
                                     <a href="<?php echo site_url(); ?>/by-role/it-managers"><span class="title">IT Managers</span>
-                                    Streamline IT projects, improve collaboration
+                                    Streamline IT projects delivery
                                     </a>
                                   </div>
                                   <div class="flex-2">
@@ -592,13 +592,13 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees, easily
+                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees, easily
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
                                 </div>
                               </div>

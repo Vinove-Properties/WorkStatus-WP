@@ -3182,6 +3182,17 @@ h3 a {
                   padding: 10px;
                   border-radius: 10px;
                   background: transparent; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a .comsoon {
+                    background: #efeeee;
+                    color: #787777;
+                    padding: 5px 8px;
+                    font-size: 11px;
+                    line-height: initial;
+                    border-radius: 30px;
+                    display: inline-block;
+                    margin-left: 5px;
+                    margin-top: -5px;
+                    cursor: default !important; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a .title {
                     font-size: 15px;
                     line-height: 22px; }
