@@ -401,7 +401,7 @@
                       <div class="dis-flex tab-menu">
                         <div id="mnu-sol" class="dis-flex tab-contents">
                           <div class="right-tabs flex-full">
-                            <div class="tab-content is-active">
+                            <div class="tab-content solution-tab is-active">
                               <div class="four-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/solution"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/solution.svg" class="menuicon" alt="menuicon"><span class="title">Solutions</span>
                                   Workforce Management Solutions, Simplified!</a>
