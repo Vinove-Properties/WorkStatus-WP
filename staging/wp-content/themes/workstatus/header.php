@@ -530,7 +530,7 @@
                                   </div>
                                   <div class="flex-4">
                                     <a href="<?php echo site_url(); ?>/industry/consulting-firms"><span class="title">Consulting Firms</span>
-                                    Track billable hours</a>
+                                    Handle projects efficiently</a>
                                     <a href="<?php echo site_url(); ?>/industry/landscaping"><span class="title">Landscaping
                                     </span>
                                     Easy client management</a>
