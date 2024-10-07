@@ -366,6 +366,131 @@ endif;
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "SoftwareApplication",
+  "name": "Workstatus",
+  "operatingSystem": "Windows, Mac, Android, iOS",
+  "applicationCategory": "BusinessApplication",
+  "description": "Workstatus is a workforce management software designed to streamline employee monitoring, time tracking, and productivity management for businesses.",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": "49",
+    "category": "SaaS",
+    "url": "https://www.workstatus.io/pricing"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "550"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "HowTo", 
+  "name": "How to Set Up Time Tracking with Workstatus",
+  "step": [{
+    "@type": "HowToStep",
+    "text": "Sign in to your Workstatus account",
+    "url": "https://app.workstatus.io/auth/login/"
+  },{
+    "@type": "HowToStep",
+    "text": "Navigate to the Time Tracking section"
+  },{
+    "@type": "HowToStep",
+    "text": "Start tracking your work hours"
+  }]    
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "BreadcrumbList", 
+  "itemListElement": [{
+    "@type": "ListItem", 
+    "position": 1, 
+    "name": "Home",
+    "item": "https://www.workstatus.io/"  
+  },{
+    "@type": "ListItem", 
+    "position": 2, 
+    "name": "Product",
+    "item": "https://www.workstatus.io/product"  
+  },{
+    "@type": "ListItem", 
+    "position": 3, 
+    "name": "Solutions",
+    "item": "https://www.workstatus.io/solution"  
+  },{
+    "@type": "ListItem", 
+    "position": 4, 
+    "name": "Industries",
+    "item": "https://www.workstatus.io/industry"  
+  },{
+    "@type": "ListItem", 
+    "position": 5, 
+    "name": "Pricing",
+    "item": "https://www.workstatus.io/pricing"  
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Workstatus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Workstatus is a workforce management software that provides tools for time tracking, employee monitoring, productivity analysis, and more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What platforms does Workstatus support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Workstatus supports Windows, Mac, Android, and iOS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free trial available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Workstatus offers a 14-day free trial with no credit card required."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "Workstatus"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "John Doe"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "reviewBody": "Workstatus is an amazing tool for monitoring employee productivity and ensuring timely project completion. Highly recommended!"
+}
+</script>
+
 <script type="text/javascript">
 function changerate(starno){
 var starthover = document.getElementById("starthover");
