@@ -7491,7 +7491,8 @@ h3 a {
           margin: 15px 0 0; } }
 @media screen and (max-width: 1280px) {
   .header-two .header-item-right .menu ul li.menu-item-has-children a {
-    font-size: 14px; }
+    font-size: 14px;
+    padding: 0 18px 30px; }
   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents {
     min-height: 450px; }
     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .left-tabs {
@@ -7564,7 +7565,7 @@ h3 a {
             width: 25px;
             height: 25px; }
   .header-two .header-item-right .cta-wrap .login a {
-    font-size: 15px; } }
+    font-size: 14px; } }
 @media screen and (max-width: 1139px) {
   .header-two {
     position: fixed;
