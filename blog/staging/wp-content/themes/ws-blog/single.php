@@ -177,15 +177,14 @@
               </div>
             </div>
             <?php 
-              $sbCTA = get_field('sb-cta');  
+              $sbCTA = get_field('wssb-cta');  
               if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
               $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Optimize, Streamline & Automate with Workstatus';
               ?>
             <div class="customcta">
               <div class="cus-cont">
                 <div class="cushed">
-                <?php //echo $sbText; ?>                    
-                Optimize, Streamline & Automate with Workstatus
+                <?php echo $sbText; ?>                
                 </div>
                 <div class="btn-container">
                   <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
