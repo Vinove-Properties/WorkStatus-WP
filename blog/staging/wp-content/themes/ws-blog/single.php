@@ -13,9 +13,8 @@
         <a href="https://www.facebook.com/sharer?u=<?php echo get_the_permalink(); ?>&t=<?php echo get_the_title(); ?>" class="a2a_button_facebook" target="_blank" rel="noopener noreferrer"></a>
       </div>
     </div>
-    <?php 
-    
-    $topCTA = get_field('ptop-cta');  
+    <?php     
+    $topCTA = get_field('wsbp-cta');  
     if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
     $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Want to Streamline Workforce & Project Management?';    
     $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.";
@@ -25,16 +24,12 @@
     <div class="cta-section cta-accorpg">
       <div class="top-cta">
         <div class="colLeft">
-          <div class="ct-head">
-            <?php //echo $heading; ?>
-            Want to Streamline Workforce & Project Management?
-            </div>
+          <div class="ct-head"><?php echo $heading; ?></div>
           <?php 
-          // if( $text ){
-          //   echo '<p>'.$text.'</p>';
-          // }
-          ?>
-          <p>Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.</p>
+          if( $text ){
+          echo '<p>'.$text.'</p>';
+          }
+          ?>          
           <div class="cta-wrap">
             <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
             <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
