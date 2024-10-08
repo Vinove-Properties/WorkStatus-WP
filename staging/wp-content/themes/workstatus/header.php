@@ -179,7 +179,7 @@
             <nav class="menu mob-nav" id="menu">
               <ul>
                 <li class="menu-item-has-children">
-                  <a class="mst-link" href="#">Product</a> <span class="arrow-btn"></span>
+                  <a class="mst-link" href="<?php echo site_url(); ?>/product">Product</a> <span class="arrow-btn"></span>
                   <div class="menu-mega bg-purple">
                     <div class="container">
                       <div class="dis-flex tab-menu">
@@ -284,7 +284,7 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
@@ -332,7 +332,7 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
@@ -377,7 +377,7 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
@@ -592,7 +592,7 @@
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
@@ -614,7 +614,7 @@
                 </li>
                 <li class="cta-wrap small-reso">
                   <div class="login">
-                     <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
+                    <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
                     <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
                     <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>  
                   </div>
@@ -623,14 +623,13 @@
             </nav>
             <div class="cta-wrap large-reso">
               <div class="login">
-              <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
+                <a class="bg-none" href="https://app.workstatus.io/auth/login/">Log In</a>
                 <a href="javascript:void(0)" onclick="call_demows();">Book a Demo</a>
                 <a class="for-free" data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);"  onclick="return get_ws_signupform(this);">Free Trial</a>  
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </header>
     <?php  echo ( wsFeaturedHeader() ) ? '</div>' : ''; ?>
