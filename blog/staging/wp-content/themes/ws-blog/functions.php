@@ -645,7 +645,7 @@ add_filter( 'the_content', function( $content ){
 add_action('ws_sgl_condata', function(){
     $data = '<div class="upd-cusbanner cmn-vbanner">
     <p class="heading" style="z-index:9; position:relative;">Finding it Difficult to Manage Teams, Workflows, and Projects?</p>
-    <div class="cta-title">Workstatus can help you adapt and thrive in demanding, challenging, and dynamic work environments. Watch this video to find out how.</div>
+    <div class="cta-title" style="margin-top:20px; line-height:1.5;">Workstatus can help you adapt and thrive in demanding, challenging, and dynamic work environments. Watch this video to find out how.</div>
     <div class="ctasec">
     <a class="bkdemo" onclick="showIntoVideo();" href="javascript:void(0);">Watch the Video</a>
     </div>
