@@ -466,6 +466,27 @@ function ws_featues_cb( $atts ) {
 }
 add_shortcode( 'wsct', 'ws_featues_cb' );
 
+add_shortcode( 'inbanner_cta', function( $atts ){
+    global $RegLink;
+    $atts = shortcode_atts([
+    'title'      => 'Want to save time & money?', 
+    'body'       => 'Automate Workforce Management'
+    ], $atts, 'bartag' );
+    $hasLogin = getCTAstatus();
+    $FreeTrialCta = '<a href="javascript:void(0);" data-href="'.$RegLink.'" class="primary_btn1" 
+    onclick="return get_ws_signupform(this);">'.$hasLogin['cta_text'].'</a>';
+
+    $div = '<div class="upd-cusbanner sc-col">
+    <p class="heading">'.esc_html($atts['title']).'</p>
+    <div class="cta-title">'.esc_html($atts['body']).'</div>    
+    <div class="ctasec">
+    <a class="primary_btn1" onclick="call_demows();" href="javascript:void(0);">Book a Demo</a>
+    '.$FreeTrialCta.'    
+    </div>
+    </div>';
+    return $div;
+});
+
 /*add_filter('comment_form_default_fields', 'ws_website_remove');
 function ws_website_remove( $fields ){
 if(isset($fields['url']))
