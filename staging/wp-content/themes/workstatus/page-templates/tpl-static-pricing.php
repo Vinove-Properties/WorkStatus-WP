@@ -188,7 +188,7 @@
               </span>
               <h3>Project <br>Management</h3>
               <div class="total">2 USER MINIMUM</div>
-              <p class="tt-inherit">For teams needing project and task tracking, budgeting, and integrations for project management, customer service, and invoicing.</p>
+              <p class="tt-inherit">For teams needing project tracking, budgeting, timesheets, and built-in productivity management with proof of work.</p>
             </div>
             <div class="card-plan">              
               <span class="wph" id="pl-project">$4</span>  

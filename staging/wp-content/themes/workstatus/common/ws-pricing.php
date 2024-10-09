@@ -182,7 +182,7 @@
             </span>
             <h3>Project <br>Management</h3>
             <div class="total">2 USER MINIMUM</div>
-            <p class="tt-inherit">For companies looking to enhance resource management with automatic tracking, and productivity analytics.</p>
+            <p class="tt-inherit">For teams needing project tracking, budgeting, timesheets, and built-in productivity management with proof of work.</p>
           </div>
           <div class="card-plan">              
             <span class="wph" id="pl-project">$4</span>  
