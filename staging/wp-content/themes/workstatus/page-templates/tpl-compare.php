@@ -77,7 +77,7 @@
                                ?>
             <div class="column">
                <div class="flex_row align-center justify-center">
-                  <a href="<?php echo $row['url']; ?>" rel="nofollow">
+                  <a target="_blank" href="<?php echo $row['url']; ?>" rel="nofollow">
                   <span class="logo-icon">
                   <i class="reviews-logo review-logo<?php echo $i; ?>"></i>
                   <i class="star-icon"></i>
