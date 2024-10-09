@@ -228,8 +228,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
-                                  </span>
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
@@ -279,7 +278,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -327,7 +326,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -372,8 +371,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
-                                  </span>
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
@@ -587,7 +585,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="javascript:void(0);"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
