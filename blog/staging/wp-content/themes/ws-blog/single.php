@@ -179,7 +179,7 @@
             <?php 
               $sbCTA = get_field('wssb-cta');  
               if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
-              $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Optimize, Streamline & Automate with Workstatus';
+              $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Make Data-driven Decisions with Ease. Try Workstatus';
               ?>
             <div class="customcta">
               <div class="cus-cont">

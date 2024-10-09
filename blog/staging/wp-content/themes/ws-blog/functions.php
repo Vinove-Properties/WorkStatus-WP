@@ -644,8 +644,8 @@ add_filter( 'the_content', function( $content ){
 
 add_action('ws_sgl_condata', function(){
     $data = '<div class="upd-cusbanner cmn-vbanner">
-    <div class="cta-title">Finding it hard to maintain team efficiency in today’s dynamic work environment?</div>
-    <p class="heading">Learn how to adapt and thrive with our actionable tips in this insightful video.</p>
+    <div class="cta-title">Finding it Difficult to Manage Teams, Workflows, and Projects?</div>
+    <p class="heading">Workstatus can help you adapt and thrive in demanding, challenging, and dynamic work environments. Watch this video to find out how.</p>
     <div class="ctasec">
     <a class="bkdemo" onclick="showIntoVideo();" href="javascript:void(0);">Watch the Video</a>
     </div>
