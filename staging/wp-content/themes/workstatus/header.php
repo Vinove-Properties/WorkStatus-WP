@@ -355,7 +355,7 @@
                                     <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>
                                     Manage invoices, track payments</a>
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp</span>
-                                    Track daily progress, stay on track</a>
+                                    Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
                                       <span class="title">Agile Workflows</span>Flexible workflows, faster results</a>
                                   </div>
