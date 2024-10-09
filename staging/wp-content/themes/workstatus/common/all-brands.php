@@ -8,7 +8,7 @@
     <div class="part-row">
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.goodfirms.co/software/workstatus" rel="nofollow">
+          <a target="_blank"href="https://www.goodfirms.co/software/workstatus" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-03.png">
@@ -21,7 +21,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.g2.com/products/valuecoders-workstatus/reviews" rel="nofollow">
+          <a target="_blank"href="https://www.g2.com/products/valuecoders-workstatus/reviews" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-04.png">
@@ -34,7 +34,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.producthunt.com/products/workstatus" rel="nofollow">
+          <a target="_blank"href="https://www.producthunt.com/products/workstatus" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-05.png">
@@ -47,7 +47,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.trustpilot.com/review/www.workstatus.io" rel="nofollow">
+          <a target="_blank"href="https://www.trustpilot.com/review/www.workstatus.io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-11.png">
@@ -61,7 +61,7 @@
       <div class="part-col">
         
         <div class="img-wrap">
-          <a href="https://www.sitejabber.com/reviews/workstatus.io" rel="nofollow">
+          <a target="_blank"href="https://www.sitejabber.com/reviews/workstatus.io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-01.png">
@@ -74,7 +74,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://sourceforge.net/software/product/Workstatus/" rel="nofollow">
+          <a target="_blank"href="https://sourceforge.net/software/product/Workstatus/" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-02.png">
@@ -87,7 +87,7 @@
       </div>      
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.cloudfindr.co/software/workstatus-review/" rel="nofollow">
+          <a target="_blank"href="https://www.cloudfindr.co/software/workstatus-review/" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-06.png">
@@ -100,7 +100,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.techjockey.com/detail/workstatus" rel="nofollow">
+          <a target="_blank"href="https://www.techjockey.com/detail/workstatus" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-07.png">
@@ -113,7 +113,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.wesuggestsoftware.com/project-management/workstatus/" rel="nofollow">
+          <a target="_blank"href="https://www.wesuggestsoftware.com/project-management/workstatus/" rel="nofollow">
           <picture>            
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-08.png">
@@ -126,7 +126,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.saashub.com/workstatus-io-reviews" rel="nofollow">
+          <a target="_blank"href="https://www.saashub.com/workstatus-io-reviews" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-09.png">
@@ -139,7 +139,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://alternativeto.net/software/workstatus/" rel="nofollow">
+          <a target="_blank"href="https://alternativeto.net/software/workstatus/" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-10.png">
@@ -152,7 +152,7 @@
       </div>      
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.saasworthy.com/product/workstatus-io" rel="nofollow">
+          <a target="_blank"href="https://www.saasworthy.com/product/workstatus-io" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/assests/images/tie-12.png">
@@ -165,7 +165,7 @@
       </div>
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.gartner.com/reviews/market/employee-productivity-monitoring-software/vendor/workstatus" 
+          <a target="_blank"href="https://www.gartner.com/reviews/market/employee-productivity-monitoring-software/vendor/workstatus" 
           rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/gartner.webp">
@@ -180,7 +180,7 @@
 
       <div class="part-col">
         <div class="img-wrap">
-          <a href="https://www.capterra.com/p/231900/WorkStatus/" rel="nofollow">
+          <a target="_blank"href="https://www.capterra.com/p/231900/WorkStatus/" rel="nofollow">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.webp">
             <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/capterra.png">
