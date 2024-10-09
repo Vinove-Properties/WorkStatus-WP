@@ -187,7 +187,7 @@
                           <div class="left-tabs">
                             <ul class="tab-nav">
                               <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/time-attendance">Time & Attendance</a></li>
-                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">WorkForce Management</a></li>
+                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">Workforce Management</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/reporting-analytics">Reporting & Analytics</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></li>
                             </ul>
@@ -245,8 +245,8 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-02.svg" class="menuicon" alt="menuicon"><span class="title">WorkForce Management</span>
-                                  Manage teams, boost productivity
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-02.svg" class="menuicon" alt="menuicon"><span class="title">Workforce Management</span>
+                                  Manage Teams, Boost Productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -303,7 +303,7 @@
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/productivity-reports"><span class="title">Productivity Reports</span>
-                                    Track progress, boost results</a>
+                                    Get actionable insights with data</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/application-website-usage"><span class="title">Application & Website Usage</span>
                                     Optimize digital workflows</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/location-analytics"><span class="title">Location Analytics</span>
@@ -314,12 +314,11 @@
                                     Manage tasks, prioritize goals</a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/reporting-analytics/benchmark-goals"><span class="title">Benchmark & Goals</span>
-                                    Track progress, set new goals</a>
+                                    <a href="<?php echo site_url(); ?>/reporting-analytics/benchmark-goals"><span class="title">Benchmark & Goals</span>Set new goals, track progress</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workforce-analytics-software"><span class="title">Workforce Analytics</span>
                                     Gain insights, make better decisions</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/overtime-tracker"><span class="title">OverTime Tracker</span>
-                                    Track extra hours, stay compliant</a>
+                                    Track extra hours, easily</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-reporting"><span class="title">Compliance Reporting</span>
                                     Stay compliant, avoid risks</a>
                                   </div>
@@ -345,7 +344,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-04.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
-                                  Plan & manage tasks better</a><span class="ser-arrow-btn"></span>
+                                  Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
@@ -357,8 +356,8 @@
                                     Manage invoices, track payments</a>
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp</span>
                                     Track daily progress, stay on track</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile WorkFlows</span>
-                                    Flexible workflows, fast results</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
+                                      <span class="title">Agile Workflows</span>Flexible workflows, faster results</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint</span>
@@ -477,7 +476,7 @@
                   </div>
                 </li>
                 <li class="menu-item-has-children">
-                  <a class="mst-link" href="<?php echo site_url(); ?>/industry">Who we serve</a> <span class="arrow-btn"></span>
+                  <a class="mst-link" href="<?php echo site_url(); ?>/industry">Who We Serve</a> <span class="arrow-btn"></span>
                   <div class="menu-mega">
                     <div class="container">
                       <div class="dis-flex tab-menu">
@@ -569,8 +568,7 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>
-                                    Simple HR, empower your people</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>Simplify HR processes, empower people</a>
                                     <a href="<?php echo site_url(); ?>/by-role/it-managers"><span class="title">IT Managers</span>
                                     Streamline IT projects delivery
                                     </a>
