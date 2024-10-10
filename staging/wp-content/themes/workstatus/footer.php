@@ -438,6 +438,8 @@ endif;
   }]
 }
 </script>
+
+<?php /* ?>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -470,6 +472,8 @@ endif;
   ]
 }
 </script>
+<?php */ ?>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
