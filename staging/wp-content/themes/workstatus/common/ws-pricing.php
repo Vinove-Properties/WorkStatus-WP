@@ -89,7 +89,7 @@
               </span>
               <h3>Attendance <br>Management</h3>
               <div class="total">2 USER MINIMUM</div>
-              <p class="tt-inherit">Tailored for companies seeking to track employee attendance.</p>
+              <p class="tt-inherit">Effortlessly track attendance with mobile check-ins, GPS, and geofencing for accurate insights and improved accountability.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-attendance">$1</span>
@@ -134,7 +134,7 @@
             </span>
             <h3>Productivity <br>Management</h3>
             <div class="total">2 USER MINIMUM</div>
-            <p class="tt-inherit">Ideal for firms seeking to boost accountability with proof-of-work-based timesheets.</p>
+            <p class="tt-inherit">Maximize team output with detailed time tracking, app usage analysis, and actionable productivity reports to optimize workflows.</p>
           </div>
           <div class="card-plan">
             <span class="wph" id="pl-product">$4</span>
@@ -182,7 +182,7 @@
             </span>
             <h3>Project <br>Management</h3>
             <div class="total">2 USER MINIMUM</div>
-            <p class="tt-inherit">For teams needing project tracking, budgeting, timesheets, and built-in productivity management with proof of work.</p>
+            <p class="tt-inherit">Stay on top of projects with seamless time tracking, task management, budgeting, and invoicing tools to ensure timely delivery and profitability.</p>
           </div>
           <div class="card-plan">              
             <span class="wph" id="pl-project">$4</span>  
@@ -224,7 +224,7 @@
             </span>
             <h3>Enterprise<br>Solution</h3>
             <div class="total">OVER 100 USERS</div>
-            <p class="tt-inherit">For organizations that seeking complete control with customizable workforce management, scalability, and productivity enhancements.</p>
+            <p class="tt-inherit">Customize your workforce solutions with advanced integrations, enhanced reporting, and dedicated support unique business needs.</p>
           </div>
           <div class="card-plan">
             <span class="wph" id="pl-ent-blank">Custom</span>  
