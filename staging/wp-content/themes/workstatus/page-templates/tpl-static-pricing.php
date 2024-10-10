@@ -230,7 +230,7 @@
               </span>
               <h3>Enterprise<br>Solution</h3>
               <div class="total">OVER 100 USERS</div>
-              <p class="tt-inherit">Customize your workforce solutions with advanced integrations, enhanced reporting, and dedicated support to meet your unique business needs.</p>
+              <p class="tt-inherit">Customize your workforce solutions with advanced integrations, enhanced reporting, and dedicated support unique business needs.</p>
             </div>
             <div class="card-plan">
               <span class="wph" id="pl-ent-blank">Custom</span>  
