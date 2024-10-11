@@ -235,21 +235,23 @@ if( isset( $ws_services['required'] ) && ( $ws_services['required'] == "yes" ) )
 $mcBLocks = get_field('mc-block');
 if( isset($mcBLocks['required']) && ($mcBLocks['required'] == "yes") ){
   if( isset( $mcBLocks['block'] ) && is_array( $mcBLocks['block'] ) && (count($mcBLocks['block']) > 0) ){
-    foreach( $mcBLocks['block'] as $row ){
-    $pxlImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
-    echo '<section class="trackEm"><div class="container">';
-    echo '<div class="top-section">'.$row['content'].'</div>';
-    echo '<div class="trackRow"><div class="trackImg">'.$pxlImage.'</div>';
-    if( $row['ls-blocks'] ){
-      echo '<div class="trackContent">';
-      foreach( $row['ls-blocks'] as $block ){
-        echo '<div class="row">'.$block['cont'].'</div>';
+    echo '<section class="trackEm-container">';
+      foreach( $mcBLocks['block'] as $row ){
+      $pxlImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
+      echo '<section class="trackEm"><div class="container">';
+      echo '<div class="top-section">'.$row['content'].'</div>';
+      echo '<div class="trackRow"><div class="trackImg">'.$pxlImage.'</div>';
+      if( $row['ls-blocks'] ){
+        echo '<div class="trackContent">';
+        foreach( $row['ls-blocks'] as $block ){
+          echo '<div class="row">'.$block['cont'].'</div>';
+        }
+        echo '</div>';
       }
       echo '</div>';
-    }
-    echo '</div>';
-    echo '</div></section>';    
-    }
+      echo '</div></section>';    
+      }
+    echo '</section>';
   }
 }
 ?>
