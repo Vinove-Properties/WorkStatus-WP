@@ -623,7 +623,7 @@ add_filter( 'the_content', function( $content ){
 
         $data .= '</div>';
         $data .= '<div class="row"><div class="post-rel-sec">';
-        $data .= '<h3>Related Stories</h3>';
+        $data .= '<h2>Related Stories</h2>';
         $data .= '<div class="row">';
         while($loop->have_posts()) : $loop->the_post();
           $pid = get_the_ID();
@@ -670,7 +670,7 @@ add_action('ws_sgl_condata', function(){
 
         $data .= '</div>';
         $data .= '<div class="row"><div class="post-rel-sec">';
-        $data .= '<h3>Related Stories</h3>';
+        $data .= '<h2>Related Stories</h2>';
         $data .= '<div class="row">';
         while($loop->have_posts()) : $loop->the_post();
           $pid = get_the_ID();

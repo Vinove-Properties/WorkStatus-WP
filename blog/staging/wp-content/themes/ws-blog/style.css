@@ -118,7 +118,7 @@ h1 {
  margin: 0 0 50px;
 }
 h2 {
- font-size: 34px;
+ font-size: 32px;
  line-height: 45px;
  margin-bottom: 20px;
 }
@@ -908,7 +908,7 @@ table th {
  color: #212121;
 }
 .vcb-col-right h2 {
- margin-top: 40px;
+ margin-top: 50px;
 }
 .vcb-col-right p{margin:0 0 24px;}
 .vcb-col-right h4{margin-top:30px;}
@@ -1111,7 +1111,7 @@ div.epcl-share-container {
  color: #4231AC !important;
 }
 .post-rel-sec {
- margin: 0 0 50px;
+ margin: 0 0 25px;
 }
 .post-rel-sec h3 {
  text-transform: capitalize;
