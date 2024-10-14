@@ -1199,6 +1199,7 @@ div.epcl-share-container {
  .vcb-col-right h2 {
   margin-top: 40px;
  }
+ .vcb-col-right h3{  margin-top: 40px;}
  .vcb-col-right img {
   margin: 40px auto 60px;
  }
@@ -1253,6 +1254,7 @@ div.epcl-share-container {
  .vcb-col-right h2 {
   margin-top: 30px;
  }
+ 
  .vcb-col-right h3 {
   margin-top: 30px;
   margin-bottom: 20px;
