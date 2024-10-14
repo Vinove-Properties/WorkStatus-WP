@@ -187,9 +187,9 @@
                           <div class="left-tabs">
                             <ul class="tab-nav">
                               <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/time-attendance">Time & Attendance</a></li>
-                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">Workforce Management</a></li>
-                              <li class="tab-link"><a href="<?php echo site_url(); ?>/reporting-analytics">Reporting & Analytics</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/project-management">Project & Task Management</a></li>
+                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">Workforce Management</a></li>
+                              <li class="tab-link"><a href="<?php echo site_url(); ?>/reporting-analytics">Reporting & Analytics</a></li>                              
                             </ul>
                           </div>
                           <div class="right-tabs">
@@ -224,6 +224,50 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/web-based-time-tracker"><span class="title">Web Based Time Tracker</span>
                                     Track time, anytime, anywhere
                                     </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="other-menu mob-hide">
+                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
+                                  Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
+                                </div>
+                                <div class="flex-1 menu-column sub-service">
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
+                                  </a>
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
+                                  </a>
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  </a>
+                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-content">
+                              <div class="three-column">
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-04.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
+                                  Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
+                                </div>
+                                <div class="dis-flex menu-column sub-service">
+                                  <div class="flex-2">
+                                    <a href="<?php echo site_url(); ?>/project-management/task-management"><span class="title">Task Management</span>
+                                    Prioritize, track, & collaborate</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software"><span class="title">Project Budgeting</span>
+                                    Track costs, maximize ROI</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>
+                                    Manage invoices, track payments</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp</span>
+                                    Track project status, every day</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
+                                      <span class="title">Agile Workflows</span>Flexible workflows, faster results</a>
+                                  </div>
+                                  <div class="flex-2">
+                                    <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint</span>
+                                    Deliver value, iterate fast</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/epics"><span class="title">Epics</span>
+                                    Focus on key initiatives</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>
+                                    Visualize progress, stay on track</a>
                                   </div>
                                 </div>
                               </div>
@@ -341,50 +385,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="tab-content">
-                              <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-04.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
-                                  Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
-                                </div>
-                                <div class="dis-flex menu-column sub-service">
-                                  <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/project-management/task-management"><span class="title">Task Management</span>
-                                    Prioritize, track, & collaborate</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software"><span class="title">Project Budgeting</span>
-                                    Track costs, maximize ROI</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>
-                                    Manage invoices, track payments</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp</span>
-                                    Track project status, every day</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
-                                      <span class="title">Agile Workflows</span>Flexible workflows, faster results</a>
-                                  </div>
-                                  <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint</span>
-                                    Deliver value, iterate fast</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/epics"><span class="title">Epics</span>
-                                    Focus on key initiatives</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>
-                                    Visualize progress, stay on track</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
-                                  Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
-                                </div>
-                                <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
+                            
                           </div>
                         </div>
                       </div>
