@@ -743,7 +743,7 @@ hr {
  background: linear-gradient(#05164d, #05164d);
  padding: 38px 25px;
  text-align: center;
- margin: 50px 0;
+ margin: 40px 0;
  border-radius: 14px;
 }
 .es_spinner_image,
@@ -908,15 +908,12 @@ table th {
  color: #212121;
 }
 .vcb-col-right h2 {
- margin-top: 50px;
+ margin-top: 40px;
 }
 .vcb-col-right p{margin:0 0 24px;}
 .vcb-col-right h4{margin-top:30px;}
 
-.vcb-col-right h3 {
- margin-top: 50px;
- margin-bottom: 30px;
-}
+
 .vcb-col-right h3 a {
  color: #110302;
 }
@@ -935,6 +932,7 @@ table th {
 .vcb-col-right ol li,
 .vcb-col-right ul li {
  list-style: disc;
+ line-height: 28px;
 }
 table {
  margin: 20px 0;
@@ -1197,15 +1195,15 @@ div.epcl-share-container {
   margin: 0 0 40px;
  }
  .vcb-col-right h2 {
-  margin-top: 40px;
+  margin-top: 30px;
  }
- .vcb-col-right h3{  margin-top: 40px;}
+
  .vcb-col-right img {
   margin: 40px auto 60px;
  }
  .vcb-col-right iframe{ margin: 40px auto 60px;}
  .upd-cusbanner {
-  margin: 60px 0;
+  margin: 30px 0;
  }
 }
 @media screen and (max-width: 1024px) {
@@ -1255,16 +1253,13 @@ div.epcl-share-container {
   margin-top: 30px;
  }
  
- .vcb-col-right h3 {
-  margin-top: 30px;
-  margin-bottom: 20px;
- }
+
  h3 {
   font-size: 23px;
   line-height: 32px;
  }
  .upd-cusbanner {
-  margin: 50px 0;
+  margin: 30px 0;
  }
  .vcb-col-right li {
   margin-bottom: 10px;
@@ -1764,6 +1759,8 @@ border: none; transition: all 0.3s ease-in-out;  min-width: 140px; margin: 5px 0
         .ws-blogo .lnk-blog{right: -50px;}
 
         .upd-cusbanner .ctasec a{min-width: 135px; font-size: 14px;}
+
+        .vcb-col-right ol li, .vcb-col-right ul li{line-height: 26px;}
 
 
 }
