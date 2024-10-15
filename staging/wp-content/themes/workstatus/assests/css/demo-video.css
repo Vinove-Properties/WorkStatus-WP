@@ -7951,7 +7951,7 @@ h3 a {
   right: 0;
   margin: 0 auto;
   width: 120px;
-  z-index: 999;
+  z-index: 999 !important;
   height: 120px;
   border: 0;
   background: transparent;
