@@ -1,4 +1,7 @@
 <?php
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
@@ -1364,6 +1367,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $eDate = "000-00-00";
     $eTime = "00:00:00";
     
+    $file       = fopen(CL_LOGFILE,"a");    
+    fwrite( $file, PHP_EOL."Webhook V2 - Internal API : " .time().print_r($eventResp,true) );
+    fclose( $file );
+
     if(!$err){
         $eventJson    = json_decode( $eventResp, true );
         $eventdate    = $eventJson['resource']['start_time'];
