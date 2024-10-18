@@ -1366,11 +1366,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     
     $eDate = "000-00-00";
     $eTime = "00:00:00";
-    
-    $file       = fopen(CL_LOGFILE,"a");    
-    fwrite( $file, PHP_EOL."Webhook V2 - Internal API : " .time().print_r($eventResp,true) );
-    fclose( $file );
-
+        
     if(!$err){
         $eventJson    = json_decode( $eventResp, true );
         $eventdate    = $eventJson['resource']['start_time'];
@@ -1469,8 +1465,12 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
     $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
 
-    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], 
-    ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+    $file       = fopen(CL_LOGFILE,"a");    
+    fwrite( $file, PHP_EOL."Webhook V2 - Email Body : " .$body );
+    fclose( $file );
+
+    // clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], 
+    // ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
 
 
     $tempLog = fopen(CL_LOGFILE,"a");
