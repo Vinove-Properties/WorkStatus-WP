@@ -1362,16 +1362,20 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     
     $eDate = "000-00-00";
     $eTime = "00:00:00";
-        
-    if(!$err){
-        // $eventJson    = json_decode( $eventResp, true );
-        // $eventdate    = $eventJson['resource']['start_time'];
+    $file       = fopen(CL_LOGFILE,"a");
+    fwrite( $file, PHP_EOL."Debugger : #1"  );
+    fwrite( $file, PHP_EOL."Internal - Response : " .time().print_r(json_decode($eventResp, true),true) );
+    fclose( $file );
 
-        // $datetime   = new DateTime( $eventdate );
-        // $eDate      = $datetime->format('Y-m-d');
-        // $la_time    = new DateTimeZone('Asia/Calcutta');
-        // $datetime->setTimezone($la_time);
-        // $eTime      = $datetime->format('H:i:s');
+    if(!$err){
+        $eventJson    = json_decode( $eventResp, true );
+        $eventdate    = $eventJson['resource']['calendar_event']['start_time'];
+
+        $datetime   = new DateTime( $eventdate );
+        $eDate      = $datetime->format('Y-m-d');
+        $la_time    = new DateTimeZone('Asia/Calcutta');
+        $datetime->setTimezone($la_time);
+        $eTime      = $datetime->format('H:i:s');
     }
     curl_close( $ecurl );
 
@@ -1428,11 +1432,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $country    = "";
     if( $pcode !== false ){
     $country    = (tempWsPhoneCode( $pcode ) !== false ) ? tempWsPhoneCode( $pcode ) : ""; 
-    }    
-
-    $file       = fopen(CL_LOGFILE,"a");
-    fwrite( $file, PHP_EOL."Debugger : #1"  );
-    fclose( $file );
+    }  
 
     $varDeliminator = "<br>";
     $body = "";
@@ -1454,17 +1454,9 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
     $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
 
-    $file       = fopen(CL_LOGFILE,"a");
-    fwrite( $file, PHP_EOL."Debugger : #1"  );
-    fclose( $file );
-
-    // $file       = fopen(CL_LOGFILE,"a");    
-    // fwrite( $file, PHP_EOL."Webhook V2 - Email Body : " .$body );
-    // fclose( $file );
-
     clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, 
     [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
-    
+
     $file       = fopen(CL_LOGFILE,"a");
     fwrite( $file, PHP_EOL."Debugger : #1"  );
     fclose( $file );
