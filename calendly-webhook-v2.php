@@ -7,7 +7,7 @@ $json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
 
 $file       = fopen(CL_LOGFILE,"a");
-fwrite( $file, PHP_EOL."Webhook call @ : ".date("l jS \of F Y h:i:s A") );
+fwrite( $file, PHP_EOL."Webhook V2 - Response : " .time().print_r($json,true) );
 fclose( $file );
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -1341,10 +1341,6 @@ function dupLeadNote( $varAccessToken, $lead_id, $requirement ){
     curl_close( $curl );
 }
 
-$file       = fopen(CL_LOGFILE,"a");
-fwrite( $file, PHP_EOL."Webhook V2 - Check : " .time().print_r($json,true) );
-fclose( $file );
-
 if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $event_url  = $json['payload']['event'];
     $ecurl      = curl_init();
@@ -1387,14 +1383,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $lastName   = $nameArray[1];
     }
     $utm_source = $utm_medium = $utm_campaign = $pageUrl = $ipAddress = '';
-    $hasDataID = 0;
-    // if( isset( $json['payload']['tracking']['utm_source'] ) ){
-    //     $utm_source = $json['payload']['tracking']['utm_source'];
-    //     $utmsrc     = explode( "!!", $utm_source );
-    //     //$pageUrl    = $utmsrc[0];
-    //     $ipAddress  = $utmsrc[1];
-    //     $hasDataID  = ( isset( $utmsrc[2] ) ) ? $utmsrc[2] : 0;
-    // }
+    $hasDataID = 0;    
 
     if( isset($json['payload']['tracking']['utm_source']) && !empty($json['payload']['tracking']['utm_source']) ){
         $getUTM_source = $json['payload']['tracking']['utm_source'];
@@ -1427,10 +1416,6 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $pageUrl        = $json['payload']['tracking']['utm_term'];
     }
 
-    /*
-    https://calendly.com/workstatus?utm_medium=social&utm_source=facebook&utm_campaign=track-promotion
-    https://calendly.com/workstatus/product-demo?utm_source=https://www.workstatus.io/best-facial-recognition-software!!61.247.235.93
-    */
     $flds       = $json['payload']['questions_and_answers'];
     $phone      = $flds[0]['answer'];
     $company    = $flds[1]['answer'];
@@ -1444,6 +1429,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     if( $pcode !== false ){
     $country    = (tempWsPhoneCode( $pcode ) !== false ) ? tempWsPhoneCode( $pcode ) : ""; 
     }    
+
+    $file       = fopen(CL_LOGFILE,"a");
+    fwrite( $file, PHP_EOL."Debugger : #1"  );
+    fclose( $file );
 
     $varDeliminator = "<br>";
     $body = "";
@@ -1465,13 +1454,20 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
     $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
 
-    $file       = fopen(CL_LOGFILE,"a");    
-    fwrite( $file, PHP_EOL."Webhook V2 - Email Body : " .$body );
+    $file       = fopen(CL_LOGFILE,"a");
+    fwrite( $file, PHP_EOL."Debugger : #1"  );
     fclose( $file );
 
-    // clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], 
-    // ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+    // $file       = fopen(CL_LOGFILE,"a");    
+    // fwrite( $file, PHP_EOL."Webhook V2 - Email Body : " .$body );
+    // fclose( $file );
 
+    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, 
+    [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+    
+    $file       = fopen(CL_LOGFILE,"a");
+    fwrite( $file, PHP_EOL."Debugger : #1"  );
+    fclose( $file );
 
     $tempLog = fopen(CL_LOGFILE,"a");
     fwrite($tempLog, $email.print_r($json, true)."\n");
