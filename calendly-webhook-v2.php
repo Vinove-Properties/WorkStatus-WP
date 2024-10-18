@@ -1364,14 +1364,14 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $eTime = "00:00:00";
         
     if(!$err){
-        $eventJson    = json_decode( $eventResp, true );
-        $eventdate    = $eventJson['resource']['start_time'];
+        // $eventJson    = json_decode( $eventResp, true );
+        // $eventdate    = $eventJson['resource']['start_time'];
 
-        $datetime   = new DateTime( $eventdate );
-        $eDate      = $datetime->format('Y-m-d');
-        $la_time    = new DateTimeZone('Asia/Calcutta');
-        $datetime->setTimezone($la_time);
-        $eTime      = $datetime->format('H:i:s');
+        // $datetime   = new DateTime( $eventdate );
+        // $eDate      = $datetime->format('Y-m-d');
+        // $la_time    = new DateTimeZone('Asia/Calcutta');
+        // $datetime->setTimezone($la_time);
+        // $eTime      = $datetime->format('H:i:s');
     }
     curl_close( $ecurl );
 
