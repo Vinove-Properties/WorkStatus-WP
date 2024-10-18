@@ -414,9 +414,9 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Attendance Management</span>
                                     Precise, automated attendance tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/attendance-reports-hr"><span class="title">Attendance Management</span>
-                                    Effortless attendance management</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/automated-tracking"><span class="title">Automated Time Tracking</span>
-                                    Bid adieu to manual entries</a>
+                                    Simplify HR Operations</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/automated-tracking"><span class="title">Payroll Management</span>
+                                    Streamline & automate payroll</a>
                                     <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                   </div>
                                   <div class="flex-4">
