@@ -1369,13 +1369,21 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
 
     if(!$err){
         $eventJson    = json_decode( $eventResp, true );
-        $eventdate    = $eventJson['resource']['calendar_event']['start_time'];
-
-        $datetime   = new DateTime( $eventdate );
-        $eDate      = $datetime->format('Y-m-d');
-        $la_time    = new DateTimeZone('Asia/Calcutta');
-        $datetime->setTimezone($la_time);
-        $eTime      = $datetime->format('H:i:s');
+        if( isset( $eventJson['resource']['start_time'] ) && !empty( $eventJson['resource']['start_time'] ) ){
+          $eventdate    = $eventJson['resource']['start_time'];
+          // $datetime   = new DateTime( $eventdate );
+          // $eDate      = $datetime->format('Y-m-d');
+          // $la_time    = new DateTimeZone('Asia/Calcutta');
+          // $datetime->setTimezone($la_time);
+          // $eTime      = $datetime->format('H:i:s');    
+          
+          $datetime = new DateTime($eventdate);
+          $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
+          
+          $eDate = $datetime->format('Y-m-d');
+          $eTime = $datetime->format('H:i:s');
+            
+        }        
     }
     curl_close( $ecurl );
 
