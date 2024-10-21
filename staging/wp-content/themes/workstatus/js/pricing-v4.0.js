@@ -65,7 +65,7 @@ const pricingData = {
   },
   'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
 },
-"INTR": {
+"US": {
   "productivity":{
     'basic':{'yearly':{"amount":2.99}, 'monthly':{"amount":3.99}},
     'pro':{'yearly':{"amount":3.99}, 'monthly':{"amount":4.99}}  
@@ -83,69 +83,163 @@ const pricingData = {
     'pro':{'yearly':{"amount":80}, 'monthly':{"amount":100}}
   },
   'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
-}
-
-/*
-,
+},
 "LA": {
-  "attendance":{'yearly':{"amount":1}, 'monthly':{"amount":1.50}},
-  "product":{'yearly':{"amount":2.99}, 'monthly':{"amount":3.99}},
-  "project":{'yearly':{"amount":3.99}, 'monthly':{"amount":4.99}},  
-  'meta':{"currency":'$', "location":0.69, "pm":1.49, "insights":1.49}  
+  "productivity":{
+    'basic':{'yearly':{"amount":2.99}, 'monthly':{"amount":56.19}},
+    'pro':{'yearly':{"amount":56.19}, 'monthly':{"amount":79}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":44.99}, 'monthly':{"amount":56.19}},
+    'pro':{'yearly':{"amount":2249}, 'monthly':{"amount":2809}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":29}, 'monthly':{"amount":39}},
+    'pro':{'yearly':{"amount":1499}, 'monthly':{"amount":1874.89}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":29}, 'monthly':{"amount":39}},
+    'pro':{'yearly':{"amount":1499}, 'monthly':{"amount":1874.89}}
+  },
+  'meta':{"currency":'$', "location":0.69, "pm":1.49, "insights":1.49}
 },
 "GB": {
-  "attendance":{'yearly':{"amount":0.80}, 'monthly':{"amount":1.20}},
-  "product":{'yearly':{"amount":2.49}, 'monthly':{"amount":3.49}},
-  "project":{'yearly':{"amount":3.99}, 'monthly':{"amount":5.49}},  
+  "productivity":{
+    'basic':{'yearly':{"amount":2.99}, 'monthly':{"amount":3.19}},
+    'pro':{'yearly':{"amount":3.19}, 'monthly':{"amount":4.99}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":1.99}, 'monthly':{"amount":2.49}},
+    'pro':{'yearly':{"amount":98.39}, 'monthly':{"amount":122.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":1.29}, 'monthly':{"amount":1.59}},
+    'pro':{'yearly':{"amount":65.59}, 'monthly':{"amount":81.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":1.29}, 'monthly':{"amount":1.59}},
+    'pro':{'yearly':{"amount":65.59}, 'monthly':{"amount":81.99}}
+  },
   'meta':{"currency":'£', "location":0.9, "pm":1.9, "insights":1.9}
 },
-"US": {
-  "attendance":{'yearly':{"amount":1}, 'monthly':{"amount":1.50}},
-  "product":{'yearly':{"amount":4}, 'monthly':{"amount":5}},
-  "project":{'yearly':{"amount":5.5}, 'monthly':{"amount":7}},  
-  'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
-},
 "AU": {
-  "attendance":{'yearly':{"amount":1.50}, 'monthly':{"amount":2.25}},
-  "product":{'yearly':{"amount":5.99}, 'monthly':{"amount":7.49}},
-  "project":{'yearly':{"amount":7.99}, 'monthly':{"amount":10.49}},
+  "productivity":{
+    'basic':{'yearly':{"amount":4.69}, 'monthly':{"amount":6.19}},
+    'pro':{'yearly':{"amount":6.19}, 'monthly':{"amount":4.99}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":3.69}, 'monthly':{"amount":4.69}},
+    'pro':{'yearly':{"amount":187.19}, 'monthly':{"amount":233.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":3.69}, 'monthly':{"amount":4.69}},
+    'pro':{'yearly':{"amount":124.79}, 'monthly':{"amount":155.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":3.69}, 'monthly':{"amount":4.69}},
+    'pro':{'yearly':{"amount":124.79}, 'monthly':{"amount":155.99}}
+  },
   'meta':{"currency":'AU$', "location":1.49, "pm":3.09, "insights":3.09}
 },
 "SA": {
-  "attendance":{'yearly':{"amount":3.75}, 'monthly':{"amount":5.63}},
-  "product":{'yearly':{"amount":14.49}, 'monthly':{"amount":18.49}},
-  "project":{'yearly':{"amount":19.99}, 'monthly':{"amount":25.99}},  
+  "productivity":{
+    'basic':{'yearly':{"amount":10.99}, 'monthly':{"amount":14.99}},
+    'pro':{'yearly':{"amount":10.99}, 'monthly':{"amount":4.99}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":8.99}, 'monthly':{"amount":14.99}},
+    'pro':{'yearly':{"amount":439.99}, 'monthly':{"amount":549.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":5.99}, 'monthly':{"amount":7.49}},
+    'pro':{'yearly':{"amount":299.99}, 'monthly':{"amount":374.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":5.99}, 'monthly':{"amount":7.49}},
+    'pro':{'yearly':{"amount":299.99}, 'monthly':{"amount":374.99}}
+  },
   'meta':{"currency":'SAR', "location":3.79, "pm":7.49, "insights":7.49}
 },
 "AE": {
-  "attendance":{'yearly':{"amount":3.67}, 'monthly':{"amount":5.50}},
-  "product":{'yearly':{"amount":13.99}, 'monthly':{"amount":17.99}},
-  "project":{'yearly':{"amount":19.99}, 'monthly':{"amount":24.99}},  
+  "productivity":{
+  'basic':{'yearly':{"amount":10.99}, 'monthly':{"amount":14.59}},
+  'pro':{'yearly':{"amount":10.99}, 'monthly':{"amount":19.99}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":8.79}, 'monthly':{"amount":10.99}},
+    'pro':{'yearly':{"amount":439.99}, 'monthly':{"amount":549.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":5.79}, 'monthly':{"amount":7.29}},
+    'pro':{'yearly':{"amount":293.59}, 'monthly':{"amount":366.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":5.79}, 'monthly':{"amount":7.29}},
+    'pro':{'yearly':{"amount":293.59}, 'monthly':{"amount":366.99}}
+  },
   'meta':{"currency":'AE', "location":3.69, "pm":7.29, "insights":7.29}
 },
 "CA": {
-  "attendance":{'yearly':{"amount":1.36}, 'monthly':{"amount":2.00}},
-  "product":{'yearly':{"amount":4.99}, 'monthly':{"amount":6.49}},
-  "project":{'yearly':{"amount":7.49}, 'monthly':{"amount":9.49}},  
+  "productivity":{
+    'basic':{'yearly':{"amount":4.09}, 'monthly':{"amount":5.39}},
+    'pro':{'yearly':{"amount":5.39}, 'monthly':{"amount":7.39}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":3.19}, 'monthly':{"amount":4.09}},
+    'pro':{'yearly':{"amount":163.19}, 'monthly':{"amount":203.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":2.19}, 'monthly':{"amount":2.69}},
+    'pro':{'yearly':{"amount":108.79}, 'monthly':{"amount":135.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":2.19}, 'monthly':{"amount":2.69}},
+    'pro':{'yearly':{"amount":108.79}, 'monthly':{"amount":135.99}}
+  },
   'meta':{"currency":'CA$', "location":1.39, "pm":2.69, "insights":2.69}
 },
 "ZA": {
-  "attendance":{'yearly':{"amount":17.98}, 'monthly':{"amount":26.98}},
-  "product":{'yearly':{"amount":59.00}, 'monthly':{"amount":79.00}},
-  "project":{'yearly':{"amount":89.00}, 'monthly':{"amount":119.00}},  
+  "productivity":{
+    'basic':{'yearly':{"amount":34.89}, 'monthly':{"amount":46.49}},
+    'pro':{'yearly':{"amount":46.49}, 'monthly':{"amount":63.89}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":27.89}, 'monthly':{"amount":34.89}},
+    'pro':{'yearly':{"amount":1393.89}, 'monthly':{"amount":1742.39}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":18.59}, 'monthly':{"amount":23.19}},
+    'pro':{'yearly':{"amount":929.19}, 'monthly':{"amount":1161.59}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":18.59}, 'monthly':{"amount":23.19}},
+    'pro':{'yearly':{"amount":929.19}, 'monthly':{"amount":1161.59}}
+  },
   'meta':{"currency":'ZAR', "location":11.39, "pm":22.89, "insights":22.89}
 },
 "EUR": {
-  "attendance":{'yearly':{"amount":0.90}, 'monthly':{"amount":1.36}},
-  "product":{'yearly':{"amount":3.49}, 'monthly':{"amount":4.49}},
-  "project":{'yearly':{"amount":4.99}, 'monthly':{"amount":6.49}},  
+  "productivity":{
+    'basic':{'yearly':{"amount":2.69}, 'monthly':{"amount":3.59}},
+    'pro':{'yearly':{"amount":3.59}, 'monthly':{"amount":4.99}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":2.19}, 'monthly':{"amount":2.69}},
+    'pro':{'yearly':{"amount":110.39}, 'monthly':{"amount":137.99}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":1.39}, 'monthly':{"amount":1.79}},
+    'pro':{'yearly':{"amount":73.59}, 'monthly':{"amount":91.99}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":1.39}, 'monthly':{"amount":1.79}},
+    'pro':{'yearly':{"amount":73.59}, 'monthly':{"amount":91.99}}
+  },
   'meta':{"currency":'€', "location":0.99, "pm":1.89, "insights":1.89}
 }
-*/
 };
 
 function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
-    conCode = "IN"
+    //conCode = "INTR"
     const locInput = document.getElementById("current-geo");
     if( laCountries.includes( conCode ) ){
       conCode = "LA";
