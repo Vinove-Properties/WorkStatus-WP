@@ -41,8 +41,18 @@ const WS_PLAN_ID_BKP = {
 }
 
 const WS_PLAN_ID = {
-  "local" : {"attendance":5001, "product" : 466, "project" : 460, "ent" : 461, "free" : 137},
-  "international" : {"attendance":5002, "product" : 467, "project" : 463, "ent" : 464, "free" : 138}
+  "local" : {
+    "productivity":{'basic':5109,'pro':5110},
+    "project":{'basic':5111,'pro':5112},
+    "time":{'basic':5113,'pro':5114},
+    "attendance":{'basic':5115,'pro':5116}
+  },
+  "international" : {
+     "productivity":{'basic':5101,'pro':5102},
+     "project":{'basic':5103,'pro':5104},
+     "time":{'basic':5105,'pro':5106},
+     "attendance":{'basic':5107,'pro':5108}
+  }
 }
 
 const pricingData = {
@@ -305,8 +315,25 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmPro      = document.getElementById("pl-"+key+"-pro");
         if( elmPro ){
           elmPro.innerHTML = currency + value['pro'][type].amount +'<small class="max-price">'+value['pro']['monthly'].amount+'</small>';
-        }        
-        
+        }
+
+        let basicBtn     = document.getElementById("cta-"+key+"-basic");
+        let pType = ( type == "yearly" ) ? "annual" : "monthly";
+        if( basicBtn ){
+          basicBtn.setAttribute("href", getwsPlanurl(plan_meta[key]['basic'], pType));
+        }
+
+        let proBtn     = document.getElementById("cta-"+key+"-pro");
+        if( proBtn ){          
+          proBtn.setAttribute("href", getwsPlanurl(plan_meta[key]['pro'], pType));          
+        }
+
+        //console.log( key );
+        // let coPlanBtn     = document.getElementById("ws-coplan-"+key);
+        // if( coPlanBtn ){
+        //   coPlanBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );    
+        // }
+
         // const value     = plans[key];
         // let elmPricing  = document.getElementById("pl-"+key);
         // let elmTotal    = document.getElementById("pl-"+key+"-total");

@@ -109,7 +109,7 @@ get_header();
                   <span class="wph" id="pl-productivity-basic"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-productivity-basic" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
@@ -145,7 +145,7 @@ get_header();
                   <span class="wph" id="pl-productivity-pro"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-productivity-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
@@ -226,7 +226,7 @@ get_header();
                   <span class="wph" id="pl-project-basic"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-project-basic" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
@@ -242,7 +242,7 @@ get_header();
                   <span class="wph" id="pl-project-pro">USD 5.5</span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-project-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
@@ -278,7 +278,7 @@ get_header();
                   <span class="wph" id="pl-time-basic"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-time-basic" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
@@ -294,7 +294,7 @@ get_header();
                   <span class="wph" id="pl-time-pro"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-time-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
@@ -330,7 +330,7 @@ get_header();
                   <span class="wph" id="pl-attendance-basic"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-attendance-basic" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
@@ -346,7 +346,7 @@ get_header();
                   <span class="wph" id="pl-attendance-pro"></span>
                   <span class="prio">/ user / month</span>
                 </div>
-                <a class="price_btn" href="#">Buy Now</a>
+                <a class="price_btn" id="cta-attendance-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
               </div>
             </div>
