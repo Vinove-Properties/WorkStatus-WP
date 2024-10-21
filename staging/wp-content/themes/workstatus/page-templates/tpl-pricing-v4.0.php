@@ -39,7 +39,7 @@ get_header();
       <div class="container">
       <nav id="pricing-Tabs" class="tab-nav">
         <ul>
-          <li class="active" data-tab="#tab01"><a href="#tab01">Productivity Management</a></li>
+          <li class="active" data-tab="#tab01"><a class="pm-clm" href="#tab01">Productivity Management</a></li>
           <li class="" data-tab="#tab02"><a href="#tab02">Project Management</a></li>
           <li class="" data-tab="#tab03"><a href="#tab03">Time Tracking</a></li>
           <li class="" data-tab="#tab04"><a href="#tab04">Attendance Management</a></li>
@@ -400,11 +400,11 @@ get_header();
     </div>
   </section>
   <?php */ ?>
-
+  <section id="comp-plan-cont">
   <div class="container">
     <div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
   </div>
-  <section class="comparison-panel" id="div-comparison">
+  <div class="comparison-panel" id="div-comparison">
     <div class="container">
       <div class="comp-table-sticky" id="comp-table-sticky">
         <table class="comp-table">
@@ -1170,7 +1170,8 @@ get_header();
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   <section class="option-data">
     <div class="container">
       <div class="top-section">

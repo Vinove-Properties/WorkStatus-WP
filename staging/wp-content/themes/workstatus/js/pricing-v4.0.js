@@ -1,6 +1,6 @@
 const pricingTabs = document.querySelectorAll("#pricing-Tabs li");
 const tabPanesPc = document.getElementsByClassName("tab-contents");
-function pricingActiveTaber(e) {
+function pricingActiveTaber(e){        
     e.preventDefault();
     pricingTabs.forEach(function(label) {
         label.classList.remove("active");
@@ -20,6 +20,11 @@ function pricingActiveTaber(e) {
         } else {
             console.error("No element found for the selector: " + clickedTab);
         }
+    }
+    if( !e.target.classList.contains("pm-clm") ){
+      document.getElementById("comp-plan-cont").style.display = "none";
+    }else{
+      document.getElementById("comp-plan-cont").style.display = "block";
     }
 }
 
