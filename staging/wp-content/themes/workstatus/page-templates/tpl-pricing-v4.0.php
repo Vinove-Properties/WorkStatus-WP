@@ -14,7 +14,7 @@ get_header();
       <div class="inner-wrap">
         <div class="left">
           <h1>Simple, Flexible Pricing for Every Business</h1>
-          <p>No hidden fees—just simple, affordable pricing for teams of all sizes. Can't find what you are looking for?</p>
+          <p>No hidden fees—just simple, affordable pricing for teams of all sizes.</p>
           <p> Can't find what you are looking for?  <span class="conbtn"><span>Setup a consulting call</span></span></p>
         </div>
       </div>
@@ -102,7 +102,7 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Productivity Management</h3>
-                  <div class="total">NO USER MINIMUM</div>
+                  <div class="total">2 USER MINIMUM</div>
                   <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
                 </div>
                 <div class="card-plan">
@@ -115,17 +115,26 @@ get_header();
                   <div class="price-options">
                     <h4>Includes:</h4>
                     <div class="option-list">
-                      <div class="option">Time tracking</div>
+                      <div class="option">Time Tracking</div>
                       <div class="option">Timesheets</div>
+                      <div class="option">Unlimited screenshots</div>
                       <div class="option">Activity Levels</div>
-                      <div class="option">Limited screenshots</div>
-                      <div class="option">Limited app & URL tracking</div>
-                      <div class="option">Limited reports</div>
-                      <div class="option">Limited payments</div>
-                      <div class="option">Clients & Invoices</div>                      
+                      <div class="option">Auto discard idle time</div>
+                      <div class="option">Teams</div>
+                      <div class="option">Time off & holidays</div>
+                      <div class="option">Scheduling & attendance</div>   
+                      <div class="option">Timesheet approvals</div>  
+                      <div class="option">Daily & weekly limits</div>    
+                      <div class="option">Reports</div>  
+                      <div class="option">Quiet (Stealth) Mode</div>  
+                      <div class="option">Client Portal</div>   
+                      <div class="option">Gamification</div>      
+                      <div class="option">HRIS Integrations</div>  
+                      <div class="option">Free on-boarding support</div>                        
                       <div class="support-options">
                         <h4>Support:</h4>
-                        <p>Limited SLA</p>
+                        <p>Email / Chat / Phone / Whatsapp Support</p>
+                        <p>SLA: 8 Business Hours</p>
                       </div>
                     </div>
                   </div>
@@ -137,7 +146,7 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Productivity + Project <br>Management</h3>
-                  <div class="total">NO USER MINIMUM</div>
+                  <div class="total">2 USER MINIMUM</div>
                   <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
                   </p>
                 </div>
@@ -151,17 +160,22 @@ get_header();
                   <div class="price-options">
                     <h4>Everything <span class="perp">in</span> Productivity  +</h4>
                     <div class="option-list">
-                      <div class="option">Time tracking</div>
-                      <div class="option">Timesheets</div>
-                      <div class="option">Activity Levels</div>
-                      <div class="option">Limited screenshots</div>
-                      <div class="option">Limited app & URL tracking</div>
-                      <div class="option">Limited reports</div>
-                      <div class="option">Limited payments</div>
-                      <div class="option">Clients & Invoices</div>
+                      <div class="option">Project Management</div>
+                      <div class="option">Project & Task Time Tracking</div>
+                      <div class="option">Milestones</div>
+                      <div class="option">Budgeting</div>
+                      <div class="option">Invoicing</div>
+                      <div class="option">Gantt Charts</div>
+                      <div class="option">Kanban</div>
+                      <div class="option">Project Management Integrations</div>
+                      <div class="option">Customer Service Integrations</div>
+                      <div class="option">Invoicing Integrations</div>
+                      <div class="option">1:1 on boarding tour with our team</div>
+                      <div class="option"><strong>PLUS</strong> First in-line 24x5 priority support</div>
                       <div class="support-options">
                         <h4>Support:</h4>
-                        <p>Limited SLA</p>
+                        <p>Email / Chat / Phone / Whatsapp Support</p>
+                        <p>SLA: 4 Business Hours</p> 
                       </div>
                     </div>
                   </div>
@@ -173,10 +187,10 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Enterprise Solution</h3>
-                  <div class="total">NO USER MINIMUM</div>
+                  <div class="total">100 USERS Minimum</div>
                   <p>Customize workforce solutions with advanced integrations, reporting & dedicated support.
                   </p>
-                </div>
+                </div>     
                 <div class="card-plan">
                   <span class="wph" id="pl-basic">Custom</span>
                   <span class="prio smtext">Tailor-made offer</span>
@@ -194,16 +208,22 @@ get_header();
                           <span class="tooltiptext tooltip-right">With our Custom Integration &amp; Development Services, we extend beyond our standard API capabilities to meet your specific business needs. Whether it's a seamless integration with third-party or legacy systems for enhanced workforce automation, or the development of particular features to facilitate data import and other operational efficiencies, our dedicated team is here to tailor solutions precisely to your requirements. Opt for our expertise to ensure a smooth, hassle-free integration, or leverage our comprehensive API if you prefer to handle the integration in-house. Whatever your choice, we're here to ensure that Workstatus adapts perfectly to your business ecosystem.</span>
                         </div>
                       </div>
-                      <div class="option">Timesheets</div>
-                      <div class="option">Activity Levels</div>
-                      <div class="option">Limited screenshots</div>
-                      <div class="option">Limited app & URL tracking</div>
-                      <div class="option">Limited reports</div>
+                      <div class="option">License Management</div>
+                      <div class="option">Capacity Analysis</div>
+                      <div class="option">Insider Threat Detection</div>
+                      <div class="option">Advanced Reporting</div>
+                      <div class="option">Data Warehouse Integrations</div>
                       <div class="option">Limited payments</div>
-                      <div class="option">Clients & Invoices</div>                      
+                      <div class="option">SSO</div>   
+                      <div class="option">Audit Logs</div>  
+                      <div class="option">Customized Onboarding & Support</div>  
+                      <div class="option">On-Premise Deployment</div>  
+                      <div class="option">2FA</div> 
+                       <div class="option">Dedicated Account Manager</div>                    
                       <div class="support-options">
                         <h4>Support:</h4>
-                        <p>Limited SLA</p>
+                        <p>Email / Chat / Phone / Whatsapp Support</p>
+                        <p>SLA: 2 Business Hours</p>
                       </div>
                     </div>
                   </div>
@@ -219,8 +239,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Project Management</h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
+                  <div class="total nodata">NO USER MINIMUM</div>
+                  <p>Ideal for small teams, pay only for the users you need and scale effortlessly.</p>
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-project-basic"></span>
@@ -234,8 +254,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
+                  <div class="total">unlimited Users & Projects</div>
+                  <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.
                   </p>
                 </div>
                 <div class="card-plan">
@@ -271,8 +291,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Time Tracking</h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
+                  <div class="total">2 USER MINIMUM</div>
+                  <p>Track time per user, perfect for small teams with flexible scaling.</p>
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-time-basic"></span>
@@ -286,8 +306,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
+                  <div class="total">Unlimited Users</div>
+                  <p>Unlimited time tracking for all teams, suitable for businesses of any size.
                   </p>
                 </div>
                 <div class="card-plan">
@@ -302,18 +322,22 @@ get_header();
           <div class="plan-include">
             <h3>Included in Every Plan:</h3>
             <ul>
-              <li>Unlimited Projects & Tasks</li>
-              <li>Gantt Chart</li>
-              <li>Budgeting</li>
-              <li>Kanban Board</li>
-              <li>Invoicing</li>
-              <li>Invoicing Integrations</li>
-              <li>Project & Task Time Tracking</li>
-              <li>Customer Service Integrations</li>
-              <li>Project Management Integrations</li>
+              <li>Unlimited tracking</li>
+              <li>Breaks</li>
+              <li>Time tracker</li>
+              <li>Web Tracker App</li>
+              <li>Timesheet</li>
+              <li>Mobile & desktop App</li>
+              <li>Auto tracker</li>
+              <li>Idle detection & reminders</li>
+              <li>Manual Timesheet</li>
+              <li>Reports</li>
+              <li>Bulk Timesheet</li>
+              <li>Export & share data</li>
+              <li>Team activity</li>
               <li>1:1 onboarding tour with our team</li>
-              <li>Multiple Filters & Custom Views </li>
-              <li>First-in-line 24/5 priority support</li>
+              <li>Timesheet Approval</li>
+              <li><strong>PLUS</strong> First-in-line 24/5 priority support</li>
             </ul>
           </div>
         </div>
@@ -323,8 +347,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Attendance Management</h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
+                  <div class="total">2 USER MINIMUM</div>
+                  <p>Track attendance on a per-user basis, perfect for small teams with scalability.</p>
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-attendance-basic"></span>
@@ -338,8 +362,8 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
+                  <div class="total">Unlimited users</div>
+                  <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.
                   </p>
                 </div>
                 <div class="card-plan">
@@ -354,18 +378,16 @@ get_header();
           <div class="plan-include">
             <h3>Included in Every Plan:</h3>
             <ul>
-              <li>Unlimited Projects & Tasks</li>
-              <li>Gantt Chart</li>
-              <li>Budgeting</li>
-              <li>Kanban Board</li>
-              <li>Invoicing</li>
-              <li>Invoicing Integrations</li>
-              <li>Project & Task Time Tracking</li>
-              <li>Customer Service Integrations</li>
-              <li>Project Management Integrations</li>
+              <li>Mobile Check-in/Check-out</li>
+              <li>Shift Management & Scheduling</li>
+              <li>GPS-based Attendance Tracking</li>
+              <li>Late Coming Management & Alerts</li>
+              <li>Selfie Based Attendance</li>
+              <li>Leave & Overtime Management</li>
+              <li>Geo-fenced Jobsites</li>
               <li>1:1 onboarding tour with our team</li>
-              <li>Multiple Filters & Custom Views </li>
-              <li>First-in-line 24/5 priority support</li>
+              <li>Attendance Reports & Analytics</li>
+              <li><strong>PLUS</strong> First-in-line 24/5 priority support</li>
             </ul>
           </div>
         </div>
@@ -400,7 +422,7 @@ get_header();
     </div>
   </section>
   <?php */ ?>
-  <section id="comp-plan-cont">
+  <div id="comp-plan-cont">
   <div class="container">
     <div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
   </div>
@@ -1171,7 +1193,7 @@ get_header();
       </div>
     </div>
   </div>
-</section>
+</div>
   <section class="option-data">
     <div class="container">
       <div class="top-section">
@@ -1425,6 +1447,18 @@ get_header();
     </div>
   </div>
 </section>
+
+
+<div class="blogvideo-popup">
+  <div id="gen-vpopup" class="popup-wrapper" style="display:none;">
+    <div class="popWrap">
+      <div class="popup-content">
+      <span class="closeicon" onclick="closeGenVideo('gen-vpopup', false)">Close</span>
+      <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://calendly.com/workstatus/demo" allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 <?php require_once get_template_directory() .'/common/all-brands.php';?>
 <?php require_once get_template_directory() . '/common/workstatus-journey.php'; ?>
 <?php get_footer(); ?>

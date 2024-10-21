@@ -8872,6 +8872,8 @@ h3 a {
             margin: 0 0 15px;
             position: relative;
             padding: 0 0 0 15px; }
+            .ws-pricing .price-contents .tab-contents .plan-include ul li strong {
+              font-weight: 600; }
             .ws-pricing .price-contents .tab-contents .plan-include ul li:before {
               content: "";
               width: 5px;
@@ -9000,7 +9002,7 @@ h3 a {
     max-width: fit-content;
     display: block;
     padding: 16px 40px 16px 20px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
     background-color: #fff;
     border-radius: 100px;
     border: 1px solid rgba(5, 22, 77, 0.2);
