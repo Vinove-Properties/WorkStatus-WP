@@ -9279,6 +9279,12 @@ h3 a {
   height: 30px !important;
   font-size: 0; }
 
+.ps-monthly .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
+  display: none; }
+
+.ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
+  display: block; }
+
 @media (max-width: 1420px) {
   .ws-pricing .tab-nav ul {
     width: 80%; }
