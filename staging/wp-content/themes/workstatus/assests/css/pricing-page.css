@@ -9283,7 +9283,7 @@ h3 a {
   display: none; }
 
 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
-  display: block; }
+  display: inline-block; }
 
 @media (max-width: 1420px) {
   .ws-pricing .tab-nav ul {
