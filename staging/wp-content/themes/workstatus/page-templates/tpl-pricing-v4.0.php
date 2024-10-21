@@ -239,7 +239,7 @@ get_header();
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Project Management</h3>
-                  <div class="total nodata">NO USER MINIMUM</div>
+                  <div class="total">2 USER MINIMUM</div>
                   <p>Ideal for small teams, pay only for the users you need and scale effortlessly.</p>
                 </div>
                 <div class="card-plan">

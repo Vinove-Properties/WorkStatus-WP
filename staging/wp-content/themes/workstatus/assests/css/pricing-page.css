@@ -8609,14 +8609,14 @@ h3 a {
                 border: 1.5px solid transparent;
                 text-align: center;
                 padding: 6px 10px;
-                width: 160px;
+                min-width: 200px;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 12px;
                 border-radius: 10px;
                 justify-content: center;
                 margin: 0 0 15px;
-                display: flex; }
+                display: inline-block; }
                 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .total.nodata {
                   opacity: 0;
                   background: transparent; }
@@ -8932,7 +8932,7 @@ h3 a {
         border: 1px solid #624de31a;
         color: rgba(5, 22, 77, 0.7);
         padding: 6px 8px;
-        width: 150px;
+        min-width: 150px;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 12px;
