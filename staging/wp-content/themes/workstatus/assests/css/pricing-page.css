@@ -8553,7 +8553,7 @@ h3 a {
     .ws-pricing .tab-nav:before {
       content: "";
       position: absolute;
-      left: 7px;
+      left: -8px;
       top: -13px;
       width: 162px;
       height: 26px;
@@ -8645,6 +8645,12 @@ h3 a {
                 display: block; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .wph {
                 line-height: 1; }
+              .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
+                font-weight: normal;
+                color: rgba(47, 58, 94, 0.6);
+                font-size: 25px;
+                margin-left: 5px;
+                text-decoration: line-through; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio {
                 color: rgba(47, 58, 94, 0.6);
                 font-weight: 600;
@@ -9227,11 +9233,57 @@ h3 a {
         transition: all 0.3s ease-in-out;
         display: block; }
 
+/*Video Popup Style from here*/
+.blogvideo-popup {
+  width: 100%; }
+
+.blogvideo-popup .popup-wrapper {
+  z-index: 999;
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.blogvideo-popup .popup-wrapper .popWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.blogvideo-popup .popup-wrapper .popWrap .popup-content {
+  width: 70%;
+  height: 90vh;
+  box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1);
+  background: #fff;
+  padding: 0;
+  text-align: center;
+  position: relative; }
+
+.blogvideo-popup .videoIframe {
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+.blogvideo-popup .closeicon {
+  background: url(../images/cross-img.png) no-repeat;
+  right: -34px;
+  top: 3px;
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 0; }
+
 @media (max-width: 1420px) {
   .ws-pricing .tab-nav ul {
     width: 80%; }
   .ws-pricing .tab-nav:before {
-    left: -26px;
+    left: -42px;
     top: -11px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box {
     padding: 20px 15px; }
@@ -9246,7 +9298,10 @@ h3 a {
     flex-basis: 48%; }
 
   .option-data .addons-row .addond-col .add-box .topDiv .tcon h4 {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .blogvideo-popup .popup-wrapper .popWrap .popup-content {
+    width: 60%; } }
 @media (max-width: 1380px) {
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio {
     font-size: 15px; }
@@ -9255,8 +9310,8 @@ h3 a {
     font-size: 14px; } }
 @media (max-width: 1280px) {
   .ws-pricing .tab-nav:before {
-    left: 25px;
-    top: -25px; }
+    left: -2px;
+    top: -30px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan {
     margin: 0 0 30px; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan h3 {
@@ -9351,7 +9406,11 @@ h3 a {
   .all-partners .part-row {
     grid-template-columns: repeat(4, 1fr); }
     .all-partners .part-row .part-col {
-      padding: 15px 20px; } }
+      padding: 15px 20px; }
+
+  .blogvideo-popup .popup-wrapper .popWrap .popup-content {
+    width: 60%;
+    height: 80%; } }
 @media (max-width: 1024px) {
   .hero-banner .inner-wrap h1 {
     font-size: 30px;
@@ -9477,7 +9536,13 @@ h3 a {
         width: 100%; }
       .option-data .addons-row .addond-col .add-box .topDiv .tcon {
         width: 100%;
-        text-align: center; } }
+        text-align: center; }
+
+  .blogvideo-popup .popup-wrapper .popWrap .popup-content {
+    width: 95%;
+    height: 80%;
+    background: none;
+    box-shadow: none; } }
 @media (max-width: 767px) {
   .ws-pricing {
     padding-top: 20px; }
@@ -9525,6 +9590,8 @@ h3 a {
             font-size: 35px; }
             .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .wph {
               line-height: 1; }
+            .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
+              font-size: 22px; }
           .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options {
             display: none;
             margin: 0 0 20px; }
@@ -9595,4 +9662,13 @@ h3 a {
           width: 80px; }
 
   .hero-banner.no-af-bg {
-    padding: 110px 0 30px; } }
+    padding: 110px 0 30px; }
+
+  .blogvideo-popup .closeicon {
+    right: 0;
+    top: -32px; } }
+@media (max-width: 479px) {
+  .blogvideo-popup .popup-wrapper .popWrap .popup-content {
+    height: 400px;
+    box-shadow: none;
+    background: transparent; } }
