@@ -2254,3 +2254,8 @@ function closeGenVideo(){
     iframe.setAttribute('src', "");    
     ipopup.style.display = "none";
 }
+
+function _morecompTable(){
+    var elm = document.getElementById("compare-table");
+    elm.classList.toggle("active");
+}

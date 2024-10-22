@@ -10,7 +10,14 @@ $bannerCol = get_field('ws-banner');
 <section class="hero-banner">
  <div class="container">
    <div class="inner-wrap">
-     <div class="alter-image">
+      <?php 
+      if( isset($bannerCol['comp-logo']) && !empty($bannerCol['comp-logo']) ){
+      echo '<div class="alter-image">';
+      echo '<picture class="desktop"><img loading="lazy" src="'.$bannerCol['comp-logo']['url'].'" alt="Alternative" width="'.$bannerCol['comp-logo']['width'].'" height="'.$bannerCol['comp-logo']['height'].'"></picture>
+      <picture class="mobile"><img loading="lazy" src="'.$bannerCol['comp-logo']['url'].'" alt="Alternative" width="'.$bannerCol['comp-logo']['width'].'" height="'.$bannerCol['comp-logo']['height'].'"></picture>';
+      echo '</div>'; 
+      }else{ ?>
+      <div class="alter-image">
       <?php 
       if( isset($bannerCol['cl-one']) && !empty($bannerCol['cl-one']) ){
       echo '<picture><img loading="lazy" src="'.$bannerCol['cl-one']['url'].'" alt="'.$bannerCol['cl-one']['alt'].'" 
@@ -18,8 +25,8 @@ $bannerCol = get_field('ws-banner');
       }
       ?>
       <picture>
-         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/verse.svg" alt="Alternative" 
-         width="50" height="50">
+       <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/verse.svg" alt="Alternative" 
+       width="50" height="50">
       </picture>
       <?php 
       if( isset($bannerCol['cl-two']) && !empty($bannerCol['cl-two']) ){
@@ -28,14 +35,16 @@ $bannerCol = get_field('ws-banner');
       }
       ?>
       <picture>
-         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/verse.svg" alt="Alternative" width="50" 
-         height="50">
+       <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/verse.svg" alt="Alternative" width="50" 
+       height="50">
       </picture>
       <picture>
-         <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/compare-03.svg" alt="Alternative" 
-         width="200" height="27">
+       <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/compare-03.svg" alt="Alternative" 
+       width="200" height="27">
       </picture>
-     </div>     
+      </div>
+      <?php } ?> 
+
      <?php the_content(); ?>
    </div>
  </div>
@@ -73,8 +82,9 @@ $tbl = $compCol['cards'];
   <div class="container"><div class="top-section"><?php echo $compCol['content'] ?></div></div>
 </section>
 
-<section class="ws-table">
+<section class="ws-table show-all" id="compare-table">
   <div class="container">
+    <div class="scroll-compare">
     <div class="table-block">
       <div class="div-block-top">
         <div class="logo-ws logovs"><h2>Features</h2></div>
@@ -86,11 +96,11 @@ $tbl = $compCol['cards'];
           width="'.$compCol['t1-logo']['width'].'" height="'.$compCol['t1-logo']['height'].'"></picture>';
           }
 
-          if( isset($compCol['t1-logom']) && !empty($compCol['t1-logom']) ){
-          echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t1-logom']['url'].'" 
-          alt="'.$compCol['t1-logom']['alt'].'" 
-          width="25" height="25"></picture>';
-          }
+          // if( isset($compCol['t1-logom']) && !empty($compCol['t1-logom']) ){
+          // echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t1-logom']['url'].'" 
+          // alt="'.$compCol['t1-logom']['alt'].'" 
+          // width="25" height="25"></picture>';
+          // }
 
           echo '<div class="price">'.$compCol['t1-pricing'].'</div>';
           ?>          
@@ -103,12 +113,32 @@ $tbl = $compCol['cards'];
           width="'.$compCol['t2-logo']['width'].'" height="'.$compCol['t2-logo']['height'].'"></picture>';
           }
 
-          if( isset($compCol['t2-logom']) && !empty($compCol['t2-logom']) ){
-          echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t2-logom']['url'].'" 
-          alt="'.$compCol['t2-logom']['alt'].'" 
-          width="25" height="25"></picture>';
-          }
+          // if( isset($compCol['t2-logom']) && !empty($compCol['t2-logom']) ){
+          // echo '<picture><img class="mobile" loading="lazy" src="'.$compCol['t2-logom']['url'].'" 
+          // alt="'.$compCol['t2-logom']['alt'].'" 
+          // width="25" height="25"></picture>';
+          // }
           echo '<div class="price">'.$compCol['t2-pricing'].'</div>';
+          ?>
+        </div>
+        <div class="logo-tb logovs">
+          <?php 
+          if( isset($compCol['t3-logo']) && !empty($compCol['t3-logo']) ){
+          echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t3-logo']['url'].'" 
+          alt="'.$compCol['t3-logo']['alt'].'" 
+          width="'.$compCol['t3-logo']['width'].'" height="'.$compCol['t3-logo']['height'].'"></picture>';
+          }
+          echo '<div class="price">'.$compCol['t3-pricing'].'</div>';
+          ?>
+        </div>
+        <div class="logo-tb logovs">
+          <?php 
+          if( isset($compCol['t4-logo']) && !empty($compCol['t4-logo']) ){
+          echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t4-logo']['url'].'" 
+          alt="'.$compCol['t4-logo']['alt'].'" 
+          width="'.$compCol['t4-logo']['width'].'" height="'.$compCol['t4-logo']['height'].'"></picture>';
+          }
+          echo '<div class="price">'.$compCol['t4-pricing'].'</div>';
           ?>
         </div>
         <div class="logo-tb logovs">
@@ -135,6 +165,8 @@ $tbl = $compCol['cards'];
           
           $colOne = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-1']).'</strong>' : _compTableValue($data['tl-1']);
           $colTwo = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-2']).'</strong>' : _compTableValue($data['tl-2']);
+          $colThr = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-3']).'</strong>' : _compTableValue($data['tl-3']);
+          $colFor = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-4']).'</strong>' : _compTableValue($data['tl-4']);
           $colWs  = ($lCounr == $c) ? '<strong>'._compTableValue($data['ws']).'</strong>' : _compTableValue($data['ws']);
 
           echo '<div class="table-row">
@@ -143,12 +175,21 @@ $tbl = $compCol['cards'];
           </div>
           <div class="ws-column">'.$colOne.$postFix.'</div>
           <div class="ws-column">'.$colTwo.$postFix.'</div>
+          <div class="ws-column">'.$colThr.$postFix.'</div>
+          <div class="ws-column">'.$colFor.$postFix.'</div>
           <div class="ws-column">'.$colWs.$postFix.'</div>
           </div>';
         }
       }
       ?>
     </div>
+      <div class="view-more margin-t-50 text-center">
+        <a href="javascript:void(0);" onclick="_morecompTable();" class="">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/scroll-img.svg" 
+        alt="Workstatus" width="34" height="34">
+        </a>
+      </div>
+    </div>    
     <div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>
   </div>
 </section>
