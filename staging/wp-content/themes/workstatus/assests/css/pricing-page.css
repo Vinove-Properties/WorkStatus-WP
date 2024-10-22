@@ -8844,6 +8844,8 @@ h3 a {
         display: block;
         color: #4a4c55;
         text-align: center; }
+        .ws-pricing .price-contents .tab-contents .tryit.op0 {
+          opacity: 0; }
         .ws-pricing .price-contents .tab-contents .tryit a {
           color: #6754e2;
           text-decoration: underline; }
@@ -9367,6 +9369,9 @@ h3 a {
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options p {
       margin: 15px 0 0;
       font-size: 15px; }
+  .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) {
+    margin-top: -31px;
+    margin-bottom: -31px; }
 
   .free-price .fdflex .colLeft {
     padding: 30px;

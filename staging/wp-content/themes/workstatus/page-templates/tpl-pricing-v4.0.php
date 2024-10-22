@@ -196,7 +196,7 @@ get_header();
                   <span class="prio smtext">Tailor-made offer</span>
                 </div>
                 <a class="price_btn green-btn" href="#">Request a Quote</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit op0">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
                     <h4>Everything <span class="perp">in</span> Project  +</h4>
