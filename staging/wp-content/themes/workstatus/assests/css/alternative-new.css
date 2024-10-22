@@ -8441,6 +8441,8 @@ h3 a {
         transform: skew(4deg, 0deg) !important; }
   .ws-table .table-block .table-row {
     display: -ms-grid;
+    display: -webkit-grid;
+    /* Old Safari */
     display: grid;
     grid-auto-columns: 1fr;
     grid-column-gap: 0px;
@@ -8763,7 +8765,7 @@ h3 a {
           font-size: 12px; }
     .ws-table .view-more {
       bottom: 160px;
-      left: 0; }
+      left: 15px; }
 
   .advanced-feature .flex_row {
     gap: 0; }
