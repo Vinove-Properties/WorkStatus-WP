@@ -9089,7 +9089,7 @@ h3 a {
           background: #6754e2;
           color: #fff; }
   .comparison-panel .comp-row {
-    margin: 60px 0 0; }
+    margin: 60px 0; }
     .comparison-panel .comp-row h4 {
       font-size: 22px;
       font-weight: 500;
@@ -9118,7 +9118,7 @@ h3 a {
 
 .comp-table-sticky.sticky {
   position: fixed;
-  top: 71px;
+  top: 90px;
   left: 0;
   width: 100%;
   padding: 10px 0;
@@ -9294,8 +9294,8 @@ h3 a {
   .ws-pricing .tab-nav ul {
     width: 80%; }
   .ws-pricing .tab-nav:before {
-    left: -42px;
-    top: -11px; }
+    left: -15px;
+    top: -25px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box {
     padding: 20px 15px; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio.smtext {
@@ -9508,7 +9508,7 @@ h3 a {
         font-size: 13px;
         min-width: auto; }
     .comparison-panel .comp-row {
-      margin: 60px 0 0; }
+      margin: 50px 0; }
       .comparison-panel .comp-row h4 {
         font-size: 22px;
         font-weight: 500;
