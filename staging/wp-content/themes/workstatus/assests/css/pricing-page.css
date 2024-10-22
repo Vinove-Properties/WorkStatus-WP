@@ -8846,6 +8846,8 @@ h3 a {
         text-align: center; }
         .ws-pricing .price-contents .tab-contents .tryit.op0 {
           opacity: 0; }
+          .ws-pricing .price-contents .tab-contents .tryit.op0 a {
+            cursor: default; }
         .ws-pricing .price-contents .tab-contents .tryit a {
           color: #6754e2;
           text-decoration: underline; }
