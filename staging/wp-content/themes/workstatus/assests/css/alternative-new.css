@@ -8388,6 +8388,8 @@ h3 a {
   .ws-table .table-block .div-block-top {
     position: relative;
     display: -ms-grid;
+    display: -webkit-grid;
+    /* Old Safari */
     display: grid;
     overflow: hidden;
     padding: 0;
