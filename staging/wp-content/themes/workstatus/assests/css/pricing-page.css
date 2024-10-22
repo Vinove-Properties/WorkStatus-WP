@@ -9287,6 +9287,9 @@ h3 a {
 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
   display: inline-block; }
 
+@media (max-width: 1600px) {
+  .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
+    font-size: 35px; } }
 @media (max-width: 1420px) {
   .ws-pricing .tab-nav ul {
     width: 80%; }
@@ -9311,6 +9314,8 @@ h3 a {
   .blogvideo-popup .popup-wrapper .popWrap .popup-content {
     width: 60%; } }
 @media (max-width: 1380px) {
+  .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
+    font-size: 22px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio {
     font-size: 15px; }
 
@@ -9335,8 +9340,10 @@ h3 a {
       font-size: 12px;
       line-height: 18px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
-    font-size: 38px;
+    font-size: 35px;
     min-height: initial; }
+    .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio {
+      font-size: 14px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price_btn {
     padding: 14px 20px;
     font-size: 16px;
