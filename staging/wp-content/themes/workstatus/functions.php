@@ -277,7 +277,7 @@ function workstatus_scripts() {
 	wp_localize_script('ws-script', 'wsObj', [
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
 	: site_url('/wp-json/ws-api/v1/ipinfo'),
-	'app_url' 		=> ( isBetaVersion() ) ? 'app.workstatus.io' : 'app.workstatus.io',
+	'app_url' 		=> ( isBetaVersion() ) ? 'app.staging.workstatus.io' : 'app.workstatus.io',
 	'admin_ajax' 	=> admin_url( 'admin-ajax.php' ),
 	]);	
 	/*
