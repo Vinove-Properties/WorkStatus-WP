@@ -308,10 +308,15 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     let elmPm       = document.getElementById("pl-pm");
     let elmInsights = document.getElementById("pl-insights");
 
-    elmLocation.innerHTML    = currency + plans['meta']['location'];
-    elmPm.innerHTML         = currency + plans['meta']['pm'];    
-    elmInsights.innerHTML   = currency + plans['meta']['insights'];
-    
+    if( elmLocation ){
+    elmLocation.innerHTML    = currency + plans['meta']['location'];  
+    }
+    if( elmPm ){
+    elmPm.innerHTML         = currency + plans['meta']['pm'];  
+    }
+    if( elmInsights ){
+    elmInsights.innerHTML   = currency + plans['meta']['insights'];  
+    }
     
     var isLocal           = ( conCode === "IN" ) ? "local" : "international";
     var plan_meta         =  WS_PLAN_ID[isLocal];

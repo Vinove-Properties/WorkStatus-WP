@@ -795,7 +795,9 @@ if( $isEnable == "yes" ){
 		<?php } endif; ?>
 
     <?php  
-    get_template_part('common/ws', 'pricing');
+    //get_template_part('common/ws', 'pricing');
+    
+    get_template_part('common/pricing', 'v4.0', ['plan' => 'time']);
 		$use_cases_section = get_field('use_cases_section');
 		
 		if( $use_cases_section ) :

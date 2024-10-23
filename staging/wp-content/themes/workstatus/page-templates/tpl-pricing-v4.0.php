@@ -25,21 +25,6 @@ $activePlan =  'productivity';
       </div>
     </div>
   </section>
-  <!-- 
-  <section class="hero-banner no-af-bg">
-    <div class="container">
-      <div class="inner-wrap">
-        <div class="left">
-          <h1>Enhance Workforce Efficiency & Productivity</h1>
-          <p>From startups to global enterprises, our scalable plans meet your unique needs. Join the thousands of teams already boosting their productivity with us. Start your 7-day free trial today!</p>
-        </div>
-        <div class="right">
-          <img loading="lazy" class="int-only" src="<?php bloginfo('template_url'); ?>/dev-images/opr.svg" alt="Workstatus" width="156" height="156">
-        </div>
-      </div>
-    </div>
-  </section> 
-  -->
   <section class="ws-pricing">
       <div class="container">
       <nav id="pricing-Tabs" class="tab-nav">
@@ -398,7 +383,7 @@ $activePlan =  'productivity';
           </div>
         </div>
       </div>
-    </section>
+  </section>
   <?php /* ?>
   <section class="free-price">
     <div class="container">

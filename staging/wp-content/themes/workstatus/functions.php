@@ -125,7 +125,8 @@ function workstatus_scripts() {
 	wp_enqueue_style('features', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), 
 	_S_VERSION );
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
-	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}elseif(
 	is_page_template(['page-templates/tpl-platform.php','page-templates/tpl-ebook.php']) 
 	){
@@ -162,7 +163,8 @@ function workstatus_scripts() {
 	elseif( is_page_template(['page-templates/tpl-static-pricing.php']) ){
 		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/ws-pricing.css', array(), _S_VERSION );
 		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
+		//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-pricing-v4.0.php']) ){
 		wp_enqueue_style('ws-pricingv4.0', get_stylesheet_directory_uri().'/assests/css/pricing-page.css', array(), _S_VERSION );
@@ -234,7 +236,8 @@ function workstatus_scripts() {
 	}else{
 	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 		
 	}elseif( is_page_template(['page-templates/tpl-integrations-details.php']) ){
@@ -246,7 +249,8 @@ function workstatus_scripts() {
   	elseif( is_page_template(['page-templates/tpl-solution.php']) ){
 		wp_enqueue_style('ws-solution', get_stylesheet_directory_uri().'/assests/css/solution.css', array(), _S_VERSION);
 		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
+		//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-data-retention.php']) ){
 		wp_enqueue_style('ws-retention', get_stylesheet_directory_uri().'/assests/css/data-retention.css', array(), _S_VERSION);
