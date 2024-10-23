@@ -4,6 +4,11 @@ Template Name: Pricing - Template V4.0
 Author : Nitin Baluni.
 */
 get_header();
+$prPlans    = ['productivity','project','time','attendance'];
+$activePlan = ( isset($_GET['plan']) && !empty($_GET['plan']) ) ? $_GET['plan'] : 'productivity';
+if( !in_array($activePlan, $prPlans) ){
+$activePlan =  'productivity';
+}
 ?>
 <div id="wsio-preloader" style="margin-top:100px;">
   <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
@@ -15,7 +20,7 @@ get_header();
         <div class="left">
           <h1>Simple, Flexible Pricing for Every Business</h1>
           <p><span class="no-hidden">No hidden fees</span>—just simple, affordable pricing for teams of all sizes.</p>
-          <p> Can't find what you are looking for?  <span class="conbtn" onclick="_playYTmedia()"><span>Setup a consulting call</span></span></p>
+          <p> Can't find what you are looking for?  <span class="conbtn" onclick="getCalendlyiFrame();"><span>Setup a consulting call</span></span></p>
         </div>
       </div>
     </div>
@@ -39,10 +44,11 @@ get_header();
       <div class="container">
       <nav id="pricing-Tabs" class="tab-nav">
         <ul>
-          <li class="active" data-tab="#tab01"><a class="pm-clm" href="#tab01">Productivity Management</a></li>
-          <li class="" data-tab="#tab02"><a href="#tab02">Project Management</a></li>
-          <li class="" data-tab="#tab03"><a href="#tab03">Time Tracking</a></li>
-          <li class="" data-tab="#tab04"><a href="#tab04">Attendance Management</a></li>
+          <li class="<?php echo ($activePlan == "productivity") ? 'active' : ''; ?>" 
+          data-tab="#tab01"><a class="pm-clm" href="#tab01">Productivity Management</a></li>
+          <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02"><a href="#tab02">Project Management</a></li>
+          <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03"><a href="#tab03">Time Tracking</a></li>
+          <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04"><a href="#tab04">Attendance Management</a></li>
         </ul>
       </nav>
       <div id="inv-price-fltr" class="plan-section post-animation">
@@ -96,7 +102,7 @@ get_header();
         </div>
       </div>
       <div class="price-contents">
-        <div id="tab01" class="tab-contents active">
+        <div id="tab01" class="tab-contents <?php echo ($activePlan == "productivity") ? 'active' : ''; ?>">
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
@@ -233,7 +239,7 @@ get_header();
             </div>
           </div>
         </div>
-        <div id="tab02" class="tab-contents">
+        <div id="tab02" class="tab-contents <?php echo ($activePlan == "project") ? 'active' : ''; ?>">
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
@@ -285,7 +291,7 @@ get_header();
             </ul>
           </div>
         </div>
-        <div id="tab03" class="tab-contents">
+        <div id="tab03" class="tab-contents <?php echo ($activePlan == "time") ? 'active' : ''; ?>">
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
@@ -341,7 +347,7 @@ get_header();
             </ul>
           </div>
         </div>
-        <div id="tab04" class="tab-contents">
+        <div id="tab04" class="tab-contents <?php echo ($activePlan == "attendance") ? 'active' : ''; ?>">
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
@@ -1449,23 +1455,11 @@ get_header();
 </section>
 
 <div class="blogvideo-popup">
-  <div id="gen-vpopup" class="popup-wrapper">
+  <div id="calendly-popup" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content">
-        <span class="closeicon" onclick="closeGenVideo()">Close</span> 
-        <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://calendly.com/workstatus/demo" allow="autoplay"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="blogvideo-popup">
-  <div id="gen-vpopup" class="popup-wrapper" style="display:none;">
-    <div class="popWrap">
-      <div class="popup-content">
-      <span class="closeicon" onclick="closeGenVideo('gen-vpopup', false)">Close</span>
-      <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://calendly.com/workstatus/demo" allow="autoplay"></iframe>
+      <span class="cl-iframe-closeicon" onclick="closeCalendlyiFrame()">Close</span>
+      <iframe id="calendly-iframe" class="videoIframe js-videoIframe" src="" allow="autoplay"></iframe>
       </div>
     </div>
   </div>

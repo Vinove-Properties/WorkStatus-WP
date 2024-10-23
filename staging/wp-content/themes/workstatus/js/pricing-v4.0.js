@@ -506,18 +506,16 @@ ws_SelectOn('click', '.pcselectBtn', item => {
 
 
 
-function _playYTmedia(video){
-  let iframe = document.getElementById("gen-video");
-  let ipopup = document.getElementById("gen-vpopup");
-  iframe.setAttribute('src', video+"?autoplay=1");
+function getCalendlyiFrame(){  
+  let ipopup = document.getElementById("calendly-popup");
+  let iframe = document.getElementById("calendly-iframe");
+  iframe.setAttribute('src', "https://calendly.com/workstatus/demo");
   setTimeout(function(){        
       ipopup.style.display = "block";    
   }, 200);
 }
 
-function closeGenVideo(){
-  let iframe = document.getElementById("gen-video");
-  let ipopup = document.getElementById("gen-vpopup");
-  iframe.setAttribute('src', "");    
+function closeCalendlyiFrame(){
+  let ipopup = document.getElementById("calendly-popup");
   ipopup.style.display = "none";
 }
