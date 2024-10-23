@@ -14,8 +14,8 @@ get_header();
       <div class="inner-wrap">
         <div class="left">
           <h1>Simple, Flexible Pricing for Every Business</h1>
-          <p>No hidden fees—just simple, affordable pricing for teams of all sizes.</p>
-          <p> Can't find what you are looking for?  <span class="conbtn"><span>Setup a consulting call</span></span></p>
+          <p><span class="no-hidden">No hidden fees</span>—just simple, affordable pricing for teams of all sizes.</p>
+          <p> Can't find what you are looking for?  <span class="conbtn" onclick="_playYTmedia()"><span>Setup a consulting call</span></span></p>
         </div>
       </div>
     </div>
@@ -1447,6 +1447,17 @@ get_header();
     </div>
   </div>
 </section>
+
+<div class="blogvideo-popup">
+  <div id="gen-vpopup" class="popup-wrapper">
+    <div class="popWrap">
+      <div class="popup-content">
+        <span class="closeicon" onclick="closeGenVideo()">Close</span> 
+        <iframe id="gen-video" class="videoIframe js-videoIframe" allowfullscreen="" src="https://calendly.com/workstatus/demo" allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div class="blogvideo-popup">
