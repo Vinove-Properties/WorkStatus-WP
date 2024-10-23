@@ -101,7 +101,9 @@
     <?php } endif; ?>
   </section>
   <?php
-    get_template_part('common/ws', 'pricing');
+    //get_template_part('common/ws', 'pricing');
+    $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );
+    get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory]);    
     
     $productsInt = get_field("pro-int");
     if (

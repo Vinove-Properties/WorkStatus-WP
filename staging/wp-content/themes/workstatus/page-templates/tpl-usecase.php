@@ -411,7 +411,11 @@ global $ws_ctas, $RegLink, $LogLink;
         <?php
         endif; ?>
     </section>
-    <?php get_template_part('common/ws', 'pricing'); ?>
+    <?php 
+    //get_template_part('common/ws', 'pricing'); 
+    $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );
+    get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory]);
+    ?>
     <section class="wsMobile whitetxt">
         <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
     </section>
