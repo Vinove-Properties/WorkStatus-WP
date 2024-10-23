@@ -46,7 +46,7 @@ $activePlan =  'productivity';
         <ul>
           <li class="<?php echo ($activePlan == "productivity") ? 'active' : ''; ?>" 
           data-tab="#tab01"><a class="pm-clm" href="#tab01">Productivity Management</a></li>
-          <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02"><a href="#tab02">Project Management</a></li>
+          <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02"><a class="pro-clm" href="#tab02">Project Management</a></li>
           <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03"><a href="#tab03">Time Tracking</a></li>
           <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04"><a href="#tab04">Attendance Management</a></li>
         </ul>
@@ -428,7 +428,7 @@ $activePlan =  'productivity';
     </div>
   </section>
   <?php */ ?>
-  <div id="comp-plan-cont">
+  <div id="comp-plan-cont" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?>>
   <div class="container">
     <div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
   </div>
@@ -1198,86 +1198,86 @@ $activePlan =  'productivity';
     </div>
   </div>
 </div>
-  <section class="option-data">
-    <div class="container">
-      <div class="top-section">
-        <h2>Optional add-ons</h2>
-        <p>Choose your plan above, and then select the add-ons that are right for you.<br>
-          Features marked with * can be added via add-ons below.
-        </p>
+<section id="ws-pr-addon" class="option-data" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?> >
+  <div class="container">
+    <div class="top-section">
+      <h2>Optional add-ons</h2>
+      <p>Choose your plan above, and then select the add-ons that are right for you.<br>
+        Features marked with * can be added via add-ons below.
+      </p>
+    </div>
+    <div class="addons-row">        
+      <div class="addond-col">
+        <div class="add-box">
+          <div class="topDiv">
+            <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-02.svg"
+              alt="ws" width="45" height="45">
+            </div>
+            <div class="tcon">
+              <h4>Field Force Tracking</h4>
+              <span class="price">Starts at <span id="pl-pm">$2</span></span>
+              <span class="unit">/ user / mo</span>
+            </div>
+          </div>
+          <div class="bottomDiv">
+            <ul>
+              <li>Live Location tracking</li>
+              <li>Route Tracking</li>
+              <li>Mileage Tracking</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="addons-row">        
-        <div class="addond-col">
-          <div class="add-box">
-            <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-02.svg"
-                alt="ws" width="45" height="45">
-              </div>
-              <div class="tcon">
-                <h4>Field Force Tracking</h4>
-                <span class="price">Starts at <span id="pl-pm">$2</span></span>
-                <span class="unit">/ user / mo</span>
-              </div>
+      <div class="addond-col">
+        <div class="add-box">
+          <div class="topDiv">
+            <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-03.svg"
+              alt="ws" width="45" height="45">
             </div>
-            <div class="bottomDiv">
-              <ul>
-                <li>Live Location tracking</li>
-                <li>Route Tracking</li>
-                <li>Mileage Tracking</li>
-              </ul>
+            <div class="tcon">
+              <h4>Insights</h4>
+              <span class="price">Starts at <span id="pl-insights">$2</span> </span>
+              <span class="unit">/ user / mo</span>
             </div>
           </div>
-        </div>
-        <div class="addond-col">
-          <div class="add-box">
-            <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-03.svg"
-                alt="ws" width="45" height="45">
-              </div>
-              <div class="tcon">
-                <h4>Insights</h4>
-                <span class="price">Starts at <span id="pl-insights">$2</span> </span>
-                <span class="unit">/ user / mo</span>
-              </div>
-            </div>
-            <div class="bottomDiv">
-              <ul>
-                <li>Categorized Work Time</li>
-                <li>Smart Notifications</li>
-                <li>Focus & Meeting Time</li>
-                <li>Suspicious Activity Detection</li>
-                <li>Behavioral Highlights</li>
-                <li>Work Time Classification</li>
-              </ul>
-              <!--<a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>-->
-            </div>
+          <div class="bottomDiv">
+            <ul>
+              <li>Categorized Work Time</li>
+              <li>Smart Notifications</li>
+              <li>Focus & Meeting Time</li>
+              <li>Suspicious Activity Detection</li>
+              <li>Behavioral Highlights</li>
+              <li>Work Time Classification</li>
+            </ul>
+            <!--<a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>-->
           </div>
         </div>
-        <div class="addond-col" style="display:none;">
-          <div class="add-box">
-            <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
-                alt="ws" width="45" height="45">
-              </div>
-              <div class="tcon">
-                <h4>Invoicing</h4>
-                <span class="price">Starts at <span id="pl-location">$1</span></span>
-                <span class="unit">/ user / mo</span>
-              </div>
+      </div>
+      <div class="addond-col" style="display:none;">
+        <div class="add-box">
+          <div class="topDiv">
+            <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
+              alt="ws" width="45" height="45">
             </div>
-            <div class="bottomDiv">
-              <ul>
-                <li>Geo-fenced Jobsites</li>
-                <li>Selfie Based Attendance</li>
-                <li>Work Orders</li>
-                <li>Jobs</li>
-              </ul>
+            <div class="tcon">
+              <h4>Invoicing</h4>
+              <span class="price">Starts at <span id="pl-location">$1</span></span>
+              <span class="unit">/ user / mo</span>
             </div>
+          </div>
+          <div class="bottomDiv">
+            <ul>
+              <li>Geo-fenced Jobsites</li>
+              <li>Selfie Based Attendance</li>
+              <li>Work Orders</li>
+              <li>Jobs</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </div>
 <section class="faqsRow wfull for-heading-center">
   <div class="container">
