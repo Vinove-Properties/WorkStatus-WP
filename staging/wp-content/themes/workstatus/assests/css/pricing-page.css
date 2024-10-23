@@ -9298,7 +9298,8 @@ h3 a {
   height: 30px;
   font-size: 0;
   background-size: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+  position: absolute; }
 
 .ps-monthly .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
   display: none; }
