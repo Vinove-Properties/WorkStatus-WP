@@ -9308,6 +9308,9 @@ h3 a {
 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
   display: inline-block; }
 
+.comparison-panel .comp-row .comp-tablerow tr td:nth-child(2n) {
+  display: none; }
+
 @media (max-width: 1600px) {
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
     font-size: 35px; } }
