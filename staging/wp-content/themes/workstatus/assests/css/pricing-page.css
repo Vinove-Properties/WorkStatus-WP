@@ -9586,10 +9586,13 @@ h3 a {
         text-align: center; }
 
   .blogvideo-popup .popup-wrapper .popWrap .popup-content {
-    width: 95%;
+    width: 90%;
     height: 80%;
     background: none;
-    box-shadow: none; } }
+    box-shadow: none; }
+
+  .blogvideo-popup .closeicon, .blogvideo-popup .cl-iframe-closeicon {
+    background-size: 20px; } }
 @media (max-width: 767px) {
   .ws-pricing {
     padding-top: 20px; }
