@@ -21,21 +21,21 @@ function pricingActiveTaber(e){
             console.error("No element found for the selector: " + clickedTab);
         }
     }
-    if( !e.target.classList.contains("pm-clm") ){
-      document.getElementById("comp-plan-cont").style.display = "none";
-      document.getElementById("ws-pr-addon").style.display = "none";
-    }else{
-      document.getElementById("comp-plan-cont").style.display = "block";
-      document.getElementById("ws-pr-addon").style.display = "block";
-    }
 
+    if( document.getElementById("comp-plan-cont") && document.getElementById("ws-pr-addon") ){
+      if( !e.target.classList.contains("pm-clm") ){
+        document.getElementById("comp-plan-cont").style.display = "none";
+        document.getElementById("ws-pr-addon").style.display = "none";
+      }else{
+        document.getElementById("comp-plan-cont").style.display = "block";
+        document.getElementById("ws-pr-addon").style.display = "block";
+      }  
+    }    
     // if( !e.target.classList.contains("pro-clm") ){
     //   document.getElementById("ws-pr-addon").style.display = "none";
     // }else{
     //   document.getElementById("ws-pr-addon").style.display = "block";
-    // }
-
-    
+    // }  
 }
 
 pricingTabs.forEach(function(tab){
