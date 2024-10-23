@@ -8818,7 +8818,8 @@ h3 a {
               color: #6754e2;
               background: transparent;
               cursor: pointer;
-              display: none; }
+              display: none;
+              position: relative; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-accordion .icon {
                 width: 16px;
                 height: 16px;
@@ -9484,7 +9485,7 @@ h3 a {
           display: block; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper.is-visible .price-accordion:after {
           transform: rotateX(0);
-          top: 25px; }
+          top: 18px; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-accordion {
           display: block;
           width: 100%;
@@ -9500,7 +9501,7 @@ h3 a {
             height: 17px;
             right: 14px;
             position: absolute;
-            top: 16px;
+            top: 9px;
             transform: rotateX(180deg); }
   .ws-pricing .price-contents .tab-contents .plan-include {
     padding: 25px;
