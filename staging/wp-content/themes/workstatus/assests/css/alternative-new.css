@@ -8426,8 +8426,7 @@ h3 a {
         margin: 10px 0 0;
         display: flex; }
       .ws-table .table-block .div-block-top .logovs .desktop {
-        display: block;
-        height: 30px; }
+        display: block; }
       .ws-table .table-block .div-block-top .logovs .mobile {
         display: none; }
     .ws-table .table-block .div-block-top .logo-ws {
