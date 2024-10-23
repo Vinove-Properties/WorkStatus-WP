@@ -9,7 +9,7 @@ $activePlan =  'productivity';
 <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
 <div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
-<section class="hero-banner no-af-bg post-animation">
+<section class="cmn-pricing no-af-bg post-animation">
   <div class="container">
     <div class="inner-wrap">
       <div class="left">
@@ -379,3 +379,14 @@ $activePlan =  'productivity';
       </div>
     </div>
 </section>
+
+<div class="blogvideo-popup">
+  <div id="calendly-popup" class="popup-wrapper" style="display:none;">
+    <div class="popWrap">
+      <div class="popup-content">
+      <span class="cl-iframe-closeicon" onclick="closeCalendlyiFrame()">Close</span>
+      <iframe id="calendly-iframe" class="videoIframe js-videoIframe" src="" allow="autoplay"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
