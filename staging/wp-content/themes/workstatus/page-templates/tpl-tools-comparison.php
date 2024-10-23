@@ -146,10 +146,6 @@ $tbl = $compCol['cards'];
             <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg" 
             alt="WorkStatus" width="160" height="20">
           </picture>
-          <picture>
-            <img class="mobile" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablm-03.svg" 
-            alt="WorkStatus" width="25" height="25">
-          </picture>
           <?php echo '<div class="price">'.$compCol['ws-pricing'].'</div>'; ?>
         </div>
       </div>
