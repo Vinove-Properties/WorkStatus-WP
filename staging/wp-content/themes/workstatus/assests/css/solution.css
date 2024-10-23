@@ -8262,7 +8262,6 @@ h3 a {
       font-weight: 500; }
     .cmn-pricing .inner-wrap p .no-hidden {
       display: inline-block;
-      cursor: pointer;
       transition: all 0.3s ease-in-out;
       position: relative; }
       .cmn-pricing .inner-wrap p .no-hidden:after {
