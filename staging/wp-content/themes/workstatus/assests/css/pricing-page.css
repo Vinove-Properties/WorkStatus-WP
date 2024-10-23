@@ -9074,12 +9074,12 @@ h3 a {
       color: #253053;
       font-size: 15px;
       font-weight: 600;
-      padding: 0 2px;
-      vertical-align: bottom; }
+      padding: 0 2px; }
       .comparison-panel .comp-table tr th .plan-label {
         display: block;
         color: #2f3a5e;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        min-height: 40px; }
       .comparison-panel .comp-table tr th .button {
         color: #6754e2;
         background-color: #ffffff;
@@ -9599,9 +9599,10 @@ h3 a {
       .ws-pricing .tab-nav ul li {
         flex-basis: 100%;
         padding-left: 0; }
-        .ws-pricing .tab-nav ul li.active a {
-          border-radius: 10px 10px 0 0;
+        .ws-pricing .tab-nav ul li a {
           height: initial; }
+        .ws-pricing .tab-nav ul li.active a {
+          border-radius: 10px 10px 0 0; }
         .ws-pricing .tab-nav ul li:nth-child(2).active a, .ws-pricing .tab-nav ul li:nth-child(3).active a {
           border-radius: 0 !important; }
         .ws-pricing .tab-nav ul li:nth-child(4).active a {
