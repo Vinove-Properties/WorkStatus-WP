@@ -259,7 +259,7 @@ $activePlan =  'productivity';
             <div class="price-column flex-2">
               <div class="price-box">
                 <div class="pr-plan">
-                  <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
+                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited</h3>
                   <div class="total">unlimited Users & Projects</div>
                   <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.
                   </p>
@@ -295,7 +295,7 @@ $activePlan =  'productivity';
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
-                <div class="pr-plan">
+                <div class="pr-plan ini-height">
                   <h3>Time Tracking</h3>
                   <div class="total">2 USER MINIMUM</div>
                   <p>Track time per user, perfect for small teams with flexible scaling.</p>
@@ -310,8 +310,8 @@ $activePlan =  'productivity';
             </div>
             <div class="price-column flex-2">
               <div class="price-box">
-                <div class="pr-plan">
-                  <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
+                <div class="pr-plan ini-height">
+                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited<br></h3>
                   <div class="total">Unlimited Users</div>
                   <p>Unlimited time tracking for all teams, suitable for businesses of any size.
                   </p>
@@ -351,7 +351,7 @@ $activePlan =  'productivity';
           <div class="price-flex">
             <div class="price-column flex-3">
               <div class="price-box">
-                <div class="pr-plan">
+                <div class="pr-plan ini-height">
                   <h3>Attendance Management</h3>
                   <div class="total">2 USER MINIMUM</div>
                   <p>Track attendance on a per-user basis, perfect for small teams with scalability.</p>
@@ -366,8 +366,8 @@ $activePlan =  'productivity';
             </div>
             <div class="price-column flex-2">
               <div class="price-box">
-                <div class="pr-plan">
-                  <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
+                <div class="pr-plan ini-height">
+                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited</h3>
                   <div class="total">Unlimited users</div>
                   <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.
                   </p>
@@ -442,11 +442,9 @@ $activePlan =  'productivity';
               <th><span class="plan-label">Free</span>
                 <a class="button" id="ws-coplan-free" href="javascript:void(0);">Choose plan</a>
               </th>
-              <th><span class="plan-label">Attendance Management</span>
-              <a class="button" id="ws-coplan-attendance" href="#">Try For Free</a>
-              </th>
+              
               <th><span class="plan-label">Productivity Management</span><a class="button" id="ws-coplan-product" href="#">Try For Free</a></th>
-              <th><span class="plan-label">Project Management</span><a class="button higlit" id="ws-coplan-project" href="#">Try For Free</a></th>
+              <th><span class="plan-label">Productivity + Project Management</span><a class="button higlit" id="ws-coplan-project" href="#">Try For Free</a></th>
               <th>
                 <span class="plan-label">Enterprise</span>
                 <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
