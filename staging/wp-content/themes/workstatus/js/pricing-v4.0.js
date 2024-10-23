@@ -159,7 +159,7 @@ const pricingData = {
     'pro':{'yearly':{"amount":187.19}, 'monthly':{"amount":233.99}}
   },
   "time":{
-    'basic':{'yearly':{"amount":3.69}, 'monthly':{"amount":4.69}},
+    'basic':{'yearly':{"amount":2.49}, 'monthly':{"amount":3.09}},
     'pro':{'yearly':{"amount":124.79}, 'monthly':{"amount":155.99}}
   },
   "attendance":{
