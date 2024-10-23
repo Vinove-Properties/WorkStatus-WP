@@ -1,5 +1,9 @@
 <?php 
+$prPlans    = ['productivity','project','time','attendance'];
 $activePlan = (isset($args['plan']) && !empty($args['plan'])) ? $args['plan'] : "productivity";
+if( !in_array($activePlan, $prPlans) ){
+$activePlan =  'productivity';
+}
 ?>
 <div id="wsio-preloader" style="margin-top:100px;">
 <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
