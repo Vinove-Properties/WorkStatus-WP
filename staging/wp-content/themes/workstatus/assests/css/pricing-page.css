@@ -9074,7 +9074,8 @@ h3 a {
       color: #253053;
       font-size: 15px;
       font-weight: 600;
-      padding: 0 2px; }
+      padding: 0 2px;
+      vertical-align: top; }
       .comparison-panel .comp-table tr th .plan-label {
         display: block;
         color: #2f3a5e;
@@ -9106,7 +9107,7 @@ h3 a {
           background: #6754e2;
           color: #fff; }
   .comparison-panel .comp-row {
-    margin: 60px 0; }
+    margin: 40px 0; }
     .comparison-panel .comp-row h4 {
       font-size: 22px;
       font-weight: 500;
