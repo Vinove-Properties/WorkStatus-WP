@@ -8807,13 +8807,8 @@ h3 a {
                   top: 20px;
                   transform: none; }
             .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-accordion {
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              height: 52px;
-              line-height: 50px;
-              padding: 0 24px;
+              margin: 20px 0 0;
+              padding: 10px 20px 0 0;
               justify-content: flex-start;
               border: 0;
               border-top: 1px solid #e4e6ea;
@@ -9464,7 +9459,8 @@ h3 a {
     width: 100%;
     flex-wrap: wrap; }
   .ws-pricing .price-contents .tab-contents .price-flex {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-items: flex-start; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column {
       flex-basis: 50%;
       margin: 0 0 30px;
