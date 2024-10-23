@@ -8425,6 +8425,8 @@ h3 a {
         justify-content: center;
         margin: 10px 0 0;
         display: flex; }
+      .ws-table .table-block .div-block-top .logovs picture {
+        height: 30px; }
       .ws-table .table-block .div-block-top .logovs .desktop {
         display: block; }
       .ws-table .table-block .div-block-top .logovs .mobile {
