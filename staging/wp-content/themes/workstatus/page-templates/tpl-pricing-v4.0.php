@@ -259,7 +259,7 @@ $activePlan =  'productivity';
             <div class="price-column flex-2">
               <div class="price-box">
                 <div class="pr-plan">
-                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited</h3>
+                  <h3><span class="op0">Pro Unlimited</span>Pro Unlimited</h3>
                   <div class="total">unlimited Users & Projects</div>
                   <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.
                   </p>
@@ -311,7 +311,7 @@ $activePlan =  'productivity';
             <div class="price-column flex-2">
               <div class="price-box">
                 <div class="pr-plan ini-height">
-                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited<br></h3>
+                  <h3><span class="op0">Pro Unlimited</span>Pro Unlimited<br></h3>
                   <div class="total">Unlimited Users</div>
                   <p>Unlimited time tracking for all teams, suitable for businesses of any size.
                   </p>
@@ -367,7 +367,7 @@ $activePlan =  'productivity';
             <div class="price-column flex-2">
               <div class="price-box">
                 <div class="pr-plan ini-height">
-                  <h3><span class="op0">Pro Unlimited</span><br>Pro Unlimited</h3>
+                  <h3><span class="op0">Pro Unlimited</span>Pro Unlimited</h3>
                   <div class="total">Unlimited users</div>
                   <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.
                   </p>
