@@ -9463,6 +9463,8 @@ h3 a {
   .ws-pricing .tab-nav ul {
     width: 100%;
     flex-wrap: wrap; }
+    .ws-pricing .tab-nav ul li a {
+      height: 74px; }
   .ws-pricing .price-contents .tab-contents .price-flex {
     flex-wrap: wrap;
     align-items: flex-start; }
@@ -9598,7 +9600,8 @@ h3 a {
         flex-basis: 100%;
         padding-left: 0; }
         .ws-pricing .tab-nav ul li.active a {
-          border-radius: 10px 10px 0 0; }
+          border-radius: 10px 10px 0 0;
+          height: initial; }
         .ws-pricing .tab-nav ul li:nth-child(2).active a, .ws-pricing .tab-nav ul li:nth-child(3).active a {
           border-radius: 0 !important; }
         .ws-pricing .tab-nav ul li:nth-child(4).active a {
