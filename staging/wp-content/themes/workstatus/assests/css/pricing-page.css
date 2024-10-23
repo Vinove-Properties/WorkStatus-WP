@@ -8616,7 +8616,8 @@ h3 a {
                 margin: 0 0 15px;
                 line-height: 35px; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .op0 {
-                opacity: 0; }
+                opacity: 0;
+                display: block; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .total {
                 background: rgba(103, 84, 226, 0.05);
                 color: #6754e2;
@@ -8638,6 +8639,8 @@ h3 a {
                 font-weight: 500;
                 color: rgba(5, 22, 77, 0.6);
                 min-height: 70px; }
+              .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan.ini-height p {
+                min-height: initial; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .b-anu {
                 font-size: 14px;
                 font-weight: 600;
@@ -9291,7 +9294,7 @@ h3 a {
   height: 100%;
   border: 0; }
 
-.blogvideo-popup .closeicon {
+.blogvideo-popup .closeicon, .blogvideo-popup .cl-iframe-closeicon {
   background: url(../images/cross-img.png) no-repeat;
   right: -34px;
   top: 3px;
@@ -9344,7 +9347,7 @@ h3 a {
     left: -2px;
     top: -30px; }
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan {
-    margin: 0 0 30px; }
+    margin: 0 0 20px; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan h3 {
       font-size: 22px;
       line-height: 30px; }
@@ -9354,6 +9357,8 @@ h3 a {
       margin: 0 0 15px; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan p {
       min-height: 75px; }
+    .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan.ini-height p {
+      min-height: initial; }
     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .b-anu {
       font-size: 12px;
       line-height: 18px; }
@@ -9700,7 +9705,7 @@ h3 a {
   .hero-banner.no-af-bg {
     padding: 110px 0 30px; }
 
-  .blogvideo-popup .closeicon {
+  .blogvideo-popup .closeicon, .blogvideo-popup .cl-iframe-closeicon {
     right: 0;
     top: -32px; } }
 @media (max-width: 479px) {
