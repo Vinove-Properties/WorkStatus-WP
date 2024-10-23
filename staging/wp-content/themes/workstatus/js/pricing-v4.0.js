@@ -344,10 +344,15 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         }
 
         //console.log( key );
-        // let coPlanBtn     = document.getElementById("ws-coplan-"+key);
-        // if( coPlanBtn ){
-        //   coPlanBtn.setAttribute("href", getwsPlanurl( plan_meta[key], pType ) );    
-        // }
+        let coPlanBasic     = document.getElementById("ws-coplan-"+key+"-basic");
+        if( coPlanBasic ){
+          coPlanBasic.setAttribute("href", getwsPlanurl( plan_meta[key]['basic'], pType ) );    
+        }
+
+        let coPlanPro     = document.getElementById("ws-coplan-"+key+"-pro");
+        if( coPlanPro ){
+          coPlanPro.setAttribute("href", getwsPlanurl( plan_meta[key]['pro'], pType ) );    
+        }
 
         // const value     = plans[key];
         // let elmPricing  = document.getElementById("pl-"+key);
