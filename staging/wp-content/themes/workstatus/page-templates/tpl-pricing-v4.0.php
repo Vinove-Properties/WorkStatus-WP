@@ -30,10 +30,18 @@ $activePlan =  'productivity';
       <nav id="pricing-Tabs" class="tab-nav">
         <ul>
           <li class="<?php echo ($activePlan == "productivity") ? 'active' : ''; ?>" 
-          data-tab="#tab01"><a class="pm-clm" href="#tab01">Productivity Management</a></li>
-          <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02"><a class="pro-clm" href="#tab02">Project Management</a></li>
-          <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03"><a href="#tab03">Time Tracking</a></li>
-          <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04"><a href="#tab04">Attendance Management</a></li>
+          data-tab="#tab01">
+            <a data-plan="wsp-productivity" href="#tab01">Productivity Management</a>
+          </li>
+          <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02">
+            <a data-plan="wsp-project" href="#tab02">Project Management</a>
+          </li>
+          <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03">
+            <a data-plan="wsp-time" href="#tab03">Time Tracking</a>
+          </li>
+          <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04">
+            <a data-plan="wsp-attendance" href="#tab04">Attendance Management</a>
+          </li>
         </ul>
       </nav>
       <div id="inv-price-fltr" class="plan-section post-animation">
@@ -413,7 +421,7 @@ $activePlan =  'productivity';
     </div>
   </section>
   <?php */ ?>
-  <div id="comp-plan-cont" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?>>
+  <div id="comp-plan-cont">
   <div class="container">
     <div class="comparison-outer"><span class="plan-btn">View Full plan comparison</span></div>
   </div>

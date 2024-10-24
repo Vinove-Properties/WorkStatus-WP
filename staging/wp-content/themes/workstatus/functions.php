@@ -313,6 +313,12 @@ add_filter( 'body_class', function( $classes ){
 	if( is_page_template('page-templates/tpl-ebook.php') ){
 		$classes[] = 'ebookhead';
 	}
+	$prPlans    = ['productivity','project','time','attendance'];
+	$activePlan = ( isset($_GET['plan']) && !empty($_GET['plan']) ) ? $_GET['plan'] : 'productivity';
+	if( !in_array($activePlan, $prPlans) ){
+		$activePlan =  'productivity';
+	}
+	$classes[] = "wsp-".$activePlan;
 
 	if( is_single() ){
 	global $post;
