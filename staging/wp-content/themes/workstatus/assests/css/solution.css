@@ -9119,6 +9119,12 @@ h3 a {
 .comparison-panel .comp-row .comp-tablerow tr td:nth-child(2) {
   display: none; }
 
+.wsp-project .comparison-outer, .wsp-time .comparison-outer, .wsp-attendance .comparison-outer {
+  display: none; }
+
+.wsp-project .option-data, .wsp-time .option-data {
+  display: none; }
+
 @media (max-width: 1600px) {
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
     font-size: 35px; } }

@@ -9308,6 +9308,12 @@ h3 a {
 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
   display: inline-block; }
 
+.wsp-project .comparison-outer, .wsp-time .comparison-outer, .wsp-attendance .comparison-outer {
+  display: none; }
+
+.wsp-project .option-data, .wsp-time .option-data {
+  display: none; }
+
 .comparison-panel .comp-row .comp-tablerow tr td:nth-child(2) {
   display: none; }
 
