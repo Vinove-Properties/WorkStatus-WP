@@ -391,6 +391,7 @@ $activePlan =  'productivity';
           </div>
         </div>
       </div>
+   </div>
   </section>
   <?php /* ?>
   <section class="free-price">
