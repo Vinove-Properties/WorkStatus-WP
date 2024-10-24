@@ -9125,7 +9125,7 @@ h3 a {
 .wsp-project .option-data, .wsp-time .option-data {
   display: none; }
 
-.wsp-attendance .option-data .addons-row .addond-col:last-child {
+.wsp-attendance .option-data .addons-row .addond-col:nth-child(2) {
   display: none; }
 
 @media (max-width: 1600px) {
