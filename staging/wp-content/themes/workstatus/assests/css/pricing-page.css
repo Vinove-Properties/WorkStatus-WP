@@ -9308,6 +9308,9 @@ h3 a {
 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .max-price {
   display: inline-block; }
 
+.all-partners {
+  background: #fff; }
+
 .wsp-project .comparison-outer, .wsp-time .comparison-outer, .wsp-attendance .comparison-outer {
   display: none; }
 
