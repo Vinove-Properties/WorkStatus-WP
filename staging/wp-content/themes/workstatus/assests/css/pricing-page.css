@@ -8528,10 +8528,7 @@ h3 a {
         flex-basis: 25%;
         display: inline-block;
         margin: 0;
-        padding-left: 10px;
         margin: 0; }
-        .ws-pricing .tab-nav ul li:first-child {
-          padding-left: 0; }
         .ws-pricing .tab-nav ul li a {
           display: flex;
           height: 100%;
@@ -8544,7 +8541,8 @@ h3 a {
           position: relative;
           text-align: center;
           justify-content: center;
-          border: 1px solid transparent; }
+          border: 1px solid transparent;
+          border-bottom: 2px solid transparent; }
         .ws-pricing .tab-nav ul li:hover a {
           background: #f6f5ff;
           border-radius: 0;
