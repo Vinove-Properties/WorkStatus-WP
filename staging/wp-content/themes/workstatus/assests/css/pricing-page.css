@@ -9314,6 +9314,9 @@ h3 a {
 .wsp-project .option-data, .wsp-time .option-data {
   display: none; }
 
+.wsp-attendance .option-data .addons-row .addond-col:last-child {
+  display: none; }
+
 .comparison-panel .comp-row .comp-tablerow tr td:nth-child(2) {
   display: none; }
 

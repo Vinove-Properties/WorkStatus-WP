@@ -9328,6 +9328,9 @@ h3 a {
 .wsp-project .option-data, .wsp-time .option-data {
   display: none; }
 
+.wsp-attendance .option-data .addons-row .addond-col:last-child {
+  display: none; }
+
 @media (max-width: 1600px) {
   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
     font-size: 35px; } }
