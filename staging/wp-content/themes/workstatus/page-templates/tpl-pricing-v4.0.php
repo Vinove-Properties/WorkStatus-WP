@@ -1445,6 +1445,8 @@ $activePlan =  'productivity';
   </div>
 </section>
 
+<?php get_template_part('common/home', 'testimonials'); ?>
+
 <div class="blogvideo-popup">
   <div id="calendly-popup" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
