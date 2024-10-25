@@ -184,19 +184,25 @@
             <div class="customcta">
               <div class="cus-cont">
                 <div class="cushed">
-                <?php echo $sbText; ?>                
+                Start using <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ws-logo.svg" width="150" height="30" alt="workstatus">
+             
                 </div>
+                <ul>
+                  <li>Manage all your work</li>
+                  <li>Collaborate with your team</li>
+                  <li>Use Workstatus for FREE</li>
+                </ul>
                 <div class="btn-container">
                   <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
                   <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
                 </div>
               </div>
-              <div class="cusimg">
+              <!--<div class="cusimg">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/simchoice.png" alt="workstatus" 
                     width="285" height="197">
                 </picture>
-              </div>
+              </div>-->
             </div>
             <?php endif; ?>
             <?php /* ?>
