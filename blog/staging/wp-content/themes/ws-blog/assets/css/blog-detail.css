@@ -122,7 +122,7 @@ background: transparent; height: auto !important; margin:0 0 4px;}
 .ez-toc-widget-container nav ul li a {padding: 0;    color: rgba(65, 65, 65, 0.6); position: relative; display: block;
 font-weight: 400;     font-size: 16px;
 line-height: 22px;
-padding:8px;}
+padding:8px 10px;}
 .ez-toc-widget-container nav ol li a:hover,
 .ez-toc-widget-container nav ul li a:hover { color: #4231AC;
     font-weight: 400;
@@ -287,8 +287,8 @@ top:15%; right: 15%;}
 
 .table-c{margin:15px 0 0; padding:12px;}
 .table-c h3 {font-size: 16px; margin: 0 0 10px;}
-.ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{font-size: 15px;  
-line-height: 22px; padding:8px;}
+.ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{font-size: 14px;  
+line-height:21px; padding:7px 10px;}
 
 .ez-toc-widget-container ul li.active a, .ez-toc-widget-container ol li.active a{border-radius: 8px;}    
 
@@ -364,7 +364,7 @@ line-height: 22px; padding:8px;}
 .tocsec{overflow-y: auto; max-height: initial; height:initial; padding-right:0;}
 .vcb-col-left{width: 100%; text-align: left;}	
 .ez-toc-widget-container nav { }
-.ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{font-size:15px;}
+.ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{font-size:14px;}
 .vcb-col-right {width: 100%; margin: 30px 0 0; padding: 0;}
 .vcb-col-right img {margin: 30px 0;}
 .ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{padding:8px;}
