@@ -8375,7 +8375,10 @@ h3 a {
         margin: 10px 0 0;
         display: flex; }
       .ws-table .table-block .div-block-top .logovs picture {
-        height: 30px; }
+        height: 30px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center; }
       .ws-table .table-block .div-block-top .logovs .desktop {
         display: block; }
       .ws-table .table-block .div-block-top .logovs .mobile {
