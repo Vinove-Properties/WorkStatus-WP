@@ -84,8 +84,8 @@ const pricingData = {
 },
 "US": {
   "productivity":{
-    'basic':{'yearly':{"amount":2.99}, 'monthly':{"amount":3.99}},
-    'pro':{'yearly':{"amount":3.99}, 'monthly':{"amount":4.99}}  
+    'basic':{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+    'pro':{'yearly':{"amount":5.5}, 'monthly':{"amount":7}}  
   },
   "project":{
     'basic':{'yearly':{"amount":2.40}, 'monthly':{"amount":3}},
