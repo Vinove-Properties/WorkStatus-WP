@@ -186,7 +186,7 @@ $tbl = $compCol['cards'];
         </a>
       </div>
     </div>    
-    <div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>
+    <!--<div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>-->
   </div>
 </section>
 <?php endif; ?>
