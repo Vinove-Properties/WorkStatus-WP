@@ -77,8 +77,8 @@ button.newsletter:hover{border-color: #fff;}
         top: 3px;
         width: 16px;
         height: 16px;
-        background-size: 16px;
-        vertical-align: middle;} 
+        background-size: 100%;
+        vertical-align: middle; background-repeat: no-repeat;} 
 
 .customcta .btn-container {position: relative; z-index: 9;}
 
@@ -382,6 +382,7 @@ line-height: 22px; padding: 3px 10px;}
 .subcribe-bottom .detail-subsbox{width:100%;  margin: 0;}
 .customcta .btn-container{text-align: left;}
 .table-c{padding:20px;}
+.customcta ul li{font-size: 14px;}
 }
 
 
@@ -411,12 +412,12 @@ button.newsletter{width: 28px; height: 28px;}
 .banner-section .detail-thumb{margin: 20px 0 0;}
 .customcta .cushed{font-size: 20px;}
 
-.customcta ul li{margin:0 0 10px;}
+.customcta ul li{margin:0 0 8px;}
 .second-row{margin: 20px 0 0;}
 .customcta img{margin: 0 auto 10px !important;}
 .customcta .btn-container{text-align: left;}
-
-
+.customcta .btn-container .white-btn{padding: 12px 20px;}
+.customcta ul li::before {top:4px;}
 
 /*New CSS start from here*/
 
