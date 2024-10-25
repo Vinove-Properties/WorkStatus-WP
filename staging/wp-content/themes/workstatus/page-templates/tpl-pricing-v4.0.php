@@ -259,7 +259,7 @@ $activePlan =  'productivity';
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-project-pro">USD 5.5</span>
-                  <span class="prio">/ user / month</span>
+                  <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-project-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
@@ -311,7 +311,7 @@ $activePlan =  'productivity';
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-time-pro"></span>
-                  <span class="prio">/ user / month</span>
+                  <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-time-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
@@ -367,7 +367,7 @@ $activePlan =  'productivity';
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="pl-attendance-pro"></span>
-                  <span class="prio">/ user / month</span>
+                  <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-attendance-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
