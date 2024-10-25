@@ -4656,6 +4656,9 @@ a:hover h3,
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: top; }
+    @media screen and (max-width: 575px) {
+      .trackEm .trackRow {
+        margin: 0; } }
     .trackEm .trackRow .trackImg {
       width: 54%; }
       @media screen and (max-width: 575px) {
@@ -9318,7 +9321,7 @@ h3 a {
 .wsp-attendance .option-data .addons-row .addond-col:nth-child(2) {
   display: none; }
 
-.comparison-panel .comp-row .comp-tablerow tr td:nth-child(2) {
+.comparison-panel .comp-row .comp-tablerow tr td:nth-child(3) {
   display: none; }
 
 @media (max-width: 1600px) {
