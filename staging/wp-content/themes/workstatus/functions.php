@@ -2031,9 +2031,9 @@ function rocket_mobile_preload_fonts( $fonts ){
     $fonts = [];
     if( !wp_is_mobile() ) {
     $fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Regular.woff2';
-    $fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Bold.woff2';
-    $fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Medium.woff2';
-    $fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-SemiBold.woff2';
+    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Bold.woff2';
+    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Medium.woff2';
+    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-SemiBold.woff2';
     }
     return $fonts;
 }
