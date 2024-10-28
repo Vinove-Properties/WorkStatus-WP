@@ -47,13 +47,13 @@
       <div class="column fcol7">
         <h6>Workstatus Comparison</h6>
         <ul>
-          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
-          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
-          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
-          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
-          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="https://www.workstatus.io/teramind-vs-interguard-vs-workstatus">Teramind vs Interguard</a></li>
+          <li><a href="https://www.workstatus.io/hubstaff-vs-clockify-vs-workstatus">Hubstaff vs Clockify</a></li>
+          <li><a href="https://www.workstatus.io/hubstaff-vs-insightful-vs-workstatus">Hubstaff vs Insightful</a></li>
+          <li><a href="https://www.workstatus.io/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
+          <li><a href="https://www.workstatus.io/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
+          <li><a href="https://www.workstatus.io/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
+          <li><a href="https://www.workstatus.io/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
        <div class="column fcol6">
