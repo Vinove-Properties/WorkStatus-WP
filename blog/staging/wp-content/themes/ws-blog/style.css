@@ -949,6 +949,7 @@ th {
  padding: 0;
  text-align: left;
 }
+.vcb-col-right td ul{display: flex; align-items: center; justify-content: center;}
 .post-rel-sec .blog-entry-title,
 .single .feature-header .site__header .site_nav > ul > li > a {
  color: #333;
