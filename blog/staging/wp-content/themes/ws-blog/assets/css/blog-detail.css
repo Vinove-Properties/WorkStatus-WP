@@ -172,7 +172,7 @@ top:0; background: #4231AC; color:#fff; border-radius: 0 5px 5px 0; border:0; cu
 .vcb-col-right a:hover{color:rgba(33, 33, 33, 1);}
 .vcb-col-right {width: calc(100% - 330px); float: left; padding-right: 70px; margin-top: 0;}
 .vcb-col-right #ez-toc-container{display:none;}
-.vcb-col-right p {margin:0 0 20px; color:rgba(102, 110, 134, 1); font-weight: 400;}
+.vcb-col-right p {margin:0 0 15px; color:rgba(102, 110, 134, 1); font-weight: 400;}
 .vcb-col-right h2{color: #414141;}
 .vcb-col-right img {margin: 40px 0; }
 
