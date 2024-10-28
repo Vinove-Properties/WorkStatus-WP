@@ -8734,8 +8734,8 @@ h3 a {
         .ws-table .table-block .table-row:last-child .ws-column .small-font {
           font-size: 12px; }
     .ws-table .view-more {
-      bottom: 160px;
-      left: 15px; }
+      bottom: 87px;
+      left: 11px; }
 
   .advanced-feature .flex_row {
     gap: 0; }
@@ -8784,7 +8784,12 @@ h3 a {
     font-size: 16px; }
 
   .ws-table .table-block .table-row:last-child .ws-column strong {
-    width: auto; } }
+    width: auto; }
+
+  .trackEm-container .trackEm {
+    padding: 0 0 40px; }
+    .trackEm-container .trackEm:nth-child(2n) .trackRow {
+      flex-flow: column; } }
 @media (max-width: 479px) {
   .all-partners .part-row {
     grid-template-columns: repeat(2, 1fr);
