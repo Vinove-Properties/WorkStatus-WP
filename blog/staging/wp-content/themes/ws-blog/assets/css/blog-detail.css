@@ -439,5 +439,10 @@ div.ez-toc-widget-container{border:0;}
 
 }
 
+@media (max-width:479px){
+.cta-accorpg .white-btn.sft {min-width:250px;}
+.cta-accorpg .cta-wrap .bkd{min-width: 250px;}
+}
+
 
 /*Media Query Ends Here*/
