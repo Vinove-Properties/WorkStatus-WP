@@ -213,62 +213,6 @@ if( isset($wsFeatures['is_enabled']) && ($wsFeatures['is_enabled'] == "yes") ) :
 
 
 <?php 
-$ws_services = get_field('why-ws');
-if( isset( $ws_services['required'] ) && ( $ws_services['required'] == "yes" ) ) :
-?>
-<section class="middle-section feature-section">
-  <div class="item" id="ws-silent_tracking_section">
-    <div class="container">
-      <div class="top-section"><?php echo $ws_services['content']; ?></div>
-      <?php 
-      $services = $ws_services['fetures'];
-      if( $services ){
-      ?>
-      <div id="active_Current_Tabs_ws_services">
-        <div class="flex_row">
-          <div class="column-right">
-            <?php 
-              $iRow = 777;
-              foreach( $services as $row ){ 
-              $active = ( $iRow == 777 ) ? "active" : "";
-              if( $row['image'] ){
-              echo pxlGetPtag( $row['image'], $row['image']['title'], "page ".$active, "p".$iRow );              
-              }
-              $iRow++;
-              } 
-              ?>
-          </div>
-          <div class="column-left">
-            <?php 
-              $iRow = 777;
-              foreach( $services as $row ){
-              $active = ( $iRow == 777 ) ? "active" : "";  
-              $image = $row['image'];
-              ?>
-            <div class="all-content">
-              <div class="text-column <?php echo $active; ?>" id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs_ws_services">
-              <?php echo $row['content']; ?>
-              </div>
-              <div class="mob-image">
-                <?php 
-                if( $image ){
-                  echo pxlGetPtag( $image );
-                } 
-                ?>
-              </div>
-            </div>
-            <?php $iRow++; } ?>
-          </div>
-        </div>
-      </div>
-      <?php } ?>        
-      <div class="ctasec mt100"><?php echo wsDemoCtaCP(); ?></div>        
-    </div>
-  </div>
-</section>
-<?php endif; ?>
-
-<?php 
 $mcBLocks = get_field('mc-block');
 if( isset($mcBLocks['required']) && ($mcBLocks['required'] == "yes") ){
   if( isset( $mcBLocks['block'] ) && is_array( $mcBLocks['block'] ) && (count($mcBLocks['block']) > 0) ){
@@ -364,9 +308,65 @@ if( isset($useCases['required']) && ($useCases['required'] == "yes") ) :
 </section>
 <?php endif; ?>
 
-<section class="wsMobile whitetxt">
-<?php require_once get_template_directory() .'/common/workstatus-device.php';?>
+
+
+<?php 
+$ws_services = get_field('why-ws');
+if( isset( $ws_services['required'] ) && ( $ws_services['required'] == "yes" ) ) :
+?>
+<section class="middle-section feature-section">
+  <div class="item" id="ws-silent_tracking_section">
+    <div class="container">
+      <div class="top-section"><?php echo $ws_services['content']; ?></div>
+      <?php 
+      $services = $ws_services['fetures'];
+      if( $services ){
+      ?>
+      <div id="active_Current_Tabs_ws_services">
+        <div class="flex_row">
+          <div class="column-right">
+            <?php 
+              $iRow = 777;
+              foreach( $services as $row ){ 
+              $active = ( $iRow == 777 ) ? "active" : "";
+              if( $row['image'] ){
+              echo pxlGetPtag( $row['image'], $row['image']['title'], "page ".$active, "p".$iRow );              
+              }
+              $iRow++;
+              } 
+              ?>
+          </div>
+          <div class="column-left">
+            <?php 
+              $iRow = 777;
+              foreach( $services as $row ){
+              $active = ( $iRow == 777 ) ? "active" : "";  
+              $image = $row['image'];
+              ?>
+            <div class="all-content">
+              <div class="text-column <?php echo $active; ?>" id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs_ws_services">
+              <?php echo $row['content']; ?>
+              </div>
+              <div class="mob-image">
+                <?php 
+                if( $image ){
+                  echo pxlGetPtag( $image );
+                } 
+                ?>
+              </div>
+            </div>
+            <?php $iRow++; } ?>
+          </div>
+        </div>
+      </div>
+      <?php } ?>        
+      <div class="ctasec mt100"><?php echo wsDemoCtaCP(); ?></div>        
+    </div>
+  </div>
 </section>
+<?php endif; ?>
+
+
 <?php  
 $faq = get_field('faq');
 if( isset($faq['is_enabled']) && ($faq['is_enabled'] == "yes") ) :
