@@ -8296,7 +8296,7 @@ h3 a {
         line-height: 18px;
         padding: 5px; } }
 .hero-banner .inner-wrap h1 {
-  text-transform: inherit; }
+  text-transform: inherit !important; }
 
 .alter-image {
   width: 100%;
