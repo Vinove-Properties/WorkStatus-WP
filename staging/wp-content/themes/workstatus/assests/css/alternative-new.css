@@ -8583,6 +8583,14 @@ h3 a {
     .trackEm-container .trackEm:last-child {
       padding: 0; }
 
+.buyers-guide-answer h3.guide-question {
+  display: none; }
+
+.guide-answer h3 {
+  margin-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 20px; }
+
 /*All Partners Ends From Here*/
 @media (max-width: 1440px) {
   .section-numbers {
