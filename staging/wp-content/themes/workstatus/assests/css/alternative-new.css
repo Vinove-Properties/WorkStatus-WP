@@ -8591,6 +8591,9 @@ h3 a {
   padding-top: 80px;
   padding-bottom: 20px; }
 
+.guide-answer h4 {
+  padding: 0 0 10px; }
+
 /*All Partners Ends From Here*/
 @media (max-width: 1440px) {
   .section-numbers {
@@ -8680,7 +8683,10 @@ h3 a {
   .trackEm-container .trackEm {
     padding: 0 0 50px; }
     .trackEm-container .trackEm:last-child {
-      padding: 0; } }
+      padding: 0; }
+
+  .buyers-guide-answer h3 {
+    padding: 60px 0 20px; } }
 @media (max-width: 767px) {
   .alter-image {
     margin: 0 0 20px;
