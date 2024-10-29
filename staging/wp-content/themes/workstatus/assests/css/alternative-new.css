@@ -8295,6 +8295,9 @@ h3 a {
         font-size: 12px;
         line-height: 18px;
         padding: 5px; } }
+.hero-banner .inner-wrap h1 {
+  text-transform: inherit; }
+
 .alter-image {
   width: 100%;
   display: flex;
