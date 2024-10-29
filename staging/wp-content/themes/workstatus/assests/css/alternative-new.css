@@ -8576,10 +8576,12 @@ h3 a {
 .section-numbers .number-row .number-col {
   padding: 30px; }
 
-.trackEm-container .trackEm {
-  padding: 0 0 80px; }
-  .trackEm-container .trackEm:last-child {
-    padding: 0; }
+.trackEm-container {
+  padding-top: 0; }
+  .trackEm-container .trackEm {
+    padding: 0 0 80px; }
+    .trackEm-container .trackEm:last-child {
+      padding: 0; }
 
 /*All Partners Ends From Here*/
 @media (max-width: 1440px) {
