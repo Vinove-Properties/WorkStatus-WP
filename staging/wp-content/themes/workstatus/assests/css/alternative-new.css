@@ -8522,6 +8522,9 @@ h3 a {
 .faqsRow {
   background: #fff; }
 
+.section-numbers {
+  padding-top: 0 !important; }
+
 /*All Partners Start From Here*/
 .all-partners {
   padding-top: 0; }
