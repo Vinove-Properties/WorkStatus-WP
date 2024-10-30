@@ -538,7 +538,7 @@ window.addEventListener('load', function(){
             next: '.glider-next'
           }
         });
-      }, 100);
+      }, 1000);
   }  
   
 });
