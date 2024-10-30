@@ -271,7 +271,7 @@ if( $isEnable == "yes" ){
         ?>
         <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
         <h3 class="guide-question"><?php echo $row['question']; ?></h3>
-        <div class="guide-answer"><?php echo $row['answer']; ?></dsiv>
+        <div class="guide-answer"><?php echo $row['answer']; ?></div>
         </div>
         <?php $i++; } } ?>                  
         </div>
