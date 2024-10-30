@@ -340,12 +340,19 @@ line-height:21px; padding:7px 10px;}
 .cta-section .colLeft p{font-size: 13px;}
 
 .vcb-col-left.sticky{right: 30px;}
+
+
     
 }
 
 
 @media (max-width: 1290px){
 .vcb-col-left.sticky{right: 30px;}
+.customcta .cushed{margin: 0 0 15px;}
+.customcta .cus-cont{padding: 15px;}
+.customcta{margin: 15px 0 0;}
+.customcta ul li{margin: 0 0 10px;}
+
 }
 
 @media (max-width: 991px){
