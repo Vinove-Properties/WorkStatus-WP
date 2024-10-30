@@ -14,7 +14,7 @@
         if( $wstestimonial['testimonail'] ){
         ?>
       <div class="glider-contain testimonial-slider">
-        <div class="glider" id="glider">
+        <div class="glider" id="cmn-glider">
           <?php 
             $vd = 0;
             foreach( $wstestimonial['testimonail'] as $row ) : $vd++; 

@@ -517,13 +517,31 @@ function isElementInViewport(e) {
 }
 loop();
 
-var gliderOne = document.getElementsByClassName("glider");
-if( gliderOne.length > 0 ){
-    gliderOne &&
-    window.addEventListener("load", function () {
-        new Glider(document.querySelector(".glider"), { slidesToShow: 1, dots: ".dots", draggable: true, itemWidth: 100, duration: 1, arrows: { prev: ".glider-prev", next: ".glider-next" } });
-    });    
-}
+// var gliderOne = document.getElementsByClassName("glider");
+// if( gliderOne.length > 0 ){
+//     gliderOne &&
+//     window.addEventListener("load", function () {
+//         new Glider(document.querySelector(".glider"), { slidesToShow: 1, dots: ".dots", draggable: true, itemWidth: 100, duration: 1, arrows: { prev: ".glider-prev", next: ".glider-next" } });
+//     });    
+// }
+
+window.addEventListener('load', function(){
+  if( document.getElementById('cmn-glider') ){
+      setTimeout(function (){
+        new Glider(document.getElementById('cmn-glider'), {
+          slidesToShow: 1,
+          draggable: true,
+          //slidesToScroll: 1,
+          dots: '.dots',
+          arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+          }
+        });
+      }, 100);
+  }  
+  
+});
 
 
 var gliderTwo = document.getElementsByClassName("glider2");
