@@ -338,7 +338,7 @@ line-height:21px; padding:7px 10px;}
 .cta-accorpg .colLeft{flex-basis: 60%;}
 .cta-section .colLeft .ct-head{font-size: 20px;}
 .cta-section .colLeft p{font-size: 13px;}
-
+.ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{padding:5px 10px;}
 .vcb-col-left.sticky{right: 30px;}
 
 
