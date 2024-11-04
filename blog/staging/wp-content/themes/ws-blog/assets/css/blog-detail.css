@@ -75,7 +75,7 @@ font-size: 14px; font-weight: 500; padding: 14px 20px; line-height: 1.2; border-
 /* Ends Here */
 
 .table-c{width: 100%; margin: 20px 0 0; border: 1px solid #0000001A; border-radius: 10px; padding: 15px; background: #f9f9f9;}
-.tocsec{overflow-y: auto; height: auto; max-height: 250px; padding-left: 0; padding-right: 0; text-align: left;  }
+.tocsec{overflow-y: auto; height: auto; max-height: 265px; padding-left: 0; padding-right: 0; text-align: left;  }
 .table-c h3 {color: #414141; font-size: 17px; line-height:1.3; font-weight :400; text-transform: uppercase;  margin: 0 0 15px;}
 
 .vcb-col-left h2 {display: none;}
