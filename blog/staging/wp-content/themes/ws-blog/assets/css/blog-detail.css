@@ -318,7 +318,8 @@ line-height:21px; padding:7px 10px;}
 .cta-section .colLeft p{font-size: 13px;}
 .ez-toc-widget-container nav ol li a, .ez-toc-widget-container nav ul li a{padding:5px 10px;}
 .vcb-col-left.sticky{right: 30px;}
-.tocsec {max-height: 160px; height:auto;}
+.tocsec {max-height: 185px; height:auto;}
+
 
     
 }
@@ -330,6 +331,7 @@ line-height:21px; padding:7px 10px;}
 .customcta .cus-cont{padding: 15px;}
 .customcta{margin: 15px 0 0;}
 .customcta ul li{margin: 0 0 10px;}
+.tocsec {max-height: 160px; height:auto;}
 
 }
 
