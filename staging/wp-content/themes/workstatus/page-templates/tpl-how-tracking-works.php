@@ -56,22 +56,22 @@
 
 
   <?php  
-		$automate_tracking_section = get_field('automate_tracking_section');
+		$smart_approach = get_field('smart_approach');
 		
-		if( $automate_tracking_section ) :
-		$isEnable = $automate_tracking_section['is_enabled'];
+		if( $smart_approach ) :
+		$isEnable = $smart_approach['is_enabled'];
 		if( $isEnable == "yes" ){ 
 		?>
         <section class="benifits-section">
           <div class="container">
             <div class="top-section">
-              <h6><span class="bg-purple"><?php echo $automate_tracking_section['heading']; ?></span></h6>
-              <h2><?php echo $automate_tracking_section['sub_heading']; ?></h2>
+              <h6><span class="bg-purple"><?php echo $smart_approach['heading']; ?></span></h6>
+              <h2><?php echo $smart_approach['sub_heading']; ?></h2>
             </div>
             <div class="flex_row">
 			<?php 
-			if( $automate_tracking_section['content_repeater'] ){  $i = 1;
-				foreach( $automate_tracking_section['content_repeater'] as $row ) { 
+			if( $smart_approach['content_repeater'] ){  $i = 1;
+				foreach( $smart_approach['content_repeater'] as $row ) { 
         $icon = $row['image'];
           ?>	
               <div class="column-three">
