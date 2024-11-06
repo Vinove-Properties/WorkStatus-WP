@@ -50,54 +50,42 @@
     </div>
   </section>
   <?php endif; ?>
-
-
-
-
-
   <?php  
-		$smart_approach = get_field('smart_approach');
-		
-		if( $smart_approach ) :
-		$isEnable = $smart_approach['is_enabled'];
-		if( $isEnable == "yes" ){ 
-		?>
-        <section class="benifits-section">
-          <div class="container">
-            <div class="top-section">
-              <h6><span class="bg-purple"><?php echo $smart_approach['heading']; ?></span></h6>
-              <h2><?php echo $smart_approach['sub_heading']; ?></h2>
-            </div>
-            <div class="flex_row">
-			<?php 
-			if( $smart_approach['content_repeater'] ){  $i = 1;
-				foreach( $smart_approach['content_repeater'] as $row ) { 
-        $icon = $row['image'];
-          ?>	
-              <div class="column-three">
-                <?php
-                if ($icon) {
-                    echo pxlGetPtag($icon);
-                } else {
-                    echo '<i class="icon' . $i . '"></i>';
-                }
-                ?>
-                <h3><?php echo $row['heading'];?></h3>
-                <?php echo $row['content'];?>
-              </div>
-			<?php $i++; } } ?>
-              
-              
-            </div>
-          </div>
-        </section>
-		<?php } endif; ?>
-
-
-
-
-
-        <?php
+    $smart_approach = get_field('smart_approach');
+    
+    if( $smart_approach ) :
+    $isEnable = $smart_approach['is_enabled'];
+    if( $isEnable == "yes" ){ 
+    ?>
+  <section class="benifits-section">
+    <div class="container">
+      <div class="top-section">
+        <h6><span class="bg-purple"><?php echo $smart_approach['heading']; ?></span></h6>
+        <h2><?php echo $smart_approach['sub_heading']; ?></h2>
+      </div>
+      <div class="flex_row">
+        <?php 
+          if( $smart_approach['content_repeater'] ){  $i = 1;
+          	foreach( $smart_approach['content_repeater'] as $row ) { 
+               $icon = $row['image'];
+                 ?>	
+        <div class="column-three">
+          <?php
+            if ($icon) {
+                echo pxlGetPtag($icon);
+            } else {
+                echo '<i class="icon' . $i . '"></i>';
+            }
+            ?>
+          <h3><?php echo $row['heading'];?></h3>
+          <?php echo $row['content'];?>
+        </div>
+        <?php $i++; } } ?>
+      </div>
+    </div>
+  </section>
+  <?php } endif; ?>
+  <?php
     $how_track = get_field('how_track');
     $bsEnabled         = $how_track['is_enabled'];
     if ($bsEnabled == 'yes') :
@@ -255,138 +243,80 @@
     </div>
   </section>
   <?php endif; ?>
-
-  <?php
-    $time_tracking = get_field('time_tracking');
-    $bsEnabled         = $time_tracking['is_enabled'];
-    if ($bsEnabled == 'yes') :
-    ?>
-
-
   <section class="how-step-sec post-animation">
-          <div class="container">
-          <div class="top-section">
-          <h6><span class="bg-purple"><?php echo $time_tracking['heading']; ?></span></h6>
-          <?php 
-            if( isset($time_tracking['sub_heading']) && !empty($time_tracking['sub_heading']) ){
-                echo '<h2>'.$time_tracking['sub_heading'].'</h2>';
-            } 
-            if(isset($time_tracking['content']) && !empty($time_tracking['content'])){
-                echo '<p>'.$time_tracking['content'].'</p>';
-            }
-            ?>
-        </div>
-            <div class="step-section">
-              <div class="step-row flex_row">
-                <div class="content-col">
-                  <div class="top-section">
-                  <?php
-                if ($time_tracking['tracking_repeater']) {
-                    $i = 1;
-                    foreach ($time_tracking['tracking_repeater'] as $row) {
-                        $image      = $row['image'];
-                        $active = ($i == 1) ? "active" : "";
-                ?>
-              <div class="all-content">
-                <div class="text-column <?php echo $active; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs1">
-                  <h3><?php echo $row['heading']; ?></h3>
-                  <?php echo $row['content']; ?>
-                </div>
-                <div class="mob-image">
-                  <?php if ($image) {
-                    echo '<picture>
-                    ' . getPxlWebpURL($image['ID']) . '
-                    <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                    <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                    height="' . $image['height'] . '"> 
-                    </picture>';
-                    } ?>
-                </div>
-              </div>
-              <?php $i++;
-                }
-                } ?>
-                    <a href="#" class="read-more">Learn More</a>
-                  </div>
-                </div>
-                <div class="image-col">
-                <?php
-                if ($time_tracking['tracking_repeater']) {
-                    $i = 1;
-                    foreach ($time_tracking['tracking_repeater'] as $row) {
-                        $image      = $row['image'];
-                        $active = ($i == 1) ? "active" : "";
-                ?>
-              <?php if ($image) {
-                echo '<picture class="page ' . $active . '" id="p' . $i . '" >
-                ' . getPxlWebpURL($image['ID']) . '
-                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                height="' . $image['height'] . '"> 
-                </picture>';
-                } ?>
-              <?php $i++;
-                }
-                } ?>
-                </div>
-              </div>
-              <div class="step-row flex_row">
-                <div class="content-col">
-                  <div class="top-section">
-                    <h3>Smart Decisions With Real-Time Insights</h3>
-                    <p>Get real-time insights into how your teams are working. It helps you make better decisions by showing you how you are spending your time, your busiest days, and where your time is most productive.</p>
-                    <ul>
-                      <li>Productivity Trends</li>
-                      <li>Apps &amp; Websites Activity</li>
-                      <li>Track Idle Time</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More</a>
-                  </div>
-                </div>
-                <div class="image-col">
-                  <picture>
-                    <source type="image/webp" srcset="./assests/images/how-image01.png">
-                    <source type="image/png" srcset="./assests/images/how-image01.png">
-                    <img loading="lazy" src="./assests/images/how-image01.png" alt="ra-01" width="601" height="440">
-                  </picture>
-                </div>
-              </div>
-              <div class="step-row flex_row">
-                <div class="content-col">
-                  <div class="top-section">
-                    <h3>Smart Decisions With Real-Time Insights</h3>
-                    <p>Get real-time insights into how your teams are working. It helps you make better decisions by showing you how you are spending your time, your busiest days, and where your time is most productive.</p>
-                    <ul>
-                      <li>Productivity Trends</li>
-                      <li>Apps &amp; Websites Activity</li>
-                      <li>Track Idle Time</li>
-                    </ul>
-                    <a href="#" class="read-more">Learn More</a>
-                  </div>
-                </div>
-                <div class="image-col">
-                  <picture>
-                    <source type="image/webp" srcset="./assests/images/how-image01.png">
-                    <source type="image/png" srcset="./assests/images/how-image01.png">
-                    <img loading="lazy" src="./assests/images/how-image01.png" alt="ra-01" width="601" height="440">
-                  </picture>
-                </div>
-              </div>
+    <div class="container">
+      <div class="top-section">
+        <h6><span class="bg-purple">Smarter. Better. Transparent</span></h6>
+        <h2>Advanced Technology To Keep You Ahead</h2>
+        <p>Stay Ahead with Workstatus Powerkit, helping you work smarter and achieve more.</p>
+      </div>
+      <div class="step-section">
+        <div class="step-row flex_row">
+          <div class="content-col">
+            <div class="top-section">
+              <h3>Smart Decisions With Real-Time Insights</h3>
+              <p>Get real-time insights into how your teams are working. It helps you make better decisions by showing you how you are spending your time, your busiest days, and where your time is most productive.</p>
+              <ul>
+                <li>Productivity Trends</li>
+                <li>Apps &amp; Websites Activity</li>
+                <li>Track Idle Time</li>
+              </ul>
+              <a href="#" class="read-more">Learn More</a>
             </div>
           </div>
-        </section>
-
-        <?php endif; ?>
-
-
-
-
-
-
-
-
-
-
+          <div class="image-col">
+            <picture>
+              <source type="image/webp" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-01.png">
+              <source type="image/png" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-01.png">
+              <img loading="lazy" src="<?php bloginfo("template_url"); ?>/assests/images/how-01.png" alt="ra-01" width="601" height="440">
+            </picture>
+          </div>
+        </div>
+        <div class="step-row flex_row">
+          <div class="content-col">
+            <div class="top-section">
+              <h3>Automate Attendance With Geofencing</h3>
+              <p>Employees can check in and out of work sites based on defined virtual locations. It eliminates the need for employees to check in and out manually or for employers to track employee hours.</p>
+              <ul>
+                <li>No Buddy Punching</li>
+                <li>Online Timesheets</li>
+                <li>Attendance Reports</li>
+              </ul>
+              <a href="#" class="read-more">Learn More</a>
+            </div>
+          </div>
+          <div class="image-col">
+            <picture>
+              <source type="image/webp" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-02.png">
+              <source type="image/png" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-02.png">
+              <img loading="lazy" src="<?php bloginfo("template_url"); ?>/assests/images/how-02.png" alt="ra-01" width="601" height="440">
+            </picture>
+          </div>
+        </div>
+        <div class="step-row flex_row">
+          <div class="content-col">
+            <div class="top-section">
+              <h3>Automate Invoice Management</h3>
+              <p>Create, manage, and send invoices automatically. With our software, you can rest assured that your invoices will be professional and accurate.</p>
+              <ul>
+                <li>Timely Payments</li>
+                <li>Apps &amp; Websites Activity</li>
+                <li>Alerts & Reminders</li>
+              </ul>
+              <a href="#" class="read-more">Learn More</a>
+            </div>
+          </div>
+          <div class="image-col">
+            <picture>
+              <source type="image/webp" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-03.png">
+              <source type="image/png" srcset="<?php bloginfo("template_url"); ?>/assests/images/how-03.png">
+              <img loading="lazy" src="<?php bloginfo("template_url"); ?>/assests/images/how-03.png" alt="ra-01" width="601" height="440">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <?php
     $timeline = get_field('timeline');
     $bsEnabled         = $timeline['is_enabled'];
@@ -444,8 +374,6 @@
     </div>
   </section>
   <?php endif; ?>
-
-
   <section class="wsMobile whitetxt">
     <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
   </section>
