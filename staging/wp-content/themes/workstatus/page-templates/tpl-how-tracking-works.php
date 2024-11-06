@@ -31,7 +31,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     $vdScreenshot = ' style="background: url('.wsGetWebpSrcUrl($banner_section['video_background_image']['id']).'); background-size: contain; background-repeat: no-repeat; background-position: center;"';
                     }
                     ?>
-                    <br>
+                  
                     <?php //require_once get_template_directory().'/common/available-device.php'; ?>
                     <?php //require_once get_template_directory(). '/common/partners.php'; ?>
                     <div class="video-wrap">
