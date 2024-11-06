@@ -95,65 +95,6 @@
 
 
 
-  <section class="benifits-section post-animation">
-          <div class="container">
-            <div class="top-section">
-              <h6><span class="bg-purple">SILENT TIME TRACKING</span></h6>
-              <h2>All-Inclusive Employee Tracking Solution</h2>
-              <p>With Workstatus, manage and optimize your employees' time, thereby improving employees’ productivity for better ROI.</p>
-            </div>
-            <div class="flex_row">
-              <div class="column-three">
-                <picture>
-                  <source type="image/webp" srcset="./assests/images/how-ben01.png">
-                  <source type="image/png" srcset="./assests/images/how-ben01.png">
-                  <img class="space" loading="lazy" src="./assests/images/how-ben01.png" alt="tt-icon01" width="92" height="89">
-                </picture>
-                <h3>Track Digital Activity Data</h3>
-                <p>Monitor the usage levels of mouse and keyboard of a user's system along with the time spent on various tasks, such as:</p>
-                <ul>
-                  <li>E-mail</li>
-                  <li>Meeting apps</li>
-                  <li>Social media, and more</li>
-                </ul>
-              </div>
-              <div class="column-three">
-                <picture>
-                  <source type="image/webp" srcset="./assests/images/how-ben01.png">
-                  <source type="image/png" srcset="./assests/images/how-ben01.png">
-                  <img class="space" loading="lazy" src="./assests/images/how-ben01.png" alt="tt-icon01" width="92" height="89">
-                </picture>
-                <h3>Track Digital Activity Data</h3>
-                <p>Monitor the usage levels of mouse and keyboard of a user's system along with the time spent on various tasks, such as:</p>
-                <ul>
-                  <li>E-mail</li>
-                  <li>Meeting apps</li>
-                  <li>Social media, and more</li>
-                </ul>
-              </div>
-              <div class="column-three">
-                <picture>
-                  <source type="image/webp" srcset="./assests/images/how-ben01.png">
-                  <source type="image/png" srcset="./assests/images/how-ben01.png">
-                  <img class="space" loading="lazy" src="./assests/images/how-ben01.png" alt="tt-icon01" width="92" height="89">
-                </picture>
-                <h3>Track Digital Activity Data</h3>
-                <p>Monitor the usage levels of mouse and keyboard of a user's system along with the time spent on various tasks, such as:</p>
-                <ul>
-                  <li>E-mail</li>
-                  <li>Meeting apps</li>
-                  <li>Social media, and more</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-
-
-
-
 
 
   <?php
