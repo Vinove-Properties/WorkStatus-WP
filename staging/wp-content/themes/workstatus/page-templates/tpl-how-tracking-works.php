@@ -16,7 +16,7 @@ global $ws_ctas, $RegLink, $LogLink;
             <div class="container">
                 <div class="inner-wrap">
                     <h1><?php echo $banner_section['heading']; ?></h1>
-                    <p><?php echo $banner_section['content']; ?></p>
+                    <?php echo $banner_section['content']; ?>
                     <div class="actionBtn">                
                     <div>
                     <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2">Talk To Sales</a>
