@@ -55,9 +55,6 @@
 
 
 
-
-
-
   <?php  
 		$automate_tracking_section = get_field('automate_tracking_section');
 		
