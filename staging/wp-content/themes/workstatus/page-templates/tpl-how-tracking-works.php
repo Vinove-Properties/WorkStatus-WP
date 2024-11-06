@@ -97,65 +97,14 @@
 
 
 
-  <?php
-    $top_platforms = get_field('top_platforms');
-    $bsEnabled         = $top_platforms['is_enabled'];
-    if ($bsEnabled == 'yes') :
-    ?>
-  <section class="howtrack mt0">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $banner_section['heading']; ?></span></h6>
-        <?php 
-          if( isset($banner_section['sub_heading']) && !empty($banner_section['sub_heading']) ){
-          echo '<h2>'.$banner_section['sub_heading'].'</h2>';
-          } 
-          ?>
-      </div>
-      <div class="flex_row">
-        <div class="column-left">
-          <?php
-            if ($top_platforms['content_repeater']) {
-                $i = 1;
-                foreach ($top_platforms['content_repeater'] as $row) {
-            ?>
-          <div class="row">
-            <h3><?php echo $row['heading'] ?></h3>
-            <?php echo $row['content'] ?>
-          </div>
-          <?php $i++;
-            }
-            } ?>
-          <!-- <div class="row">
-            <h3>Have A Complete Control</h3>
-            <p>Workstatus give teams complete control over their workflows and processes. Workstatus ensures that everyone is always on the same page and provides all the information needed to get the job done efficiently. Workstatus is heavily customizable, so you can tailor it to fit your specific needs.</p>
-            </div>
-            <div class="row">
-            <h3>Ensure Better Performance </h3>
-            <p>Workstatus helps ensure better performance in the workplace. Managers can identify areas where employees may need assistance or improvement by tracking employee activities and providing feedback. Also, employees can use Workstatus to assess their own performance and track their progress over time.</p>
-            </div> -->
-        </div>
-        <div class="column-right">
-          <?php
-            $image = $top_platforms['image'];
-            if ($image) {
-                echo '<picture>
-                ' . getPxlWebpURL($image['ID']) . '
-                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                height="' . $image['height'] . '"> 
-                </picture>';
-            } ?>
-          <!-- <picture>
-            <source type="image/webp" srcset="./assests/images/buit-track.webp">
-            <source type="image/png" srcset="./assests/images/buit-track.png">
-            <img loading="lazy" src="./assests/images/buit-track.png" alt="Websites &amp; Apps Usage Tracking" width="582" height="495">
-            </picture> -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <?php endif; ?>
+
+
+
+
+
+
+
+
   <?php
     $timeline = get_field('timeline');
     $bsEnabled         = $timeline['is_enabled'];
@@ -213,6 +162,12 @@
     </div>
   </section>
   <?php endif; ?>
+
+
+
+
+
+
   <?php
     $how_track = get_field('how_track');
     $bsEnabled         = $how_track['is_enabled'];
