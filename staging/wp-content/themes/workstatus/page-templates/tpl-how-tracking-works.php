@@ -53,6 +53,51 @@
 
 
 
+
+
+
+
+
+  <?php  
+		$automate_tracking_section = get_field('automate_tracking_section');
+		
+		if( $automate_tracking_section ) :
+		$isEnable = $automate_tracking_section['is_enabled'];
+		if( $isEnable == "yes" ){ 
+		?>
+        <section class="benifits-section">
+          <div class="container">
+            <div class="top-section">
+              <h6><span class="bg-purple"><?php echo $automate_tracking_section['heading']; ?></span></h6>
+              <h2><?php echo $automate_tracking_section['sub_heading']; ?></h2>
+            </div>
+            <div class="flex_row">
+			<?php 
+			if( $automate_tracking_section['content_repeater'] ){  $i = 1;
+				foreach( $automate_tracking_section['content_repeater'] as $row ) { 
+        $icon = $row['image'];
+          ?>	
+              <div class="column-three">
+                <?php
+                if ($icon) {
+                    echo pxlGetPtag($icon);
+                } else {
+                    echo '<i class="icon' . $i . '"></i>';
+                }
+                ?>
+                <h3><?php echo $row['heading'];?></h3>
+                <?php echo $row['content'];?>
+              </div>
+			<?php $i++; } } ?>
+              
+              
+            </div>
+          </div>
+        </section>
+		<?php } endif; ?>
+
+
+
   <section class="benifits-section post-animation">
           <div class="container">
             <div class="top-section">
