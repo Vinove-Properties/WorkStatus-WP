@@ -7826,4 +7826,7 @@ h3 a {
       padding: 150px 0; }
       .inner-banner-bg .bannerwrap .inner-wrap .actionBtn {
         justify-content: center;
-        margin: 30px 0 0; } }
+        margin: 30px 0 0; }
+
+  .inner-banner .inner-wrap .actionBtn {
+    justify-content: center; } }
