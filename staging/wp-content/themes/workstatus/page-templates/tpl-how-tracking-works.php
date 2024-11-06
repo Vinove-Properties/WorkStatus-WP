@@ -357,18 +357,6 @@
           <?php
             }
             } ?>
-          <!-- <div class="row">
-            <h3>Download & Install WorkStatus™</h3>
-            <p>Simply download and install WorkStatus on any computer or mobile and sign up for an account. It's as easy as that. Once you have installed WorkStatus, your system is ready to generate reports and track productivity right away.</p>
-            </div>
-            <div class="row">
-            <h3>Start Monitoring productivity</h3>
-            <p>By tracking employee engagement, workstatus helps managers identify issues early on and take corrective action. The insights provided by Workstatus also help businesses improve their strategies for better results. </p>
-            </div>
-            <div class="row">
-            <h3>Auto-Generate Reports</h3>
-            <p>Workstatus delivers automatic reports on the status of your projects. With Workstatus, you'll always know where your project stands and can easily share that information with your team.</p>
-            </div> -->
         </div>
       </div>
     </div>
