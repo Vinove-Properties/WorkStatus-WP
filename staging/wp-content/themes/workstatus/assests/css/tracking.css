@@ -7801,6 +7801,9 @@ h3 a {
   .se-benifit .column-three {
     background: #fff; }
 
+.benifits-section .column-three img {
+  margin: 0 0 10px; }
+
 /*Step Section Start From Here*/
 @media screen and (max-width: 1379px) {
   .faqsRow {
