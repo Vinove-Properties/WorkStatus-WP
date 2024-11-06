@@ -97,78 +97,7 @@
 
 
 
-
-
-
-
-
-
-
-
-  <?php
-    $timeline = get_field('timeline');
-    $bsEnabled         = $timeline['is_enabled'];
-    if ($bsEnabled == 'yes') :
-    ?>
-  <section class="timeline">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $timeline['heading']; ?>How It Works </span></h6>
-        <?php 
-          if( isset($timeline['sub_heading']) && !empty($timeline['sub_heading']) ){
-          echo '<h2>'.$timeline['sub_heading'].'</h2>';
-          } 
-          ?>
-      </div>
-      <div class="trackRow">
-        <div class="trackImg">
-          <?php
-            $image = $timeline['left_image'];
-            if ($image) {
-                echo '<picture>
-                ' . getPxlWebpURL($image['ID']) . '
-                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                height="' . $image['height'] . '"> 
-                </picture>';
-            } ?>
-        </div>
-        <div class="trackContent">
-          <?php
-            if ($timeline['content_repeater']) {
-                foreach ($timeline['content_repeater'] as $row) {
-            ?>
-          <div class="row">
-            <h3><?php echo $row['heading'] ?></h3>
-            <?php echo $row['content'] ?>
-          </div>
-          <?php
-            }
-            } ?>
-          <!-- <div class="row">
-            <h3>Download & Install WorkStatus™</h3>
-            <p>Simply download and install WorkStatus on any computer or mobile and sign up for an account. It's as easy as that. Once you have installed WorkStatus, your system is ready to generate reports and track productivity right away.</p>
-            </div>
-            <div class="row">
-            <h3>Start Monitoring productivity</h3>
-            <p>By tracking employee engagement, workstatus helps managers identify issues early on and take corrective action. The insights provided by Workstatus also help businesses improve their strategies for better results. </p>
-            </div>
-            <div class="row">
-            <h3>Auto-Generate Reports</h3>
-            <p>Workstatus delivers automatic reports on the status of your projects. With Workstatus, you'll always know where your project stands and can easily share that information with your team.</p>
-            </div> -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <?php endif; ?>
-
-
-
-
-
-
-  <?php
+        <?php
     $how_track = get_field('how_track');
     $bsEnabled         = $how_track['is_enabled'];
     if ($bsEnabled == 'yes') :
@@ -407,6 +336,72 @@
     </div>
   </section>
   <?php endif; ?>
+
+
+
+
+
+
+
+  <?php
+    $timeline = get_field('timeline');
+    $bsEnabled         = $timeline['is_enabled'];
+    if ($bsEnabled == 'yes') :
+    ?>
+  <section class="timeline">
+    <div class="container">
+      <div class="top-section">
+        <h6><span class="bg-purple"><?php echo $timeline['heading']; ?>How It Works </span></h6>
+        <?php 
+          if( isset($timeline['sub_heading']) && !empty($timeline['sub_heading']) ){
+          echo '<h2>'.$timeline['sub_heading'].'</h2>';
+          } 
+          ?>
+      </div>
+      <div class="trackRow">
+        <div class="trackImg">
+          <?php
+            $image = $timeline['left_image'];
+            if ($image) {
+                echo '<picture>
+                ' . getPxlWebpURL($image['ID']) . '
+                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
+                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
+                height="' . $image['height'] . '"> 
+                </picture>';
+            } ?>
+        </div>
+        <div class="trackContent">
+          <?php
+            if ($timeline['content_repeater']) {
+                foreach ($timeline['content_repeater'] as $row) {
+            ?>
+          <div class="row">
+            <h3><?php echo $row['heading'] ?></h3>
+            <?php echo $row['content'] ?>
+          </div>
+          <?php
+            }
+            } ?>
+          <!-- <div class="row">
+            <h3>Download & Install WorkStatus™</h3>
+            <p>Simply download and install WorkStatus on any computer or mobile and sign up for an account. It's as easy as that. Once you have installed WorkStatus, your system is ready to generate reports and track productivity right away.</p>
+            </div>
+            <div class="row">
+            <h3>Start Monitoring productivity</h3>
+            <p>By tracking employee engagement, workstatus helps managers identify issues early on and take corrective action. The insights provided by Workstatus also help businesses improve their strategies for better results. </p>
+            </div>
+            <div class="row">
+            <h3>Auto-Generate Reports</h3>
+            <p>Workstatus delivers automatic reports on the status of your projects. With Workstatus, you'll always know where your project stands and can easily share that information with your team.</p>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
+
+
   <section class="wsMobile whitetxt">
     <?php require_once get_template_directory() . '/common/workstatus-device.php'; ?>
   </section>
