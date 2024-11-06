@@ -7831,5 +7831,8 @@ h3 a {
         justify-content: center;
         margin: 30px 0 0; }
 
+  .inner-banner {
+    padding: 100px 0 0; }
+
   .inner-banner .inner-wrap .actionBtn {
     justify-content: center; } }
