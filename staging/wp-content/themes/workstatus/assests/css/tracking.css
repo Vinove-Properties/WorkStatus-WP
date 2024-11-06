@@ -7726,7 +7726,7 @@ h3 a {
     @media screen and (max-width: 575px) {
       .how-step-sec .step-section .step-row .image-col {
         flex-basis: 100%;
-        margin: 20px 0; } }
+        margin: 20px 0 0; } }
   .how-step-sec .step-section .step-row .content-col {
     flex-basis: 48%; }
     .how-step-sec .step-section .step-row .content-col .top-section {
