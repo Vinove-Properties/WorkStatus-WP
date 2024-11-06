@@ -7627,7 +7627,7 @@ h3 a {
   top: -59px; }
 
 .inner-banner {
-  padding: 150px 0; }
+  padding: 150px 0 0; }
   @media screen and (max-width: 767px) {
     .inner-banner {
       padding: 120px 0 0; } }
