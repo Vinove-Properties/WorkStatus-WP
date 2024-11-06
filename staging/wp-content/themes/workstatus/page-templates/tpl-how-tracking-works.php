@@ -255,6 +255,131 @@
     </div>
   </section>
   <?php endif; ?>
+
+  <?php
+    $time_tracking = get_field('time_tracking');
+    $bsEnabled         = $time_tracking['is_enabled'];
+    if ($bsEnabled == 'yes') :
+    ?>
+
+
+  <section class="how-step-sec post-animation">
+          <div class="container">
+          <div class="top-section">
+          <h6><span class="bg-purple"><?php echo $time_tracking['heading']; ?></span></h6>
+          <?php 
+            if( isset($time_tracking['sub_heading']) && !empty($time_tracking['sub_heading']) ){
+                echo '<h2>'.$time_tracking['sub_heading'].'</h2>';
+            } 
+            if(isset($time_tracking['content']) && !empty($time_tracking['content'])){
+                echo '<p>'.$time_tracking['content'].'</p>';
+            }
+            ?>
+        </div>
+            <div class="step-section">
+              <div class="step-row flex_row">
+                <div class="content-col">
+                  <div class="top-section">
+                  <?php
+                if ($time_tracking['tracking_repeater']) {
+                    $i = 1;
+                    foreach ($time_tracking['tracking_repeater'] as $row) {
+                        $image      = $row['image'];
+                        $active = ($i == 1) ? "active" : "";
+                ?>
+              <div class="all-content">
+                <div class="text-column <?php echo $active; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs1">
+                  <h3><?php echo $row['heading']; ?></h3>
+                  <?php echo $row['content']; ?>
+                </div>
+                <div class="mob-image">
+                  <?php if ($image) {
+                    echo '<picture>
+                    ' . getPxlWebpURL($image['ID']) . '
+                    <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
+                    <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
+                    height="' . $image['height'] . '"> 
+                    </picture>';
+                    } ?>
+                </div>
+              </div>
+              <?php $i++;
+                }
+                } ?>
+                    <a href="#" class="read-more">Learn More</a>
+                  </div>
+                </div>
+                <div class="image-col">
+                <?php
+                if ($time_tracking['tracking_repeater']) {
+                    $i = 1;
+                    foreach ($time_tracking['tracking_repeater'] as $row) {
+                        $image      = $row['image'];
+                        $active = ($i == 1) ? "active" : "";
+                ?>
+              <?php if ($image) {
+                echo '<picture class="page ' . $active . '" id="p' . $i . '" >
+                ' . getPxlWebpURL($image['ID']) . '
+                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
+                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
+                height="' . $image['height'] . '"> 
+                </picture>';
+                } ?>
+              <?php $i++;
+                }
+                } ?>
+                </div>
+              </div>
+              <div class="step-row flex_row">
+                <div class="content-col">
+                  <div class="top-section">
+                    <h3>Smart Decisions With Real-Time Insights</h3>
+                    <p>Get real-time insights into how your teams are working. It helps you make better decisions by showing you how you are spending your time, your busiest days, and where your time is most productive.</p>
+                    <ul>
+                      <li>Productivity Trends</li>
+                      <li>Apps &amp; Websites Activity</li>
+                      <li>Track Idle Time</li>
+                    </ul>
+                    <a href="#" class="read-more">Learn More</a>
+                  </div>
+                </div>
+                <div class="image-col">
+                  <picture>
+                    <source type="image/webp" srcset="./assests/images/how-image01.png">
+                    <source type="image/png" srcset="./assests/images/how-image01.png">
+                    <img loading="lazy" src="./assests/images/how-image01.png" alt="ra-01" width="601" height="440">
+                  </picture>
+                </div>
+              </div>
+              <div class="step-row flex_row">
+                <div class="content-col">
+                  <div class="top-section">
+                    <h3>Smart Decisions With Real-Time Insights</h3>
+                    <p>Get real-time insights into how your teams are working. It helps you make better decisions by showing you how you are spending your time, your busiest days, and where your time is most productive.</p>
+                    <ul>
+                      <li>Productivity Trends</li>
+                      <li>Apps &amp; Websites Activity</li>
+                      <li>Track Idle Time</li>
+                    </ul>
+                    <a href="#" class="read-more">Learn More</a>
+                  </div>
+                </div>
+                <div class="image-col">
+                  <picture>
+                    <source type="image/webp" srcset="./assests/images/how-image01.png">
+                    <source type="image/png" srcset="./assests/images/how-image01.png">
+                    <img loading="lazy" src="./assests/images/how-image01.png" alt="ra-01" width="601" height="440">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <?php endif; ?>
+
+
+
   <?php
     $time_tracking = get_field('time_tracking');
     $bsEnabled         = $time_tracking['is_enabled'];
