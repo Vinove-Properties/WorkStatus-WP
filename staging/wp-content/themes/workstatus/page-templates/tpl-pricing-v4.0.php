@@ -1374,8 +1374,7 @@ $activePlan =  'productivity';
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>We prioritize data security, utilizing advanced encryption and security protocols to protect user information and prevent unauthorized access.
-                  </p>
+                  <p>We use advanced encryption and security protocols to protect user information and prevent unauthorized access.</p>
                 </div>
               </div>
             </div>
@@ -1405,7 +1404,7 @@ $activePlan =  'productivity';
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Workstatus offers a user-friendly mobile application, allowing you to manage and track time and activities conveniently from your mobile devices.</p>
+                  <p>Workstatus is available on App Store and Google Play Store. You can download the Workstatus app and access all the features.</p>
                 </div>
               </div>
             </div>
