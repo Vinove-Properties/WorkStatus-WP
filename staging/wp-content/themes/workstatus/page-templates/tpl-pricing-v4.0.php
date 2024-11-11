@@ -1404,7 +1404,7 @@ $activePlan =  'productivity';
             <div class="faq-accordion-content">
               <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div itemprop="text">
-                  <p>Workstatus is available on App Store and Google Play Store. You can download the Workstatus app and access all the features. Here's a support document to help you access Workstatus. https://support.workstatus.io/en/article/does-workstatus-have-a-mobile-app-175qopu/</p>
+                  <p>Workstatus is available on App Store and Google Play Store. You can download the Workstatus app and access all the features. Here's a <a href="https://support.workstatus.io/en/article/does-workstatus-have-a-mobile-app-175qopu/">support document</a> to help you access Workstatus.</p>
                 </div>
               </div>
             </div>
