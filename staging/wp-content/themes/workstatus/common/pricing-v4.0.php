@@ -275,7 +275,7 @@ $activePlan =  'productivity';
             <li>Project Management Integrations</li>
             <li>1:1 onboarding tour with our team</li>
             <li>Multiple Filters & Custom Views </li>
-            <li>First-in-line 24/5 priority support</li>
+            <li>First-in-line 24x5 priority support</li>
           </ul>
         </div>
       </div>
@@ -331,7 +331,7 @@ $activePlan =  'productivity';
             <li>Team activity</li>
             <li>1:1 onboarding tour with our team</li>
             <li>Timesheet Approval</li>
-            <li><strong>PLUS</strong> First-in-line 24/5 priority support</li>
+            <li><strong>PLUS</strong> First-in-line 24x5 priority support</li>
           </ul>
         </div>
       </div>
@@ -381,7 +381,7 @@ $activePlan =  'productivity';
             <li>Geo-fenced Jobsites</li>
             <li>1:1 onboarding tour with our team</li>
             <li>Attendance Reports & Analytics</li>
-            <li><strong>PLUS</strong> First-in-line 24/5 priority support</li>
+            <li><strong>PLUS</strong> First-in-line 24x5 priority support</li>
           </ul>
         </div>
       </div>
