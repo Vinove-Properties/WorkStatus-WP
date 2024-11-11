@@ -17,9 +17,9 @@ if( $isEnable == "yes" ){
     <div class="container">
       <div class="flex_row">
         <div class="column column-content">
-          <h6><span class="bg-purple"><?php echo $top_section['top-heading']; ?></span></h6>
-          <h1><strong>Maximize Team Productivity: </strong>From Remote to In-Office</h1>
-          <p>Enhance productivity with our all-in-one solution for time tracking, project and task management, and workforce optimization.</p>
+          <h6><span class="bg-purple">Work Smarter, Not Harder</span></h6>
+          <h1>One Platform,<br><strong>Endless Efficiency</strong></h1>
+          <p>Simplify project management, time tracking, and attendance management for in-office, hybrid or remote teams. Automate processes, get team insights, and enjoy a productivity boost with <strong>Workstatus - A Single, Powerful Solution.</strong></p>
           <div class="cont-wrap">
             <div class="actionBtn">              
               <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1 formbtn">Book A Demo</a>

@@ -264,6 +264,12 @@ function workstatus_scripts() {
 	elseif( is_page_template(['page-templates/tpl-tools-comparison.php']) ){
 		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/alternative-new.css', array(), _S_VERSION);
 	}
+	elseif( is_page_template(['page-templates/tpl-feature-v2.php']) ){
+	wp_enqueue_style('cmn-features', get_bloginfo('template_url').'/assests/css/feature-detail.css', array(), _S_VERSION);
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
+	}
+
 
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
