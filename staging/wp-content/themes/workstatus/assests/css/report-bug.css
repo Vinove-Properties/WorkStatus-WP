@@ -703,7 +703,7 @@ h3 a {
   margin: 0 auto;
   padding: 20px 0;
   z-index: 99;
-  background: #4231AC;
+  background: #4231ac;
   transition: all 0.3s ease-in-out; }
   .header-two .wrapper {
     display: flex;
@@ -932,6 +932,9 @@ h3 a {
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .flex-2 {
                     flex-basis: 50%;
                     padding: 0 5px; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .flex-3 {
+                    flex-basis: 33.33%;
+                    padding: 0 5px; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .flex-4 {
                     flex-basis: 25%;
                     padding: 0 5px; }
@@ -1042,16 +1045,77 @@ h3 a {
                     width: 20%;
                     background: #f8f9fa; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.hire-tabs .other-menu .tab-title a {
-                    padding-left: 10px; }
+                    padding-left: 7px; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.hire-tabs .other-menu .menu-column a {
                     padding-left: 55px;
                     position: relative;
-                    width: calc(100% - 10px);
+                    width: calc(100% - 7px);
                     margin: 0 0 10px -10px; }
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.hire-tabs .other-menu .menu-column a .menuicon {
                       position: absolute;
                       left: 10px;
                       top: 15px; }
+              .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu {
+                padding: 0;
+                flex-basis: 100%; }
+                .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column {
+                  width: 75%; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column {
+                    border-top: 1px solid #e6e6e6; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 {
+                      padding: 0 10px; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line {
+                        border-right: 1px solid #e6e6e6; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title {
+                        padding-bottom: 0;
+                        border: 0; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3:last-child .bor-line {
+                        border: none; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column:first-child {
+                      border-top: 0; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a {
+                    padding: 3px 7px 3px 25px;
+                    border-radius: 5px;
+                    position: relative; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:before {
+                      content: "";
+                      background: url(../header-images/menu-check.svg) no-repeat center;
+                      position: absolute;
+                      top: 7px;
+                      left: 5px;
+                      width: 13px;
+                      height: 13px;
+                      background-size: 100%;
+                      vertical-align: middle; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:hover {
+                      color: #05164d; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:hover:before {
+                        background: url(../header-images/menu-active.svg) no-repeat center; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more {
+                      padding: 0;
+                      border: 0;
+                      color: rgba(0, 35, 75, 0.7); }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:after {
+                        background: url(../header-images/grey-ar.svg) no-repeat center;
+                        width: 11px;
+                        height: 8px; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
+                        display: none; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
+                        color: #6754e2; }
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
+                          background: url(../header-images/arrow.svg) no-repeat center;
+                          width: 11px;
+                          height: 8px;
+                          background-size: 100%; }
+                .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .tab-title a {
+                  padding-left: 7px; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .tab-title a:before {
+                    display: none; }
+                .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .other-menu {
+                  width: 25%; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .other-menu .flex-1 a {
+                    padding-left: 45px; }
         .header-two .header-item-right .menu ul li:hover .menu-mega {
           display: block; }
     .header-two .header-item-right .cta-wrap {
@@ -1194,7 +1258,18 @@ h3 a {
       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .other-menu {
         min-height: 480px; } }
 @media screen and (max-width: 1380px) {
-  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column a {
+  .header-two
+  .header-item-right
+  .menu
+  ul
+  li
+  .menu-mega
+  .tab-menu
+  .tab-contents
+  .right-tabs
+  .tab-content
+  .menu-column
+  a {
     padding: 7px 10px; } }
 @media screen and (max-width: 1280px) {
   .header-two .header-item-right .menu ul li.menu-item-has-children a {
@@ -1405,8 +1480,10 @@ h3 a {
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content.is-active {
                       display: block; }
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column {
-                      padding: 15px 0 0;
+                      padding: 20px 0;
                       width: 100%; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column:last-child {
+                        padding: 0; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column.sub-service {
                         display: none; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column.hr-submenu {
@@ -1414,6 +1491,10 @@ h3 a {
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column.sub-ind {
                         display: none; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column.m-active {
+                        display: block; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .hr-submenu {
+                        display: none; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .m-active {
                         display: block; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .flex-2 {
                         flex-basis: 100%;
@@ -1510,6 +1591,65 @@ h3 a {
                           margin: 0 0 5px -10px; }
                         .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.hire-tabs .other-menu .tab-title .ser-arrow-btn {
                           right: -15px; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu {
+                    padding: 0;
+                    flex-basis: 100%; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column {
+                      width: 100%; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column {
+                        border-top: none; }
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 {
+                          flex-basis: 100%;
+                          padding: 0;
+                          margin: 0; }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line {
+                            border-right: none; }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title {
+                            padding-bottom: 0;
+                            border: 0; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a {
+                        padding: 3px 7px 3px 25px;
+                        border-radius: 5px;
+                        position: relative; }
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:before {
+                          content: "";
+                          background: url(../header-images/menu-check.svg) no-repeat center;
+                          position: absolute;
+                          top: 7px;
+                          left: 5px;
+                          width: 13px;
+                          height: 13px;
+                          background-size: 100%;
+                          vertical-align: middle; }
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:hover {
+                          color: #05164d; }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a:hover:before {
+                            background: url(../header-images/menu-active.svg) no-repeat center; }
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more {
+                          padding: 0;
+                          border: 0;
+                          color: rgba(0, 35, 75, 0.7); }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:after {
+                            background: url(../header-images/grey-ar.svg) no-repeat center;
+                            width: 11px;
+                            height: 8px; }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
+                            display: none; }
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
+                            color: #6754e2; }
+                            .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
+                              background: url(../header-images/arrow.svg) no-repeat center;
+                              width: 11px;
+                              height: 8px;
+                              background-size: 100%; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .tab-title a {
+                      padding-left: 7px; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .tab-title a:before {
+                        display: none; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .other-menu {
+                      width: 100%; }
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .other-menu .flex-1 a {
+                        padding-left: 45px; }
               .header-two .header-item-right .menu ul li .menu-mega.m-active {
                 display: block; }
       .header-two .header-item-right .mob-nav {
