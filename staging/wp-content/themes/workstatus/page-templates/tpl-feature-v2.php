@@ -43,7 +43,7 @@ if( isset($dataDriv['is_enabled']) && ($dataDriv['is_enabled'] == "yes") ){
   </div>';
   echo '<div class="data-row">';
   echo '<div class="flex-2"><div class="box">'.$dataDriv['con-left'].'</div></div>';
-  echo '<div class="flex-2"><div class="box">'.$dataDriv['con-right'].'</div></div>';
+  echo '<div class="flex-2"><div class="box cross">'.$dataDriv['con-right'].'</div></div>';
   echo '</div>';
   echo '</div></section>';
 }  
