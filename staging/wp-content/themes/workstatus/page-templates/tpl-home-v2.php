@@ -18,7 +18,7 @@ if( $isEnable == "yes" ){
       <div class="flex_row">
         <div class="column column-content">
           <h6><span class="bg-purple">Work Smarter, Not Harder</span></h6>
-          <h1>One Platform,<br><strong>Endless Efficiency</strong></h1>
+          <h1>One Platform<br><strong>Endless Efficiency</strong></h1>
           <p>Simplify project management, time tracking, and attendance management for in-office, hybrid or remote teams. Automate processes, get team insights, and enjoy a productivity boost with <strong>Workstatus - A Single, Powerful Solution.</strong></p>
           <div class="cont-wrap">
             <div class="actionBtn">              
