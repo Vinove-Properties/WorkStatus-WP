@@ -101,6 +101,15 @@ add_action('wp_footer', function(){
 	wp_dequeue_style('core-block-supports'); 
 });
 
+function ws_siteurl( $url ){
+	if( $url == "#" ) return $url;
+
+	if (filter_var($url, FILTER_VALIDATE_URL) === true) {
+    	return $url;
+	}else{
+		return site_url( $url );
+	}
+}
 
 function workstatus_scripts() {
 	wp_dequeue_style( 'wp-block-library' );
@@ -647,6 +656,19 @@ function cmnBannerCta(){
 	onclick="return get_ws_signupform(this);">Start Free Trial</a><small>No credit card required</small></div>';
 }
 
+
+function getCTAblock( $class = "button-common margin-t-80" ){
+	global $ws_ctas, $RegLink;
+	$cta_lbl = (isset( $ws_ctas['cta_text']) && !empty($ws_ctas['cta_text'])) ? $ws_ctas['cta_text'] : 'Start Free Trial';
+	return '<div class="'.$class.'">
+	<div class="cmn-democta">	
+	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>	
+	<span class="devide">OR</span>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn nobg" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	<span class="nccr">No credit card required</span>
+	</div></div>
+	</div>';
+}
 
 add_action( 'wp_ajax_nopriv_rateus', 'rateus_cb' );
 add_action( 'wp_ajax_rateus', 'rateus_cb' );
