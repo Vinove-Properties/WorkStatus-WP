@@ -1674,7 +1674,7 @@ h3 a {
           border-radius: 30px;
           padding: 15px 25px;
           line-height: 1;
-          font-size: 14px;
+          font-size: 14px !important;
           border: 1px solid #fff;
           font-weight: 600;
           cursor: pointer; }
