@@ -186,7 +186,7 @@
                         <div id="menu-serv" class="dis-flex tab-contents">
                           <div class="left-tabs">
                             <ul class="tab-nav">
-                              <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/time-attendance">Time Tracking</a></li>
+                              <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software">Time Tracking</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/project-management">Productivity Management</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management">Project & Task Management</a></li>
                               <li class="tab-link"><a href="<?php echo site_url(); ?>/reporting-analytics">Attendance Tracking</a></li>
@@ -198,7 +198,7 @@
                           <div class="right-tabs">
                             <div class="tab-content is-active">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
                                   Effortless Time Tracking
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
