@@ -402,117 +402,119 @@
                               <div class="three-column">
                                 <div class="dis-flex menu-column">
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance"><span class="title">Time Tracking</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
+                                        <a href="<?php echo site_url(); ?>/time-attendance/attendance-reports-hr">
                                         Streamlining Attendance Management</a>
-                                        <a href="#">
+                                        <a href="<?php echo site_url(); ?>/time-attendance/freelance-time-management">
                                         Time Management Solutions</a>
-                                        <a href="#">
+                                        <a href="<?php echo site_url(); ?>/time-attendance/promoting-transparency">
                                         Transparent and Automated</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="#"><span class="title">Productivity Management
+                                    </span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
-                                        Streamlining Attendance Management</a>
-                                        <a href="#">
-                                        Time Management Solutions</a>
-                                        <a href="#">
-                                        Transparent and Automated</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Managing Freelancers and Contractors</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Insider Threats (DLP/UAM Focus)</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Maximizing ROI with Workstatus</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="#"><span class="title">Project & Task Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
-                                        Streamlining Attendance Management</a>
-                                        <a href="#">
-                                        Time Management Solutions</a>
-                                        <a href="#">
-                                        Transparent and Automated</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation">
+                                        Resource Allocation Based On Demand</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Enhancing Collaboration Across</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        AI-Enhanced Billing and Timesheet</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="dis-flex menu-column">
+                                  
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/"><span class="title">Attendance Tracking</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
-                                        Streamlining Attendance Management</a>
-                                        <a href="#">
-                                        Time Management Solutions</a>
-                                        <a href="#">
-                                        Transparent and Automated</a>
+                                        <a href="<?php echo site_url(); ?>/time-attendance/selfie-validation-attendance">
+                                        Selfie Validation, Attendance</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Efficient Attendance & Shift Scheduling</a>
+                                        <a href="<?php echo site_url(); ?>/time-attendance/revolutionizing-attendance">
+                                        Attendance with Selfie Validation</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/"><span class="title">Reporting & Analytics</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
-                                        Streamlining Attendance Management</a>
-                                        <a href="#">
-                                        Time Management Solutions</a>
-                                        <a href="#">
-                                        Transparent and Automated</a>
+                                        <a href="<?php echo site_url(); ?>/reporting-analytics/project-health-tracking">
+                                        Health Tracking of Projects</a>
+                                        <a href="<?php echo site_url(); ?>/reporting-analytics/process-improvement-insights">
+                                        Insights for Process Improvement</a>
+                                        <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-regulations-tracking">
+                                        Compliance and Regulation Tracking</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Time Tracking</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/"><span class="title">Resource Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="#">
-                                        Streamlining Attendance Management</a>
-                                        <a href="#">
-                                        Time Management Solutions</a>
-                                        <a href="#">
-                                        Transparent and Automated</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Guide to Effective Resource Allocation</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        Capacity Planning Toolkit</a>
+                                        <a href="<?php echo site_url(); ?>/">
+                                        How to Balance Team Workloads</a>
                                       </div>
-                                      <a href="https://www.workstatus.io/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="https://www.workstatus.io/staging/workforce-management/workplace-mode"><span class="title">Enterprise</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><span class="title">Enterprise</span>
                                   Innovative, future-proof software solutions </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
-                                  <a href="https://www.workstatus.io/staging/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Workforce Management</span>Comprehensive support solutions
+                                  <a href="<?php echo site_url(); ?>/workforce-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Workforce Management</span>Comprehensive support solutions
                                   </a>
-                                  <a href="https://www.workstatus.io/staging/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Workforce Optimization</span>Update your applications
+                                  <a href="<?php echo site_url(); ?>/workforce-management/workforce-optimization"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Workforce Optimization</span>Update your applications
                                   </a>
-                                  <a href="https://www.workstatus.io/staging/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Data Loss Prevention (DLP)</span>Monetize your content
+                                  <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">Data Loss Prevention (DLP)</span>Monetize your content
                                   </a>
-                                  <a href="https://www.workstatus.io/staging/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">User Activity Monitoring</span>Cloud-based software solutions
+                                  <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">User Activity Monitoring</span>Cloud-based software solutions
                                   </a>
                                 </div>
                               </div>

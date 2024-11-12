@@ -8059,13 +8059,14 @@ h3 a {
                         .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.hire-tabs .other-menu .tab-title .ser-arrow-btn {
                           right: -15px; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu {
-                    padding: 0;
+                    padding: 10px 0;
                     -ms-flex-preferred-size: 100%;
                         flex-basis: 100%; }
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column {
                       width: 100%; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column {
-                        border-top: none; }
+                        border-top: none;
+                        padding: 0; }
                         .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 {
                           -ms-flex-preferred-size: 100%;
                               flex-basis: 100%;
