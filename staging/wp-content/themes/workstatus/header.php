@@ -199,25 +199,24 @@
                             <div class="tab-content is-active">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
-                                  Effortless Time Tracking
+                                Track time, boost productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><span class="title">Time Tracking</span>
-                                    Track time, boost productivity</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/timesheet-software"><span class="title">Online Timesheets</span>
                                     Accurate timesheet, effortless tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/online-time-reporting"><span class="title">Online Time Reporting</span>
                                     Stay informed with real-time reporting</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Management</span>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/web-based-time-tracker"><span class="title">Web Based Time Tracker</span>
                                     Track attendance, optimize workforce</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/shift-management"><span class="title">Shift Management</span>
                                     Manage shifts, empower team</a>
-                                  </div>
-                                  <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">Live Location Tracking</span>
                                     Enhanced visibility, increased security</a>
+                                  </div>
+                                  <div class="flex-2">
+                                  
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time Off Management</span>
                                     Manage time for work-life balance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
@@ -226,6 +225,9 @@
                                     Track time spent on tasks</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/automatic-time-mapping"><span class="title">Automatic Time Mapping</span>
                                     Track time, anytime, anywhere
+                                    </a>
+                                    <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app "><span class="title">Habit Tracker App</span>
+                                    Track habits, achieve goals
                                     </a>
                                   </div>
                                 </div>
@@ -334,6 +336,8 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
+                                  <a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Management</span>
+                                  Track attendance, optimize workforce</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/shift-management"><span class="title">Shift Management</span>
                                     Get actionable insights with data</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-Off Management</span>
