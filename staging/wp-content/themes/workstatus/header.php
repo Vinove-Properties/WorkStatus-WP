@@ -555,7 +555,7 @@
                                         <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
                                         Streamline Project Prioritization</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        On-premise & Remote Team Management</a>
+                                        Manage in-office & remote team</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
@@ -762,7 +762,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise </span>
-                                  Innovative, future-proof software solutions</a><span class="ind-arrow-btn"></span>
+                                Scalable solutions for enterprises</a><span class="ind-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-2">
