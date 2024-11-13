@@ -209,7 +209,7 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/online-time-reporting"><span class="title">Online Time Reporting</span>
                                     Stay informed with real-time reporting</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/web-based-time-tracker"><span class="title">Web Based Time Tracker</span>
-                                    Track attendance, optimize workforce</a>
+                                    Track time, anytime, anywhere</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/shift-management"><span class="title">Shift Management</span>
                                     Manage shifts, empower team</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">Live Location Tracking</span>
@@ -222,9 +222,9 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
                                     Secure, accurate time tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-clock-app"><span class="title">Time Clock App</span>
-                                    Track time spent on tasks</a>
+                                    Dummy Text</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/automatic-time-mapping"><span class="title">Automatic Time Mapping</span>
-                                    Track time, anytime, anywhere
+                                    Track time spent on tasks
                                     </a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app "><span class="title">Habit Tracker App</span>
                                     Track habits, achieve goals
