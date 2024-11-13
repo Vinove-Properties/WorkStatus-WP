@@ -221,7 +221,7 @@ $tbl = $compCol['cards'];
               <div class="cta-cont">
                 <h2>Best  <i>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/cta-logo01.png" alt="cta"
-                    width="154" height="154">
+                    width="147" height="42">
                   </i>             Alternatives For You
                 </h2>
                 <p>Each alternative comes with unique advantages to help optimize productivity and project profitability by overcoming the limitations of We360.ai.</p>
