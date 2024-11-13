@@ -219,8 +219,8 @@ $tbl = $compCol['cards'];
                 </picture>
               </div>
               <div class="cta-cont">
-                <h2>Best     <i>
-                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/cta-logo.png" alt="cta"
+                <h2>Best  <i>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/cta-logo01.png" alt="cta"
                     width="154" height="154">
                   </i>             Alternatives For You
                 </h2>
