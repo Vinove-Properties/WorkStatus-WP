@@ -199,7 +199,7 @@
                             <div class="tab-content is-active">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
-                                Track time, boost productivity
+                                  Track time, boost productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -216,7 +216,6 @@
                                     Enhanced visibility, increased security</a>
                                   </div>
                                   <div class="flex-2">
-                                  
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time Off Management</span>
                                     Manage time for work-life balance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
@@ -336,8 +335,8 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
-                                  <a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Management</span>
-                                  Track attendance, optimize workforce</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Management</span>
+                                    Track attendance, optimize workforce</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/shift-management"><span class="title">Shift Management</span>
                                     Manage shifts, empower team</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-Off Management</span>
@@ -550,8 +549,8 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                      <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
-                                      Cross-functional Collaboration</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
+                                        Cross-functional Collaboration</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
                                         Streamline Project Prioritization</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
@@ -766,19 +765,19 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/workforce-management"><span class="title">Workforce Management</span>Innovative browser applications</a>
+                                    <a href="<?php echo site_url(); ?>/workforce-management"><span class="title">Workforce Management</span>Manage Teams, Boost Productivity</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/workforce-optimization"><span class="title">Workforce Optimization</span>
-                                    Secure, user-centric solutions</a>
+                                    Optimize workforce, achieve excellence</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention"><span class="title">Data Loss Prevention (DLP)</span>
-                                    Robust server/client expertise
+                                    Data protection you can trust
                                     </a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring
                                     </span>
-                                    Flawless UI/UX creation</a>
+                                    Enhanced insights, optimized workflow</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/payroll"><span class="title">Payroll</span>
-                                    Robust server/client expertise
+                                    Streamlined payroll, easy management
                                     </a>
                                   </div>
                                 </div>
