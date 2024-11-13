@@ -8741,6 +8741,19 @@ h3 a {
 .guide-answer h4 {
   padding: 0 0 10px; }
 
+.alter-section .data-flow img {
+  width: 100%;
+  margin: 0 auto; }
+
+.padding-t-0 {
+  padding-top: 0; }
+
+.paddng-0 {
+  padding: 0; }
+
+.padding-b-0 {
+  padding-bottom: 0; }
+
 /*All Partners Ends From Here*/
 @media (max-width: 1440px) {
   .section-numbers {

@@ -199,7 +199,7 @@
                             <div class="tab-content is-active">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
-                                  Track time, boost productivity
+                                Track Time, Boost Productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -250,7 +250,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
-                                  Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
+                                Boost productivity, drive results</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
@@ -331,7 +331,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-04.svg" class="menuicon" alt="menuicon"><span class="title">Attendance Tracking</span>
-                                  Data-driven Insights, Informed Decisions
+                                Accurate attendance, every day
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -348,7 +348,7 @@
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/best-facial-recognition-software"><span class="title">Selfie Validation</span>
                                     Verify time and attendance</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Real-time attendance tracking</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Location-based, real-time attendance</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software"><span class="title">Employee Scheduling</span>
                                     Flexible, seamless scheduling</a>
                                   </div>
@@ -394,7 +394,7 @@
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/benchmark-goals"><span class="title">Benchmark & Goals</span>Set new goals, track progress</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workforce-analytics-software"><span class="title">Workforce Analytics</span>
                                     Gain insights, make better decisions</a>
-                                    <a href="<?php echo site_url(); ?>/reporting-analytics/overtime-tracker"><span class="title">OverTime Tracker</span>
+                                    <a href="<?php echo site_url(); ?>/reporting-analytics/overtime-tracker"><span class="title">Overtime Tracker</span>
                                     Track extra hours, easily</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-reporting"><span class="title">Compliance Reporting</span>
                                     Stay compliant, avoid risks</a>
@@ -423,7 +423,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise Solutions</span>
-                                  Data-driven Insights, Informed Decisions
+                                Scalable solutions for enterprises
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -462,7 +462,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
-                                Optimize resources, boost output
+                                Optimize resources, maximize impact
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
