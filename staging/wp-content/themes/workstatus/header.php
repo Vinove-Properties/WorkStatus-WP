@@ -261,7 +261,8 @@
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>
-                                    Manage tasks, prioritize goals</a>
+                                    Balance workloads, avoid burnout
+                                    </a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout"><span class="title">Employee Burnout</span>
                                     Prevent burnout, promote well-being</a>
                                   </div>
@@ -347,9 +348,9 @@
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/best-facial-recognition-software"><span class="title">Selfie Validation</span>
                                     Verify time and attendance</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>GPS-based Attendance Tracking</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Real-time attendance tracking</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software"><span class="title">Employee Scheduling</span>
-                                    Easy scheduling for efficiency boost</a>
+                                    Flexible, seamless scheduling</a>
                                   </div>
                                 </div>
                               </div>
@@ -461,19 +462,19 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
-                                  Innovative, future-proof software solutions
+                                Optimize resources, boost output
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Resource Allocation</span>Innovative browser applications</a>
+                                    <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Resource Allocation</span>Smart resource allocation</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management "><span class="title">Workload Management</span>
                                     Robust server/client expertise
                                     </a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software "><span class="title">Employee Scheduling </span>
-                                    Secure, user-centric solutions</a>
+                                    Flexible, seamless scheduling</a>
                                   </div>
                                 </div>
                               </div>
