@@ -198,7 +198,7 @@
                           <div class="right-tabs">
                             <div class="tab-content is-active">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
                                   Effortless Time Tracking
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -248,7 +248,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-04.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
                                   Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -284,7 +284,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-02.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-03.svg" class="menuicon" alt="menuicon"><span class="title">Project & Task Management</span>
                                   Manage Teams, Boost Productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -328,7 +328,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-03.svg" class="menuicon" alt="menuicon"><span class="title">Attendance Tracking</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-04.svg" class="menuicon" alt="menuicon"><span class="title">Attendance Tracking</span>
                                   Data-driven Insights, Informed Decisions
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -369,7 +369,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/reporting-analytics"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-03.svg" class="menuicon" alt="menuicon"><span class="title">Reporting & Analytics</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/reporting-analytics"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-05.svg" class="menuicon" alt="menuicon"><span class="title">Reporting & Analytics</span>
                                   Data-driven Insights, Informed Decisions
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -418,7 +418,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-03.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise Solutions</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise Solutions</span>
                                   Data-driven Insights, Informed Decisions
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -457,7 +457,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-03.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
                                   Innovative, future-proof software solutions
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -757,7 +757,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/prod-01.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise </span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise </span>
                                   Innovative, future-proof software solutions</a><span class="ind-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
