@@ -187,7 +187,7 @@
                 <ul>
                   <li>Manage Remote, Hybrid, In-Office Teams</li>
                   <!-- <li>All-in-One Workforce Management</li> -->
-                  <li>Advanced Time Tracking and Attendance</li>
+                  <li>Advanced Time Tracking & Attendance</li>
                   <li>Real-Time Productivity Analytics</li>
                   <!-- 
                   <li>Manage Remote, Hybrid, In-Office Teams</li>
