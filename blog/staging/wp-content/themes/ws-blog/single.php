@@ -185,15 +185,18 @@
               <div class="cus-cont">
                 <div class="cushed">Get Started with Workstatus</div>
                 <ul>
-                  <li>Manage Remote, Hybrid, In-Office Teams</li>
-                  <!-- <li>All-in-One Workforce Management</li> -->
-                  <li>Advanced Time Tracking & Attendance</li>
-                  <li>Real-Time Productivity Analytics</li>
                   <!-- 
+                  <li>Manage Remote, Hybrid, In-Office Teams</li>
+                  <li>All-in-One Workforce Management</li>
+                  <li>Advanced Time Tracking & Attendance</li>
+                  <li>Real-Time Productivity Analytics</li>                  
                   <li>Manage Remote, Hybrid, In-Office Teams</li>
                   <li>All-in-One Workforce Management</li>
                   <li>Real-Time Productivity Analytics</li>
                   -->
+                  <li>Project & Task Management</li>
+                  <li>Time Tracking & Attendance</li>
+                  <li>Workforce/Productivity Analytics</li>
                 </ul>
                 <div class="btn-container">
                   <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
