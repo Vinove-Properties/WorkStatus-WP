@@ -1206,6 +1206,9 @@ h3 a {
         border-color: #051441;
         color: #fff; }
 
+.header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .tab-title a.no-link {
+  cursor: default; }
+
 @media screen and (max-width: 1700px) {
   .header-two .header-item-right .menu ul li .menu-mega.small-menu {
     left: 57%; }

@@ -249,7 +249,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
                                   Plan & Manage Tasks Better</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -461,7 +461,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
                                 Optimize resources, boost output
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -528,7 +528,7 @@
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="#"><span class="title">Productivity Management
+                                    <div class="tab-title"><a href="#" class="no-link"><span class="title">Productivity Management
                                       </span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
@@ -595,7 +595,7 @@
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/"><span class="title">Resource Management</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><span class="title">Resource Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
