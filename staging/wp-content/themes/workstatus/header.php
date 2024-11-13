@@ -520,7 +520,7 @@
                                         <a href="<?php echo site_url(); ?>/time-attendance/freelance-time-management">
                                         Time Management for Freelancers</a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/timesheet-validation">
-                                        Future of Invoicing: AI Timesheet Validation</a>
+                                        AI Timesheet Validation</a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/timesheets-in-minutes">
                                         Automated Timesheet Generation</a>
                                       </div>
@@ -534,28 +534,28 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
-                                        Enhancing Collaboration Across Functions</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
-                                        Prioritizing Projects for Stress Reduction and Efficiency</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        Team Management for On-Premise and Remote Environments</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/work-from-home-monitoring">
+                                        Work From Home Monitoring</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/field-service-management">
+                                        Field Service Operations Management</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
+                                        Promoting Employee Well-being</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="#"><span class="title">Project & Task Management</span>
+                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><span class="title">Project & Task Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
-                                        Enhancing Collaboration Across Functions</a>
+                                      <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
+                                      Cross-functional Collaboration</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
-                                        Prioritizing Projects for Stress Reduction and Efficiency </a>
+                                        Streamline Project Prioritization</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        Team Management for On-Premise and Remote Environments</a>
+                                        On-premise & Remote Team Management</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
@@ -602,10 +602,10 @@
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation">
                                         Resource Allocation Based On Demand</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/optimizing-workforce-allocation">
-                                        AI-Powered Workforce Allocation and Scheduling</a>
+                                        <a href="<?php echo site_url(); ?>workforce-management/optimizing-workforce-allocation">
+                                        AI-Powered Workforce Optimization</a>
                                         <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management">
-                                        Workload Management: AI-Driven Scheduling Optimization</a>
+                                        AI-Driven Scheduling Optimization</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
