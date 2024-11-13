@@ -199,7 +199,7 @@
                             <div class="tab-content is-active">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
-                                Track Time, Boost Productivity
+                                  Track Time, Boost Productivity
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -250,7 +250,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
-                                Boost productivity, drive results</a><span class="ser-arrow-btn"></span>
+                                  Boost productivity, drive results</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
@@ -331,7 +331,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-04.svg" class="menuicon" alt="menuicon"><span class="title">Attendance Tracking</span>
-                                Accurate attendance, every day
+                                  Accurate attendance, every day
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -423,7 +423,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise Solutions</span>
-                                Scalable solutions for enterprises
+                                  Scalable solutions for enterprises
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -462,7 +462,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
-                                Optimize resources, maximize impact
+                                  Optimize resources, maximize impact
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -762,7 +762,7 @@
                             <div class="tab-content">
                               <div class="three-column">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise </span>
-                                Scalable solutions for enterprises</a><span class="ind-arrow-btn"></span>
+                                  Scalable solutions for enterprises</a><span class="ind-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-2">
