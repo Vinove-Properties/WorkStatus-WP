@@ -222,7 +222,7 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
                                     Secure, accurate time tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-clock-app"><span class="title">Time Clock App</span>
-                                    Dummy Text</a>
+                                    Simplify HR workflow</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/automatic-time-mapping"><span class="title">Automatic Time Mapping</span>
                                     Track time spent on tasks
                                     </a>
@@ -256,15 +256,15 @@
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-productivity-tracking"><span class="title">Employee Productivity</span>
-                                    Track time, boost productivity</a>
+                                    Boost productivity, drive results</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app"><span class="title">Habit Tracker App</span>
-                                    Accurate timesheet, effortless tracking</a>
+                                    Track habits, achieve goals</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>
-                                    Enhanced visibility, increased security</a>
+                                    Manage tasks, prioritize goals</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout"><span class="title">Employee Burnout</span>
-                                    Secure, accurate time tracking</a>
+                                    Prevent burnout, promote well-being</a>
                                   </div>
                                 </div>
                               </div>
@@ -293,21 +293,21 @@
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/project-budgeting-software"><span class="title">Project Budgeting</span>
-                                    Track time, boost productivity</a>
+                                    Track costs, maximize ROI</a>
                                     <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>
-                                    Accurate timesheet, effortless tracking</a>
+                                    Manage invoices, track payments</a>
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp Meetings</span>
-                                    Secure, user-centric solutions</a>
+                                    Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile Project Management</span>
-                                    Track attendance, optimize workforce</a>
+                                    TFlexible workflows, faster results</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint Planning</span>
-                                    Enhanced visibility, increased security</a>
+                                    Deliver value, iterate fast</a>
                                     <a href="<?php echo site_url(); ?>/project-management/epics"><span class="title">Epics & Story Management</span>
-                                    Secure, accurate time tracking</a>
+                                    Focus on key initiatives</a>
                                     <a href="<?php echo site_url(); ?>/project-management/task-management"><span class="title">Task Management</span>
-                                    Manage shifts, empower team</a>
+                                    Prioritize, track, & collaborate</a>
                                   </div>
                                 </div>
                               </div>
@@ -339,18 +339,18 @@
                                   <a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Management</span>
                                   Track attendance, optimize workforce</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/shift-management"><span class="title">Shift Management</span>
-                                    Get actionable insights with data</a>
+                                    Manage shifts, empower team</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-Off Management</span>
-                                    Optimize digital workflows</a>
+                                    Manage time for work-life balance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
-                                    Real-time location insights</a>
+                                    Secure, accurate time tracking</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/best-facial-recognition-software"><span class="title">Selfie Validation</span>
-                                    Track impact, drive results</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Set new goals, track progress</a>
+                                    Verify time and attendance</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>GPS-based Attendance Tracking</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software"><span class="title">Employee Scheduling</span>
-                                    Gain insights, make better decisions</a>
+                                    Easy scheduling for efficiency boost</a>
                                   </div>
                                 </div>
                               </div>
@@ -399,7 +399,7 @@
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-reporting"><span class="title">Compliance Reporting</span>
                                     Stay compliant, avoid risks</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/meeting-insights"><span class="title">Meeting Insights</span>
-                                    Stay compliant, avoid risks</a>
+                                    Make meetings more productive</a>
                                   </div>
                                 </div>
                               </div>
@@ -429,16 +429,16 @@
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management"><span class="title">Workforce Management</span>
-                                    Track time, boost productivity</a>
+                                    Manage Teams, Boost Productivity</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/workforce-optimization"><span class="title">Workforce Optimization</span>
-                                    Accurate timesheet, effortless tracking</a>
+                                    Optimize workforce, achieve excellence</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention"><span class="title">Data Loss Prevention (DLP)</span>
-                                    Accurate timesheet, effortless tracking</a>
+                                    Data protection you can trust</a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring</span>Enhanced visibility, increased security</a>
+                                    <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring</span>Enhanced insights, optimized workflow</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/payroll"><span class="title">Payroll</span>
-                                    Simplify time-off, improve work-life balance</a>
+                                    Streamlined payroll, easy management</a>
                                   </div>
                                 </div>
                               </div>
