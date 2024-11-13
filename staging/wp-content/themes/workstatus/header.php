@@ -555,7 +555,7 @@
                                         <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
                                         Streamline Project Prioritization</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        Manage in-office & remote teams</a>
+                                        Manage in-office & remote team</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
                                     </div>
