@@ -191,6 +191,51 @@ $tbl = $compCol['cards'];
 </section>
 <?php endif; ?>
 
+
+
+
+<section class="alter-section padding-0">
+          <div class="container">
+            <div class="top-section">
+              <h2>We360.ai</h2>
+              <p> We know you might have questions, so here’s a clear comparison to help you understand the differences:
+              </p>
+            </div>
+            <div class="data-flow">
+              <picture>
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/altn-01.svg" alt="Data Driving"
+                  width="1354" height="652">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="alter-cta padding-0">
+          <div class="container">
+            <div class="cta-wrap">
+              <div class="cta-box">
+                <picture>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/alt-cta01.png"
+                    alt="Alternative" width="91" height="91">
+                </picture>
+              </div>
+              <div class="cta-cont">
+                <h2>Best     <i>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/cta-logo.png" alt="cta"
+                    width="154" height="154">
+                  </i>             Alternatives For You
+                </h2>
+                <p>Each alternative comes with unique advantages to help optimize productivity and project profitability by overcoming the limitations of We360.ai.</p>
+              </div>
+              <div class="cta-box cta-box2">
+                <picture>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/alt-cta02.png"
+                    alt="Alternative" width="136" height="151">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
 <?php 
 $wsFeatures = get_field('more-fetures');
 if( isset($wsFeatures['is_enabled']) && ($wsFeatures['is_enabled'] == "yes") ) :
