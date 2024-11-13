@@ -613,7 +613,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><span class="title">Enterprise</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><span class="title">Enterprises</span>
                                   Innovative, future-proof software solutions </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
@@ -644,7 +644,7 @@
                             <ul class="tab-nav">
                               <li class="tab-link is-active"><a href="<?php echo site_url(); ?>/industry">Industries</a></li>
                               <li class="tab-link"><a href="javascript:void(0);">By Role</a></li>
-                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management/enterprise">Enterprise</a></li>
+                              <li class="tab-link"><a href="<?php echo site_url(); ?>/workforce-management/enterprise">Enterprises</a></li>
                             </ul>
                           </div>
                           <div class="right-tabs">
@@ -761,7 +761,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprise </span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/workforce-management/enterprise"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-06.svg" class="menuicon" alt="menuicon"><span class="title">Enterprises</span>
                                   Scalable solutions for enterprises</a><span class="ind-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
