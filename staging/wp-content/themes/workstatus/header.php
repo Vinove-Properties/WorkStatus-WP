@@ -346,7 +346,7 @@
                                     Secure, accurate time tracking</a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/best-facial-recognition-software"><span class="title">Selfie Validation</span>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/facial-recognition-software"><span class="title">Selfie Validation</span>
                                     Verify time and attendance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Location-based, real-time attendance</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software"><span class="title">Employee Scheduling</span>
@@ -602,7 +602,7 @@
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation">
                                         Resource Allocation Based On Demand</a>
-                                        <a href="<?php echo site_url(); ?>workforce-management/optimizing-workforce-allocation">
+                                        <a href="<?php echo site_url(); ?>/workforce-management/optimizing-workforce-allocation">
                                         AI-Powered Workforce Optimization</a>
                                         <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management">
                                         AI-Driven Scheduling Optimization</a>
