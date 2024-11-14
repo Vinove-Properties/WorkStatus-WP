@@ -61,6 +61,7 @@ function ws_blog_setup() {
         )
     );
     add_image_size('webp_thumb', 356, 215, true);
+    show_admin_bar(false);
 }
 add_action( 'after_setup_theme', 'ws_blog_setup' );
 
