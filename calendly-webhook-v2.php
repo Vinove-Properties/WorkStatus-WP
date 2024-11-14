@@ -1428,6 +1428,11 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $pageUrl        = $json['payload']['tracking']['utm_term'];
     }
 
+    $defLeadSrc = (empty($pageUrl)) ? 'Calendly Direct' : 'Website: Direct';
+
+    $leadSource = (empty($utm_source)) ? $defLeadSrc : $utm_source;
+
+
     $flds       = $json['payload']['questions_and_answers'];
     $phone      = $flds[0]['answer'];
     $company    = $flds[1]['answer'];
@@ -1455,7 +1460,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
 
     $body .= "IP Address : ".get_visitor_ip().$varDeliminator;
     $body .= "Page Url : ".$pageUrl.$varDeliminator;
-    $body .= "Lead Source : ".$varLeadSource.$varDeliminator;
+    $body .= "Lead Source : ".$leadSource.$varDeliminator;
     $body .= "Referer Url : ".$referalurl.$varDeliminator;
 
     $body .= "UTM Source : ".$utm_source.$varDeliminator;
@@ -1533,7 +1538,8 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'Company'       => $company,
     'Country_1'     => $country,
     'Phone'         => $phone,
-    'Lead_Source'   => "Calendly Direct",
+    //'Lead_Source'   => "Calendly Direct",
+    'Lead_Source'   => $leadSource,
     'Lead_Status'   => "Demo Scheduled",
     //'Lead_Status'   => "Demo Scheduled";  
     'Owner'         => $owner_id,
