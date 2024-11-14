@@ -111,20 +111,15 @@ if( $mServicesRows ){
           // </li>';
           // }
           echo '<li class="active" data-tab="#tab01"><a href="#tab01"><span class="icon">
-          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Time Tracking</a>
-          </li>';
-          echo '<li class="" data-tab="#tab01"><a href="#tab01"><span class="icon">
-          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Productivity Management</a>
-          </li>';
-          echo '<li class="" data-tab="#tab01"><a href="#tab01"><span class="icon">
-          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Project & Task Management</a>
-          </li>';
-          echo '<li class="" data-tab="#tab01"><a href="#tab01"><span class="icon">
-          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Attendance Tracking</a>
-          </li>';
-          echo '<li class="" data-tab="#tab01"><a href="#tab01"><span class="icon">
-          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Reporting & Analytics</a>
-          </li>';
+          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Time Tracking</a></li>';
+          echo '<li class="" data-tab="#tab01"><a href="#tab02"><span class="icon">
+          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Productivity Management</a></li>';
+          echo '<li class="" data-tab="#tab01"><a href="#tab03"><span class="icon">
+          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Project & Task Management</a></li>';
+          echo '<li class="" data-tab="#tab01"><a href="#tab04"><span class="icon">
+          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Attendance Tracking</a></li>';
+          echo '<li class="" data-tab="#tab01"><a href="#tab05"><span class="icon">
+          <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Reporting & Analytics</a></li>';
           /*echo '<li class="" data-tab="#tab01"><a href="#tab01"><span class="icon">
           <img class="show" loading="lazy" src="http://localhost/workstatus.io/staging/wp-content/uploads/2024/05/tab-h01.svg" alt="Icon" width="25" height="25"></span>Enterprises</a>
           </li>';*/
