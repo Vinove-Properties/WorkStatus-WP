@@ -7837,6 +7837,9 @@ h3 a {
 @media (max-width: 1380px) {
   .usecase-tabs .tab-nav ul li a {
     font-size: 14px; } }
+@media (max-width: 1280px) {
+  .usecase-tabs .tab-nav ul li a {
+    font-size: 13px; } }
 @media (max-width: 1024px) {
   .usecase-tabs .tab-nav ul {
     flex-wrap: wrap;
