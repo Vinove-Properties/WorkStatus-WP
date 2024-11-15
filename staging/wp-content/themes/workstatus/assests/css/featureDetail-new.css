@@ -7842,7 +7842,8 @@ h3 a {
     flex-wrap: wrap;
     justify-content: space-between; }
     .usecase-tabs .tab-nav ul li {
-      flex-basis: 33.33%; }
+      flex-basis: 33.33%;
+      row-gap: 5px; }
       .usecase-tabs .tab-nav ul li a {
         padding: 10px 15px;
         flex-direction: column;
