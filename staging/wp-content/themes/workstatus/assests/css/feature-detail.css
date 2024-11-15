@@ -9897,270 +9897,558 @@ h3 a {
 .bg-light {
   background: rgba(250, 248, 254, 0.5); }
 
-.featuredt-banner {
+/*banner scetion */
+.banner-section {
   width: 100%;
+  padding: 115px 0;
   background: #4231AC;
-  position: relative;
-  padding: 150px 0 0;
-  color: #fff; }
-  .featuredt-banner:after {
+  position: relative; }
+  .banner-section:after {
     content: "";
-    width: 100%;
-    background: url(../images/inner-banner-bg.png) no-repeat;
     position: absolute;
-    left: 0;
-    bottom: 240px;
-    height: 252px;
-    background-size: 100% 100%; }
-  .featuredt-banner:before {
+    width: 830px;
+    height: 830px;
+    top: 5px;
+    background: url(../images/shape-home1.png) no-repeat;
+    right: 0;
+    background-size: 100%; }
+    @media screen and (max-width: 575px) {
+      .banner-section:after {
+        display: none; } }
+  .banner-section:before {
     content: "";
-    width: 100%;
-    background: #fff;
     position: absolute;
-    left: 0;
+    width: 221px;
+    height: 256px;
     bottom: 0;
-    height: 240px; }
-  .featuredt-banner h1 {
-    font-weight: 700; }
-  .featuredt-banner .inner-wrap {
-    color: #fff;
-    text-align: center; }
-    .featuredt-banner .inner-wrap h1 {
-      color: #fff; }
-    .featuredt-banner .inner-wrap p {
-      color: #fff;
-      font-size: 18px;
-      line-height: 29px;
-      margin: 0 0 10px; }
-      .featuredt-banner .inner-wrap p a {
+    background: url(../images/shape-home3.png) no-repeat;
+    left: 0;
+    background-size: 100%; }
+    @media screen and (max-width: 575px) {
+      .banner-section:before {
+        display: none; } }
+  .banner-section .container {
+    position: initial;
+    position: relative; }
+  .banner-section .home-section {
+    position: relative; }
+    .banner-section .home-section .flex_row {
+      align-items: flex-start; }
+      .banner-section .home-section .flex_row .column-content {
         color: #fff;
-        text-decoration: underline; }
-        .featuredt-banner .inner-wrap p a:hover {
-          text-decoration: none; }
-    .featuredt-banner .inner-wrap .actionBtn {
-      justify-content: center;
-      margin: 40px 0; }
-      .featuredt-banner .inner-wrap .actionBtn a {
-        border: 1px solid #fff;
-        color: #fff;
-        border-radius: 30px;
-        padding: 14px 30px;
-        min-width: 206px;
-        display: flex !important;
-        position: relative;
-        text-align: center;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        align-items: center;
-        justify-content: center; }
-        .featuredt-banner .inner-wrap .actionBtn a.ftbtn1 {
-          background: #fff;
-          color: #171227; }
-          .featuredt-banner .inner-wrap .actionBtn a.ftbtn1:after {
-            background: url(../images/trail01.svg) no-repeat;
-            content: "";
+        width: 55%;
+        position: relative; }
+        .banner-section .home-section .flex_row .column-content .cont-wrap {
+          padding: 0 50px 0 0; }
+        .banner-section .home-section .flex_row .column-content h6, .banner-section .home-section .flex_row .column-content p {
+          margin-bottom: 20px; }
+          .banner-section .home-section .flex_row .column-content h6 .bg-purple, .banner-section .home-section .flex_row .column-content p .bg-purple {
+            font-size: 16px;
+            font-weight: normal;
+            border-radius: 10px;
+            color: #ffffff;
+            background: #4a38b9;
+            padding: 6px 24px;
             display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-left: 12px;
-            background-size: 16px;
-            vertical-align: middle; }
-          .featuredt-banner .inner-wrap .actionBtn a.ftbtn1:hover {
-            color: #fff;
-            border-color: #051441;
-            background: #051441; }
-            .featuredt-banner .inner-wrap .actionBtn a.ftbtn1:hover:after {
-              background: url(../images/trail02.svg) no-repeat; }
-        .featuredt-banner .inner-wrap .actionBtn a.ftbtn2:after {
-          background: url(../images/demo-01.svg) no-repeat;
-          content: "";
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          margin-left: 12px;
-          background-size: 20px;
-          vertical-align: middle; }
-        .featuredt-banner .inner-wrap .actionBtn a.ftbtn2:hover {
+            border: 1px solid #5a49c2; }
+        .banner-section .home-section .flex_row .column-content h1 {
           color: #fff;
-          border-color: #051441;
-          background: #051441; }
-      .featuredt-banner .inner-wrap .actionBtn small {
-        font-size: 12px; }
-  .featuredt-banner .video-wrap {
-    width: 100%; }
-  .featuredt-banner .videoSc {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 9; }
-    .featuredt-banner .videoSc .inner {
-      position: relative;
-      overflow: hidden;
-      pointer-events: none;
-      height: 100%;
-      transform: scale(1, 0.95);
-      transition: all 0.3s; }
-      .featuredt-banner .videoSc .inner .image {
+          margin: 0 0 20px;
+          font-size: 64px;
+          line-height: 88px;
+          font-weight: 400; }
+          .banner-section .home-section .flex_row .column-content h1 strong {
+            font-weight: 600; }
+        .banner-section .home-section .flex_row .column-content p {
+          color: #cdcdcd;
+          font-size: 16px;
+          line-height: 26px;
+          margin: 0 0 25px; }
+          .banner-section .home-section .flex_row .column-content p a {
+            color: #fff;
+            text-decoration: underline; }
+            .banner-section .home-section .flex_row .column-content p a:hover {
+              text-decoration: none; }
+        .banner-section .home-section .flex_row .column-content ul {
+          padding: 0; }
+          .banner-section .home-section .flex_row .column-content ul li {
+            color: #fff;
+            font-size: 18px;
+            line-height: 29px;
+            padding-left: 30px;
+            position: relative;
+            margin: 0 0 12px; }
+            .banner-section .home-section .flex_row .column-content ul li:after {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              top: 5px;
+              background: url(../images/banner-check.svg) no-repeat;
+              left: 0; }
+              @media screen and (max-width: 575px) {
+                .banner-section .home-section .flex_row .column-content ul li:after {
+                  background-size: 100%;
+                  width: 14px;
+                  height: 14px; } }
+        .banner-section .home-section .flex_row .column-content .actionBtn {
+          margin: 50px 0 40px; }
+          @media screen and (max-width: 575px) {
+            .banner-section .home-section .flex_row .column-content .actionBtn {
+              flex-wrap: wrap;
+              margin-top: 30px 0;
+              align-items: flex-start; } }
+          .banner-section .home-section .flex_row .column-content .actionBtn div {
+            margin: 0 23px 0 0; }
+            @media screen and (max-width: 1024px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn div {
+                margin: 0 10px; } }
+            @media screen and (max-width: 575px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn div {
+                margin: 0 auto 15px;
+                width: 48%; } }
+            .banner-section .home-section .flex_row .column-content .actionBtn div:last-child {
+              margin: 0; }
+          .banner-section .home-section .flex_row .column-content .actionBtn a {
+            min-width: 210px;
+            display: block !important;
+            margin: 0 0 8px 0;
+            border-radius: 30px; }
+            @media screen and (max-width: 1024px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn a {
+                margin: 0 0 10px 0; } }
+          .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1 {
+            background: #fff;
+            color: #171227;
+            border: 1px solid #ffffff;
+            padding: 14px 30px;
+            position: relative; }
+            .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1:after {
+              content: "";
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-left: 10px;
+              background-size: 24px !important;
+              vertical-align: middle;
+              background: url(../images/button-arw.png) no-repeat; }
+            .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1:hover {
+              background: #051441;
+              color: #fff;
+              border-color: #051441; }
+              .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1:hover:after {
+                background: url(../images/button-arwhover.png) no-repeat; }
+            @media screen and (max-width: 575px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1 {
+                padding: 10px 10px 8px !important;
+                font-size: 12px !important; } }
+          .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
+            border: 1px solid #ffffff;
+            cursor: pointer;
+            color: #fff;
+            padding: 14px 30px; }
+            .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2:after {
+              content: "";
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-left: 10px;
+              background-size: 24px !important;
+              vertical-align: middle;
+              background: url(../images/clock-icon.png) no-repeat; }
+            .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2:hover {
+              background: #051441;
+              color: #fff;
+              border-color: #051441; }
+            @media screen and (max-width: 575px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
+                padding: 10px 10px 8px !important;
+                font-size: 12px !important; } }
+          .banner-section .home-section .flex_row .column-content .actionBtn small {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+            color: #f1efff;
+            line-height: 18px;
+            font-weight: 500; }
+            @media screen and (max-width: 1024px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn small {
+                font-size: 11px;
+                line-height: 14px; }
+                .banner-section .home-section .flex_row .column-content .actionBtn small br {
+                  display: none; } }
+            @media screen and (max-width: 575px) {
+              .banner-section .home-section .flex_row .column-content .actionBtn small {
+                text-align: center;
+                padding: 0 10px; } }
+        .banner-section .home-section .flex_row .column-content .av-device {
+          margin: 0 0 20px; }
+        .banner-section .home-section .flex_row .column-content .partwrap {
+          width: 100%;
+          position: relative;
+          display: flex;
+          gap: 10px;
+          max-width: 465px; }
+          .banner-section .home-section .flex_row .column-content .partwrap .part-col {
+            flex-basis: 25%;
+            text-align: center;
+            padding: 2px 5px 10px;
+            border-radius: 9px;
+            border: 1px solid #4f3fb6;
+            background: #3b28aa;
+            cursor: pointer; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col .part-logo {
+              width: 93px;
+              height: 32px;
+              display: block;
+              position: relative;
+              margin: 0 auto;
+              background-position: center;
+              opacity: 0.8; }
+              .banner-section .home-section .flex_row .column-content .partwrap .part-col .part-logo.part-logo1 {
+                background: url(../images/hicon-01.svg) no-repeat; }
+              .banner-section .home-section .flex_row .column-content .partwrap .part-col .part-logo.part-logo2 {
+                background: url(../images/hicon-02.svg) no-repeat; }
+              .banner-section .home-section .flex_row .column-content .partwrap .part-col .part-logo.part-logo3 {
+                background: url(../images/hicon-03.svg) no-repeat; }
+              .banner-section .home-section .flex_row .column-content .partwrap .part-col .part-logo.part-logo4 {
+                background: url(../images/hicon-04.svg) no-repeat;
+                width: 78px; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col p {
+              font-size: 12px;
+              color: #897ecc;
+              margin: 0 0 5px;
+              font-weight: 600;
+              line-height: 1; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col .star-icon {
+              display: block;
+              line-height: 8px;
+              opacity: 0.8; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col:hover .part-logo {
+              opacity: 1; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col:hover .star-icon {
+              opacity: 1; }
+            .banner-section .home-section .flex_row .column-content .partwrap .part-col:hover p {
+              color: #bdb3f9; }
+    .banner-section .home-section .videoSc {
+      width: 800px;
+      position: absolute;
+      right: -20px;
+      top: -60px;
+      z-index: 9; }
+      .banner-section .home-section .videoSc .inner {
         position: relative;
-        background: #597cff;
-        height: 630px;
-        transition: all 0.3s; }
-      .featuredt-banner .videoSc .inner .cover {
+        overflow: hidden;
+        pointer-events: none;
+        height: 100%; }
+        .banner-section .home-section .videoSc .inner .image {
+          position: relative;
+          background: #597cff;
+          height: 645px;
+          transition: all 0.3s; }
+        .banner-section .home-section .videoSc .inner .cover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 5;
+          background: center center/cover no-repeat;
+          width: 100%;
+          height: 100%;
+          transition: z-index 0s, opacity 0.3s; }
+        .banner-section .home-section .videoSc .inner .image[data-video] video {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.3s; }
+        .banner-section .home-section .videoSc .inner .play {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          z-index: 5;
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          transition: opacity 0.3s; }
+          .banner-section .home-section .videoSc .inner .play:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: -20px 0 0 -20px; }
+        .banner-section .home-section .videoSc .inner .text {
+          padding: 4rem 2rem;
+          background: #fff;
+          box-sizing: border-box;
+          text-align: center;
+          color: #fff;
+          transition: all 0.3s; }
+          .banner-section .home-section .videoSc .inner .text h3 {
+            color: #333;
+            font-size: 3rem; }
+          .banner-section .home-section .videoSc .inner .text p {
+            margin: 0 0 1rem;
+            color: #757357;
+            font-size: 2rem; }
+      .banner-section .home-section .videoSc .contbox2 {
+        width: 100%;
+        position: relative;
+        background: transparent;
+        overflow: hidden; }
+      .banner-section .home-section .videoSc .topVideo {
+        width: 100%; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper iframe {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 5;
-        background: center center/cover no-repeat;
         width: 100%;
         height: 100%;
-        transition: z-index 0s, opacity 0.3s; }
-      .featuredt-banner .videoSc .inner .image[data-video] video {
+        z-index: 99; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper {
+        min-height: 760px;
+        padding-bottom: initial; }
+        @media screen and (max-width: 575px) {
+          .banner-section .home-section .videoSc .topVideo .videoWrapper {
+            min-height: 280px; } }
+      .banner-section .home-section .videoSc .srp-1 .videoPoster {
+        background-size: cover;
+        background-position: center;
+        background-color: transparent;
+        background-size: 100%;
+        background-repeat: no-repeat; }
+      .banner-section .home-section .videoSc:hover .inner {
+        pointer-events: auto;
+        opacity: 1; }
+      .banner-section .home-section .videoSc .topVideo button {
         width: 100%;
         height: 100%;
-        opacity: 0;
-        transition: opacity 0.3s; }
-      .featuredt-banner .videoSc .inner .play {
         position: absolute;
-        top: 50%;
+        z-index: 99;
+        top: 0;
         left: 0;
-        z-index: 5;
-        cursor: pointer;
+        font-size: 0;
+        border: none;
+        outline: 0; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
-        transition: opacity 0.3s; }
-        .featuredt-banner .videoSc .inner .play:before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          margin: -20px 0 0 -20px; }
-      .featuredt-banner .videoSc .inner .text {
-        padding: 4rem 2rem;
-        background: #fff;
-        box-sizing: border-box;
-        text-align: center;
-        color: #fff;
-        transition: all 0.3s; }
-        .featuredt-banner .videoSc .inner .text h3 {
-          color: #333;
-          font-size: 3rem; }
-        .featuredt-banner .videoSc .inner .text p {
-          margin: 0 0 1rem;
-          color: #757357;
-          font-size: 2rem; }
-    .featuredt-banner .videoSc .contbox2 {
-      width: 100%;
-      position: relative;
-      background: transparent;
-      overflow: hidden; }
-    .featuredt-banner .videoSc .topVideo {
-      width: 100%; }
-    .featuredt-banner .videoSc .topVideo .videoWrapper iframe {
-      border: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 999; }
-    .featuredt-banner .videoSc .srp-1 .videoPoster .playicon {
-      top: 45%;
-      left: 55%;
-      margin-top: 0; }
-    .featuredt-banner .videoSc .videoPoster .playicon {
-      width: 64px;
-      height: 64px;
-      background: url(../images/playicon.svg) center center/contain no-repeat;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-top: -35px;
-      transform: translateX(-50%) translateY(-50%);
-      cursor: pointer; }
-    .featuredt-banner .videoSc .videoPoster .playicon span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      background: #695eee;
-      opacity: 0.3;
-      width: 83px;
-      height: 83px;
-      border-radius: 50%;
-      margin: -43px 0 0 -43px; }
-    .featuredt-banner .videoSc .videoPoster .playicon:after,
-    .featuredt-banner .videoSc .videoPoster .playicon:before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 62px;
-      height: 62px;
-      border-radius: 50%;
-      margin: -31px 0 0 -31px;
-      box-shadow: 0 0 0 0 #695eee;
-      opacity: 0.5;
-      animation: client-slider-play-button-2 1.4s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-    .featuredt-banner .videoSc .videoPoster .playicon:before {
-      animation: client-slider-play-button-1 1.4s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; }
-    .featuredt-banner .videoSc .topVideo .videoWrapper {
-      min-height: 600px;
-      padding-bottom: initial; }
-      @media screen and (max-width: 575px) {
-        .featuredt-banner .videoSc .topVideo .videoWrapper {
-          min-height: 300px; } }
-    .featuredt-banner .videoSc:hover .inner {
-      pointer-events: auto;
-      opacity: 1; }
-    .featuredt-banner .videoSc:hover .inner {
-      pointer-events: auto;
-      opacity: 1; }
-    .featuredt-banner .videoSc .topVideo .contbox2 button {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 99;
-      top: 0;
-      left: 0;
-      font-size: 0;
-      border: none;
-      outline: 0;
-      background-color: transparent; }
-    .featuredt-banner .videoSc .topVideo .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 99; }
-  .featuredt-banner .videoWrapperActive iframe {
-    z-index: 9999 !important; }
-  .featuredt-banner .contbox2 iframe {
-    opacity: 0; }
-@keyframes client-slider-play-button-1 {
+        z-index: 99;
+        border: 0; }
+      .banner-section .home-section .videoSc .popup-content {
+        height: 505px;
+        width: 900px; }
+    .banner-section .home-section .videoWrapperActive iframe {
+      z-index: 999 !important; }
+
+.banner-section .playsc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  margin: -43px 0 0 -43px;
+  transition: 0.4s ease-in-out; }
+  .banner-section .playsc::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background: #695eee;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc .playicon {
+    width: 100%;
+    height: 100%;
+    background: url(../images/playicon.svg) center center/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc:hover .playicon {
+    top: 10px;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc:hover:before {
+    width: 103px;
+    height: 103px;
+    left: -20px;
+    transition: 0.4s ease-in-out; }
+
+/* For styling the demo. Not required. */
+/*Popup Section*/
+#myBtn {
+  position: absolute;
+  top: 40%;
+  left: 120px;
+  right: 0;
+  margin: 0 auto;
+  width: 120px;
+  z-index: 999;
+  height: 120px;
+  border: 0;
+  background: transparent;
+  font-size: 0;
+  cursor: pointer; }
+
+.videoPopup {
+  position: relative; }
+
+.popup-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.popWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.popup-content {
+  background-color: #fefefe;
+  margin: auto;
+  height: 542px;
+  width: 60%;
+  position: relative; }
+
+.close {
+  background: url("../images/cross-icon.png") no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  float: right;
+  z-index: 1;
+  position: absolute;
+  right: -36px;
+  top: 0;
+  border-radius: 100%; }
+
+.close:hover,
+.close:focus {
+  opacity: 0.5;
+  cursor: pointer; }
+
+/*Popup Section End*/
+/*banner end*/
+.banner-section .playsc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  margin: -43px 0 0 -43px;
+  transition: 0.4s ease-in-out; }
+  .banner-section .playsc::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background: #695eee;
+    opacity: 0.5;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc .playicon {
+    width: 100%;
+    height: 100%;
+    background: url(../images/playicon.svg) center center/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc:hover .playicon {
+    top: 10px;
+    transition: 0.4s ease-in-out; }
+  .banner-section .playsc:hover:before {
+    width: 103px;
+    height: 103px;
+    left: -20px;
+    transition: 0.4s ease-in-out; }
+
+.bold-head {
+  font-weight: 600;
+  display: flex; }
+
+@keyframes workforce {
   0% {
-    box-shadow: 0 0 0 0 #695eee;
+    transform: translateY(0); }
+  26.6666666667% {
+    transform: translateY(0);
+    opacity: 1; }
+  33.3333333333% {
+    transform: translateY(-100%);
     opacity: 0; }
-  36% {
-    opacity: 0.5; }
-  54% {
-    box-shadow: 0 0 0 15px #695eee; }
-  100%,
-    72% {
-    opacity: 0; } }
-@keyframes client-slider-play-button-2 {
-  0%,
-    28% {
-    box-shadow: 0 0 0 0 #695eee;
+  33.3343333333% {
+    transform: translateY(100%);
     opacity: 0; }
-  64% {
-    opacity: 0.5; }
-  82% {
-    box-shadow: 0 0 0 15px #695eee; }
+  33.3363333333% {
+    transform: translateY(100%);
+    opacity: 1; }
+  93.3333333333% {
+    transform: translateY(100%); }
   100% {
+    transform: translateY(0); } }
+@keyframes solutions {
+  0% {
+    transform: translateY(0); }
+  26.6666666667% {
+    transform: translateY(0); }
+  33.3333333333% {
+    transform: translateY(-100%); }
+  60% {
+    transform: translateY(-100%);
+    opacity: 1; }
+  66.6666666667% {
+    transform: translateY(-300%);
+    opacity: 0; }
+  66.6676666667% {
+    transform: translateY(0); }
+  66.6696666667% {
+    transform: translateY(0);
+    opacity: 1; }
+  100% {
+    transform: translateY(0); } }
+@keyframes analytics {
+  0% {
+    transform: translateY(-300%); }
+  0.0001% {
+    transform: translateY(0); }
+  26.6666666667% {
+    transform: translateY(0); }
+  33.3333333333% {
+    transform: translateY(-100%); }
+  60% {
+    transform: translateY(-100%); }
+  66.6666666667% {
+    transform: translateY(-200%); }
+  93.3333333333% {
+    transform: translateY(-200%);
+    opacity: 1; }
+  100% {
+    transform: translateY(-300%);
     opacity: 0; } }
 .button-common {
   width: 100%;
