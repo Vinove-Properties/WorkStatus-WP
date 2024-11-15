@@ -438,34 +438,26 @@
         echo '<div class="usecase-tabs"><div class="tab-row">';
         echo '<nav id="tabs" class="tab-nav">
         <ul class="ucase">
-        <li class="active">
-        <a href="#tab01">
-        <span class="icon">
-        <img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h01.svg" alt="Icon" width="30" height="30"></span>Time Tracking</a>
-        </li>
-        <li><a href="#tab02">
-        <span class="icon active"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h02.svg" alt="Icon" width="30" height="30">
-        </span>Productivity Management</a>
-        </li>
-        <li class=""><a href="#tab03"><span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h03.svg" alt="Icon" width="30" height="30"></span>Project & Task Management</a>
-        </li>
-        <li class=""><a href="#tab04"><span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h04.svg" alt="Icon" width="30" height="30"></span>Attendance Tracking</a>
-        </li>
-        <li class=""><a href="#tab05"><span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h04.svg" alt="Icon" width="30" height="30"></span>Reporting & Analytics</a>
-        </li>
-        <li class=""><a href="#tab06"><span class="icon"><img class="show" loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/tab-h04.svg" alt="Icon" width="30" height="30"></span>For Enterprises</a>
-        </li>
+          <li class="active"><a href="#tab01">Time Tracking</a></li>
+          <li class=""><a href="#tab02">Productivity Management</a></li>
+          <li class=""><a href="#tab03">Project & Task Management</a></li>
+          <li class=""><a href="#tab04">Attendance Tracking</a></li>
+          <li class=""><a href="#tab05">Reporting & Analytics</a></li>
+          <li class=""><a href="#tab06">For Enterprises</a></li>
         </ul>
         </nav>';
         echo '<div id="tab-contents" class="bcontents">';
-        $cat  = ['cat-1', 'cat-2', 'cat-3', 'cat-4'];
+        $cat  = ['cat-1', 'cat-2', 'cat-3', 'cat-4', 'cat-5', 'cat-6'];
         $c    = 0;
-        foreach ($cat as $ca){ $c++;
+        foreach( $cat as $ca ){ $c++;
+          //print_r($ca);
           $activeTb = ( $c == 1 ) ? 'active' : '';
           echo '<div id="tab0'.$c.'" class="tab-contents '.$activeTb.'"><div class="flex_row">';      
           if( $productsInt['cards'] ){
+              //echo '<pre>';print_r($productsInt['cards']);echo '</pre>';
+
               foreach( $productsInt['cards'] as $row ){
-                  if( $row['cat'] == $ca ){
+                  if( in_array($ca, $row['cat']) ){
                     echo '<div class="column-three"><div class="box">';
                     echo '<div class="bx-content">';
                     if( $row['icon'] ){
