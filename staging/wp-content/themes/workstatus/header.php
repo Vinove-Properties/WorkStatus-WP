@@ -133,7 +133,6 @@
       @media (max-width: 767px) {
       .ws-ctav4 .btnSc .ctasec .nobg{padding:12px 18px !important; font-size:15px !important;}
       }
-      .usecase-tabs .tab-nav ul.ucase li{flex-basis: 18%;}
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
       .usecase-tabs .tab-nav ul.ucase li a span.icon{display: none;}
     </style>
