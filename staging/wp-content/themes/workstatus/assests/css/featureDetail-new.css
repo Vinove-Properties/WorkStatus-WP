@@ -7841,14 +7841,16 @@ h3 a {
   .usecase-tabs .tab-nav ul {
     flex-wrap: wrap;
     justify-content: space-between; }
-    .usecase-tabs .tab-nav ul li a {
-      padding: 10px 15px;
-      flex-direction: column;
-      font-size: 13px;
-      line-height: 20px; }
-      .usecase-tabs .tab-nav ul li a .icon {
-        display: block;
-        margin: 0 0 3px; } }
+    .usecase-tabs .tab-nav ul li {
+      flex-basis: 33.33%; }
+      .usecase-tabs .tab-nav ul li a {
+        padding: 10px 15px;
+        flex-direction: column;
+        font-size: 13px;
+        line-height: 20px; }
+        .usecase-tabs .tab-nav ul li a .icon {
+          display: block;
+          margin: 0 0 3px; } }
 @media (max-width: 767px) {
   .usecase-tabs .tab-nav ul {
     align-items: top;
