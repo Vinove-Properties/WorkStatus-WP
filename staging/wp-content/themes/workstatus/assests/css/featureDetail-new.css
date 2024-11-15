@@ -7851,11 +7851,11 @@ h3 a {
         margin: 0 0 3px; } }
 @media (max-width: 767px) {
   .usecase-tabs .tab-nav ul {
-    align-items: baseline;
+    align-items: top;
     margin: 0 0 15px;
     padding: 0; }
     .usecase-tabs .tab-nav ul li {
-      flex-basis: 25%;
+      flex-basis: 33.33%;
       padding: 4px; }
       .usecase-tabs .tab-nav ul li a {
         font-size: 12px;
