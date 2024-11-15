@@ -8359,7 +8359,7 @@ h3 a {
     border-radius: 30px;
     background: rgba(103, 84, 226, 0.19); }
     .usecase-tabs .tab-nav ul li {
-      flex-basis: 25%;
+      flex-basis: 20%;
       display: inline-block;
       margin: 0;
       padding: 0;
@@ -8368,11 +8368,11 @@ h3 a {
         display: flex;
         height: 100%;
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
         display: flex;
         align-items: center;
         color: #05164d;
-        padding: 15px 10px;
+        padding: 15px 8px;
         position: relative;
         text-align: center;
         font-weight: normal;
@@ -8382,7 +8382,7 @@ h3 a {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 5px 0 0;
+          margin: 0 3px 0 0;
           pointer-events: none; }
           .usecase-tabs .tab-nav ul li a .icon .show {
             display: block; }
@@ -8413,12 +8413,16 @@ h3 a {
   .usecase-tabs .bcontents .tab-contents.active {
     display: block; }
 
+@media (max-width: 1380px) {
+  .usecase-tabs .tab-nav ul li a {
+    font-size: 14px; } }
 @media (max-width: 1024px) {
   .usecase-tabs .tab-nav ul {
     flex-wrap: wrap;
     justify-content: space-between; }
     .usecase-tabs .tab-nav ul li {
-      flex-basis: initial; }
+      flex-basis: 33.33%;
+      row-gap: 5px; }
       .usecase-tabs .tab-nav ul li a {
         padding: 10px 15px;
         flex-direction: column;
@@ -8429,11 +8433,11 @@ h3 a {
           margin: 0 0 3px; } }
 @media (max-width: 767px) {
   .usecase-tabs .tab-nav ul {
-    align-items: baseline;
+    align-items: top;
     margin: 0 0 15px;
     padding: 0; }
     .usecase-tabs .tab-nav ul li {
-      flex-basis: 25%;
+      flex-basis: 33.33%;
       padding: 4px; }
       .usecase-tabs .tab-nav ul li a {
         font-size: 12px;

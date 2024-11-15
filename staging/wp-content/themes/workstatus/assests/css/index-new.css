@@ -6255,7 +6255,7 @@ a:hover h3,
 @media (max-width: 1024px) {
   .business-tab .feature-tabs .tab-nav ul {
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: center; }
     .business-tab .feature-tabs .tab-nav ul li {
       flex-basis: 33.33%; }
       .business-tab .feature-tabs .tab-nav ul li a {
@@ -6279,7 +6279,7 @@ a:hover h3,
       margin: 0 0 15px;
       padding: 0; }
       .business-tab .feature-tabs .tab-nav ul li {
-        flex-basis: 25%;
+        flex-basis: 33.33%;
         padding: 4px; }
         .business-tab .feature-tabs .tab-nav ul li a {
           font-size: 12px;
