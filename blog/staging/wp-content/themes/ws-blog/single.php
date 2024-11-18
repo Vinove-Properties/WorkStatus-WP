@@ -177,18 +177,16 @@
               </div>
             </div>
             <?php 
-              $sbCTA = get_field('wssb-cta');  
-              if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
-              $sbText  = (isset( $sbCTA['text'] ) && !empty($sbCTA['text'])) ? $sbCTA['text'] : 'Make Data-driven Decisions with Ease. Try Workstatus';
-              ?>
+            $sbCTA = get_field('wssb-cta');  
+            if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
+            $ctaTitle = (isset($sbCTA['scta-title']) && !empty($sbCTA['scta-title'])) ? $sbCTA['scta-title'] : 
+            'Get Started with Workstatus';
+            $ctaBody = (isset($sbCTA['scta-body']) && !empty($sbCTA['scta-body'])) ? $sbCTA['scta-body'] : '<ul><li>Project & Task Management</li><li>Time Tracking & Attendance</li> <li>Workforce/Productivity Analytics</li></ul>';
+            ?>
             <div class="customcta">
               <div class="cus-cont">
-                <div class="cushed">Get Started with Workstatus</div>
-                <ul>
-                  <li>Project & Task Management</li>
-                  <li>Time Tracking & Attendance</li>
-                  <li>Workforce/Productivity Analytics</li>
-                </ul>
+                <div class="cushed"><?php echo $ctaTitle; ?></div>
+                <?php echo $ctaBody; ?>
                 <div class="btn-container">
                   <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
                   <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
