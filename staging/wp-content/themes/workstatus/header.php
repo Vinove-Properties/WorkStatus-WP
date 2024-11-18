@@ -301,7 +301,7 @@
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp Meetings</span>
                                     Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile Project Management</span>
-                                    TFlexible workflows, faster results</a>
+                                    Flexible workflows, faster results</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint Planning</span>
@@ -526,7 +526,7 @@
                                         <a href="<?php echo site_url(); ?>/time-attendance/timesheets-in-minutes">
                                         Automated Timesheet Generation</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases?filter=time#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
@@ -543,7 +543,7 @@
                                         <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
                                         Promoting Employee Well-being</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases?filter=productivity#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
@@ -559,7 +559,7 @@
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
                                         Manage in-office & remote team</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases?filter=project#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
                                 </div>
@@ -577,7 +577,7 @@
                                         <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
                                         GPS-based Workforce Management</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases?filter=attendance#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
@@ -593,7 +593,7 @@
                                         <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-regulations-tracking">
                                         Compliance & Regulation Tracking</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <a href="<?php echo site_url(); ?>/use-cases?filter=reporting#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
                                   <div class="flex-3">
@@ -609,7 +609,7 @@
                                         <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management">
                                         AI-Driven Scheduling Optimization</a>
                                       </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases" class="view-more">View More</a>
+                                      <!-- <a href="<?php echo site_url(); ?>/use-cases?filter=productivity#uc-filter" class="view-more">View More</a> -->
                                     </div>
                                   </div>
                                 </div>
@@ -627,6 +627,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/enter-01.svg" class="menuicon" alt="menuicon"><span class="title">User Activity Monitoring</span>Cloud-based software solutions
                                   </a>
+                                  <a href="<?php echo site_url(); ?>/use-cases?filter=enterprises#uc-filter" class="view-more" style="padding-left: 0;">View More</a>
                                 </div>
                               </div>
                             </div>

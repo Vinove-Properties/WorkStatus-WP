@@ -1,22 +1,46 @@
 <?php
-  /* 
-  Template Name: Common Pillar Page
-  Author : Nitin Baluni
-  */
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink, $post;
-  $thisPostID = $post->ID;
-  $pageMode = get_post_meta( $post->ID, 'ws-pagemode', true );
-  $app_page = ( $pageMode && ($pageMode == "app") ) ? true : false;
-  
-  $bannerClass = 'hero-banner inner-banner-bg';
-  if( $app_page === false ){
-  $hasbannerThumb = get_field('banner-image');
-  if( $hasbannerThumb && !empty( $hasbannerThumb ) ){
-    $bannerClass = 'inner-banner';
+/* 
+Template Name: Common Pillar Page
+Author : Nitin Baluni
+*/
+get_header();
+global $ws_ctas, $RegLink, $LogLink, $post;
+$thisPostID = $post->ID;
+$pageMode = get_post_meta( $post->ID, 'ws-pagemode', true );
+$app_page = ( $pageMode && ($pageMode == "app") ) ? true : false;
+
+$bannerClass = 'hero-banner inner-banner-bg';
+if( $app_page === false ){
+$hasbannerThumb = get_field('banner-image');
+if( $hasbannerThumb && !empty( $hasbannerThumb ) ){
+  $bannerClass = 'inner-banner';
+}
+}
+function flterTab( $tab = 'time' ){
+  $fltr_array = ['time', 'productivity', 'project', 'attendance', 'reporting', 'enterprises'];
+  $filter = (isset($_GET['filter']) && !empty($_GET['filter'])  && in_array($_GET['filter'], $fltr_array)) ? $_GET['filter'] :  'time';
+  return ( in_array( $filter, $fltr_array ) && ($tab === $filter) ) ? 'active' : '';
+}
+function flterActiveContent( $tab = 'cat-1' ){
+  $cat = [
+  'cat-1' => 'time', 
+  'cat-2' => 'productivity',
+  'cat-3' => 'project', 
+  'cat-4' => 'attendance', 
+  'cat-5' => 'reporting', 
+  'cat-6' => 'enterprises'
+  ];
+  $fltr_array = ['time', 'productivity', 'project', 'attendance', 'reporting', 'enterprises'];
+  $filter = (isset($_GET['filter']) && !empty($_GET['filter'])  && in_array($_GET['filter'], $fltr_array)) ? $_GET['filter'] :  'time';
+  foreach($fltr_array as $key => &$value) {
+      if (isset($cat[$key])) {
+          $value = $cat[$key];
+      }
   }
-  }
-  ?>
+  $tab = $cat[$tab];
+  return ( in_array( $filter, $fltr_array ) && ($tab === $filter) ) ? 'active' : '';
+}
+?>
 <main class="site__content">
   <?php //echo ($app_page) ? 'hero-banner inner-banner-bg' : 'inner-banner'; ?>  
   <section class="<?php echo $bannerClass;  ?>">
@@ -427,7 +451,9 @@
     if( is_page(4285) ){
     $productsInt = get_field('pro-int');
     if( isset( $productsInt['is_enabled'] ) && ($productsInt['is_enabled'] == "yes") ) :   
-      echo '<section class="one-solution p50 list-icon">';
+      $fltr_array = ['time', 'productivity', 'project', 'attendance', 'reporting', 'enterprises'];
+      $filter     = (isset($_GET['filter']) && !empty($_GET['filter'])  && in_array($_GET['filter'], $fltr_array)) ? $_GET['filter'] :  'time';
+      echo '<section id="uc-filter" class="one-solution p50 list-icon">';
       echo '<div class="container">';
         echo '<div class="top-section">';
         if( !empty($productsInt['top_heading']) ){
@@ -438,12 +464,12 @@
         echo '<div class="usecase-tabs"><div class="tab-row">';
         echo '<nav id="tabs" class="tab-nav">
         <ul class="ucase">
-          <li class="active"><a href="#tab01">Time Tracking</a></li>
-          <li class=""><a href="#tab02">Productivity Management</a></li>
-          <li class=""><a href="#tab03">Project & Task Management</a></li>
-          <li class=""><a href="#tab04">Attendance Tracking</a></li>
-          <li class=""><a href="#tab05">Reporting & Analytics</a></li>
-          <li class=""><a href="#tab06">For Enterprises</a></li>
+          <li class="'.flterTab('time').'"><a href="#tab01">Time Tracking</a></li>
+          <li class="'.flterTab('productivity').'"><a href="#tab02">Productivity Management</a></li>
+          <li class="'.flterTab('project').'"><a href="#tab03">Project & Task Management</a></li>
+          <li class="'.flterTab('attendance').'"><a href="#tab04">Attendance Tracking</a></li>
+          <li class="'.flterTab('reporting').'"><a href="#tab05">Reporting & Analytics</a></li>
+          <li class="'.flterTab('enterprises').'"><a href="#tab06">For Enterprises</a></li>
         </ul>
         </nav>';
         echo '<div id="tab-contents" class="bcontents">';
@@ -452,7 +478,7 @@
         foreach( $cat as $ca ){ $c++;
           //print_r($ca);
           $activeTb = ( $c == 1 ) ? 'active' : '';
-          echo '<div id="tab0'.$c.'" class="tab-contents '.$activeTb.'"><div class="flex_row">';      
+          echo '<div id="tab0'.$c.'" class="tab-contents '.flterActiveContent($ca).'"><div class="flex_row">';      
           if( $productsInt['cards'] ){
               //echo '<pre>';print_r($productsInt['cards']);echo '</pre>';
 
