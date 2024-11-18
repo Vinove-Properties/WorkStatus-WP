@@ -664,7 +664,7 @@ function getCTAblock( $class = "button-common margin-t-80" ){
 	<div class="cmn-democta">	
 	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>	
 	<span class="devide">OR</span>
-	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn nobg" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
 	<span class="nccr">No credit card required</span>
 	</div></div>
 	</div>';
