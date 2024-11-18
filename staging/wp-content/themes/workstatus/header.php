@@ -737,7 +737,7 @@
                                     </a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/by-role/business-owners"><span class="title">Business Managers</span>
+                                    <a href="<?php echo site_url(); ?>/by-role/business-owners"><span class="title">Business Owners</span>
                                     Empower teams, boost productivity</a>
                                     <a href="<?php echo site_url(); ?>/by-role/project-managers"><span class="title">Project Managers
                                     </span>
