@@ -10499,8 +10499,6 @@ h3 a {
 @media (max-width: 767px) {
   .banner-section {
     padding: 100px 0 50px; }
-    .banner-section .home-section .flex_row .column-content .bg-purple {
-      font-size: 12px; }
     .banner-section .home-section .flex_row .column-content p {
       font-size: 16px;
       line-height: 26px;
@@ -10511,7 +10509,7 @@ h3 a {
       padding-left: 25px;
       margin: 0 0 10px; }
     .banner-section .home-section .flex_row .column-content .actionBtn {
-      margin: 25px 0 20px; }
+      margin: 25px 0 10px; }
       .banner-section .home-section .flex_row .column-content .actionBtn a {
         min-width: auto; }
     .banner-section .home-section .flex_row .column-content .partwrap {
