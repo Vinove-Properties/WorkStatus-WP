@@ -10386,6 +10386,11 @@ h3 a {
 
   .section-numbers {
     padding-top: 80px; } }
+@media (max-width: 1600px) {
+  .banner-section .home-section .videoSc {
+    width: 640px; }
+    .banner-section .home-section .videoSc .topVideo .videoWrapper {
+      min-height: 650px; } }
 @media (max-width: 1140px) {
   .featuredt-banner .videoSc:before {
     width: 100px;
