@@ -10385,6 +10385,13 @@ h3 a {
   .banner-section .home-section:after {
     width: 820px; }
 
+  .popup-content {
+    height: 450px; }
+
+  .videoSc .popup-content {
+    height: 450px;
+    width: 900px; }
+
   .section-numbers {
     padding-top: 80px; } }
 @media (max-width: 1600px) {
@@ -10405,8 +10412,8 @@ h3 a {
       .banner-section .home-section .videoSc .topVideo .videoWrapper {
         min-height: 600px; }
       .banner-section .home-section .videoSc .popup-content {
-        height: 400px;
-        width: 700px; }
+        width: 60%;
+        height: 400px; }
       .banner-section .home-section .videoSc .inner .playsc {
         width: 70px;
         height: 70px; }
@@ -10462,6 +10469,9 @@ h3 a {
       text-align: center;
       margin: 30px auto 0;
       position: initial; }
+      .banner-section .home-section .videoSc .popup-content {
+        height: 450px;
+        width: 90%; }
       .banner-section .home-section .videoSc .topVideo .videoWrapper {
         min-height: 430px; }
       .banner-section .home-section .videoSc .inner .playsc {
