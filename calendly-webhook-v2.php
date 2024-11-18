@@ -1368,11 +1368,17 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     fclose( $file );
 
     if(!$err){
-        $eventJson    = json_decode( $eventResp, true );
+      $file         = fopen(CL_LOGFILE,"a");
+      $eventJson    = json_decode( $eventResp, true );
+
+      fwrite( $file, PHP_EOL."Debugger : #StartTime NO ERROR"  );
+      fwrite( $file, PHP_EOL."Debugger : #StartTime".print_r(json_decode($eventJson['payload']['scheduled_event'], true),true)  );
+      fclose( $file );
+      
         if( 
           isset( $eventJson['payload']['scheduled_event']['start_time'] ) && 
           !empty( $eventJson['payload']['scheduled_event']['start_time'] ) 
-        ){          
+        ){
           $eventdate    = $eventJson['payload']['scheduled_event']['start_time'];
 
           $file       = fopen(CL_LOGFILE,"a");
