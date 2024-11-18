@@ -1342,52 +1342,64 @@ function dupLeadNote( $varAccessToken, $lead_id, $requirement ){
 }
 
 if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
-    $event_url  = $json['payload']['event'];
-    $ecurl      = curl_init();
-    curl_setopt_array($ecurl, [
-      CURLOPT_URL => $event_url,
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_ENCODING => "",
-      CURLOPT_MAXREDIRS => 10,
-      CURLOPT_TIMEOUT => 30,
-      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-      CURLOPT_CUSTOMREQUEST => "GET",
-      CURLOPT_HTTPHEADER => [
-        "Authorization: Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzI5MjM4MDU3LCJqdGkiOiI5MDZmMDVkYS00NmI4LTQzYWYtYWQ5Yi0yMjZkMmM3NzJkN2UiLCJ1c2VyX3V1aWQiOiJmZjI0ZTE3MC1lODMwLTQ2ODUtOTkwZS1iNzVjZDVlMTEzZGMifQ.v1V31k766DZQR48MKJAtadRSHf2KpKRlKEHPi9Sf6DiiBspbBfW9uMxQbWG_Osd-LnTojIZJzTZiQcYEoSSs9w",
-        "Content-Type: application/json"
-      ],
-    ]);
-    $eventResp  = curl_exec( $ecurl );
-    $err        = curl_error( $ecurl );
+    // $event_url  = $json['payload']['event'];
+    // $ecurl      = curl_init();
+    // curl_setopt_array($ecurl, [
+    //   CURLOPT_URL => $event_url,
+    //   CURLOPT_RETURNTRANSFER => true,
+    //   CURLOPT_ENCODING => "",
+    //   CURLOPT_MAXREDIRS => 10,
+    //   CURLOPT_TIMEOUT => 30,
+    //   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    //   CURLOPT_CUSTOMREQUEST => "GET",
+    //   CURLOPT_HTTPHEADER => [
+    //     "Authorization: Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNzI5MjM4MDU3LCJqdGkiOiI5MDZmMDVkYS00NmI4LTQzYWYtYWQ5Yi0yMjZkMmM3NzJkN2UiLCJ1c2VyX3V1aWQiOiJmZjI0ZTE3MC1lODMwLTQ2ODUtOTkwZS1iNzVjZDVlMTEzZGMifQ.v1V31k766DZQR48MKJAtadRSHf2KpKRlKEHPi9Sf6DiiBspbBfW9uMxQbWG_Osd-LnTojIZJzTZiQcYEoSSs9w",
+    //     "Content-Type: application/json"
+    //   ],
+    // ]);
+    // $eventResp  = curl_exec( $ecurl );
+    // $err        = curl_error( $ecurl );
     
+    // $eDate = "000-00-00";
+    // $eTime = "00:00:00";
+    // $file       = fopen(CL_LOGFILE,"a");    
+    // if(!$err){
+    //     $eventJson    = json_decode( $eventResp );
+    //     $file         = fopen( CL_LOGFILE, "a" );
+    //     fwrite( $file, PHP_EOL."Debugger : #EventDate"  );
+    //     fwrite( $file, PHP_EOL."#EventDate : " .time().print_r(json_decode($eventResp, true),true) );
+    //     fclose( $file );
+
+    //     if( isset( $eventJson['resource']['start_time'] ) && !empty( $eventJson['resource']['start_time'] ) ){
+    //       $eventdate    = $eventJson['resource']['start_time'];
+          
+    //       // $datetime   = new DateTime( $eventdate );
+    //       // $eDate      = $datetime->format('Y-m-d');
+    //       // $la_time    = new DateTimeZone('Asia/Calcutta');
+    //       // $datetime->setTimezone($la_time);
+    //       // $eTime      = $datetime->format('H:i:s');              
+    //       $datetime = new DateTime($eventdate);
+    //       $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
+          
+    //       $eDate = $datetime->format('Y-m-d');
+    //       $eTime = $datetime->format('H:i:s');
+            
+    //     }        
+    // }
+    // curl_close( $ecurl );
+
     $eDate = "000-00-00";
     $eTime = "00:00:00";
-    $file       = fopen(CL_LOGFILE,"a");    
-    if(!$err){
-        $eventJson    = json_decode( $eventResp );
-        $file         = fopen( CL_LOGFILE, "a" );
-        fwrite( $file, PHP_EOL."Debugger : #EventDate"  );
-        fwrite( $file, PHP_EOL."#EventDate : " .time().print_r(json_decode($eventResp, true),true) );
-        fclose( $file );
+    if( 
+      isset($json['payload']['scheduled_event']['start_time']) && 
+      !empty($json['payload']['scheduled_event']['start_time']) 
+    ){
+      $datetime = new DateTime($json['payload']['scheduled_event']['start_time']);
+      $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
 
-        if( isset( $eventJson['resource']['start_time'] ) && !empty( $eventJson['resource']['start_time'] ) ){
-          $eventdate    = $eventJson['resource']['start_time'];
-          
-          // $datetime   = new DateTime( $eventdate );
-          // $eDate      = $datetime->format('Y-m-d');
-          // $la_time    = new DateTimeZone('Asia/Calcutta');
-          // $datetime->setTimezone($la_time);
-          // $eTime      = $datetime->format('H:i:s');              
-          $datetime = new DateTime($eventdate);
-          $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
-          
-          $eDate = $datetime->format('Y-m-d');
-          $eTime = $datetime->format('H:i:s');
-            
-        }        
+      $eDate = $datetime->format('Y-m-d');
+      $eTime = $datetime->format('H:i:s');
     }
-    curl_close( $ecurl );
-
     $firtName = $lastName = "";
     if( isset( $json['payload']['name'] ) ){
         $name = $json['payload']['name'];
