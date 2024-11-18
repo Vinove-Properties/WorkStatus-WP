@@ -1372,13 +1372,13 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         if( 
           isset( $eventJson['payload']['scheduled_event']['start_time'] ) && 
           !empty( $eventJson['payload']['scheduled_event']['start_time'] ) 
-        ){
+        ){          
           $eventdate    = $eventJson['payload']['scheduled_event']['start_time'];
-          // $datetime   = new DateTime( $eventdate );
-          // $eDate      = $datetime->format('Y-m-d');
-          // $la_time    = new DateTimeZone('Asia/Kolkata');
-          // $datetime->setTimezone($la_time);
-          // $eTime      = $datetime->format('H:i:s');
+
+          $file       = fopen(CL_LOGFILE,"a");
+          fwrite( $file, PHP_EOL."Debugger : #StartTime"  );
+          fwrite( $file, PHP_EOL."DebuggerEventDate : ".$eventdate  );
+          fclose( $file );
 
           $datetime = new DateTime( $eventdate );
           $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
