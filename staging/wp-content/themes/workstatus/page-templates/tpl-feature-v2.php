@@ -63,7 +63,7 @@
       </div>
       <div class="column videoSc" id="has-yt-video">
         <div class="inner">
-          <button id="myBtn">
+          <button id="myBtn" class="vbtn">
             Open Modal  
             <div class="playsc"><span class="playicon"></span></div>
           </button>

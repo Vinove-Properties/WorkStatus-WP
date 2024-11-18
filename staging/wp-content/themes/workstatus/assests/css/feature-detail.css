@@ -9940,7 +9940,8 @@ h3 a {
       .banner-section .home-section .flex_row .column-content {
         color: #fff;
         width: 45%;
-        position: relative; }
+        position: relative;
+        margin-top: 40px; }
         .banner-section .home-section .flex_row .column-content h1 {
           color: #fff;
           margin: 0 0 20px;
@@ -10228,7 +10229,7 @@ h3 a {
           display: none; } }
 
 /* For Banner Popup*/
-#myBtn {
+.vbtn {
   position: absolute;
   top: 40%;
   left: 180px;
