@@ -261,7 +261,7 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/habit-tracker-app"><span class="title">Habit Tracker App</span>
                                     Track habits, achieve goals</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-monitoring-software">
-                                    <span class="title">Employee Monitoring</span>xxxxxxxxxxxx</a>
+                                    <span class="title">Employee Monitoring</span>Insights that empower teams</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>
@@ -270,7 +270,7 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout"><span class="title">Employee Burnout</span>
                                     Prevent burnout, promote well-being</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring">
-                                    <span class="title">User Activity Monitoring (UAM)</span>xxxxxxxxxxxx</a>
+                                    <span class="title">User Activity Monitoring (UAM)</span>Track activity, ensure focus</a>
                                   </div>
                                 </div>
                               </div>
@@ -306,7 +306,7 @@
                                     Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile Project Management</span>
                                     Flexible workflows, faster results</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>XXXXXXXXXX</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>Visualize timelines, achieve goals</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint Planning</span>
@@ -315,7 +315,7 @@
                                     Focus on key initiatives</a>
                                     <a href="<?php echo site_url(); ?>/project-management/task-management"><span class="title">Task Management</span>
                                     Prioritize, track, & collaborate</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>XXXXXXXXXX</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>Simplify invoicing, get paid faster</a>
                                   </div>
                                 </div>
                               </div>
@@ -477,12 +477,12 @@
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Resource Allocation</span>Smart resource allocation</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>Robust server/client expertise</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-off Planning</span>XXXXXXXXXX</a>                                    
+                                    <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-off Planning</span>Manage time-off, avoid disruptions</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software "><span class="title">Employee Scheduling </span>
                                     Flexible, seamless scheduling</a>
-                                    <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation"><span class="title">Dynamic Resource Allocation</span>XXXXXXXXXXXX</a>
+                                    <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation"><span class="title">Dynamic Resource Allocation</span>Allocate wisely, maximize efficiency</a>
                                   </div>
                                 </div>
                               </div>
