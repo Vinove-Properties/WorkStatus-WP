@@ -7,33 +7,88 @@ get_header();
 global $ws_ctas, $RegLink, $LogLink, $post;
 ?>
 <main class="site__content">
-<section class="featuredt-banner">
-  <div class="container">
-    <div class="inner-wrap">
-      <?php the_content(); ?>
-      <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
-      <?php require_once get_template_directory().'/common/available-device.php'; ?>
-      <?php //get_template_part('common/banner', 'reviews'); ?>
-      <?php require_once get_template_directory(). '/common/partners.php'; ?>              
-      <div class="video-wrap">
-        <div class="videoSc" id="has-yt-video">
-          <div class="inner">
-            <div class="topVideo srp-1">
-              <div id="myDIV" class="contbox2">
-                <div class="videoWrapper">
-                  <iframe id="video" class="videoIframe" allowfullscreen="" data-src="https://www.youtube.com/embed/HKKWmXb17zo?enablejsapi=1&amp;html5=1&amp;mute=1">
-                  </iframe>
-                  <button class="videoPoster lazy-background wsbg-cover wsbg-img" data-src="https://www.workstatus.io/wp-content/uploads/2024/07/tm-banner.png" id="play-button" data-loaded="true" style="background-image: url(&quot;https://www.workstatus.io/wp-content/uploads/2024/07/tm-banner.png&quot;);">Play video
-                  <span class="playicon"></span></button>
+<section class="banner-section">
+          <div class="home-section">
+            <div class="container">
+              <div class="flex_row">
+                <div class="column column-content">
+                  <h1>
+                    Level Up Team Productivity 
+                  </h1>
+                  <p>Automate time tracking to ensure employees work efficiently. Track hours worked by employeeson each project.</p>
+                  <div class="cont-wrap">
+                    <div class="actionBtn">
+                      <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">Start Free Trial</a>
+                        <small>No credit card required</small>
+                      </div>
+                      <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
+                        <small>Get queries answered from experts</small>
+                      </div>
+                    </div>
+                    <div class="av-device"><span>Available for:</span>
+                      <i class="icon1"></i>
+                      <i class="icon2"></i>
+                      <i class="icon3"></i>
+                      <i class="icon4"></i>
+                      <i class="icon5"></i>
+                    </div>
+                    <div class="partwrap">
+                      <div class="part-col">
+                        <i class="part-logo part-logo1"></i>
+                        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
+                          alt="star" width="60" height="9"></i>
+                      </div>
+                      <div class="part-col">
+                        <i class="part-logo part-logo2"></i>
+                        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
+                          alt="star" width="60" height="9"></i>
+                      </div>
+                      <div class="part-col">
+                        <i class="part-logo part-logo3"></i>
+                        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
+                          alt="star" width="60" height="9"></i>
+                      </div>
+                      <div class="part-col">
+                        <i class="part-logo part-logo4"></i>
+                        <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
+                          alt="star" width="60" height="9"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column videoSc" id="has-yt-video">
+              <div class="inner">
+                <button id="myBtn">
+                  Open Modal  
+                  <div class="playsc"><span class="playicon"></span></div>
+                </button>
+                <div class="topVideo srp-1">
+                  <div id="myDIV" class="contbox2">
+                    <div class="videoWrapper js-videoWrapper">
+                      <div class="videoPopup">
+                        <div id="contentPopup" class="popup-wrapper">
+                          <div class="popWrap">
+                            <div class="popup-content">
+                              <span class="close"></span>
+                              <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen
+                                data-src="https://www.youtube.com/embed/zMtAs7s3CmU?enablejsapi=1&html5=1&mute=1">
+                              </iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button style="background-image: url(<?php bloginfo('template_url'); ?>/assests/images/ftmain-banner.png)" class="videoPoster lazy-background nb-bg" id="play-button">
+                      Play video
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 <?php 
 $dataDriv = get_field('dd-resul');
 if( isset($dataDriv['is_enabled']) && ($dataDriv['is_enabled'] == "yes") ){
