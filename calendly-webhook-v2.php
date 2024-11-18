@@ -1362,21 +1362,22 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     
     $eDate = "000-00-00";
     $eTime = "00:00:00";
-    $file       = fopen(CL_LOGFILE,"a");
-    fwrite( $file, PHP_EOL."Debugger : #1"  );
-    fwrite( $file, PHP_EOL."Internal - Response : " .time().print_r(json_decode($eventResp, true),true) );
-    fclose( $file );
-
+    $file       = fopen(CL_LOGFILE,"a");    
     if(!$err){
-        $eventJson    = json_decode( $eventResp, true );
+        $eventJson    = json_decode( $eventResp );
+        $file         = fopen( CL_LOGFILE, "a" );
+        fwrite( $file, PHP_EOL."Debugger : #EventDate"  );
+        fwrite( $file, PHP_EOL."#EventDate : " .time().print_r(json_decode($eventResp, true),true) );
+        fclose( $file );
+
         if( isset( $eventJson['resource']['start_time'] ) && !empty( $eventJson['resource']['start_time'] ) ){
           $eventdate    = $eventJson['resource']['start_time'];
+          
           // $datetime   = new DateTime( $eventdate );
           // $eDate      = $datetime->format('Y-m-d');
           // $la_time    = new DateTimeZone('Asia/Calcutta');
           // $datetime->setTimezone($la_time);
-          // $eTime      = $datetime->format('H:i:s');    
-          
+          // $eTime      = $datetime->format('H:i:s');              
           $datetime = new DateTime($eventdate);
           $datetime->setTimezone(new DateTimeZone('Asia/Kolkata'));
           
@@ -1496,7 +1497,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $apiRequest['last_name'] = $lastName;
     }
     
-    clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($_POST, true), "lead", $email, 
+    clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($apiRequest, true), "lead", $email, 
     [], [], [], $json['payload']['name'] );    
     
     $ch = curl_init();
