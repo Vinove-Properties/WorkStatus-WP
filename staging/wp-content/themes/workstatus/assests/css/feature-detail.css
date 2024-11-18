@@ -10213,6 +10213,8 @@ h3 a {
       .banner-section .home-section .videoSc .popup-content {
         height: 505px;
         width: 900px; }
+      .banner-section .home-section .videoSc .popWrap {
+        margin-top: 30px; }
     .banner-section .home-section .videoWrapperActive iframe {
       z-index: 999 !important; }
     .banner-section .home-section:after {
@@ -10264,8 +10266,7 @@ h3 a {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 30px; }
+  align-items: center; }
 
 .popup-content {
   background-color: #fefefe;
@@ -10524,6 +10525,8 @@ h3 a {
       position: initial; }
       .banner-section .home-section .videoSc .topVideo .videoWrapper {
         min-height: 430px; }
+      .banner-section .home-section .videoSc .popWrap {
+        margin-top: 0; }
       .banner-section .home-section .videoSc .inner .playsc {
         width: 60px;
         height: 60px; }
