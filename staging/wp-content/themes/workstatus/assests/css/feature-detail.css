@@ -9904,7 +9904,7 @@ h3 a {
 .banner-section {
   width: 100%;
   padding: 120px 0 260px;
-  background: #3708C2;
+  background: #3708c2;
   position: relative; }
   .banner-section:after {
     content: "";
@@ -10264,7 +10264,8 @@ h3 a {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 30px; }
 
 .popup-content {
   background-color: #fefefe;
@@ -10388,73 +10389,142 @@ h3 a {
     padding-top: 80px; } }
 @media (max-width: 1600px) {
   .banner-section .home-section .videoSc {
-    width: 640px; }
+    width: 640px;
+    top: -10px; }
     .banner-section .home-section .videoSc .topVideo .videoWrapper {
       min-height: 650px; } }
+@media (max-width: 1280px) {
+  .banner-section {
+    padding: 100px 0 200px; }
+    .banner-section .home-section .flex_row .column-content .actionBtn {
+      margin: 30px 0; }
+    .banner-section .home-section .flex_row .column-content .av-device {
+      margin: 0 0 30px; }
+    .banner-section .home-section .videoSc {
+      width: 570px; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper {
+        min-height: 600px; }
+      .banner-section .home-section .videoSc .popup-content {
+        height: 400px;
+        width: 700px; }
+      .banner-section .home-section .videoSc .inner .playsc {
+        width: 70px;
+        height: 70px; }
+        .banner-section .home-section .videoSc .inner .playsc:before {
+          width: 95px;
+          height: 95px; }
+    .banner-section:after {
+      bottom: -150px;
+      height: 262px; } }
 @media (max-width: 1140px) {
-  .featuredt-banner .videoSc:before {
-    width: 100px;
-    height: 128px;
-    top: -100px;
-    right: 70px; }
+  .banner-section .home-section .flex_row .column-content {
+    width: 50%;
+    margin-top: 0; }
+    .banner-section .home-section .flex_row .column-content h1 {
+      font-size: 40px;
+      line-height: 60px; }
+    .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1 {
+      padding: 14px 15px;
+      font-size: 16px; }
+    .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
+      padding: 14px 15px;
+      font-size: 16px; }
+  .banner-section .home-section .videoSc {
+    width: 468px; }
+    .banner-section .home-section .videoSc .topVideo .videoWrapper {
+      min-height: 480px; }
+  .banner-section .home-section:after {
+    width: 632px;
+    right: -106px;
+    top: -97px;
+    height: 675px; }
 
-  .featuredt-banner .videoSc .topVideo .videoWrapper {
-    min-height: 480px; }
+  .av-device {
+    padding: 0 5px; }
 
   .margin-t-80 {
     margin-top: 50px; } }
 @media (max-width: 979px) {
-  .featuredt-banner {
-    padding: 100px 0 0; }
-    .featuredt-banner:after {
-      bottom: 100px; }
-    .featuredt-banner:before {
-      height: 100px; }
-    .featuredt-banner .inner-wrap p br {
+  .banner-section {
+    padding: 100px 0 150px; }
+    .banner-section .home-section .flex_row .column-content {
+      width: 100%;
+      text-align: center; }
+      .banner-section .home-section .flex_row .column-content h1 {
+        font-size: 40px;
+        line-height: 50px; }
+      .banner-section .home-section .flex_row .column-content .actionBtn {
+        justify-content: center; }
+      .banner-section .home-section .flex_row .column-content .partwrap {
+        max-width: 100%; }
+    .banner-section .home-section .videoSc {
+      width: 425px;
+      text-align: center;
+      margin: 30px auto 0;
+      position: initial; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper {
+        min-height: 430px; }
+      .banner-section .home-section .videoSc .inner .playsc {
+        width: 60px;
+        height: 60px; }
+        .banner-section .home-section .videoSc .inner .playsc:before {
+          width: 80px;
+          height: 80px;
+          top: -11px;
+          left: -10px; }
+    .banner-section .home-section:after {
       display: none; }
-    .featuredt-banner .videoSc .topVideo {
-      width: 100%; }
-    .featuredt-banner .videoSc .videoPoster .playicon {
-      margin-top: 0; }
-    .featuredt-banner .videoSc .topVideo .videoWrapper {
-      min-height: 400px;
-      padding-bottom: initial; }
+    .banner-section:before {
+      display: none; }
+    .banner-section:after {
+      bottom: -117px;
+      height: 214px;
+      background-size: contain; }
 
   .section-numbers {
     padding-top: 60px; } }
 @media (max-width: 767px) {
-  .featuredt-banner {
-    padding: 100px 0 0; }
-    .featuredt-banner:after {
-      bottom: 60px;
-      height: 100px; }
-    .featuredt-banner:before {
-      height: 60px; }
-    .featuredt-banner .inner-wrap p {
+  .banner-section {
+    padding: 100px 0 50px; }
+    .banner-section .home-section .flex_row .column-content .bg-purple {
+      font-size: 12px; }
+    .banner-section .home-section .flex_row .column-content p {
       font-size: 16px;
-      line-height: 26px; }
-      .featuredt-banner .inner-wrap p br {
-        display: none; }
-    .featuredt-banner .inner-wrap .actionBtn {
-      align-items: baseline; }
-      .featuredt-banner .inner-wrap .actionBtn div {
-        width: 50%;
-        margin: 0; }
-      .featuredt-banner .inner-wrap .actionBtn a {
-        padding: 12px 10px;
-        min-width: 150px;
-        font-size: 14px;
-        line-height: 24px; }
-    .featuredt-banner .videoSc {
-      width: 100%; }
-      .featuredt-banner .videoSc .topVideo {
-        width: 100%; }
-        .featuredt-banner .videoSc .topVideo .contbox2 button {
-          height: 320px; }
-      .featuredt-banner .videoSc .videoPoster .playicon {
-        margin-top: 0; }
-      .featuredt-banner .videoSc .topVideo .videoWrapper {
-        min-height: 320px; }
+      line-height: 26px;
+      margin: 0 0 20px; }
+    .banner-section .home-section .flex_row .column-content ul li {
+      font-size: 16px;
+      line-height: 26px;
+      padding-left: 25px;
+      margin: 0 0 10px; }
+    .banner-section .home-section .flex_row .column-content .actionBtn {
+      margin: 25px 0 20px; }
+      .banner-section .home-section .flex_row .column-content .actionBtn a {
+        min-width: auto; }
+    .banner-section .home-section .flex_row .column-content .partwrap {
+      gap: 6px;
+      flex-wrap: wrap; }
+      .banner-section .home-section .flex_row .column-content .partwrap .part-col {
+        flex-basis: 47%; }
+    .banner-section .home-section .videoSc {
+      width: 425px;
+      text-align: center;
+      margin: 30px auto 0;
+      position: initial; }
+      .banner-section .home-section .videoSc .topVideo .videoWrapper {
+        min-height: 430px; }
+      .banner-section .home-section .videoSc .inner .playsc {
+        width: 60px;
+        height: 60px; }
+        .banner-section .home-section .videoSc .inner .playsc:before {
+          width: 80px;
+          height: 80px;
+          top: -11px;
+          left: -10px; }
+    .banner-section .home-section:after {
+      display: none; }
+    .banner-section:before {
+      display: none; }
 
   .button-common .cmn-democta {
     justify-content: center; }
@@ -10475,31 +10545,7 @@ h3 a {
   .margin-t-80 {
     margin-top: 40px; } }
 @media (max-width: 479px) {
-  .featuredt-banner .inner-wrap .list li {
-    margin: 0 0 5px; }
-
-  .featuredt-banner .videoSc .topVideo .contbox2 button {
-    height: 200px; }
-
-  .featuredt-banner .videoSc .topVideo .videoWrapper {
-    min-height: 200px; }
-
-  .featuredt-banner .inner-wrap .actionBtn {
-    margin: 20px 0 20px; }
-
-  .featuredt-banner .videoSc .videoPoster .playicon {
-    background-size: 100%;
-    width: 40px;
-    height: 40px; }
-
-  .featuredt-banner .videoSc .videoPoster .playicon:after,
-  .featuredt-banner .videoSc .videoPoster .playicon:before {
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0 -20px; }
-
-  .featuredt-banner .videoSc .videoPoster .playicon:after,
-  .featuredt-banner .videoSc .videoPoster .playicon:before {
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0 -20px; } }
+  .banner-section .home-section .videoSc {
+    width: 100%; }
+    .banner-section .home-section .videoSc .topVideo .videoWrapper {
+      min-height: 380px; } }
