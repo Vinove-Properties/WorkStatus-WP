@@ -10319,7 +10319,7 @@ h3 a {
       text-align: center;
       border-radius: 30px;
       font-weight: 500; }
-      .button-common .cmn-democta .ctbtn.nobg {
+      .button-common .cmn-democta .ctbtn.bgtrans {
         border: 1px solid #624de3;
         border-radius: 30px;
         min-width: 213px;
@@ -10545,7 +10545,7 @@ h3 a {
       padding: 12px 15px;
       min-width: 120px;
       font-size: 14px; }
-      .button-common .cmn-democta .ctbtn.nobg {
+      .button-common .cmn-democta .ctbtn.bgtrans {
         min-width: 120px;
         padding: 12px 20px; }
     .button-common .cmn-democta .nccr {
