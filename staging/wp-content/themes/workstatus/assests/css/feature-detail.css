@@ -10032,7 +10032,7 @@ h3 a {
             @media screen and (max-width: 575px) {
               .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn1 {
                 padding: 10px 10px 8px !important;
-                font-size: 12px !important; } }
+                font-size: 14px !important; } }
           .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
             border: 1px solid #ffffff;
             cursor: pointer;
@@ -10054,7 +10054,7 @@ h3 a {
             @media screen and (max-width: 575px) {
               .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2 {
                 padding: 10px 10px 8px !important;
-                font-size: 12px !important; } }
+                font-size: 14px !important; } }
           .banner-section .home-section .flex_row .column-content .actionBtn small {
             display: block;
             text-align: center;
