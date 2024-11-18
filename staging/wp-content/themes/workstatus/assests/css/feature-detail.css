@@ -10073,6 +10073,10 @@ h3 a {
                 padding: 0 10px; } }
         .banner-section .home-section .flex_row .column-content .av-device {
           margin: 0 0 40px; }
+          .banner-section .home-section .flex_row .column-content .av-device:before {
+            background: #5b26fa; }
+          .banner-section .home-section .flex_row .column-content .av-device:after {
+            background: #5b26fa; }
         .banner-section .home-section .flex_row .column-content .partwrap {
           width: 100%;
           position: relative;
@@ -10135,21 +10139,20 @@ h3 a {
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 90px;
-          height: 90px;
+          width: 85px;
+          height: 85px;
           border-radius: 50%;
           margin: -43px 0 0 -43px;
           transition: 0.4s ease-in-out; }
           .banner-section .home-section .videoSc .inner .playsc::before {
             content: "";
             position: absolute;
-            top: -11px;
-            left: -10px;
+            top: -13px;
+            left: -12px;
             width: 110px;
             height: 110px;
             border-radius: 50%;
-            background: #695eee;
-            opacity: 0.5;
+            background: rgba(105, 94, 238, 0.2);
             transition: 0.4s ease-in-out; }
           .banner-section .home-section .videoSc .inner .playsc .playicon {
             width: 100%;
@@ -10374,10 +10377,6 @@ h3 a {
     font-size: 16px;
     line-height: 26px;
     margin: 0 0 25px; }
-  .banner-section .home-section .flex_row .column-content .actionBtn {
-    margin: 30px 0; }
-  .banner-section .home-section .flex_row .column-content .av-device {
-    margin: 0 0 30px; }
   .banner-section .home-section .videoSc {
     width: 600px;
     top: -75px; }
