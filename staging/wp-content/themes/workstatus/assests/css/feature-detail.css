@@ -10491,6 +10491,9 @@ h3 a {
       height: 214px;
       background-size: contain; }
 
+  .popWrap {
+    margin-top: 0; }
+
   .section-numbers {
     padding-top: 60px; } }
 @media (max-width: 767px) {
@@ -10558,4 +10561,8 @@ h3 a {
   .banner-section .home-section .videoSc {
     width: 100%; }
     .banner-section .home-section .videoSc .topVideo .videoWrapper {
-      min-height: 380px; } }
+      min-height: 380px; }
+
+  .close {
+    right: -1px;
+    top: -30px; } }
