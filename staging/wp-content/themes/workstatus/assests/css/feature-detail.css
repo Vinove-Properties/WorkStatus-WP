@@ -8280,6 +8280,7 @@ h3 a {
         color: #110302; }
         .stay-control .cards-container .card-content .card .card-wrap:hover {
           border-color: #6754E2;
+          border-bottom: 1px solid #6754E2;
           color: #110302;
           transform: scale(1.05);
           box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); }
@@ -8307,6 +8308,16 @@ h3 a {
           vertical-align: middle; }
       .stay-control .cards-container .card-content .card:last-child .card-wrap:hover .icon:after {
         background: url(../images/check-sol.svg) no-repeat; }
+      .stay-control .cards-container .card-content .card:nth-child(1) .card-wrap {
+        border-bottom: 3px solid #ff9696; }
+      .stay-control .cards-container .card-content .card:nth-child(2) .card-wrap {
+        border-bottom: 3px solid #7da1f5; }
+      .stay-control .cards-container .card-content .card:nth-child(3) .card-wrap {
+        border-bottom: 3px solid #ffd076; }
+      .stay-control .cards-container .card-content .card:nth-child(4) .card-wrap {
+        border-bottom: 3px solid #624de3; }
+      .stay-control .cards-container .card-content .card:nth-child(5) .card-wrap {
+        border-bottom: 3px solid #17cfcf; }
   .stay-control .cards-container .card-image {
     flex-basis: 40%;
     text-align: right; }
