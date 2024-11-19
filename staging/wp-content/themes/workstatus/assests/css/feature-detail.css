@@ -10393,9 +10393,9 @@ h3 a {
 .section-numbers {
   padding-top: 120px; }
   .section-numbers .ctbtn.nobg:hover {
-    background: #051441;
-    border-color: #051441;
-    color: #ffffff; }
+    background: #051441 !important;
+    border-color: #051441 !important;
+    color: #ffffff !important; }
 
 .data-drive.p50 {
   padding-top: 50px; }
