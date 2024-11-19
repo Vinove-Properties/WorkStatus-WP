@@ -1509,8 +1509,8 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $apiRequest['last_name'] = $lastName;
     }
     
-    clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($apiRequest, true), "lead", $email, 
-    [], [], [], $json['payload']['name'] );    
+    // clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($apiRequest, true), "lead", $email, 
+    // [], [], [], $json['payload']['name'] );    
     
     $ch = curl_init();
     if( $hasDataID !== 0 ){
