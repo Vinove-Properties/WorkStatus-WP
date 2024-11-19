@@ -8181,21 +8181,15 @@ h3 a {
               position: absolute;
               left: 0;
               top: 0; }
-          .feature-wrapper .item .feature-row .column-left .text-column p {
-            margin: 0 0 20px; }
-          .feature-wrapper .item .feature-row .column-left .text-column.listing h3 {
-            padding-left: 0; }
-            .feature-wrapper .item .feature-row .column-left .text-column.listing h3:before {
-              display: none; }
-          .feature-wrapper .item .feature-row .column-left .text-column.listing ul {
+          .feature-wrapper .item .feature-row .column-left .text-column ul {
             padding: 0;
             margin: 10px 0 0; }
-            .feature-wrapper .item .feature-row .column-left .text-column.listing ul li {
+            .feature-wrapper .item .feature-row .column-left .text-column ul li {
               position: relative;
               color: #5e6373;
               padding-left: 30px;
               margin: 8px 0 0; }
-              .feature-wrapper .item .feature-row .column-left .text-column.listing ul li:before {
+              .feature-wrapper .item .feature-row .column-left .text-column ul li:before {
                 content: "";
                 display: inline-block;
                 background: url(../images/list-icon-small.png) no-repeat;
@@ -8204,6 +8198,12 @@ h3 a {
                 top: 2px;
                 left: 0;
                 position: absolute; }
+          .feature-wrapper .item .feature-row .column-left .text-column p {
+            margin: 0 0 20px; }
+          .feature-wrapper .item .feature-row .column-left .text-column.listing h3 {
+            padding-left: 0; }
+            .feature-wrapper .item .feature-row .column-left .text-column.listing h3:before {
+              display: none; }
       .feature-wrapper .item .feature-row .column-right {
         flex-basis: 50%;
         text-align: right; }
@@ -8234,10 +8234,10 @@ h3 a {
           height: 25px; }
       .feature-wrapper .item .feature-row .column-left .text-column p {
         margin: 0 0 15px; }
-      .feature-wrapper .item .feature-row .column-left .text-column.listing ul li {
+      .feature-wrapper .item .feature-row .column-left .text-column ul li {
         padding-left: 25px;
         margin: 8px 0 0; }
-        .feature-wrapper .item .feature-row .column-left .text-column.listing ul li:before {
+        .feature-wrapper .item .feature-row .column-left .text-column ul li:before {
           width: 18px;
           height: 18px;
           background-size: 100%;
@@ -10410,6 +10410,19 @@ h3 a {
 
 .data-drive.p50 {
   padding-top: 50px; }
+
+.trackEm .trackRow .trackContent .row h3 {
+  padding-left: 44px;
+  position: relative; }
+  .trackEm .trackRow .trackContent .row h3:before {
+    content: "";
+    background: url(../images/list-icon.png) no-repeat;
+    width: 30px;
+    background-size: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0; }
 
 /*Step Section Start From Here*/
 @media (max-width: 1440px) {
