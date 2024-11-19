@@ -7766,12 +7766,15 @@ h3 a {
       text-align: center; } }
 .datadrive-section {
   width: 100%;
-  padding: 50px 0 0; }
+  padding: 50px 0 0;
+  position: relative; }
   .datadrive-section .data-row {
     flex-direction: row;
     display: flex;
     column-gap: 50px;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 9; }
     .datadrive-section .data-row .flex-2 {
       padding: 0 0 50px;
       flex: calc(50% - 25px); }
@@ -7798,7 +7801,7 @@ h3 a {
             font-weight: 500;
             position: relative; }
             .datadrive-section .data-row .flex-2 .box ul li:before {
-              background: url(../images/datacheck.svg) no-repeat;
+              background: url(../images/datacross.svg) no-repeat;
               content: "";
               width: 25px;
               height: 25px;
@@ -7807,8 +7810,26 @@ h3 a {
               left: 0;
               top: 0; }
         .datadrive-section .data-row .flex-2 .box.cross ul li:before {
-          background: url(../images/datacross.svg) no-repeat;
+          background: url(../images/datacheck.svg) no-repeat;
           background-size: 25px; }
+  .datadrive-section:before {
+    content: "";
+    background: url(../images/ft-left.png) no-repeat;
+    width: 458px;
+    height: 330px;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+  .datadrive-section:after {
+    content: "";
+    background: url(../images/ft-right.png) no-repeat;
+    width: 458px;
+    height: 330px;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 /*Media Query Start From Here*/
 @media (max-width: 1024px) {
@@ -7826,7 +7847,11 @@ h3 a {
             height: 20px;
             top: 3px; }
         .datadrive-section .data-row .flex-2 .box.cross ul li:before {
-          background-size: 20px; } }
+          background-size: 20px; }
+  .datadrive-section:before {
+    display: none; }
+  .datadrive-section:after {
+    display: none; } }
 @media (max-width: 767px) {
   .datadrive-section .data-row {
     column-gap: 0; }
@@ -8174,9 +8199,9 @@ h3 a {
                 content: "";
                 display: inline-block;
                 background: url(../images/list-icon-small.png) no-repeat;
-                width: 30px;
-                height: 30px;
-                top: 3px;
+                width: 20px;
+                height: 20px;
+                top: 2px;
                 left: 0;
                 position: absolute; }
       .feature-wrapper .item .feature-row .column-right {
@@ -10367,6 +10392,10 @@ h3 a {
 
 .section-numbers {
   padding-top: 120px; }
+  .section-numbers .ctbtn.nobg {
+    background: #051441;
+    border-color: #051441;
+    color: #ffffff; }
 
 .data-drive.p50 {
   padding-top: 50px; }
