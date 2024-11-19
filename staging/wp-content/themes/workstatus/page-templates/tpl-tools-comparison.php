@@ -191,49 +191,58 @@ $tbl = $compCol['cards'];
 </section>
 <?php endif; ?>
 
-<?php /* ?>
+<?php 
+$altDetails = get_field('alt-details');
+if( isset($altDetails['required']) && ($altDetails['required'] == "yes") ) :
+?>
 <section class="alter-section padding-0">
-<div class="container">
-  <div class="top-section">
-    <h2>We360.ai</h2>
-    <p> We know you might have questions, so here’s a clear comparison to help you understand the differences:
-    </p>
+  <div class="container">
+    <div class="top-section"><?php echo $altDetails['content']; ?></div>
+    <?php
+    if( $altDetails['image'] ){
+      echo '<div class="data-flow">'.pxlGetPtag($altDetails['image']).'</div>';
+    }
+    ?>  
   </div>
-  <div class="data-flow">
-    <picture>
-      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/altn-01.svg" alt="Data Driving"
-        width="1354" height="652">
-    </picture>
-  </div>
-</div>
 </section>
+<?php endif; ?>
+
+<?php 
+$altbanner = get_field('alt-banner');
+if( isset($altbanner['required']) && ($altbanner['required'] == "yes") ) :
+?>
 <section class="alter-cta padding-0">
-<div class="container">
-  <div class="cta-wrap">
-    <div class="cta-box">
-      <picture>
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/alt-cta01.png"
-          alt="Alternative" width="91" height="91">
-      </picture>
-    </div>
-    <div class="cta-cont">
-      <h2>Best  <i>
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/cta-logo01.png" alt="cta"
-          width="147" height="42">
-        </i>             Alternatives For You
-      </h2>
-      <p>Each alternative comes with unique advantages to help optimize productivity and project profitability by overcoming the limitations of We360.ai.</p>
-    </div>
-    <div class="cta-box cta-box2">
-      <picture>
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/alt-cta02.png"
-          alt="Alternative" width="136" height="151">
-      </picture>
+  <div class="container">
+    <div class="cta-wrap">
+      <div class="cta-box">
+        <?php 
+        if( $altbanner['left-logo'] ){
+        echo pxlGetPtag($altbanner['left-logo']);
+        }
+        $i = '';
+        $bnTitle = $altbanner['title'];
+        if( $altbanner['title-logo'] ){
+        $iLogo = $altbanner['title-logo'];
+        $i = '<i style="background-image:url(\''.$altbanner['title-logo']['url'].'\');width:'.$altbanner['title-logo']['width'].'px; height:'.$altbanner['title-logo']['height'].'px; margin: 0 10px;"></i>';  
+        $bnTitle = str_replace("<i>", $i, $bnTitle);
+        }
+        ?>      
+      </div>
+      <div class="cta-cont">
+        <h2><?php echo $bnTitle; ?></h2>
+        <p><?php echo $altbanner['text']; ?></p>
+      </div>
+      <div class="cta-box cta-box2">
+        <?php 
+        if( $altbanner['right-logo'] ){
+        echo pxlGetPtag($altbanner['right-logo']);
+        }
+        ?>
+      </div>
     </div>
   </div>
-</div>
 </section>
-<?php */ ?>        
+<?php endif; ?>
 
 <?php 
 $wsFeatures = get_field('more-fetures');
