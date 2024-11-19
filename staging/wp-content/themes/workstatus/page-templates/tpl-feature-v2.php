@@ -292,7 +292,7 @@
         echo '</a></div>';
       }
     }
-    echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div></div>';
+    echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
     echo '<div></section>';
     }
     
