@@ -260,7 +260,6 @@
                       <div class="column-right">'.pxlGetPtag($block['image']).'</div>
                     </div>
                     '.getCTAblock().'
-                  </div>
                 </div>';
         if( $i == $pos ){
           get_template_part('common/cmn', 'usps');
