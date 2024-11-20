@@ -286,13 +286,13 @@
           <div class="title">'.$row['title'].'</div>';
         }else{
           echo '<div class="title">'.$row['title'].'</div>';
-          echo '<div class="icon"></div></div>';
+          echo '<div class="icon"></div>';
           
         }
         echo '</a></div>';
       }
     }
-    echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
+    echo '<div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
     echo '</div></section>';
     }
     
