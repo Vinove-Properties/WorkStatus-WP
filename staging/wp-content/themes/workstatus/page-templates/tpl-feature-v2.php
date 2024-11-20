@@ -286,7 +286,7 @@
           <div class="title">'.$row['title'].'</div>';
         }else{
           echo '<div class="title">'.$row['title'].'</div>';
-          echo '<div class="icon"></div>';
+          echo '<div class="icon"></div></div>';
           
         }
         echo '</a></div>';
