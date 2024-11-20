@@ -387,6 +387,7 @@ $activePlan =  'productivity';
         </div>
       </div>
     </div>
+  </div>
 </section>
 </div><!--#wsio-pricing -->
 
