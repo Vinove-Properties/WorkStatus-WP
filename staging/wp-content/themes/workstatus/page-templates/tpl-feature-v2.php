@@ -237,7 +237,7 @@
   </section>
   <?php endif; ?>
   <?php 
-    /*$fBlocks = get_field('ftblocks');
+    $fBlocks = get_field('ftblocks');
     if( isset( $fBlocks['is_enabled'] ) && ($fBlocks['is_enabled'] == "yes") ){
       echo '<section class="feature-wrapper">';
       $pos = $fBlocks['usp-pos'];
@@ -259,13 +259,13 @@
                     '.getCTAblock().'
                   </div>
                 </div>';
-        if( $i == $pos ){
-          get_template_part('common/cmn', 'usps');
-        }        
+                if( $i == $pos ){
+                  get_template_part('common/cmn', 'usps');
+                }        
         }  
       }
       echo '</section>';  
-    }*/
+    }
     
     //Industries Section Starts Here
     $indsCmn = get_field('inds');
