@@ -300,7 +300,7 @@ if( $isEnable == "yes" ){
   <div class="container">
     <div class="top-section">
       <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
-      <h2><?php echo $user_guide_section['sub_heading']; ?></h2>
+      <?php echo $user_guide_section['sub_heading']; ?>
     </div>
     <div class="buyers-guide-section" id="div-buyer-guide">
       <div class="buyers-guide">
