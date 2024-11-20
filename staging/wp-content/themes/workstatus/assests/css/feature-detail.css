@@ -3136,6 +3136,54 @@ li.iti__country {
   border-color: red; }
 
 /*Form section END*/
+.ctasec {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative; }
+  .ctasec .devide {
+    padding: 0 10px;
+    display: inline-block;
+    position: relative;
+    color: rgba(68, 97, 215, 0.5);
+    font-size: 12px; }
+    .ctasec .devide:before {
+      content: "";
+      clear: both;
+      display: block;
+      width: 1px;
+      height: 16px;
+      position: absolute;
+      background: rgba(68, 97, 215, 0.5);
+      top: -20px;
+      left: 19px; }
+    .ctasec .devide:after {
+      content: "";
+      content: "";
+      clear: both;
+      display: block;
+      width: 1px;
+      height: 16px;
+      background: rgba(68, 97, 215, 0.5);
+      position: absolute;
+      bottom: -20px;
+      left: 19px; }
+  .ctasec .nccr {
+    font-size: 13px;
+    display: block;
+    margin: 20px 0 0;
+    text-align: center; }
+  .ctasec .nobg {
+    background: none;
+    border: none;
+    color: #624DE3;
+    text-decoration: underline;
+    padding: 0;
+    min-width: auto; }
+    .ctasec .nobg:hover {
+      background: none;
+      color: #051441; }
+
 .thank-section {
   width: 100%;
   padding: 50px 0;
