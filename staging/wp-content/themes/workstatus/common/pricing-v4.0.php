@@ -8,6 +8,7 @@ $activePlan =  'productivity';
 <div id="wsio-preloader" style="margin-top:100px;">
 <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
+
 <div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
 <section class="cmn-pricing no-af-bg post-animation">
   <div class="container">
@@ -397,4 +398,5 @@ $activePlan =  'productivity';
       </div>
     </div>
   </div>
+</div>
 </div>
