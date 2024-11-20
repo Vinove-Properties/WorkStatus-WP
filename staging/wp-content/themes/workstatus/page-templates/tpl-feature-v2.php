@@ -293,25 +293,25 @@
     echo '<div></section>';
     }
     
-    $allOne = get_field('allone');
-    if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
-    echo '<!--Debug Start-->';
-    echo '<section class="trackEm post-animation"><div class="container">';
+    // $allOne = get_field('allone');
+    // if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
+    // echo '<!--Debug Start-->';
+    // echo '<section class="trackEm post-animation"><div class="container">';
 
-    echo '<div class="top-section"><h6><span class="bg-purple">'.$allOne['heading'].'</span></h6>'.$allOne['sub_heading'].'</div>';
+    // echo '<div class="top-section"><h6><span class="bg-purple">'.$allOne['heading'].'</span></h6>'.$allOne['sub_heading'].'</div>';
 
-    echo '<div class="trackRow align-center">
-    <div class="trackImg">'.pxlGetPtag($allOne['left_image']).'</div>';
-    if( $allOne['cblock'] ){
-        echo '<div class="trackContent">';
-          foreach( $allOne['cblock'] as $row ){
-            echo '<div class="row">'.$row['content'].'</div>';
-          }
-        echo '</div>';
-    }
-    echo '</div>';
-    echo '</div></section><!--Debug end-->';
-    }
+    // echo '<div class="trackRow align-center">
+    // <div class="trackImg">'.pxlGetPtag($allOne['left_image']).'</div>';
+    // if( $allOne['cblock'] ){
+    //     echo '<div class="trackContent">';
+    //       foreach( $allOne['cblock'] as $row ){
+    //         echo '<div class="row">'.$row['content'].'</div>';
+    //       }
+    //     echo '</div>';
+    // }
+    // echo '</div>';
+    // echo '</div></section><!--Debug end-->';
+    // }
     
     $workPlace = get_field('ws-workp');
     if( isset($workPlace['is_enabled']) && ($workPlace['is_enabled'] == "yes") ){
