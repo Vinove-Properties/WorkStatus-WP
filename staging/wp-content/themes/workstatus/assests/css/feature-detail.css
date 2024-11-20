@@ -7597,7 +7597,7 @@ h3 a {
           line-height: 1;
           font-size: 14px !important;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
@@ -10592,6 +10592,13 @@ h3 a {
       display: none; }
     .banner-section:before {
       display: none; }
+
+  .trackEm .trackRow .trackContent .row h3 {
+    padding-left: 38px;
+    margin-top: 25px; }
+    .trackEm .trackRow .trackContent .row h3:before {
+      width: 25px;
+      height: 25px; }
 
   .button-common .cmn-democta {
     justify-content: center; }
