@@ -330,7 +330,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     }
     echo '</div>';  
     }
-    echo '</div></div></section>';
+    echo '</div></section>';
     }
     ?>
   <section class="compare-projects post-animation">
