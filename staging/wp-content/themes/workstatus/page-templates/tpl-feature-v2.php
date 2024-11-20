@@ -295,7 +295,7 @@
     
     $allOne = get_field('allone');
     if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
-    echo '<!--Debug Start-->'  
+    echo '<!--Debug Start-->';
     echo '<section class="trackEm post-animation"><div class="container">';
 
     echo '<div class="top-section"><h6><span class="bg-purple">'.$allOne['heading'].'</span></h6>'.$allOne['sub_heading'].'</div>';
