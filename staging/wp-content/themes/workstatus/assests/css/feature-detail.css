@@ -3872,19 +3872,6 @@ ul li {
     color: #fff;
     opacity: 0.8; }
 
-.inner-banner .ctasec .ctbtn {
-  background: #fff;
-  color: #624DE3; }
-  .inner-banner .ctasec .ctbtn:hover {
-    background: #051441;
-    color: #fff; }
-.inner-banner .ctasec .nobg {
-  background: none;
-  color: #fff; }
-  .inner-banner .ctasec .nobg:hover {
-    background: none;
-    color: #051441; }
-
 img {
   max-width: 100%;
   height: auto; }
@@ -4927,10 +4914,6 @@ a:hover h3,
   .middle-section .item {
     padding: 80px 0; }
 
-  .inner-banner .videoSc:before {
-    top: -101px;
-    right: 144px; }
-
   .banner-form .phone-wrap:before {
     top: 8px; }
 
@@ -5033,33 +5016,6 @@ a:hover h3,
   .linebrk {
     display: none; }
 
-  .inner-banner .videoSc:before {
-    width: 100px;
-    height: 128px;
-    top: -100px;
-    right: 70px; }
-
-  .inner-banner .videoSc .topVideo .videoWrapper {
-    min-height: 480px; }
-
-  .case-section .column-three {
-    margin: 15px; }
-
-  .inner-banner .videoSc .videoPoster .playicon {
-    margin-top: 0; }
-
-  .linebrk {
-    display: none; }
-
-  .inner-banner-bg {
-    height: auto; }
-
-  .inner-banner-bg .bannerwrap {
-    padding: 90px 0; }
-
-  .inner-banner-bg::after {
-    height: 100px; }
-
   .boxDiv .boxRow .boxCol {
     flex-basis: 28%;
     padding: 30px 15px;
@@ -5099,31 +5055,6 @@ a:hover h3,
 
   .boxDiv {
     padding: 50px 0 0; }
-
-  .inner-banner {
-    padding: 90px 0 0; }
-
-  .inner-banner .inner-wrap .list li {
-    margin: 0 10px 5px; }
-
-  .inner-banner:before {
-    height: 100px; }
-
-  .inner-banner:after {
-    bottom: 100px; }
-
-  .inner-banner .videoSc .topVideo .contbox2 button {
-    height: 400px; }
-
-  .inner-banner .videoSc .topVideo .videoWrapper {
-    min-height: 400px; }
-
-  .inner-banner .videoSc .srp-1 .videoPoster {
-    background-size: 100%;
-    height: 400px; }
-
-  .inner-banner .videoSc::before {
-    display: none; }
 
   .benifits-section .column-three {
     padding: 10px; }
@@ -5341,22 +5272,6 @@ a:hover h3,
   .boxDiv .boxRow i {
     margin: 0 auto; }
 
-  .inner-banner .videoSc {
-    width: 100%; }
-
-  .inner-banner .videoSc .topVideo .contbox2 button {
-    height: 320px; }
-
-  .inner-banner:before {
-    height: 60px; }
-
-  .inner-banner:after {
-    bottom: 60px;
-    height: 100px; }
-
-  .inner-banner .videoSc .topVideo .videoWrapper {
-    min-height: 320px; }
-
   .benifits-section .column-three, .time-data .column-three {
     text-align: center; }
 
@@ -5365,20 +5280,6 @@ a:hover h3,
 
   .benifits-section .column-three i {
     margin: 0 auto; }
-
-  .inner-banner .inner-wrap .actionBtn, .inner-banner-bg .inner-wrap .actionBtn {
-    justify-content: space-between; }
-
-  .inner-wrap .actionBtn small {
-    font-size: 11px;
-    line-height: 13px; }
-
-  .inner-wrap .actionBtn div {
-    width: 46%;
-    margin: 0 5px; }
-
-  .inner-wrap .actionBtn small br {
-    display: none; }
 
   .closeicon {
     background-size: 100%;
@@ -5480,40 +5381,9 @@ a:hover h3,
     font-size: 15px;
     min-width: initial; }
 
-  .inner-banner .inner-wrap br {
-    display: none; }
-
   .faqsRow .column .faq-accordion-item-outer h3 {
     font-size: 16px; } }
 @media (max-width: 479px) {
-  .inner-banner .inner-wrap .list li {
-    margin: 0 0 5px;
-    padding: 0 5px; }
-
-  .inner-banner .videoSc .topVideo .contbox2 button {
-    height: 200px; }
-
-  .inner-banner .videoSc .topVideo .videoWrapper {
-    min-height: 200px; }
-
-  .inner-banner .inner-wrap .actionBtn {
-    margin: 20px 0 20px; }
-
-  .inner-banner .videoSc .videoPoster .playicon {
-    background-size: 100%;
-    width: 40px;
-    height: 40px; }
-
-  .inner-banner .videoSc .videoPoster .playicon:after, .inner-banner .videoSc .videoPoster .playicon:before {
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0 -20px; }
-
-  .inner-banner .videoSc .videoPoster .playicon:after, .inner-banner .videoSc .videoPoster .playicon:before {
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0 -20px; }
-
   .banner-form .form-wrap .form-group, .banner-form .form-wrap .form-group-d {
     width: 100%; }
 
