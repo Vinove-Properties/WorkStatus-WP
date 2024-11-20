@@ -271,9 +271,11 @@
     $indsCmn = get_field('inds');
     if( isset($indsCmn['is_enabled']) && ($indsCmn['is_enabled'] == "yes") ){
     echo '<section class="stay-control bg-light"><div class="container">';
+
     echo '<div class="top-section">
     <h6><span class="bg-purple">'.$indsCmn['heading'].'</span></h6>'.$indsCmn['top-content'].'
     </div>';
+
     echo '<div class="cards-container"><div class="card-content">';
     if( $indsCmn['listing'] ){
       foreach( $indsCmn['listing'] as $row ){
@@ -290,7 +292,8 @@
       }
     }
     echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
-    echo '<div></section>';
+    
+    echo '</div></section>';
     }
     
     $allOne = get_field('allone');
