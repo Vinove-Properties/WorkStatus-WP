@@ -1,11 +1,11 @@
 <?php 
-  /* 
-  Template Name: Feature v2.0 Template
-  Author : Nitin Baluni
-  */ 
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink, $post;
-  ?>
+/* 
+Template Name: Feature v2.0 Template
+Author : Nitin Baluni
+*/ 
+get_header();
+global $ws_ctas, $RegLink, $LogLink, $post;
+?>
 <main class="site__content">
   <section class="banner-section">
     <div class="home-section">
@@ -312,26 +312,26 @@
     echo '</div></section><!--Debug end-->';
     }
     
-    $workPlace = get_field('ws-workp');
-    if( isset($workPlace['is_enabled']) && ($workPlace['is_enabled'] == "yes") ){
-    echo '<section class="column-section bg-light post-animation"><div class="container">';
-    echo '<div class="top-section">
-    <h6><span class="bg-purple">'.$workPlace['heading'].'</span></h6>'.$workPlace['sub_heading'].'</div>';
-    if( $workPlace['blocks'] ){
-    echo '<div class="ws-row">';
-    foreach( $workPlace['blocks'] as $row ){
-      $more = ($row['link']) ? '<a href="'.ws_siteurl($row['link']).'" class="is-arrow">Explore More</a>' : '';
-      echo '<div class="flex-4">
-          <div class="box">
-            '.pxlGetPtag($row['icon']).'
-            <div class="content-area">'.$row['content'].'</div>'.$more.'
-          </div>
-        </div>';
-    }
-    echo '</div>';  
-    }
-    echo '</div></div></section>';
-    }
+    // $workPlace = get_field('ws-workp');
+    // if( isset($workPlace['is_enabled']) && ($workPlace['is_enabled'] == "yes") ){
+    // echo '<section class="column-section bg-light post-animation"><div class="container">';
+    // echo '<div class="top-section">
+    // <h6><span class="bg-purple">'.$workPlace['heading'].'</span></h6>'.$workPlace['sub_heading'].'</div>';
+    // if( $workPlace['blocks'] ){
+    // echo '<div class="ws-row">';
+    // foreach( $workPlace['blocks'] as $row ){
+    //   $more = ($row['link']) ? '<a href="'.ws_siteurl($row['link']).'" class="is-arrow">Explore More</a>' : '';
+    //   echo '<div class="flex-4">
+    //       <div class="box">
+    //         '.pxlGetPtag($row['icon']).'
+    //         <div class="content-area">'.$row['content'].'</div>'.$more.'
+    //       </div>
+    //     </div>';
+    // }
+    // echo '</div>';  
+    // }
+    // echo '</div></div></section>';
+    // }
     ?>
   <section class="compare-projects post-animation">
     <div class="container">
