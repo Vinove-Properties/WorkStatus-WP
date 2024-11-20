@@ -12,10 +12,7 @@
       <div class="container">
         <div class="flex_row">
           <div class="column column-content">
-            <h1>
-              Level Up Team Productivity 
-            </h1>
-            <p>Automate time tracking to ensure employees work efficiently. Track hours worked by employeeson each project.</p>
+            <?php the_content(); ?>
             <div class="cont-wrap">
               <div class="actionBtn">
                 <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1 formbtn">Book A Demo</a>
@@ -299,16 +296,20 @@
     $allOne = get_field('allone');
     if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
     echo '<section class="trackEm post-animation"><div class="container">';
+
     echo '<div class="top-section"><h6><span class="bg-purple">'.$allOne['heading'].'</span></h6>'.$allOne['sub_heading'].'</div>';
-    echo '<div class="trackRow align-center"><div class="trackImg">'.pxlGetPtag($allOne['left_image']).'</div>';
+
+    echo '<div class="trackRow align-center">
+    <div class="trackImg">'.pxlGetPtag($allOne['left_image']).'</div>';
     if( $allOne['cblock'] ){
         echo '<div class="trackContent">';
-        foreach( $allOne['cblock'] as $row ){
-          echo '<div class="row">'.$row['content'].'</div>';
-        }
+          foreach( $allOne['cblock'] as $row ){
+            echo '<div class="row">'.$row['content'].'</div>';
+          }
         echo '</div>';
-      }
-    echo '</div></div></section>';
+    }
+    echo '</div>';
+    echo '</div></section>';
     }
     
     $workPlace = get_field('ws-workp');
