@@ -3580,125 +3580,6 @@ li.iti__country {
   color: #000; }
 
 /*Feature Form End Here*/
-/*Sticky Button section*/
-.stickysec {
-  position: fixed;
-  bottom: 13%;
-  right: 0;
-  z-index: 9;
-  transition: all 0.4s ease-in; }
-  .stickysec .searchBtn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 62px;
-    height: 62px;
-    right: 25px;
-    border-radius: 100%;
-    background: linear-gradient(181.22deg, #7d69f8 -7.7%, #5e52eb 103.7%);
-    box-shadow: 0px 4px 43px rgba(29, 14, 217, 0.72);
-    position: fixed; }
-    .stickysec .searchBtn:after {
-      content: "";
-      background: url(../images/sticky-icon.png) center center no-repeat;
-      width: 43px;
-      height: 46px;
-      text-align: center;
-      display: inline-block; }
-  .stickysec #myContacts {
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    right: -250px;
-    top: -120px;
-    transition: all 0.4s ease-in;
-    visibility: hidden;
-    width: 243px; }
-  .stickysec #myContacts.open {
-    background: #ffffff;
-    box-shadow: 0px 4px 43px rgba(29, 14, 217, 0.2);
-    border-radius: 4px;
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-    right: 25px;
-    transition: all 0.4s ease-in; }
-  .stickysec .headTxt {
-    background: #695eee;
-    padding: 14px 15px;
-    font-weight: 500;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .stickysec .headTxt .closeBtn {
-      cursor: pointer;
-      background: url(../images/cross-button-icon.png) no-repeat;
-      width: 10px;
-      height: 10px;
-      border: 0; }
-      .stickysec .headTxt .closeBtn:hover {
-        opacity: 0.8; }
-  .stickysec ul {
-    padding: 8px 0 20px;
-    margin: 0;
-    overflow: hidden; }
-    .stickysec ul li {
-      padding: 0 15px;
-      margin: 12px 0 0;
-      color: #695eee;
-      font-weight: 600;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center; }
-      .stickysec ul li i {
-        margin-top: 5px;
-        background: url(../images/btn-icon.png) no-repeat;
-        width: 30px;
-        height: 20px;
-        display: inline-block;
-        margin-right: 10px; }
-      .stickysec ul li .icon1 {
-        background-position: 0 -39px; }
-      .stickysec ul li .icon2 {
-        background-position: 0 -8px; }
-      .stickysec ul li .icon3 {
-        background-position: 0 -76px; }
-      .stickysec ul li .icon4 {
-        background-position: 0 -107px; }
-      .stickysec ul li .icon5 {
-        background: url(../images/bug-icon.png) no-repeat;
-        background-position: 10px 0px; }
-      .stickysec ul li a {
-        color: #695eee;
-        font-weight: 600;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center; }
-        .stickysec ul li a:hover {
-          color: #333333;
-          text-decoration: underline; }
-        .stickysec ul li a #myContacts.open {
-          opacity: 1;
-          transform: none;
-          visibility: visible; }
-      .stickysec ul li .phone {
-        pointer-events: none; }
-
-.chat a {
-  cursor: pointer; }
-
-.crisp-client .cc-52lo .cc-kegp .cc-1oun {
-  opacity: 0 !important; }
-
-body .crisp-client .cc-52lo .cc-kegp .cc-1oun {
-  z-index: -2 !important;
-  bottom: -60px !important;
-  opacity: 0 !important;
-  visibility: hidden !important; }
-
-/*Sticky Button End Here*/
 .thank-section {
   width: 100%;
   padding: 50px 0;
@@ -5034,9 +4915,6 @@ a:hover h3,
   #phone-error {
     bottom: -68px; }
 
-  .stickysec {
-    bottom: 16%; }
-
   .feature-form .iti__flag-container {
     height: 50px; }
 
@@ -5110,12 +4988,6 @@ a:hover h3,
 
   .captForm {
     margin: 0; }
-
-  .stickysec {
-    bottom: 18%; }
-
-  .stickysec .searchBtn, .stickysec #myContacts.open {
-    right: 20px; }
 
   .iti__flag-container {
     height: 40px; }
@@ -5204,9 +5076,6 @@ a:hover h3,
     width: 100px;
     height: 100px;
     top: -40px; }
-
-  .stickysec {
-    bottom: 22%; }
 
   .feature-form .form-wrap .form-group {
     width: 50%; }
@@ -5595,9 +5464,6 @@ a:hover h3,
   .iti__flag-container {
     height: 38px; }
 
-  .stickysec {
-    bottom: 15%; }
-
   .feature-form .form-wrap .btn {
     margin: 20px auto 0; }
 
@@ -5656,27 +5522,6 @@ a:hover h3,
 
   #captchaerror {
     width: 85px; }
-
-  .stickysec ul li.desk-cont {
-    display: none; }
-
-  .stickysec ul li .phone {
-    pointer-events: auto; }
-
-  .stickysec ul li.mob-cont {
-    pointer-events: auto;
-    display: block; }
-
-  .stickysec ul li .icon1 {
-    margin-top: 0; }
-
-  .stickysec ul li {
-    margin: 5px 0 0;
-    padding: 0 10px; }
-
-  .stickysec #myContacts {
-    width: 200px;
-    top: -95px; }
 
   input:focus {
     font-size: 16px !important; }
