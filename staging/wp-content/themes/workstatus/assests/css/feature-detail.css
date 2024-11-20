@@ -4129,43 +4129,6 @@ a:hover h3,
         .wsMobile .wsmApp a {
           margin: 0; } }
 
-.remove-clip-path-img {
-  padding: 0; }
-  .remove-clip-path-img .slide_shape_section .shape {
-    clip-path: none; }
-
-.slide_shape_section:before {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 139px;
-  top: -113px;
-  background: url(../images/dots_double.png);
-  left: -180px;
-  background-repeat: no-repeat;
-  z-index: 1;
-  transition: all 1s ease-in-out; }
-
-.slide_shape_section .shape {
-  width: 100%;
-  height: 50px;
-  background-color: #6754E2;
-  background-size: cover;
-  -webkit-clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-  clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-  position: absolute;
-  top: -49px; }
-
-.trianglefeaturedetail-right {
-  width: 100px;
-  height: 90px;
-  display: block;
-  top: -60px;
-  background: url(../images/featureDetailbg.png);
-  margin: 0 auto;
-  position: absolute;
-  right: 0; }
-
 .journey-bg {
   position: relative; }
 
@@ -4175,86 +4138,6 @@ a:hover h3,
 
 /*faq section end here*/
 /*feature detail common section*/
-.feature-section .item .column-left .text-column h3 i {
-  background: url(../images/list-icon.png) no-repeat;
-  width: 30px;
-  height: 30px; }
-
-.feature-section .checkList {
-  padding: 0;
-  margin: 10px 0 0; }
-  .feature-section .checkList li {
-    position: relative;
-    color: #5E6373;
-    padding-left: 30px;
-    margin: 8px 0 0; }
-    .feature-section .checkList li:before {
-      content: '';
-      display: inline-block;
-      background: url(../images/list-icon-small.png) no-repeat;
-      width: 30px;
-      height: 30px;
-      top: 3px;
-      left: 0;
-      position: absolute; }
-
-.feature-section ul {
-  padding: 0;
-  margin: 10px 0 0; }
-  .feature-section ul li {
-    position: relative;
-    color: #5E6373;
-    padding-left: 30px;
-    margin: 8px 0 0; }
-    .feature-section ul li:before {
-      content: '';
-      display: inline-block;
-      background: url(../images/list-icon-small.png) no-repeat;
-      width: 30px;
-      height: 30px;
-      top: 3px;
-      left: 0;
-      position: absolute; }
-
-.boxDiv .boxRow {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center; }
-  .boxDiv .boxRow i {
-    background: url(../images/teams-sprite.webp) no-repeat;
-    width: 92px;
-    height: 89px;
-    display: block; }
-  .boxDiv .boxRow .icon1 {
-    background-position: -10px -646px; }
-  .boxDiv .boxRow .icon2 {
-    background-position: -10px -10px; }
-  .boxDiv .boxRow .icon3 {
-    background-position: -10px -116px; }
-  .boxDiv .boxRow .icon4 {
-    background-position: -10px -755px; }
-  .boxDiv .boxRow .icon5 {
-    background-position: -10px -222px; }
-  .boxDiv .boxRow .icon6 {
-    background-position: -10px -328px; }
-  .boxDiv .boxRow .icon7 {
-    background-position: -10px -434px; }
-  .boxDiv .boxRow .icon8 {
-    background-position: -10px -540px; }
-  .boxDiv .boxRow .boxCol {
-    flex-basis: 30%;
-    background: #faf8fe;
-    margin-left: 30px;
-    min-height: 280px;
-    display: flex;
-    flex-direction: column;
-    padding: 40px 30px;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    text-align: left; }
-
 .align-center {
   align-items: center; }
 
@@ -4783,12 +4666,6 @@ a:hover h3,
   .linebrk {
     display: none; }
 
-  .boxDiv .boxRow .boxCol {
-    flex-basis: 28%;
-    padding: 30px 15px;
-    margin-bottom: 20px;
-    margin-left: 20px; }
-
   .regBtn .primary_btn1 {
     line-height: 1.4 !important;
     padding: 10px 15px !important;
@@ -4811,17 +4688,6 @@ a:hover h3,
 
   section {
     padding: 50px 0; }
-
-  .feature-section .item .column-left .text-column h3 i, .trackEm .trackRow .trackContent h3 i {
-    background-size: 100%;
-    width: 25px;
-    height: 25px; }
-
-  .boxDiv {
-    padding: 50px 0 0; }
-
-  .benifits-section .column-three {
-    padding: 10px; }
 
   .time-data .column-three {
     padding: 10px; }
@@ -4853,11 +4719,6 @@ a:hover h3,
 
   .buyers-guide-answer h3 {
     padding: 60px 0 20px; }
-
-  .feature-section .item .column-left .text-column h3 i, .trackEm .trackRow .trackContent h3 i {
-    background-size: 100%;
-    width: 25px;
-    height: 25px; }
 
   .banner-form .form-wrap label {
     font-size: 13px;
@@ -4984,23 +4845,8 @@ a:hover h3,
   .journey-bg .top-section {
     margin: 0 0 30px; }
 
-  .boxDiv .boxRow .boxCol {
-    flex-basis: 100%;
-    margin: 0 0 20px;
-    min-height: initial;
-    text-align: center; }
-
-  .boxDiv .boxRow i {
-    margin: 0 auto; }
-
-  .benifits-section .column-three, .time-data .column-three {
-    text-align: center; }
-
   .time-data .column-three {
     margin: 0 auto 10px; }
-
-  .benifits-section .column-three i {
-    margin: 0 auto; }
 
   .closeicon {
     background-size: 100%;
