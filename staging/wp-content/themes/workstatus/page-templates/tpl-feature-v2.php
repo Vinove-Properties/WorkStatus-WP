@@ -293,7 +293,7 @@
       }
     }
     echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
-    echo '<div></section>';
+    echo '</div></section>';
     }
     
     $allOne = get_field('allone');
