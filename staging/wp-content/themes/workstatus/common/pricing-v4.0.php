@@ -388,15 +388,15 @@ $activePlan =  'productivity';
       </div>
     </div>
 </section>
+</div><!--#wsio-pricing -->
 
 <div class="blogvideo-popup">
   <div id="calendly-popup" class="popup-wrapper" style="display:none;">
     <div class="popWrap">
       <div class="popup-content">
       <span class="cl-iframe-closeicon" onclick="closeCalendlyiFrame()">Close</span>
-      <iframe id="calendly-iframe" class="videoIframe js-videoIframe" src="" allow="autoplay"></iframe>
+      <iframe id="calendly-iframe" class="videoIframe js-videoIframe" src="#" allow="autoplay"></iframe>
       </div>
     </div>
   </div>
-</div>
 </div>
