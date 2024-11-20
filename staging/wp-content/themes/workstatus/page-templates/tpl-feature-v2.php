@@ -66,7 +66,7 @@
           <div id="myBtn" class="vbtn">
             Open Modal  
             <div class="playsc"><span class="playicon"></span></div>
-            </div>
+              </div>
           <div class="topVideo srp-1">
             <div id="myDIV" class="contbox2">
               <div class="videoWrapper js-videoWrapper">
@@ -293,7 +293,7 @@
       }
     }
     echo '</div><div class="card-image">'.pxlGetPtag($indsCmn['image']).'</div>';
-    echo '</div></section>';
+    echo '<div></section>';
     }
     
     $allOne = get_field('allone');
