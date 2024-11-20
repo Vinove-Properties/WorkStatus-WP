@@ -63,10 +63,10 @@
       </div>
       <div class="column videoSc" id="has-yt-video">
         <div class="inner">
-          <button id="myBtn" class="vbtn">
+          <div id="myBtn" class="vbtn">
             Open Modal  
             <div class="playsc"><span class="playicon"></span></div>
-          </button>
+            </div>
           <div class="topVideo srp-1">
             <div id="myDIV" class="contbox2">
               <div class="videoWrapper js-videoWrapper">
