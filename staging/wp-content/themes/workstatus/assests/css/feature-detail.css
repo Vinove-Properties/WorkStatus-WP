@@ -5196,45 +5196,6 @@ a:hover h3,
       font-size: 15px; }
     .av-device i {
       margin-left: 12px; } }
-.ft-partner {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 50px 0 20px;
-  justify-content: center; }
-  .ft-partner .partcol {
-    padding: 0 20px;
-    text-align: center; }
-    .ft-partner .partcol .picon {
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      margin: 0 auto 12px;
-      align-items: center; }
-    .ft-partner .partcol .part-logo {
-      background: url(../images/star-image01.svg) no-repeat;
-      width: 101px;
-      height: 16px;
-      display: block;
-      position: relative;
-      margin: 0 auto; }
-      .ft-partner .partcol .part-logo.part-logo2 {
-        background: url(../images/star-image02.svg) no-repeat; }
-      .ft-partner .partcol .part-logo.part-logo3 {
-        background: url(../images/star-image03.svg) no-repeat; }
-      .ft-partner .partcol .part-logo.part-logo4 {
-        background: url(../images/star-image04.svg) no-repeat; }
-      .ft-partner .partcol .part-logo.part-logo5 {
-        background: url(../images/star-image05.svg) no-repeat; }
-
-@media (max-width: 1024px) {
-  .ft-partner {
-    margin: 40px 0 0; }
-    .ft-partner .partcol {
-      margin: 0 0 20px; } }
-@media (max-width: 1024px) {
-  .ft-partner {
-    display: none; } }
 /*Downlaod form start from here*/
 .dis-flex {
   display: flex;
