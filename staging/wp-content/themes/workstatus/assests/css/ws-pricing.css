@@ -7573,7 +7573,7 @@ h3 a {
           line-height: 1;
           font-size: 16px;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
@@ -8202,7 +8202,7 @@ h3 a {
           line-height: 1;
           font-size: 16px;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two:hover .header-item-right .cta-wrap .login a.bg-none, .header-two.shady .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
