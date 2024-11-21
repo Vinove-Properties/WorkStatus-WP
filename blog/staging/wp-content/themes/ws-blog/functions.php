@@ -2160,3 +2160,47 @@ add_filter( 'wpseo_robots', function( $robotsstr ){
     }
     return $robotsstr;
 });
+
+function update_image_metadata_to_webp_correctly(){
+    set_time_limit(0);
+    
+    global $wpdb;
+    // Fetch all attachments with metadata containing .png or .jpg
+    $attachments = $wpdb->get_results("
+        SELECT post_id, meta_value 
+        FROM {$wpdb->postmeta} 
+        WHERE meta_key = '_wp_attachment_metadata'
+        AND (meta_value LIKE '%.png%' OR meta_value LIKE '%.jpg%')
+    ");
+    foreach ($attachments as $attachment) {
+        $meta = maybe_unserialize($attachment->meta_value);
+
+        // Replace .png and .jpg with .webp in file paths
+        if (is_array($meta) && isset($meta['file'])) {
+            $meta['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $meta['file']);
+        }
+
+        if (isset($meta['sizes']) && is_array($meta['sizes'])) {
+            foreach ($meta['sizes'] as $size => $data) {
+                if (isset($data['file'])) {
+                    $meta['sizes'][$size]['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $data['file']);
+                }
+            }
+        }
+
+        // Update the metadata in the database
+        $wpdb->update(
+            $wpdb->postmeta,
+            ['meta_value' => maybe_serialize($meta)],
+            ['post_id' => $attachment->post_id, 'meta_key' => '_wp_attachment_metadata']
+        );
+    }
+
+    echo "All attachment metadata updated to use WebP paths!";
+}
+
+add_action('init', function(){
+    if( isset($_GET['webp-reg']) && ($_GET['webp-reg'] == "runtime") ){
+        update_image_metadata_to_webp_correctly(); die;       
+    }
+});
