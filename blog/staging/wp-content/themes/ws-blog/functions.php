@@ -2204,3 +2204,9 @@ add_action('init', function(){
         update_image_metadata_to_webp_correctly(); die;       
     }
 });
+
+add_filter('upload_mimes', function(){
+    $mime_types = [];
+    $mime_types['webp'] = 'image/webp';
+    return $mime_types;
+});
