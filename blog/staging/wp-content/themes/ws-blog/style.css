@@ -1147,6 +1147,16 @@ div.epcl-share-container {
  text-decoration: underline;
  color: #4231AC;
 }
+
+
+.auth-wrap{display: flex; align-items: center; margin:0 0 20px;}
+.auth-wrap .author-img {flex-basis: 45px; vertical-align: middle;}
+.auth-wrap .author-img img {border-radius: 100%;}
+.auth-wrap .entry-meta a {color: #5e6373; cursor: pointer;}
+.auth-wrap .entry-meta {color: #5e6373;}
+.auth-wrap .entry-meta a:hover {color: #333; text-decoration: underline;}
+
+
 @media screen and (max-width: 1640px) {
  .blog-thumb img {
   height: 200px;

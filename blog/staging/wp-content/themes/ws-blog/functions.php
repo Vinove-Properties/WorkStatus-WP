@@ -94,6 +94,11 @@ function workstatus_scripts(){
     wp_enqueue_style( 'ws-footer', get_stylesheet_directory_uri() .'/assets/css/ws-footer.css',  array(), _S_VERSION); 
     wp_enqueue_style( 'ws-all-forms', get_stylesheet_directory_uri() .'/forms-style.css',  array(), _S_VERSION);
 
+    
+    if( is_author() ){
+      wp_enqueue_style( 'author-archive', get_stylesheet_directory_uri().'/assets/css/author-style.css', array(), _S_VERSION );    
+      }
+
     if( is_single() ){
     //wp_enqueue_style( 'pxl-ebook', get_stylesheet_directory_uri() .'/assets/css/pxl-ebook.css');          
     /*
@@ -2210,3 +2215,55 @@ add_filter('upload_mimes', function(){
     $mime_types['webp'] = 'image/webp';
     return $mime_types;
 });
+
+
+function getMcAuthorThumb( $author_id ){
+  $authThumbnail    = get_template_directory_uri().'/dev-images/author-profile.jpg';
+  $authorThumbnail  = get_field( 'auth-thumb', 'user_'.$author_id );
+  if( $authorThumbnail && isset( $authorThumbnail['url'] ) ){
+    $authThumbnail = $authorThumbnail['url'];
+  }else{  
+    $user_avtar   = get_user_meta( $author_id, 'wp_user_avatars', true );
+    if( $user_avtar ){
+      $authThumbnail = isset( $user_avtar['full'] ) ? $user_avtar['full'] : 
+      get_bloginfo('template_url').'/dev-images/author-profile.jpg';
+    }
+  }
+  return $authThumbnail;
+}
+
+function getMcAutor( $post_id ){
+$author_id  = get_post_field('post_author', $post_id);
+$authorName = get_the_author_meta('display_name', $author_id);
+return '<div class="auth-wrap">
+  <div class="author-img">
+  <img loading="lazy" src="'.getMcAuthorThumb($author_id).'" width="36" height="36" alt="'.$authorName.'">
+  </div>
+  <div class="entry-meta">by <a href="'.get_author_posts_url($author_id).'" title="Posts by '.$authorName.'">'.$authorName.'</a></div>
+  </div>';
+}
+
+
+function getAuthorBlogCategories( $author_id ){
+  $args       = array( 'author' => $author_id, 'posts_per_page' => -1 );
+  $auth_posts = get_posts( $args );
+  $authCats   = '';
+  $cat_array  = [];
+
+  if( $auth_posts ){
+      foreach( $auth_posts as $bpost ){
+          foreach(get_the_category($bpost->ID) as $cat){
+              if( $cat->term_id !== 1 ){
+                  $cat_array[$cat->term_id] =  ['slug' => get_category_link( $cat->term_id ), 'cat' => $cat->name ];    
+              }                 
+          }
+      }
+  }
+  
+  if( $cat_array ){
+      foreach( $cat_array as $key => $value) {
+      $authCats .= '<a href="'.$value['slug'].'">'.$value['cat'].'</a>';
+      }
+  }
+  return $authCats;
+}

@@ -57,6 +57,7 @@ if( function_exists('get_fields') ){
       $exprt = str_replace("Introduction", " ", $exprt);
       echo '<p>'.ltrim($exprt).'</p>';
       ?>
+      <?php echo getMcAutor(get_the_ID()); ?>
       <a href="<?php the_permalink(); ?>" class="rdmore">Read More</a>
       </div>
 
