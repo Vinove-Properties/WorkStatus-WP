@@ -15,7 +15,7 @@ if( $user_avtar ){
     <div class="auth-left">
       <div class="aut-top">
         <div class="author-page-head">
-          <div class="auth-image"><img loading="lazy" src="<?php echo $profileImage; ?>" width="94" height="94"/></div>
+          <div class="auth-image"><a href="https://imgbb.com/"><img src="https://i.ibb.co/mSZZ7C3/wsprofile.png" alt="wsprofile" border="0"></a></div>
           <div class="auth-info">
             <h1 class="aut-name"><?php echo get_the_author_meta('display_name', $author_id); ?></h1>
             <p><?php echo get_field('pro-title', 'user_'.$author_id); ?></p>
