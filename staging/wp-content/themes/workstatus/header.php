@@ -447,6 +447,7 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring</span>Enhanced insights, optimized workflow</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/payroll"><span class="title">Payroll</span>
                                     Streamlined payroll, easy management</a>
+                                    <a href="<?php echo site_url(); ?>/customization"><span class="title">Custom Solutions & Integrations</span>Tailored workforce management</a>
                                   </div>
                                 </div>
                               </div>
@@ -789,6 +790,7 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/payroll"><span class="title">Payroll</span>
                                     Streamlined payroll, easy management
                                     </a>
+                                    <a href="<?php echo site_url(); ?>/customization"><span class="title">Custom Solutions & Integrations</span>Tailored workforce management</a>
                                   </div>
                                 </div>
                               </div>
