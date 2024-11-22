@@ -131,15 +131,11 @@
     </header>  
     
     </div>    
-    <?php 
-if( !is_single() ){
-  get_template_part('inc/cmn', 'filter'); 
-}
-?>
-
-<?php 
+    <?php
 if ( is_author() ) {
-  get_template_part('inc/cmn', 'filter'); 
-  get_template_part('inc/author', 'section');
+    get_template_part('inc/cmn', 'filter');
+    get_template_part('inc/author', 'section');
+} elseif ( !is_single() ) {
+    get_template_part('inc/cmn', 'filter');
 }
 ?>
