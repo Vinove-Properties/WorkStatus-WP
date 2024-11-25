@@ -1,5 +1,6 @@
 <?php
 require_once get_template_directory() .'/common/inc/global-config.php';
+
 function isBetaVersion(){
 	if( isset( $_SERVER['HTTP_HOST'] ) && ( $_SERVER['HTTP_HOST'] == "localhost" ) ) return true;
 
