@@ -305,8 +305,7 @@
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp Meetings</span>
                                     Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile Project Management</span>
-                                    Flexible workflows, faster results</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>Visualize timelines, achieve goals</a>
+                                    Flexible workflows, faster results</a>                                    
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint Planning</span>
@@ -315,7 +314,8 @@
                                     Focus on key initiatives</a>
                                     <a href="<?php echo site_url(); ?>/project-management/task-management"><span class="title">Task Management</span>
                                     Prioritize, track, & collaborate</a>
-                                    <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>Simplify invoicing, get paid faster</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/gantt-charts"><span class="title">Gantt Chart</span>Visualize timelines, achieve goals</a>
+                                    <!-- <a href="<?php echo site_url(); ?>/project-management/online-invoicing-software"><span class="title">Online Invoicing</span>Simplify invoicing, get paid faster</a> -->
                                   </div>
                                 </div>
                               </div>
