@@ -4,7 +4,7 @@ get_userdata(get_query_var('author'));
 $author_id = $curauth->ID;
 
 $profileImage = get_bloginfo('url').'/dev-images/author-profile.jpg';
-$user_avtar   = get_user_meta( $author_id, 'wp_user_avatars', true );
+$user_avtar   = get_user_meta( $author_id, 'auth-thumb', true );
 if( $user_avtar ){
   $profileImage = isset($user_avtar['full']) ? $user_avtar['full'] : get_bloginfo('url').'/dev-images/author-profile.jpg';
 }
