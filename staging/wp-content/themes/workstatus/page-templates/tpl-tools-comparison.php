@@ -151,7 +151,7 @@ $tbl = $compCol['cards'];
             <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/tablelogo-03.svg" 
             alt="WorkStatus" width="160" height="20">
           </picture>
-          <?php echo '<div class="price">'.$compCol['ws-pricing'].'</div>'; ?>
+          <?php echo '<div class="price">'.locatePricing($compCol['ws-pricing']).'</div>'; ?>
         </div>
       </div>
       <?php 

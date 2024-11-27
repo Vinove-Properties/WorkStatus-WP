@@ -135,6 +135,9 @@
       }
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
       .usecase-tabs .tab-nav ul.ucase li a span.icon{display: none;}
+      body.page-template-page-templatestpl-tools-comparison-php .price span{display: none;}
+      body.locate-ind .price span.spn-local{display:block;}
+      body.locate-int .price span.spn-int{display:block;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
