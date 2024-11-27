@@ -3,7 +3,7 @@ $curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('a
 get_userdata(get_query_var('author'));
 $author_id = $curauth->ID;
 
-$profileImage = get_bloginfo('url').'/dev-images/author-profile.jpg';
+$profileImage = get_bloginfo('template_url').'/dev-images/author-profile.jpg';
 $user_avtar   = get_user_meta( $author_id, 'auth-thumb', true );
 if( $user_avtar ){
   $profileImage      = wp_get_attachment_image_url( $user_avtar, 'full' );
