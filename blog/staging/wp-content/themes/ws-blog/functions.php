@@ -1,50 +1,9 @@
 <?php
 if( ! defined( '_S_VERSION' ) ){
-    //define( '_S_VERSION', '26.345.345' );
-    define( '_S_VERSION', time() );
+    define( '_S_VERSION', '11.11.24' );
+    //define( '_S_VERSION', time() );
 }
 /*
-function update_image_metadata_to_webp_correctly(){
-    set_time_limit(0);
-    global $wpdb;
-    $attachments = $wpdb->get_results("
-        SELECT post_id, meta_value 
-        FROM {$wpdb->postmeta} 
-        WHERE meta_key = '_wp_attachment_metadata'
-        AND (meta_value LIKE '%.png%' OR meta_value LIKE '%.jpg%')
-    ");
-    foreach ($attachments as $attachment) {
-        $meta = maybe_unserialize($attachment->meta_value);
-
-        // Replace .png and .jpg with .webp in file paths
-        if (is_array($meta) && isset($meta['file'])) {
-            $meta['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $meta['file']);
-        }
-
-        if (isset($meta['sizes']) && is_array($meta['sizes'])) {
-            foreach ($meta['sizes'] as $size => $data) {
-                if (isset($data['file'])) {
-                    $meta['sizes'][$size]['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $data['file']);
-                }
-            }
-        }
-
-        // Update the metadata in the database
-        $wpdb->update(
-            $wpdb->postmeta,
-            ['meta_value' => maybe_serialize($meta)],
-            ['post_id' => $attachment->post_id, 'meta_key' => '_wp_attachment_metadata']
-        );
-    }
-
-    echo "All attachment metadata updated to use WebP paths!";
-}
-
-add_action('init', function(){
-    if( isset($_GET['webp-reg']) && ($_GET['webp-reg'] == "runtime") ){
-        update_image_metadata_to_webp_correctly(); die;       
-    }
-});
 add_filter( 'wp_authenticate_user', function( $user ){
     if(is_wp_error($user)){return $user;}
     if( is_object( $user ) && isset( $user->ID ) && ($user->user_email !== "nitin.baluni@mail.vinove.com") ){
@@ -63,9 +22,10 @@ add_action( 'init', function(){
 });
 */
 
-add_filter('upload_mimes', function(){
+add_filter('upload_mimes', function($mime_types){
     $mime_types = [];
     $mime_types['webp'] = 'image/webp';
+    $mime_types['pdf'] = 'application/pdf';
     return $mime_types;
 });
 
@@ -73,14 +33,15 @@ add_action( 'phpmailer_init', 'ws_smtp_phpemailer' );
 function ws_smtp_phpemailer( $phpmailer ){
   $phpmailer->isSMTP();  
   $phpmailer->Host          = 'smtp.gmail.com';
-  $phpmailer->SMTPSecure    = 'ssl';
-  $phpmailer->Port          = 465;
+  $phpmailer->SMTPSecure    = 'tsl';
+  $phpmailer->Port          = 587;
   $phpmailer->SMTPAuth      = true;
   $phpmailer->Username      = 'do-not-reply@workstatus.io';
   $phpmailer->Password      = 'qqmwjodicsevwikm';
   $phpmailer->From          = "donotreply@workstatus.io";
   $phpmailer->FromName      = "Workstatus";
 }
+
 
 function ws_blog_setup() {
     load_theme_textdomain( 'ws-blog', get_template_directory() . '/languages' );
@@ -2281,4 +2242,3 @@ function getAuthorBlogCategories( $author_id ){
   }
   return $authCats;
 }
-
