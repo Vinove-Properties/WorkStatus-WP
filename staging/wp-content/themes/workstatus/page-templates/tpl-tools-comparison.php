@@ -161,7 +161,7 @@ $tbl = $compCol['cards'];
         $c = 0;
         foreach( $tbl as $data ){ $c++;
           $postFix    = ($lCounr == $c) ? '<span class="small-font">(Per user / Month)</span>' : '';
-          $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : $data['name'];
+          $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : locatePricing($data['name']);
           $lstClass   = ($lCounr == $c) ? 'lst-elm' : '';
           
           $colOne = ($lCounr == $c) ? '<strong>'._compTableValue($data['tl-1']).'</strong>' : _compTableValue($data['tl-1']);
