@@ -164,11 +164,11 @@ $tbl = $compCol['cards'];
           $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : $data['name'];
           $lstClass   = ($lCounr == $c) ? 'lst-elm' : '';
           
-          $colOne = ($lCounr == $c) ? '<strong>'.locatePricing(_compTableValue($data['tl-1'])).'</strong>' : _compTableValue($data['tl-1']);
-          $colTwo = ($lCounr == $c) ? '<strong>'.locatePricing(_compTableValue($data['tl-2'])).'</strong>' : _compTableValue($data['tl-2']);
-          $colThr = ($lCounr == $c) ? '<strong>'.locatePricing(_compTableValue($data['tl-3'])).'</strong>' : _compTableValue($data['tl-3']);
-          $colFor = ($lCounr == $c) ? '<strong>'.locatePricing(_compTableValue($data['tl-4'])).'</strong>' : _compTableValue($data['tl-4']);
-          $colWs  = ($lCounr == $c) ? '<strong>'.locatePricing(_compTableValue($data['ws'])).'</strong>' : _compTableValue($data['ws']);
+          $colOne = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-1'])).'</strong>' : _compTableValue($data['tl-1']);
+          $colTwo = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-2'])).'</strong>' : _compTableValue($data['tl-2']);
+          $colThr = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-3'])).'</strong>' : _compTableValue($data['tl-3']);
+          $colFor = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-4'])).'</strong>' : _compTableValue($data['tl-4']);
+          $colWs  = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['ws'])).'</strong>' : _compTableValue($data['ws']);
 
           echo '<div class="table-row">
           <div class="ws-column ws-lftcolumn">
