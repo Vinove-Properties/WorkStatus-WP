@@ -39,11 +39,12 @@ if( function_exists('get_fields') ){
     <div class="blog-content">
       <div class="author-mid-row">
       
-      <!--
+      <?php /* ?>
       <span class="auth-date"><?php the_time( get_option('date_format') ); ?></span>
       <span class="view-comment">
       <a href="#"><i class="postview"></i> <?php echo absint( $views ); ?></a>    
-      </span>-->
+      </span>
+      <?php */ ?>
       </div>
       <?php if( is_archive() ): ?>
       <h2 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -60,9 +61,7 @@ if( function_exists('get_fields') ){
       <?php echo getMcAutor(get_the_ID()); ?>
       <a href="<?php the_permalink(); ?>" class="rdmore">Read More</a>
       </div>
-
       </div>
-
-      <div class="category-row"><?php the_category(' '); ?></div>
+      <?php /* ?><div class="category-row"><?php the_category(' '); ?></div><?php */ ?>
     </div>
 </article>
