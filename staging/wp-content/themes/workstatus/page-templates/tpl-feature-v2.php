@@ -58,12 +58,18 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           </div>
         </div>
       </div>
-      <div class="column videoSc" id="has-yt-video">
+      <?php 
+      $inBanner = get_field('inner_banner');
+      if( isset($inBanner['is_enabled']) && ($inBanner['is_enabled'] == "yes") ) :
+      $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($top_section['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
+      ?>
+      <div class="column videoSc" id="<?php echo (isset($inBanner['video']) && !empty($inBanner['video'])) ? 'has-yt-video' : ''; ?>">
         <div class="inner">
-          <div id="myBtn" class="vbtn">
-            Open Modal  
-            <div class="playsc"><span class="playicon"></span></div>
-              </div>
+          <?php 
+          if( isset($inBanner['video']) && !empty($inBanner['video']) ){
+          echo '<div id="myBtn" class="vbtn">Open Modal<div class="playsc"><span class="playicon"></span></div></div>';
+          } 
+          ?>          
           <div class="topVideo srp-1">
             <div id="myDIV" class="contbox2">
               <div class="videoWrapper js-videoWrapper">
@@ -72,21 +78,22 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                     <div class="popWrap">
                       <div class="popup-content">
                         <span class="close"></span>
-                        <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen
-                          data-src="https://www.youtube.com/embed/zMtAs7s3CmU?enablejsapi=1&html5=1&mute=1">
-                        </iframe>
+                        <?php
+                        if( isset($inBanner['video']) && !empty($inBanner['video']) ){
+                        echo '<iframe id="video" class="videoIframe js-videoIframe" data-src="'.$inBanner['video'].'" allowfullscreen></iframe>';  
+                        }
+                        ?>                        
                       </div>
                     </div>
                   </div>
                 </div>
-                <button style="background-image: url(<?php bloginfo('template_url'); ?>/assests/images/ftmain-banner.png)" class="videoPoster lazy-background nb-bg" id="play-button">
-                Play video
-                </button>
+                <button style="background-image: url(<?php echo $bannerThumb; ?>)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </div>
   </section>
   <?php 
