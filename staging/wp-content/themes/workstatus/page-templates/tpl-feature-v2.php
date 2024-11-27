@@ -61,7 +61,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       <?php 
       $inBanner = get_field('inner_banner');
       if( isset($inBanner['is_enabled']) && ($inBanner['is_enabled'] == "yes") ) :
-      $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($top_section['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
+      $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($inBanner['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
       ?>
       <div class="column videoSc" id="<?php echo (isset($inBanner['video']) && !empty($inBanner['video'])) ? 'has-yt-video' : ''; ?>">
         <div class="inner">
