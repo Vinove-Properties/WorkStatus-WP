@@ -2228,9 +2228,9 @@ function getAuthorBlogCategories( $author_id ){
   if( $auth_posts ){
       foreach( $auth_posts as $bpost ){
           foreach(get_the_category($bpost->ID) as $cat){
-              if( $cat->term_id !== 1 ){
+              //if( $cat->term_id !== 1 ){
                   $cat_array[$cat->term_id] =  ['slug' => get_category_link( $cat->term_id ), 'cat' => $cat->name ];    
-              }                 
+              //}                 
           }
       }
   }
