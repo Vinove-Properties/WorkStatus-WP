@@ -9,6 +9,7 @@ if( $user_avtar ){
   $profileImage = isset($user_avtar['full']) ? $user_avtar['full'] : get_bloginfo('url').'/dev-images/author-profile.jpg';
 }
 ?>
+
 <section class="author-section">
 <div class="container">
   <div class="auth-row">
