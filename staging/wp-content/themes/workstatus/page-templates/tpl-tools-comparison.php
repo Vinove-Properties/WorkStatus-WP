@@ -4,6 +4,11 @@ Template Name: Tools Comparison - Template
 Author : Nitin Baluni
 */
 get_header();
+function locatePricing( $str ){
+  $exp  = explode("|", $str);
+  return ( is_array( $exp ) && (count($exp) > 1)  ) ? '<span class="spn-int">'.$exp[0].'</span><span class="spn-local">'.$exp[0].'</span>' : $str;
+}
+
 $bannerCol = get_field('ws-banner');
 ?>
 <main class="site__content">
@@ -102,7 +107,7 @@ $tbl = $compCol['cards'];
           // width="25" height="25"></picture>';
           // }
 
-          echo '<div class="price">'.$compCol['t1-pricing'].'</div>';
+          echo '<div class="price">'.locatePricing($compCol['t1-pricing']).'</div>';
           ?>          
         </div>
         <div class="logo-tb logovs">
@@ -118,7 +123,7 @@ $tbl = $compCol['cards'];
           // alt="'.$compCol['t2-logom']['alt'].'" 
           // width="25" height="25"></picture>';
           // }
-          echo '<div class="price">'.$compCol['t2-pricing'].'</div>';
+          echo '<div class="price">'.locatePricing($compCol['t2-pricing']).'</div>';
           ?>
         </div>
         <div class="logo-tb logovs">
@@ -128,7 +133,7 @@ $tbl = $compCol['cards'];
           alt="'.$compCol['t3-logo']['alt'].'" 
           width="'.$compCol['t3-logo']['width'].'" height="'.$compCol['t3-logo']['height'].'"></picture>';
           }
-          echo '<div class="price">'.$compCol['t3-pricing'].'</div>';
+          echo '<div class="price">'.locatePricing($compCol['t3-pricing']).'</div>';
           ?>
         </div>
         <div class="logo-tb logovs">
@@ -138,7 +143,7 @@ $tbl = $compCol['cards'];
           alt="'.$compCol['t4-logo']['alt'].'" 
           width="'.$compCol['t4-logo']['width'].'" height="'.$compCol['t4-logo']['height'].'"></picture>';
           }
-          echo '<div class="price">'.$compCol['t4-pricing'].'</div>';
+          echo '<div class="price">'.locatePricing($compCol['t4-pricing']).'</div>';
           ?>
         </div>
         <div class="logo-tb logovs">
