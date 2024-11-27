@@ -5,9 +5,8 @@ $author_id = $curauth->ID;
 
 $profileImage = get_bloginfo('url').'/dev-images/author-profile.jpg';
 $user_avtar   = get_user_meta( $author_id, 'auth-thumb', true );
-print_r($user_avtar); die;
 if( $user_avtar ){
-  $profileImage = isset($user_avtar['full']) ? $user_avtar['full'] : get_bloginfo('url').'/dev-images/author-profile.jpg';
+  $profileImage      = wp_get_attachment_image_url( $user_avtar, 'full' );
 }
 ?>
 
