@@ -25,35 +25,35 @@ if( $user_avtar ){
             <div class="auth-social"><strong>Follow:</strong>
               <?php 
               if( get_user_meta($author_id, 'facebook', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'facebook', true).'">Facebook</a>';
+                echo '<a href="'.get_user_meta($author_id, 'facebook', true).'" target="_blank">Facebook</a>';
               }
 
               if( get_user_meta($author_id, 'pinterest', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'pinterest', true).'">Pinterest</a>';
+                echo '<a href="'.get_user_meta($author_id, 'pinterest', true).'" target="_blank">Pinterest</a>';
               }
 
               if( get_user_meta($author_id, 'instagram', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'instagram', true).'">Instagram</a>';
+                echo '<a href="'.get_user_meta($author_id, 'instagram', true).'" target="_blank">Instagram</a>';
               }
 
               if( get_user_meta($author_id, 'linkedin', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'linkedin', true).'">Linkedin</a>';
+                echo '<a href="'.get_user_meta($author_id, 'linkedin', true).'" target="_blank">Linkedin</a>';
               }
 
               if( get_user_meta($author_id, 'twitter', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'twitter', true).'">Twitter</a>';
+                echo '<a href="'.get_user_meta($author_id, 'twitter', true).'" target="_blank">Twitter</a>';
               }
 
               if( get_user_meta($author_id, 'youtube', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'youtube', true).'">youtube</a>';
+                echo '<a href="'.get_user_meta($author_id, 'youtube', true).'" target="_blank">youtube</a>';
               }
 
               if( get_user_meta($author_id, 'wikipedia', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'wikipedia', true).'">Wikipedia</a>';
+                echo '<a href="'.get_user_meta($author_id, 'wikipedia', true).'" target="_blank">Wikipedia</a>';
               }
 
               if( get_user_meta($author_id, 'tumblr', true) ){
-                echo '<a href="'.get_user_meta($author_id, 'tumblr', true).'">Tumblr</a>';
+                echo '<a href="'.get_user_meta($author_id, 'tumblr', true).'" target="_blank">Tumblr</a>';
               }
               ?>
             </div>
