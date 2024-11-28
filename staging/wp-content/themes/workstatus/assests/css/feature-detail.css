@@ -9215,7 +9215,7 @@ h3 a {
         color: #fff;
         width: 45%;
         position: relative;
-        margin-top: 40px; }
+        margin-top: 30px; }
         .banner-section .home-section .flex_row .column-content h1 {
           color: #fff;
           margin: 0 0 20px;
@@ -9403,7 +9403,7 @@ h3 a {
       width: 700px;
       position: absolute;
       right: 0;
-      top: -28px;
+      top: -35px;
       z-index: 9; }
       .banner-section .home-section .videoSc .inner {
         position: relative;
@@ -9655,6 +9655,12 @@ h3 a {
     top: 0; }
 
 /*Step Section Start From Here*/
+@media (max-width: 1600px) {
+  .banner-section .home-section .videoSc {
+    width: 640px;
+    top: -35px; }
+    .banner-section .home-section .videoSc .topVideo .videoWrapper {
+      min-height: 650px; } }
 @media (max-width: 1440px) {
   .banner-section .home-section .flex_row .column-content h1 {
     font-size: 50px;
@@ -9665,7 +9671,7 @@ h3 a {
     margin: 0 0 25px; }
   .banner-section .home-section .videoSc {
     width: 600px;
-    top: -75px; }
+    top: -35px; }
     .banner-section .home-section .videoSc .popup-content {
       height: 450px;
       width: 900px; }
@@ -9674,12 +9680,6 @@ h3 a {
 
   .section-numbers {
     padding-top: 80px; } }
-@media (max-width: 1600px) {
-  .banner-section .home-section .videoSc {
-    width: 640px;
-    top: -10px; }
-    .banner-section .home-section .videoSc .topVideo .videoWrapper {
-      min-height: 650px; } }
 @media (max-width: 1280px) {
   .banner-section {
     padding: 100px 0 200px; }
