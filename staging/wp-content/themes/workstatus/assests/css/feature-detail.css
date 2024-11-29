@@ -7727,7 +7727,7 @@ h3 a {
       color: #6754E2;
       background: rgba(98, 77, 227, 0.08); }
 .compare-projects .features-container {
-  max-width: auto;
+  max-width: initial;
   overflow-x: auto;
   border: 1px solid rgba(0, 35, 75, 0.15);
   border-radius: 10px;
@@ -7737,7 +7737,7 @@ h3 a {
   border-radius: 10px; }
   .compare-projects .features-container .compare-column {
     text-align: center;
-    border-left: 1px solid rgba(103, 84, 226, 0.15); }
+    border-right: 1px solid rgba(103, 84, 226, 0.15); }
     .compare-projects .features-container .compare-column.heading {
       background-color: #f4f4f4;
       font-weight: bold;
@@ -7828,8 +7828,7 @@ h3 a {
           background-size: 100%; }
     .compare-projects .features-container .compare-column:first-child {
       text-align: left;
-      flex-direction: inherit;
-      border-left: none; }
+      flex-direction: inherit; }
       .compare-projects .features-container .compare-column:first-child .tool-col {
         flex-direction: inherit; }
 
