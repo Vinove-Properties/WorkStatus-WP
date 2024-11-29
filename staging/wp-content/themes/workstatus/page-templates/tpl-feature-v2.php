@@ -367,7 +367,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <span class="price">$13 </span>
           </div>
           <div class="tool-col"><i class="check-icon"></i></div>
-          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
           <div class="tool-col"><i class="check-icon"></i></div>
           <div class="tool-col"><i class="cross-icon"></i></div>
           <div class="tool-col"><i class="check-icon"></i></div>
