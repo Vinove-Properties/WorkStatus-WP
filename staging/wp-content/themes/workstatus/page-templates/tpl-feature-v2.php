@@ -276,15 +276,14 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
     echo '<!--Debug Start-->';
     echo '<section class="trackEm post-animation"><div class="container">';
-
     echo '<div class="top-section"><h6><span class="bg-purple">'.$allOne['heading'].'</span></h6>'.$allOne['sub_heading'].'</div>';
-
     echo '<div class="trackRow align-center">
     <div class="trackImg">'.pxlGetPtag($allOne['left_image']).'</div>';
     if( $allOne['cblock'] ){
         echo '<div class="trackContent">';
           foreach( $allOne['cblock'] as $row ){
-            echo '<div class="row">'.$row['content'].'</div>';
+            $hasListing = _containsLiTags( $row['content'] ) ? ' listing' : '';
+            echo '<div class="row'.$hasListing.'">'.$row['content'].'</div>';
           }
         echo '</div>';
     }

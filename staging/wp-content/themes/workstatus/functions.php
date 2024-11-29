@@ -2283,3 +2283,11 @@ function _compTableValue($str){
 		return $str;
 	}
 }
+
+function _containsLiTags($string) {
+    $pattern = '/<(ul|li)\b[^>]*>/i';
+    if( preg_match($pattern, $string) ){
+        return true;
+    }
+    return false;
+}
