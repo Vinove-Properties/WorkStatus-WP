@@ -328,7 +328,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         <div class="tbbtn" data-prod="empmonitor">Empmonitor</div>
       </div>
       <div class="features-container">
-        <div class="compare-column elemnt">
+        <div class="compare-column elemnt fst-elemnt">
           <div class="tool-col comp-logo comphead">Compare features</div>
           <div class="tool-col">Task Management</div>
           <div class="tool-col">Issue / Bug Management</div>
