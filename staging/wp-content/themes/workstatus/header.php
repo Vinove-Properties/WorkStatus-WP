@@ -259,7 +259,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/productivity-management" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/productivity-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-02.svg" class="menuicon" alt="menuicon"><span class="title">Productivity Management</span>
                                   Boost productivity, drive results</a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
@@ -478,7 +478,7 @@
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
-                                <div class="tab-title"><a href="<?php echo site_url(); ?>/resource-management" class="no-link"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
+                                <div class="tab-title"><a href="<?php echo site_url(); ?>/resource-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-07.svg" class="menuicon" alt="menuicon"><span class="title">Resource Management</span>
                                   Optimize resources, maximize impact
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
