@@ -7832,6 +7832,11 @@ h3 a {
       .compare-projects .features-container .compare-column:first-child .tool-col {
         flex-direction: inherit; }
 
+.compare-projects .compare-tabs .tbbtn.active {
+  border-color: #624de3;
+  color: #6754E2;
+  background: rgba(98, 77, 227, 0.08); }
+
 /*Media Query Start From Here*/
 @media (max-width: 1024px) {
   .compare-projects .compare-tabs .tbbtn {
