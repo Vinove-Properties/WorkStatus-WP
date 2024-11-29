@@ -9641,6 +9641,10 @@ h3 a {
 .data-drive.p50 {
   padding-top: 50px; }
 
+.trackEm .trackRow .trackContent .row.listing h3 {
+  padding-left: 0; }
+  .trackEm .trackRow .trackContent .row.listing h3:before {
+    display: none; }
 .trackEm .trackRow .trackContent .row h3 {
   padding-left: 44px;
   position: relative; }
@@ -9653,10 +9657,6 @@ h3 a {
     position: absolute;
     left: 0;
     top: 0; }
-.trackEm .trackRow .trackContent.listing h3 {
-  padding-left: 0; }
-  .trackEm .trackRow .trackContent.listing h3:before {
-    display: none; }
 
 /*Step Section Start From Here*/
 @media (max-width: 1600px) {
