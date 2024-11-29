@@ -2278,88 +2278,65 @@ function _morecompTable(){
     elm.classList.toggle("active");
 }
 
-// document.addEventListener("DOMContentLoaded", function(){
-//     const tabButtons = document.querySelectorAll(".tbbtn");
-//     const compareColumns = document.querySelectorAll(".compare-column");
-//     function updateVisibility(){
-//         tabButtons.forEach(tab => {
-//             const productId = tab.dataset.prod;
-//             const column = document.querySelector(`#cmp-${productId}`);
-            
-//             if (tab.classList.contains("active")) {
-//                 if (column) column.style.display = "block"; //classList.add("active");
-//             } else {
-//                 if (column) column.style.display = "none";
-//             }
-//         });
-//     }
-//     tabButtons.forEach(tab => {
-//         tab.addEventListener("click", function () {
-//             this.classList.toggle("active");
-//             updateVisibility();
-//         });
-//     });
-//     updateVisibility();
-// });
+document.addEventListener("DOMContentLoaded", function(){
+    if( document.getElementById('ws-compititors-tbl') ){
+        const tabButtons        = document.querySelectorAll(".tbbtn");
+        const compareColumns    = document.querySelectorAll(".compare-column");
+        const maxVisibleColumns = 6;
+        const activeTabs        = [];
+        function updateVisibility(){
+            compareColumns.forEach(column => {
+                if (!column.classList.contains("elemnt")) {
+                    column.style.display = "none";
+                }
+            });
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const tabButtons = document.querySelectorAll(".tbbtn");
-    const compareColumns = document.querySelectorAll(".compare-column");
-    const maxVisibleColumns = 6; // Max number of visible columns
-    const activeTabs = []; // Tracks currently active tabs
-
-    // Function to update column visibility
-    function updateVisibility() {
-        compareColumns.forEach(column => {
-            if (!column.classList.contains("elemnt")) {
-                column.style.display = "none";
-            }
-        });
-
-        activeTabs.forEach(tab => {
-            const productId = tab.dataset.prod;
-            const column = document.querySelector(`#cmp-${productId}`);
-            if (column) column.style.display = "block";
-        });
-    }
-
-    // Function to handle tab clicks
-    function handleTabClick(tab) {
-        if (tab.classList.contains("active")) {
-            // Remove from active list if already active
-            tab.classList.remove("active");
-            const index = activeTabs.indexOf(tab);
-            if (index > -1) activeTabs.splice(index, 1);
-        } else {
-            // Add to active list if not active
-            if (activeTabs.length >= maxVisibleColumns) {
-                // Remove the oldest active tab
-                const oldestTab = activeTabs.shift();
-                oldestTab.classList.remove("active");
-            }
-            tab.classList.add("active");
-            activeTabs.push(tab);
+            activeTabs.forEach(tab => {
+                const productId = tab.dataset.prod;
+                const column = document.querySelector(`#cmp-${productId}`);
+                if (column) column.style.display = "block";
+            });
         }
-        updateVisibility(); // Update visibility after click
-    }
 
-    // Attach click handlers to all tabs
-    tabButtons.forEach(tab => {
-        tab.addEventListener("click", () => handleTabClick(tab));
-    });
-
-    // Initialize default active tabs
-    tabButtons.forEach(tab => {
-        if (tab.classList.contains("active")) {
-            if (activeTabs.length < maxVisibleColumns) {
-                activeTabs.push(tab);
+        function handleTabClick(tab) {
+            if (tab.classList.contains("active")) {
+                tab.classList.remove("active");
+                const index = activeTabs.indexOf(tab);
+                if (index > -1) activeTabs.splice(index, 1);
             } else {
-                tab.classList.remove("active"); // Enforce max limit
+                if(activeTabs.length >= maxVisibleColumns){
+                    const currentIndex = Array.from(tabButtons).indexOf(tab);
+                    let closestIndex = -1;
+                    let closestTab = null;                
+                    activeTabs.forEach(activeTab => {
+                        const index = Array.from(tabButtons).indexOf(activeTab);
+                        if (index < currentIndex && index > closestIndex) {
+                            closestIndex = index;
+                            closestTab = activeTab;
+                        }
+                    });
+                    const tabToRemove = closestTab || activeTabs[0];
+                    tabToRemove.classList.remove("active");
+                    activeTabs.splice(activeTabs.indexOf(tabToRemove), 1);
+                }            
+                tab.classList.add("active");
+                activeTabs.push(tab);
             }
+            updateVisibility();
         }
-    });
 
-    // Initial visibility update
-    updateVisibility();
+        tabButtons.forEach(tab => {
+            tab.addEventListener("click", () => handleTabClick(tab));
+        });
+        tabButtons.forEach(tab => {
+            if (tab.classList.contains("active")) {
+                if(activeTabs.length < maxVisibleColumns){
+                    activeTabs.push(tab);
+                }else{
+                    tab.classList.remove("active");
+                }
+            }
+        });
+        updateVisibility();
+    }
 });

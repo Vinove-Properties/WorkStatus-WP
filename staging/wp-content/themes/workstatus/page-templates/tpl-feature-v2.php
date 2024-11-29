@@ -298,7 +298,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     echo '</div></section>';
     }
     ?>
-  <section class="compare-projects post-animation">
+  <section id="ws-compititors-tbl" class="compare-projects post-animation">
     <div class="container">
       <div class="top-section">
         <h6><span class="bg-purple">STAY IN CONTROL</span></h6>
