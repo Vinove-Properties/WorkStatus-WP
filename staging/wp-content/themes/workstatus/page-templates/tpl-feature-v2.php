@@ -14,17 +14,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           <div class="column column-content">
             <?php the_content(); ?>
             <div class="cont-wrap">
-              <div class="actionBtn">
-                <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1 formbtn">Book A Demo</a>
-                  <small><?php echo $top_section['demo_button_bottom_text']; ?></small>
-                </div>
-                <?php if( geoCTAcheck() === true ) : ?>
-                <div><a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="primary_btn2" 
-                  onclick="return get_ws_signupform(this);"><?php echo $ws_ctas['cta_text']; ?></a>
-                  <small><?php echo $top_section['trial_button_bottom_text']; ?></small>
-                </div>
-                <?php endif; ?>
-              </div>
+              <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
               <div class="av-device"><span>Available for:</span>
                 <i class="icon1"></i>
                 <i class="icon2"></i>
