@@ -194,7 +194,7 @@ const pricingData = {
     'basic':{'yearly':{"amount":5.79}, 'monthly':{"amount":7.29}},
     'pro':{'yearly':{"amount":293.59}, 'monthly':{"amount":366.99}}
   },
-  'meta':{"currency":'AE', "location":3.69, "pm":7.29, "insights":7.29}
+  'meta':{"currency":'AED', "location":3.69, "pm":7.29, "insights":7.29}
 },
 "CA": {
   "productivity":{
