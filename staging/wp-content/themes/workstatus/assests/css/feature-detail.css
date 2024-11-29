@@ -7729,7 +7729,7 @@ h3 a {
 .compare-projects .features-container {
   max-width: max-content;
   margin: 0 auto;
-  overflow-x: auto;
+  overflow: auto;
   border: 1px solid rgba(0, 35, 75, 0.15);
   border-radius: 10px;
   display: flex;
@@ -7842,9 +7842,24 @@ h3 a {
 
 /*Media Query Start From Here*/
 @media (max-width: 1024px) {
-  .compare-projects .compare-tabs .tbbtn {
-    padding: 8px 12px;
-    margin: 0 5px 10px; } }
+  .compare-projects {
+    overflow: hidden; }
+    .compare-projects .compare-tabs .tbbtn {
+      padding: 8px 12px;
+      margin: 0 5px 10px; }
+    .compare-projects .features-container {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+      overflow: auto;
+      display: flex;
+      justify-content: left;
+      width: 100%;
+      -webkit-overflow-scrolling: touch; }
+      .compare-projects .features-container .compare-column.elemnt {
+        min-width: 200px; }
+      .compare-projects .features-container .compare-column .comphead.comphead {
+        font-size: 16px; } }
 /*Media Query Ends Here*/
 .cmn-pricing {
   background: #fff; }
