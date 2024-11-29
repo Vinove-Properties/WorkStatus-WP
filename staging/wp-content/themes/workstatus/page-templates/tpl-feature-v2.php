@@ -306,29 +306,29 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         <p>Say goodbye to scattered tasks and documents. With Projecto, you'll be able to focus on what matters most - getting things done.</p>
       </div>
       <div class="compare-tabs">
-        <div class="tbbtn">Hubstaff</div>
-        <div class="tbbtn">Desktime</div>
-        <div class="tbbtn">Time Doctor</div>
-        <div class="tbbtn">Insightful</div>
-        <div class="tbbtn">we360</div>
-        <div class="tbbtn">Activ Trak</div>
-        <div class="tbbtn">Teramind</div>
-        <div class="tbbtn">Monitask</div>
-        <div class="tbbtn">TimeChamp</div>
-        <div class="tbbtn">Everhour</div>
-        <div class="tbbtn">Clockify</div>
-        <div class="tbbtn">Toggl</div>
-        <div class="tbbtn">Truein</div>
-        <div class="tbbtn">Zoho People</div>
-        <div class="tbbtn">Apploye</div>
-        <div class="tbbtn">Harvest</div>
-        <div class="tbbtn">Trackolap</div>
-        <div class="tbbtn">Myhours</div>
-        <div class="tbbtn">Handdy</div>
-        <div class="tbbtn">Empmonitor</div>
+        <div class="tbbtn active" data-prod="hubstaff">Hubstaff</div>
+        <div class="tbbtn" data-prod="desktime">Desktime</div>
+        <div class="tbbtn active" data-prod="timedoctor">Time Doctor</div>
+        <div class="tbbtn" data-prod="insightful">Insightful</div>
+        <div class="tbbtn" data-prod="we360">we360</div>
+        <div class="tbbtn active" data-prod="activtrak">Activ Trak</div>
+        <div class="tbbtn active" data-prod="teramind">Teramind</div>
+        <div class="tbbtn active" data-prod="monitask">Monitask</div>
+        <div class="tbbtn" data-prod="timechamp">TimeChamp</div>
+        <div class="tbbtn" data-prod="everhour">Everhour</div>
+        <div class="tbbtn" data-prod="clockify">Clockify</div>
+        <div class="tbbtn" data-prod="toggl">Toggl</div>
+        <div class="tbbtn active" data-prod="truein">Truein</div>
+        <div class="tbbtn" data-prod="zoho">Zoho People</div>
+        <div class="tbbtn" data-prod="apploye">Apploye</div>
+        <div class="tbbtn" data-prod="harvest">Harvest</div>
+        <div class="tbbtn" data-prod="trackolap">Trackolap</div>
+        <div class="tbbtn" data-prod="myhours">Myhours</div>
+        <div class="tbbtn" data-prod="handdy">Handdy</div>
+        <div class="tbbtn" data-prod="empmonitor">Empmonitor</div>
       </div>
       <div class="features-container">
-        <div class="compare-column">
+        <div class="compare-column elemnt">
           <div class="tool-col comp-logo comphead">Compare features</div>
           <div class="tool-col">Task Management</div>
           <div class="tool-col">Issue / Bug Management</div>
@@ -342,7 +342,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           <div class="tool-col">Team Screenshots</div>
           <div class="tool-col comprice">Pricing</div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column elemnt" id="cmp-workstatus">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-01.svg" alt="" width="125" height="17"></picture>
             <span class="price active">$13 </span>
@@ -361,7 +361,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-hubstaff">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-02.svg" alt="" width="68" height="22"></picture>
             <span class="price">$13 </span>
@@ -380,7 +380,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-truein">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-03.svg" alt="" width="50" height="22"></picture>
             <span class="price">$13 </span>
@@ -399,7 +399,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-timedoctor">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-04.svg" alt="" width="96" height="22"></picture>
             <span class="price">$13 </span>
@@ -418,7 +418,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-activtrak">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-06.svg" alt="" width="77" height="22"></picture>
             <span class="price">$13 </span>
@@ -437,7 +437,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-teramind">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-07.svg" alt="" width="77" height="22"></picture>
             <span class="price">$13 </span>
@@ -456,7 +456,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
-        <div class="compare-column">
+        <div class="compare-column" id="cmp-monitask">
           <div class="tool-col comp-logo">
             <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-08.svg" alt="" width="77" height="22"></picture>
             <span class="price">$13 </span>
@@ -475,6 +475,292 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <a href="#" class="knowmre">Know More</a>
           </div>
         </div>
+        <div class="compare-column" id="cmp-desktime" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#DESKTIME</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-insightful" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#insightful</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-we360" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#we360</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-activtrak" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#activtrak</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-timechamp" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#timechamp</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-everhour" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#everhour</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-clockify" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#clockify</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-toggl" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#toggl</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-zoho" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#zoho</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-apploye" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#apploye</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-harvest" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#harvest</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-trackolap" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#trackolap</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-myhours" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#myhours</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-handdy" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#handdy</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+        <div class="compare-column" id="cmp-empmonitor" style="display:none;">
+          <div class="tool-col comp-logo">
+            <picture>#empmonitor</picture>
+            <span class="price">$13 </span>
+          </div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="cross-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col"><i class="check-icon"></i></div>
+          <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
+            <a href="#" class="knowmre">Know More</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

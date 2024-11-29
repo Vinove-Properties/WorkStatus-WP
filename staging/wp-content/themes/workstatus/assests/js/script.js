@@ -2277,3 +2277,89 @@ function _morecompTable(){
     var elm = document.getElementById("compare-table");
     elm.classList.toggle("active");
 }
+
+// document.addEventListener("DOMContentLoaded", function(){
+//     const tabButtons = document.querySelectorAll(".tbbtn");
+//     const compareColumns = document.querySelectorAll(".compare-column");
+//     function updateVisibility(){
+//         tabButtons.forEach(tab => {
+//             const productId = tab.dataset.prod;
+//             const column = document.querySelector(`#cmp-${productId}`);
+            
+//             if (tab.classList.contains("active")) {
+//                 if (column) column.style.display = "block"; //classList.add("active");
+//             } else {
+//                 if (column) column.style.display = "none";
+//             }
+//         });
+//     }
+//     tabButtons.forEach(tab => {
+//         tab.addEventListener("click", function () {
+//             this.classList.toggle("active");
+//             updateVisibility();
+//         });
+//     });
+//     updateVisibility();
+// });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tbbtn");
+    const compareColumns = document.querySelectorAll(".compare-column");
+    const maxVisibleColumns = 6; // Max number of visible columns
+    const activeTabs = []; // Tracks currently active tabs
+
+    // Function to update column visibility
+    function updateVisibility() {
+        compareColumns.forEach(column => {
+            if (!column.classList.contains("elemnt")) {
+                column.style.display = "none";
+            }
+        });
+
+        activeTabs.forEach(tab => {
+            const productId = tab.dataset.prod;
+            const column = document.querySelector(`#cmp-${productId}`);
+            if (column) column.style.display = "block";
+        });
+    }
+
+    // Function to handle tab clicks
+    function handleTabClick(tab) {
+        if (tab.classList.contains("active")) {
+            // Remove from active list if already active
+            tab.classList.remove("active");
+            const index = activeTabs.indexOf(tab);
+            if (index > -1) activeTabs.splice(index, 1);
+        } else {
+            // Add to active list if not active
+            if (activeTabs.length >= maxVisibleColumns) {
+                // Remove the oldest active tab
+                const oldestTab = activeTabs.shift();
+                oldestTab.classList.remove("active");
+            }
+            tab.classList.add("active");
+            activeTabs.push(tab);
+        }
+        updateVisibility(); // Update visibility after click
+    }
+
+    // Attach click handlers to all tabs
+    tabButtons.forEach(tab => {
+        tab.addEventListener("click", () => handleTabClick(tab));
+    });
+
+    // Initialize default active tabs
+    tabButtons.forEach(tab => {
+        if (tab.classList.contains("active")) {
+            if (activeTabs.length < maxVisibleColumns) {
+                activeTabs.push(tab);
+            } else {
+                tab.classList.remove("active"); // Enforce max limit
+            }
+        }
+    });
+
+    // Initial visibility update
+    updateVisibility();
+});
