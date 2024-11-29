@@ -166,7 +166,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                   </li>
                   <li>
                     <picture class="awimg">
-                      <img src="<?php bloginfo('template_url'); ?>/dev-images/start-4.5.svg" alt="" width="130" height="29">
+                      <img src="<?php bloginfo('template_url'); ?>/dev-images/ftb-06.svg" alt="" width="130" height="29">
                     </picture>
                     <div class="star-rt">4.5 Excellent <img src="<?php bloginfo('template_url'); ?>/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
                     <p>I'm really glad I found Workstatus because it has made such a difference in my productivity, tracking hours and billing days accurately.</p>
