@@ -87,7 +87,7 @@ $activePlan =  'productivity';
                   <img loading="lazy" class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/zar.svg" alt="Workstatus" width="13" height="13">ZAR (African Region)
                 </div>
                 <div class="pc-option" data-cod="SA" data-country="SAR (Saudi Arabia)">
-                  <img loading="lazy" class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/sar.svg" alt="Workstatus" width="13" height="13">SAR (Saudi Arab)
+                  <img loading="lazy" class="flgicon" src="<?php bloginfo('template_url'); ?>/dev-images/flags/sar.svg" alt="Workstatus" width="13" height="13">SAR (Saudi Arabia)
                 </div>
               </div>
             </div>
