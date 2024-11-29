@@ -25,23 +25,19 @@ global $ws_ctas, $RegLink, $LogLink, $post;
               <div class="partwrap">
                 <div class="part-col">
                   <i class="part-logo part-logo1"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
-                    alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo2"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
-                    alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo3"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
-                    alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo4"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg"
-                    alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
               </div>
             </div>
@@ -53,7 +49,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       if( isset($inBanner['is_enabled']) && ($inBanner['is_enabled'] == "yes") ) :
       $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($inBanner['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
       ?>
-      <div class="column videoSc" id="<?php echo (isset($inBanner['video']) && !empty($inBanner['video'])) ? 'has-yt-video' : ''; ?>">
+      <div class="column videoSc" id="<?php echo (isset($inBanner['video']) && !empty($inBanner['video'])) ? 'has-yt-video' : '_noElm'; ?>">
         <div class="inner">
           <?php 
           if( isset($inBanner['video']) && !empty($inBanner['video']) ){
