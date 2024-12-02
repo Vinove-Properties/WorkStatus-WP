@@ -295,6 +295,23 @@ if( isset($mcBLocks['required']) && ($mcBLocks['required'] == "yes") ){
 }
 ?>
 
+<?php 
+$wsBenifits =  get_field('ws-benefits');
+if( isset($wsBenifits['required']) && ($wsBenifits['required'] == "yes") ){
+echo '<section class="benifits-section padding-0"><div class="container">';
+echo '<div class="top-section"><h6><span class="bg-purple">'.$wsBenifits['heading'].'</span></h6><h2>'.$wsBenifits['sub-heading'].'</h2></div>';
+if( $wsBenifits['cards'] ){
+  echo '<div class="flex_row">';
+  foreach( $wsBenifits['cards'] as $card){
+  $icon = ($card['icon']) ? pxlGetPtag($card['icon']) : '';  
+  echo '<div class="column-three">'.$icon.$card['content'].'</div>';
+  }
+  echo '</div>';
+}
+echo '</div></section>';  
+}
+?>
+
 <?php  
 $user_guide_section = get_field('user_guide_section');
 if( $user_guide_section ) :

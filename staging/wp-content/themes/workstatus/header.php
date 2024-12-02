@@ -132,6 +132,7 @@
       .ws-ctav4 .btnSc .ctasec .ctbtn:hover{border-color:#fff;}
       @media (max-width: 767px) {
       .ws-ctav4 .btnSc .ctasec .nobg{padding:12px 18px !important; font-size:15px !important;}
+      body.page-template-tpl-tools-comparison .benifits-section .column-three{text-align:center;}
       }
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
       .usecase-tabs .tab-nav ul.ucase li a span.icon{display: none;}
@@ -144,6 +145,8 @@
       body.locate-int .prloc span.spn-int,
       body.locate-int .price span.spn-int{display:block;}
       .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 94px;}
+      body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; background: #faf8fe; padding: 25px; margin:0 0 25px;}
+      @media screen and (max-width:575px){body.page-template-tpl-tools-comparison .benifits-section .column-three{ flex-basis: 100%;margin: 15px 0 0;}}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->

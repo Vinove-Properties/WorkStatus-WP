@@ -629,7 +629,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         </div>
         <div class="compare-column" id="cmp-zoho" style="display:none;">
           <div class="tool-col comp-logo">
-            <strong>Zoho</strong>
+            <strong>Zoho People</strong>
             <span class="price">$13 </span>
           </div>
           <div class="tool-col"><i class="cross-icon"></i></div>
