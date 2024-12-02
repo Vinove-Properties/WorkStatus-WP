@@ -143,6 +143,7 @@
       body.locate-ind .price span.spn-local,
       body.locate-int .prloc span.spn-int,
       body.locate-int .price span.spn-int{display:block;}
+      .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 94px;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
