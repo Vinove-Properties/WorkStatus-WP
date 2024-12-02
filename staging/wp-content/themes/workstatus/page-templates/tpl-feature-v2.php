@@ -947,9 +947,9 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <?php 
               if( $faq['question_answer_repeater'] ){  $i = 1;
               foreach( $faq['question_answer_repeater'] as $row ) {
-              	$image      = (isset($row['image_'])) ? $row['image_'] : false;
-              	$active = ($i <= 3) ? "open" : "";
-              	//echo $i;
+            	//$image      = (isset($row['image_'])) ? $row['image_'] : false;
+            	$active = ($i <= 3) ? "open" : "";
+            	//echo $i;
               ?>
             <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
               itemtype="https://schema.org/Question">
