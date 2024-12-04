@@ -9224,7 +9224,7 @@ h3 a {
     content: "";
     position: absolute;
     width: 347px;
-    height: 930px;
+    height: 870px;
     bottom: 0;
     background: url(../images/shapeft1.png) no-repeat;
     left: 0;
@@ -9562,7 +9562,7 @@ h3 a {
       position: absolute;
       right: -150px;
       top: -120px;
-      height: 845px;
+      height: 930px;
       background-size: 100% 100%; }
       @media screen and (max-width: 575px) {
         .banner-section .home-section:after {
