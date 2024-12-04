@@ -2291,3 +2291,14 @@ function _containsLiTags($string) {
     }
     return false;
 }
+
+
+function _getComparePricing( $usd, $inr, $pricing = true, $link = "#" ){
+if( $pricing === true )	{
+return '<span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span>';
+}else{
+	return '<span class="btn"><span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span></span>
+	<span class="small-font">(Per user / Month)</span><a href="'.$link.'" class="knowmre">Know More</a>';	
+}
+
+}
