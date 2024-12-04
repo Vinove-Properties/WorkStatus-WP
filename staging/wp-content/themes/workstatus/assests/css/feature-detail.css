@@ -7024,7 +7024,7 @@ h3 a {
         transition: all 0.3s ease-in-out; }
         .datadrive-section .data-row .flex-2 .box h3 {
           font-weight: 600;
-          text-align: center; }
+          text-align: left; }
         .datadrive-section .data-row .flex-2 .box p {
           margin: 0 0 15px;
           color: #444b55;
@@ -7407,9 +7407,13 @@ h3 a {
           .feature-wrapper .item .feature-row .column-left .text-column h3 {
             position: relative;
             padding-left: 44px;
-            margin-top: 30px; }
+            margin-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 30px; }
             .feature-wrapper .item .feature-row .column-left .text-column h3:first-child {
-              margin-top: 0; }
+              margin-top: 0;
+              padding-top: 0;
+              border-top: 0; }
             .feature-wrapper .item .feature-row .column-left .text-column h3:before {
               content: "";
               background: url(../images/list-icon.png) no-repeat;
@@ -7466,7 +7470,8 @@ h3 a {
       width: 100%; }
       .feature-wrapper .item .feature-row .column-left .text-column h3 {
         padding-left: 38px;
-        margin-top: 25px; }
+        margin-top: 25px;
+        padding-top: 25px; }
         .feature-wrapper .item .feature-row .column-left .text-column h3:before {
           width: 25px;
           height: 25px; }
@@ -9219,7 +9224,7 @@ h3 a {
     content: "";
     position: absolute;
     width: 347px;
-    height: 874px;
+    height: 930px;
     bottom: 0;
     background: url(../images/shapeft1.png) no-repeat;
     left: 0;
