@@ -1,4 +1,7 @@
 <?php 
+echo '<pre>';
+print_r($args);
+echo '</pre>';
 $title = ( isset($args['title']) && !empty($args['title']) ) ?? "STAY IN CONTROL";
 $body = ( isset($args['body']) && !empty($args['body']) ) ?? "<h2>Compare Projects</h2><p>Say goodbye to scattered tasks and documents. 
 With Projecto, you'll be able to focus on what matters most - getting things done.</p>";
