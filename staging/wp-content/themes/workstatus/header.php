@@ -144,7 +144,7 @@
       body.locate-ind .price span.spn-local,
       body.locate-int .prloc span.spn-int,
       body.locate-int .price span.spn-int{display:block;}
-      
+      .ctbtn.nobg{padding:12px 18px !important;}
       body.locate-int span.spn-ind, body.locate-ind  span.spn-intr{display:none;}
 
       .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 94px;}
