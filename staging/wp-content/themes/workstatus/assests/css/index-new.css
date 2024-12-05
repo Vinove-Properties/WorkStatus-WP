@@ -3841,7 +3841,7 @@ ul li {
     text-decoration: none;
     min-width: 213px;
     background: #624DE3;
-    border-color: 1px solid #624DE3;
+    border: 1px solid #624DE3;
     border-radius: 5px;
     font-size: 18px;
     text-align: center;
@@ -3906,7 +3906,7 @@ ul li {
   text-decoration: none;
   min-width: 213px;
   background: #624DE3;
-  border-color: 1px solid #624DE3;
+  border: 1px solid #624DE3;
   border-radius: 5px;
   font-size: 18px;
   text-align: center;
