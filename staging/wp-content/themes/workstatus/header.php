@@ -148,7 +148,7 @@
       
       body.locate-int span.spn-ind, body.locate-ind  span.spn-intr{display:none;}
 
-      .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 94px;}
+      .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 95px;}
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; background: #faf8fe; padding: 25px; margin:0 0 25px;}
       @media screen and (max-width:575px){body.page-template-tpl-tools-comparison .benifits-section .column-three{ flex-basis: 100%;margin: 15px 0 0;}}
     </style>
