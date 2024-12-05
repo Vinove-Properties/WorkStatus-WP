@@ -3840,7 +3840,7 @@ ul li {
     text-decoration: none;
     min-width: 213px;
     background: #624DE3;
-    border-color: #624DE3;
+    border-color: 1px solid #624DE3;
     border-radius: 5px;
     font-size: 18px;
     text-align: center;
@@ -3905,7 +3905,7 @@ ul li {
   text-decoration: none;
   min-width: 213px;
   background: #624DE3;
-  border-color: #624DE3;
+  border-color: 1px solid #624DE3;
   border-radius: 5px;
   font-size: 18px;
   text-align: center;
@@ -7052,7 +7052,7 @@ h3 a {
           line-height: 1;
           font-size: 16px;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
@@ -7597,7 +7597,7 @@ h3 a {
           line-height: 1;
           font-size: 14px !important;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
@@ -7651,7 +7651,7 @@ h3 a {
           line-height: 1;
           font-size: 16px;
           border: 1px solid #fff;
-          font-weight: 600;
+          font-weight: 500;
           cursor: pointer; }
           .header-two:hover .header-item-right .cta-wrap .login a.bg-none, .header-two.shady .header-item-right .cta-wrap .login a.bg-none {
             background: transparent;
@@ -7837,6 +7837,9 @@ h3 a {
 @media (max-width: 1380px) {
   .usecase-tabs .tab-nav ul li a {
     font-size: 14px; } }
+@media (max-width: 1280px) {
+  .usecase-tabs .tab-nav ul li a {
+    font-size: 13px; } }
 @media (max-width: 1024px) {
   .usecase-tabs .tab-nav ul {
     flex-wrap: wrap;
