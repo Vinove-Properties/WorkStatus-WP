@@ -512,7 +512,7 @@ add_shortcode( 'inbanner_cta', function( $atts ){
     <p class="heading">'.esc_html($atts['title']).'</p>
     <div class="cta-title">'.esc_html($atts['body']).'</div>    
     <div class="ctasec">
-    <a class="primary_btn1" onclick="call_demows();" href="javascript:void(0);">Book a Demo</a>
+    <a class="bkdemo" onclick="call_demows();" href="javascript:void(0);">Book a Demo</a>
     '.$FreeTrialCta.'    
     </div>
     </div>';

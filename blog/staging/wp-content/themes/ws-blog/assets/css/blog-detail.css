@@ -425,9 +425,10 @@ div.ez-toc-widget-container{border:0;}
 
 .customcta{text-align: center;}
 .customcta .cusimg{display:none;}
-.customcta .cus-cont{padding:0; text-align: center;}
+.customcta .cus-cont{text-align: center;}
 .customcta .btn-sec{justify-content: center;}
 .customcta .cushed{font-size: 17px;}
+.customcta .btn-container{text-align: center;}
 
 
 }
