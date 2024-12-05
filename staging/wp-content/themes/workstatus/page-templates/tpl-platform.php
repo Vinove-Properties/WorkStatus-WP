@@ -130,9 +130,6 @@ global $ws_ctas, $RegLink, $LogLink;
                     </div>
                 </div>
                 <div class="mt80 btnSc">
-                    <!-- <p><?php echo $top_section['top_btn_text']; ?></p>
-                    <a href="<?php echo $top_section['button_link']; ?>" class="primary_btn1"><?php echo $top_section['btn_text']; ?></a>
-                    <small> <?php echo $top_section['bottom_btn_text']; ?></small> -->
                     <?php echo wsDemoCta(); ?>
                 </div>
             </div>
@@ -261,9 +258,6 @@ global $ws_ctas, $RegLink, $LogLink;
                         </div>
                     </div>
                     <div class="mt40 btnSc">
-                        <!-- <p><?php echo $time_tracking['top_btn_text']; ?></p>
-                        <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1"><?php echo $time_tracking['btn_text']; ?></a>
-                        <small><?php echo $time_tracking['bottom_btn_text']; ?></small> -->
                         <?php echo wsDemoCta(); ?>
                     </div>
                 </div>
@@ -271,12 +265,6 @@ global $ws_ctas, $RegLink, $LogLink;
         </section>
     <?php endif; ?>
     
-    <!-- 
-    <section class="wsMobile whitetxt">
-    <?php //require_once get_template_directory() . '/common/workstatus-device.php'; ?>
-    </section> 
-    -->
-
     <?php
     $faqs = get_field('faqs');
     $faEnabled         = $faqs['is_enabled'];

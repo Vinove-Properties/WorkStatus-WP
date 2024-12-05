@@ -134,23 +134,12 @@ if( $isEnable == "yes" ){
     if( $silent_tracking_section['silent_tracking_content'] ){  $i = 111;
     foreach( $silent_tracking_section['silent_tracking_content'] as $row ) {
     $image      = $row['image'];
-
-    //$link       = $row['link'];
-    //$wintitle   = $row['title'];
-    //$wincontent = $row['content']; 
     $active = ($i==111) ? "active" : "";
-
-    ?>
-    <?php if( $image ){
-            echo '<picture class="page '.$active.'" id="p'.$i.'" >
-            '.getPxlWebpURL($image['ID']).'
-            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-            height="'.$image['height'].'"> 
-            </picture>';
-            } ?>
-
-    <?php $i++; } } ?>
+    if( $image ){
+      echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$i );
+    }
+    $i++; } 
+    } ?>
     </div>
     <div class="column-left">
     <?php 
@@ -169,14 +158,11 @@ if( $isEnable == "yes" ){
 
 
       <div class="mob-image">
-    <?php if( $image ){
-            echo '<picture>
-            '.getPxlWebpURL($image['ID']).'
-            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-            height="'.$image['height'].'"> 
-            </picture>';
-            } ?>
+      <?php 
+      if( $image ){
+      echo pxlGetPtag( $image );            
+      } 
+      ?>
       </div>
     </div>
     <?php $i++; } } ?>
@@ -219,20 +205,12 @@ if( $isEnable == "yes" ){
 					foreach( $boost_profitability['content_repeater'] as $row ) {
 						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==115) ? "active" : "";
-					?>
-
-						<?php if( $image ){
-                            echo '<picture class="page '.$active.'" id="p'.$i.'" >
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-
-					<?php $i++; } } ?>
-                  </div>
-                  <div class="column-left">
+            if( $image ){
+            echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$i );  
+            } 
+            $i++; } } ?>
+            </div>
+           <div class="column-left">
 				  <?php 
 					if( $boost_profitability['content_repeater'] ){  $i = 115;
 					foreach( $boost_profitability['content_repeater'] as $row ) {
@@ -241,25 +219,12 @@ if( $isEnable == "yes" ){
 					?>	
                     <div class="all-content">
                       <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs2">
-                        <!-- 
-                        <h3><?php echo $row['heading'];?></h3>
-                        <p><?php echo $row['sub_heading'];?>
-                        </p>
-                        <ul class="checkList">
-						            <?php //echo $row['content'];?>
-                        </ul> 
-                        -->
                         <?php echo $row['content']; ?>
                       </div>
                       <div class="mob-image">
 					  <?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
+              echo pxlGetPtag( $image );              
+              } ?>
                       </div>
                     </div>
 					<?php $i++; } } ?>
@@ -268,9 +233,6 @@ if( $isEnable == "yes" ){
                 </div>
               </div>
               <div class="mt40 btnSc">
-                <!-- <p>Don't Wait! Start Today</p>
-                <a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
-                <small>Get queries answered by experts</small> -->
                 <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
@@ -306,18 +268,10 @@ if( $isEnable == "yes" ){
 					foreach( $stay_in_control_section['content_repeater'] as $row ) {
 						$image      = (isset($row['image_'])) ? $row['image_'] : false;
 						$active = ($i==7) ? "active" : "";
-					?>
-                   
-					<?php if( $image ){
-                            echo '<picture class="page '.$active.'" id="p'.$i.'" >
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-					
-                    <?php $i++; } } ?>
+            if( $image ){
+            echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$i );
+                            }
+                            $i++; } } ?>
                   </div>
                   <div class="column-left">
 				  <?php 
@@ -329,23 +283,13 @@ if( $isEnable == "yes" ){
 					?>	
                     <div class="all-content">
                       <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs3">
-                        <!-- <h3><?php echo $row['heading'];?></h3>
-                        <p><?php echo $row['sub_heading'];?>
-                        </p>
-                        <ul class="checkList">
-						<?php echo $row['content'];?>
-                        </ul> -->
                         <?php echo $row['content'];?>
                       </div>
                       <div class="mob-image">
-					  <?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
+                      <?php 
+                      if( $image ){
+                      echo pxlGetPtag( $image );
+                      } ?>
                       </div>
                     </div>
 					<?php $i++; } } ?>
@@ -354,10 +298,6 @@ if( $isEnable == "yes" ){
                 </div>
               </div>
               <div class="mt40 btnSc">
-                <!-- <p>To explore all features & functionalities!</p>
-                <a href="javascript:void(0)" onclick="call_demows();" rel="nofollow"
-                  class="primary_btn1">Book A Demo</a>
-                <small>Get queries answered by experts</small> -->
                 <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
@@ -384,21 +324,15 @@ if( $isEnable == "yes" ){
                   <div class="column-right">
 
 				  <?php 
-					if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
-					foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
-						$image      = (isset($row['image_'])) ? $row['image_'] : false;
-						$active = ($i==10) ? "active" : "";
-					?>
-                    <?php if( $image ){
-                            echo '<picture class="page '.$active.'" id="p'.$i.'" >
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-					
-                    <?php $i++; } } ?>
+          if( $comprehensive_dashboard_section['content_repeater'] ){  $i = 10;
+          foreach( $comprehensive_dashboard_section['content_repeater'] as $row ) {
+          $image      = (isset($row['image_'])) ? $row['image_'] : false;
+          $active = ($i==10) ? "active" : "";
+          if( $image ){
+          echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$i );
+          }
+          $i++; } } 
+          ?>
                    
                   </div>
                   <div class="column-left">
@@ -411,24 +345,14 @@ if( $isEnable == "yes" ){
 					?>	
                     <div class="all-content">
                       <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" id="t<?php echo $i; ?>" data-section="active_Current_Tabs4">
-                        <!-- 
-                        <h3><?php echo $row['heading'];?></h3>
-                        <p><?php echo $row['sub_heading'];?></p>
-                        <ul class="checkList">
-						<?php echo $row['content'];?>
-                        </ul> 
-                      -->
                       <?php echo $row['content'];?>
                       </div>
                       <div class="mob-image">
-					  <?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
+                      <?php 
+                      if( $image ){
+                      echo pxlGetPtag( $image );
+                      } 
+                      ?>
                       </div>
                     </div>
 					<?php $i++; } } ?>
@@ -437,10 +361,6 @@ if( $isEnable == "yes" ){
               </div>
               <?php if( geoCTAcheck() === true ) : ?>
               <div class="mt40 btnSc">
-                <!-- <p>Start Tracking Now: Boost Your Business Growth</p>
-                <a href="<?php echo $RegLink; ?>"
-                  class="primary_btn1"><?php echo $ws_ctas['cta_text']; ?></a>
-                <small>No credit card required</small> -->
                 <?php echo wsDemoCtaCP(); ?>
               </div>
               <?php endif; ?>
@@ -471,17 +391,10 @@ if( $isEnable == "yes" ){
             foreach( $recognize['content_repeater'] as $row ) {
             $image      = (isset($row['image_'])) ? $row['image_'] : false;
             $active = ($i==1141) ? "active" : "";
-            ?>
-            <?php if( $image ){
-                echo '<picture class="page '.$active.'" id="p'.$i.'" >
-                '.getPxlWebpURL($image['ID']).'
-                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                height="'.$image['height'].'"> 
-                </picture>';
-                } ?>
-
-            <?php $i++; } } ?>
+            if( $image ){
+              echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$i );
+                } 
+                $i++; } } ?>
                     </div>
                     <div class="column-left">
                     <?php 
@@ -497,12 +410,7 @@ if( $isEnable == "yes" ){
                             </div>
                             <div class="mob-image">
             <?php if( $image ){
-                echo '<picture>
-                '.getPxlWebpURL($image['ID']).'
-                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                height="'.$image['height'].'"> 
-                </picture>';
+              echo pxlGetPtag( $image );                
                 } ?>
             </div>
                         </div>
@@ -514,12 +422,7 @@ if( $isEnable == "yes" ){
                 </div>
             </div>
             <div class="mt40 btnSc">
-                <!-- <p>Interested to know more!</p>
-                <a href="javascript:void(0)" onclick="call_demows();" rel="nofollow"
-                    class="primary_btn1">Book A Demo</a>
-                <small>Get all your queries answered from our experts<br> on a secure online meeting
-                </small> -->
-                <?php echo wsDemoCtaCP(); ?>
+              <?php echo wsDemoCtaCP(); ?>
             </div>
             </div>
             </div>
@@ -553,12 +456,7 @@ if( $isEnable == "yes" ){
                 if( $inrow['image'] ){
                   $image = $inrow['image'];
                   $active = ( $iTemp == $iConst ) ? "active" : "";
-                  echo '<picture class="page '.$active.'" id="p'.$iTemp.'" >
-                  '.getPxlWebpURL($image['ID']).'
-                  <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                  <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                  height="'.$image['height'].'"> 
-                  </picture>';
+                  echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$iTemp );                  
                   }  
                 $iTemp++;
               }
@@ -580,12 +478,7 @@ if( $isEnable == "yes" ){
 
               if( $image ){
                 echo '<div class="mob-image">';
-                echo '<picture>
-                '.getPxlWebpURL($image['ID']).'
-                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                height="'.$image['height'].'"> 
-                </picture>';
+                echo pxlGetPtag( $image );                
                 }
                 echo '</div>';                
               $iTemp++;  
@@ -819,14 +712,11 @@ if( $isEnable == "yes" ){
             ?> 
             <div class="column-three">
             <div class="thumb">
-            <?php if( $image ){
-                echo '<picture>
-                '.getPxlWebpURL($image['ID']).'
-                <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                height="'.$image['height'].'"> 
-                </picture>';
-                } ?>
+            <?php 
+            if( $image ){
+            echo pxlGetPtag( $image );                
+            } 
+            ?>
             </div>
             <div class="blog-title">
             <?php 
@@ -845,10 +735,6 @@ if( $isEnable == "yes" ){
             <?php if( geoCTAcheck() === true ) : ?>
             <div class="mt70 text_center for-link-blue link-text">
               <div class="mt70 text_center btnSc">
-                <!-- <p>Check How Workstatus™ Can Help<br> Your Business</p>
-                <a href="<?php echo $RegLink; ?>"
-                  class="primary_btn1 btnbg2"><?php echo $ws_ctas['cta_text']; ?></a>
-                <small>No credit card required</small> -->
                 <?php echo wsDemoCtaCP(); ?>
               </div>
             </div>
@@ -884,7 +770,7 @@ if( $isEnable == "yes" ){
 				  <?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = (isset($row['image_'])) ? $row['image_'] : false;
+						
 						$active = ($i==1) ? "active" : "";
 					?>
                     <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
@@ -897,7 +783,7 @@ if( $isEnable == "yes" ){
 				<?php 
 					if( $user_guide_section['question_answer_repeater'] ){  $i = 1;
 					foreach( $user_guide_section['question_answer_repeater'] as $row ) {
-						$image      = (isset($row['image_'])) ? $row['image_'] : false;
+						
 						$active = ($i==1) ? "active" : "";
 					?>
 
@@ -949,17 +835,9 @@ if( $isEnable == "yes" ){
                       <div class="triangle"> </div>
                     </div>
                     <div class="author-box">
-
-					<?php if( $image ){
-                            echo '<picture>
-                            '.getPxlWebpURL($image['ID']).'
-                            <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                            <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                            height="'.$image['height'].'"> 
-                            </picture>';
-                            } ?>
-
-                      
+                    <?php if( $image ){
+                    echo pxlGetPtag( $image );                            
+                    } ?>
                       <div class="author-content">
                         <p class="para_extrasmall white"><?php echo $row['name'];?></p>
                       </div>

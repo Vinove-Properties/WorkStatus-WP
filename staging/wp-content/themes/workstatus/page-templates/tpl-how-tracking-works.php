@@ -105,32 +105,14 @@
           <?php
             }
             } ?>
-          <!-- <div class="row">
-            <h3>You Have Direct Access To All Of Your Own Data</h3>
-            <p>Workstatus is the best time and project management tool that can help you track your time and projects. With it, you can easily manage your work schedule, tasks, and deadlines. It's a great way to increase your productivity and stay organized.
-            </p>
-            </div>
-            <div class="row">
-            <h3>Innovative Solutions Dissolve Today's Workplace Difficulties</h3>
-            <p>We feel that today's workplace problems are more severe than in the past. The present international scenario has resulted in a fast yet abrupt adjustment to new norms. As a result, we've developed eight fantastic ideas for keeping your company wholly safe and secure.</p>
-            </div> -->
         </div>
         <div class="column-right">
           <?php
             $image = $how_track['image'];
-            if ($image) {
-                echo '<picture>
-                ' . getPxlWebpURL($image['ID']) . '
-                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                height="' . $image['height'] . '"> 
-                </picture>';
-            } ?>
-          <!-- <picture>
-            <source type="image/webp" srcset="./assests/images/screenshots.webp">
-            <source type="image/png" srcset="./assests/images/screenshots.png">
-            <img loading="lazy" src="./assests/images/screenshots.png" alt="Websites &amp; Apps Usage Tracking" width="546" height="578">
-            </picture> -->
+            if($image){
+            echo pxlGetPtag( $image );             
+            } 
+            ?>            
         </div>
       </div>
     </div>
@@ -336,13 +318,8 @@
         <div class="trackImg">
           <?php
             $image = $timeline['left_image'];
-            if ($image) {
-                echo '<picture>
-                ' . getPxlWebpURL($image['ID']) . '
-                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                height="' . $image['height'] . '"> 
-                </picture>';
+            if($image){
+            echo pxlGetPtag( $image );  
             } ?>
         </div>
         <div class="trackContent">

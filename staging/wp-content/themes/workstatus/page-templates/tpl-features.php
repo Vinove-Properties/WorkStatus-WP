@@ -67,12 +67,6 @@
               }
               ?>                                
           </div>
-          <!--             
-            <div class="column-right">
-            <?php //echo $row['content']; ?>
-            <a href="<?php //echo site_url($row['link']); ?>" class="primary_btn1">Explore more</a>
-            </div> 
-            -->
           <div class="column-right">
             <div class="top-section">
               <?php 
@@ -152,71 +146,6 @@
   <?php
     endif;
     ?>
-  <!--<section class="four-columns price-col">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple">PRICING</span></h6>
-        <h2>Tailored Pricing for Advanced Workforce Management & Analytics</h2>
-        <p>Choose the plan that suits your organization's goals. Large organizations seeking a customized<br> solution to boost productivity can explore enterprise pricing options.</p>
-      </div>
-      <div class="flex_row">
-        <div class="column">
-          <div class="box">
-            <div class="bx-content">
-              <h3>BASIC</h3>
-              <div class="card-plan">
-              $4 <span>/ user / month</span></div>
-              <span class="total">$7,140 monthly total</span>
-              <a  href="/pricing" class="ctbtn">Choose Plan</a>
-            </div>
-            
-          </div>
-        </div>
-    
-        <div class="column">
-          <div class="box">
-            <div class="bx-content">
-              <h3>PROFESSIONAL</h3>
-              <div class="card-plan">
-              $4 <span>/ user / month</span></div>
-              <span class="total">$7,140 monthly total</span>
-              <a  href="/pricing" class="ctbtn">Choose Plan</a>
-            </div>
-            
-          </div>
-        </div>
-    
-        <div class="column">
-          <div class="box">
-            <div class="bx-content">
-              <h3>BUSINESS</h3>
-              <div class="card-plan">
-              $8 <span>/ user / month</span></div>
-              <span class="total">$10,820 monthly total</span>
-              <a  href="/pricing" class="ctbtn">Choose Plan</a>
-            </div>
-            
-          </div>
-        </div>
-    
-        <div class="column">
-          <div class="box">
-            <div class="bx-content">
-              <h3>ENTERPRISE</h3>
-              <div class="card-plan">
-              $179,000</div>
-              <span class="total">$7,140 monthly total</span>
-              <a  href="/pricing" class="ctbtn">Let’s Talk</a>
-            </div>
-            
-          </div>
-        </div>
-      
-      </div>
-      <div class="mt80 btnSc">
-      <a href="/pricing">Check Details</a>  
-    </div>     
-    </section>  -->
   <?php  
     $faq = get_field('faq');
     if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :

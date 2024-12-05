@@ -247,12 +247,11 @@ function workstatus_scripts() {
 	if( $pageMode && ($pageMode == "app") ){
 	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
 	}else{
-	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );
-	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-	//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);	
-	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
+	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );	
 	}
-		
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);	
+	
 	}elseif( is_page_template(['page-templates/tpl-integrations-details.php']) ){
 		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/integration-detail.css', array(), _S_VERSION);
 	}
@@ -347,7 +346,7 @@ add_filter( 'body_class', function( $classes ){
 	return $classes;
 });
 
-function getPxlWebpURL( $mid ){
+function getPxlWebpURL( $mid ){ return;
 	$webpDir 	= WP_CONTENT_DIR.'/uploads-webpc/uploads/';
 	$webpUrl 	= content_url().'/uploads-webpc/uploads/';
 	$icMeta 	= get_post_meta( $mid, '_wp_attached_file', true );
@@ -479,9 +478,7 @@ function pixelShowLatestPosts( $bposts, $pslug = ""){
 			   <div class="thumb">
 				 <picture>
 				   <source type="image/webp" srcset="<?php echo  $row->thumbnail_m; ?>">
-				   <source type="image/png" srcset="<?php echo  $row->thumbnail_m; ?>">
-				   <img loading="lazy" src="<?php echo  $row->thumbnail_m;?>" alt="<?php echo $row->title; ?>" 
-				   width="400" height="242">
+				   <img loading="lazy" src="<?php echo  $row->thumbnail_m;?>" alt="<?php echo $row->title; ?>" width="400" height="242">
 				 </picture>
 			   </div>
 			   <div class="blog-title">
@@ -2294,11 +2291,46 @@ function _containsLiTags($string) {
 
 
 function _getComparePricing( $usd, $inr, $pricing = true, $link = "#" ){
-if( $pricing === true )	{
-return '<span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span>';
-}else{
-	return '<span class="btn"><span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span></span>
-	<span class="small-font">(Per user / Month)</span><a href="'.$link.'" class="knowmre">Know More</a>';	
+	if( $pricing === true )	{
+	return '<span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span>';
+	}else{
+		return '<span class="btn"><span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span></span>
+		<span class="small-font">(Per user / Month)</span><a href="'.$link.'" class="knowmre">Know More</a>';	
+	}
 }
 
+
+function update_image_metadata_to_webp_correctly(){
+    set_time_limit(0);
+    global $wpdb;
+    $attachments = $wpdb->get_results("SELECT post_id, meta_value FROM {$wpdb->postmeta} WHERE meta_key = '_wp_attachment_metadata' AND (meta_value LIKE '%.png%' OR meta_value LIKE '%.jpg%')");    
+    foreach ($attachments as $attachment) {
+        $meta = maybe_unserialize($attachment->meta_value);
+        if (is_array($meta) && isset($meta['file'])) {
+            if (strpos($meta['file'], '.webp') === false) {
+                $meta['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $meta['file']);
+            }
+        }
+        if (isset($meta['sizes']) && is_array($meta['sizes'])) {
+            foreach ($meta['sizes'] as $size => $data) {
+                if (isset($data['file'])) {
+                    if (strpos($data['file'], '.webp') === false) {
+                        $meta['sizes'][$size]['file'] = str_replace(['.png', '.jpg'], ['.png.webp', '.jpg.webp'], $data['file']);
+                    }
+                }
+            }
+        }        
+        $wpdb->update(
+        $wpdb->postmeta,
+        ['meta_value' => maybe_serialize($meta)],
+        ['post_id' => $attachment->post_id, 'meta_key' => '_wp_attachment_metadata']
+        );
+    }
+    echo "All attachment metadata updated to use WebP paths!";
 }
+
+// add_action('init', function(){
+// 	if( isset( $_GET['generate_webpmeta'] ) && ($_GET['generate_webpmeta'] == "bingooooo") ){
+// 	update_image_metadata_to_webp_correctly(); die;		
+// 	}
+// });

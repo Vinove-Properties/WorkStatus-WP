@@ -98,62 +98,6 @@ if( isset( $afPartner['is_enabled'] ) && ($afPartner['is_enabled'] == 'yes')) :
 </section>
 <?php endif; ?>
 
-
-
-<?php
-$testimonials = get_field('testimonials', 'option');
-if ($testimonials) :
-    $isEnable = $testimonials['is_enabled'];
-    if ($isEnable == "yes") {
-?>
-<section class="testimonial testmHome">
-    <div class="container">
-        <div class="top-section">
-            <h6><span class="bg-white"><?php echo $testimonials['heading']; ?></span></h6>
-            <h2><?php echo $testimonials['sub_headings']; ?></h2>
-        </div>
-        <div class="glider-testimonial">
-            <div class="glider-contain">
-                <div class="glider2">
-
-                    <?php
-                    if ($testimonials['content_repeaters']) {
-                        $i = 7;
-                        foreach ($testimonials['content_repeaters'] as $row) {
-                            $image      = $row['image'];
-                            $active = ($i == 7) ? "active" : "";
-                    ?>
-                            <div>
-                                <?php echo $row['content']; ?>
-                                <div class="border">
-                                    <div class="triangle"> </div>
-                                </div>
-                                <div class="author-box">
-                                <?php if ($image) {
-                                echo '<picture>
-                                ' . getPxlWebpURL($image['ID']) . '
-                                <source type="' . $image['mime_type'] . '" srcset="' . $image['url'] . '">
-                                <img loading="lazy" src="' . $image['url'] . '" alt="' . $image['title'] . '" width="' . $image['width'] . '" 
-                                height="' . $image['height'] . '"> 
-                                </picture>';
-                                } ?>
-                                    <div class="author-content">
-                                        <p class="para_extrasmall white"><?php echo $row['name']; ?></p>
-                                    </div>
-                                </div>
-                            </div>
-                    <?php $i++;
-                        }
-                    } ?>
-                </div>
-                <div role="tablist" class="dots2"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<?php }
-endif; ?>
-
 <?php  
 $faq = get_field('faq');
 if( $faq ) :

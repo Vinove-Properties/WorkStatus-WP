@@ -51,13 +51,9 @@
         <?php 
           if( $wsMedia['media_testimonials'] ){
           foreach( $wsMedia['media_testimonials'] as $row ){
+               $picture = (isset($row['image']) && !empty($row['image'])) ? pxlGetPtag($row['image']) : ''; 
                echo '<div class="flex-3"><div class="media-box">';
-               echo '<div class="icon-box"><picture>
-               '.getPxlWebpURL($row['image']['ID']).'
-               <source type="'.$row['image']['mime_type'].'" srcset="'.$row['image']['url'].'">
-               <img loading="lazy" src="'.$row['image']['url'].'" alt="'.$row['image']['title'].'" 
-               width="'.$row['image']['width'].'" height="'.$row['image']['height'].'"> 
-               </picture></div>';
+               echo '<div class="icon-box">'.$picture.'</div>';
                  echo '<div class="content-box">'.$row['content'].'</div>';
                  echo '<div class="text-date-box">';
                  if( $row['link'] ){

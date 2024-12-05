@@ -356,12 +356,7 @@ function flterActiveContent( $tab = 'cat-1' ){
                   <div class="mob-image">
                     <?php 
                       if( $image ){
-                      echo '<picture>
-                      '.getPxlWebpURL($image['ID']).'
-                      <source type="'.$image['mime_type'].'" srcset="'.$image['url'].'">
-                      <img loading="lazy" src="'.$image['url'].'" alt="'.$image['title'].'" width="'.$image['width'].'" 
-                      height="'.$image['height'].'"> 
-                      </picture>';
+                      echo pxlGetPtag( $image );                        
                       } ?>
                   </div>
                 </div>
@@ -377,12 +372,8 @@ function flterActiveContent( $tab = 'cat-1' ){
                   foreach( $section['row-section'] as $row ){ 
                     $active = ( $iRow == $randIndx[$ft] ) ? "active" : "";
                     if( $row['image'] ){
-                    echo '<picture class="page '.$active.'" id="p'.$iRow.'" >
-                    '.getPxlWebpURL($row['image']['ID']).'
-                    <source type="'.$row['image']['mime_type'].'" srcset="'.$row['image']['url'].'">
-                    <img loading="lazy" src="'.$row['image']['url'].'" alt="'.$row['image']['title'].'" 
-                    width="'.$row['image']['width'].'" height="'.$row['image']['height'].'"> 
-                    </picture>';
+                    $image = $row['image'];
+                    echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$iRow );  
                     }
                     $iRow++;
                   }
