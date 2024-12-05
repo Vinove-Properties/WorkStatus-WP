@@ -131,7 +131,7 @@
       .ws-ctav4 .btnSc .ctasec .ctbtn{border:1px solid #624DE3;}
       .ws-ctav4 .btnSc .ctasec .ctbtn:hover{border-color:#fff;}
       @media (max-width: 767px) {
-      .ws-ctav4 .btnSc .ctasec .nobg{padding:12px 18px !important; font-size:15px !important;}
+        .ctbtn.nobg{padding:12px 18px !important; font-size:15px !important;}
       body.page-template-tpl-tools-comparison .benifits-section .column-three{text-align:center;}
       }
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
