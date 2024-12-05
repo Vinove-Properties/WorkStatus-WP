@@ -132,6 +132,7 @@
       .ws-ctav4 .btnSc .ctasec .ctbtn:hover{border-color:#fff;}
       @media (max-width: 767px) {
         .ctbtn.nobg{padding:12px 18px !important; font-size:15px !important;}
+        .ctbtn.nobg{padding:12px 18px !important;}
       body.page-template-tpl-tools-comparison .benifits-section .column-three{text-align:center;}
       }
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
@@ -144,7 +145,7 @@
       body.locate-ind .price span.spn-local,
       body.locate-int .prloc span.spn-int,
       body.locate-int .price span.spn-int{display:block;}
-      .ctbtn.nobg{padding:12px 18px !important;}
+      
       body.locate-int span.spn-ind, body.locate-ind  span.spn-intr{display:none;}
 
       .compare-projects .features-container .compare-column .tool-col.comp-logo{min-height: 94px;}
