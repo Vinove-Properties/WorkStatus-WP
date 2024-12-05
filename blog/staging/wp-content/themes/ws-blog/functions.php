@@ -542,13 +542,13 @@ function wsBannerShortcode_cb( $atts ){
     $FreeTrialCta = '';
     $hasLogin = getCTAstatus();
     if( $hasLogin !== false ){
-    $FreeTrialCta = '<a href="javascript:void(0);" class="bkdemo" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
+    $FreeTrialCta = '<a href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
     }
     $div = '<div class="upd-cusbanner sc-col">
     <div class="cta-title">'.esc_html($atts['title']).'</div>
     <p class="heading">'.esc_html($atts['body']).'</p>
     <div class="ctasec">
-    <a class="primary_btn1" onclick="call_demows();" href="javascript:void(0);">'.esc_html($atts['cta2_text']).'</a>
+    <a class="bkdemo" onclick="call_demows();" href="javascript:void(0);">'.esc_html($atts['cta2_text']).'</a>
     '.$FreeTrialCta.'    
     </div>
     </div>';
@@ -565,12 +565,12 @@ function ctaBlock_cb( $atts ){
     $FreeTrialCta = '';
     $hasLogin = getCTAstatus();
     if( $hasLogin !== false ){
-    $FreeTrialCta = '<a href="javascript:void(0);" class="bkdemo" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
+    $FreeTrialCta = '<a href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
     }
     $div = '<div class="upd-cusbanner sc-col">
     <div class="heading">'.esc_html($atts['title']).'</div>
     <div class="ctasec">
-    <a class="primary_btn1" onclick="call_demows();" href="javascript:void(0);">'.esc_html($atts['cta2_text']).'</a>
+    <a class="bkdemo" onclick="call_demows();" href="javascript:void(0);">'.esc_html($atts['cta2_text']).'</a>
     '.$FreeTrialCta.'    
     </div>
     </div>';
