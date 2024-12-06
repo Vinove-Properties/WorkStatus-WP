@@ -36,8 +36,25 @@ const laCountries   = [ "AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "S
 const eurCountries  = [ "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE" ];
 const afCountries   = [ "DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CD", "CG", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "CI", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW" ];
 
+function wsGetCookieVal(cookieName){
+    const cookies = document.cookie.split(";").map(cookie => cookie.trim());
+    for (let cookie of cookies) {
+        if (cookie.startsWith(`${cookieName}=`)) {
+            return cookie.split("=")[1]; // Return the value of the cookie
+        }
+    }
+    return false; // Return null if the cookie doesn't exist
+}
+
+
 function getwsPlanurl(plan_id = 0, type = "annual"){
-  return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;
+  if( wsGetCookieVal( 'ws_reftoken' ) ){
+    let refToken = wsGetCookieVal( 'ws_reftoken' );
+    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&ws_reftoken='+refToken;
+  }else{
+    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;  
+  }
+  
 }
 
 const WS_PLAN_ID_BKP = {
