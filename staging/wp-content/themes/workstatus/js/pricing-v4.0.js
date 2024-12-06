@@ -50,7 +50,7 @@ function wsGetCookieVal(cookieName){
 function getwsPlanurl(plan_id = 0, type = "annual"){
   if( wsGetCookieVal( 'ws_reftoken' ) ){
     let refToken = wsGetCookieVal( 'ws_reftoken' );
-    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&ws_reftoken='+refToken;
+    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&r_id='+refToken;
   }else{
     return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;  
   }
