@@ -1,4 +1,5 @@
 <?php
+/*
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
@@ -60,6 +61,11 @@ function smtpEmailFunction( $emailTo, $subject, $body, $type, $userEmail, $email
     }catch(Exception $e){
         return false;
     }
+}
+*/
+
+function smtpEmailFunction($emailTo, $subject, $body, $type, $userEmail, $emailCC = [], $emailBCC = [], $attachments = [], $cname = null ){
+ return true;
 }
 
 function postZohoLead( $argArrData ){
