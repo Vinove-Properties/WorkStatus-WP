@@ -2,17 +2,15 @@
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
+$data = file_get_contents('php://input');
+$json = json_decode($data, true);
 
-$pyload = json_decode(file_get_contents('php://input'), true);
-if($pyload['event_type'] !== 'invitee.created') {
+if( isset( $json['event'] ) && ($json['event'] !== "invitee.created") ){
   http_response_code(200);
   exit("Ignoring non-invitee.created event");
 }
 
-$data = file_get_contents('php://input');
-$json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
-
 $file       = fopen(CL_LOGFILE,"a");
 fwrite( $file, PHP_EOL."Webhook V2 - Response : " .time().print_r($json,true) );
 fclose( $file );
@@ -1679,5 +1677,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     $server_output = curl_exec($ch);
     curl_close($ch);
+    http_response_code(200);
+    exit();
 }
 ?>
