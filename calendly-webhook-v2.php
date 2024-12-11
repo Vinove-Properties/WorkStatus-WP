@@ -62,7 +62,7 @@ function insertEvent( $eventID ){
 }
 
 if( isset( $json['event'] ) && ($json['event'] === "invitee.created") ){
-  $eventID = "https://api.calendly.com/scheduled_events/ead30c5f-80a8-44cb-a0a2-bb9e8a75a2e2";
+  //$eventID = "https://api.calendly.com/scheduled_events/ead30c5f-80a8-44cb-a0a2-bb9e8a75a2e2";
   $eventID = (isset($json['payload']['event']) && !empty($json['payload']['event'])) ? $json['payload']['event'] : false;
   if( $eventID ){
     $eventID  = str_replace("https://api.calendly.com/scheduled_events/", "", $eventID);
