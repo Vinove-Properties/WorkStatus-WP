@@ -2,6 +2,13 @@
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
+
+$pyload = json_decode(file_get_contents('php://input'), true);
+if($pyload['event_type'] !== 'invitee.created') {
+  http_response_code(200);
+  exit("Ignoring non-invitee.created event");
+}
+
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
@@ -1231,8 +1238,8 @@ function clSendMail( $emailTo, $subject, $body, $type, $userEmail, $emailCC = []
         
         $mail->isSMTP();
         $mail->Host         = "smtp.gmail.com";
-        $mail->SMTPSecure   = 'ssl';
-        $mail->Port         = 465;
+        $mail->SMTPSecure   = 'tsl';
+        $mail->Port         = 587;
         $mail->SMTPAuth     = true;
         $mail->Username     = 'do-not-reply@workstatus.io';
         $mail->Password     = 'qqmwjodicsevwikm';
@@ -1509,9 +1516,11 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $apiRequest['last_name'] = $lastName;
     }
     
-    // clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($apiRequest, true), "lead", $email, 
-    // [], [], [], $json['payload']['name'] );    
-    
+    /*
+    clSendMail("nitin.baluni@mail.vinove.com", "Demo Workstatus - Admin Leads", print_r($apiRequest, true), "lead", $email, 
+    [], [], [], $json['payload']['name'] );    
+    */
+
     $ch = curl_init();
     if( $hasDataID !== 0 ){
         $apiRequest['id'] = $hasDataID;
