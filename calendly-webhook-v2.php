@@ -2,17 +2,13 @@
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
+
 http_response_code(200);
 flush();
 ob_flush();
 
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
-
-if( isset( $json['event'] ) && ($json['event'] !== "invitee.created") ){
-  http_response_code(200);
-  exit("Ignoring non-invitee.created event");
-}
 
 define('CL_LOGFILE', '/home/workstatus-io/public_html/log/crm.log');
 $file       = fopen(CL_LOGFILE,"a");
@@ -25,6 +21,59 @@ use PHPMailer\PHPMailer\SMTP;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
+
+
+function configureMySQLi(){
+    $servername = "localhost";
+    $username   = "workstatus-io-crm-prod-db-user";
+    $password   = "7DsEMIA5ppFAAyK";
+    $dbname     = "workstatus-io-crm-prod-db";    
+    $conn = new mysqli( $servername, $username, $password, $dbname );
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
+}
+
+function eventExists($eventID){
+    $mysqli = configureMySQLi();
+    $sql = "SELECT COUNT(*) AS count FROM calendly_events WHERE event_id = ?";
+    if ($stmt = $mysqli->prepare($sql)) {
+      $stmt->bind_param('s', $eventID); // 's' for string
+      $stmt->execute();
+      $stmt->bind_result($count);
+      $stmt->fetch();
+      $stmt->close();
+      $mysqli->close();
+      return ( $count > 0 ) ? true : false;
+    }
+}
+
+function insertEvent( $eventID ){
+    $mysqli = configureMySQLi();
+    $sql    = "INSERT INTO calendly_events (event_id, processed_at) VALUES (?, ?)";
+    if ($stmt = $mysqli->prepare($sql)) {
+        $stmt->bind_param('ss', $eventID, date('Y-m-d H:i:s'));
+        $stmt->execute();
+        $stmt->close();
+        $mysqli->close();
+        return true;
+    }
+}
+
+if( isset( $json['event'] ) && ($json['event'] === "invitee.created") ){
+  $eventID = (isset($json['payload']['event']) && !empty($json['payload']['event'])) ?? false;
+  if( $eventID ){
+    $eventID  = str_replace("https://api.calendly.com/scheduled_events/", "", $eventID);
+    if( eventExists( $eventID ) === true ){
+      http_response_code(200);
+      die;
+    }else{
+      insertEvent( $eventID );
+    }
+  }
+}
+
 
 function tempWsPhoneCode( $pcode ){ 
 //$pcode = str_replace(" ","", $pcode);
