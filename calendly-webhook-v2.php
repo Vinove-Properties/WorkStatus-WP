@@ -2,6 +2,10 @@
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
+http_response_code(200);
+flush();
+ob_flush();
+
 $data = file_get_contents('php://input');
 $json = json_decode($data, true);
 
@@ -1485,8 +1489,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
     $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
 
-    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, 
-    [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
 
     $file       = fopen(CL_LOGFILE,"a");
     fwrite( $file, PHP_EOL."Debugger : #1"  );
