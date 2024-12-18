@@ -36,6 +36,9 @@ const laCountries   = [ "AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "S
 const eurCountries  = [ "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE" ];
 const afCountries   = [ "DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CD", "CG", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "CI", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW" ];
 
+const usRegion = ["BG", "NZ", "AU", "CA", "SG", "US", "AT", "BE", "HR", "CY", "EE", "FI", "FR", "DE", "GR", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PT", "SK", "SI", "ES", "LI", 
+"CH", "GI", "GB"];
+
 function wsGetCookieVal(cookieName){
     const cookies = document.cookie.split(";").map(cookie => cookie.trim());
     for (let cookie of cookies) {
@@ -56,13 +59,13 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
   }
   
 }
-
+/*
 const WS_PLAN_ID_BKP = {
   "local" : {"attendance":5001, "product" : 466, "project" : 460, "ent" : 461, "free" : 137},
   "international" : {"attendance":5002, "product" : 467, "project" : 463, "ent" : 464, "free" : 138}
 }
 
-const WS_PLAN_ID = {
+const WS_PLAN_ID_pre = {
   "local" : {
     "productivity":{'basic':5109,'pro':5110},
     "project":{'basic':5111,'pro':5112},
@@ -78,8 +81,7 @@ const WS_PLAN_ID = {
      "free" : 138
   }
 }
-
-const pricingData = {
+const pricingData_pre = {
 "IN": {
   "productivity":{
     'basic':{'yearly':{"amount":199}, 'monthly':{"amount":299}},
@@ -271,21 +273,115 @@ const pricingData = {
   'meta':{"currency":'€', "location":0.99, "pm":1.89, "insights":1.89}
 }
 };
+*/
+
+const WS_PLAN_ID = {
+  "IN" : {
+    "productivity":{'basic':5109,'pro':5110},
+    "project":{'basic':5111,'pro':5112},
+    "time":{'basic':5113,'pro':5114},
+    "attendance":{'basic':5115,'pro':5116},
+    "free" : 137
+  },
+  "UR" : {
+     "productivity":{'basic':5101,'pro':5102},
+     "project":{'basic':5103,'pro':5104},
+     "time":{'basic':5105,'pro':5106},
+     "attendance":{'basic':5107,'pro':5108},
+     "free" : 138
+  },
+  "OT" : {
+     "productivity":{'basic':6001,'pro':6002},
+     "project":{'basic':6003,'pro':6004},
+     "time":{'basic':6005,'pro':6006},
+     "attendance":{'basic':6007,'pro':6008},
+     "free" : 138
+  }
+}
+
+const pricingData = {
+  "IN": {
+  "productivity":{
+    'basic':{'yearly':{"amount":199}, 'monthly':{"amount":299}},
+    'pro':{'yearly':{"amount":299}, 'monthly':{"amount":399}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":90}, 'monthly':{"amount":110}},
+    'pro':{'yearly':{"amount":4600}, 'monthly':{"amount":5400}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":48}, 'monthly':{"amount":60}},
+    'pro':{'yearly':{"amount":2400}, 'monthly':{"amount":3000}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":48}, 'monthly':{"amount":60}},
+    'pro':{'yearly':{"amount":2400}, 'monthly':{"amount":3000}}
+  },
+  'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
+  },
+  "UR": {
+  "productivity":{
+    'basic':{'yearly':{"amount":4}, 'monthly':{"amount":5}},
+    'pro':{'yearly':{"amount":5.5}, 'monthly':{"amount":7}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":2.40}, 'monthly':{"amount":3}},
+    'pro':{'yearly':{"amount":120}, 'monthly':{"amount":150}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":1.6}, 'monthly':{"amount":2}},
+    'pro':{'yearly':{"amount":80}, 'monthly':{"amount":100}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":1.6}, 'monthly':{"amount":2}},
+    'pro':{'yearly':{"amount":80}, 'monthly':{"amount":100}}
+  },
+  'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
+  },
+  "OT": {
+  "productivity":{
+    'basic':{'yearly':{"amount":3}, 'monthly':{"amount":4}},
+    'pro':{'yearly':{"amount":4}, 'monthly':{"amount":5}}  
+  },
+  "project":{
+    'basic':{'yearly':{"amount":2}, 'monthly':{"amount":2.50}},
+    'pro':{'yearly':{"amount":80}, 'monthly':{"amount":100}}
+  },
+  "time":{
+    'basic':{'yearly':{"amount":1.2}, 'monthly':{"amount":1.5}},
+    'pro':{'yearly':{"amount":60}, 'monthly':{"amount":75}}
+  },
+  "attendance":{
+    'basic':{'yearly':{"amount":1.2}, 'monthly':{"amount":1.5}},
+    'pro':{'yearly':{"amount":100}, 'monthly':{"amount":75}}
+  },
+  'meta':{"currency":'$', "location":0.69, "pm":1.49, "insights":1.49}
+  }
+};
 
 function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     //conCode = "INTR"
     const locInput = document.getElementById("current-geo");
-    if( laCountries.includes( conCode ) ){
-      conCode = "LA";
-    }else if( eurCountries.includes( conCode ) ){
-      conCode = "EUR";
-    }else if( afCountries.includes( conCode ) ){
-      conCode = "ZA";
+    // if( laCountries.includes( conCode ) ){
+    //   conCode = "LA";
+    // }else if( eurCountries.includes( conCode ) ){
+    //   conCode = "EUR";
+    // }else if( afCountries.includes( conCode ) ){
+    //   conCode = "ZA";
+    // }
+
+    if( usRegion.includes(conCode) ){
+    conCode = "UR";  
+    }else if( !pricingData.hasOwnProperty(conCode) ){
+    conCode = "OT";  
     }
 
     if( conCode === "IN" ){
-      document.body.classList.add("geo-india");
+    document.body.classList.add("geo-india");
     }
+
+
+
 
     if( !pricingData.hasOwnProperty(conCode) ){
       conCode = "US";      
@@ -325,9 +421,11 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     elmInsights.innerHTML   = currency + plans['meta']['insights'];  
     }
     
-    var isLocal           = ( conCode === "IN" ) ? "local" : "international";
-    var plan_meta         =  WS_PLAN_ID[isLocal];
+    //var isLocal           = ( conCode === "IN" ) ? "local" : "international";
 
+    console.log( conCode );
+    var plan_meta         =  WS_PLAN_ID[conCode];
+    console.log( plan_meta );
 
     [...document.querySelectorAll('.free-zero')].forEach(function(elm){
       elm.innerHTML = currency+"0";
@@ -369,13 +467,15 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         }
 
         let coPlanFree     = document.getElementById("ws-coplan-free");
-        if( coPlanFree ){
-          if( isLocal == "local" ){
-            coPlanFree.setAttribute("href", getwsPlanurl( WS_PLAN_ID['local']['free'], pType ) );  
-          }else{
-            coPlanFree.setAttribute("href", getwsPlanurl( WS_PLAN_ID['international']['free'], pType ) );
-          }
-        }
+        ///////////////////////////////////////////////////////////////////////// Needs to confrm for free plan
+        // if( coPlanFree ){
+        //   if( isLocal == "local" ){
+        //     coPlanFree.setAttribute("href", getwsPlanurl( WS_PLAN_ID['local']['free'], pType ) );  
+        //   }else{
+        //     coPlanFree.setAttribute("href", getwsPlanurl( WS_PLAN_ID['international']['free'], pType ) );
+        //   }
+        // }
+        /////////////////////////////////////////////////////////////////////////
 
         /*
         const value     = plans[key];
