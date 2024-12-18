@@ -109,17 +109,19 @@ strong {
 
 .bg-blue {
   background: #624de3; }
-  .bg-blue .top-section h6 {
-    color: #6754e2; }
-    .bg-blue .top-section h6 .bg-purple {
-      background: #ffffff; }
-  .bg-blue .top-section h2, .bg-blue .top-section p {
-    color: #ffffff; }
-  .bg-blue .top-section a {
-    color: #ffffff;
-    text-decoration: underline; }
-    .bg-blue .top-section a:hover {
-      text-decoration: none; }
+  .bg-blue .top-section {
+    text-align: center; }
+    .bg-blue .top-section h6 {
+      color: #6754e2; }
+      .bg-blue .top-section h6 .bg-purple {
+        background: #ffffff; }
+    .bg-blue .top-section h2, .bg-blue .top-section p {
+      color: #ffffff; }
+    .bg-blue .top-section a {
+      color: #ffffff;
+      text-decoration: underline; }
+      .bg-blue .top-section a:hover {
+        text-decoration: none; }
 
 .dis-flex {
   display: flex;
