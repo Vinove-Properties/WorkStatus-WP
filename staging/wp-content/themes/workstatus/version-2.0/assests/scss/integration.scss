@@ -1,0 +1,128 @@
+@import "global-section";
+@import "footer";
+@import "_menu-v4";
+
+.integration_section {
+    background: url("../images/integration-bg.png");
+    background-repeat: no-repeat;
+    padding: 40px 0 0;
+    background-size: 100% 100%;
+    margin-top: -60px;
+
+    .flex_row {
+        .column {
+            @media screen and (max-width: ($mdscreen-size - 1)) {
+                width: calc(50% - 30px);
+            }
+
+            @media screen and (max-width: $smscreen-size) {
+                width: 100%;
+                margin: 40px 0;
+            }
+
+            margin: 40px 15px;
+            width: calc(33.3% - 30px);
+            background: #ffffff;
+            padding: 30px 20px;
+            box-shadow: 0px 0px 20px rgba(22,
+                101,
+                216,
+                0.1);
+
+            h5 {
+                margin: 20px 0;
+            }
+
+            a {
+                color: #624DE3;
+                margin-top: 20px;
+            }
+
+            .img-box {
+                box-shadow: 0px 0px 20px rgba(22, 101, 216, 0.1);
+                padding: 15px;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                margin-top: -70px;
+                background-color: #ffffff;
+
+                .image {
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background: url("../images/integrations.png");
+
+                    &.asana {
+                        background-position: 2px 0px;
+                    }
+
+                    &.breeze {
+                        background-position: 2px -46px;
+                    }
+
+                    &.github {
+                        background-position: 0px -96px;
+                    }
+
+                    &.gitlab {
+                        background-position: 0px -140px;
+                    }
+
+                    &.trello {
+                        background-position: 0px -192px;
+                    }
+
+                    &.jira {
+                        background-position: 0px -243px;
+                    }
+
+                    &.slack {
+                        background-position: 0px -294px;
+                    }
+
+                    &.paypal {
+                        background-position: 0px -345px;
+                    }
+
+                    &.gusto {
+                        background-position: 0px -397px;
+                    }
+
+                    &.quickbooks {
+                        background-position: 0px -451px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.second {
+        margin-top: 0;
+        padding: 40px 0 120px;
+        background: url("../images/integration-bg2.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h3 {
+            margin-top: 70px;
+        }
+    }
+}
+
+.background_lightblue {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.background_lightblue h2 {
+    margin-top: 0;
+}
+
+.nrmbtn {
+    color: #fff;
+    text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+@import "_menu-v4";
+@import 'global-section';
+@import 'footer';
+.feature-header .site__header{background: #4231ac;}
+.errorPg{ width:100%; text-align:center; padding:100px 3%; background:#f5f7fa; margin-top:80px;}
+body.error404 .error404 {padding: 120px 0;}
+.errorPg h1{ font-size:40px; margin:0; line-height: 1.2;}
+.errorPg h1 strong{ font-size: 150%;}
+.errorPg h2{ font-size:34px; margin:0 0 15px; color: #222;letter-spacing: 0.6px;}
+.errorPg  p{ font-size:18px; line-height:28px; color: #494949;}
+.errorPg .error404{ width: 980px; margin: 0 auto;}
+.error404 .not-found {background: #6754E2;	color: #fff;text-align: center;	margin: 0 0 30px;  padding: 50px;	border-radius: 25px;}
+.error404 .not-found i.fa {font-size: 120px;margin: 0px 0px 20px;}
+.error404 .primary_btn.outline {font-size: 18px;padding: 6px 25px;background: #1D1C35;border-color: #1D1C35;font-size: 14px;margin-top: 12px;}
+.error404 .primary_btn.outline .fa{ font-size: 85%; margin: 0 5px 0 0;}
+.error404 .primary_btn.outline:hover {background-color: #051441;border-color: #051441; color: #fff;}
+.page-content{margin:40px 0 0;}
+body.error404 .error404  .background_grey{background:#fff;}
+@media screen and (max-width:$mdscreen-size - 1){
+    .errorPg{  padding:60px 3%; margin-top:60px;}
+    .errorPg h1{ font-size:28px ;}
+    .errorPg h2{ font-size:22px;}
+    .errorPg  p{ font-size:16px; line-height:26px;}
+    .error404 .not-found{ padding: 30px 15px;border-radius: 10px;}
+    .error404 .not-found i.fa {font-size: 80px;margin: 0px 0px 10px;}
+}
+.error404 .not-found {
+    width:70%;
+    margin: auto;
+    @media screen and (max-width:$mdscreen-size - 1){
+        width: 90%;
+    }
+}
+
+@media (max-width: 979px){
+body.error404 .error404  {padding: 120px 0 50px;}  
+}

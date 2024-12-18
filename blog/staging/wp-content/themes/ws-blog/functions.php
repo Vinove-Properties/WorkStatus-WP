@@ -3,6 +3,14 @@ if( ! defined( '_S_VERSION' ) ){
     define( '_S_VERSION', '11.11.24' );
     //define( '_S_VERSION', time() );
 }
+
+add_filter('upload_mimes', function($mime_types){
+    $mime_types = [];
+    $mime_types['webp'] = 'image/webp';
+    $mime_types['pdf'] = 'application/pdf';
+    return $mime_types;
+});
+
 /*
 add_filter( 'wp_authenticate_user', function( $user ){
     if(is_wp_error($user)){return $user;}

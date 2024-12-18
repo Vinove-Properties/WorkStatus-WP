@@ -1,0 +1,103 @@
+.faqsRow {
+  .flex_row {
+  }
+  .column {
+    width: 100%;
+    margin: 0;
+    .faq-accordion-item-outer {
+      margin-top: 30px;
+      margin-left: 0;
+      &:first-child {
+        margin: 0;
+      }
+      h3 {
+        position: relative;
+        cursor: pointer;
+        padding-left: 30px;
+        display: inline-block;
+        line-height: 26px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 20px;
+        &::before {
+          content: "";
+          display: inline-block;
+          background: url(../images/left-angle.png) no-repeat;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          left: 0;
+          top: 8px;
+        }
+      }
+      .faq-accordion-content {
+        display: none;
+        padding-left: 30px;
+        p {
+          margin: 15px 0 0;
+        }
+        ul,
+        ol {
+          padding: 0;
+          li {
+            color: #5e6373;
+            margin: 0 0 2px;
+            padding-left: 20px;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              width: 14px;
+              height: 13px;
+              top: 7px;
+              background: url(../images/check-icon.png) no-repeat;
+              left: 0;
+            }
+          }
+        }
+      }
+      &.open {
+        .faq-accordion-content {
+          display: block;
+        }
+        h3 {
+          position: relative;
+          &::before {
+            background: url(../images/angle-top.png) no-repeat;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Media Query Start From Here*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+  .faqsRow .column .faq-accordion-item-outer {
+    margin-top: 15px;
+    h3 {
+      line-height: 24px;
+      padding-left: 25px;
+      font-size: 17px;
+    }
+    &.open {
+      .faq-accordion-content {
+        padding-left: 22px;
+      }
+    }
+  }
+}

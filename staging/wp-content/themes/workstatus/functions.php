@@ -7,6 +7,13 @@ function isBetaVersion(){
     return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'staging' ) !== false) )  ?  true : false;
 }
 
+add_filter('upload_mimes', function($mime_types){
+    $mime_types = [];
+    $mime_types['webp'] = 'image/webp';
+    $mime_types['pdf'] = 'application/pdf';
+    return $mime_types;
+});
+
 if( ! defined( '_S_VERSION' ) ){
     if( isBetaVersion() ){
         define( '_S_VERSION', '1.9.'.time() );
@@ -278,7 +285,11 @@ function workstatus_scripts() {
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
-
+	elseif(is_page_template(['page-templates/tpl-feature-v2.0.php'])){
+		wp_enqueue_style('cmn-features', get_bloginfo('template_url').'/version-2.0/assests/css/feature-detail-min.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
+	}
 
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
@@ -667,6 +678,27 @@ function getCTAblock( $class = "button-common margin-t-80" ){
 	</div></div>
 	</div>';
 }
+
+function _getDemoCTA( $class = "button-common margin-t-80", $ccText = true ){
+	global $ws_ctas, $RegLink;
+	$cta_lbl 	= (isset( $ws_ctas['cta_text']) && !empty($ws_ctas['cta_text'])) ? $ws_ctas['cta_text'] : 'Start Free Trial';
+	$ccText 	= ( $ccText === true ) ? '<span class="nccr">No credit card required</span>' : '';
+	return '<div class="'.$class.'">
+	<div class="cmn-democta">	
+	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>	
+	<span class="devide">OR</span>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	'.$ccText.'
+	</div></div>
+	</div>';
+}
+
+function _wraplsContent($html) {
+    $pattern = '/(<h3>.*?<\/h3>(?:\s*.*?)*?(?=(<h3>|$)))/is';
+    $replacement = '<div class="text-column listing">$1</div>';
+    return preg_replace($pattern, $replacement, $html);
+}
+
 
 add_action( 'wp_ajax_nopriv_rateus', 'rateus_cb' );
 add_action( 'wp_ajax_rateus', 'rateus_cb' );
