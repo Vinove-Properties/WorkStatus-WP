@@ -349,7 +349,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
   $user_guide_section = get_field('user_guide_section');		
   if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabled'] == "yes") ){ 
   ?>
-  <section class="userguide">
+  <section class="userguide padding-b-120">
     <div class="container">
       <div class="top-section">
         <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
@@ -394,9 +394,9 @@ global $ws_ctas, $RegLink, $LogLink, $post;
   $faq = get_field('faq');
   if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ){ 
   ?>
-  <section class="faqsRow wfull for-heading-center">
+  <section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
   <div class="container">
-  <div class="top-section">
+  <div class="top-section text-center">
     <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
     <h2><?php echo $faq['sub_heading']; ?></h2>
   </div>
