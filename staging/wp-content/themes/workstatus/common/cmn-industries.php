@@ -10,96 +10,93 @@
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-accounting.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-accounting.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Healthcare</h3>
+            <h3>Accounting</h3>
           </div>
         </div>
         <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
+          <h3>Accounting</h3>
           <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Healthcare</h3>
+            <h3>Manufacturing</h3>
           </div>
         </div>
         <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
+          <h3>Manufacturing</h3>
+          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+        </div>
+      </div>
+
+      <div class="flex-3 ind-column">
+        <div class="ind-image">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp" alt="Workstatus" width="242" height="267">
+          </picture>
+          <div class="ind-title">
+            <h3>Janitorial Services</h3>
+          </div>
+        </div>
+        <div class="ind-content">
+          <h3>Janitorial Services</h3>
           <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-construction.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-construction.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Healthcare</h3>
+            <h3>Construction</h3>
           </div>
         </div>
         <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
+          <h3>Construction</h3>
           <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-real-estate.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-real-estate.webp " alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Healthcare</h3>
+            <h3>Real Estate</h3>
           </div>
         </div>
         <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
+          <h3>Real Estate</h3>
           <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
         </div>
       </div>
+      
+      
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-ecom.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-ecom.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Healthcare</h3>
+            <h3>E-Commerce</h3>
           </div>
         </div>
         <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
-        </div>
-      </div>
-      <div class="flex-3 ind-column">
-        <div class="ind-image">
-          <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/in-01.png" alt="Workstatus" width="242" height="267">
-          </picture>
-          <div class="ind-title">
-            <h3>Healthcare</h3>
-          </div>
-        </div>
-        <div class="ind-content">
-          <h3>Travel &amp; Tourism</h3>
+          <h3>E-Commerce</h3>
           <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
         </div>
       </div>
