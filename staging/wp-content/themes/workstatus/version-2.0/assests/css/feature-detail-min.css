@@ -231,7 +231,8 @@ strong {
 .top-section {
   max-width: 100%;
   margin: auto;
-  padding: 0 0 100px; }
+  padding: 0 0 100px;
+  text-align: center; }
   .top-section h6 {
     color: rgba(98, 77, 227, 0.76);
     font-size: 18px;
@@ -5921,6 +5922,7 @@ li.iti__country {
       align-items: center;
       flex-wrap: wrap;
       flex-direction: column;
+      min-height: 87px;
       justify-content: center; }
       .compare-projects .features-container .compare-column .tool-col.comphead {
         font-size: 18px;
