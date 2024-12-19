@@ -8883,6 +8883,12 @@ li.iti__country {
 .videoPopup {
   position: relative; }
 
+.pricing-wrapper {
+  padding-top: 0; }
+
+.cmn-pricing {
+  background: #faf8fe; }
+
 /*Popup Section End*/
 /*banner end*/
 .bold-head {
