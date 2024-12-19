@@ -379,7 +379,9 @@ global $ws_ctas, $RegLink, $LogLink, $post;
               	$image      = (isset($row['image_'])) ? $row['image_'] : false;
               	$active = ($i==1) ? "active" : "";
               ?>
-            <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">              
+            <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>"> 
+            <h3 class="guide-question"><?php echo $row['question']; ?>
+                    </h3>      
               <div class="guide-answer">
                 <?php echo $row['answer']; ?>
               </div>
