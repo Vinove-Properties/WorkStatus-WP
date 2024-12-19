@@ -353,7 +353,7 @@ const pricingData = {
   },
   "attendance":{
     'basic':{'yearly':{"amount":1.2}, 'monthly':{"amount":1.5}},
-    'pro':{'yearly':{"amount":100}, 'monthly':{"amount":75}}
+    'pro':{'yearly':{"amount":60}, 'monthly':{"amount":75}}
   },
   'meta':{"currency":'$', "location":0.69, "pm":1.49, "insights":1.49}
   }
