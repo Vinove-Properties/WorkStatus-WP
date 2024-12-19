@@ -2340,3 +2340,26 @@ document.addEventListener("DOMContentLoaded", function(){
         updateVisibility();
     }
 });
+
+if (document.getElementById("cmn-v2-testimonials")) {
+window.addEventListener("load", function() {
+var gliderElement = document.querySelector(".testimonial-slider .glider");
+if (gliderElement) {      
+new Glider(gliderElement, {
+slidesToShow: 1, 
+slidesToScroll: 1,
+draggable: true,
+scrollLock: false,
+dots: ".testimonial-slider .dots",
+dragDistance: true,
+arrows: { prev: '#cmn-v2-testimonials .test-prev', next: '#cmn-v2-testimonials .test-next' },      
+responsive: [
+{breakpoint: 320, settings: {slidesToShow:1,slidesToScroll:1,duration: 0.25}},
+{breakpoint: 767, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}},
+{breakpoint: 1024, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}},
+{breakpoint: 1400, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}}          
+]
+});
+}
+});
+}
