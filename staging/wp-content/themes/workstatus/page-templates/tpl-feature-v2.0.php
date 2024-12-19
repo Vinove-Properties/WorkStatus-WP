@@ -344,7 +344,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
   <?php  
   //get_template_part('common/ws', 'pricing');
   $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
-  get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-100"]);
+  get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-120"]);
   ?>
 
   <?php  
@@ -429,6 +429,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
 <?php require_once get_template_directory() .'/common/blog.php'; ?>
 <?php //get_template_part('common/home', 'testimonials'); ?>
 <?php //require_once get_template_directory() .'/common/workstatus-journey.php';?>
-
+<?php get_template_part('common/cmn', 'globalrating'); ?>
+<?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>
