@@ -394,40 +394,74 @@ global $ws_ctas, $RegLink, $LogLink, $post;
   </section>
   <?php } ?>
 
-  <?php  
-  $faq = get_field('faq');
-  if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ){ 
-  ?>
-  <section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
+<?php  
+$faq = get_field('faq');
+if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
+?>  
+<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120 post-animation">
   <div class="container">
-  <div class="top-section text-center">
-    <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
-    <h2><?php echo $faq['sub_heading']; ?></h2>
-  </div>
-  <div class="flex_row">
-  <div itemscope itemtype="https://schema.org/FAQPage">
-    <div class="column">
-      <?php 
-      if( $faq['question_answer_repeater'] ){  $i = 1;
-      foreach( $faq['question_answer_repeater'] as $row ) {
-    	$active = ($i <= 3) ? "open" : "";
-      ?>
-      <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
-        itemtype="https://schema.org/Question">
-        <h3 itemprop="name"><?php echo $row['question'];?></h3>
-        <div class="faq-accordion-content">
-          <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-            <div itemprop="text"><?php echo $row['answer'];?></div>
+    <div class="top-section text-center">
+      <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
+      <h2><?php echo $faq['sub_heading']; ?></h2>
+    </div>
+    <div class="flex_row">
+      <div itemscope="" itemtype="https://schema.org/FAQPage">
+        <div class="column">
+          <?php 
+          if( $faq['question_answer_repeater'] ){  $i = 1;
+          foreach( $faq['question_answer_repeater'] as $row ) {
+          $active = ($i <= 3) ? "open" : "";
+          // 
+          ?>
+          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <h3 itemprop="name"><?php echo $row['question'];?></h3>
+            <div class="faq-accordion-content">
+              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><?php echo $row['answer'];?></div>
+              </div>
+            </div>
           </div>
+          <?php $++; }} ?>
         </div>
       </div>
-      <?php $i++; } } ?>
     </div>
   </div>
+</section>
+<?php endif; ?>      
+
+<?php  
+/*
+$faq = get_field('faq');
+if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ){ 
+?>
+<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
+<div class="container">
+<div class="top-section text-center">
+  <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
+  <h2><?php echo $faq['sub_heading']; ?></h2>
+</div>
+<div class="flex_row">
+<div itemscope itemtype="https://schema.org/FAQPage">
+  <div class="column">
+    <?php 
+    if( $faq['question_answer_repeater'] ){  $i = 1;
+    foreach( $faq['question_answer_repeater'] as $row ) {
+  	$active = ($i <= 3) ? "open" : "";
+    // 
+    ?>
+    <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+      <h3 itemprop="name"><?php echo $row['question'];?></h3>
+      <div class="faq-accordion-content">
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text"><?php echo $row['answer'];?></div></div>
+      </div>
+    </div>
+    <?php $i++; } } ?>
   </div>
-  </div>
-  </section>
-  <?php } ?>
+</div>
+</div>
+</div>
+</section>
+<?php } */ ?>
 <?php require_once get_template_directory() .'/common/blog.php'; ?>
 <?php //get_template_part('common/home', 'testimonials'); ?>
 <?php //require_once get_template_directory() .'/common/workstatus-journey.php';?>
