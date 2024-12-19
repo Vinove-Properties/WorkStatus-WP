@@ -1,6 +1,7 @@
 <?php 
 $prPlans    = ['productivity','project','time','attendance'];
 $activePlan = (isset($args['plan']) && !empty($args['plan'])) ? $args['plan'] : "productivity";
+$elmClass   = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['elm-class'] : "";
 if( !in_array($activePlan, $prPlans) ){
 $activePlan =  'productivity';
 }
@@ -9,7 +10,7 @@ $activePlan =  'productivity';
 <div class="container" id="pre-loader">Please wait, while we load the pricing plans for you.</div>
 </div>
 
-<div id="wsio-pricing" class="pricing-wrapper" style="display:none;">
+<div id="wsio-pricing" class="pricing-wrapper <?php echo $elmClass; ?>" style="display:none;">
 <section class="cmn-pricing no-af-bg post-animation">
   <div class="container">
     <div class="inner-wrap">

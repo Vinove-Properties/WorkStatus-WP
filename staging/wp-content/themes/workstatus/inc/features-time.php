@@ -2,7 +2,6 @@
 $title = ( isset($args['title']) && !empty($args['title']) ) ? $args['title'] : "STAY IN CONTROL";
 $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2>Compare Projects</h2><p>Say goodbye to scattered tasks and documents. With Projecto, you'll be able to focus on what matters most - getting things done.</p>";
 ?>
-<section id="ws-compititors-tbl" class="compare-projects post-animation">
 <div class="container">
   <div class="top-section">
   <h6><span class="bg-purple"><?php echo $title; ?></span></h6><?php echo $body; ?>    
@@ -428,4 +427,3 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
   </div>
 </div>
-</section>
