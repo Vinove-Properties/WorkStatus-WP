@@ -421,7 +421,7 @@ if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
               </div>
             </div>
           </div>
-          <?php $++; }} ?>
+          <?php $i++; }} ?>
         </div>
       </div>
     </div>
