@@ -6029,12 +6029,14 @@ li.iti__country {
       justify-content: left;
       width: 100%;
       -webkit-overflow-scrolling: touch; }
-      .compare-projects .features-container .compare-column .tool-col {
-        min-height: 130px; }
-      .compare-projects .features-container .compare-column.elemnt {
-        min-width: 200px; }
-      .compare-projects .features-container .compare-column .comphead.comphead {
-        font-size: 16px; } }
+      .compare-projects .features-container .compare-column {
+        min-width: 150px; }
+        .compare-projects .features-container .compare-column .tool-col {
+          min-height: 130px; }
+        .compare-projects .features-container .compare-column.elemnt {
+          min-width: 200px; }
+        .compare-projects .features-container .compare-column .comphead.comphead {
+          font-size: 16px; } }
 /*Media Query Ends Here*/
 .cmn-pricing {
   background: #fff; }
