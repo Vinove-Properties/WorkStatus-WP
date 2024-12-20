@@ -253,7 +253,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       }  
     }
     echo '</div>';
-    echo '</section>';  
+    echo '</section></div></div>';  
     endif;  
 
     $proBlock = get_field('pro-block');
