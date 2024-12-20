@@ -9085,9 +9085,8 @@ li.iti__country {
     width: 100%; }
     .banner-section .home-section .videoSc .topVideo .videoWrapper {
       min-height: 430px; }
-
-  .close {
-    right: -1px;
-    top: -30px; } }
+    .banner-section .home-section .videoSc .close {
+      right: -1px;
+      top: -30px; } }
 
 /*# sourceMappingURL=feature-detail-min.css.map */
