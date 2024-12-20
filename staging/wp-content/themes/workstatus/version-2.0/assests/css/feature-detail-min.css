@@ -4691,230 +4691,227 @@ li.iti__country {
       .business-growth-section .content-wrapper .column.with-workstatus {
         margin: 30px 0 0; } }
 /*Media Query Ends Here*/
-.client-img-section {
+.client-img-section .why-ws {
   position: relative;
   z-index: 9; }
-  .client-img-section .why-ws {
-    position: relative;
-    z-index: 9; }
-    .client-img-section .why-ws .left-box {
-      position: relative; }
-      .client-img-section .why-ws .left-box .top-section {
-        padding: 0;
-        text-align: left; }
-      .client-img-section .why-ws .left-box ul {
-        margin-top: 25px;
-        padding: 0; }
-        .client-img-section .why-ws .left-box ul li {
-          margin: 0 0 10px;
-          position: relative;
-          padding-left: 25px; }
-          .client-img-section .why-ws .left-box ul li::before {
-            content: "";
-            display: inline-block;
-            background: url(../images/check-img.svg) no-repeat;
-            background-size: 100%;
-            width: 16px;
-            height: 17px;
-            top: 5px;
-            left: 0;
-            position: absolute; }
-          .client-img-section .why-ws .left-box ul li:last-child {
-            margin: 0; }
-      .client-img-section .why-ws .left-box .button-common .cmn-democta {
-        justify-content: left; }
-        .client-img-section .why-ws .left-box .button-common .cmn-democta .ctbtn {
-          min-width: 170px; }
-          .client-img-section .why-ws .left-box .button-common .cmn-democta .ctbtn.bgtrans {
-            min-width: initial; }
-    .client-img-section .why-ws .right-box {
-      flex-basis: 50%;
-      padding-left: 20px;
-      position: relative; }
-      .client-img-section .why-ws .right-box .why-right .client-section {
-        display: flex;
+  .client-img-section .why-ws .left-box {
+    position: relative; }
+    .client-img-section .why-ws .left-box .top-section {
+      padding: 0;
+      text-align: left; }
+    .client-img-section .why-ws .left-box ul {
+      margin-top: 25px;
+      padding: 0; }
+      .client-img-section .why-ws .left-box ul li {
+        margin: 0 0 10px;
         position: relative;
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
-        background: linear-gradient(180deg, #624de3 0%, #251686 100%);
-        border-radius: 10px;
-        padding: 30px 20px; }
-        .client-img-section .why-ws .right-box .why-right .client-section .client-row {
-          position: relative;
-          overflow: hidden;
-          height: 200px; }
-          .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul {
+        padding-left: 25px; }
+        .client-img-section .why-ws .left-box ul li::before {
+          content: "";
+          display: inline-block;
+          background: url(../images/check-img.svg) no-repeat;
+          background-size: 100%;
+          width: 16px;
+          height: 17px;
+          top: 5px;
+          left: 0;
+          position: absolute; }
+        .client-img-section .why-ws .left-box ul li:last-child {
+          margin: 0; }
+    .client-img-section .why-ws .left-box .button-common .cmn-democta {
+      justify-content: left; }
+      .client-img-section .why-ws .left-box .button-common .cmn-democta .ctbtn {
+        min-width: 170px; }
+        .client-img-section .why-ws .left-box .button-common .cmn-democta .ctbtn.bgtrans {
+          min-width: initial; }
+  .client-img-section .why-ws .right-box {
+    flex-basis: 50%;
+    padding-left: 20px;
+    position: relative; }
+    .client-img-section .why-ws .right-box .why-right .client-section {
+      display: flex;
+      position: relative;
+      width: 100%;
+      flex-direction: column;
+      gap: 20px;
+      background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+      border-radius: 10px;
+      padding: 30px 20px; }
+      .client-img-section .why-ws .right-box .why-right .client-section .client-row {
+        position: relative;
+        overflow: hidden;
+        height: 200px; }
+        .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul {
+          display: flex;
+          min-width: 150%;
+          justify-content: space-around;
+          column-gap: 25px;
+          position: absolute; }
+          .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li {
+            min-width: 260px;
+            width: 260px;
             display: flex;
-            min-width: 150%;
-            justify-content: space-around;
-            column-gap: 25px;
-            position: absolute; }
-            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li {
-              min-width: 260px;
-              width: 260px;
-              display: flex;
-              align-items: center;
-              justify-content: left;
-              flex-direction: column;
-              height: 200px;
-              position: relative; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move {
-                width: 31px;
-                height: 36px;
-                background: #7e6af4;
-                border-radius: 14px;
+            align-items: center;
+            justify-content: left;
+            flex-direction: column;
+            height: 200px;
+            position: relative; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move {
+              width: 31px;
+              height: 36px;
+              background: #7e6af4;
+              border-radius: 14px;
+              position: absolute;
+              top: 2px;
+              right: 0;
+              transition: all 0.3s ease-in-out; }
+              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:after {
+                content: "";
+                background: url(../images/move.svg) no-repeat;
                 position: absolute;
-                top: 2px;
                 right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: 10px;
+                background-size: 100%;
+                width: 14px;
+                height: 14px;
+                transform: rotate(-40deg);
                 transition: all 0.3s ease-in-out; }
-                .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:after {
-                  content: "";
-                  background: url(../images/move.svg) no-repeat;
-                  position: absolute;
-                  right: 0;
-                  left: 0;
-                  margin: 0 auto;
-                  top: 10px;
-                  background-size: 100%;
-                  width: 14px;
-                  height: 14px;
-                  transform: rotate(-40deg);
-                  transition: all 0.3s ease-in-out; }
-                .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:hover {
-                  width: 31px;
-                  height: 31px;
-                  border-radius: 14px; }
-                  .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:hover:after {
-                    transform: rotate(0deg);
-                    top: 8px; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .star-rt {
-                display: flex;
-                font-weight: 700;
-                color: #fff;
-                text-align: left;
-                width: 100%;
-                justify-content: left;
-                align-items: center;
-                margin: 0 0 15px;
-                gap: 5px; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li img {
-                vertical-align: middle; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .awimg {
-                margin: 0 0 15px;
-                display: flex;
-                height: 35px;
-                vertical-align: middle;
-                align-items: center;
-                width: 100%;
-                justify-content: left; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li p {
-                font-size: 14px;
-                line-height: 23px;
-                font-weight: normal;
-                color: #fff; }
-              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li:hover {
-                color: black; }
-          .client-img-section .why-ws .right-box .why-right .client-section .client-row .hover:hover {
-            color: red; }
-      .client-img-section .why-ws .right-box .why-right .counter {
-        padding: 20px 15px;
+              .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:hover {
+                width: 31px;
+                height: 31px;
+                border-radius: 14px; }
+                .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .move:hover:after {
+                  transform: rotate(0deg);
+                  top: 8px; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .star-rt {
+              display: flex;
+              font-weight: 700;
+              color: #fff;
+              text-align: left;
+              width: 100%;
+              justify-content: left;
+              align-items: center;
+              margin: 0 0 15px;
+              gap: 5px; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li img {
+              vertical-align: middle; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li .awimg {
+              margin: 0 0 15px;
+              display: flex;
+              height: 35px;
+              vertical-align: middle;
+              align-items: center;
+              width: 100%;
+              justify-content: left; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li p {
+              font-size: 14px;
+              line-height: 23px;
+              font-weight: normal;
+              color: #fff; }
+            .client-img-section .why-ws .right-box .why-right .client-section .client-row .client-stack ul li:hover {
+              color: black; }
+        .client-img-section .why-ws .right-box .why-right .client-section .client-row .hover:hover {
+          color: red; }
+    .client-img-section .why-ws .right-box .why-right .counter {
+      padding: 20px 15px;
+      border-radius: 10px;
+      border: 1px solid rgba(114, 92, 249, 0.42);
+      box-shadow: 0px 4px 44px 0px rgba(4, 26, 51, 0.09);
+      background: #fff;
+      margin: 10px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .client-img-section .why-ws .right-box .why-right .counter .count-col {
+        flex-basis: 48%;
+        padding: 0 5px;
+        border-right: 1px solid #d7d7d7; }
+        .client-img-section .why-ws .right-box .why-right .counter .count-col h3 {
+          font-size: 32px;
+          line-height: 40px;
+          margin: 0 0 6px; }
+        .client-img-section .why-ws .right-box .why-right .counter .count-col p {
+          font-weight: normal;
+          color: rgba(0, 35, 75, 0.8); }
+        .client-img-section .why-ws .right-box .why-right .counter .count-col:last-child {
+          border: 0; }
+    .client-img-section .why-ws .right-box .why-left {
+      padding-right: 10px; }
+      .client-img-section .why-ws .right-box .why-left .award-sc ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 10px; }
+        .client-img-section .why-ws .right-box .why-left .award-sc ul li {
+          background: #fff;
+          flex: calc(33.33% - 10px);
+          display: flex;
+          box-shadow: 0px 4px 44px 0px #041a3317;
+          align-items: center;
+          justify-content: center;
+          border-radius: 7px;
+          padding: 15px 10px;
+          flex-wrap: wrap; }
+          .client-img-section .why-ws .right-box .why-left .award-sc ul li .aw-icon {
+            min-height: 35px;
+            margin: 0 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%; }
+            .client-img-section .why-ws .right-box .why-left .award-sc ul li .aw-icon img {
+              vertical-align: middle; }
+          .client-img-section .why-ws .right-box .why-left .award-sc ul li .star {
+            background: url(../images/star.svg) no-repeat;
+            content: "";
+            width: 60px;
+            display: block;
+            height: 11px;
+            background-size: 100%; }
+          .client-img-section .why-ws .right-box .why-left .award-sc ul li:hover {
+            background: #fff;
+            cursor: default;
+            border-color: black; }
+      .client-img-section .why-ws .right-box .why-left .plateform {
+        padding: 20px;
         border-radius: 10px;
         border: 1px solid rgba(114, 92, 249, 0.42);
         box-shadow: 0px 4px 44px 0px rgba(4, 26, 51, 0.09);
         background: #fff;
-        margin: 10px 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between; }
-        .client-img-section .why-ws .right-box .why-right .counter .count-col {
-          flex-basis: 48%;
-          padding: 0 5px;
-          border-right: 1px solid #d7d7d7; }
-          .client-img-section .why-ws .right-box .why-right .counter .count-col h3 {
-            font-size: 32px;
-            line-height: 40px;
-            margin: 0 0 6px; }
-          .client-img-section .why-ws .right-box .why-right .counter .count-col p {
-            font-weight: normal;
-            color: rgba(0, 35, 75, 0.8); }
-          .client-img-section .why-ws .right-box .why-right .counter .count-col:last-child {
-            border: 0; }
-      .client-img-section .why-ws .right-box .why-left {
-        padding-right: 10px; }
-        .client-img-section .why-ws .right-box .why-left .award-sc ul {
-          padding: 0;
-          margin: 0;
-          display: flex;
-          align-items: center;
-          column-gap: 10px; }
-          .client-img-section .why-ws .right-box .why-left .award-sc ul li {
-            background: #fff;
-            flex: calc(33.33% - 10px);
-            display: flex;
-            box-shadow: 0px 4px 44px 0px #041a3317;
-            align-items: center;
-            justify-content: center;
-            border-radius: 7px;
-            padding: 15px 10px;
-            flex-wrap: wrap; }
-            .client-img-section .why-ws .right-box .why-left .award-sc ul li .aw-icon {
-              min-height: 35px;
-              margin: 0 0 10px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-wrap: wrap;
-              width: 100%; }
-              .client-img-section .why-ws .right-box .why-left .award-sc ul li .aw-icon img {
-                vertical-align: middle; }
-            .client-img-section .why-ws .right-box .why-left .award-sc ul li .star {
-              background: url(../images/star.svg) no-repeat;
-              content: "";
-              width: 60px;
-              display: block;
-              height: 11px;
-              background-size: 100%; }
-            .client-img-section .why-ws .right-box .why-left .award-sc ul li:hover {
-              background: #fff;
-              cursor: default;
-              border-color: black; }
-        .client-img-section .why-ws .right-box .why-left .plateform {
-          padding: 20px;
-          border-radius: 10px;
-          border: 1px solid rgba(114, 92, 249, 0.42);
-          box-shadow: 0px 4px 44px 0px rgba(4, 26, 51, 0.09);
-          background: #fff;
-          margin: 10px 0 0; }
-          .client-img-section .why-ws .right-box .why-left .plateform h3 {
-            font-size: 20px;
-            line-height: 30px;
-            font-weight: 500;
-            color: #110302; }
-          .client-img-section .why-ws .right-box .why-left .plateform ul li {
-            font-weight: 500;
-            margin: 0 0 15px;
-            padding-left: 32px;
-            position: relative; }
-            .client-img-section .why-ws .right-box .why-left .plateform ul li:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: 4px;
-              background: url(../images/listing.svg) no-repeat;
-              width: 22px;
-              height: 22px;
-              background-size: 100%; }
-    .client-img-section .why-ws:after {
-      content: "";
-      background: url(../images/why-shape.png) no-repeat;
-      width: 758px;
-      height: 348px;
-      background-size: 100%;
-      position: absolute;
-      right: 0;
-      bottom: -120px;
-      z-index: -1; }
+        margin: 10px 0 0; }
+        .client-img-section .why-ws .right-box .why-left .plateform h3 {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 500;
+          color: #110302; }
+        .client-img-section .why-ws .right-box .why-left .plateform ul li {
+          font-weight: 500;
+          margin: 0 0 15px;
+          padding-left: 32px;
+          position: relative; }
+          .client-img-section .why-ws .right-box .why-left .plateform ul li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 4px;
+            background: url(../images/listing.svg) no-repeat;
+            width: 22px;
+            height: 22px;
+            background-size: 100%; }
+  .client-img-section .why-ws:after {
+    content: "";
+    background: url(../images/why-shape.png) no-repeat;
+    width: 758px;
+    height: 348px;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+    z-index: -1; }
 
 @keyframes slide_to_left {
   0% {
@@ -8711,7 +8708,7 @@ li.iti__country {
       position: absolute;
       right: 0;
       top: -35px;
-      z-index: 9; }
+      z-index: 999; }
       .banner-section .home-section .videoSc .inner {
         position: relative;
         overflow: hidden;
