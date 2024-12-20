@@ -8191,7 +8191,7 @@ li.iti__country {
   .site__footer .column ul {
     padding-left: 0;
     list-style-type: none;
-    margin: 15px 0; }
+    margin: 20px 0; }
   .site__footer .column li {
     margin: 10px 0 0;
     line-height: 1.4; }
@@ -8418,8 +8418,8 @@ li.iti__country {
       padding: 12px 12px !important;
       height: initial; } }
   .regBtn .primary_btn1:hover {
-    color: #fff;
-    background: #05164d; }
+    color: #624de3;
+    background: #fff; }
 
 @media (max-width: 1440px) {
   .site__footer .footer-sec .footer-top .dis-flex .flex-4 {
