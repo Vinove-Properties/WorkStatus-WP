@@ -8457,9 +8457,17 @@ li.iti__country {
       flex-direction: column; }
       .site__footer .footer-sec .footer-top .dis-flex .flex-4 .addwrap img {
         margin: 0 0 10px; }
+  .site__footer .column ul {
+    margin: 15px 0; }
 
   .regBtn .primary_btn1 {
     padding: 10px 15px; } }
+@media (max-width: 768px) {
+  .site__footer .flex_row .fcol6 .footer-logo {
+    margin: 20px 0 0; }
+
+  .regBtn {
+    margin: 15px 0; } }
 .header-two {
   background: transparent; }
 
