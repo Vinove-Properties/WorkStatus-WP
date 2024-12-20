@@ -551,6 +551,7 @@ textarea {
 
   h3 {
     font-size: 20px;
+    line-height: 30px;
     font-weight: bold;
     margin: 0 0 10px; }
 
@@ -5868,10 +5869,11 @@ li.iti__country {
       padding: 0 0 20px;
       margin: 0 0 20px; }
       .time-tracker .trackRow .trackContent .row h3 {
-        padding-left: 38px; }
+        padding-left: 35px; }
         .time-tracker .trackRow .trackContent .row h3:before {
-          width: 25px;
-          height: 25px; } }
+          width: 22px;
+          height: 22px;
+          top: 6px; } }
 /*Media Query Ends Here*/
 .compare-projects .compare-tabs {
   margin-bottom: 50px;
@@ -6032,7 +6034,7 @@ li.iti__country {
       .compare-projects .features-container .compare-column {
         min-width: 150px; }
         .compare-projects .features-container .compare-column .tool-col {
-          min-height: 130px; }
+          min-height: 70px; }
         .compare-projects .features-container .compare-column.elemnt {
           min-width: 200px; }
         .compare-projects .features-container .compare-column .comphead.comphead {
@@ -7255,7 +7257,7 @@ li.iti__country {
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:first-child {
           margin-right: 0; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) {
-          margin: 0 0 30px; }
+          margin: 0; }
     .ws-pricing .price-contents .tab-contents .tryit {
       margin: 0 0 20px; }
     .ws-pricing .price-contents .tab-contents .plan-include {
