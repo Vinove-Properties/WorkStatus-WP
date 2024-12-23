@@ -17,7 +17,7 @@
             alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Remote Work</h3>
-          <p>Balance productivity everywhere.
+          <p>Stay connected and accountable
           </p>
         </div>
         <div class="card-bottom">
@@ -28,7 +28,7 @@
       <div class="flip-card-back">
         <h3>Remote Work</h3>
         <ul>
-          <li>Monitor employee activity &amp; ensure accountability
+          <li>Monitor employee activity & ensure accountability
           </li>
           <li>Foster a connected team culture regardless of location</li>
         </ul>
@@ -48,7 +48,7 @@
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/workplace-02.png" alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Hybrid Work</h3>
-          <p>Balance productivity everywhere.
+          <p>Balance productivity everywhere
           </p>
         </div>
         <div class="card-bottom">
@@ -59,9 +59,10 @@
       <div class="flip-card-back">
         <h3>Hybrid Work</h3>
         <ul>
-          <li>Monitor employee activity &amp; ensure accountability
+          <li>Track resource availability & monitor employee productivity across locations
           </li>
-          <li>Foster a connected team culture regardless of location</li>
+          <li>Optimize resource allocation
+          </li>
         </ul>
         <div class="card-bottom">
           <a href="#" class="is-arrow">Explore More</a>
@@ -79,20 +80,20 @@
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/workplace-03.png" alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Field Work</h3>
-          <p>Balance productivity everywhere.
+          <p>Empower field team efficiency
           </p>
         </div>
         <div class="card-bottom">
-          <h4>Witness <strong>40%</strong></h4>
-          <span class="prod">higher accountability</span>
+          <h4>Rates by  <strong>40%</strong></h4>
+          <span class="prod">Improve task completion</span>
         </div>
       </div>
       <div class="flip-card-back">
         <h3>Field Work</h3>
         <ul>
-          <li>Monitor employee activity &amp; ensure accountability
+          <li>Keep field teams connected and productive
           </li>
-          <li>Foster a connected team culture regardless of location</li>
+          <li>Streamline communication and optimize field operations</li>
         </ul>
         <div class="card-bottom">
           <a href="#" class="is-arrow">Explore More</a>
@@ -110,20 +111,20 @@
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/workplace-04.png" alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Office Work</h3>
-          <p>Balance productivity everywhere.
+          <p>Optimize office productivity
           </p>
         </div>
         <div class="card-bottom">
           <h4>See <strong>35%</strong> growth</h4>
-          <span class="prod">higher accountability</span>
+          <span class="prod">Enhance office productivity</span>
         </div>
       </div>
       <div class="flip-card-back">
         <h3>Office Work</h3>
         <ul>
-          <li>Monitor employee activity &amp; ensure accountability
+          <li>Refine office operations by tracking employee attendance
           </li>
-          <li>Foster a connected team culture regardless of location</li>
+          <li>Get real-time insights into productivity</li>
         </ul>
         <div class="card-bottom">
           <a href="#" class="is-arrow">Explore More</a>
