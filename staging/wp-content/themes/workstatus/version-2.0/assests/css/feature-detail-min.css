@@ -5483,7 +5483,7 @@ li.iti__country {
   flex-wrap: wrap; }
   .workplace-section .workplace-row .workplace-card {
     flex-basis: 24%;
-    height: 350px;
+    min-height: 400px;
     perspective: 1000px;
     position: relative;
     border-radius: 5px;
