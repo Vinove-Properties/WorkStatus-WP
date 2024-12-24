@@ -591,7 +591,7 @@ $activePlan =  'productivity';
                 <td>100/user/mo</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <tr>
