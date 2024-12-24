@@ -5483,7 +5483,7 @@ li.iti__country {
   flex-wrap: wrap; }
   .workplace-section .workplace-row .workplace-card {
     flex-basis: 24%;
-    min-height: 400px;
+    height: 350px;
     perspective: 1000px;
     position: relative;
     border-radius: 5px;
@@ -6029,6 +6029,7 @@ li.iti__country {
       padding: 8px 12px;
       margin: 0 5px 10px; }
     .compare-projects .features-container {
+      max-width: 100%;
       width: 100%;
       margin: 0 auto;
       overflow: auto;
@@ -6039,7 +6040,7 @@ li.iti__country {
       .compare-projects .features-container .compare-column {
         min-width: 150px; }
         .compare-projects .features-container .compare-column .tool-col {
-          min-height: 90px; }
+          min-height: 70px; }
         .compare-projects .features-container .compare-column.elemnt {
           min-width: 200px; }
         .compare-projects .features-container .compare-column .comphead.comphead {
@@ -7199,7 +7200,7 @@ li.iti__country {
     background-size: 20px; } }
 @media (max-width: 767px) {
   .cmn-pricing.no-af-bg {
-    padding: 60px 0 30px; }
+    padding: 110px 0 30px; }
 
   .ws-pricing {
     padding-top: 20px; }

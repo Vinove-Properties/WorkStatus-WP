@@ -18,9 +18,9 @@
 @import "_faq-section";
 @import "_user-guide";
 @import "_glider";
-@import "_testimonials";
-@import "_all-partners";
-@import "_workstatus-journey";
+@import "_testimonial-section";
+@import "_top-rated";
+@import "_start-journey";
 @import "_footer-section";
 
 .header-two {
@@ -455,7 +455,7 @@
         width: 30px;
         height: 30px;
         float: right;
-        z-index: 1;
+        z-index: 999;
         position: absolute;
         right: -36px;
         top: 0;
@@ -568,6 +568,14 @@
 
 .videoPopup {
   position: relative;
+}
+
+.pricing-wrapper {
+  padding-top: 0;
+}
+
+.cmn-pricing {
+  background: #faf8fe;
 }
 
 /*Popup Section End*/
@@ -811,18 +819,24 @@
           .partwrap {
             gap: 6px;
             flex-wrap: wrap;
-            margin:20px 0 0;
+            margin: 20px 0 0;
             .part-col {
               flex-basis: 47%;
             }
           }
-          .av-device {margin:15px 0; padding:0;
-            &:before{display:none;}
-            &:after{display:none;}
+          .av-device {
+            margin: 15px 0;
+            padding: 0;
+            &:before {
+              display: none;
+            }
+            &:after {
+              display: none;
+            }
             span {
               font-size: 15px;
             }
-        
+
             i {
               margin-left: 12px;
             }
@@ -870,17 +884,18 @@
   .banner-section {
     .home-section {
       .videoSc {
+        padding-left: 20px;
         width: 100%;
         .topVideo {
           .videoWrapper {
             min-height: 430px;
           }
         }
+        .close {
+          right: -1px;
+          top: -30px;
+        }
       }
     }
-  }
-  .close {
-    right: -1px;
-    top: -30px;
   }
 }

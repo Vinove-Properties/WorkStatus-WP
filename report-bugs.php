@@ -4,18 +4,20 @@ function wsHasData( $array, $key ){
 }
 
 function isBetaVersion(){
-  return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'w2wp' ) !== false) )  ?  true : false;
+  return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'staging' ) !== false) )  ?  true : false;
 }
 
 $dir      = '/home/workstatus-io/public_html/uploads/';
+$apiEnd   = 'https://sa.workstatus.io/api/v1/report-bug';
 if( isset( $_SERVER['HTTP_HOST'] ) && ($_SERVER['HTTP_HOST'] == "localhost") ){
   $site_url = 'http://localhost/workstatus-wp/';
   $tpl_url  = 'http://localhost/workstatus-wp/wp-content/themes/workstatus/';
   $dir      = '/var/www/html/workstatus-wp/uploads/';
 }else{
   if( isBetaVersion() ){
-    $site_url = 'https://www.workstatus.io/w2wp/';
-    $tpl_url  = 'https://www.workstatus.io/w2wp/wp-content/themes/workstatus/';  
+    $site_url = 'https://www.workstatus.io/staging/';
+    $tpl_url  = 'https://www.workstatus.io/staging/wp-content/themes/workstatus/';  
+    $apiEnd   = 'https://sa.staging.workstatus.io/api/v1/report-bug';
   }else{
     $site_url = 'https://www.workstatus.io/';
     $tpl_url  = 'https://www.workstatus.io/wp-content/themes/workstatus/';    
@@ -51,7 +53,7 @@ if( isset( $_POST['is-submitted'] ) && $_POST['is-submitted'] == true ){
 
   $curl = curl_init();
   curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://superadmin.workstatus.io/api/v1/report-bug',
+  CURLOPT_URL => $apiEnd,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,

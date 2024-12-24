@@ -1,5 +1,6 @@
 // color variables
 $blue: #624de3;
+$royal-blue: #4231AC;
 $dark-Blue: #3708c2;
 $white: #ffffff;
 $grey: #5e6373;
@@ -84,6 +85,7 @@ h1 {
   line-height: 91px;
   font-weight: $bold_weight;
   letter-spacing: 0.2px;
+  margin: 0 0 20px;
 }
 
 h2 {
@@ -144,6 +146,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 80px;
+  position: relative;
 }
 
 img {
@@ -162,6 +165,20 @@ strong {
 
 .bg-light {
   background: $bglight;
+}
+
+.bg-blue{ background: $blue;
+
+  .top-section {text-align: center;
+    h6 {color:$lightblue;
+      .bg-purple{background: $white;}
+    }
+    h2, p{color:$white;}
+   a{color:$white; text-decoration: underline;
+    &:hover{text-decoration: none;}
+  }
+  }
+
 }
 
 .dis-flex {
@@ -308,6 +325,7 @@ strong {
   max-width: 100%;
   margin: auto;
   padding: 0 0 100px;
+  text-align: center;
   h6 {
     color: rgba(98, 77, 227, 0.76);
     font-size: 18px;
@@ -380,6 +398,17 @@ strong {
         color: #ffffff;
       }
     }
+
+.nccr{font-size: 13px;
+  line-height: 1;
+  font-weight: $medium_weight;
+  margin: 10px 0 0;
+  color: $navyblue;
+  opacity: 0.9;
+  display: block;
+  text-align: center;}
+
+
   }
 
   .devide {
@@ -411,13 +440,38 @@ strong {
       left: 19px;
     }
   }
+
+  &.white-btn{
+    .cmn-democta{
+      .ctbtn{color:$blue; background:$white;
+        &.bgtrans{color:$white; background: transparent;
+          &:hover {
+            background: transparent;
+            color: $white;
+            text-decoration: none;
+          }
+        }
+        &:hover {
+          background: $navyblue;
+          border-color: $navyblue;
+          color: #ffffff;
+         
+        }
+      }
+      .devide{color: $white; opacity: 0.5;
+      &:before{background:$white; opacity: 0.5;}
+      &:after{background:$white; opacity: 0.5;}
+      
+      }
+    }
+  }
 }
 
 .is-arrow {
   display: block;
   text-decoration: underline;
   color: $blue;
-  text-align: right;
+  text-align: left;
   margin: 40px 0 0;
   font-weight: $medium_weight;
   &:after {
@@ -507,8 +561,8 @@ textarea {
   }
 
   h3 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 35px;
     margin: 0 0 15px;
     font-weight: $medium_weight;
     color: rgba(0, 0, 0, 0.8);
@@ -664,6 +718,8 @@ textarea {
     line-height: 24px;
   }
 
+  .container{padding-left:25px; padding-right:25px;}
+
   ::placeholder,
   input,
   textarea {
@@ -682,6 +738,7 @@ textarea {
 
   h3 {
     font-size: 20px;
+    line-height: 30px;
     font-weight: bold;
     margin: 0 0 10px;
   }

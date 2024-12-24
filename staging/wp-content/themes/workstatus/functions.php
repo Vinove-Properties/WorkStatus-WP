@@ -227,10 +227,11 @@ function workstatus_scripts() {
 		){
 		wp_enqueue_style('home-v2', get_stylesheet_directory_uri().'/assests/css/index-new.css', array(), _S_VERSION );
 	}
+	elseif( is_page_template(['page-templates/tpl-home-v4.0.php']) ){
+	wp_enqueue_style('home-v4', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-min.css', array(), _S_VERSION );
+	}
 	elseif( 
-		is_page_template(
-			['page-templates/tpl-privacy.php']) 
-		){
+		is_page_template( ['page-templates/tpl-privacy.php']) ){
 		wp_enqueue_style('privacy', get_stylesheet_directory_uri().'/assests/css/legal-documents.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-thankyou.php']) ){
