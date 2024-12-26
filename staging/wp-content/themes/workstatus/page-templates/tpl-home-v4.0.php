@@ -326,65 +326,6 @@ endif;
   </section>
   <?php endif; ?>
   <?php get_template_part('common/cmn', 'workplaces', ['elm-class' => 'workplace-section bg-blue padding-t-120 padding-b-120' ]); ?>
-  <section class="section-numbers padding-t-120 padding-b-120">
-<div class="container">
-  <div class="number-row">
-    <div class="number-col is-first">
-      <div class="card-wrapper">
-        <div class="card-content">
-          <h3>Discover How <a href="#">Workstatus</a> Can Drive Your Business Success</h3>
-          <div class="card-image">
-            <picture>
-              <source type="image/webp" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-01.png">
-              <source type="image/png" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-01.png">
-              <img loading="lazy" src="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-01.png" alt="Discover" width="303" height="192">
-            </picture>
-          </div>
-        </div>
-        <div class="button-group">
-          <a href="https://www.workstatus.io/use-cases" class="btn">Explore all Use Cases</a>
-        </div>
-      </div>
-    </div>
-    <div class="number-col">
-      <div class="card-image">
-        <picture>
-          <source type="image/webp" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-02.png">
-          <source type="image/png" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-02.png">
-          <img loading="lazy" src="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-02.png" alt="Discover" width="320" height="155">
-        </picture>
-      </div>
-      <h2>70%</h2>
-      <div class="is-grey">INCREASED EFFICIENCY</div>
-      <p>A multi-national marketing firm, boosted overall efficiency.</p>
-      <a href="https://www.workstatus.io/workforce-management/employee-productivity-monitoring" class="btn">Increase Your Team Productivity</a>
-    </div>
-    <div class="number-col">
-      <div class="card-image">
-        <picture>
-          <source type="image/webp" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-03.png">
-          <source type="image/png" srcset="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-03.png">
-          <img loading="lazy" src="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/number-03.png" alt="Discover" width="320" height="155">
-        </picture>
-      </div>
-      <h2>35%</h2>
-      <div class="is-grey">INCREASED ROI</div>
-      <p>A Delhi-based startup achieved 30%+ increased ROI with Workstatus.</p>
-      <a href="https://www.workstatus.io/reporting-analytics/insights-for-business" class="btn">Enhance Your Business ROI</a>
-    </div>
-  </div>
-  <div class="button-common margin-t-80">
-    <div class="cmn-democta">
-      <div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
-        <span class="nccr">No credit card required</span>
-      </div>
-      <span class="devide">OR</span>
-      <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">Start Free Trial</a>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
   <?php 
   /*
     $ws_services = get_field('ws-offers');
@@ -459,11 +400,12 @@ endif;
     </div>
   </section>
   <?php endif; */ ?>
-
+  
   <?php 
-    $ws_results = get_field('ws-results');
-    if( isset( $ws_results['is_enabled'] ) && ( $ws_results['is_enabled'] == "yes" ) ) :
-    ?>
+  get_template_part('common/cmn', 'usps', ['cta' => _getDemoCTA('button-common margin-t-80', false)]);
+  $ws_results = get_field('ws-results');
+  if( isset( $ws_results['is_enabled'] ) && ( $ws_results['is_enabled'] == "yes" ) ) :
+  ?>
   <section class="data-drive">
     <div class="item">
       <div class="container">
@@ -485,9 +427,7 @@ endif;
     </div>
   </section>
   <?php 
-  endif; 
-
-  get_template_part('common/cmn', 'usps');
+  endif;  
   ?>
   
   <?php 
