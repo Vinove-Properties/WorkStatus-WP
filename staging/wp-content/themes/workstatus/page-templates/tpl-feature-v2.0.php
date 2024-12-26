@@ -285,7 +285,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           </div>
         </section>';
     }
-    $elm_workplaces_margin  = 'margin-t-120';
+    $elm_workplaces_margin  = 'margin-t-80';
     $otherFeatures          = get_field('ot-features');
     if( isset( $otherFeatures['is_enabled'] ) && ($otherFeatures['is_enabled'] == "yes") ){
     $elm_workplaces_margin  = '';  
