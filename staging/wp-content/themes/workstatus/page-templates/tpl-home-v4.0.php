@@ -267,7 +267,7 @@ endif;
           <li>
             <span class="aw-icon">
               <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
               </picture>
             </span>
             <span class="star"></span>
@@ -275,7 +275,7 @@ endif;
           <li>
             <span class="aw-icon">
               <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
               </picture>
             </span>
             <span class="star"></span>
@@ -283,7 +283,7 @@ endif;
           <li>
             <span class="aw-icon">
               <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
               </picture>
             </span>
             <span class="star"></span>
@@ -328,7 +328,7 @@ endif;
   </div>
   </section>
   <?php endif; ?>
-  <?php get_template_part('common/cmn', 'workplaces'); ?>
+  <?php get_template_part('common/cmn', 'workplaces', ['elm-class' => 'workplace-section bg-blue padding-t-120 padding-b-120' ]); ?>
   <section class="section-numbers padding-t-120 padding-b-120">
 <div class="container">
   <div class="number-row">
@@ -713,14 +713,17 @@ endif;
     </div>
   </section>
   <?php endif; ?>
-  <?php //getWsCmnFeatures(); ?>
+
   <?php  
-    $faq = get_field('faq');
-    
-    if( $faq ) :
-    $isEnable = $faq['is_enabled'];
-    if( $isEnable == "yes" ){ 
-    ?>
+  //get_template_part('common/ws', 'pricing');  
+  get_template_part('common/pricing', 'v4.0', ['elm-class' => "padding-t-120 bg-light padding-b-120"]);
+  ?>
+  <?php  
+  $faq = get_field('faq');    
+  if( $faq ) :
+  $isEnable = $faq['is_enabled'];
+  if( $isEnable == "yes" ){ 
+  ?>
   <section class="faqsRow wfull for-heading-center">
     <div class="container">
       <div class="top-section">
@@ -733,9 +736,7 @@ endif;
             <?php 
               if( $faq['question_answer_repeater'] ){  $i = 1;
               foreach( $faq['question_answer_repeater'] as $row ) {
-              //$image      = $row['image_'];
               $active = ($i<=3) ? "open" : "";
-              //echo $i;
               ?>
             <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
               itemtype="https://schema.org/Question">
@@ -743,9 +744,7 @@ endif;
               </h3>
               <div class="faq-accordion-content">
                 <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <div itemprop="text">
-                    <?php echo $row['answer'];?>
-                  </div>
+                  <div itemprop="text"><?php echo $row['answer'];?></div>
                 </div>
               </div>
             </div>
@@ -756,9 +755,9 @@ endif;
     </div>
   </section>
   <?php } endif; ?>
-  <?php require_once get_template_directory() .'/common/blog.php'; ?>
-  <?php get_template_part('common/home', 'testimonials'); ?>
-  <?php require_once get_template_directory() .'/common/all-brands.php';?>
-  <?php require_once get_template_directory() .'/common/workstatus-journey-straight.php';?>
+  <?php //require_once get_template_directory() .'/common/blog.php'; ?>
+  <?php get_template_part('common/cmn', 'testimonial'); ?>
+  <?php get_template_part('common/cmn', 'globalrating'); ?>
+  <?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>

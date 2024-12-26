@@ -1,4 +1,7 @@
-<section class="workplace-section bg-light padding-t-120 padding-b-120 post-animation">
+<?php 
+$elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['elm-class'] : 'workplace-section bg-light padding-t-120 padding-b-120';
+?>
+<section class="<?php echo $elmClass; ?>">
 <div class="container">
 <div class="top-section text-center">
 <h6><span class="bg-purple">For All Workplaces</span></h6>

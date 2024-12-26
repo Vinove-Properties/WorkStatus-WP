@@ -142,53 +142,53 @@ function workstatus_scripts() {
 	'page-templates/tpl-best-employee.php'
 	])
 	){
-	wp_enqueue_style('features', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), 
+	wp_enqueue_style('features', get_stylesheet_directory_uri().'/version-2.0/assests/css/featureDetail-new.css', array(), 
 	_S_VERSION );
-	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION);
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);		
 	}elseif(
 	is_page_template(['page-templates/tpl-platform.php','page-templates/tpl-ebook.php']) 
 	){
-	wp_enqueue_style('plateform', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION);
+	wp_enqueue_style('plateform', get_stylesheet_directory_uri().'/version-2.0/assests/css/platform.css', array(), _S_VERSION);
 	}elseif( 
 	is_page_template(['page-templates/tpl-support.php','page-templates/tpl-careers.php']) 
 	){
-	wp_enqueue_style('support', get_stylesheet_directory_uri().'/assests/css/downloads.css', array(), _S_VERSION);
+	wp_enqueue_style('support', get_stylesheet_directory_uri().'/version-2.0/assests/css/downloads.css', array(), _S_VERSION);
 	}elseif( 
 		is_page_template(
 			['page-templates/tpl-faqs.php']) 
 		){
-		wp_enqueue_style('faqs', get_stylesheet_directory_uri().'/assests/css/faq.css', array(), _S_VERSION );
+		wp_enqueue_style('faqs', get_stylesheet_directory_uri().'/version-2.0/assests/css/faq.css', array(), _S_VERSION );
 	}elseif( 
 		is_page_template(
 			['page-templates/tpl-about.php']) 
 		){
-		wp_enqueue_style('about-us', get_stylesheet_directory_uri().'/assests/css/about.css', array(), _S_VERSION );
+		wp_enqueue_style('about-us', get_stylesheet_directory_uri().'/version-2.0/assests/css/about.css', array(), _S_VERSION );
 	}elseif( 
 		is_page_template(
 			['page-templates/tpl-press.php']) 
 		){
-		wp_enqueue_style('press', get_stylesheet_directory_uri().'/assests/css/press.css', array(), _S_VERSION );
+		wp_enqueue_style('press', get_stylesheet_directory_uri().'/version-2.0/assests/css/press.css', array(), _S_VERSION );
 	}
 	elseif( 
 		is_page_template(['page-templates/tpl-reviews.php']) 
 		){
-		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/assests/css/reviews.css', array(), _S_VERSION );
+		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/version-2.0/assests/css/reviews.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-pricing.php']) ){
-		wp_enqueue_style('pricingnew', get_stylesheet_directory_uri().'/assests/css/pricing-new.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/pricing.css', array(), _S_VERSION );
+		wp_enqueue_style('pricingnew', get_stylesheet_directory_uri().'/version-2.0/assests/css/pricing-new.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/version-2.0/assests/css/pricing.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-static-pricing.php']) ){
-		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/assests/css/ws-pricing.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing', get_stylesheet_directory_uri().'/version-2.0/assests/css/ws-pricing.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION );
 		//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-pricing-v4.0.php']) ){
-		wp_enqueue_style('ws-pricingv4.0', get_stylesheet_directory_uri().'/assests/css/pricing-page.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricingv4.0', get_stylesheet_directory_uri().'/version-2.0/assests/css/pricing-page.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION );
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	
@@ -197,7 +197,7 @@ function workstatus_scripts() {
 		'page-templates/tpl-ts-template.php'
 		])){
 		//wp_enqueue_style('ws-timecard', get_stylesheet_directory_uri().'/assests/css/time-calculator.css', array(), _S_VERSION );
-		wp_enqueue_style('ws-timecard', get_stylesheet_directory_uri().'/assests/css/time-calculator.css', array(), time() );
+		wp_enqueue_style('ws-timecard', get_stylesheet_directory_uri().'/version-2.0/assests/css/time-calculator.css', array(), time() );
 		if( !is_page_template('page-templates/tpl-ts-template.php') ){
 		wp_enqueue_script('ws-timecalculate', get_stylesheet_directory_uri() . '/assests/js/time-calculate.js', array('ws-script'), _S_VERSION, true);
 		}		
@@ -206,108 +206,106 @@ function workstatus_scripts() {
 		is_page_template(
 			['page-templates/tpl-how-tracking-works.php']) 
 		){
-		wp_enqueue_style('features', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );
-		wp_enqueue_style('tracking', get_stylesheet_directory_uri().'/assests/css/tracking.css', array(), _S_VERSION );
+		wp_enqueue_style('features', get_stylesheet_directory_uri().'/version-2.0/assests/css/featureDetail-new.css', array(), _S_VERSION );
+		wp_enqueue_style('tracking', get_stylesheet_directory_uri().'/version-2.0/assests/css/tracking.css', array(), _S_VERSION );
 	}
 	elseif( 
 		is_page_template(
 			['page-templates/tpl-compare.php']) 
 		){
-		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/assests/css/alternative.css', array(), _S_VERSION );
+		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/version-2.0/assests/css/alternative.css', array(), _S_VERSION );
 	}
     elseif( 
 		is_page_template(
 			['page-templates/tpl-home.php']) 
 		){
-		wp_enqueue_style('home', get_stylesheet_directory_uri().'/assests/css/index.css', array(), _S_VERSION );
+		wp_enqueue_style('home', get_stylesheet_directory_uri().'/version-2.0/assests/css/index.css', array(), _S_VERSION );
 	}
 	elseif( 
 		is_page_template(
 			['page-templates/tpl-home-v2.php']) 
 		){
-		wp_enqueue_style('home-v2', get_stylesheet_directory_uri().'/assests/css/index-new.css', array(), _S_VERSION );
+		wp_enqueue_style('home-v2', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-new.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-home-v4.0.php']) ){
 	wp_enqueue_style('home-v4', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-min.css', array(), _S_VERSION );
 	}
 	elseif( 
 		is_page_template( ['page-templates/tpl-privacy.php']) ){
-		wp_enqueue_style('privacy', get_stylesheet_directory_uri().'/assests/css/legal-documents.css', array(), _S_VERSION );
+		wp_enqueue_style('privacy', get_stylesheet_directory_uri().'/version-2.0/assests/css/legal-documents.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-thankyou.php']) ){
-		wp_enqueue_style('thankyou', get_stylesheet_directory_uri().'/assests/css/thanks.css', array(), _S_VERSION );
+		wp_enqueue_style('thankyou', get_stylesheet_directory_uri().'/version-2.0/assests/css/thanks.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-changelogs.php']) ){
-		wp_enqueue_style('thankyou', get_stylesheet_directory_uri().'/assests/css/changelog.css', array(), _S_VERSION );
+		wp_enqueue_style('thankyou', get_stylesheet_directory_uri().'/version-2.0/assests/css/changelog.css', array(), _S_VERSION );
 	}
 	elseif( is_404() ){
-		wp_enqueue_style('font-awesome', get_stylesheet_directory_uri().'/assests/css/font-awesome.min.css', array(), _S_VERSION );
-		wp_enqueue_style('404', get_stylesheet_directory_uri().'/assests/css/404.css', array(), _S_VERSION );
+		wp_enqueue_style('font-awesome', get_stylesheet_directory_uri().'/version-2.0/assests/css/font-awesome.min.css', array(), _S_VERSION );
+		wp_enqueue_style('404', get_stylesheet_directory_uri().'/version-2.0/assests/css/404.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-demo.php']) ){
-		wp_enqueue_style('sdemo', get_stylesheet_directory_uri().'/assests/css/demo-video.css', array(), _S_VERSION );
+		wp_enqueue_style('sdemo', get_stylesheet_directory_uri().'/version-2.0/assests/css/demo-video.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-resources.php']) ){
-		wp_enqueue_style('ws-resource', get_stylesheet_directory_uri().'/assests/css/resource.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-resource', get_stylesheet_directory_uri().'/version-2.0/assests/css/resource.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-cmn-pillarpage.php']) ){
 	$pageMode = get_post_meta( $post->ID, 'ws-pagemode', true );
 	if( $pageMode && ($pageMode == "app") ){
-	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/platform.css', array(), _S_VERSION );
+	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/version-2.0/assests/css/platform.css', array(), _S_VERSION );
 	}else{
-	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/featureDetail-new.css', array(), _S_VERSION );	
+	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/version-2.0/assests/css/featureDetail-new.css', array(), _S_VERSION );	
 	}
-	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION );
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);	
 	
 	}elseif( is_page_template(['page-templates/tpl-integrations-details.php']) ){
-		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/assests/css/integration-detail.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/version-2.0/assests/css/integration-detail.css', array(), _S_VERSION);
 	}
 	elseif( is_page_template(['page-templates/tpl-roadmap.php']) ){
-		wp_enqueue_style('ws-roadmap', get_stylesheet_directory_uri().'/assests/css/roadmap.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-roadmap', get_stylesheet_directory_uri().'/version-2.0/assests/css/roadmap.css', array(), _S_VERSION);
 	}
   	elseif( is_page_template(['page-templates/tpl-solution.php']) ){
-		wp_enqueue_style('ws-solution', get_stylesheet_directory_uri().'/assests/css/solution.css', array(), _S_VERSION);
-		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-solution', get_stylesheet_directory_uri().'/version-2.0/assests/css/solution.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION );
 		//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-data-retention.php']) ){
-		wp_enqueue_style('ws-retention', get_stylesheet_directory_uri().'/assests/css/data-retention.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-retention', get_stylesheet_directory_uri().'/version-2.0/assests/css/data-retention.css', array(), _S_VERSION);
 	}	
   	elseif( is_page_template(['page-templates/tpl-affiliates.php']) ){
-		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/affiliates.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/version-2.0/assests/css/affiliates.css', array(), _S_VERSION);
 	}
 	elseif( is_page_template(['page-templates/tpl-tools-comparison.php']) ){
-		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/assests/css/alternative-new.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-affiliates', get_stylesheet_directory_uri().'/version-2.0/assests/css/alternative-new.css', array(), _S_VERSION);
 	}
 	elseif(is_page_template(['page-templates/tpl-feature-v2.php'])){
-	wp_enqueue_style('cmn-features', get_bloginfo('template_url').'/assests/css/feature-detail.css', array(), _S_VERSION);
-	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
+	wp_enqueue_style('cmn-features', get_bloginfo('template_url').'/version-2.0/assests/css/feature-detail.css', array(), _S_VERSION);
+	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION);
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif(is_page_template(['page-templates/tpl-feature-v2.0.php'])){
 		wp_enqueue_style('cmn-features', get_bloginfo('template_url').'/version-2.0/assests/css/feature-detail-min.css', array(), _S_VERSION);
-		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/version-2.0/pricing-filter.css', array(), _S_VERSION);
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 
 	elseif( is_single() ){ 
 		if( is_singular('survey') ){
-		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/survey-style.css', array(), _S_VERSION );	
+		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/version-2.0/survey-style.css', array(), _S_VERSION );	
 		}else{
-		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/assests/css/resources-detail.css', array(), _S_VERSION );
+		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/version-2.0/assests/css/resources-detail.css', array(), _S_VERSION );
 		wp_enqueue_script('ws-calc', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );
 		}
 		
 	}
 
 	if( !is_singular('survey') ){
-	wp_enqueue_style( 'ws-glider', get_stylesheet_directory_uri().'/assests/css/glider.css');
+	wp_enqueue_style( 'ws-glider', get_stylesheet_directory_uri().'/version-2.0/assests/css/glider.css');
 	}
-	// wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );		
-
-	
+	//wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );		
 	
 	wp_localize_script('ws-script', 'wsObj', [
 	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
