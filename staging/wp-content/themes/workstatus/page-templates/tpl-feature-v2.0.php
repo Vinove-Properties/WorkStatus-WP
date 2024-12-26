@@ -284,7 +284,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
 
     $otherFeatures = get_field('ot-features');
     if( isset( $otherFeatures['is_enabled'] ) && ($otherFeatures['is_enabled'] == "yes") ){
-    echo '<section class="three-column-section padding-b-120">
+    echo '<section class="three-column-section padding-b-120 margin-t-120">
     <div class="container">
     <div class="top-section text-center">
     <h6><span class="bg-purple">'.$otherFeatures['heading'].'</span></h6>'.$otherFeatures['sub_heading'].'</div>';
