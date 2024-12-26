@@ -4,7 +4,12 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
 ?>
 <div class="container">
   <div class="top-section">
-  <h6><span class="bg-purple"><?php echo $title; ?></span></h6><?php echo $body; ?>    
+  <?php 
+  if( !empty( $title ) ){
+    echo '<h6><span class="bg-purple">'.$title.'</span></h6>';  
+  }
+  echo $body;
+  ?>    
   </div>
   <div class="compare-tabs">
     <div class="tbbtn active" data-prod="hubstaff">Hubstaff</div>
