@@ -5008,7 +5008,7 @@ li.iti__country {
       flex-wrap: wrap;
       justify-content: space-between; }
       .feature-wrapper .feature-loop .feature-row .column-left {
-        flex-basis: 50%;
+        flex-basis: 45%;
         text-align: left; }
       .feature-wrapper .feature-loop .feature-row .column-right {
         flex-basis: 50%;
