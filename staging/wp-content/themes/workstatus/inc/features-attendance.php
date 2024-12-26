@@ -102,7 +102,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col comprice"><?php echo _getComparePricing(11, 931, false, "#"); ?></div>
     </div>
-    <div class="compare-column" id="cmp-activtrak">
+    <!-- <div class="compare-column" id="cmp-activtrak">
       <div class="tool-col comp-logo">
         <strong>Activ Trak</strong>
         <span class="price"><?php echo _getComparePricing(7, 593, true); ?></span>
@@ -115,7 +115,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col comprice"><?php echo _getComparePricing(7, 593, false, "#"); ?></div>
-    </div>
+    </div> -->
     <div class="compare-column" id="cmp-teramind">
       <div class="tool-col comp-logo">
         <strong>Teramind</strong>
