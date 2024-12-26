@@ -184,8 +184,8 @@
           <div class="header-item-left">
             <a href="<?php echo site_url(); ?>/" class="brand">
               <div class="large">
-                <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="230" height="31">
-                <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="230" height="31">
+                <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="250" height="31">
+                <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="250" height="31">
               </div>
             </a>
             <div class="hamberger-menu">
