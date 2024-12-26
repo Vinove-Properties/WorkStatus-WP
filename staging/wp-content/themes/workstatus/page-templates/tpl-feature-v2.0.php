@@ -310,7 +310,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
         <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png">
         <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png" alt="Workstatus" width="404" height="217">
-      </picture>'
+      </picture>';
     if( isset($wsIndustry['image']) && !empty( $wsIndustry['image'] ) ){
     $elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
     }
