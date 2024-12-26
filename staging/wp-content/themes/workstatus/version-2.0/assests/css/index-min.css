@@ -5076,7 +5076,7 @@ li.iti__country {
   flex-wrap: wrap; }
   .workplace-section .workplace-row .workplace-card {
     flex-basis: 24%;
-    height: 350px;
+    min-height: 400px;
     perspective: 1000px;
     position: relative;
     border-radius: 5px;
@@ -7197,7 +7197,7 @@ li.iti__country {
     background-size: 20px; } }
 @media (max-width: 767px) {
   .cmn-pricing.no-af-bg {
-    padding: 110px 0 30px; }
+    padding: 60px 0 30px; }
 
   .ws-pricing {
     padding-top: 20px; }

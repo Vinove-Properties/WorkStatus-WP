@@ -5,7 +5,7 @@
 
     .workplace-card {
       flex-basis: 24%;
-      height: 350px;
+      min-height: 400px;
       perspective: 1000px;
       position: relative;
       border-radius: 5px;
@@ -305,7 +305,6 @@
 
       .workplace-card {
         flex-basis: 100%;
-
         .flip-card-inner {
           p {
             font-size: 16px;
