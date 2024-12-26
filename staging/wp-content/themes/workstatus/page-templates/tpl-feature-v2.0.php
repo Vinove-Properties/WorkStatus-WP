@@ -285,9 +285,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           </div>
         </section>';
     }
-    // 
-    $otherFeatures = get_field('ot-features');
+    $elm_workplaces_margin  = 'margin-t-120';
+    $otherFeatures          = get_field('ot-features');
     if( isset( $otherFeatures['is_enabled'] ) && ($otherFeatures['is_enabled'] == "yes") ){
+    $elm_workplaces_margin  = '';  
     echo '<section class="three-column-section padding-b-120 margin-t-120">
     <div class="container">
     <div class="top-section text-center">
@@ -308,7 +309,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     echo '</div></section>';
     }
 
-    get_template_part('common/cmn', 'workplaces');
+    get_template_part('common/cmn', 'workplaces', ['elm-class' => 
+      'workplace-section bg-light padding-t-120 padding-b-120 '.$elm_workplaces_margin.'']);
     $wsIndustry = get_field("ws-industries");
     if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
     $sec_content = $wsIndustry['content'];
