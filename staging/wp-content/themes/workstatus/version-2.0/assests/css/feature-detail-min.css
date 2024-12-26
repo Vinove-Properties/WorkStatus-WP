@@ -7575,7 +7575,8 @@ li.iti__country {
       margin: 0 !important; }
     .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer ul {
       padding-left: 20px;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 20px; }
       .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer ul li {
         list-style: disc !important;
         color: #5e6373;
