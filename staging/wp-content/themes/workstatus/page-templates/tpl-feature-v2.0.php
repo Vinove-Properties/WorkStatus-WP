@@ -235,11 +235,16 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     }
     $sicBlock = get_field('sic-block');
     if( isset( $sicBlock['is_enabled'] ) && ($sicBlock['is_enabled'] == "yes") ) :
+    
+    $topHeading = '';
+    if( isset( $sicBlock['heading'] ) && !empty($sicBlock['heading']) ){
+    $topHeading = '<h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>';
+    }
+
     echo '<section class="feature-scroller post-animation"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
     echo '<div class="left-panel">
-          <div class="top-section">
-            <h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>
-            '.$sicBlock['sub_heading'].'
+          <div class="top-section">            
+            '.$topHeading.$sicBlock['sub_heading'].'
             '._getDemoCTA('button-common margin-t-50', false).'
           </div>
           </div>';
@@ -255,7 +260,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     echo '</div>';
     echo '</section></div></div>';  
     endif;  
-    
+
     $proBlock = get_field('pro-block');
     if( isset($proBlock['is_enabled']) && ($proBlock['is_enabled'] == "yes") ){
     echo '<section class="feature-wrapper padding-t-120 padding-b-100 post-animation">
