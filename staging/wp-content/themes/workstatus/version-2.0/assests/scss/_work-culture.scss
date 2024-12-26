@@ -1,0 +1,125 @@
+.work-culture {
+  width: 100%;
+  position: relative;
+  .feature-loop {
+    position: relative;
+    .feature-row {
+      z-index: 9;
+      position: relative;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .column-left {
+        flex-basis: 45%;
+        width: 100%;
+        .text-column {
+          width: 100%;
+          padding: 30px;
+          border-radius: 20px;
+          h3 {
+            padding-left: 35px;
+            position: relative;
+
+            &:before {
+              content: "";
+              background: url(../images/homeft-01.svg) no-repeat;
+              width: 29px;
+              height: 29px;
+              background-size: 100%;
+              top: 2px;
+              left: 0;
+              position: absolute;
+            }
+          }
+
+          p {
+            font-weight: $regular_weight;
+          }
+
+          ul {
+            padding: 0;
+            margin: 10px 0 0;
+            li {
+              position: relative;
+              padding-left: 28px;
+              margin: 8px 0 0;
+              line-height: 22px;
+
+              &:before {
+                content: "";
+                background: url(../images/list-circle.svg) no-repeat;
+                width: 18px;
+                height: 18px;
+                top: 2px;
+                left: 0;
+                position: absolute;
+                background-size: 100%;
+              }
+            }
+          }
+
+          &:first-child {
+            background: #f7f3ff;
+          }
+
+          &.listing {
+            h3 {
+              padding-left: 0;
+              &:before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .column-right {
+        flex-basis: 50%;
+        text-align: left;
+      }
+    }
+  }
+}
+
+/*Media Query Start From Here*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 979px) {
+  .work-culture {
+    .feature-loop {
+      .feature-row {
+        .column-left {
+          flex-basis: 100%;
+          text-align: center;
+          .text-column {
+            h3 {
+              margin-top: 20px;
+              padding-top: 20px;
+              padding-left:0;
+              &:before{position: absolute; top:-12px; right:0; left:0; margin:0 auto 10px;}
+            }
+          }
+        }
+
+        .column-right {
+          flex-basis: 100%;
+          padding-left: 0;
+          margin: 30px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+/*Media Query Ends Here*/
