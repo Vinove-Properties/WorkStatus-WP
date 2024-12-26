@@ -289,12 +289,12 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     <div class="top-section text-center">
     <h6><span class="bg-purple">'.$proBlock['heading'].'</span></h6>'.$proBlock['sub_heading'].'</div>';
     if( $otherFeatures['cards'] ){
+      $link = (isset($row['link']) && !empty($row['link'])) ? '<a href="'.$row['link'].'" class="is-arrow">'.$row['lk-text'].'</a>' : '';
       echo '<div class="ws-row">';
       foreach( $otherFeatures['cards'] as $row ){
         echo '<div class="flex-3"><div class="box">
         '.pxlGetPtag($row['icon']).'
-        <div class="content-area">'.$row['content'].'</div>
-        <a href="'.$row['link'].'" class="is-arrow">'.$row['lk-text'].'</a>
+        <div class="content-area">'.$row['content'].'</div>'.$link.'
         </div>
         </div>';
       }

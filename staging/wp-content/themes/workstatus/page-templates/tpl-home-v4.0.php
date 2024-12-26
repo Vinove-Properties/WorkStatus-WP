@@ -17,10 +17,7 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
       <div class="column videoSc" id="has-yt-video">
         <div class="inner">
-          <button id="myBtn">
-            Open Modal  
-            <div class="playsc"><span class="playicon"></span></div>
-          </button>
+          <button id="myBtn">Open Modal<div class="playsc"><span class="playicon"></span></div></button>
           <div class="topVideo srp-1">
             <div id="myDIV" class="contbox2">
               <div class="videoWrapper js-videoWrapper">
