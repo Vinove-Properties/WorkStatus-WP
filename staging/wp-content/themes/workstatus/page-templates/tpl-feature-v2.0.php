@@ -233,6 +233,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           
       }        
     }
+
+
     $sicBlock = get_field('sic-block');
     if( isset( $sicBlock['is_enabled'] ) && ($sicBlock['is_enabled'] == "yes") ) :
     
@@ -241,13 +243,14 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     $topHeading = '<h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>';
     }
 
-    echo '<section class="feature-scroller post-animation"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
+    echo '<section class="feature-scroller"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
     echo '<div class="left-panel">
           <div class="top-section">            
             '.$topHeading.$sicBlock['sub_heading'].'
             '._getDemoCTA('button-common margin-t-50', false).'
           </div>
           </div>';
+
     echo '<div class="right-panel">';
     if( $sicBlock['block'] ){
     foreach( $sicBlock['block'] as $row ){
@@ -257,8 +260,9 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         </div>';
       }  
     }
-    echo '</div>';
-    echo '</section>';  
+    echo '</div><!--//.right-panel-->';
+
+    echo '</div></div></section>';  
     endif;  
 
     $proBlock = get_field('pro-block');
@@ -359,8 +363,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
 
   <?php  
   //get_template_part('common/ws', 'pricing');
-  // $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
-  // get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-120"]);
+  $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
+  get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-120"]);
   ?>
 
   <?php  
