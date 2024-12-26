@@ -258,7 +258,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       }  
     }
     echo '</div>';
-    echo '</section></div></div>';  
+    echo '</section>';  
     endif;  
 
     $proBlock = get_field('pro-block');
@@ -281,7 +281,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           </div>
         </section>';
     }
-
+    // 
     $otherFeatures = get_field('ot-features');
     if( isset( $otherFeatures['is_enabled'] ) && ($otherFeatures['is_enabled'] == "yes") ){
     echo '<section class="three-column-section padding-b-120 margin-t-120">
