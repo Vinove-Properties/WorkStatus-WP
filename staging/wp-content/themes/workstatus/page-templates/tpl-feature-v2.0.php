@@ -302,7 +302,20 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     }
 
     get_template_part('common/cmn', 'workplaces');
-    get_template_part('common/cmn', 'industries');
+    $wsIndustry = get_field("ws-industries");
+    if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
+    $sec_content = $wsIndustry['content'];
+    $sec_content .= $sec_content.'<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
+    $elmImage = '<picture class="card-img">
+        <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+        <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png">
+        <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png" alt="Workstatus" width="404" height="217">
+      </picture>'
+    if( isset($wsIndustry['image']) && !empty( $wsIndustry['image'] ) ){
+    $elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
+    }
+    get_template_part('common/cmn', 'industries', ['elm-image' => $elmImage, 'elm-content' => $sec_content ]);  
+    }    
     ?>
 
     <?php     
@@ -427,41 +440,8 @@ if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
     </div>
   </div>
 </section>
-<?php endif; ?>      
+<?php endif; ?>
 
-<?php  
-/*
-$faq = get_field('faq');
-if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ){ 
-?>
-<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
-<div class="container">
-<div class="top-section text-center">
-  <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
-  <h2><?php echo $faq['sub_heading']; ?></h2>
-</div>
-<div class="flex_row">
-<div itemscope itemtype="https://schema.org/FAQPage">
-  <div class="column">
-    <?php 
-    if( $faq['question_answer_repeater'] ){  $i = 1;
-    foreach( $faq['question_answer_repeater'] as $row ) {
-  	$active = ($i <= 3) ? "open" : "";
-    // 
-    ?>
-    <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <h3 itemprop="name"><?php echo $row['question'];?></h3>
-      <div class="faq-accordion-content">
-        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><div itemprop="text"><?php echo $row['answer'];?></div></div>
-      </div>
-    </div>
-    <?php $i++; } } ?>
-  </div>
-</div>
-</div>
-</div>
-</section>
-<?php } */ ?>
 <?php require_once get_template_directory() .'/common/blog.php'; ?>
 <?php //get_template_part('common/home', 'testimonials'); ?>
 <?php //require_once get_template_directory() .'/common/workstatus-journey.php';?>

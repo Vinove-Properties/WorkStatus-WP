@@ -1,3 +1,7 @@
+<?php 
+$elmImage   = (isset($args['elm-image']) && !empty($args['elm-image']) ) ? $args['elm-image'] : '';
+$elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $args['elm-content'] : '';
+?>
 <section class="allindustry-section padding-t-120 padding-b-120 post-animation">
 <div class="container">
   <div class="top-section text-center">
@@ -42,7 +46,7 @@
         <div class="ind-image">
           <picture>
             <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-janitorial.webp">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-janitorial.webp" alt="Workstatus" width="242" height="267">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
             <h3>Janitorial Services</h3>
@@ -102,20 +106,9 @@
       </div>
     </div>
     <div class="ind-right">
-      <picture class="card-img">
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/dashboard-img.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ dashboard-img.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ dashboard-img.png" alt="Workstatus" width="404" height="217">
-      </picture>
+      <?php echo $elmImage; ?>
       <div class="indr-content">
-        <h3>One central dashboard</h3>
-        <p>We provides clarity, no matter the industry, by showing you:</p>
-        <ul>
-          <li>Detailed insights</li>
-          <li>Streamlined projects</li>
-          <li>Streamlined projects</li>
-        </ul>
-        <a href="#" class="is-arrow">Explore solutions for your industries</a>
+        <?php echo $elmContent; ?>        
       </div>
     </div>
   </div>
