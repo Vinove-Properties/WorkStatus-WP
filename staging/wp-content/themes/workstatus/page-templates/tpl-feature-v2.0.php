@@ -305,7 +305,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     $wsIndustry = get_field("ws-industries");
     if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
     $sec_content = $wsIndustry['content'];
-    $sec_content .= $sec_content.'<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
+    $sec_content .= '<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
     $elmImage = '<picture class="card-img">
         <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
         <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png">
