@@ -20,23 +20,21 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
             alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Remote Work</h3>
-          <p>Stay connected and accountable
-          </p>
+          <p>Stay connected and accountable</p>
         </div>
         <div class="card-bottom">
           <h4>Achieve <strong>30%</strong></h4>
-          <span class="prod">higher accountability</span>
+          <span class="prod">Higher Accountability</span>
         </div>
       </div>
       <div class="flip-card-back">
         <h3>Remote Work</h3>
         <ul>
-          <li>Monitor employee activity & ensure accountability
-          </li>
+          <li>Monitor employee activity & ensure accountability</li>
           <li>Foster a connected team culture regardless of location</li>
         </ul>
         <div class="card-bottom">
-          <a href="#" class="is-arrow">Explore More</a>
+          <a href="<?php echo site_url('/workplace-mode/remote-work-management'); ?>" class="is-arrow">Explore More</a>
         </div>
       </div>
     </div>
@@ -55,20 +53,18 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
           </p>
         </div>
         <div class="card-bottom">
-          <h4>Get <strong>30%</strong></h4>
-          <span class="prod">more productive workforce</span>
+          <h4>Get <strong>40%</strong></h4>
+          <span class="prod">Productivity Increase</span>
         </div>
       </div>
       <div class="flip-card-back">
         <h3>Hybrid Work</h3>
         <ul>
-          <li>Track resource availability & monitor employee productivity across locations
-          </li>
-          <li>Optimize resource allocation
-          </li>
+          <li>Track resource availability & monitor employee productivity across locations</li>
+          <li>Optimize resource allocation</li>
         </ul>
         <div class="card-bottom">
-          <a href="#" class="is-arrow">Explore More</a>
+          <a href="<?php echo site_url('/workplace-mode/hybrid-work-management'); ?>" class="is-arrow">Explore More</a>
         </div>
       </div>
     </div>
@@ -83,12 +79,11 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/workplace-03.png" alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Field Work</h3>
-          <p>Empower field team efficiency
-          </p>
+          <p>Empower field team efficiency</p>
         </div>
         <div class="card-bottom">
-          <h4>Rates by  <strong>40%</strong></h4>
-          <span class="prod">Improve task completion</span>
+          <h4>Experience <strong>35%</strong></h4>
+          <span class="prod">Task Efficiency</span>
         </div>
       </div>
       <div class="flip-card-back">
@@ -99,7 +94,7 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
           <li>Streamline communication and optimize field operations</li>
         </ul>
         <div class="card-bottom">
-          <a href="#" class="is-arrow">Explore More</a>
+          <a href="<?php echo site_url('/workforce-management/field-service-management'); ?>" class="is-arrow">Explore More</a>
         </div>
       </div>
     </div>
@@ -114,12 +109,11 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/workplace-04.png" alt="Workstatus" width="44" height="44">
           </picture>
           <h3>Office Work</h3>
-          <p>Optimize office productivity
-          </p>
+          <p>Optimize office productivity</p>
         </div>
         <div class="card-bottom">
-          <h4>See <strong>35%</strong> growth</h4>
-          <span class="prod">Enhance office productivity</span>
+          <h4>See <strong>35%</strong></h4>
+          <span class="prod">Enhanced Productivity</span>
         </div>
       </div>
       <div class="flip-card-back">
@@ -130,7 +124,7 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
           <li>Get real-time insights into productivity</li>
         </ul>
         <div class="card-bottom">
-          <a href="#" class="is-arrow">Explore More</a>
+          <a href="<?php echo site_url('/workplace-mode/office-work'); ?>" class="is-arrow">Explore More</a>
         </div>
       </div>
     </div>
