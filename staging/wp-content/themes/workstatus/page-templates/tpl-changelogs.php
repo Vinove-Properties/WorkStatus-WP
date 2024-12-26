@@ -6,7 +6,7 @@ Author : Nitin Baluni
 get_header();
 global $ws_ctas, $RegLink, $LogLink, $post;
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://superadmin.workstatus.io/api/v1/get-version");
+curl_setopt($ch, CURLOPT_URL, "https://sa.workstatus.io/api/v1/get-version");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $server_output  = curl_exec($ch);
