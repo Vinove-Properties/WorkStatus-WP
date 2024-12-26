@@ -255,7 +255,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     echo '</div>';
     echo '</section></div></div>';  
     endif;  
-
+    
     $proBlock = get_field('pro-block');
     if( isset($proBlock['is_enabled']) && ($proBlock['is_enabled'] == "yes") ){
     echo '<section class="feature-wrapper padding-t-120 padding-b-100 post-animation">
@@ -279,12 +279,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
 
     $otherFeatures = get_field('ot-features');
     if( isset( $otherFeatures['is_enabled'] ) && ($otherFeatures['is_enabled'] == "yes") ){
-    echo '<section class="three-column-section padding-b-120 post-animation">
+    echo '<section class="three-column-section padding-b-120">
     <div class="container">
     <div class="top-section text-center">
-    <h6><span class="bg-purple">'.$proBlock['heading'].'</span></h6>'
-    .$proBlock['sub_heading'].'</div>';
-
+    <h6><span class="bg-purple">'.$proBlock['heading'].'</span></h6>'.$proBlock['sub_heading'].'</div>';
     if( $otherFeatures['cards'] ){
       echo '<div class="ws-row">';
       foreach( $otherFeatures['cards'] as $row ){
