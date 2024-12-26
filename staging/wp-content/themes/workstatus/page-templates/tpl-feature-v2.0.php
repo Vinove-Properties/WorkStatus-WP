@@ -194,7 +194,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     $fBlocks = get_field('ftblocks');
     //echo '<pre>'; print_r($fBlocks); die;
     if( isset( $fBlocks['is_enabled'] ) && ($fBlocks['is_enabled'] == "yes") ){
-      echo '<section class="feature-wrapper">';
+      //echo '<section class="feature-wrapper">';
       $pos = $fBlocks['usp-pos'];
       if( $fBlocks['blocks'] ){
         $i = 0;
