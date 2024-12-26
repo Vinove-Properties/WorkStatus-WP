@@ -305,7 +305,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       echo '</div>';  
     }
     echo _getDemoCTA('button-common margin-t-80', false);
-    echo '</div></div></section>';
+    echo '</div></section>';
     }
 
     get_template_part('common/cmn', 'workplaces');
