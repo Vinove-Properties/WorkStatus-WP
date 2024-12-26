@@ -6,8 +6,8 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
 <div class="container">
   <div class="top-section text-center">
     <h6><span class="bg-purple">STAY IN CONTROL</span></h6>
-    <h2>Who uses Workstatus time tracking software?</h2>
-    <p>Effectively oversee the time and contributions of remote and hybrid teams, ensuring balanced workloads, seamless collaboration, and enhanced coordination across various locations.</p>
+    <h2>Where Versatility Meets Efficiency - For Every Industry</h2>
+    <p>From IT to healthcare, retail to manufacturing, Workstatus adapts to meet your industry’s unique needs.</p>
   </div>
   <div class="dis-flex indstry-row">
     <div class="ind-left">
