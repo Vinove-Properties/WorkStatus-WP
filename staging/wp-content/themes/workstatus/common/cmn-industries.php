@@ -19,7 +19,7 @@
         </div>
         <div class="ind-content">
           <h3>Accounting</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Boost productivity and ensure smooth billing with Workstatus - your partner for sustainable success.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
@@ -34,15 +34,15 @@
         </div>
         <div class="ind-content">
           <h3>Manufacturing</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Track productivity, manage schedules, view accurate timesheets, and optimize operations - all on one platform.</p>
         </div>
       </div>
 
       <div class="flex-3 ind-column">
         <div class="ind-image">
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-manufacturing.webp" alt="Workstatus" width="242" height="267">
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-janitorial.webp">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-janitorial.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
             <h3>Janitorial Services</h3>
@@ -50,7 +50,7 @@
         </div>
         <div class="ind-content">
           <h3>Janitorial Services</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Simplify workforce planning, monitor attendance, and elevate service standards effortlessly.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
@@ -65,7 +65,7 @@
         </div>
         <div class="ind-content">
           <h3>Construction</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Easily assign projects, track site hours, and manage payroll - all through a single, intuitive platform.</p>
         </div>
       </div>
       <div class="flex-3 ind-column">
@@ -80,7 +80,7 @@
         </div>
         <div class="ind-content">
           <h3>Real Estate</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Track timesheets, monitor employee locations, calculate work hours, and simplify client billing with ease.</p>
         </div>
       </div>
       
@@ -97,7 +97,7 @@
         </div>
         <div class="ind-content">
           <h3>E-Commerce</h3>
-          <p>Managers can review and approve timesheets of employees. Better team management leads to better outputs.</p>
+          <p>Enhance field operations, improve customer service, and optimize workforce management with Workstatus.</p>
         </div>
       </div>
     </div>
