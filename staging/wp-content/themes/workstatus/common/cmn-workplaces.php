@@ -122,5 +122,5 @@ $elmClass = (isset($args['elm-class']) && !empty($args['elm-class'])) ? $args['e
     </div>
   </div>
 </div>
-</div>
+</div><!-- //.container -->
 </section>
