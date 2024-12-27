@@ -144,14 +144,16 @@
       body.locate-ind .prloc span.spn-local,
       body.locate-ind .price span.spn-local,
       body.locate-int .prloc span.spn-int,
-      body.locate-int .price span.spn-int{display:block;}
-      
+      body.locate-int .price span.spn-int{display:block;}      
       body.locate-int span.spn-ind, body.locate-ind  span.spn-intr{display:none;}
-
      
-      body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; background: #faf8fe; padding: 25px; margin:0 0 25px;}
-      @media screen and (max-width:575px){body.page-template-tpl-tools-comparison .benifits-section .column-three{ flex-basis: 100%;margin: 15px 0 0;}}
-      #inv-price-fltr .country-select{display:none !important;}
+      body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; 
+      background: #faf8fe; padding: 25px; margin:0 0 25px;}
+      @media screen and (max-width:575px){
+      body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 100%;margin: 15px 0 0;}
+      }
+      #inv-price-fltr .country-select{display:none!important;}
+      .header-two .header-item-right .menu ul li .menu-mega{top:135%;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
@@ -184,8 +186,8 @@
           <div class="header-item-left">
             <a href="<?php echo site_url(); ?>/" class="brand">
               <div class="large">
-                <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="250" height="31">
-                <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="250" height="31">
+                <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="400" height="75">
+                <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="400" height="75">
               </div>
             </a>
             <div class="hamberger-menu">
