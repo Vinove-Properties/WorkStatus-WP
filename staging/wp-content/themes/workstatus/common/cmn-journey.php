@@ -4,7 +4,7 @@
       <div class="jour-col">
         <div class="top-section">
           <h6><span class="bg-purple">DON’T WAIT</span></h6>
-          <h2>Start Your <span><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/head-logo.svg" alt="Workstatus" width="263" height="15"></span>Journey Today!</h2>
+          <h2>Start Your <span><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/head-logo.svg" alt="Workstatus" width="263" height="15"></span> Journey Today!</h2>
           <p>Get detailed and clean activity reports of your team.</p>
         </div>      
         <div class="actionBtn">
