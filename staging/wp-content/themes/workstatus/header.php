@@ -133,7 +133,7 @@
       @media (max-width: 767px) {
         .ctbtn.nobg{padding:12px 18px !important; font-size:15px !important;}
         .ctbtn.nobg{padding:12px 18px !important;}
-      body.page-template-tpl-tools-comparison .benifits-section .column-three{text-align:center;}
+        body.page-template-tpl-tools-comparison .benifits-section .column-three{text-align:center;}
       }
       .usecase-tabs .tab-nav ul.ucase li a{font-size: 14px; padding:15px 8px}
       .usecase-tabs .tab-nav ul.ucase li a span.icon{display: none;}
