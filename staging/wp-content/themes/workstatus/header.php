@@ -158,9 +158,9 @@
 
       .ws-pricing .price-contents .tab-contents .plan-include ul li:before,
       .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list 
-      .option:before{top:13px;}
-      
+      .option:before{top:13px;}      
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
+      .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active{margin-top: 20px;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
