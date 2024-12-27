@@ -433,7 +433,6 @@ if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
           if( $faq['question_answer_repeater'] ){  $i = 1;
           foreach( $faq['question_answer_repeater'] as $row ) {
           $active = ($i <= 3) ? "open" : "";
-          // 
           ?>
           <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
             <h3 itemprop="name"><?php echo $row['question'];?></h3>
