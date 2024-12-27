@@ -13,14 +13,14 @@
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sitebaz.svg" alt="Workstatus" width="155" height="36">
             </picture>
             <p>Workstatus is a Leader in the 2024 Gartner® Magic Quadrant™ for DevOps Platforms</p>
-            <a href="#" class="is-arrow">Explore More</a>
+            <a href="https://www.sitejabber.com/reviews/workstatus.io" class="is-arrow">Explore More</a>
           </div>
           <div class="rate-box">
             <picture>
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/trustpiolet.svg" alt="Workstatus" width="127" height="31">
             </picture>
             <p>Workstatus is a Leader in the 2024 Gartner® Magic Quadrant™ for DevOps Platforms</p>
-            <a href="#" class="is-arrow">Explore More</a>
+            <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow">Explore More</a>
           </div>
         </div>
       </div>
