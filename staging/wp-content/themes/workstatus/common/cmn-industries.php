@@ -53,7 +53,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/dev-images/ind-janitorial.webp" alt="Workstatus" width="242" height="267">
           </picture>
           <div class="ind-title">
-            <h3>Janitorial Services</h3>
+            <h3>Janitorial</h3>
           </div>
         </div>
         <div class="ind-content">
