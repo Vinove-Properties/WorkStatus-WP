@@ -16,7 +16,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="tbbtn" data-prod="desktime">DeskTime</div>
     <div class="tbbtn active" data-prod="timedoctor">Time Doctor</div>
     <div class="tbbtn" data-prod="insightful">Insightful</div>
-    <div class="tbbtn" data-prod="We360">We360</div>
+    <div class="tbbtn" data-prod="we360">We360</div>
     <div class="tbbtn active" data-prod="activtrak">ActivTrak</div>
     <div class="tbbtn active" data-prod="teramind">Teramind</div>
     <div class="tbbtn active" data-prod="monitask">Monitask</div>
@@ -51,7 +51,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="compare-column elemnt" id="cmp-workstatus">
       <div class="tool-col comp-logo">
         <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-01.svg" alt="" width="125" height="17"></picture>
-        <span class="price active"><?php echo _getComparePricing(1.6, 135, true); ?></span>
+        <span class="price active"><?php echo _getComparePricing(1.6, 60, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -63,7 +63,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><?php echo _getComparePricing(1.6, 135, false, "#"); ?></div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(1.6, 60, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-hubstaff">
       <div class="tool-col comp-logo">

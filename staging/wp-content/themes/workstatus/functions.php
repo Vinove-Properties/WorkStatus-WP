@@ -2327,7 +2327,7 @@ function _getComparePricing( $usd, $inr, $pricing = true, $link = "#" ){
 	return '<span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span>';
 	}else{
 		return '<span class="btn"><span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span></span>
-		<span class="small-font">(Per user / Month)</span><a href="'.$link.'" class="knowmre">Know More</a>';	
+		<span class="small-font">(Per user / Month)</span><a onclick="call_demows();" href="javascript:void(0);"  class="knowmre">Know More</a>';	
 	}
 }
 
