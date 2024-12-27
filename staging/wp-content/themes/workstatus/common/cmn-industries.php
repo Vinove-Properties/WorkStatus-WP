@@ -60,6 +60,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           <a href="<?php bloginfo('url'); ?>/industry/time-tracking-app-for-janitorial-services">
           <h3>Janitorial Services</h3>
           <p>Simplify workforce planning, monitor attendance, and elevate service standards effortlessly.</p>
+          </a>
         </div>
       </div>
       <div class="flex-3 ind-column">
