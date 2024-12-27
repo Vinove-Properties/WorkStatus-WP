@@ -22,8 +22,10 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/accounting">
           <h3>Accounting</h3>
           <p>Boost productivity and ensure smooth billing with Workstatus - your partner for sustainable success.</p>
+          </a>
         </div>
       </div>
       <div class="flex-3 ind-column">
@@ -37,6 +39,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/manufacturing">
           <h3>Manufacturing</h3>
           <p>Track productivity, manage schedules, view accurate timesheets, and optimize operations - all on one platform.</p>
         </div>
@@ -53,6 +56,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/time-tracking-app-for-janitorial-services">
           <h3>Janitorial Services</h3>
           <p>Simplify workforce planning, monitor attendance, and elevate service standards effortlessly.</p>
         </div>
@@ -68,8 +72,10 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/construction">
           <h3>Construction</h3>
           <p>Easily assign projects, track site hours, and manage payroll - all through a single, intuitive platform.</p>
+          </a>
         </div>
       </div>
       <div class="flex-3 ind-column">
@@ -83,8 +89,10 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/real-estate">
           <h3>Real Estate</h3>
           <p>Track timesheets, monitor employee locations, calculate work hours, and simplify client billing with ease.</p>
+          </a>
         </div>
       </div>
       
@@ -100,8 +108,10 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           </div>
         </div>
         <div class="ind-content">
+          <a href="<?php bloginfo('url'); ?>/industry/e-commerce">
           <h3>E-Commerce</h3>
           <p>Enhance field operations, improve customer service, and optimize workforce management with Workstatus.</p>
+          </a>
         </div>
       </div>
     </div>
