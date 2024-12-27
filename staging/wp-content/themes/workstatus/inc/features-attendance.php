@@ -26,7 +26,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="tbbtn" data-prod="clockify">Clockify</div>
     <div class="tbbtn" data-prod="toggl">Toggl</div>
     <div class="tbbtn active" data-prod="truein">Truein</div>
-    <div class="tbbtn" data-prod="zoho">Zoho People</div>
+    <div class="tbbtn" data-prod="zoho">Zoho</div>
     <div class="tbbtn" data-prod="apploye">Apploye</div>
     <div class="tbbtn" data-prod="harvest">Harvest</div>
     <div class="tbbtn" data-prod="trackolap">TrackOlap</div>
@@ -49,7 +49,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="compare-column elemnt" id="cmp-workstatus">
       <div class="tool-col comp-logo">
         <picture><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/complogo-01.svg" alt="" width="125" height="17"></picture>
-        <span class="price active"><?php echo _getComparePricing(1.6, 60, true); ?></span>
+        <span class="price active"><?php echo _getComparePricing(1.6, 48, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -58,7 +58,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><?php echo _getComparePricing(1.6, 60, false, "#"); ?></div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(1.6, 48, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-hubstaff">
       <div class="tool-col comp-logo">
@@ -203,7 +203,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="compare-column" id="cmp-everhour" style="display:none;">
       <div class="tool-col comp-logo">
         <strong>Everhour</strong>
-        <span class="price">NA</span>
+        <span class="price"><?php echo _getComparePricing(2, 150, true, "#"); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>      
@@ -212,9 +212,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="cross-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
-        <a href="#" class="knowmre">Know More</a>
-      </div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(2, 150, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-clockify" style="display:none;">
       <div class="tool-col comp-logo">
@@ -247,7 +245,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="compare-column" id="cmp-zoho" style="display:none;">
       <div class="tool-col comp-logo">
         <strong>Zoho People</strong>
-        <span class="price">NA</span>
+        <span class="price"><?php echo _getComparePricing(2, 96, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -256,14 +254,12 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
-        <a href="#" class="knowmre">Know More</a>
-      </div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(2, 96, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-apploye" style="display:none;">
       <div class="tool-col comp-logo">
         <strong>Apploye</strong>
-        <span class="price">NA</span>
+        <span class="price"><?php echo _getComparePricing(3.5, 299, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="cross-icon"></i></div>
@@ -272,9 +268,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="cross-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
-        <a href="#" class="knowmre">Know More</a>
-      </div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(3.5, 299, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-harvest" style="display:none;">
       <div class="tool-col comp-logo">
@@ -321,7 +315,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="compare-column" id="cmp-handdy" style="display:none;">
       <div class="tool-col comp-logo">
         <strong>Handdy</strong>
-        <span class="price">NA</span>
+        <span class="price"><?php echo _getComparePricing(1.99 , 170, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -330,9 +324,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="cross-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><span class="btn">$15</span><span class="small-font">(Per user / Month)</span>
-        <a href="#" class="knowmre">Know More</a>
-      </div>
+      <div class="tool-col comprice"><?php echo _getComparePricing(1.99 , 170, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-empmonitor" style="display:none;">
       <div class="tool-col comp-logo">
