@@ -154,6 +154,7 @@
       }
       #inv-price-fltr .country-select{display:none!important;}
       .header-two .header-item-right .menu ul li .menu-mega{top:135%;}
+      .client-img-section .why-ws .right-box .why-left .plateform{min-height:290px;}
     </style>
     <?php if( isBetaVersion() === false ) : ?>
     <!-- Google Tag Manager -->
