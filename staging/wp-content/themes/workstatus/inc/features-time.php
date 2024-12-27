@@ -13,11 +13,11 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
   </div>
   <div class="compare-tabs">
     <div class="tbbtn active" data-prod="hubstaff">Hubstaff</div>
-    <div class="tbbtn" data-prod="desktime">Desktime</div>
+    <div class="tbbtn" data-prod="desktime">DeskTime</div>
     <div class="tbbtn active" data-prod="timedoctor">Time Doctor</div>
     <div class="tbbtn" data-prod="insightful">Insightful</div>
-    <div class="tbbtn" data-prod="we360">we360</div>
-    <div class="tbbtn active" data-prod="activtrak">Activ Trak</div>
+    <div class="tbbtn" data-prod="We360">We360</div>
+    <div class="tbbtn active" data-prod="activtrak">ActivTrak</div>
     <div class="tbbtn active" data-prod="teramind">Teramind</div>
     <div class="tbbtn active" data-prod="monitask">Monitask</div>
     <div class="tbbtn" data-prod="timechamp">TimeChamp</div>
@@ -28,10 +28,10 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     <div class="tbbtn" data-prod="zoho">Zoho People</div>
     <div class="tbbtn" data-prod="apploye">Apploye</div>
     <div class="tbbtn" data-prod="harvest">Harvest</div>
-    <div class="tbbtn" data-prod="trackolap">Trackolap</div>
-    <div class="tbbtn" data-prod="myhours">Myhours</div>
+    <div class="tbbtn" data-prod="trackolap">TrackOlap</div>
+    <div class="tbbtn" data-prod="myhours">My Hours</div>
     <div class="tbbtn" data-prod="handdy">Handdy</div>
-    <div class="tbbtn" data-prod="empmonitor">Empmonitor</div>
+    <div class="tbbtn" data-prod="empmonitor">EmpMonitor</div>
   </div>
   <div class="features-container">
     <div class="compare-column elemnt fst-elemnt">
@@ -115,24 +115,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="cross-icon"></i></div>
       <div class="tool-col comprice"><?php echo _getComparePricing(11, 931, false, "#"); ?></div>
-    </div>
-    <!-- <div class="compare-column" id="cmp-activtrak">
-      <div class="tool-col comp-logo">
-        <strong>Activ Trak</strong>
-        <span class="price"><?php echo _getComparePricing(7, 593, true); ?></span>
-      </div>
-      <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col"><i class="cross-icon"></i></div>
-      <div class="tool-col comprice"><?php echo _getComparePricing(7, 593, false, "#"); ?></div>
-    </div> -->
+    </div>    
     <div class="compare-column" id="cmp-teramind">
       <div class="tool-col comp-logo">
         <strong>Teramind</strong>
@@ -169,7 +152,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-desktime" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>Desktime</strong>
+        <strong>DeskTime</strong>
         <span class="price"><?php echo _getComparePricing(6, 508, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -203,7 +186,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-we360" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>we360</strong>
+        <strong>We360</strong>
         <span class="price"><?php echo _getComparePricing(5.50, 465, true, "#"); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -220,7 +203,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-activtrak" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>Activ Trak</strong>
+        <strong>ActivTrak</strong>
         <span class="price"><?php echo _getComparePricing(10, 856, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -362,7 +345,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-trackolap" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>Trackolap</strong>
+        <strong>TrackOlap</strong>
         <span class="price"><?php echo _getComparePricing(10, 847, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -379,7 +362,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-myhours" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>Myhours</strong>
+        <strong>My Hours</strong>
         <span class="price"><?php echo _getComparePricing(8, 677, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
@@ -415,7 +398,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
     </div>
     <div class="compare-column" id="cmp-empmonitor" style="display:none;">
       <div class="tool-col comp-logo">
-        <strong>Empmonitor</strong>
+        <strong>EmpMonitor</strong>
         <span class="price"><?php echo _getComparePricing(4.70, 398, true); ?></span>
       </div>
       <div class="tool-col"><i class="check-icon"></i></div>
