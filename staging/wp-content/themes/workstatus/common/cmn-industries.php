@@ -42,6 +42,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
           <a href="<?php bloginfo('url'); ?>/industry/manufacturing">
           <h3>Manufacturing</h3>
           <p>Track productivity, manage schedules, view accurate timesheets, and optimize operations - all on one platform.</p>
+          </a>
         </div>
       </div>
 
