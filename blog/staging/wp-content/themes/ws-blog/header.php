@@ -72,7 +72,7 @@
                 <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/logo.svg" alt="Workstatus" width="230" height="31"> 
               </picture>              
             </a>
-            <a href="<?php bloginfo('url'); ?>" class="lnk-blog"><span> / </span> Blog</a>
+            <a href="<?php echo trailingslashit( get_bloginfo('url') ); ?>" class="lnk-blog"><span> / </span> Blog</a>
           </div>
           <div class="logo-white ws-blogo">
             <a href="https://www.workstatus.io" title="Workstatus">
@@ -81,7 +81,7 @@
                   height="31" alt="Workstatus">
               </picture>
             </a>
-            <a href="<?php bloginfo('url'); ?>" class="lnk-blog"><span> / </span> Blog</a>
+            <a href="<?php echo trailingslashit( get_bloginfo('url') ); ?>" class="lnk-blog"><span> / </span> Blog</a>
           </div>
 
           <div class="head-wrap">

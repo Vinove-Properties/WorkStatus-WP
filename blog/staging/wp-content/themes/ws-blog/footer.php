@@ -1,19 +1,18 @@
-<?php //global $wsloginlink, $wsreglink; 
-?>
+<?php $site_url = "https://www.workstatus.io"; ?>
 <footer class="site__footer">
   <div class="container">
     <div class="flex_row">
       <div class="column fcol1">
         <h6>Workstatus</h6>
         <ul>          
-          <li><a href="https://www.workstatus.io/about">About us</a></li>
-          <li><a href="https://www.workstatus.io/reviews">Reviews</a></li>
-          <li><a href="https://www.workstatus.io/press">Press</a></li>
-          <li><a href="https://www.workstatus.io/resources">Resources</a></li>
-          <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
-          <li><a href="https://www.workstatus.io/how-tracking-works">How Workstatus Works</a></li>
-          <li><a href="https://www.workstatus.io/customization">Customization</a></li>
-          <li><a href="https://www.workstatus.io/demo">Product Tour</a></li>
+          <li><a href="<?php echo $site_url; ?>/about">About us</a></li>
+          <li><a href="<?php echo $site_url; ?>/reviews">Reviews</a></li>
+          <li><a href="<?php echo $site_url; ?>/press">Press</a></li>
+          <li><a href="<?php echo $site_url; ?>/resources">Resources</a></li>
+          <li><a href="<?php echo trailingslashit( get_bloginfo('url') ); ?>">Blog</a></li>
+          <li><a href="<?php echo $site_url; ?>/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="<?php echo $site_url; ?>/customization">Customization</a></li>
+          <li><a href="<?php echo $site_url; ?>/demo">Product Tour</a></li>
         </ul>
       </div>
       <div class="column fcol2">
@@ -24,46 +23,46 @@
         </ul>
         <h6>Platforms</h6>
         <ul>
-          <li><a href="https://www.workstatus.io/apps/mac">Mac</a></li>
-          <li><a href="https://www.workstatus.io/apps/windows">Windows</a></li>
-          <li><a href="https://www.workstatus.io/apps/linux">Linux</a></li>
-          <li><a href="https://www.workstatus.io/apps/iphone">iOS</a></li>
-          <li><a href="https://www.workstatus.io/app/android">Android</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/mac">Mac</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/windows">Windows</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/linux">Linux</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/iphone">iOS</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/android">Android</a></li>
         </ul>
       </div>
       <div class="column fcol4">
         <h6>Alternatives</h6>
         <ul>          
-          <li><a href="https://www.workstatus.io/hubstaff-alternative">Hubstaff Alternative</a></li>
-          <li><a href="https://www.workstatus.io/desktime-alternative">Desktime Alternative</a></li>
-          <li><a href="https://www.workstatus.io/timedoctor-alternative">Time Doctor Alternative</a></li>
-          <li><a href="https://www.workstatus.io/insightful-alternative">Insightful Alternative</a></li>
-          <li><a href="https://www.workstatus.io/we360ai-alternative">We360.ai Alternative</a></li>
-          <li><a href="https://www.workstatus.io/activtrak-alternative">ActivTrak Alternative</a></li>
-          <li><a href="https://www.workstatus.io/teramind-alternative">Teramind Alternative</a></li>
-          <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/teramind-alternative">Teramind Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
       <div class="column fcol7">
         <h6>Workstatus Comparison</h6>
         <ul>
-          <li><a href="https://www.workstatus.io/teramind-vs-interguard-vs-workstatus">Teramind vs Interguard</a></li>
-          <li><a href="https://www.workstatus.io/hubstaff-vs-clockify-vs-workstatus">Hubstaff vs Clockify</a></li>
-          <li><a href="https://www.workstatus.io/hubstaff-vs-insightful-vs-workstatus">Hubstaff vs Insightful</a></li>
-          <li><a href="https://www.workstatus.io/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
-          <li><a href="https://www.workstatus.io/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
-          <li><a href="https://www.workstatus.io/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
-          <li><a href="https://www.workstatus.io/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo $site_url; ?>/teramind-vs-interguard-vs-workstatus">Teramind vs Interguard</a></li>
+          <li><a href="<?php echo $site_url; ?>/hubstaff-vs-clockify-vs-workstatus">Hubstaff vs Clockify</a></li>
+          <li><a href="<?php echo $site_url; ?>/hubstaff-vs-insightful-vs-workstatus">Hubstaff vs Insightful</a></li>
+          <li><a href="<?php echo $site_url; ?>/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
+          <li><a href="<?php echo $site_url; ?>/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo $site_url; ?>/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo $site_url; ?>/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
        <div class="column fcol6">
         <h6>Support</h6>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
-          <li><a href="https://www.workstatus.io/downloads">Downloads</a></li>
-          <li><a href="https://www.workstatus.io/partners">Partners</a></li>
-          <li><a href="https://www.workstatus.io/faq">FAQs</a></li>
-          <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
+          <li><a href="<?php echo $site_url; ?>/downloads">Downloads</a></li>
+          <li><a href="<?php echo $site_url; ?>/partners">Partners</a></li>
+          <li><a href="<?php echo $site_url; ?>/faq">FAQs</a></li>
+          <li><a href="<?php echo $site_url; ?>/data-retention">Data Retention</a></li>
         </ul>
         <div class="footer-logo">
           <a href="https://www.workstatus.io/" title="Workstatus">
