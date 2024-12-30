@@ -443,7 +443,7 @@ if( function_exists('acf_add_options_page') ) {
 
 
 
-function pixelShowLatestPosts( $bposts, $pslug = ""){
+function pixelShowLatestPosts( $bposts, $pslug = "", $elmClass = ''){
  	if( empty($pslug) ) return; 
 
  	$rPosts = $wsBposts = [];
@@ -472,7 +472,7 @@ function pixelShowLatestPosts( $bposts, $pslug = ""){
 	//$loop = false;
 	if( $loop ){
 	?>
- 	<section class="useful-resources-blog-section bglight for-heading-center">
+ 	<section class="useful-resources-blog-section bglight for-heading-center <?php echo $elmClass; ?>">
 		<div class="container">
 		 <div class="top-section">
 		   <h6><span class="bg-purple"><?php echo $bposts['headings']; ?></span></h6>
