@@ -317,8 +317,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     $sec_content .= '<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
     $elmImage = '<picture class="card-img">
         <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
-        <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png">
-        <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/ dashboard-img.png" alt="Workstatus" width="404" height="217">
+        <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+        <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png" alt="Workstatus" width="404" height="217">
       </picture>';
     if( isset($wsIndustry['image']) && !empty( $wsIndustry['image'] ) ){
     $elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
