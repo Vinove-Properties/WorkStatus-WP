@@ -29,7 +29,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/apps/windows">Windows</a></li>
           <li><a href="<?php echo site_url(); ?>/apps/linux">Linux</a></li>
           <li><a href="<?php echo site_url(); ?>/apps/iphone">iOS</a></li>
-          <li><a href="<?php echo site_url(); ?>/app/android">Android</a></li>
+          <li><a href="<?php echo site_url(); ?>/apps/android">Android</a></li>
         </ul>
       </div>
       <div class="column fcol4">

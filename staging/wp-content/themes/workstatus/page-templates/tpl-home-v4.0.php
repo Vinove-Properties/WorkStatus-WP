@@ -650,16 +650,13 @@ endif;
     </div>
   </section>
   <?php endif; ?>
-
   <?php  
   //get_template_part('common/ws', 'pricing');  
   get_template_part('common/pricing', 'v4.0', ['elm-class' => "padding-t-120 bg-light padding-b-120"]);
   ?>
   <?php  
   $faq = get_field('faq');    
-  if( $faq ) :
-  $isEnable = $faq['is_enabled'];
-  if( $isEnable == "yes" ){ 
+  if( isset($faq['is_enabled']) && ($faq['is_enabled'] "yes") ) : 
   ?>
   <section class="faqsRow wfull for-heading-center">
     <div class="container">
@@ -691,7 +688,7 @@ endif;
       </div>
     </div>
   </section>
-  <?php } endif; ?>
+  <?php endif; ?>
   <?php //require_once get_template_directory() .'/common/blog.php'; ?>
   <?php get_template_part('common/cmn', 'testimonial'); ?>
   <?php get_template_part('common/cmn', 'globalrating'); ?>

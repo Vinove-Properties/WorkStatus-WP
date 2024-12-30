@@ -260,7 +260,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
@@ -268,7 +268,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -301,7 +301,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="flex-1 menu-column sub-service">
@@ -309,7 +309,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -346,7 +346,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -355,7 +355,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -389,7 +389,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -398,7 +398,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -438,7 +438,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -447,7 +447,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -478,7 +478,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -487,7 +487,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -514,7 +514,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -523,7 +523,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -779,7 +779,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -788,7 +788,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
@@ -821,7 +821,7 @@
                                 </div>
                               </div>
                               <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workforce-management/workplace-mode'); ?>"><span class="title">Workplace Modes
+                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes
                                   </span>
                                   Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
                                 </div>
@@ -830,7 +830,7 @@
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
                                   </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
+                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
                                   </a>
                                   <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
                                   </a>
