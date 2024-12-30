@@ -8183,7 +8183,8 @@ h3 a {
                     color: #4a4c55;
                     margin: 0 0 20px;
                     position: relative;
-                    padding: 0 0 0 15px; }
+                    padding: 0 0 0 15px;
+                    line-height: initial; }
                     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option:last-child {
                       margin: 0; }
                     .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option .tooltipp {
