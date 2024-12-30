@@ -256,12 +256,8 @@ function getWsCmnFeatures(){
         echo '</div>';  
       }
       ?>
-      <div class="text_center mt80 for-link-white link-text">
-        <a href="<?php echo site_url(); ?>/features" class="small_anchor">Explore all Features</a>
-      </div>
-      <div class="mt40 text_center for-link-white btnSc">
-        <?php echo wsDemoCta(); ?>
-      </div>
+      <div class="text_center mt80 for-link-white link-text"><a href="<?php echo site_url(); ?>/product" class="small_anchor">Explore all Features</a></div>
+      <div class="mt40 text_center for-link-white btnSc"><?php echo wsDemoCta(); ?></div>
     </div>
   </section>      
   <?php endif;
