@@ -8263,7 +8263,8 @@ li.iti__country {
     margin: 15px 0; } }
 /*home css start here*/
 .header-two {
-  background: #3708c2; }
+  background: #3708c2;
+  z-index: 100; }
 
 /*banner scetion */
 .banner-section {
@@ -8273,6 +8274,8 @@ li.iti__country {
   position: relative;
   overflow: hidden;
   text-align: center; }
+  .banner-section .home-section {
+    position: relative; }
   .banner-section .flex_row {
     display: flex;
     flex-wrap: wrap; }
@@ -8528,6 +8531,9 @@ li.iti__country {
   opacity: 0.5;
   cursor: pointer; }
 
+.banner-section .popup-wrapper {
+  padding-top: 60px; }
+
 /*Popup Section End*/
 /*Popup Section End*/
 /*banner end*/
@@ -8575,6 +8581,9 @@ li.iti__country {
           height: 70px; }
     .banner-section:after {
       display: none; }
+
+  .banner-section .popup-wrapper {
+    padding-top: 0; }
 
   #myBtn {
     top: 33%;
