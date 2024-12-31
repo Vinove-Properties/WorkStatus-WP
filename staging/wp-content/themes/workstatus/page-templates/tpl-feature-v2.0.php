@@ -420,7 +420,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
 $faq = get_field('faq');
 if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
 ?>  
-<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120 post-animation">
+<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
   <div class="container">
     <div class="top-section text-center">
       <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
@@ -451,9 +451,8 @@ if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
 <?php endif; ?>
 <?php //require_once get_template_directory() .'/common/blog.php'; ?>
 <?php //get_template_part('common/home', 'testimonials'); ?>
-<?php //require_once get_template_directory() .'/common/workstatus-journey.php';?>
-
-<?php get_template_part('common/blog', '', ['elm-class' => 'margin-b-120']); ?>
+<?php //require_once get_template_directory() .'/common/workstatus-journey.php'; ?>
+<?php //get_template_part('common/blog', '', ['elm-class' => 'margin-b-120']); ?>
 <?php get_template_part('common/cmn', 'testimonial'); ?>
 <?php get_template_part('common/cmn', 'globalrating'); ?>
 <?php get_template_part('common/cmn', 'journey'); ?>

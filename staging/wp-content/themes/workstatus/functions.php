@@ -228,7 +228,7 @@ function workstatus_scripts() {
 		wp_enqueue_style('home-v2', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-new.css', array(), _S_VERSION );
 	}
 	elseif( is_page_template(['page-templates/tpl-home-v4.0.php']) ){
-	wp_enqueue_style('home-v4', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-min.css', array(), _S_VERSION );
+		wp_enqueue_style('home-v4', get_stylesheet_directory_uri().'/version-2.0/assests/css/index-min.css', array(), _S_VERSION );
 	}
 	elseif( 
 		is_page_template( ['page-templates/tpl-privacy.php']) ){
@@ -257,6 +257,7 @@ function workstatus_scripts() {
 	}else{
 	wp_enqueue_style('ws-cmn-pillar', get_stylesheet_directory_uri().'/version-2.0/assests/css/featureDetail-new.css', array(), _S_VERSION );	
 	}
+	
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);	
 	

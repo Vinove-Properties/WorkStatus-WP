@@ -1,7 +1,6 @@
 <?php 
 /*
 Template Name: Home Page - V4.0 Template
-
 */ 
 get_header();
 global $ws_ctas, $RegLink, $LogLink;	
@@ -656,7 +655,7 @@ endif;
   ?>
   <?php  
   $faq = get_field('faq');    
-  if( isset($faq['is_enabled']) && ($faq['is_enabled'] "yes") ) : 
+  if( isset($faq['is_enabled']) && ($faq['is_enabled'] === "yes") ) : 
   ?>
   <section class="faqsRow wfull for-heading-center">
     <div class="container">
@@ -689,7 +688,7 @@ endif;
     </div>
   </section>
   <?php endif; ?>
-  <?php //require_once get_template_directory() .'/common/blog.php'; ?>
+  <?php get_template_part('common/blog', '', ['elm-class' => 'margin-b-120 margin-t-120']); ?>
   <?php get_template_part('common/cmn', 'testimonial'); ?>
   <?php get_template_part('common/cmn', 'globalrating'); ?>
   <?php get_template_part('common/cmn', 'journey'); ?>
