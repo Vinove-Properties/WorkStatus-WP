@@ -179,7 +179,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
   $whyUs = get_field('why-ws');
   if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):
   ?>
-  <section class="client-img-section bg-light padding-t-120 padding-b-120">
+  <section class="client-img-section padding-t-120 padding-b-120">
   <div class="container">
   <div class="dis-flex why-ws">
   <div class="flex-2 left-box">
@@ -576,20 +576,20 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
 <?php 
 $wsIndustry = get_field("ws-industries");
 if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
-$sec_content = $wsIndustry['content'];
-$sec_content .= '<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
-$elmImage = '<picture class="card-img">
-    <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
-    <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
-    <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png" alt="Workstatus" width="404" height="217">
+  $sec_content = $wsIndustry['content'];
+  $sec_content .= '<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
+  $elmImage = '<picture class="card-img">
+  <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+  <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+  <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png" 
+  alt="Workstatus" width="404" height="217">
   </picture>';
-if( isset($wsIndustry['image']) && !empty( $wsIndustry['image'] ) ){
-$elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
+  if( isset($wsIndustry['image']) && !empty( $wsIndustry['image']) ){
+  $elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
+  }
+  get_template_part('common/cmn', 'industries', ['elm-image' => $elmImage, 'elm-content' => $sec_content ]);  
 }
-get_template_part('common/cmn', 'industries', ['elm-image' => $elmImage, 'elm-content' => $sec_content ]);  
-}
-?>
-<?php  
+
 //get_template_part('common/ws', 'pricing');  
 get_template_part('common/pricing', 'v4.0', ['elm-class' => "padding-t-120 bg-light padding-b-120"]);
 ?>
