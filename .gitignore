@@ -83,4 +83,5 @@ staging/wp-content/themes/*
 # staging/wp-content/uploads-webpc/
 #!staging/wp-content/themes/**
 robots.txt
+ws.tar.gz
 .DS_Store

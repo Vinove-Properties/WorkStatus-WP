@@ -45,203 +45,137 @@ global $ws_ctas, $RegLink, $LogLink;
 <section class="trusted-by padding-t-70 padding-b-70">
   <div class="container">
     <div class="logo-heading">
-      <h4><span>Trusted by startups and Fortune <strong>500</strong>    companies</span></h4>
+      <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
     </div>
     <div class="trusted-flex">
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-01.svg" alt="trusted" width="178" height="41"> 
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-01.svg" alt="trusted" width="178" height="41"> 
         </picture>
       </div>
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-02.svg" alt="trusted" width="34" height="34">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-02.svg" alt="trusted" width="34" height="34">
         </picture>
       </div>
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-03.svg" alt="trusted" width="127" height="34">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-03.svg" alt="trusted" width="127" height="34">
         </picture>
       </div>
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-04.svg" alt="trusted" width="157" height="44">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-04.svg" alt="trusted" width="157" height="44">
         </picture>
       </div>
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-05.svg" alt="trusted" width="187" height="29">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-05.svg" alt="trusted" width="187" height="29">
         </picture>
       </div>
       <div class="trusted-card">
         <picture>
-          <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-06.svg" alt="trusted" width="149" height="22">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-06.svg" alt="trusted" width="149" height="22">
         </picture>
       </div>
     </div>
     <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
   </div>
-  </section>
-  <section class="business-tab bg-light padding-t-120 padding-b-120">
-<div class="container">
-<div class="top-section">
-<h6><span class="bg-purple">Data Driving Results</span></h6>
-<h2>Strategic Decisions with Data-Driven Insights</h2>
-<p>Unlock valuable insights with detailed dashboards, productivity reports, and location analytics</p>
-</div>
-<div class="feature-tabs">
-<div class="tab-row">
-<nav id="tabs" class="tab-nav">
-<ul>
-  <li class="active"><a href="#tab01">
-    <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-    </span>
-    Time Tracking</a>
-  </li>
-  <li><a href="#tab02">  <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-    </span>
-    Productivity Management</a>
-  </li>
-  <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-    </span>
-    Project & Task Management</a>
-  </li>
-  <li><a href="#tab04"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-    </span>
-    Attendance Tracking</a>
-  </li>
-</ul>
-</nav>
-<div id="tab-contents" class="bcontents">
-<div id="tab01" class="tab-contents active">
-  <div class="dis-flex">
-    <div class="content-box">
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-      </picture>
-    </div>
-  </div>
-</div>
-<div id="tab02" class="tab-contents">
-  <div class="dis-flex">
-    <div class="content-box">
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-      </picture>
-    </div>
-  </div>
-</div>
-<div id="tab03" class="tab-contents">
-  <div class="dis-flex">
-    <div class="content-box">
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-      </picture>
-    </div>
-  </div>
-</div>
-<div id="tab04" class="tab-contents">
-  <div class="dis-flex">
-    <div class="content-box">
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-      </picture>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </section>
 <?php 
-/*
-$mServices = get_field('wsc-block');
-if( isset( $mServices['is_enabled'] ) && ($mServices['is_enabled'] == "yes") ) :
-$mServicesRows = $mServices['services'];
-if( $mServicesRows ){
-?>  
-<section class="business-tab bglight post-animation">
-<div class="container">
-  <div class="feature-tabs">
-    <div class="tab-row">
-      <nav id="tabs-mc" class="tab-nav">
-        <ul>
-          <?php 
-          $nv = 0;
-          foreach( $mServicesRows as $row ){ $nv++;
-          $isActive = ( $nv === 1 )  ? 'active' : '';
-          echo '<li class="'.$isActive.'" data-tab="#tab0'.$nv.'"><a href="#tab0'.$nv.'"><span class="icon">
-          <img class="show" loading="lazy" src="'.$row['icon']['url'].'" alt="Icon" width="25" height="25">
-          </span>'.$row['title'].'</a>
-          </li>';
-          }
-          
-          ?>
-        </ul>
-      </nav>      
-      <div class="bcontents">
-        <?php 
-        $vn = 0;
-        foreach( $mServicesRows as $row ){ $vn++;
-        $isActive = ( $vn === 1 )  ? 'active' : '';
-        $secImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
-        echo '<div id="tab0'.$vn.'" class="tab-contents '.$isActive.'">
-          <div class="dis-flex">
-            <div class="content-box">'.$row['content'].$secImage.'</div>
-          </div>
-        </div>'; 
-        } 
-        ?>      
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-<section class="business-mobile">
-<div class="container">
-  <div class="column">
-    <?php 
-    $vn = 0;
-    foreach( $mServicesRows as $row ){ $vn++;
-    $isActive = ( $vn === 1 )  ? 'open' : '';
-    $secImage = ( $row['image'] ) ? pxlGetPtag($row['image']) : '';
-    ?>
-    <div class="b-accordion <?php echo $isActive; ?>">
-      <div class="head-row">
-        <img class="show" loading="lazy" src="<?php echo $row['icon']['url']; ?>" alt="Icon" width="25" height="25">
-        <span><?php echo $row['title']; ?></span>
-     </div>
-      <div class="baccordion-content">
-        <div class="dis-flex">
-          <div class="content-box">
-            <?php 
-            echo $row['content'];
-            echo $secImage; 
-            ?>
-          </div>
-        </div>
-      </div>
-    </div>
-    <?php } ?>
-  </div>
-</div>
-</section>
-<?php 
-}
-endif; 
-*/
+$dataDrive = get_field('dd-resul');
+if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
 ?>
+<section class="business-tab bg-light padding-t-120 padding-b-120">
+  <div class="container">
+    <div class="top-section">
+    <?php 
+    echo (isset($dataDrive['heading']) && !empty($dataDrive['heading'])) ? '<h6><span class="bg-purple">'.$dataDrive['heading'].'</span></h6>' : '';
+    echo $dataDrive['sub_heading'];
+    ?>
+    </div>
+  <div class="feature-tabs">
+  <div class="tab-row">
+  <nav id="tabs" class="tab-nav">
+  <ul>
+    <li class="active">
+      <a href="#tab01">
+      <span class="icon">
+        <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
+        <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+      </span>Time Tracking</a>
+    </li>
+    <li>
+      <a href="#tab02">
+      <span class="icon">
+        <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" 
+        width="16" height="18">
+        <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+      </span>Productivity Management</a>
+    </li>
+    <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+      </span>
+      Project & Task Management</a>
+    </li>
+    <li><a href="#tab04"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+      </span>
+      Attendance Tracking</a>
+    </li>
+  </ul>
+  </nav>
+  <div id="tab-contents" class="bcontents">
+  <div id="tab01" class="tab-contents active">
+    <div class="dis-flex">
+      <div class="content-box">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div id="tab02" class="tab-contents">
+    <div class="dis-flex">
+      <div class="content-box">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div id="tab03" class="tab-contents">
+    <div class="dis-flex">
+      <div class="content-box">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div id="tab04" class="tab-contents">
+    <div class="dis-flex">
+      <div class="content-box">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        </picture>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+<?php endif; ?>
 
-<?php 
+  <?php 
   $whyUs = get_field('why-ws');
   if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):
   ?>
@@ -250,447 +184,453 @@ endif;
   <div class="dis-flex why-ws">
   <div class="flex-2 left-box">
   <div class="top-section">
-    <h6><span class="bg-purple"><?php echo $whyUs['heading']; ?></span></h6>
-    <?php echo $whyUs['content']; ?>    
+  <h6><span class="bg-purple"><?php echo $whyUs['heading']; ?></span></h6>
+  <?php echo $whyUs['content']; ?>    
   </div>
   <?php echo _getDemoCTA("button-common margin-t-40", false); ?>  
   </div>
   <div class="flex-2 right-box">
   <div class="dis-flex">
-    <div class="flex-2 why-left">
-      <div class="award-sc">
-        <ul>
-          <li>
-            <span class="aw-icon">
-              <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-          <li>
-            <span class="aw-icon">
-              <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-          <li>
-            <span class="aw-icon">
-              <picture>
-              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-        </ul>
-      </div>
-      <div class="plateform"><?php echo $whyUs['ls-content']; ?></div>
+  <div class="flex-2 why-left">
+  <div class="award-sc">
+  <ul>
+    <li>
+      <span class="aw-icon">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
+        </picture>
+      </span>
+      <span class="star"></span>
+    </li>
+    <li>
+      <span class="aw-icon">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+        </picture>
+      </span>
+      <span class="star"></span>
+    </li>
+    <li>
+      <span class="aw-icon">
+        <picture>
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
+        </picture>
+      </span>
+      <span class="star"></span>
+    </li>
+  </ul>
+  </div>
+  <div class="plateform"><?php echo $whyUs['ls-content']; ?></div>
+  </div>
+  <div class="flex-2 why-right">
+  <div class="client-section">
+  <div class="client-row">
+    <div class="client-stack award-animate-slide-to-left hover:pause">
+      <ul>
+        <li>
+          <picture class="awimg">
+            <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+          </picture>
+          <a class="move" href="#"></a>
+          <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+          <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+        </li>
+        <li>
+          <picture class="awimg">
+            <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+          </picture>
+          <a class="move" href="#"></a>
+          <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+          <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+        </li>
+      </ul>
     </div>
-    <div class="flex-2 why-right">
-      <div class="client-section">
-        <div class="client-row">
-          <div class="client-stack award-animate-slide-to-left hover:pause">
-            <ul>
-              <li>
-                <picture class="awimg">
-                  <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
-                </picture>
-                <a class="move" href="#"></a>
-                <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-                <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
-              </li>
-              <li>
-                <picture class="awimg">
-                  <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
-                </picture>
-                <a class="move" href="#"></a>
-                <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-                <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="counter">
-        <div class="count-col"><h3>500K+</h3><p>Active users</p></div>
-        <div class="count-col"><h3>21M+</h3><p>Hours Tracked</p></div>
-      </div>
-    </div>
+  </div>
+  </div>
+  <div class="counter">
+  <div class="count-col"><h3>500K+</h3><p>Active users</p></div>
+  <div class="count-col"><h3>21M+</h3><p>Hours Tracked</p></div>
+  </div>
+  </div>
   </div>
   </div>
   </div>
   </div>
   </section>
   <?php endif; ?>
+  
   <?php get_template_part('common/cmn', 'workplaces', ['elm-class' => 'workplace-section bg-blue padding-t-120 padding-b-120' ]); ?>
+  <?php get_template_part('common/cmn', 'usps', ['cta' => _getDemoCTA('button-common margin-t-80', false)]); ?>
+
   <?php 
-  /*
-    $ws_services = get_field('ws-offers');
-    if( isset( $ws_services['is_enabled'] ) && ( $ws_services['is_enabled'] == "yes" ) ) :
+  $featureSlide = get_field('feature-slide');
+  if( isset($featureSlide['is_enabled']) && ($featureSlide['is_enabled'] == "yes") ) :
+  ?>
+  <section class="feature-slide-section bg-light padding-t-120 padding-b-120">
+  <div class="container">
+  <div class="top-section text-center">
+    <?php 
+    echo (isset($featureSlide['heading']) && !empty($featureSlide['heading'])) ? '<h6><span class="bg-purple">'.$featureSlide['heading'].'</span></h6>' : '';
+    echo $featureSlide['sub_heading'];
     ?>
-  <section class="middle-section bglight">
-    <div class="item">
-      <div class="container">
-        <div class="top-section">
-          <h6><span class="bg-purple"><?php echo $ws_services['top-heading']; ?></span></h6>
-          <?php echo $ws_services['content']; ?>
-        </div>
+  </div>
+  <?php if($featureSlide['cards']) : ?>
+  <div class="dis-flex featured-out">
+    <div class="dis-flex featured-slider" id="featured-slide">
+      <div class="glider" id="glider">
         <?php 
-          $services = $ws_services['services'];
-          if( $services ){
-          ?>
-        <div id="active_Current_Tabs_ws_services">
-          <div class="flex_row">
-            <div class="column-right">
-              <?php 
-                $iRow = 777;
-                foreach( $services as $row ){ 
-                $active = ( $iRow == 777 ) ? "active" : "";
-                if( $row['image'] ){
-                $image = $row['image'];
-                echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$iRow );                
-                }
-                $iRow++;
-                } 
-                ?>
-            </div>
-            <div class="column-left">
-              <?php 
-                $iRow = 777;
-                foreach( $services as $row ){
-                $image = $row['image'];
-                $icon = '<i><img loading="lazy" src="'.get_bloginfo('template_url').'/assests/images/hd-01.svg" alt="icon" width="" height=""></i>';
-                if( $row['icon'] ){
-                $icon = '<i><img loading="lazy" src="'.$row['icon']['url'].'" alt="icon" width="'.$row['icon']['width'].'" height="'.$row['icon']['height'].'"></i>';
-                }
-                ?>
-              <div class="all-content">
-                <div class="text-column active" id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs_ws_services">
-                  <h3><?php echo $icon.$row['heading']; ?></h3>
-                  <?php echo $row['content']; ?>
-                </div>
-                <div class="mob-image">
-                  <?php 
-                  if( $image ){
-                  echo pxlGetPtag( $image );                    
-                  } ?>
-                </div>
-              </div>
-              <?php $iRow++; } ?>
-            </div>
+        foreach($featureSlide['cards'] as $row){
+          $thumb = get_bloginfo('template_url').'/version-2.0/assests/images/featureslide-01.png';  
+          if( $row['thumb'] ){
+          $thumb = $row['thumb']['url'];
+          }
+          echo '<div class="flex-3">
+          <div class="box-3" style="background-image:url('.$thumb.');">
+          <h3>'.$row['title'].'</h3>
+          <div class="overlay-text">'.$row['content'].'<a href="'.$row['link'].'" class="no-more">Know More</a></div>
           </div>
-        </div>
-        <?php } ?>
-        <?php if( geoCTAcheck() === true ) : ?>
-        <div class="ctasec mt100">
-          <div>
-            <a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
-          </div>
-          <span class="devide">OR</span>
-          <div>  
-            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn nobg"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
-            <span class="nccr">No credit card required</span>
-          </div>
-        </div>
-        <?php endif; ?>
+          </div>';
+        } 
+        ?>
+      </div>
+      <!-- Progress Bar -->
+      <div class="progress-container"><div class="progress-bar"></div></div>
+      <div role="tablist" class="dots"></div>
+      <div class="prev-next-btn">
+        <button class="glider-prev tail-prev" aria-disabled="false"></button>
+        <button class="glider-next tail-next" aria-disabled="false"></button>
       </div>
     </div>
+    <div class="right-section">
+      <h4>Optimize Time Tracking & Workforce Coordination</h4>
+      <picture>
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/button-image.png">
+        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/button-image.png">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/button-image.png" alt="persona"
+          width="205" height="155">
+      </picture>
+      <a href="#" class="is-arrow">Explore all Use Cases</a>
+    </div>
+  </div>
+  <?php endif; ?>
+  <?php echo _getDemoCTA('button-common margin-t-80', false); ?>  
+  </div>
   </section>
-  <?php endif; */ ?>
-  
-  <?php 
-  get_template_part('common/cmn', 'usps', ['cta' => _getDemoCTA('button-common margin-t-80', false)]);
-  $ws_results = get_field('ws-results');
-  if( isset( $ws_results['is_enabled'] ) && ( $ws_results['is_enabled'] == "yes" ) ) :
-  ?>
-  <section class="data-drive">
-    <div class="item">
-      <div class="container">
-        <div class="top-section">
-          <h6><span class="bg-purple"><?php echo $ws_results['top-heading']; ?></span></h6>
-          <?php echo $ws_results['content']; ?>
+  <?php endif; ?>
+
+  <section class="user-persona bg-blue padding-t-120 padding-b-120">
+  <div class="container">
+    <div class="user-persona__content">
+      <div class="user-persona__image">
+        <picture>
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png" alt="persona"
+            width="539" height="572">
+        </picture>
+      </div>
+      <div class="top-section text-center">
+        <h6><span class="bg-purple">LOREM IPSUM</span></h6>
+        <h2>User Persona</h2>
+        <p>Set the stage for proactive problem-solving and self-guided development with the right and timely insights.</p>
+      </div>
+    </div>
+    <div class="user-persona__grid">
+      <div class="persona-card">
+        <picture>
+          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
+            width="44" height="44">
+          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
+            width="44" height="44">
+        </picture>
+        <h3>Business Owners</h3>
+        <p>Empower teams, boost productivity</p>
+        <a href="#" class="is-arrow">Learn More</a>
+      </div>
+      <div class="persona-card">
+        <picture>
+          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
+            width="44" height="44">
+          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
+            width="44" height="44">
+        </picture>
+        <h3>Business Owners</h3>
+        <p>Empower teams, boost productivity</p>
+        <a href="#" class="is-arrow">Learn More</a>
+      </div>
+      <div class="persona-card">
+        <picture>
+          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
+            width="44" height="44">
+          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
+            width="44" height="44">
+        </picture>
+        <h3>Business Owners</h3>
+        <p>Empower teams, boost productivity</p>
+        <a href="#" class="is-arrow">Learn More</a>
+      </div>
+      <div class="persona-card">
+        <picture>
+          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
+            width="44" height="44">
+          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
+            width="44" height="44">
+        </picture>
+        <h3>Business Owners</h3>
+        <p>Empower teams, boost productivity</p>
+        <a href="#" class="is-arrow">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="grade-solution bg-light padding-t-120 padding-b-120">
+<div class="container">
+  <div class="top-section text-center">
+    <h6><span class="bg-purple">EMPOWERING WORKFLOW & WORKFORCE</span></h6>
+    <h2>Enterprise-Grade Solutions</h2>
+    <p>Secure infrastructure built to grow with your team.</p>
+  </div>
+  <div class="solution-grid">
+    <div class="solution-card">
+      <h3>Secure access, complete control
+      </h3>
+      <picture>
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png">
+        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png"
+          alt="Workstatus" width="263" height="140">
+      </picture>
+      <ul>
+        <li>Single sign-on</li>
+        <li>Custom roles & permissions</li>
+      </ul>
+    </div>
+    <div class="solution-card">
+      <h3>Effortless <br>onboarding
+      </h3>
+      <picture>
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png">
+        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png"
+          alt="Workstatus" width="263" height="140">
+      </picture>
+      <ul>
+        <li>Concierge setup</li>
+        <li>Account provisioning</li>
+      </ul>
+    </div>
+    <div class="solution-card">
+      <h3>Elevate your<br> workflow
+      </h3>
+      <picture>
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png">
+        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png"
+          alt="Workstatus" width="263" height="140">
+      </picture>
+      <ul>
+        <li>Advanced reporting
+        </li>
+        <li>Background timer
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="button-common margin-t-80">
+    <div class="cmn-democta">
+      <div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
+        <span class="nccr">No credit card required</span>
+      </div>
+      <span class="devide">OR</span>
+      <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">Start Free Trial</a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+ <section class="work-culture padding-t-120 padding-b-120">
+<div class="container">
+  <div class="top-section text-center">
+    <h6><span class="bg-purple">BOOST PROFITABILITY</span></h6>
+    <h2>Gain Complete Transparency With Real-Time Data</h2>
+    <p>Monitor and manage each employee’s time on tasks and projects efficiently to improve overall team performance and ROI-</p>
+  </div>
+</div>
+<div class="feature-loop">
+  <div class="container">
+    <div class="feature-row">
+      <div class="column-left">
+        <div class="text-column">
+          <h3>Performance Driven Workforce</h3>
+          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
         </div>
-        <div class="data-flow">
-          <div class="playsc" onclick="return callinVideo(this);">
-          <span class="playicon">Play</span>
+        <div class="text-column">
+          <h3>Technology Driven Workplace</h3>
+          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
+        </div>
+        <div class="text-column">
+          <h3>Optimized Processes-Maximized Profits</h3>
+          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
+        </div>
+      </div>
+      <div class="column-right">
+        <picture>
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/feature-home.png" alt="Workstatus" width="612" height="505">
+        </picture>
+      </div>
+    </div>
+    <?php echo _getDemoCTA("button-common margin-t-50", false); ?>     
+  </div>
+</div>
+</section> 
+<section class="feature-scroller">
+<div class="container">
+  <div class="feature-wrap bg-light padding-t-120 padding-b-120">
+    <div class="left-panel">
+      <div class="top-section">
+        <h6><span class="bg-purple">GET MORE OUT OF YOUR PROJECTS</span></h6>
+        <h2>Leaks & Distractions, 
+          Not Productivity
+        </h2>
+        <p>Get access to smart insights to streamline your workflow, enhance employees’ performance, manage budgets, and ensure on-time deliveries.</p>
+        <div class="button-common margin-t-50">
+          <div class="cmn-democta">
+            <div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
+            <span class="devide">OR</span>
+            <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">Start Free Trial</a>
+            </div>
           </div>
-          <iframe id="dflow-iframe" class="dflow-iframe" data-src="https://www.youtube.com/watch?v=KoU_OvfX4As" style="display:none;"></iframe>
-          <picture id="dflow-picture">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/dflow-image.svg" 
-          alt="Data Flow" width="1380" height="754">
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="content-box">
+        <div class="img-sec">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
           </picture>
         </div>
+        <div class="text-box">
+          <h3>Actionable Time Data</h3>
+          <p>Track time spent by your employees down to the minute and get real-time data.</p>
+          <ul>
+            <li>Precise time records without error</li>
+            <li>Dispute-free and timely billing</li>
+            <li>Precise time records </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-box">
+        <div class="img-sec">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+          </picture>
+        </div>
+        <div class="text-box">
+          <h3>Actionable Time Data</h3>
+          <p>Track time spent by your employees down to the minute and get real-time data.</p>
+          <ul>
+            <li>Precise time records without error</li>
+            <li>Dispute-free and timely billing</li>
+            <li>Precise time records </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-box">
+        <div class="img-sec">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+          </picture>
+        </div>
+        <div class="text-box">
+          <h3>Actionable Time Data</h3>
+          <p>Track time spent by your employees down to the minute and get real-time data.</p>
+          <ul>
+            <li>Precise time records without error</li>
+            <li>Dispute-free and timely billing</li>
+            <li>Precise time records </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-box">
+        <div class="img-sec">
+          <picture>
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+          </picture>
+        </div>
+        <div class="text-box">
+          <h3>Actionable Time Data</h3>
+          <p>Track time spent by your employees down to the minute and get real-time data.</p>
+          <ul>
+            <li>Precise time records without error</li>
+            <li>Dispute-free and timely billing</li>
+            <li>Precise time records </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </section>
-  <?php 
-  endif;  
-  ?>
-  
-  <?php 
-    $whyWS = get_field('why-ws');
-    if( isset( $whyWS['is_enabled'] ) && ( $whyWS['is_enabled'] == "yes" ) ) :
-    $options = 	$whyWS['services'];
-    ?>
-  <section class="why-workstatus bglight">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $whyWS['top-heading']; ?></span></h6>
-        <?php echo $whyWS['content']; ?>
-      </div>
-      <div class="feature-tabs">
-        <?php if( $options ) : ?>
-        <div class="tab-row">
-          <nav id="tabs">
-            <ul>
-              <?php 
-                $wy = 0;
-                foreach( $options as $row ){ $wy++;
-                $icon = ( $row['icon'] ) ? '<img class="icon" loading="lazy" src="'.$row['icon']['url'].'" alt="Icon" 
-                width="'.$row['icon']['width'].'" height="'.$row['icon']['height'].'">' : '';	
-                $isActive = ( $wy === 1 ) ? 'active' : '';
-                echo '<li class="'.$isActive.'"><a href="#tab'.$wy.'">'.$icon.$row['title'].'</a></li>';
-                }
-                ?>    
-            </ul>
-            <a href="<?php echo site_url('/use-cases'); ?>" class="is-arrow">Explore all Use Cases</a>
-          </nav>
-          <div id="tab-contents">
-            <?php 
-              $wy = 0;
-              foreach( $options as $row ){ 
-              $wy++;
-              $isActive = ( $wy === 1 ) ? 'active' : '';
-              ?>	
-            <div id="tab<?php echo $wy; ?>" class="tab-contents <?php echo $isActive; ?>">
-              <div class="dis-flex">
-                <div class="content-box">
-                  <?php 
-                    echo $row['content']; 
-                    if( isset( $row['link'] ) && !empty($row['link']) ){
-                    	echo '<a href="'.vc_siteurl($row['link']).'" class="is-arrow">Know More</a>';
-                    }
-                    if( $row['image'] ){
-                    	echo pxlGetPtag($row['image']);
-                    }
-                    ?>
-                </div>
-              </div>
-            </div>
-            <?php } ?>  
-          </div>
-        </div>
-        <?php endif; ?>
-        <?php if( geoCTAcheck() === true ) : ?>
-        <div class="ctasec mt100">
-          <div>
-            <a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
-          </div>
-          <span class="devide">OR</span>
-          <div>  
-            <a data-href="<?php echo $RegLink; ?>" href="javascript:void(0);" class="ctbtn nobg"  onclick="return get_ws_signupform(this);">Start Free Trial</a>
-            <span class="nccr">No credit card required</span>
-          </div>
-        </div>
-        <?php endif; ?>
-      </div>
+  </div>
+</div>
+</section>
+<?php 
+$wsIndustry = get_field("ws-industries");
+if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
+$sec_content = $wsIndustry['content'];
+$sec_content .= '<a href="'.$wsIndustry['cta-link'].'" class="is-arrow">'.$wsIndustry['cta-title'].'</a>';
+$elmImage = '<picture class="card-img">
+    <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+    <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png">
+    <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/dashboard-img.png" alt="Workstatus" width="404" height="217">
+  </picture>';
+if( isset($wsIndustry['image']) && !empty( $wsIndustry['image'] ) ){
+$elmImage = pxlGetPtag( $wsIndustry['image'], "WS Industries", "card-img" );
+}
+get_template_part('common/cmn', 'industries', ['elm-image' => $elmImage, 'elm-content' => $sec_content ]);  
+}
+?>
+<?php  
+//get_template_part('common/ws', 'pricing');  
+get_template_part('common/pricing', 'v4.0', ['elm-class' => "padding-t-120 bg-light padding-b-120"]);
+?>
+<?php  
+$faq = get_field('faq');    
+if( isset($faq['is_enabled']) && ($faq['is_enabled'] === "yes") ) : 
+?>
+<section class="faqsRow wfull for-heading-center">
+  <div class="container">
+    <div class="top-section">
+      <h6><span class="bg-purple"><?php echo $faq['heading']; ?></span></h6>
+      <h2><?php echo $faq['sub_heading']; ?></h2>
     </div>
-  </section>
-  <?php endif; ?>
-  <?php 
-    $features = get_field('features-col');
-    if( isset( $features['is_enabled'] ) &&  $features['is_enabled'] == "yes" ) :
-    ?>
-  <section class="middle-section">
-    <?php 
-      $ftSections = $features['ft-sections'];
-      if( $ftSections ) {
-      $randIndx = [0,20,40,60,80,90];
-      $ft = 0;
-      //echo '<pre>'; print_r($ftSections); die;
-      foreach( $ftSections as $section ) :
-      $ft++;
-      ?>	
-    <div class="item">
-      <div class="container">
-        <div class="top-section">
-          <h6><span class="bg-purple"><?php echo $section['top-heading']; ?></span></h6>
-          <?php echo $section['top-content']; ?>
-        </div>
-        <div class="feature-section-col">
-          <div class="<?php //echo ($ft > 1) ? 'mt80' : ''; ?>" id="active_Current_Tabs<?php echo $ft ?>">
-            <div class="flex_row">
-              <div class="column-left">
-                <?php 
-                  $iRow = $randIndx[$ft];
-                  foreach( $section['in-feature'] as $row ){
-                    $image    	= $row['image'];
-                    $active 	= ( $iRow == $randIndx[$ft] ) ? "active" : "";
-                    $icon 		= '';
-                    if( $row['icon'] ){
-                  $icon = '<i><img loading="lazy" src="'.$row['icon']['url'].'" alt="icon" width="'.$row['icon']['width'].'" height="'.$row['icon']['height'].'"></i>';
-                  }
-                    ?>
-                <div class="all-content">
-                  <div class="text-column <?php echo $active; ?> <?php echo (strpos($row['content'], '<ul') !== false) ? ' listing ' : ''; ?>" 
-                    id="t<?php echo $iRow; ?>" data-section="active_Current_Tabs<?php echo $ft ?>">
-                    <h3><?php echo $icon.$row['title'];  ?></h3>
-                    <?php echo $row['content'];?>
-                  </div>
-                  <div class="mob-image">
-                    <?php 
-                      if( $image ){
-                      echo pxlGetPtag( $image );                      
-                      } ?>
-                  </div>
-                </div>
-                <?php 
-                  $iRow++;
-                  } 
-                  ?>
-              </div>
-              <?php 
-                if( $section['in-feature'] ){
-                  echo '<div class="column-right">';
-                  $iRow = $randIndx[$ft];
-                  foreach( $section['in-feature'] as $row ){ 
-                    $active = ( $iRow == $randIndx[$ft] ) ? "active" : "";
-                    if( $row['image'] ){
-                    $image  = $row['image'];
-                    echo pxlGetPtag( $image, $image['title'], "page ".$active, "p".$iRow );                    
-                    }
-                    $iRow++;
-                  }
-                  echo '</div>';  
-                } 
-                ?>
-            </div>
-          </div>
-        </div>
-        <?php if( geoCTAcheck() === true ) : ?>
-        <div class="ctasec mt100"><?php echo wsDemoCta(); ?></div>
-        <?php endif; ?>
-      </div>
-    </div>
-    <?php 
-      endforeach; 
-      }
-      ?>
-  </section>
-  <?php endif; ?>
-  <?php 
-    $wsChoise = get_field('ws-choice');
-    if( isset( $wsChoise['is_enabled'] ) && $wsChoise['is_enabled'] == "yes" ) :
-    ?>
-  <section class="management-software bglight">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $wsChoise['top-heading']; ?></span></h6>
-        <?php echo $wsChoise['content']; ?>
-      </div>
-      <div class="flex_row align-center">
-        <div class="column-left">
+    <div class="flex_row">
+      <div itemscope itemtype="https://schema.org/FAQPage">
+        <div class="column">
           <?php 
-            if( $wsChoise['choises'] ){
-            	echo '<ul>';
-            	foreach( $wsChoise['choises'] as $row ){
-            	$icon = ($row['icon']) ? '<picture><img loading="lazy" src="'.$row['icon']['url'].'" alt="'.$row['title'].'" width="'.$row['icon']['width'].'" height="'.$row['icon']['height'].'"></picture>' : '';
-            		echo '<li><a href="'.vc_siteurl($row['link']).'">'.$icon.$row['title'].'</a></li>';
-            	}
-            	echo '</ul>';
-            }
+            if( $faq['question_answer_repeater'] ){  $i = 1;
+            foreach( $faq['question_answer_repeater'] as $row ) {
+            $active = ($i<=3) ? "open" : "";
             ?>
-        </div>
-        <div class="column-right">
-          <?php 
-            if( $wsChoise['image'] ){
-            echo pxlGetPtag($wsChoise['image']);
-            }
-            ?>        
-        </div>
-      </div>
-      <?php if( geoCTAcheck() === true ) : ?>
-      <div class="ctasec mt100"><?php echo wsDemoCta(); ?></div>
-      <?php endif; ?>
-    </div>
-  </section>
-  <?php endif; ?>
-  <?php 
-    $wsSolutions = get_field('ws-solutions');
-    if( isset( $wsSolutions['is_enabled'] ) && $wsSolutions['is_enabled'] == "yes" ) :
-    ?>
-  <section class="trackEm">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $wsSolutions['top-heading']; ?></span></h6>
-        <?php echo $wsSolutions['content']; ?>
-      </div>
-      <div class="trackRow align-center">
-        <div class="trackImg">
-          <?php 
-            if( $wsSolutions['image'] ){
-            echo pxlGetPtag($wsSolutions['image']);
-            }
-            ?>        
-        </div>
-        <div class="trackContent">
-          <?php 
-            if( $wsSolutions['solutions'] ){
-            foreach( $wsSolutions['solutions'] as $row ){
-            	$link = ($row['link']) ? '<a class="is-arrow" href="'.vc_siteurl($row['link']).'">Know More</a>' : '';
-            	echo '<div class="row">'.$row['content'].$link.'</div>';
-            }
-            }
-            ?>
-        </div>
-      </div>
-    </div>
-  </section>
-  <?php endif; ?>
-  <?php  
-  //get_template_part('common/ws', 'pricing');  
-  get_template_part('common/pricing', 'v4.0', ['elm-class' => "padding-t-120 bg-light padding-b-120"]);
-  ?>
-  <?php  
-  $faq = get_field('faq');    
-  if( isset($faq['is_enabled']) && ($faq['is_enabled'] === "yes") ) : 
-  ?>
-  <section class="faqsRow wfull for-heading-center">
-    <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $faq['heading']; ?></span></h6>
-        <h2><?php echo $faq['sub_heading']; ?></h2>
-      </div>
-      <div class="flex_row">
-        <div itemscope itemtype="https://schema.org/FAQPage">
-          <div class="column">
-            <?php 
-              if( $faq['question_answer_repeater'] ){  $i = 1;
-              foreach( $faq['question_answer_repeater'] as $row ) {
-              $active = ($i<=3) ? "open" : "";
-              ?>
-            <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
-              itemtype="https://schema.org/Question">
-              <h3 itemprop="name"><?php echo $row['question'];?>
-              </h3>
-              <div class="faq-accordion-content">
-                <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                  <div itemprop="text"><?php echo $row['answer'];?></div>
-                </div>
+          <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
+            itemtype="https://schema.org/Question">
+            <h3 itemprop="name"><?php echo $row['question'];?>
+            </h3>
+            <div class="faq-accordion-content">
+              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div itemprop="text"><?php echo $row['answer'];?></div>
               </div>
             </div>
-            <?php $i++; } } ?>
           </div>
+          <?php $i++; } } ?>
         </div>
       </div>
     </div>
-  </section>
-  <?php endif; ?>
-  <?php get_template_part('common/blog', '', ['elm-class' => 'margin-b-120 margin-t-120']); ?>
-  <?php get_template_part('common/cmn', 'testimonial'); ?>
-  <?php get_template_part('common/cmn', 'globalrating'); ?>
-  <?php get_template_part('common/cmn', 'journey'); ?>
+  </div>
+</section>
+<?php endif; ?>
+<?php //get_template_part('common/blog', '', ['elm-class' => 'margin-b-120 margin-t-120']); ?>
+<?php get_template_part('common/cmn', 'testimonial'); ?>
+<?php get_template_part('common/cmn', 'globalrating'); ?>
+<?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>

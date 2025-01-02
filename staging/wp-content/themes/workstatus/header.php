@@ -153,6 +153,7 @@
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 100%;margin: 15px 0 0;}
       }
       #inv-price-fltr .country-select{display:none!important;}
+      
       .header-two .header-item-right .menu ul li .menu-mega{top:135%;}
       .client-img-section .why-ws .right-box .why-left .plateform{min-height:290px;}
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
