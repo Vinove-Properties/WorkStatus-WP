@@ -124,9 +124,13 @@
                 </span>
                 Project & Task Management</a>
               </li>
-              <li><a href="#tab05"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
-                </span>
-                Reporting & Analytics</a>
+              <li>
+                <a href="#tab02">
+                <span class="icon">
+                <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" 
+                  width="16" height="18">
+                <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
+                </span>Reporting & Analytics</a>
               </li>
             </ul>
           </nav>
