@@ -121,6 +121,10 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
       </span>
       Attendance Tracking</a>
     </li>
+    <li><a href="#tab05"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
+      </span>
+      Reporting & Analytics</a>
+    </li>
   </ul>
   </nav>
   <div id="tab-contents" class="bcontents">
@@ -164,6 +168,17 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
         <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.webp">
           <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png">
           <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png" alt="Tab Image" width="724" height="646">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div id="tab05" class="tab-contents">
+    <div class="dis-flex">
+      <div class="content-box">
+        <picture>
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png" alt="Tab Image" width="724" height="646">
         </picture>
       </div>
     </div>
