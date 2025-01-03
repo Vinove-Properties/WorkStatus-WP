@@ -1134,7 +1134,6 @@ function _getComparePricing( $usd, $inr, $pricing = true, $link = "#" ){
 	}
 }
 
-
 function update_image_metadata_to_webp_correctly(){
     set_time_limit(0);
     global $wpdb;
@@ -1164,8 +1163,8 @@ function update_image_metadata_to_webp_correctly(){
     echo "All attachment metadata updated to use WebP paths!";
 }
 
-// add_action('init', function(){
-// 	if( isset( $_GET['generate_webpmeta'] ) && ($_GET['generate_webpmeta'] == "bingooooo") ){
-// 	update_image_metadata_to_webp_correctly(); die;		
-// 	}
-// });
+//add_action('init', function(){
+//if( isset( $_GET['generate_webpmeta'] ) && ($_GET['generate_webpmeta'] == "bingooooo") ){
+//update_image_metadata_to_webp_correctly(); die;
+//}
+//});

@@ -161,20 +161,29 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             <ul>
               <li>
                 <picture class="awimg">
-                  <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+                <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
                 </picture>
-                <a class="move" href="#"></a>
+                <a class="move" href="javascript:void(0);"></a>
                 <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-                <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+                <p>Workstatus is an amazing tool to help me keep track of what my team is doing. It's very easy, gives powerful insights on projects.</p>
               </li>
               <li>
                 <picture class="awimg">
-                  <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+                <img src="<?php bloginfo('template_url'); ?>/dev-images/Product-Hunt.svg" alt="Product Hunt" width="138" height="40">
                 </picture>
-                <a class="move" href="#"></a>
+                <a class="move" href="javascript:void(0);"></a>
                 <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-                <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+                <p>WorkStatus has been a game-changer for our team's productivity. Its real-time tracking features have brought transparency.</p>
               </li>
+              <li>
+                <picture class="awimg">
+                <img src="<?php bloginfo('template_url'); ?>/dev-images/SaasHub.svg" alt="Product Hunt" width="138" height="40">
+                </picture>
+                <a class="move" href="javascript:void(0);"></a>
+                <div class="star-rt">4.8 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                <p>We are able to time track all our team members with screenshots and activity URLs, Task management as well as Project reports.</p>
+              </li>
+
             </ul>
           </div>
         </div>

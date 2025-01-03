@@ -177,7 +177,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
 
   <?php 
   $whyUs = get_field('why-ws');
-  if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):
+  if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):  
   ?>
   <section class="client-img-section padding-t-120 padding-b-120">
   <div class="container">
@@ -197,7 +197,8 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <li>
       <span class="aw-icon">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" 
+          width="27" height="28">
         </picture>
       </span>
       <span class="star"></span>
@@ -205,7 +206,8 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <li>
       <span class="aw-icon">
         <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" 
+          width="78" height="18">
         </picture>
       </span>
       <span class="star"></span>
@@ -213,7 +215,8 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <li>
       <span class="aw-icon">
         <picture>
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
+        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" 
+        width="40" height="34">
         </picture>
       </span>
       <span class="star"></span>
@@ -228,20 +231,28 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="client-stack award-animate-slide-to-left hover:pause">
       <ul>
         <li>
-          <picture class="awimg">
-            <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
-          </picture>
-          <a class="move" href="#"></a>
-          <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-          <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+        <picture class="awimg">
+        <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+        </picture>
+        <a class="move" href="#"></a>
+        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+        <p>I am so glad I found Workstatus. It has helped me become more productive, track my time.</p>
         </li>
         <li>
-          <picture class="awimg">
-            <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
-          </picture>
-          <a class="move" href="#"></a>
-          <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
-          <p>Invoicera is a lifesaver! I always know who's paid and who owes me. It keeps my finances organized, saving me time and stress, especially at tax time.</p>
+        <picture class="awimg">
+        <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+        </picture>
+        <a class="move" href="#"></a>
+        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+        <p>WorkStatus has been a game-changer for our team's productivity. Its real-time tracking features have brought transparency</p>
+        </li>
+        <li>
+        <picture class="awimg">
+        <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
+        </picture>
+        <a class="move" href="#"></a>
+        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+        <p>We are able to time track all our team members with screenshots and activity URLs, Task management as well as Project reports.</p>
         </li>
       </ul>
     </div>
@@ -607,19 +618,18 @@ if( isset($faq['is_enabled']) && ($faq['is_enabled'] === "yes") ) :
       <div itemscope itemtype="https://schema.org/FAQPage">
         <div class="column">
           <?php 
-            if( $faq['question_answer_repeater'] ){  $i = 1;
-            foreach( $faq['question_answer_repeater'] as $row ) {
-            $active = ($i<=3) ? "open" : "";
-            ?>
+          if( $faq['question_answer_repeater'] ){  $i = 1;
+          foreach( $faq['question_answer_repeater'] as $row ) {
+          $active = ($i<=3) ? "open" : "";
+          ?>
           <div class="faq-accordion-item-outer <?php echo $active; ?>" itemscope itemprop="mainEntity"
-            itemtype="https://schema.org/Question">
-            <h3 itemprop="name"><?php echo $row['question'];?>
-            </h3>
-            <div class="faq-accordion-content">
-              <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <div itemprop="text"><?php echo $row['answer'];?></div>
-              </div>
+          itemtype="https://schema.org/Question">
+          <h3 itemprop="name"><?php echo $row['question'];?></h3>
+          <div class="faq-accordion-content">
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+              <div itemprop="text"><?php echo $row['answer'];?></div>
             </div>
+          </div>
           </div>
           <?php $i++; } } ?>
         </div>
