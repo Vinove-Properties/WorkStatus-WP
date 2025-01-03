@@ -504,7 +504,7 @@
           <div class="content-box">
             <div class="img-sec">
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-01.webp" alt="Workstatus" width="418" height="223">
               </picture>
             </div>
             <div class="text-box">
@@ -520,7 +520,7 @@
           <div class="content-box">
             <div class="img-sec">
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-02.webp" alt="Workstatus" width="418" height="223">
               </picture>
             </div>
             <div class="text-box">
@@ -536,7 +536,7 @@
           <div class="content-box">
             <div class="img-sec">
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-01.webp" alt="Workstatus" width="418" height="223">
               </picture>
             </div>
             <div class="text-box">
@@ -552,7 +552,7 @@
           <div class="content-box">
             <div class="img-sec">
               <picture>
-                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-image01.png" alt="Workstatus" width="418" height="223">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-02.webp" alt="Workstatus" width="418" height="223">
               </picture>
             </div>
             <div class="text-box">
