@@ -587,16 +587,16 @@
     }
     
     //get_template_part('common/ws', 'pricing');  
-    get_template_part('common/pricing', 'v4.0', ['elm-class' => "margin-b-120 bg-light padding-b-120"]);
+    get_template_part('common/pricing', 'v4.0', ['elm-class' => "bg-light padding-b-120"]);
     ?>
   <?php  
     $faq = get_field('faq');    
     if( isset($faq['is_enabled']) && ($faq['is_enabled'] === "yes") ) : 
     ?>
-  <section class="faqsRow wfull for-heading-center">
+  <section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
     <div class="container">
-      <div class="top-section">
-        <h6><span class="bg-purple"><?php echo $faq['heading']; ?></span></h6>
+    <div class="top-section text-center">
+    <h6><span class="bg-purple"><?php echo $faq['heading']; ?></span></h6>
         <h2><?php echo $faq['sub_heading']; ?></h2>
       </div>
       <div class="flex_row">
