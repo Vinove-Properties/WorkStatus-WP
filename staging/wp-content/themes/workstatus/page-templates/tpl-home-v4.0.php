@@ -436,8 +436,36 @@ if( isset($profBlock['required']) && ($profBlock['required'] == "yes") ) :
   </div>
 </div>
 </section>
-<?php endif; ?> 
+<?php endif; 
 
+$sicBlock = get_field('sic-block');
+if( isset( $sicBlock['required'] ) && ($sicBlock['required'] == "yes") ) :
+
+$topHeading = '';
+if( isset( $sicBlock['heading'] ) && !empty($sicBlock['heading']) ){
+$topHeading = '<h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>';
+}
+echo '<section class="feature-scroller"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
+echo '<div class="left-panel">
+      <div class="top-section">            
+        '.$topHeading.$sicBlock['sub_heading'].'
+        '._getDemoCTA('button-common margin-t-50', false).'
+      </div>
+      </div>';
+
+echo '<div class="right-panel">';
+if( $sicBlock['block'] ){
+foreach( $sicBlock['block'] as $row ){
+    echo '<div class="content-box">
+    <div class="img-sec">'.pxlGetPtag($row['img']).'</div>
+    <div class="text-box">'.$row['content'].'</div>
+    </div>';
+  }  
+}
+echo '</div><!--//.right-panel-->';
+echo '</div></div></section>';  
+endif; 
+?> 
 <section class="feature-scroller">
 <div class="container">
   <div class="feature-wrap bg-light padding-t-120 padding-b-120">
@@ -519,6 +547,7 @@ if( isset($profBlock['required']) && ($profBlock['required'] == "yes") ) :
 </div>
 </section>
 <?php 
+
 $wsIndustry = get_field("ws-industries");
 if( isset( $wsIndustry['required'] ) && ($wsIndustry['required'] == "yes") ){
   $sec_content = $wsIndustry['content'];
