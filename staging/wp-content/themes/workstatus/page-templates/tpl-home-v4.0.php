@@ -90,89 +90,111 @@
     if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     ?>
   <section class="business-tab bg-light padding-t-120 padding-b-120">
-        <div class="container">
-          <div class="top-section">
-            <h6><span class="bg-purple">Data Driving Results</span></h6>
-            <h2>Strategic Decisions with Data-Driven Insights</h2>
-            <p>Unlock valuable insights with detailed dashboards, productivity reports, and location analytics</p>
-          </div>
-          <div class="feature-tabs">
-            <div class="tab-row">
-              <nav id="tabs" class="tab-nav">
-                <ul>
-                  <li class="active"><a href="#tab01">
-                    <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                    </span>
-                    Time Tracking</a>
-                  </li>
-                  <li><a href="#tab02">  <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                    </span>
-                    Productivity Management</a>
-                  </li>
-                  <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                    </span>
-                    Project & Task Management</a>
-                  </li>
-                  <li><a href="#tab04"> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                    </span>
-                    Attendance Tracking</a>
-                  </li>
-                  <li><a href="#tab05"> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                    </span>
-                    Attendance Tracking</a>
-                  </li>
-                </ul>
-              </nav>
-              <div id="tab-contents" class="bcontents">
-                <div id="tab01" class="tab-contents active">
-                  <div class="dis-flex">
-                    <div class="content-box">
-                      <picture>
-                        <source type="image/webp" srcset="./assests/images/data-driven.png">
-                        <source type="image/png" srcset="./assests/images/data-driven.png">
-                        <img loading="lazy" src="./assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-                      </picture>
-                    </div>
-                  </div>
+    <div class="container">
+      <div class="top-section">
+        <?php 
+          echo (isset($dataDrive['heading']) && !empty($dataDrive['heading'])) ? '<h6><span class="bg-purple">'.$dataDrive['heading'].'</span></h6>' : '';
+          echo $dataDrive['sub_heading'];
+          ?>
+      </div>
+      <div class="feature-tabs">
+        <div class="tab-row">
+          <nav id="tabs" class="tab-nav">
+            <ul>
+              <li class="active">
+                <a href="#tab01">
+                <span class="icon">
+                <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
+                <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+                </span>Time Tracking</a>
+              </li>
+              <li>
+                <a href="#tab02">
+                <span class="icon">
+                <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" 
+                  width="16" height="18">
+                <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
+                </span>Productivity Management</a>
+              </li>
+              <li><a href="#tab03"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
+                </span>
+                Attendance Tracking</a>
+              </li>
+              <li><a href="#tab04"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+                </span>
+                Project & Task Management</a>
+              </li>
+              <li>
+                <a href="#tab05">
+                <span class="icon">
+                <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" 
+                  width="16" height="18">
+                <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
+                </span>Reporting & Analytics</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="tab-contents" class="bcontents">
+            <div id="tab01" class="tab-contents active">
+              <div class="dis-flex">
+                <div class="content-box">
+                  <picture>
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.png" alt="Tab Image" width="724" height="646">
+                  </picture>
                 </div>
-                <div id="tab02" class="tab-contents">
-                  <div class="dis-flex">
-                    <div class="content-box">
-                      <picture>
-                        <source type="image/webp" srcset="./assests/images/data-driven.png">
-                        <source type="image/png" srcset="./assests/images/data-driven.png">
-                        <img loading="lazy" src="./assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-                      </picture>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div id="tab02" class="tab-contents">
+              <div class="dis-flex">
+                <div class="content-box">
+                  <picture>
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.png" alt="Tab Image" width="724" height="646">
+                  </picture>
                 </div>
-                <div id="tab03" class="tab-contents">
-                  <div class="dis-flex">
-                    <div class="content-box">
-                      <picture>
-                        <source type="image/webp" srcset="./assests/images/data-driven.png">
-                        <source type="image/png" srcset="./assests/images/data-driven.png">
-                        <img loading="lazy" src="./assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-                      </picture>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div id="tab03" class="tab-contents">
+              <div class="dis-flex">
+                <div class="content-box">
+                  <picture>
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.png" alt="Tab Image" width="724" height="646">
+                  </picture>
                 </div>
-                <div id="tab04" class="tab-contents">
-                  <div class="dis-flex">
-                    <div class="content-box">
-                      <picture>
-                        <source type="image/webp" srcset="./assests/images/data-driven.png">
-                        <source type="image/png" srcset="./assests/images/data-driven.png">
-                        <img loading="lazy" src="./assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
-                      </picture>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div id="tab04" class="tab-contents">
+              <div class="dis-flex">
+                <div class="content-box">
+                  <picture>
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png" alt="Tab Image" width="724" height="646">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div id="tab05" class="tab-contents">
+              <div class="dis-flex">
+                <div class="content-box">
+                  <picture>
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png" alt="Tab Image" width="724" height="646">
+                  </picture>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
   <?php endif; ?>
   <?php 
     $whyUs = get_field('why-ws');
