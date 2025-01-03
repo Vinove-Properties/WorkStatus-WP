@@ -7710,6 +7710,7 @@ li.iti__country {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
           gap: 12px;
           margin: 30px 0 0; }
           .top-rated .award-grid .award-column .award-logo .award-row .award-col {
