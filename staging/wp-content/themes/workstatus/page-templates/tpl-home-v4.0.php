@@ -125,7 +125,7 @@
                 Project & Task Management</a>
               </li>
               <li>
-                <a href="#tab02">
+                <a href="#tab05">
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" 
                   width="16" height="18">
