@@ -8543,6 +8543,13 @@ li.iti__country {
 .banner-section .popup-wrapper {
   padding-top: 60px; }
 
+.bg-blue .top-section
+h6 {
+  color: #fff; }
+  .bg-blue .top-section
+  h6 .bg-purple {
+    background: #8C79FD; }
+
 /*Popup Section End*/
 /*Popup Section End*/
 /*banner end*/
