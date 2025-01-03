@@ -2395,7 +2395,7 @@ if (document.getElementById("featured-slide")) {
             // Tablet (screen width > 767px and <= 1024px)
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
               slidesToScroll: 1,
             },
           },
@@ -2408,7 +2408,7 @@ if (document.getElementById("featured-slide")) {
         if (window.innerWidth <= 767) {
           totalVisibleSlides = 1;
         } else if (window.innerWidth <= 1024) {
-          totalVisibleSlides = 3;
+          totalVisibleSlides = 4;
         } else {
           totalVisibleSlides = 4;
         }
