@@ -5604,7 +5604,7 @@ li.iti__country {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin-top: -27%;
+    margin-top: -22%;
     padding-left: 100px; }
     .user-persona .user-persona__grid .persona-card {
       background: #fff;
@@ -5870,7 +5870,7 @@ li.iti__country {
           .feature-scroller .feature-wrap .right-panel .content-box .text-box.listing h3:before {
             display: none; }
         .feature-scroller .feature-wrap .right-panel .content-box:nth-child(2n) {
-          background: #f76918; }
+          background: #00234B; }
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
