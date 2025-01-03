@@ -32,7 +32,7 @@ global $ws_ctas, $RegLink, $LogLink;
                     </div>
                   </div>
                 </div>
-                <button style="background-image: url(<?php bloginfo('template_url'); ?>/version-2.0/assests/images/homepage-poster.svg)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
+                <button style="background-image: url(<?php bloginfo('template_url'); ?>/version-2.0/assests/images/homepage-poster2.png)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
               </div>
             </div>
           </div>
