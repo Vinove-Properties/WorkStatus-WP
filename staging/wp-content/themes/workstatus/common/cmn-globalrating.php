@@ -93,6 +93,7 @@
               <i class="star"></i>
             </div>
           </div>
+          <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow">Explore More</a>
         </div>
       </div>
     </div>
