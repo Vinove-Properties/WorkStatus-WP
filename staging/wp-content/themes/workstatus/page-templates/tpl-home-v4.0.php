@@ -364,11 +364,11 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
   $link = (isset($row['link']) && !empty($row['link'])) ? '<a href="'.ws_siteurl($row['link']).'" class="is-arrow">Learn More</a>' : 
   '';
   echo '<div class="persona-card">
-      '.pxlGetPtag( $row['icon'] ).'
-      <h3>'.$row['title'].'</h3>
-      <p>'.$row['text'].'</p>
-      '.$link.'
-    </div>';
+  '.pxlGetPtag( $row['icon'] ).'
+  <h3>'.$row['title'].'</h3>
+  <p>'.$row['text'].'</p>
+  '.$link.'
+  </div>';
   }    
   echo '</div>';  
   }
@@ -376,107 +376,68 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
   </div>
   </section>
   <?php endif; ?>
+
+<?php 
+$ewBlocks = get_field('ew-block'); 
+if( isset($ewBlocks['required']) && ($ewBlocks['required'] == "yes") ) :
+?>    
 <section class="grade-solution bg-light padding-t-120 padding-b-120">
 <div class="container">
   <div class="top-section text-center">
-    <h6><span class="bg-purple">EMPOWERING WORKFLOW & WORKFORCE</span></h6>
-    <h2>Enterprise-Grade Solutions</h2>
-    <p>Secure infrastructure built to grow with your team.</p>
+  <?php 
+  echo (isset($ewBlocks['heading']) && !empty($ewBlocks['heading'])) ? '<h6><span class="bg-purple">'.$ewBlocks['heading'].'</span></h6>' : '';
+  echo $ewBlocks['sub_heading'];
+  ?>    
   </div>
-  <div class="solution-grid">
-    <div class="solution-card">
-      <h3>Secure access, complete control
-      </h3>
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-01.png"
-          alt="Workstatus" width="263" height="140">
-      </picture>
-      <ul>
-        <li>Single sign-on</li>
-        <li>Custom roles & permissions</li>
-      </ul>
-    </div>
-    <div class="solution-card">
-      <h3>Effortless <br>onboarding
-      </h3>
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-02.png"
-          alt="Workstatus" width="263" height="140">
-      </picture>
-      <ul>
-        <li>Concierge setup</li>
-        <li>Account provisioning</li>
-      </ul>
-    </div>
-    <div class="solution-card">
-      <h3>Elevate your<br> workflow
-      </h3>
-      <picture>
-        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png">
-        <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png">
-        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/solution-03.png"
-          alt="Workstatus" width="263" height="140">
-      </picture>
-      <ul>
-        <li>Advanced reporting
-        </li>
-        <li>Background timer
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="button-common margin-t-80">
-    <div class="cmn-democta">
-      <div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>
-        <span class="nccr">No credit card required</span>
-      </div>
-      <span class="devide">OR</span>
-      <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">Start Free Trial</a>
-      </div>
-    </div>
-  </div>
+  <?php 
+  if( $ewBlocks['sub_heading'] ){
+    echo '<div class="solution-grid">';
+    foreach( $ewBlocks['sub_heading'] as $row ){
+    echo '<div class="solution-card"><h3>'.$row['title'].'</h3>'.pxlGetPtag($row).$row['content'].'</div>';
+    }
+    echo '</div>';  
+  }
+  ?>  
+  <?php echo _getDemoCTA('button-common margin-t-80', false); ?>    
 </div>
 </section>
+<?php endif; ?>
 
- <section class="work-culture padding-t-120 padding-b-120">
+<?php 
+$profBlock = get_field('ws-profibility'); 
+if( isset($profBlock['required']) && ($profBlock['required'] == "yes") ) :
+?>
+<section class="work-culture padding-t-120 padding-b-120">
 <div class="container">
   <div class="top-section text-center">
-    <h6><span class="bg-purple">BOOST PROFITABILITY</span></h6>
-    <h2>Gain Complete Transparency With Real-Time Data</h2>
-    <p>Monitor and manage each employee’s time on tasks and projects efficiently to improve overall team performance and ROI-</p>
+  <?php 
+  echo (isset($profBlock['heading']) && !empty($profBlock['heading'])) ? '<h6><span class="bg-purple">'.$profBlock['heading'].'</span></h6>' : '';
+  echo $profBlock['sub_heading'];
+  ?>
   </div>
 </div>
 <div class="feature-loop">
   <div class="container">
     <div class="feature-row">
-      <div class="column-left">
-        <div class="text-column">
-          <h3>Performance Driven Workforce</h3>
-          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
-        </div>
-        <div class="text-column">
-          <h3>Technology Driven Workplace</h3>
-          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
-        </div>
-        <div class="text-column">
-          <h3>Optimized Processes-Maximized Profits</h3>
-          <p>Empower employees with transparent tracking systems. Understand work patterns, enhance productivity, quickly identify burnout.</p>
-        </div>
-      </div>
+      <div class="column-left"><?php echo _wraplsContent($profBlock['content']) ?></div>
       <div class="column-right">
-        <picture>
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/feature-home.png" alt="Workstatus" width="612" height="505">
-        </picture>
+        <?php 
+        if( $profBlock['thumb'] ){
+          echo pxlGetPtag( $profBlock['thumb'] );
+        }else{
+          echo '<picture>
+          <img loading="lazy" src="'.get_blogin('template_url').'/version-2.0/assests/images/feature-home.png" alt="Workstatus" width="612" height="505">
+        </picture>';
+        }
+        ?>        
       </div>
     </div>
     <?php echo _getDemoCTA("button-common margin-t-50", false); ?>
   </div>
 </div>
-</section> 
+</section>
+<?php endif; ?> 
+
 <section class="feature-scroller">
 <div class="container">
   <div class="feature-wrap bg-light padding-t-120 padding-b-120">
