@@ -7677,7 +7677,8 @@ li.iti__country {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; }
     .top-rated .award-grid .award-column {
-      background: #fff; }
+      background: #fff;
+      min-height: 525px; }
       .top-rated .award-grid .award-column .rate-desp {
         display: flex;
         flex-direction: column;
@@ -7744,25 +7745,27 @@ li.iti__country {
 @media (max-width: 767px) {
   .top-rated .award-grid {
     grid-template-columns: repeat(1, 1fr); }
-    .top-rated .award-grid .award-column .rate-desp .rate-box {
-      padding: 20px; }
-      .top-rated .award-grid .award-column .rate-desp .rate-box img {
-        margin: 0 0 10px;
-        display: block; }
-      .top-rated .award-grid .award-column .rate-desp .rate-box .is-arrow {
-        margin: 20px 0 0; }
-    .top-rated .award-grid .award-column .award-logo {
-      padding: 20px;
-      text-align: center; }
-      .top-rated .award-grid .award-column .award-logo h3 {
-        line-height: 33px; }
-      .top-rated .award-grid .award-column .award-logo .award-row {
-        flex-basis: 45%;
-        margin: 25px 0 0; }
-        .top-rated .award-grid .award-column .award-logo .award-row .award-col {
-          padding: 15px; }
-          .top-rated .award-grid .award-column .award-logo .award-row .award-col .img-wrap img {
-            margin: 0 0 10px; } }
+    .top-rated .award-grid .award-column {
+      min-height: initial; }
+      .top-rated .award-grid .award-column .rate-desp .rate-box {
+        padding: 20px; }
+        .top-rated .award-grid .award-column .rate-desp .rate-box img {
+          margin: 0 0 10px;
+          display: block; }
+        .top-rated .award-grid .award-column .rate-desp .rate-box .is-arrow {
+          margin: 20px 0 0; }
+      .top-rated .award-grid .award-column .award-logo {
+        padding: 20px;
+        text-align: center; }
+        .top-rated .award-grid .award-column .award-logo h3 {
+          line-height: 33px; }
+        .top-rated .award-grid .award-column .award-logo .award-row {
+          flex-basis: 45%;
+          margin: 25px 0 0; }
+          .top-rated .award-grid .award-column .award-logo .award-row .award-col {
+            padding: 15px; }
+            .top-rated .award-grid .award-column .award-logo .award-row .award-col .img-wrap img {
+              margin: 0 0 10px; } }
 /*Media Query Ends Here*/
 .start-journey {
   background: linear-gradient(180deg, #624de3 0%, #251686 100%);
