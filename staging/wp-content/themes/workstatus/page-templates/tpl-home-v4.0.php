@@ -117,7 +117,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
       </span>
       Attendance Tracking</a>
     </li>
-    <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+    <li><a href="#tab04"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
       </span>
       Project & Task Management</a>
     </li>
@@ -151,7 +151,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
       </div>
     </div>
   </div>
-  <div id="tab04" class="tab-contents">
+  <div id="tab03" class="tab-contents">
     <div class="dis-flex">
       <div class="content-box">
         <picture>
@@ -162,7 +162,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
       </div>
     </div>
   </div>
-  <div id="tab03" class="tab-contents">
+  <div id="tab04" class="tab-contents">
     <div class="dis-flex">
       <div class="content-box">
         <picture>
