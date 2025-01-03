@@ -6853,17 +6853,20 @@ h3 a {
   .site__footer .privacy-links {
     margin: 0 0 0 8px;
     padding: 0;
-    line-height: initial !important; }
+    line-height: initial !important;
+    font-size: 14px; }
     .site__footer .privacy-links > li {
       display: inline-block;
       margin: 0 4px;
       margin-left: 0;
       color: rgba(255, 255, 255, 0.3);
-      font-weight: normal; }
+      font-weight: normal;
+      font-size: 14px; }
       .site__footer .privacy-links > li a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.8);
-        font-weight: normal; }
+        font-weight: normal;
+        font-size: 14px; }
         .site__footer .privacy-links > li a:hover {
           text-decoration: underline;
           color: #fff; }

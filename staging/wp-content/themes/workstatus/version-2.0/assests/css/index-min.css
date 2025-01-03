@@ -8095,11 +8095,13 @@ li.iti__country {
       margin: 0 4px;
       margin-left: 0;
       color: rgba(255, 255, 255, 0.3);
-      font-weight: normal; }
+      font-weight: normal;
+      font-size: 14px; }
       .site__footer .privacy-links > li a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.8);
-        font-weight: normal; }
+        font-weight: normal;
+        font-size: 14px; }
         .site__footer .privacy-links > li a:hover {
           text-decoration: underline;
           color: #fff; }
