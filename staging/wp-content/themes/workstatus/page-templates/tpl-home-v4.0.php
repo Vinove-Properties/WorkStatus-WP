@@ -108,16 +108,16 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <li>
       <a href="#tab02">
       <span class="icon">
-        <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" 
+        <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" 
         width="16" height="18">
-        <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+        <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
       </span>Productivity Management</a>
     </li>
-    <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+    <li><a href="#tab03"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
       </span>
       Project & Task Management</a>
     </li>
-    <li><a href="#tab04"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+    <li><a href="#tab04"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
       </span>
       Attendance Tracking</a>
     </li>
@@ -128,9 +128,9 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="dis-flex">
       <div class="content-box">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-01.png" alt="Tab Image" width="724" height="646">
         </picture>
       </div>
     </div>
@@ -139,9 +139,9 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="dis-flex">
       <div class="content-box">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-02.png" alt="Tab Image" width="724" height="646">
         </picture>
       </div>
     </div>
@@ -150,9 +150,9 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="dis-flex">
       <div class="content-box">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-03.png" alt="Tab Image" width="724" height="646">
         </picture>
       </div>
     </div>
@@ -161,9 +161,9 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="dis-flex">
       <div class="content-box">
         <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/data-driven.png" alt="Tab Image" width="724" height="646">
+        <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.webp">
+          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png" alt="Tab Image" width="724" height="646">
         </picture>
       </div>
     </div>
