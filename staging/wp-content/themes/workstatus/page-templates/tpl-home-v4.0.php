@@ -328,72 +328,54 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
   </div>
   </section>
   <?php endif; ?>
-
+  
+  <?php 
+  $userPros = get_field('user_per'); 
+  if( isset($userPros['required']) && ($userPros['required'] == "yes") ) :
+  ?>
   <section class="user-persona bg-blue padding-t-120 padding-b-120">
   <div class="container">
-    <div class="user-persona__content">
-      <div class="user-persona__image">
-        <picture>
-          <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png">
-          <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/persona-img.png" alt="persona"
-            width="539" height="572">
-        </picture>
-      </div>
-      <div class="top-section text-center">
-        <h6><span class="bg-purple">LOREM IPSUM</span></h6>
-        <h2>User Persona</h2>
-        <p>Set the stage for proactive problem-solving and self-guided development with the right and timely insights.</p>
-      </div>
+  <div class="user-persona__content">
+    <div class="user-persona__image">
+      <?php 
+      if( isset($userPros['thumb']) && !empty( $userPros['thumb'] ) ){
+        echo pxlGetPtag($userPros['thumb']);
+      }else{
+        echo '<picture>
+        <source type="image/webp" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/persona-img.png">
+        <source type="image/png" srcset="'.get_bloginfo('template_url').'/version-2.0/assests/images/persona-img.png">
+        <img loading="lazy" src="'.get_bloginfo('template_url').'/version-2.0/assests/images/persona-img.png" alt="persona"
+        width="539" height="572">
+        </picture>';
+      }
+      ?>        
     </div>
-    <div class="user-persona__grid">
-      <div class="persona-card">
-        <picture>
-          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
-            width="44" height="44">
-          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
-            width="44" height="44">
-        </picture>
-        <h3>Business Owners</h3>
-        <p>Empower teams, boost productivity</p>
-        <a href="#" class="is-arrow">Learn More</a>
-      </div>
-      <div class="persona-card">
-        <picture>
-          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
-            width="44" height="44">
-          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
-            width="44" height="44">
-        </picture>
-        <h3>Business Owners</h3>
-        <p>Empower teams, boost productivity</p>
-        <a href="#" class="is-arrow">Learn More</a>
-      </div>
-      <div class="persona-card">
-        <picture>
-          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
-            width="44" height="44">
-          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
-            width="44" height="44">
-        </picture>
-        <h3>Business Owners</h3>
-        <p>Empower teams, boost productivity</p>
-        <a href="#" class="is-arrow">Learn More</a>
-      </div>
-      <div class="persona-card">
-        <picture>
-          <img class="normal" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-01.svg" alt="persona"
-            width="44" height="44">
-          <img class="hover" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/perso-02.svg" alt="persona"
-            width="44" height="44">
-        </picture>
-        <h3>Business Owners</h3>
-        <p>Empower teams, boost productivity</p>
-        <a href="#" class="is-arrow">Learn More</a>
-      </div>
+    <div class="top-section text-center">
+    <?php 
+    echo (isset($userPros['heading']) && !empty($userPros['heading'])) ? '<h6><span class="bg-purple">'.$userPros['heading'].'</span></h6>' : '';
+    echo $userPros['sub_heading'];
+    ?>
     </div>
   </div>
-</section>
+  <?php 
+  if( $userPros['cards'] ){
+  echo '<div class="user-persona__grid">';
+  foreach( $userPros['cards'] as $row ){
+  $link = (isset($row['link']) && !empty($row['link'])) ? '<a href="'.ws_siteurl($row['link']).'" class="is-arrow">Learn More</a>' : 
+  '';
+  echo '<div class="persona-card">
+      '.pxlGetPtag( $row['icon'] ).'
+      <h3>'.$row['title'].'</h3>
+      <p>'.$row['text'].'</p>
+      '.$link.'
+    </div>';
+  }    
+  echo '</div>';  
+  }
+  ?>
+  </div>
+  </section>
+  <?php endif; ?>
 <section class="grade-solution bg-light padding-t-120 padding-b-120">
 <div class="container">
   <div class="top-section text-center">
@@ -491,7 +473,7 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
         </picture>
       </div>
     </div>
-    <?php echo _getDemoCTA("button-common margin-t-50", false); ?>     
+    <?php echo _getDemoCTA("button-common margin-t-50", false); ?>
   </div>
 </div>
 </section> 
@@ -501,18 +483,9 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     <div class="left-panel">
       <div class="top-section">
         <h6><span class="bg-purple">GET MORE OUT OF YOUR PROJECTS</span></h6>
-        <h2>Leaks & Distractions, 
-          Not Productivity
-        </h2>
+        <h2>Leaks & Distractions, Not Productivity</h2>
         <p>Get access to smart insights to streamline your workflow, enhance employees’ performance, manage budgets, and ensure on-time deliveries.</p>
-        <div class="button-common margin-t-50">
-          <div class="cmn-democta">
-            <div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>
-            <span class="devide">OR</span>
-            <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">Start Free Trial</a>
-            </div>
-          </div>
-        </div>
+        <?php echo _getDemoCTA("button-common margin-t-50", false); ?>
       </div>
     </div>
     <div class="right-panel">
