@@ -121,11 +121,11 @@ if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
       </span>
       Project & Task Management</a>
     </li>
-  
     <li><a href="#tab05"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
       </span>
       Reporting & Analytics</a>
     </li>
+    
   </ul>
   </nav>
   <div id="tab-contents" class="bcontents">
