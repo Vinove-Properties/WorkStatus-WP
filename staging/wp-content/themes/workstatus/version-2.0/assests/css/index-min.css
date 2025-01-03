@@ -4915,7 +4915,8 @@ li.iti__country {
         .client-img-section .why-ws .right-box .why-right .counter .count-col h3 {
           font-size: 32px;
           line-height: 40px;
-          margin: 0 0 6px; }
+          margin: 0 0 6px;
+          font-weight: 700; }
         .client-img-section .why-ws .right-box .why-right .counter .count-col p {
           font-weight: normal;
           color: rgba(0, 35, 75, 0.8); }
