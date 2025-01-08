@@ -5859,7 +5859,7 @@ li.iti__country {
           .feature-scroller .feature-wrap .right-panel .content-box .text-box ul li:before {
             content: "";
             display: inline-block;
-            background: url(../images/list-circle-white.svg) no-repeat;
+            background: url(../images/reduce-01.svg) no-repeat;
             width: 18px;
             height: 18px;
             top: 2px;
@@ -5871,6 +5871,12 @@ li.iti__country {
             display: none; }
         .feature-scroller .feature-wrap .right-panel .content-box:nth-child(2n) {
           background: #00234B; }
+          .feature-scroller .feature-wrap .right-panel .content-box:nth-child(2n) .text-box h3:before {
+            background: url(../images/reduce-02.svg) no-repeat; }
+        .feature-scroller .feature-wrap .right-panel .content-box:nth-child(3n) .text-box h3:before {
+          background: url(../images/reduce-03.svg) no-repeat; }
+        .feature-scroller .feature-wrap .right-panel .content-box:nth-child(4n) .text-box h3:before {
+          background: url(../images/reduce-04.svg) no-repeat; }
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
