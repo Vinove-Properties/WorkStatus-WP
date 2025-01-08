@@ -5841,7 +5841,7 @@ li.iti__country {
           position: relative; }
           .feature-scroller .feature-wrap .right-panel .content-box .text-box h3:before {
             content: "";
-            background: url(../images/sc-data.svg) no-repeat;
+            background: url(../images/reduce-01.svg) no-repeat;
             width: 29px;
             height: 29px;
             background-size: 100%;
@@ -5859,7 +5859,7 @@ li.iti__country {
           .feature-scroller .feature-wrap .right-panel .content-box .text-box ul li:before {
             content: "";
             display: inline-block;
-            background: url(../images/reduce-01.svg) no-repeat;
+            background: url(../images/list-circle-white.svg) no-repeat;
             width: 18px;
             height: 18px;
             top: 2px;
