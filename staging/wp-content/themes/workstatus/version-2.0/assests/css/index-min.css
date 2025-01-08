@@ -597,7 +597,7 @@ textarea {
   .top-section {
     padding: 0 0 50px; }
     .top-section h6 {
-      font-size: 16px; }
+      font-size: 15px; }
       .top-section h6 .bg-purple {
         font-weight: 600; }
     .top-section p {
@@ -4766,7 +4766,7 @@ li.iti__country {
       .business-tab .feature-tabs .tab-nav ul li a {
         font-size: 13px;
         padding: 8px;
-        min-height: 100px; } }
+        min-height: 75px; } }
 @media (max-width: 479px) {
   .business-tab .feature-tabs .tab-nav ul li {
     flex-basis: 50%;
@@ -4774,7 +4774,7 @@ li.iti__country {
     .business-tab .feature-tabs .tab-nav ul li a {
       font-size: 13px;
       padding: 5px;
-      min-height: 100px; } }
+      min-height: 75px; } }
 .client-img-section .why-ws {
   position: relative;
   z-index: 9; }
@@ -8619,7 +8619,7 @@ h6 {
     padding-top: 0; }
 
   #myBtn {
-    top: 33%;
+    top: 38%;
     width: 80px;
     height: 80px; } }
 
