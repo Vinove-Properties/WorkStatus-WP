@@ -5218,8 +5218,8 @@ li.iti__country {
         color: #fff; }
       .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .flip-card-front .prod {
         color: rgba(255, 255, 255, 0.8); }
-    .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .card-bottom:before {
-      background: rgba(255, 255, 255, 0.3); }
+      .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .flip-card-front .card-bottom:before {
+        background: rgba(255, 255, 255, 0.3); }
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner .flip-card-front {
       background: #fff; }
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner h4 strong {
@@ -5626,9 +5626,9 @@ li.iti__country {
       .user-persona .user-persona__grid .persona-card:hover {
         transform: translateY(-5px);
         background: #05164d; }
-        .user-persona .user-persona__grid .persona-card:hover .img.normal {
+        .user-persona .user-persona__grid .persona-card:hover img.normal {
           display: none; }
-        .user-persona .user-persona__grid .persona-card:hover .img.hover {
+        .user-persona .user-persona__grid .persona-card:hover img.hover {
           display: block; }
         .user-persona .user-persona__grid .persona-card:hover h3,
         .user-persona .user-persona__grid .persona-card:hover p,
