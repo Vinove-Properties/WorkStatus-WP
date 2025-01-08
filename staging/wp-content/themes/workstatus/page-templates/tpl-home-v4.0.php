@@ -468,7 +468,7 @@
     if( isset( $sicBlock['heading'] ) && !empty($sicBlock['heading']) ){
     $topHeading = '<h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>';
     }
-    echo '<section class="feature-scroller"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
+    echo '<section class="feature-scroller margin-t-120"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
     echo '<div class="left-panel">
           <div class="top-section">            
             '.$topHeading.$sicBlock['sub_heading'].'
