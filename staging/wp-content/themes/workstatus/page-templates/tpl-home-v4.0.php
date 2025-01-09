@@ -466,7 +466,7 @@
       <?php 
         if( $ewBlocks['sub_heading'] ){
           echo '<div class="solution-grid">';
-          foreach( $ewBlocks['sub_heading'] as $row ){
+          foreach( $ewBlocks['cards'] as $row ){
           echo '<div class="solution-card"><h3>'.$row['title'].'</h3>'.pxlGetPtag($row).$row['content'].'</div>';
           }
           echo '</div>';  
