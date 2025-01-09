@@ -12,7 +12,7 @@
         <div class="flex_row">
           <div class="column column-content">
             <h1>One Platform <span class="highlight">Endless Efficiency</span></h1>
-            <p>Simplify project management, time tracking, and attendance management. Automate processes, get team insights, and enjoy a productivity boost with Workstatus - A Single, Powerful Solution.</p>
+            <p>Simplify project management, time tracking, and attendance management.</p>
           </div>
           <div class="column videoSc" id="has-yt-video">
             <div class="inner">
@@ -438,7 +438,8 @@
         $link = (isset($row['link']) && !empty($row['link'])) ? '<a href="'.ws_siteurl($row['link']).'" class="is-arrow">Learn More</a>' : 
         '';
         echo '<div class="persona-card">
-        '.pxlGetPtag( $row['icon'] ).'
+        '.pxlGetPtag( $row['icon'], $row['title'], 'normal'  ).'
+        '.pxlGetPtag( $row['icon-hover'], $row['title'], 'hover'  ).'
         <h3>'.$row['title'].'</h3>
         <p>'.$row['text'].'</p>
         '.$link.'
