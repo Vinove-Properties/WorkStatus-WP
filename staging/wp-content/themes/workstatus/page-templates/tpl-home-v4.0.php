@@ -256,7 +256,7 @@
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/Goodfirms.svg" alt="" width="130" height="29">
                         </picture>
                         <a class="move" href="#"></a>
-                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.8.svg" alt="Award" width="100" height="17"></div>
                         <p>I am so glad I found Workstatus. It has helped me become more productive, track my time.</p>
                       </li>
                       <li>
@@ -264,7 +264,7 @@
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/Product-Hunt.svg" alt="" width="130" height="29">
                         </picture>
                         <a class="move" href="#"></a>
-                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.6.svg" alt="Award" width="100" height="17"></div>
                         <p>WorkStatus has been a game-changer for our team's productivity. Its real-time tracking features have brought transparency.</p>
                       </li>
                       <li>
@@ -272,7 +272,7 @@
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/SaasHub.svg" alt="" width="130" height="29">
                         </picture>
                         <a class="move" href="#"></a>
-                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.5.svg" alt="Award" width="100" height="17"></div>
                         <p>We are able to time track all our team members with screenshots and activity URLs, Task management as well as Project reports.</p>
                       </li>
                       <li>
@@ -280,7 +280,7 @@
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sitejabber.svg" alt="" width="130" height="29">
                         </picture>
                         <a class="move" href="#"></a>
-                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.8.svg" alt="Award" width="100" height="17"></div>
                         <p>Workstatus is an amazing tool to help me keep track of what my team is doing. It's very easy, gives powerful insights  on projects.</p>
                       </li>
                       <li>
@@ -288,8 +288,40 @@
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/g2img.svg" alt="" width="130" height="29">
                         </picture>
                         <a class="move" href="#"></a>
-                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/4.6rate.svg" alt="Award" width="100" height="17"></div>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.6.svg" alt="Award" width="100" height="17"></div>
                         <p>The best thing about Workstatus is how easy it is to use. The app makes it simple for me to track the time I spend on  tasks and projects.</p>
+                      </li>
+                      <li>
+                        <picture class="awimg">
+                          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/Goodfirms.svg" alt="" width="130" height="29">
+                        </picture>
+                        <a class="move" href="#"></a>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.8.svg" alt="Award" width="100" height="17"></div>
+                        <p>I am so glad I found Workstatus. It has helped me become more productive, track my time.</p>
+                      </li>
+                      <li>
+                        <picture class="awimg">
+                          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/Product-Hunt.svg" alt="" width="130" height="29">
+                        </picture>
+                        <a class="move" href="#"></a>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.6.svg" alt="Award" width="100" height="17"></div>
+                        <p>WorkStatus has been a game-changer for our team's productivity. Its real-time tracking features have brought transparency.</p>
+                      </li>
+                      <li>
+                        <picture class="awimg">
+                          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/SaasHub.svg" alt="" width="130" height="29">
+                        </picture>
+                        <a class="move" href="#"></a>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.5.svg" alt="Award" width="100" height="17"></div>
+                        <p>We are able to time track all our team members with screenshots and activity URLs, Task management as well as Project reports.</p>
+                      </li>
+                      <li>
+                        <picture class="awimg">
+                          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sitejabber.svg" alt="" width="130" height="29">
+                        </picture>
+                        <a class="move" href="#"></a>
+                        <div class="star-rt">4.6 Excellent <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/start-4.8.svg" alt="Award" width="100" height="17"></div>
+                        <p>Workstatus is an amazing tool to help me keep track of what my team is doing. It's very easy, gives powerful insights  on projects.</p>
                       </li>
                     </ul>
                   </div>
