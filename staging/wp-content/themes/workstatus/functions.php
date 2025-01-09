@@ -696,6 +696,20 @@ function _getDemoCTA( $class = "button-common margin-t-80", $ccText = true ){
 	</div>';
 }
 
+function _getDemoCTA_BC( $class = "button-common margin-t-80", $ccText = true ){
+	global $ws_ctas, $RegLink;
+	$cta_lbl 	= (isset( $ws_ctas['cta_text']) && !empty($ws_ctas['cta_text'])) ? $ws_ctas['cta_text'] : 'Start Free Trial';
+	$ccText 	= ( $ccText === true ) ? '<span class="nccr">No credit card required</span>' : '';
+	return '<div class="'.$class.'">
+	<div class="cmn-democta">	
+	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>'.$ccText.'</div>	
+	<span class="devide">OR</span>
+	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>	
+	</div></div>
+	</div>';
+}
+
+
 function _wraplsContent($html) {
     $pattern = '/(<h3>.*?<\/h3>(?:\s*.*?)*?(?=(<h3>|$)))/is';
     $replacement = '<div class="text-column listing">$1</div>';

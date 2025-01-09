@@ -430,7 +430,7 @@
                 <p>Monitor and manage each employee's time on tasks and projects efficiently to improve.</p>
               </div>
             </div>
-            <div class="flex-2"><?php echo _getDemoCTA('button-common', true); ?></div>
+            <div class="flex-2"><?php echo _getDemoCTA_BC('button-common', true); ?></div>
           </div>
         </div>
       </section>
