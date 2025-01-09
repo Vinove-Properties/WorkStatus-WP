@@ -4623,57 +4623,59 @@ li.iti__country {
     .business-growth-section .content-wrapper .mobile-image {
       flex-basis: 35%; } }
 @media (max-width: 979px) {
-  .business-growth-section .content-wrapper .column {
-    flex-basis: 48%;
-    padding-left: 0; }
-    .business-growth-section .content-wrapper .column ul {
-      margin: 30px 0 0; }
-      .business-growth-section .content-wrapper .column ul li {
-        max-width: 100%;
-        min-height: initial;
-        margin: 0 0 15px;
-        min-height: 90px;
-        padding: 17px 15px 17px 40px;
-        border-width: 20px;
-        text-align: left; }
-        .business-growth-section .content-wrapper .column ul li:after {
-          display: none; }
-        .business-growth-section .content-wrapper .column ul li:before {
-          width: 14px;
-          height: 16px;
-          left: 15px;
-          top: 18px; }
-        .business-growth-section .content-wrapper .column ul li:nth-child(2n) {
-          margin-left: 0;
-          margin-top: 0;
+  .business-growth-section .content-wrapper {
+    align-items: top; }
+    .business-growth-section .content-wrapper .column {
+      flex-basis: 48%;
+      padding-left: 0; }
+      .business-growth-section .content-wrapper .column ul {
+        margin: 30px 0 0; }
+        .business-growth-section .content-wrapper .column ul li {
+          max-width: 100%;
+          min-height: initial;
+          margin: 0 0 15px;
+          min-height: 90px;
+          padding: 17px 15px 17px 40px;
+          border-width: 20px;
+          text-align: left; }
+          .business-growth-section .content-wrapper .column ul li:after {
+            display: none; }
+          .business-growth-section .content-wrapper .column ul li:before {
+            width: 14px;
+            height: 16px;
+            left: 15px;
+            top: 18px; }
+          .business-growth-section .content-wrapper .column ul li:nth-child(2n) {
+            margin-left: 0;
+            margin-top: 0;
+            max-width: 100%; }
+          .business-growth-section .content-wrapper .column ul li:nth-child(3n) {
+            transform: none;
+            margin-top: 0; }
+          .business-growth-section .content-wrapper .column ul li:last-child {
+            margin: 0; }
+      .business-growth-section .content-wrapper .column:before {
+        display: none; }
+      .business-growth-section .content-wrapper .column.with-workstatus ul li {
+        background: #fdf5a3;
+        color: #00234b; }
+        .business-growth-section .content-wrapper .column.with-workstatus ul li:before {
+          background: url(../images/wcross.svg) no-repeat;
+          width: 15px;
+          height: 15px; }
+        .business-growth-section .content-wrapper .column.with-workstatus ul li:after {
+          background: url(../images/list-1.svg) no-repeat; }
+        .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(2n) {
+          background: #fbd767;
           max-width: 100%; }
-        .business-growth-section .content-wrapper .column ul li:nth-child(3n) {
-          transform: none;
-          margin-top: 0; }
-        .business-growth-section .content-wrapper .column ul li:last-child {
-          margin: 0; }
-    .business-growth-section .content-wrapper .column:before {
+        .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n) {
+          background: #2de37e; }
+          .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n):after {
+            background: url(../images/list-2.svg) no-repeat; }
+      .business-growth-section .content-wrapper .column.with-workstatus:before {
+        background: #624de3; }
+    .business-growth-section .content-wrapper .mobile-image {
       display: none; }
-    .business-growth-section .content-wrapper .column.with-workstatus ul li {
-      background: #fdf5a3;
-      color: #00234b; }
-      .business-growth-section .content-wrapper .column.with-workstatus ul li:before {
-        background: url(../images/wcross.svg) no-repeat;
-        width: 15px;
-        height: 15px; }
-      .business-growth-section .content-wrapper .column.with-workstatus ul li:after {
-        background: url(../images/list-1.svg) no-repeat; }
-      .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(2n) {
-        background: #fbd767;
-        max-width: 100%; }
-      .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n) {
-        background: #2de37e; }
-        .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n):after {
-          background: url(../images/list-2.svg) no-repeat; }
-    .business-growth-section .content-wrapper .column.with-workstatus:before {
-      background: #624de3; }
-  .business-growth-section .content-wrapper .mobile-image {
-    display: none; }
   .business-growth-section:before {
     display: none; }
   .business-growth-section:after {
