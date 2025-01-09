@@ -4692,8 +4692,7 @@ li.iti__country {
         margin: 30px 0 0; } }
 /*Media Query Ends Here*/
 .client-img-section .why-ws {
-  position: relative;
-  z-index: 9; }
+  position: relative; }
   .client-img-section .why-ws .left-box {
     position: relative; }
     .client-img-section .why-ws .left-box .top-section {
@@ -4998,6 +4997,7 @@ li.iti__country {
 /*Media Query Ends Here*/
 .feature-wrapper {
   width: 100%;
+  z-index: 1;
   position: relative; }
   .feature-wrapper .feature-loop {
     position: relative; }

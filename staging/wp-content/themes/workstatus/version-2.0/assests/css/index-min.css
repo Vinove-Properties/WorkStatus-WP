@@ -4776,8 +4776,7 @@ li.iti__country {
       padding: 5px;
       min-height: 75px; } }
 .client-img-section .why-ws {
-  position: relative;
-  z-index: 9; }
+  position: relative; }
   .client-img-section .why-ws .left-box {
     position: relative; }
     .client-img-section .why-ws .left-box .top-section {
