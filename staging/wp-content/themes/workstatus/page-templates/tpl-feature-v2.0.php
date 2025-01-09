@@ -426,8 +426,8 @@
           <div class="dis-flex">
             <div class="flex-2">
               <div class="top-section">
-                <h2>Get a Project In Mind?</h2>
-                <p>Monitor and manage each employee's time on tasks and projects efficiently to improve.</p>
+                <h2>Transform the Way You Work</h2>
+                <p>From time tracking to advanced analytics, Workstatus has everything your business needs to elevate operations.</p>
               </div>
             </div>
             <div class="flex-2"><?php echo _getDemoCTA_BC('button-common', true); ?></div>
