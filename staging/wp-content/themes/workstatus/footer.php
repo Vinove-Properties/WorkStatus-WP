@@ -473,28 +473,16 @@ endif;
 }
 </script>
 <?php */ ?>
-
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Review",
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Workstatus"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "John Doe"
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5",
-    "bestRating": "5"
-  },
-  "reviewBody": "Workstatus is an amazing tool for monitoring employee productivity and ensuring timely project completion. Highly recommended!"
+  "@context": "https://schema.org/", 
+  "@type": "Product", 
+  "name": "Workstatus",
+  "image": "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
+  "description": "Workstatus is a workforce management software designed to streamline employee monitoring, time tracking, and productivity management for businesses.",
+  "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.8","ratingCount": "50"}
 }
 </script>
-
 <script type="text/javascript">
 function changerate(starno){
 var starthover = document.getElementById("starthover");
