@@ -58,7 +58,7 @@ $body = ( isset($args['body']) && !empty($args['body']) ) ? $args['body'] : "<h2
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
       <div class="tool-col"><i class="check-icon"></i></div>
-      <div class="tool-col comprice"><?php echo _getComparePricing(1.6, 48, false, "#"); ?></div>
+      <div class="tool-col comprice best-price"><?php echo _getComparePricing(1.6, 48, false, "#"); ?></div>
     </div>
     <div class="compare-column" id="cmp-hubstaff">
       <div class="tool-col comp-logo">
