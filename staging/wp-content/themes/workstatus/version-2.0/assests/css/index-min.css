@@ -5418,6 +5418,8 @@ li.iti__country {
       color: #fff;
       font-size: 18px;
       line-height: 27px; }
+    .feature-slide-section .featured-out .right-section img {
+      margin-left: 27px; }
     .feature-slide-section .featured-out .right-section .is-arrow {
       color: #fff;
       margin: 20px 0 0; }
@@ -5488,7 +5490,7 @@ li.iti__country {
           opacity: 1; }
   .feature-slide-section .featured-out .prev-next-btn {
     position: absolute;
-    bottom: 9%;
+    bottom: 7%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -5550,13 +5552,17 @@ li.iti__country {
   .feature-slide-section .featured-out .featured-slider .flex-3 .box-3 {
     min-height: 380px; }
   .feature-slide-section .featured-out .prev-next-btn {
-    bottom: 6%; } }
+    bottom: 6%; }
+  .feature-slide-section .featured-out .progress-container {
+    margin-top: 40px; } }
 @media (max-width: 1024px) {
   .feature-slide-section .featured-out .right-section {
     flex-basis: 100%;
     border-radius: 20px;
     margin: 30px 0 0;
     padding: 20px; }
+    .feature-slide-section .featured-out .right-section img {
+      margin: 0; }
     .feature-slide-section .featured-out .right-section h4 {
       font-size: 16px;
       line-height: 26px; }
@@ -5619,13 +5625,13 @@ li.iti__country {
       transition: all 0.3s ease-in-out;
       color: var(--color-dark);
       transition: transform 0.3s ease; }
+      .user-persona .user-persona__grid .persona-card .normal {
+        display: block; }
+      .user-persona .user-persona__grid .persona-card .hover {
+        display: none; }
       .user-persona .user-persona__grid .persona-card img {
         margin: 0 0 12px;
         display: block; }
-        .user-persona .user-persona__grid .persona-card img.normal {
-          display: block; }
-        .user-persona .user-persona__grid .persona-card img.hover {
-          display: none; }
       .user-persona .user-persona__grid .persona-card h3 {
         color: #110302; }
       .user-persona .user-persona__grid .persona-card .is-arrow {
@@ -5633,9 +5639,9 @@ li.iti__country {
       .user-persona .user-persona__grid .persona-card:hover {
         transform: translateY(-5px);
         background: #05164d; }
-        .user-persona .user-persona__grid .persona-card:hover img.normal {
+        .user-persona .user-persona__grid .persona-card:hover .normal {
           display: none; }
-        .user-persona .user-persona__grid .persona-card:hover img.hover {
+        .user-persona .user-persona__grid .persona-card:hover .hover {
           display: block; }
         .user-persona .user-persona__grid .persona-card:hover h3,
         .user-persona .user-persona__grid .persona-card:hover p,
