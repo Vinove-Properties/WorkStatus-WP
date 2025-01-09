@@ -5633,9 +5633,9 @@ li.iti__country {
       .user-persona .user-persona__grid .persona-card:hover {
         transform: translateY(-5px);
         background: #05164d; }
-        .user-persona .user-persona__grid .persona-card:hover.normal {
+        .user-persona .user-persona__grid .persona-card:hover .normal {
           display: none; }
-        .user-persona .user-persona__grid .persona-card:hover.hover {
+        .user-persona .user-persona__grid .persona-card:hover .hover {
           display: block; }
         .user-persona .user-persona__grid .persona-card:hover h3,
         .user-persona .user-persona__grid .persona-card:hover p,
