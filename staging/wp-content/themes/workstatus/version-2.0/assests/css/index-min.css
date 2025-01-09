@@ -5418,6 +5418,8 @@ li.iti__country {
       color: #fff;
       font-size: 18px;
       line-height: 27px; }
+    .feature-slide-section .featured-out .right-section img {
+      margin-right: 27px; }
     .feature-slide-section .featured-out .right-section .is-arrow {
       color: #fff;
       margin: 20px 0 0; }
@@ -5557,6 +5559,8 @@ li.iti__country {
     border-radius: 20px;
     margin: 30px 0 0;
     padding: 20px; }
+    .feature-slide-section .featured-out .right-section img {
+      margin: 0; }
     .feature-slide-section .featured-out .right-section h4 {
       font-size: 16px;
       line-height: 26px; }
