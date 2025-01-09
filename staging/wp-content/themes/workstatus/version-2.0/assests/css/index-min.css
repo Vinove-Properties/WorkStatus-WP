@@ -5490,7 +5490,7 @@ li.iti__country {
           opacity: 1; }
   .feature-slide-section .featured-out .prev-next-btn {
     position: absolute;
-    bottom: 9%;
+    bottom: 7%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -5552,7 +5552,9 @@ li.iti__country {
   .feature-slide-section .featured-out .featured-slider .flex-3 .box-3 {
     min-height: 380px; }
   .feature-slide-section .featured-out .prev-next-btn {
-    bottom: 6%; } }
+    bottom: 6%; }
+  .feature-slide-section .featured-out .progress-container {
+    margin-top: 40px; } }
 @media (max-width: 1024px) {
   .feature-slide-section .featured-out .right-section {
     flex-basis: 100%;
