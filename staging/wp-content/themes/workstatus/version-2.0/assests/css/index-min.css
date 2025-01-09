@@ -8346,7 +8346,7 @@ li.iti__country {
     width: 100%;
     position: relative;
     right: 0;
-    z-index: 99;
+    z-index: 999;
     margin-top: 20px; }
     .banner-section .videoSc .inner {
       position: relative;
