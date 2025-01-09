@@ -5495,7 +5495,7 @@ li.iti__country {
           opacity: 1; }
   .feature-slide-section .featured-out .prev-next-btn {
     position: absolute;
-    bottom: 7%;
+    bottom: 5%;
     width: 100%;
     display: flex;
     justify-content: space-between;
