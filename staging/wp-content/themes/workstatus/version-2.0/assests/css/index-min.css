@@ -4969,7 +4969,8 @@ li.iti__country {
         border: 1px solid rgba(114, 92, 249, 0.42);
         box-shadow: 0px 4px 44px 0px rgba(4, 26, 51, 0.09);
         background: #fff;
-        margin: 10px 0 0; }
+        margin: 10px 0 0;
+        min-height: 290px; }
         .client-img-section .why-ws .right-box .why-left .plateform h3 {
           font-size: 20px;
           line-height: 30px;
@@ -5064,15 +5065,17 @@ li.iti__country {
     flex-wrap: wrap; }
   .client-img-section .why-ws .right-box .why-left {
     padding-right: 0; }
-    .client-img-section .why-ws .right-box .why-left .plateform h3 {
-      font-size: 18px;
-      line-height: 28px; }
-    .client-img-section .why-ws .right-box .why-left .plateform ul li {
-      padding-left: 28px; }
-      .client-img-section .why-ws .right-box .why-left .plateform ul li:before {
-        width: 18px;
-        height: 18px;
-        top: 3px; }
+    .client-img-section .why-ws .right-box .why-left .plateform {
+      min-height: initial; }
+      .client-img-section .why-ws .right-box .why-left .plateform h3 {
+        font-size: 18px;
+        line-height: 28px; }
+      .client-img-section .why-ws .right-box .why-left .plateform ul li {
+        padding-left: 28px; }
+        .client-img-section .why-ws .right-box .why-left .plateform ul li:before {
+          width: 18px;
+          height: 18px;
+          top: 3px; }
   .client-img-section .why-ws .right-box .why-right {
     margin: 20px 0 0; }
     .client-img-section .why-ws .right-box .why-right .counter {
@@ -5550,14 +5553,6 @@ li.iti__country {
       cursor: pointer; }
       .feature-slide-section .featured-out .dots button.active {
         background-color: #007bff; }
-
-.featured-slider .glider {
-  scroll-behavior: smooth;
-  /* Ensures smooth scrolling for manual interaction */ }
-
-.featured-slider .glider-track {
-  transition: transform 0.3s ease-in-out;
-  /* Smooth easing for Glider.js animations */ }
 
 /* General scrollbar hiding for all browsers */
 .testimonial-slider .glider,
