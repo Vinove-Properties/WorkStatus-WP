@@ -699,7 +699,7 @@ function _getDemoCTA( $class = "button-common margin-t-80", $ccText = true ){
 function _getDemoCTA_BC( $class = "button-common margin-t-80", $ccText = true ){
 	global $ws_ctas, $RegLink;
 	$cta_lbl 	= (isset( $ws_ctas['cta_text']) && !empty($ws_ctas['cta_text'])) ? $ws_ctas['cta_text'] : 'Start Free Trial';
-	$ccText 	= ( $ccText === true ) ? '<span class="nccr">No credit card required</span>' : '';
+	$ccText 	= ( $ccText === true ) ? '<span class="nccr">Get queries answered from experts</span>' : '';
 	return '<div class="'.$class.'">
 	<div class="cmn-democta">	
 	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a>'.$ccText.'</div>	
