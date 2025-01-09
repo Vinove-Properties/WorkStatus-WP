@@ -5549,6 +5549,14 @@ li.iti__country {
       .feature-slide-section .featured-out .dots button.active {
         background-color: #007bff; }
 
+.featured-slider .glider {
+  scroll-behavior: smooth;
+  /* Ensures smooth scrolling for manual interaction */ }
+
+.featured-slider .glider-track {
+  transition: transform 0.3s ease-in-out;
+  /* Smooth easing for Glider.js animations */ }
+
 /*Media Query Start From Here*/
 @media (max-width: 1280px) {
   .feature-slide-section .featured-out .featured-slider .flex-3 .box-3 {
