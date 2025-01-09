@@ -3361,13 +3361,14 @@ h3 a {
   .wsf-signup .popup-content .left-section {
     padding: 30px 30px 50px; }
     .wsf-signup .popup-content .left-section .content {
-      margin-top: 35px; }
+      margin-top: 20px; }
       .wsf-signup .popup-content .left-section .content p {
-        font-size: 16px; }
+        font-size: 16px;
+        margin: 0 0 10px; }
       .wsf-signup .popup-content .left-section .content h3 {
         font-size: 18px; }
     .wsf-signup .popup-content .left-section .performer-box {
-      margin: 30px 0 0;
+      margin: 20px 0 0;
       padding: 20px; }
   .wsf-signup .popup-content .right-section {
     height: 600px;
