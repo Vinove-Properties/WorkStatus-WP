@@ -249,8 +249,8 @@
             <div class="flex-2 why-right">
               <div class="client-section">
                 <div class="client-row">
-                  <div class="client-stack award-animate-slide-to-left hover:pause">
-                    <ul>
+                  <div class="client-stack">
+                    <ul class="award-animate-slide-to-left hover:pause">
                       <li>
                         <picture class="awimg">
                           <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ex-01.svg" alt="" width="130" height="29">
