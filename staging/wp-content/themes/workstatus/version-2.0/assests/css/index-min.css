@@ -5516,7 +5516,9 @@ li.iti__country {
       position: absolute; }
       .feature-slide-section .featured-out .prev-next-btn .tail-prev:hover,
       .feature-slide-section .featured-out .prev-next-btn .tail-next:hover {
-        background-color: #e8dcff; }
+        background-color: #624DE3 !important;
+        border-color: #624de3;
+        background: url(../images/ft-prevhover.svg) no-repeat center; }
     .feature-slide-section .featured-out .prev-next-btn .tail-next {
       background: url(../images/ft-prev.svg) no-repeat center;
       right: 0;

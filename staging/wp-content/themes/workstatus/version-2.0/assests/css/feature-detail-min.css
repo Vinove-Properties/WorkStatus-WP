@@ -6044,6 +6044,9 @@ li.iti__country {
   background: rgba(98, 77, 227, 0.08); }
 
 /*Media Query Start From Here*/
+@media (max-width: 1280px) {
+  .compare-projects .features-container .compare-column .tool-col.comp-logo {
+    font-size: 15px; } }
 @media (max-width: 1024px) {
   .compare-projects {
     overflow: hidden; }
