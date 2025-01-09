@@ -597,7 +597,7 @@ textarea {
   .top-section {
     padding: 0 0 50px; }
     .top-section h6 {
-      font-size: 16px; }
+      font-size: 15px; }
       .top-section h6 .bg-purple {
         font-weight: 600; }
     .top-section p {
@@ -4692,8 +4692,7 @@ li.iti__country {
         margin: 30px 0 0; } }
 /*Media Query Ends Here*/
 .client-img-section .why-ws {
-  position: relative;
-  z-index: 9; }
+  position: relative; }
   .client-img-section .why-ws .left-box {
     position: relative; }
     .client-img-section .why-ws .left-box .top-section {
@@ -4998,6 +4997,7 @@ li.iti__country {
 /*Media Query Ends Here*/
 .feature-wrapper {
   width: 100%;
+  z-index: 1;
   position: relative; }
   .feature-wrapper .feature-loop {
     position: relative; }
@@ -5291,7 +5291,7 @@ li.iti__country {
       .section-numbers .number-row .number-col .card-image {
         margin: 0 0 25px; }
         .section-numbers .number-row .number-col .card-image img {
-          object-fit: cover; }
+          object-fit: contain; }
       .section-numbers .number-row .number-col .btn {
         margin: 0; } }
 .feature-scroller {
@@ -5335,7 +5335,7 @@ li.iti__country {
           position: relative; }
           .feature-scroller .feature-wrap .right-panel .content-box .text-box h3:before {
             content: "";
-            background: url(../images/sc-data.svg) no-repeat;
+            background: url(../images/reduce-01.svg) no-repeat;
             width: 29px;
             height: 29px;
             background-size: 100%;
@@ -5365,6 +5365,12 @@ li.iti__country {
             display: none; }
         .feature-scroller .feature-wrap .right-panel .content-box:nth-child(2n) {
           background: #00234B; }
+          .feature-scroller .feature-wrap .right-panel .content-box:nth-child(2n) .text-box h3:before {
+            background: url(../images/reduce-02.svg) no-repeat; }
+        .feature-scroller .feature-wrap .right-panel .content-box:nth-child(3n) .text-box h3:before {
+          background: url(../images/reduce-03.svg) no-repeat; }
+        .feature-scroller .feature-wrap .right-panel .content-box:nth-child(4n) .text-box h3:before {
+          background: url(../images/reduce-04.svg) no-repeat; }
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
@@ -5617,8 +5623,8 @@ li.iti__country {
         color: #fff; }
       .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .flip-card-front .prod {
         color: rgba(255, 255, 255, 0.8); }
-    .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .card-bottom:before {
-      background: rgba(255, 255, 255, 0.3); }
+      .workplace-section .workplace-row .workplace-card:first-child .flip-card-inner .flip-card-front .card-bottom:before {
+        background: rgba(255, 255, 255, 0.3); }
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner .flip-card-front {
       background: #fff; }
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner h4 strong {
@@ -7265,6 +7271,9 @@ li.iti__country {
           margin-right: 0; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) {
           margin: 0; }
+          .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box:before {
+            width: 108px;
+            height: 93px; }
     .ws-pricing .price-contents .tab-contents .tryit {
       margin: 0 0 20px; }
     .ws-pricing .price-contents .tab-contents .plan-include {
