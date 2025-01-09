@@ -23,7 +23,17 @@
               <div class="topVideo srp-1">
                 <div id="myDIV" class="contbox2">
                   <div class="videoWrapper js-videoWrapper">
-                    <div class="videoPopup">
+                    <button style="background-image: url(<?php bloginfo('template_url'); ?>/version-2.0/assests/images/home-poster-new.png)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="videoPopup">
                       <div id="contentPopup" class="popup-wrapper">
                         <div class="popWrap">
                           <div class="popup-content">
@@ -35,16 +45,6 @@
                         </div>
                       </div>
                     </div>
-                    <button style="background-image: url(<?php bloginfo('template_url'); ?>/version-2.0/assests/images/home-poster-new.png)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="trusted-by padding-t-70 padding-b-70">
     <div class="container">
       <div class="logo-heading">

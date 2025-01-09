@@ -8543,6 +8543,10 @@ li.iti__country {
       .banner-section:after {
         display: none; } }
 
+.popup-content #video {
+  width: 100%;
+  height: 100%; }
+
 /*Popup Section*/
 #myBtn {
   position: absolute;
