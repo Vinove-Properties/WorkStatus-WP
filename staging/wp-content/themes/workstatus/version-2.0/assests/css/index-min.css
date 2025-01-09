@@ -8544,7 +8544,7 @@ li.iti__country {
         display: none; } }
 
 .videoPopup .popup-content {
-  height: 542px;
+  height: 650px;
   width: 60%; }
   .videoPopup .popup-content iframe {
     position: absolute;
@@ -8624,12 +8624,10 @@ li.iti__country {
 .banner-section .popup-wrapper {
   padding-top: 60px; }
 
-.bg-blue .top-section
-h6 {
+.bg-blue .top-section h6 {
   color: #fff; }
-  .bg-blue .top-section
-  h6 .bg-purple {
-    background: #8C79FD; }
+  .bg-blue .top-section h6 .bg-purple {
+    background: #8c79fd; }
 
 /*Popup Section End*/
 /*Popup Section End*/
@@ -8638,6 +8636,9 @@ h6 {
   background: #faf8fe; }
 
 /*home css end here*/
+@media (max-width: 1620px) {
+  .videoPopup .popup-content {
+    height: 540px; } }
 @media (max-width: 1440px) {
   .popup-content {
     height: 450px; }
