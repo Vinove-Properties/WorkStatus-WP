@@ -8591,6 +8591,9 @@ h6 {
 /*home css end here*/
 @media (max-width: 1440px) {
   .popup-content {
+    height: 450px; }
+
+  .banner-section .videoSc .popup-content {
     height: 450px; } }
 @media (max-width: 1160px) {
   .banner-section .videoSc .topVideo .videoWrapper {
