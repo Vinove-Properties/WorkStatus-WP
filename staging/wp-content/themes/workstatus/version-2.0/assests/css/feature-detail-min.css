@@ -6073,6 +6073,9 @@ li.iti__country {
           min-width: 200px; }
         .compare-projects .features-container .compare-column .comphead.comphead {
           font-size: 16px; } }
+@media (max-width: 767px) {
+  .compare-projects .features-container .compare-column .tool-col {
+    min-height: 80px; } }
 /*Media Query Ends Here*/
 .cmn-pricing {
   background: #fff; }
