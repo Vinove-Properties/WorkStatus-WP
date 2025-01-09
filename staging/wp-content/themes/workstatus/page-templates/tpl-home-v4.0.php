@@ -18,7 +18,7 @@
             <div class="inner">
               <button id="myBtn">
                 Open Modal
-                <div class="playsc"><span class="playicon"></span></div>
+                <span class="playsc"><span class="playicon"></span></span>
               </button>
               <div class="topVideo srp-1">
                 <div id="myDIV" class="contbox2">
