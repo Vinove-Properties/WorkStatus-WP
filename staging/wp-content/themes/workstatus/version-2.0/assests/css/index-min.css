@@ -5640,6 +5640,9 @@ li.iti__country {
           background: url(../images/view-white.svg) no-repeat center; }
 
 /*Media Query Start From Here*/
+@media (max-width: 1024px) {
+  .user-persona .user-persona__grid {
+    margin-top: -15%; } }
 @media (max-width: 979px) {
   .user-persona .user-persona__grid {
     grid-template-columns: repeat(2, 1fr);
