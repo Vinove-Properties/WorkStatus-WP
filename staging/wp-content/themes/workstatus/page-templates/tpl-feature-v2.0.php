@@ -1,11 +1,11 @@
 <?php 
-/* 
-Template Name: Feature V2.0 - Updated Template
-Author : Nitin Baluni
-*/ 
-get_header();
-global $ws_ctas, $RegLink, $LogLink, $post;
-?>
+  /* 
+  Template Name: Feature V2.0 - Updated Template
+  Author : Nitin Baluni
+  */ 
+  get_header();
+  global $ws_ctas, $RegLink, $LogLink, $post;
+  ?>
 <main class="site__content">
   <section class="banner-section">
     <div class="home-section">
@@ -39,17 +39,17 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         </div>
       </div>
       <?php 
-      $inBanner = get_field('inner_banner');
-      if( isset($inBanner['is_enabled']) && ($inBanner['is_enabled'] == "yes") ) :
-      $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($inBanner['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
-      ?>
+        $inBanner = get_field('inner_banner');
+        if( isset($inBanner['is_enabled']) && ($inBanner['is_enabled'] == "yes") ) :
+        $bannerThumb = ($inBanner['video_bg_image']) ? wsGetWebpSrcUrl($inBanner['video_bg_image']['id']) : get_bloginfo('template_url').'/dev-images/ftmain-banner.webp';
+        ?>
       <div class="column videoSc" id="<?php echo (isset($inBanner['video']) && !empty($inBanner['video'])) ? 'has-yt-video' : '_noElm'; ?>">
         <div class="inner">
           <?php 
-          if( isset($inBanner['video']) && !empty($inBanner['video']) ){
-          echo '<div id="myBtn" class="vbtn">Open Modal<div class="playsc"><span class="playicon"></span></div></div>';
-          } 
-          ?>          
+            if( isset($inBanner['video']) && !empty($inBanner['video']) ){
+            echo '<div id="myBtn" class="vbtn">Open Modal<div class="playsc"><span class="playicon"></span></div></div>';
+            } 
+            ?>          
           <div class="topVideo srp-1">
             <div id="myDIV" class="contbox2">
               <div class="videoWrapper js-videoWrapper">
@@ -59,10 +59,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                       <div class="popup-content">
                         <span class="close"></span>
                         <?php
-                        if( isset($inBanner['video']) && !empty($inBanner['video']) ){
-                        echo '<iframe id="video" class="videoIframe js-videoIframe" data-src="'.$inBanner['video'].'" allowfullscreen></iframe>';  
-                        }
-                        ?>                        
+                          if( isset($inBanner['video']) && !empty($inBanner['video']) ){
+                          echo '<iframe id="video" class="videoIframe js-videoIframe" data-src="'.$inBanner['video'].'" allowfullscreen></iframe>';  
+                          }
+                          ?>                        
                       </div>
                     </div>
                   </div>
@@ -77,84 +77,83 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     </div>
   </section>
   <?php 
-  $dataDriv = get_field('dd-resul'); 
-  if( isset($dataDriv['is_enabled']) && ($dataDriv['is_enabled'] == "yes") ){
-  ?>
+    $dataDriv = get_field('dd-resul'); 
+    if( isset($dataDriv['is_enabled']) && ($dataDriv['is_enabled'] == "yes") ){
+    ?>
   <div class="business-growth-section padding-t-50 padding-b-120">
-  <div class="container">
-    <div class="top-section text-center">
-      <h6><span class="bg-purple"><?php echo $dataDriv['heading']; ?></span></h6>
-      <?php echo $dataDriv['sub_heading']; ?>      
+    <div class="container">
+      <div class="top-section text-center">
+        <h6><span class="bg-purple"><?php echo $dataDriv['heading']; ?></span></h6>
+        <?php echo $dataDriv['sub_heading']; ?>      
+      </div>
+      <div class="content-wrapper">
+        <div class="column without-workstatus">
+          <h3>Without Workstatus</h3>
+          <?php echo $dataDriv['con-left']; ?>        
+        </div>
+        <div class="mobile-image">
+          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ft-mobile.png" alt="Workstatus App">
+        </div>
+        <div class="column with-workstatus">
+          <h3>With <a href="<?php bloginfo('url'); ?>" class="brand">
+            <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/header-images/logo-dark.svg" 
+              alt="Workstatus" width="166" height="23">
+            </a>
+          </h3>
+          <?php echo $dataDriv['con-right']; ?>        
+        </div>
+      </div>
     </div>
-    <div class="content-wrapper">
-      <div class="column without-workstatus">
-        <h3>Without Workstatus</h3>
-        <?php echo $dataDriv['con-left']; ?>        
-      </div>
-      <div class="mobile-image">
-        <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ft-mobile.png" alt="Workstatus App">
-      </div>
-      <div class="column with-workstatus">
-        <h3>With <a href="<?php bloginfo('url'); ?>" class="brand">
-          <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/header-images/logo-dark.svg" 
-          alt="Workstatus" width="166" height="23">
-          </a>
-        </h3>
-        <?php echo $dataDriv['con-right']; ?>        
-      </div>
-    </div>
-  </div>
   </div>
   <?php } ?>
-
   <?php 
-  $whyUs = get_field('why-ws');
-  if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):
-  ?>
+    $whyUs = get_field('why-ws');
+    if( isset($whyUs['is_enabled']) && ($whyUs['is_enabled'] == "yes") ):
+    ?>
   <section class="client-img-section bg-light padding-t-120 padding-b-120">
-  <div class="container">
-  <div class="dis-flex why-ws">
-  <div class="flex-2 left-box">
-  <div class="top-section">
-    <h6><span class="bg-purple"><?php echo $whyUs['heading']; ?></span></h6>
-    <?php echo $whyUs['content']; ?>    
-  </div>
-  <?php echo _getDemoCTA("button-common margin-t-40", false); ?>  
-  </div>
-  <div class="flex-2 right-box">
-  <div class="dis-flex">
-    <div class="flex-2 why-left">
-      <div class="award-sc">
-        <ul>
-          <li>
-            <span class="aw-icon">
-              <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-          <li>
-            <span class="aw-icon">
-              <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-          <li>
-            <span class="aw-icon">
-              <picture>
-                <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
-              </picture>
-            </span>
-            <span class="star"></span>
-          </li>
-        </ul>
-      </div>
-      <div class="plateform"><?php echo $whyUs['ls-content']; ?></div>
-    </div>
-    <div class="flex-2 why-right">
+    <div class="container">
+      <div class="dis-flex why-ws">
+        <div class="flex-2 left-box">
+          <div class="top-section">
+            <h6><span class="bg-purple"><?php echo $whyUs['heading']; ?></span></h6>
+            <?php echo $whyUs['content']; ?>    
+          </div>
+          <?php echo _getDemoCTA("button-common margin-t-40", false); ?>  
+        </div>
+        <div class="flex-2 right-box">
+          <div class="dis-flex">
+            <div class="flex-2 why-left">
+              <div class="award-sc">
+                <ul>
+                  <li>
+                    <span class="aw-icon">
+                      <picture>
+                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
+                      </picture>
+                    </span>
+                    <span class="star"></span>
+                  </li>
+                  <li>
+                    <span class="aw-icon">
+                      <picture>
+                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+                      </picture>
+                    </span>
+                    <span class="star"></span>
+                  </li>
+                  <li>
+                    <span class="aw-icon">
+                      <picture>
+                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
+                      </picture>
+                    </span>
+                    <span class="star"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="plateform"><?php echo $whyUs['ls-content']; ?></div>
+            </div>
+            <div class="flex-2 why-right">
               <div class="client-section">
                 <div class="client-row">
                   <div class="client-stack">
@@ -246,10 +245,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                 </div>
               </div>
             </div>
-  </div>
-  </div>
-  </div>
-  </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <?php endif; ?>
   <?php 
@@ -264,10 +263,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         $i++;
         $wrpsClass = ( $i % 2 == 0 ) ? "feature-wrapper feature-bluebg padding-t-120 padding-b-120" : "feature-wrapper right-shape padding-t-120 padding-b-120";
         echo '<section class="'.$wrpsClass.'">';
-
+    
         echo '<div class="container"><div class="top-section text-center">
         <h6><span class="bg-purple">'.$block['title'].'</span></h6>'.$block['top-content'].'</div></div>';
-
+    
         if( $i % 2 == 0 ){
         echo '<div class="feature-loop">
             <div class="container">
@@ -295,8 +294,8 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           
       }        
     }
-
-
+    
+    
     $sicBlock = get_field('sic-block');
     if( isset( $sicBlock['is_enabled'] ) && ($sicBlock['is_enabled'] == "yes") ) :
     
@@ -304,7 +303,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     if( isset( $sicBlock['heading'] ) && !empty($sicBlock['heading']) ){
     $topHeading = '<h6><span class="bg-purple">'.$sicBlock['heading'].'</span></h6>';
     }
-
+    
     echo '<section class="feature-scroller"><div class="container"><div class="feature-wrap bg-light padding-t-120 padding-b-120">';
     echo '<div class="left-panel">
           <div class="top-section">            
@@ -312,7 +311,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
             '._getDemoCTA('button-common margin-t-50', false).'
           </div>
           </div>';
-
+    
     echo '<div class="right-panel">';
     if( $sicBlock['block'] ){
     foreach( $sicBlock['block'] as $row ){
@@ -323,10 +322,10 @@ global $ws_ctas, $RegLink, $LogLink, $post;
       }  
     }
     echo '</div><!--//.right-panel-->';
-
+    
     echo '</div></div></section>';  
     endif;  
-
+    
     $proBlock = get_field('pro-block');
     if( isset($proBlock['is_enabled']) && ($proBlock['is_enabled'] == "yes") ){
     echo '<section class="feature-wrapper padding-t-120 padding-b-100 post-animation">
@@ -370,7 +369,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     echo _getDemoCTA('button-common margin-t-80', false);
     echo '</div></section>';
     }
-
+    
     get_template_part('common/cmn', 'workplaces', ['elm-class' => 
       'workplace-section bg-light padding-t-120 padding-b-120 '.$elm_workplaces_margin.'']);
     $wsIndustry = get_field("ws-industries");
@@ -388,8 +387,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     get_template_part('common/cmn', 'industries', ['elm-image' => $elmImage, 'elm-content' => $sec_content ]);  
     }    
     ?>
-
-    <?php     
+  <?php     
     $allOne = get_field('allone');
     if( isset($allOne['is_enabled']) && ($allOne['is_enabled'] == "yes") ){
     echo '<section class="time-tracker bg-light padding-t-120 padding-b-120 post-animation"><div class="container">';
@@ -405,36 +403,33 @@ global $ws_ctas, $RegLink, $LogLink, $post;
         echo '</div>';
     }
     echo '</div>';
-
+    
     echo '</div></section>';
     }      
     ?>
-  
   <?php 
-  /*
-  1. Time : Done
-  2. Reporting
-  3. Project
-  3. attendance
-  */
-  $proComp = get_field('project-comp');
-  if( isset($proComp['required']) && ($proComp['required'] == "yes") ){
-  echo '<section id="ws-compititors-tbl" class="compare-projects padding-t-120 padding-b-100">';  
-  get_template_part( 'inc/features', $proComp['type'], ['title' => $proComp['heading'], 'body' => $proComp['content']] );
-  echo '</section>';
-  }  
-  ?>
-
+    /*
+    1. Time : Done
+    2. Reporting
+    3. Project
+    3. attendance
+    */
+    $proComp = get_field('project-comp');
+    if( isset($proComp['required']) && ($proComp['required'] == "yes") ){
+    echo '<section id="ws-compititors-tbl" class="compare-projects padding-t-120 padding-b-100">';  
+    get_template_part( 'inc/features', $proComp['type'], ['title' => $proComp['heading'], 'body' => $proComp['content']] );
+    echo '</section>';
+    }  
+    ?>
   <?php  
-  //get_template_part('common/ws', 'pricing');
-  $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
-  get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-120"]);
-  ?>
-
+    //get_template_part('common/ws', 'pricing');
+    $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
+    get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory, 'elm-class' => "padding-t-120 bg-light padding-b-120"]);
+    ?>
   <?php  
-  $user_guide_section = get_field('user_guide_section');		
-  if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabled'] == "yes") ){ 
-  ?>
+    $user_guide_section = get_field('user_guide_section');		
+    if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabled'] == "yes") ){ 
+    ?>
   <section class="userguide padding-t-120">
     <div class="container">
       <div class="top-section">
@@ -463,9 +458,9 @@ global $ws_ctas, $RegLink, $LogLink, $post;
               	$image      = (isset($row['image_'])) ? $row['image_'] : false;
               	$active = ($i==1) ? "active" : "";
               ?>
-            <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>"> 
-            <h3 class="guide-question"><?php echo $row['question']; ?>
-                    </h3>      
+            <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
+              <h3 class="guide-question"><?php echo $row['question']; ?>
+              </h3>
               <div class="guide-answer">
                 <?php echo $row['answer']; ?>
               </div>
@@ -477,46 +472,45 @@ global $ws_ctas, $RegLink, $LogLink, $post;
     </div>
   </section>
   <?php } ?>
-
-<?php  
-$faq = get_field('faq');
-if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
-?>  
-<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
-  <div class="container">
-    <div class="top-section text-center">
-      <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
-      <h2><?php echo $faq['sub_heading']; ?></h2>
-    </div>
-    <div class="flex_row">
-      <div itemscope="" itemtype="https://schema.org/FAQPage">
-        <div class="column">
-          <?php 
-          if( $faq['question_answer_repeater'] ){  $i = 1;
-          foreach( $faq['question_answer_repeater'] as $row ) {
-          $active = ($i <= 3) ? "open" : "";
-          ?>
-          <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
-            <h3 itemprop="name"><?php echo $row['question'];?></h3>
-            <div class="faq-accordion-content">
-              <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <div itemprop="text"><?php echo $row['answer'];?></div>
+  <?php  
+    $faq = get_field('faq');
+    if( isset( $faq['is_enabled'] ) && ($faq['is_enabled'] == "yes") ) :
+    ?>  
+  <section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
+    <div class="container">
+      <div class="top-section text-center">
+        <h6><span class="bg-purple "><?php echo $faq['heading']; ?></span></h6>
+        <h2><?php echo $faq['sub_heading']; ?></h2>
+      </div>
+      <div class="flex_row">
+        <div itemscope="" itemtype="https://schema.org/FAQPage">
+          <div class="column">
+            <?php 
+              if( $faq['question_answer_repeater'] ){  $i = 1;
+              foreach( $faq['question_answer_repeater'] as $row ) {
+              $active = ($i <= 3) ? "open" : "";
+              ?>
+            <div class="faq-accordion-item-outer" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <h3 itemprop="name"><?php echo $row['question'];?></h3>
+              <div class="faq-accordion-content">
+                <div itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                  <div itemprop="text"><?php echo $row['answer'];?></div>
+                </div>
               </div>
             </div>
+            <?php $i++; }} ?>
           </div>
-          <?php $i++; }} ?>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<?php endif; ?>
-<?php //require_once get_template_directory() .'/common/blog.php'; ?>
-<?php //get_template_part('common/home', 'testimonials'); ?>
-<?php //require_once get_template_directory() .'/common/workstatus-journey.php'; ?>
-<?php //get_template_part('common/blog', '', ['elm-class' => 'margin-b-120']); ?>
-<?php get_template_part('common/cmn', 'testimonial'); ?>
-<?php get_template_part('common/cmn', 'globalrating'); ?>
-<?php get_template_part('common/cmn', 'journey'); ?>
+  </section>
+  <?php endif; ?>
+  <?php //require_once get_template_directory() .'/common/blog.php'; ?>
+  <?php //get_template_part('common/home', 'testimonials'); ?>
+  <?php //require_once get_template_directory() .'/common/workstatus-journey.php'; ?>
+  <?php //get_template_part('common/blog', '', ['elm-class' => 'margin-b-120']); ?>
+  <?php get_template_part('common/cmn', 'testimonial'); ?>
+  <?php get_template_part('common/cmn', 'globalrating'); ?>
+  <?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>
