@@ -395,7 +395,7 @@
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/but-image.svg" alt="persona"
               width="205" height="155">
           </picture>
-          <a href="#" class="is-arrow">Explore all Use Cases</a>
+          <a href="<?php echo site_url('/solution'); ?>" class="is-arrow">Explore all Use Cases</a>
         </div>
       </div>
       <?php endif; ?>
