@@ -417,10 +417,23 @@
     $proComp = get_field('project-comp');
     if( isset($proComp['required']) && ($proComp['required'] == "yes") ){
     echo '<section id="ws-compititors-tbl" class="compare-projects padding-t-120 padding-b-100">';  
-    get_template_part( 'inc/features', $proComp['type'], ['title' => $proComp['heading'], 'body' => $proComp['content']] );
+    get_template_part( 'inc/features', $proComp['type'], ['title' => $proComp['heading'], 'body' => $proComp['content']] );    
     echo '</section>';
     }  
     ?>
+     <section class="mid-cta padding-t-50 padding-b-50">
+        <div class="container">
+          <div class="dis-flex">
+            <div class="flex-2">
+              <div class="top-section">
+                <h2>Get a Project In Mind?</h2>
+                <p>Monitor and manage each employee's time on tasks and projects efficiently to improve.</p>
+              </div>
+            </div>
+            <div class="flex-2"><?php echo _getDemoCTA('button-common', true); ?></div>
+          </div>
+        </div>
+      </section>
   <?php  
     //get_template_part('common/ws', 'pricing');
     $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );    
