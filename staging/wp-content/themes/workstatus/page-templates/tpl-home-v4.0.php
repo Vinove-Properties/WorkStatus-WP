@@ -12,7 +12,7 @@
         <div class="flex_row">
           <div class="column column-content">
             <h1>One Platform <span class="highlight">Endless Efficiency</span></h1>
-            <p>Simplify project management, time tracking, and attendance management.</p>
+            <p>Simplify project management, time tracking, and attendance management. Automate processes, get team insights, and enjoy a productivity boost with Workstatus - A Single, Powerful Solution.</p>
           </div>
           <div class="column videoSc" id="has-yt-video">
             <div class="inner">
@@ -99,33 +99,33 @@
       </div>
       <div class="feature-tabs">
         <div class="tab-row">
-          <nav id="tabs" class="tab-nav">
+          <nav id="tabs-mc" class="tab-nav">
             <ul>
               <li class="active">
-                <a href="#tab01">
+                <a href="#tabmc01">
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
                 <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                 </span>Time Tracking</a>
               </li>
               <li>
-                <a href="#tab02">
+                <a href="#tabmc02">
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" 
                   width="16" height="18">
                 <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
                 </span>Productivity Management</a>
               </li>
-              <li><a href="#tab03"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
+              <li><a href="#tabmc03"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
                 </span>
                 Attendance Tracking</a>
               </li>
-              <li><a href="#tab04"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+              <li><a href="#tabmc04"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
                 </span>
                 Project & Task Management</a>
               </li>
               <li>
-                <a href="#tab05">
+                <a href="#tabmc05">
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" 
                   width="16" height="18">
@@ -134,8 +134,8 @@
               </li>
             </ul>
           </nav>
-          <div id="tab-contents" class="bcontents">
-            <div id="tab01" class="tab-contents active">
+          <div id="mctab-contents" class="bcontents">
+            <div id="tabmc01" class="tab-contents active">
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
@@ -146,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div id="tab02" class="tab-contents">
+            <div id="tabmc02" class="tab-contents">
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
@@ -157,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div id="tab03" class="tab-contents">
+            <div id="tabmc03" class="tab-contents">
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
@@ -168,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <div id="tab04" class="tab-contents">
+            <div id="tabmc04" class="tab-contents">
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
@@ -179,7 +179,7 @@
                 </div>
               </div>
             </div>
-            <div id="tab05" class="tab-contents">
+            <div id="tabmc05" class="tab-contents">
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>

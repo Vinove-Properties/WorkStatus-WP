@@ -1,6 +1,7 @@
-const pricingTabs = document.querySelectorAll("#pricing-Tabs li");
-const tabPanesPc = document.getElementsByClassName("tab-contents");
-function pricingActiveTaber(e){        
+const pricingTabs   = document.querySelectorAll("#pricing-Tabs li");
+const pc_container  = document.querySelector('.price-contents');
+const tabPanesPc    = pc_container.getElementsByClassName("tab-contents");
+function pricingActiveTaber(e){
     e.preventDefault();
     pricingTabs.forEach(function(label) {
         label.classList.remove("active");
@@ -15,10 +16,10 @@ function pricingActiveTaber(e){
         this.classList.add("active");
         var activePane = document.querySelector(clickedTab);
         
-        if (activePane) {
-            activePane.classList.add("active");
-        } else {
-            console.error("No element found for the selector: " + clickedTab);
+        if(activePane){
+          activePane.classList.add("active");
+        }else{
+          console.error("No element found for the selector: " + clickedTab);
         }
     }
     const plans = ['wsp-productivity', 'wsp-project', 'wsp-time', 'wsp-attendance'];
@@ -56,8 +57,7 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
     return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&r_id='+refToken;
   }else{
     return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;  
-  }
-  
+  }  
 }
 /*
 const WS_PLAN_ID_BKP = {
