@@ -3394,7 +3394,7 @@ li.iti__country {
             height: 3px;
             position: absolute;
             left: 0;
-            bottom: -3px;
+            bottom: -5px;
             opacity: 1;
             z-index: 9; }
         .header-two .header-item-right .menu ul li .menu-mega {
@@ -4667,7 +4667,8 @@ li.iti__country {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: 0 6px 0 0; }
+          margin: 0 6px 0 0;
+          pointer-events: none; }
           .business-tab .feature-tabs .tab-nav ul li a .icon .show {
             display: block;
             vertical-align: middle; }
