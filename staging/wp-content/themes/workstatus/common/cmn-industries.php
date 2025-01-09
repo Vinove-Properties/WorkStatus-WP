@@ -6,7 +6,7 @@ $elmContent = (isset($args['elm-content']) && !empty($args['elm-content']) ) ? $
 <div class="container">
   <div class="top-section text-center">
     <h6><span class="bg-purple">Empowering Businesses</span></h6>
-    <h2>Where Versatility Meets Efficiency - For Every Industry</h2>
+    <h2>Versatile Solution for Every Industry</h2>
     <p>From IT to healthcare, retail to manufacturing, Workstatus adapts to meet your industry’s unique needs.</p>
   </div>
   <div class="dis-flex indstry-row">
