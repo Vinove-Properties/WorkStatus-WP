@@ -7283,6 +7283,9 @@ li.iti__country {
           margin-right: 0; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) {
           margin: 0; }
+          .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box:before {
+            width: 108px;
+            height: 93px; }
     .ws-pricing .price-contents .tab-contents .tryit {
       margin: 0 0 20px; }
     .ws-pricing .price-contents .tab-contents .plan-include {
