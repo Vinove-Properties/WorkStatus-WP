@@ -416,33 +416,27 @@ tabLabels.forEach(function(label, index){
   label.addEventListener("click", activateTab);
 });
 
+if(document.getElementById("mctab-contents")){
+    var tabMC       = document.querySelectorAll("#tabs-mc li");
+    var tabPanesMc  = document.getElementById("mctab-contents").getElementsByClassName("tab-contents");
+    function activateTabFx(e){
+        e.preventDefault();  
+        tabMC.forEach(function(label, index){
+            label.classList.remove("active");
+        });
 
-var tabMC       = document.querySelectorAll("#tabs-mc li");
-var tabPanesMc  = document.getElementById("mctab-contents").getElementsByClassName("tab-contents");
-function activateTabFx(e){    
-    e.preventDefault();  
+        [].forEach.call(tabPanesMc, function(pane, index){
+            pane.classList.remove("active");
+        }); 
+
+        e.target.parentNode.classList.add("active");
+        var clickedTab = e.target.getAttribute("href");
+        document.querySelector(clickedTab).classList.add("active");
+    }
     tabMC.forEach(function(label, index){
-        label.classList.remove("active");
+      label.addEventListener("click", activateTabFx);
     });
-
-    [].forEach.call(tabPanesMc, function(pane, index){
-        pane.classList.remove("active");
-    }); 
-
-    e.target.parentNode.classList.add("active");
-    var clickedTab = e.target.getAttribute("href");
-    document.querySelector(clickedTab).classList.add("active");
-  
-    // if( e.target === this || this.contains(e.target)){
-    //     console.log( e.target );
-    //     var clickedTab = this.getAttribute("data-tab");
-    //     this.classList.add("active");
-    //     document.querySelector(clickedTab).classList.add("active");
-    // }    
 }
-tabMC.forEach(function(label, index){
-  label.addEventListener("click", activateTabFx);
-});
 
 var buiItem = document.getElementsByClassName("b-accordion");
 var bHD   = document.getElementsByClassName("head-row");
