@@ -480,7 +480,7 @@
     if( $sicBlock['block'] ){
     foreach( $sicBlock['block'] as $row ){
         echo '<div class="content-box">
-        <div class="img-sec">'.pxlGetPtag($row['img']).'</div>
+        <div class="img-sec">'.pxlGetPtag($row['image']).'</div>
         <div class="text-box">'.$row['content'].'</div>
         </div>';
       }  
