@@ -9039,11 +9039,15 @@ li.iti__country {
       border-color: #624de3; }
       .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans {
         color: #fff;
-        background: transparent; }
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        min-width: 213px; }
         .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans:hover {
-          background: transparent;
-          color: #fff;
-          text-decoration: none; }
+          background: #05164d;
+          border-color: #05164d;
+          color: #ffffff; }
       .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn:hover {
         background: #05164d;
         border-color: #05164d;
@@ -9229,7 +9233,20 @@ li.iti__country {
     .banner-section .home-section:after {
       display: none; }
     .banner-section:before {
-      display: none; } }
+      display: none; }
+
+  .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn {
+    padding: 12px 15px;
+    min-width: 140px;
+    font-size: 14px; }
+    .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans {
+      padding: 12px 15px;
+      min-width: 140px;
+      font-size: 14px; }
+      .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans:hover {
+        background: #05164d;
+        border-color: #05164d;
+        color: #ffffff; } }
 @media (max-width: 479px) {
   .banner-section .home-section .videoSc {
     padding-left: 20px;
