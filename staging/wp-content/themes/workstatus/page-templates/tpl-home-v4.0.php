@@ -12,7 +12,7 @@
         <div class="flex_row">
           <div class="column column-content">
             <h1>One Platform <span class="highlight">Endless Efficiency</span></h1>
-            <p>Simplify project management, time tracking, and attendance management.</p>
+            <p>Automate processes, get team insights, and enjoy a productivity boost with Workstatus - A Single, Powerful Solution.</p>
           </div>
           <div class="column videoSc" id="has-yt-video">
             <div class="inner">
