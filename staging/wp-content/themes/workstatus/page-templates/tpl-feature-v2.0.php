@@ -262,7 +262,7 @@
         foreach ( $fBlocks['blocks'] as $block ){
         $i++;
         $wrpsClass = ( $i % 2 == 0 ) ? "feature-wrapper feature-bluebg padding-t-120 padding-b-120" : "feature-wrapper right-shape padding-t-120 padding-b-120";
-        echo '<section class="'.$wrpsClass.'">';
+        echo '<section class="'.$wrpsClass.'" id="acf-ftblocks">';
     
         echo '<div class="container"><div class="top-section text-center">
         <h6><span class="bg-purple">'.$block['title'].'</span></h6>'.$block['top-content'].'</div></div>';
@@ -328,7 +328,7 @@
     
     $proBlock = get_field('pro-block');
     if( isset($proBlock['is_enabled']) && ($proBlock['is_enabled'] == "yes") ){
-    echo '<section class="feature-wrapper padding-t-120 padding-b-100 post-animation">
+    echo '<section class="feature-wrapper padding-t-120 padding-b-100 post-animation" id="acf-pro-block">
           <div class="container">
             <div class="top-section text-center">
             <h6><span class="bg-purple">'.$proBlock['heading'].'</span></h6>'
