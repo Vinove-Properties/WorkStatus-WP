@@ -8595,9 +8595,15 @@ h6 {
 
   .banner-section .videoSc .popup-content {
     height: 450px; } }
+@media (max-width: 1280px) {
+  .banner-section .videoSc .popup-content {
+    height: 400px; } }
 @media (max-width: 1160px) {
   .banner-section .videoSc .topVideo .videoWrapper {
-    min-height: 360px; } }
+    min-height: 360px; }
+
+  .banner-section .videoSc .popup-content {
+    height: 360px; } }
 @media (max-width: 979px) {
   .banner-section {
     padding: 100px 0 50px; }

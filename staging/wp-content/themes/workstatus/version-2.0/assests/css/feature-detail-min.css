@@ -5992,7 +5992,7 @@ li.iti__country {
         .compare-projects .features-container .compare-column .tool-col.comprice .btn {
           color: #05164d;
           text-align: center;
-          font-weight: 600;
+          font-weight: 500;
           display: block;
           width: 100px;
           padding: 5px 10px;
@@ -9000,6 +9000,66 @@ li.iti__country {
 .all-partners {
   background: #fff; }
 
+.mid-cta {
+  background: #624de3;
+  position: relative;
+  overflow: hidden; }
+  .mid-cta:before {
+    content: "";
+    background: url(../images/cta-shape01.png) no-repeat;
+    background-size: 100%;
+    width: 66px;
+    height: 241px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .mid-cta:after {
+    content: "";
+    background: url(../images/cta-shape02.png) no-repeat;
+    background-size: 100%;
+    width: 353px;
+    height: 241px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .mid-cta .dis-flex {
+    align-items: center;
+    position: relative;
+    z-index: 99; }
+    .mid-cta .dis-flex .flex-2 .top-section {
+      text-align: left;
+      padding: 0; }
+      .mid-cta .dis-flex .flex-2 .top-section h2 {
+        color: #fff; }
+      .mid-cta .dis-flex .flex-2 .top-section p {
+        color: #fff; }
+    .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn {
+      color: #624de3;
+      background: #fff;
+      border-color: #624de3; }
+      .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans {
+        color: #fff;
+        background: transparent; }
+        .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans:hover {
+          background: transparent;
+          color: #fff;
+          text-decoration: none; }
+      .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn:hover {
+        background: #05164d;
+        border-color: #05164d;
+        color: #ffffff; }
+    .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .nccr {
+      color: #fff; }
+    .mid-cta .dis-flex .flex-2 .button-common .devide {
+      color: #fff;
+      opacity: 0.5; }
+      .mid-cta .dis-flex .flex-2 .button-common .devide:before {
+        background: #fff;
+        opacity: 0.5; }
+      .mid-cta .dis-flex .flex-2 .button-common .devide:after {
+        background: #fff;
+        opacity: 0.5; }
+
 /*Step Section Start From Here*/
 @media (max-width: 1600px) {
   .banner-section .home-section .videoSc {
@@ -9105,7 +9165,17 @@ li.iti__country {
       background-size: contain; }
 
   .popWrap {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .mid-cta:before {
+    display: none; }
+  .mid-cta:after {
+    display: none; }
+  .mid-cta .dis-flex .flex-2 .top-section {
+    text-align: center;
+    padding: 0; }
+  .mid-cta .dis-flex .flex-2 .button-common {
+    margin-top: 40px; } }
 @media (max-width: 767px) {
   .banner-section {
     padding: 100px 0 50px; }
