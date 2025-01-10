@@ -688,9 +688,9 @@ function _getDemoCTA( $class = "button-common margin-t-80", $ccText = true ){
 	$ccText 	= ( $ccText === true ) ? '<span class="nccr">No credit card required</span>' : '';
 	return '<div class="'.$class.'">
 	<div class="cmn-democta">	
-	<div><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>	
+	<div class="ct-demo"><a href="javascript:void(0)" class="ctbtn" onclick="call_demows();" target="_self">Book A Demo</a></div>	
 	<span class="devide">OR</span>
-	<div><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
+	<div class="ct-trial"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="ctbtn bgtrans" onclick="return get_ws_signupform(this);">'.$cta_lbl.'</a>
 	'.$ccText.'
 	</div></div>
 	</div>';
@@ -1144,7 +1144,8 @@ function _getComparePricing( $usd, $inr, $pricing = true, $link = "#" ){
 	return '<span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span>';
 	}else{
 		return '<span class="btn"><span class="spn-intr">$'.$usd.'</span><span class="spn-ind">₹'.$inr.'</span></span>
-		<span class="small-font">(Per user / Month)</span><a onclick="call_demows();" href="javascript:void(0);"  class="knowmre">Know More</a>';	
+		<span class="small-font">(Per user / Month)</span>';
+		/*<a onclick="call_demows();" href="javascript:void(0);"  class="knowmre">Know More</a>*/
 	}
 }
 

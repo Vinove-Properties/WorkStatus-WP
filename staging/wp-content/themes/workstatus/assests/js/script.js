@@ -2409,75 +2409,79 @@ if (document.getElementById("testimonial-glider")) {
         });
         }
         
-        if (document.getElementById("featured-slide")) {
-    window.addEventListener("load", function () {
-      const gliderElement = document.querySelector(".featured-slider .glider"); // Use your custom class
-      const progressBar = document.querySelector(".progress-bar");
-  
-      if (gliderElement && progressBar) {
-        const slides = gliderElement.children;
-        const totalSlides = slides.length;
-  
-        const glider = new Glider(gliderElement, {
-          slidesToShow: 4, // Default to 4 slides for desktop
-          slidesToScroll: 1,
-          draggable: true,
-          scrollLock: false, // Prevent scrolling past bounds
-          duration: 2.25,
-          dots: ".dots",
-          arrows: {
-            prev: ".tail-prev", // Update to match your custom class if necessary
-            next: ".tail-next", // Update to match your custom class if necessary
-          },
-          responsive: [
-            {
-              // Desktop (screen width > 1024px)
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-              },
-            },
-            {
-              // Tablet (screen width > 767px and <= 1024px)
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-              },
-            },
-            {
-              // Mobile (screen width <= 767px)
-              breakpoint: 0, // Default breakpoint for mobile devices
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              },
-            },
-          ],
-        });
-  
-        // Update progress bar on slide change
-        function updateProgress(currentSlide) {
-          let totalVisibleSlides;
-          if (window.innerWidth <= 767) {
-            totalVisibleSlides = 1;
-          } else if (window.innerWidth <= 1024) {
-            totalVisibleSlides = 1;
-          } else {
-            totalVisibleSlides = 1;
-          }
-          const progressPercentage =
-            ((currentSlide + totalVisibleSlides) / totalSlides) * 100;
-          progressBar.style.width = `${progressPercentage}%`;
-        }
-  
-        // Initialize progress bar
-        updateProgress(0);
-  
-        gliderElement.addEventListener("glider-slide-visible", function (event) {
-          updateProgress(event.detail.slide);
-        });
-      }
-    });
+if (document.getElementById("featured-slide")){
+window.addEventListener("load", function (){
+const gliderElement = document.querySelector(".featured-slider .glider"); // Use your custom class
+const progressBar = document.querySelector(".progress-bar");
+if( gliderElement && progressBar ){
+const ftGlider  = document.getElementById("ft-glider");    
+const ftGloader = document.getElementById("ft-glider-loader");    
+
+const slides    = gliderElement.children;
+const totalSlides = slides.length;
+const glider = new Glider(gliderElement, {
+  slidesToShow: 4, // Default to 4 slides for desktop
+  slidesToScroll: 1,
+  draggable: true,
+  scrollLock: false, // Prevent scrolling past bounds
+  duration: 2.25,
+  dots: ".dots",
+  arrows: {
+    prev: ".tail-prev", // Update to match your custom class if necessary
+    next: ".tail-next", // Update to match your custom class if necessary
+  },
+  responsive: [
+    {
+      // Desktop (screen width > 1024px)
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      // Tablet (screen width > 767px and <= 1024px)
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
+    {
+      // Mobile (screen width <= 767px)
+      breakpoint: 0, // Default breakpoint for mobile devices
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+ftGloader.style.display = 'none';
+ftGlider.style.visibility = 'visible';
+ftGlider.style.position = 'relative';  // Reset position
+
+// Update progress bar on slide change
+function updateProgress(currentSlide){
+  let totalVisibleSlides;
+  if (window.innerWidth <= 767) {
+    totalVisibleSlides = 1;
+  } else if (window.innerWidth <= 1024) {
+    totalVisibleSlides = 1;
+  } else {
+    totalVisibleSlides = 1;
   }
+  const progressPercentage =
+    ((currentSlide + totalVisibleSlides) / totalSlides) * 100;
+  progressBar.style.width = `${progressPercentage}%`;
+}
+
+// Initialize progress bar
+updateProgress(0);
+
+gliderElement.addEventListener("glider-slide-visible", function (event) {
+  updateProgress(event.detail.slide);
+});
+}
+});
+}

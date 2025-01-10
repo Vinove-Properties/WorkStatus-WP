@@ -357,10 +357,12 @@
           echo $featureSlide['sub_heading'];
           ?>
       </div>
+
       <?php if($featureSlide['cards']) : ?>
       <div class="dis-flex featured-out">
         <div class="dis-flex featured-slider" id="featured-slide">
-          <div class="glider" id="glider">
+          <div id="ft-glider-loader" class="loader">&nbsp;&nbsp;</div>
+          <div class="glider" id="ft-glider" style="visibility:hidden; position:absolute;">
             <?php 
               foreach($featureSlide['cards'] as $row){
                 $thumb = get_bloginfo('template_url').'/version-2.0/assests/images/featureslide-01.png';  
@@ -471,7 +473,7 @@
           echo '</div>';  
         }
         ?>  
-      <?php echo _getDemoCTA('button-common margin-t-80', false); ?>    
+      <?php echo _getDemoCTA('button-common margin-t-80 no-trial-btn', false); ?>    
     </div>
   </section>
   <?php endif; ?>
