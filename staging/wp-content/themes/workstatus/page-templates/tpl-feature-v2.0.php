@@ -262,7 +262,7 @@
         foreach ( $fBlocks['blocks'] as $block ){
         $i++;
         $wrpsClass = ( $i % 2 == 0 ) ? "feature-wrapper feature-bluebg padding-t-120 padding-b-120" : "feature-wrapper right-shape padding-t-120 padding-b-120";
-        echo '<section class="'.$wrpsClass.'" id="acf-ftblocks">';
+        echo '<section class="'.$wrpsClass.' acf-ftblocks-'.$i.'">';
     
         echo '<div class="container"><div class="top-section text-center">
         <h6><span class="bg-purple">'.$block['title'].'</span></h6>'.$block['top-content'].'</div></div>';
