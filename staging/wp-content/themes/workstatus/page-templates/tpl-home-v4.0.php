@@ -361,7 +361,7 @@
       <?php if($featureSlide['cards']) : ?>
       <div class="dis-flex featured-out">
         <div class="dis-flex featured-slider" id="featured-slide">
-          <div id="ft-glider-loader" class="loader">Loading...</div>
+          <div id="ft-glider-loader" class="loader">&nbsp;&nbsp;</div>
           <div class="glider" id="ft-glider" style="visibility:hidden; position:absolute;">
             <?php 
               foreach($featureSlide['cards'] as $row){
