@@ -2414,8 +2414,8 @@ window.addEventListener("load", function (){
 const gliderElement = document.querySelector(".featured-slider .glider"); // Use your custom class
 const progressBar = document.querySelector(".progress-bar");
 if( gliderElement && progressBar ){
-const ftGlider  = document.getElementById("ft-glider");    
-const ftGloader = document.getElementById("ft-glider-loader");    
+//const ftGlider  = document.getElementById("ft-glider");    
+//const ftGloader = document.getElementById("ft-glider-loader");    
 
 const slides    = gliderElement.children;
 const totalSlides = slides.length;
@@ -2458,7 +2458,8 @@ const glider = new Glider(gliderElement, {
   ],
 });
 ftGloader.style.display = 'none';
-ftGlider.style.display = 'block';
+ftGlider.style.visibility = 'visible';
+ftGlider.style.position = 'relative';  // Reset position
 
 // Update progress bar on slide change
 function updateProgress(currentSlide){
