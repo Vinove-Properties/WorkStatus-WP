@@ -560,8 +560,9 @@
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="#" class="no-link"><span class="title">Productivity Management
-                                      </span>
+                                    <div class="tab-title">
+                                    <a href="<?php echo site_url('/productivity-management'); ?>">
+                                      <span class="title">Productivity Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
@@ -627,8 +628,11 @@
                                     </div>
                                   </div>
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/" class="no-link"><span class="title">Resource Management</span>
-                                      </a><span class="hr-arrow-btn"></span>
+                                    <div class="tab-title">
+                                    <a href="<?php echo site_url('/resource-management'); ?>">
+                                      <span class="title">Resource Management</span>
+                                    </a>
+                                    <span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
