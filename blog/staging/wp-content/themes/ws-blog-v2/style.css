@@ -131,15 +131,20 @@ p {
  line-height: 26px;
 }
 h1 {
- font-size: 46px;
- line-height: 1.3;
- margin: 0 0 50px;
-}
-h2 {
- font-size: 30px;
- line-height: 45px;
- margin-bottom: 20px;
-}
+    font-size: 70px;
+    line-height: 91px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    margin: 0 0 20px;
+  }
+  
+  h2 {
+    font-size: 46px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #110302;
+    margin: 0 0 15px;
+  }
 .hero-banner h1,
 h3,
 h4,
@@ -409,28 +414,8 @@ body form.search-form .screen-reader-text {
  font-size: 0;
  display: none;
 }
-body form.search-form input.search-field {
- background: #faf7ff;
- border: 0;
- border-radius: 4px;
- color: #333;
- height: 55px;
- padding: 0 60px 0 15px;
- font-size: 16px;
-}
-.search-form .search-submit {
- position: absolute;
- border: 0;
- font-size: 0;
- background: url(images/search-icon.png) center no-repeat;
- border-radius: 0 4px 4px 0;
- right: 0;
- top: 0;
- width: 60px;
- height: 55px;
- filter: invert(1);
- cursor: pointer;
-}
+
+
 .auth-date:before,
 .postview:before {
  content: "";
@@ -1272,11 +1257,7 @@ div.epcl-share-container {
   width: 100%;
  }
  
- h2 {
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 20px;
- }
+
 
  .vcb-col-right h2 {
   margin-top: 30px;
@@ -1458,10 +1439,7 @@ div.epcl-share-container {
  div.text blockquote {
   margin: 30px 0;
  }
- h2 {
-  font-size: 22px;
-  line-height: 32px;
- }
+
  h3 {
   font-size: 18px;
   line-height: 28px;
