@@ -11,8 +11,7 @@
       <div class="container">
         <div class="flex_row">
           <div class="column column-content">
-            <h1>One Platform <span class="highlight">Endless Efficiency</span></h1>
-            <p>Automate processes, get team insights, and enjoy a productivity boost with Workstatus - A Single, Powerful Solution.</p>
+            <?php the_content(); ?>
           </div>
           <div class="column videoSc" id="has-yt-video">
             <div class="inner">
