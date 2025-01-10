@@ -362,7 +362,7 @@
       <div class="dis-flex featured-out">
         <div class="dis-flex featured-slider" id="featured-slide">
           <div id="ft-glider-loader" class="loader">Loading...</div>
-          <div class="glider" id="ft-glider">
+          <div class="glider" id="ft-glider" style="display:none;">
             <?php 
               foreach($featureSlide['cards'] as $row){
                 $thumb = get_bloginfo('template_url').'/version-2.0/assests/images/featureslide-01.png';  
