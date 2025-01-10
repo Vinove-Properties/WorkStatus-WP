@@ -596,8 +596,10 @@
                                 </div>
                                 <div class="dis-flex menu-column">
                                   <div class="flex-3">
-                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/attendance-management"><span class="title">Attendance Tracking</span>
-                                      </a><span class="hr-arrow-btn"></span>
+                                    <div class="tab-title">
+                                      <a href="<?php echo site_url('/attendance-tracking'); ?>"><span class="title">Attendance Tracking</span>
+                                      </a>
+                                      <span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
