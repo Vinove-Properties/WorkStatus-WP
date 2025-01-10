@@ -2414,8 +2414,8 @@ window.addEventListener("load", function (){
 const gliderElement = document.querySelector(".featured-slider .glider"); // Use your custom class
 const progressBar = document.querySelector(".progress-bar");
 if( gliderElement && progressBar ){
-//const ftGlider  = document.getElementById("ft-glider");    
-//const ftGloader = document.getElementById("ft-glider-loader");    
+const ftGlider  = document.getElementById("ft-glider");    
+const ftGloader = document.getElementById("ft-glider-loader");    
 
 const slides    = gliderElement.children;
 const totalSlides = slides.length;
