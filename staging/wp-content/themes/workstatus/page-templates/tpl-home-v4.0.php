@@ -357,10 +357,12 @@
           echo $featureSlide['sub_heading'];
           ?>
       </div>
+
       <?php if($featureSlide['cards']) : ?>
       <div class="dis-flex featured-out">
         <div class="dis-flex featured-slider" id="featured-slide">
-          <div class="glider" id="glider">
+          <div id="ft-slide-loader" class="loader">Loading...</div>
+          <div class="glider" id="ft-glider">
             <?php 
               foreach($featureSlide['cards'] as $row){
                 $thumb = get_bloginfo('template_url').'/version-2.0/assests/images/featureslide-01.png';  
