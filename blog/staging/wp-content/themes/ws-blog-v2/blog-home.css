@@ -1,8 +1,8 @@
 :root {
 	--blue: #202020;
-	--yellow: #FFAD00;
+	--blue: #624DE3;
 	--white: #ffffff;
-	--gray: #202020;
+	--gray: #363636;
 	--white: #fff;
 	--black: #000;
   }
@@ -26,8 +26,8 @@
 	  padding: 10px 20px;
 	  background: #FFFCF1;
 	  border-radius: 15px;
-	  border: 1px solid var(--yellow);
-	  color: var(--yellow);
+	  border: 1px solid var(--blue);
+	  color: var(--blue);
 	  display: block;
 	  position: relative;
 	  cursor: pointer;
@@ -55,20 +55,20 @@
   
 	.blog-cat ul li a {
 	  padding: 11px 20px;
-	  background: #FFFCF1;
+	  background: #F6F1FF;
 	  border-radius: 20px;
 	  display: block;
-	  border: 1px solid #FFFCF1;
+	  border: 1px solid #F6F1FF;
 	  color: var(--gray);
 	}
   
 	.blog-cat ul li.active a {
-	   color: var(--yellow);
-	  border-color: var(--yellow);
+	   color: var(--blue);
+	  border-color: var(--blue);
 	}
 	.blog-cat ul li a:hover {
-	   color: var(--yellow);
-	  border-color: var(--yellow);
+	   color: var(--blue);
+	  border-color: var(--blue);
 	}
   
 	.top-content {
@@ -151,7 +151,7 @@
   
 	.searchBox .submit {
 	  width: 142px;
-	  background: var(--yellow);
+	  background: var(--blue);
 	  height: 46px;
 	  border-radius: 10px;
 	  border: 0;
@@ -205,7 +205,7 @@
 	}
   
 	main-intro h2 a:hover {
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
   
 	.main-intro h2:before {
@@ -213,7 +213,7 @@
 	  width: 10px;
 	  height: 10px;
 	  border-radius: 50%;
-	  background: var(--yellow);
+	  background: var(--blue);
 	  position: absolute;
 	  left: 0;
 	  top: 15px;
@@ -223,7 +223,7 @@
 	  position: relative;
 	  font-size: 18px;
 	  font-weight: 500;
-	  color: var(--yellow);
+	  color: var(--blue);
 	}
   
 	.main-intro .view-all-link:after {
@@ -296,13 +296,13 @@
   
 	.blog-content .category {
 	  text-transform: uppercase;
-	   color: var(--yellow);
+	   color: var(--blue);
 	  font-weight: 500;
 	  display: block;
 	  margin: 0 0 15px;
 	}
 
-	.blog-content .category a{ color: var(--yellow);}
+	.blog-content .category a{ color: var(--blue);}
   
 	.blog-content .category a:hover {
 	  text-decoration: underline;
@@ -322,7 +322,7 @@
   
 	.blog-posts-list .blog-post-col.big-size .title a:hover {
 	  text-decoration: underline;
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
   
 	.blog-posts-list .blog-post-col.big-size .blog-content p {
@@ -422,7 +422,7 @@
   
 	.blog-posts-list .blog-post-col.small-size .title a:hover {
 	  text-decoration: underline;
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
   
 	.cta-flex {
@@ -438,7 +438,7 @@
 	  position: relative;
 	  display: flex;
 	  border-radius: 15px;
-	  background:var(--yellow);
+	  background:var(--blue);
 	}
   
 	.custom-left img {
@@ -550,7 +550,7 @@
   
 	.subs-box .es_subscription_form_submit:hover {
 	  background: #fff;
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
   
 	.subs-box .es-field-wrap {
@@ -637,7 +637,7 @@
   
 	.blog-posts-list .blog-post-col .title a:hover {
 	  text-decoration: underline;
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
   
 	.blog-posts-list.list-view .blog-post-col {
@@ -770,18 +770,18 @@
 	  border-radius: 0 0 10px 10px;
 	  background: #05164D;
 	}
-	.blog-posts-list .develop-row.bg-yellow {
-	  background: var(--yellow);
+	.blog-posts-list .develop-row.bg-blue {
+	  background: var(--blue);
 	}
   
-	.blog-posts-list .develop-row.bg-yellow {
+	.blog-posts-list .develop-row.bg-blue {
 	  background: transparent;
 	}
-	.blog-posts-list .develop-row.bg-yellow .blog-image {
+	.blog-posts-list .develop-row.bg-blue .blog-image {
 	  border-radius: 8px 8px 0 0;
 	}
-	.blog-posts-list .develop-row.bg-yellow .blog-image {
-	  background: var(--yellow);
+	.blog-posts-list .develop-row.bg-blue .blog-image {
+	  background: var(--blue);
 	}
 	.blog-posts-list .develop-row.bg-blue {
 	  background: transparent;
@@ -816,14 +816,14 @@
   
 	.blog-posts-list .develop-row.wid-35 .btn-container .white-btn {
 	  border-radius: 10px;
-	  background: var(--yellow);
+	  background: var(--blue);
 	  color: #fff;
 	  font-size: 16px;
 	   color: var(--white);
 	  font-weight: 500;
 	  padding: 9px 20px;
 	  line-height: 1.3;
-	  border-color: var(--yellow);
+	  border-color: var(--blue);
 	  min-width: 115px;
 	  z-index: 9;
 	  text-align: center;
@@ -831,7 +831,7 @@
   
 	.blog-posts-list .develop-row.wid-35 .btn-container .white-btn:hover {
 	  background: var(--white);
-	  color: var(--yellow);
+	  color: var(--blue);
 	  border-color: var(--white);
 	}
   
@@ -868,13 +868,13 @@
 	}
 	.devs-category ul li.active,
 	.devs-category ul li:hover {
-	   color: var(--yellow);
+	   color: var(--blue);
 	}
 	.devs-category ul li.active:after {
-	  background: var(--yellow);
+	  background: var(--blue);
 	}
 	.devs-category ul li:hover:after {
-	  background: var(--yellow);
+	  background: var(--blue);
 	}
   
 	.subscribe-footer {
