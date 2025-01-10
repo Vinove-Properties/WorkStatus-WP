@@ -5021,9 +5021,6 @@ li.iti__country {
   animation-play-state: paused; }
 
 /*Media Query Start From Here*/
-@media (max-width: 1440px) {
-  .feature-slide-section .featured-out .prev-next-btn {
-    bottom: 6%; } }
 @media (max-width: 1280px) {
   .client-img-section .why-ws .right-box {
     padding-left: 15px; }
@@ -5571,6 +5568,9 @@ li.iti__country {
   display: none; }
 
 /*Media Query Start From Here*/
+@media (max-width: 1440px) {
+  .feature-slide-section .featured-out .prev-next-btn {
+    bottom: 6%; } }
 @media (max-width: 1280px) {
   .feature-slide-section .featured-out .featured-slider .flex-3 .box-3 {
     min-height: 380px; }
