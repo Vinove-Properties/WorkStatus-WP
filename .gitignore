@@ -39,6 +39,7 @@ blog/staging/wp-content/*
 !blog/staging/wp-content/themes/
 blog/staging/wp-content/themes/*
 !blog/staging/wp-content/themes/ws-blog/
+!blog/staging/wp-content/themes/ws-blog-v2/
 
 l/wp-admin/
 l/wp-includes/
