@@ -5012,10 +5012,10 @@ li.iti__country {
   to {
     transform: translateX(0); } }
 .award-animate-slide-to-left {
-  animation: slide_to_left 15s linear infinite; }
+  animation: slide_to_left 50s linear infinite; }
 
 .award-animate-slide-to-right {
-  animation: slide_to_right 15s linear infinite; }
+  animation: slide_to_right 50s linear infinite; }
 
 .hover\:pause:hover {
   animation-play-state: paused; }
@@ -5495,7 +5495,7 @@ li.iti__country {
           opacity: 1; }
   .feature-slide-section .featured-out .prev-next-btn {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     width: 100%;
     display: flex;
     justify-content: space-between;
