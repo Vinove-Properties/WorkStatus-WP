@@ -473,7 +473,7 @@
           echo '</div>';  
         }
         ?>  
-      <?php echo _getDemoCTA('button-common margin-t-80', false); ?>    
+      <?php echo _getDemoCTA('button-common margin-t-80 no-trial-btn', false); ?>    
     </div>
   </section>
   <?php endif; ?>
