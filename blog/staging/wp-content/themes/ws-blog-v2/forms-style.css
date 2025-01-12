@@ -137,7 +137,7 @@ a:-webkit-any-link:focus-visible {
     height: 50px;
     color: #110302;
     font-size: 14px;
-    font-family: noto sans, sans-serif;
+    font-family: Lexend Deca sans-serif;
     font-weight: 500;
     background: #fff;
     margin-bottom: 0 !important;
@@ -152,7 +152,7 @@ a:-webkit-any-link:focus-visible {
     border: 0;
     min-width: 210px;
     background: #643bdf;
-    font-family: noto sans, sans-serif;
+    font-family: Lexend Deca sans-serif;
     font-size: 16px;
     font-weight: 600;
     padding: 10px 0 8px;
@@ -223,7 +223,7 @@ a:-webkit-any-link:focus-visible {
     padding: 18px;
     color: #110302;
     font-size: 14px;
-    font-family: noto sans, sans-serif;
+    font-family: Lexend Deca sans-serif;
     font-weight: 500;
     height: 117px;
     resize: none;
@@ -375,7 +375,7 @@ textarea::-webkit-input-placeholder {
     font-weight: 800;
     letter-spacing: .5px;
     color: #000;
-    font-family: noto sans, sans-serif
+    font-family: Lexend Deca sans-serif
 }
 
 .captForm .quizAns ::-webkit-input-placeholder {
@@ -437,7 +437,7 @@ textarea::-webkit-input-placeholder {
     height: 50px;
     color: #737b7d;
     font-size: 13px;
-    font-family: noto sans, sans-serif;
+    font-family: Lexend Deca sans-serif;
     background-color: #fff
 }
 
@@ -473,7 +473,7 @@ input[placeholder] {
     height: 50px;
     color: #110302;
     font-size: 14px;
-    font-family: noto sans, sans-serif
+    font-family: Lexend Deca sans-serif
 }
 
 .banner-form .select-box.active a {
@@ -485,7 +485,7 @@ input[placeholder] {
     text-decoration: none;
     color: #110302;
     text-transform: capitalize;
-    font-family: noto sans, sans-serif
+    font-family: Lexend Deca sans-serif
 }
 
 .banner-form .select-box .arrow-btn::after {
@@ -540,7 +540,7 @@ input[placeholder] {
     font-weight: 500;
     transition: .3s ease-in-out;
     text-transform: capitalize;
-    font-family: noto sans, sans-serif
+    font-family: Lexend Deca sans-serif
 }
 
 .banner-form .select-list ul li.active,
@@ -1194,7 +1194,7 @@ img.info-img:hover .wsf-signup .info-lbl span.tolltip  {
     left: 10px;
     pointer-events: none;
     font-size: 14px;
-    font-family: "Noto Sans";
+    font-family: "Lexend Deca";
     color: #525f7f;
     line-height: 19px;
     font-weight: 400;
@@ -1208,7 +1208,7 @@ img.info-img:hover .wsf-signup .info-lbl span.tolltip  {
     border: 0;
     border-bottom: 1px solid #cbd3dc;
     font-size: 14px;
-    font-family: "Noto Sans";
+    font-family: "Lexend Deca";
     color: #525f7f;
     line-height: 19px;
     border-radius: 0;
@@ -1265,7 +1265,7 @@ select.infield{margin: 0 0 15px;}
 
 .wsf-signup .popup-content .right-section .form-wrap .form-group option {
     padding: 0 10px;
-    font-family: "Noto Sans"
+    font-family: "Lexend Deca"
 }
 
 .wsf-signup .popup-content .right-section .form-wrap .form-group i {
@@ -1328,7 +1328,7 @@ select.infield{margin: 0 0 15px;}
 .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
     width: 100%;
     border-radius: 8px;
-    font-family: "Noto Sans";
+    font-family: "Lexend Deca";
     background: #00c1c7;
     padding: 16px 28px;
     color: #fff;

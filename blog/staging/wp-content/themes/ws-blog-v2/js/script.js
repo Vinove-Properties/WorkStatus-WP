@@ -474,3 +474,14 @@ function call_demows(){
 function callSalesWs(){
     window.open( generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams ), '_blank' );
 }
+
+
+
+
+const showDivButtons  = document.querySelectorAll('.mobile-active');
+const hiddenDivs      = document.querySelectorAll('.blog-cat');
+showDivButtons.forEach((button, index) => {
+  button.addEventListener('click', () => { 
+    hiddenDivs[index].classList.toggle('is-visible');
+  });
+});
