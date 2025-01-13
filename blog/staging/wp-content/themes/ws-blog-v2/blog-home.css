@@ -80,13 +80,13 @@
 	}
   
 	.blog-cat ul li {
-	  margin-right: 5px;
+		margin: 0 5px 10px 0;
 	  display: inline-block;
 	}
   
   
 	.blog-cat ul li a {
-	  padding: 11px 20px;
+		padding: 9px 15px;
 	  background: #F6F1FF;
 	  border-radius: 20px;
 	  display: block;
