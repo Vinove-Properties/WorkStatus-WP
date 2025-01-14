@@ -40,13 +40,13 @@ add_filter('upload_mimes', function($mime_types){
 add_action( 'phpmailer_init', 'ws_smtp_phpemailer' );
 function ws_smtp_phpemailer( $phpmailer ){
   $phpmailer->isSMTP();  
-  $phpmailer->Host          = 'smtp.gmail.com';
+  $phpmailer->Host          = 'smtp.sendgrid.net';
   $phpmailer->SMTPSecure    = 'tsl';
   $phpmailer->Port          = 587;
   $phpmailer->SMTPAuth      = true;
   $phpmailer->Username      = 'do-not-reply@workstatus.io';
-  $phpmailer->Password      = 'qqmwjodicsevwikm';
-  $phpmailer->From          = "donotreply@workstatus.io";
+  $phpmailer->Password      = dev_smtp_password;
+  $phpmailer->From          = "do-not-reply@workstatus.io";
   $phpmailer->FromName      = "Workstatus";
 }
 
