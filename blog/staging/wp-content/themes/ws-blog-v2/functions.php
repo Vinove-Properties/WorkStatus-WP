@@ -2251,3 +2251,131 @@ function getAuthorBlogCategories( $author_id ){
   }
   return $authCats;
 }
+
+
+/*Optoins Page Optoins Here*/
+if( function_exists('acf_add_options_page') ){ 
+    acf_add_options_page(array(
+        'page_title'  => 'Theme General Settings',
+        'menu_title'  => 'Blog Options',
+        'menu_slug'   => 'theme-general-settings',
+        'capability'  => 'edit_posts  ',
+        'redirect'    => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'  => 'Common Settings',
+        'menu_title'  => 'Common Settings',
+        'parent_slug' => 'theme-general-settings'
+    ));  
+}
+
+
+add_action( 'pre_get_posts', 'custom_post_archive_changes' );
+function custom_post_archive_changes( $query ) {
+    if ( is_home() && $query->is_main_query() ) {
+        $stickies = get_option("sticky_posts");
+        $query->set( 'post__not_in', $stickies );
+    }
+}
+
+function bigBlockPost( $post_id ){
+//$thumb = wp_get_attachment_url( get_post_thumbnail_id( $post_id ), 'single-post-thumbnail' );  
+$postThumbID  = get_post_thumbnail_id( $post_id );  
+$image_path   = wp_get_original_image_path($postThumbID);
+if( file_exists( $image_path ) ){
+  $thumb  = wp_get_attachment_url(get_post_thumbnail_id( $post_id ), 'medium');    
+}else{
+  $thumb  = get_bloginfo('template_url').'/dev-img/default-image.jpg';
+}
+return '<div class="blog-image">
+    <a href="'.get_permalink($post_id).'"><img width="1024" height="462" src="'.$thumb.'" alt="pixel" loading="lazy"></a>
+    </div>
+    <div class="blog-content">
+    <span class="category">'.getPostPrimeCategory($post_id).'</span>
+    <div class="title two-line"><a href="'.get_permalink($post_id).'">'.get_the_title($post_id).'</a></div>
+    '.getMcAutor($post_id).'
+    </div>';
+}
+
+function smallBlockPost($post_id){
+$postThumbID  = get_post_thumbnail_id( $post_id );  
+$image_path   = wp_get_original_image_path($postThumbID);
+if( file_exists( $image_path ) ){
+  $thumb  = wp_get_attachment_url( get_post_thumbnail_id( $post_id ), 'medium' );    
+}else{
+  $thumb  = get_bloginfo('template_url').'/dev-img/default-image.jpg';
+}
+
+
+return '<div class="devs-col">
+  <div class="blog-image">
+  <a href="'.get_permalink($post_id).'" target="_blank">
+    <picture><img src="'.$thumb.'" alt="pixel" loading="lazy"></picture>
+    </a>
+  </div>
+  <div class="blog-content">
+    <span class="category">'.getPostPrimeCategory($post_id).'</span>
+    <div class="title three-line">
+      <a href="'.get_permalink($post_id).'">'.get_the_title($post_id).'</a>
+    </div>
+    '.getMcAutor($post_id).'
+  </div>
+  </div>';
+}
+
+function getPostPrimeCategory( $postid ){
+  $categories = get_the_category($postid);
+  if( $categories ){
+    return '<a href="'.esc_url(get_category_link($categories[0]->cat_ID)).'">'.$categories[0]->name.'</a>';
+  }  
+}
+
+function pxlGetTopThreePosts($id, $taxType = 'tag' ){
+    if( $taxType == "tag" ){
+    $args   = ['tag_id' => $id, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'DESC', 
+    'fields' => 'ids'];      
+    }else{
+    $args   = ['cat' => $id, 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'DESC', 'fields' => 'ids'];
+    }
+        
+    $query      = new WP_Query( $args );
+    $post_ids   = $query->posts;
+    wp_reset_postdata();
+    return $post_ids;
+}
+
+function pxlCardThumbnail() {
+    if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+    return;
+    }
+
+    if ( is_singular() ) : ?>
+    <div class="post-thumbnail">
+    <?php the_post_thumbnail(); ?>              
+    </div><!-- .post-thumbnail -->
+    <?php 
+    else : 
+    $post_id = get_the_ID();
+    $thePostImage = get_the_post_thumbnail( $post_id, 'medium', array( 'alt' => the_title_attribute( array( 'echo' => false ) ) ) );    
+
+    if( function_exists('get_field') ){
+        $listThubnail = get_field( 'pl-thumbnail', $post_id );
+        if( $listThubnail && is_array( $listThubnail ) ){
+            if( isset( $listThubnail['sizes']['plist-thumbnail'] ) &&  !empty( $listThubnail['sizes']['plist-thumbnail'] ) ){
+            $thePostImage = '<img loading="lazy" src="'.$listThubnail['sizes']['plist-thumbnail'].'" 
+            alt="'.$listThubnail['title'].'" width="'.$listThubnail['sizes']['plist-thumbnail-width'].'" 
+            height="'.$listThubnail['sizes']['plist-thumbnail-height'].'">';    
+            }else{
+            $thePostImage = '<img loading="lazy" src="'.$listThubnail['url'].'" alt="'.$listThubnail['title'].'" width="'.$listThubnail['width'].'" height="'.$listThubnail['height'].'">'; 
+            }               
+        }
+    }
+    ?>
+
+    <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+    <?php echo $thePostImage; ?>            
+    </a>
+    <?php
+    endif; // End is_singular().
+}

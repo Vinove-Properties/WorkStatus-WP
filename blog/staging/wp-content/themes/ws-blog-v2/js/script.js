@@ -475,9 +475,6 @@ function callSalesWs(){
     window.open( generateUtmLink( 'https://calendly.com/workstatus/sales', utmParams ), '_blank' );
 }
 
-
-
-
 const showDivButtons  = document.querySelectorAll('.mobile-active');
 const hiddenDivs      = document.querySelectorAll('.blog-cat');
 showDivButtons.forEach((button, index) => {
@@ -485,3 +482,36 @@ showDivButtons.forEach((button, index) => {
     hiddenDivs[index].classList.toggle('is-visible');
   });
 });
+
+function switchCat( tab_ul, tabcon, e ){
+    let TabElms = document.getElementById(tab_ul).querySelectorAll('li');
+    TabElms.forEach(function(elm){
+        elm.classList.remove("active");
+    });
+    e.classList.add("active");
+    let TabElmc = document.getElementById(tab_ul).querySelectorAll('.tabc-elm');
+    TabElmc.forEach(function(elm){
+        elm.classList.remove("active");
+    });
+    document.getElementById(tabcon).classList.add("active");
+    let viewElm = document.getElementById(tab_ul).getElementsByClassName("view-all-link")[0];
+    viewElm.setAttribute('href', e.dataset.link);
+}
+
+function _playYTmedia(video){
+    let iframe = document.getElementById("gen-video");
+    let ipopup = document.getElementById("gen-vpopup");
+    iframe.setAttribute('src', video+"?autoplay=1");
+    setTimeout(function(){        
+        ipopup.style.display = "block";    
+    }, 200);
+    
+}
+
+
+function closeGenVideo(){
+    let iframe = document.getElementById("gen-video");
+    let ipopup = document.getElementById("gen-vpopup");
+    iframe.setAttribute('src', "");    
+    ipopup.style.display = "none";
+}
