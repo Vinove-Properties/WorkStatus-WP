@@ -1391,6 +1391,8 @@
 		min-width: 180px;
 		margin-right: 20px;
 	  }
+	  .blog-cat ul li{margin: 0 4px 10px 0;}
+	  .blog-cat ul li a{padding:9px 12px; font-size: 15px;}
 	}
   
 	.blogvideo-popup .popup-wrapper .popWrap .popup-content {
@@ -1453,8 +1455,7 @@
 		flex-basis: 40px;
 		margin-right: 3px;
 	  }
-		.blog-cat ul li{margin: 0 4px 10px 0;}
-		.blog-cat ul li a{padding:9px 12px; font-size: 15px;}
+	
 	  .blog-posts-list {
 		gap: 30px;
 	  }
