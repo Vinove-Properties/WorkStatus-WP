@@ -125,6 +125,7 @@ function workstatus_scripts(){
     );
     wp_enqueue_style( 'ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
     wp_enqueue_style( 'ws-home-style', get_stylesheet_directory_uri() . '/blog-home.css' );
+    wp_enqueue_style( 'ws-epopup', get_stylesheet_directory_uri() .'/assets/css/ebook.css', array(), _S_VERSION);
     wp_enqueue_style( 'ws-blogdetail', get_stylesheet_directory_uri() .'/assets/css/blog-detail.css', array(), _S_VERSION);  
     wp_enqueue_style( 'ws-footer', get_stylesheet_directory_uri() .'/assets/css/ws-footer.css',  array(), _S_VERSION); 
     wp_enqueue_style( 'ws-all-forms', get_stylesheet_directory_uri() .'/forms-style.css',  array(), _S_VERSION);

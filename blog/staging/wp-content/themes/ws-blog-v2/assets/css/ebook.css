@@ -1,0 +1,312 @@
+.ebook-popup {
+	width: 100%;
+}
+
+.ebook-popup .popup-wrapper {
+	z-index: 999;
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ebook-popup .popup-wrapper .popflex {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ebook-popup .popup-wrapper .popflex .popup-content {
+	width: 516px;
+	box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1);
+	background: #fff;
+	padding: 0;
+	border-radius: 15px;
+	text-align: center;
+	position: relative;
+}
+
+
+.ebook-popup .pdf-top {
+	width: 100%;
+	padding-top: 15px;
+	background: linear-gradient(180deg, #F1EFFF 0%, #F1EFFF 100%);
+	border-radius: 15px 15px 0 0;
+	border-bottom: 2px solid #E3DFFB;
+	position: relative;
+	height: 260px;
+}
+
+.ebook-popup .pdf-top img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+	margin: 0;
+}
+
+
+.ebook-popup .pdf-top .text-box {
+	width: 160px;
+	position: absolute;
+	top: 85px;
+	text-align: center;
+	left: 10px;
+	right: 0;
+	padding: 0 5px;
+	margin: 0 auto;
+}
+
+.ebook-popup .pdf-top .text-box h3 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #fff;
+	margin: 10px 0 8px;
+}
+
+.ebook-popup .pdf-top .text-box p {
+	font-size: 9px;
+	line-height: 14px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.ebook-popup .pdf-top img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+.ebook-popup .ebclose {
+	background: url(../images/ecross.svg) no-repeat;
+	background-size: 100%;
+	right: 15px;
+	top: 15px;
+	width: 20px;
+	height: 20px;
+	font-size: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ebook-popup .ebclose:hover {
+	opacity: 0.8;
+}
+
+.ebook-popup .pdf-bottom {
+	padding: 25px 22px;
+}
+
+.ebook-popup .pdf-bottom h2 {
+	font-size: 30px;
+	line-height: 38px;
+	margin: 0 0 10px;
+}
+
+.ebook-popup .pdf-bottom h2 strong {
+	color: #624DE3;
+}
+
+.ebook-popup .pdf-bottom p {
+	margin: 0 0 10px;
+}
+
+.ebook-popup .pdf-bottom .form-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ebook-popup .pdf-bottom .form-wrap .form-field {
+	width: 100%;
+	margin: 15px 0 0;
+	padding: 0 8px;
+}
+
+.ebook-popup .pdf-bottom .form-wrap .form-field.half {
+	width: 50%;
+}
+
+.ebook-popup .pdf-bottom label {
+	text-align: left;
+	display: block;
+	margin: 0 0 6px;
+	color: rgba(65, 65, 65, 0.8);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.ebook-popup .pdf-bottom .input-fld {
+	width: 100%;
+	border: 2px solid #e0e0e0;
+	padding: 0 13px;
+	height: 44px;
+	background: transparent;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	border-radius: 5px;
+	outline: 0;
+	color: #05164D;
+}
+
+
+.ebook-popup .downbtn {
+	width: 100%;
+	border-radius: 50px;
+	background: #624DE3;
+	color: #fff;
+	height: 50px;
+	padding: 0 30px;
+	cursor: pointer;
+	font-weight: 500;
+	border: 0;
+	margin: 15px 0 0;
+}
+
+.ebook-popup .downbtn:hover {
+	background: #051441;
+}
+
+
+.ebook-popup .pdf-bottom input:focus-visible {
+	border: 2px solid #624DE3;
+}
+
+.ebook-popup .pdf-bottom input::placeholder {
+	color: #888888;
+}
+
+
+@media (max-width: 1390px) {
+
+	.ebook-popup .pdf-top {
+		height: 230px;
+	}
+
+	.ebook-popup .pdf-top .text-box {
+		top: 75px;
+	}
+
+	.ebook-popup .pdf-top .text-box h3 {
+		margin: 5px 0;
+	}
+
+	.ebook-popup .pdf-bottom h2 {
+		font-size: 28px;
+		line-height: 34px;
+		margin: 0 0 8px;
+	}
+
+	.ebook-popup .pdf-bottom p {
+		margin: 0 0 5px;
+	}
+
+
+	.ebook-popup .pdf-bottom .input-fld {
+		height: 42px;
+	}
+
+	.ebook-popup .downbtn {
+		margin: 10px 0 0;
+		height: 45px;
+	}
+}
+
+
+@media (max-width: 1280px) {
+
+	.ebook-popup .pdf-top {
+		height: 220px;
+	}
+
+	.ebook-popup .pdf-top .text-box {
+		top: 75px;
+	}
+
+	.ebook-popup .pdf-top .text-box h3 {
+		margin: 5px 0;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.ebook-popup .pdf-bottom h2 {
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.ebook-popup .pdf-top .text-box p {
+		font-size: 8px;
+		line-height: 12px;
+	}
+
+	.ebook-popup .pdf-bottom p {
+		margin: 0 0 5px;
+	}
+
+
+	.ebook-popup .pdf-bottom .input-fld {
+		height: 38px;
+	}
+
+	.ebook-popup .downbtn {
+		height: 40px;
+	}
+}
+
+
+@media (max-width: 1024px) {
+
+
+	.ebook-popup .popup-wrapper .popflex .popup-content {
+		width: 90%;
+	}
+
+	.ebook-popup .pdf-top {
+		display: none;
+	}
+
+	.ebook-popup .pdf-bottom h2 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.ebook-popup .pdf-bottom p {
+		line-height: 1;
+	}
+
+	.ebook-popup .ebclose {
+		top: 10px;
+	}
+
+	.ebook-popup .pdf-bottom .form-wrap .form-field {
+		width: 100%;
+		margin: 15px 0 0;
+		padding: 0 8px;
+	}
+
+	.ebook-popup .pdf-bottom .form-wrap .form-field.half {
+		width: 100%;
+	}
+
+	.ebook-popup .pdf-bottom .input-fld {
+		height: 40px;
+	}
+
+
+	.ebook-popup .downbtn {
+		height: 45px;
+	}
+
+
+}
