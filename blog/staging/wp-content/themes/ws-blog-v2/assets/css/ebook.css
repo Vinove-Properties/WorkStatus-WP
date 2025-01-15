@@ -97,6 +97,7 @@
 	font-size: 0;
 	position: absolute;
 	cursor: pointer;
+  z-index: 999;
 }
 
 .ebook-popup .ebclose:hover {
@@ -136,6 +137,13 @@
 	width: 50%;
 }
 
+.ebook-popup .pdf-bottom .form-wrap .form-field small{display: none; font-size: 10px;
+  margin-top: 5px;
+  color: #dc0019;
+  text-align: left;
+  line-height: 15px;}
+.ebook-popup .pdf-bottom .form-wrap .form-field.verror small{display: block;}
+
 .ebook-popup .pdf-bottom label {
 	text-align: left;
 	display: block;
@@ -159,6 +167,8 @@
 	outline: 0;
 	color: #05164D;
 }
+
+
 
 
 .ebook-popup .downbtn {
@@ -188,7 +198,7 @@
 }
 
 
-@media (max-width: 1390px) {
+@media (max-width: 1440px) {
 
 	.ebook-popup .pdf-top {
 		height: 230px;
@@ -214,12 +224,12 @@
 
 
 	.ebook-popup .pdf-bottom .input-fld {
-		height: 42px;
+		height: 40px;
 	}
 
 	.ebook-popup .downbtn {
 		margin: 10px 0 0;
-		height: 45px;
+		height: 40px;
 	}
 }
 
