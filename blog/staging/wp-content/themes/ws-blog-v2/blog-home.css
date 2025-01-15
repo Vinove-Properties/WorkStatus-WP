@@ -1424,6 +1424,11 @@
 	  font-size: 40px;
 	  line-height: 52px;
 	}
+
+	.blog-main-page{
+	.blog-cat ul li{margin: 0 4px 10px 0;}
+	.blog-cat ul li a{padding:9px 12px;}
+	}
   
   }
   
