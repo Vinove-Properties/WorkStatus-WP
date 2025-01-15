@@ -212,6 +212,8 @@
 		margin: 5px 0;
 	}
 
+  .ebook-popup .pdf-bottom .form-wrap .form-field{margin:12px 0 0;}
+
 	.ebook-popup .pdf-bottom h2 {
 		font-size: 28px;
 		line-height: 34px;
@@ -253,15 +255,17 @@
 	.ebook-popup .pdf-bottom h2 {
 		font-size: 26px;
 		line-height: 32px;
+    margin: 0 0 8px;
 	}
 
-	.ebook-popup .pdf-top .text-box p {
-		font-size: 8px;
-		line-height: 12px;
-	}
+  
+
+
 
 	.ebook-popup .pdf-bottom p {
-		margin: 0 0 5px;
+    font-size: 15px;
+		line-height: 12px;
+    margin:0 0 5px;
 	}
 
 
