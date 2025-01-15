@@ -1425,10 +1425,7 @@
 	  line-height: 52px;
 	}
 
-	.blog-main-page{
-	.blog-cat ul li{margin: 0 4px 10px 0;}
-	.blog-cat ul li a{padding:9px 12px;}
-	}
+	
   
   }
   
@@ -1456,11 +1453,8 @@
 		flex-basis: 40px;
 		margin-right: 3px;
 	  }
-  
-	  .blog-cat ul li a {
-		padding: 12px 14px;
-	  }
-  
+		.blog-cat ul li{margin: 0 4px 10px 0;}
+		.blog-cat ul li a{padding:9px 12px;}
 	  .blog-posts-list {
 		gap: 30px;
 	  }
