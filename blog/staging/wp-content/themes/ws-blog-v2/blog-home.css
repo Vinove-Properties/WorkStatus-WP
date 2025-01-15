@@ -1454,7 +1454,7 @@
 		margin-right: 3px;
 	  }
 		.blog-cat ul li{margin: 0 4px 10px 0;}
-		.blog-cat ul li a{padding:9px 12px;}
+		.blog-cat ul li a{padding:9px 12px; font-size: 15px;}
 	  .blog-posts-list {
 		gap: 30px;
 	  }
