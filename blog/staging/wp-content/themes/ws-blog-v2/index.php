@@ -56,7 +56,7 @@ $catBlockThree  = get_field('row-c2', 'option');
       if( $st === 1 ){
         echo '<div class="blog-post-col big-size postid-'.get_the_ID().'">
         <div class="blog-image">
-          <a href="'.get_permalink().'"><img width="1024" height="462" src="'.$stkThumb.'" alt="valuecoders" loading="lazy"></a>
+          <a href="'.get_permalink().'"><img width="1024" height="462" src="'.$stkThumb.'" alt="workstatus" loading="lazy"></a>
         </div>
         <div class="blog-content">
           <span class="category">'.$cat.'</span>
@@ -71,7 +71,7 @@ $catBlockThree  = get_field('row-c2', 'option');
           <div class="blog-post-col">
             <div class="blog-image">
               <a href="">
-              <img width="1024" height="462" src="'.$stkThumb.'" alt="valuecoders" loading="lazy"></a>              
+              <img width="1024" height="462" src="'.$stkThumb.'" alt="workstatus" loading="lazy"></a>              
             </div>
             <div class="blog-content">
               <span class="category">'.$cat.'</span>
@@ -128,7 +128,7 @@ $catBlockThree  = get_field('row-c2', 'option');
             <img alt="play btn" loading="lazy" src="'.get_bloginfo('template_url').'/assets/images/play-btn.png">
             </span>
             <picture>
-            <img class="video-thumb" src="'.$viidThumb.'" alt="valuecoders" loading="lazy">
+            <img class="video-thumb" src="'.$viidThumb.'" alt="workstatus" loading="lazy">
             </picture>
           </div>
           <div class="blog-content">
@@ -254,7 +254,7 @@ $getActiveCat = $catBlockOne['cat-tab'][0]['link'];
             <img src="'.$catBlockOne['e-image']['url'].'" 
             height="'.$catBlockOne['e-image']['height'].'" 
             width="'.$catBlockOne['e-image']['width'].'" 
-            alt="valuecoders" loading="lazy">
+            alt="workstatus" loading="lazy">
             </picture>';  
             }
             ?>
@@ -343,7 +343,7 @@ $getActiveCat = $catBlockTwo['cat-tab'][0]['link'];
             <img src="'.$catBlockTwo['e-image']['url'].'" 
             height="'.$catBlockTwo['e-image']['height'].'" 
             width="'.$catBlockTwo['e-image']['width'].'" 
-            alt="valuecoders" loading="lazy">
+            alt="workstatus" loading="lazy">
             </picture>';  
             }
             ?>
@@ -429,10 +429,7 @@ $getActiveCat = $catBlockThree['cat-tab'][0]['link'];
             <?php 
             if( $catBlockThree['e-image'] ){
             echo '<picture>
-            <img src="'.$catBlockThree['e-image']['url'].'" 
-            height="'.$catBlockThree['e-image']['height'].'" 
-            width="'.$catBlockThree['e-image']['width'].'" 
-            alt="valuecoders" loading="lazy">
+            <img src="'.$catBlockThree['e-image']['url'].'" height="'.$catBlockThree['e-image']['height'].'"  width="'.$catBlockThree['e-image']['width'].'" alt="workstatus" loading="lazy">
             </picture>';  
             }
             ?>
