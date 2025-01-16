@@ -202,11 +202,10 @@
 </div>
 
 <div class="ebook-popup">
-  <div id="ebook-popup" class="popup-wrapper" style="display:block;">
+  <div id="cmnebook-popup" class="popup-wrapper" style="display:none;">
     <div class="popflex">
       <div class="popup-content">
-      <span class="ebclose">
-      </span>
+      <span class="ebclose" onclick="_close_ebook_model();"></span>
         <div class="pdf-top">
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ebook-img.svg" alt="workstatus"  width="337" height="241">
           <div class="text-box">
@@ -220,18 +219,22 @@
           <form onsubmit="return _handleEbookSubmission();">
           <div class="form-wrap">            
             <div class="form-field">
-              <label>Name*</label><input class="input-fld" id="eb-name" type="text"  placeholder="Name">
-              <small>Please Fill Name</small>
+              <label>Name*</label>
+              <input name="name" class="input-fld" id="eb-name" type="text"  placeholder="Name">
+              <small class="error-msg-section"></small>
             </div>
             <div class="form-field half">
-              <label>Email Address*</label><input class="input-fld" id="eb-email" type="email"  placeholder="Enter email Address">
-              <small>Please Fill Email</small>
+              <label>Email Address*</label>
+              <input name="email" class="input-fld" id="eb-email" type="email"  placeholder="Enter email Address">
+              <small class="error-msg-section"></small>
             </div>
             <div class="form-field half">
-              <label>phone No.</label><input class="input-fld" id="eb-phone" type="text"  placeholder="Enter phone No.">
-              <small>Please Fill Phone</small>
+              <label>phone No.</label>
+              <input name="phone" class="input-fld" id="eb-phone" type="text"  placeholder="Enter phone No.">
+              <small class="error-msg-section"></small>
             </div>
             <div class="form-field">
+              <input type="hidden" id="elm_eb_pdf" name="_eb_pdf" value="">
               <input type="submit" class="downbtn" value="Download Free Ebook">
             </div>            
           </div>

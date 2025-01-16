@@ -21,11 +21,12 @@ $catBlockThree  = get_field('row-c3', 'option');
       </ul>
     </div>
     <div class="top-content">
-      <h1>Secrets to Streamlined Workflows & <br>Empowered Teams</h1>
-      <p>Ideas, best practices, innovation insights from thought leadership.</p>
+    <h1>Stay Ahead with Smart Workforce Solutions</h1>
+    <p>Be part of a community that’s simplifying work processes, enhancing team collaboration, and achieving better results.</p>
     </div>
     <div class="search-blogs">
-      <div class="ser-left"><span class="ftin">Featured In</span> <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/dev-images/featured-logos.svg" alt="workstatus">
+      <div class="ser-left"><span class="ftin">Featured In</span> 
+        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/dev-images/featured-logos.svg" alt="workstatus">
       </div>
       <div class="searchBox">
         <form action="" method="get" class="search-form"> 
@@ -260,7 +261,7 @@ $getActiveCat = $catBlockOne['cat-tab'][0]['link'];
             <p><?php echo $catBlockOne['e-text']; ?></p>
             <div class="btn-container">
               <a class="white-btn blue pxl-ext" 
-              onclick="geteBookpopup('<?php echo $catBlockOne['e-title']; ?>', '<?php echo $catBlockOne['e-link']; ?>')" href="javascript:void(0);">Download Now</a>
+              onclick="geteBook_popup('<?php echo $catBlockOne['e-link']; ?>')" href="javascript:void(0);">Download Now</a>
             </div>
           </div>
         </div>
