@@ -202,7 +202,7 @@
 </div>
 
 <div class="ebook-popup">
-  <div id="ebook-popup" class="popup-wrapper" style="display:none;">
+  <div id="ebook-popup" class="popup-wrapper" style="display:block;">
     <div class="popflex">
       <div class="popup-content">
       <span class="ebclose">

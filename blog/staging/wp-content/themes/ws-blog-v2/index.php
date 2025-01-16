@@ -4,7 +4,7 @@ $popularPosts   = get_field('pop-posts', 'option');
 $popularPosts   = explode(',', $popularPosts);
 $catBlockOne    = get_field('row-c1', 'option');
 $catBlockTwo    = get_field('row-c2', 'option');
-$catBlockThree  = get_field('row-c2', 'option'); 
+$catBlockThree  = get_field('row-c3', 'option'); 
 ?>
 <section class="blog-main-page">
   <div class="container">
@@ -250,12 +250,8 @@ $getActiveCat = $catBlockOne['cat-tab'][0]['link'];
           <div class="blog-image">
             <?php 
             if( $catBlockOne['e-image'] ){
-            echo '<picture>
-            <img src="'.$catBlockOne['e-image']['url'].'" 
-            height="'.$catBlockOne['e-image']['height'].'" 
-            width="'.$catBlockOne['e-image']['width'].'" 
-            alt="workstatus" loading="lazy">
-            </picture>';  
+            echo '<picture> <img src="'.$catBlockOne['e-image']['url'].'" height="'.$catBlockOne['e-image']['height'].'" 
+            width="'.$catBlockOne['e-image']['width'].'" alt="workstatus" loading="lazy"> </picture>';
             }
             ?>
           </div>
@@ -339,12 +335,8 @@ $getActiveCat = $catBlockTwo['cat-tab'][0]['link'];
           <div class="blog-image">
             <?php 
             if( $catBlockTwo['e-image'] ){
-            echo '<picture>
-            <img src="'.$catBlockTwo['e-image']['url'].'" 
-            height="'.$catBlockTwo['e-image']['height'].'" 
-            width="'.$catBlockTwo['e-image']['width'].'" 
-            alt="workstatus" loading="lazy">
-            </picture>';  
+            echo '<picture> <img src="'.$catBlockTwo['e-image']['url'].'" height="'.$catBlockTwo['e-image']['height'].'" 
+            width="'.$catBlockTwo['e-image']['width'].'" alt="workstatus" loading="lazy"> </picture>';
             }
             ?>
           </div>

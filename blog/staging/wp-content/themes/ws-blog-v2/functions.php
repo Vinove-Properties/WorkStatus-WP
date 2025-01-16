@@ -132,20 +132,10 @@ function workstatus_scripts(){
 
     
     if( is_author() ){
-      wp_enqueue_style( 'author-archive', get_stylesheet_directory_uri().'/assets/css/author-style.css', array(), _S_VERSION );    
-      }
-
-    if( is_single() ){
-    //wp_enqueue_style( 'pxl-ebook', get_stylesheet_directory_uri() .'/assets/css/pxl-ebook.css');          
-    /*
-    wp_enqueue_style( 'form-css', get_stylesheet_directory_uri() . '/assets/css/form-county.css', array(),
-    _S_VERSION );
-    */
+    wp_enqueue_style( 'author-archive', get_stylesheet_directory_uri().'/assets/css/author-style.css', array(), _S_VERSION );
     }
-    /*wp_enqueue_script( 'intlTelInput', 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js', array(),  '17.0.8', true );*/
+
     
-    // wp_enqueue_script( 'form-validation', get_stylesheet_directory_uri() . '/js/form-validation.js', array(), 
-    // _S_VERSION, true );
     wp_enqueue_script( 'su-validation', get_stylesheet_directory_uri() . '/js/signupform-validation.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'ebook-handler', get_stylesheet_directory_uri() . '/js/ebook.js', array(), _S_VERSION, true);
 }
