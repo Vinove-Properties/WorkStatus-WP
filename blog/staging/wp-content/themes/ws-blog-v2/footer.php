@@ -132,7 +132,7 @@
         <?php
           $copyRight  = "&copy;";
           $suPopup    = "Copyright";
-          $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'w2wp') !== false)) ? true : false;
+          $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'staging') !== false)) ? true : false;
           if( is_user_logged_in() ){
             if( $is_staging === true ){
               $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";    
@@ -202,7 +202,7 @@
 </div>
 
 <div class="ebook-popup">
-  <div id="ebook-popup" class="popup-wrapper" style="display:block;">
+  <div id="ebook-popup" class="popup-wrapper" style="display:none;">
     <div class="popflex">
       <div class="popup-content">
       <span class="ebclose">
