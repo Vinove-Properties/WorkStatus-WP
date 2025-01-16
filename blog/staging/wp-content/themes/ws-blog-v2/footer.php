@@ -210,39 +210,37 @@
         <div class="pdf-top">
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ebook-img.svg" alt="workstatus"  width="337" height="241">
           <div class="text-box">
-            <h3>The Founder’s guide to share option schemes</h3>
+            <h3>The Founder's guide to share option schemes</h3>
             <p>Why, How and when to incentivise your employee with Etiquity</p>
           </div>
         </div>
         <div class="pdf-bottom">
           <h2>Download Free <strong>E-Book</strong> Now</h2>
           <p>Lorem Ipsum is simply dummy text of the printing .</p>
-          <div class="form-wrap">
-            <div class="form-field verror">
-              <label>Name*</label><input class="input-fld" type="text"  placeholder="Name" required="required">
+          <form onsubmit="return _handleEbookSubmission();">
+          <div class="form-wrap">            
+            <div class="form-field">
+              <label>Name*</label><input class="input-fld" id="eb-name" type="text"  placeholder="Name">
               <small>Please Fill Name</small>
             </div>
-            <div class="form-field half verror">
-              <label>Email Address*</label><input class="input-fld" type="email"  placeholder="Enter email Address" required="required">
+            <div class="form-field half">
+              <label>Email Address*</label><input class="input-fld" id="eb-email" type="email"  placeholder="Enter email Address">
               <small>Please Fill Email</small>
             </div>
-            <div class="form-field half verror">
-              <label>phone No.</label><input class="input-fld" type="text"  placeholder="Enter phone No." required="required">
+            <div class="form-field half">
+              <label>phone No.</label><input class="input-fld" id="eb-phone" type="text"  placeholder="Enter phone No.">
               <small>Please Fill Phone</small>
             </div>
             <div class="form-field">
               <input type="submit" class="downbtn" value="Download Free Ebook">
-            </div>
+            </div>            
           </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
 <?php wp_footer(); ?>
 </body>
 </html>

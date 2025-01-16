@@ -146,8 +146,8 @@ function workstatus_scripts(){
     
     // wp_enqueue_script( 'form-validation', get_stylesheet_directory_uri() . '/js/form-validation.js', array(), 
     // _S_VERSION, true );
-    wp_enqueue_script( 'su-validation', get_stylesheet_directory_uri() . '/js/signupform-validation.js', array(), 
-    _S_VERSION, true);
+    wp_enqueue_script( 'su-validation', get_stylesheet_directory_uri() . '/js/signupform-validation.js', array(), _S_VERSION, true);
+    wp_enqueue_script( 'ebook-handler', get_stylesheet_directory_uri() . '/js/ebook.js', array(), _S_VERSION, true);
 }
 
 add_filter( 'style_loader_tag',  'ws_preload_filter', 10, 2 );

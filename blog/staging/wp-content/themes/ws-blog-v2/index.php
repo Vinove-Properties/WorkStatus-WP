@@ -1,10 +1,10 @@
 <?php 
 get_header();
-
-$popularPosts = get_field('pop-posts', 'option');
-$popularPosts = explode(',', $popularPosts);
-$catBlockOne  = get_field('row-c1', 'option');
-$catBlockTwo  = get_field('row-c2', 'option'); 
+$popularPosts   = get_field('pop-posts', 'option');
+$popularPosts   = explode(',', $popularPosts);
+$catBlockOne    = get_field('row-c1', 'option');
+$catBlockTwo    = get_field('row-c2', 'option');
+$catBlockThree  = get_field('row-c2', 'option'); 
 ?>
 <section class="blog-main-page">
   <div class="container">
@@ -368,6 +368,95 @@ $getActiveCat = $catBlockTwo['cat-tab'][0]['link'];
 </div>
 <?php 
 endif; 
+
+if( 
+  isset($catBlockThree['required']) && 
+  ($catBlockThree['required'] == "yes") && 
+  is_array( $catBlockThree['cat-tab'] ) && 
+  (count($catBlockThree['cat-tab']) > 0)  
+) :
+$getActiveCat = $catBlockThree['cat-tab'][0]['link'];
+?>
+<div class="pc-blog-list" id="cat-sec-2">
+<div class="main-intro">
+<h2><?php echo $catBlockThree['title']; ?></h2>
+<a href="<?php echo $getActiveCat; ?>" class="view-all-link" target="_blank" rel="noopener">View All</a>
+</div>
+  <div class="devs-category">
+    <?php   
+    echo '<ul class="tabing_panel">';
+    $tb = 0;
+    foreach( $catBlockThree['cat-tab'] as $tab ){
+      $tb++;
+      $isActive = ( $tb === 1 ) ? 'active' : ''; 
+      echo '<li onclick="switchCat(\'cat-sec-2\', \'term_ID-'.$tab['tag-posts']->term_id.'\', this);" 
+      data-link="'.$tab['link'].'" class="'.$isActive.'">'.$tab['tag-posts']->name.'</li>';
+    }
+    echo '</ul>';    
+    ?>
+  </div> 
+  <?php 
+  $tc = 0;  
+  foreach( $catBlockThree['cat-tab'] as $catBlock ){
+    if( $catBlock['tag-posts'] ){ $tc++;
+    $isActive = ( $tc === 1 ) ? 'active' : '';   
+    $catID      = $catBlock['tag-posts']->term_id;
+    $postBlock  = pxlGetTopThreePosts( $catID, 'tag' );
+    ?>     
+    <div class="blog-posts-list two-columns developsc tabc-elm <?php echo $isActive; ?>" id="term_ID-<?php echo $catID; ?>">
+      <div class="blog-post-col big-size">
+      <?php
+      if( isset($postBlock[0]) ){
+        echo bigBlockPost( $postBlock[0] );
+      }
+      ?>
+      </div>
+      <div class="blog-post-col medium-size">
+      <div class="develop-row wid-75" id="pc2-sp">
+        <?php 
+        if( isset($postBlock[1] ) ){
+          echo smallBlockPost($postBlock[1]);
+        }
+
+        if( isset( $postBlock[2] ) ){
+          echo smallBlockPost($postBlock[2]);
+        }
+        ?>
+      </div>
+      <div class="develop-row wid-35 bg-blue">
+        <div class="devs-col">
+          <div class="blog-image">
+            <?php 
+            if( $catBlockThree['e-image'] ){
+            echo '<picture>
+            <img src="'.$catBlockThree['e-image']['url'].'" 
+            height="'.$catBlockThree['e-image']['height'].'" 
+            width="'.$catBlockThree['e-image']['width'].'" 
+            alt="valuecoders" loading="lazy">
+            </picture>';  
+            }
+            ?>
+          </div>
+          <div class="blog-content">
+            <div class="title three-line"><?php echo $catBlockThree['e-title']; ?></div>
+            <p><?php echo $catBlockThree['e-text']; ?></p>
+            <div class="btn-container">
+              <a class="white-btn blue pxl-ext" 
+              onclick="geteBookpopup('<?php echo $catBlockThree['e-title']; ?>', '<?php echo $catBlockThree['e-link']; ?>')" 
+              href="javascript:void(0);">Download Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <?php 
+    }
+  }
+  ?>
+</div>
+<?php 
+endif;
 
 endif; // Ignore For Paged ?>
 <div class="cta-flex subscribe-footer">
