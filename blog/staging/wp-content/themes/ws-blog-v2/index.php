@@ -377,7 +377,7 @@ if(
 ) :
 $getActiveCat = $catBlockThree['cat-tab'][0]['link'];
 ?>
-<div class="pc-blog-list" id="cat-sec-2">
+<div class="pc-blog-list" id="cat-sec-3">
 <div class="main-intro">
 <h2><?php echo $catBlockThree['title']; ?></h2>
 <a href="<?php echo $getActiveCat; ?>" class="view-all-link" target="_blank" rel="noopener">View All</a>
@@ -389,7 +389,7 @@ $getActiveCat = $catBlockThree['cat-tab'][0]['link'];
     foreach( $catBlockThree['cat-tab'] as $tab ){
       $tb++;
       $isActive = ( $tb === 1 ) ? 'active' : ''; 
-      echo '<li onclick="switchCat(\'cat-sec-2\', \'term_ID-'.$tab['tag-posts']->term_id.'\', this);" 
+      echo '<li onclick="switchCat(\'cat-sec-3\', \'term_ID-'.$tab['tag-posts']->term_id.'\', this);" 
       data-link="'.$tab['link'].'" class="'.$isActive.'">'.$tab['tag-posts']->name.'</li>';
     }
     echo '</ul>';    
@@ -412,7 +412,7 @@ $getActiveCat = $catBlockThree['cat-tab'][0]['link'];
       ?>
       </div>
       <div class="blog-post-col medium-size">
-      <div class="develop-row wid-75" id="pc2-sp">
+      <div class="develop-row wid-75" id="pc3-sp">
         <?php 
         if( isset($postBlock[1] ) ){
           echo smallBlockPost($postBlock[1]);
