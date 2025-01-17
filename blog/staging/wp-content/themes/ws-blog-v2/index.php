@@ -22,7 +22,7 @@ $catBlockThree  = get_field('row-c3', 'option');
     </div>
     <div class="top-content">
     <h1>Stay Ahead with Smart Workforce<br> Solutions</h1>
-    <p>Be part of a community that’s simplifying work processes, enhancing team collaboration, and achieving better results.</p>
+    <p>Be part of a community that's simplifying work processes, enhancing team collaboration, and achieving better results.</p>
     </div>
     <div class="search-blogs">
       <div class="ser-left"><span class="ftin">Featured In</span> 

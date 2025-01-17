@@ -219,8 +219,8 @@
             <p>Thank you for downloading our eBook. We hope you find it informative and helpful</p>
           </div>
           <form id="ebookFormElm" onsubmit="return _handleEbookSubmission(this);">
-          <h2>Download Free <strong>E-Book</strong> Now</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing .</p>  
+          <h2>Download Free <strong>eBook</strong></h2>
+          <p>Learn, grow, and succeed with this essential guide.</p>  
           <div class="form-wrap">            
             <div class="form-field">
               <label>Name*</label>
