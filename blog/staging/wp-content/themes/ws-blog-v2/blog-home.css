@@ -2080,6 +2080,8 @@
 	  .subscribe-footer .subs-box .es_required_field {
 		width: 100%;
 	  }
+	  .main-intro{flex-wrap: wrap;}
+	  .view-all-link{margin:10px 0 0 20px; width:100%;}
 	}
   
 	.blogvideo-popup .closeicon {
@@ -2102,25 +2104,19 @@
 	.top-section p{font-size: 16px; line-height: 26px;}
 	.top-section h6{font-size: 15px;}
 
-	.blog-main-page {
-		& .main-intro{flex-wrap: wrap;
-		.view-all-link{margin:10px 0 0 20px; width:100%;}
-		}
-  }
+
+		
+
+	
   }
   
   @media (max-width: 479px) {
 
-
-  
-	.blogvideo-popup .popup-wrapper .popWrap .popup-content {
+    .blogvideo-popup .popup-wrapper .popWrap .popup-content {
 	  height: 400px;
 	  box-shadow: none;
 	  background: transparent;
 	}
-
-
-
 
 }
   
