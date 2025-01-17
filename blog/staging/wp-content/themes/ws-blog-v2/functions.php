@@ -112,7 +112,7 @@ add_action( 'wp_enqueue_scripts', 'workstatus_scripts', 100 );
 function workstatus_scripts(){
     wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
-    
+        
     wp_enqueue_style( 'wsblog', get_stylesheet_directory_uri() .'/style.css', array(),_S_VERSION );
     wp_enqueue_script( 'blog-script', get_stylesheet_directory_uri() . '/js/script.js', array(), _S_VERSION, true);
     wp_localize_script( 'blog-script', 'wsObj', 
@@ -120,15 +120,16 @@ function workstatus_scripts(){
         'tpl_url'       => get_bloginfo( 'template_url' ),
         'web_url'       => get_bloginfo( 'url' ),
         'admin_ajax'    => admin_url( 'admin-ajax.php' ),
-        'ipinfo'        => 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo'
+        'ipinfo'        => 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo',
+        'es_api_url'    => ( _pro_env == "dev" ) ? 'https://www.workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs' : 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs' 
         )
     );
-    wp_enqueue_style( 'ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
-    wp_enqueue_style( 'ws-home-style', get_stylesheet_directory_uri() . '/blog-home.css' );
-    wp_enqueue_style( 'ws-epopup', get_stylesheet_directory_uri() .'/assets/css/ebook.css', array(), _S_VERSION);
-    wp_enqueue_style( 'ws-blogdetail', get_stylesheet_directory_uri() .'/assets/css/blog-detail.css', array(), _S_VERSION);  
-    wp_enqueue_style( 'ws-footer', get_stylesheet_directory_uri() .'/assets/css/ws-footer.css',  array(), _S_VERSION); 
-    wp_enqueue_style( 'ws-all-forms', get_stylesheet_directory_uri() .'/forms-style.css',  array(), _S_VERSION);
+    wp_enqueue_style('ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
+    wp_enqueue_style('ws-home-style', get_stylesheet_directory_uri() . '/blog-home.css', array(), _S_VERSION);
+    wp_enqueue_style('ws-epopup', get_stylesheet_directory_uri() .'/assets/css/ebook.css', array(), _S_VERSION);
+    wp_enqueue_style('ws-blogdetail', get_stylesheet_directory_uri() .'/assets/css/blog-detail.css', array(), _S_VERSION);  
+    wp_enqueue_style('ws-footer', get_stylesheet_directory_uri() .'/assets/css/ws-footer.css',  array(), _S_VERSION); 
+    wp_enqueue_style('ws-all-forms', get_stylesheet_directory_uri() .'/forms-style.css',  array(), _S_VERSION);
 
     
     if( is_author() ){

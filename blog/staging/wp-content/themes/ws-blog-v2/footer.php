@@ -213,10 +213,14 @@
             <p>Why, How and when to incentivise your employee with Etiquity</p>
           </div>
         </div>
-        <div class="pdf-bottom">
+        <div class="pdf-bottom">          
+          <div id="_ebresponse" style="display:none;">
+            <h2>Thank You!</h2>
+            <p>Thank you for downloading our eBook. We hope you find it informative and helpful</p>
+          </div>
+          <form id="ebookFormElm" onsubmit="return _handleEbookSubmission(this);">
           <h2>Download Free <strong>E-Book</strong> Now</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing .</p>
-          <form onsubmit="return _handleEbookSubmission();">
+          <p>Lorem Ipsum is simply dummy text of the printing .</p>  
           <div class="form-wrap">            
             <div class="form-field">
               <label>Name*</label>
@@ -235,7 +239,7 @@
             </div>
             <div class="form-field">
               <input type="hidden" id="elm_eb_pdf" name="_eb_pdf" value="">
-              <input type="submit" class="downbtn" value="Download Free Ebook">
+              <input type="submit" id="post_ebook" class="downbtn" value="Download Free Ebook">
             </div>            
           </div>
           </form>
