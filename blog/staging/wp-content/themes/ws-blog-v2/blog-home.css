@@ -2103,13 +2103,23 @@
   }
   
   @media (max-width: 479px) {
+
+	.blog-main-page {
+		& .main-intro{flex-wrap: wrap;
+		.view-all-link{margin:10px 0 0 20px; width:100%;}
+		}
+  }
   
 	.blogvideo-popup .popup-wrapper .popWrap .popup-content {
 	  height: 400px;
 	  box-shadow: none;
 	  background: transparent;
 	}
-  }
+
+
+
+
+}
   
   /*Media Query Ends Here*/
 
