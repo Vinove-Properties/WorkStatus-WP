@@ -163,18 +163,18 @@ function _handleEbookSubmission(e){
         let namePart    = vcGetName( nameField.value );
         let firstName   = namePart[0];
         let lastName    = (namePart[1] && (namePart[1] != "")) ? namePart[1] : '';
-        formBtn.value = "Please Wait...";
+        formBtn.value   = "Please Wait...";
         formBtn.disabled = true;
         const url   = wsObj.es_api_url;
         const data  = { first_name: firstName, last_name: lastName, email: emailField.value };
-        fetch(url, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(data)
+        fetch( url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(data)
         })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
+        .then( response => response.json() )
+        .then( data => {
+            console.log( 'Success:', data );
             let pdfInput    = document.getElementById('elm_eb_pdf');
             let pdfLink     = pdfInput.value;            
             const link      = document.createElement('a');
@@ -184,7 +184,7 @@ function _handleEbookSubmission(e){
             link.click();
             link.remove();
             e.reset();
-            e.style.display = "none";
+            e.style.display     = "none";
             formBtn.value       = "Download Free Ebook";
             formBtn.disabled    = false;
             document.getElementById("_ebresponse").style.display = "block";

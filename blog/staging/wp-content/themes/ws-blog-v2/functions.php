@@ -124,7 +124,7 @@ function workstatus_scripts(){
         'web_url'       => get_bloginfo( 'url' ),
         'admin_ajax'    => admin_url( 'admin-ajax.php' ),
         'ipinfo'        => 'https://www.workstatus.io/wp-json/ws-api/v1/ipinfo',
-        'es_api_url'    => ( _pro_env == "dev" ) ? 'https://www.workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs' : 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs' 
+        'es_api_url'    => ( _pro_env == "dev" ) ? 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs' : 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs' 
         )
     );
     wp_enqueue_style('ws-header', get_stylesheet_directory_uri() .'/assets/css/ws-menu.css', array(), _S_VERSION);
