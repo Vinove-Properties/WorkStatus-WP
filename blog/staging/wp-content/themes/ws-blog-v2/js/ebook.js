@@ -6,6 +6,8 @@ const phonePD   = document.getElementById('eb-phone');
 function geteBook_popup( pdfLnk ){
     let pdfInput   = document.getElementById('elm_eb_pdf');
     ebPopu.style.display = "block";
+    document.getElementById("_ebresponse").style.display = "none";
+    document.getElementById("ebookFormElm").style.display = "block";
     if( pdfInput ){
         pdfInput.value = pdfLnk;
     }  
@@ -128,7 +130,7 @@ function elmErrorMsg(elm, msg, err = true){
     }
 }
 
-function _handleEbookSubmission(){
+function _handleEbookSubmission(e){    
     const nameField     = document.getElementById('eb-name');
     const emailField    = document.getElementById('eb-email');
     const phoneField    = document.getElementById('eb-phone');
@@ -157,44 +159,41 @@ function _handleEbookSubmission(){
     }
 
     if(isValid){
+        const formBtn   = document.getElementById("post_ebook");
         let namePart    = vcGetName( nameField.value );
         let firstName   = namePart[0];
         let lastName    = (namePart[1] && (namePart[1] != "")) ? namePart[1] : '';
-        // formBtn.innerText = "Please Wait...";
-        // formBtn.disabled  = true;
-        //const url = 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
-        const url   = 'http://localhost/workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs';    
+        formBtn.value = "Please Wait...";
+        formBtn.disabled = true;
+        const url   = wsObj.es_api_url;
         const data  = { first_name: firstName, last_name: lastName, email: emailField.value };
         fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(data)
         })
-        .then(response => response.json()) // Parse the JSON from the response
+        .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
             let pdfInput    = document.getElementById('elm_eb_pdf');
-            let pdfLink     = pdfInput.value;
-
-            let elink       = document.createElement('a');
-            elink.href      = pdfLink;
-            elink.download  = pdfLink;
-            elink.dispatchEvent(new MouseEvent('click'));
+            let pdfLink     = pdfInput.value;            
+            const link      = document.createElement('a');
+            link.href       = pdfLink;
+            link.download   = pdfLink.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+            e.reset();
+            e.style.display = "none";
+            formBtn.value       = "Download Free Ebook";
+            formBtn.disabled    = false;
+            document.getElementById("_ebresponse").style.display = "block";
         })
-        .catch(( error ) => {
-            // formBtn.innerText       = "Download";
-            // formBtn.disabled        = false;
-            // e.reset();
+        .catch((error) => {
+            formBtn.value       = "Download Free Ebook";
+            formBtn.disabled    = false;
+            e.reset();
         });
-        
-        // let link        = document.createElement('a');
-        
-        // link.setAttribute('download', fileName);
-        // let fileName    = pdfLink.substring(pdfLink.lastIndexOf('/') + 1);
-        // link.download   = fileName;
-        // document.body.appendChild(link);
-        // link.click();
-        // document.body.removeChild(link);
     }
     return false;
 }
