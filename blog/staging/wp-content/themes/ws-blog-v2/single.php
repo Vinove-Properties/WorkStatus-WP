@@ -151,6 +151,19 @@
     <div class="single-post-container">
       <div class="top-header-banner">
         <h1><?php echo get_the_title()?></h1>
+        <div class="meta-wrap">
+          <div class="author-img">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" 
+          alt="workstatus">
+          </div>
+          <ul class="entry-meta">
+            <li class="meta author vcard">
+            <span class="author-name fn">by
+            <a href="https://www.workstatus.io/blog/"><strong>Anna Sonnenberg</strong></a></span>
+            </li>
+            <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
+          </ul>
+        </div>
       </div>
       <?php 
         $keyAway = get_field('col-keyaway');

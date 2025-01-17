@@ -8,16 +8,16 @@ $catBlockThree  = get_field('row-c3', 'option');
 ?>
 <section class="blog-main-page">
   <div class="container">
-    <div class="mobile-active"><span class="blogtog" href="javascript:void(0)">Blog Home</span></div>
+    <div class="mobile-active"><span class="blogtog">Blog Home</span></div>
     <div class="blog-cat hidden" id="blog-cat">
       <ul>
-        <li class="active mobhide"><a href="#">Blog Home</a></li>
-        <li><a href="#">Guide</a></li>
-        <li><a href="#">Product Updates</a></li>
-        <li><a href="#">Productivity Management</a></li>
-        <li><a href="#">Project Management</a></li>
-        <li><a href="#">Reporting & Analytics</a></li>
-        <li><a href="#">Time & Attendance</a></li>
+        <li class="active mobhide"><a href="<?php echo site_url(); ?>">Blog Home</a></li>
+        <li><a href="<?php echo get_category_link(1); ?>">Guide</a></li>
+        <li><a href="<?php echo get_category_link(696); ?>">Product Updates</a></li>
+        <li><a href="<?php echo get_category_link(700); ?>">Productivity Management</a></li>
+        <li><a href="<?php echo get_category_link(314); ?>">Project Management</a></li>
+        <li><a href="<?php echo get_category_link(697); ?>">Reporting & Analytics</a></li>
+        <li><a href="<?php echo get_category_link(109); ?>">Time & Attendance</a></li>
       </ul>
     </div>
     <div class="top-content">
@@ -29,7 +29,7 @@ $catBlockThree  = get_field('row-c3', 'option');
         <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/dev-images/featured-logos.svg" alt="workstatus">
       </div>
       <div class="searchBox">
-        <form action="" method="get" class="search-form"> 
+        <form action="<?php echo site_url(); ?>" method="get" class="search-form"> 
           <input type="text" name="s" class="search-field" placeholder="Search the blog..." id="search-form" value="" />
           <button type="submit" class="submit" aria-label="Submit">Search</button>
         </form>
