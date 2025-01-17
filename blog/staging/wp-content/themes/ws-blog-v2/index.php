@@ -451,7 +451,7 @@ endif; // Ignore For Paged ?>
   <div class="detail-subsbox subs-box">
     <div class="subs-head">
       <h3>Subscribe to our blog</h3>
-      <p>Be a part of a thriving community of 10000+ tech enthusiasts and learners.</p>
+      <p>Explore expert tips to change the way you manage people and projects.</p>
     </div>
     <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
   </div>
