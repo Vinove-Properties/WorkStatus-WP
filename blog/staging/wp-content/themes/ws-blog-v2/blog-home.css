@@ -103,6 +103,7 @@
 	.blog-cat ul li a:hover {
 	  color: var(--blue);
 	  border-color: var(--blue);
+	  background:var(--white);
 	}
   
 	.top-content {
