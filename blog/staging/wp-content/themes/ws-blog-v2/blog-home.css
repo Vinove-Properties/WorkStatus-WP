@@ -1710,9 +1710,8 @@ p {
 	}
 
 	.blog-main-page {
-		&.main-intro{flex-wrap: wrap;
-			.view-all-link{display:block; margin:10px 0 0 30px;}
-		}
+		.main-intro{flex-wrap: wrap;}
+		.view-all-link{display:block; margin:10px 0 0 30px;}
 	}
 
 
@@ -1948,7 +1947,7 @@ p {
 			margin: 0 0 10px;
 		}
 
-		.main-intro {}
+		
 
 		.main-intro .view-all-link {
 			font-size: 16px;
@@ -2099,7 +2098,6 @@ p {
 		.subscribe-footer .subs-box .es_required_field {
 			width: 100%;
 		}
-
 		.main-intro {
 			flex-wrap: wrap;
 		}
