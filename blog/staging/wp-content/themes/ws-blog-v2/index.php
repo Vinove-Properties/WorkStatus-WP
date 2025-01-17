@@ -99,7 +99,7 @@ $catBlockThree  = get_field('row-c3', 'option');
         <div class="cus-cont">
           <div class="cushed">Elevate Projects with Top Management Tools</div>
           <div class="btn-container">
-            <a target="_blank" class="white-btn blue pxl-ext" href="https://www.workstatus.io/?free-trial">Start Free Trial</a>
+            <a href="javascript:void(0);" class="white-btn blue pxl-ext" onclick="return get_ws_signupform(1, 'monthly');">Start Free Trial</a>
           </div>
         </div>
       </div>
