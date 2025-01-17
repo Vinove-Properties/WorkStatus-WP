@@ -104,8 +104,8 @@ $catBlockThree  = get_field('row-c3', 'option');
         </div>
       </div>
       <div class="detail-subsbox subs-box">
-        <h3>Subscribe to our blog</h3>
-        <p>Be a part of a thriving community of 10000+ tech enthusiasts and learners.</p>
+        <h3>Subscribe to Our Blog</h3>
+        <p>Explore expert tips to change the way you manage people and projects.</p>
         <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
       </div>
     </div>

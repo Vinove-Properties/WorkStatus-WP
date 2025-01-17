@@ -1722,6 +1722,12 @@ p {
 	.detail-subsbox h3 {
 		text-align: left;
 	}
+
+	.blog-main-page {
+		&.main-intro{flex-wrap: wrap;
+			.view-all-link{display:block; margin:10px 0 0 30px;}
+		}
+	}
 }
 
 @media (max-width: 979px) {
