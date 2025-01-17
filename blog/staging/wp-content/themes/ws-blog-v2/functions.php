@@ -1,7 +1,10 @@
 <?php
 if( ! defined( '_S_VERSION' ) ){
-    define( '_S_VERSION', '11.11.24' );
-    //define( '_S_VERSION', time() );
+    if( _pro_env == "dev" ){
+    define( '_S_VERSION', time() );    
+    }else{
+    define( '_S_VERSION', '17.01.25' );    
+    }
 }
 
 add_filter('upload_mimes', function($mime_types){
