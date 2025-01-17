@@ -115,7 +115,7 @@ $catBlockThree  = get_field('row-c3', 'option');
     <div class="pc-blog-list videos-post">
       <div class="main-intro">
         <h2><?php echo $videoBlock['title']; ?></h2>
-        <a href="https://www.youtube.com/@Valuecoders" class="view-all-link" target="_blank" rel="noopener">View All</a>
+        <a href="https://www.youtube.com/@workstatus-io" class="view-all-link" target="_blank" rel="noopener">View All</a>
       </div>
       <div class="blog-posts-list three-columns">
         <?php 
