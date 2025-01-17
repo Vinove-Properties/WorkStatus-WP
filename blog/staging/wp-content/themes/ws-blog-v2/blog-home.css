@@ -86,7 +86,7 @@
   
   
 	.blog-cat ul li a {
-		padding: 9px 15px;
+	  padding: 9px 15px;
 	  background: #F6F1FF;
 	  border-radius: 20px;
 	  display: block;
@@ -1726,7 +1726,7 @@
   
 	.blog-main-page {
 	  .blog-cat ul li a {
-		padding: 12px 12px;
+		padding: 8px 15px;
 	  }
   
 	  .subs-box h3 {
@@ -1934,10 +1934,14 @@
 		width: 100%;
 		margin: 0 0 10px;
 	  }
+
+	  .main-intro{}
   
 	  .main-intro .view-all-link {
 		font-size: 16px;
 		margin-left: 10px;
+		margin:10px 0 0 20px;
+		width:100%;
 	  }
   
 	  .main-intro .view-all-link::after {
@@ -2081,7 +2085,7 @@
 		width: 100%;
 	  }
 	  .main-intro{flex-wrap: wrap;}
-	  .view-all-link{margin:10px 0 0 20px; width:100%;}
+	  
 	}
   
 	.blogvideo-popup .closeicon {
@@ -2103,9 +2107,6 @@
 	}
 	.top-section p{font-size: 16px; line-height: 26px;}
 	.top-section h6{font-size: 15px;}
-
-
-		
 
 	
   }
