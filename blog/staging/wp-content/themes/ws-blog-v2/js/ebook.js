@@ -179,6 +179,7 @@ function _handleEbookSubmission(e){
             let pdfLink     = pdfInput.value;            
             const link      = document.createElement('a');
             link.href       = pdfLink;
+            link.target     = '_blank';
             link.download   = pdfLink.split('/').pop();
             document.body.appendChild(link);
             link.click();

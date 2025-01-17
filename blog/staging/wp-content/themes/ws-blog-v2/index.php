@@ -346,8 +346,7 @@ $getActiveCat = $catBlockTwo['cat-tab'][0]['link'];
             <p><?php echo $catBlockTwo['e-text']; ?></p>
             <div class="btn-container">
               <a class="white-btn blue pxl-ext" 
-              onclick="geteBookpopup('<?php echo $catBlockTwo['e-title']; ?>', '<?php echo $catBlockTwo['e-link']; ?>')" 
-              href="javascript:void(0);">Download Now</a>
+              onclick="geteBook_popup('<?php echo $catBlockTwo['e-link']; ?>')" href="javascript:void(0);">Download Now</a>
             </div>
           </div>
         </div>
@@ -432,8 +431,7 @@ $getActiveCat = $catBlockThree['cat-tab'][0]['link'];
             <p><?php echo $catBlockThree['e-text']; ?></p>
             <div class="btn-container">
               <a class="white-btn blue pxl-ext" 
-              onclick="geteBookpopup('<?php echo $catBlockThree['e-title']; ?>', '<?php echo $catBlockThree['e-link']; ?>')" 
-              href="javascript:void(0);">Download Now</a>
+              onclick="geteBook_popup('<?php echo $catBlockThree['e-link']; ?>')" href="javascript:void(0);">Download Now</a>
             </div>
           </div>
         </div>
