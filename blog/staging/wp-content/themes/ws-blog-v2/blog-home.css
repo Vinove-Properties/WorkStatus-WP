@@ -903,6 +903,8 @@
 	  min-width: 115px;
 	  z-index: 9;
 	  text-align: center;
+	  margin: 20px 0 0;
+      display: inline-block;
 	}
   
 	.blog-posts-list .develop-row.wid-35 .btn-container .white-btn:hover {
