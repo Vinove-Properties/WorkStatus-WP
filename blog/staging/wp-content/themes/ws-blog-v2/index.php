@@ -21,7 +21,7 @@ $catBlockThree  = get_field('row-c3', 'option');
       </ul>
     </div>
     <div class="top-content">
-    <h1>Stay Ahead with Smart Workforce Solutions</h1>
+    <h1>Stay Ahead with Smart Workforce<br> Solutions</h1>
     <p>Be part of a community that’s simplifying work processes, enhancing team collaboration, and achieving better results.</p>
     </div>
     <div class="search-blogs">
