@@ -97,6 +97,7 @@
 	.blog-cat ul li.active a {
 	  color: var(--blue);
 	  border-color: var(--blue);
+	  background:var(--white);
 	}
   
 	.blog-cat ul li a:hover {
