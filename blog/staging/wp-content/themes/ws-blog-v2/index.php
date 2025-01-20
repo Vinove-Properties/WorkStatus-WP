@@ -11,13 +11,13 @@ $catBlockThree  = get_field('row-c3', 'option');
     <div class="mobile-active"><span class="blogtog">Blog Home</span></div>
     <div class="blog-cat hidden" id="blog-cat">
       <ul>
-        <li class="active mobhide"><a href="<?php echo site_url(); ?>">Blog Home</a></li>
-        <li><a href="<?php echo get_category_link(1); ?>">Guide</a></li>
-        <li><a href="<?php echo get_category_link(696); ?>">Product Updates</a></li>
-        <li><a href="<?php echo get_category_link(700); ?>">Productivity Management</a></li>
-        <li><a href="<?php echo get_category_link(314); ?>">Project Management</a></li>
-        <li><a href="<?php echo get_category_link(697); ?>">Reporting & Analytics</a></li>
-        <li><a href="<?php echo get_category_link(109); ?>">Time & Attendance</a></li>
+      <li class="active mobhide"><a href="<?php echo site_url(); ?>" target="_blank">Blog Home</a></li>
+      <li><a href="<?php echo get_category_link(1); ?>" target="_blank">Guide</a></li>
+      <li><a href="<?php echo get_category_link(696); ?>" target="_blank">Product Updates</a></li>
+      <li><a href="<?php echo get_category_link(700); ?>" target="_blank">Productivity Management</a></li>
+      <li><a href="<?php echo get_category_link(314); ?>" target="_blank">Project Management</a></li>
+      <li><a href="<?php echo get_category_link(697); ?>" target="_blank">Reporting & Analytics</a></li>
+      <li><a href="<?php echo get_category_link(109); ?>" target="_blank">Time & Attendance</a></li>
       </ul>
     </div>
     <div class="top-content">
