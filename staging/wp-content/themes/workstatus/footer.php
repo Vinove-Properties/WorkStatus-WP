@@ -328,14 +328,14 @@ endif;
 "url" : "https://www.workstatus.io/",
 "image" : "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
 "author" : "Workstatus",
-"reviewBody" : "Workstatus is one of the leading Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software.",
+"reviewBody" : "Workstatus is one of the leading Employee , Staff, Team Productivity Management, Scheduling, Attendance & Time Tracking Software.",
 "reviewRating" : {
 "@type" : "Rating",
 "ratingValue" : "5"
 },
 "itemReviewed" : {
 "@type" : "LocalBusiness",
-"name" : "Workstatus | Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software",
+"name" : "Workstatus | Employee , Staff, Team Productivity Management, Scheduling, Attendance & Time Tracking Software",
 "priceRange" : "₹48-₹4600",
 "image" : "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
 "address" : [
