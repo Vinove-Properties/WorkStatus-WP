@@ -1,6 +1,8 @@
 <?php 
-  get_header(); 
-  ?>
+global $post;  
+$author_id    = $post->post_author; 
+get_header(); 
+?>
 <main id="single" class="detail-page banner-section">
   <div class="container">
     <div class="social-icon-box">
@@ -126,43 +128,25 @@
               <div class="popWrap">
                 <div class="popup-content">
                   <span class="closeicon-nw" onclick="closeNewsLetter('newsletterPopup');"></span>
-                  <h3>Like What You’re Reading?</h3>
+                  <h3>Like What You're Reading?</h3>
                   <?php echo do_shortcode('[email-subscribers-form id="1"]'); ?>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--<div class="meta-wrap">
-          <div class="author-img">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" alt="workstatus">
-          </div>
-          <ul class="entry-meta">
-            <li class="meta author vcard">
-              <span class="author-name fn">by
-              <a href="https://www.workstatus.io/blog/"><strong>Anna Sonnenberg</strong></a></span>
-            </li>
-           <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
-          </ul>
-          </div>-->
       </div>
     </div>
     <div class="single-post-container">
       <div class="top-header-banner">
         <h1><?php echo get_the_title()?></h1>
-
         <div class="auth-wrap">
           <div class="author-img">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" 
-              alt="workstatus">
+            <img loading="lazy" src="<?php echo getMcAuthorThumb($author_id); ?>" width="24" height="24" 
+            alt="<?php echo get_the_author(); ?>">
           </div>
-          <div class="entry-meta">
-            Written by
-            <a href="https://www.workstatus.io/blog/">Anna Sonnenberg</a>
-          </div>
+          <div class="entry-meta">Written by <?php echo get_the_author_posts_link(); ?></div>
         </div>
-
-
       </div>
       <?php 
         $keyAway = get_field('col-keyaway');
