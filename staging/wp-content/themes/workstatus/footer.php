@@ -279,69 +279,92 @@ endif;
 <?php }
   ?>
 <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "priceRange": "$15-$99",
-  "image": "https://www.workstatus.io/assests/images/ws-ogimage.png",
-  "@id": "",
-  "name": " Workstatus| Employee Management Software",
-  "address": {
-  "@type": "PostalAddress",
-  "streetAddress" : "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
-  "addressLocality" : "Gurugram",
-  "addressRegion" : "IN",
-  "postalCode" : "122001",
-  "addressCountry": "IN"
-  },
-  "review": {
-  "@type": "Review",
-  "reviewRating": {
-  "@type": "Rating",
-  "ratingValue": "4.9",
-  "bestRating": "5"
-  },
-  "author": {
-  "@type": "Person",
-  "name": "Workstatus"
-  }
-  },
-  "url": "",
-  "telephone": "+917042020782"
-  }
+{
+"@context": "https://schema.org",
+"@type": "LocalBusiness",
+"priceRange": "₹48-₹4600",
+"image": "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
+"@id": "https://www.workstatus.io/",
+"name": "Workstatus | Workforce Management Software",
+"address": [
+{
+"@type": "PostalAddress",
+"streetAddress": "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
+"addressLocality": "Gurugram",
+"addressRegion": "Haryana",
+"postalCode": "122001",
+"addressCountry": "IN"
+},
+{
+"@type": "PostalAddress",
+"streetAddress": "11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129",
+"addressLocality": "Noida",
+"addressRegion": "Uttar Pradesh",
+"postalCode": "201304",
+"addressCountry": "IN"
+}
+],
+"review": {
+"@type": "Review",
+"reviewRating": {
+"@type": "Rating",
+"ratingValue": "4.9",
+"bestRating": "5"
+},
+"author": {
+"@type": "Person",
+"name": "Workstatus"
+}
+},
+"url": "",
+"telephone": "+91-9582957066"
+}
 </script>
 <script type="application/ld+json">
-  {
-  "@context" : "http://schema.org",
-  "@type" : "Review",
-  "name" : "Workstatus - ",
-  "url" : "",
-  "image" : "https://www.workstatus.io/assests/images/ws-ogimage.png",
-  "author" : "Workstatus",
-  "reviewBody" : "Workstatus is one of the leading Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software.",
-  "reviewRating" : {
-  "@type" : "Rating",
-  "ratingValue" : "5"
-  },
-  "itemReviewed" : {
-  "@type" : "LocalBusiness",
-  "name" : "Workstatus | Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software",
-  "priceRange" : "$15 - $99",
-  "image" : "https://www.workstatus.io/assests/images/ws-ogimage.png",
-  "address" : {
-  "@type" : "PostalAddress",
-  "streetAddress" : "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
-  "addressLocality" : "Gurugram",
-  "addressRegion" : "IN",
-  "postalCode" : "122001",
-  "telephone" : "+917042020782",
-  "addressCountry" : {
-  "@type" : "Country",
-  "name" : "India"
-  }
-  }
-  }
-  }
+{
+"@context" : "http://schema.org",
+"@type" : "Review",
+"name" : "Workstatus",
+"url" : "https://www.workstatus.io/",
+"image" : "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
+"author" : "Workstatus",
+"reviewBody" : "Workstatus is one of the leading Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software.",
+"reviewRating" : {
+"@type" : "Rating",
+"ratingValue" : "5"
+},
+"itemReviewed" : {
+"@type" : "LocalBusiness",
+"name" : "Workstatus | Employee , Staff, Team Productivity Management, Schduling, Attendance & Time Tracking Software",
+"priceRange" : "₹48-₹4600",
+"image" : "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
+"address" : [
+{
+"@type" : "PostalAddress",
+"streetAddress" : "10th Floor, Tower-B, Unitech Cyber Park, Sector - 39",
+"addressLocality" : "Gurugram",
+"addressRegion" : "IN",
+"postalCode" : "122003",
+"telephone" : "+91-9582957066",
+"addressCountry" : {
+"@type" : "Country",
+"name" : "India"
+}
+},
+{
+"@type" : "PostalAddress",
+"streetAddress" : "11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129",
+"addressLocality" : "Noida",
+"addressRegion" : "Uttar Pradesh",
+"postalCode" : "201304",
+"addressCountry" : {
+"@type" : "Country",
+"name" : "India"
+}
+}
+]
+}
+}
 </script>
 <script type="application/ld+json">
 {
@@ -368,26 +391,27 @@ endif;
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "SoftwareApplication",
-  "name": "Workstatus",
-  "operatingSystem": "Windows, Mac, Android, iOS",
-  "applicationCategory": "BusinessApplication",
-  "description": "Workstatus is a workforce management software designed to streamline employee monitoring, time tracking, and productivity management for businesses.",
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "INR",
-    "price": "49",
-    "category": "SaaS",
-    "url": "https://www.workstatus.io/pricing"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "550"
-  }
+"@context": "https://schema.org/",
+"@type": "SoftwareApplication",
+"name": "Workstatus",
+"operatingSystem": "Windows, Mac, Android, iOS",
+"applicationCategory": "BusinessApplication",
+"description": "Workstatus is a workforce management software designed to streamline employee monitoring, time tracking, and productivity management for businesses.",
+"offers": {
+"@type": "Offer",
+"priceCurrency": "INR",
+"price": "48-4600",
+"category": "SaaS",
+"url": "https://www.workstatus.io/pricing"
+},
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.8",
+"reviewCount": "550"
+}
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/", 
