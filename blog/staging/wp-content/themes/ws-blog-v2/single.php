@@ -14,22 +14,22 @@
       </div>
     </div>
     <?php     
-    $topCTA = get_field('wsbp-cta');  
-    if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
-    $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Want to Streamline Workforce & Project Management?';    
-    $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.";
-    //$text = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : false;
-    //if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
-    ?>
+      $topCTA = get_field('wsbp-cta');  
+      if( (isset( $topCTA['required'] ) && ($topCTA['required'] != "no"))  || (!isset( $topCTA['required']) ) ) :
+      $heading  = ( isset( $topCTA['heading'] ) && !empty( $topCTA['heading'] ) ) ? $topCTA['heading'] : 'Want to Streamline Workforce & Project Management?';    
+      $text     = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : "Workstatus helps you automate processes, gain actionable insights, and make smarter decisions that impact your bottom line.";
+      //$text = ( isset( $topCTA['text'] ) && !empty( $topCTA['text'] ) ) ? $topCTA['text'] : false;
+      //if( isset( $topCTA['type'] ) && ($topCTA['type'] == "ppc") ){ 
+      ?>
     <div class="cta-section cta-accorpg">
       <div class="top-cta">
         <div class="colLeft">
           <div class="ct-head"><?php echo $heading; ?></div>
           <?php 
-          if( $text ){
-          echo '<p>'.$text.'</p>';
-          }
-          ?>          
+            if( $text ){
+            echo '<p>'.$text.'</p>';
+            }
+            ?>          
           <div class="cta-wrap">
             <a href="javascript:void(0)" onclick="call_demows();" class="white-btn  bkd">Book A Demo</a>
             <a href="javascript:void(0);" class="white-btn blue sft" onclick="return get_ws_signupform(42, 'monthly');">Start Free Trial</a>
@@ -37,24 +37,23 @@
         </div>
         <div class="colMid">
           <?php 
-          if( isset( $topCTA['image'] ) && is_array( $topCTA['image'] ) ){
-          echo '<picture>
-          <img loading="lazy" src="'.$topCTA['image']['url'].'" alt="workstatus" width="'.$topCTA['image']['width'].'" height="'.$topCTA['image']['height'].'">
-          </picture>';  
-          }else{
-          echo '<picture>
-          <img loading="lazy" src="'.get_bloginfo('template_url').'/dev-images/ppc-defbanner.svg" alt="workstatus" 
-          width="488" height="202">
-          </picture>';
-          }
-          ?>
-          
+            if( isset( $topCTA['image'] ) && is_array( $topCTA['image'] ) ){
+            echo '<picture>
+            <img loading="lazy" src="'.$topCTA['image']['url'].'" alt="workstatus" width="'.$topCTA['image']['width'].'" height="'.$topCTA['image']['height'].'">
+            </picture>';  
+            }else{
+            echo '<picture>
+            <img loading="lazy" src="'.get_bloginfo('template_url').'/dev-images/ppc-defbanner.svg" alt="workstatus" 
+            width="488" height="202">
+            </picture>';
+            }
+            ?>
         </div>
       </div>
     </div>
     <?php 
-    /*
-    }else{ ?>
+      /*
+      }else{ ?>
     <div class="cta-section">
       <div class="top-cta">
         <div class="colLeft">
@@ -85,9 +84,9 @@
       </div>
     </div>
     <?php 
-    }
-    */
-    endif; ?>    
+      }
+      */
+      endif; ?>    
     <div class="top-header-section">
       <div class="searchdiv">
         <div class="breadcrumbs">
@@ -151,19 +150,19 @@
     <div class="single-post-container">
       <div class="top-header-banner">
         <h1><?php echo get_the_title()?></h1>
-        <div class="meta-wrap">
+
+        <div class="auth-wrap">
           <div class="author-img">
-          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" 
-          alt="workstatus">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assets/images/dummy-author.png" width="24" height="24" 
+              alt="workstatus">
           </div>
-          <ul class="entry-meta">
-            <li class="meta author vcard">
-            <span class="author-name fn">by
-            <a href="https://www.workstatus.io/blog/"><strong>Anna Sonnenberg</strong></a></span>
-            </li>
-            <li class="posted-on">Published <span class="dt">November 30, 2023</span></li>
-          </ul>
+          <div class="entry-meta">
+            Written by
+            <a href="https://www.workstatus.io/blog/">Anna Sonnenberg</a>
+          </div>
         </div>
+
+
       </div>
       <?php 
         $keyAway = get_field('col-keyaway');
@@ -190,12 +189,12 @@
               </div>
             </div>
             <?php 
-            $sbCTA = get_field('wssb-cta');  
-            if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
-            $ctaTitle = (isset($sbCTA['scta-title']) && !empty($sbCTA['scta-title'])) ? $sbCTA['scta-title'] : 
-            'Get Started with Workstatus';
-            $ctaBody = (isset($sbCTA['scta-body']) && !empty($sbCTA['scta-body'])) ? $sbCTA['scta-body'] : '<ul><li>Project & Task Management</li><li>Time Tracking & Attendance</li> <li>Workforce/Productivity Analytics</li></ul>';
-            ?>
+              $sbCTA = get_field('wssb-cta');  
+              if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
+              $ctaTitle = (isset($sbCTA['scta-title']) && !empty($sbCTA['scta-title'])) ? $sbCTA['scta-title'] : 
+              'Get Started with Workstatus';
+              $ctaBody = (isset($sbCTA['scta-body']) && !empty($sbCTA['scta-body'])) ? $sbCTA['scta-body'] : '<ul><li>Project & Task Management</li><li>Time Tracking & Attendance</li> <li>Workforce/Productivity Analytics</li></ul>';
+              ?>
             <div class="customcta">
               <div class="cus-cont">
                 <div class="cushed"><?php echo $ctaTitle; ?></div>
