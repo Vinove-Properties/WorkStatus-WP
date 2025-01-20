@@ -207,7 +207,7 @@ background: rgba(217, 217, 217, 0.32); border-radius: 5px; border: 0; text-decor
 
 
 
-.banner-section .entry-meta{width: calc(100% - 40px); padding:0; margin:0;}
+.banner-section .entry-meta{width: calc(100% - 46px); padding:0; margin:0;}
 .banner-section .entry-meta li{display:flex; align-items: center; font-size:14px; color: rgba(101, 101, 101, 1); margin:0 0 7px;}
 .banner-section .entry-meta li.author a{color: rgba(101, 101, 101, 1);}
 .banner-section .entry-meta li a{color: rgba(101, 101, 101, 1);}
