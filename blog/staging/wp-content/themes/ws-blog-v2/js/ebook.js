@@ -45,7 +45,7 @@ function phonenumber(inputtxt) {
         if (inputtxt.value == '') {
             showError(inputtxt, 'Please enter phone number', 'lblError_phone');
         } else {
-            showError(inputtxt, 'Phone Number is not valid', 'lblError_phone');
+            showError(inputtxt, 'Phone number is not valid', 'lblError_phone');
         }
 
     }
@@ -62,7 +62,7 @@ function checkEmail(input) {
         showSucces(input)
     } else {
         if (input.value == '') {
-            showError(input, 'Please Fill Email');
+            showError(input, 'Please fill email');
         } else {
             showError(input, 'Email is not valid');
         }
@@ -94,11 +94,11 @@ function showSucces(input, spDiv = false){
 function checkLength(input, min, max) {
     if (input.value.length < min) {
         if(input.name == "name"){
-            showError(input, `Please Fill Your Name`);
+            showError(input, `Please fill name`);
         }else if(input.name == "phone"){
             showError(input, `Please enter phone number`);
         }else if(input.name == "email"){
-            showError(input, `Please Fill Email`);
+            showError(input, `Please fill email`);
         }else{
             //showError(input, `This Field is required`);
         }
@@ -137,7 +137,7 @@ function _handleEbookSubmission(e){
     let isValid         = true;
     
     if (nameField.value.trim() === '') {
-        elmErrorMsg( nameField, "Please Fill Name." );
+        elmErrorMsg( nameField, "Please fill name." );
         isValid = false;
     }else{
         elmErrorMsg( nameField, "", false );

@@ -233,7 +233,7 @@
               <small class="error-msg-section"></small>
             </div>
             <div class="form-field half">
-              <label>phone No.</label>
+              <label>Phone No.</label>
               <input name="phone" class="input-fld" id="eb-phone" type="text"  placeholder="Enter phone No.">
               <small class="error-msg-section"></small>
             </div>
