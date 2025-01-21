@@ -1761,12 +1761,14 @@ h5 {
            }
            .cmn-filter .search-form .search-submit {
                display: block;
-               background-color: #000000;
+              
                width: 50px;
                height: 40px;
                top: 1px;
                background-size: 20px;
            }
+           .cmn-filter .search-fld input.search-field{width: 100%;
+            padding: 0 40px 0 15px;}
            .cmn-filter .search-fld a.search-close {
                display: none;
            }
