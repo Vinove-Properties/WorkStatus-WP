@@ -1655,7 +1655,7 @@ h5 {
        .cmn-filter ul li:first-child{ margin-left:0px;}
        .cmn-filter .filters .grid-66{flex-basis:72%}
        .cmn-filter .filters .grid-33{flex-basis:28%; padding:0;}
-       .cmn-filter ul li{list-style:none; display: inline-flex; margin-left: 20px;}
+       .cmn-filter ul li{list-style:none; display: inline-flex; margin: 0 5px 10px 0;}
        .cmn-filter ul li a{padding: 9px 15px; background: #F6F1FF; border-radius: 20px; display: block; border: 1px solid #F6F1FF; color: #363636;}
        .cmn-filter ul li a:hover,
        .cmn-filter ul li a.active{color:#624de3; border-color: #624de3; background: #fff;}
@@ -1666,7 +1666,7 @@ h5 {
            background: url(images/search-icon.png) center no-repeat;
            border-radius: 0 4px 4px 0;
            right: 0;
-           top: -49px;
+           top: -59px;
            width: 60px;
            height: 55px;
            filter: invert(1);
@@ -1685,6 +1685,12 @@ h5 {
        .search-fld .search-form{width: 90%}
 
        .search-fld{padding: 15px 0;}
+
+
+       @media (max-width: 1440px){
+        .cmn-filter ul li a{    padding: 9px 12px;
+            font-size: 15px; margin: 0 4px 10px 0;}
+       }
        
        
        
