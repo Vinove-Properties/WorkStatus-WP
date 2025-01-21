@@ -131,19 +131,9 @@
     </header>  
     
     </div>    
-    <?php
-/*
- // Check if the current page is an author archive page
- if ( is_author() ) {
-     // Include the common filter template part
-     get_template_part('inc/cmn', 'filter');
-     // Include the author-specific section template part
-     get_template_part('inc/author', 'section');
- } 
- // If the current page is not a single post
- elseif ( !is_single() ) {
-     // Include only the common filter template part
-     get_template_part('inc/cmn', 'filter');
- }
-*/
+<?php
+if ( is_author() ) {
+  get_template_part('inc/cmn', 'filter');
+  get_template_part('inc/author', 'section');
+}
 ?>
