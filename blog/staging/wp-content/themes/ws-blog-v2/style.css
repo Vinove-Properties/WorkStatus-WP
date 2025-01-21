@@ -1648,7 +1648,7 @@ h5 {
        .shady .site_nav .logindiv a.signin:hover{color: #4231AC!important; background: #ebe8fd !important;
            border: 1px solid transparent !important;}
        
-       .cmn-filter .filters{padding: 15px 0 10px; background: 0 0; border-top-left-radius: 0; border-top-right-radius: 0; display: block;}
+       .cmn-filter .filters{padding: 15px 0 5px; background: 0 0; border-top-left-radius: 0; border-top-right-radius: 0; display: block;}
        .cmn-filter.shady{ top:65px; border-top: 1px solid #e9e9e9;}
        .cmn-filter{position:fixed; top:81px; width:100%; z-index: 9999; background: #ffffff; border-bottom: 1px solid #e9e9e9;}
        .cmn-filter ul{}
@@ -1677,7 +1677,7 @@ h5 {
        .cmn-filter .search-form .search-submit{display: none;}
        
        
-       .cmn-filter .search-fld a.search-close{top: 8px; background: url(assets/images/signup/cross.png) center no-repeat;
+       .cmn-filter .search-fld a.search-close{top: 10px; background: url(assets/images/signup/cross.png) center no-repeat;
        filter:inherit;
        }
        .cmn-filter .search-fld input.search-field{width:100%; padding: 0 15px;}
@@ -1742,7 +1742,7 @@ h5 {
                display: block !important;
            }
            .cmn-filter .filters {
-               padding: 15px 0 10px;
+               padding: 15px 0 5px;
            }
            .search-fld{padding: 15px 0;}
            .cmn-filter {
