@@ -1648,7 +1648,7 @@ h5 {
        .shady .site_nav .logindiv a.signin:hover{color: #4231AC!important; background: #ebe8fd !important;
            border: 1px solid transparent !important;}
        
-       .cmn-filter .filters{padding: 25px 0; background: 0 0; border-top-left-radius: 0; border-top-right-radius: 0; display: block;}
+       .cmn-filter .filters{padding: 15px 0; background: 0 0; border-top-left-radius: 0; border-top-right-radius: 0; display: block;}
        .cmn-filter.shady{ top:65px; border-top: 1px solid #e9e9e9;}
        .cmn-filter{position:fixed; top:81px; width:100%; z-index: 9999; background: #ffffff; border-bottom: 1px solid #e9e9e9;}
        .cmn-filter ul{}
@@ -1656,9 +1656,9 @@ h5 {
        .cmn-filter .filters .grid-66{flex-basis:72%}
        .cmn-filter .filters .grid-33{flex-basis:28%; padding:0;}
        .cmn-filter ul li{list-style:none; display: inline-flex; margin-left: 20px;}
-       .cmn-filter ul li a{color: #110302}
+       .cmn-filter ul li a{padding: 9px 15px; background: #F6F1FF; border-radius: 20px; display: block; border: 1px solid #F6F1FF; color: #363636;}
        .cmn-filter ul li a:hover,
-       .cmn-filter ul li a.active{color: #4231AC}
+       .cmn-filter ul li a.active{color:#624de3; border-color: #624de3; background: #fff;}
        .cmn-filter .search-fld a.search-close,
        .cmn-filter .search-btn a.search-act{position: absolute;
            border: 0;
@@ -1666,22 +1666,25 @@ h5 {
            background: url(images/search-icon.png) center no-repeat;
            border-radius: 0 4px 4px 0;
            right: 0;
-           top: -36px;
+           top: -49px;
            width: 60px;
            height: 55px;
            filter: invert(1);
            cursor: pointer;}
        .cmn-filter .ws-cats{flex-basis: 90%}
        .cmn-filter .search-btn{flex-basis: 10%; position: relative;}
+       .cmn-filter .search-form{background:transparent !important;}
        .cmn-filter .search-form .search-submit{display: none;}
        
        
-       .cmn-filter .search-fld a.search-close{top:3px; background: url(assets/images/signup/cross.png) center no-repeat;
+       .cmn-filter .search-fld a.search-close{top: 8px; background: url(assets/images/signup/cross.png) center no-repeat;
        filter:inherit;
        }
        .cmn-filter .search-fld input.search-field{width:100%; padding: 0 15px;}
        .search-fld{position: relative;}
        .search-fld .search-form{width: 90%}
+
+       .search-fld{padding: 15px 0;}
        
        
        
@@ -1734,6 +1737,7 @@ h5 {
            .cmn-filter .filters {
                padding: 15px 0;
            }
+           .search-fld{padding: 15px 0;}
            .cmn-filter {
                top: 250px;
            }
