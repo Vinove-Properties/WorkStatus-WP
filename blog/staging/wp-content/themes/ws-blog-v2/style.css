@@ -1666,7 +1666,7 @@ h5 {
            background: url(images/search-icon.png) center no-repeat;
            border-radius: 0 4px 4px 0;
            right: 0;
-           top: -59px;
+           top: -68px;
            width: 60px;
            height: 55px;
            filter: invert(1);
@@ -1688,8 +1688,9 @@ h5 {
 
 
        @media (max-width: 1440px){
+        .cmn-filter ul li {margin: 0 4px 5px 0;}
         .cmn-filter ul li a{    padding: 9px 12px;
-            font-size: 15px; margin: 0 4px 10px 0;}
+            font-size: 15px; }
        }
        
        
