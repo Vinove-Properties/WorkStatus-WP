@@ -1772,6 +1772,7 @@ h5 {
            .cmn-filter .search-fld a.search-close {
                display: none;
            }
+           .cmn-filter .search-fld .search-form{width:100%;}
            .cmn-filter .search-btn {
                display: none;
            }
