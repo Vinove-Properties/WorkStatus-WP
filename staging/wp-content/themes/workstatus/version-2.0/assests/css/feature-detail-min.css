@@ -5987,8 +5987,6 @@ li.iti__country {
         font-weight: 600;
         padding: 15px 10px;
         justify-content: flex-start; }
-        .compare-projects .features-container .compare-column .tool-col.comprice .btn {
-          background: #6754E2; }
         .compare-projects .features-container .compare-column .tool-col.comprice.best-price {
           position: relative; }
           .compare-projects .features-container .compare-column .tool-col.comprice.best-price:before {
@@ -6000,6 +5998,9 @@ li.iti__country {
             position: absolute;
             bottom: 11px;
             left: -11px; }
+          .compare-projects .features-container .compare-column .tool-col.comprice.best-price .btn {
+            background: #6754E2;
+            color: #fff; }
         .compare-projects .features-container .compare-column .tool-col.comprice .btn {
           color: #05164d;
           text-align: center;

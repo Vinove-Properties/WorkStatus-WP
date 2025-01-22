@@ -3512,8 +3512,6 @@ h3 a {
         font-weight: 600;
         padding: 15px 10px;
         justify-content: flex-start; }
-        .compare-projects .features-container .compare-column .tool-col.comprice .btn {
-          background: #6754E2; }
         .compare-projects .features-container .compare-column .tool-col.comprice.best-price {
           position: relative; }
           .compare-projects .features-container .compare-column .tool-col.comprice.best-price:before {
@@ -3525,6 +3523,9 @@ h3 a {
             position: absolute;
             bottom: 11px;
             left: -11px; }
+          .compare-projects .features-container .compare-column .tool-col.comprice.best-price .btn {
+            background: #6754E2;
+            color: #fff; }
         .compare-projects .features-container .compare-column .tool-col.comprice .btn {
           color: #05164d;
           text-align: center;
