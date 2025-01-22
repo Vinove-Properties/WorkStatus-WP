@@ -26,7 +26,7 @@ $catBlockThree  = get_field('row-c3', 'option');
     </div>
     <div class="search-blogs">
       <div class="ser-left"><span class="ftin">Featured In</span> 
-        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/dev-images/featured-logos.svg" alt="workstatus">
+        <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/dev-images/ws-featured-logos.svg" alt="workstatus">
       </div>
       <div class="searchBox">
         <form action="<?php echo site_url(); ?>" method="get" class="search-form"> 
