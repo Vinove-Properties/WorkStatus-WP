@@ -7940,6 +7940,9 @@ li.iti__country {
               text-align: center;
               padding: 0 10px; } }
 
+.bg-blue .top-section h2, .bg-blue .top-section p {
+  color: #fff; }
+
 @media (max-width: 979px) {
   .start-journey .ws-flex {
     flex-wrap: wrap; }
@@ -8332,7 +8335,15 @@ li.iti__country {
     margin: 20px 0 0; }
 
   .regBtn {
-    margin: 15px 0; } }
+    margin: 15px 0; }
+
+  .site__footer .privacy-links {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0; }
+
+  .site__footer .privacy-links > li a {
+    font-size: 13px; } }
 /*home css start here*/
 .header-two {
   background: #3708c2;

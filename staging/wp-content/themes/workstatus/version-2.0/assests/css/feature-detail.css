@@ -1328,6 +1328,20 @@ h3 a {
       flex-direction: column; }
       .site__footer .footer-sec .footer-top .dis-flex .flex-4 .addwrap img {
         margin: 0 0 10px; } }
+@media (max-width: 768px) {
+  .site__footer .flex_row .fcol6 .footer-logo {
+    margin: 20px 0 0; }
+
+  .regBtn {
+    margin: 15px 0; }
+
+  .site__footer .privacy-links {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0; }
+
+  .site__footer .privacy-links > li a {
+    font-size: 13px; } }
 .header-two {
   position: fixed;
   display: block;
@@ -3494,10 +3508,12 @@ h3 a {
         border-bottom: 0;
         background: #f4f2ff; }
       .compare-projects .features-container .compare-column .tool-col.comprice {
-        min-height: 165px;
+        min-height: 130px;
         font-weight: 600;
         padding: 15px 10px;
         justify-content: flex-start; }
+        .compare-projects .features-container .compare-column .tool-col.comprice .btn {
+          background: #6754E2; }
         .compare-projects .features-container .compare-column .tool-col.comprice.best-price {
           position: relative; }
           .compare-projects .features-container .compare-column .tool-col.comprice.best-price:before {
@@ -3514,7 +3530,7 @@ h3 a {
           text-align: center;
           font-weight: 500;
           display: block;
-          width: 100px;
+          width: 70px;
           padding: 5px 10px;
           border-radius: 5px; }
           .compare-projects .features-container .compare-column .tool-col.comprice .btn.active {

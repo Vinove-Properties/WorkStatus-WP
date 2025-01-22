@@ -7803,6 +7803,20 @@ h3 a {
       flex-direction: column; }
       .site__footer .footer-sec .footer-top .dis-flex .flex-4 .addwrap img {
         margin: 0 0 10px; } }
+@media (max-width: 768px) {
+  .site__footer .flex_row .fcol6 .footer-logo {
+    margin: 20px 0 0; }
+
+  .regBtn {
+    margin: 15px 0; }
+
+  .site__footer .privacy-links {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0; }
+
+  .site__footer .privacy-links > li a {
+    font-size: 13px; } }
 .feature-header .site__header {
   background: #4231ac; }
 
