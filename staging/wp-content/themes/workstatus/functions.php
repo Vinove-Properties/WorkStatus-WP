@@ -497,7 +497,7 @@ function pixelShowLatestPosts( $bposts, $pslug = "", $elmClass = ''){
 			   </div>
 			   <div class="blog-title">
 				 <h3><?php echo $row->title; ?></h3>
-				 <span class="small_anchor">Read more</span>
+				 <span class="small_anchor is-arrow">Read more</span>
 			   </div>
 			 </a>
 		   </div>		 		 
