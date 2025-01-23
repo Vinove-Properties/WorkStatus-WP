@@ -15,6 +15,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
           <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
           <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
+          <li><a href="<?php echo site_url('/change-log'); ?>/demo">Change Log</a></li>
         </ul>
       </div>
       <div class="column fcol2">
