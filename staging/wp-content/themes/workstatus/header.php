@@ -100,9 +100,14 @@
       @media screen and (max-width: 1023px) {
       .site_nav > ul > li#howitworksitem{position: relative;}
       .feature-header .site__header .site_nav > ul > li#howitworksitem > a::before {display:none;}
+   
       }
-      .cop{width: 100%; justify-content: center;}
-      .fbedge{margin:20px 0 0; text-align:center; width: 100%;}
+
+      @media (max-width:1023px) {
+        .cop{width: 100%; justify-content: center;}
+        .fbedge{margin:20px 0 0; text-align:center; width: 100%;}
+      }
+    
       .cnd-phone{display: none;}
       .locate-in .cnd-phone{display: block;}
       body.show-wsaddon .this-block{display: none !important;}
