@@ -6,6 +6,7 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='dmca-site-verification' content='QVF1Ym5QVXFtK1VMRTJ6RXloRUxnQnpvSTFPcUZ3OFhlWjgxVmdKWHZHYz01' />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assests/images/favicon.png" type="image/x-icon">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php /* if( !wp_is_mobile() ) : ?>
@@ -100,6 +101,8 @@
       .site_nav > ul > li#howitworksitem{position: relative;}
       .feature-header .site__header .site_nav > ul > li#howitworksitem > a::before {display:none;}
       }
+      .cop{width: 100%; justify-content: center;}
+      .fbedge{margin:20px 0 0; text-align:center; width: 100%;}
       .cnd-phone{display: none;}
       .locate-in .cnd-phone{display: block;}
       body.show-wsaddon .this-block{display: none !important;}
@@ -149,6 +152,7 @@
      
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; 
       background: #faf8fe; padding: 25px; margin:0 0 25px;}
+   
       @media screen and (max-width:575px){
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 100%;margin: 15px 0 0;}
       }

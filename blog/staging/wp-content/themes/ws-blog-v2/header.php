@@ -3,6 +3,7 @@
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name='dmca-site-verification' content='QVF1Ym5QVXFtK1VMRTJ6RXloRUxnQnpvSTFPcUZ3OFhlWjgxVmdKWHZHYz01' />
     <?php wp_head(); ?>
     <link rel="shortcut icon" href="https://www.workstatus.io/wp-content/themes/workstatus/assests/images/favicon.png" 
     type="image/x-icon">
@@ -27,6 +28,11 @@
       .hero-banner {padding:100px 0 50px;}
       body.single .blog-thumb,.desk-only{ display:none; }    
       
+      }
+
+      @media (max-width:1023px) {
+        .cop{width: 100%; justify-content: center;}
+        .fbedge{margin:20px 0 0; text-align:center; width: 100%;}
       }
       body.single-post .row-key-takeaway{background: #f7f6fe; padding:30px; border-radius: 10px; border-left: 5px solid #624DE3; 
       color: #414141; margin: 30px 0;}

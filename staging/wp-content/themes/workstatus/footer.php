@@ -132,7 +132,7 @@ global $ws_ctas, $RegLink, $LogLink;
         </div>
       </div>
       </div>
-    <div class="bottom-links">
+    <div class="bottom-links" style="justify-content:space-between;">
       <?php
       $copyRight  = "&copy;";
       $suPopup    = "Copyright";
@@ -147,6 +147,7 @@ global $ws_ctas, $RegLink, $LogLink;
         $suPopup = "<a href='javascript:void(0);' onclick='showSuPopup();'>Copyright</a>";    
       }
       ?>
+      <div class="cop" style="display:flex; flex-wrap:wrap;">
       <p class="copyright">
       <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
       </p>
@@ -156,7 +157,8 @@ global $ws_ctas, $RegLink, $LogLink;
         <li class="hide1">|</li>
         <li><a href="<?php echo site_url(); ?>/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
       </ul>
-      <div class="rate-us-section">
+    </div>
+      <!-- <div class="rate-us-section">
       <span class="star-outer" id="star" style="display:none">
       <span class="star-inner star-hover" id="starthover">
       <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
@@ -188,6 +190,10 @@ global $ws_ctas, $RegLink, $LogLink;
         <a href="https://play.google.com/store/apps/details?id=com.vinove.workstatus&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img  width="136" height="38" src="https://www.workstatus.io/assests/images/googleplay.png" alt="google play"  loading="lazy"></a>
       </div> 
     -->
+
+    <div class="fbedge"><a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
+
+
     </div>
   </div>
 </footer>

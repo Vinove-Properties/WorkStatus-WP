@@ -127,8 +127,8 @@
         </div>
       </div>
     </div>
-    <div class="bottom-links">
-      <div class="ftwrap">
+    <div class="bottom-links" style="justify-content:space-between;">
+      <div class="ftwrap"  style="justify-content:space-between; width: 100%;">
         <?php
           $copyRight  = "&copy;";
           $suPopup    = "Copyright";
@@ -143,6 +143,7 @@
             $suPopup = "<a href='javascript:void(0);' onclick='showSuPopup();'>Copyright</a>";    
           }
           ?>
+            <div class="cop" style="display:flex; flex-wrap:wrap;">
         <p class="copyright">
           <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
         </p>
@@ -152,6 +153,9 @@
           <li class="hide1">|</li>
           <li><a href="https://www.workstatus.io/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
         </ul>
+        </div>
+        <div class="fbedge"><a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
+
       </div>
       <!-- <div class="gpw"></div> -->
       <!-- 
