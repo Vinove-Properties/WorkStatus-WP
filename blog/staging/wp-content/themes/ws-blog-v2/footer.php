@@ -127,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="bottom-links" style="justify-content:space-between;">
+    <div class="bottom-links" style="justify-content:space-between; width:100%;">
       <div class="ftwrap"  style="justify-content:space-between; width: 100%;">
         <?php
           $copyRight  = "&copy;";
@@ -154,9 +154,9 @@
           <li><a href="https://www.workstatus.io/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
         </ul>
         </div>
-        <div class="fbedge"><a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
 
       </div>
+      <div class="fbedge"><a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
       <!-- <div class="gpw"></div> -->
       <!-- 
         <div class="app-store">
