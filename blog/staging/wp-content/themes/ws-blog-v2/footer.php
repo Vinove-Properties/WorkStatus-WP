@@ -128,7 +128,7 @@
       </div>
     </div>
     <div class="bottom-links" style="justify-content:space-between; width:100%;">
-      <div class="ftwrap"  style="justify-content:space-between; width: 100%;">
+      <div class="ftwrap">
         <?php
           $copyRight  = "&copy;";
           $suPopup    = "Copyright";
