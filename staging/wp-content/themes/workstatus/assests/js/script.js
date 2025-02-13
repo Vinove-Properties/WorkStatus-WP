@@ -925,7 +925,11 @@ if( spanClose ){
         formPopup.classList.remove("is-active");
     }
 }
-    
+
+function _getAppLoginUrl(){
+    let appLink = 'https://'+wsObj.app_url+'/auth/login';
+    window.open( generateUtmLink( appLink, utmParams ), '_blank' );   
+}
 
 window.onclick = function(event) {
     if (event.target == formPopup) {
