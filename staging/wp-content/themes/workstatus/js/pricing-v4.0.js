@@ -423,9 +423,9 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     
     //var isLocal           = ( conCode === "IN" ) ? "local" : "international";
 
-    console.log( conCode );
+    //console.log( conCode );
     var plan_meta         =  WS_PLAN_ID[conCode];
-    console.log( plan_meta );
+    //console.log( plan_meta );
 
     [...document.querySelectorAll('.free-zero')].forEach(function(elm){
       elm.innerHTML = currency+"0";

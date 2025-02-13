@@ -816,7 +816,7 @@ function utm_setCookie(name, value, days) {
 }
 
 const params    = utm_getQueryParams();
-const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'r_id' ];
+const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'r_id', 'ws_reftoken' ];
 const utmValues = {};
 
 utmParams.forEach(param => {
@@ -837,6 +837,7 @@ function utm_getCookie(name) {
 }
 
 utmParams.forEach(param => {
+    param = ( param === "r_id" ) ? "ws_reftoken" : param;
     const value = utm_getCookie(param);
     if (value) {
         utmValues[param] = value;
@@ -844,15 +845,15 @@ utmParams.forEach(param => {
 });
 utmValues['utm_term'] = document.body.getAttribute('data-url');
 function generateUtmLink(baseUrl, utmParams) {
-    const url = new URL(baseUrl);
+    const url = new URL(baseUrl);    
     Object.keys(utmParams).forEach(param => {
         if( utmValues[utmParams[param]] ){
-            url.searchParams.append(utmParams[param], utmValues[utmParams[param]]);    
+            let parmKey = ( utmParams[param] === "ws_reftoken" ) ? "r_id" : utmParams[param];
+            url.searchParams.append(parmKey, utmValues[utmParams[param]]);    
         }        
     });
     return url.toString();
 }
-
 //console.log( generateUtmLink( 'https://calendly.com/workstatus/demo',utmParams ) );
 
 var formPopup   = document.getElementById('formPopup');
@@ -928,6 +929,8 @@ if( spanClose ){
 
 function _getAppLoginUrl(){
     let appLink = 'https://'+wsObj.app_url+'/auth/login';
+    // let refToken = wsGetCookieVal( 'ws_reftoken' );
+    // if( refToken )
     window.open( generateUtmLink( appLink, utmParams ), '_blank' );   
 }
 
