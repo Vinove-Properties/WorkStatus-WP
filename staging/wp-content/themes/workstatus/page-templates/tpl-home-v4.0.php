@@ -1,10 +1,10 @@
 <?php 
-  /*
-  Template Name: Home Page - V4.0 Template
-  */ 
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink;	
-  ?>
+/*
+Template Name: Home Page - V4.0 Template
+*/ 
+get_header();
+global $ws_ctas, $RegLink, $LogLink;	
+?>
 <main class="site__content">
   <section class="banner-section">
     <div class="home-section">
@@ -47,7 +47,7 @@
   <section class="trusted-by padding-t-70 padding-b-70">
     <div class="container">
       <div class="logo-heading">
-        <h4><span>Trusted by startups and Fortune <strong>500</strong> companies</span></h4>
+        <h4><span>The #1 Workforce Management Software</span></h4>
       </div>
       <div class="trusted-flex">
         <div class="trusted-card">

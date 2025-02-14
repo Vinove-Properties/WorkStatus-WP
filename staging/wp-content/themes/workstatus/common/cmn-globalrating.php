@@ -26,7 +26,7 @@
       </div>
       <div class="award-column">
         <div class="award-logo">
-          <h3><strong>Workstatus</strong> ranks as a G2 Leader across DevSecOps categories</h3>
+          <h3><strong>Workstatus</strong> is trusted by 2000+ companies globally</h3>
           <div class="award-row">
             <div class="award-col">
               <div class="img-wrap">
