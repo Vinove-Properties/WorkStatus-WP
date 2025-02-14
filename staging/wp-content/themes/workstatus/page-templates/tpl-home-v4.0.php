@@ -47,7 +47,7 @@ global $ws_ctas, $RegLink, $LogLink;
   <section class="trusted-by padding-t-70 padding-b-70">
     <div class="container">
       <div class="logo-heading">
-        <h4><span>The #1 Workforce Management Software</span></h4>
+        <h4><span>The <strong>#1 Workforce Management</strong> Software</span></h4>
       </div>
       <div class="trusted-flex">
         <div class="trusted-card">
