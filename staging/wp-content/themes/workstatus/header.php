@@ -781,6 +781,9 @@
                                     <a href="<?php echo site_url(); ?>/by-role/it-managers"><span class="title">IT Managers</span>
                                     Streamline IT projects delivery
                                     </a>
+                                    <a href="<?php echo site_url(); ?>/by-role/employees"><span class="title">Employees</span>
+                                    Work Smarter, Daily
+                                    </a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/by-role/business-owners"><span class="title">Business Owners</span>
@@ -788,6 +791,9 @@
                                     <a href="<?php echo site_url(); ?>/by-role/project-managers"><span class="title">Project Managers
                                     </span>
                                     Track progress, ensure success</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/executive-leadership"><span class="title">Executives
+                                    </span>
+                                    Data-Driven Leadership</a>
                                   </div>
                                 </div>
                               </div>
