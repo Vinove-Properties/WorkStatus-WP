@@ -237,7 +237,7 @@
                                   </a><span class="ser-arrow-btn"></span>
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
-                                  <div class="flex-2">
+                                  <div class="flex-3">
                                     <a href="<?php echo site_url(); ?>/time-attendance/timesheet-software"><span class="title">Online Timesheets</span>
                                     Accurate timesheet, effortless tracking</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/online-time-reporting"><span class="title">Online Time Reporting</span>
@@ -249,7 +249,7 @@
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">Live Location Tracking</span>
                                     Enhanced visibility, increased security</a>
                                   </div>
-                                  <div class="flex-2">
+                                  <div class="flex-3">
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time Off Management</span>
                                     Manage time for work-life balance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/geofencing-software"><span class="title">Geofence Time Tracking</span>
@@ -263,23 +263,18 @@
                                     Track habits, achieve goals
                                     </a>
                                   </div>
+                                  <div class="flex-3">
+                                    <a href="<?php echo site_url(); ?>/time-attendance/screen-monitoring"><span class="title">Screen Monitoring</span>
+                                    Sim Please share the Text</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/work-timer"><span class="title">Work Timer</span>
+                                    Sim Please share the Text</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/timesheet-approval"><span class="title">Timesheet Approval</span>
+                                    Sim Please share the Text</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/idle-detection-reminders"><span class="title">Idle detection & reminders</span>
+                                    Sim Please share the Text</a>                                    
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="other-menu mob-hide">
-                                <div class="tab-title"><a href="<?php echo site_url('/workplace-mode'); ?>"><span class="title">Workplace Modes</span>
-                                  Work Seamlessly, Stay Connected </a><span class="ser-arrow-btn"></span>
-                                </div>
-                                <div class="flex-1 menu-column sub-service">
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/remote-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-01.svg" class="menuicon" alt="menuicon"><span class="title">Remote Work</span>Track remote employees
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/hybrid-work-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-02.svg" class="menuicon" alt="menuicon"><span class="title">Hybrid Work</span>Optimize work-life balance
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workforce-management/field-service-management"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-03.svg" class="menuicon" alt="menuicon"><span class="title">Field Work</span>Track work, on-the-go
-                                  </a>
-                                  <a href="<?php echo site_url(); ?>/workplace-mode/office-work"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/mode-04.svg" class="menuicon" alt="menuicon"><span class="title">Office Work</span>Manage in-office employees
-                                  </a>
-                                </div>
-                              </div>
+                              </div>                              
                             </div>
                             <div class="tab-content">
                               <div class="three-column">
@@ -294,6 +289,8 @@
                                     Track habits, achieve goals</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-monitoring-software">
                                     <span class="title">Employee Monitoring</span>Insights that empower teams</a>
+                                    <a href="<?php echo site_url(); ?>/productivity-management/smart-break">
+                                    <span class="title">Smart Break Scheduling</span>Sim Please share content</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>
@@ -337,7 +334,8 @@
                                     <a href="<?php echo site_url(); ?>/project-management/daily-standup"><span class="title">Daily StandUp Meetings</span>
                                     Track project status, every day</a>
                                     <a href="<?php echo site_url(); ?>/project-management/agile-workflows"><span class="title">Agile Project Management</span>
-                                    Flexible workflows, faster results</a>                                    
+                                    Flexible workflows, faster results</a>
+                                    <a href="<?php echo site_url(); ?>/project-management/kanban-board"><span class="title">Kanban Board</span>Sim Please Share Content</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/project-management/agile-sprint"><span class="title">Agile Sprint Planning</span>
@@ -474,6 +472,8 @@
                                     Optimize workforce, achieve excellence</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/data-loss-prevention"><span class="title">Data Loss Prevention (DLP)</span>
                                     Data protection you can trust</a>
+                                    <a href="<?php echo site_url(); ?>/workforce-management/license-management"><span class="title">License Management</span>
+                                    Sim Please share content</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/user-activity-monitoring"><span class="title">User Activity Monitoring</span>Enhanced insights, optimized workflow</a>
@@ -516,6 +516,8 @@
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software "><span class="title">Employee Scheduling </span>
                                     Flexible, seamless scheduling</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation"><span class="title">Dynamic Resource Allocation</span>Allocate wisely, maximize efficiency</a>
+                                    <a href="<?php echo site_url(); ?>/resource-management/budget-tracking-software"><span class="title">Budget Tracking</span>Sim Please share content</a>
+                                    
                                   </div>
                                 </div>
                               </div>
