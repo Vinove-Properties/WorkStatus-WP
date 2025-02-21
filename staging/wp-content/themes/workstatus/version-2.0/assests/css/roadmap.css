@@ -926,13 +926,10 @@ h3 a {
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .four-column {
                   width: 100%; }
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column {
-                  width: 66%; }
+                  width: 66%;
+                  position: relative; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column.width-full {
-                    width: 100%;
-                    position: relative; }
-                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column.width-full .sub-service {
-                      position: relative;
-                      z-index: 99; }
+                    width: 100%; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column:after {
                     content: '';
                     background: #fff;
@@ -974,7 +971,9 @@ h3 a {
                   flex-wrap: wrap; }
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column {
                   padding: 15px 0 30px;
-                  width: 100%; }
+                  width: 100%;
+                  position: relative;
+                  z-index: 99; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .menu-column .flex-2 {
                     flex-basis: 50%;
                     padding: 0 5px; }
