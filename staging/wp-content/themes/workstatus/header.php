@@ -777,7 +777,7 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-ind">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>Simplify HR processes, empower people</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>Simplify HR processes</a>
                                     <a href="<?php echo site_url(); ?>/by-role/it-managers"><span class="title">IT Managers</span>
                                     Streamline IT projects delivery
                                     </a>
