@@ -3524,9 +3524,9 @@ li.iti__country {
                     background: #fff;
                     position: absolute;
                     top: 0;
-                    right: -230px;
+                    right: -100px;
                     height: 100%;
-                    width: 300px;
+                    width: 60%;
                     z-index: 9; }
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .title {
                   font-weight: 500;
