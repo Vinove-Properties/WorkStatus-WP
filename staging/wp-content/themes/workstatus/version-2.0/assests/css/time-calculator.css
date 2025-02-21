@@ -6867,6 +6867,21 @@ h3 a {
                   width: 100%; }
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column {
                   width: 66%; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column.width-full {
+                    width: 100%;
+                    position: relative; }
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column.width-full .sub-service {
+                      position: relative;
+                      z-index: 99; }
+                  .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .three-column:after {
+                    content: '';
+                    background: #fff;
+                    position: absolute;
+                    top: 0;
+                    right: -230px;
+                    height: 100%;
+                    width: 300px;
+                    z-index: 9; }
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .title {
                   font-weight: 500;
                   font-size: 16px;

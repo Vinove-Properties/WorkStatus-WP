@@ -231,7 +231,7 @@
                           </div>
                           <div class="right-tabs">
                             <div class="tab-content is-active">
-                              <div class="three-column">
+                              <div class="three-column width-full" style="width:100%">
                                 <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/product-01.svg" class="menuicon" alt="menuicon"><span class="title">Time Tracking</span>
                                   Track Time, Boost Productivity
                                   </a><span class="ser-arrow-btn"></span>
