@@ -384,7 +384,7 @@
                                     Secure, accurate time tracking</a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/time-attendance/facial-recognition-software"><span class="title">Selfie Validation</span>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/facial-recognition-software"><span class="title">Face Recognition</span>
                                     Verify time and attendance</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/live-location-tracking"><span class="title">GPS-based Attendance Tracking</span>Location-based, real-time attendance</a>
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software"><span class="title">Employee Scheduling</span>
