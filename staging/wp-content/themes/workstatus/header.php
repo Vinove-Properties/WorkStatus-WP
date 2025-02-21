@@ -508,14 +508,13 @@
                                 </div>
                                 <div class="dis-flex menu-column sub-service">
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Resource Allocation</span>Smart resource allocation</a>
+                                    <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Dynamic Resource Allocation</span>Smart resource allocation</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>Robust server/client expertise</a>
                                     <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-off Planning</span>Manage time-off, avoid disruptions</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software "><span class="title">Employee Scheduling </span>
                                     Flexible, seamless scheduling</a>
-                                    <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation"><span class="title">Dynamic Resource Allocation</span>Allocate wisely, maximize efficiency</a>
                                     <a href="<?php echo site_url(); ?>/resource-management/budget-tracking-software"><span class="title">Budget Tracking</span>Budget Tracking Simplified</a>
                                     
                                   </div>
