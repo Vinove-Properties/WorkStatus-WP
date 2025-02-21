@@ -510,7 +510,7 @@
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/resource-allocation-software "><span class="title">Dynamic Resource Allocation</span>Smart resource allocation</a>
                                     <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management"><span class="title">Workload Management</span>Robust server/client expertise</a>
-                                    <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-off Planning</span>Manage time-off, avoid disruptions</a>
+                                    <a href="<?php echo site_url(); ?>/time-attendance/time-off-management"><span class="title">Time-off Management</span>Manage time-off, avoid disruptions</a>
                                   </div>
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/workforce-management/employee-scheduling-software "><span class="title">Employee Scheduling </span>
