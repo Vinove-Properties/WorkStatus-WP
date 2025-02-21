@@ -1568,7 +1568,9 @@ h3 a {
                 .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .tab-title {
                   padding: 15px 0;
                   border-bottom: 1px solid #e6e6e6;
-                  width: 100%; }
+                  width: 100%;
+                  position: relative;
+                  z-index: 99; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content .tab-title a {
                     padding-left: 70px;
                     position: relative;
