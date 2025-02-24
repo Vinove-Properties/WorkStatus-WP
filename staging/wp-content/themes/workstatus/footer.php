@@ -73,26 +73,26 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="dis-flex footer-top">
       <div class="dis-flex">
         <div class="flex-4">
-         <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="./assests/footer-images/ws.svg" alt="flag" width="199" height="26">
+         <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
           </a>
         </div>
         <div class="flex-4">
           <div class="addwrap">
-            <img loading="lazy" src="./assests/footer-images/flag-icon01.svg" alt="flag" width="35" height="35">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon01.svg" alt="flag" width="35" height="35">
             <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates
             </p>
           </div>
         </div>
         <div class="flex-4">
           <div class="addwrap">
-            <img loading="lazy" src="./assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
             <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001
             </p>
           </div>
         </div>
         <div class="flex-4">
           <div class="addwrap">
-            <img loading="lazy" src="./assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
             <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304
             </p>
           </div>
@@ -179,12 +179,12 @@ global $ws_ctas, $RegLink, $LogLink;
         <div class="dis-flex">
           <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
             </picture>
           </a>
           <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
             </picture>
           </a>
         </div>
@@ -194,27 +194,27 @@ global $ws_ctas, $RegLink, $LogLink;
         <div class="dis-flex">
           <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
             </picture>
           </a>
           <a href="https://x.com/Workstatusapp" target="_blank">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
             </picture>
           </a>
           <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
             <picture>
-              <img loading="lazy" src="./assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
             </picture>
           </a>
           <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
             </picture>
           </a>
           <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
             <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
             </picture>
           </a>
         </div>
