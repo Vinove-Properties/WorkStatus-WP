@@ -255,9 +255,9 @@ global $ws_ctas, $RegLink, $LogLink;
       </p>
       <ul class="privacy-links">
         <li class="hide">|</li>
-        <li><a href="<?php echo site_url(); ?>/privacy-policy" class="para_extrasmall">Privacy Policy </a></li>
-        <li class="hide1">|</li>
-        <li><a href="<?php echo site_url(); ?>/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
+        <li><a href="<?php echo site_url(); ?>/privacy-policy">Privacy Policy </a></li>
+        <li class="hide">|</li>
+        <li><a href="<?php echo site_url(); ?>/terms-of-service">Terms of Service</a></li>
       </ul>
       </div>
     </div>
