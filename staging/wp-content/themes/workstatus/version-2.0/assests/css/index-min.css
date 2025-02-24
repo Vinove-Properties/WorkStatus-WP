@@ -8081,7 +8081,8 @@ li.iti__country {
           opacity: 0.6; }
     .footer .footer-bottom .footer-rating {
       color: #b9b9b9;
-      flex-basis: 35%; }
+      flex-basis: 35%;
+      font-size: 16px; }
       .footer .footer-bottom .footer-rating .star-outer a {
         font-size: 14px;
         color: #b9b9b9;
@@ -8144,6 +8145,11 @@ li.iti__country {
     margin-right: 7px; }
   .footer .footer-bottom h3 {
     margin: 0 0 15px; } }
+@media (max-width: 1366px) {
+  .footer .footer-middle ul li {
+    font-size: 15px; }
+  .footer .footer-bottom .footer-rating {
+    font-size: 15px; } }
 @media (max-width: 1160px) {
   .footer .footer-top .dis-flex .flex-4 {
     flex-basis: 33.33%;
@@ -8271,7 +8277,8 @@ li.iti__country {
       text-align: center;
       margin: 20px 0 0; }
     .footer .footer-bottom .footer-rating {
-      margin: 20px 0 0; }
+      margin: 20px 0 0;
+      font-size: 13px; }
     .footer .footer-bottom h3 {
       font-weight: 500; } }
 /*Media Query Ends Here*/

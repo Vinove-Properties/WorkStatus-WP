@@ -146,7 +146,8 @@
 
     .footer-rating {
       color: #b9b9b9;
-      flex-basis: 35%;
+      flex-basis: 35%; 
+      font-size: 16px;
 
       .star-outer a {
         font-size: 14px;
@@ -258,6 +259,21 @@
       }
     }
   }
+}
+
+@media (max-width: 1366px) {
+
+  .footer{
+    .footer-middle {
+      ul {
+        li{font-size: 15px;}
+      }
+    }
+    .footer-bottom {
+      .footer-rating{font-size: 15px;}
+    }
+  }
+
 }
 
 @media (max-width: 1160px) {
@@ -451,6 +467,7 @@
       }
       .footer-rating {
         margin: 20px 0 0;
+        font-size: 13px;
       }
 
       h3 {
