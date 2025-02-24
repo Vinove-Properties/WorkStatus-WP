@@ -1,7 +1,7 @@
 .client-img-section {
   .why-ws {
     position: relative;
-    z-index: 9;
+    //z-index: 9;
     .left-box {
       position: relative;
 
@@ -179,6 +179,7 @@
               font-size: 32px;
               line-height: 40px;
               margin: 0 0 6px;
+              font-weight: 700;
             }
             p {
               font-weight: normal;
@@ -251,6 +252,7 @@
           box-shadow: 0px 4px 44px 0px rgba(4, 26, 51, 0.09);
           background: $white;
           margin: 10px 0 0;
+          min-height:290px;
 
           h3 {
             font-size: 20px;
@@ -318,11 +320,11 @@
 }
 
 .award-animate-slide-to-left {
-  animation: slide_to_left 15s linear infinite;
+  animation: slide_to_left 50s linear infinite;
 }
 
 .award-animate-slide-to-right {
-  animation: slide_to_right 15s linear infinite;
+  animation: slide_to_right 50s linear infinite;
 }
 
 .hover\:pause:hover {
@@ -331,6 +333,7 @@
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
+  
 }
 
 @media (max-width: 1280px) {
@@ -437,7 +440,7 @@
 
         .why-left {
           padding-right: 0;
-          .plateform {
+          .plateform {min-height: initial;
             h3 {
               font-size: 18px;
               line-height: 28px;

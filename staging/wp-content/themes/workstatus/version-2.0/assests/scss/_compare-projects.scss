@@ -66,6 +66,10 @@
         min-height: 87px;
         justify-content: center;
 
+        &:nth-child(2n) {
+          background: #f1efff;
+        }
+
         &.comphead {
           font-size: 18px;
           color: rgba(0, 35, 75, 0.6);
@@ -81,9 +85,10 @@
             color: #05164dcc;
             border: 1.5px solid #efefef;
             text-align: center;
-            padding: 6px 10px;
-            width: 100px;
-            font-weight: 600;
+            padding: 8px 10px;
+            width: 85px;
+            font-weight: 500;
+            line-height: 1;
             font-size: 12px;
             border-radius: 10px;
             justify-content: center;
@@ -104,16 +109,34 @@
         }
 
         &.comprice {
-          min-height: 117px;
+          min-height: 130px;
           font-weight: 600;
           padding: 15px 10px;
+          justify-content: flex-start;
+
+         
+
+          &.best-price {
+            position: relative;
+            &:before {
+              content: "";
+              background: url(../images/best-value.svg) no-repeat;
+              background-size: 100%;
+              width: 108px;
+              height: 34px;
+              position: absolute;
+              bottom: 11px;
+              left: -11px;
+            }
+            .btn{background: #6754E2; color:#fff;}
+          }
 
           .btn {
             color: #05164d;
             text-align: center;
-            font-weight: 600;
+            font-weight: 500;
             display: block;
-            width: 100px;
+            width: 70px;
             padding: 5px 10px;
             border-radius: 5px;
             &.active {
@@ -146,8 +169,8 @@
         }
 
         i {
-          width: 26px;
-          height: 26px;
+          width: 22px;
+          height: 22px;
           margin: 0 auto;
           &.check-icon {
             background: url(../images/table-check.svg) no-repeat;
@@ -186,6 +209,14 @@
 }
 
 @media (max-width: 1280px) {
+
+  .compare-projects {
+    .features-container {
+      .compare-column {
+        .tool-col.comp-logo{font-size: 15px; min-height: 128px; text-align: center;}
+      }
+    }
+  }
 }
 
 @media (max-width: 1024px) {
@@ -206,9 +237,10 @@
       justify-content: left;
       width: 100%;
       -webkit-overflow-scrolling: touch;
-      .compare-column {min-width: 150px;
+      .compare-column {
+        min-width: 150px;
         .tool-col {
-          min-height: 90px;
+          min-height: 115px;
         }
         &.elemnt {
           min-width: 200px;
@@ -226,6 +258,9 @@
 }
 
 @media (max-width: 767px) {
+
+  .compare-projects .features-container .compare-column .tool-col{min-height:80px;}
+
 }
 
 /*Media Query Ends Here*/

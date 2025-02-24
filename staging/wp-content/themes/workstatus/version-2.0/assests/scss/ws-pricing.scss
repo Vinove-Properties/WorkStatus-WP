@@ -200,6 +200,7 @@
                 margin: 0 0 20px;
                 position: relative;
                 padding: 0 0 0 15px;
+                line-height: initial;
 
                 .tooltipp {
                   position: relative;
@@ -1302,6 +1303,8 @@
             }
           }
         }
+
+        
 
         &:nth-child(3n) {
           margin-top: 0;

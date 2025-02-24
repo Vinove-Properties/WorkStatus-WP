@@ -189,12 +189,13 @@
             .prod {
               color: rgba(255, 255, 255, 0.8);
             }
-          }
-          .card-bottom {
-            &:before {
-              background: rgba(255, 255, 255, 0.3);
+            .card-bottom {
+              &:before {
+                background: rgba(255, 255, 255, 0.3);
+              }
             }
           }
+         
         }
       }
 
@@ -257,7 +258,7 @@
       gap: 15px;
 
       .workplace-card {
-        flex-basis: 49%;
+        flex-basis: 48%;
 
         .flip-card-inner {
           h3 {

@@ -181,7 +181,7 @@
         .card-image {
           margin: 0 0 25px;
           img {
-            object-fit: cover;
+            object-fit: contain;
           }
         }
         .btn {

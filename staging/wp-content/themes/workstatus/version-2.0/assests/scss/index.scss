@@ -26,6 +26,7 @@
 
 .header-two {
   background: $dark-Blue;
+  z-index: 100;
 }
 
 /*banner scetion */
@@ -37,6 +38,10 @@
   position: relative;
   overflow: hidden;
   text-align: center;
+
+  .home-section {
+    position: relative;
+  }
 
   .flex_row {
     display: flex;
@@ -89,7 +94,8 @@
     position: relative;
     right: 0;
     z-index: 99;
-    margin-top: 60px;
+    margin-top: 20px;
+
     .inner {
       position: relative;
       overflow: hidden;
@@ -174,7 +180,7 @@
     }
 
     .topVideo .videoWrapper {
-      min-height: 440px;
+      min-height: 474px;
       padding-bottom: initial;
     }
     .srp-1 .videoPoster {
@@ -281,10 +287,31 @@
   }
 }
 
+.videoPopup {
+  .popup-content {
+    height: 650px;
+    width: 60%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99;
+      border: 0;
+    }
+  }
+}
+
+.popup-content #video {
+  width: 100%;
+  height: 100%;
+}
+
 /*Popup Section*/
 #myBtn {
   position: absolute;
-  top: 40%;
+  top: 44%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -350,6 +377,19 @@
   cursor: pointer;
 }
 
+.banner-section .popup-wrapper {
+  padding-top: 60px;
+}
+
+.bg-blue {
+  .top-section h6 {
+    color: $white;
+    .bg-purple {
+      background: #8c79fd;
+    }
+  }
+}
+
 /*Popup Section End*/
 
 /*Popup Section End*/
@@ -366,11 +406,47 @@
 }
 
 @media (max-width: 1620px) {
+  .videoPopup {
+    .popup-content {
+      height: 540px;
+    }
+  }
 }
 
 @media (max-width: 1440px) {
   .popup-content {
     height: 450px;
+  }
+
+  .banner-section {
+    .videoSc {
+      .popup-content {
+        height: 450px;
+      }
+    }
+  }
+
+  .videoPopup {
+    .popup-content {
+      height: 450px;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .banner-section {
+    .videoSc {
+      .popup-content {
+        height: 400px;
+      }
+    }
+  }
+
+  .videoPopup {
+    .popup-content {
+      height: 400px;
+      width: 60%;
+    }
   }
 }
 
@@ -382,6 +458,20 @@
           min-height: 360px;
         }
       }
+    }
+  }
+
+  .banner-section {
+    .videoSc {
+      .popup-content {
+        height: 360px;
+      }
+    }
+  }
+
+  .videoPopup {
+    .popup-content {
+      height: 360px;
     }
   }
 }
@@ -456,8 +546,23 @@
     }
   }
 
+  .banner-section .popup-wrapper {
+    padding-top: 0;
+  }
+
+  .videoPopup {
+    .popup-content {
+      width: 90%;
+      height: 450px;
+      .close {
+        top: -30px;
+        right: -1px;
+      }
+    }
+  }
+
   #myBtn {
-    top: 33%;
+    top: 42%;
     width: 80px;
     height: 80px;
   }

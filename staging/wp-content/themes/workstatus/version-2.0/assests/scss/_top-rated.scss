@@ -16,7 +16,7 @@
 
     .award-column {
       background: $white;
-
+     
       .rate-desp {
         display: flex;
         flex-direction: column;
@@ -55,19 +55,19 @@
         }
 
         .award-row {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
           gap: 12px;
           margin: 30px 0 0;
-          justify-content: center;
-          align-content: center;
-
           .award-col {
             text-align: center;
+            flex-basis: 30%;
             border-radius: 10px;
             border: 1px solid #ede4ff;
             background: #fff;
-            padding: 22px 30px;
+            padding: 11px 25px;
 
             .img-wrap {
               height: 25px;
@@ -88,8 +88,11 @@
               transition: all 0.3s ease-in-out;
               display: block;
             }
+            &:hover{border:2px solid #624DE3;}
           }
         }
+
+        .is-arrow{text-align: center;}
       }
     }
   }
@@ -112,7 +115,7 @@
     .award-grid {
       grid-template-columns: repeat(1, 1fr);
 
-      .award-column {
+      .award-column {min-height: initial;
         .rate-desp {
           .rate-box {
             padding: 20px;
@@ -134,7 +137,7 @@
           }
 
           .award-row {
-            grid-template-columns: repeat(2, 1fr);
+            flex-basis: 45%;
             margin: 25px 0 0;
 
             .award-col {

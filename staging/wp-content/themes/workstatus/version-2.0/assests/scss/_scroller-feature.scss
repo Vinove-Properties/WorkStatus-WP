@@ -55,7 +55,7 @@
             padding-left: 35px;
             position: relative;
             &:before{content: "";
-              background: url(../images/sc-data.svg) no-repeat;
+              background: url(../images/reduce-01.svg) no-repeat;
               width: 29px;
               height: 29px;
               background-size: 100%;
@@ -98,8 +98,28 @@
 
         }
 
-        &:nth-child(2n) {
-          background: #f76918;
+         &:nth-child(2n) {
+          background: #00234B;
+
+          .text-box{
+            h3{
+              &:before{background: url(../images/reduce-02.svg) no-repeat;}
+            }
+          }
+        }
+        &:nth-child(3n) {
+          .text-box{
+            h3{
+              &:before{background: url(../images/reduce-03.svg) no-repeat;}
+            }
+          }
+        }
+        &:nth-child(4n) {
+          .text-box{
+            h3{
+              &:before{background: url(../images/reduce-04.svg) no-repeat;}
+            }
+          }
         }
       }
     }
@@ -162,7 +182,7 @@
           .text-box {
             padding: 0;
             h3{
-              &:before{top:-4px;}
+              &:before{top:0;}
             }
           }
         }

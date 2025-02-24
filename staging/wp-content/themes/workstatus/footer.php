@@ -1,11 +1,107 @@
 <?php 
 global $ws_ctas, $RegLink, $LogLink;
 ?>
-<footer class="site__footer">
+
+
+
+<script type="text/javascript">
+  function changerate(starno){
+      var starthover = document.getElementById("starthover");
+      starthover.classList.remove("one");
+      starthover.classList.remove("two");
+      starthover.classList.remove("three");
+      starthover.classList.remove("four");
+      starthover.classList.remove("five");
+      starthover.classList.add(starno);
+  }
+  function ratenow(){
+      var x = document.getElementById("star");
+      var y = document.getElementById("rated");
+  
+      if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "block";
+      document.getElementById('ratebtn').innerHTML = 'Rate Us';
+      } else {
+      document.getElementById('ratebtn').innerHTML = 'Click to rate';
+  
+      x.style.display = "block";
+      y.style.display = "none";
+      }
+  }
+  let stars = [] //array to hold stars
+  function star(event) {
+    let icons = document.querySelectorAll('.star') // grab all icons
+    let idx = Array.from(icons).indexOf(event.target) // get index of selected icon
+    if (stars.includes(event.target.id)) { // if selected icon is in array of stars
+      stars.splice(idx, stars.length ) // remove that icon and all following icons fro array
+      for (let i = idx; i <= icons.length - 1; i++) { // loop thru all icons and set class and color
+        icons[i].className = "fa fa-star-o star";
+        icons[i].style.color = "black";
+      }
+    } else { // if selected icon is not in array of stars
+      stars = [] // clear array
+      for (let i = 0; i <= idx; i++) { // loop thru all icons and set class and color
+        stars.push(icons[i].id) // add icon to array of stars
+        icons[i].className = "fa fa-star star";
+        icons[i].style.color = "#60B741";
+      }
+    }
+    var total_points = stars.length.toString();
+     var user_ip = '2a01:4f8:1c1c:aaef::1';
+     var rating_page_url = "https://www.valuecoders.com/";
+         
+  var data = "total_points=" + total_points + "&user_ip=" + user_ip + "&rating_page_url=" + rating_page_url;
+     var xhttp = new XMLHttpRequest();
+     
+     xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+         resobj = JSON.parse(this.responseText);
+          document.getElementById("rate_msg").innerHTML = resobj.data;
+         }
+       };
+       
+     xhttp.open("POST", "https://www.valuecoders.com/wp-admin/admin-ajax.php?action=rateus", true);
+     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  
+     xhttp.send(data);
+   // document.getElementById("demo").innerHTML = stars.length.toString(); // set number of stars as length of array of stars
+  }
+</script>
+<footer class="footer">
   <div class="container">
-    <div class="flex_row">
-      <div class="column fcol1">
-        <h6>Workstatus</h6>
+    <div class="dis-flex footer-top">
+      <div class="dis-flex">
+        <div class="flex-4">
+         <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="./assests/footer-images/ws.svg" alt="flag" width="199" height="26">
+          </a>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="./assests/footer-images/flag-icon01.svg" alt="flag" width="35" height="35">
+            <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates
+            </p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="./assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001
+            </p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="./assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dis-flex footer-middle">
+      <div class="flex-5">
+        <h4>Workstatus</h4>
         <ul>          
           <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
           <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
@@ -18,13 +114,15 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
         </ul>
       </div>
-      <div class="column fcol2">
-        <h6>Tools</h6>
+      <div class="flex-5">
+        <h4>Tools</h4>
         <ul>
           <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
           <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
-        <h6>Platforms</h6>
+        <br>
+        <h4>Platforms
+        </h4>
         <ul>
           <li><a href="<?php echo site_url(); ?>/apps/mac">Mac</a></li>
           <li><a href="<?php echo site_url(); ?>/apps/windows">Windows</a></li>
@@ -33,8 +131,8 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/apps/android">Android</a></li>
         </ul>
       </div>
-      <div class="column fcol4">
-        <h6>Alternatives</h6>
+      <div class="flex-5">
+        <h4>Alternatives</h4>
         <ul>          
           <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
@@ -46,8 +144,9 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
-      <div class="column fcol7">
-        <h6>Workstatus Comparison</h6>
+      <div class="flex-5">
+        <h4>Workstatus Comparison
+        </h4>
         <ul>
           <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
           <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
@@ -58,10 +157,9 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
-      <!-- <div  class="column fcol5"></div> -->
-
-      <div class="column fcol6">
-        <h6>Support</h6>
+      <div class="flex-5">
+        <h4>Support
+        </h4>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
           <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
@@ -69,87 +167,91 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
           <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
-        <div class="footer-logo">
-          <a href="<?php echo site_url(); ?>/" title="Workstatus">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/logo-white.svg" width="150"
-                height="25" alt="Workstatus">
-            </picture>
-          </a>
-        </div>
-        <ul>
+        <ul class="info">
           <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
           <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
         </ul>
-        <?php
-        /*
-        echo require_once get_template_directory() .'/common/inc/config.inc.php';  
-        print_r($ws_ctas); die;
-        */
-        if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){
-        echo '<div class="regBtn"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">'.$ws_ctas['cta_text'].'</a></div>';  
-        }
-
-        ?>
-        <div class="social_icons">
-          <a href="https://twitter.com/Workstatusapp" target="blank" rel="nofollow"><i class="icon1"></i></a>
-          <a href="https://www.facebook.com/Workstatussoftware/" target="blank" rel="nofollow"><i class="icon2"></i></a>
-          <a href="https://www.linkedin.com/company/Workstatusapp/" target="blank" rel="nofollow">
-          <i class="icon3"></i></a>
-          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="blank" rel="nofollow"><i class="icon4"></i></a>
-          <a href="https://www.instagram.com/Workstatusapp/" target="blank" rel="nofollow">
-          <i class="icon5"></i></a>
-        </div>
       </div>
     </div>
-    <div class="footer-sec">
-    <div class="footer-top">
+    <div class="dis-flex footer-bottom">
+      <div class="flex-4 logo-box">
+        <h3>DEVELOPED & MARKETED BY</h3>
         <div class="dis-flex">
-          <div class="flex-4">
-            <p><strong>Our Offices:</strong></p>
-          </div>
-          <div class="flex-4"> 
-            <div class="addwrap">
-            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon01.svg" 
-            alt="flag" width="35" height="35">
-            <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p>
-        </div>
-          </div>
-          <div class="flex-4">
-          <div class="addwrap">
-          <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-          alt="flag" width="35" height="35">
-          <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
-        </div>
-          </div>
-          <div class="flex-4">
-          <div class="addwrap">
-          <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-          alt="flag" width="35" height="35">
-          <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304</p>
-        </div>
-          </div>
+          <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
+            </picture>
+          </a>
+          <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
+            </picture>
+          </a>
         </div>
       </div>
+      <div class="flex-4 social-box">
+        <h3>Follow Us</h3>
+        <div class="dis-flex">
+          <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
+            </picture>
+          </a>
+          <a href="https://x.com/Workstatusapp" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+            </picture>
+          </a>
+          <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
+            </picture>
+          </a>
+          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
+            </picture>
+          </a>
+        </div>
       </div>
-    <div class="bottom-links" style="justify-content:space-between;">
-      <?php
-      $copyRight  = "&copy;";
-      $suPopup    = "Copyright";
-      $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'staging') !== false)) ? true : false;
-      if( is_user_logged_in() ){
-        if( $is_staging === true ){
-          $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";    
-        }
-      }
-
-      if( $is_staging === true ){
-        $suPopup = "<a href='javascript:void(0);' onclick='showSuPopup();'>Copyright</a>";    
-      }
-      ?>
-      <div class="cop" style="display:flex; flex-wrap:wrap;">
-      <p class="copyright">
-      <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
+      <div class="flex-4 footer-rating">
+        <span class="star-outer" id="star" style="display: none;">
+        <span class="star-inner star-hover" id="starthover">
+        <i class="star-icon" onclick="star(event)" onmouseover="changerate('one')"></i> 
+        <i class="star-icon" onclick="star(event)" onmouseover="changerate('two')"></i> 
+        <i class="star-icon" onclick="star(event)" onmouseover="changerate('three')"></i> 
+        <i class="star-icon" onclick="star(event)" onmouseover="changerate('four')"></i> 
+        <i class="star-icon" onclick="star(event)" onmouseover="changerate('five')"></i> 
+        </span>
+        <span id="rate_msg"></span>
+        </span>
+        <span class="star-outer" id="rated" style="display: block;">
+        <i class="star-icon"></i>
+        <i class="star-icon"></i>
+        <i class="star-icon"></i>
+        <i class="star-icon"></i>
+        <i class="star-icon"></i>
+        4.9 out of 5.0 by
+        </span>
+        <span class="client-outer">
+        <a href="javascript:void(0)" onclick="ratenow()" id="ratebtn" class="rate-us">Rate Us</a> 1218 clients on over 10800+ projects
+        </span>
+      </div>
+      <div class="flex-4 copyright">
+       <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="cop">
+        <p class="copyright">
+        <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
       </p>
       <ul class="privacy-links">
         <li class="hide">|</li>
@@ -157,46 +259,16 @@ global $ws_ctas, $RegLink, $LogLink;
         <li class="hide1">|</li>
         <li><a href="<?php echo site_url(); ?>/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
       </ul>
-    </div>
-      <!-- <div class="rate-us-section">
-      <span class="star-outer" id="star" style="display:none">
-      <span class="star-inner star-hover" id="starthover">
-      <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
-      <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('two')"></i> 
-      <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('three')"></i> 
-      <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('four')"></i> 
-      <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('five')"></i> 
-      </span>
-      <span id="rate_msg"></span>
-      </span>   
-      <div class="star-outer" id="rated">
-      <span class="star-inner">
-      <i class="star-icon"></i> 
-      <i class="star-icon"></i> 
-      <i class="star-icon"></i> 
-      <i class="star-icon"></i> 
-      <i class="star-icon"></i> 
-      </span>
-      4.9 out of 5.0 by
       </div>
-      <div class="client-outer">
-      <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 1218 Businesses for Workforce Management
-      </div>
-      </div>
-      <div class="gpw"></div>
-   
-      <div class="app-store">
-        <a href="https://apps.apple.com/us/app/Workstatus-tm/id1570416295"><img width="136" height="38" src="https://www.workstatus.io/assests/images/apple.png" alt="apple"  loading="lazy"></a>
-        <a href="https://play.google.com/store/apps/details?id=com.vinove.workstatus&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img  width="136" height="38" src="https://www.workstatus.io/assests/images/googleplay.png" alt="google play"  loading="lazy"></a>
-      </div> 
-    -->
-
-    <div class="fbedge"><a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script></div>
-
-
     </div>
   </div>
+  </div>
 </footer>
+
+
+
+
+
 <?php get_template_part('common/demo', 'form'); ?>
 <?php get_template_part('common/signup', 'form'); ?>
 <?php 

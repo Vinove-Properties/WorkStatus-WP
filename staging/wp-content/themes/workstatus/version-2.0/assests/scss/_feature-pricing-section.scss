@@ -365,6 +365,7 @@
                     margin: 0 0 20px;
                     position: relative;
                     padding: 0 0 0 15px;
+                    line-height: initial;
                     &:last-child {
                       margin: 0;
                     }
@@ -1701,6 +1702,9 @@ height: 30px; font-size: 0; background-size: 25px; cursor: pointer; position: ab
             }
             &:nth-child(2) {
               margin: 0;
+              .price-box{
+                &:before{width:108px; height:93px;}
+              }
             }
           }
         }

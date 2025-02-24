@@ -1,6 +1,6 @@
 .feature-wrapper {
   width: 100%;
-
+  z-index:1;
   position: relative;
 
   .feature-loop {
@@ -222,7 +222,17 @@
       }
     }
   }
+
+  &.acf-ftblocks-3{
+    .feature-loop{
+      &.right-shape{
+        &:after{display:none;}
+      }
+    }
+  }
 }
+
+
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {

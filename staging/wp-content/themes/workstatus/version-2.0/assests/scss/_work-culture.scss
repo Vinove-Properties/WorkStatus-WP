@@ -64,6 +64,18 @@
             background: #f7f3ff;
           }
 
+          &:nth-child(2n){
+            h3{
+              &:before{background: url(../images/homeft-02.svg) no-repeat;}
+            }
+          }
+
+          &:nth-child(3n){
+            h3{
+              &:before{background: url(../images/homeft-03.svg) no-repeat;}
+            }
+          }
+
           &.listing {
             h3 {
               padding-left: 0;

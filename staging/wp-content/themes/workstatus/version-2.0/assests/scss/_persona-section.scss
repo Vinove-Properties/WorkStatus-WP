@@ -37,32 +37,34 @@
       transition: all 0.3s ease-in-out;
       color: var(--color-dark);
       transition: transform 0.3s ease;
+
+      .normal {
+        display: block;
+      }
+      .hover {
+        display: none;
+      }
+
       img {
         margin: 0 0 12px;
         display: block;
-        &.normal {
-          display: block;
-        }
-        &.hover {
-          display: none;
-        }
       }
 
       h3 {
         color: $dark-grey;
       }
 
+      .is-arrow{margin:20px 0 0;}
+
       &:hover {
         transform: translateY(-5px);
         background: $navyblue;
 
-        .img {
-          &.normal {
-            display: none;
-          }
-          &.hover {
-            display: block;
-          }
+        .normal {
+          display: none;
+        }
+        .hover {
+          display: block;
         }
 
         h3,
@@ -89,12 +91,17 @@
 }
 
 @media (max-width: 1024px) {
+  .user-persona {
+    .user-persona__grid {
+      margin-top: -15%;
+    }
+  }
 }
 @media (max-width: 979px) {
   .user-persona {
     .user-persona__grid {
       grid-template-columns: repeat(2, 1fr);
-      margin-top: -15%;
+      margin-top: -10%;
       padding-left: 75px;
     }
   }

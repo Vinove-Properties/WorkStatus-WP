@@ -16,6 +16,7 @@
 @import "_feature-pricing-section";
 @import "_step-section";
 @import "_faq-section";
+@import "_blog-section";
 @import "_user-guide";
 @import "_glider";
 @import "_testimonial-section";
@@ -591,6 +592,98 @@
   background: $white;
 }
 
+.mid-cta {
+  background: $blue;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    background: url(../images/cta-shape01.png) no-repeat;
+    background-size: 100% 100%;
+    width: 66px;
+    height: 288px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &:after {
+    content: "";
+    background: url(../images/cta-shape02.png) no-repeat;
+    background-size: 100% 100%;
+    width: 353px;
+    height: 288px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .dis-flex {
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    .flex-2 {
+      .top-section {
+        text-align: left;
+        padding: 0;
+        h2 {
+          color: $white;
+        }
+        p {
+          color: $white;
+        }
+      }
+      .button-common {
+        .cmn-democta {
+          .ctbtn {
+            color: $blue;
+            background: $white;
+            border-color: $blue;
+            &.bgtrans {
+              color: $white;
+              background: transparent;
+              border: 1px solid #fff;
+              padding: 15px 30px;
+              text-decoration: none;
+              min-width: 213px;
+              &:hover {
+                background: $navyblue;
+                border-color: $navyblue;
+                color: #ffffff;
+              }
+            }
+
+            &:hover {
+              background: $navyblue;
+              border-color: $navyblue;
+              color: #ffffff;
+            }
+          }
+
+          .nccr {
+            color: $white;
+          }
+        }
+
+        .devide {
+          color: $white;
+          opacity: 0.5;
+
+          &:before {
+            background: $white;
+            opacity: 0.5;
+          }
+          &:after {
+            background: $white;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
 /*Step Section Start From Here*/
 
 @media (max-width: 1600px) {
@@ -788,6 +881,28 @@
   .popWrap {
     margin-top: 0;
   }
+
+  .mid-cta {
+    &:before {
+      display: none;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    .dis-flex {
+      .flex-2 {
+        .top-section {
+          text-align: center;
+          padding: 0;
+        }
+        .button-common {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -878,6 +993,41 @@
       display: none;
     }
   }
+
+
+
+
+  .mid-cta {
+
+    .dis-flex {
+
+      .flex-2 {
+        .button-common {
+          .cmn-democta {
+            .ctbtn {
+              padding: 12px 15px;
+              min-width: 140px;
+              font-size: 14px;
+              &.bgtrans {
+                padding: 12px 15px;
+                min-width: 140px;
+                font-size: 14px;
+                &:hover {
+                  background: $navyblue;
+                  border-color: $navyblue;
+                  color: #ffffff;
+                }
+              }
+              
+            }
+           
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
 @media (max-width: 479px) {

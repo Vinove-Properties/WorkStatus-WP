@@ -42,6 +42,7 @@
               justify-content: center;
               align-items: center;
               margin: 0 6px 0 0;
+              pointer-events: none;
               .show {
                 display: block;
                 vertical-align: middle;
@@ -151,10 +152,38 @@
 }
 
 @media (max-width: 1440px) {
+  .business-tab {
+    .feature-tabs {
+      .tab-nav {
+        ul {
+          li {
+            a{padding:6px 14px;}
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1380px) {
 }
+
+@media (max-width: 1280px) {
+  .business-tab {
+    .feature-tabs {
+      .tab-nav {
+        ul {
+          li {padding:0 4px;
+            a{padding:5px 10px;}
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
 
 @media (max-width: 1024px) {
   .business-tab {
@@ -200,7 +229,7 @@
             a {
               font-size: 13px;
               padding: 8px;
-              min-height: 100px;
+              min-height: 75px;
             }
           }
         }
@@ -220,7 +249,7 @@
             a {
               font-size: 13px;
               padding: 5px;
-              min-height: 100px;
+              min-height: 75px;
             }
           }
         }
