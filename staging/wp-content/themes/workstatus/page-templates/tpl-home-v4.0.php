@@ -1,10 +1,10 @@
 <?php 
-/*
-Template Name: Home Page - V4.0 Template
-*/ 
-get_header();
-global $ws_ctas, $RegLink, $LogLink;	
-?>
+  /*
+  Template Name: Home Page - V4.0 Template
+  */ 
+  get_header();
+  global $ws_ctas, $RegLink, $LogLink;	
+  ?>
 <main class="site__content">
   <section class="banner-section">
     <div class="home-section">
@@ -16,8 +16,8 @@ global $ws_ctas, $RegLink, $LogLink;
           <div class="column videoSc" id="has-yt-video">
             <div class="inner">
               <button id="myBtn">
-                Open Modal
-                <span class="playsc"><span class="playicon"></span></span>
+              Open Modal
+              <span class="playsc"><span class="playicon"></span></span>
               </button>
               <div class="topVideo srp-1">
                 <div id="myDIV" class="contbox2">
@@ -33,17 +33,17 @@ global $ws_ctas, $RegLink, $LogLink;
     </div>
   </section>
   <div class="videoPopup">
-                      <div id="contentPopup" class="popup-wrapper">
-                        <div class="popWrap">
-                          <div class="popup-content">
-                            <span class="close"></span>
-                            <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen
-                              data-src="https://www.youtube.com/embed/zMtAs7s3CmU?enablejsapi=1&html5=1&mute=1">
-                            </iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+    <div id="contentPopup" class="popup-wrapper">
+      <div class="popWrap">
+        <div class="popup-content">
+          <span class="close"></span>
+          <iframe id="video" class="videoIframe js-videoIframe" allowfullscreen
+            data-src="https://www.youtube.com/embed/zMtAs7s3CmU?enablejsapi=1&html5=1&mute=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="trusted-by padding-t-70 padding-b-70">
     <div class="container">
       <div class="logo-heading">
@@ -52,45 +52,45 @@ global $ws_ctas, $RegLink, $LogLink;
       <div class="trusted-flex">
         <div class="trusted-card">
           <a href="https://www.sitejabber.com/reviews/workstatus.io">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-01.svg" alt="trusted" width="178" height="41"> 
-          </picture>
-</a>
-        </div>
-        <div class="trusted-card">
-        <a href="https://www.g2.com/products/valuecoders-workstatus/reviews">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-02.svg" alt="trusted" width="34" height="34">
-          </picture>
-       </a>  
-        </div>
-        <div class="trusted-card">
-          <a href="https://www.producthunt.com/products/workstatus">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-03.svg" alt="trusted" width="127" height="34">
-          </picture>
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-01.svg" alt="trusted" width="178" height="41"> 
+            </picture>
           </a>
         </div>
         <div class="trusted-card">
-        <a href="https://sourceforge.net/software/product/Workstatus/">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-04.svg" alt="trusted" width="157" height="44">
-          </picture>
-</a>
+          <a href="https://www.g2.com/products/valuecoders-workstatus/reviews">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-02.svg" alt="trusted" width="34" height="34">
+            </picture>
+          </a>
         </div>
         <div class="trusted-card">
-        <a href="https://www.trustpilot.com/review/www.workstatus.io">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-05.svg" alt="trusted" width="187" height="29">
-          </picture>
-</a>
+          <a href="https://www.trustpilot.com/review/www.workstatus.io">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-03.svg" alt="trusted" width="127" height="34">
+            </picture>
+          </a>
         </div>
         <div class="trusted-card">
-        <a href="https://www.goodfirms.co/software/workstatus">
-          <picture>
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-06.svg" alt="trusted" width="149" height="22">
-          </picture>
-</a>
+          <a href="https://www.producthunt.com/products/workstatus">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-04.svg" alt="trusted" width="157" height="44">
+            </picture>
+          </a>
+        </div>
+        <div class="trusted-card">
+          <a href="https://sourceforge.net/software/product/Workstatus/">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-05.svg" alt="trusted" width="187" height="29">
+            </picture>
+          </a>
+        </div>
+        <div class="trusted-card">
+          <a href="https://www.goodfirms.co/software/workstatus">
+            <picture>
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-06.svg" alt="trusted" width="149" height="22">
+            </picture>
+          </a>
         </div>
       </div>
       <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
@@ -369,7 +369,6 @@ global $ws_ctas, $RegLink, $LogLink;
           echo $featureSlide['sub_heading'];
           ?>
       </div>
-
       <?php if($featureSlide['cards']) : ?>
       <div class="dis-flex featured-out">
         <div class="dis-flex featured-slider" id="featured-slide">
