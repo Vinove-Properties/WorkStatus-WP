@@ -51,9 +51,11 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
       <div class="trusted-flex">
         <div class="trusted-card">
+          <a href="https://www.sitejabber.com/reviews/workstatus.io">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-01.svg" alt="trusted" width="178" height="41"> 
           </picture>
+</a>
         </div>
         <div class="trusted-card">
           <picture>
