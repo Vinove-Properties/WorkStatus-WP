@@ -1,31 +1,22 @@
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Regular.eot");
-  src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Bold.eot");
-  src: url("../fonts/NotoSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Medium.eot");
-  src: url("../fonts/NotoSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-Medium.woff2") format("woff2"), url("../fonts/NotoSans-Medium.woff") format("woff"), url("../fonts/NotoSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-SemiBold.eot");
-  src: url("../fonts/NotoSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSans-SemiBold.woff2") format("woff2"), url("../fonts/NotoSans-SemiBold.woff") format("woff"), url("../fonts/NotoSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
+@media only screen and (min-width: 768px) {
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Medium.woff2") format("woff2"), url("../fonts/LexendDeca-Medium.woff") format("woff"), url("../fonts/LexendDeca-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Bold.woff2") format("woff2"), url("../fonts/LexendDeca-Bold.woff") format("woff"), url("../fonts/LexendDeca-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; } }
 html {
   box-sizing: border-box; }
 
@@ -42,7 +33,7 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   padding: 0;
-  font-family: "Noto Sans"; }
+  font-family: "Lexend Deca"; }
   @media screen and (max-width: 767px) {
     body {
       font-family: "arial"; } }
@@ -203,14 +194,14 @@ ul {
     line-height: 22px;
     text-transform: uppercase;
     line-height: 34px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 8px; }
     @media screen and (max-width: 575px) {
       .top-section h6, .top-section p {
         font-size: 16px; } }
     .top-section h6 span, .top-section p span {
       padding: 3px 5px;
-      font-weight: 600; }
+      font-weight: 700; }
     .top-section h6 .bg-white, .top-section p .bg-white {
       background: #fff; }
     .top-section h6 .bg-purple, .top-section p .bg-purple {
@@ -2207,3 +2198,5 @@ a:hover h3,
   .speciallyMade .txt {
     width: 100% !important;
     margin-top: 20px; } }
+
+/*# sourceMappingURL=global.css.map */

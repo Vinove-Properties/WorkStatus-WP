@@ -7583,7 +7583,8 @@ h3 a {
         height: 15px;
         display: inline-block; }
       .footer .footer-bottom .footer-rating .client-outer {
-        margin-top: 12px; }
+        margin-top: 15px;
+        display: block; }
       .footer .footer-bottom .footer-rating .rate-us {
         border: 1px solid #ffb81d;
         border-radius: 6px;
@@ -7769,6 +7770,9 @@ h3 a {
     .footer .footer-bottom .footer-rating {
       margin: 20px 0 0;
       font-size: 13px; }
+      .footer .footer-bottom .footer-rating .client-outer {
+        margin: 20px 0;
+        display: block; }
     .footer .footer-bottom h3 {
       font-weight: 500; } }
 /*Media Query Ends Here*/

@@ -1,27 +1,22 @@
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Regular.woff2") format("woff2"), url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-Medium.woff2") format("woff2"), url("../fonts/NotoSans-Medium.woff") format("woff"), url("../fonts/NotoSans-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: 'Noto Sans';
-  src: url("../fonts/NotoSans-SemiBold.woff2") format("woff2"), url("../fonts/NotoSans-SemiBold.woff") format("woff"), url("../fonts/NotoSans-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap; }
+@media only screen and (min-width: 768px) {
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Medium.woff2") format("woff2"), url("../fonts/LexendDeca-Medium.woff") format("woff"), url("../fonts/LexendDeca-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Bold.woff2") format("woff2"), url("../fonts/LexendDeca-Bold.woff") format("woff"), url("../fonts/LexendDeca-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Lexend Deca';
+    src: url("../fonts/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; } }
 html {
   box-sizing: border-box; }
 
@@ -38,7 +33,8 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   padding: 0;
-  font-family: "Noto Sans"; }
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: normal; }
   @media screen and (max-width: 767px) {
     body {
       font-family: "arial"; } }
@@ -52,7 +48,7 @@ button {
 h1 {
   color: #110302;
   font-size: 46px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0 0 20px;
   line-height: 62px;
   text-transform: capitalize; }
@@ -74,7 +70,7 @@ h2 {
   color: #110302;
   font-size: 36px;
   line-height: 46px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 15px;
   margin-top: 0;
   text-transform: capitalize; }
@@ -198,26 +194,26 @@ ul {
     .top-section {
       margin: 0 0 40px; } }
   .top-section h6, .top-section p {
-    color: #6754E2;
+    color: rgba(98, 77, 227, 0.76);
     font-size: 18px;
-    line-height: 22px;
+    line-height: 30px;
     text-transform: uppercase;
-    line-height: 34px;
-    font-weight: 600;
-    margin-bottom: 8px; }
+    font-weight: 500;
+    margin-bottom: 12px; }
     @media screen and (max-width: 575px) {
       .top-section h6, .top-section p {
         font-size: 16px; } }
     .top-section h6 span, .top-section p span {
       padding: 3px 5px;
-      font-weight: 600; }
+      font-weight: 700; }
     .top-section h6 .bg-white, .top-section p .bg-white {
       background: #fff; }
     .top-section h6 .bg-purple, .top-section p .bg-purple {
-      background: #D3CCFD; }
+      padding: 3px 10px;
+      background: #d3ccfd; }
   .top-section p {
     font-size: 18px;
-    line-height: 27px;
+    line-height: 28px;
     text-transform: inherit;
     margin-bottom: 0;
     font-weight: 500;
@@ -595,3 +591,5 @@ h3 a {
 
   .hero-banner br {
     display: none; } }
+
+/*# sourceMappingURL=common-banner.css.map */
