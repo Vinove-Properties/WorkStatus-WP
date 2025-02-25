@@ -69,12 +69,12 @@
           }
           ?>
         <div class="social_icons">
-          <a href="https://twitter.com/Workstatusapp" target="blank" rel="nofollow"><i class="icon1"></i></a>
-          <a href="https://www.facebook.com/Workstatussoftware/" target="blank" rel="nofollow"><i class="icon2"></i></a>
-          <a href="https://www.linkedin.com/company/Workstatusapp/" target="blank" rel="nofollow">
+        <a href="https://twitter.com/Workstatusapp" target="_blank" rel="nofollow">
+        <a href="https://www.facebook.com/Workstatussoftware/" target="_blank" rel="nofollow"><i class="icon2"></i></a>
+          <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank" rel="nofollow">
           <i class="icon3"></i></a>
-          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="blank" rel="nofollow"><i class="icon4"></i></a>
-          <a href="https://www.instagram.com/Workstatusapp/" target="blank" rel="nofollow">
+          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank" rel="nofollow"><i class="icon4"></i></a>
+          <a href="https://www.instagram.com/Workstatusapp/" target="_blank" rel="nofollow">
           <i class="icon5"></i></a>
         </div>
       </div>
