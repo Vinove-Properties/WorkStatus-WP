@@ -6549,7 +6549,7 @@ h3 a {
     .footer .footer-bottom .footer-rating {
       flex-basis: 100%;
       text-align: center;
-      margin: 20px 0 0; } }
+      margin: 20px 0; } }
 @media (max-width: 767px) {
   .footer .footer-top {
     padding: 0 0 10px; }
