@@ -262,7 +262,6 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
     </div>
   </div>
-  </div>
 </footer>
 
 
