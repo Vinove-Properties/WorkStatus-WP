@@ -15,7 +15,12 @@
             <?php the_content(); ?>
             <div class="cont-wrap">
               <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
-              <div class="av-device"><span>Available for:</span><i class="icon1"></i><i class="icon2"></i><i class="icon3"></i><i class="icon4"></i><i class="icon5"></i></div>
+              <div class="av-device"><span>Available for:</span>
+              <i class="icon1"><a href="/apps/android"></a></i>
+              <i class="icon2"><a href="/apps/iphone"></a></i>
+              <i class="icon3"><a href="/apps/windows"></a></i>
+              <i class="icon4"><a href="/apps/mac"></a></i>
+              <i class="icon5"><a href="/apps/linux"></a></i></div>
               <div class="partwrap">
                 <div class="part-col">
                   <i class="part-logo part-logo1"></i>
