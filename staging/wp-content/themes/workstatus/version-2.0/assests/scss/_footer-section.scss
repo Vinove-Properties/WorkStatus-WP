@@ -171,7 +171,8 @@
       }
 
       .client-outer {
-        margin-top: 12px;
+        margin-top: 15px;
+        display:block;
       }
 
       .rate-us {
@@ -468,6 +469,8 @@
       .footer-rating {
         margin: 20px 0 0;
         font-size: 13px;
+        .client-outer{margin: 20px 0;
+          display: block;}
       }
 
       h3 {
