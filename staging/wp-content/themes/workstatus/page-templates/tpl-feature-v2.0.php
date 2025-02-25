@@ -17,10 +17,10 @@
               <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
               <div class="av-device"><span>Available for:</span>
               <a href="<?php echo site_url('/apps/android'); ?>"><i class="icon1"></i></a>
-              <i class="icon2"><a href="<?php echo site_url('/apps/iphone'); ?>"></a></i>
-              <i class="icon3"><a href="<?php echo site_url('/apps/windows'); ?>"></a></i>
-              <i class="icon4"><a href="<?php echo site_url('/apps/mac'); ?>"></a></i>
-              <i class="icon5"><a href="<?php echo site_url('/apps/linux'); ?>"></a></i></div>
+              <a href="<?php echo site_url('/apps/iphone'); ?>"><i class="icon2"></i></a>
+              <a href="<?php echo site_url('/apps/windows'); ?>"><i class="icon3"></i></a>
+              <a href="<?php echo site_url('/apps/mac'); ?>"><i class="icon4"></i></a>
+              <a href="<?php echo site_url('/apps/linux'); ?>"><i class="icon5"></i></a></div>
               <div class="partwrap">
                 <div class="part-col">
                   <i class="part-logo part-logo1"></i>
