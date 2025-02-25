@@ -16,7 +16,7 @@
             <div class="cont-wrap">
               <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
               <div class="av-device"><span>Available for:</span>
-              <i class="icon1"><a href="<?php echo site_url('/apps/android'); ?>"></a></i>
+              <a href="<?php echo site_url('/apps/android'); ?>"><i class="icon1"></i></a>
               <i class="icon2"><a href="<?php echo site_url('/apps/iphone'); ?>"></a></i>
               <i class="icon3"><a href="<?php echo site_url('/apps/windows'); ?>"></a></i>
               <i class="icon4"><a href="<?php echo site_url('/apps/mac'); ?>"></a></i>
