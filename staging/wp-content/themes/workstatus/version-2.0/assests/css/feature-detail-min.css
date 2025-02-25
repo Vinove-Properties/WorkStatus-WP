@@ -8468,7 +8468,7 @@ li.iti__country {
     .footer .footer-bottom .footer-rating {
       flex-basis: 100%;
       text-align: center;
-      margin: 20px 0 0; } }
+      margin: 20px 0; } }
 @media (max-width: 767px) {
   .footer .footer-top {
     padding: 0 0 10px; }
@@ -8518,7 +8518,7 @@ li.iti__country {
       text-align: center;
       margin: 20px 0 0; }
     .footer .footer-bottom .footer-rating {
-      margin: 20px 0 0;
+      margin: 20px 0;
       font-size: 13px; }
       .footer .footer-bottom .footer-rating .client-outer {
         margin: 20px 0;
