@@ -58,29 +58,39 @@ global $ws_ctas, $RegLink, $LogLink;
 </a>
         </div>
         <div class="trusted-card">
+        <a href="https://www.g2.com/products/valuecoders-workstatus/reviews">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-02.svg" alt="trusted" width="34" height="34">
           </picture>
+       </a>  
         </div>
         <div class="trusted-card">
+          <a href="https://www.producthunt.com/products/workstatus">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-03.svg" alt="trusted" width="127" height="34">
           </picture>
+          </a>
         </div>
         <div class="trusted-card">
+        <a href="https://sourceforge.net/software/product/Workstatus/">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-04.svg" alt="trusted" width="157" height="44">
           </picture>
+</a>
         </div>
         <div class="trusted-card">
+        <a href="https://www.trustpilot.com/review/www.workstatus.io">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-05.svg" alt="trusted" width="187" height="29">
           </picture>
+</a>
         </div>
         <div class="trusted-card">
+        <a href="https://www.goodfirms.co/software/workstatus">
           <picture>
             <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/startup-06.svg" alt="trusted" width="149" height="22">
           </picture>
+</a>
         </div>
       </div>
       <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
