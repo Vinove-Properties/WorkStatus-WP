@@ -1,9 +1,6 @@
 <?php 
 global $ws_ctas, $RegLink, $LogLink;
 ?>
-
-
-
 <script type="text/javascript">
   function changerate(starno){
       var starthover = document.getElementById("starthover");
@@ -251,7 +248,13 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="container">
       <div class="cop">
         <p class="copyright">
-        <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
+        <?php
+        $copyRight = "&copy;"; 
+        if( is_user_logged_in() && ( isBetaVersion() === true ) ){
+        $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
+        }
+        ?>  
+        Copyright <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
       </p>
       <ul class="privacy-links">
         <li class="hide">|</li>
@@ -263,11 +266,6 @@ global $ws_ctas, $RegLink, $LogLink;
     </div>
   </div>
 </footer>
-
-
-
-
-
 <?php get_template_part('common/demo', 'form'); ?>
 <?php get_template_part('common/signup', 'form'); ?>
 <?php 
