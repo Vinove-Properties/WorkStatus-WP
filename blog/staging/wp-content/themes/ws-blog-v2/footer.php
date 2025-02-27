@@ -253,5 +253,36 @@
    </div>
 </div>
 <?php wp_footer(); ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Workstatus Blog",
+  "url": "https://www.workstatus.io/blog/",
+  "datePublished": "2025-02-18",
+  "dateModified": "2025-02-18",
+  "author": {
+    "@type": "Person",
+    "name": "Workstatus"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Workstatus",
+    "url": "https://www.workstatus.io/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.workstatus.io/wp-content/themes/workstatus/assests/header-images/logo-dark.svg",
+      "width": 200,
+      "height": 50
+    }
+  },
+  "description": "Discover Latest Insights & Trends on Workforce Management | Workstatus",
+  "articleBody": "Stay updated with the latest insights on workforce management, productivity tracking, and remote work strategies on the Workstatus Blog.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.workstatus.io/blog/"
+  }
+}
+</script>
 </body>
 </html>
