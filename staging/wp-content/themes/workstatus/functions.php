@@ -379,14 +379,14 @@ function getPxlWebpURL( $mid ){ return;
 
 function pxlGetPtag( $marray, $title = "", $class = "", $id = "" ){
 	if( !is_array( $marray ) ) return;
-
+	$altText 	= (isset($marray['alt']) && !empty($marray['alt'])) ? $marray['alt'] : $marray['title'];
 	$hasClass 	= ( !empty( $class ) ) ? 'class="'.$class.'"' : '';
 	$hasID 		= ( !empty( $id ) ) ? 'id="'.$id.'"' : '';
 	return '<picture '.$hasID.' '.$hasClass.'>
 	'.getPxlWebpURL($marray['ID']).'
 	<source type="'.$marray['mime_type'].'" srcset="'.$marray['url'].'">
-	<img loading="lazy" src="'.$marray['url'].'" title="'.$marray['title'].'" alt="'.$marray['title'].'" width="'.$marray['width'].'" 
-	height="'.$marray['height'].'">
+	<img loading="lazy" src="'.$marray['url'].'" title="'.$marray['title'].'" alt="'.$altText.'" 
+	width="'.$marray['width'].'" height="'.$marray['height'].'">
 	</picture>';
 }
 
