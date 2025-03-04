@@ -8284,7 +8284,16 @@ li.iti__country {
         margin: 20px 0;
         display: block; }
     .footer .footer-bottom h3 {
-      font-weight: 500; } }
+      font-weight: 500; }
+  .footer .footer-copyright .cop {
+    flex-wrap: wrap; }
+    .footer .footer-copyright .cop p {
+      width: 100%;
+      margin: 0 0 15px; }
+    .footer .footer-copyright .cop ul {
+      flex-wrap: wrap; }
+      .footer .footer-copyright .cop ul li:first-child {
+        display: none; } }
 /*Media Query Ends Here*/
 /*home css start here*/
 .header-two {

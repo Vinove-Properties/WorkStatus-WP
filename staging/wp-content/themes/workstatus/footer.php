@@ -1,70 +1,7 @@
 <?php 
 global $ws_ctas, $RegLink, $LogLink;
 ?>
-<script type="text/javascript">
-  function changerate(starno){
-      var starthover = document.getElementById("starthover");
-      starthover.classList.remove("one");
-      starthover.classList.remove("two");
-      starthover.classList.remove("three");
-      starthover.classList.remove("four");
-      starthover.classList.remove("five");
-      starthover.classList.add(starno);
-  }
-  function ratenow(){
-      var x = document.getElementById("star");
-      var y = document.getElementById("rated");
-  
-      if (x.style.display === "block") {
-      x.style.display = "none";
-      y.style.display = "block";
-      document.getElementById('ratebtn').innerHTML = 'Rate Us';
-      } else {
-      document.getElementById('ratebtn').innerHTML = 'Click to rate';
-  
-      x.style.display = "block";
-      y.style.display = "none";
-      }
-  }
-  let stars = [] //array to hold stars
-  function star(event) {
-    let icons = document.querySelectorAll('.star') // grab all icons
-    let idx = Array.from(icons).indexOf(event.target) // get index of selected icon
-    if (stars.includes(event.target.id)) { // if selected icon is in array of stars
-      stars.splice(idx, stars.length ) // remove that icon and all following icons fro array
-      for (let i = idx; i <= icons.length - 1; i++) { // loop thru all icons and set class and color
-        icons[i].className = "fa fa-star-o star";
-        icons[i].style.color = "black";
-      }
-    } else { // if selected icon is not in array of stars
-      stars = [] // clear array
-      for (let i = 0; i <= idx; i++) { // loop thru all icons and set class and color
-        stars.push(icons[i].id) // add icon to array of stars
-        icons[i].className = "fa fa-star star";
-        icons[i].style.color = "#60B741";
-      }
-    }
-    var total_points = stars.length.toString();
-     var user_ip = '2a01:4f8:1c1c:aaef::1';
-     var rating_page_url = "https://www.valuecoders.com/";
-         
-  var data = "total_points=" + total_points + "&user_ip=" + user_ip + "&rating_page_url=" + rating_page_url;
-     var xhttp = new XMLHttpRequest();
-     
-     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-         resobj = JSON.parse(this.responseText);
-          document.getElementById("rate_msg").innerHTML = resobj.data;
-         }
-       };
-       
-     xhttp.open("POST", "https://www.valuecoders.com/wp-admin/admin-ajax.php?action=rateus", true);
-     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  
-     xhttp.send(data);
-   // document.getElementById("demo").innerHTML = stars.length.toString(); // set number of stars as length of array of stars
-  }
-</script>
+
 <footer class="footer">
   <div class="container">
     <div class="dis-flex footer-top">

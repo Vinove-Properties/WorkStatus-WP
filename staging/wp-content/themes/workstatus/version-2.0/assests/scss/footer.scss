@@ -150,7 +150,7 @@
     .footer-rating {
       color: #b9b9b9;
       flex-basis: 35%; 
-      font-size: 16px;
+      font-size: 14px;
 
       .star-outer a {
         font-size: 14px;
@@ -276,7 +276,7 @@
       }
     }
     .footer-bottom {
-      .footer-rating{font-size: 15px;}
+      .footer-rating{font-size: 14px;}
     }
   }
 
@@ -480,6 +480,17 @@
 
       h3 {
         font-weight: 500;
+      }
+    }
+    .footer-copyright{
+    .cop {flex-wrap: wrap;
+      p{width: 100%;
+        margin: 0 0 15px;}
+        ul{flex-wrap: wrap;
+          li{
+            &:first-child{display: none;}
+          }
+        }
       }
     }
   }
