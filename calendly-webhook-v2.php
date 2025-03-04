@@ -22,12 +22,16 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+require_once __DIR__ . '/envloader.php';
+loadEnv();
+
 
 function configureMySQLi(){
-    $servername = "localhost";
-    $username   = "workstatus-io-crm-prod-db-user";
-    $password   = "7DsEMIA5ppFAAyK";
-    $dbname     = "workstatus-io-crm-prod-db";    
+    $servername = getenv('CRM_DB_HOST');
+    $username   = getenv('CRM_DB_USER');
+    $password   = getenv('CRM_DB_PASS');
+    $dbname     = getenv('CRM_DB_NAME');
+
     $conn = new mysqli( $servername, $username, $password, $dbname );
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -1287,19 +1291,18 @@ function clSendMail( $emailTo, $subject, $body, $type, $userEmail, $emailCC = []
             print_r($smtp->getError());
             throw new Exception('Connect failed!');
         }
-        
         $mail->isSMTP();
-        $mail->Host         = "smtp.gmail.com";
-        $mail->SMTPSecure   = 'tsl';
-        $mail->Port         = 587;
-        $mail->SMTPAuth     = true;
-        $mail->Username     = 'do-not-reply@workstatus.io';
-        $mail->Password     = 'qqmwjodicsevwikm';
+        $mail->Host         = getenv('SMTP_HOST');
+        $mail->SMTPSecure   = getenv('SMTP_SECURE');
+        $mail->Port         = getenv('SMTP_PORT');
+        $mail->SMTPAuth     = getenv('SMTP_AUTH');
+        $mail->Username     = getenv('SMTP_USERNAME');
+        $mail->Password     = getenv('SMTP_PASSWORD');
 
         if( $type == "lead" ){
-            $mail->setFrom( $userEmail, $cname );
+            $mail->setFrom( "do-not-reply@workstatus.io", 'Workstatus');
         }else{
-            $mail->setFrom( "donotreply@workstatus.io", 'Workstatus');
+            $mail->setFrom( "do-not-reply@workstatus.io", 'Workstatus');
         }
         $mail->addAddress($emailTo);
         if( $emailCC ){
@@ -1584,7 +1587,12 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $CLIENT_ID      = '1000.ED227T6HEN6WAZRH1O48BU5VI96MVR';
     $CLIENT_SECRET  = 'c0fe2e3c254b4d2d7851267acf6b62bce66deead0d';
     $REFRESH_TOKEN  = '1000.4a964cbd2983c2dd57da83472dd0e96d.c0c7a5b9cb27092b71e2d6687c140dda';
-    $owner_id       = 681646179; //809367812
+    
+    $CLIENT_ID      = getenv('ZOHO_CLIENT_ID');
+    $CLIENT_SECRET  = getenv('ZOHO_CLIENT_SECRET');
+    $REFRESH_TOKEN  = getenv('ZOHO_REFRESH_TOKEN');
+
+    $owner_id       = 681646179;
     $postData       = 'refresh_token='.$REFRESH_TOKEN.'&client_id='.$CLIENT_ID.'&client_secret='.$CLIENT_SECRET.'&grant_type='.'refresh_token';
     $curl = curl_init();
     curl_setopt_array( $curl, array(
