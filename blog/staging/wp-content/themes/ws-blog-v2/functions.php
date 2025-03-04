@@ -40,17 +40,21 @@ add_filter('upload_mimes', function($mime_types){
     return $mime_types;
 });
 
-add_action( 'phpmailer_init', 'ws_smtp_phpemailer' );
-function ws_smtp_phpemailer( $phpmailer ){
-  $phpmailer->isSMTP();  
-  $phpmailer->Host          = 'smtp.sendgrid.net';
-  $phpmailer->SMTPSecure    = 'tsl';
-  $phpmailer->Port          = 587;
-  $phpmailer->SMTPAuth      = true;
-  $phpmailer->Username      = 'do-not-reply@workstatus.io';
-  $phpmailer->Password      = dev_smtp_password;
-  $phpmailer->From          = "do-not-reply@workstatus.io";
-  $phpmailer->FromName      = "Workstatus";
+if( isset($_SERVER['HTTP_HOST']) && ( $_SERVER['HTTP_HOST']  !== "localhost" ) ){
+    require_once '/home/workstatus-io/public_html/envloader.php';
+    loadEnv();
+    add_action( 'phpmailer_init', 'ws_smtp_phpemailer' );
+    function ws_smtp_phpemailer( $phpmailer ){
+        $phpmailer->isSMTP();
+        $phpmailer->Host         = getenv('SMTP_HOST');
+        $phpmailer->SMTPSecure   = getenv('SMTP_SECURE');
+        $phpmailer->Port         = getenv('SMTP_PORT');
+        $phpmailer->SMTPAuth     = getenv('SMTP_AUTH');
+        $phpmailer->Username     = getenv('SMTP_USERNAME');
+        $phpmailer->Password     = getenv('SMTP_PASSWORD');
+        $phpmailer->From          = "do-not-reply@workstatus.io";
+        $phpmailer->FromName      = "Workstatus";
+    }    
 }
 
 
