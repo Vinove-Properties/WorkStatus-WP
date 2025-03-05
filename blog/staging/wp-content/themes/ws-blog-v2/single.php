@@ -145,10 +145,19 @@ get_header();
             <img loading="lazy" src="<?php echo getMcAuthorThumb($author_id); ?>" width="24" height="24" 
             alt="<?php echo get_the_author(); ?>">
           </div>
-          <div class="entry-meta">Written by <?php echo get_the_author_posts_link(); ?></div>
+          <div class="entry-meta">
+          Written by <?php echo get_the_author_posts_link(); 
+          echo '<span class="authpro" style="display: block; text-align: left; color: #646464;">'.get_field('pro-title', 'user_'.$author_id).'     
+    <span class="col-authpro-ico">
+    <img onclick="this.classList.toggle(\'active\');document.getElementById(\'auth-hd-profile\').classList.toggle(\'active\')" loading="lazy" class="authpro-ico" src="'.get_bloginfo('template_url').'/dev-images/down-icon.png">
+    </span>
+    </span>'
+          ?>
+          </div>
         </div>
       </div>
       <?php 
+      echo '<div id="auth-hd-profile" style="margin-top:20px; display:none;">'.get_field('auth-excerpt', 'user_'.$author_id).'</div>';
         $keyAway = get_field('col-keyaway');
         if( isset($keyAway['required']) && ($keyAway['required'] == "yes") ){
           if( isset( $keyAway['content'] ) && !empty($keyAway['content']) ){
@@ -212,6 +221,16 @@ get_header();
                   while(have_posts()) : the_post();
                     echo '<div class="wp-content-dt">';
                   	the_content();
+                    $authThumb  = getMcAuthorThumb($author_id);
+                    echo '<section class="author-container">
+                    <div class="author-image"><img src="'.$authThumb.'" alt="Author"></div>
+                    <div class="author-description">
+                    <div style="margin-bottom:15px;">
+                    <h4 style="margin:0;">'.get_the_author_posts_link().'</h4>
+                    <small>'.get_the_author_meta('pro-title', $author_id).'</small>
+                    </div>
+                    '.get_field( 'author_description', 'user_'.$author_id ).'</div>
+                    </section>';
                     echo '</div>';
                   endwhile;	
                   do_action('ws_sgl_condata');
