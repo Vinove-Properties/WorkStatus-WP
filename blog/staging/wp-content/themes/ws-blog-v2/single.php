@@ -151,7 +151,7 @@ get_header();
     <span class="col-authpro-ico">
     <img onclick="this.classList.toggle(\'active\');document.getElementById(\'auth-hd-profile\').classList.toggle(\'active\')" loading="lazy" class="authpro-ico" src="'.get_bloginfo('template_url').'/dev-images/down-icon.png">
     </span>
-    </span>'
+    </span>';
           ?>
           </div>
         </div>
