@@ -142,3 +142,49 @@ Performance Optimization:
 - Minify CSS/JS using WP Rocket.
 - Use Lazy Loading for images & videos.
 - Optimize database using WP-Optimize.
+
+
+
+### HTML Project Structure
+
+We have developed two versions of the HTML structure, located in: /workstatus-html
+
+Current Active Version
+We are currently using Version 2.0, which can be found at: /workstatus-html/version-2.0 
+
+Project Styling & Assets
+
+This project is styled using SCSS (a CSS preprocessor) and follows a structured asset management approach. All related files are stored in: /workstatus-html/version-2.0/assests
+
+Directory Breakdown:
+
+├── version-2.0/assests
+├── ├── css (Compiled CSS files)
+├── ├── files (All Include Files)
+├── ├── fonts  (Using "Lexend Deca" (sans-serif) in 400, 500, 700 weights)
+├── ├── footer-images (Footer-related images)
+├── ├── images (General images used in the project)
+├── ├── js (JavaScript files)
+├── ├── scss (Source SCSS files for styling)
+
+├── common   (Contains shared component files used across the project)
+├── dev-images  (Temporary images used during development)
+
+
+SCSS Folder Structure
+
+SCSS Folder Structure & Management
+In the SCSS folder, we have separated styles for different sections into individual SCSS files for better organization. Instead of manually importing each file, we manage styles using a centralized _default.scss file.
+
+/workstatus-html/version-2.0/assests/scss
+├── 📄 _default.scss (Includes all SCSS files using @import "_default"; to centralize imports)
+├── 📄 _menu-v4.scss (Header section styling)
+├── 📄 _white-menu.scss (Header section with white background styling)
+├── 📄 _footer-section.scss (Footer section styling)
+├── 📄 _cta-section.scss (Button styles for the project)
+├── 📄 _form-default.scss (Form elements styling)
+
+
+With this approach, _default.scss acts as a single point of inclusion, allowing us to maintain modularity and streamline SCSS file management
+
+The SCSS and CSS folders are kept separate within: /workstatus-html/version-2.0/assests. For compiling SCSS into CSS, we use the Koala App.
