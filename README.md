@@ -147,6 +147,9 @@ Performance Optimization:
 
 ### HTML Project Structure
 
+## Github Repo
+https://github.com/Vinove-WorkStatus/workstatus-html.git
+
 We have developed two versions of the HTML structure, located in: /workstatus-html
 
 Current Active Version
