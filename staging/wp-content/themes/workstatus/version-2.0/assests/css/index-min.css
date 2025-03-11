@@ -8056,6 +8056,8 @@ li.iti__country {
     justify-content: space-between; }
     .footer .footer-bottom .flex-4 {
       flex-basis: 15%; }
+    .footer .footer-bottom .flex-3 {
+      flex-basis: auto; }
     .footer .footer-bottom h3 {
       font-size: 15px;
       line-height: 24px;
