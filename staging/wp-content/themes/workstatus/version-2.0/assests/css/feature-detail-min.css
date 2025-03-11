@@ -8510,6 +8510,8 @@ li.iti__country {
       flex-basis: 100%;
       text-align: center;
       margin: 20px 0 0; }
+      .footer .footer-bottom .social-box .dis-flex {
+        justify-content: center; }
     .footer .footer-bottom .footer-rating {
       margin: 20px 0;
       font-size: 13px; }
