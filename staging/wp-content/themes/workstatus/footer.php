@@ -108,22 +108,22 @@ global $ws_ctas, $RegLink, $LogLink;
       </div>
     </div>
     <div class="dis-flex footer-bottom">
-      <div class="flex-4 logo-box">
+      <div class="flex-3 logo-box">
         <h3>DEVELOPED & MARKETED BY</h3>
         <div class="dis-flex">
           <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="180" height="33" alt="Invoicera">
             </picture>
           </a>
           <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="180" height="44" alt="Workstatus"> 
             </picture>
           </a>
         </div>
       </div>
-      <div class="flex-4 social-box">
+      <div class="flex-3 social-box">
         <h3>Follow Us</h3>
         <div class="dis-flex">
           <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
@@ -153,30 +153,7 @@ global $ws_ctas, $RegLink, $LogLink;
           </a>
         </div>
       </div>
-      <div class="flex-4 footer-rating">
-        <span class="star-outer" id="star" style="display: none;">
-        <span class="star-inner star-hover" id="starthover">
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('one')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('two')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('three')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('four')"></i> 
-        <i class="star-icon" onclick="star(event)" onmouseover="changerate('five')"></i> 
-        </span>
-        <span id="rate_msg"></span>
-        </span>
-        <span class="star-outer" id="rated" style="display: block;">
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        <i class="star-icon"></i>
-        4.9 out of 5.0 by
-        </span>
-        <span class="client-outer">
-        <a href="javascript:void(0)" onclick="ratenow()" id="ratebtn" class="rate-us">Rate Us</a> 1218 clients on over 10800+ projects
-        </span>
-      </div>
-      <div class="flex-4 copyright">
+      <div class="flex-3 copyright">
        <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
