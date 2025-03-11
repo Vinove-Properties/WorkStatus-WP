@@ -1,12 +1,11 @@
 <?php $site_url = "https://www.workstatus.io"; ?>
 
-
 <footer class="footer">
   <div class="container">
     <div class="dis-flex footer-top">
       <div class="dis-flex">
         <div class="flex-4">
-         <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
+         <a href="<?php echo $site_url; ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
           </a>
         </div>
         <div class="flex-4">
@@ -36,45 +35,45 @@
       <div class="flex-5">
         <h4>Workstatus</h4>
         <ul>          
-          <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
-          <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
-          <li><a href="<?php echo site_url(); ?>/press">Press</a></li>
-          <!-- <li><a href="<?php echo site_url(); ?>/resources">Resources</a></li> -->
+          <li><a href="<?php echo $site_url; ?>/about">About us</a></li>
+          <li><a href="<?php echo $site_url; ?>/reviews">Reviews</a></li>
+          <li><a href="<?php echo $site_url; ?>/press">Press</a></li>
+          <!-- <li><a href="<?php echo $site_url; ?>/resources">Resources</a></li> -->
           <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
-          <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
-          <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
-          <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
+          <li><a href="<?php echo $site_url; ?>/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="<?php echo $site_url; ?>/customization">Customization</a></li>
+          <li><a href="<?php echo $site_url; ?>/demo">Product Tour</a></li>
           <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Tools</h4>
         <ul>
-          <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-          <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
+          <li><a href="<?php echo $site_url; ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
+          <li><a href="<?php echo $site_url; ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
         <br>
         <h4>Platforms
         </h4>
         <ul>
-          <li><a href="<?php echo site_url(); ?>/apps/mac">Mac</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/windows">Windows</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/linux">Linux</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/iphone">iOS</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/android">Android</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/mac">Mac</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/windows">Windows</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/linux">Linux</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/iphone">iOS</a></li>
+          <li><a href="<?php echo $site_url; ?>/apps/android">Android</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Alternatives</h4>
         <ul>          
-          <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/insightful-alternative">Insightful Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/we360ai-alternative">We360.ai Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/teramind-alternative">Teramind Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/teramind-alternative">Teramind Alternative</a></li>
+          <li><a href="<?php echo $site_url; ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
       <div class="flex-5">
@@ -95,9 +94,9 @@
         </h4>
         <ul>
           <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
-          <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
-          <li><a href="<?php echo site_url(); ?>/partners">Partners</a></li>
-          <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
+          <li><a href="<?php echo $site_url; ?>/downloads">Downloads</a></li>
+          <li><a href="<?php echo $site_url; ?>/partners">Partners</a></li>
+          <li><a href="<?php echo $site_url; ?>/faq">FAQs</a></li>
           <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
         <ul class="info">
@@ -152,6 +151,7 @@
           </a>
         </div>
       </div>
+     
       <div class="flex-3 copyright">
        <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
@@ -171,9 +171,9 @@
       </p>
       <ul class="privacy-links">
         <li class="hide">|</li>
-        <li><a href="<?php echo site_url(); ?>/privacy-policy">Privacy Policy </a></li>
+        <li><a href="<?php echo $site_url; ?>/privacy-policy">Privacy Policy </a></li>
         <li class="hide">|</li>
-        <li><a href="<?php echo site_url(); ?>/terms-of-service">Terms of Service</a></li>
+        <li><a href="<?php echo $site_url; ?>/terms-of-service">Terms of Service</a></li>
       </ul>
       </div>
     </div>
@@ -298,7 +298,5 @@
   }
 }
 </script>
-
-
 </body>
 </html>
