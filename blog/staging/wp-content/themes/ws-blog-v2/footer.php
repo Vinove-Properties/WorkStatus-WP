@@ -111,12 +111,12 @@
         <div class="dis-flex">
           <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="200" height="33" alt="Invoicera">
             </picture>
           </a>
           <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
             <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="200" height="44" alt="Workstatus"> 
             </picture>
           </a>
         </div>
