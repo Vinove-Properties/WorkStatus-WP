@@ -1,173 +1,187 @@
 <?php $site_url = "https://www.workstatus.io"; ?>
-<footer class="site__footer">
-   <div class="container">
-      <div class="flex_row">
-         <div class="column fcol1">
-            <h6>Workstatus</h6>
-            <ul>
-               <li><a href="<?php echo $site_url; ?>/about">About us</a></li>
-               <li><a href="<?php echo $site_url; ?>/reviews">Reviews</a></li>
-               <li><a href="<?php echo $site_url; ?>/press">Press</a></li>
-               <!-- <li><a href="<?php echo $site_url; ?>/resources">Resources</a></li> -->
-               <li><a href="<?php echo trailingslashit( get_bloginfo('url') ); ?>">Blog</a></li>
-               <li><a href="<?php echo $site_url; ?>/how-tracking-works">How Workstatus Works</a></li>
-               <li><a href="<?php echo $site_url; ?>/customization">Customization</a></li>
-               <li><a href="<?php echo $site_url; ?>/demo">Product Tour</a></li>
-            </ul>
-         </div>
-         <div class="column fcol2">
-            <h6>Tools</h6>
-            <ul>
-               <li><a href="https://www.workstatus.io/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-               <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free Timesheet Templates</a></li>
-            </ul>
-            <h6>Platforms</h6>
-            <ul>
-               <li><a href="<?php echo $site_url; ?>/apps/mac">Mac</a></li>
-               <li><a href="<?php echo $site_url; ?>/apps/windows">Windows</a></li>
-               <li><a href="<?php echo $site_url; ?>/apps/linux">Linux</a></li>
-               <li><a href="<?php echo $site_url; ?>/apps/iphone">iOS</a></li>
-               <li><a href="<?php echo $site_url; ?>/apps/android">Android</a></li>
-            </ul>
-         </div>
-         <div class="column fcol4">
-            <h6>Alternatives</h6>
-            <ul>
-               <li><a href="<?php echo $site_url; ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/desktime-alternative">Desktime Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/insightful-alternative">Insightful Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/we360ai-alternative">We360.ai Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/activtrak-alternative">ActivTrak Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/teramind-alternative">Teramind Alternative</a></li>
-               <li><a href="<?php echo $site_url; ?>/monitask-alternative">Monitask Alternative</a></li>
-            </ul>
-         </div>
-         <div class="column fcol7">
-            <h6>Workstatus Comparison</h6>
-            <ul>
-               <li><a href="<?php echo $site_url; ?>/teramind-vs-interguard-vs-workstatus">Teramind vs Interguard</a></li>
-               <li><a href="<?php echo $site_url; ?>/hubstaff-vs-clockify-vs-workstatus">Hubstaff vs Clockify</a></li>
-               <li><a href="<?php echo $site_url; ?>/hubstaff-vs-insightful-vs-workstatus">Hubstaff vs Insightful</a></li>
-               <li><a href="<?php echo $site_url; ?>/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
-               <li><a href="<?php echo $site_url; ?>/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
-               <li><a href="<?php echo $site_url; ?>/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
-               <li><a href="<?php echo $site_url; ?>/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
-            </ul>
-         </div>
-         <div class="column fcol6">
-            <h6>Support</h6>
-            <ul>
-               <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
-               <li><a href="<?php echo $site_url; ?>/downloads">Downloads</a></li>
-               <li><a href="<?php echo $site_url; ?>/partners">Partners</a></li>
-               <li><a href="<?php echo $site_url; ?>/faq">FAQs</a></li>
-               <li><a href="<?php echo $site_url; ?>/data-retention">Data Retention</a></li>
-            </ul>
-            <div class="footer-logo">
-               <a href="https://www.workstatus.io/" title="Workstatus">
-                  <picture>
-                     <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/logo-white.svg" width="150"
-                        height="25" alt="Workstatus">
-                  </picture>
-               </a>
-            </div>
-            <ul>
-               <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
-               <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
-            </ul>
-            <?php
-               /*
-               echo require_once get_template_directory() .'/common/inc/config.inc.php';  
-               print_r($ws_ctas); die;
-               */
-               if( ($ws_ctas !== false) && ($ws_ctas['show_this'] === true) ){
-               echo '<div class="regBtn"><a data-href="'.$RegLink.'" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">'.$ws_ctas['cta_text'].'</a></div>';  
-               }
-               
-               ?>
-            <div class="social_icons">
-               <a href="https://twitter.com/Workstatusapp" target="blank" rel="nofollow"><i class="icon1"></i></a>
-               <a href="https://www.facebook.com/Workstatussoftware/" target="blank" rel="nofollow"><i class="icon2"></i></a>
-               <a href="https://www.linkedin.com/company/Workstatusapp/" target="blank" rel="nofollow">
-               <i class="icon3"></i></a>
-               <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="blank" rel="nofollow"><i class="icon4"></i></a>
-               <a href="https://www.instagram.com/Workstatusapp/" target="blank" rel="nofollow">
-               <i class="icon5"></i></a>
-            </div>
-         </div>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="dis-flex footer-top">
+      <div class="dis-flex">
+        <div class="flex-4">
+         <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
+          </a>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon01.svg" alt="flag" width="35" height="35">
+            <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates
+            </p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001
+            </p>
+          </div>
+        </div>
+        <div class="flex-4">
+          <div class="addwrap">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/flag-icon02.svg" alt="flag" width="35" height="35">
+            <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="footer-sec">
-         <div class="footer-top">
-            <div class="dis-flex">
-               <div class="flex-4">
-                  <p><strong>Our Offices:</strong></p>
-               </div>
-               <div class="flex-4">
-                  <div class="addwrap">
-                     <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon01.svg" 
-                        alt="flag" width="35" height="35">
-                     <p>541, 8W, Level 5, Dubai Airport Free Zone, Dubai, United Arab Emirates</p>
-                  </div>
-               </div>
-               <div class="flex-4">
-                  <div class="addwrap">
-                     <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-                        alt="flag" width="35" height="35">
-                     <p>10th Floor, Tower-B, Unitech Cyber Park, Sector - 39, Gurugram, Haryana-122001</p>
-                  </div>
-               </div>
-               <div class="flex-4">
-                  <div class="addwrap">
-                     <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/flag-icon02.svg"
-                        alt="flag" width="35" height="35">
-                     <p>11th Floor, Max Square, Noida-Greater Noida Expy, Sector 129, Noida, Uttar Pradesh 201304</p>
-                  </div>
-               </div>
-            </div>
-         </div>
+    </div>
+    <div class="dis-flex footer-middle">
+      <div class="flex-5">
+        <h4>Workstatus</h4>
+        <ul>          
+          <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
+          <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
+          <li><a href="<?php echo site_url(); ?>/press">Press</a></li>
+          <!-- <li><a href="<?php echo site_url(); ?>/resources">Resources</a></li> -->
+          <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
+          <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
+          <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
+          <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
+        </ul>
       </div>
-      <div class="bottom-links" style="justify-content:space-between; width:100%;">
-         <div class="ftwrap">
-            <?php
-               $copyRight  = "&copy;";
-               $suPopup    = "Copyright";
-               $is_staging = (isset( $_SERVER['PHP_SELF']) && (strpos( $_SERVER['PHP_SELF'],'staging') !== false)) ? true : false;
-               if( is_user_logged_in() ){
-                 if( $is_staging === true ){
-                   $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";    
-                 }
-               }
-               
-               if( $is_staging === true ){
-                 $suPopup = "<a href='javascript:void(0);' onclick='showSuPopup();'>Copyright</a>";    
-               }
-               ?>
-            <div class="cop" style="display:flex; flex-wrap:wrap;">
-               <p class="copyright">
-                  <?php echo $suPopup; ?> <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
-               </p>
-               <ul class="privacy-links">
-                  <li class="hide">|</li>
-                  <li><a href="https://www.workstatus.io/privacy-policy" class="para_extrasmall">Privacy Policy </a></li>
-                  <li class="hide1">|</li>
-                  <li><a href="https://www.workstatus.io/terms-of-service" class="para_extrasmall">Terms of Service</a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="fbedge">
-            <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-         </div>
-         <!-- <div class="gpw"></div> -->
-         <!-- 
-            <div class="app-store">
-            <a href="https://apps.apple.com/us/app/Workstatus-tm/id1570416295"><img width="136" height="38" src="https://www.workstatus.io/assests/images/apple.png" alt="apple"  loading="lazy"></a>
-            <a href="https://play.google.com/store/apps/details?id=com.vinove.workstatus&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img  width="136" height="38" src="https://www.workstatus.io/assests/images/googleplay.png" alt="google play"  loading="lazy"></a>
-            </div> 
-            -->
+      <div class="flex-5">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
+          <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
+        </ul>
+        <br>
+        <h4>Platforms
+        </h4>
+        <ul>
+          <li><a href="<?php echo site_url(); ?>/apps/mac">Mac</a></li>
+          <li><a href="<?php echo site_url(); ?>/apps/windows">Windows</a></li>
+          <li><a href="<?php echo site_url(); ?>/apps/linux">Linux</a></li>
+          <li><a href="<?php echo site_url(); ?>/apps/iphone">iOS</a></li>
+          <li><a href="<?php echo site_url(); ?>/apps/android">Android</a></li>
+        </ul>
       </div>
-   </div>
+      <div class="flex-5">
+        <h4>Alternatives</h4>
+        <ul>          
+          <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/teramind-alternative">Teramind Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Workstatus Comparison
+        </h4>
+        <ul>
+          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
+          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4>Support
+        </h4>
+        <ul>
+          <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
+          <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
+          <li><a href="<?php echo site_url(); ?>/partners">Partners</a></li>
+          <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
+          <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
+        </ul>
+        <ul class="info">
+          <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
+          <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dis-flex footer-bottom">
+      <div class="flex-3 logo-box">
+        <h3>DEVELOPED & MARKETED BY</h3>
+        <div class="dis-flex">
+          <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="150" height="33" alt="Invoicera">
+            </picture>
+          </a>
+          <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="124" height="44" alt="Workstatus"> 
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="flex-3 social-box">
+        <h3>Follow Us</h3>
+        <div class="dis-flex">
+          <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
+            </picture>
+          </a>
+          <a href="https://x.com/Workstatusapp" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
+            </picture>
+          </a>
+          <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+            </picture>
+          </a>
+          <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
+            </picture>
+          </a>
+          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="flex-3 copyright">
+       <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="cop">
+        <p class="copyright">
+        <?php
+        $copyRight = "&copy;"; 
+        if( is_user_logged_in() && ( isBetaVersion() === true ) ){
+        $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
+        }
+        ?>  
+        Copyright <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
+      </p>
+      <ul class="privacy-links">
+        <li class="hide">|</li>
+        <li><a href="<?php echo site_url(); ?>/privacy-policy">Privacy Policy </a></li>
+        <li class="hide">|</li>
+        <li><a href="<?php echo site_url(); ?>/terms-of-service">Terms of Service</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
 </footer>
+
+
+
 <?php 
    if( is_single() ){
    echo '<div class="banner-form inv-pop">
@@ -284,5 +298,7 @@
   }
 }
 </script>
+
+
 </body>
 </html>
