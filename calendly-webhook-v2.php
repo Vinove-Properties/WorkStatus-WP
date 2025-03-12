@@ -1584,6 +1584,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     }
 
     /*Zoho CRM Code Starts Here*/
+   
     $CLIENT_ID      = getenv('ZOHO_CLIENT_ID');
     $CLIENT_SECRET  = getenv('ZOHO_CLIENT_SECRET');
     $REFRESH_TOKEN  = getenv('ZOHO_REFRESH_TOKEN');

@@ -176,7 +176,11 @@
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NPPMGZH');
     </script>
-    <!-- End Google Tag Manager -->  
+    <!-- End Google Tag Manager --> 
+
+    <!-- Crisp Chat Integration -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="79fd82c4-ae99-43a9-81bb-9cecb2b4d54a";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> 
+    <!-- End here -->
     <?php endif; ?>
   </head>
   <body <?php body_class(); ?> 
