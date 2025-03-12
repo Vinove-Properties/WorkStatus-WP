@@ -112,7 +112,8 @@ function ws_site_url(){
 
 function isBetaVersion(){
     if( isset( $_SERVER['HTTP_HOST'] ) && ( $_SERVER['HTTP_HOST'] == "localhost" ) ) return true;
-    return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'betablog' ) !== false) )  ?  true : false;
+
+    return ( isset( $_SERVER['PHP_SELF'] ) && (strpos( $_SERVER['PHP_SELF'], 'staging' ) !== false) )  ?  true : false;
 }
 
 add_action( 'wp_enqueue_scripts', 'workstatus_scripts', 100 );
