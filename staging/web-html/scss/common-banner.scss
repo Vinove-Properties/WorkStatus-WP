@@ -1,0 +1,191 @@
+@import "typography-new";
+
+/*Banner section*/
+
+.hero-banner {
+    width: 100%;
+    background: $royal-blue;
+    position: relative;
+    padding: 150px 0 255px;
+    color: #fff;
+    @media screen and (max-width: ($smscreen-size - 1)) {padding:120px 0 150px;}
+    &:after {
+        content: '';
+        width: 100%;
+        background: url(../images/inner-banner-bg.png) no-repeat;
+        position: absolute;
+        left: 0;
+        bottom:0;
+        height: 252px;
+        background-size: 100% 100%;
+    @media screen and (max-width: ($lgscreen-size - 1)) {height:200px;}
+     @media screen and (max-width: ($smscreen-size - 1)) {height: 100px;}
+    }
+
+
+    h1{font-weight: 700;}
+    .inner-wrap {
+        color: #fff;
+        text-align: center;
+        h1 {color: #fff;}
+        p {color: #fff; font-size: 18px; line-height: 29px; margin:0 0 10px;
+            a{color: #fff; text-decoration: underline;
+                &:hover{text-decoration: none;}
+                }
+        }
+        a{color: #fff;} 
+        .list {padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 100px;
+            @media screen and (max-width: ($lgscreen-size - 1)) {padding:0;}
+            li {
+                display: inline-block;
+                position: relative;
+                margin: 0 15px 10px;
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 14px;
+                    height: 13px;
+                    top: 7px;
+                    margin-right:15px;
+                    margin-top: -2px;
+                    vertical-align: middle;
+                    background: url(../images/check-icon-white.png) no-repeat;
+                    
+                   
+                    @media screen and (max-width: ($smscreen-size - 1)) {
+        background-size: 100%;
+        width: 12px;
+        height: 11px;
+        margin-right:10px;
+    }
+                }
+            }
+        }
+        .actionBtn {
+            justify-content: center;
+            margin:40px 0;
+            @media screen and (max-width: ($smscreen-size - 1)) {
+        flex-wrap: wrap;
+        margin:30px 0;
+        align-items:flex-start;
+    }
+            .primary_btn1 {
+                background: #fff;
+                color: #624DE3;
+                padding: 14px 30px 16px;
+                min-width: 225px;
+                @media screen and (max-width: ($smscreen-size - 1)) {
+        padding:14px 10px 12px !important;
+        font-size: 13px !important;
+         min-width:initial;
+        margin:0 0 8px;
+    }
+                &:hover {
+                    color: #fff;
+                    border-color: #051441;
+                    background: #051441;
+                }
+            }
+            .primary_btn2 {
+                border: 1px solid #F8F8F8;
+                padding: 14px 30px 15px;
+                color: #FFFFFF;
+                 min-width: 225px;
+                @media screen and (max-width: ($smscreen-size - 1)) {
+        padding:14px 10px 12px !important;
+        min-width:initial;
+        font-size: 13px !important;
+        margin:0 0 8px;
+    }
+                &:hover {
+                    color: #fff;
+                    border-color: #051441;
+                    background: #051441;
+                }
+            }
+        }
+    }
+    
+}
+
+
+.banner-image{padding: 150px 0;
+&:after {
+        content: '';
+        width: 100%;
+        background: url(../images/inner-banner-bg.png) no-repeat;
+        position: absolute;
+        left: 0;
+        bottom:240px;
+        height: 252px;
+        background-size: 100% 100%;
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        background:#fff;
+        position: absolute;
+        left: 0;
+        bottom:0;
+        height:240px;
+    }
+
+    .bnrimg{display: block; margin:61px 0 0; position: relative; z-index: 999;
+    
+    }
+
+}
+
+.inner-banner-bg{width:100%; height:845px; padding:0; background: $royal-blue; color:#fff; position: relative;
+.bannerwrap{padding:50px 0px 100px;  height: 100%; display:flex; align-items:center; justify-content: center; }
+.inner-wrap{margin:-60px 0 0;}
+.feature-banner{background: url(../images/press-banner.webp); background-repeat:no-repeat; background-size:cover;}
+.mac-banner{background: url(../images/mac-banner.webp); background-repeat:no-repeat; background-size:cover;}
+.windows-banner{background: url(../images/window-banner.webp); background-repeat:no-repeat; background-size:cover;}
+.iphone-banner{background: url(../images/iphone-bnr.webp); background-repeat:no-repeat; background-size:cover;}
+.android-banner{background: url(../images/android-banr.webp); background-repeat:no-repeat; background-size:cover;}
+.affl-banner{background: url(../images/affl-banner.webp); background-repeat:no-repeat; background-size:cover;}
+.rd-banner{background: url(../images/read-banner.webp); background-repeat:no-repeat; background-size:cover;}
+
+
+&:a{color: #fff; font-weight: bold;}
+.actionBtn a{font-weight:normal;}
+}
+
+/*Banner section End*/
+
+
+@media(max-width:1140px) {
+.inner-banner-bg{height:750px;}
+.inner-banner-bg .inner-wrap{margin:0;}
+
+}
+
+@media(max-width:979px) {
+.banner-image {padding: 100px 0;}
+.banner-image:before{height:100px;}
+.banner-image:after{bottom:100px;} 
+.banner-image .bnrimg:before{display:none;}
+.banner-image .bnrimg{margin: 40px 0 0;}
+
+}
+
+@media(max-width:767px) {
+.banner-image {padding: 100px 0 50px;}
+.banner-image:before{height:50px;}
+.banner-image:after{bottom:50px;} 
+.banner-image:after{height: 140px;}
+.banner-image .bnrimg{margin: 25px 0 0;}
+.trackRow{margin: 0 0 50px;}
+.inner-banner-bg{height:600px;}
+.hero-banner .inner-wrap .actionBtn{justify-content: space-between; margin:20px 0;}
+.hero-banner .inner-wrap p{font-size: 16px; line-height: 26px;}
+.hero-banner br{display:none;}
+
+    }

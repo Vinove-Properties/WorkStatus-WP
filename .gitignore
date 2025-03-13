@@ -71,6 +71,7 @@ staging/wp-content/*
 !staging/wp-content/themes/
 staging/wp-content/themes/*
 !staging/wp-content/themes/workstatus/
+staging/wp-content/*
 
 #!l/wp-content/themes/**
 # staging/PHPMailer/
@@ -86,3 +87,6 @@ staging/wp-content/themes/*
 robots.txt
 ws.tar.gz
 .DS_Store
+
+
+!web-html/
