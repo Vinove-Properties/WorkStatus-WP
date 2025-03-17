@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$white".
-        on line 47 of C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\signup-form.scss
+        on line 47 of C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\signup-form.scss
 
 42:       position: relative;
 43:       .content {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$white".
 52:           color: #75e8f0;
 
 Backtrace:
-C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\signup-form.scss:47
+C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\signup-form.scss:47
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -106,4 +106,4 @@ D:/New folder/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 47 of C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\signup-form.scss\A \A 42:       position: relative;\A 43:       .content {\A 44:         margin-top: 60px;\A 45: \A 46:         h2 {\A 47:           color: $white;\A 48:           font-weight: 800;\A 49:           margin: 0 0 15px;\A 50:         }\A 51:         .lt-blue {\A 52:           color: #75e8f0;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 47 of C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\signup-form.scss\A \A 42:       position: relative;\A 43:       .content {\A 44:         margin-top: 60px;\A 45: \A 46:         h2 {\A 47:           color: $white;\A 48:           font-weight: 800;\A 49:           margin: 0 0 15px;\A 50:         }\A 51:         .lt-blue {\A 52:           color: #75e8f0;"; }

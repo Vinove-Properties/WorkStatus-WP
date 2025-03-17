@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$white".
-        on line 43 of C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\start-journey.scss
+        on line 43 of C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\start-journey.scss
 
 38:       }
 39: 
@@ -15,7 +15,7 @@ Error: Undefined variable: "$white".
 48:       }
 
 Backtrace:
-C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\start-journey.scss:43
+C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\start-journey.scss:43
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 D:/New folder/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -95,4 +95,4 @@ D:/New folder/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 43 of C:\xampp\htdocs\workstatus-html\version-2.0\assests\scss\start-journey.scss\A \A 38:       }\A 39: \A 40:       h2 {\A 41:         font-size: 30px;\A 42:         line-height: 40px;\A 43:         color: $white;\A 44:         \A 45:       }\A 46:       p {\A 47:         color: $white;\A 48:       }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 43 of C:\xampp\htdocs\WorkStatus-WP\staging\web-html\version-2.0\assests\scss\start-journey.scss\A \A 38:       }\A 39: \A 40:       h2 {\A 41:         font-size: 30px;\A 42:         line-height: 40px;\A 43:         color: $white;\A 44:         \A 45:       }\A 46:       p {\A 47:         color: $white;\A 48:       }"; }

@@ -1,5 +1,6 @@
 .table-tab {
   .tab-wrap {
+    position: relative;
     .tab-row {
       display: flex;
       justify-content: space-between;
@@ -369,7 +370,7 @@
 
           .view-more {
             position: absolute;
-            bottom: 190px;
+            bottom: 215px;
             left: 130px;
             right: 0;
             margin: 0 auto;
@@ -422,6 +423,123 @@
       }
     }
   }
+
+  .actionBtn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    @media screen and (max-width: ($smscreen-size - 1)) {
+      flex-wrap: wrap;
+      margin-top: 30px 0;
+      align-items: flex-start;
+    }
+    div {
+      margin: 0 23px 0 0;
+      @media screen and (max-width: ($lgscreen-size)) {
+        margin: 0 10px;
+      }
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        margin: 0 auto 15px;
+        width: 48%;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+    a {
+      min-width: 210px;
+      display: block !important;
+      margin: 0 0 8px 0;
+      border-radius: 30px;
+      @media screen and (max-width: ($lgscreen-size)) {
+        margin: 0 0 10px 0;
+      }
+
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        min-width: auto;
+      }
+    }
+    a.primary_btn1 {
+      background: $blue;
+      color: $white;
+      border: 1px solid $blue;
+      padding: 14px 30px;
+      position: relative;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-size: 24px !important;
+        vertical-align: middle;
+        background: url(../images/button-arwhover.png) no-repeat;
+      }
+      &:hover {
+        background: #051441;
+        color: #fff;
+        border-color: #051441;
+
+        &:after {
+          background: url(../images/button-arwhover.png) no-repeat;
+        }
+      }
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        padding: 10px 10px 8px !important;
+        font-size: 12px !important;
+      }
+    }
+    a.primary_btn2 {
+      border: 1px solid $navyblue;
+      cursor: pointer;
+      color: $navyblue;
+      padding: 14px 30px;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+        background-size: 24px !important;
+        vertical-align: middle;
+        background: url(../images/clockblue.png) no-repeat;
+      }
+
+      &:hover {
+        background: #051441;
+        color: #fff;
+        border-color: #051441;
+        &:after {
+          background: url(../images/clock-icon.png) no-repeat;
+        }
+      }
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        padding: 10px 10px 8px !important;
+        font-size: 12px !important;
+      }
+    }
+    small {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: $navyblue;
+      line-height: 18px;
+      font-weight: $medium_weight;
+      @media screen and (max-width: ($lgscreen-size)) {
+        font-size: 11px;
+        line-height: 14px;
+        br {
+          display: none;
+        }
+      }
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 1440px) {
@@ -459,10 +577,7 @@
 
       .tcontents {
         .tab-contents {
-         
-      
-  
-          .numeric-table  {
+          .numeric-table {
             .table-block {
               .table-row {
                 .ws-column {
@@ -497,9 +612,7 @@
             }
           }
         }
-        
       }
-
     }
   }
 }
@@ -554,12 +667,11 @@
         }
       }
 
-
-
-      .tcontents {width:100%;   overflow-x: scroll;
+      .tcontents {
+        width: 100%;
+        overflow-x: scroll;
         .tab-contents {
-         
-          .numeric-table  {
+          .numeric-table {
             padding-top: 0;
             .scroll-compare {
               position: relative;
@@ -572,14 +684,15 @@
               -webkit-overflow-scrolling: touch; /* Adds smooth scrolling for mobile */
               margin: 0px auto;
               border: 1px solid rgba(0, 0, 0, 0.2);
-              .div-block-top { grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+              .div-block-top {
+                grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
                 -ms-grid-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
                 .logo-ws {
                   padding: 10px 15px;
-                  width:auto;
+                  width: auto;
                   h2 {
                     font-size: 18px;
-                    margin-left:0;
+                    margin-left: 0;
                   }
                 }
                 .logovs {
@@ -601,22 +714,26 @@
                 .ws-column {
                   padding: 15px 9px;
                   display: flex;
-  align-content: center;
-  flex-direction: column;
+                  align-content: center;
+                  flex-direction: column;
 
                   i {
                     width: 18px;
                     height: 18px;
                   }
 
-                  &.ws-lftcolumn{width:auto;}
+                  &.ws-lftcolumn {
+                    width: auto;
+                  }
                 }
 
-                &.price-table-row{
-                  .ws-column{font-size: 14px;}
+                &.price-table-row {
+                  .ws-column {
+                    font-size: 14px;
+                  }
                 }
-        
-                &:nth-child(2){
+
+                &:nth-child(2) {
                   .ws-column {
                     padding: 20px 9px;
                     font-size: 18px;
@@ -630,20 +747,14 @@
             .view-more {
               bottom: 86px;
               left: 7px;
-              a{width:40px; height:40px;}
+              a {
+                width: 40px;
+                height: 40px;
+              }
             }
           }
         }
-        
       }
-
-
-
-
-
-
-
-
     }
   }
 }
@@ -667,4 +778,3 @@
     }
   }
 }
-

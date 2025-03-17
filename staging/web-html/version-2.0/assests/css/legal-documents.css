@@ -6438,16 +6438,20 @@ h3 a {
         color: #FFFFFF;
         font-weight: 400; }
       .footer .footer-copyright .cop ul {
-        display: flex; }
-        .footer .footer-copyright .cop ul li.hide {
-          margin: 0 10px; }
-        .footer .footer-copyright .cop ul li a {
-          color: #FFFFFF;
-          font-weight: 400;
-          text-decoration: underline; }
-          .footer .footer-copyright .cop ul li a:hover {
-            text-decoration: none;
-            opacity: 0.8; }
+        display: flex;
+        padding: 0;
+        margin: 0; }
+        .footer .footer-copyright .cop ul li {
+          font-size: 12px; }
+          .footer .footer-copyright .cop ul li.hide {
+            margin: 0 10px; }
+          .footer .footer-copyright .cop ul li a {
+            color: #FFFFFF;
+            font-weight: 400;
+            text-decoration: underline; }
+            .footer .footer-copyright .cop ul li a:hover {
+              text-decoration: none;
+              opacity: 0.8; }
 
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
