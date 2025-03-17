@@ -156,4 +156,20 @@
   }
 }
 
+
+@media (max-width:479px) {
+  .top-rated {
+    .award-grid {
+      .award-column {
+        .award-logo {
+          .award-row {
+            .award-col {
+              flex-basis: 48%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /*Media Query Ends Here*/

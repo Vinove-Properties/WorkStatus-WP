@@ -3,6 +3,19 @@
     position: relative;
     width: 52%;
 
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: #bfb5ff;
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
     .content-box {
       margin-top: 80px;
       padding: 0 10px;

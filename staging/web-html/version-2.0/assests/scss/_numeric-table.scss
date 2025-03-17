@@ -238,6 +238,7 @@
                     color: #5e6373;
                     letter-spacing: 0;
                     font-weight: 500;
+                    margin:0;
                   }
                   strong {
                     color: #05164d;
@@ -424,14 +425,14 @@
     }
   }
 
-  .actionBtn {
+  .actionBtn {margin:80px 0 0;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     @media screen and (max-width: ($smscreen-size - 1)) {
       flex-wrap: wrap;
-      margin-top: 30px 0;
+      margin: 50px 0 0;
       align-items: flex-start;
     }
     div {
@@ -676,7 +677,6 @@
             .scroll-compare {
               position: relative;
               overflow-x: auto;
-              margin: 0 0 50px;
             }
             .table-block {
               overflow-x: scroll;
@@ -691,7 +691,8 @@
                   padding: 10px 15px;
                   width: auto;
                   h2 {
-                    font-size: 18px;
+                    font-size: 16px;
+                    line-height: 26px;
                     margin-left: 0;
                   }
                 }
@@ -730,6 +731,10 @@
                 &.price-table-row {
                   .ws-column {
                     font-size: 14px;
+                    .small-font {
+                      font-size: 12px;
+                      line-height: 20px;
+                    }
                   }
                 }
 
@@ -739,14 +744,15 @@
                     font-size: 18px;
                     .small-font {
                       font-size: 12px;
+                      line-height: 20px;
                     }
                   }
                 }
               }
             }
             .view-more {
-              bottom: 86px;
-              left: 7px;
+              bottom: 90px;
+              left: 68px;
               a {
                 width: 40px;
                 height: 40px;

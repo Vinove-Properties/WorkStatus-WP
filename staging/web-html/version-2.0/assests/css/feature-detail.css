@@ -7877,6 +7877,13 @@ li.iti__country {
 .testimonial-section .testimonial-slider {
   position: relative;
   width: 52%; }
+  .testimonial-section .testimonial-slider::-webkit-scrollbar {
+    height: 8px; }
+  .testimonial-section .testimonial-slider::-webkit-scrollbar-thumb {
+    background: #bfb5ff;
+    border-radius: 10px; }
+  .testimonial-section .testimonial-slider::-webkit-scrollbar-track {
+    background: transparent; }
   .testimonial-section .testimonial-slider .content-box {
     margin-top: 80px;
     padding: 0 10px;
@@ -8075,6 +8082,9 @@ li.iti__country {
             padding: 15px; }
             .top-rated .award-grid .award-column .award-logo .award-row .award-col .img-wrap img {
               margin: 0 0 10px; } }
+@media (max-width: 479px) {
+  .top-rated .award-grid .award-column .award-logo .award-row .award-col {
+    flex-basis: 48%; } }
 /*Media Query Ends Here*/
 .start-journey {
   background: linear-gradient(180deg, #624de3 0%, #251686 100%);

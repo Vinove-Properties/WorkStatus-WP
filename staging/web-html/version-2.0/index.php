@@ -1762,6 +1762,7 @@
                     <i class="star"></i>
                   </div>
                 </div>
+                <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow" style="opacity:0;">What industry analysts are saying </a>
               </div>
             </div>
           </div>
