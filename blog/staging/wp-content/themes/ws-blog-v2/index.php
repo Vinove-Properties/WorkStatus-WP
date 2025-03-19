@@ -120,7 +120,8 @@ $catBlockThree  = get_field('row-c3', 'option');
       <div class="blog-posts-list three-columns">
         <?php 
         if( $videoBlock['videos'] ){
-          foreach( $videoBlock['videos'] as $video ){
+          $i = 0;
+          foreach( $videoBlock['videos'] as $video ){ $i++;
           $viidThumb = ( $video['thumb'] ) ? $video['thumb']['url'] : 
           get_bloginfo('template_url').'/dev-images/default-image.jpg';
           echo '<div class="blog-post-col medium-size">
@@ -136,6 +137,9 @@ $catBlockThree  = get_field('row-c3', 'option');
             <div class="title two-line"><a href="javascript:void(0);" onclick="_playYTmedia(\''.$video['link'].'\')">'.$video['title'].'</a></div>
           </div>
           </div>';
+          if( $i == 3 ){
+          echo '</div><!--//.blog-posts-list three-columns--><div class="blog-posts-list three-columns">';
+          }
           }
         }
         ?>        
