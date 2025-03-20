@@ -4,11 +4,6 @@ Template Name: Tools Comparison - Template
 Author : Nitin Baluni
 */
 get_header();
-function locatePricing( $str ){
-  $exp  = explode("|", $str);
-  return ( is_array( $exp ) && (count($exp) > 1)  ) ? '<span class="spn-int">'.$exp[0].'</span><span class="spn-local">'.$exp[1].'</span>' : $str;
-}
-
 $bannerCol = get_field('ws-banner');
 ?>
 <main class="site__content">

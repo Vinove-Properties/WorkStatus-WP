@@ -153,7 +153,10 @@
       body.locate-ind .price span.spn-local,
       body.locate-int .prloc span.spn-int,
       body.locate-int .price span.spn-int{display:block;}      
-      body.locate-int span.spn-ind, body.locate-ind  span.spn-intr{display:none;}
+      
+      body.locate-int span.spn-ind, 
+      body.locate-int span.spn-local,
+      body.locate-ind span.spn-intr{display:none;}
      
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; 
       background: #faf8fe; padding: 25px; margin:0 0 25px;}

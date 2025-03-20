@@ -1187,3 +1187,57 @@ function update_image_metadata_to_webp_correctly(){
 //update_image_metadata_to_webp_correctly(); die;
 //}
 //});
+
+function locatePricing( $str ){
+  $exp  = explode("|", $str);
+  return ( is_array( $exp ) && (count($exp) > 1)  ) ? '<span class="spn-int">'.$exp[0].'</span><span class="spn-local">'.$exp[1].'</span>' : $str;
+}
+
+function getAlternateData( $tbl, $category = "time" ){
+	$elm = "";	
+	if( $tbl ){
+        $lCounr = count($tbl);         
+        foreach( $tbl as $data ){			
+			if( $data['category'] == $category ){
+				$lstPricing = $data['name'];
+				
+				$colOne = _compTableValue($data['tl-1']);
+				$colTwo = _compTableValue($data['tl-2']);
+				$colThr = _compTableValue($data['tl-3']);
+				$colFor = _compTableValue($data['tl-4']);
+				$colWs  = _compTableValue($data['ws']);
+
+				$elm .= '<div class="table-row">
+				<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>
+				<div class="ws-column">'.$colWs.$postFix.'</div>
+				<div class="ws-column">'.$colOne.$postFix.'</div>
+				<div class="ws-column">'.$colTwo.$postFix.'</div>
+				<div class="ws-column">'.$colThr.$postFix.'</div>
+				<div class="ws-column">'.$colFor.$postFix.'</div>				
+				</div>';	
+			}
+			
+        }
+    }
+    return $elm;
+}
+
+
+function getAlternatePricing( $col ){
+	$postFix    = '<span class="small-font">(Per user / Month)</span>';
+	$lstPricing = '<strong>Pricing</strong>';
+
+	$colOne = '<strong class="prloc">'.locatePricing($col['t1-pricing']).'</strong>';
+	$colTwo = '<strong class="prloc">'.locatePricing($col['t2-pricing']).'</strong>';
+	$colThr = '<strong class="prloc">'.locatePricing($col['t3-pricing']).'</strong>';
+	$colFor = '<strong class="prloc">'.locatePricing($col['t4-pricing']).'</strong>';
+	$colWs  = '<strong class="prloc">'.locatePricing($col['ws-pricing']).'</strong>';
+
+	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>
+	<div class="ws-column">'.$colWs.$postFix.'</div>
+	<div class="ws-column">'.$colOne.$postFix.'</div>
+	<div class="ws-column">'.$colTwo.$postFix.'</div>
+	<div class="ws-column">'.$colThr.$postFix.'</div>
+	<div class="ws-column">'.$colFor.$postFix.'</div>';	
+    return $elm;
+}
