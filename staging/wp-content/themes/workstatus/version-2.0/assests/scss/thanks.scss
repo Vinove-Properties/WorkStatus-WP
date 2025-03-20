@@ -1,0 +1,91 @@
+@import "global-section";
+@import "footer";
+@import "_menu-v4";
+
+
+.feature-header .site__header{background: #4231ac;}
+.thank_you{
+    width:75%;
+    margin:auto;
+    border-radius: 15px;
+    margin-top: 130px;
+    margin-bottom:130px;
+    height:450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    @media  screen and(max-width:$mdscreen-size) {
+       width: 95%;
+       height:450px;
+    }
+    h1{
+        font-size:90px;
+        margin-bottom:30px;
+        margin-top:10px;
+        @media  screen and(max-width:$mdscreen-size) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    p{
+        font-size: 25px;
+        @media  screen and(max-width:$mdscreen-size) {
+            font-size: 15px;
+            width: 60%;
+            margin: auto;
+        }
+    }
+    box-shadow: 20px;
+}
+.firstbox{
+    padding-bottom:30px;
+
+}
+.secondbox{
+  
+    display: flex;
+    justify-content: center;
+    @media  screen and(max-width:$mdscreen-size) {
+        margin-top:10px ;
+    }
+
+}
+.thank_youbtn{
+    border-radius: 6px;
+}
+// .bottom_section{
+//     width:90%;
+//     margin: auto;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom-left-radius: 15px;
+//     border-bottom-right-radius: 15px;
+//     margin-bottom: 150px;
+//     height: 300px;
+//     padding: 50px;
+//     flex-wrap: wrap;
+//     @media  screen and(max-width:$mdscreen-size) {
+//        visibility: hidden;
+//        height: 0px;
+//        margin-bottom: 10px;
+//     }
+   
+// }
+
+
+
+.signup-thanks{ width: 90%; height: 100%;     padding: 50px;} 
+.signup-thanks h1{line-height: 70px; font-size: 60px;}
+.signup-thanks p{font-size: 20px;}
+
+
+@media screen and (max-width: 768px) {
+
+.signup-thanks{width: 95%; height: 100%;     padding: 30px; height: initial;} 
+.firstbox{padding:0 20px;}
+.signup-thanks h1{line-height: 50px; font-size: 40px;}
+.signup-thanks{font-size: 16px; width: 100%; margin: auto;}
+.thank_you p{width:100%;}
+
+}

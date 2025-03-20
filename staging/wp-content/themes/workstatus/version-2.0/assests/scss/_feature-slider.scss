@@ -1,0 +1,316 @@
+.feature-slide-section {
+  .featured-out {
+    justify-content: space-between;
+    position: relative;
+
+    .right-section {
+      flex-basis: 20%;
+      border-radius: 20px;
+      background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+      padding: 25px;
+
+      h4 {
+        color: $white;
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      img{margin-left: 27px;}
+
+      .is-arrow {
+        color: $white;
+        margin: 20px 0 0;
+        &:after {
+          background: url(../images/view-arrow-white.svg) no-repeat center;
+        }
+      }
+    }
+    .featured-slider {
+      flex-basis: 79%;
+      width: 79%;
+      position: relative;
+
+      .glider{width:100% !important;}
+
+      .flex-3 {
+        padding: 0 10px;
+        .box-3 {
+          height: 100%;
+          border-radius: 20px;
+          padding: 25px;
+          transition: all 0.3s ease-in-out;
+          position: relative;
+          background-size: cover;
+          background-repeat: no-repeat;
+          min-height: 320px;
+          display: flex;
+          align-items: end;
+          cursor: pointer;
+
+          h3 {
+            color: $white;
+            font-size: 20px;
+            line-height: 30px;
+            position: relative;
+
+            a {
+              color: $white;
+              position: relative;
+            }
+          }
+
+          .overlay-text {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            border-radius: 15px;
+            background-color: $white;
+            box-shadow: 0px 4px 50px 0px #0000000d;
+            padding: 20px;
+            h3 {
+              color: rgba(0, 0, 0, 0.8);
+              margin: 0 0 15px;
+            }
+
+            p {
+              color: $grey;
+              font-weight: 400;
+            }
+            .no-more {
+              padding: 14px 30px;
+              font-size: 18px;
+              color: $white;
+              cursor: pointer;
+              text-align: center;
+              background: $blue;
+              display: block;
+              margin: 30px 0 0;
+              border-radius: 30px;
+              font-weight: 500;
+
+              &:hover {
+                background: $navyblue;
+              }
+            }
+          }
+          &:hover {
+            .overlay-text {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .prev-next-btn {
+      position: absolute;
+      bottom: 8%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      /* transform: translateY(50%); */
+      right: 10px;
+
+      .tail-prev,
+      .tail-next {
+        background-color: transparent;
+        border: 2px solid #e8dcff;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 16px;
+        background: url(../images/ft-prev.svg) no-repeat center;
+        width: 36px;
+        height: 36px;
+        top: auto;
+        font-size: 0;
+        right: 43px;
+        opacity: 1;
+        left: auto;
+        transform: rotate(0);
+        font-size: 0;
+        position: absolute;
+
+        &:hover {
+          background-color: #624DE3 !important;
+          border-color:$blue;
+          background: url(../images/ft-prevhover.svg) no-repeat center;
+        }
+      }
+
+      .tail-next {
+        background: url(../images/ft-prev.svg) no-repeat center;
+        right: 0;
+        transform: rotate(180deg);
+      }
+    }
+    .progress-container {
+      position: relative;
+      width: 90%;
+      height: 3px;
+      background-color: #dbc9ff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 25px;
+  
+      .progress-bar {
+        width: 0%;
+        height: 100%;
+        background-color: $blue;
+        transition: width 0.3s ease-in-out;
+      }
+    }
+  
+    .dots {
+      display: none;
+  
+      button {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #ddd;
+        border: none;
+        cursor: pointer;
+  
+        &.active {
+          background-color: #007bff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* General scrollbar hiding for all browsers */
+.testimonial-slider .glider,
+.featured-slider .glider {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+.testimonial-slider .glider::-webkit-scrollbar,
+.featured-slider .glider::-webkit-scrollbar {
+  display: none;
+}
+
+
+/*Media Query Start From Here*/
+@media (max-width: 1440px) {
+  .feature-slide-section{
+    .featured-out {
+      .prev-next-btn{bottom: 6%;}
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+
+
+  .feature-slide-section{
+    .featured-out {
+      .featured-slider {
+        .flex-3 {
+          .box-3{min-height: 380px;}
+        }
+      }
+      .prev-next-btn{bottom: 5%;}
+      .progress-container{margin-top: 40px;}
+
+       
+      .right-section{padding: 18px;}
+
+
+    }
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .feature-slide-section {
+    .featured-out {
+      .right-section {
+        flex-basis: 100%;
+        border-radius: 20px;
+        margin:30px 0 0;
+        padding: 20px;
+
+        img{margin:0;}
+  
+        h4 {
+          font-size: 16px;
+          line-height: 26px;
+        }
+  
+        .is-arrow {
+          margin: 15px 0 0;
+        }
+      }
+      .featured-slider {
+        flex-basis: 100%;
+        width: 100%;
+        margin:0 0 40px;
+  
+        .flex-3 {
+          padding: 0 10px;
+          .box-3 {
+            padding: 20px;
+            min-height: 250px;
+         
+            h3 {
+              font-size: 18px;
+            }
+  
+            .overlay-text {
+              padding: 20px;
+              text-align: center;
+             
+              .no-more {
+                padding: 12px 20px;
+                font-size: 16px;
+                margin: 20px auto 0;
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+  
+      .prev-next-btn {
+        bottom: 6%;
+      }
+      .progress-container {
+        width: 85%;
+        margin-top:35px;
+      }
+    }
+  }
+}
+@media (max-width: 979px) {
+ 
+}
+
+@media (max-width: 767px) {
+
+
+  .feature-slide-section {
+    .featured-out {
+      .progress-container {
+        width: 70%;
+      }
+    }
+  }
+
+
+}
+
+/*Media Query Ends Here*/

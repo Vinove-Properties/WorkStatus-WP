@@ -1,0 +1,127 @@
+.faqsRow {
+  .flex_row {
+    .column {
+      width: 100%;
+      margin: 0;
+      .faq-accordion-item-outer {
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        padding: 30px 40px 30px 0;
+        position: relative;
+      
+       
+        border-top: 1px solid rgba(103, 84, 226, 0.15);
+        &:first-child {
+          margin: 0;
+        }
+        h3 {
+          position: relative;
+          cursor: pointer;
+          padding-right: 30px;
+          display: block;
+          margin-bottom: 0;
+          margin-top: 0;
+         color:$dark-grey;
+          &::before {
+            content: "";
+            display: inline-block;
+            background: url(../images/plus.svg) no-repeat;
+            width: 20px;
+            height: 20px;
+            background-size: 100%;
+            position: absolute;
+            right: 0;
+            top: 3px;
+          }
+        }
+        .faq-accordion-content {
+          display: none;
+          padding-right: 30px;
+          p {
+            margin: 20px 0 0;
+          }
+          ul,
+          ol {
+            padding: 0;
+            margin:20px 0 0;
+            li {
+              font-weight: 500;
+    margin: 0 0 15px;
+    padding-left: 32px;
+    position: relative;
+              &:before {
+                content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background: url(../images/listing.svg) no-repeat;
+    width: 22px;
+    height: 22px;
+    background-size: 100%;
+              }
+            }
+          }
+        }
+        &.open {
+          .faq-accordion-content {
+            display: block;
+          }
+          h3 {
+            position: relative;
+            &::before {
+              background: url(../images/minus.svg) no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+/*Media Query Start From Here*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+  .faqsRow {
+    .flex_row{
+      .column {
+        .faq-accordion-item-outer {padding:20px 0 20px 0;
+    
+          h3 {
+            line-height: 24px;
+            padding-right: 25px;
+            font-size: 17px;
+            &:before{  width: 15px;
+              height: 15px;
+              background-size: 100%;
+              top: 5px;}
+          }
+          &.open {
+            .faq-accordion-content {
+              padding-right:0;
+              p{margin:15px 0 0;}
+              ul{
+                li{padding-left:25px;
+                &:before{width:18px; height:18px;}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

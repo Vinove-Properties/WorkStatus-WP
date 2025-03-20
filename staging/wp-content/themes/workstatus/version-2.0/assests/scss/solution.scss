@@ -1,0 +1,317 @@
+@import "global-section";
+@import "footer";
+@import "_menu-v4";
+@import "common-banner";
+@import "_feature-pricing-section";
+@import "_ppc-sections";
+
+.inner-banner-bg {
+  height: 950px;
+
+  .bannerwrap {
+    padding: 150px 0;
+  }
+}
+
+.banner-award .award-box{padding:0;}
+
+/*Step Section Start From Here*/
+
+.step-sec {
+  padding: 0;
+  .step-row {
+    padding: 0 0 80px;
+    align-items: center;
+    @media screen and (max-width: ($mdscreen-size - 1)) {
+      padding: 0 0 50px;
+    }
+    .image-col {
+      flex-basis: 45%;
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        flex-basis: 100%;
+        margin: 30px 0;
+      }
+    }
+
+    .content-col {
+      flex-basis: 48%;
+
+      .top-section {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+      p {
+        margin: 20px 0 0;
+      }
+      ul {
+        padding: 0;
+        margin: 15px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+          color: #5e6373;
+          padding-left: 30px;
+          position: relative;
+          margin: 15px 0 0;
+          flex-basis: 48%;
+          &:before {
+            content: "";
+            display: inline-block;
+            background: url(../images/list-icon-small.png) no-repeat;
+            width: 20px;
+            height: 20px;
+            top: 2px;
+            left: 0;
+            position: absolute;
+          }
+        }
+      }
+      .read-more {
+        color: $blue;
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
+        position: relative;
+
+        &:after {
+          content: "";
+          background: url(../menu-images/ind-arrow.svg) no-repeat center;
+          width: 18px;
+          display: inline-block;
+          height: 14px;
+          margin-left: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          &:after {
+            margin-left: 14px;
+          }
+        }
+      }
+
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        flex-basis: 100%;
+        padding: 50px 0 0;
+        ul {
+          margin: 10px 0 0;
+          li {
+            margin: 10px 0 0;
+          }
+        }
+        .read-more {
+          margin: 20px 0 0;
+        }
+      }
+    }
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      ul {
+        li {
+          flex-basis: 100%;
+        }
+      }
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        flex-direction: inherit;
+      }
+    }
+  }
+}
+
+/*Step Section Start From Here*/
+
+.trackEm {
+  .trackRow {
+    .trackContent {
+      .row {
+        &:nth-child(4n) {
+          padding: 0;
+          border: 0;
+        }
+
+        h3 {
+          position: relative;
+          padding-left: 44px;
+          &:before {
+            content: "";
+            background: url(../images/list-icon.png) 0 0/100% no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+         a{color: #110302;
+        &:hover{text-decoration: underline;
+          color: #6754E2;}
+        }
+        }
+      }
+    }
+  }
+  .view-more {
+    color: $blue;
+    display: block;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    &:after {
+      content: "";
+      background: url(../menu-images/view-arrow.svg) center no-repeat;
+      width: 11px;
+      display: inline-block;
+      height: 11px;
+      margin-left: 8px;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      &:after {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .align-right {
+    text-align: right;
+  }
+}
+
+.four-columns {
+  .flex_row {
+    .column {
+      flex-basis: 23.5%;
+      border-radius: 10px;
+      background: $white;
+      padding: 30px 20px 40px;
+      position: relative;
+      .bx-content {
+        padding: 0 0 30px;
+      }
+      img {
+        margin: 0 0 20px;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          color: #5e6373;
+          padding-left: 30px;
+          position: relative;
+          margin: 15px 0 0;
+          &:before {
+            content: "";
+            display: inline-block;
+            background: url(../images/list-icon-small.png) no-repeat;
+            width: 30px;
+            height: 30px;
+            top: 3px;
+            left: 0;
+            position: absolute;
+          }
+        }
+      }
+
+      .view-more {
+        color: $blue;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        font-weight: 500;
+
+        &:after {
+          content: "";
+          background: url(../menu-images/view-arrow.svg) no-repeat center;
+          width: 11px;
+          display: inline-block;
+          height: 11px;
+          margin-left: 8px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          text-decoration: underline;
+          &:after {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      @media screen and (max-width: ($mdscreen-size - 1)) {
+        flex-basis: 48%;
+        margin: 25px 0 0;
+      }
+
+      @media screen and (max-width: ($smscreen-size - 1)) {
+        flex-basis: 100%;
+        margin: 15px 0 0;
+        padding: 30px 25px;
+        img {
+          margin: 0 0 15px;
+        }
+      }
+    }
+  }
+  &.p50 {
+    padding-top: 50px;
+    @media screen and (max-width: ($smscreen-size - 1)) {
+      padding-top: 20px;
+    }
+  }
+}
+
+.timeline {
+  background: $white;
+}
+
+@media screen and (max-width:1180px) {
+
+  .inner-banner-bg {height: 910px;}
+}
+
+@media screen and (max-width: 979px) {
+  .inner-banner-bg {height: 910px;
+    .bannerwrap {
+      padding: 90px 0;
+    }
+  }
+
+  .journey-bg {
+    .actionBtn {
+      flex-wrap: wrap;
+      margin: 30px 0 0;
+      div {
+        margin-top: 10px;
+      }
+      a {
+        min-width: initial;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inner-banner-bg {
+    height: initial;
+    .bannerwrap {
+      padding: 100px 0 50px;
+    }
+  }
+  .hero-banner .inner-wrap .actionBtn {
+    justify-content: center !important;
+  }
+
+  .trackEm .trackRow {
+    margin: 0;
+  }
+  .journey-bg {
+    .actionBtn {
+      flex-wrap: wrap;
+      margin: 20px 0 0;
+    }
+  }
+}

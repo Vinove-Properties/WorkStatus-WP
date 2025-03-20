@@ -65,13 +65,22 @@ l/staging/wp-content/*
 l/staging/wp-content/themes/*
 !l/staging/wp-content/themes/ws-landing/
 
+# Ignore everything under staging
 staging/*
+
+# Except wp-content
 !staging/wp-content/
+
+# Ignore all inside wp-content except themes
 staging/wp-content/*
 !staging/wp-content/themes/
+
+# Ignore all themes except workstatus
 staging/wp-content/themes/*
 !staging/wp-content/themes/workstatus/
-staging/wp-content/*
+
+# Allow tracking all files inside the workstatus theme
+!staging/wp-content/themes/workstatus/*
 
 #!l/wp-content/themes/**
 # staging/PHPMailer/
