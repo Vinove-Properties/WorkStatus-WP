@@ -167,27 +167,31 @@ function vmRestSubDefault(){
     }else{
         let tabs = document.getElementsByClassName("text-column");
         for (j = 0; j < tabs.length; j++) {
-        tabs[j].addEventListener("mouseover", clickTab);
+            //console.log(tabs[j]);
+            if( !tabs[j].classList.contains("no-evt") ){
+            tabs[j].addEventListener("mouseover", clickTab);    
+            }
+            
         }
 
-        function clickTab(e) {
-        var tabID = e.currentTarget.id;
-        var inSection = e.currentTarget.getAttribute("data-section");
-        var pageID = tabID.replace("a", "b");
-        var pages = document.getElementById(inSection).getElementsByClassName("header-menu");
-        var intabs = document.getElementById(inSection).getElementsByClassName("text-column");
-        for (i = 0; i < pages.length; i++) {
-        intabs[i].classList.remove("active");
-        pages[i].classList.remove("active");
-        }
-        e.currentTarget.classList.add("active");
-        let pActive = "mrow mrow-" + e.currentTarget.getAttribute("data-mrow");
-        let masCol = document.getElementsByClassName(pActive).item(0);
-        if (masCol) {
-        masCol.classList.add("active");
-        }
-        var currentPage = document.querySelector("#" + pageID);
-        currentPage.classList.add("active");
+        function clickTab(e){
+            var tabID = e.currentTarget.id;
+            var inSection = e.currentTarget.getAttribute("data-section");
+            var pageID = tabID.replace("a", "b");
+            var pages = document.getElementById(inSection).getElementsByClassName("header-menu");
+            var intabs = document.getElementById(inSection).getElementsByClassName("text-column");
+            for (i = 0; i < pages.length; i++) {
+            intabs[i].classList.remove("active");
+            pages[i].classList.remove("active");
+            }
+            e.currentTarget.classList.add("active");
+            let pActive = "mrow mrow-" + e.currentTarget.getAttribute("data-mrow");
+            let masCol = document.getElementsByClassName(pActive).item(0);
+            if (masCol) {
+            masCol.classList.add("active");
+            }
+            var currentPage = document.querySelector("#" + pageID);
+            currentPage.classList.add("active");
         }
     }
 })();
@@ -668,14 +672,21 @@ gliderTwo &&
             };
         };
     })();
+
 var tabExists = document.getElementById("tabs1");
 if (tabExists) {
     var myTabs1 = tabs({ el: "#tabs1", tabNavigationLinks: ".tab-link", tabContentContainers: ".tab-content" });
     myTabs1.init();
 }
-var tabs = document.getElementsByClassName("text-column");
-for (j = 0; j < tabs.length; j++) tabs[j].addEventListener("mouseover", clickTab);
-function clickTab(e) {
+
+
+const Elmtabs   = document.getElementsByClassName("text-column");
+for( j = 0; j < Elmtabs.length; j++ ){
+    if( !Elmtabs[j].classList.contains("no-evt") ){
+        Elmtabs[j].addEventListener("mouseover", elmClickTab);    
+    }
+}
+function elmClickTab(e) {
     var t = e.currentTarget.id,
         n = e.currentTarget.getAttribute("data-section"),
         o = t.replace("t", "p"),
