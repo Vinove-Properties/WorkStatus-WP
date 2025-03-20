@@ -624,7 +624,7 @@
         ul {
           margin: 0 0 50px;
           li {
-            padding: 0 4px;
+            //padding: 0 4px;
             a {
               flex-wrap: wrap;
               padding: 10px 15px;
@@ -657,7 +657,7 @@
           flex-wrap: wrap;
           li {
             flex-basis: 25%;
-
+            
             a {
               font-size: 13px;
               padding: 8px;
@@ -768,9 +768,9 @@
       .tab-nav {
         ul {
           li {
-            flex-basis: 50%;
-            margin:0;
-            padding: 8px;
+            flex-basis: 46%;
+            margin:0 2% 4%;
+            padding: 0;
             a {
               font-size: 13px;
               padding: 5px;

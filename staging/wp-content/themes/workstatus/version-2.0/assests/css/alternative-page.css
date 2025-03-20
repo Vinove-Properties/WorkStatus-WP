@@ -4903,18 +4903,16 @@ li.iti__country {
 @media (max-width: 1024px) {
   .table-tab .tab-wrap .tab-nav ul {
     margin: 0 0 50px; }
-    .table-tab .tab-wrap .tab-nav ul li {
-      padding: 0 4px; }
-      .table-tab .tab-wrap .tab-nav ul li a {
-        flex-wrap: wrap;
-        padding: 10px 15px;
-        line-height: 1.4; }
-        .table-tab .tab-wrap .tab-nav ul li a .icon {
-          display: block;
-          width: 100%;
-          margin: 0 0 8px; }
-          .table-tab .tab-wrap .tab-nav ul li a .icon img {
-            margin: 0 auto; } }
+    .table-tab .tab-wrap .tab-nav ul li a {
+      flex-wrap: wrap;
+      padding: 10px 15px;
+      line-height: 1.4; }
+      .table-tab .tab-wrap .tab-nav ul li a .icon {
+        display: block;
+        width: 100%;
+        margin: 0 0 8px; }
+        .table-tab .tab-wrap .tab-nav ul li a .icon img {
+          margin: 0 auto; } }
 @media (max-width: 767px) {
   .table-tab .tab-wrap .tab-nav ul {
     margin: 0 0 30px;
@@ -4989,9 +4987,9 @@ li.iti__country {
           height: 40px; } }
 @media (max-width: 479px) {
   .table-tab .tab-wrap .tab-nav ul li {
-    flex-basis: 50%;
-    margin: 0;
-    padding: 8px; }
+    flex-basis: 46%;
+    margin: 0 2% 4%;
+    padding: 0; }
     .table-tab .tab-wrap .tab-nav ul li a {
       font-size: 13px;
       padding: 5px;
