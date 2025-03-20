@@ -4496,9 +4496,8 @@ li.iti__country {
       margin: 0 0 60px;
       padding: 0; }
       .table-tab .tab-wrap .tab-nav ul li {
-        padding: 0 8px;
-        display: inline-block;
-        margin: 0; }
+        margin: 0 8px;
+        display: inline-block; }
         .table-tab .tab-wrap .tab-nav ul li a {
           display: flex;
           height: 100%;
@@ -4884,7 +4883,7 @@ li.iti__country {
     padding: 6px 14px; } }
 @media (max-width: 1280px) {
   .table-tab .tab-wrap .tab-nav ul li {
-    padding: 0 4px; }
+    margin: 0 4px; }
     .table-tab .tab-wrap .tab-nav ul li a {
       padding: 5px 10px; }
   .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column {
@@ -4991,6 +4990,7 @@ li.iti__country {
 @media (max-width: 479px) {
   .table-tab .tab-wrap .tab-nav ul li {
     flex-basis: 50%;
+    margin: 0;
     padding: 8px; }
     .table-tab .tab-wrap .tab-nav ul li a {
       font-size: 13px;

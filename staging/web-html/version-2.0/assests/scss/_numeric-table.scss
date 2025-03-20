@@ -19,9 +19,9 @@
 
         li {
           //flex-basis: 25%;
-          padding: 0 8px;
+          margin: 0 8px;
           display: inline-block;
-          margin: 0;
+         
 
           a {
             display: flex;
@@ -569,7 +569,7 @@
       .tab-nav {
         ul {
           li {
-            padding: 0 4px;
+            margin: 0 4px;
             a {
               padding: 5px 10px;
             }
@@ -769,6 +769,7 @@
         ul {
           li {
             flex-basis: 50%;
+            margin:0;
             padding: 8px;
             a {
               font-size: 13px;
