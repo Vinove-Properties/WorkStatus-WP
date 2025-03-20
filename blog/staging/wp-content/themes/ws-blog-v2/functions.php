@@ -33,12 +33,12 @@ add_action( 'init', function(){
 });
 */
 
-add_filter('upload_mimes', function($mime_types){
-    $mime_types = [];
-    $mime_types['webp'] = 'image/webp';
-    $mime_types['pdf'] = 'application/pdf';
-    return $mime_types;
-});
+// add_filter('upload_mimes', function($mime_types){
+//     $mime_types = [];
+//     $mime_types['webp'] = 'image/webp';
+//     $mime_types['pdf'] = 'application/pdf';
+//     return $mime_types;
+// });
 
 if( isset($_SERVER['HTTP_HOST']) && ( $_SERVER['HTTP_HOST']  !== "localhost" ) ){
     require_once '/home/workstatus-io/public_html/envloader.php';
@@ -54,8 +54,26 @@ if( isset($_SERVER['HTTP_HOST']) && ( $_SERVER['HTTP_HOST']  !== "localhost" ) )
         $phpmailer->Password     = getenv('SMTP_PASSWORD');
         $phpmailer->From          = "do-not-reply@workstatus.io";
         $phpmailer->FromName      = "Workstatus";
+        
+        $phpmailer->setFrom('do-not-reply@workstatus.io', 'Workstatus');
+        $phpmailer->addReplyTo('do-not-reply@workstatus.io', 'Workstatus');
+        
     }    
 }
+
+add_action('init', function(){
+if( isset($_GET['mt']) && ($_GET['mt'] == "yes") ){
+    $to = 'nitin.baluni@mail.vinove.com';
+    $subject = 'The subject';
+    $body = 'The email body content';
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    if( wp_mail( $to, $subject, $body, $headers ) ){
+        die("mail sent");
+    }else{
+        die("error! mail sent");
+    }
+}
+});
 
 
 function ws_blog_setup() {

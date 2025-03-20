@@ -215,6 +215,10 @@ function workstatus_scripts() {
 		){
 		wp_enqueue_style('reviews', get_stylesheet_directory_uri().'/version-2.0/assests/css/alternative.css', array(), _S_VERSION );
 	}
+	elseif( is_page_template(['page-templates/tpl-alternatives.php'])){
+		wp_enqueue_style('ws-alternatives', get_bloginfo('template_url').'/version-2.0/assests/css/alternative-page.css', 
+		array(), _S_VERSION );
+	}
     elseif( 
 		is_page_template(
 			['page-templates/tpl-home.php']) 

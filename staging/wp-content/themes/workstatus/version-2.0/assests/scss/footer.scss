@@ -64,9 +64,8 @@
       color: #ffffff;
       font-weight: 500;
       letter-spacing: 0.5px;
-    }   
-    ul {margin: 0;
-      padding: 0;
+    }
+    ul {padding: 0;
       li {
         margin: 10px 0 0;
         color: #f0f0f0;
@@ -105,12 +104,12 @@
 
   .footer-bottom {
     padding: 40px 0 0;
-    gap: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.13);
     justify-content: space-between;
     .flex-4 {
       flex-basis: 15%;
     }
+    .flex-3 { flex-basis: auto;}
     h3 {
       font-size: 15px;
       line-height: 24px;
@@ -122,7 +121,6 @@
       flex-basis: 15%;
     }
     .logo-box {
-      flex-basis: 25%;
       .dis-flex {
         align-items: baseline;
         a {
@@ -134,7 +132,6 @@
       }
     }
     .social-box {
-      flex-basis: 20%;
       .dis-flex {
         a {
           margin-right: 10px;
@@ -216,7 +213,7 @@
         display: flex;
         padding: 0;
         margin: 0;
-        li {    font-size: 12px;
+        li {font-size: 12px;
           &.hide {
             margin: 0 10px;
           }
@@ -368,25 +365,23 @@
 
     .footer-bottom {
       gap: 0;
-      justify-content: space-between;
+		 justify-content: space-between;
       .flex-4 {
         flex-basis: 100%;
         text-align: center;
       }
+      .flex-3 {
+        flex-basis: 33.33%;
+     
+     }
       .logo-box {
-        flex-basis: 50%;
+    
         text-align: left;
         .dis-flex {
-          gap: 15px;
+          gap: 10px;
         }
       }
-      .social-box {
-        flex-basis: 50%;
-        text-align: center;
-        .dis-flex {
-          justify-content: center;
-        }
-      }
+      
       .footer-rating {
         flex-basis: 100%;
         text-align: center;
@@ -452,7 +447,7 @@
     .footer-bottom {
       padding: 30px 0 0;
       gap: 0;
-      .flex-4 {
+      .flex-3 {
         flex-basis: 100%;
         text-align: center;
         margin: 10px 0 0;
@@ -470,9 +465,10 @@
         flex-basis: 100%;
         text-align: center;
         margin: 20px 0 0;
+        .dis-flex{justify-content: center;}
       }
       .footer-rating {
-        margin: 20px 0 0;
+        margin: 20px 0;
         font-size: 13px;
         .client-outer{margin: 20px 0;
           display: block;}
@@ -483,7 +479,7 @@
       }
     }
     .footer-copyright{
-    .cop {flex-wrap: wrap;
+      .cop {flex-wrap: wrap;
       p{width: 100%;
         margin: 0 0 15px;}
         ul{flex-wrap: wrap;
