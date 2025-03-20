@@ -22,6 +22,354 @@ get_header();
 </div>
 </section>
 <!-- Place For Table only -->
+<section class="table-tab padding-b-120">
+<div class="container">
+<div class="top-section">
+  <h2>Comparison Table</h2>
+  <p>Achieve valuable insights with AI dashboards, productivity reports, and location analytics.</p>
+</div>
+<div class="tab-wrap">
+  <div class="tab-row">
+    <nav id="tabs" class="tab-nav">
+      <ul>
+		<li class="active"><a href="#tb-time">
+		<span class="icon">
+		<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
+		<img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+		</span>
+		Time Tracking</a>
+		</li>
+
+		<li><a href="#tb-productivity">
+		<span class="icon">
+		<img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" width="16" height="18">
+		<img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
+		</span>Productivity Management</a>
+		</li>
+		<li><a href="#tb-project">
+		<span class="icon">
+		<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18">
+		<img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
+		</span>Project  Management</a>
+		</li>
+		<li><a href="#tb-attendance">
+		<span class="icon">
+		<img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18">
+		<img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+		</span>
+		Attendance Management</a>
+		</li>
+      </ul>
+    </nav>
+    <div id="tab-contents" class="tcontents">
+        <div class="numeric-table show-all" id="compare-table">
+          <div class="scroll-compare">
+            <div class="table-block">
+              <div class="div-block-top">
+                <div class="logo-ws logovs" >
+                  <h2>Productivity Features</h2>
+                </div>
+                <div class="logo-tb logovs">
+                  <picture>
+                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-01.svg"
+                      alt="logo" width="200" height="35">
+                  </picture>
+                </div>
+                <div class="logo-tb logovs">
+                  <picture>
+                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-02.svg"
+                      alt="logo" width="117" height="35">
+                  </picture>
+                </div>
+                <div class="logo-tb logovs">
+                  <picture>
+                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-03.svg"
+                      alt="logo" width="122" height="35">
+                  </picture>
+                </div>
+                <div class="logo-tb logovs">
+                  <picture>
+                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-04.svg"
+                      alt="logo" width="116" height="35">
+                  </picture>
+                </div>
+                <div class="logo-tb logovs">
+                  <picture>
+                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-05.svg"
+                      alt="logo" width="116" height="35">
+                  </picture>
+                </div>
+              </div>
+              <div class="tab-contents active" id="tb-time">
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Screenshot Capturing (Individual)</p>
+	                </div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Apps & URL Tracking</p>
+	                </div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column">Limited</div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Productive & Unproductive</p>
+	                </div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Stealth Mode</p>
+	                </div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column">Limited</div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Screenshot delete</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+              </div>
+              <div class="tab-contents" id="tb-productivity">
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+              </div>
+              <div class="tab-contents" id="tb-project">
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+              </div>
+              <div class="tab-contents" id="tb-attendance">
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+	              <div class="table-row">
+	                <div class="ws-column ws-lftcolumn">
+	                  <p>Task Management</p>
+	                </div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="cross-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	                <div class="ws-column"><i class="check-icon"></i></div>
+	              </div>
+              </div>
+              <div class="table-row price-table-row">
+                <div class="ws-column ws-lftcolumn">
+                  <p><strong>Pricing</strong></p>
+                </div>
+                <div class="ws-column"><strong>$345</strong>
+                  <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$345</strong>
+                <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$345</strong>
+                <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$345</strong><span class="small-font">(Per user)</span></div>
+                <div class="ws-column"><strong>$345</strong><span class="small-font">(Per user)</span></div>
+              </div>
+              <div class="table-row numeric-row">
+                <div class="ws-column ws-lftcolumn">
+                  <p><strong>Calculative Comparison</strong></p>
+                  <div class="custom-input">
+                    <input type="number" id="quantity" value="10" min="1">
+                    <div class="custom-buttons">
+                      <button class="up" onclick="increaseValue()"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar01.svg" alt="Workstatus" width="13" height="8"></button>
+                      <button class="down" onclick="decreaseValue()"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar02.svg" alt="Workstatus" width="13" height="8"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="ws-column active"><strong>$55</strong>
+                  <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$55</strong>
+                  <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$55</strong>
+                  <span class="small-font">(Per user)</span>
+                </div>
+                <div class="ws-column"><strong>$55</strong>    <span class="small-font">(Per user)</span></div>
+                <div class="ws-column"><strong>$55</strong>    <span class="small-font">(Per user)</span></div>
+              </div>
+            </div>
+            <div class="view-more margin-t-50 text-center">
+              <a href="javascript:void(0);" onclick="_morecompTable();" class="active">
+              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-img2.svg" alt="Workstatus" width="50" height="50">
+              </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="actionBtn">
+  <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">Start Free Trial</a>
+    <small>No credit card required</small>
+  </div>
+  <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
+    <small>Get queries answered from experts</small>
+  </div>
+</div>
+</div>
+</section>
+
 
 <?php 
 $driv = get_field('data-driven');
