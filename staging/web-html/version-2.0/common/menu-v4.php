@@ -7,6 +7,9 @@
             <img class="light" loading="lazy" src="./assests/header-images/logo-white.svg" alt="Workstatus" width="230" height="31">
             <img class="dark" loading="lazy" src="./assests/header-images/logo-dark.svg" alt="Workstatus" width="230" height="31">
           </div>
+          <div class="small">
+            <img loading="lazy" src="./assests/header-images/logo-small.png" alt="Workstatus" width="80" height="80">
+          </div>
         </a>
         <div class="hamberger-menu">
           <div class="bar1"></div>
