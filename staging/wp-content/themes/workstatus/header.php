@@ -149,14 +149,19 @@
       body.page-template-page-templatestpl-tools-comparison-php .price span,
       body.page-template-page-templatestpl-tools-comparison-php .prloc span{display: none;}
       
-      body.locate-ind .prloc span.spn-local,
+      body.locate-ind span.spn-local,
       body.locate-ind .price span.spn-local,
-      body.locate-int .prloc span.spn-int,
+      body.locate-int span.spn-int,
       body.locate-int .price span.spn-int{display:block;}      
       
       body.locate-int span.spn-ind, 
       body.locate-int span.spn-local,
       body.locate-ind span.spn-intr{display:none;}
+
+      
+  
+
+     
      
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; 
       background: #faf8fe; padding: 25px; margin:0 0 25px;}
@@ -166,7 +171,7 @@
       }
       #inv-price-fltr .country-select{display:none!important;}
       
-      .header-two .header-item-right .menu ul li .menu-mega{top:136%;}
+      .header-two .header-item-right .menu ul li .menu-mega{top:135%;}
       .client-img-section .why-ws .right-box .why-left .plateform{min-height:290px;}
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
       .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active{margin-top: 20px;}
