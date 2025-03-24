@@ -1114,6 +1114,8 @@ textarea {
     opacity: 0; }
     .header-two.header-bg .header-item-right .menu ul li.menu-item-has-children a {
       color: #05164d; }
+      .header-two.header-bg .header-item-right .menu ul li.menu-item-has-children a:before {
+        background: url(../header-images/angle-icon.svg) no-repeat; }
     .header-two.header-bg .header-item-right .cta-wrap .btn-sec .btn {
       border-color: rgba(5, 22, 77, 0.08); }
   .header-two.header-bg.sc-up {
@@ -4853,7 +4855,7 @@ li.iti__country {
         .table-tab .tab-wrap .tcontents .numeric-table .view-more a img {
           width: 100%;
           vertical-align: middle; }
-    .table-tab .tab-wrap .tcontents .numeric-table.active .table-block .table-row:nth-child(n + 9) {
+    .table-tab .tab-wrap .tcontents .numeric-table.active .table-block .table-row:nth-child(n + 7) {
       display: -ms-grid;
       display: grid; }
     .table-tab .tab-wrap .tcontents .numeric-table.active .view-more a img {

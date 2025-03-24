@@ -705,6 +705,7 @@ $font16: 16px;
         &.menu-item-has-children {
           a {
             color: $darkcolor;
+            &:before{background: url(../header-images/angle-icon.svg) no-repeat;}
           }
         }
       }

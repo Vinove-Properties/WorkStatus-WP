@@ -496,6 +496,8 @@
     opacity: 0; }
     .header-two.header-bg .header-item-right .menu ul li.menu-item-has-children a {
       color: #05164d; }
+      .header-two.header-bg .header-item-right .menu ul li.menu-item-has-children a:before {
+        background: url(../header-images/angle-icon.svg) no-repeat; }
     .header-two.header-bg .header-item-right .cta-wrap .btn-sec .btn {
       border-color: rgba(5, 22, 77, 0.08); }
   .header-two.header-bg.sc-up {
