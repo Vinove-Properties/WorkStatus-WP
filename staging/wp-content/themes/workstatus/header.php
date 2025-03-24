@@ -156,7 +156,7 @@
       
       body.locate-int span.spn-ind, 
       body.locate-int span.spn-local,
-      body.locate-ind span.spn-intr{display:none;}
+      body.locate-ind span.spn-int{display:none;}
 
       
   
