@@ -1321,6 +1321,7 @@ $font16: 16px;
                       }
                       .three-column {
                         width: 100%;
+                        &:after{display:none;}
                       }
 
                       .title {

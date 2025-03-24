@@ -214,6 +214,9 @@
                 <img class="light" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-white.svg" alt="Workstatus" width="400" height="75">
                 <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-dark.svg" alt="Workstatus" width="400" height="75">
               </div>
+              <div class="small">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/header-images/logo-small.png" alt="Workstatus" width="80" height="80">
+          </div>
             </a>
             <div class="hamberger-menu">
               <div class="bar1"></div>
