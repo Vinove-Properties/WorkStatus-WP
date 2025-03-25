@@ -233,6 +233,7 @@
               h3 {
                 color: $white;
               }
+              
             }
             .prplan {
               background: rgba(209, 201, 255, 0.5);
@@ -319,6 +320,8 @@
             .text-column {
               padding: 20px;
 
+              &.no-evt{padding:10px 0 0;}
+
               ul {
                 margin: 15px 0 0;
                 li {
@@ -338,7 +341,7 @@
               }
             }
             .prplan {
-              padding: 10px 20px;
+              padding: 10px;
             }
           }
         }
