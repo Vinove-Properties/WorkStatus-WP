@@ -159,9 +159,9 @@
       body.locate-ind span.spn-int{display:none;}
 
       
-      body.locate-ind .spn-intr{display:none;}
+      body.locate-ind .spn-intr,  body.locate-int .spn-ind {display:none;}
 
-     
+      body.locate-ind .spn-ind,  body.locate-int .spn-intr{display:block;}
      
       body.page-template-tpl-tools-comparison .benifits-section .column-three{flex-basis: 32%; border-radius: 10px; 
       background: #faf8fe; padding: 25px; margin:0 0 25px;}
