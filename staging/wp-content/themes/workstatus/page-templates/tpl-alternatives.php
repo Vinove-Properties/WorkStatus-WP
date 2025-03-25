@@ -124,8 +124,8 @@ $tbl = $compCol['cards'];
                   <div class="custom-input">
                     <input type="number" id="alt-qty" value="10" min="1">
                     <div class="custom-buttons">
-                      <button class="up" onclick="document.getElementById('alt-qty').stepUp();"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar01.svg" alt="Workstatus" width="13" height="8"></button>
-                      <button class="down" onclick="document.getElementById('alt-qty').stepDown();"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar02.svg" alt="Workstatus" width="13" height="8"></button>
+                      <button class="up" onclick="document.getElementById('alt-qty').stepUp();updateCalcEvt(document.getElementById('alt-qty').value);"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar01.svg" alt="Workstatus" width="13" height="8"></button>
+                      <button class="down" onclick="document.getElementById('alt-qty').stepDown();updateCalcEvt(document.getElementById('alt-qty').value);"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar02.svg" alt="Workstatus" width="13" height="8"></button>
                     </div>
                   </div>
                 </div>
