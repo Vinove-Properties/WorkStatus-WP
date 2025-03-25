@@ -72,7 +72,7 @@ $tbl = $compCol['cards'];
                 <div class="logo-tb logovs">
                   <picture>
                     <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-01.svg"
-                      alt="logo" width="116" height="35">
+                      alt="logo" width="194" height="36">
                   </picture>
                 </div>
 
