@@ -214,7 +214,7 @@ if( isset($whyWs['required']) && ($whyWs['required'] == "yes") ){
 $user_guide_section = get_field('user_guide_section');
 if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabled'] == "yes") ){ 
 ?>
-<section class="userguide">
+<section class="userguide padding-t-120">
   <div class="container">
     <div class="top-section">
       <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
