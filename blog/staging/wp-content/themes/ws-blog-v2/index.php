@@ -94,12 +94,13 @@ $catBlockThree  = get_field('row-c3', 'option');
     <div class="cta-flex">
       <div class="custom-left">
         <picture>
-          <img loading="lazy"  src="<?php echo get_template_directory_uri(); ?>/dev-images/cta-image.svg" alt="workstatus" width="214" height="176">
+          <img loading="lazy"  src="<?php bloginfo('template_url'); ?>/dev-images/inv-cta-image.svg" alt="Invoicera" 
+          width="214" height="176">
         </picture>
         <div class="cus-cont">
-          <div class="cushed">Elevate Projects with Top Management Tools</div>
+          <div class="cushed">Automate Billing Process, Simplify Operations with Invoicera</div>
           <div class="btn-container">
-            <a href="javascript:void(0);" class="white-btn blue pxl-ext" onclick="return get_ws_signupform(1, 'monthly');">Start Free Trial</a>
+            <a href="https://www.invoicera.com/" target="_blank" class="white-btn blue pxl-ext">Start Free Trial</a>
           </div>
         </div>
       </div>
