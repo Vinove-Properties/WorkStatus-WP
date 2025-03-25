@@ -253,23 +253,23 @@ function submenuback() {
 }
 
 function innermenu(e, id){
-	var sm = document.getElementById(id);
-	e.classList.toggle('active');
-	if (sm.style.display === "block") {
-	  sm.style.display = "none";
-	} else {
-	  sm.style.display = "block";
+    var sm = document.getElementById(id);
+    e.classList.toggle('active');
+    if (sm.style.display === "block") {
+      sm.style.display = "none";
+    } else {
+      sm.style.display = "block";
   }
 }
 if(document.querySelector(".hamberger-menu")){
     document.querySelector('.hamberger-menu').onclick = function (e) {
-    	var nav = document.querySelector('.hamberger-menu');
-    	nav.classList.toggle('open-close');
+        var nav = document.querySelector('.hamberger-menu');
+        nav.classList.toggle('open-close');
         vmRestDefault();
         vmRestHireDefault();
         vmRestSerDefault();
         vmRestSubDefault();
-    	e.preventDefault();
+        e.preventDefault();
     }
 }
 
@@ -407,21 +407,25 @@ if( menuItemElm ){
 // pricing table on Mobile show//
 function mobileTable(data,id) {
     data.classList.toggle("active");
-	var element = document.getElementById(id);
-	element.classList.toggle("open");
+    var element = document.getElementById(id);
+    element.classList.toggle("open");
  } 
 
 // Banner Contact Button//
 function myChat() {
-	var element = document.getElementById("myContacts");
-	element.classList.toggle("open");
+    var element = document.getElementById("myContacts");
+    element.classList.toggle("open");
  } 
  
 // tabs//
 var tabLabels   = document.querySelectorAll("#tabs li");
 var tabPanes    = document.getElementsByClassName("tab-contents");
-function activateTab(e) {
+function activateTab(e){
   e.preventDefault();  
+  var elmTitle =  e.target.getAttribute("title");
+  if( elmTitle && document.getElementById("comp-cat-title") ){
+    document.getElementById("comp-cat-title").innerHTML = elmTitle;
+  }
   // Deactivate all tabs
   tabLabels.forEach(function(label, index){
     label.classList.remove("active");
@@ -433,6 +437,7 @@ function activateTab(e) {
   e.target.parentNode.classList.add("active");
   var clickedTab = e.target.getAttribute("href");
   document.querySelector(clickedTab).classList.add("active");
+
 }
 
 // Apply event listeners
@@ -2518,4 +2523,28 @@ gliderElement.addEventListener("glider-slide-visible", function (event) {
 });
 }
 });
+}
+
+const altQty = document.getElementById("alt-qty");
+if (altQty) {
+    altQty.addEventListener("change", function () {
+    const columns       = document.querySelectorAll("#ws-pricing-row .ws-column");
+    const colSetters    = document.querySelectorAll(".price-setter");
+    const userNumber    = this.value;
+    columns.forEach((column, index) => {
+        if (!column.classList.contains("ws-lftcolumn")) {
+
+            const amt = column.getAttribute("data-amt");
+            if (amt) {
+                const prices = amt.split("|");
+                const elmPrice = document.body.classList.contains("locate-int") ? prices[0].trim() : prices[1]?.trim();
+                const currency = document.body.classList.contains("locate-int") ? "$" : "₹";
+                const userPricing = parseFloat(elmPrice*userNumber).toFixed(2);
+                if(colSetters[index-1]) {
+                    colSetters[index-1].innerHTML = currency+userPricing;
+                }
+            }
+        }
+    });
+    });
 }
