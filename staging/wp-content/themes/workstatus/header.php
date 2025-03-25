@@ -159,7 +159,7 @@
       body.locate-ind span.spn-int{display:none;}
 
       
-  
+      body.locate-ind .spn-intr{display:none;}
 
      
      
