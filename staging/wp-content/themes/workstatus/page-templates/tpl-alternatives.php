@@ -209,6 +209,49 @@ if( isset($whyWs['required']) && ($whyWs['required'] == "yes") ){
 }
 ?>
 <?php get_template_part('common/cmn', 'workplaces', ['elm-class' => 'workplace-section bg-blue padding-t-120 padding-b-120' ]); ?>
+
+<?php  
+$user_guide_section = get_field('user_guide_section');
+if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabled'] == "yes") ){ 
+?>
+<section class="userguide">
+  <div class="container">
+    <div class="top-section">
+      <h6><span class="bg-purple"><?php echo $user_guide_section['heading']; ?></span></h6>
+      <?php echo $user_guide_section['sub_heading']; ?>
+    </div>
+    <div class="buyers-guide-section" id="div-buyer-guide">
+      <div class="buyers-guide">
+        <div class="buyers-guide-question" id="buyers-guide-question">
+          <ul class="question-list">
+            <?php 
+            if( $user_guide_section['qna'] ){  $i = 1;
+            foreach( $user_guide_section['qna'] as $row ) {
+            $active = ($i==1) ? "active" : "";
+            ?>
+            <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
+            </li>
+            <?php $i++; } } ?>
+          </ul>
+        </div>
+        <div class="buyers-guide-answer-part" id="buyers-guide-answer-part">
+        <?php 
+        if( $user_guide_section['qna'] ){  $i = 1;
+        foreach( $user_guide_section['qna'] as $row ) {
+        $active = ($i==1) ? "active" : "";
+        ?>
+        <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
+        <h3 class="guide-question"><?php echo $row['question']; ?></h3>
+        <div class="guide-answer"><?php echo $row['answer']; ?></div>
+        </div>
+        <?php $i++; } } ?>                  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php } ?>
+
 <?php  
 $faq = get_field('faq');
 if( isset($faq['is_enabled']) && ($faq['is_enabled'] == "yes") ) :
