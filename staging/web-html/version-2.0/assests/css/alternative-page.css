@@ -5820,6 +5820,130 @@ li.iti__country {
     background-color: rgba(156, 156, 156, 0.25);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.25);
     box-shadow: 0 0 1px rgba(255, 255, 255, 0.25); } }
+.userguide .buyers-guide-section .buyers-guide {
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap; }
+  .userguide .buyers-guide-section .buyers-guide .buyers-guide-question {
+    float: left;
+    margin-right: 50px;
+    width: 340px;
+    background-color: #fff;
+    margin-top: 0; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list {
+      padding: 0;
+      overflow: auto;
+      border-right: 1px solid #ededed; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list li {
+        position: relative; }
+        .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list li a {
+          color: #2d2d2d;
+          font-weight: 500;
+          text-decoration: none;
+          padding: 10px;
+          display: block; }
+          .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list li a.active {
+            background: #f5f3fe; }
+            .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list li a.active:after {
+              content: "";
+              width: 5px;
+              height: 100%;
+              background: #624de3;
+              border-radius: 100px;
+              position: absolute;
+              top: 0;
+              right: 0; }
+          .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list li a.hover {
+            background: #f5f3fe; }
+  .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part {
+    width: calc(100% - 390px);
+    float: right; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer {
+      border-bottom: 1px solid #ededed;
+      padding: 0 0 20px;
+      margin-top: -50px; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer .aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer h3 {
+        margin-bottom: 0;
+        padding-top: 80px;
+        padding-bottom: 20px; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer .alignleft {
+        margin: 0px 40px 40px 0; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer .alignright {
+        margin: 0px 40px 40px 0; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer img {
+        margin: 40px 0; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer:last-child {
+        border-bottom: none;
+        margin-bottom: 0; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part ul.listype strong {
+      color: #333333; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part ul.listype strong li {
+        margin: 0 0 18px; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part p strong {
+      color: #333333; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer h3 {
+      padding: 10px 0 12px;
+      margin: 0 !important; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer h4 {
+      padding: 0 0 5px;
+      line-height: 26px;
+      margin: 0 !important; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer ul {
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 20px; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer ul li {
+        list-style: disc !important;
+        color: #5e6373;
+        margin: 0 0 5px; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer ol {
+      padding-left: 0; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer strong {
+      color: #333333; }
+.userguide .buyers-guide-question.sticky {
+  position: fixed;
+  top: 80px; }
+.userguide .buyers-guide-question.sticky.btomfixed {
+  bottom: 100px;
+  top: auto;
+  position: absolute; }
+.userguide .company-listing .pagination-block,
+.userguide .software-listing .pagination-block {
+  padding: 5px 0 15px; }
+.userguide .buyers-guide-answer a {
+  color: #624de3; }
+.userguide .guide-answer a:hover {
+  color: #2d2d2d; }
+
+@media (max-width: 979px) {
+  .userguide .buyers-guide-section .buyers-guide {
+    flex-wrap: wrap; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-question {
+      width: 100%;
+      margin-right: 0; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-question .question-list {
+        border: 1px solid #ededed; }
+    .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part {
+      width: 100%;
+      float: right; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer {
+        padding: 0 0 15px;
+        margin-top: 0; }
+        .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer h3 {
+          padding-top: 30px;
+          padding-bottom: 20px; }
+        .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer .alignleft {
+          margin: 0px 20px 20px 0; }
+        .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer .alignright {
+          margin: 0px 20px 20px 0; }
+        .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer img {
+          margin: 25px 0; }
+      .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part ul.listype strong li {
+        margin: 0 0 15px; } }
 .testimonial-section .testimonial-slider {
   position: relative;
   width: 52%; }
