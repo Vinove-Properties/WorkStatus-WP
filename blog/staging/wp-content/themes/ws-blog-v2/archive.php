@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php get_template_part('inc/cmn', 'filter'); ?>
 <section class="hero-banner in-banner">
 <div class="container">
 <div class="inner-wrap">
