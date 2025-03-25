@@ -287,8 +287,8 @@ if( isset($faq['is_enabled']) && ($faq['is_enabled'] == "yes") ) :
    </div>
 </section>
 <?php endif; ?>
-<?php //get_template_part('common/home', 'testimonials', ['bg' => 'none']); ?>
-<?php //require_once get_template_directory() .'/common/all-brands.php';?>
-<?php //require_once get_template_directory() .'/common/workstatus-journey-straight.php';?>
+<?php get_template_part('common/cmn', 'testimonial'); ?>
+  <?php get_template_part('common/cmn', 'globalrating'); ?>
+  <?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>
