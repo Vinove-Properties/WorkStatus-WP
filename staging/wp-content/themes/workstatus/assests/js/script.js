@@ -2519,3 +2519,15 @@ gliderElement.addEventListener("glider-slide-visible", function (event) {
 }
 });
 }
+
+const altQty = document.getElementById("alt-qty");
+if( altQty ){
+altQty.addEventListener( 'change', function(){
+    console.log(this.value);
+    // if( this.value !== "" ){
+    //     showSucces( su_pcode );
+    // }else{
+    //     showError( su_pcode, "Pleasee select country code." )
+    // }  
+});
+}
