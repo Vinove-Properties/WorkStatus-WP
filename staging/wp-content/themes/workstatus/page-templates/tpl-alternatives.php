@@ -143,14 +143,9 @@ $tbl = $compCol['cards'];
   </div>
 </div>
 
-<div class="actionBtn">
-  <div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform(this);">Start Free Trial</a>
-    <small>No credit card required</small>
-  </div>
-  <div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn2 formbtn">Book A Demo</a>
-    <small>Get queries answered from experts</small>
-  </div>
-</div>
+<div class="actionBtn"><div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
+	<small>Get queries answered from experts</small></div>
+	<div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="primary_btn2" onclick="return get_ws_signupform(this);">Start Free Trial</a><small>No credit card required</small></div></div>
 </div>
 </section>
 <?php endif; ?>
