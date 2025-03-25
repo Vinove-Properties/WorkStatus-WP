@@ -1222,22 +1222,48 @@ function getAlternateData( $tbl, $category = "time" ){
     return $elm;
 }
 
+function replaceCrSymbols($string) {
+    $symbols = ["$", "₹"];
+    return str_replace($symbols, "", $string);
+}
 
 function getAlternatePricing( $col ){
 	$postFix    = '<span class="small-font">(Per user / Month)</span>';
 	$lstPricing = '<strong>Pricing</strong>';
 
+	$colWs  = '<strong class="prloc">'.locatePricing($col['ws-pricing']).'</strong>';
 	$colOne = '<strong class="prloc">'.locatePricing($col['t1-pricing']).'</strong>';
 	$colTwo = '<strong class="prloc">'.locatePricing($col['t2-pricing']).'</strong>';
 	$colThr = '<strong class="prloc">'.locatePricing($col['t3-pricing']).'</strong>';
 	$colFor = '<strong class="prloc">'.locatePricing($col['t4-pricing']).'</strong>';
-	$colWs  = '<strong class="prloc">'.locatePricing($col['ws-pricing']).'</strong>';
-
+	
 	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>
-	<div class="ws-column">'.$colWs.$postFix.'</div>
-	<div class="ws-column">'.$colOne.$postFix.'</div>
-	<div class="ws-column">'.$colTwo.$postFix.'</div>
-	<div class="ws-column">'.$colThr.$postFix.'</div>
-	<div class="ws-column">'.$colFor.$postFix.'</div>';	
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.$postFix.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t2-pricing']).'">'.$colTwo.$postFix.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t3-pricing']).'">'.$colThr.$postFix.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t4-pricing']).'">'.$colFor.$postFix.'</div>';	
+    return $elm;
+}
+
+function _priceFormat($number) {
+    if (!is_numeric($number)) {
+        return "0.00";
+    }
+    return number_format((float)$number, 2, '.', '');
+}
+
+function _locatePricing( $str ){
+  $str 	= replaceCrSymbols( $str );
+  $exp  = explode("|", $str);
+  return ( is_array( $exp ) && (count($exp) > 1)  ) ? '<span class="spn-int">$'._priceFormat($exp[0]*10).'</span><span class="spn-local">₹'._priceFormat($exp[1]*10).'</span>' : $str;
+}
+
+function getAltPricingCalc( $col ){
+	$elm = '<div class="ws-column active"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+    <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+    <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+    <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+    <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>';
     return $elm;
 }
