@@ -4801,7 +4801,7 @@ li.iti__country {
             .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.numeric-row .ws-column.ws-lftcolumn .custom-input input {
               width: 100%;
               height: 35px;
-              padding: 5px 10px;
+              padding: 5px 25px 5px 10px;
               font-size: 16px;
               text-align: left;
               border: 1px solid #a293ff;
