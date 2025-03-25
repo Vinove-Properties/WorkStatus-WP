@@ -4423,10 +4423,12 @@ li.iti__country {
         opacity: 1; }
       .header-two.header-bg.sc-up .header-item-right {
         opacity: 1; }
-    .header-two.header-bg.sc-down .small {
-      opacity: 0; }
-    .header-two.header-bg.sc-down .large {
-      opacity: 1; }
+    .header-two.header-bg.sc-down {
+      background: #4231ac !important; }
+      .header-two.header-bg.sc-down .small {
+        opacity: 0; }
+      .header-two.header-bg.sc-down .large {
+        opacity: 1; }
     .header-two:hover {
       background: #4231ac !important; }
       .header-two:hover .header-item-left {
