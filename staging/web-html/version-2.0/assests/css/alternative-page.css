@@ -6623,18 +6623,27 @@ li.iti__country {
   .hero-banner:after {
     content: "";
     width: 100%;
-    background: url(../images/inner-banner-bg.png) no-repeat;
+    background: url(../images/ftbtm-shape.png) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -170px;
+    height: 270px;
+    background-size: 100% 100%; }
+    @media screen and (max-width: 575px) {
+      .hero-banner:after {
+        display: none; } }
+  .hero-banner:before {
+    content: "";
+    width: 100%;
+    background: url(../images/alt-shape.png) no-repeat;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 252px;
+    height: 690px;
     background-size: 100% 100%; }
-    @media screen and (max-width: 1023px) {
-      .hero-banner:after {
-        height: 200px; } }
     @media screen and (max-width: 575px) {
-      .hero-banner:after {
-        height: 100px; } }
+      .hero-banner:before {
+        display: none; } }
   .hero-banner .inner-wrap {
     color: #fff;
     text-align: center; }
