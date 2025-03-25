@@ -2525,26 +2525,30 @@ gliderElement.addEventListener("glider-slide-visible", function (event) {
 });
 }
 
-const altQty = document.getElementById("alt-qty");
-if (altQty) {
-    altQty.addEventListener("change", function () {
+function updateCalcEvt(userNumber){
     const columns       = document.querySelectorAll("#ws-pricing-row .ws-column");
     const colSetters    = document.querySelectorAll(".price-setter");
-    const userNumber    = this.value;
+    
     columns.forEach((column, index) => {
-        if (!column.classList.contains("ws-lftcolumn")) {
+    if (!column.classList.contains("ws-lftcolumn")) {
 
-            const amt = column.getAttribute("data-amt");
-            if (amt) {
-                const prices = amt.split("|");
-                const elmPrice = document.body.classList.contains("locate-int") ? prices[0].trim() : prices[1]?.trim();
-                const currency = document.body.classList.contains("locate-int") ? "$" : "₹";
-                const userPricing = parseFloat(elmPrice*userNumber).toFixed(2);
-                if(colSetters[index-1]) {
-                    colSetters[index-1].innerHTML = currency+userPricing;
-                }
-            }
+    const amt = column.getAttribute("data-amt");
+    if (amt) {
+        const prices = amt.split("|");
+        const elmPrice = document.body.classList.contains("locate-int") ? prices[0].trim() : prices[1]?.trim();
+        const currency = document.body.classList.contains("locate-int") ? "$" : "₹";
+        const userPricing = parseFloat(elmPrice*userNumber).toFixed(2);
+        if(colSetters[index-1]) {
+            colSetters[index-1].innerHTML = currency+userPricing;
         }
+    }
+    }
     });
+}
+
+const altQty = document.getElementById("alt-qty");
+if (altQty) {
+    altQty.addEventListener("change", function(){
+        updateCalcEvt(this.value);
     });
 }
