@@ -203,10 +203,7 @@ if( $compFt['cards'] ){
 	foreach ($compFt['cards'] as $row){
 		echo ' <div class="alternative-wrapper  padding-t-120 padding-b-120">
 		<div class="container">
-		<div class="top-section text-center">
-		<h6><span class="bg-purple">'.$row['title'].'</span></h6>
-		'.$row['content'].'
-		</div>
+		<div class="top-section text-center">'.$row['content'].'</div>
 		<div class="feature-loop">
 		<div class="feature-row">
 		  <div class="column-left">'.pxlGetPtag($row['image']).'</div>
