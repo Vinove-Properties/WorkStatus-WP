@@ -142,10 +142,12 @@ $tbl = $compCol['cards'];
     </div>
   </div>
 </div>
-
-<div class="actionBtn"><div><a href="javascript:void(0)" onclick="call_demows();" class="primary_btn1">Book A Demo</a>
-	<small>Get queries answered from experts</small></div>
-	<div><a data-href="https://app.workstatus.io/auth/register/?pid=42&amp;type=monthly" href="javascript:void(0);" class="primary_btn2" onclick="return get_ws_signupform(this);">Start Free Trial</a><small>No credit card required</small></div></div>
+<div style="text-align: center; margin-top: 80px;">
+<h2>See Why 1000+ Businesses Switched to Workstatus!</h2>
+<p>Project visibility, Organized Tasks, More Profit</p>
+</div>
+<div class="actionBtn" style="margin-top: 40px;">
+<?php echo cmnBannerCta(); ?>
 </div>
 </section>
 <?php endif; ?>
@@ -161,7 +163,7 @@ $tbl = $compCol['cards'];
       <div class="data-flex">
         <div class="column challenges">
           <div class="head-data">
-            <div class="step-number">1</div>
+            <!-- <div class="step-number">1</div> -->
             <h3>Hubstaff Limitations</h3>
           </div>
           <ul>
@@ -180,7 +182,7 @@ $tbl = $compCol['cards'];
         </div>
         <div class="column solutions">
           <div class="head-data">
-            <div class="step-number">3</div>
+            <!-- <div class="step-number">3</div> -->
             <h3>Why Workstatus</h3>
           </div>
           <ul>
