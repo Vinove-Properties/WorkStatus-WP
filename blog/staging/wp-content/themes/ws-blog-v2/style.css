@@ -1367,6 +1367,7 @@ h5 {
         }
         .blog-wrap{width:100%; margin:0;}
         body form.search-form input.search-field{font-family: sans-serif;}
+        .search  .hero-banner.in-banner{padding-top:200px;}
         body,
         p {
          line-height: 24px;
