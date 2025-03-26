@@ -94,8 +94,8 @@ $catBlockThree  = get_field('row-c3', 'option');
     <div class="cta-flex">
       <div class="custom-left">
         <picture>
-          <img loading="lazy"  src="<?php bloginfo('template_url'); ?>/dev-images/inv-cta-image.svg" alt="Invoicera" 
-          width="214" height="176">
+          <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/inv-cta-image.svg" 
+          alt="Invoicera" width="214" height="176">
         </picture>
         <div class="cus-cont">
           <div class="cushed">Automate Billing Process, Simplify Operations with Invoicera</div>
