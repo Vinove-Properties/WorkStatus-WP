@@ -226,10 +226,10 @@
                               <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong>
-                            <span class="small-font">(Per user)</span>
+                              <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong>
-                            <span class="small-font">(Per user)</span>
+                              <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong><span class="small-font">(Per user)</span></div>
                             <div class="ws-column"><strong>$345</strong><span class="small-font">(Per user)</span></div>
@@ -430,13 +430,13 @@
                               <p><strong>Pricing</strong></p>
                             </div>
                             <div class="ws-column"><strong>$345</strong>
-                                  <span class="small-font">(Per user)</span>
+                              <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong>
-                                  <span class="small-font">(Per user)</span>
+                              <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong>
-                                  <span class="small-font">(Per user)</span>
+                              <span class="small-font">(Per user)</span>
                             </div>
                             <div class="ws-column"><strong>$345</strong>    <span class="small-font">(Per user)</span></div>
                             <div class="ws-column"><strong>$345</strong>    <span class="small-font">(Per user)</span></div>
@@ -486,7 +486,7 @@
             </div>
           </div>
         </section>
-        <section class="alter-section padding-0">
+        <section class="data-driving">
           <div class="container">
             <div class="top-section">
               <h6><span class="bg-purple">Data Driving Results</span></h6>
@@ -494,66 +494,42 @@
               <p>Switch from Hubstaff to Workstatus for smarter time tracking, better automation, and a hassle-free<br> experience. Get more control with less effort.
               </p>
             </div>
-            <div class="data-flow">
-              <picture>
-                <img loading="lazy" src="./assests/images/allft-01.svg" alt="Data Driving"
-                  width="1354" height="698">
-              </picture>
+            <div class="data-flex">
+              <div class="column challenges">
+                <div class="head-data">
+                  <div class="step-number">1</div>
+                  <h3>Hubstaff Limitations</h3>
+                </div>
+                <ul>
+                  <li>Comprehensive monitoring</li>
+                  <li>Productivity insights</li>
+                  <li>Real-time tracking</li>
+                  <li>Detailed reports</li>
+                  <li>Insider threat detection</li>
+                </ul>
+              </div>
+              <div class="column analyze">
+                <div class="analyze-button">
+                  <div class="play-icon"> <img loading="lazy" src="./assests/images/center-image.svg" alt="play" width="270" height="270">
+                  </div>
+                </div>
+              </div>
+              <div class="column solutions">
+                <div class="head-data">
+                  <div class="step-number">3</div>
+                  <h3>Why Workstatus</h3>
+                </div>
+                <ul>
+                  <li>Complex setup</li>
+                  <li>Privacy concerns</li>
+                  <li>Limited customization</li>
+                  <li>Higher cost for small teams</li>
+                  <li>Can feel intrusive to employees</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
-
-
-
-        <section class="data-driving">
-   <div class="container">
-   <div class="top-section">
-              <h6><span class="bg-purple">Data Driving Results</span></h6>
-              <h2>Why Switch from Hubstaff?</h2>
-              <p>Switch from Hubstaff to Workstatus for smarter time tracking, better automation, and a hassle-free<br> experience. Get more control with less effort.
-              </p>
-            </div>
-      <div class="data-flex">
-         <div class="column challenges">
-            <div class="head-data">
-               <div class="step-number">1</div>
-               <h3>Hubstaff Limitations</h3>
-            </div>
-            <ul>
-               <li>Comprehensive monitoring</li>
-               <li>Productivity insights</li>
-               <li>Real-time tracking</li>
-               <li>Detailed reports</li>
-               <li>Insider threat detection</li>
-            </ul>
-         </div>
-         <div class="column analyze">
-          
-            <div class="analyze-button">
-               <div class="play-icon"> <img loading="lazy" src="./assests/images/center-image.svg" alt="play" width="270" height="270">
-               </div>
-            </div>
-         </div>
-         <div class="column solutions">
-            <div class="head-data">
-               <div class="step-number">3</div>
-               <h3>Why Workstatus</h3>
-            </div>
-            <ul>
-               <li>Complex setup</li>
-               <li>Privacy concerns</li>
-               <li>Limited customization</li>
-               <li>Higher cost for small teams</li>
-               <li>Can feel intrusive to employees</li>
-            </ul>
-         </div>
-      </div>
-   </div>
-</section>
-
-
-
-
         <section class="alternative-section">
           <div class="alternative-wrapper  padding-t-120 padding-b-120">
             <div class="container">

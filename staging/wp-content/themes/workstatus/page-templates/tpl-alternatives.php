@@ -150,19 +150,64 @@ $tbl = $compCol['cards'];
 </section>
 <?php endif; ?>
 
-<?php 
-$driv = get_field('data-driven');
-if( isset($driv['required']) && ($driv['required'] == "yes") ){
-	echo '<section class="alter-section padding-0">
-	<div class="container">
-	<div class="top-section">
-	  <h6><span class="bg-purple">'.$driv['title'].'</span></h6>
-	  '.$driv['content'].'
-	</div>
-	<div class="data-flow">'.pxlGetPtag($driv['image']).'</div>
-	</div>
-	</section>';
-}
+<section class="data-driving">
+          <div class="container">
+            <div class="top-section">
+              <h6><span class="bg-purple">Data Driving Results</span></h6>
+              <h2>Why Switch from Hubstaff?</h2>
+              <p>Switch from Hubstaff to Workstatus for smarter time tracking, better automation, and a hassle-free<br> experience. Get more control with less effort.
+              </p>
+            </div>
+            <div class="data-flex">
+              <div class="column challenges">
+                <div class="head-data">
+                  <div class="step-number">1</div>
+                  <h3>Hubstaff Limitations</h3>
+                </div>
+                <ul>
+                  <li>Comprehensive monitoring</li>
+                  <li>Productivity insights</li>
+                  <li>Real-time tracking</li>
+                  <li>Detailed reports</li>
+                  <li>Insider threat detection</li>
+                </ul>
+              </div>
+              <div class="column analyze">
+                <div class="analyze-button">
+                  <div class="play-icon"> <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/center-image.svg" alt="play" width="270" height="270">
+                  </div>
+                </div>
+              </div>
+              <div class="column solutions">
+                <div class="head-data">
+                  <div class="step-number">3</div>
+                  <h3>Why Workstatus</h3>
+                </div>
+                <ul>
+                  <li>Complex setup</li>
+                  <li>Privacy concerns</li>
+                  <li>Limited customization</li>
+                  <li>Higher cost for small teams</li>
+                  <li>Can feel intrusive to employees</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $compFt = get_field('comp-ft');
 if( isset($compFt['is_enabled']) && $compFt['is_enabled'] == "yes" ){

@@ -5142,8 +5142,8 @@ li.iti__country {
         margin-left: 100px;
         box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1); }
         .data-driving .data-flex .column .head-data .step-number {
-          background-color: #F22F42;
-          border: 1px solid #F22F42;
+          background-color: #f22f42;
+          border: 1px solid #f22f42;
           color: white;
           border-radius: 50%;
           width: 34px;
@@ -5159,7 +5159,8 @@ li.iti__country {
           color: #444b55;
           color: #444b55;
           font-weight: 700;
-          margin: 0; }
+          margin: 0;
+          line-height: 1.3; }
       .data-driving .data-flex .column.solutions ul li:before {
         background: url(../images/checkalt.svg) 0 0 no-repeat; }
       .data-driving .data-flex .column.solutions:before {
@@ -5248,51 +5249,9 @@ li.iti__country {
         position: absolute;
         bottom: -180px; }
 
-.video-popup {
-  width: 100%; }
-  .video-popup .popup-wrapper {
-    z-index: 999;
-    display: none;
-    position: fixed;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.6); }
-    .video-popup .popup-wrapper .popWrap {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .video-popup .popup-wrapper .popWrap .popup-content {
-        width: 60%;
-        height: 500px;
-        box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1);
-        background: #fff;
-        padding: 0;
-        text-align: center;
-        position: relative; }
-  .video-popup .videoIframe {
-    width: 100%;
-    height: 100%;
-    border: 0; }
-  .video-popup .gen-closeicon {
-    background: url(../images/cross-icon.png) no-repeat;
-    right: -34px;
-    top: 3px;
-    width: 30px !important;
-    height: 30px !important;
-    font-size: 0;
-    position: absolute;
-    cursor: pointer; }
-
 @media (max-width: 1440px) {
   .data-driving .data-flex .column {
-    width: 270px; }
+    width: 280px; }
     .data-driving .data-flex .column.solutions ul li {
       padding: 18px 20px 18px 40px; }
     .data-driving .data-flex .column.analyze {
@@ -5305,59 +5264,41 @@ li.iti__country {
   .data-driving .data-flex .column {
     width: 230px; }
     .data-driving .data-flex .column ul li {
-      padding: 18px 20px 18px 40px;
-      min-height: 118px; }
+      padding: 18px 20px 18px 35px;
+      font-size: 12px; }
+      .data-driving .data-flex .column ul li:before {
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        top: 20px; }
     .data-driving .data-flex .column.analyze {
       width: 540px; }
+    .data-driving .data-flex .column .head-data {
+      margin-left: 70px; }
     .data-driving .data-flex .column.challenges:before {
-      left: -110px; } }
+      left: -70px; }
+    .data-driving .data-flex .column.solutions .head-data {
+      margin-left: -70px; }
+    .data-driving .data-flex .column.solutions ul li:before {
+      background-size: 100%; } }
 @media (max-width: 1280px) {
   .data-driving .data-flex .column {
     width: 22%; }
     .data-driving .data-flex .column.analyze {
       width: 40%; }
-      .data-driving .data-flex .column.analyze .analyze-button .play-icon img {
-        width: 200px;
-        height: 200px; }
-      .data-driving .data-flex .column.analyze .analyze-button .playsc {
-        width: 60px;
-        height: 60px;
-        top: 37%;
-        left: 85px; }
-        .data-driving .data-flex .column.analyze .analyze-button .playsc .playicon {
-          top: -28px;
-          left: -84px; }
-          .data-driving .data-flex .column.analyze .analyze-button .playsc .playicon:before {
-            top: -5px;
-            left: -5px;
-            width: 70px;
-            height: 70px; }
-          .data-driving .data-flex .column.analyze .analyze-button .playsc .playicon:hover {
-            top: -26px;
-            transition: 0.4s ease-in-out; }
-            .data-driving .data-flex .column.analyze .analyze-button .playsc .playicon:hover:before {
-              width: 78px;
-              height: 78px;
-              left: -9px;
-              top: -10px; }
       .data-driving .data-flex .column.analyze:before {
         left: -22px; }
       .data-driving .data-flex .column.analyze:after {
-        right: -22px; }
-
-  .video-popup .popup-wrapper .popWrap .popup-content {
-    width: 60%;
-    height: 80%; } }
+        right: -22px; } }
 @media (max-width: 1080px) {
   .data-driving {
-    padding: 0 0 80px; }
+    padding: 0 0 150px; }
     .data-driving .data-flex {
       gap: 0; }
       .data-driving .data-flex .column {
         width: 25%; }
         .data-driving .data-flex .column ul li {
-          padding: 15px 20px 15px 45px;
-          min-height: 120px; }
+          padding: 15px 20px 15px 45px; }
         .data-driving .data-flex .column .head-data {
           display: flex;
           align-items: center;
@@ -5365,56 +5306,35 @@ li.iti__country {
           border: 1px solid rgba(153, 153, 152, 0.04);
           border-radius: 35px;
           padding: 15px 20px;
-          min-width: 200px;
-          width: 200px;
+          min-width: 222px;
+          width: 222px;
           background: #fff;
           box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1); }
-          .data-driving .data-flex .column .head-data .step-number {
-            background-color: rgba(103, 84, 226, 0.07);
-            border: 1px solid rgba(98, 77, 227, 0.07);
-            color: white;
-            border-radius: 50%;
-            width: 34px;
-            height: 34px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            font-size: 18px;
-            color: #6754e2;
-            font-weight: 700; }
           .data-driving .data-flex .column .head-data h3 {
             font-size: 12px;
             color: #444b55;
-            text-transform: uppercase;
             font-weight: 700;
             margin: 0; }
-        .data-driving .data-flex .column.solutions ul li:before {
-          background: #fdcb68; }
-        .data-driving .data-flex .column.solutions:before {
-          display: none; }
-        .data-driving .data-flex .column.solutions:after {
-          display: none; }
         .data-driving .data-flex .column.analyze {
           width: 50%; }
+          .data-driving .data-flex .column.analyze .analyze-button {
+            width: 250px;
+            height: 250px; }
           .data-driving .data-flex .column.analyze:before {
-            left: 0;
-            top: 185px; }
+            left: 0; }
           .data-driving .data-flex .column.analyze:after {
-            right: 0;
-            top: 185px; }
+            right: 0; }
         .data-driving .data-flex .column.challenges:before {
           display: none; }
         .data-driving .data-flex .column.challenges:after {
+          display: none; }
+        .data-driving .data-flex .column.solutions:before {
           display: none; }
 
   .video-popup .popup-wrapper .popWrap .popup-content {
     width: 95%;
     height: 80%; } }
 @media (max-width: 979px) {
-  .data-driving .data-flex .column ul li {
-    min-height: 150px; } }
-@media (max-width: 768px) {
   .data-driving {
     width: 100%;
     overflow: hidden;
@@ -5424,7 +5344,9 @@ li.iti__country {
       .data-driving .data-flex .column ul li {
         margin: 0 0 15px;
         padding: 10px 35px 10px 45px;
-        min-height: 65px; }
+        min-height: 50px; }
+        .data-driving .data-flex .column ul li:before {
+          top: 15px; }
       .data-driving .data-flex .column .head-data {
         margin: 0 auto 30px; }
       .data-driving .data-flex .column.solutions:before {
@@ -5437,9 +5359,19 @@ li.iti__country {
         z-index: -9;
         left: -30px;
         right: auto; }
+      .data-driving .data-flex .column.solutions .head-data {
+        margin-left: 0; }
+      .data-driving .data-flex .column.solutions ul li:before {
+        top: 18px; }
       .data-driving .data-flex .column.analyze {
         padding: 135px 0 160px;
         width: 100%; }
+        .data-driving .data-flex .column.analyze .analyze-button {
+          width: 200px;
+          height: 200px; }
+          .data-driving .data-flex .column.analyze .analyze-button .play-icon img {
+            width: auto;
+            height: initial; }
         .data-driving .data-flex .column.analyze:before {
           background: url(../images/anmob-shape01.png) 0 0 no-repeat;
           width: 354px;
