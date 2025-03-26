@@ -1363,6 +1363,8 @@ h5 {
         textarea {
          font-family: sans-serif;
         }
+        .blog-wrap{width:100%; margin:0;}
+        body form.search-form input.search-field{font-family: sans-serif;}
         body,
         p {
          line-height: 24px;
