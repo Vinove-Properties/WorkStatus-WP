@@ -450,6 +450,7 @@ h5 {
         cursor: pointer;
         font-size: 0;
        }
+       .search-form .search-submit:focus{font-size: 0;}
        .auth-date:before,
        .postview:before {
         content: "";
