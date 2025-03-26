@@ -143,6 +143,10 @@
               border-top: 1px solid rgba(98, 77, 227, 0.38);
               padding-top: 30px;
 
+              a{color:#fff;
+                &:hover{text-decoration: underline;}
+                }
+
               &:first-child {
                 margin-top: 0;
                 padding-top: 0;
@@ -168,6 +172,10 @@
                 position: relative;
                 padding-left: 40px;
                 margin: 15px 0 0;
+
+                a{color:#fff;
+                &:hover{text-decoration: underline;}
+                }
 
                 &:before {
                   content: "";
@@ -283,6 +291,12 @@
 
     &:nth-child(3n) {
       background: rgba(251, 249, 255, 1);
+    }
+
+    .top-section{
+      a{color:$white;
+      &:hover{text-decoration: underline;}
+      }
     }
   }
 }
