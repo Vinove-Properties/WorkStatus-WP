@@ -193,6 +193,7 @@
       </div>
     </div>
   </section>
+  
   <?php
     $compFt = get_field('comp-ft');
     if( isset($compFt['is_enabled']) && $compFt['is_enabled'] == "yes" ){
