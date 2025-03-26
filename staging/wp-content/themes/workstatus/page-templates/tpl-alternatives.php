@@ -143,8 +143,13 @@ $tbl = $compCol['cards'];
   </div>
 </div>
 <div style="text-align: center; margin-top: 80px;">
-<h2>See Why 1000+ Businesses Switched to Workstatus!</h2>
-<p>Project visibility, Organized Tasks, More Profit</p>
+<?php 
+if( isset($compCol['cta']) && !empty($compCol['cta']) ){
+echo $compCol['cta'];
+}else{
+echo '<h2>See Why 1000+ Businesses Switched to Workstatus!</h2><p>Project visibility, Organized Tasks, More Profit</p>';
+}
+?>
 </div>
 <div class="actionBtn" style="margin-top: 40px;">
 <?php echo cmnBannerCta(); ?>
