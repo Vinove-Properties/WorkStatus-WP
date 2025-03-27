@@ -250,7 +250,7 @@ ul {
 .white_btn {
   font-size: 20px;
   line-height: 28px;
-  color: #624DE3;
+  color: #5D2BFF;
   background-color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
@@ -258,7 +258,7 @@ ul {
   transition: 0.3s ease;
   display: inline-block;
   white-space: nowrap;
-  border: 2px solid #624DE3;
+  border: 2px solid #5D2BFF;
   filter: drop-shadow(0px 4px 89px rgba(103, 84, 226, 0.12)); }
   @media screen and (max-width: 767px) {
     .white_btn {
@@ -751,7 +751,7 @@ h3 a {
             display: none; }
           .header-two .header-item-right .menu ul li.menu-item-has-children a.active:after {
             content: "";
-            background: #624de3;
+            background: #5D2BFF;
             width: 100%;
             height: 3px;
             position: absolute;
@@ -971,7 +971,7 @@ h3 a {
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a:hover:after {
                       display: none; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a.view-more {
-                    color: #624de3;
+                    color: #5D2BFF;
                     padding: 30px 0 0;
                     transition: all 0.3s ease-in-out;
                     border-top: 1px solid #e6e6e6;
@@ -2085,7 +2085,7 @@ ul {
 .white_btn {
   font-size: 20px;
   line-height: 28px;
-  color: #624DE3;
+  color: #5D2BFF;
   background-color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
@@ -2093,7 +2093,7 @@ ul {
   transition: 0.3s ease;
   display: inline-block;
   white-space: nowrap;
-  border: 2px solid #624DE3;
+  border: 2px solid #5D2BFF;
   filter: drop-shadow(0px 4px 89px rgba(103, 84, 226, 0.12)); }
   @media screen and (max-width: 767px) {
     .white_btn {
@@ -2180,7 +2180,7 @@ ul {
   text-align: center; }
 
 .works-journey {
-  background: #624de3;
+  background: #5D2BFF;
   position: relative; }
   .works-journey:before {
     content: "";
@@ -3392,14 +3392,14 @@ section.background_grey:nth-last-child(2) {
 
 .primary_btn1 {
   height: 60px;
-  background: #624DE3;
+  background: #5D2BFF;
   color: #fff;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   padding: 14px 45px 16px;
-  border: 1px solid #624DE3;
+  border: 1px solid #5D2BFF;
   display: inline-block; }
 
 .primary_btn1:hover {
@@ -3408,8 +3408,8 @@ section.background_grey:nth-last-child(2) {
 
 .primary_btn2 {
   height: 60px;
-  border: 1px solid #624DE3;
-  color: #624DE3;
+  border: 1px solid #5D2BFF;
+  color: #5D2BFF;
   text-align: center;
   font-weight: 500;
   font-size: 20px;
@@ -3428,14 +3428,14 @@ section.background_grey:nth-last-child(2) {
 .btnbg2:hover {
   background: #fff;
   border-color: #fff;
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 .btnwhite {
   color: #fff;
   border-color: #fff; }
 
 .btnwhite:hover {
-  color: #624DE3;
+  color: #5D2BFF;
   border-color: #fff;
   background-color: #fff; }
 
@@ -3483,8 +3483,8 @@ ul.indList li a {
   color: #333; }
 
 ul.indList li a:hover {
-  border-bottom-color: #624DE3;
-  color: #624DE3; }
+  border-bottom-color: #5D2BFF;
+  color: #5D2BFF; }
 
 ul.indList li .icon {
   width: 24px;
@@ -3571,7 +3571,7 @@ body .inner_banner_section .column ul li {
 
 .two-column-text-image ul li a {
   margin-left: 5px;
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 .two-column-text-image ul li a:hover {
   margin-left: 5px;
@@ -3579,7 +3579,7 @@ body .inner_banner_section .column ul li {
   text-decoration: underline; }
 
 .column p a:not(.small_anchor) {
-  color: #624DE3;
+  color: #5D2BFF;
   text-decoration: none; }
 
 .column p a:not(.small_anchor):hover {
@@ -3587,7 +3587,7 @@ body .inner_banner_section .column ul li {
   text-decoration: underline; }
 
 .column h3 a {
-  color: #624DE3;
+  color: #5D2BFF;
   text-decoration: none; }
 
 .column h3 a:hover {
@@ -3599,7 +3599,7 @@ body .inner_banner_section .column ul li {
   height: 54px; }
 
 .newData p a {
-  color: #624DE3;
+  color: #5D2BFF;
   text-decoration: none; }
 
 .newData p a:hover {
@@ -3607,7 +3607,7 @@ body .inner_banner_section .column ul li {
   text-decoration: underline; }
 
 .tabcontent-content a {
-  color: #624DE3;
+  color: #5D2BFF;
   text-decoration: none; }
 
 .tabcontent-content a:hover {
@@ -3676,7 +3676,7 @@ h3.h5 {
   color: #fff; }
 
 a h3 {
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 a:hover h3,
 .inline a:hover {
@@ -3688,7 +3688,7 @@ a:hover h3,
 
 .column .h3 a,
 .column a h3 {
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 .max-width-250 {
   max-width: 250px; }
@@ -3718,7 +3718,7 @@ a:hover h3,
 .number-speak-section h2 {
   margin-top: 0; }
 .number-speak-section .number-pic {
-  background: #624DE3 url("../images/number-speak-sprite.png") 0 0 no-repeat;
+  background: #5D2BFF url("../images/number-speak-sprite.png") 0 0 no-repeat;
   width: 152px;
   height: 152px;
   border-radius: 50%;
@@ -3752,7 +3752,7 @@ a:hover h3,
 
 /*faq section start here*/
 .faqsRow p a {
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 .faqsRow p a:hover {
   text-decoration: underline; }
@@ -3854,7 +3854,7 @@ a:hover h3,
   color: #fff !important; }
 
 .btnSc .bgwhite:hover {
-  color: #624DE3;
+  color: #5D2BFF;
   background: #fff; }
 
 .background_blue.feature_section h2 {
@@ -4063,7 +4063,7 @@ a:hover h3,
     padding: 15px; }
     .resource-filters > div .tab button.active {
       background: #ffffff;
-      color: #624DE3;
+      color: #5D2BFF;
       box-shadow: 0px 0px 12px rgba(22, 101, 216, 0.1); }
 .resource-filters > div .tabcontent > div {
   display: flex;
@@ -4092,7 +4092,7 @@ a:hover h3,
   margin-bottom: 15px; }
 
 .faqsRow p a {
-  color: #624DE3; }
+  color: #5D2BFF; }
 
 .faqsRow p a:hover {
   text-decoration: underline; }

@@ -109,7 +109,7 @@ strong {
   background: #faf8fe; }
 
 .bg-blue {
-  background: #624de3; }
+  background: #5D2BFF; }
   .bg-blue .top-section {
     text-align: center; }
     .bg-blue .top-section h6 {
@@ -269,8 +269,8 @@ strong {
       color: #ffffff;
       text-decoration: none;
       min-width: 213px;
-      background: #624de3;
-      border-color: 1px solid #624de3;
+      background: #5D2BFF;
+      border-color: 1px solid #5D2BFF;
       border-radius: 5px;
       font-size: 18px;
       text-align: center;
@@ -327,7 +327,7 @@ strong {
       bottom: -15px;
       left: 19px; }
   .button-common.white-btn .cmn-democta .ctbtn {
-    color: #624de3;
+    color: #5D2BFF;
     background: #ffffff; }
     .button-common.white-btn .cmn-democta .ctbtn.bgtrans {
       color: #ffffff;
@@ -353,7 +353,7 @@ strong {
 .is-arrow {
   display: block;
   text-decoration: underline;
-  color: #624de3;
+  color: #5D2BFF;
   text-align: left;
   margin: 40px 0 0;
   font-weight: 500; }
@@ -367,7 +367,7 @@ strong {
     transition: all 0.3s ease-in-out; }
   .is-arrow:hover {
     text-decoration: none;
-    color: #624de3; }
+    color: #5D2BFF; }
     .is-arrow:hover:after {
       margin-left: 15px; }
 
@@ -382,7 +382,7 @@ a:-webkit-any-link:focus-visible {
   outline-offset: 1px; }
 
 :-webkit-any-link {
-  color: #624de3;
+  color: #5D2BFF;
   cursor: pointer; }
   :-webkit-any-link:hover {
     color: #110302; }
@@ -649,7 +649,7 @@ textarea {
         font-size: 32px;
         line-height: 39px; }
     .banner-form .popup-content .purple {
-      color: #624DE3; }
+      color: #5D2BFF; }
     .banner-form .popup-content p {
       color: #737b7d;
       font-size: 18px;
@@ -3077,7 +3077,7 @@ li.iti__country {
           color: #525f7f;
           font-weight: 400; }
           .wsf-signup .popup-content .right-section .form-wrap .form-group .padd p a {
-            color: #624de3; }
+            color: #5D2BFF; }
             .wsf-signup .popup-content .right-section .form-wrap .form-group .padd p a:hover {
               text-decoration: underline; }
       .wsf-signup .popup-content .right-section .form-wrap .form-group .submtbtn {
@@ -3391,7 +3391,7 @@ li.iti__country {
             display: none; }
           .header-two .header-item-right .menu ul li.menu-item-has-children a.active:after {
             content: "";
-            background: #624de3;
+            background: #5D2BFF;
             width: 100%;
             height: 3px;
             position: absolute;
@@ -3611,7 +3611,7 @@ li.iti__country {
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a:hover:after {
                       display: none; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs .tab-content a.view-more {
-                    color: #624de3;
+                    color: #5D2BFF;
                     padding: 30px 0 0;
                     transition: all 0.3s ease-in-out;
                     border-top: 1px solid #e6e6e6;
@@ -4576,7 +4576,7 @@ li.iti__country {
           .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n):after {
             background: url(../images/list-2.svg) no-repeat; }
       .business-growth-section .content-wrapper .column.with-workstatus:before {
-        background: #624de3; }
+        background: #5D2BFF; }
     .business-growth-section .content-wrapper .mobile-image {
       flex-basis: 36%;
       padding: 0 30px; }
@@ -4691,7 +4691,7 @@ li.iti__country {
           .business-growth-section .content-wrapper .column.with-workstatus ul li:nth-child(3n):after {
             background: url(../images/list-2.svg) no-repeat; }
       .business-growth-section .content-wrapper .column.with-workstatus:before {
-        background: #624de3; }
+        background: #5D2BFF; }
     .business-growth-section .content-wrapper .mobile-image {
       display: none; }
   .business-growth-section:before {
@@ -4753,7 +4753,7 @@ li.iti__country {
       width: 100%;
       flex-direction: column;
       gap: 20px;
-      background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+      background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
       border-radius: 10px;
       padding: 30px 20px; }
       .client-img-section .why-ws .right-box .why-right .client-section .client-row {
@@ -5093,7 +5093,7 @@ li.iti__country {
       width: 60%;
       height: 750px; }
   .feature-wrapper.feature-bluebg {
-    background: #624de3;
+    background: #5D2BFF;
     color: #fff; }
     .feature-wrapper.feature-bluebg .top-section h6 .bg-purple {
       background: #fff;
@@ -5133,9 +5133,9 @@ li.iti__country {
     .feature-wrapper.feature-bluebg .feature-loop:after {
       display: none; }
     .feature-wrapper.feature-bluebg .button-common .cmn-democta .ctbtn {
-      color: #624de3;
+      color: #5D2BFF;
       background: #fff;
-      border-color: #624de3; }
+      border-color: #5D2BFF; }
       .feature-wrapper.feature-bluebg .button-common .cmn-democta .ctbtn.bgtrans {
         color: #fff;
         background: transparent; }
@@ -5262,7 +5262,7 @@ li.iti__country {
         transition: all 0.3s ease-in-out; }
       .section-numbers .number-row .number-col .btn:hover {
         text-decoration: none;
-        color: #624de3; }
+        color: #5D2BFF; }
         .section-numbers .number-row .number-col .btn:hover:after {
           margin-left: 15px; }
     .section-numbers .number-row .number-col.is-first {
@@ -5479,7 +5479,7 @@ li.iti__country {
     .three-column-section .ws-row .box .is-arrow {
       display: block;
       text-decoration: underline;
-      color: #624de3;
+      color: #5D2BFF;
       text-align: right;
       margin: 40px 0 0;
       font-weight: 500; }
@@ -5589,7 +5589,7 @@ li.iti__country {
       .workplace-section .workplace-row .workplace-card .flip-card-inner .is-arrow {
         display: block;
         text-decoration: underline;
-        color: #624de3;
+        color: #5D2BFF;
         text-align: right;
         padding: 20px 20px 0;
         font-weight: 500;
@@ -5653,7 +5653,7 @@ li.iti__country {
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner .flip-card-front {
       background: #fff; }
     .workplace-section .workplace-row .workplace-card:nth-child(2) .flip-card-inner h4 strong {
-      color: #624de3; }
+      color: #5D2BFF; }
     .workplace-section .workplace-row .workplace-card:nth-child(3) .flip-card-inner .flip-card-front {
       background: #fffbf2; }
     .workplace-section .workplace-row .workplace-card:nth-child(3) h4 strong {
@@ -5663,7 +5663,7 @@ li.iti__country {
     .workplace-section .workplace-row .workplace-card:nth-child(4) .flip-card-inner h4 strong {
       color: #59c684; }
 .workplace-section.bg-blue {
-  background: #624de3; }
+  background: #5D2BFF; }
 
 /*Media Query Start From Here*/
 @media (max-width: 980px) {
@@ -5930,8 +5930,8 @@ li.iti__country {
     cursor: pointer;
     transition: background-color 0.3s ease; }
     .compare-projects .compare-tabs .tbbtn:hover {
-      border-color: #624de3;
-      color: #624de3;
+      border-color: #5D2BFF;
+      color: #5D2BFF;
       background: rgba(98, 77, 227, 0.08); }
 .compare-projects .features-container {
   max-width: max-content;
@@ -5992,9 +5992,9 @@ li.iti__country {
           margin: 10px 0 0;
           display: flex; }
           .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active {
-            background: #624de3;
+            background: #5D2BFF;
             color: #fff;
-            border-color: #624de3; }
+            border-color: #5D2BFF; }
       .compare-projects .features-container .compare-column .tool-col:last-child {
         border-bottom: 0;
         background: #f4f2ff; }
@@ -6026,9 +6026,9 @@ li.iti__country {
           padding: 5px 10px;
           border-radius: 5px; }
           .compare-projects .features-container .compare-column .tool-col.comprice .btn.active {
-            background: #624de3;
+            background: #5D2BFF;
             color: #fff;
-            border-color: #624de3; }
+            border-color: #5D2BFF; }
         .compare-projects .features-container .compare-column .tool-col.comprice .small-font {
           color: #05164d;
           font-weight: 400;
@@ -6040,7 +6040,7 @@ li.iti__country {
           text-align: center; }
         .compare-projects .features-container .compare-column .tool-col.comprice .knowmre {
           text-decoration: underline;
-          color: #624de3;
+          color: #5D2BFF;
           font-size: 14px;
           margin: 10px 0 0;
           line-height: 18px; }
@@ -6067,8 +6067,8 @@ li.iti__country {
         justify-content: space-around; }
 
 .compare-projects .compare-tabs .tbbtn.active {
-  border-color: #624de3;
-  color: #624de3;
+  border-color: #5D2BFF;
+  color: #5D2BFF;
   background: rgba(98, 77, 227, 0.08); }
 
 /*Media Query Start From Here*/
@@ -6219,7 +6219,7 @@ li.iti__country {
         .ws-pricing .tab-nav ul li:nth-child(3).active a {
           border-radius: 0; }
       .ws-pricing .tab-nav ul li.active a {
-        background: #624de3;
+        background: #5D2BFF;
         border-radius: 15px 0 0 15px;
         color: #fff; }
     .ws-pricing .tab-nav:before {
@@ -6492,7 +6492,7 @@ li.iti__country {
             margin-bottom: -35px; }
             .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box {
               background: #f8f6ff;
-              border-color: #624de3;
+              border-color: #5D2BFF;
               border-width: 2px;
               position: relative; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box .pr-plan .total {
@@ -6605,7 +6605,7 @@ li.iti__country {
           font-size: 16px; }
       .free-price .fdflex .colLeft .pr-plan .total {
         background: #fff;
-        border: 1px solid #624de31a;
+        border: 1px solid #5D2BFF1a;
         color: rgba(5, 22, 77, 0.7);
         padding: 6px 8px;
         min-width: 150px;
@@ -7447,7 +7447,7 @@ li.iti__country {
         border-left: 0;
         padding-bottom: 0; }
     .step-section .step-row .step-content a {
-      color: #624de3; }
+      color: #5D2BFF; }
       .step-section .step-row .step-content a:hover {
         text-decoration: underline;
         color: #05164d; }
@@ -7473,7 +7473,7 @@ li.iti__country {
         border-radius: 100%;
         left: -13px; }
     .step-section .step-row .step-content a {
-      color: #624de3; }
+      color: #5D2BFF; }
       .step-section .step-row .step-content a:hover {
         text-decoration: underline;
         color: #05164d; } }
@@ -7592,7 +7592,7 @@ li.iti__country {
       .useful-resources-blog-section .flex_row .blog-box .blog-link .blog-title .is-arrow {
         margin: 10px 0 0; }
     .useful-resources-blog-section .flex_row .blog-box .blog-link:hover .blog-title h3 {
-      color: #624de3; }
+      color: #5D2BFF; }
 
 /*Media Query Start From Here*/
 @media (max-width: 767px) {
@@ -7635,7 +7635,7 @@ li.iti__country {
               content: "";
               width: 5px;
               height: 100%;
-              background: #624de3;
+              background: #5D2BFF;
               border-radius: 100px;
               position: absolute;
               top: 0;
@@ -7702,7 +7702,7 @@ li.iti__country {
 .userguide .software-listing .pagination-block {
   padding: 5px 0 15px; }
 .userguide .buyers-guide-answer a {
-  color: #624de3; }
+  color: #5D2BFF; }
 .userguide .guide-answer a:hover {
   color: #2d2d2d; }
 
@@ -7936,7 +7936,7 @@ li.iti__country {
         border-radius: 50%;
         margin: 0 2px; }
         .testimonial-section .testimonial-slider .test-button .glider-dots .glider-dot.active {
-          background: #624de3;
+          background: #5D2BFF;
           width: 16px;
           height: 16px; }
     .testimonial-section .testimonial-slider .test-button .test-prev,
@@ -7981,7 +7981,7 @@ li.iti__country {
 .top-rated {
   position: relative; }
   .top-rated .top-section h2 strong {
-    color: #624de3; }
+    color: #5D2BFF; }
   .top-rated .award-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8015,7 +8015,7 @@ li.iti__country {
         .top-rated .award-grid .award-column .award-logo h3 {
           line-height: 40px; }
           .top-rated .award-grid .award-column .award-logo h3 strong {
-            color: #624de3; }
+            color: #5D2BFF; }
         .top-rated .award-grid .award-column .award-logo .award-row {
           display: flex;
           align-items: center;
@@ -8046,7 +8046,7 @@ li.iti__country {
               transition: all 0.3s ease-in-out;
               display: block; }
             .top-rated .award-grid .award-column .award-logo .award-row .award-col:hover {
-              border: 2px solid #624DE3; }
+              border: 2px solid #5D2BFF; }
         .top-rated .award-grid .award-column .award-logo .is-arrow {
           text-align: center; }
 
@@ -8077,7 +8077,7 @@ li.iti__country {
               margin: 0 0 10px; } }
 /*Media Query Ends Here*/
 .start-journey {
-  background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+  background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
   position: relative; }
   .start-journey .ws-flex {
     display: flex;
@@ -8537,7 +8537,7 @@ li.iti__country {
 .banner-section {
   width: 100%;
   padding: 120px 0 260px;
-  background: #3708c2;
+  background: #5D2BFF;
   position: relative;
   overflow: hidden; }
   .banner-section:after {
@@ -8978,7 +8978,7 @@ li.iti__country {
   background: #fff; }
 
 .mid-cta {
-  background: #624de3;
+  background: #5D2BFF;
   position: relative;
   overflow: hidden; }
   .mid-cta:before {
@@ -9011,9 +9011,9 @@ li.iti__country {
       .mid-cta .dis-flex .flex-2 .top-section p {
         color: #fff; }
     .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn {
-      color: #624de3;
+      color: #5D2BFF;
       background: #fff;
-      border-color: #624de3; }
+      border-color: #5D2BFF; }
       .mid-cta .dis-flex .flex-2 .button-common .cmn-democta .ctbtn.bgtrans {
         color: #fff;
         background: transparent;

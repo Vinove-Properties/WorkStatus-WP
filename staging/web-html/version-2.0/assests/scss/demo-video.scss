@@ -245,7 +245,7 @@
           }
           a.primary_btn1 {
             background: #fff;
-            color: #624de3;
+            color: #5D2BFF;
             border: 1px solid #ffffff;
             padding: 14px 18px;
             &:hover {
@@ -442,7 +442,7 @@
         text-decoration: none;
         transition: 0.3s ease;
         display: inline-block;
-        color: #624de3;
+        color: #5D2BFF;
         position: relative;
         line-height: 22px;
         text-decoration: underline;
@@ -469,13 +469,13 @@
   }
   .for-link-white {
     .small_anchor {
-      color: #624de3;
+      color: #5D2BFF;
       &:before {
         background: url(../images/arrow-icon01.svg) no-repeat;
         top: 6px;
       }
       &:after {
-        background: #624de3;
+        background: #5D2BFF;
       }
     }
   }

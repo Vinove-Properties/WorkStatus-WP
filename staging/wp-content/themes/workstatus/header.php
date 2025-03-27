@@ -133,10 +133,10 @@
       .banner-section .home-section .flex_row .column-content .actionBtn a.primary_btn2:after{
       background-image:url(<?php bloginfo('template_url'); ?>/assests/images/button-arwhover.png) !important;
       }
-      .ctbtn.nobg{border:1px solid #624DE3 !important; border-radius: 30px !important; min-width: 213px !important; 
-      padding:15px 30px !important; color: #624DE3 !important; text-decoration: none !important;}
+      .ctbtn.nobg{border:1px solid #5D2BFF !important; border-radius: 30px !important; min-width: 213px !important; 
+      padding:15px 30px !important; color: #5D2BFF !important; text-decoration: none !important;}
       .ctbtn.nobg:hover{border-color:#000 !important; color:#000 !important;}
-      .ws-ctav4 .btnSc .ctasec .ctbtn{border:1px solid #624DE3;}
+      .ws-ctav4 .btnSc .ctasec .ctbtn{border:1px solid #5D2BFF;}
       .ws-ctav4 .btnSc .ctasec .ctbtn:hover{border-color:#fff;}
       @media (max-width: 767px) {
         .ctbtn.nobg{padding:12px 18px !important; font-size:15px !important;}

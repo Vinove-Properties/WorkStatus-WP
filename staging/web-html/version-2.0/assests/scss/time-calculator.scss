@@ -123,7 +123,7 @@
         line-height: 46px;
         position: relative;
         &:focus {
-          border-color: #624DE3;
+          border-color: #5D2BFF;
         }
         .select-sec {
           position: relative;
@@ -180,8 +180,8 @@
     align-items: center;
     .allbtn {
       .btn {
-        border: 1px solid #624DE3;
-        color: #624DE3;
+        border: 1px solid #5D2BFF;
+        color: #5D2BFF;
         padding: 10px 22px 9px;
 
         margin: 0 12px 10px;
@@ -190,7 +190,7 @@
         cursor: pointer;
         background: #fff;
         &:hover {
-          background: #624DE3;
+          background: #5D2BFF;
           color: #fff;
         }
       }
@@ -204,7 +204,7 @@
         border: 1px solid rgba(68, 97, 215, 0.2);
         display: inline-block;
         padding: 10px 12px;
-        color: #624DE3;
+        color: #5D2BFF;
         font-size: 14px;
         position: relative;
         background: #edf0f9;
@@ -255,7 +255,7 @@
         display: flex;
         margin-left: 15px;
         a {
-          border: 1px solid #624DE3;
+          border: 1px solid #5D2BFF;
           border-radius: 50%;
           width: 30px;
           height: 30px;
@@ -347,8 +347,8 @@ input[placeholder],
         }
         a {
           padding: 11px 20px;
-          color: #624DE3;
-          border: 1px solid #624DE3;
+          color: #5D2BFF;
+          border: 1px solid #5D2BFF;
           margin-left: 20px;
           display: inline-block;
           min-width: 85px;
@@ -386,7 +386,7 @@ input[placeholder],
           &:before {
             width: 10px;
             height: 10px;
-            background: #624DE3;
+            background: #5D2BFF;
             border-radius: 100%;
             content: "";
             position: absolute;
@@ -500,7 +500,7 @@ input[placeholder],
         flex-basis: 100%;
         .share {
           padding: 10px 10px;
-          color: #624DE3;
+          color: #5D2BFF;
           font-size: 13px;
           .sharediv {
             padding-left: 38px;

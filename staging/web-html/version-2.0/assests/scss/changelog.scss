@@ -69,7 +69,7 @@
           text-align: left;
           font-weight: 600;
           font-size: 18px;
-          color: #624de3;
+          color: #5D2BFF;
           padding: 20px 12px;
           border-left: 1px solid #e6eaec;
           @media screen and(max-width: $mdscreen-size - 1) {
@@ -232,7 +232,7 @@
   .phase-sec{display:flex; align-items: center; 
     .flex-2{padding:0 30px;
       &:first-child{padding-left:0;}
-      h4{font-size: 16px; color: #624DE3; margin:0; line-height: 1.2;}
+      h4{font-size: 16px; color: #5D2BFF; margin:0; line-height: 1.2;}
       p{font-size: 14px; color:#525F7F;}
     }
     
@@ -258,7 +258,7 @@
     }
     }
     .ctasec{margin:50px 0 0;
-    .primary_btn1{border-radius: 30px;  height: 44px; line-height:18px; font-size: 14px; padding:12px 30px;  background:#fff; color:#624DE3;
+    .primary_btn1{border-radius: 30px;  height: 44px; line-height:18px; font-size: 14px; padding:12px 30px;  background:#fff; color:#5D2BFF;
     &:hover{background: #051441;
       color: #fff;}
     }
