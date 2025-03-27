@@ -601,7 +601,7 @@ transition: 0.3s;
 
 }
 .posts-navigation .nav-links .nav-next a{ padding: 20px 20px 20px 30px; }
-.posts-navigation .nav-links a:hover{ background: #6754E20F; color: #624DE3;     transition: 0.3s; } 
+.posts-navigation .nav-links a:hover{ background: #6754E20F; color: #5D2BFF;     transition: 0.3s; } 
 
 .posts-navigation .nav-previous a:hover:after{
  /*left: 12px; */
@@ -791,11 +791,11 @@ hr {
  font-size: 16px;
  font-weight: 400;
  border-radius: 10px;
- background: #624de3;
+ background: #5D2BFF;
  padding: 12px 20px 14px;
  min-width: 161px;
  margin: 0 6px;
- border: 2px solid #624de3 !important;
+ border: 2px solid #5D2BFF !important;
  text-decoration: none;
 }
 .upd-cusbanner .ctasec .bkdemo {
@@ -805,7 +805,7 @@ hr {
 }
 .upd-cusbanner .ctasec a:hover {
  background: #fff;
- color: #624de3;
+ color: #5D2BFF;
  border-color: #fff !important;
 }
 .upd-cusbanner.email-subscribe {
@@ -823,7 +823,7 @@ hr {
 }
 .email-subscribe .es_required_field {
  background: #fff;
- color: #624de3;
+ color: #5D2BFF;
  border: 0;
  border-radius: 5px 0 0 5px;
  height: 48px;
@@ -840,7 +840,7 @@ hr {
 }
 .email-subscribe .es_subscription_form_submit {
  border-radius: 0 5px 5px 0;
- background: #624de3 !important;
+ background: #5D2BFF !important;
  border: 0 !important;
  color: #fff !important;
  width: 128px;

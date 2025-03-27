@@ -1,6 +1,6 @@
 :root {
 	--blue: #202020;
-	--blue: #624DE3;
+	--blue: #5D2BFF;
 	--white: #ffffff;
 	--gray: #363636;
 	--lightgrey: #5E6373;
@@ -806,7 +806,7 @@ p {
 	.blog-posts-list .develop-row.wid-35 .blog-image {
 		padding: 15px 12px;
 		height: initial;
-		background: #624DE3;
+		background: #5D2BFF;
 		border-radius: 0;
 	}
 
@@ -1133,7 +1133,7 @@ p {
 
 
 .start-journey {
-	background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+	background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
 	position: relative;
 	padding: 120px 0;
 }

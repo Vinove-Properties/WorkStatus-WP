@@ -115,7 +115,7 @@
 }
 
 .ebook-popup .pdf-bottom h2 strong {
-	color: #624DE3;
+	color: #5D2BFF;
 }
 
 .ebook-popup .pdf-bottom p {
@@ -174,7 +174,7 @@
 .ebook-popup .downbtn {
 	width: 100%;
 	border-radius: 50px;
-	background: #624DE3;
+	background: #5D2BFF;
 	color: #fff;
 	height: 50px;
 	padding: 0 30px;
@@ -190,7 +190,7 @@
 
 
 .ebook-popup .pdf-bottom input:focus-visible {
-	border: 2px solid #624DE3;
+	border: 2px solid #5D2BFF;
 }
 
 .ebook-popup .pdf-bottom input::placeholder {
