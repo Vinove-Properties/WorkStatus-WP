@@ -57,7 +57,7 @@
         width: 19px;
         left: 4px;
         bottom: 5px;
-        background-color: #6754e2;
+        background-color: #5D2BFF;
         -webkit-transition: 0.4s;
         transition: 0.4s;
       }
@@ -158,10 +158,10 @@
   
           &.active a {
             background: #fff;
-            color: #6754e2;
+            color: #5D2BFF;
             transition: all 0.2s ease-in-out;
             &:before {
-              background: #6754e2;
+              background: #5D2BFF;
             }
           }
         }

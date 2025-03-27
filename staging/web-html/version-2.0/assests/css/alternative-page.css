@@ -83,7 +83,7 @@ p:last-child {
 
 a {
   text-decoration: none;
-  color: #6754e2; }
+  color: #5D2BFF; }
   a:hover {
     color: #05164d; }
 
@@ -113,7 +113,7 @@ strong {
   .bg-blue .top-section {
     text-align: center; }
     .bg-blue .top-section h6 {
-      color: #6754e2; }
+      color: #5D2BFF; }
       .bg-blue .top-section h6 .bg-purple {
         background: #ffffff; }
     .bg-blue .top-section h2, .bg-blue .top-section p {
@@ -1041,7 +1041,7 @@ textarea {
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
                         display: none; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
-                        color: #6754e2; }
+                        color: #5D2BFF; }
                         .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
                           background: url(../header-images/arrow.svg) no-repeat center;
                           width: 11px;
@@ -1126,9 +1126,9 @@ textarea {
     .header-two.header-bg.sc-up .header-item-right {
       opacity: 1; }
     .header-two.header-bg.sc-up .cta-wrap .login a {
-      background: #6754e2;
+      background: #5D2BFF;
       color: #fff;
-      border: 1px solid #6754e2;
+      border: 1px solid #5D2BFF;
       font-weight: 500; }
       .header-two.header-bg.sc-up .cta-wrap .login a.bg-none {
         background: transparent;
@@ -1140,8 +1140,8 @@ textarea {
           opacity: 0.8;
           color: #05164d; }
       .header-two.header-bg.sc-up .cta-wrap .login a.for-free {
-        border-color: #6754e2;
-        color: #6754e2;
+        border-color: #5D2BFF;
+        color: #5D2BFF;
         background: transparent; }
         .header-two.header-bg.sc-up .cta-wrap .login a.for-free:after {
           background: url(../header-images/purple-arrow.svg) no-repeat; }
@@ -1178,9 +1178,9 @@ textarea {
         .header-two:hover .header-item-right .menu ul li.menu-item-has-children a:before {
           background: url(../header-images/angle-icon.svg) no-repeat; }
       .header-two:hover .header-item-right .cta-wrap .login a {
-        background: #6754e2;
+        background: #5D2BFF;
         color: #fff;
-        border: 1px solid #6754e2;
+        border: 1px solid #5D2BFF;
         font-weight: 500; }
         .header-two:hover .header-item-right .cta-wrap .login a.bg-none {
           background: transparent;
@@ -1192,8 +1192,8 @@ textarea {
             opacity: 0.8;
             color: #05164d; }
         .header-two:hover .header-item-right .cta-wrap .login a.for-free {
-          border-color: #6754e2;
-          color: #6754e2;
+          border-color: #5D2BFF;
+          color: #5D2BFF;
           background: transparent; }
           .header-two:hover .header-item-right .cta-wrap .login a.for-free:after {
             background: url(../header-images/purple-arrow.svg) no-repeat; }
@@ -1640,7 +1640,7 @@ textarea {
                           .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
                             display: none; }
                           .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
-                            color: #6754e2; }
+                            color: #5D2BFF; }
                             .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
                               background: url(../header-images/arrow.svg) no-repeat center;
                               width: 11px;
@@ -4778,7 +4778,7 @@ li.iti__country {
               padding: 0; }
             .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong {
               color: #fff;
-              background: #6754e2;
+              background: #5D2BFF;
               border-radius: 5px; }
         .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.numeric-row {
           background: #ebe7ff;

@@ -44,14 +44,14 @@
         }
         &.active {
           a {
-            color: #6754e2;
-            border-left: 3px solid #6754e2;
+            color: #5D2BFF;
+            border-left: 3px solid #5D2BFF;
           }
         }
         &:hover {
           a {
-            color: #6754e2;
-            border-left: 3px solid #6754e2;
+            color: #5D2BFF;
+            border-left: 3px solid #5D2BFF;
           }
         }
       }
@@ -75,7 +75,7 @@
             @media screen and (max-width: ($lgscreen-size - 1)) {font-size:22px;}
           }
           h6 {
-            color: #6754e2;
+            color: #5D2BFF;
             font-size: 14px;
             font-weight: $regular_weight;
           }
@@ -100,7 +100,7 @@
           p {
             margin-bottom: 15px;
             a {
-              color: #6754e2;
+              color: #5D2BFF;
               font-weight: 600;
             }
 
@@ -154,13 +154,13 @@
   }
 }
 .tabcontent-content a {
-  color: #6754e2;
+  color: #5D2BFF;
   text-decoration: none;
   font-weight: 600;
 }
 .tabcontent-content p strong {
   font-weight: 600;
-  color: #6754e2;
+  color: #5D2BFF;
 }
 .tabcontent-content a:hover {
   color: #051441;

@@ -5,7 +5,7 @@
 .plan-section .switcher-sec{justify-content:center;display:flex;width:100%;margin:0 auto;gap:30px}
 .plan-section .flex_row{justify-content:center;gap:20px}
 .plan-section .col-box{border-radius:15px;border:.983px solid #E4E6EA;background:#FFF;padding:26px 20px;position:relative}
-.plan-section .col-box:nth-child(3){transform:scale(1.02);border:1px solid #6754E2;background:rgba(247,102,0,0.04)}
+.plan-section .col-box:nth-child(3){transform:scale(1.02);border:1px solid #5D2BFF;background:rgba(247,102,0,0.04)}
 .plan-section .col-box:nth-child(3)::after{content:'';clear:both;display:block;background:url(dev-images/price-patch.svg) 0 0 no-repeat;background-size:100%;width:72px;height:80px;position:absolute;top:-6px;right:-5px}
 .plan-section .col-box:nth-child(3) h5{background-color:#fff}
 
@@ -15,10 +15,10 @@
 .plan-section h5{color:rgba(5,22,77,0.7);font-size:12px;font-weight:600;line-height:normal;text-transform:uppercase;border-radius:6.576px;border:1.5px solid rgba(98,77,227,0);background:rgba(247,102,0,0.04);display:inline-block;padding:7px}
 .plan-section .custom{max-width:260px;margin-bottom:20px}
 .plan-section .custom p{color:rgba(5,22,77,0.7);font-size:14px;font-style:normal;font-weight:600;line-height:140%}
-.plan-section .custom p span{color:#6754E2}
+.plan-section .custom p span{color:#5D2BFF}
 
-.plan-section .plan-btn{border-radius:8px;border:1px solid #6754E2;background:#FFF;display:inline-block;padding:18px 15px;min-width:238px;text-align:center;transition:all .3s ease-in-out}
-.plan-section .plan-btn:hover{background:#6754E2;color:#FFF}
+.plan-section .plan-btn{border-radius:8px;border:1px solid #5D2BFF;background:#FFF;display:inline-block;padding:18px 15px;min-width:238px;text-align:center;transition:all .3s ease-in-out}
+.plan-section .plan-btn:hover{background:#5D2BFF;color:#FFF}
 .plan-section ul{padding-left:20px}
 .plan-section ul li{color:#4A4C55;font-size:16px;font-weight:400;line-height:normal;margin-top:22px;list-style-type:disc!important}
 .plan-section .list-box{margin-top:30px;color:#05164D;font-size:18px;font-weight:500;line-height:normal;min-height:600px;border-bottom:1px #E7EDF6 solid;margin-bottom:25px}
@@ -35,7 +35,7 @@
 .country-select .select-list .selectDropdown{position:absolute;margin-top:5px;top:100%;width:100%;border-radius:5px;font-size:12px;font-weight:500;color:#00234b;overflow:hidden;background:var(--bg1);border-top:1px solid #eee;z-index:1;background:#fff;-webkit-transform:scale(1,0);transform:scale(1,0);-webkit-transform-origin:top center;transform-origin:top center;visibility:hidden;transition:.2s ease;box-shadow:0 3px 3px rgba(0,0,0,0.2)}
 .country-select .select-list .selectDropdown .pc-option{padding:10px;box-sizing:border-box;cursor:pointer}
 .country-select .select-list .selectDropdown .pc-option:hover,
-.country-select .select-list .selectDropdown .pc-option.active{background:rgba(242, 240, 255, 0.7);color:#6754E2
+.country-select .select-list .selectDropdown .pc-option.active{background:rgba(242, 240, 255, 0.7);color:#5D2BFF
 }
 .country-select .select-list .selectDropdown.toggle{visibility:visible;-webkit-transform:scale(1,1);transform:scale(1,1)}
 .country-select .flgicon{margin-right:5px;vertical-align:middle;margin-top:-3px; position: relative; z-index: -1}
@@ -45,7 +45,7 @@
 .switch-btn-box .switch input:checked + .slider:before{transform: translate(2px, 2px);}
 .switch-btn-box .switch .slider{position:absolute;top:0;bottom:0;left:0;right:0;border-radius:30px;cursor:pointer;overflow:hidden;transition:all .2s ease-in-out;border: 2px solid #B9B9B9;
 }
-.switch-btn-box .switch .slider::before{    position: absolute; content: ""; width: 13px; height: 13px; background-color: #6754E2; border-radius: 20px;
+.switch-btn-box .switch .slider::before{    position: absolute; content: ""; width: 13px; height: 13px; background-color: #5D2BFF; border-radius: 20px;
 transform: translate(27px, 2px); transition: all .2s ease-in-out;}
 .switch-btn-box .monthly{color: rgba(5, 22, 77, 0.5);}
 .switch-btn-box span{    color: #00234b;font-size:14px;font-weight:500;line-height:normal}

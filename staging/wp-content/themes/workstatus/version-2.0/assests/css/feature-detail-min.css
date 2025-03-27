@@ -83,7 +83,7 @@ p:last-child {
 
 a {
   text-decoration: none;
-  color: #6754e2; }
+  color: #5D2BFF; }
   a:hover {
     color: #05164d; }
 
@@ -113,7 +113,7 @@ strong {
   .bg-blue .top-section {
     text-align: center; }
     .bg-blue .top-section h6 {
-      color: #6754e2; }
+      color: #5D2BFF; }
       .bg-blue .top-section h6 .bg-purple {
         background: #ffffff; }
     .bg-blue .top-section h2, .bg-blue .top-section p {
@@ -3735,7 +3735,7 @@ li.iti__country {
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
                         display: none; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
-                        color: #6754e2; }
+                        color: #5D2BFF; }
                         .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
                           background: url(../header-images/arrow.svg) no-repeat center;
                           width: 11px;
@@ -3820,9 +3820,9 @@ li.iti__country {
     .header-two.header-bg.sc-up .header-item-right {
       opacity: 1; }
     .header-two.header-bg.sc-up .cta-wrap .login a {
-      background: #6754e2;
+      background: #5D2BFF;
       color: #fff;
-      border: 1px solid #6754e2;
+      border: 1px solid #5D2BFF;
       font-weight: 500; }
       .header-two.header-bg.sc-up .cta-wrap .login a.bg-none {
         background: transparent;
@@ -3834,8 +3834,8 @@ li.iti__country {
           opacity: 0.8;
           color: #05164d; }
       .header-two.header-bg.sc-up .cta-wrap .login a.for-free {
-        border-color: #6754e2;
-        color: #6754e2;
+        border-color: #5D2BFF;
+        color: #5D2BFF;
         background: transparent; }
         .header-two.header-bg.sc-up .cta-wrap .login a.for-free:after {
           background: url(../header-images/purple-arrow.svg) no-repeat; }
@@ -3872,9 +3872,9 @@ li.iti__country {
         .header-two:hover .header-item-right .menu ul li.menu-item-has-children a:before {
           background: url(../header-images/angle-icon.svg) no-repeat; }
       .header-two:hover .header-item-right .cta-wrap .login a {
-        background: #6754e2;
+        background: #5D2BFF;
         color: #fff;
-        border: 1px solid #6754e2;
+        border: 1px solid #5D2BFF;
         font-weight: 500; }
         .header-two:hover .header-item-right .cta-wrap .login a.bg-none {
           background: transparent;
@@ -3886,8 +3886,8 @@ li.iti__country {
             opacity: 0.8;
             color: #05164d; }
         .header-two:hover .header-item-right .cta-wrap .login a.for-free {
-          border-color: #6754e2;
-          color: #6754e2;
+          border-color: #5D2BFF;
+          color: #5D2BFF;
           background: transparent; }
           .header-two:hover .header-item-right .cta-wrap .login a.for-free:after {
             background: url(../header-images/purple-arrow.svg) no-repeat; }
@@ -4334,7 +4334,7 @@ li.iti__country {
                           .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:before {
                             display: none; }
                           .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover {
-                            color: #6754e2; }
+                            color: #5D2BFF; }
                             .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a.view-more:hover:after {
                               background: url(../header-images/arrow.svg) no-repeat center;
                               width: 11px;
@@ -5188,7 +5188,7 @@ li.iti__country {
     color: #fff; }
     .feature-wrapper.feature-bluebg .top-section h6 .bg-purple {
       background: #fff;
-      color: #6754e2; }
+      color: #5D2BFF; }
     .feature-wrapper.feature-bluebg .top-section h2 {
       color: #fff; }
     .feature-wrapper.feature-bluebg .top-section p {
@@ -5313,7 +5313,7 @@ li.iti__country {
       line-height: 140%;
       color: #05164d; }
       .section-numbers .number-row .number-col h3 a {
-        color: #6754e2; }
+        color: #5D2BFF; }
     .section-numbers .number-row .number-col h2 {
       color: #05164d;
       font-size: 50px;
@@ -6032,7 +6032,7 @@ li.iti__country {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #6754e299;
+  border-bottom: 2px solid #5D2BFF99;
   border-radius: 10px; }
   .compare-projects .features-container .compare-column {
     text-align: center;
@@ -6106,7 +6106,7 @@ li.iti__country {
             bottom: 11px;
             left: -11px; }
           .compare-projects .features-container .compare-column .tool-col.comprice.best-price .btn {
-            background: #6754E2;
+            background: #5D2BFF;
             color: #fff; }
         .compare-projects .features-container .compare-column .tool-col.comprice .btn {
           color: #05164d;
@@ -6299,7 +6299,7 @@ li.iti__country {
           background: #f6f5ff;
           border-radius: 0;
           color: #110302;
-          border-bottom: 2px solid #6754e2; }
+          border-bottom: 2px solid #5D2BFF; }
         .ws-pricing .tab-nav ul li:last-child a {
           margin-right: 0;
           border-radius: 0 15px 15px 0; }
@@ -6369,7 +6369,7 @@ li.iti__country {
                 display: block; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .total {
                 background: rgba(103, 84, 226, 0.05);
-                color: #6754e2;
+                color: #5D2BFF;
                 border: 1.5px solid transparent;
                 text-align: center;
                 padding: 6px 10px;
@@ -6396,7 +6396,7 @@ li.iti__country {
                 line-height: 20px;
                 color: rgba(5, 22, 77, 0.7); }
                 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan .b-anu strong {
-                  color: #6754e2; }
+                  color: #5D2BFF; }
             .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan {
               font-size: 38px;
               color: #2f3a5e;
@@ -6425,7 +6425,7 @@ li.iti__country {
                 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio.smtext {
                   font-size: 14px; }
                   .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .card-plan .prio.smtext strong {
-                    color: #6754e2;
+                    color: #5D2BFF;
                     font-weight: 600; }
             .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price_btn {
               color: #fff;
@@ -6463,7 +6463,7 @@ li.iti__country {
                 height: 100%; }
                 .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options h4 {
                   font-size: 18px;
-                  color: #6754e2;
+                  color: #5D2BFF;
                   font-weight: 600;
                   line-height: 25px;
                   margin: 0 0 25px;
@@ -6565,7 +6565,7 @@ li.iti__country {
               min-height: auto;
               border-radius: 0;
               font-weight: 600;
-              color: #6754e2;
+              color: #5D2BFF;
               background: transparent;
               cursor: pointer;
               display: none;
@@ -6612,7 +6612,7 @@ li.iti__country {
           .ws-pricing .price-contents .tab-contents .tryit.op0 a {
             cursor: default; }
         .ws-pricing .price-contents .tab-contents .tryit a {
-          color: #6754e2;
+          color: #5D2BFF;
           text-decoration: underline; }
           .ws-pricing .price-contents .tab-contents .tryit a:hover {
             color: #4a4c55; }
@@ -6624,7 +6624,7 @@ li.iti__country {
         width: 70%;
         text-align: left; }
         .ws-pricing .price-contents .tab-contents .plan-include h3 {
-          color: #6754e2;
+          color: #5D2BFF;
           font-size: 20px;
           margin: 0 0 20px; }
         .ws-pricing .price-contents .tab-contents .plan-include ul {
@@ -6711,7 +6711,7 @@ li.iti__country {
         line-height: 20px;
         color: rgba(5, 22, 77, 0.7); }
         .free-price .fdflex .colLeft .pr-plan .b-anu strong {
-          color: #6754e2; }
+          color: #5D2BFF; }
     .free-price .fdflex .colRit {
       flex-basis: 75%;
       padding: 40px 60px;
@@ -6743,7 +6743,7 @@ li.iti__country {
               top: 8px; }
       .free-price .fdflex .colRit .btn .price_btn {
         color: #fff;
-        background-color: #6754e2;
+        background-color: #5D2BFF;
         white-space: nowrap;
         text-transform: capitalize;
         padding: 17px 20px;
@@ -6831,7 +6831,7 @@ li.iti__country {
         margin-bottom: 15px;
         min-height: 40px; }
       .comparison-panel .comp-table tr th .button {
-        color: #6754e2;
+        color: #5D2BFF;
         background-color: #ffffff;
         white-space: nowrap;
         text-transform: capitalize;
@@ -6839,7 +6839,7 @@ li.iti__country {
         text-decoration: none;
         transition: 0.3s ease;
         display: inline-block;
-        border: 1px solid #6754e2;
+        border: 1px solid #5D2BFF;
         text-align: center;
         font-size: 16px;
         font-weight: 600;
@@ -6847,14 +6847,14 @@ li.iti__country {
         margin: 0 0 10px;
         min-width: 150px; }
         .comparison-panel .comp-table tr th .button.higlit {
-          background: #6754e2;
+          background: #5D2BFF;
           color: #fff; }
           .comparison-panel .comp-table tr th .button.higlit:hover {
             background: #051441;
             color: #fff;
             border-color: #051441; }
         .comparison-panel .comp-table tr th .button:hover {
-          background: #6754e2;
+          background: #5D2BFF;
           color: #fff; }
   .comparison-panel .comp-row {
     margin: 40px 0; }
@@ -7520,7 +7520,7 @@ li.iti__country {
       .step-section .step-row .step-content .row:before {
         font-size: 16px;
         text-align: center;
-        color: #6754e2;
+        color: #5D2BFF;
         content: counter(hsds-ordered-list);
         counter-increment: hsds-ordered-list;
         display: block;

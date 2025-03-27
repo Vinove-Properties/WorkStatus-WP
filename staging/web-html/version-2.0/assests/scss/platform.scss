@@ -11,7 +11,7 @@ h3 {
   a {
     color: #110302;
     &:hover {
-      color: #6754e2;
+      color: #5D2BFF;
       text-decoration: underline;
     }
   }
@@ -70,7 +70,7 @@ h3 {
       p {
         margin: 0 0 15px;
         a {
-          color: #6754e2;
+          color: #5D2BFF;
           &:hover {
             text-decoration: underline;
           }
@@ -78,10 +78,10 @@ h3 {
       }
       h6 {
         .bg-purple {
-          background: #6754e24a;
+          background: #5D2BFF4a;
           padding: 3px 5px;
           font-weight: 700;
-          color: #6754e2;
+          color: #5D2BFF;
           font-size: 18px;
           line-height: 22px;
           text-transform: uppercase;
@@ -420,7 +420,7 @@ h6.inherit {
       a {
         color: #110302;
         &:hover {
-          color: #6754e2;
+          color: #5D2BFF;
           text-decoration: underline;
         }
       }

@@ -905,7 +905,7 @@
 }
 
 .case-section {
-  background: #6754e2;
+  background: #5D2BFF;
   h2 {
     color: #fff;
   }
@@ -1202,10 +1202,10 @@
           @media screen and (max-width: ($mdscreen-size - 1)) {margin: 0 0 25px;}
         }
 
-          .ctbtn{border: 1px solid rgba(103, 84, 226, 0.50); background:transparent; color:#6754E2;
+          .ctbtn{border: 1px solid rgba(103, 84, 226, 0.50); background:transparent; color:#5D2BFF;
             display: block; font-weight: 600;
 
-            &:hover{background:#6754E2; color:$white;}
+            &:hover{background:#5D2BFF; color:$white;}
 
           }
       }
@@ -1228,7 +1228,7 @@
     }
   }
   .btnSc{text-align: center;
-    a{color: #6754E2;
+    a{color: #5D2BFF;
     display: block;
     transition: all 0.3s ease-in-out;
     font-weight: 500;

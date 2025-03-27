@@ -227,16 +227,16 @@ ul {
   font-size: 20px;
   line-height: 28px;
   color: #FFFFFF;
-  background-color: #6754E2;
+  background-color: #5D2BFF;
   text-transform: capitalize;
   text-decoration: none;
   padding: 15px 65px;
   transition: 0.3s ease;
   display: inline-block;
   white-space: nowrap;
-  border: 1px solid #6754E2; }
+  border: 1px solid #5D2BFF; }
   .primary_btn:hover {
-    color: #6754E2;
+    color: #5D2BFF;
     background-color: transparent; }
   @media screen and (max-width: 767px) {
     .primary_btn {
@@ -281,7 +281,7 @@ ul {
   transition: 0.3s ease;
   display: inline-block; }
   .dark_btn:hover {
-    color: #6754E2;
+    color: #5D2BFF;
     background-color: #FFFFFF; }
   @media screen and (max-width: 767px) {
     .dark_btn {
@@ -290,7 +290,7 @@ ul {
       line-height: 20px; } }
 
 .small_btn {
-  color: #6754E2;
+  color: #5D2BFF;
   background-color: #FFFFFF;
   font-size: 20px;
   white-space: nowrap;
@@ -326,7 +326,7 @@ ul {
 h3 a {
   color: #110302; }
   h3 a:hover {
-    color: #6754E2;
+    color: #5D2BFF;
     text-decoration: underline; }
 
 .background_grey {
@@ -339,13 +339,13 @@ h3 a {
   background-color: #051441; }
 
 .background_lightblue {
-  background-color: #6754E2; }
+  background-color: #5D2BFF; }
 
 .white {
   color: #FFFFFF; }
 
 .blue {
-  color: #6754E2; }
+  color: #5D2BFF; }
 
 .text_center {
   text-align: center; }
@@ -440,7 +440,7 @@ h3 a {
               font-size: 14px;
               line-height: 20px; }
               .site__header .top_nav .navRow .main_menu > li.dropdown .dropdown-content li a:hover {
-                color: #6754E2; }
+                color: #5D2BFF; }
               @media screen and (max-width: 768px) {
                 .site__header .top_nav .navRow .main_menu > li.dropdown .dropdown-content li a {
                   color: #FFFFFF;
@@ -460,15 +460,15 @@ h3 a {
               color: #FFFFFF;
               font-size: 24px; } }
           .site__header .top_nav .navRow .main_menu > li > a.active {
-            color: #6754E2; }
+            color: #5D2BFF; }
         .site__header .top_nav .navRow .main_menu > li.menu_btn a {
           color: #FFFFFF;
-          background-color: #6754E2;
-          border: 1px solid #6754E2;
+          background-color: #5D2BFF;
+          border: 1px solid #5D2BFF;
           padding: 15px 15px;
           cursor: pointer; }
           .site__header .top_nav .navRow .main_menu > li.menu_btn a:hover {
-            color: #6754E2;
+            color: #5D2BFF;
             background-color: #FFFFFF; }
     @media screen and (max-width: 768px) {
       .site__header .top_nav.responsive .main_menu {
@@ -588,11 +588,11 @@ h3 a {
     padding-bottom: 0; }
     .site_nav .btn a {
       color: #FFFFFF;
-      background-color: #6754E2;
-      border: 1px solid #6754E2;
+      background-color: #5D2BFF;
+      border: 1px solid #5D2BFF;
       padding: 13px 20px; }
       .site_nav .btn a:hover {
-        color: #6754E2;
+        color: #5D2BFF;
         background-color: transparent; }
   .site_nav .login {
     padding: 0;
@@ -688,7 +688,7 @@ h3 a {
         display: block;
         white-space: nowrap; }
         .site_nav .dropdown ul li a:hover {
-          color: #6754E2; }
+          color: #5D2BFF; }
       .site_nav .dropdown ul li p {
         padding: 0 24px 15px;
         margin-top: -5px;
@@ -723,7 +723,7 @@ h3 a {
         font-weight: bold;
         font-size: 14px;
         line-height: 140%;
-        color: #6754E2;
+        color: #5D2BFF;
         text-transform: uppercase;
         border-bottom: 1px solid #cccccc;
         padding-bottom: 15px;
@@ -747,7 +747,7 @@ h3 a {
           display: block;
           white-space: nowrap; }
           .site_nav .mega-menu .mega-menu-box li a:hover {
-            color: #6754E2; }
+            color: #5D2BFF; }
     .site_nav .mega-menu:hover .mega-menu-box {
       opacity: 1;
       visibility: visible;
@@ -968,7 +968,7 @@ h3 a {
     .how-works .full-menu .menu-column .col-menu:last-child {
       border-right: 0; }
     .how-works .full-menu .menu-column .col-menu .view-more {
-      color: #6754E2;
+      color: #5D2BFF;
       margin: 40px 0 0;
       transition: all 0.3s ease-in-out;
       font-weight: 500;
@@ -1020,7 +1020,7 @@ h3 a {
         .how-works .full-menu .indmenu .menu-lside .col-menu:last-child .menu-box {
           border-right: 0; }
         .how-works .full-menu .indmenu .menu-lside .col-menu .view-more {
-          color: #6754E2;
+          color: #5D2BFF;
           margin: 40px 0 0;
           transition: all 0.3s ease-in-out;
           font-weight: 500;
@@ -1071,7 +1071,7 @@ h3 a {
   .indmenu .col-menu:last-child {
     border-right: 0; }
   .indmenu .col-menu .view-more {
-    color: #6754E2;
+    color: #5D2BFF;
     margin: 40px 0 0;
     transition: all 0.3s ease-in-out;
     font-weight: 500;
