@@ -2548,7 +2548,18 @@ function updateCalcEvt(userNumber){
 
 const altQty = document.getElementById("alt-qty");
 if (altQty) {
-    altQty.addEventListener("change", function(){
+    altQty.addEventListener("change", function () {
         updateCalcEvt(this.value);
+    });
+
+    altQty.addEventListener("keydown", function (event) {
+        if (event.key === "e" || event.key === "E" || event.key === "-") {
+            event.preventDefault();
+        }else{
+            updateCalcEvt(altQty.value);
+        }
+    });
+    altQty.addEventListener("keyup", function(){
+        updateCalcEvt(altQty.value);
     });
 }
