@@ -252,7 +252,8 @@ if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabl
             foreach( $user_guide_section['qna'] as $row ) {
             $active = ($i==1) ? "active" : "";
             ?>
-            <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>"><?php echo $row['question']; ?></a>
+            <li><a href="#ans_<?php echo $i; ?>" class="<?php echo $active; ?>">
+              <?php echo $row['question']; ?></a>
             </li>
             <?php $i++; } } ?>
           </ul>
@@ -264,7 +265,7 @@ if( isset( $user_guide_section['is_enabled'] ) && ($user_guide_section['is_enabl
         $active = ($i==1) ? "active" : "";
         ?>
         <div class="buyers-guide-answer ans_<?php echo $i; ?>" id="ans_<?php echo $i; ?>">
-        <h3 class="guide-question"><?php echo $row['question']; ?></h3>
+        <?php /*<h3 class="guide-question"><?php echo $row['question']; ?></h3>*/ ?>
         <div class="guide-answer"><?php echo $row['answer']; ?></div>
         </div>
         <?php $i++; } } ?>                  
