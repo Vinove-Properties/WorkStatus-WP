@@ -258,12 +258,12 @@
               
             }
             .prplan {
-              background: rgba(209, 201, 255, 0.5);
-              color: #ffffff;
+              background: rgb(5, 20, 65);
+              color: $white;
               color: $white;
               &:hover {
-                background: rgb(5, 20, 65);
-                color: $white;
+                //background: rgb(5, 20, 65);
+                //color: $white;
               }
             }
           }

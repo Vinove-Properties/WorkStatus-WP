@@ -7085,12 +7085,9 @@ li.iti__country {
     .alternative-section .alternative-wrapper:first-child .feature-loop .feature-row .column-right .text-column h3 {
       color: #FFFFFF; }
     .alternative-section .alternative-wrapper:first-child .feature-loop .feature-row .column-right .prplan {
-      background: rgba(209, 201, 255, 0.5);
-      color: #ffffff;
+      background: #051441;
+      color: #FFFFFF;
       color: #FFFFFF; }
-      .alternative-section .alternative-wrapper:first-child .feature-loop .feature-row .column-right .prplan:hover {
-        background: #051441;
-        color: #FFFFFF; }
     .alternative-section .alternative-wrapper:first-child:after {
       content: "";
       background: url(../images/bg-shape.png) no-repeat;
