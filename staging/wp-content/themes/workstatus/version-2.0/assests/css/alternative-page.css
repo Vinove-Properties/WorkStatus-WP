@@ -5141,7 +5141,7 @@ li.iti__country {
         background: #fff;
         margin-left: 100px;
         box-shadow: 0px 10px 50px rgba(68, 97, 215, 0.1); }
-        .data-driving .data-flex .column .head-data .step-number {
+        .data-driving .data-flex .column .head-data i {
           background-color: #f22f42;
           border: 1px solid #f22f42;
           color: white;
@@ -5185,7 +5185,7 @@ li.iti__country {
       .data-driving .data-flex .column.solutions .head-data {
         margin: 0 0 30px;
         margin-left: -100px; }
-        .data-driving .data-flex .column.solutions .head-data .step-number {
+        .data-driving .data-flex .column.solutions .head-data i {
           color: #fff;
           background: #5D2BFF;
           border-color: #5D2BFF; }
