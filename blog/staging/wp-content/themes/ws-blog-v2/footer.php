@@ -1,5 +1,4 @@
 <?php $site_url = "https://www.workstatus.io"; ?>
-
 <footer class="footer">
   <div class="container">
     <div class="dis-flex footer-top">
@@ -53,8 +52,7 @@
           <li><a href="<?php echo $site_url; ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
         <br>
-        <h4>Platforms
-        </h4>
+        <h4>Platforms</h4>
         <ul>
           <li><a href="<?php echo $site_url; ?>/apps/mac">Mac</a></li>
           <li><a href="<?php echo $site_url; ?>/apps/windows">Windows</a></li>
@@ -219,26 +217,30 @@
       </div>
    </div>
 </div>
+
+<?php 
+$eBook = get_field('eb-download', get_the_ID());
+if( (isset( $eBook['required'] ) && ($eBook['required'] == "yes")) || is_front_page() ) :
+$popBody  = ( isset($eBook['pop-body']) && !empty($eBook['pop-body']) )  ? $eBook['pop-body'] : '<h2>Download Free <strong>eBook</strong></h2><p>Learn, grow, and succeed with this essential guide.</p>';
+$popTnx   = ( isset($eBook['pop-thanks']) && !empty($eBook['pop-thanks']) )  ? $eBook['pop-thanks'] : '<h2>Thank You!</h2><p>Thank you for downloading our eBook. We hope you find it informative and helpful</p>';
+?>
 <div class="ebook-popup">
    <div id="cmnebook-popup" class="popup-wrapper" style="display:none;">
       <div class="popflex">
          <div class="popup-content">
             <span class="ebclose" onclick="_close_ebook_model();"></span>
             <div class="pdf-top">
-               <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ebook-img.svg" alt="workstatus"  width="337" height="241">
-               <div class="text-box">
+               <!-- <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ebook-img.svg" alt="workstatus"  width="337" height="241"> -->
+               <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/dev-images/wbook-fm.png" alt="workstatus"  width="242" height="474">
+               <!-- <div class="text-box">
                   <h3>The Founder's guide to share option schemes</h3>
                   <p>Why, How and when to incentivise your employee with Etiquity</p>
-               </div>
+               </div> -->
             </div>
             <div class="pdf-bottom">
-               <div id="_ebresponse" style="display:none;">
-                  <h2>Thank You!</h2>
-                  <p>Thank you for downloading our eBook. We hope you find it informative and helpful</p>
-               </div>
-               <form id="ebookFormElm" onsubmit="return _handleEbookSubmission(this);">
-                  <h2>Download Free <strong>eBook</strong></h2>
-                  <p>Learn, grow, and succeed with this essential guide.</p>
+               <div id="_ebresponse" style="display:none;"><?php echo $popTnx; ?></div>
+               <form id="ebookFormElm" onsubmit="return _handleEbookSubmission(this);">                  
+                  <?php echo $popBody; ?>
                   <div class="form-wrap">
                      <div class="form-field">
                         <label>Name*</label>
@@ -266,6 +268,8 @@
       </div>
    </div>
 </div>
+<?php endif; ?>
+
 <?php wp_footer(); ?>
 <script type="application/ld+json">
 {
