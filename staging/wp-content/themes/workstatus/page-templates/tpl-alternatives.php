@@ -24,138 +24,123 @@ get_header();
 <!-- Place For Table only -->
 <?php 
 $compCol = get_field('Comp-table');
-if( isset($compCol['required']) && ($compCol['required'] == "yes") ) :
-$tbl = $compCol['cards'];  
+if (isset($compCol['required']) && ($compCol['required'] == "yes")) :
+    $tbl = $compCol['cards'];  
 ?>
 <section class="table-tab padding-b-120">
-<div class="container">
-<div class="top-section"><?php echo $compCol['content'] ?></div>
-<div class="tab-wrap">
-  <div class="tab-row">
-		<nav id="tabs" class="tab-nav">
-			<ul>
-				<li class="active"><a href="#tb-time" title="Time Tracking">
-				<span class="icon">
-				<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
-				<img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-				</span>Time Tracking</a>
-				</li>
-				<li><a href="#tb-productivity" title="Productivity Management">
-				<span class="icon">
-				<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" width="16" height="18">
-				<img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
-				</span>Productivity Management</a>
-				</li>
-				<li><a href="#tb-project" title="Project Management">
-				<span class="icon">
-				<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18">
-				<img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
-				</span>Project  Management</a>
-				</li>
-				<li><a href="#tb-attendance" title="Attendance Management">
-				<span class="icon">
-				<img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18">
-				<img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
-				</span>Attendance Management</a>
-				</li>
-			</ul>
-		</nav>
-    <div id="tab-contents" class="tcontents">
-        <div class="numeric-table show-all" id="compare-table">
-          <div class="scroll-compare">
-            <div class="table-block">
-              <div class="div-block-top">
-                <div class="logo-ws logovs" >
-                  <h2 id="comp-cat-title">Time Tracking</h2>
-                </div>
-                <div class="logo-tb logovs">
-                  <picture>
-                    <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-01.svg"
-                      alt="logo" width="194" height="36">
-                  </picture>
-                </div>
-								<div class="logo-tb logovs">
-								<?php 
-								if( isset($compCol['t1-logo']) && !empty($compCol['t1-logo']) ){
-								echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t1-logo']['url'].'" 
-								alt="'.$compCol['t1-logo']['alt'].'" 
-								width="'.$compCol['t1-logo']['width'].'" height="'.$compCol['t1-logo']['height'].'"></picture>';
-								}
-								?>	                  
-								</div>
-								<div class="logo-tb logovs">
-								<?php 
-								if( isset($compCol['t2-logo']) && !empty($compCol['t2-logo']) ){
-								echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t2-logo']['url'].'" 
-								alt="'.$compCol['t2-logo']['alt'].'" 
-								width="'.$compCol['t2-logo']['width'].'" height="'.$compCol['t2-logo']['height'].'"></picture>';
-								}
-								?>
-								</div>
-								<div class="logo-tb logovs">
-								<?php 
-								if( isset($compCol['t3-logo']) && !empty($compCol['t3-logo']) ){
-								echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t3-logo']['url'].'" 
-								alt="'.$compCol['t3-logo']['alt'].'" 
-								width="'.$compCol['t3-logo']['width'].'" height="'.$compCol['t3-logo']['height'].'"></picture>';
-								}
-								?>                  
-								</div>
-								<div class="logo-tb logovs">
-								<?php 
-								if( isset($compCol['t4-logo']) && !empty($compCol['t4-logo']) ){
-								echo '<picture><img class="desktop" loading="lazy" src="'.$compCol['t4-logo']['url'].'" 
-								alt="'.$compCol['t4-logo']['alt'].'" 
-								width="'.$compCol['t4-logo']['width'].'" height="'.$compCol['t4-logo']['height'].'"></picture>';
-								}
-								?>
-								</div>                
-              </div>
-              <div class="tab-contents active" id="tb-time"><?php echo getAlternateData($tbl, 'time'); ?></div>
-              <div class="tab-contents" id="tb-productivity"><?php echo getAlternateData($tbl, 'productivity'); ?></div>
-              <div class="tab-contents" id="tb-project"><?php echo getAlternateData($tbl, 'project'); ?></div>
-              <div class="tab-contents" id="tb-attendance"><?php echo getAlternateData($tbl, 'attendance'); ?></div>
-
-              <div class="table-row price-table-row" id="ws-pricing-row"><?php echo getAlternatePricing( $compCol ); ?></div>
-
-              <div class="table-row numeric-row">
-                <div class="ws-column ws-lftcolumn">
-                  <p><strong>Calculative Comparison</strong></p>
-                  <div class="custom-input">
-                    <input type="number" id="alt-qty" value="10" min="1">
-                    <div class="custom-buttons">
-                      <button class="up" onclick="document.getElementById('alt-qty').stepUp();updateCalcEvt(document.getElementById('alt-qty').value);"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar01.svg" alt="Workstatus" width="13" height="8"></button>
-                      <button class="down" onclick="document.getElementById('alt-qty').stepDown();updateCalcEvt(document.getElementById('alt-qty').value);"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar02.svg" alt="Workstatus" width="13" height="8"></button>
+    <div class="container">
+        <div class="top-section">
+            <?php echo $compCol['content']; ?>
+        </div>
+        <div class="tab-wrap">
+            <div class="tab-row">
+                <nav id="tabs" class="tab-nav">
+                    <ul>
+                        <li class="active">
+                            <a href="#tb-time" title="Time Tracking">
+                                <span class="icon">
+                                    <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
+                                    <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
+                                </span>Time Tracking
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tb-productivity" title="Productivity Management">
+                                <span class="icon">
+                                    <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" width="16" height="18">
+                                    <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
+                                </span>Productivity Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tb-project" title="Project Management">
+                                <span class="icon">
+                                    <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" width="16" height="18">
+                                    <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
+                                </span>Project Management
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tb-attendance" title="Attendance Management">
+                                <span class="icon">
+                                    <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18">
+                                    <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+                                </span>Attendance Management
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="tab-contents" class="tcontents">
+                    <div class="numeric-table show-all" id="compare-table">
+                        <div class="scroll-compare">
+                            <div class="table-block">
+                                <div class="div-block-top">
+                                    <div class="logo-ws logovs">
+                                        <h2 id="comp-cat-title">Time Tracking</h2>
+                                    </div>
+                                    <div class="logo-tb logovs">
+                                        <picture>
+                                            <img class="desktop" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/numlogo-01.svg" alt="logo" width="194" height="36">
+                                        </picture>
+                                    </div>
+                                    <?php 
+                                    for ($i = 1; $i <= 4; $i++) {
+                                        if (isset($compCol['t' . $i . '-logo']) && !empty($compCol['t' . $i . '-logo'])) {
+                                            echo '<div class="logo-tb logovs">';
+                                            echo '<picture><img class="desktop" loading="lazy" src="' . $compCol['t' . $i . '-logo']['url'] . '" 
+                                                alt="' . $compCol['t' . $i . '-logo']['alt'] . '" 
+                                                width="' . $compCol['t' . $i . '-logo']['width'] . '" 
+                                                height="' . $compCol['t' . $i . '-logo']['height'] . '"></picture>';
+                                            echo '</div>';
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                                <div class="tab-contents active" id="tb-time"><?php echo getAlternateData($tbl, 'time'); ?></div>
+                                <div class="tab-contents" id="tb-productivity"><?php echo getAlternateData($tbl, 'productivity'); ?></div>
+                                <div class="tab-contents" id="tb-project"><?php echo getAlternateData($tbl, 'project'); ?></div>
+                                <div class="tab-contents" id="tb-attendance"><?php echo getAlternateData($tbl, 'attendance'); ?></div>
+                                <div class="table-row price-table-row" id="ws-pricing-row">
+                                    <?php echo getAlternatePricing($compCol); ?>
+                                </div>
+                                <div class="table-row numeric-row">
+                                    <div class="ws-column ws-lftcolumn">
+                                        <p><strong>Calculative Comparison</strong></p>
+                                        <div class="custom-input">
+                                            <input type="number" id="alt-qty" value="10" min="1">
+                                            <div class="custom-buttons">
+                                                <button class="up" onclick="document.getElementById('alt-qty').stepUp();updateCalcEvt(document.getElementById('alt-qty').value);">
+                                                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar01.svg" alt="Workstatus" width="13" height="8">
+                                                </button>
+                                                <button class="down" onclick="document.getElementById('alt-qty').stepDown();updateCalcEvt(document.getElementById('alt-qty').value);">
+                                                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ar02.svg" alt="Workstatus" width="13" height="8">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php echo getAltPricingCalc($compCol); ?>
+                                </div>
+                            </div>
+                            <div class="view-more margin-t-50 text-center">
+                                <a href="javascript:void(0);" onclick="_morecompTable();" class="active">
+                                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-img2.svg" alt="Workstatus" width="50" height="50">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <?php echo getAltPricingCalc($compCol); ?>
-              </div>
             </div>
-            <div class="view-more margin-t-50 text-center">
-              <a href="javascript:void(0);" onclick="_morecompTable();" class="active">
-              <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/scroll-img2.svg" alt="Workstatus" width="50" height="50">
-              </a>
-            </div>
-          </div>
+        </div>
+        <div style="text-align: center; margin-top: 80px;">
+            <?php echo isset($compCol['cta']) && !empty($compCol['cta']) ? $compCol['cta'] : '<h2>See Why 1000+ Businesses Switched to Workstatus!</h2><p>Project visibility, Organized Tasks, More Profit</p>'; ?>
+        </div>
+        <div class="actionBtn" style="margin-top: 40px;">
+            <?php echo cmnBannerCta(); ?>
         </div>
     </div>
-  </div>
-</div>
-<div style="text-align: center; margin-top: 80px;">
-<?php 
-if( isset($compCol['cta']) && !empty($compCol['cta']) ){
-echo $compCol['cta'];
-}else{
-echo '<h2>See Why 1000+ Businesses Switched to Workstatus!</h2><p>Project visibility, Organized Tasks, More Profit</p>';
-}
-?>
-</div>
-<div class="actionBtn" style="margin-top: 40px;">
-<?php echo cmnBannerCta(); ?>
-</div>
 </section>
 <?php endif; ?>
+
 
 <?php 
 $dataDrive = get_field('data-driven');
