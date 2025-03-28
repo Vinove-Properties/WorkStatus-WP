@@ -195,7 +195,7 @@ if( $compFt['cards'] ){
 		    <div class="text-column no-evt listing">'.$row['pros'].'</div>
 		    <div class="text-column no-evt listing">'.$row['cons'].'</div>		    
 		    <div class="text-column no-evt ">
-		      <a href="#" class="prplan">
+		      <a href="javascript:void(0);" class="prplan">
 		      <span class="spn-ind">'.$row['pr-inr'].'</span>
 		      <span class="spn-intr">'.$row['pr-int'].'</span>
 		      </a>
