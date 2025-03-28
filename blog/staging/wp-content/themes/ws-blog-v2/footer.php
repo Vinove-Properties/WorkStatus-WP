@@ -223,6 +223,12 @@ $eBook = get_field('eb-download', get_the_ID());
 if( (isset( $eBook['required'] ) && ($eBook['required'] == "yes")) || is_front_page() ) :
 $popBody  = ( isset($eBook['pop-body']) && !empty($eBook['pop-body']) )  ? $eBook['pop-body'] : '<h2>Download Free <strong>eBook</strong></h2><p>Learn, grow, and succeed with this essential guide.</p>';
 $popTnx   = ( isset($eBook['pop-thanks']) && !empty($eBook['pop-thanks']) )  ? $eBook['pop-thanks'] : '<h2>Thank You!</h2><p>Thank you for downloading our eBook. We hope you find it informative and helpful</p>';
+$pdfLink = '';
+if( isset($eBook['pdf-link']) && !empty($eBook['pdf-link']) ){
+$pdfLink = $eBook['pdf-link'];
+}elseif( isset($eBook['up-pdf']) && !empty($eBook['up-pdf'] ) ){
+$pdfLink = $eBook['up-pdf'];
+}
 ?>
 <div class="ebook-popup">
    <div id="cmnebook-popup" class="popup-wrapper" style="display:none;">
@@ -232,10 +238,12 @@ $popTnx   = ( isset($eBook['pop-thanks']) && !empty($eBook['pop-thanks']) )  ? $
             <div class="pdf-top">
                <!-- <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ebook-img.svg" alt="workstatus"  width="337" height="241"> -->
                <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/dev-images/wbook-fm.png" alt="workstatus"  width="242" height="474">
-               <!-- <div class="text-box">
+               <!-- 
+               <div class="text-box">
                   <h3>The Founder's guide to share option schemes</h3>
                   <p>Why, How and when to incentivise your employee with Etiquity</p>
-               </div> -->
+               </div> 
+               -->
             </div>
             <div class="pdf-bottom">
                <div id="_ebresponse" style="display:none;"><?php echo $popTnx; ?></div>
@@ -258,7 +266,7 @@ $popTnx   = ( isset($eBook['pop-thanks']) && !empty($eBook['pop-thanks']) )  ? $
                         <small class="error-msg-section"></small>
                      </div>
                      <div class="form-field">
-                        <input type="hidden" id="elm_eb_pdf" name="_eb_pdf" value="">
+                        <input type="hidden" id="elm_eb_pdf" name="_eb_pdf" value="<?php echo $pdfLink; ?>">
                         <input type="submit" id="post_ebook" class="downbtn" value="Download Free Ebook">
                      </div>
                   </div>

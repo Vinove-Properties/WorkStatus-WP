@@ -188,7 +188,7 @@ get_header();
               <div class="cus-cont">
                 <div class="cushed" style="justify-content:center;">'.$eBook['title'].'</div>
                 <div class="btn-container">
-                  <a class="white-btn blue pxl-ext" onclick="geteBook_popup(\'http://www.workstatus.io/blog/staging/wp-content/uploads/boost-employees-productivity.pdf\')" href="javascript:void(0);">Download Now</a>
+                  <a class="white-btn blue pxl-ext" onclick="geteBook_popup()" href="javascript:void(0);">Download Now</a>
                 </div>
               </div>
             </div>';  

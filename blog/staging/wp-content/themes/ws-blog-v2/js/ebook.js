@@ -3,7 +3,7 @@ const fname     = document.getElementById('eb-name');
 const emailPD   = document.getElementById('eb-email');
 const phonePD   = document.getElementById('eb-phone');
 
-function geteBook_popup( pdfLnk ){
+function geteBook_popup( pdfLnk = "" ){
     let pdfInput   = document.getElementById('elm_eb_pdf');
     ebPopu.style.display = "block";
     document.getElementById("_ebresponse").style.display = "none";
