@@ -154,8 +154,7 @@ if( isset( $dataDrive['required'] ) && ($dataDrive['required'] == "yes") ) :
   </div>
   <div class="data-flex">
     <div class="column challenges">
-      <div class="head-data">
-       <i>1</i>
+      <div class="head-data">       
         <h3><?php echo $dataDrive['lt-title']; ?></h3>
       </div>
       <?php echo $dataDrive['lt-content']; ?>
@@ -169,7 +168,6 @@ if( isset( $dataDrive['required'] ) && ($dataDrive['required'] == "yes") ) :
     </div>
     <div class="column solutions">
       <div class="head-data">
-       <i>2</i>
         <h3><?php echo $dataDrive['rt-title']; ?></h3>
       </div>
       <?php echo $dataDrive['rt-content']; ?>
