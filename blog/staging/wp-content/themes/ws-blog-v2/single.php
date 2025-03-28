@@ -181,6 +181,14 @@ get_header();
                 <?php dynamic_sidebar('ws-toc'); ?>
               </div>
             </div>
+            <div class="customcta">
+              <div class="cus-cont">
+                <div class="cushed" style="justify-content:center;">Download eBook Title</div>
+                <div class="btn-container">
+                  <a class="white-btn blue pxl-ext" onclick="geteBook_popup('http://www.workstatus.io/blog/staging/wp-content/uploads/boost-employees-productivity.pdf')" href="javascript:void(0);">Download Now</a>
+                </div>
+              </div>
+            </div>
             <?php 
               $sbCTA = get_field('wssb-cta');  
               if( (isset( $sbCTA['required'] ) && ($sbCTA['required'] != "no"))  || (!isset( $sbCTA['required']) ) ) :
