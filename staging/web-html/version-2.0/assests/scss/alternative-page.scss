@@ -223,13 +223,13 @@
             }
           }
           .prplan {
-            background: rgba(209, 201, 255, 1);
             border-radius: 10px;
             padding: 10px 30px;
-            color: rgba(111, 88, 248, 1);
+            background: rgb(5, 20, 65);
+            color: $white;
             &:hover {
-              background: rgb(5, 20, 65);
-              color: $white;
+              //background: rgb(5, 20, 65);
+              //color: $white;
             }
           }
         }
@@ -300,6 +300,8 @@
     }
   }
 }
+
+page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer{margin-top: 30px;}
 
 /*Media Query Start from here*/
 
