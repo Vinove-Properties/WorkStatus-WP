@@ -7109,6 +7109,9 @@ li.iti__country {
 .page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer {
   margin-top: 30px; }
 
+.page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer.ans_1 {
+  margin-top: 0; }
+
 /*Media Query Start from here*/
 @media (max-width: 1440px) {
   .hero-banner .inner-wrap h1 {
