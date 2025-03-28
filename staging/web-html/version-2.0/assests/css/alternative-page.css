@@ -5153,7 +5153,8 @@ li.iti__country {
           justify-content: center;
           margin-right: 20px;
           font-size: 18px;
-          font-weight: 700; }
+          font-weight: 700;
+          font-style: normal; }
         .data-driving .data-flex .column .head-data h3 {
           font-size: 14px;
           color: #444b55;
