@@ -1,5 +1,5 @@
 <?php
-$conData = file_get_contents(get_stylesheet_directory_uri().'/data-json/getCountryDetails.json',FILE_USE_INCLUDE_PATH);
+$conData    = file_get_contents(get_stylesheet_directory_uri().'/data-json/getCountryDetails.json',FILE_USE_INCLUDE_PATH);
 $conData    = json_decode( $conData );
 $conArray   = $conData->response->data;
 ?>
@@ -42,9 +42,7 @@ $conArray   = $conData->response->data;
                 </picture>
                 <i class="icon1"></i>
               </div>
-              <div class="ritbar">
-                5.0
-              </div>
+              <div class="ritbar">5.0</div>
             </div>
             <div class="col">
               <div class="leftbar">
@@ -68,9 +66,7 @@ $conArray   = $conData->response->data;
                 </picture>
                 <i class="icon3"></i>
               </div>
-              <div class="ritbar">
-               4.5
-              </div>
+              <div class="ritbar">4.5</div>
             </div>
             <div class="col">
               <div class="leftbar">
@@ -81,9 +77,7 @@ $conArray   = $conData->response->data;
                 </picture>
                 <i class="icon4"></i>
               </div>
-              <div class="ritbar">
-                4.7
-              </div>
+              <div class="ritbar">4.7</div>
             </div>
           </div>
         </div>

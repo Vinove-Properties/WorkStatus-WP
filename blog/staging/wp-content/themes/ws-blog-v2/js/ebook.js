@@ -25,46 +25,37 @@ function _close_ebook_model(){
 }
 
 
-function ws_checkphonenumber(e) {
-    let keyArray = [46, 8, 9, 27, 13, 187, 189, 16, 17];
-    -
-    1 !== keyArray.indexOf(e.keyCode) || 65 == e.keyCode && !0 === e.ctrlKey || 86 == e.keyCode && !0 === e.ctrlKey ||
-        67 == e.keyCode && !0 === e.ctrlKey || 88 == e.keyCode && !0 === e.ctrlKey || e.keyCode >= 35 && e.keyCode <=
-        39 || (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105) && e
-        .preventDefault()
-}
-
 function checkUseName(event) {
-    checkLength(fname, 3, 255);
+    checkLengthEB(fname, 3, 255);
 }
 
 function phonenumber(inputtxt) {
     if( (/^[A-Za-z0123456789()\s.+-]+$/.test(inputtxt.value.trim()) && inputtxt.value.length >= 6) ){       
-        showSucces(inputtxt)
+        showSuccesEB(inputtxt)
     } else {
         if (inputtxt.value == '') {
-            showError(inputtxt, 'Please enter phone number', 'lblError_phone');
+            showErrorEB(inputtxt, 'Please enter phone number', 'lblError_phone');
         } else {
-            showError(inputtxt, 'Phone number is not valid', 'lblError_phone');
+            showErrorEB(inputtxt, 'Phone number is not valid', 'lblError_phone');
         }
 
     }
 }
 
 function checkPhone(event) {
-    checkLength(phonePD, 6, 20);
+    checkLengthEB(phonePD, 6, 20);
     phonenumber(phonePD);
 }
 function checkEmail(input) {
     const re =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
-        showSucces(input)
+        showSuccesEB(input)
     } else {
         if (input.value == '') {
-            showError(input, 'Please fill email');
+            showErrorEB(input, 'Please fill email');
         } else {
-            showError(input, 'Email is not valid');
+            showErrorEB(input, 'Email is not valid');
         }
     }
 }
@@ -73,7 +64,7 @@ function checkEmailEvent(event) {
     checkEmail(emailPD);
 }
 
-function showError(input, message, spDiv = false){
+function showErrorEB(input, message, spDiv = false){
     //if( !input.classList.contains('downbtn') ){
     let formControl = input.parentElement;
     let small = formControl.querySelector('small.error-msg-section');
@@ -84,27 +75,27 @@ function showError(input, message, spDiv = false){
     //}
 }
 
-function showSucces(input, spDiv = false){
+function showSuccesEB(input, spDiv = false){
     let formControl = input.parentElement;
     let small = formControl.querySelector('small.error-msg-section');
     formControl.classList.remove('verror');
     small.innerText = '';
 }
 
-function checkLength(input, min, max) {
+function checkLengthEB(input, min, max) {
     if (input.value.length < min) {
         if(input.name == "name"){
-            showError(input, `Please fill name`);
+            showErrorEB(input, `Please fill name`);
         }else if(input.name == "phone"){
-            showError(input, `Please enter phone number`);
+            showErrorEB(input, `Please enter phone number`);
         }else if(input.name == "email"){
-            showError(input, `Please fill email`);
+            showErrorEB(input, `Please fill email`);
         }else{
-            //showError(input, `This Field is required`);
+            //showErrorEB(input, `This Field is required`);
         }
         return false;
     }else{
-        showSucces(input);        
+        showSuccesEB(input);        
         return true;
     }
 }

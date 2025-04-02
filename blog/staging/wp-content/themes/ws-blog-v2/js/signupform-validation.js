@@ -82,7 +82,6 @@ function phonenumber(inputtxt){
 //checkRequired fields
 function checkRequired(inputArr){
     inputArr.forEach(function(input){ 
-        console.log( input.name );
         let e = input.value.trim();
         if( !/^[A-Za-z0-9!@#$%^&*()".,;:{}<>?\[\]\-+=' ]{2,}/.test(e) ){
             if( input.name == "uname" ){
