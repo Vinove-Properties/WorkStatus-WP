@@ -13,7 +13,8 @@ $conArray   = $conData->response->data;
         </span>
         <div class="left-section">
           <picture>
-            <img loading="lazy" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/logo-white.svg" alt="Logo" width="179" height="24">
+            <img loading="lazy" src="<?php  echo get_stylesheet_directory_uri(); ?>/assets/images/logo-white.svg" 
+            alt="Logo" width="179" height="24">
           </picture>
           <div class="content">
             <h2>Experience the <span class="lt-blue">Power of Productivity </span></h2>

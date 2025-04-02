@@ -46,7 +46,7 @@ function checkPhone(event) {
     checkLengthEB(phonePD, 6, 20);
     phonenumber(phonePD);
 }
-function checkEmail(input) {
+function checkEmailEB(input) {
     const re =
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (re.test(input.value.trim())) {
@@ -61,7 +61,7 @@ function checkEmail(input) {
 }
 
 function checkEmailEvent(event) {
-    checkEmail(emailPD);
+    checkEmailEB(emailPD);
 }
 
 function showErrorEB(input, message, spDiv = false){

@@ -285,6 +285,7 @@ su_name.addEventListener("keypress", nameCheck_su);
 su_name.addEventListener("keydown", ws_validateStr);
 su_name.addEventListener("focusout", nameCheck_su);
 
+
 su_email.addEventListener("keyup", emailCheck_su);
 su_email.addEventListener("focusout", emailCheck_su);
 su_email.addEventListener("focusin", function(){
