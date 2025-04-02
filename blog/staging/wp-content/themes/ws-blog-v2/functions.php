@@ -2093,7 +2093,7 @@ function ws_signup_api_cb(){
     'utm_campaign'  => (isset($_COOKIE['utm_campaign']) && !empty($_COOKIE['utm_campaign'])) ? $_COOKIE['utm_campaign'] : ''
     );
     
-    $apiCall = "https://app.staging.workstatus.io/api/v3/signUp";
+    $apiCall = "https://api.staging.workstatus.io/api/v3/signUp";
     if( !isBetaVersion() ){
     $apiCall = "https://api.workstatus.io/api/v3/signUp";
     }
