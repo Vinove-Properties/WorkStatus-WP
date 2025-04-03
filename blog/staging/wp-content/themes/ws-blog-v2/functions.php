@@ -608,7 +608,8 @@ add_shortcode( 'ws_imgcta', 'ws_imgctaCB' );
 function ws_imgctaCB( $atts ){
     $atts = shortcode_atts( array(
     'title' => 'Automatic Time Tracking', 
-    'text'  => '', 
+    'text'  => '',
+    'ebook' => false, 
     'isrc'  => get_stylesheet_directory_uri().'/images/blog-ctaimage.png',    
     ), $atts, 'bartag' );
 
@@ -621,6 +622,11 @@ function ws_imgctaCB( $atts ){
     if( $hasLogin !== false ){
     $FreeTrialCta = '<a href="javascript:void(0);" class="primary_btn1" onclick="return get_ws_signupform('.$hasLogin['pid'].', \''.$hasLogin['type'].'\');">'.$hasLogin['cta_text'].'</a>';
     }
+
+    if( isset($atts['ebook']) && $atts['ebook'] == true ){
+        $FreeTrialCta = '<a href="javascript:void(0);" class="primary_btn1" onclick="geteBook_popup()">Download Now</a>';
+    }
+
     $div = '<div class="upd-cusbanner cusbanner-up">
     <div class="colleft">
     <p class="heading">'.$atts['title'].'</p>
