@@ -298,8 +298,8 @@
     }
 
     .top-section{
-      a{color: #5e6373; text-decoration: underline;
-      &:hover{text-decoration: none;}
+      a{color: #5e6373; text-decoration: none;
+      &:hover{text-decoration: underline; }
       }
     }
 
@@ -325,7 +325,7 @@
           }
         }
       }
-      a{color:$white;
+      a{color:$white; text-decoration: none;
         &:hover{text-decoration: underline;}
         }
     }
