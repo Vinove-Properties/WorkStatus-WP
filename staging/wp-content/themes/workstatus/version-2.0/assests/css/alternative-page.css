@@ -7106,12 +7106,6 @@ li.iti__country {
     color: #5e6373; }
     .alternative-section .alternative-wrapper .top-section a:hover {
       text-decoration: underline; }
-  .alternative-section .alternative-wrapper:first-child .feature-loop .feature-row .column-right .text-column ul li a {
-    color: #FFFFFF; }
-  .alternative-section .alternative-wrapper:first-child .top-section a {
-    color: #FFFFFF; }
-    .alternative-section .alternative-wrapper:first-child .top-section a:hover {
-      text-decoration: underline; }
 
 .page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer {
   margin-top: 30px; }
