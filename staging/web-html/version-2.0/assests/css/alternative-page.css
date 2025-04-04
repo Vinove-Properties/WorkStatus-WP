@@ -7077,7 +7077,8 @@ li.iti__country {
           color: #FFFFFF;
           cursor: default; }
           .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .prplan:hover {
-            cursor: default; }
+            cursor: default;
+            text-decoration: none; }
   .alternative-section .alternative-wrapper:first-child {
     background: #5D2BFF;
     color: #FFFFFF;
