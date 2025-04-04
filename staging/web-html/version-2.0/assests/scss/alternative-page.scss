@@ -299,6 +299,30 @@
       &:hover{text-decoration: underline;}
       }
     }
+
+
+    &.alt-blue{
+      .top-section {
+        a{color:$white;
+        &:hover{text-decoration: underline;}
+        }
+      }
+      .feature-loop {
+        .feature-row {
+          .column-right{
+            .text-column {
+              ul{
+                li{
+                  a{color:$white;
+                  &:hover{text-decoration: underline;}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     
   }
 }
