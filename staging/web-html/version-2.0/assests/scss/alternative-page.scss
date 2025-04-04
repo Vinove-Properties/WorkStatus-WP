@@ -299,6 +299,24 @@
       &:hover{text-decoration: underline;}
       }
     }
+    &:first-child{
+      .feature-loop {
+        .feature-row{
+          .column-right {
+            .text-column{
+              ul li{
+                a{color: $white;}
+              }
+            }
+          }
+        }
+      }
+      .top-section{
+        a{color: $white;
+        &:hover{text-decoration: underline;}
+        }
+      }
+    }
   }
 }
 
