@@ -228,6 +228,7 @@
             padding: 10px 30px;
             background: rgb(5, 20, 65);
             color: $white;
+            cursor: default;
             &:hover {
               //background: rgb(5, 20, 65);
               //color: $white;
@@ -295,8 +296,8 @@
     }
 
     .top-section{
-      a{color: #5e6373;
-      &:hover{text-decoration: underline;}
+      a{color: #5e6373; text-decoration: underline;
+      &:hover{text-decoration: none;}
       }
     }
 

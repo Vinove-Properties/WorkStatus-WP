@@ -7074,7 +7074,8 @@ li.iti__country {
           border-radius: 10px;
           padding: 10px 30px;
           background: #051441;
-          color: #FFFFFF; }
+          color: #FFFFFF;
+          cursor: default; }
   .alternative-section .alternative-wrapper:first-child {
     background: #5D2BFF;
     color: #FFFFFF;
@@ -7103,9 +7104,10 @@ li.iti__country {
   .alternative-section .alternative-wrapper:nth-child(3n) {
     background: #fbf9ff; }
   .alternative-section .alternative-wrapper .top-section a {
-    color: #5e6373; }
+    color: #5e6373;
+    text-decoration: underline; }
     .alternative-section .alternative-wrapper .top-section a:hover {
-      text-decoration: underline; }
+      text-decoration: none; }
   .alternative-section .alternative-wrapper.alt-blue .top-section a {
     color: #FFFFFF; }
     .alternative-section .alternative-wrapper.alt-blue .top-section a:hover {
