@@ -455,21 +455,21 @@ function flterActiveContent( $tab = 'cat-1' ){
         echo '<div class="usecase-tabs"><div class="tab-row">';
         echo '<nav id="tabs" class="tab-nav">
         <ul class="ucase">
-          <li class="'.flterTab('time').'"><a href="#tab01">Time Tracking</a></li>
-          <li class="'.flterTab('productivity').'"><a href="#tab02">Productivity Management</a></li>
-          <li class="'.flterTab('project').'"><a href="#tab03">Project & Task Management</a></li>
-          <li class="'.flterTab('attendance').'"><a href="#tab04">Attendance Tracking</a></li>
-          <li class="'.flterTab('reporting').'"><a href="#tab05">Reporting & Analytics</a></li>
-          <li class="'.flterTab('enterprises').'"><a href="#tab06">For Enterprises</a></li>
+        <li class="'.flterTab('time').'"><a href="#uc-tab01">Time Tracking</a></li>
+        <li class="'.flterTab('productivity').'"><a href="#uc-tab02">Productivity Management</a></li>
+        <li class="'.flterTab('project').'"><a href="#uc-tab03">Project & Task Management</a></li>
+        <li class="'.flterTab('attendance').'"><a href="#uc-tab04">Attendance Tracking</a></li>
+        <li class="'.flterTab('reporting').'"><a href="#uc-tab05">Reporting & Analytics</a></li>
+        <li class="'.flterTab('enterprises').'"><a href="#uc-tab06">For Enterprises</a></li>
         </ul>
         </nav>';
-        echo '<div id="tab-contents" class="bcontents">';
+        echo '<div id="uc-tb-content" class="bcontents">';
         $cat  = ['cat-1', 'cat-2', 'cat-3', 'cat-4', 'cat-5', 'cat-6'];
         $c    = 0;
         foreach( $cat as $ca ){ $c++;
           //print_r($ca);
           $activeTb = ( $c == 1 ) ? 'active' : '';
-          echo '<div id="tab0'.$c.'" class="tab-contents '.flterActiveContent($ca).'"><div class="flex_row">';      
+          echo '<div id="uc-tab0'.$c.'" class="tab-contents '.flterActiveContent($ca).'"><div class="flex_row">';      
           if( $productsInt['cards'] ){
               //echo '<pre>';print_r($productsInt['cards']);echo '</pre>';
 

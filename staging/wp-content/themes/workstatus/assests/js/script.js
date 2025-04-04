@@ -419,7 +419,12 @@ function myChat() {
  
 // tabs//
 var tabLabels   = document.querySelectorAll("#tabs li");
+if( document.getElementById("uc-tb-content") ){
+var tabPanes    = document.getElementById("uc-tb-content").getElementsByClassName("tab-contents");
+}else{
 var tabPanes    = document.getElementsByClassName("tab-contents");
+}
+
 function activateTab(e){
   e.preventDefault();  
   var elmTitle =  e.target.getAttribute("title");
@@ -440,7 +445,6 @@ function activateTab(e){
 
 }
 
-// Apply event listeners
 tabLabels.forEach(function(label, index){
   label.addEventListener("click", activateTab);
 });
