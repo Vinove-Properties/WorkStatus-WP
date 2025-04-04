@@ -185,7 +185,7 @@ if( $compFt['cards'] ){
     $ft = 0;
 	foreach ($compFt['cards'] as $row){ $ft++;
         $elmClass = ( $ft == 1 ) ? "alt-blue" : "";
-		echo '<div class="alternative-wrapper padding-t-120 padding-b-120 '.$elmClass.'" id="alter-elm-'.$ft.'"">
+		echo '<div class="alternative-wrapper padding-t-120 padding-b-120 '.$elmClass.'" id="alter-elm-'.$ft.'">
 		<div class="container">
 		<div class="top-section text-center">'.$row['content'].'</div>
 		<div class="feature-loop">
