@@ -89,6 +89,7 @@
       align-items: center;
       position: relative;
       z-index: 99;
+      margin:40px 0 0;
 
       img {
         margin: 0 10px;
@@ -294,7 +295,7 @@
     }
 
     .top-section{
-      a{color:$white;
+      a{color: #5e6373;
       &:hover{text-decoration: underline;}
       }
     }

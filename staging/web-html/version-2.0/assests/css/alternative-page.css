@@ -6980,7 +6980,8 @@ li.iti__country {
       justify-content: center;
       align-items: center;
       position: relative;
-      z-index: 99; }
+      z-index: 99;
+      margin: 40px 0 0; }
       .hero-banner .inner-wrap .alter-image img {
         margin: 0 10px; }
 
@@ -7102,7 +7103,7 @@ li.iti__country {
   .alternative-section .alternative-wrapper:nth-child(3n) {
     background: #fbf9ff; }
   .alternative-section .alternative-wrapper .top-section a {
-    color: #FFFFFF; }
+    color: #5e6373; }
     .alternative-section .alternative-wrapper .top-section a:hover {
       text-decoration: underline; }
 
