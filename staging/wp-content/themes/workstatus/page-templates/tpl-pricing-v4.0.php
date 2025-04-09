@@ -159,7 +159,7 @@ $activePlan =  'productivity';
                   <div class="price-options">
                     <h4>Everything <span class="perp">in</span> Productivity  +</h4>
                     <div class="option-list">
-                      <div class="option">Project Management (Unlimited Projects)</div>
+                      <div class="option">Project Management (Limited Projects)</div>
                       <div class="option">Project & Task Time Tracking</div>
                       <div class="option">Milestones</div>
                       <div class="option">Budgeting</div>
@@ -488,7 +488,7 @@ $activePlan =  'productivity';
                 <td>Custom Idle time out</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -496,7 +496,7 @@ $activePlan =  'productivity';
                 <td>Auto discard idle time</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -504,8 +504,8 @@ $activePlan =  'productivity';
                 <td>Background timer *</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
               <tr>
@@ -590,7 +590,7 @@ $activePlan =  'productivity';
               <td>Screenshots</td>
                 <td>100/user/mo</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -614,7 +614,7 @@ $activePlan =  'productivity';
                 <td>Achievement Badges</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -637,7 +637,7 @@ $activePlan =  'productivity';
                 <td>Scheduling & attendance</td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
@@ -725,7 +725,7 @@ $activePlan =  'productivity';
                 <td>Payments & Payroll</td>
                 <td>-</td>
                 <td>-</td>
-                <td>-</td>
+                <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
                 <td><i class="chkicon"></i></td>
               </tr>
