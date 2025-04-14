@@ -402,9 +402,7 @@
         <div class="right-section">
           <h4>Optimize Time Tracking & Workforce Coordination</h4>
           <picture>
-            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/but-image.svg">
-            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/but-image.svg">
-            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/but-image.svg" alt="persona"
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/but-image.webp" alt="persona"
               width="205" height="155">
           </picture>
           <a href="<?php echo site_url('/solution'); ?>" class="is-arrow">Explore all solutions</a>
