@@ -96,7 +96,7 @@
     <div class="dis-flex footer-middle">
       <div class="flex-5">
         <h4>Workstatus</h4>
-        <ul>          
+        <ul class="spc">
           <li><a href="https://www.workstatus.io/about">About us</a></li>
           <li><a href="https://www.workstatus.io/reviews">Reviews</a></li>
           <li><a href="https://www.workstatus.io/press">Press</a></li>
@@ -106,27 +106,33 @@
           <li><a href="https://www.workstatus.io/demo">Product Tour</a></li>
           <li><a href="https://www.workstatus.io/change-log">Revision History</a></li>
         </ul>
-      </div>
-      <div class="flex-5">
         <h4>Tools</h4>
         <ul>
           <li><a href="https://www.workstatus.io/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-          <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
+          <li><a href="https://www.workstatus.io/tools/free-timesheet-templates">Free Timesheet Templates</a></li>
         </ul>
-        <br>
-        <h4>Platforms
+      </div>
+      <div class="flex-5">
+        <h4>Workstatus Comparison
         </h4>
         <ul>
-          <li><a href="https://www.workstatus.io/apps/mac">Mac</a></li>
-          <li><a href="https://www.workstatus.io/apps/windows">Windows</a></li>
-          <li><a href="https://www.workstatus.io/apps/linux">Linux</a></li>
-          <li><a href="https://www.workstatus.io/apps/iphone">iOS</a></li>
-          <li><a href="https://www.workstatus.io/apps/android">Android</a></li>
+          <li><a href="#">Teramind vs Interguard</a></li>
+          <li><a href="#">Hubstaff vs Clockify</a></li>
+          <li><a href="#">Hubstaff vs Insightful</a></li>
+          <li><a href="#">ActivTrak vs DeskTime</a></li>
+          <li><a href="#">Clockify vs MoniTask</a></li>
+          <li><a href="#">Insightful vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
+          <li><a href="#">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
       <div class="flex-5">
         <h4>Alternatives</h4>
-        <ul>          
+        <ul>
           <li><a href="https://www.workstatus.io/hubstaff-alternative">Hubstaff Alternative</a></li>
           <li><a href="https://www.workstatus.io/desktime-alternative">Desktime Alternative</a></li>
           <li><a href="https://www.workstatus.io/timedoctor-alternative">Time Doctor Alternative</a></li>
@@ -135,22 +141,57 @@
           <li><a href="https://www.workstatus.io/activtrak-alternative">ActivTrak Alternative</a></li>
           <li><a href="https://www.workstatus.io/teramind-alternative">Teramind Alternative</a></li>
           <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="https://www.workstatus.io/monitask-alternative">Monitask Alternative</a></li>
         </ul>
+        
       </div>
       <div class="flex-5">
-        <h4>Workstatus Comparison
+        <h4 style="opacity:0;">Alternatives
         </h4>
         <ul>
-          <li><a href="https://www.workstatus.io/teramind-vs-interguard-vs-workstatus">Teramind vs Interguard</a></li>
-          <li><a href="https://www.workstatus.io/hubstaff-vs-clockify-vs-workstatus">Hubstaff vs Clockify</a></li>
-          <li><a href="https://www.workstatus.io/hubstaff-vs-insightful-vs-workstatus">Hubstaff vs Insightful</a></li>
-          <li><a href="https://www.workstatus.io/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
-          <li><a href="https://www.workstatus.io/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
-          <li><a href="https://www.workstatus.io/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
-          <li><a href="https://www.workstatus.io/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
+          <li><a href="https://www.workstatus.io/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="https://www.workstatus.io/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="https://www.workstatus.io/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="https://www.workstatus.io/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="https://www.workstatus.io/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="https://www.workstatus.io/activtrak-alternative">ActivTrak Alternative</a></li>
         </ul>
+        <div class="social-box social-m">
+          <h3>Platforms</h3>
+          <div class="dis-flex">
+            <a href="https://www.facebook.com/workstatussoftware/">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/plate-01.svg" width="29" height="29" alt="facebook">
+              </picture>
+            </a>
+            <a href="https://x.com/Workstatusapp">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/plate-02.svg" width="29" height="29" alt="twitter">
+              </picture>
+            </a>
+            <a href="https://www.linkedin.com/company/Workstatusapp/">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/plate-03.svg" width="29" height="29" alt="linkedin">
+              </picture>
+            </a>
+            <a href="https://www.instagram.com/Workstatusapp/">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/plate-04.svg" width="29" height="29" alt="instagram">
+              </picture>
+            </a>
+            <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/plate-05.svg" width="29" height="29" alt="youtube">
+              </picture>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="flex-5">
+        <div>
         <h4>Support
         </h4>
         <ul>
@@ -160,12 +201,43 @@
           <li><a href="https://www.workstatus.io/faq">FAQs</a></li>
           <li><a href="https://www.workstatus.io/data-retention">Data Retention</a></li>
         </ul>
-       
-
+     </div>
+     <div>
         <ul class="info">
           <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
           <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
         </ul>
+        <div class="social-box">
+          <h3>Follow Us</h3>
+          <div class="dis-flex">
+            <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
+              </picture>
+            </a>
+            <a href="https://x.com/Workstatusapp" target="_blank">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
+              </picture>
+            </a>
+            <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+              </picture>
+            </a>
+            <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
+              </picture>
+            </a>
+            <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
+              <picture>
+                <img loading="lazy" src="./assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
+              </picture>
+            </a>
+          </div>
+        </div>
+</div>
       </div>
     </div>
     <div class="dis-flex footer-bottom">
@@ -184,57 +256,49 @@
           </a>
         </div>
       </div>
-      <div class="flex-3 social-box">
-        <h3>Follow Us</h3>
-        <div class="dis-flex">
-          <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
-            <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
-            </picture>
-          </a>
-          <a href="https://x.com/Workstatusapp" target="_blank">
-            <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
-            </picture>
-          </a>
-          <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
-            <picture>
-              <img loading="lazy" src="./assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
-            </picture>
-          </a>
-          <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
-            <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
-            </picture>
-          </a>
-          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
-            <picture>
-              <img loading="lazy" src="./assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
-            </picture>
-          </a>
+      <div class="flex-3  footer-rating">
+        <span class="star-outer" id="star" style="display:none">
+        <span class="star-inner star-hover" id="starthover">
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('two')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('three')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('four')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('five')"></i> 
+        </span>
+        <span id="rate_msg"></span>
+        </span>   
+        <div class="star-outer" id="rated">
+          <span class="star-inner">
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          </span>
+          4.9 out of 5.0 by
+        </div>
+        <div class="client-outer">
+          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 1218 Businesses for Workforce Management
         </div>
       </div>
-      
       <div class="flex-3 copyright">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625" title="DMCA.com Protection Status" style="margin-left:0;margin-top: 20px; display:block" class="dmca-badge">
         <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
   </div>
-  
   <div class="footer-copyright">
     <div class="container">
       <div class="cop">
         <p class="copyright">
-          
-        Copyright © 2021 - 2025. All Rights Reserved. A Vinove Company.
-      </p>
-      <ul class="privacy-links">
-        <li class="hide">|</li>
-        <li><a href="http://localhost/WorkStatus-WP/staging/privacy-policy">Privacy Policy </a></li>
-        <li class="hide">|</li>
-        <li><a href="http://localhost/WorkStatus-WP/staging/terms-of-service">Terms of Service</a></li>
-      </ul>
+          Copyright © 2021 - 2025. All Rights Reserved. A Vinove Company.
+        </p>
+        <ul class="privacy-links">
+          <li class="hide">|</li>
+          <li><a href="http://localhost/WorkStatus-WP/staging/privacy-policy">Privacy Policy </a></li>
+          <li class="hide">|</li>
+          <li><a href="http://localhost/WorkStatus-WP/staging/terms-of-service">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
   </div>

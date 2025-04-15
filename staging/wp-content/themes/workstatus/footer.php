@@ -36,7 +36,7 @@ global $ws_ctas, $RegLink, $LogLink;
     <div class="dis-flex footer-middle">
       <div class="flex-5">
         <h4>Workstatus</h4>
-        <ul>          
+        <ul class="spc">        
           <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
           <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
           <li><a href="<?php echo site_url(); ?>/press">Press</a></li>
@@ -47,22 +47,29 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
           <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
         </ul>
-      </div>
-      <div class="flex-5">
+        <br>
         <h4>Tools</h4>
         <ul>
           <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
           <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
         </ul>
-        <br>
-        <h4>Platforms
+      </div>
+      <div class="flex-5">
+      <h4>Workstatus Comparison
         </h4>
         <ul>
-          <li><a href="<?php echo site_url(); ?>/apps/mac">Mac</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/windows">Windows</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/linux">Linux</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/iphone">iOS</a></li>
-          <li><a href="<?php echo site_url(); ?>/apps/android">Android</a></li>
+          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
+          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
+          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
+          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
       <div class="flex-5">
@@ -76,22 +83,57 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/teramind-alternative">Teramind Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
         </ul>
       </div>
       <div class="flex-5">
-        <h4>Workstatus Comparison
-        </h4>
+      <h4 style="opacity:0;">Alternatives
+      </h4>
         <ul>
-          <li><a href="<?php echo site_url('/teramind-vs-interguard-vs-workstatus'); ?>">Teramind vs Interguard</a></li>
-          <li><a href="<?php echo site_url('/hubstaff-vs-clockify-vs-workstatus'); ?>">Hubstaff vs Clockify</a></li>
-          <li><a href="<?php echo site_url('/hubstaff-vs-insightful-vs-workstatus'); ?>">Hubstaff vs Insightful</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-desktime-vs-workstatus'); ?>">ActivTrak vs DeskTime</a></li>
-          <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
-          <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
+        <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+        
         </ul>
+        <div class="social-box social-m">
+          <h3>Platforms</h3>
+          <div class="dis-flex">
+            <a href="<?php echo site_url(); ?>/apps/mac">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-01.svg" width="29" height="29" alt="facebook">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/windows">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-02.svg" width="29" height="29" alt="twitter">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/iphone">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-03.svg" width="29" height="29" alt="linkedin">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/android">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-04.svg" width="29" height="29" alt="instagram">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/linux">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-05.svg" width="29" height="29" alt="youtube">
+              </picture>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="flex-5">
+      <div>
         <h4>Support
         </h4>
         <ul>
@@ -101,29 +143,13 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
           <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
         </ul>
+     </div>
+     <div>
         <ul class="info">
           <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
           <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="dis-flex footer-bottom">
-      <div class="flex-3 logo-box">
-        <h3>DEVELOPED & MARKETED BY</h3>
-        <div class="dis-flex">
-          <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="180" height="33" alt="Invoicera">
-            </picture>
-          </a>
-          <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="180" height="44" alt="Workstatus"> 
-            </picture>
-          </a>
-        </div>
-      </div>
-      <div class="flex-3 social-box">
+        <div class="social-box">
         <h3>Follow Us</h3>
         <div class="dis-flex">
           <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
@@ -151,6 +177,50 @@ global $ws_ctas, $RegLink, $LogLink;
               <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
             </picture>
           </a>
+        </div>
+      </div>
+</div>
+      </div>
+    </div>
+    <div class="dis-flex footer-bottom">
+      <div class="flex-3 logo-box">
+        <h3>DEVELOPED & MARKETED BY</h3>
+        <div class="dis-flex">
+          <a href="https://www.valuecoders.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/vc-logo.svg" width="180" height="33" alt="Invoicera">
+            </picture>
+          </a>
+          <a href="https://www.pixelcrayons.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/pc-logo.svg" width="180" height="44" alt="Workstatus"> 
+            </picture>
+          </a>
+        </div>
+      </div>
+      <div class="flex-3  footer-rating">
+        <span class="star-outer" id="star" style="display:none">
+        <span class="star-inner star-hover" id="starthover">
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('two')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('three')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('four')"></i> 
+        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('five')"></i> 
+        </span>
+        <span id="rate_msg"></span>
+        </span>   
+        <div class="star-outer" id="rated">
+          <span class="star-inner">
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          <i class="star-icon"></i> 
+          </span>
+          4.9 out of 5.0 by
+        </div>
+        <div class="client-outer">
+          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 1218 Businesses for Workforce Management
         </div>
       </div>
       <div class="flex-3 copyright">
