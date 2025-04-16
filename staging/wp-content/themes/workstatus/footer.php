@@ -65,11 +65,6 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url('/clockify-vs-monitask-vs-workstatus'); ?>">Clockify vs MoniTask</a></li>
           <li><a href="<?php echo site_url('/insightful-vs-timedoctor-vs-workstatus'); ?>">Insightful vs Timedoctor</a></li>
           <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
-          <li><a href="<?php echo site_url('/activtrak-vs-timedoctor-vs-workstatus'); ?>">Activtrak vs Timedoctor</a></li>
         </ul>
       </div>
       <div class="flex-5">
@@ -83,22 +78,24 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/teramind-alternative">Teramind Alternative</a></li>
           <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/clickup-alternative">ClickUp Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/teamwork-alternative">Teamwork.com Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/basecamp-alternative">Basecamp Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/wrike-alternative">Wrike Alternative</a></li>
         </ul>
       </div>
       <div class="flex-5">
       <h4 style="opacity:0;">Alternatives
       </h4>
         <ul>
-        <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/insightful-alternative">Insightful Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/we360ai-alternative">We360.ai Alternative</a></li>
-          <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+        <li><a href="<?php echo site_url(); ?>/microsoft-project-alternative">Microsoft Project Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/trello-alternative">Trello Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/smartsheet-alternative">Smartsheet Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/asana-alternative">Asana Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/jira-alternative">Jira Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/microsoft-planner-alternative">Microsoft Planner Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/zoho-project-alternative">Zoho Projects Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monday-alternative">Monday.com Alternative</a></li>
         
         </ul>
         <div class="social-box social-m">

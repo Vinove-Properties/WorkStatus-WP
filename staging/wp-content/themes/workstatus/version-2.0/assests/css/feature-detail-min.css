@@ -8360,7 +8360,7 @@ li.iti__country {
       padding-right: 50px;
       display: flex;
       flex-direction: column;
-      min-height: 420px; }
+      min-height: 470px; }
       .footer .footer-middle .flex-5:last-child {
         padding-right: 0; }
     .footer .footer-middle h4 {
@@ -8400,7 +8400,7 @@ li.iti__country {
       .footer .footer-middle ul.spc {
         margin: 0 0 20px; }
     .footer .footer-middle .social-box {
-      margin: 50px 0 0; }
+      margin: 113px 0 0; }
       .footer .footer-middle .social-box h3 {
         font-size: 15px;
         line-height: 24px;
@@ -8412,7 +8412,7 @@ li.iti__country {
         .footer .footer-middle .social-box .dis-flex a:hover {
           opacity: 0.6; }
       .footer .footer-middle .social-box.social-m {
-        margin: 85px 0 0; }
+        margin: 75px 0 0; }
   .footer .footer-bottom {
     padding: 40px 0 0;
     border-top: 1px solid rgba(255, 255, 255, 0.13);
@@ -8498,7 +8498,7 @@ li.iti__country {
 /*Media Query Start From Here*/
 @media (max-width: 1440px) {
   .footer .footer-middle .flex-5 {
-    padding-right: 30px; }
+    padding-right: 25px; }
   .footer .footer-bottom .logo-box .dis-flex a {
     margin-right: 15px; }
   .footer .footer-bottom .social-box .dis-flex a {
@@ -8507,7 +8507,7 @@ li.iti__country {
     margin: 0 0 15px; } }
 @media (max-width: 1366px) {
   .footer .footer-middle ul li {
-    font-size: 15px; }
+    font-size: 14px; }
   .footer .footer-bottom .footer-rating {
     font-size: 14px; } }
 @media (max-width: 1160px) {
