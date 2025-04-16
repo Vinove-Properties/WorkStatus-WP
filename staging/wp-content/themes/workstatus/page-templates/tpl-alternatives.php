@@ -3,9 +3,11 @@
 Template Name: Alternatives Template
 Author : Nitin Baluni
 */ 
+$tplType    = get_field('tpl-type');
+$isCompTpl  = ( $tplType && ($tplType === "comp") ) ? true : false;
 get_header();
 ?>
-<main class="site__content">
+<main class="site__content <?php echo ( $isCompTpl === true ) ? "ws-comp-template" : ""; ?>">
 <section class="hero-banner">
 <div class="container">
 <div class="inner-wrap">
@@ -185,6 +187,15 @@ if( $compFt['cards'] ){
     $ft = 0;
 	foreach ($compFt['cards'] as $row){ $ft++;
         $elmClass = ( $ft == 1 ) ? "alt-blue" : "";
+        $strPricing = "";
+        if( $isCompTpl === false ){
+        $strPricing = '<div class="text-column no-evt ">
+        <a href="javascript:void(0);" class="prplan">
+        <span class="spn-ind">'.$row['pr-inr'].'</span>
+        <span class="spn-intr">'.$row['pr-int'].'</span>
+        </a>
+        </div>';
+        }
 		echo '<div class="alternative-wrapper padding-t-120 padding-b-120 '.$elmClass.'" id="alter-elm-'.$ft.'">
 		<div class="container">
 		<div class="top-section text-center">'.$row['content'].'</div>
@@ -192,14 +203,9 @@ if( $compFt['cards'] ){
 		<div class="feature-row">
 		  <div class="column-left">'.pxlGetPtag($row['image']).'</div>
 		  <div class="column-right">
-		    <div class="text-column no-evt listing">'.$row['pros'].'</div>
-		    <div class="text-column no-evt listing">'.$row['cons'].'</div>		    
-		    <div class="text-column no-evt ">
-		      <a href="javascript:void(0);" class="prplan">
-		      <span class="spn-ind">'.$row['pr-inr'].'</span>
-		      <span class="spn-intr">'.$row['pr-int'].'</span>
-		      </a>
-		    </div>
+		    <div class="text-column no-evt listing">'.comprTpl_Literals($row['pros']).'</div>
+		    <div class="text-column no-evt listing">'.comprTpl_Literals($row['cons']).'</div>		    
+		    '.$strPricing.'
 		  </div>
 		</div>
 		</div>

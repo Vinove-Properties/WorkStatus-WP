@@ -1267,3 +1267,16 @@ function getAltPricingCalc( $col ){
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t4-pricing']).'</strong><span class="small-font">(Per user)</span></div>';
     return $elm;
 }
+
+
+function comprTpl_Literals($content) {
+    return preg_replace_callback('/\{\{\$(.*?)\|(.*?)\}\}/', function($matches) {
+        $usd = trim($matches[1]);
+        $inr = trim($matches[2]);
+
+        return '<div class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
+             . '<span class="spn-ind">Pricing plans start from '.htmlspecialchars($usd).'</span>'
+             . '<span class="spn-intr">Pricing plans start from '.htmlspecialchars($inr).'</span>'
+             . '</a></div>';
+    }, $content);
+}
