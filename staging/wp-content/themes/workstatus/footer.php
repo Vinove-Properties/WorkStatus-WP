@@ -47,7 +47,7 @@ global $ws_ctas, $RegLink, $LogLink;
           <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
           <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
         </ul>
-        <br>
+       
         <h4>Tools</h4>
         <ul>
           <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
