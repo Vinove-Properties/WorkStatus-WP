@@ -2386,7 +2386,8 @@ function pxlCardThumbnail() {
     if( function_exists('get_field') ){
         $listThubnail = get_field( 'pl-thumbnail', $post_id );
         if( $listThubnail && is_array( $listThubnail ) ){
-            if( isset( $listThubnail['sizes']['plist-thumbnail'] ) &&  !empty( $listThubnail['sizes']['plist-thumbnail'] ) ){
+            if( isset( $listThubnail['sizes']['plist-thumbnail'] ) && 
+            !empty( $listThubnail['sizes']['plist-thumbnail'] ) ){
             $thePostImage = '<img loading="lazy" src="'.$listThubnail['sizes']['plist-thumbnail'].'" 
             alt="'.$listThubnail['title'].'" width="'.$listThubnail['sizes']['plist-thumbnail-width'].'" 
             height="'.$listThubnail['sizes']['plist-thumbnail-height'].'">';    
