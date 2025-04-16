@@ -7172,6 +7172,12 @@ li.iti__country {
     .alternative-section .alternative-wrapper.alt-blue a:hover {
       text-decoration: underline; }
 
+.ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column .tpl-litr {
+  padding: 20px 0 0; }
+.ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:nth-child(2n) ul li:before {
+  background: url(../images/pros-blue.svg) no-repeat;
+  background-size: 100%; }
+
 .page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer {
   margin-top: 30px; }
 
