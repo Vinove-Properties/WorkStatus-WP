@@ -6714,7 +6714,7 @@ h3 a {
     align-items: baseline; }
     .footer .footer-middle .flex-5 {
       flex-basis: auto;
-      padding-right: 50px;
+      padding-right: 40px;
       display: flex;
       flex-direction: column;
       min-height: 470px; }
