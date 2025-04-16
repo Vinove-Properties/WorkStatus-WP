@@ -7122,7 +7122,8 @@ li.iti__country {
           padding: 10px 30px;
           background: #051441;
           color: #FFFFFF;
-          cursor: default; }
+          cursor: default;
+          text-align: center; }
           .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .prplan:hover {
             cursor: default;
             text-decoration: none; }
@@ -7173,7 +7174,7 @@ li.iti__country {
       text-decoration: underline; }
 
 .ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column .tpl-litr {
-  padding: 20px 0 0; }
+  padding: 30px 0 0; }
 .ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:nth-child(2n) ul li:before {
   background: url(../images/pros-blue.svg) no-repeat;
   background-size: 100%; }
@@ -7241,6 +7242,9 @@ li.iti__country {
       margin: 0; }
 
   br {
-    display: none; } }
+    display: none; }
+
+  .ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column .tpl-litr {
+    padding: 20px 0 0; } }
 
 /*# sourceMappingURL=alternative-page.css.map */
