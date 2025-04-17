@@ -208,6 +208,9 @@
             &:first-child {
               background: rgba(111, 88, 248, 1);
               color: $white;
+              a{color:#fff;
+              &:hover{text-decoration: underline;}
+              }
               h3 {
                 color: $white;
               }
@@ -359,6 +362,8 @@
     }
   }
 }
+
+
 
 
 

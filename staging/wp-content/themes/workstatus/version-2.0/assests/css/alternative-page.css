@@ -7112,6 +7112,10 @@ li.iti__country {
           .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:first-child {
             background: #6f58f8;
             color: #FFFFFF; }
+            .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:first-child a {
+              color: #fff; }
+              .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:first-child a:hover {
+                text-decoration: underline; }
             .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:first-child h3 {
               color: #FFFFFF; }
           .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column:nth-child(2n) ul li:before {
