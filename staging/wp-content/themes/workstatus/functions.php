@@ -1311,7 +1311,7 @@ function comprTpl_Literals($content) {
 
         return '<div class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
              . '<span class="spn-ind">Pricing plans start from '.htmlspecialchars($usd).'</span>'
-             . '<span class="spn-intr">Pricing plans start from '.htmlspecialchars($inr).'</span>'
+             . '<span class="spn-intr">Pricing plans start from $'.htmlspecialchars($inr).'</span>'
              . '</a></div>';
     }, $content);
 }
