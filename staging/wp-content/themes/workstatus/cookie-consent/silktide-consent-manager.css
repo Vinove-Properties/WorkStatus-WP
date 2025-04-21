@@ -305,6 +305,8 @@
   overflow-y: auto;
   margin-top: 32px;
   padding-right: 7px; /* Prevents scrollbar from appearing over the switches */
+  padding-top:0 !important;
+  padding-bottom:0 !important;
 }
 
 #silktide-modal section::-webkit-scrollbar {
@@ -363,6 +365,7 @@
   height: 34px;
   width: 74px;
   cursor: pointer;
+  line-height: 30px;
 }
 
 #silktide-modal .switch:focus-within {
