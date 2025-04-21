@@ -333,16 +333,16 @@
 		text-align: center;
    }
 	.footer .footer-bottom .flex-3 {
-		flex-basis: 100%;
-		text-align: center;
+		flex-basis: 50%;
+		text-align: left;
    }
 	.footer .footer-bottom .logo-box {
-		text-align: center;
+		text-align: left;
    }
+   .footer .footer-bottom .copyright{text-align: right;}
 	.footer .footer-bottom .logo-box .dis-flex {
 		gap: 10px;
-		justify-content: center;
-		margin: 0 0 10px;
+	
    }
 	.footer .footer-bottom .footer-rating {
 		flex-basis: 100%;
