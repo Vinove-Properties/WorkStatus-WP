@@ -8340,11 +8340,13 @@ li.iti__country {
       flex-basis: 100%;
       text-align: center; }
     .footer .footer-bottom .flex-3 {
-      flex-basis: 33.33%; }
+      flex-basis: 100%;
+      text-align: center; }
     .footer .footer-bottom .logo-box {
-      text-align: left; }
+      text-align: center; }
       .footer .footer-bottom .logo-box .dis-flex {
-        gap: 10px; }
+        gap: 10px;
+        justify-content: center; }
     .footer .footer-bottom .footer-rating {
       flex-basis: 100%;
       text-align: center;
