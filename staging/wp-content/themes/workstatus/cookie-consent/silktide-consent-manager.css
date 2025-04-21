@@ -578,7 +578,8 @@
 #silktide-modal p{font-size: 14px; line-height: 22px;}
 #silktide-modal fieldset{margin: 0px 0px 20px;} 
 #silktide-modal footer{gap:10px; margin-top: 15px;}
-#silktide-modal footer{flex-direction: row;}      
+#silktide-modal footer{flex-direction: row;}  
+#silktide-modal .switch{line-height: 26px;}    
 
 }
 
