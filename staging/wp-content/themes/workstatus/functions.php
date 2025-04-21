@@ -1305,13 +1305,12 @@ function getAltPricingCalc( $col ){
 
 
 function comprTpl_Literals($content) {
-    return preg_replace_callback('/\{\{\$(.*?)\|(.*?)\}\}/', function($matches) {
-        $usd = trim($matches[1]);
-        $inr = trim($matches[2]);
-
-        return '<div class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
-             . '<span class="spn-ind">Pricing plans start from '.htmlspecialchars($usd).'</span>'
-             . '<span class="spn-intr">Pricing plans start from $'.htmlspecialchars($inr).'</span>'
-             . '</a></div>';
+    return preg_replace_callback('/\{\{\$(.*?)\|(.*?)\}\}/', function($matches){
+    $usd = trim($matches[1]);
+    $inr = trim($matches[2]);
+    return '<div class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
+	. '<span class="spn-ind">Pricing plans start from '.htmlspecialchars($inr).'</span>'
+	. '<span class="spn-intr">Pricing plans start from '.htmlspecialchars($usd).'</span>'
+	. '</a></div>';
     }, $content);
 }
