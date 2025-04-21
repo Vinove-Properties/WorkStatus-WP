@@ -4,7 +4,7 @@
     <div class="dis-flex footer-top">
       <div class="dis-flex">
         <div class="flex-4">
-         <a href="<?php echo $site_url; ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
+          <a href="<?php echo site_url(); ?>/" title="Workstatus"><img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/ws.svg" alt="flag" width="199" height="26">
           </a>
         </div>
         <div class="flex-4">
@@ -33,45 +33,21 @@
     <div class="dis-flex footer-middle">
       <div class="flex-5">
         <h4>Workstatus</h4>
-        <ul>          
-          <li><a href="<?php echo $site_url; ?>/about">About us</a></li>
-          <li><a href="<?php echo $site_url; ?>/reviews">Reviews</a></li>
-          <li><a href="<?php echo $site_url; ?>/press">Press</a></li>
-          <!-- <li><a href="<?php echo $site_url; ?>/resources">Resources</a></li> -->
+        <ul class="spc">
+          <li><a href="<?php echo site_url(); ?>/about">About us</a></li>
+          <li><a href="<?php echo site_url(); ?>/reviews">Reviews</a></li>
+          <li><a href="<?php echo site_url(); ?>/press">Press</a></li>
+          <!-- <li><a href="<?php echo site_url(); ?>/resources">Resources</a></li> -->
           <li><a href="https://www.workstatus.io/blog/">Blog</a></li>
-          <li><a href="<?php echo $site_url; ?>/how-tracking-works">How Workstatus Works</a></li>
-          <li><a href="<?php echo $site_url; ?>/customization">Customization</a></li>
-          <li><a href="<?php echo $site_url; ?>/demo">Product Tour</a></li>
+          <li><a href="<?php echo site_url(); ?>/how-tracking-works">How Workstatus Works</a></li>
+          <li><a href="<?php echo site_url(); ?>/customization">Customization</a></li>
+          <li><a href="<?php echo site_url(); ?>/demo">Product Tour</a></li>
           <li><a href="<?php echo site_url('/change-log'); ?>">Revision History</a></li>
         </ul>
-      </div>
-      <div class="flex-5">
         <h4>Tools</h4>
         <ul>
-          <li><a href="<?php echo $site_url; ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
-          <li><a href="<?php echo $site_url; ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>          
-        </ul>
-        <br>
-        <h4>Platforms</h4>
-        <ul>
-          <li><a href="<?php echo $site_url; ?>/apps/mac">Mac</a></li>
-          <li><a href="<?php echo $site_url; ?>/apps/windows">Windows</a></li>
-          <li><a href="<?php echo $site_url; ?>/apps/linux">Linux</a></li>
-          <li><a href="<?php echo $site_url; ?>/apps/iphone">iOS</a></li>
-          <li><a href="<?php echo $site_url; ?>/apps/android">Android</a></li>
-        </ul>
-      </div>
-      <div class="flex-5">
-        <h4>Alternatives</h4>
-        <ul>          
-          <li><a href="<?php echo $site_url; ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/desktime-alternative">Desktime Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/insightful-alternative">Insightful Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/we360ai-alternative">We360.ai Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/activtrak-alternative">ActivTrak Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/teramind-alternative">Teramind Alternative</a></li>
-          <li><a href="<?php echo $site_url; ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/tools/free-timecard-calculator">Free Time Card Calculator</a></li>
+          <li><a href="<?php echo site_url(); ?>/tools/free-timesheet-templates">Free Timesheet Templates</a></li>
         </ul>
       </div>
       <div class="flex-5">
@@ -88,19 +64,114 @@
         </ul>
       </div>
       <div class="flex-5">
-        <h4>Support
+        <h4>Alternatives</h4>
+        <ul>
+          <li><a href="<?php echo site_url(); ?>/hubstaff-alternative">Hubstaff Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/desktime-alternative">Desktime Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/timedoctor-alternative">Time Doctor Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/insightful-alternative">Insightful Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/we360ai-alternative">We360.ai Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/activtrak-alternative">ActivTrak Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/teramind-alternative">Teramind Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monitask-alternative">Monitask Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/clickup-alternative">ClickUp Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/teamwork-alternative">Teamwork.com Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/basecamp-alternative">Basecamp Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/wrike-alternative">Wrike Alternative</a></li>
+        </ul>
+      </div>
+      <div class="flex-5">
+        <h4 style="opacity:0;">Alternatives
         </h4>
         <ul>
-          <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
-          <li><a href="<?php echo $site_url; ?>/downloads">Downloads</a></li>
-          <li><a href="<?php echo $site_url; ?>/partners">Partners</a></li>
-          <li><a href="<?php echo $site_url; ?>/faq">FAQs</a></li>
-          <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
+          <li><a href="<?php echo site_url(); ?>/microsoft-project-alternative">Microsoft Project Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/trello-alternative">Trello Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/smartsheet-alternative">Smartsheet Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/asana-alternative">Asana Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/jira-alternative">Jira Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/microsoft-planner-alternative">Microsoft Planner Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/zoho-project-alternative">Zoho Projects Alternative</a></li>
+          <li><a href="<?php echo site_url(); ?>/monday-alternative">Monday.com Alternative</a></li>
         </ul>
-        <ul class="info">
-          <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
-          <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
-        </ul>
+        <div class="social-box social-m">
+          <h3>Platforms</h3>
+          <div class="dis-flex">
+            <a href="<?php echo site_url(); ?>/apps/mac">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-01.svg" width="29" height="29" alt="facebook">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/windows">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-02.svg" width="29" height="29" alt="twitter">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/iphone">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-03.svg" width="29" height="29" alt="linkedin">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/android">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-04.svg" width="29" height="29" alt="instagram">
+              </picture>
+            </a>
+            <a href="<?php echo site_url(); ?>/apps/linux">
+              <picture>
+                <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/plate-05.svg" width="29" height="29" alt="youtube">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-5">
+        <div>
+          <h4>Support
+          </h4>
+          <ul>
+            <li><a href="https://support.Workstatus.io/en/">Help Center</a></li>
+            <li><a href="<?php echo site_url(); ?>/downloads">Downloads</a></li>
+            <li><a href="<?php echo site_url(); ?>/partners">Partners</a></li>
+            <li><a href="<?php echo site_url(); ?>/faq">FAQs</a></li>
+            <li><a href="<?php echo site_url('/data-retention'); ?>">Data Retention</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="info">
+            <li><a class="phone" href="tel:+91-9582957066">+91-9582957066</a></li>
+            <li><a href="mailto:hello@workstatus.io">hello@workstatus.io</a></li>
+          </ul>
+          <div class="social-box">
+            <h3>Follow Us</h3>
+            <div class="dis-flex">
+              <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
+                <picture>
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
+                </picture>
+              </a>
+              <a href="https://x.com/Workstatusapp" target="_blank">
+                <picture>
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
+                </picture>
+              </a>
+              <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
+                <picture>
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+                </picture>
+              </a>
+              <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
+                <picture>
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
+                </picture>
+              </a>
+              <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
+                <picture>
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="dis-flex footer-bottom">
@@ -119,39 +190,9 @@
           </a>
         </div>
       </div>
-      <div class="flex-3 social-box">
-        <h3>Follow Us</h3>
-        <div class="dis-flex">
-          <a href="https://www.facebook.com/workstatussoftware/" target="_blank">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-01.svg" width="29" height="29" alt="facebook">
-            </picture>
-          </a>
-          <a href="https://x.com/Workstatusapp" target="_blank">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-02.svg" width="29" height="29" alt="twitter">
-            </picture>
-          </a>
-          <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
-            </picture>
-          </a>
-          <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-04.svg" width="29" height="29" alt="instagram">
-            </picture>
-          </a>
-          <a href="https://www.youtube.com/channel/UC9asR7eiptbMZq12EJhTPNw" target="_blank">
-            <picture>
-              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-05.svg" width="29" height="29" alt="youtube">
-            </picture>
-          </a>
-        </div>
-      </div>
-     
+      
       <div class="flex-3 copyright">
-       <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
   </div>
@@ -159,20 +200,20 @@
     <div class="container">
       <div class="cop">
         <p class="copyright">
-        <?php
-        $copyRight = "&copy;"; 
-        if( is_user_logged_in() && ( isBetaVersion() === true ) ){
-        $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
-        }
-        ?>  
-        Copyright <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
-      </p>
-      <ul class="privacy-links">
-        <li class="hide">|</li>
-        <li><a href="<?php echo $site_url; ?>/privacy-policy">Privacy Policy </a></li>
-        <li class="hide">|</li>
-        <li><a href="<?php echo $site_url; ?>/terms-of-service">Terms of Service</a></li>
-      </ul>
+          <?php
+            $copyRight = "&copy;"; 
+            if( is_user_logged_in() && ( isBetaVersion() === true ) ){
+            $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
+            }
+            ?>  
+          Copyright <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
+        </p>
+        <ul class="privacy-links">
+          <li class="hide">|</li>
+          <li><a href="<?php echo site_url(); ?>/privacy-policy">Privacy Policy </a></li>
+          <li class="hide">|</li>
+          <li><a href="<?php echo site_url(); ?>/terms-of-service">Terms of Service</a></li>
+        </ul>
       </div>
     </div>
   </div>
