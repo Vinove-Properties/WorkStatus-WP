@@ -480,7 +480,7 @@ class SilktideCookieBanner {
         ${closeModalButton}
       </header>
       ${preferencesDescription}
-      <div id="cookie-preferences">
+      <section id="cookie-preferences">
         ${cookieTypes
           .map((type) => {
             const accepted = acceptedCookieMap[type.id];
@@ -515,7 +515,7 @@ class SilktideCookieBanner {
         `;
           })
           .join('')}
-      </div>
+      </section>
       <footer>
         ${acceptAllButton}
         ${rejectNonEssentialButton}
