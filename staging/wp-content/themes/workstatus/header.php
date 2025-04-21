@@ -9,12 +9,6 @@
     <meta name='dmca-site-verification' content='QVF1Ym5QVXFtK1VMRTJ6RXloRUxnQnpvSTFPcUZ3OFhlWjgxVmdKWHZHYz01' />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assests/images/favicon.png" type="image/x-icon">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-    <?php /* if( !wp_is_mobile() ) : ?>
-    <link rel="preload" as="font" href="<?php bloginfo('template_url'); ?>/assests/fonts/NotoSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="<?php bloginfo('template_url'); ?>/assests/fonts/NotoSans-Bold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="<?php bloginfo('template_url'); ?>/assests/fonts/NotoSans-Medium.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="<?php bloginfo('template_url'); ?>/assests/fonts/NotoSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
-    <?php endif; */ ?>
     <?php wp_head();?>
     <script type="text/javascript">
       var ws_site_url = "<?php echo trailingslashit(get_bloginfo('url')); ?>";
@@ -176,13 +170,30 @@
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
       .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active{margin-top: 20px;}
     </style>
+    
     <?php if( isBetaVersion() === false ) : ?>
+    <script>
+    // Initialize the dataLayer
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+    dataLayer.push(arguments);
+    }
+
+    gtag('consent', 'default', {
+    analytics_storage: localStorage.getItem('silktideCookieChoice_analytics') === 'true' ? 'granted' : 'denied',
+    ad_storage: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    ad_user_data: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    ad_personalization: localStorage.getItem('silktideCookieChoice_marketing') === 'true' ? 'granted' : 'denied',
+    functionality_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied',
+    security_storage: localStorage.getItem('silktideCookieChoice_necessary') === 'true' ? 'granted' : 'denied'
+    });
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-NPPMGZH');
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NPPMGZH');
     </script>
     <!-- End Google Tag Manager --> 
 
