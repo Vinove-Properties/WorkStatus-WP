@@ -5080,6 +5080,8 @@ li.iti__country {
     padding-left: 0;
     flex-basis: 100%;
     margin: 40px 0 0; }
+    .client-img-section .why-ws .right-box .why-left .plateform {
+      min-height: 266px; }
     .client-img-section .why-ws .right-box .dis-flex {
       flex-wrap: nowrap; }
   .client-img-section .why-ws:after {

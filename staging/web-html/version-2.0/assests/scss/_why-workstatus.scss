@@ -412,11 +412,13 @@
           }
         }
       }
-
       .right-box {
         padding-left: 0;
         flex-basis: 100%;
         margin: 40px 0 0;
+        .why-left{
+          .plateform{min-height: 266px;}
+        }
 
         .dis-flex {
           flex-wrap: nowrap;
