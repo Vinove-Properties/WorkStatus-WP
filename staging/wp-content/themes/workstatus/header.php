@@ -571,7 +571,7 @@
                 </li>
                 <li class="menu-item-has-children">
                   <a class="mst-link" href="<?php echo site_url(); ?>/solution">Solutions</a> <span class="arrow-btn"></span>
-                  <div class="menu-mega bg-purple" style="display:block">
+                  <div class="menu-mega bg-purple">
                     <div class="container">
                       <div class="dis-flex tab-menu">
                         <div id="mnu-sol" class="dis-flex tab-contents">
