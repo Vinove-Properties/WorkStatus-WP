@@ -8753,6 +8753,26 @@ h3 a {
           letter-spacing: 0; }
         .ws-table .table-block .table-row .ws-column.ws-lftcolumn strong {
           color: rgba(17, 3, 2, 0.8); }
+      .ws-table .table-block .table-row .ws-column.last-child {
+        background: #ebe7ff;
+        display: -ms-grid;
+        display: grid; }
+        .ws-table .table-block .table-row .ws-column.last-child .ws-column .small-font {
+          font-size: 12px;
+          margin-left: 0;
+          font-weight: 500; }
+        .ws-table .table-block .table-row .ws-column.last-child .ws-column.ws-lftcolumn {
+          justify-content: left;
+          text-align: left; }
+          .ws-table .table-block .table-row .ws-column.last-child .ws-column.ws-lftcolumn p {
+            color: rgba(17, 3, 2, 0.8);
+            letter-spacing: 0; }
+          .ws-table .table-block .table-row .ws-column.last-child .ws-column.ws-lftcolumn strong {
+            color: rgba(17, 3, 2, 0.8); }
+        .ws-table .table-block .table-row .ws-column.last-child .ws-column.active strong {
+          color: #5D2BFF; }
+        .ws-table .table-block .table-row .ws-column.last-child .ws-column.active .small-font {
+          color: #5D2BFF; }
     .ws-table .table-block .table-row:nth-child(n + 9) {
       display: none; }
     .ws-table .table-block .table-row.price-table-row {
