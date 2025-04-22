@@ -520,7 +520,7 @@ $font16: 16px;
                         width: 75%;
                         .menu-column {
                           border-top: 1px solid #e6e6e6;
-                          .flex-3 {
+                          .flex-3, .flex-2 {
                             padding: 0 10px;
                             .bor-line {
                               border-right: 1px solid #e6e6e6;
@@ -1534,7 +1534,7 @@ $font16: 16px;
                           .menu-column {
                             border-top: none;
                             padding:0;
-                            .flex-3 {
+                            .flex-3, .flex-2 {
                               flex-basis: 100%;
                               padding: 0;
                               margin: 0;

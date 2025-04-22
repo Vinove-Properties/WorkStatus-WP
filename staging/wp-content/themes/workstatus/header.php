@@ -571,7 +571,7 @@
                 </li>
                 <li class="menu-item-has-children">
                   <a class="mst-link" href="<?php echo site_url(); ?>/solution">Solutions</a> <span class="arrow-btn"></span>
-                  <div class="menu-mega bg-purple">
+                  <div class="menu-mega bg-purple" style="display:block">
                     <div class="container">
                       <div class="dis-flex tab-menu">
                         <div id="mnu-sol" class="dis-flex tab-contents">
@@ -579,23 +579,25 @@
                             <div class="tab-content is-active solution-tab">
                               <div class="three-column">
                                 <div class="dis-flex menu-column">
-                                  <div class="flex-3">
+                                  <div class="flex-2">
                                     <div class="tab-title"><a href="<?php echo site_url(); ?>/time-attendance/time-tracking-software"><span class="title">Time Tracking</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/time-attendance/freelance-time-management">
-                                        Time Management for Freelancers</a>
+                                        Smarter time management for freelancers
+                                        </a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/timesheet-validation">
-                                        AI Timesheet Validation</a>
+                                        Accurate invoicing with AI timesheet validation
+                                        </a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/timesheets-in-minutes">
-                                        Automated Timesheet Generation</a>
+                                        Automated timesheets, seamless management</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=time#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
-                                  <div class="flex-3">
+                                  <div class="flex-2">
                                     <div class="tab-title">
                                     <a href="<?php echo site_url('/productivity-management'); ?>">
                                       <span class="title">Productivity Management</span>
@@ -604,34 +606,35 @@
                                     <div class="hr-submenu">
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/workforce-management/work-from-home-monitoring">
-                                        Work From Home Monitoring</a>
+                                        Manage remote teams effectively</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/field-service-management">
-                                        Field Service Operations Management</a>
+                                        Level up field services</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
-                                        Promoting Employee Well-being</a>
+                                        Promote work-life balance, prevent overload</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=productivity#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
-                                  <div class="flex-3">
+                                 
+                                </div>
+                                <div class="dis-flex menu-column">
+                                <div class="flex-2">
                                     <div class="tab-title"><a href="<?php echo site_url(); ?>/project-management"><span class="title">Project & Task Management</span>
                                       </a><span class="hr-arrow-btn"></span>
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
-                                        Cross-functional Collaboration</a>
+                                        Boost efficiency with cross-functional collaboration</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
-                                        Streamline Project Prioritization</a>
+                                        Prioritize tasks, improve project outcomes</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        Manage in-office & remote team</a>
+                                        Simplify on-premise team management</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=project#uc-filter" class="view-more">View More</a>
                                     </div>
                                   </div>
-                                </div>
-                                <div class="dis-flex menu-column">
-                                  <div class="flex-3">
+                                  <div class="flex-2">
                                     <div class="tab-title">
                                       <a href="<?php echo site_url('/attendance-tracking'); ?>"><span class="title">Attendance Tracking</span>
                                       </a>
@@ -640,48 +643,13 @@
                                     <div class="hr-submenu">
                                       <div class="bor-line">
                                         <a href="<?php echo site_url(); ?>/time-attendance/selfie-validation-attendance">
-                                        Attendance with Selfie Validation</a>
+                                        Accurate attendance records with selfie validation</a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/shift-scheduling">
-                                        AI-based Shift Scheduling</a>
+                                        Reduce admin overhead with AI-based shift scheduling</a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
-                                        GPS-based Workforce Management</a>
+                                        Manage remote, hybrid, mobile teams smartly</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=attendance#uc-filter" class="view-more">View More</a>
-                                    </div>
-                                  </div>
-                                  <div class="flex-3">
-                                    <div class="tab-title"><a href="<?php echo site_url(); ?>/reporting-analytics/productivity-reports"><span class="title">Reporting & Analytics</span>
-                                      </a><span class="hr-arrow-btn"></span>
-                                    </div>
-                                    <div class="hr-submenu">
-                                      <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/reporting-analytics/insights-for-business">
-                                        Data-driven Business Insights</a>
-                                        <a href="<?php echo site_url(); ?>/reporting-analytics/workforce-analytics">
-                                        Workforce Analytics</a>
-                                        <a href="<?php echo site_url(); ?>/reporting-analytics/compliance-regulations-tracking">
-                                        Compliance & Regulation Tracking</a>
-                                      </div>
-                                      <a href="<?php echo site_url(); ?>/use-cases?filter=reporting#uc-filter" class="view-more">View More</a>
-                                    </div>
-                                  </div>
-                                  <div class="flex-3">
-                                    <div class="tab-title">
-                                    <a href="<?php echo site_url('/resource-management'); ?>">
-                                      <span class="title">Resource Management</span>
-                                    </a>
-                                    <span class="hr-arrow-btn"></span>
-                                    </div>
-                                    <div class="hr-submenu">
-                                      <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/workforce-management/resource-allocation">
-                                        Resource Allocation Based On Demand</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/optimizing-workforce-allocation">
-                                        AI-Powered Workforce Optimization</a>
-                                        <a href="<?php echo site_url(); ?>/reporting-analytics/workload-management">
-                                        AI-Driven Scheduling Optimization</a>
-                                      </div>
-                                      <!-- <a href="<?php echo site_url(); ?>/use-cases?filter=productivity#uc-filter" class="view-more">View More</a> -->
                                     </div>
                                   </div>
                                 </div>

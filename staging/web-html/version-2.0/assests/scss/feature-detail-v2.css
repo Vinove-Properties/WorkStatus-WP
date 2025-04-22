@@ -1716,14 +1716,14 @@ h3 a {
                   width: 75%; }
                   .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column {
                     border-top: 1px solid #e6e6e6; }
-                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 {
+                    .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 {
                       padding: 0 10px; }
-                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line {
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 .bor-line {
                         border-right: 1px solid #e6e6e6; }
-                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title {
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 .tab-title {
                         padding-bottom: 0;
                         border: 0; }
-                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3:last-child .bor-line {
+                      .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3:last-child .bor-line, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2:last-child .bor-line {
                         border: none; }
                     .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column:first-child {
                       border-top: 0; }
@@ -2317,13 +2317,13 @@ h3 a {
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column {
                         border-top: none;
                         padding: 0; }
-                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 {
+                        .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 {
                           flex-basis: 100%;
                           padding: 0;
                           margin: 0; }
-                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line {
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .bor-line, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 .bor-line {
                             border-right: none; }
-                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title {
+                          .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-3 .tab-title, .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column .menu-column .flex-2 .tab-title {
                             padding-bottom: 0;
                             border: 0; }
                       .header-two .header-item-right .menu ul li .menu-mega .tab-menu .tab-contents .right-tabs.solution-menu .tab-content .three-column a {
