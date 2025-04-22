@@ -608,7 +608,7 @@
                                         <a href="<?php echo site_url(); ?>/workforce-management/work-from-home-monitoring">
                                         Manage remote teams effectively</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/field-service-management">
-                                        Level up field services</a>
+                                        Level up field services for seamless operations</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
                                         Promote work-life balance, prevent overload</a>
                                       </div>
