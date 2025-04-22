@@ -1309,9 +1309,9 @@ function comprTpl_Literals($content) {
     $usd = trim($matches[1]);
     $inr = trim($matches[2]);
 
-    return '<div class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
+    return '<span class="text-column no-evt tpl-litr"><a href="javascript:void(0);" class="prplan">'
 	. '<span class="spn-ind">Pricing plans start from '.htmlspecialchars($inr).'</span>'
 	. '<span class="spn-intr">Pricing plans start from '.htmlspecialchars($usd).'</span>'
-	. '</a></div>';
+	. '</a></span>';
     }, $content);
 }
