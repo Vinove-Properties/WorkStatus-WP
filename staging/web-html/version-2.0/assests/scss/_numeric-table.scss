@@ -651,6 +651,117 @@
 }
 
 @media (max-width: 979px) {
+  .table-tab {padding:60px 0;
+    .tab-wrap {
+      .tab-nav {
+        ul {
+          margin: 0 0 30px;
+          flex-wrap: wrap;
+          li {
+            flex-basis: 25%;
+            
+            a {
+              font-size: 13px;
+              padding: 8px;
+              min-height: 75px;
+            }
+          }
+        }
+      }
+
+      .tcontents {
+        width: 100%;
+        overflow-x: scroll;
+        .numeric-table {
+          padding-top: 0;
+          .scroll-compare {
+            position: relative;
+            overflow-x: auto;
+          }
+          .table-block {
+            overflow-x: scroll;
+            min-width: 550px;
+            -webkit-overflow-scrolling: touch; /* Adds smooth scrolling for mobile */
+            margin: 0px auto;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            .div-block-top {
+              grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+              -ms-grid-columns: 1.2fr 1fr 1fr 1fr 1fr 1fr;
+              .logo-ws {
+                padding: 10px 15px;
+                width: auto;
+                h2 {
+                  font-size: 16px;
+                  line-height: 26px;
+                  margin-left: 0;
+                }
+              }
+              .logovs {
+                padding: 10px 5px;
+                .price {
+                  width: auto;
+                  font-size: 12px;
+                  padding: 6px 10px;
+                }
+                .desktop {
+                  display: block;
+                }
+                .mobile {
+                  display: none;
+                }
+              }
+            }
+            .table-row {
+              .ws-column {
+                padding: 15px 9px;
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+
+                i {
+                  width: 18px;
+                  height: 18px;
+                }
+
+                &.ws-lftcolumn {
+                  width: auto;
+                }
+              }
+
+              &.price-table-row {
+                .ws-column {
+                  font-size: 14px;
+                  .small-font {
+                    font-size: 12px;
+                    line-height: 20px;
+                  }
+                }
+              }
+
+              &:nth-child(2) {
+                .ws-column {
+                  padding: 20px 9px;
+                  font-size: 18px;
+                  .small-font {
+                    font-size: 12px;
+                    line-height: 20px;
+                  }
+                }
+              }
+            }
+          }
+          .view-more {
+            bottom: 90px;
+            left: 68px;
+            a {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
