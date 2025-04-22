@@ -193,38 +193,6 @@
             color: rgba(17, 3, 2, 0.8);
           }
         }
-
-        &.last-child {
-          background: #ebe7ff;
-          display: -ms-grid;
-          display: grid;
-          .ws-column {
-            .small-font {
-              font-size: 12px;
-              margin-left:0;
-              font-weight: 500;
-            }
-            &.ws-lftcolumn {
-              justify-content: left;
-              text-align: left;
-              p {
-                color: rgba(17, 3, 2, 0.8);
-                letter-spacing: 0;
-              }
-              strong {
-                color: rgba(17, 3, 2, 0.8);
-              }
-            }
-            &.active {
-              strong {
-                color: #5D2BFF;
-              }
-              .small-font {
-                color: #5D2BFF;
-              }
-            }
-          }
-        }
       }
       &:nth-child(n + 9) {
         display: none;
