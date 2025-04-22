@@ -505,9 +505,9 @@ $postData = 'refresh_token='.REFRESH_TOKEN.'&client_id='.CLIENT_ID.'&client_secr
         }
     }
 }
-add_action('ig_es_contact_subscribe', function($data){
-   createZohoLeads($_POST);
-});
+// add_action('ig_es_contact_subscribe', function($data){
+//    createZohoLeads($_POST);
+// });
 
 function ws_featues_cb( $atts ) {
 	$a = shortcode_atts( array('title' => 'Taxonomy Title','tax' => 'Taxonomy Name'), $atts );
