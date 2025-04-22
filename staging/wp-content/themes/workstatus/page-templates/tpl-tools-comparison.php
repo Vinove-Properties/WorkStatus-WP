@@ -165,7 +165,7 @@ $tbl = $compCol['cards'];
           $colFor = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-4'])).'</strong>' : _compTableValue($data['tl-4']);
           $colWs  = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['ws'])).'</strong>' : _compTableValue($data['ws']);
 
-          echo '<div class="table-row">
+          echo '<div class="table-row numeric-row">
           <div class="ws-column ws-lftcolumn">
           <p>'.$lstPricing.'</p>
           </div>

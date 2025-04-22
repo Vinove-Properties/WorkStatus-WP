@@ -8753,7 +8753,7 @@ h3 a {
           letter-spacing: 0; }
         .ws-table .table-block .table-row .ws-column.ws-lftcolumn strong {
           color: rgba(17, 3, 2, 0.8); }
-    .ws-table .table-block .table-row:nth-child(n + 9) {
+    .ws-table .table-block .table-row:nth-child(n + 7) {
       display: none; }
     .ws-table .table-block .table-row.price-table-row {
       background: #f4f2ff;
