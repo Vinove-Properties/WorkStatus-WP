@@ -346,7 +346,7 @@
         .feature-row{
           .column-right{
             .text-column{
-              .tpl-litr{padding:30px 0 0; display: block;}
+              .tpl-litr{padding:30px 0 0; display: block; background: transparent;}
              &:nth-child(2n){
               ul {
                 li{
@@ -439,7 +439,7 @@
               }
             }
             .prplan {
-              padding: 10px;  display:block;
+              padding: 10px;
             }
           }
         }
@@ -493,6 +493,9 @@
             .column-right{
               .text-column{
                 .tpl-litr{padding:20px 0 0;}
+              }
+              .prplan {
+                display: block;
               }
             }
           }
