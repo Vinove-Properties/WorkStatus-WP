@@ -194,9 +194,9 @@
           }
         }
       }
-        &:nth-child(n + 7) {
-              display: none;
-            }
+      &:nth-child(n + 9) {
+        display: none;
+      }
       &.price-table-row{
         background: #f4f2ff;
         display: -ms-grid;
