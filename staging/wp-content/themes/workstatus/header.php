@@ -585,14 +585,14 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/time-attendance/freelance-time-management">
-                                        Smarter time management for freelancers
+                                        <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
+                                        Remote Workforce Time Management & Monitoring
                                         </a>
-                                        <a href="<?php echo site_url(); ?>/time-attendance/timesheet-validation">
-                                        Accurate invoicing with AI timesheet validation
+                                        <a href="<?php echo site_url(); ?>/time-attendance/streamline-billing">
+                                        Accurate Time Tracking for Precise Project Costing
                                         </a>
-                                        <a href="<?php echo site_url(); ?>/time-attendance/timesheets-in-minutes">
-                                        Automated timesheets, seamless management</a>
+                                        <a href="<?php echo site_url(); ?>/time-attendance/automate-timesheet">
+                                        Automated Client Billing & Accurate Timesheets</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=time#uc-filter" class="view-more">View More</a>
                                     </div>
@@ -605,12 +605,12 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
+                                        <a href="<?php echo site_url(); ?>/project-management/ai-productivity-tracking">
+                                        AI-Driven Productivity Insights & Analytics</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/work-from-home-monitoring">
-                                        Manage remote teams effectively</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/field-service-management">
-                                        Level up field services for seamless operations</a>
+                                        WFH Employee Monitoring & Efficiency Tracking</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/employee-burnout">
-                                        Promote work-life balance, prevent overload</a>
+                                        Preventing Employee Burnout via Workload Management</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=productivity#uc-filter" class="view-more">View More</a>
                                     </div>
@@ -624,12 +624,12 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
+                                        <a href="<?php echo site_url(); ?>/project-management/agile-workflows">
+                                        Agile Project Management & Sprint Planning</a>
                                         <a href="<?php echo site_url(); ?>/workforce-management/cross-functional-collaboration">
-                                        Boost efficiency with cross-functional collaboration</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/project-prioritization">
-                                        Prioritize tasks, improve project outcomes</a>
-                                        <a href="<?php echo site_url(); ?>/workforce-management/on-premise-teams-management">
-                                        Simplify on-premise team management</a>
+                                        Cross-functional Team Coordination & Task Allocation</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/agile-resource-allocation">
+                                        Centralized Resource Management and Allocation</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=project#uc-filter" class="view-more">View More</a>
                                     </div>
@@ -642,12 +642,12 @@
                                     </div>
                                     <div class="hr-submenu">
                                       <div class="bor-line">
-                                        <a href="<?php echo site_url(); ?>/time-attendance/selfie-validation-attendance">
-                                        Accurate attendance records with selfie validation</a>
-                                        <a href="<?php echo site_url(); ?>/time-attendance/shift-scheduling">
-                                        Reduce admin overhead with AI-based shift scheduling</a>
                                         <a href="<?php echo site_url(); ?>/time-attendance/gps-workforce-management">
-                                        Manage remote, hybrid, mobile teams smartly</a>
+                                        Geofencing & GPS Attendance for Field Teams</a>
+                                        <a href="<?php echo site_url(); ?>/reporting-analytics/overtime-tracker">
+                                        Automated Overtime Tracking and Calculation</a>
+                                        <a href="<?php echo site_url(); ?>/workforce-management/selfie-validation-for-compliance">
+                                        Facial Recognition Attendance & Time Fraud Elimination</a>
                                       </div>
                                       <a href="<?php echo site_url(); ?>/use-cases?filter=attendance#uc-filter" class="view-more">View More</a>
                                     </div>
