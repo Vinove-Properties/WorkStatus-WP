@@ -3091,7 +3091,9 @@ h3 a {
     .client-img-section .why-ws .right-box .why-left {
       padding-right: 10px; }
       .client-img-section .why-ws .right-box .why-left .award-sc ul li {
-        padding: 15px 10px; } }
+        padding: 15px 10px; }
+      .client-img-section .why-ws .right-box .why-left .plateform {
+        padding: 15px; } }
 @media (max-width: 979px) {
   .client-img-section .why-ws .left-box .top-section {
     text-align: center; }
