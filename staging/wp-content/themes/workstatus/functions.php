@@ -1304,7 +1304,7 @@ function getAltPricingCalc( $col ){
 }
 
 
-function comprTpl_Literals($content) {
+function comprTpl_Literals($content){
     return preg_replace_callback('/\{\{(\$[^|]*)\|([^}]*)\}\}/', function($matches){
     $usd = trim($matches[1]);
     $inr = trim($matches[2]);
