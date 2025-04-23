@@ -6269,11 +6269,13 @@ li.iti__country {
         border-bottom: none;
         margin-bottom: 0; }
     .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part ul.listype strong {
-      color: #333333; }
+      color: #5e6373;
+      font-weight: 600; }
       .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part ul.listype strong li {
         margin: 0 0 18px; }
     .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part p strong {
-      color: #333333; }
+      color: #5e6373;
+      font-weight: 600; }
     .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .guide-answer h3 {
       padding: 10px 0 12px;
       margin: 0 !important; }
