@@ -214,7 +214,8 @@
           4.9 out of 5.0 by
         </div>
         <div class="client-outer">
-          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 1218 clients on over 10800+ projects
+          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 
+          Trusted by 1000+ Businesses
         </div>
       </div>
       <div class="flex-3 copyright">

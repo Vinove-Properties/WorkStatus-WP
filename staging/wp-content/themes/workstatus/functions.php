@@ -946,9 +946,6 @@ function rocket_mobile_preload_fonts( $fonts ){
     $fonts[] = '/wp-content/themes/workstatus/version-2.0/assests/fonts/LexendDeca-Regular.woff2';
     $fonts[] = '/wp-content/themes/workstatus/version-2.0/assests/fonts/LexendDeca-Medium.woff2';
     $fonts[] = '/wp-content/themes/workstatus/version-2.0/assests/fonts/LexendDeca-Bold.woff2';
-    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Bold.woff2';
-    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-Medium.woff2';
-    //$fonts[] = '/wp-content/themes/workstatus/assests/fonts/NotoSans-SemiBold.woff2';
     }
     return $fonts;
 }
