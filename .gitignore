@@ -1,5 +1,6 @@
 */\.htaccess
 data/*
+__data/*
 __server/*
 uploads/*
 
