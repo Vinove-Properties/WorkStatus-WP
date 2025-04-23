@@ -506,15 +506,13 @@
 }
 
 @media (max-width: 479px) {
-
-  .hero-banner{
-    .inner-wrap{
-      .alter-image{overflow-x: scroll;
-      img{width:700px; max-width: 700px;}
+  .ws-comp-template{
+    .hero-banner{
+      .inner-wrap{
+        .alter-image{overflow-x: scroll;
+        img{width:700px; max-width: 700px;}
+        }
       }
     }
   }
-
-
-
 }

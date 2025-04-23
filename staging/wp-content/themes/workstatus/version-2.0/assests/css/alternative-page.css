@@ -7337,9 +7337,9 @@ li.iti__country {
   .ws-comp-template .alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .prplan {
     display: block; } }
 @media (max-width: 479px) {
-  .hero-banner .inner-wrap .alter-image {
+  .ws-comp-template .hero-banner .inner-wrap .alter-image {
     overflow-x: scroll; }
-    .hero-banner .inner-wrap .alter-image img {
+    .ws-comp-template .hero-banner .inner-wrap .alter-image img {
       width: 700px;
       max-width: 700px; } }
 
