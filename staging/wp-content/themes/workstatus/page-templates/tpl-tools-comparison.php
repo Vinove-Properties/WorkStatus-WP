@@ -158,6 +158,7 @@ $tbl = $compCol['cards'];
           $postFix    = ($lCounr == $c) ? '<span class="small-font">(Per user / Month)</span>' : '';
           $lstPricing = ($lCounr == $c) ? '<strong>Pricing</strong>' : $data['name'];
           $lstClass   = ($lCounr == $c) ? 'lst-elm' : '';
+          $lstPricingClass   = ($lCounr == $c) ? 'price-table-row' : '';
           
           $colOne = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-1'])).'</strong>' : _compTableValue($data['tl-1']);
           $colTwo = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-2'])).'</strong>' : _compTableValue($data['tl-2']);
@@ -165,7 +166,7 @@ $tbl = $compCol['cards'];
           $colFor = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['tl-4'])).'</strong>' : _compTableValue($data['tl-4']);
           $colWs  = ($lCounr == $c) ? '<strong class="prloc">'.locatePricing(_compTableValue($data['ws'])).'</strong>' : _compTableValue($data['ws']);
 
-          echo '<div class="table-row">
+          echo '<div class="table-row '.$lstPricingClass.'">
           <div class="ws-column ws-lftcolumn">
           <p>'.$lstPricing.'</p>
           </div>
@@ -185,8 +186,7 @@ $tbl = $compCol['cards'];
         alt="Workstatus" width="34" height="34">
         </a>
       </div>
-    </div>    
-    <!--<div class="mt40 btnSc"><?php echo wsDemoCtaCP(); ?></div>-->
+    </div>        
   </div>
 </section>
 <?php endif; ?>
