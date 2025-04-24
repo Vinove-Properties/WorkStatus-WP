@@ -104,3 +104,49 @@ function ws_calculateROI(){
     document.getElementById("potentialSavings").innerHTML = "$" + totalPotentialAnnualSavings.toFixed(2);
     document.getElementById("netROI").innerHTML = "$" + netROI.toFixed(2);
 }
+
+
+const industryJobMap = {
+    "it": ["Software Developer", "IT Support", "System Administrator", "Product Manager"],
+    "manufacturing": ["Production Worker", "Quality Inspector", "Machine Operator"],
+    "retail": ["Store Manager", "Cashier", "Sales Associate"],
+    "healthcare": ["Doctor", "Nurse", "Pharmacist"],
+    "education": ["Teacher", "Academic Counselor", "Principal"],
+    "finance": ["Accountant", "Financial Analyst", "Bank Teller"],
+    "construction": ["Civil Engineer", "Electrician", "Site Manager"],
+    "transportation": ["Driver", "Logistics Manager", "Fleet Supervisor"],
+    "hospitality": ["Hotel Manager", "Receptionist", "Chef"],
+    "telecommunications": ["Network Engineer", "Customer Support", "Telecom Analyst"]
+  };
+
+  document.getElementById("industry").addEventListener("change", function () {
+    const jobTypeSelect = document.getElementById("jobType");
+    const selectedIndustry = this.value;
+
+    // Clear previous options
+    jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
+
+    if (selectedIndustry && industryJobMap[selectedIndustry]) {
+      industryJobMap[selectedIndustry].forEach(job => {
+        const option = document.createElement("option");
+        option.value = job.toLowerCase().replace(/\s+/g, "-");
+        option.textContent = job;
+        jobTypeSelect.appendChild(option);
+      });
+    }
+  });
+const currencySymbols = {
+  USD: "$", EUR: "€", GBP: "£", JPY: "¥", AUD: "A$", CAD: "C$",
+  CHF: "CHF", CNY: "¥", HKD: "HK$", NZD: "NZ$", SEK: "kr", KRW: "₩",
+  SGD: "S$", NOK: "kr", MXN: "$", INR: "₹", RUB: "₽", ZAR: "R",
+  TRY: "₺", BRL: "R$", TWD: "NT$", DKK: "kr", PLN: "zł", THB: "฿",
+  IDR: "Rp", HUF: "Ft", CZK: "Kč", ILS: "₪", CLP: "$", PHP: "₱",
+  AED: "د.إ", COP: "$", SAR: "﷼", MYR: "RM", RON: "lei"
+};
+
+document.getElementById("currency").addEventListener("change", function () {
+  const selectedCurrency = this.value;
+  const symbolSpan = document.getElementById("currencySymbol");
+  symbolSpan.textContent = currencySymbols[selectedCurrency] || "";
+});
+  

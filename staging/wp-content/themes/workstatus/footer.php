@@ -484,6 +484,7 @@
     }]    
   }
 </script>
+<?php /* ?>
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/", 
@@ -516,7 +517,7 @@
     }]
   }
 </script>
-<?php /* ?>
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",

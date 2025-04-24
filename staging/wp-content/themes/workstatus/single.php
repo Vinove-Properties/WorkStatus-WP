@@ -12,14 +12,16 @@ if( $bannerType && ($bannerType === "form") ){
         <h1><?php the_title(); ?></h1>
       </div>
    <div class="salary-calculator">
-      <?php //get_template_part('inc/calc/productivity', 'calculator'); ?>
       <?php 
-      $calcType = get_post_meta( $post->ID, 'calc-type', true ); 
-      if( $calcType && ($calcType === "roi") ){
-        get_template_part('inc/calc/roi', 'calculator');
-      }else{
-        get_template_part('inc/calc/wagerate', 'calculator');  
-      }
+      get_template_part( 'inc/calc/productivity-calc-v2' );
+      ?>
+      <?php 
+      // $calcType = get_post_meta( $post->ID, 'calc-type', true ); 
+      // if( $calcType && ($calcType === "roi") ){
+      //   get_template_part('inc/calc/roi', 'calculator');
+      // }else{
+      //   get_template_part('inc/calc/wagerate', 'calculator');  
+      // }
       ?>
     </div>
     </div>
