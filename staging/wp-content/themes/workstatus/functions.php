@@ -1233,11 +1233,11 @@ function getAlternateData( $tbl, $category = "time" ){
 			if( $data['category'] == $category ){
 				$lstPricing = $data['name'];
 				
+				$colWs  = _compTableValue($data['ws']);
 				$colOne = _compTableValue($data['tl-1']);
 				$colTwo = _compTableValue($data['tl-2']);
 				$colThr = _compTableValue($data['tl-3']);
 				$colFor = _compTableValue($data['tl-4']);
-				$colWs  = _compTableValue($data['ws']);
 
 				$elm .= '<div class="table-row">
 				<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>

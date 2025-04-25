@@ -107,46 +107,129 @@ function ws_calculateROI(){
 
 
 const industryJobMap = {
-    "it": ["Software Developer", "IT Support", "System Administrator", "Product Manager"],
-    "manufacturing": ["Production Worker", "Quality Inspector", "Machine Operator"],
-    "retail": ["Store Manager", "Cashier", "Sales Associate"],
-    "healthcare": ["Doctor", "Nurse", "Pharmacist"],
-    "education": ["Teacher", "Academic Counselor", "Principal"],
-    "finance": ["Accountant", "Financial Analyst", "Bank Teller"],
-    "construction": ["Civil Engineer", "Electrician", "Site Manager"],
-    "transportation": ["Driver", "Logistics Manager", "Fleet Supervisor"],
-    "hospitality": ["Hotel Manager", "Receptionist", "Chef"],
-    "telecommunications": ["Network Engineer", "Customer Support", "Telecom Analyst"]
-  };
-
-  document.getElementById("industry").addEventListener("change", function () {
-    const jobTypeSelect = document.getElementById("jobType");
-    const selectedIndustry = this.value;
-
-    // Clear previous options
-    jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
-
-    if (selectedIndustry && industryJobMap[selectedIndustry]) {
-      industryJobMap[selectedIndustry].forEach(job => {
-        const option = document.createElement("option");
-        option.value = job.toLowerCase().replace(/\s+/g, "-");
-        option.textContent = job;
-        jobTypeSelect.appendChild(option);
-      });
-    }
-  });
-const currencySymbols = {
-  USD: "$", EUR: "€", GBP: "£", JPY: "¥", AUD: "A$", CAD: "C$",
-  CHF: "CHF", CNY: "¥", HKD: "HK$", NZD: "NZ$", SEK: "kr", KRW: "₩",
-  SGD: "S$", NOK: "kr", MXN: "$", INR: "₹", RUB: "₽", ZAR: "R",
-  TRY: "₺", BRL: "R$", TWD: "NT$", DKK: "kr", PLN: "zł", THB: "฿",
-  IDR: "Rp", HUF: "Ft", CZK: "Kč", ILS: "₪", CLP: "$", PHP: "₱",
-  AED: "د.إ", COP: "$", SAR: "﷼", MYR: "RM", RON: "lei"
+"it": ["Software Developer", "IT Support", "System Administrator", "Product Manager"],
+"manufacturing": ["Production Worker", "Quality Inspector", "Machine Operator"],
+"retail": ["Store Manager", "Cashier", "Sales Associate"],
+"healthcare": ["Doctor", "Nurse", "Pharmacist"],
+"education": ["Teacher", "Academic Counselor", "Principal"],
+"finance": ["Accountant", "Financial Analyst", "Bank Teller"],
+"construction": ["Civil Engineer", "Electrician", "Site Manager"],
+"transportation": ["Driver", "Logistics Manager", "Fleet Supervisor"],
+"hospitality": ["Hotel Manager", "Receptionist", "Chef"],
+"telecommunications": ["Network Engineer", "Customer Support", "Telecom Analyst"]
 };
 
-document.getElementById("currency").addEventListener("change", function () {
-  const selectedCurrency = this.value;
-  const symbolSpan = document.getElementById("currencySymbol");
-  symbolSpan.textContent = currencySymbols[selectedCurrency] || "";
+document.getElementById("industry").addEventListener("change", function () {
+const jobTypeSelect = document.getElementById("jobType");
+const selectedIndustry = this.value;
+jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
+
+if (selectedIndustry && industryJobMap[selectedIndustry]) {
+  industryJobMap[selectedIndustry].forEach(job => {
+    const option = document.createElement("option");
+    option.value = job.toLowerCase().replace(/\s+/g, "-");
+    option.textContent = job;
+    jobTypeSelect.appendChild(option);
+  });
+}
 });
   
+const currencies = [
+{ code: 'USD', symbol: '$', name: 'US Dollar' }, { code: 'EUR', symbol: '€', name: 'Euro' },
+{ code: 'GBP', symbol: '£', name: 'British Pound' }, { code: 'JPY', symbol: '¥', name: 'Japanese Yen' },
+{ code: 'AUD', symbol: 'A$', name: 'Australian Dollar' }, { code: 'CAD', symbol: 'C$', name: 'Canadian Dollar' },
+{ code: 'CHF', symbol: 'Fr', name: 'Swiss Franc' }, { code: 'CNY', symbol: '¥', name: 'Chinese Yuan' },
+{ code: 'HKD', symbol: 'HK$', name: 'Hong Kong Dollar' }, { code: 'NZD', symbol: 'NZ$', name: 'New Zealand Dollar' },
+{ code: 'SEK', symbol: 'kr', name: 'Swedish Krona' }, { code: 'KRW', symbol: '₩', name: 'South Korean Won' },
+{ code: 'SGD', symbol: 'S$', name: 'Singapore Dollar' }, { code: 'NOK', symbol: 'kr', name: 'Norwegian Krone' },
+{ code: 'MXN', symbol: '$', name: 'Mexican Peso' }, { code: 'INR', symbol: '₹', name: 'Indian Rupee' },
+{ code: 'RUB', symbol: '₽', name: 'Russian Ruble' }, { code: 'ZAR', symbol: 'R', name: 'South African Rand' },
+{ code: 'TRY', symbol: '₺', name: 'Turkish Lira' }, { code: 'BRL', symbol: 'R$', name: 'Brazilian Real' },
+{ code: 'TWD', symbol: 'NT$', name: 'New Taiwan Dollar' }, { code: 'DKK', symbol: 'kr', name: 'Danish Krone' },
+{ code: 'PLN', symbol: 'zł', name: 'Polish Złoty' }, { code: 'THB', symbol: '฿', name: 'Thai Baht' },
+{ code: 'IDR', symbol: 'Rp', name: 'Indonesian Rupiah' }, { code: 'HUF', symbol: 'Ft', name: 'Hungarian Forint' },
+{ code: 'CZK', symbol: 'Kč', name: 'Czech Koruna' }, { code: 'ILS', symbol: '₪', name: 'Israeli Shekel' },
+{ code: 'CLP', symbol: '$', name: 'Chilean Peso' }, { code: 'PHP', symbol: '₱', name: 'Philippine Peso' },
+{ code: 'AED', symbol: 'د.إ', name: 'UAE Dirham' }, { code: 'COP', symbol: '$', name: 'Colombian Peso' },
+{ code: 'SAR', symbol: '﷼', name: 'Saudi Riyal' }, { code: 'MYR', symbol: 'RM', name: 'Malaysian Ringgit' },
+{ code: 'RON', symbol: 'lei', name: 'Romanian Leu' }
+];
+
+const currencyElm = document.getElementById("currency");
+if(currencyElm){
+  currencies.forEach(currency => {
+    const option = document.createElement("option");
+    option.value = currency.symbol;
+    option.setAttribute('data-cr', currency.symbol);
+    option.textContent = `${currency.name} (${currency.symbol})`;
+    currencyElm.appendChild(option);
+  });
+}
+
+document.getElementById("currency").addEventListener("change", function(){
+  const selectedOption    = this.options[this.selectedIndex];
+  const selectedCurrency  = this.value;
+  const symbolSpan        = document.getElementById("currencySymbol");
+  symbolSpan.textContent  = selectedCurrency || "";
+});
+
+function calculateImpact(){
+  const WORKDAYS_PER_YEAR = 260;
+  const IMPROVEMENT_PERCENTAGE = 0.20;
+
+  const formData = {
+    industry: document.getElementById("industry").value,
+    jobType: document.getElementById("jobType").value,
+    teamSize: parseInt(document.getElementById("teamSize").value) || 0,
+    averageHourlyWage: parseFloat(document.getElementById("wage").value) || 0,
+    currency: document.getElementById("currency").value,
+    estimatedTimeLost: parseFloat(document.getElementById("hours-lost").value) || 0
+  };
+
+  const selectedDistractions = Array.from(
+    document.querySelectorAll('input[name="distraction"]:checked')
+  ).map((el) => el.value);
+
+  if (!formData.industry || !formData.jobType) {
+  //return;
+  }
+
+  // Mock distraction dataset
+  const distractions = [
+    { id: "meetings", label: "Unnecessary Meetings", percentage: 15 },
+    { id: "emails", label: "Email Management", percentage: 12 },
+    { id: "social", label: "Social Media", percentage: 10 },
+    { id: "breaks", label: "Unscheduled Breaks", percentage: 8 },
+    { id: "chat", label: "Office Chat", percentage: 7 }
+  ];
+
+  const selectedDistractionsData = distractions.filter((d) =>
+    selectedDistractions.includes(d.id)
+  );
+
+  const totalDistractionPercentage = selectedDistractionsData.reduce((sum, d) => sum + d.percentage, 0) / 100;
+  const dailyHoursLost = formData.estimatedTimeLost * (1 + totalDistractionPercentage);
+  const annualCost = formData.teamSize * formData.averageHourlyWage * dailyHoursLost * WORKDAYS_PER_YEAR;
+  const potentialSavings = annualCost * IMPROVEMENT_PERCENTAGE;
+  const currentProductiveHours = 8 - dailyHoursLost;
+  const optimizedProductiveHours = currentProductiveHours + dailyHoursLost * IMPROVEMENT_PERCENTAGE;
+
+  const reportData = {
+    annualCost,
+    potentialSavings,
+    selectedDistractions: selectedDistractionsData,
+    currentProductiveHours,
+    optimizedProductiveHours,
+    workdaysPerYear: WORKDAYS_PER_YEAR
+  };
+
+  console.log("Report Generated:", reportData);
+  // Optional: render to DOM
+  document.getElementById("results").innerHTML = `
+    <h3>📊 Productivity Report</h3>
+    <p><strong>Annual Impact:</strong> ${formData.currency} ${annualCost.toFixed(0).toLocaleString()}</p>
+    <p><strong>Potential Savings (20%):</strong> ${formData.currency} ${potentialSavings.toFixed(0).toLocaleString()}</p>
+    <p><strong>Current Productive Hours/Day:</strong> ${currentProductiveHours.toFixed(2)}</p>
+    <p><strong>Optimized Productive Hours/Day:</strong> ${optimizedProductiveHours.toFixed(2)}</p>
+  `;
+}

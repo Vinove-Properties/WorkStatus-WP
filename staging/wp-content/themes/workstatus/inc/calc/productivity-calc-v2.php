@@ -134,21 +134,10 @@
 }
 
 @media (max-width: 600px) {
-  .prod-calc-step2 {
-    padding: 1.5rem;
-  }
-
-  .wage-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .wage-wrapper select {
-    width: 100%;
-  }
+  .prod-calc-step2{padding: 1.5rem;}
+  .wage-wrapper{flex-direction:column; align-items: stretch;}
+  .wage-wrapper select{width: 100%;}
 }
-
-  
 </style>
 <form class="prod-calc" onsubmit="return false;" style="display:none;">
   <fieldset class="">
@@ -182,7 +171,7 @@
 </form>
 
 
-<form class="prod-calc-step2">
+<form class="prod-calc-step2" onsubmit="return false;">
   <fieldset>
   <label for="industry">Industry</label>
   <select id="industry" name="industry" required>
@@ -215,50 +204,15 @@
   <fieldset class="wage-fieldset">
     <label for="wage">Average Hourly Wage</label>
     <div class="wage-wrapper">
-    <span id="currencySymbol" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); color: #555;">£</span>
-    <input type="number" name="wage" id="wage" min="0" step="0.01" value="25" style="padding-left: 50px;" />
-      <select id="currency" name="currency">
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP" selected>GBP</option>
-        <option value="JPY">JPY</option>
-        <option value="AUD">AUD</option>
-        <option value="CAD">CAD</option>
-        <option value="CHF">CHF</option>
-        <option value="CNY">CNY</option>
-        <option value="HKD">HKD</option>
-        <option value="NZD">NZD</option>
-        <option value="SEK">SEK</option>
-        <option value="KRW">KRW</option>
-        <option value="SGD">SGD</option>
-        <option value="NOK">NOK</option>
-        <option value="MXN">MXN</option>
-        <option value="INR">INR</option>
-        <option value="RUB">RUB</option>
-        <option value="ZAR">ZAR</option>
-        <option value="TRY">TRY</option>
-        <option value="BRL">BRL</option>
-        <option value="TWD">TWD</option>
-        <option value="DKK">DKK</option>
-        <option value="PLN">PLN</option>
-        <option value="THB">THB</option>
-        <option value="IDR">IDR</option>
-        <option value="HUF">HUF</option>
-        <option value="CZK">CZK</option>
-        <option value="ILS">ILS</option>
-        <option value="CLP">CLP</option>
-        <option value="PHP">PHP</option>
-        <option value="AED">AED</option>
-        <option value="COP">COP</option>
-        <option value="SAR">SAR</option>
-        <option value="MYR">MYR</option>
-        <option value="RON">RON</option>
-      </select>
+    <span id="currencySymbol" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); 
+    color: #555;">$</span>
+    <input type="number" name="wage" id="wage" min="0" step="0.01" value="25" style="padding-left:50px;" />
+      <select id="currency" name="currency"></select>
     </div>
   </fieldset>
   <fieldset class="wage-fieldset">
       <label for="hours-lost">Estimated Daily Hours Lost</label>
-      <input type="number" name="hours-lost" id="hours-lost" min="1" max="24" value="">
+      <input type="number" name="hours-lost" id="hours-lost" min="1" max="24" value="2">
   </fieldset>    
   <div class="wage-fieldset">
   <p>Average hours lost per employee per day based on selected job type and industry benchmarks</p>  
@@ -266,22 +220,33 @@
     <h3>Common Workplace Distractions</h3>
     <span class="text-sm text-gray-500">Select all that apply</span>
   </div>
+  <?php /* ?>
   <div class="inner-wrap">
   <div class="flex-2">
-  <input type="checkbox" id="dis-1" name="distraction" value="Bike"><label for="dis-1">Unnecessary Meetings (15%)</label>
+  <input type="checkbox" id="dis-1" name="distraction" value="15"><label for="dis-1">Unnecessary Meetings (15%)</label>
   </div>
   <div class="flex-2">
-  <input type="checkbox" id="dis-2" name="distraction" value="Bike"><label for="dis-2">Email Management (12%)</label>
+  <input type="checkbox" id="dis-2" name="distraction" value="12"><label for="dis-2">Email Management (12%)</label>
   </div>
   <div class="flex-2">
-  <input type="checkbox" id="dis-3" name="distraction" value="Bike"><label for="dis-3">Social Media (10%)</label>
+  <input type="checkbox" id="dis-3" name="distraction" value="10"><label for="dis-3">Social Media (10%)</label>
   </div>
   <div class="flex-2">
-  <input type="checkbox" id="dis-4" name="distraction" value="Bike"><label for="dis-4">Unscheduled Breaks (8%)</label>
+  <input type="checkbox" id="dis-4" name="distraction" value="8"><label for="dis-4">Unscheduled Breaks (8%)</label>
   </div>
   <div class="flex-2">
-  <input type="checkbox" id="dis-5" name="distraction" value="Bike"><label for="dis-5">Office Chat  (7%)</label>
+  <input type="checkbox" id="dis-5" name="distraction" value="7"><label for="dis-5">Office Chat  (7%)</label>
   </div>
   </div>
-  <button type="submit">Calculate Productivity Impact</button>
+  <?php */ ?>
+  <fieldset>
+  <legend>Distractions (select applicable)</legend>
+  <label><input type="checkbox" name="distraction" value="meetings"> Unnecessary Meetings (15%)</label>
+  <label><input type="checkbox" name="distraction" value="emails">Email Management (12%)</label>
+  <label><input type="checkbox" name="distraction" value="social">Social Media (10%)</label>
+  <label><input type="checkbox" name="distraction" value="breaks">Unscheduled Breaks (8%)</label>
+  <label><input type="checkbox" name="distraction" value="chat">Office Chat (7%)</label>
+  </fieldset>
+  <button type="button" onclick="calculateImpact()">Calculate Productivity Impact</button>
+  <div id="results" style="margin-top: 20px; color: #000000; font-weight: bold;"></div>
 </form>
