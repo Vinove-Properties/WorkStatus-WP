@@ -1330,13 +1330,13 @@ function downloadEbookHandler(e){
 //Tab Effect js for home page
 
 
-const tabs = document.querySelectorAll('#tabs ul li');
+const tabs = document.querySelectorAll('#tabs-mc ul li');
 const tabContents = document.querySelectorAll('.tab-contents');
 let currentTab = 0;
 let tabTimer;
 const intervalTime = 5000; // 5 seconds
 
-// Function to activate the tab by index
+// Function to activate the tab and corresponding content by index
 function activateTab(index) {
   // Remove active class from all tabs and tab contents
   tabs.forEach(tab => tab.classList.remove('active'));
@@ -1352,7 +1352,6 @@ function activateTab(index) {
 
 // Start the auto-tab switching after the specified interval
 function startAutoTabs() {
-  // Set an interval to auto-change tabs every 5 seconds
   tabTimer = setInterval(() => {
     currentTab = (currentTab + 1) % tabs.length; // Loop back to the first tab after the last one
     activateTab(currentTab);
@@ -1403,6 +1402,7 @@ activateTab(currentTab);
 
 // Start auto tabs on page load
 startAutoTabs();  // This starts the auto-change every 5 seconds
+
 
 
 
