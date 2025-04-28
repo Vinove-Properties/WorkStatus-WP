@@ -4757,7 +4757,9 @@ li.iti__country {
     .business-tab .feature-tabs .tab-nav ul li {
       padding: 0 8px;
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      position: relative;
+      overflow: hidden; }
       .business-tab .feature-tabs .tab-nav ul li a {
         display: flex;
         height: 100%;
@@ -4771,7 +4773,10 @@ li.iti__country {
         position: relative;
         text-align: center;
         justify-content: center;
-        border: 1px solid rgba(122, 122, 122, 0.17); }
+        border: 1px solid rgba(122, 122, 122, 0.17);
+        text-decoration: none;
+        padding-bottom: 6px;
+        overflow: hidden; }
         .business-tab .feature-tabs .tab-nav ul li a .icon {
           display: flex;
           justify-content: center;
@@ -4784,6 +4789,28 @@ li.iti__country {
           .business-tab .feature-tabs .tab-nav ul li a .icon .hide {
             display: none;
             vertical-align: middle; }
+        .business-tab .feature-tabs .tab-nav ul li a .background-fill {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0%;
+          background-color: #e0e7ff;
+          z-index: 0;
+          transition: width 0s linear;
+          z-index: -1; }
+        .business-tab .feature-tabs .tab-nav ul li a .progress-bar {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          background-color: #6C63FF;
+          width: 0%;
+          transition: width 0s linear;
+          z-index: 2; }
+        .business-tab .feature-tabs .tab-nav ul li a span, .business-tab .feature-tabs .tab-nav ul li a img, .business-tab .feature-tabs .tab-nav ul li a strong {
+          z-index: 1;
+          position: relative; }
       .business-tab .feature-tabs .tab-nav ul li:last-child a {
         margin-right: 0; }
       .business-tab .feature-tabs .tab-nav ul li:hover a {
@@ -4793,6 +4820,10 @@ li.iti__country {
           display: none; }
         .business-tab .feature-tabs .tab-nav ul li:hover a .icon .hide {
           display: block; }
+      .business-tab .feature-tabs .tab-nav ul li.active a .background-fill {
+        animation: backgroundFillAnimation 5s linear forwards; }
+      .business-tab .feature-tabs .tab-nav ul li.active a .progress-bar {
+        animation: progressAnimation 5s linear forwards; }
     .business-tab .feature-tabs .tab-nav ul li.active a {
       color: #5D2BFF;
       background: #fff; }
@@ -4844,6 +4875,55 @@ li.iti__country {
   .business-tab .feature-tabs .bcontents .tab-contents.active {
     display: block; }
 
+@keyframes progressAnimation {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+.business-tab .feature-tabs .tab-nav ul li {
+  position: relative;
+  overflow: hidden; }
+  .business-tab .feature-tabs .tab-nav ul li a {
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1; }
+    .business-tab .feature-tabs .tab-nav ul li a .background-fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0%;
+      background-color: #e0e7ff;
+      z-index: 0;
+      transition: width 0s linear;
+      z-index: -1; }
+    .business-tab .feature-tabs .tab-nav ul li a .progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background-color: #6C63FF;
+      width: 0%;
+      transition: width 0s linear;
+      z-index: 2; }
+    .business-tab .feature-tabs .tab-nav ul li a span, .business-tab .feature-tabs .tab-nav ul li a img, .business-tab .feature-tabs .tab-nav ul li a strong {
+      z-index: 1;
+      position: relative; }
+  .business-tab .feature-tabs .tab-nav ul li.active a .background-fill {
+    animation: backgroundFillAnimation 2s linear forwards; }
+  .business-tab .feature-tabs .tab-nav ul li.active a .progress-bar {
+    animation: progressAnimation 2s linear forwards; }
+
+@keyframes backgroundFillAnimation {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+@keyframes progressAnimation {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
 @media (max-width: 1440px) {
   .business-tab .feature-tabs .tab-nav ul li a {
     padding: 6px 14px; } }

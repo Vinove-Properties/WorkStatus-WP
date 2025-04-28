@@ -21,6 +21,9 @@
           padding: 0 8px;
           display: inline-block;
           margin: 0;
+          position: relative;
+          overflow: hidden;
+     
 
           a {
             display: flex;
@@ -36,6 +39,9 @@
             text-align: center;
             justify-content: center;
             border: 1px solid rgba(122, 122, 122, 0.17);
+            text-decoration: none;
+            padding-bottom: 6px; // Space for progress bar
+            overflow: hidden;
 
             .icon {
               display: flex;
@@ -52,6 +58,36 @@
                 vertical-align: middle;
               }
             }
+
+            .background-fill {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 0%;
+              background-color: #e0e7ff; // Your background color
+              z-index: 0;
+              transition: width 0s linear;
+              z-index: -1;
+            }
+    
+            .progress-bar {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 3px;
+              background-color: #6C63FF;
+              width: 0%;
+              transition: width 0s linear;
+              z-index: 2;
+            }
+    
+            span, img, strong {
+              z-index: 1; // Keep icon/text above background
+              position: relative;
+            }
+
+            
           }
           &:last-child {
             a {
@@ -73,6 +109,17 @@
               }
             }
           }
+
+
+          &.active a .background-fill {
+            animation: backgroundFillAnimation 5s linear forwards;
+          }
+          &.active a .progress-bar {
+            animation: progressAnimation 5s linear forwards;
+          }
+
+
+
         }
         li.active {
           a {
@@ -88,6 +135,8 @@
             }
           }
         }
+        
+       
       }
       .is-arrow {
         margin-left: 10px;
@@ -150,6 +199,101 @@
     }
   }
 }
+
+
+
+
+
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.business-tab {
+  .feature-tabs {
+
+    .tab-nav {
+      ul {
+        li {
+          position: relative;
+          overflow: hidden;
+    
+          a {
+            text-decoration: none;
+            overflow: hidden;
+            z-index: 1;
+    
+            .background-fill {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 0%;
+              background-color: #e0e7ff; // Your background color
+              z-index: 0;
+              transition: width 0s linear;
+              z-index: -1;
+            }
+    
+            .progress-bar {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              height: 3px;
+              background-color: #6C63FF;
+              width: 0%;
+              transition: width 0s linear;
+              z-index: 2;
+            }
+    
+            span, img, strong {
+              z-index: 1; // Keep icon/text above background
+              position: relative;
+            }
+          }
+    
+          &.active a .background-fill {
+            animation: backgroundFillAnimation 2s linear forwards;
+          }
+          &.active a .progress-bar {
+            animation: progressAnimation 2s linear forwards;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+@keyframes backgroundFillAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
 
 @media (max-width: 1440px) {
   .business-tab {

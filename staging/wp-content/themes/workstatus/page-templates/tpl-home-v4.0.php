@@ -114,34 +114,43 @@
             <ul>
               <li class="active">
                 <a href="#tabmc01">
+                <span class="background-fill"></span>
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01.svg" alt="Icon" width="16" height="18">
                 <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
-                </span>Time Tracking</a>
+                </span>Time Tracking
+                <span class="progress-bar"></span>
+              </a>
               </li>
               <li>
                 <a href="#tabmc02">
+                <span class="background-fill"></span>
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02.svg" alt="Icon" 
                   width="16" height="18">
                 <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb02-hover.svg" alt="Icon" width="16" height="18">
                 </span>Productivity Management</a>
               </li>
-              <li><a href="#tabmc03"> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
+              <li><a href="#tabmc03">      <span class="background-fill"></span> <span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb03-hover.svg" alt="Icon" width="16" height="18">
                 </span>
-                Attendance Tracking</a>
+                Attendance Tracking
+                <span class="progress-bar"></span>
+              </a>
               </li>
-              <li><a href="#tabmc04"><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
+              <li><a href="#tabmc04"> <span class="background-fill"></span><span class="icon"><img class="show"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb04-hover.svg" alt="Icon" width="16" height="18">
                 </span>
-                Project & Task Management</a>
+                Project & Task Management <span class="progress-bar"></span></a>
               </li>
               <li>
                 <a href="#tabmc05">
+                <span class="background-fill"></span>
                 <span class="icon">
                 <img class="show" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05.svg" alt="Icon" 
                   width="16" height="18">
                 <img class="hide" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tb05-hover.svg" alt="Icon" width="16" height="18">
-                </span>Reporting & Analytics</a>
+                </span>Reporting & Analytics
+                <span class="progress-bar"></span>
+              </a>
               </li>
             </ul>
           </nav>
