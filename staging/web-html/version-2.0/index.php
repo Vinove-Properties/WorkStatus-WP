@@ -117,31 +117,31 @@
                     <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Time Tracking
-                    <span class="progress-bar"></span>
+                    <span class="autoprogress-bar"></span>
                   </a>
                   </li>
                   <li><a href="#tab02">  <span class="background-fill"></span> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Productivity Management
-                    <span class="progress-bar"></span>
+                    <span class="autoprogress-bar"></span>
                   </a>
                   </li>
                   <li><a href="#tab03"> <span class="background-fill"></span><span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Project & Task Management
-                    <span class="progress-bar"></span>
+                    <span class="autoprogress-bar"></span>
                   </a>
                   </li>
                   <li><a href="#tab04"> <span class="background-fill"></span><span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Attendance Tracking
-                    <span class="progress-bar"></span>
+                    <span class="autoprogress-bar"></span>
                   </a>
                   </li>
                   <li><a href="#tab05"><span class="background-fill"></span> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Attendance Tracking
-                    <span class="progress-bar"></span>
+                    <span class="autoprogress-bar"></span>
                   </a>
                   </li>
                 </ul>
