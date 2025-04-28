@@ -147,6 +147,7 @@
       .tab-contents {
         display: none;
         text-align: center;
+        transition: opacity 0.5s ease;
 
         .dis-flex {
           align-items: center;
