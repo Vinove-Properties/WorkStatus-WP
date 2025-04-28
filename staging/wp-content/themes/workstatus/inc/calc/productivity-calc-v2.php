@@ -174,26 +174,12 @@
 <form class="prod-calc-step2" onsubmit="return false;">
   <fieldset>
   <label for="industry">Industry</label>
-  <select id="industry" name="industry" required>
-    <option value="">Select an industry</option>
-    <option value="it">Information Technology (IT)</option>
-    <option value="manufacturing">Manufacturing</option>
-    <option value="retail">Retail</option>
-    <option value="healthcare">Healthcare</option>
-    <option value="education">Education</option>
-    <option value="finance">Finance</option>
-    <option value="construction">Construction</option>
-    <option value="transportation">Transportation</option>
-    <option value="hospitality">Hospitality</option>
-    <option value="telecommunications">Telecommunications</option>
-  </select>
+  <select id="industry" name="industry"><option value="">Select an industry</option></select>
 </fieldset>
 
 <fieldset>
   <label for="jobType">Job Type</label>
-  <select id="jobType" name="jobType" required>
-    <option value="">Select a job type</option>
-  </select>
+  <select id="jobType" name="jobType"><option value="">Select a job type</option></select>
 </fieldset>
 
   <fieldset>

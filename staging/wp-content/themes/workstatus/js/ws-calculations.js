@@ -105,35 +105,131 @@ function ws_calculateROI(){
     document.getElementById("netROI").innerHTML = "$" + netROI.toFixed(2);
 }
 
+const industriesArray = [
+  {
+    id: 'it',
+    name: 'Information Technology (IT)',
+    jobs: [
+      { id: 'developer', title: 'Developer', averageHoursLost: 1.8 },
+      { id: 'tech-support', title: 'Technical Support', averageHoursLost: 2.0 }
+    ]
+  },
+  {
+    id: 'manufacturing',
+    name: 'Manufacturing',
+    jobs: [
+      { id: 'operations', title: 'Operations', averageHoursLost: 2.2 },
+      { id: 'quality-control', title: 'Quality Control', averageHoursLost: 2.0 }
+    ]
+  },
+  {
+    id: 'retail',
+    name: 'Retail',
+    jobs: [
+      { id: 'sales', title: 'Sales Representative', averageHoursLost: 2.0 },
+      { id: 'cashier', title: 'Cashier', averageHoursLost: 1.9 }
+    ]
+  },
+  {
+    id: 'healthcare',
+    name: 'Healthcare',
+    jobs: [
+      { id: 'admin', title: 'Administrative Staff', averageHoursLost: 1.9 },
+      { id: 'nurse', title: 'Nurse', averageHoursLost: 2.1 }
+    ]
+  },
+  {
+    id: 'education',
+    name: 'Education',
+    jobs: [
+      { id: 'teacher', title: 'Teacher', averageHoursLost: 1.8 },
+      { id: 'admin', title: 'Administrative Staff', averageHoursLost: 2.0 }
+    ]
+  },
+  {
+    id: 'finance',
+    name: 'Finance',
+    jobs: [
+      { id: 'accountant', title: 'Accountant', averageHoursLost: 1.7 },
+      { id: 'analyst', title: 'Financial Analyst', averageHoursLost: 1.8 }
+    ]
+  },
+  {
+    id: 'construction',
+    name: 'Construction',
+    jobs: [
+      { id: 'site-worker', title: 'Site Worker', averageHoursLost: 2.3 },
+      { id: 'project-manager', title: 'Project Manager', averageHoursLost: 2.0 }
+    ]
+  },
+  {
+    id: 'transportation',
+    name: 'Transportation',
+    jobs: [
+      { id: 'driver', title: 'Driver', averageHoursLost: 2.1 },
+      { id: 'logistics', title: 'Logistics Coordinator', averageHoursLost: 2.0 }
+    ]
+  },
+  {
+    id: 'hospitality',
+    name: 'Hospitality',
+    jobs: [
+      { id: 'front-desk', title: 'Front Desk Staff', averageHoursLost: 2.0 },
+      { id: 'housekeeping', title: 'Housekeeping', averageHoursLost: 1.9 }
+    ]
+  },
+  {
+    id: 'telecommunications',
+    name: 'Telecommunications',
+    jobs: [
+      { id: 'support', title: 'Customer Support', averageHoursLost: 2.5 },
+      { id: 'technician', title: 'Field Technician', averageHoursLost: 2.2 }
+    ]
+  },
+];
 
-const industryJobMap = {
-"it": ["Software Developer", "IT Support", "System Administrator", "Product Manager"],
-"manufacturing": ["Production Worker", "Quality Inspector", "Machine Operator"],
-"retail": ["Store Manager", "Cashier", "Sales Associate"],
-"healthcare": ["Doctor", "Nurse", "Pharmacist"],
-"education": ["Teacher", "Academic Counselor", "Principal"],
-"finance": ["Accountant", "Financial Analyst", "Bank Teller"],
-"construction": ["Civil Engineer", "Electrician", "Site Manager"],
-"transportation": ["Driver", "Logistics Manager", "Fleet Supervisor"],
-"hospitality": ["Hotel Manager", "Receptionist", "Chef"],
-"telecommunications": ["Network Engineer", "Customer Support", "Telecom Analyst"]
+const findIndustryById = (industryId) => {
+  return industriesArray.find(industry => industry.id === industryId) || null;
 };
 
-document.getElementById("industry").addEventListener("change", function () {
-const jobTypeSelect = document.getElementById("jobType");
-const selectedIndustry = this.value;
-jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
+const jobsIN = findIndustryById("hospitality");
+console.log( jobsIN.jobs );
 
-if (selectedIndustry && industryJobMap[selectedIndustry]) {
-  industryJobMap[selectedIndustry].forEach(job => {
+const industryElm = document.getElementById("industry");
+if(industryElm){
+  industriesArray.forEach(ind => {
     const option = document.createElement("option");
-    option.value = job.toLowerCase().replace(/\s+/g, "-");
-    option.textContent = job;
-    jobTypeSelect.appendChild(option);
+    option.value = ind.id;
+    option.textContent = ind.name;;
+    industryElm.appendChild(option);
   });
 }
+
+document.getElementById("industry").addEventListener("change", function(){
+  const jobTypeSelect     = document.getElementById("jobType");
+  const selectedIndustry  = this.value;
+  const jobs              = industriesArray.find(industry => industry.id === selectedIndustry) || [];
+  jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
+  if(jobs){
+    jobs.jobs.forEach( job => {
+      const option = document.createElement("option");
+      option.value = job.title;
+      option.textContent = job.title;
+      option.setAttribute('data-al', job.averageHoursLost);
+      jobTypeSelect.appendChild(option);
+    });
+  }
 });
-  
+
+document.getElementById("jobType").addEventListener("change", function(){
+  const lostHour    = document.getElementById("hours-lost");
+  const selectedOption = this.options[this.selectedIndex];
+  const selectJob   = this.value;
+  if( selectedOption.getAttribute("data-al") ){
+    lostHour.value = selectedOption.getAttribute("data-al");
+  }
+});
+
 const currencies = [
 { code: 'USD', symbol: '$', name: 'US Dollar' }, { code: 'EUR', symbol: '€', name: 'Euro' },
 { code: 'GBP', symbol: '£', name: 'British Pound' }, { code: 'JPY', symbol: '¥', name: 'Japanese Yen' },
@@ -160,7 +256,6 @@ if(currencyElm){
   currencies.forEach(currency => {
     const option = document.createElement("option");
     option.value = currency.symbol;
-    option.setAttribute('data-cr', currency.symbol);
     option.textContent = `${currency.name} (${currency.symbol})`;
     currencyElm.appendChild(option);
   });
