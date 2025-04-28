@@ -2570,7 +2570,6 @@ if (altQty) {
 
 //Tab Effect js for home page
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll('#tabs-mc ul li');  // Get all tab list items
     const tabContents = document.querySelectorAll('.tab-contents');  // Get all tab content divs
