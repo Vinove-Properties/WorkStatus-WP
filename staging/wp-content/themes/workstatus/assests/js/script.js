@@ -2568,58 +2568,37 @@ if (altQty) {
     });
 }
 
-//Tab Effect js for home page
+document.addEventListener("DOMContentLoaded", function (){
+    if( document.getElementById("home-auto-tabs") ){
+        const tabs          = document.getElementById("tabs-mc").querySelectorAll('ul li'); 
+        const tabContents   = document.getElementById("mctab-contents").querySelectorAll('.tab-contents');  // Get all tab content divs
+        let currentTab      = 0;
+        let tabTimer;
+        const intervalTime  = 3000;
+        function activateTabMC(index) {
+          tabs.forEach(tab => tab.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          tabs[index].classList.add('active');
+          tabContents[index].classList.add('active');
+        }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('#tabs-mc ul li');  // Get all tab list items
-    const tabContents = document.querySelectorAll('.tab-contents');  // Get all tab content divs
-    let currentTab = 0;
-    let tabTimer;
-    const intervalTime = 5000; // Time between auto-switching (5 seconds)
-  
-    // Function to activate a tab and its corresponding content
-    function activateTab(index) {
-      // Remove the 'active' class from all tabs and tab content
-      tabs.forEach(tab => tab.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-  
-      // Add 'active' class to the tab at the given index
-      tabs[index].classList.add('active');
-      // Show the content that corresponds to this tab
-      tabContents[index].classList.add('active');
-    }
-  
-    // Start the automatic tab switching
-    function startAutoTabs() {
-      tabTimer = setInterval(() => {
-        currentTab = (currentTab + 1) % tabs.length;  // Loop back to the first tab after the last one
-        activateTab(currentTab);
-      }, intervalTime);
-    }
-  
-    // Add event listener for clicks to allow manual tab switching
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', (e) => {
-        e.preventDefault();  // Prevent the default link behavior
-  
-        // Clear the auto-switching timer when the user clicks a tab
-        clearInterval(tabTimer);
-  
-        // Activate the clicked tab
-        activateTab(index);
-  
-        // Update the current tab index to the clicked tab
-        currentTab = index;
-  
-        // Restart the auto-switching timer after the user clicks a tab
+        function startAutoTabs() {
+          tabTimer = setInterval(() => {
+            currentTab = (currentTab + 1) % tabs.length;
+            activateTabMC(currentTab);
+          }, intervalTime);
+        }
+
+        tabs.forEach((tab, index) => {
+          tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            clearInterval(tabTimer);
+            activateTabMC(index);
+            currentTab = index;
+            startAutoTabs();
+          });
+        });
+        activateTabMC(currentTab);
         startAutoTabs();
-      });
-    });
-  
-    // Initial activation of the first tab
-    activateTab(currentTab);
-  
-    // Start auto tab switching on page load
-    startAutoTabs();
-  });
-  
+    }
+});
