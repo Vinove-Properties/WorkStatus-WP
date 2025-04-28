@@ -1331,69 +1331,47 @@ function downloadEbookHandler(e){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll('#tabs-mc ul li');
-    const tabContents = document.querySelectorAll('.tab-contents');
+    const tabs = document.querySelectorAll('#tabs-mc ul li');  // Get all tab list items
+    const tabContents = document.querySelectorAll('.tab-contents');  // Get all tab content divs
     let currentTab = 0;
     let tabTimer;
-    const intervalTime = 5000; // 5 seconds
+    const intervalTime = 5000; // Time between auto-switching (5 seconds)
   
-    // Function to activate the tab and corresponding content by index
+    // Function to activate a tab and its corresponding content
     function activateTab(index) {
-      // Remove active class from all tabs and tab contents
+      // Remove the 'active' class from all tabs and tab content
       tabs.forEach(tab => tab.classList.remove('active'));
       tabContents.forEach(content => content.classList.remove('active'));
   
-      // Add active class to the current tab and tab content
+      // Add 'active' class to the tab at the given index
       tabs[index].classList.add('active');
+      // Show the content that corresponds to this tab
       tabContents[index].classList.add('active');
-  
-      // Reset animations (if applicable)
-      resetAnimations();
     }
   
-    // Start the auto-tab switching after the specified interval
+    // Start the automatic tab switching
     function startAutoTabs() {
       tabTimer = setInterval(() => {
-        currentTab = (currentTab + 1) % tabs.length; // Loop back to the first tab after the last one
+        currentTab = (currentTab + 1) % tabs.length;  // Loop back to the first tab after the last one
         activateTab(currentTab);
       }, intervalTime);
     }
   
-    // Reset any animations on tabs
-    function resetAnimations() {
-      tabs.forEach(tab => {
-        const progress = tab.querySelector('.progress-bar');
-        const background = tab.querySelector('.background-fill');
-  
-        if (progress) {
-          progress.style.animation = 'none'; // Remove animation
-          progress.offsetHeight; // Force reflow
-          progress.style.animation = ''; // Reset animation
-        }
-  
-        if (background) {
-          background.style.animation = 'none'; // Remove animation
-          background.offsetHeight; // Force reflow
-          background.style.animation = ''; // Reset animation
-        }
-      });
-    }
-  
-    // Add event listener for click to change tabs manually
+    // Add event listener for clicks to allow manual tab switching
     tabs.forEach((tab, index) => {
       tab.addEventListener('click', (e) => {
-        e.preventDefault();  // Prevent default behavior (useful for links)
+        e.preventDefault();  // Prevent the default link behavior
   
-        // Stop the auto-tab switching when user manually clicks a tab
+        // Clear the auto-switching timer when the user clicks a tab
         clearInterval(tabTimer);
   
         // Activate the clicked tab
         activateTab(index);
   
-        // Update the current tab index
+        // Update the current tab index to the clicked tab
         currentTab = index;
   
-        // Restart the auto-tab switching
+        // Restart the auto-switching timer after the user clicks a tab
         startAutoTabs();
       });
     });
@@ -1401,9 +1379,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial activation of the first tab
     activateTab(currentTab);
   
-    // Start auto tabs on page load
-    startAutoTabs();  // This starts the auto-change every 5 seconds
+    // Start auto tab switching on page load
+    startAutoTabs();
   });
+  
   
 
 
