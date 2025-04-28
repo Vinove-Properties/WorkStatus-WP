@@ -1353,7 +1353,7 @@ function activateTab(index) {
 // Start the auto-tab switching after the specified interval
 function startAutoTabs() {
   tabTimer = setInterval(() => {
-    currentTab = (currentTab + 1) % tabs.length; // Loop back to the first tab after the last one
+    currentTab = (currentTab + 0) % tabs.length; // Loop back to the first tab after the last one
     activateTab(currentTab);
   }, intervalTime);
 }
