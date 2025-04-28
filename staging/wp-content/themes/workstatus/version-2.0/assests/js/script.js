@@ -1334,7 +1334,7 @@ const tabs = document.querySelectorAll('#tabs ul li');
 const tabContents = document.querySelectorAll('.tab-contents');
 let currentTab = 0;
 let tabTimer;
-const intervalTime = 2000; // 2 seconds
+const intervalTime = 5000; // 5 seconds
 
 // Function to activate the tab by index
 function activateTab(index) {
