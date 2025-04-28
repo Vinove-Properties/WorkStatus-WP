@@ -4837,7 +4837,8 @@ li.iti__country {
   flex-basis: 100%; }
   .business-tab .feature-tabs .bcontents .tab-contents {
     display: none;
-    text-align: center; }
+    text-align: center;
+    transition: opacity 0.5s ease; }
     .business-tab .feature-tabs .bcontents .tab-contents .dis-flex {
       align-items: center;
       justify-content: space-between; }
