@@ -247,7 +247,7 @@
               bottom: 0;
               left: 0;
               height: 3px;
-              background-color: #6C63FF;
+              background-color: transparent;
               width: 0%;
               transition: width 0s linear;
               z-index: 2;
@@ -264,6 +264,7 @@
           }
           &.active a .progress-bar {
             animation: progressAnimation 2s linear forwards;
+            background:#5D2BFF;
           }
         }
       }
