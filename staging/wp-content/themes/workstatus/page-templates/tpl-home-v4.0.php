@@ -100,7 +100,7 @@
     $dataDrive = get_field('dd-resul');
     if( isset( $dataDrive['is_enabled'] ) && ($dataDrive['is_enabled'] == "yes") ) :
     ?>
-  <section class="business-tab bg-light padding-t-120 padding-b-120" id="auto-tabs">
+  <section class="business-tab bg-light padding-t-120 padding-b-120" id="home-auto-tabs">
     <div class="container">
       <div class="top-section">
         <?php 
