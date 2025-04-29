@@ -323,20 +323,7 @@ font-size: 14px;
 
 
 
-
-    input[type="number"].input-area {
-        appearance: auto;
-        -webkit-appearance: number-input;
-        -moz-appearance: number-input;
-        padding-right: 10px; /* Enough space for spinner */
-      }
-
-
-      input[type="number"] {
-        -moz-appearance: textfield; /* Firefox */
-        appearance: auto;
-        -webkit-appearance: number-input; /* Chrome, Safari, Edge */
-      }
-
+    .salary-calculator .input-field.error label{color:red}
+    .salary-calculator .input-field.error .input-area {border-color:red;}
 
 
