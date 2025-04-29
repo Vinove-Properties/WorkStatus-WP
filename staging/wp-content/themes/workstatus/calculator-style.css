@@ -83,7 +83,7 @@ padding-bottom:80px;
     cursor: pointer;
     font-family: "Lexend Deca", sans-serif;
     font-size: 16px;
-    margin: 20px 0 0;
+ 
    
     cursor: pointer;
   }
@@ -231,6 +231,7 @@ legend {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1rem;
+    margin: 0 0 20px;
   }
 
   .distraction-wrapper {
@@ -310,6 +311,32 @@ font-size: 14px;
         align-items: center; margin:0 0 20px;}
 .cmn-work .text-sm{    font-size: 14px;
     color: #5e6373;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    input[type="number"].input-area {
+        appearance: auto;
+        -webkit-appearance: number-input;
+        -moz-appearance: number-input;
+        padding-right: 10px; /* Enough space for spinner */
+      }
+
+
+      input[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+        appearance: auto;
+        -webkit-appearance: number-input; /* Chrome, Safari, Edge */
+      }
 
 
 

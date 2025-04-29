@@ -1,8 +1,8 @@
-<form class="prod-calc" onsubmit="return false;" style="display:none;">
+<form class="prod-calc" onsubmit="return false;" style="display:block;">
   <div class="form-wrap">
     <fieldset class="input-field">
       <label>Full Name *</label>
-      <input type="text" name="name" value="">  
+      <input type="text" class="input-area" name="name" value="">  
     </fieldset>
     <fieldset class="input-field">
       <label>Email Address *</label>
@@ -27,7 +27,7 @@
     </fieldset>
   </div>
 </form>
-<form class="prod-calc-step2" onsubmit="return false;" style="display:block;">
+<form class="prod-calc-step2" onsubmit="return false;" style="display:none;">
   <div class="form-wrap">
   <fieldset class="input-field">
     <label for="industry">Industry</label>
