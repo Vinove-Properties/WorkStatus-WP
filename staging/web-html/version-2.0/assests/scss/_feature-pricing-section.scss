@@ -1693,7 +1693,11 @@ height: 30px; font-size: 0; background-size: 25px; cursor: pointer; position: ab
                       min-height: initial;
                       padding-top: 15px;
                     }
+                    .option{
+                      &:before{top:6px;}
+                    }
                   }
+                  
                 }
               }
             }

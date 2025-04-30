@@ -7413,6 +7413,8 @@ li.iti__country {
             .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list .support-options {
               min-height: initial;
               padding-top: 15px; }
+            .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price-wrapper .price-options .option-list .option:before {
+              top: 6px; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:first-child {
           margin-right: 0; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) {
