@@ -13,15 +13,17 @@ if( $bannerType && ($bannerType === "form") ){
       </div>
    <div class="salary-calculator">
       <?php 
-      get_template_part( 'inc/calc/productivity-calc-v2' );
+      //
       ?>
       <?php 
-      // $calcType = get_post_meta( $post->ID, 'calc-type', true ); 
-      // if( $calcType && ($calcType === "roi") ){
-      //   get_template_part('inc/calc/roi', 'calculator');
-      // }else{
-      //   get_template_part('inc/calc/wagerate', 'calculator');  
-      // }
+      $calcType = get_post_meta( $post->ID, 'calc-type', true ); 
+      if( $calcType && ($calcType === "roi") ){
+        get_template_part('inc/calc/roi', 'calculator');
+      }elseif( $calcType && ($calcType === "pc") ){
+        get_template_part( 'inc/calc/productivity-calc-v2' );
+      }else{
+        get_template_part('inc/calc/wagerate', 'calculator');  
+      }
       ?>
     </div>
     </div>

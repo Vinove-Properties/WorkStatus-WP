@@ -1,329 +1,44 @@
-.header-two {background: #5D2BFF;
-    z-index: 100;
-}
-.hero-banner{width: 100%;
-
-    background: #5D2BFF;
-    position: relative;
-padding-bottom:80px;
-    text-align: center;}  
-.hero-banner .inner-wrap{flex-direction: column;}
-
-
-
-
-
-
-
-.hero-banner .inner-wrap .salary-calculator{flex-basis: 80%;width: 80%; margin: 40px 0 0; padding: 30px;}   
-
-
-
-.prod-calc {
-    max-width:100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-  }
-
-  .salary-calculator .form-wrap{ width:100%;
-    margin: 0 auto;
-
-   display: flex; flex-wrap: wrap;}
-  
- 
-  
-    .salary-calculator  .input-field  {
-    border: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    flex-basis: 50%;
-    padding:0 10px; margin:0 0 20px; 
-  
-  }
-
-  .salary-calculator  .input-field.full-width{flex-basis: 100%;}
-  
-  .salary-calculator label {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    display: block;
-    color:#110302;
-    text-align: left;
-  }
-  
- 
-  
-  
-  .salary-calculator .input-area {
-    width: 100%;
-   padding:0 15px;
-   height: 45px;
-    border: 1px solid rgb(203, 211, 220);
-    border-radius: 5px;
-    box-sizing: border-box;
-    color:#525f7f;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 16px;
-    
-
-  }
-  
-  .salary-calculator  button {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: "Lexend Deca", sans-serif;
-    font-size: 16px;
- 
-   
-    cursor: pointer;
-  }
-  
-  .salary-calculator button:hover {
-    background-color: #45a049;
-  }
-  
-  .salary-calculator  small {
-    width: 100%;
-    margin-top: 15px;
-    font-size: 12px;
-    color: #7e7e7e;
-    text-align: left;
-    line-height: 18px;
-  }
-  
-
-
-
-
-  .salary-calculator  .btn {
-  width: 100%;
-  padding: 10px;
-  height:45px;
-  background: #5D2BFF;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Lexend Deca", sans-serif;
-}
-
-.salary-calculator .btn:hover {
-    background: #05164d;
-    border-color: #05164d;
- 
-}
-
-
-.salary-calculator select.input-area  {
-
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  
- 
-
-
-
-
-  .salary-calculator select.input-area {
-    appearance: none; 
-    -webkit-appearance: none;
-    cursor: pointer;
-    -moz-appearance: none;
-    background-image: url(./assests/images/select-icon.png);
-    background-repeat: no-repeat;
-    background-position: center right 15px;
-    padding: 0 30px 0 15px;
-  }
-  
-
-
-
-
-
-  /* Hover/Focus effects for the select */
-  .input-area:focus {
-    border-color: #4CAF50;
-    outline: none;
-  }
-
-
-
-
-
-.prod-calc-step2 .wage-fieldset p{    text-align: left;
-    font-weight: 500;
-    line-height: 28px;
-    font-size: 14px; color:#5e6373;}
-
-
-    .salary-calculator input[type="number"].input-area {
-        appearance: auto;
-        -webkit-appearance: auto;
-        -moz-appearance: number-input;
-      
-      }
-
-.prod-calc-step2 select:focus,
-.prod-calc-step2 input[type="number"]:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-.wage-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.wage-wrapper .currency-symbol {
-  font-size: 14px;
-  color: #555;
-}
-
-
-
-
-
-.description {
-  font-size: 13px;
-  color: #666;
-  margin: 1rem 0;
-  line-height: 1.5;
-}
-
-.prod-calc-step2 button[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-legend {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-
-  .distract-columns{border:0; margin:0; padding:0;}
-
-  .distractions-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1rem;
-    margin: 0 0 20px;
-  }
-
-  .distraction-wrapper {
-    position: relative;
-  }
-
-  .distraction-wrapper input[type="checkbox"] {
-    display: none;
-  }
-
-  .distraction-card {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    border: 1px solid rgb(203, 211, 220);
-    border-radius: 5px;
-    background-color: #f5f7ff;
-    padding:20px;
-    cursor: pointer;
-    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
-    margin:0;
-  }
-
-  .distraction-wrapper input[type="checkbox"]:checked + label {
-    border-color: #4f46e5;
-    background-color: #e0e7ff;
-    box-shadow: 0 2px 6px rgba(79, 70, 229, 0.2);
-  }
-
-  .distraction-card img.distraction-icon {
-    width: 32px;
-    height: 32px;
-    margin-top: 4px;
-    flex-shrink: 0;
-  }
-
-  .distraction-content {
-    flex: 1;
-  }
-
-  .distraction-title {
-    font-weight: bold;
-    margin-bottom:10px;
-    display: flex
-;
-font-size: 14px;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 500;
-    gap: 5px;
-  }
-
-  .impact-badge {
-    background: #d3ccfd;
-    color: #5D2BFF;
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 9px;
-    font-weight: 500;
-    border-radius: 10px;
-  }
-
-  .distraction-desc {
-    font-size: 14px;
-    font-weight: 400;
-    color:#5e6373;
-    line-height: 22px;
-  }
-
-  label {
-    display: block;
-  }
-
-.cmn-work{display: flex
-    ;
-        justify-content: space-between;
-        align-items: center; margin:0 0 20px;}
-.cmn-work .text-sm{    font-size: 14px;
-    color: #5e6373;}
-
-
-
-
-
-
-
-
-
-
-
-
-    .salary-calculator .input-field.error label{color:red}
-    .salary-calculator .input-field.error .input-area {border-color:red;}
-
-
+.header-two{background:#5d2bff;z-index:100}
+.hero-banner{width:100%;background:#5d2bff;position:relative;padding-bottom:80px;text-align:center}
+.hero-banner .inner-wrap{flex-direction:column}
+.hero-banner .inner-wrap .salary-calculator{flex-basis:80%;width:80%;margin:40px 0 0;padding:30px}
+.prod-calc{max-width:100%;margin:0 auto;box-sizing:border-box}
+.salary-calculator .form-wrap{width:100%;margin:0 auto;display:flex;flex-wrap:wrap}
+.salary-calculator .input-field{border:none;box-sizing:border-box;margin:0;padding:0;border:none;box-sizing:border-box;flex-basis:50%;padding:0 10px;margin:0 0 20px}
+.salary-calculator .input-field.full-width{flex-basis:100%}
+.salary-calculator label{font-size:16px;font-weight:500;margin-bottom:10px;display:block;color:#110302;text-align:left}
+.salary-calculator .input-area{width:100%;padding:0 15px;height:45px;border:1px solid #cbd3dc;border-radius:5px;box-sizing:border-box;color:#525f7f;font-family:"Lexend Deca",sans-serif;font-size:16px}
+.salary-calculator button{width:100%;padding:12px;background-color:#4caf50;color:#fff;border:none;border-radius:5px;cursor:pointer;font-family:"Lexend Deca",sans-serif;font-size:16px;cursor:pointer}
+.salary-calculator button:hover{background-color:#45a049}
+.salary-calculator small{width:100%;margin-top:15px;font-size:12px;color:#7e7e7e;text-align:left;line-height:18px}
+.salary-calculator .btn{width:100%;padding:10px;height:45px;background:#5d2bff;color:#fff;font-size:16px;font-weight:500;border:none;border-radius:8px;cursor:pointer;transition:background-color .3s ease;font-family:"Lexend Deca",sans-serif}
+.salary-calculator .btn:hover{background:#05164d;border-color:#05164d}
+.salary-calculator select.input-area{cursor:pointer;box-sizing:border-box}
+.salary-calculator select.input-area{appearance:none;-webkit-appearance:none;cursor:pointer;-moz-appearance:none;background-image:url(./assests/images/select-icon.png);background-repeat:no-repeat;background-position:center right 15px;padding:0 30px 0 15px}
+.input-area:focus{border-color:#4caf50;outline:0}
+.prod-calc-step2 .wage-fieldset p{text-align:left;font-weight:500;line-height:28px;font-size:14px;color:#5e6373}
+.salary-calculator input[type=number].input-area{appearance:auto;-webkit-appearance:auto;-moz-appearance:number-input}
+.prod-calc-step2 input[type=number]:focus,.prod-calc-step2 select:focus{border-color:#007bff;outline:0}
+.wage-wrapper{position:relative;display:flex;align-items:center;gap:.5rem}
+.wage-wrapper .currency-symbol{font-size:14px;color:#555}
+.description{font-size:13px;color:#666;margin:1rem 0;line-height:1.5}
+.prod-calc-step2 button[type=submit]{width:100%;padding:12px;background-color:#007bff;color:#fff;font-size:16px;font-weight:700;border:none;border-radius:8px;cursor:pointer;transition:background-color .3s ease}
+legend{font-size:1.2rem;font-weight:700;margin-bottom:1rem}
+.distract-columns{border:0;margin:0;padding:0}
+.distractions-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:0 0 20px}
+.distraction-wrapper{position:relative}
+.distraction-wrapper input[type=checkbox]{display:none}
+.distraction-card{display:flex;gap:10px;align-items:flex-start;border:1px solid #cbd3dc;border-radius:5px;background-color:#f5f7ff;padding:20px;cursor:pointer;transition:border-color .3s,box-shadow .3s,background-color .3s;margin:0}
+.distraction-wrapper input[type=checkbox]:checked+label{border-color:#4f46e5;background-color:#e0e7ff;box-shadow:0 2px 6px rgba(79,70,229,.2)}
+.distraction-card img.distraction-icon{width:32px;height:32px;margin-top:4px;flex-shrink:0}
+.distraction-content{flex:1}
+.distraction-title{font-weight:700;margin-bottom:10px;display:flex;font-size:14px;justify-content:space-between;align-items:center;font-weight:500;gap:5px}
+.impact-badge{background:#d3ccfd;color:#5d2bff;padding:2px 8px;border-radius:6px;font-size:9px;font-weight:500;border-radius:10px}
+.distraction-desc{font-size:14px;font-weight:400;color:#5e6373;line-height:22px}
+label{display:block}
+.cmn-work{display:flex;justify-content:space-between;align-items:center;margin:0 0 20px}
+.cmn-work .text-sm{font-size:14px;color:#5e6373}
+.salary-calculator .input-field.error label{color:red}
+.salary-calculator .input-field.error .input-area{border-color:red}
+.input-field.verror .input-area{border-color: red;}
+.input-field.verror .error-message{color: red; text-align:left; width:100%; display:block; margin-top:5px; }

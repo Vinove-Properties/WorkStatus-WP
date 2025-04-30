@@ -105,6 +105,116 @@ function ws_calculateROI(){
     document.getElementById("netROI").innerHTML = "$" + netROI.toFixed(2);
 }
 
+/*Productivity Calculator : Script*/
+const pcFrmFields = [
+  {selector: '#pc-name', rules:{required:true }},
+  {selector: '#pc-email', rules:{required:true, email:true }}
+];
+
+function validateFieldOnEvent(selector, rules) {
+  const input = document.querySelector(selector);
+  if (!input) return;
+
+  input.addEventListener('input', () => {
+    validateField(input, rules);
+  });
+
+  input.addEventListener('blur', () => {
+    validateField(input, rules);
+  });
+}
+
+function setupRealTimeValidation() {
+  pcFrmFields.forEach(({ selector, rules }) => {
+    validateFieldOnEvent(selector, rules);
+  });
+}
+document.addEventListener('DOMContentLoaded', setupRealTimeValidation);
+
+
+function validateField(input, rules) {
+  const value = input.value.trim();
+  const container = input.closest('.input-field');
+  const errorEl = container?.querySelector('.error-message');
+
+  let error = '';
+
+  if (rules.required && value === '') {
+    error = input.getAttribute("data-err") || 'This field is required';
+  } else if (rules.email && value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+    error = 'Enter a valid email';
+  } else if (rules.phone && value && !/^[0-9+\-\s()]+$/.test(value)) {
+    error = 'Enter a valid phone number';
+  }
+
+  if (error) {
+    container?.classList.add('verror');
+    if (errorEl) errorEl.textContent = error;
+    return false;
+  } else {
+    container?.classList.remove('verror');
+    if (errorEl) errorEl.textContent = '';
+    return true;
+  }
+}
+
+function validateFields(fields){
+  let isValid = true;
+  fields.forEach(({ selector, rules }) => {
+    const input = document.querySelector(selector);
+    if (!input) return;
+    if (!validateField(input, rules)) isValid = false;
+  });
+  return isValid;
+}
+
+function vcGetName( name ){
+    name = name.trim();
+    let lastName = name.includes(' ') ? name.replace(/.*\s([\w-]*)$/, '$1') : '';
+    let firstName = name.replace(new RegExp(lastName + '$'), '').trim();
+    return [firstName, lastName];
+}
+
+function validatPCStepOneForm(e){  
+  if( validateFields( pcFrmFields ) ){
+    const formData = new FormData(e);
+    let namePart    = vcGetName( e.name.value.trim() );
+    let firstName   = namePart[0];
+    let lastName    = (namePart[1] && (namePart[1] != "")) ? namePart[1] : '';
+    let formBtn     = document.getElementById("stp-1btn");
+    formBtn.innerText = "Please Wait...";
+    formBtn.disabled  = true;
+
+    //const url   = (wsObj._env === "staging") ? 'https://www.workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs' : 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
+    const url   = 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
+    const data  = { first_name: firstName, last_name: lastName, email: e.email.value.trim() };
+    console.log( data );
+    fetch(url, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        fetch( wsObj.admin_ajax+'?action=pc_postrequest', { method: 'POST', body: formData, })
+        .then(response => response.json())
+        .then(data => {console.log('Server response:', data);});
+        formBtn.innerText       = "Get Started";
+        formBtn.disabled        = false;
+        e.reset();
+    })
+    .catch((error) => {
+        formBtn.innerText       = "Get Started";
+        formBtn.disabled        = false;
+        e.reset();
+    });    
+    e.style.display = "none";
+    document.getElementById("prod-calc-step2").style.display = "block";
+  }
+  return false;  
+}
+
+
 const industriesArray = [
   {
     id: 'it',
@@ -188,13 +298,6 @@ const industriesArray = [
   },
 ];
 
-const findIndustryById = (industryId) => {
-  return industriesArray.find(industry => industry.id === industryId) || null;
-};
-
-const jobsIN = findIndustryById("hospitality");
-console.log( jobsIN.jobs );
-
 const industryElm = document.getElementById("industry");
 if(industryElm){
   industriesArray.forEach(ind => {
@@ -208,26 +311,34 @@ if(industryElm){
 document.getElementById("industry").addEventListener("change", function(){
   const jobTypeSelect     = document.getElementById("jobType");
   const selectedIndustry  = this.value;
-  const jobs              = industriesArray.find(industry => industry.id === selectedIndustry) || [];
-  jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
-  if(jobs){
-    jobs.jobs.forEach( job => {
-      const option = document.createElement("option");
-      option.value = job.title;
-      option.textContent = job.title;
-      option.setAttribute('data-al', job.averageHoursLost);
-      jobTypeSelect.appendChild(option);
-    });
-  }
+  
+  if( selectedIndustry !== "" ){
+    this.closest('.input-field').classList.remove("error");
+    const jobs              = industriesArray.find(industry => industry.id === selectedIndustry) || [];
+    jobTypeSelect.innerHTML = '<option value="">Select a job type</option>';
+    if(jobs){
+      jobs.jobs.forEach( job => {
+        const option = document.createElement("option");
+        option.value = job.title;
+        option.textContent = job.title;
+        option.setAttribute('data-al', job.averageHoursLost);
+        jobTypeSelect.appendChild(option);
+      });
+    }
+  } 
 });
 
 document.getElementById("jobType").addEventListener("change", function(){
   const lostHour    = document.getElementById("hours-lost");
   const selectedOption = this.options[this.selectedIndex];
   const selectJob   = this.value;
-  if( selectedOption.getAttribute("data-al") ){
-    lostHour.value = selectedOption.getAttribute("data-al");
+  if( selectJob !== "" ){
+    this.closest('.input-field').classList.remove("error");
+    if( selectedOption.getAttribute("data-al") ){
+      lostHour.value = selectedOption.getAttribute("data-al");
+    }
   }
+  
 });
 
 const currencies = [
@@ -285,11 +396,16 @@ function calculateImpact(){
     document.querySelectorAll('input[name="distraction"]:checked')
   ).map((el) => el.value);
 
-  if (!formData.industry || !formData.jobType) {
-  //return;
+  if( !formData.industry ){
+    document.getElementById("industry").closest('.input-field').classList.add("error");
+    return;
   }
 
-  // Mock distraction dataset
+  if( !formData.jobType ){
+    document.getElementById("jobType").closest('.input-field').classList.add("error");
+    return;
+  }
+
   const distractions = [
     { id: "meetings", label: "Unnecessary Meetings", percentage: 15 },
     { id: "emails", label: "Email Management", percentage: 12 },
@@ -321,10 +437,9 @@ function calculateImpact(){
   console.log("Report Generated:", reportData);
   // Optional: render to DOM
   document.getElementById("results").innerHTML = `
-    <h3>📊 Productivity Report</h3>
-    <p><strong>Annual Impact:</strong> ${formData.currency} ${annualCost.toFixed(0).toLocaleString()}</p>
-    <p><strong>Potential Savings (20%):</strong> ${formData.currency} ${potentialSavings.toFixed(0).toLocaleString()}</p>
-    <p><strong>Current Productive Hours/Day:</strong> ${currentProductiveHours.toFixed(2)}</p>
-    <p><strong>Optimized Productive Hours/Day:</strong> ${optimizedProductiveHours.toFixed(2)}</p>
-  `;
+  <h3>📊 Productivity Report</h3>
+  <p><strong>Annual Impact:</strong> ${formData.currency} ${annualCost.toFixed(0).toLocaleString()}</p>
+  <p><strong>Potential Savings (20%):</strong> ${formData.currency} ${potentialSavings.toFixed(0).toLocaleString()}</p>
+  <p><strong>Current Productive Hours/Day:</strong> ${currentProductiveHours.toFixed(2)}</p>
+  <p><strong>Optimized Productive Hours/Day:</strong> ${optimizedProductiveHours.toFixed(2)}</p>`;
 }

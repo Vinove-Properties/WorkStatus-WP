@@ -1,12 +1,14 @@
-<form class="prod-calc" onsubmit="return false;" style="display:block;">
+<form class="prod-calc" onsubmit="return validatPCStepOneForm(this);" style="display:block;">
   <div class="form-wrap">
     <fieldset class="input-field">
       <label>Full Name *</label>
-      <input type="text" class="input-area" name="name" value="">  
+      <input type="text" id="pc-name" class="input-area" name="name" value="" data-err="Please Fill Name">
+      <small class="error-message"></small>  
     </fieldset>
     <fieldset class="input-field">
       <label>Email Address *</label>
-      <input class="input-area" type="text" name="email" value="">  
+      <input class="input-area" id="pc-email" type="text" name="email" value="" data-err="Please Fill Email">
+      <small class="error-message"></small>
     </fieldset>
     <fieldset class="input-field">
       <label>Phone Number</label>
@@ -22,12 +24,13 @@
     </fieldset>
     <fieldset class="input-field">
       <label style="opacity:0;">Submit Button</label>
-      <button type="submit" class="btn" name="submit">Get Started</button>
+      <button type="submit" id="stp-1btn" class="btn" name="submit">Get Started</button>
       <small style="text-align:left; display:block; color:#7e7e7e; font-size:12px; line-height:18px;">By clicking "Get Started", you consent to receive emails from Workstatus about productivity insights and updates. We'll use this information to send you a personalized productivity report. Your data is secure and will never be shared with third parties.</small>
     </fieldset>
   </div>
 </form>
-<form class="prod-calc-step2" onsubmit="return false;" style="display:none;">
+
+<form class="prod-calc-step2" id="prod-calc-step2" onsubmit="return false;" style="display:none;">
   <div class="form-wrap">
   <fieldset class="input-field">
     <label for="industry">Industry</label>
@@ -60,25 +63,6 @@
   </fieldset>
   <div class="input-field full-width   wage-fieldset">
     <p>Average hours lost per employee per day based on selected job type and industry benchmarks</p>
-    <?php /* ?>
-    <div class="inner-wrap">
-      <div class="flex-2">
-        <input type="checkbox" id="dis-1" name="distraction" value="15"><label for="dis-1">Unnecessary Meetings (15%)</label>
-      </div>
-      <div class="flex-2">
-        <input type="checkbox" id="dis-2" name="distraction" value="12"><label for="dis-2">Email Management (12%)</label>
-      </div>
-      <div class="flex-2">
-        <input type="checkbox" id="dis-3" name="distraction" value="10"><label for="dis-3">Social Media (10%)</label>
-      </div>
-      <div class="flex-2">
-        <input type="checkbox" id="dis-4" name="distraction" value="8"><label for="dis-4">Unscheduled Breaks (8%)</label>
-      </div>
-      <div class="flex-2">
-        <input type="checkbox" id="dis-5" name="distraction" value="7"><label for="dis-5">Office Chat  (7%)</label>
-      </div>
-    </div>
-    <?php */ ?>
     <fieldset class="distract-columns">
       <div class="cmn-work">
         <h3>Common Workplace Distractions</h3>

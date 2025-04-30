@@ -305,8 +305,13 @@ function workstatus_scripts() {
 		wp_enqueue_style('ws-survey', get_stylesheet_directory_uri().'/version-2.0/survey-style.css', array(), _S_VERSION );	
 		}else{
 		wp_enqueue_style('resource-details', get_stylesheet_directory_uri().'/version-2.0/assests/css/resources-detail.css', array(), _S_VERSION );
-		wp_enqueue_style('basic-style', get_stylesheet_directory_uri().'/calculator-style.css', array(), _S_VERSION );
+		
 		wp_enqueue_script('ws-calc', get_stylesheet_directory_uri() . '/js/ws-calculations.js', array(), _S_VERSION, true );
+		
+		$calcType = get_post_meta( $post->ID, 'calc-type', true );
+		if( $calcType === "pc" ){
+		wp_enqueue_style('prod-calc', get_stylesheet_directory_uri().'/calculator-style.css', array(), _S_VERSION );	
+		}
 		}
 		
 	}
@@ -1312,4 +1317,18 @@ function comprTpl_Literals($content){
 	. '<span class="spn-intr">Pricing plans start from '.htmlspecialchars($usd).'</span>'
 	. '</a></span>';
     }, $content);
+}
+
+add_action( 'wp_ajax_nopriv_pc_postrequest', 'pcAjaxRequestCB' );
+add_action( 'wp_ajax_pc_postrequest', 'pcAjaxRequestCB' );
+function pcAjaxRequestCB(){
+	global $wpdb;
+	$email 			= sanitize_email($_POST['email'] ?? '');
+	$known_keys 	= ['email'];
+	$custom_data 	= array_diff_key($_POST, array_flip($known_keys));
+	$serialized_data = maybe_serialize($custom_data);
+	$wpdb->insert( 'wp_wfleadsdata', ['email' => $email, 'data' => $serialized_data],['%s','%s']);
+	if($wpdb->insert_id ) {$_POST['insert_id']	= $wpdb->insert_id;}
+	wp_send_json(['data' => $_POST]);	
+	die;
 }
