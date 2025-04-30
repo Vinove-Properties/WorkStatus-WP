@@ -184,9 +184,9 @@ function validatPCStepOneForm(e){
     let formBtn     = document.getElementById("stp-1btn");
     formBtn.innerText = "Please Wait...";
     formBtn.disabled  = true;
-    //const url = 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
-    const url = 'http://localhost/workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs';
-    const data = { first_name: firstName, last_name: lastName, email: e.email.value.trim() };
+
+    const url   = (wsObj._env === "staging") ? 'https://www.workstatus.io/blog/staging/wp-json/es_apicb/v1/addsubs' : 'https://www.workstatus.io/blog/wp-json/es_apicb/v1/addsubs';
+    const data  = { first_name: firstName, last_name: lastName, email: e.email.value.trim() };
     console.log( data );
     fetch(url, {
       method: 'POST',
