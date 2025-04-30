@@ -4911,9 +4911,9 @@ li.iti__country {
       z-index: 1;
       position: relative; }
   .business-tab .feature-tabs .tab-nav ul li.active a .background-fill {
-    animation: backgroundFillAnimation 5s linear forwards; }
+    animation: backgroundFillAnimation 3s linear forwards; }
   .business-tab .feature-tabs .tab-nav ul li.active a .progress-bar {
-    animation: progressAnimation 5s linear forwards;
+    animation: progressAnimation 3s linear forwards;
     background: #5D2BFF; }
 
 @keyframes backgroundFillAnimation {
