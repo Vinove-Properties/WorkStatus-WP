@@ -1,4 +1,4 @@
-.user-persona {
+  .user-persona {
   position: relative;
 
   .user-persona__content {
@@ -101,8 +101,8 @@
   .user-persona {
     .user-persona__grid {
       grid-template-columns: repeat(2, 1fr);
-      margin-top: -10%;
-      padding-left: 75px;
+      margin-top: -4%;
+      padding-left: 40px;
     }
   }
 }

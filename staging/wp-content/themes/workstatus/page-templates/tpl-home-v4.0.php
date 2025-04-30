@@ -192,9 +192,9 @@
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
-                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.webp">
-                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png">
-                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-04.png" alt="Tab Image" width="724" height="646">
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/prom.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/prom.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/prom.png" alt="Tab Image" width="724" height="646">
                   </picture>
                 </div>
               </div>
@@ -203,9 +203,9 @@
               <div class="dis-flex">
                 <div class="content-box">
                   <picture>
-                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.webp">
-                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png">
-                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/tabcontentim-05.png" alt="Tab Image" width="724" height="646">
+                    <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/report-m.webp">
+                    <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/report-m.png">
+                    <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/report-m.png" alt="Tab Image" width="724" height="646">
                   </picture>
                 </div>
               </div>

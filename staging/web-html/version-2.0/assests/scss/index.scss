@@ -400,6 +400,9 @@
   background: $bglight;
 }
 
+.feature-scroller .feature-wrap .right-panel .content-box a{color:$white;}
+.feature-scroller .feature-wrap .right-panel .content-box a:hover{text-decoration: underline; color:$white;}
+
 /*home css end here*/
 
 @media (max-width: 1920px) {

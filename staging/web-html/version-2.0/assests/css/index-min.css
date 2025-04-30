@@ -4911,9 +4911,9 @@ li.iti__country {
       z-index: 1;
       position: relative; }
   .business-tab .feature-tabs .tab-nav ul li.active a .background-fill {
-    animation: backgroundFillAnimation 2s linear forwards; }
+    animation: backgroundFillAnimation 5s linear forwards; }
   .business-tab .feature-tabs .tab-nav ul li.active a .progress-bar {
-    animation: progressAnimation 2s linear forwards;
+    animation: progressAnimation 5s linear forwards;
     background: #5D2BFF; }
 
 @keyframes backgroundFillAnimation {
@@ -5876,8 +5876,8 @@ li.iti__country {
 @media (max-width: 979px) {
   .user-persona .user-persona__grid {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: -10%;
-    padding-left: 75px; } }
+    margin-top: -4%;
+    padding-left: 40px; } }
 @media (max-width: 767px) {
   .user-persona .user-persona__content {
     flex-wrap: wrap; }
@@ -7481,7 +7481,7 @@ li.iti__country {
         .ws-pricing .price-contents .tab-contents .price-flex .price-column.flex-3 {
           flex-basis: 100%; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box {
-          padding: 25px 20px; }
+          padding: 25px 15px; }
           .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .pr-plan {
             width: 100%;
             margin: 0 0 20px; }
@@ -8826,6 +8826,13 @@ li.iti__country {
 /*banner end*/
 .cmn-pricing {
   background: #faf8fe; }
+
+.feature-scroller .feature-wrap .right-panel .content-box a {
+  color: #fff; }
+
+.feature-scroller .feature-wrap .right-panel .content-box a:hover {
+  text-decoration: underline;
+  color: #fff; }
 
 /*home css end here*/
 @media (max-width: 1620px) {

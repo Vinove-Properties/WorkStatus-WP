@@ -260,10 +260,10 @@
           }
     
           &.active a .background-fill {
-            animation: backgroundFillAnimation 2s linear forwards;
+            animation: backgroundFillAnimation 5s linear forwards;
           }
           &.active a .progress-bar {
-            animation: progressAnimation 2s linear forwards;
+            animation: progressAnimation 5s linear forwards;
             background:#5D2BFF;
           }
         }
