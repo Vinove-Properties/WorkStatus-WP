@@ -36,19 +36,10 @@
           <li class="" data-tab="#tab03"><a href="#tab03">Time</a></li>
           <li class="" data-tab="#tab04"><a href="#tab04">Attendance</a></li>
           <li class="" data-tab="#tab05"><a href="#tab04">Everything
-
-          <img  alt="info" class="tooltip-icon" src="./assests/images/info-icon.svg"  width="12" height="12"> 
-
-
-          <span class="info-text">This is the tooltip info about Everything.</span>
-
-
-
-          </a>
-        
-          
-        
-        </li>
+            <img  alt="info" class="tooltip-icon" src="./assests/images/info-icon.svg"  width="12" height="12"> 
+            <span class="info-text">This is the tooltip info about Everything.</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <div id="inv-price-fltr" class="plan-section post-animation">
@@ -103,7 +94,7 @@
       </div>
       <div class="price-contents">
         <div id="tab01" class="tab-contents active">
-          <div class="pricing-card">
+          <div class="pricing-card price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Productivity Management</h3>
@@ -111,15 +102,16 @@
                 <p>Maximize team output with time tracking, app usage analysis &amp; productivity reports.</p>
               </div>
               <div class="card-plan">
-                <span class="wph" class="pl-basic">USD 4 <span class="strike">$5</span></span>
+                <span class="wph" class="pl-basic">USD 4 <span class="max-price">$5</span></span>
                 <span class="prio">/ user / month</span>
               </div>
               <a class="price_btn" href="#">Buy Now</a>
               <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
               <h3>Included in Plan:</h3>
-              <div class="plan-include column-two">
+              <div class="plan-include">
                 <ul>
                   <li>Time Tracking</li>
                   <li>Timesheets</li>
@@ -133,7 +125,6 @@
                   <li>Timesheet approvals</li>
                 </ul>
                 <ul>
-                  
                   <li>Daily & weekly limits</li>
                   <li>Reports</li>
                   <li>Quiet (Stealth) Mode</li>
@@ -199,7 +190,7 @@
           </div>
         </div>
         <div id="tab03" class="tab-contents">
-          <div class="pricing-card">
+          <div class="pricing-card price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Time Tracking</h3>
@@ -223,10 +214,11 @@
               </div>
               <a class="price_btn" href="#">Request Quote</a>
               <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
               <h3>Included in Plan:</h3>
-              <div class="plan-include column-two">
+              <div class="plan-include">
                 <ul>
                   <li>Unlimited tracking</li>
                   <li>Mobile & desktop App</li>
@@ -255,7 +247,7 @@
           </div>
         </div>
         <div id="tab04" class="tab-contents">
-          <div class="pricing-card att-pricing">
+          <div class="pricing-card att-pricing price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Time Tracking</h3>
@@ -263,7 +255,7 @@
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
               </div>
               <div class="card-plan">
-                <span class="wph" class="pl-basic">USD 4 <span class="strike">$5</span></span>
+                <span class="wph" class="pl-basic">USD 4 <span class="max-price">$5</span></span>
                 <span class="prio">/yearly</span>
               </div>
               <div class="price-slider">
@@ -280,6 +272,7 @@
               </div>
               <a class="price_btn" href="#">Buy Now</a>
               <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
               <h3>Included in Plan:</h3>
@@ -301,7 +294,7 @@
           </div>
         </div>
         <div id="tab05" class="tab-contents">
-          <div class="pricing-card every-card">
+          <div class="pricing-card every-card price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Everything</h3>
@@ -309,13 +302,14 @@
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
               </div>
               <div class="card-plan">
-                <span class="wph" class="pl-basic">USD 4 <span class="strike">$5</span></span>
+                <span class="wph" class="pl-basic">USD 4 <span class="max-price">$5</span></span>
                 <span class="prio">/yearly</span>
               </div>
               <a class="price_btn" href="#">Buy Now</a>
               <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
-            <div class="card-right">
+            <div class="card-right price-wrapper">
               <h3>Included in Plan:</h3>
               <div class="plan-include">
                 <ul>
