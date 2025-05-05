@@ -216,7 +216,7 @@
     <?php endif; ?>  
     <?php //wp_body_open(); ?>
     <?php  echo ( wsFeaturedHeader() ) ? '<div class="feature-header">' : ''; ?>
-    <header class="header-two" id="masthead">
+    <header class="header-two ch" id="masthead">
       <div class="container">
         <div class="wrapper">
           <div class="header-item-left">
