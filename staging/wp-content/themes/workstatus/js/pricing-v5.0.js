@@ -87,48 +87,48 @@ const pricingData = {
     'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
   },
   "UR":{
-    "productivity":{'monthly':5, 'yearly':576,'id':7001},
+    "productivity":{'monthly':5, 'yearly':576,'id':7015},
     "project":{
-      'basic':{'monthly':3, 'yearly':28.8, id:7002},
-      'pro':{'monthly':150, 'yearly':1440, id:7003}
+      'basic':{'monthly':3, 'yearly':28.8, id:7017},
+      'pro':{'monthly':150, 'yearly':1440, id:7019}
     },
-    "everything":{'yearly':7, 'monthly':66, id:7004},
+    "everything":{'yearly':7, 'monthly':66, id:7021},
     "time":{
-      '50':{'monthly':50, 'yearly':480, id:7005},
-      '100':{'monthly':90, 'yearly':864, id:7006},
-      '250':{'monthly':175, 'yearly':1680, id:7007},
-      '500':{'monthly':300, 'yearly':2880, id:7008},
-      '1000':{'monthly':500, 'yearly':4800, id:7009}
+      '50':{'monthly':50, 'yearly':480, id:7023},
+      '100':{'monthly':90, 'yearly':864, id:7025},
+      '250':{'monthly':175, 'yearly':1680, id:7027},
+      '500':{'monthly':300, 'yearly':2880, id:7029},
+      '1000':{'monthly':500, 'yearly':4800, id:7031}
     },
     "attendance":{
-      '50':{'monthly':50, 'yearly':480, id:7005},
-      '100':{'monthly':90, 'yearly':864, id:7006},
-      '250':{'monthly':175, 'yearly':1680, id:7007},
-      '500':{'monthly':300, 'yearly':2880, id:7008},
-      '1000':{'monthly':500, 'yearly':4800, id:7009}
+      '50':{'monthly':50, 'yearly':480, id:7033},
+      '100':{'monthly':90, 'yearly':864, id:7035},
+      '250':{'monthly':175, 'yearly':1680, id:7037},
+      '500':{'monthly':300, 'yearly':2880, id:7039},
+      '1000':{'monthly':500, 'yearly':4800, id:7041}
     },
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   },
   "OT":{
-    "productivity":{'monthly':3.5, 'yearly':33.6,'id':7001},
+    "productivity":{'monthly':3.5, 'yearly':33.6,'id':7016},
     "project":{
-      'basic':{'monthly':2.1, 'yearly':20.16, id:7002},
-      'pro':{'monthly':105, 'yearly':1008, id:7003}
+      'basic':{'monthly':2.1, 'yearly':20.16, id:7018},
+      'pro':{'monthly':105, 'yearly':1008, id:7020}
     },
-    "everything":{'yearly':4.9, 'monthly':46.20, id:7004},
+    "everything":{'yearly':4.9, 'monthly':46.20, id:7022},
     "time":{
-      '50':{'monthly':65, 'yearly':600, id:7010},
-      '100':{'monthly':125, 'yearly':1176, id:7011},
-      '250':{'monthly':170, 'yearly':1500, id:7012},
-      '500':{'monthly':210, 'yearly':2040, id:7013},
-      '1000':{'monthly':350, 'yearly':3360, id:7014}
+      '50':{'monthly':65, 'yearly':600, id:7024},
+      '100':{'monthly':125, 'yearly':1176, id:7028},
+      '250':{'monthly':170, 'yearly':1500, id:7028},
+      '500':{'monthly':210, 'yearly':2040, id:7030},
+      '1000':{'monthly':350, 'yearly':3360, id:7032}
     },
     "attendance":{
-      '50':{'monthly':65, 'yearly':600, id:7010},
-      '100':{'monthly':125, 'yearly':1176, id:7011},
-      '250':{'monthly':170, 'yearly':1500, id:7012},
-      '500':{'monthly':210, 'yearly':2040, id:7013},
-      '1000':{'monthly':350, 'yearly':3360, id:7014}
+      '50':{'monthly':65, 'yearly':600, id:7034},
+      '100':{'monthly':125, 'yearly':1176, id:7036},
+      '250':{'monthly':170, 'yearly':1500, id:7038},
+      '500':{'monthly':210, 'yearly':2040, id:7040},
+      '1000':{'monthly':350, 'yearly':3360, id:7042}
     },
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   }
@@ -150,7 +150,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
       conCode = "US";      
     }
     //conCode = "OT";
-    
+
     locInput.value = conCode;
 
     if(  isAjax === true){
