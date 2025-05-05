@@ -149,7 +149,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     if( !pricingData.hasOwnProperty(conCode) ){
       conCode = "US";      
     }
-    conCode = "OT";
+    //conCode = "OT";
+    
     locInput.value = conCode;
 
     if(  isAjax === true){
