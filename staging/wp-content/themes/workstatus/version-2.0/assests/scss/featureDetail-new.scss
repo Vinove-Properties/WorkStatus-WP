@@ -117,7 +117,7 @@
       }
       .primary_btn1 {
         background: #fff;
-        color: #624de3;
+        color: #5D2BFF;
         padding: 14px 30px 16px;
         border: 1px solid #fff;
         min-width: 210px;
@@ -360,7 +360,7 @@
       }
       .primary_btn1 {
         background: #fff;
-        color: #624de3;
+        color: #5D2BFF;
         padding: 14px 30px 16px;
         min-width: 210px;
         @media screen and (max-width: ($smscreen-size - 1)) {
@@ -905,7 +905,7 @@
 }
 
 .case-section {
-  background: #6754e2;
+  background: #5D2BFF;
   h2 {
     color: #fff;
   }
@@ -1202,10 +1202,10 @@
           @media screen and (max-width: ($mdscreen-size - 1)) {margin: 0 0 25px;}
         }
 
-          .ctbtn{border: 1px solid rgba(103, 84, 226, 0.50); background:transparent; color:#6754E2;
+          .ctbtn{border: 1px solid rgba(103, 84, 226, 0.50); background:transparent; color:#5D2BFF;
             display: block; font-weight: 600;
 
-            &:hover{background:#6754E2; color:$white;}
+            &:hover{background:#5D2BFF; color:$white;}
 
           }
       }
@@ -1228,7 +1228,7 @@
     }
   }
   .btnSc{text-align: center;
-    a{color: #6754E2;
+    a{color: #5D2BFF;
     display: block;
     transition: all 0.3s ease-in-out;
     font-weight: 500;
@@ -1667,7 +1667,7 @@
   }
   .nobg {
     background: #fff;
-    color: #624de3;
+    color: #5D2BFF;
   }
   .nobg:hover {
     background: #051441;

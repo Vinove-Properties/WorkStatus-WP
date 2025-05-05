@@ -8,7 +8,7 @@
 
 .inner-banner-bg {
   width: 100%;
-  background: #6754e2;
+  background: #5D2BFF;
   position: relative;
   height: 530px !important;
   color: #fff;
@@ -193,7 +193,7 @@
       margin: 0 0 20px;
       h5 {
         font-size: 14px;
-        color: #624de3;
+        color: #5D2BFF;
         font-weight: 500;
         text-transform: uppercase;
         margin: 0 0 10px;
@@ -205,7 +205,7 @@
         a {
           color: #110302;
           &:hover {
-            color: #624de3;
+            color: #5D2BFF;
           }
         }
         @media screen and (max-width: ($lgscreen-size)) {
@@ -223,7 +223,7 @@
         a {
           color: #5e6373;
           &:hover {
-            color: #624de3;
+            color: #5D2BFF;
           }
         }
       }

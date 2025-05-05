@@ -6,7 +6,7 @@
     .right-section {
       flex-basis: 20%;
       border-radius: 20px;
-      background: linear-gradient(180deg, #624de3 0%, #251686 100%);
+      background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
       padding: 25px;
 
       h4 {
@@ -137,7 +137,7 @@
         position: absolute;
 
         &:hover {
-          background-color: #624DE3 !important;
+          background-color: #5D2BFF !important;
           border-color:$blue;
           background: url(../images/ft-prevhover.svg) no-repeat center;
         }

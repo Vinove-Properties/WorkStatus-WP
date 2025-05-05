@@ -4,10 +4,12 @@
 @import "form-county";
 @import "_signup-form-popup";
 @import "_numeric-table";
+@import "_alternative-data-driving";
 @import "_why-workstatus";
 @import "_workplace-section";
 @import "_faq-section";
 @import "_glider";
+@import "_user-guide";
 @import "_testimonial-section";
 @import "_top-rated";
 @import "_start-journey";
@@ -16,30 +18,42 @@
 /*home css start here*/
 
 .header-two {
-  background: #3708c2;
+  background: #5D2BFF;
   z-index: 100;
 }
 
 .hero-banner {
   width: 100%;
-  background: #3708c2;
+  background: #5D2BFF;
   position: relative;
   padding: 140px 0;
 
   &:after {
     content: "";
     width: 100%;
-    background: url(../images/inner-banner-bg.png) no-repeat;
+    background: url(../images/ftbtm-shape.png) no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -170px;
+    height: 270px;
+    background-size: 100% 100%;
+    @media screen and (max-width: ($smscreen-size - 1)) {
+      display: none;
+    }
+  }
+
+
+  &:before {
+    content: "";
+    width: 100%;
+    background: url(../images/alt-shape.png) no-repeat;
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 252px;
+    height: 690px;
     background-size: 100% 100%;
-    @media screen and (max-width: ($lgscreen-size - 1)) {
-      height: 200px;
-    }
     @media screen and (max-width: ($smscreen-size - 1)) {
-      height: 100px;
+      display: none;
     }
   }
 
@@ -75,6 +89,7 @@
       align-items: center;
       position: relative;
       z-index: 99;
+      margin:40px 0 0;
 
       img {
         margin: 0 10px;
@@ -129,6 +144,10 @@
               border-top: 1px solid rgba(98, 77, 227, 0.38);
               padding-top: 30px;
 
+              a{color:#fff;
+                &:hover{text-decoration: underline;}
+                }
+
               &:first-child {
                 margin-top: 0;
                 padding-top: 0;
@@ -154,6 +173,10 @@
                 position: relative;
                 padding-left: 40px;
                 margin: 15px 0 0;
+
+                a{color:#5e6373;
+                &:hover{text-decoration: underline;}
+                }
 
                 &:before {
                   content: "";
@@ -185,6 +208,9 @@
             &:first-child {
               background: rgba(111, 88, 248, 1);
               color: $white;
+              a{color:#fff;
+              &:hover{text-decoration: underline;}
+              }
               h3 {
                 color: $white;
               }
@@ -201,13 +227,17 @@
             }
           }
           .prplan {
-            background: rgba(209, 201, 255, 1);
             border-radius: 10px;
             padding: 10px 30px;
-            color: rgba(111, 88, 248, 1);
+            background: rgb(5, 20, 65);
+            color: $white;
+            cursor: default;
+            text-align: center;
             &:hover {
-              background: rgb(5, 20, 65);
-              color: $white;
+              //background: rgb(5, 20, 65);
+              //color: $white;
+              cursor: default;
+              text-decoration: none;
             }
           }
         }
@@ -233,14 +263,15 @@
               h3 {
                 color: $white;
               }
+              
             }
             .prplan {
-              background: rgba(209, 201, 255, 0.5);
-              color: #ffffff;
+              background: rgb(5, 20, 65);
+              color: $white;
               color: $white;
               &:hover {
-                background: rgb(5, 20, 65);
-                color: $white;
+                //background: rgb(5, 20, 65);
+                //color: $white;
               }
             }
           }
@@ -269,8 +300,76 @@
     &:nth-child(3n) {
       background: rgba(251, 249, 255, 1);
     }
+
+    .top-section{
+      a{color: #5e6373; text-decoration: none;
+      &:hover{text-decoration: underline; }
+      }
+    }
+
+
+    &.alt-blue{
+      .top-section {
+        a{color:$white;
+        &:hover{text-decoration: underline;}
+        }
+      }
+      .feature-loop {
+        .feature-row {
+          .column-right{
+            .text-column {
+              ul{
+                li{
+                  a{color:$white;
+                  &:hover{text-decoration: underline;}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      a{color:$white; text-decoration: none;
+        &:hover{text-decoration: underline;}
+        }
+    }
+    
   }
 }
+
+
+
+.ws-comp-template{
+  .alternative-section{
+    .alternative-wrapper{
+      .feature-loop {
+        .feature-row{
+          .column-right{
+            .text-column{
+              .tpl-litr{padding:30px 0 0; display: block; background: transparent;}
+             &:nth-child(2n){
+              ul {
+                li{
+                  &:before{background: url(../images/pros-blue.svg) no-repeat;
+                    background-size: 100%;}
+                }
+              }
+             }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.alternative-section .alternative-wrapper .feature-loop .feature-row .column-right .text-column .prplan:hover{text-decoration: none !important;}
+
+.page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer{margin-top: 30px;}
+.page-template-page-templatestpl-alternatives-php .userguide .buyers-guide-section .buyers-guide .buyers-guide-answer-part .buyers-guide-answer.ans_1{margin-top:0;}
 
 /*Media Query Start from here*/
 
@@ -319,6 +418,8 @@
             .text-column {
               padding: 20px;
 
+             
+
               ul {
                 margin: 15px 0 0;
                 li {
@@ -338,7 +439,7 @@
               }
             }
             .prplan {
-              padding: 10px 20px;
+              padding: 10px;
             }
           }
         }
@@ -384,7 +485,34 @@
     }
   }
   br{display:none;}
+  .ws-comp-template{
+    .alternative-section{
+      .alternative-wrapper{
+        .feature-loop {
+          .feature-row{
+            .column-right{
+              .text-column{
+                .tpl-litr{padding:20px 0 0;}
+              }
+              .prplan {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 479px) {
+  .ws-comp-template{
+    .hero-banner{
+      .inner-wrap{
+        .alter-image{overflow-x: scroll;
+        img{width:700px; max-width: 700px;}
+        }
+      }
+    }
+  }
 }

@@ -271,7 +271,7 @@
     a {
       color: #5e6373;
       &:hover {
-        color: #624de3;
+        color: #5D2BFF;
       }
     }
   }
@@ -300,7 +300,7 @@
         margin-right: 10px;
       }
       &:hover {
-        color: #624de3;
+        color: #5D2BFF;
       }
     }
   }
@@ -628,9 +628,9 @@
 .site__header.shady {
   .login {
     a {
-      background: #624de3;
+      background: #5D2BFF;
       color: #fff;
-      border: 1px solid #624de3;
+      border: 1px solid #5D2BFF;
 
       &:hover {
         background: #171227;
@@ -650,8 +650,8 @@
       }
 
       &.for-free {
-        color: #624de3;
-        border-color: #624de3;
+        color: #5D2BFF;
+        border-color: #5D2BFF;
         background: transparent;
         &:after {
           background: url(../menu-images/purple-arrow.svg) no-repeat;
@@ -694,7 +694,7 @@
 
   .site_nav .btn a {
     background: #fff;
-    color: #624de3;
+    color: #5D2BFF;
     &:hover {
       background: #051441;
       color: #fff;
@@ -720,7 +720,7 @@
       display: block;
     }
     .btn a {
-      background-color: #624de3;
+      background-color: #5D2BFF;
       color: #fff !important;
     }
     .site_nav .dropdown > a::before {
@@ -1130,7 +1130,7 @@
   }
 
   .site_nav .dropdown > ul li a:hover {
-    color: #624de3;
+    color: #5D2BFF;
   }
 
   .site_nav .mega-menu .mega-menu-box li {
@@ -1216,13 +1216,13 @@
       padding: 0 20px;
       a {
         padding: 12px 20px;
-        background: #624de3;
-        border-color: #624de3;
+        background: #5D2BFF;
+        border-color: #5D2BFF;
         color: #fff;
         text-align: center;
         &.bg-none {
-          color: #624de3;
-          border-color: #624de3;
+          color: #5D2BFF;
+          border-color: #5D2BFF;
           background: transparent;
           padding: 12px 20px;
           &:hover {
@@ -1232,8 +1232,8 @@
           }
         }
         &.for-free {
-          color: #624de3;
-          border-color: #624de3;
+          color: #5D2BFF;
+          border-color: #5D2BFF;
           background: transparent;
           &:after {
             width: 14px;
@@ -1516,13 +1516,13 @@
         padding: 0 20px;
         a {
           padding: 12px 20px;
-          background: #624de3;
-          border-color: #624de3;
+          background: #5D2BFF;
+          border-color: #5D2BFF;
           color: #fff;
           text-align: center;
           &.bg-none {
-            color: #624de3;
-            border-color: #624de3;
+            color: #5D2BFF;
+            border-color: #5D2BFF;
             background: transparent;
             padding: 12px 20px;
             &:hover {
@@ -1532,8 +1532,8 @@
             }
           }
           &.for-free {
-            color: #624de3;
-            border-color: #624de3;
+            color: #5D2BFF;
+            border-color: #5D2BFF;
             background: transparent;
             &:after {
               width: 14px;

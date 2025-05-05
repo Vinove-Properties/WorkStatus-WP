@@ -4,7 +4,7 @@
 @import "common-banner";
 
 .ebookhead .site__header {
-  background: #6754e2;
+  background: #5D2BFF;
 }
 
 .page-template-tpl-affiliates .testmHome:before {
@@ -77,10 +77,10 @@
         margin: 20px 0 0;
       }
       h6 {
-        background: #6754e24a;
+        background: #5D2BFF4a;
     padding: 3px 5px;
     font-weight: 600;
-    color: #6754e2;
+    color: #5D2BFF;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
@@ -101,7 +101,7 @@
           font-size: 14px;
         }
         a {
-          color: #6754e2;
+          color: #5D2BFF;
           &:hover {
             text-decoration: underline;
           }
@@ -374,7 +374,7 @@ h6.inherit {
 
           .ws-label {
             a {
-              color: #624de3;
+              color: #5D2BFF;
               &:after {
                 content: "*";
                 color: #e91010;
@@ -444,7 +444,7 @@ h6.inherit {
 }
 
 .hsds-form__checkbox-label a:focus {
-  box-shadow: 0 0 0 1px #624de3;
+  box-shadow: 0 0 0 1px #5D2BFF;
 }
 
 .ws-radio-icon {
@@ -456,7 +456,7 @@ h6.inherit {
 }
 
 .ws-checkbox-input:checked + .workst-checkbox-icon {
-  background: #624de3;
+  background: #5D2BFF;
 }
 
 .workst-checkbox-icon,
@@ -477,7 +477,7 @@ h6.inherit {
 .ws-checkbox-input:checked + .ws-radio-icon,
 .ws-radio-input:checked + .workst-checkbox-icon,
 .ws-radio-input:checked + .ws-radio-icon {
-  border-color: #624de3;
+  border-color: #5D2BFF;
 }
 
 .ws-checkbox-input:checked + .workst-checkbox-icon:after,
@@ -501,7 +501,7 @@ h6.inherit {
 }
 
 .ws-radio-icon:after {
-  background-color: #624de3;
+  background-color: #5D2BFF;
   border-radius: 50%;
   bottom: 1px;
   height: 10px;

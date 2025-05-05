@@ -191,6 +191,12 @@ function workstatus_scripts() {
 		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
+	elseif( is_page_template(['page-templates/tpl-pricing-v5.0.php']) ){
+		wp_enqueue_style('ws-pricingv4.0', get_stylesheet_directory_uri().'/version-2.0/assests/css/pricing-page-v2.css', array(), _S_VERSION );
+		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
+		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v5.0.js', ['ws-script'], _S_VERSION, true);
+	}
+	
 	
 	elseif(is_page_template([
 		'page-templates/tpl-timecard.php',
