@@ -69,7 +69,7 @@ const pricingData = {
       'basic':{'monthly':110, 'yearly':1080, id:7002},
       'pro':{'monthly':5400, 'yearly':55200, id:7003}
     },
-    "everything":{'yearly':3588, 'monthly':399, id:7004},
+    "everything":{'monthly':399, 'yearly':3588, id:7004},
     "time":{
       '50':{'monthly':3000, 'yearly':28800, id:7005},
       '100':{'monthly':5000, 'yearly':48000, id:7006},
@@ -92,7 +92,7 @@ const pricingData = {
       'basic':{'monthly':3, 'yearly':28.8, id:7017},
       'pro':{'monthly':150, 'yearly':1440, id:7019}
     },
-    "everything":{'yearly':7, 'monthly':66, id:7021},
+    "everything":{'monthly':7, 'yearly':66, id:7021},
     "time":{
       '50':{'monthly':50, 'yearly':480, id:7023},
       '100':{'monthly':90, 'yearly':864, id:7025},
@@ -115,7 +115,7 @@ const pricingData = {
       'basic':{'monthly':2.1, 'yearly':20.16, id:7018},
       'pro':{'monthly':105, 'yearly':1008, id:7020}
     },
-    "everything":{'yearly':4.9, 'monthly':46.20, id:7022},
+    "everything":{'monthly':4.9, 'yearly':46.20, id:7022},
     "time":{
       '50':{'monthly':65, 'yearly':600, id:7024},
       '100':{'monthly':125, 'yearly':1176, id:7028},
