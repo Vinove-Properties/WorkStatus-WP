@@ -37,7 +37,7 @@ $activePlan =  'productivity';
             <span class="info-text">This is the tooltip info about Everything.</span></a></li>
         </ul>
       </nav>
-      <div id="inv-price-fltr" class="plan-section">
+      <div id="inv-price-fltr" class="plan-section" style="display:block;">
         <div class="switcher-sec">
           <div class="switch-btn-box">
             <span class="monthly">Monthly</span>

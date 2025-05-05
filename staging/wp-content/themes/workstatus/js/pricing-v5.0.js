@@ -62,30 +62,6 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
   }  
 }
 
-const WS_PLAN_ID = {
-  "IN" : {
-    "productivity":{'basic':5109,'pro':5110},
-    "project":{'basic':5111,'pro':5112},
-    "time":{'basic':5113,'pro':5114},
-    "attendance":{'basic':5115,'pro':5116},
-    "free" : 137
-  },
-  "UR" : {
-     "productivity":{'basic':5101,'pro':5102},
-     "project":{'basic':5103,'pro':5104},
-     "time":{'basic':5105,'pro':5106},
-     "attendance":{'basic':5107,'pro':5108},
-     "free" : 138
-  },
-  "OT" : {
-     "productivity":{'basic':6001,'pro':6002},
-     "project":{'basic':6003,'pro':6004},
-     "time":{'basic':6005,'pro':6006},
-     "attendance":{'basic':6007,'pro':6008},
-     "free" : 138
-  }
-}
-
 const pricingData = {
   "IN":{
     "productivity":{'monthly':299, 'yearly':2388,'id':7001},
@@ -111,48 +87,48 @@ const pricingData = {
     'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
   },
   "UR":{
-    "productivity":{'monthly':299, 'yearly':2388,'id':7001},
+    "productivity":{'monthly':5, 'yearly':576,'id':7001},
     "project":{
-      'basic':{'monthly':110, 'yearly':1080, id:7002},
-      'pro':{'monthly':5400, 'yearly':55200, id:7003}
+      'basic':{'monthly':3, 'yearly':28.8, id:7002},
+      'pro':{'monthly':150, 'yearly':1440, id:7003}
     },
-    "everything":{'yearly':3588, 'monthly':399, id:7004},
+    "everything":{'yearly':7, 'monthly':66, id:7004},
     "time":{
-      '50':{'monthly':3000, 'yearly':28800, id:7005},
-      '100':{'monthly':5000, 'yearly':48000, id:7006},
-      '250':{'monthly':10000, 'yearly':96000, id:7007},
-      '500':{'monthly':15000, 'yearly':144000, id:7008},
-      '1000':{'monthly':20000, 'yearly':192000, id:7009}
+      '50':{'monthly':50, 'yearly':480, id:7005},
+      '100':{'monthly':90, 'yearly':864, id:7006},
+      '250':{'monthly':175, 'yearly':1680, id:7007},
+      '500':{'monthly':300, 'yearly':2880, id:7008},
+      '1000':{'monthly':500, 'yearly':4800, id:7009}
     },
     "attendance":{
-      '50':{'monthly':3000, 'yearly':28800, id:7010},
-      '100':{'monthly':5000, 'yearly':48000, id:7011},
-      '250':{'monthly':10000, 'yearly':96000, id:7012},
-      '500':{'monthly':15000, 'yearly':144000, id:7013},
-      '1000':{'monthly':20000, 'yearly':192000, id:7014}
+      '50':{'monthly':50, 'yearly':480, id:7005},
+      '100':{'monthly':90, 'yearly':864, id:7006},
+      '250':{'monthly':175, 'yearly':1680, id:7007},
+      '500':{'monthly':300, 'yearly':2880, id:7008},
+      '1000':{'monthly':500, 'yearly':4800, id:7009}
     },
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   },
   "OT":{
-    "productivity":{'monthly':299, 'yearly':2388,'id':7001},
+    "productivity":{'monthly':3.5, 'yearly':33.6,'id':7001},
     "project":{
-      'basic':{'monthly':110, 'yearly':1080, id:7002},
-      'pro':{'monthly':5400, 'yearly':55200, id:7003}
+      'basic':{'monthly':2.1, 'yearly':20.16, id:7002},
+      'pro':{'monthly':105, 'yearly':1008, id:7003}
     },
-    "everything":{'yearly':3588, 'monthly':399, id:7004},
+    "everything":{'yearly':4.9, 'monthly':46.20, id:7004},
     "time":{
-      '50':{'monthly':3000, 'yearly':28800, id:7005},
-      '100':{'monthly':5000, 'yearly':48000, id:7006},
-      '250':{'monthly':10000, 'yearly':96000, id:7007},
-      '500':{'monthly':15000, 'yearly':144000, id:7008},
-      '1000':{'monthly':20000, 'yearly':192000, id:7009}
+      '50':{'monthly':65, 'yearly':600, id:7010},
+      '100':{'monthly':125, 'yearly':1176, id:7011},
+      '250':{'monthly':170, 'yearly':1500, id:7012},
+      '500':{'monthly':210, 'yearly':2040, id:7013},
+      '1000':{'monthly':350, 'yearly':3360, id:7014}
     },
     "attendance":{
-      '50':{'monthly':3000, 'yearly':28800, id:7010},
-      '100':{'monthly':5000, 'yearly':48000, id:7011},
-      '250':{'monthly':10000, 'yearly':96000, id:7012},
-      '500':{'monthly':15000, 'yearly':144000, id:7013},
-      '1000':{'monthly':20000, 'yearly':192000, id:7014}
+      '50':{'monthly':65, 'yearly':600, id:7010},
+      '100':{'monthly':125, 'yearly':1176, id:7011},
+      '250':{'monthly':170, 'yearly':1500, id:7012},
+      '500':{'monthly':210, 'yearly':2040, id:7013},
+      '1000':{'monthly':350, 'yearly':3360, id:7014}
     },
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   }
@@ -173,7 +149,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
     if( !pricingData.hasOwnProperty(conCode) ){
       conCode = "US";      
     }
-    conCode = "IN";
+    conCode = "OT";
     locInput.value = conCode;
 
     if(  isAjax === true){
@@ -216,7 +192,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         const value     = plans[key];
         let elmBasic    = document.getElementById("cst-"+key+"-one");
         if( elmBasic ){
-          elmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<span class="strike">'+value['monthly']+'</span>' : currency+value[type];
+          elmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+value['monthly']+'</small>' : currency+value[type];
           let byNow = document.getElementById("bn-"+key+"-one");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value.id, type));
@@ -225,7 +201,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmPmBasic    = document.getElementById("cst-"+key+"-basic");
         if( elmPmBasic ){
-          elmPmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['basic']['yearly'])+'<span class="strike">'+value['basic']['monthly']+'</span>' : currency+value['basic'][type];
+          elmPmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['basic']['yearly'])+'<small class="max-price">'+value['basic']['monthly']+'</small>' : currency+value['basic'][type];
           let byNow = document.getElementById("bn-"+key+"-basic");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value['basic'].id, type));
@@ -234,7 +210,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmPmPro    = document.getElementById("cst-"+key+"-pro");
         if( elmPmPro ){
-          elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<span class="strike">'+value['pro']['monthly']+'</span>' : currency+value['pro'][type];
+          elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<small class="max-price">'+value['pro']['monthly']+'</small>' : currency+value['pro'][type];
 
           let byNow = document.getElementById("bn-"+key+"-pro");
           if( byNow ){
@@ -248,7 +224,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
           let elmInput = document.getElementById("elm-time-hd");
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
-            elmTime.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<span class="strike">'+value[elmInput.value]['monthly']+'</span>' : currency+value[elmInput.value][type];
+            elmTime.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
             elmTime.innerHTML += '<span class="prio">/'+type+'</span>';
             let byNow = document.getElementById("bn-"+key+"-three");
             if( byNow ){
@@ -274,7 +250,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
-            elmAttendance.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<span class="strike">'+value[elmInput.value]['monthly']+'</span>' : currency+value[elmInput.value][type];
+            elmAttendance.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
             elmAttendance.innerHTML += '<span class="prio">/'+type+'</span>';
             let byNow = document.getElementById("bn-"+key+"-four");
             if( byNow ){
@@ -295,7 +271,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmEverything    = document.getElementById("cst-"+key+"-five");
         if( elmEverything ){
-          elmEverything.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<span class="strike">'+value['monthly']+'</span>' : currency+value[type];
+          elmEverything.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+value['monthly']+'</small>' : currency+value[type];
           elmEverything.innerHTML += '<span class="prio">/'+type+'</span>';
 
           let byNow = document.getElementById("bn-"+key+"-five");
