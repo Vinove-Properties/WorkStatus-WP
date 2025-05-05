@@ -64,7 +64,7 @@ function getwsPlanurl(plan_id = 0, type = "annual"){
 
 const pricingData = {
   "IN":{
-    "productivity":{'monthly':299, 'yearly':2388,'id':7001},
+    "productivity":{'monthly':299, 'yearly':2388,id:7001},
     "project":{
       'basic':{'monthly':110, 'yearly':1080, id:7002},
       'pro':{'monthly':5400, 'yearly':55200, id:7003}
@@ -87,7 +87,7 @@ const pricingData = {
     'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
   },
   "UR":{
-    "productivity":{'monthly':5, 'yearly':576,'id':7015},
+    "productivity":{'monthly':5, 'yearly':576,id:7015},
     "project":{
       'basic':{'monthly':3, 'yearly':28.8, id:7017},
       'pro':{'monthly':150, 'yearly':1440, id:7019}
@@ -110,7 +110,7 @@ const pricingData = {
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   },
   "OT":{
-    "productivity":{'monthly':3.5, 'yearly':33.6,'id':7016},
+    "productivity":{'monthly':3.5, 'yearly':33.6,id:7016},
     "project":{
       'basic':{'monthly':2.1, 'yearly':20.16, id:7018},
       'pro':{'monthly':105, 'yearly':1008, id:7020}
