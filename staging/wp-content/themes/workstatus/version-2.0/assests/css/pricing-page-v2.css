@@ -2228,7 +2228,7 @@ a.mst-link:before {
             font-size: 42px;
             color: #2f3a5e;
             font-weight: 700;
-            padding: 20px 0 0;
+            padding: 20px 0;
             border-top: 2px solid #e7edf6;
             display: flex;
             align-items: baseline;
@@ -2268,7 +2268,7 @@ a.mst-link:before {
             font-size: 18px;
             font-weight: 600;
             border-radius: 100px;
-            margin: 20px auto 12px; }
+            margin: 0 auto 12px; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-left .price_btn:hover {
               background: #051441;
               color: #fff;
@@ -2330,9 +2330,13 @@ a.mst-link:before {
             .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul {
               width: 50%; }
         .ws-pricing .price-contents .tab-contents .pricing-card.att-pricing .card-left .card-plan {
-          justify-content: left; }
+          justify-content: left;
+          border-bottom: 2px solid #e7edf6;
+          border-top: 0; }
         .ws-pricing .price-contents .tab-contents .pricing-card.time-pricing .card-left .card-plan {
-          justify-content: left; }
+          justify-content: left;
+          border-bottom: 2px solid #e7edf6;
+          border-top: 0; }
         .ws-pricing .price-contents .tab-contents .pricing-card .price-slider {
           margin: 20px 0 0; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider.margin-0 {
@@ -2555,7 +2559,7 @@ a.mst-link:before {
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 20px auto 10px; }
+              margin: 0 auto 10px; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price_btn:hover {
                 background: #051441;
                 color: #fff;

@@ -218,7 +218,7 @@
             font-size: 42px;
             color: #2f3a5e;
             font-weight: 700;
-            padding: 20px 0 0;
+            padding: 20px 0;
             border-top: 2px solid #e7edf6;
             display: flex;
             align-items: baseline;
@@ -263,7 +263,7 @@
             font-size: 18px;
             font-weight: 600;
             border-radius: 100px;
-            margin: 20px auto 12px;
+            margin: 0 auto 12px;
             &:hover {
               background: #051441;
               color: #fff;
@@ -350,6 +350,8 @@
           .card-left {
             .card-plan {
               justify-content: left;
+              border-bottom: 2px solid #e7edf6;
+              border-top: 0;
             }
           }
         }
@@ -357,6 +359,8 @@
           .card-left {
             .card-plan {
               justify-content: left;
+              border-bottom: 2px solid #e7edf6;
+              border-top: 0;
             }
           }
         }
@@ -634,7 +638,7 @@
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 20px auto 10px;
+              margin: 0 auto 10px;
               &:hover {
                 background: #051441;
                 color: #fff;
