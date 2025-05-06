@@ -178,7 +178,9 @@
               color: #2f3a5e;
               font-weight: 600;
               margin: 0 0 15px;
+              padding:0 0 20px;
               line-height: 35px;
+              display:none;
             }
             h4 {
               font-size: 22px;
@@ -342,6 +344,13 @@
         }
 
         &.att-pricing {
+          .card-left {
+            .card-plan {
+              justify-content: left;
+            }
+          }
+        }
+        &.time-pricing {
           .card-left {
             .card-plan {
               justify-content: left;
@@ -873,7 +882,10 @@
 
 
 .ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan{display:none;}
+.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan .pr-plan h4{display:block;}
 .ws-pricing .price-contents .tab-contents.custom-pln .tryit{display:none;}
+.tab-contents h4.for-custom{display: none;}
+.tab-contents.custom-pln h4.for-custom{display: block !important;}
 
 .ps-monthly
   .ws-pricing
