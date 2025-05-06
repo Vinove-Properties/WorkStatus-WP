@@ -87,7 +87,7 @@ const pricingData = {
     'meta':{"currency":'₹', "location":69, "pm":99, "insights":99}
   },
   "UR":{
-    "productivity":{'monthly':5, 'yearly':576,id:7015},
+    "productivity":{'monthly':5, 'yearly':48,id:7015},
     "project":{
       'basic':{'monthly':3, 'yearly':28.8, id:7017},
       'pro':{'monthly':150, 'yearly':1440, id:7019}

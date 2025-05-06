@@ -155,9 +155,9 @@
                 <h3>Time Tracking</h3>
                 <div class="total">2 Users Minimum</div>
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
-                <h4>Fit your needs</h4>
-              </div>
-              <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
+                <h4 class="for-custom">Fit your needs</h4>
+                <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
+              </div>              
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-time-hd" value="50" />
@@ -209,13 +209,12 @@
           <div class="pricing-card att-pricing price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
-                <h3>Attendance Tracking</h3>
+                <h3>Attendance Management</h3>
                 <div class="total">2 Users Minimum</div>
-                <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
-              </div>
-              <div class="card-plan">
+                <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.</p>
+                <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-attendance-four"></span></div>
-              </div>
+              </div>              
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-attendance-hd" value="50" />
