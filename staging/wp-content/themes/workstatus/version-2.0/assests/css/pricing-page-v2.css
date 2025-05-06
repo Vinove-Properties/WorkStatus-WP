@@ -2916,7 +2916,8 @@ a.mst-link:before {
             padding: 0; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul li {
               font-size: 14px;
-              line-height: 24px; }
+              line-height: 24px;
+              margin: 0 0 10px; }
               .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul li:before {
                 top: 9px; }
           .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include ul {
@@ -2924,7 +2925,8 @@ a.mst-link:before {
             padding: 0; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include ul li {
               font-size: 14px;
-              line-height: 24px; }
+              line-height: 24px;
+              margin: 0 0 10px; }
               .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include ul li:before {
                 top: 9px; }
       .ws-pricing .price-contents .tab-contents .pricing-card.is-visible .card-left .price-accordion:after {
