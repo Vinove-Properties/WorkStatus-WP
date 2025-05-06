@@ -872,8 +872,8 @@
 
 
 
-.wsp-time .ws-pricing .price-contents .tab-contents .tryit{display:none;}
-.wsp-time .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan{display:none;}
+.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan{display:none;}
+.ws-pricing .price-contents .tab-contents.custom-pln .tryit{display:none;}
 
 .ps-monthly
   .ws-pricing

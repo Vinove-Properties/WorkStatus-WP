@@ -2731,10 +2731,10 @@ a.mst-link:before {
     .ws-pricing .price-contents .tab-contents.active {
       display: block; }
 
-.wsp-time .ws-pricing .price-contents .tab-contents .tryit {
+.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan {
   display: none; }
 
-.wsp-time .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan {
+.ws-pricing .price-contents .tab-contents.custom-pln .tryit {
   display: none; }
 
 .ps-monthly
