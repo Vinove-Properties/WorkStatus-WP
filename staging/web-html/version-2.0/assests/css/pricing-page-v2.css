@@ -2200,7 +2200,10 @@ a.mst-link:before {
               font-size: 22px;
               font-weight: 600;
               color: #2f3a5e;
-              margin: 0 0 20px; }
+              margin: 0 0 20px;
+              padding: 0 0 20px;
+              border-bottom: 2px solid #e7edf6;
+              display: none; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-left .pr-plan .total {
               background: #fff;
               color: #5d2bff;
