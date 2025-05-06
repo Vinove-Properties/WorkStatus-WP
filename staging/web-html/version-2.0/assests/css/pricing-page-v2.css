@@ -2342,7 +2342,8 @@ a.mst-link:before {
             -webkit-appearance: none;
             height: 6px;
             border-radius: 4px;
-            background: #5d2bff; }
+            background: #5d2bff;
+            position: relative; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-thumb {
               -webkit-appearance: none;
               width: 18px;
@@ -2352,7 +2353,8 @@ a.mst-link:before {
               border-radius: 50%;
               cursor: pointer;
               position: relative;
-              z-index: 2; }
+              z-index: 2;
+              transform: translateX(-50%); }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-moz-range-thumb {
               width: 18px;
               height: 18px;
@@ -2361,18 +2363,37 @@ a.mst-link:before {
               border-radius: 50%;
               cursor: pointer;
               position: relative;
-              z-index: 2; }
+              z-index: 2;
+              margin-left: -8px; }
+            .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-thumb:focus, .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-moz-range-thumb:focus {
+              outline: 2px solid #fff;
+              box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4); }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin: 15px 0 30px;
             position: relative; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label {
               color: #05164d;
               position: relative;
               cursor: pointer;
               font-size: 12px;
-              font-weight: 500; }
+              font-weight: 500;
+              position: absolute;
+              left: 0;
+              transform: translateX(-50%); }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(1) {
+                left: 0%; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(2) {
+                left: 18.5%; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(3) {
+                left: 38%; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(4) {
+                left: 57%; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(5) {
+                left: 76%; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(6) {
+                left: 95%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:before {
                 content: "";
                 width: 1.5px;
@@ -2706,6 +2727,12 @@ a.mst-link:before {
               top: 11px; }
     .ws-pricing .price-contents .tab-contents.active {
       display: block; }
+
+.wsp-time .ws-pricing .price-contents .tab-contents .tryit {
+  display: none; }
+
+.wsp-time .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan {
+  display: none; }
 
 .ps-monthly
 .ws-pricing

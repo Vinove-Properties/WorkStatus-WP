@@ -373,6 +373,7 @@
             height: 6px;
             border-radius: 4px;
             background: #5d2bff;
+            position: relative;
 
             &::-webkit-slider-thumb {
               -webkit-appearance: none;
@@ -384,6 +385,8 @@
               cursor: pointer;
               position: relative;
               z-index: 2;
+              transform: translateX(-50%);
+             
             }
 
             &::-moz-range-thumb {
@@ -395,13 +398,19 @@
               cursor: pointer;
               position: relative;
               z-index: 2;
+              margin-left:-8px;
             }
+            &::-webkit-slider-thumb:focus,
+&::-moz-range-thumb:focus {
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4);
+}
           }
 
           .slider-labels {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin: 15px 0 30px;
             position: relative;
 
             .label {
@@ -410,6 +419,16 @@
               cursor: pointer;
               font-size: 12px;
               font-weight: 500;
+              position: absolute;
+              left: 0;
+              transform: translateX(-50%);
+
+              &:nth-child(1) { left: 0%; }
+              &:nth-child(2) {left: 18.5%; }
+              &:nth-child(3) { left: 38%;}
+              &:nth-child(4) {   left: 57%;}
+              &:nth-child(5) {    left: 76%;}
+              &:nth-child(6) {left: 95%;}
 
               &:before {
                 content: "";
@@ -446,6 +465,7 @@
                 z-index: 10;
               }
             }
+           
           }
         }
       }
@@ -851,7 +871,8 @@
 
 
 
-
+.wsp-time .ws-pricing .price-contents .tab-contents .tryit{display:none;}
+.wsp-time .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan{display:none;}
 
 .ps-monthly
   .ws-pricing
