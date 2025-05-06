@@ -152,7 +152,7 @@
   .price-contents {
     flex-basis: 100%;
     width: 85%;
-    margin:40px auto 0;
+    margin:0 auto;
     .tab-contents {
       display: none;
       text-align: center;
@@ -220,7 +220,7 @@
             text-align: center;
             justify-content: center;
             span {
-              display: block;
+              display: inline-block;
             }
             .wph {
               line-height: 1;
@@ -232,6 +232,7 @@
               display: inline-block;
               text-decoration: line-through;
               font-weight: 400;
+              margin-left: 5px;
             }
             .prio {
               color: rgba(47, 58, 94, 0.6);
@@ -847,6 +848,10 @@
     }
   }
 }
+
+
+
+
 
 .ps-monthly
   .ws-pricing
