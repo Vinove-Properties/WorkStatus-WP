@@ -2332,11 +2332,13 @@ a.mst-link:before {
         .ws-pricing .price-contents .tab-contents .pricing-card.att-pricing .card-left .card-plan {
           justify-content: left;
           border-bottom: 2px solid #e7edf6;
-          border-top: 0; }
+          border-top: 0;
+          padding-top: 0; }
         .ws-pricing .price-contents .tab-contents .pricing-card.time-pricing .card-left .card-plan {
           justify-content: left;
           border-bottom: 2px solid #e7edf6;
-          border-top: 0; }
+          border-top: 0;
+          padding-top: 0; }
         .ws-pricing .price-contents .tab-contents .pricing-card .price-slider {
           margin: 20px 0 0; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider.margin-0 {
