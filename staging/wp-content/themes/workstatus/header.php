@@ -169,6 +169,9 @@
     
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
       .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active{margin-top: 20px;}
+      
+      .tab-contents h4.for-custom{display: none;}
+      .tab-contents.custom-pln h4.for-custom{display: block !important;}
     </style>
     
     <?php if( isBetaVersion() === false ) : ?>

@@ -149,7 +149,7 @@
           </div>
         </div>
         <div id="tab03" data-plan="time" class="tab-contents <?php echo ($activePlan == "time") ? 'active' : ''; ?>">
-          <div class="pricing-card price-wrapper">
+          <div class="pricing-card att-pricing price-wrapper">
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Time Tracking</h3>
