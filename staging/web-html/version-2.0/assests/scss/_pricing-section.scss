@@ -219,9 +219,9 @@
             align-items: baseline;
             text-align: center;
             justify-content: center;
-            .card-plan{border-top:0;}
+            .card-plan{border-top:0; margin:0;}
             span {
-              display: inline-block;
+              display: inline-block; 
             }
             .wph {
               line-height: 1;
