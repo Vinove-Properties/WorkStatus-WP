@@ -1183,6 +1183,19 @@
             .plan-include {
               flex-wrap: wrap;
               gap: 0;
+              &.column-two{
+                ul {
+                  width: 100%;
+                  padding: 0;
+                  li {
+                    font-size: 14px;
+                    line-height: 24px;
+                    &:before {
+                      top: 9px;
+                    }
+                  }
+                }
+              }
               ul {
                 width: 100%;
                 padding: 0;

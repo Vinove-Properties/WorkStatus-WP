@@ -1032,23 +1032,6 @@
       .button-common {
         margin: 25px 0 0;
         justify-content: center;
-  
-        .cmn-democta {
-          justify-content: center;
-          .ctbtn {
-            background: transparent;
-            border: 1px solid $blue;
-            color: $blue;
-            &.ctbtn2 {
-              border-color: rgba(43, 46, 74, 0.2);
-              color: #2b2e4a;
-              margin-left: 10px;
-              position: relative;
-            
-            }
-          
-          }
-        }
       }
   
       &:after {

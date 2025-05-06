@@ -2911,6 +2911,14 @@ a.mst-link:before {
         .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include {
           flex-wrap: wrap;
           gap: 0; }
+          .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul {
+            width: 100%;
+            padding: 0; }
+            .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul li {
+              font-size: 14px;
+              line-height: 24px; }
+              .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include.column-two ul li:before {
+                top: 9px; }
           .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include ul {
             width: 100%;
             padding: 0; }
@@ -7117,17 +7125,6 @@ li.iti__country {
       .right-plan-section .plan-wrap .button-common {
         margin: 25px 0 0;
         justify-content: center; }
-        .right-plan-section .plan-wrap .button-common .cmn-democta {
-          justify-content: center; }
-          .right-plan-section .plan-wrap .button-common .cmn-democta .ctbtn {
-            background: transparent;
-            border: 1px solid #5D2BFF;
-            color: #5D2BFF; }
-            .right-plan-section .plan-wrap .button-common .cmn-democta .ctbtn.ctbtn2 {
-              border-color: rgba(43, 46, 74, 0.2);
-              color: #2b2e4a;
-              margin-left: 10px;
-              position: relative; }
       .right-plan-section .plan-wrap:after {
         display: none; } }
 @media (max-width: 767px) {
