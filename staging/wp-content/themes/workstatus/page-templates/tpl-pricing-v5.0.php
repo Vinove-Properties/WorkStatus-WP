@@ -1089,7 +1089,7 @@ $activePlan =  'productivity';
     </div>
   </div>
 </div>
-<section id="ws-pr-addon" class="option-data" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?> >
+<section id="ws-pr-addon" class="option-data padding-t-120  padding-b-120" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?> >
   <div class="container">
     <div class="top-section">
       <h2>Optional add-ons</h2>
