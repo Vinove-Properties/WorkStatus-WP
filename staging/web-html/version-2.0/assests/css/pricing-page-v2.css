@@ -2229,6 +2229,8 @@ a.mst-link:before {
             align-items: baseline;
             text-align: center;
             justify-content: center; }
+            .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan .card-plan {
+              border-top: 0; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan span {
               display: inline-block; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-left .card-plan .wph {
