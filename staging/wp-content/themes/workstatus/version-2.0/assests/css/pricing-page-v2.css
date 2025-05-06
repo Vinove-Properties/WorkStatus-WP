@@ -6810,15 +6810,17 @@ li.iti__country {
       height: 234px;
       background: url(../images/right-price.svg) no-repeat; }
 
-.top-rated .award-grid .award-column {
-  background: #FFFFFF; }
-  .top-rated .award-grid .award-column:first-child {
-    background: transparent; }
-  .top-rated .award-grid .award-column .rate-desp {
-    box-shadow: none;
+.top-rated {
+  background: #faf8fe; }
+  .top-rated .award-grid .award-column {
     background: #FFFFFF; }
-    .top-rated .award-grid .award-column .rate-desp .rate-box {
+    .top-rated .award-grid .award-column:first-child {
+      background: transparent; }
+    .top-rated .award-grid .award-column .rate-desp {
+      box-shadow: none;
       background: #FFFFFF; }
+      .top-rated .award-grid .award-column .rate-desp .rate-box {
+        background: #FFFFFF; }
 
 /*Video Popup Style from here*/
 .blogvideo-popup {

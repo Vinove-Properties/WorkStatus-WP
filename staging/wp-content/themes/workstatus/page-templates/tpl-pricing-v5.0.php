@@ -146,23 +146,6 @@ $activePlan =  'productivity';
               <li>First-in-line 24/5 priority support</li>
             </ul>
           </div>
-          <div class="plan-include">
-            <h3>Included in Every Plan:</h3>
-            <ul>
-              <li>Unlimited Projects & Tasks</li>
-              <li>Gantt Chart</li>
-              <li>Budgeting</li>
-              <li>Kanban Board</li>
-              <li>Invoicing</li>
-              <li>Invoicing Integrations</li>
-              <li>Project & Task Time Tracking</li>
-              <li>Customer Service Integrations</li>
-              <li>Project Management Integrations</li>
-              <li>1:1 onboarding tour with our team</li>
-              <li>Multiple Filters & Custom Views </li>
-              <li>First-in-line 24x5 priority support</li>
-            </ul>
-          </div>
         </div>
 
         <div id="tab03" data-plan="time" class="tab-contents <?php echo ($activePlan == "time") ? 'active' : ''; ?>">
@@ -175,7 +158,7 @@ $activePlan =  'productivity';
                 <h4>Fit your needs</h4>
               </div>
               <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
-              <div class="price-slider margin-0">
+              <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-time-hd" value="50" />
                 <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" />
@@ -1187,7 +1170,7 @@ $activePlan =  'productivity';
   </div>
 </section>
 </div>
-<section class="faqsRow wfull for-heading-center">
+<section class="faqsRow wfull for-heading-center padding-t-120 padding-b-120">
   <div class="container">
     <div class="top-section">
       <h6><span class="bg-purple">Get Answers For</span></h6>
