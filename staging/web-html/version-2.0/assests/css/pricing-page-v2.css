@@ -2429,7 +2429,7 @@ a.mst-link:before {
       .ws-pricing .price-contents .tab-contents .price-flex {
         display: flex;
         justify-content: center;
-        margin: 80px 0 0; }
+        margin: 40px 0 0; }
         .ws-pricing .price-contents .tab-contents .price-flex .price-column {
           text-align: left;
           padding: 0 10px; }
@@ -2926,7 +2926,7 @@ a.mst-link:before {
         display: block; }
     .ws-pricing .price-contents .tab-contents .price-flex {
       flex-wrap: wrap;
-      margin: 40px 0 0; }
+      margin: 20px 0 0; }
       .ws-pricing .price-contents .tab-contents .price-flex .price-column {
         flex-basis: 100%;
         margin: 0 0 30px;
