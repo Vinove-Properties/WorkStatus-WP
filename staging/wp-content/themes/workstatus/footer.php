@@ -158,7 +158,7 @@
               </a>
               <a href="https://www.linkedin.com/company/Workstatusapp/" target="_blank">
                 <picture>
-                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images//soc-03.svg" width="29" height="29" alt="linkedin">
+                  <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/soc-03.svg" width="29" height="29" alt="linkedin">
                 </picture>
               </a>
               <a href="https://www.instagram.com/Workstatusapp/" target="_blank">
