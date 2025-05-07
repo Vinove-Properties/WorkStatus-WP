@@ -125,6 +125,15 @@
       <div class="flex-7">
         <div class="box">
           <picture>
+            <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/suggest.webp">
+            <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/suggest.png">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/suggest.png" alt="Workstatus" width="96" height="96"> 
+          </picture>
+        </div>
+      </div>
+      <div class="flex-7">
+        <div class="box">
+          <picture>
             <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon14.webp">
             <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon14.png">
             <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon14.png" alt="Workstatus" width="93" height="78"> 
@@ -137,6 +146,15 @@
             <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon15.webp">
             <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon15.png">
             <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/awrd-icon15.png" alt="Workstatus" width="106" height="70"> 
+          </picture>
+        </div>
+      </div>
+      <div class="flex-7">
+        <div class="box">
+          <picture>
+            <source type="image/webp" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/tehc.webp">
+            <source type="image/png" srcset="<?php echo get_template_directory_uri(); ?>/assests/images/tehc.png">
+            <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/images/tehc.png" alt="Workstatus" width="92" height="78"> 
           </picture>
         </div>
       </div>
