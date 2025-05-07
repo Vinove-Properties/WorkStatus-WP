@@ -312,7 +312,7 @@
           <p>Let's Tailor One for You.</p>
           <div class="button-common">
             <div class="cmn-democta">
-              <div class="ct-demo"><a href="javascript:void(0)" class="ctbtn"> Set Up a Free Consultation</a></div>
+              <div class="ct-demo"><a href="javascript:void(0)" onclick="getCalendlyiFrame();" class="ctbtn">Set Up a Free Consultation</a></div>
               <div class="ct-trial"><a href="javascript:void(0);" class="ctbtn ctbtn2"> Request Enterprise Pricing</a>
               </div>
             </div>
