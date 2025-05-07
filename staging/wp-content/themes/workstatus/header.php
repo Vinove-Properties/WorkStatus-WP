@@ -773,21 +773,15 @@
                                   <div class="flex-2">
                                     <a href="<?php echo site_url(); ?>/by-role/hr-managers"><span class="title">HR Managers</span>Simplify HR processes</a>
                                     <a href="<?php echo site_url(); ?>/by-role/it-managers"><span class="title">IT Managers</span>
-                                    Streamline IT projects delivery
-                                    </a>
-                                    <a href="<?php echo site_url(); ?>/by-role/employees"><span class="title">Employees</span>
-                                    Work Smarter, Daily
-                                    </a>
+                                    Streamline IT projects delivery</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/operations-manager"><span class="title">Operations Managers</span>Streamline ops, maximize output</a>
                                   </div>
                                   <div class="flex-2">
-                                    <a href="<?php echo site_url(); ?>/by-role/business-owners"><span class="title">Business Owners</span>
-                                    Empower teams, boost productivity</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/business-owners"><span class="title">Business Owners & Founders</span>Empower teams, boost productivity</a>
                                     <a href="<?php echo site_url(); ?>/by-role/project-managers"><span class="title">Project Managers
-                                    </span>
-                                    Track progress, ensure success</a>
-                                    <a href="<?php echo site_url(); ?>/by-role/executive-leadership"><span class="title">Executives
-                                    </span>
-                                    Data-Driven Leadership</a>
+                                    </span>Track progress, ensure success</a>
+                                    <a href="<?php echo site_url(); ?>/by-role/executive-leadership"><span class="title">Executives & Directors
+                                    </span>Data-Driven Leadership</a>
                                   </div>
                                 </div>
                               </div>
