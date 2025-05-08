@@ -658,7 +658,7 @@ add_action( 'wp_head', function(){
 	global $post;	
 	$nr = "\r\n";
 	if(is_front_page()){
-	//echo '<link rel="preload" href="'.get_bloginfo('template_url').'/dev-images/home-bannerthumb.svg" as="image">';
+	echo '<link rel="preload" href="'.get_bloginfo('template_url').'/version-2.0/assests/images/home-poster-new.png" as="image">';
 	}else{
 		if (is_object($post) && isset($post->ID)) {
 			$top_section = get_field('top_section', $post->ID);
