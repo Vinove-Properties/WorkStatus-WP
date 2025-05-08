@@ -19,10 +19,8 @@ if( ! defined( '_S_VERSION' ) ){
         define( '_S_VERSION', '1.9.'.time() );
     }else{
         define( '_S_VERSION', '1.45.45' );
-    }
-	
+    }	
 }
-
 function workstatus_setup() {
 	load_theme_textdomain( 'workstatus', get_template_directory() . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
@@ -1275,14 +1273,15 @@ function getAlternatePricing( $col ){
 	$postFix    = '<span class="small-font">(Per user / Month)</span>';
 	$lstPricing = '<strong>Pricing</strong>';
 
-	$colWs  = '<strong class="prloc">'.locatePricing($col['ws-pricing']).'</strong>';
+	$colWs  = '<strong id="ws-price-elm" class="prloc">'.locatePricing($col['ws-pricing']).'</strong>';
+
 	$colOne = '<strong class="prloc">'.locatePricing($col['t1-pricing']).'</strong>';
 	$colTwo = '<strong class="prloc">'.locatePricing($col['t2-pricing']).'</strong>';
 	$colThr = '<strong class="prloc">'.locatePricing($col['t3-pricing']).'</strong>';
 	$colFor = '<strong class="prloc">'.locatePricing($col['t4-pricing']).'</strong>';
 	
-	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>
-	<div class="ws-column" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
+	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>	
+	<div class="ws-column" id="wspriceelm" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t2-pricing']).'">'.$colTwo.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t3-pricing']).'">'.$colThr.$postFix.'</div>

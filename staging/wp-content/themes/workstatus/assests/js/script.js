@@ -2537,7 +2537,7 @@ function updateCalcEvt(userNumber){
     if (!column.classList.contains("ws-lftcolumn")) {
 
     const amt = column.getAttribute("data-amt");
-    if (amt) {
+    if(amt){
         const prices = amt.split("|");
         const elmPrice = document.body.classList.contains("locate-int") ? prices[0].trim() : prices[1]?.trim();
         const currency = document.body.classList.contains("locate-int") ? "$" : "₹";
@@ -2602,3 +2602,37 @@ document.addEventListener("DOMContentLoaded", function (){
         startAutoTabs();
     }
 });
+
+
+if( document.body.classList.contains("page-template-tpl-alternatives") ){
+    const cmnPlan = {'time':'1.6|48','prod':'4|199','project':'2.4|90','attendance':'1.6|48'}
+    const compTab       = document.querySelectorAll("#comp-tabs li");
+    const compTabPanle  = document.getElementById("comp-tab-contents").getElementsByClassName("tab-contents");    
+    function compActivateTab(e){
+      e.preventDefault();
+      var elmTitle =  e.target.getAttribute("title");
+      if( elmTitle && document.getElementById("comp-cat-title") ){
+        document.getElementById("comp-cat-title").innerHTML = elmTitle;
+      }
+      var plan      = e.target.getAttribute("data-plan");
+      const prElm   = document.getElementById("ws-price-elm");
+      const prices  = cmnPlan[plan].split("|");
+      prElm.innerHTML = '<span class="spn-int">$'+prices[0]+'</span><span class="spn-local">₹'+prices[1]+'</span>';
+      const preElm  = document.getElementById("wspriceelm");      
+      preElm.setAttribute('data-amt',cmnPlan[plan] );
+
+      compTab.forEach(function(label, index){
+        label.classList.remove("active");
+      });
+      [].forEach.call(compTabPanle, function(pane, index){
+        pane.classList.remove("active");
+      });  
+      e.target.parentNode.classList.add("active");
+      var clickedTab = e.target.getAttribute("href");
+      document.querySelector(clickedTab).classList.add("active");
+      updateCalcEvt(document.getElementById("alt-qty").value);
+    }
+    compTab.forEach(function(label, index){
+      label.addEventListener("click", compActivateTab);
+    });    
+}

@@ -95,8 +95,10 @@ global $ws_ctas, $RegLink, $LogLink;
       </a>
     </div>
     <picture class="dImg">
-      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/desktop-image.svg"
-        alt="Track Attendance" width="439" height="258">
+      <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/dwn-desktop.webp">
+      <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/dwn-desktop.png">  
+      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/dwn-desktop.webp"
+        alt="Workstatus For Desktop" width="439" height="258">
     </picture>
   </div>
   <div class="column">
@@ -111,7 +113,10 @@ global $ws_ctas, $RegLink, $LogLink;
       </a> 
     </div>
     <picture class="dImg">
-      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/mobile-image.svg" alt="Track Attendance" width="409" height="258">
+      <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/dwn-tab.webp">
+      <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/dwn-tab.png">    
+      <img loading="lazy" src="<?php bloginfo('template_url'); ?>/dev-images/dwn-tab.webp" alt="Workstatus for Mobile" 
+      width="409" height="258">
     </picture>
   </div>
                 </div>
