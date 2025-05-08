@@ -82,8 +82,14 @@ if( $isEnable == "yes" ){
         <section class="benifits-section">
           <div class="container">
             <div class="top-section">
-              <h6><span class="bg-purple"><?php echo $automate_tracking_section['heading']; ?></span></h6>
-              <h2><?php echo $automate_tracking_section['sub_heading']; ?></h2>
+              <?php 
+              if( isset( $automate_tracking_section['heading'] ) && !empty($automate_tracking_section['heading']) ){
+              echo '<h6><span class="bg-purple">'.$automate_tracking_section['heading'].'</span></h6>';
+              }
+              if( isset( $automate_tracking_section['sub_heading'] ) && !empty($automate_tracking_section['sub_heading']) ){
+              echo '<h2>'.$automate_tracking_section['sub_heading'].'</h2>';
+              }
+              ?>
             </div>
             <div class="flex_row">
 			<?php 
