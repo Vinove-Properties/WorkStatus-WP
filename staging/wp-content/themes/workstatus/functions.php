@@ -654,25 +654,25 @@ function stylePreloadFilter( $html, $handle ){
     return $html;
 }
 //Preload large image to page speed optimisation
-add_action( 'wp_head', function(){
-	global $post;	
-	$nr = "\r\n";
-	if(is_front_page()){
-	echo '<link rel="preload" href="'.get_bloginfo('template_url').'/version-2.0/assests/images/home-poster-new.png" as="image">';
-	}else{
-		if (is_object($post) && isset($post->ID)) {
-			$top_section = get_field('top_section', $post->ID);
-			if( 
-			isset( $top_section['video_background_image'] ) && 
-			!empty($top_section['video_background_image']) 
-		    ){
-				$cScreenSrc   = wsGetWebpSrcUrl($top_section['video_background_image']['id']);
-				echo '<link rel="preload" href="'.$cScreenSrc.'" as="image">';	
-			}	
-		}	
+// add_action( 'wp_head', function(){
+// 	global $post;	
+// 	$nr = "\r\n";
+// 	if(is_front_page()){
+// 	echo '<link rel="preload" href="'.get_bloginfo('template_url').'/version-2.0/assests/images/home-poster-new.png" as="image">';
+// 	}else{
+// 		if (is_object($post) && isset($post->ID)) {
+// 			$top_section = get_field('top_section', $post->ID);
+// 			if( 
+// 			isset( $top_section['video_background_image'] ) && 
+// 			!empty($top_section['video_background_image']) 
+// 		    ){
+// 				$cScreenSrc   = wsGetWebpSrcUrl($top_section['video_background_image']['id']);
+// 				echo '<link rel="preload" href="'.$cScreenSrc.'" as="image">';	
+// 			}	
+// 		}	
 			
-	}
-});
+// 	}
+// });
 
 function wsDemoCta(){
 	//global $RegLink;
