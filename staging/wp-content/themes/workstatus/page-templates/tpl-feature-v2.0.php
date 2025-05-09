@@ -1,11 +1,11 @@
 <?php 
-  /* 
-  Template Name: Feature V2.0 - Updated Template
-  Author : Nitin Baluni
-  */ 
-  get_header();
-  global $ws_ctas, $RegLink, $LogLink, $post;
-  ?>
+/* 
+Template Name: Feature V2.0 - Updated Template
+Author : Nitin Baluni
+*/ 
+get_header();
+global $ws_ctas, $RegLink, $LogLink, $post;
+?>
 <main class="site__content">
   <section class="banner-section">
     <div class="home-section">
@@ -16,22 +16,22 @@
             <div class="cont-wrap">
               <div class="actionBtn"><?php echo cmnBannerCta(); ?></div>
               <div class="av-device"><span>Available for:</span>
-              <a href="<?php echo site_url('/apps/android'); ?>"><i class="icon1"></i></a>
-              <a href="<?php echo site_url('/apps/iphone'); ?>"><i class="icon2"></i></a>
-              <a href="<?php echo site_url('/apps/windows'); ?>"><i class="icon3"></i></a>
-              <a href="<?php echo site_url('/apps/mac'); ?>"><i class="icon4"></i></a>
-              <a href="<?php echo site_url('/apps/linux'); ?>"><i class="icon5"></i></a></div>
+              <a href="<?php echo site_url('/apps/android'); ?>"><i class="icon1 wslazy"></i></a>
+              <a href="<?php echo site_url('/apps/iphone'); ?>"><i class="icon2 wslazy"></i></a>
+              <a href="<?php echo site_url('/apps/windows'); ?>"><i class="icon3 wslazy"></i></a>
+              <a href="<?php echo site_url('/apps/mac'); ?>"><i class="icon4 wslazy"></i></a>
+              <a href="<?php echo site_url('/apps/linux'); ?>"><i class="icon5 wslazy"></i></a></div>
               <div class="partwrap">
                 <div class="part-col">
-                  <i class="part-logo part-logo1"></i>
+                  <i class="part-logo part-logo1 wslazy"></i>
                   <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
-                  <i class="part-logo part-logo2"></i>
+                  <i class="part-logo part-logo2 wslazy"></i>
                   <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
-                  <i class="part-logo part-logo3"></i>
+                  <i class="part-logo part-logo3 wslazy"></i>
                   <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/ftstar.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
@@ -133,7 +133,7 @@
                   <li>
                     <span class="aw-icon">
                       <picture>
-                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-01.svg" alt="Workstatus" width="27" height="28">
                       </picture>
                     </span>
                     <span class="star"></span>
@@ -141,7 +141,7 @@
                   <li>
                     <span class="aw-icon">
                       <picture>
-                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
                       </picture>
                     </span>
                     <span class="star"></span>
@@ -149,7 +149,7 @@
                   <li>
                     <span class="aw-icon">
                       <picture>
-                        <img  loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-03.svg" alt="Workstatus" width="40" height="34">
                       </picture>
                     </span>
                     <span class="star"></span>
