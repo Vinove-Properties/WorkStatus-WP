@@ -22,7 +22,8 @@
               <div class="topVideo srp-1">
                 <div id="myDIV" class="contbox2">
                   <div class="videoWrapper js-videoWrapper">
-                    <button style="background-image: url(<?php bloginfo('template_url'); ?>/version-2.0/assests/images/home-poster-new.png)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
+                    <button data-src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/home-poster-new.png" 
+                      class="videoPoster wsbg-img" id="play-button">Play video</button>
                   </div>
                 </div>
               </div>
