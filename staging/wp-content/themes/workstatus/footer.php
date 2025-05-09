@@ -225,7 +225,7 @@
         class="dmca-badge" target="_blank"> 
         <img loading="lazy" src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" 
         alt="DMCA.com Protection Status" width="200" height="20" /></a>
-        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" defer></script>
       </div>
     </div>
   </div>
