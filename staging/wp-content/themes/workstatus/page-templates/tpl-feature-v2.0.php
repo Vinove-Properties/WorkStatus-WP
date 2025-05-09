@@ -72,7 +72,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                     </div>
                   </div>
                 </div>
-                <button style="background-image: url(<?php echo $bannerThumb; ?>)" class="videoPoster wslazy" id="play-button">Play video</button>
+                <button data-src="<?php echo $bannerThumb; ?>" class="videoPoster wsbg-img" id="play-button">Play video</button>
               </div>
             </div>
           </div>

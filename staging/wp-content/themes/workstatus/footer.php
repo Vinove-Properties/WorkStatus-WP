@@ -573,19 +573,17 @@
   
   }
   function ratenow(){
-  var x = document.getElementById("star");
-  var y = document.getElementById("rated");
-  
-  if (x.style.display === "block") {
-  x.style.display = "none";
-  y.style.display = "block";
-  document.getElementById('ratebtn').innerHTML = 'Rate Us';
-  } else {
-  document.getElementById('ratebtn').innerHTML = 'Click to rate';
-  
-  x.style.display = "block";
-  y.style.display = "none";
-  }
+    var x = document.getElementById("star");
+    var y = document.getElementById("rated");    
+    if (x.style.display === "block"){
+      x.style.display = "none";
+      y.style.display = "block";
+      document.getElementById('ratebtn').innerHTML = 'Rate Us';
+    }else{
+      document.getElementById('ratebtn').innerHTML = 'Click to rate';    
+      x.style.display = "block";
+      y.style.display = "none";
+    }
   }
   
   let stars = [] //array to hold stars
@@ -628,54 +626,5 @@
   }  
 </script>
 <?php wp_footer(); ?>
-<script type="text/javascript">
-  /*Lazy Loading BG Image*/
-  document.addEventListener("DOMContentLoaded", 
-  function(){
-      var lazyloadImages;    
-      if("IntersectionObserver" in window){
-      lazyloadImages = document.querySelectorAll(".wslazy");
-      var imageObserver = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            var image = entry.target;
-            image.classList.remove("wslazy");
-            imageObserver.unobserve(image);
-          }
-        });
-      });
-  
-      lazyloadImages.forEach(function(image) {
-        imageObserver.observe(image);
-      });
-      }else{
-      var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".wslazy");
-      function lazyload(){
-          if(lazyloadThrottleTimeout) {
-              clearTimeout(lazyloadThrottleTimeout);
-          }    
-  
-          lazyloadThrottleTimeout = setTimeout(function() {
-          var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function(img) {
-              if(img.offsetTop < (window.innerHeight + scrollTop)) {
-                img.src = img.dataset.src;
-                img.classList.remove('wslazy');
-              }
-          });
-          if(lazyloadImages.length == 0) { 
-            document.removeEventListener("scroll", lazyload);
-            window.removeEventListener("resize", lazyload);
-            window.removeEventListener("orientationChange", lazyload);
-          }
-          }, 20);
-      }
-      document.addEventListener("scroll", lazyload);
-      window.addEventListener("resize", lazyload);
-      window.addEventListener("orientationChange", lazyload);
-      }
-  })
-</script>
 </body>
 </html>
