@@ -207,11 +207,11 @@
         </span>   
         <div class="star-outer" id="rated">
           <span class="star-inner">
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
-          <i class="star-icon"></i> 
+          <i class="star-icon wslazy"></i> 
+          <i class="star-icon wslazy"></i> 
+          <i class="star-icon wslazy"></i> 
+          <i class="star-icon wslazy"></i> 
+          <i class="star-icon wslazy"></i> 
           </span>
           4.9 out of 5.0 by
         </div>
@@ -221,7 +221,11 @@
         </div>
       </div>
       <div class="flex-3 copyright">
-        <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+        <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" 
+        class="dmca-badge" target="_blank"> 
+        <img loading="lazy" src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=033f5497-a539-424f-88e5-b7aebd427e03" 
+        alt="DMCA.com Protection Status" width="200" height="20" /></a>
+        <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
       </div>
     </div>
   </div>
@@ -230,11 +234,11 @@
       <div class="cop">
         <p class="copyright">
           <?php
-            $copyRight = "&copy;"; 
-            if( is_user_logged_in() && ( isBetaVersion() === true ) ){
-            $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
-            }
-            ?>  
+          $copyRight = "&copy;"; 
+          if( is_user_logged_in() && ( isBetaVersion() === true ) ){
+          $copyRight = "<a href='".get_edit_post_link()."'>&copy;</a>";
+          }
+          ?>  
           Copyright <?php echo $copyRight; ?> 2021 - <?php echo date("Y"); ?>. All Rights Reserved. A Vinove Company.
         </p>
         <ul class="privacy-links">
@@ -260,12 +264,14 @@
         <span class="cross-icon" onclick="close_intform('');" style="z-index: 100;">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assests/images/signup/cross.png" alt="">
         </span>
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assests/images/pop-image.svg" alt="workstatus" width="189" height="172">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assests/images/pop-image.svg" alt="workstatus" 
+        width="189" height="172">
         <h2>Supercharge Your Team's Productivity!</h2>
         <p>Get a 7-day free FULL FEATURE trial of Workstatus now. Boost efficiency, accountability, and results – anytime, anywhere. </p>
         <div class="ctasec">
           <a href="javascript:void(0);" onclick="call_demows();" id="ip-crisp-cta" class="primary_btn1">I want to request a demo</a>
-          <a href="javascript:void(0);" data-href="<?php echo $RegLink; ?>" onclick="return get_ws_signupform(this);" 
+          <a href="javascript:void(0);" data-href="<?php echo $RegLink; ?>" 
+            onclick="return get_ws_signupform(this);" 
             class="primary_btn1 chatbtn">Yes, I want to start free trial</a>
         </div>
       </div>
