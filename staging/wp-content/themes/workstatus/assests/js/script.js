@@ -2035,7 +2035,20 @@ document.addEventListener("DOMContentLoaded", function() {
               image.setAttribute('data-loaded', 'true');
             }
         });  
-      }      
+      }
+      
+      var bgImage = document.querySelectorAll('.wslazy-bg');      
+      if( bgImage ){
+        bgImage.forEach(function(elm){
+            if( !elm.getAttribute('data-loaded') ){
+                let elmClass = elm.getAttribute("data-bgclass");
+                if( elmClass ){
+                    elm.classList.add(elmClass);    
+                }                
+                elm.setAttribute('data-loaded', 'true');
+            }            
+        });  
+      }
     }
 
     setTimeout(function(){

@@ -12,35 +12,36 @@ global $ws_ctas, $RegLink, $LogLink;
     $bsEnabled         = $banner_section['is_enabled'];
     if ($bsEnabled == 'yes') :
     ?>
-        <section class="hero-banner inner-banner-bg">
-            <div class="bannerwrap mac-banner wslazy">
-                <div class="container">
-                    <div class="inner-wrap">
-                        <h1 <?php echo (is_page(441)) ? 'style="text-transform:inherit;"' : ''; ?>><?php echo $banner_section['heading']; ?></h1>
-                        <?php echo $banner_section['content']; ?>
-                        
-                        <?php 
-                        $downloads  = get_field('downloads');
-                        $dEnabled   = $downloads['is_enabled'];
-                        if( ($dEnabled == 'yes') && !is_page(3489) ){ ?>
-                        <div class="actionBtn">
-                        <div>
-                        <a href="<?php echo ($downloads['button_slug']) ? $downloads['button_slug'] : 'javascript:void(0);'; ?>" 
-                        class="primary_btn1" download><?php echo (is_page(3489)) ? "Coming soon" : "Download App"; ?></a>
-                        </div>                            
-                        </div>
-                        <?php }else{ ?>                        
-                        <div class="actionBtn">
-                        <?php echo cmnBannerCta(); ?>
-                        </div>
-                        <?php } ?>
-
-                        <?php //require_once get_template_directory() . '/common/available-device.php'; ?>
-                        <?php //require_once get_template_directory(). '/common/partners.php'; ?>
+    <section class="hero-banner inner-banner-bg">
+        <div class="bannerwrap wslazy-bg" data-bgclass="mac-banner">
+            <div class="container">
+                <div class="inner-wrap">
+                    <h1 <?php echo (is_page(441)) ? 'style="text-transform:inherit;"' : ''; ?>>
+                    <?php echo $banner_section['heading']; ?>
+                    </h1>
+                    <?php echo $banner_section['content']; ?>                    
+                    <?php 
+                    $downloads  = get_field('downloads');
+                    $dEnabled   = $downloads['is_enabled'];
+                    if( ($dEnabled == 'yes') && !is_page(3489) ){ ?>
+                    <div class="actionBtn">
+                    <div>
+                    <a href="<?php echo ($downloads['button_slug']) ? $downloads['button_slug'] : 'javascript:void(0);'; ?>" 
+                    class="primary_btn1" download><?php echo (is_page(3489)) ? "Coming soon" : "Download App"; ?></a>
+                    </div>                            
                     </div>
+                    <?php }else{ ?>                        
+                    <div class="actionBtn">
+                    <?php echo cmnBannerCta(); ?>
+                    </div>
+                    <?php } ?>
+
+                    <?php //require_once get_template_directory() . '/common/available-device.php'; ?>
+                    <?php //require_once get_template_directory(). '/common/partners.php'; ?>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <?php endif; ?>
     <?php
     $top_platforms = get_field('top_platforms');
