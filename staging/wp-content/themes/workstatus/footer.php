@@ -197,11 +197,11 @@
       <div class="flex-3  footer-rating">
         <span class="star-outer" id="star" style="display:none">
         <span class="star-inner star-hover" id="starthover">
-        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
-        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('two')"></i> 
-        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('three')"></i> 
-        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('four')"></i> 
-        <i class="star-icon vlazy" onclick="star(event)" onmouseover="changerate('five')"></i> 
+        <i class="star-icon wslazy" onclick="star(event)" onmouseover="changerate('one')"></i> 
+        <i class="star-icon wslazy" onclick="star(event)" onmouseover="changerate('two')"></i> 
+        <i class="star-icon wslazy" onclick="star(event)" onmouseover="changerate('three')"></i> 
+        <i class="star-icon wslazy" onclick="star(event)" onmouseover="changerate('four')"></i> 
+        <i class="star-icon wslazy" onclick="star(event)" onmouseover="changerate('five')"></i> 
         </span>
         <span id="rate_msg"></span>
         </span>   
@@ -634,12 +634,12 @@
   function(){
       var lazyloadImages;    
       if("IntersectionObserver" in window){
-      lazyloadImages = document.querySelectorAll(".vlazy");
+      lazyloadImages = document.querySelectorAll(".wslazy");
       var imageObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
             var image = entry.target;
-            image.classList.remove("vlazy");
+            image.classList.remove("wslazy");
             imageObserver.unobserve(image);
           }
         });
@@ -650,7 +650,7 @@
       });
       }else{
       var lazyloadThrottleTimeout;
-      lazyloadImages = document.querySelectorAll(".vlazy");
+      lazyloadImages = document.querySelectorAll(".wslazy");
       function lazyload(){
           if(lazyloadThrottleTimeout) {
               clearTimeout(lazyloadThrottleTimeout);
@@ -661,7 +661,7 @@
           lazyloadImages.forEach(function(img) {
               if(img.offsetTop < (window.innerHeight + scrollTop)) {
                 img.src = img.dataset.src;
-                img.classList.remove('vlazy');
+                img.classList.remove('wslazy');
               }
           });
           if(lazyloadImages.length == 0) { 

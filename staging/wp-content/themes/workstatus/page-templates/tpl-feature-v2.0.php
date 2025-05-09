@@ -72,7 +72,7 @@
                     </div>
                   </div>
                 </div>
-                <button style="background-image: url(<?php echo $bannerThumb; ?>)" class="videoPoster lazy-background nb-bg" id="play-button">Play video</button>
+                <button style="background-image: url(<?php echo $bannerThumb; ?>)" class="videoPoster wslazy" id="play-button">Play video</button>
               </div>
             </div>
           </div>
