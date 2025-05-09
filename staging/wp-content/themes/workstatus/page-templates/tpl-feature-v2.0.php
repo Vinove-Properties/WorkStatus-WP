@@ -97,13 +97,18 @@ global $ws_ctas, $RegLink, $LogLink, $post;
           <?php echo $dataDriv['con-left']; ?>        
         </div>
         <div class="mobile-image">
-          <img src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ft-mobile.png" alt="Workstatus App">
+          <picture>
+            <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/dev-images/ft-mobile.webp">
+            <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/dev-images/ft-mobile.png">
+            <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/ft-mobile.png" alt="Workstatus" 
+            width="964" height="1000">
+          </picture>
         </div>
         <div class="column with-workstatus">
-          <h3>With <a href="<?php bloginfo('url'); ?>" class="brand">
+          <h3>With 
+            <a href="<?php bloginfo('url'); ?>" class="brand">
             <img class="dark" loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/header-images/logo-dark.svg" 
-              alt="Workstatus" width="166" height="23">
-            </a>
+              alt="Workstatus" width="166" height="23"></a>
           </h3>
           <?php echo $dataDriv['con-right']; ?>        
         </div>
