@@ -50,15 +50,26 @@ function wsGetCookieVal(cookieName){
     return false; // Return null if the cookie doesn't exist
 }
 
+function getwsPlanurl(planId = 0, type = "annual") {
+  const baseUrl = `https://${wsObj.app_url}/auth/register`;
+  const params = new URLSearchParams({pid: planId,type: type});
 
-function getwsPlanurl(plan_id = 0, type = "annual"){
-  if( wsGetCookieVal( 'ws_reftoken' ) ){
-    let refToken = wsGetCookieVal( 'ws_reftoken' );
-    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type+'&r_id='+refToken;
-  }else{
-    return 'https://'+wsObj.app_url+'/auth/register?pid='+plan_id+'&type='+type;  
-  }  
+  const utmParams = ["utm_campaign", "utm_medium", "utm_source"];
+  utmParams.forEach(param => {
+    const value = wsGetCookieVal(param);
+    if (value) {
+      params.append(param, value);
+    }
+  });
+
+  const refToken = wsGetCookieVal("ws_reftoken");
+  if (refToken) {
+    params.append("r_id", refToken);
+  }
+  return `${baseUrl}?${params.toString()}`;
 }
+
+
 /*
 const WS_PLAN_ID_BKP = {
   "local" : {"attendance":5001, "product" : 466, "project" : 460, "ent" : 461, "free" : 137},
