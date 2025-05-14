@@ -1281,8 +1281,8 @@ function getAlternatePricing( $col ){
 	$colFor = '<strong class="prloc">'.locatePricing($col['t4-pricing']).'</strong>';
 	
 	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>	
-	<div class="ws-column" id="wspriceelm" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
-	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.$postFix.'</div>
+	<div class="ws-column main-comps" id="wspriceelm" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
+	<div class="ws-column main-comps" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t2-pricing']).'">'.$colTwo.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t3-pricing']).'">'.$colThr.$postFix.'</div>
 	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t4-pricing']).'">'.$colFor.$postFix.'</div>';	
@@ -1303,8 +1303,8 @@ function _locatePricing( $str ){
 }
 
 function getAltPricingCalc( $col ){
-	$elm = '<div class="ws-column active"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><span class="small-font">(Per user)</span></div>
-    <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+	$elm = '<div class="ws-column active main-comps"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><span class="small-font">(Per user)</span></div>
+    <div class="ws-column main-comps"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong><span class="small-font">(Per user)</span></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t2-pricing']).'</strong><span class="small-font">(Per user)</span></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t3-pricing']).'</strong><span class="small-font">(Per user)</span></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t4-pricing']).'</strong><span class="small-font">(Per user)</span></div>';
