@@ -187,6 +187,7 @@ style="display:none;">
                            I've read and accept <a href="https://www.workstatus.io/terms-of-service" rel="noopener" target="_blank">terms and conditions</a>
                            </p>
                            <span id="supolicy" class="error" style="text-align:left; display: none;">Please tick this box if you want to proceed.</span>
+                           <small>*By signing up, you allow Workstatus to use your company’s name and logo in marketing materials and on our website.</small>
                         </div>
                      </div>
                      <div class="form-group">
@@ -195,6 +196,7 @@ style="display:none;">
                         <input type="hidden" name="src_page" value="<?php the_permalink(); ?>">
                         <button type="submit" class="submtbtn btn-disable" id="su-submitButton" name="submit">Create My Account</button>
                         <span id="ws-apimsg"></span>
+
                      </div>
                   </div>
                </form>
