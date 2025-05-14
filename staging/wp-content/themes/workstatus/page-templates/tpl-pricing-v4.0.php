@@ -109,7 +109,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="cta-productivity-basic" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
                     <h4>Includes:</h4>
@@ -154,7 +154,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="cta-productivity-pro" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
                     <h4>Everything <span class="perp">in</span> Productivity  +</h4>
@@ -195,7 +195,7 @@ $activePlan =  'productivity';
                   <span class="prio smtext">Tailor-made offer</span>
                 </div>
                 <a class="price_btn green-btn" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent" href="javascript:void(0);">Request a Quote</a>
-                <span class="tryit op0">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit op0">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
                 <div class="price-wrapper">
                   <div class="price-options">
                     <h4>Everything <span class="perp">in</span> Project  +</h4>
@@ -246,7 +246,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="cta-project-basic" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
             <div class="price-column flex-2">
@@ -262,7 +262,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-project-pro" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
           </div>
@@ -298,7 +298,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="cta-time-basic" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
             <div class="price-column flex-2">
@@ -314,7 +314,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-time-pro" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="cta-attendance-basic" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
             <div class="price-column flex-2">
@@ -370,7 +370,7 @@ $activePlan =  'productivity';
                   <span class="prio">/ month</span>
                 </div>
                 <a class="price_btn" id="cta-attendance-pro" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
           </div>

@@ -88,7 +88,7 @@ if (isset($compCol['required']) && ($compCol['required'] == "yes")) :
                                 <?php 
                                 for ($i = 1; $i <= 4; $i++) {
                                 if (isset($compCol['t' . $i . '-logo']) && !empty($compCol['t' . $i . '-logo'])) {
-                                echo '<div class="logo-tb logovs">';
+                                echo '<div class="logo-tb logovs clog-id-'.$i.'">';
                                 echo '<picture><img class="desktop" loading="lazy" src="' . $compCol['t' . $i . '-logo']['url'] . '" 
                                     alt="' . $compCol['t' . $i . '-logo']['alt'] . '" 
                                     width="' . $compCol['t' . $i . '-logo']['width'] . '" 

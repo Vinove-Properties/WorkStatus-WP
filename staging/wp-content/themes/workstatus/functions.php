@@ -1251,8 +1251,8 @@ function getAlternateData( $tbl, $category = "time" ){
 
 				$elm .= '<div class="table-row">
 				<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>
-				<div class="ws-column">'.$colWs.$postFix.'</div>
-				<div class="ws-column">'.$colOne.$postFix.'</div>
+				<div class="ws-column main-comps">'.$colWs.$postFix.'</div>
+				<div class="ws-column main-comps">'.$colOne.$postFix.'</div>
 				<div class="ws-column">'.$colTwo.$postFix.'</div>
 				<div class="ws-column">'.$colThr.$postFix.'</div>
 				<div class="ws-column">'.$colFor.$postFix.'</div>				
