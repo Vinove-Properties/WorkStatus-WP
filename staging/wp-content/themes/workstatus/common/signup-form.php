@@ -95,7 +95,7 @@ style="display:none;">
                   <p>Your registration was successful. As a next step, we've sent you an email to confirm your email address. Once confirmed, you will be good to login & use the system.</p>
                </div>
                <h2>Start Your 7-Day Free Trial</h2>
-               <form onsubmit="return signupFrmValidation(this)" method="post">
+               <form id="wsf_signup1405" onsubmit="return signupFrmValidation(this)" method="post">
                   <div class="form-wrap">
                      <div class="form-group">
                         <input type="text" class="infiled"  id="su-name" placeholder="Full Name" name="uname" maxlength="30">
