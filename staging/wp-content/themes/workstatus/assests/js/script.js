@@ -2622,30 +2622,36 @@ if( document.body.classList.contains("page-template-tpl-alternatives") ){
     const compTab       = document.querySelectorAll("#comp-tabs li");
     const compTabPanle  = document.getElementById("comp-tab-contents").getElementsByClassName("tab-contents");    
     function compActivateTab(e){
-      e.preventDefault();
-      var elmTitle =  e.target.getAttribute("title");
-      if( elmTitle && document.getElementById("comp-cat-title") ){
+        e.preventDefault();
+        var elmTitle =  e.target.getAttribute("title");
+        if( elmTitle && document.getElementById("comp-cat-title") ){
         document.getElementById("comp-cat-title").innerHTML = elmTitle;
-      }
-      var plan      = e.target.getAttribute("data-plan");
-      const prElm   = document.getElementById("ws-price-elm");
-      const prices  = cmnPlan[plan].split("|");
-      prElm.innerHTML = '<span class="spn-int">$'+prices[0]+'</span><span class="spn-local">₹'+prices[1]+'</span>';
-      const preElm  = document.getElementById("wspriceelm");      
-      preElm.setAttribute('data-amt',cmnPlan[plan] );
+        }
+        var plan      = e.target.getAttribute("data-plan");
+        var byNow = document.getElementById("alt-buynow");
+        var plans = {time: "time", attendance: "attendance", project: "project", prod: "productivity"}
+        if (plans[plan]) {
+        byNow.href = `${wsObj.site_url}/pricing?plan=${plans[plan]}`;
+        }
 
-      compTab.forEach(function(label, index){
+        const prElm   = document.getElementById("ws-price-elm");
+        const prices  = cmnPlan[plan].split("|");
+        prElm.innerHTML = '<span class="spn-int">$'+prices[0]+'</span><span class="spn-local">₹'+prices[1]+'</span>';
+        const preElm  = document.getElementById("wspriceelm");      
+        preElm.setAttribute('data-amt',cmnPlan[plan] );
+
+        compTab.forEach(function(label, index){
         label.classList.remove("active");
-      });
-      [].forEach.call(compTabPanle, function(pane, index){
+        });
+        [].forEach.call(compTabPanle, function(pane, index){
         pane.classList.remove("active");
-      });  
-      e.target.parentNode.classList.add("active");
-      var clickedTab = e.target.getAttribute("href");
-      document.querySelector(clickedTab).classList.add("active");
-      updateCalcEvt(document.getElementById("alt-qty").value);
+        });  
+        e.target.parentNode.classList.add("active");
+        var clickedTab = e.target.getAttribute("href");
+        document.querySelector(clickedTab).classList.add("active");
+        updateCalcEvt(document.getElementById("alt-qty").value);
     }
     compTab.forEach(function(label, index){
-      label.addEventListener("click", compActivateTab);
+    label.addEventListener("click", compActivateTab);
     });    
 }

@@ -330,6 +330,7 @@ function workstatus_scripts() {
 	: site_url('/wp-json/ws-api/v1/ipinfo'),
 	'app_url' 		=> ( isBetaVersion() ) ? 'app.staging.workstatus.io' : 'app.workstatus.io',
 	'admin_ajax' 	=> admin_url( 'admin-ajax.php' ),
+	'site_url' 		=> get_bloginfo('url'),
 	'_env' 			=> ( isBetaVersion() ) ? 'staging' : 'production'
 	]);	
 	wp_enqueue_script( 'nice-select2','https://bluzky.github.io/nice-select2/dist/js/nice-select2.js', array(), 
@@ -1303,7 +1304,8 @@ function _locatePricing( $str ){
 }
 
 function getAltPricingCalc( $col ){
-	$elm = '<div class="ws-column active main-comps"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><a class="buy-now">Buy Now</a></div>
+	$elm = '<div class="ws-column active main-comps"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong>
+	<a id="alt-buynow" href="'.site_url('/pricing?plan=time').'" class="buy-now">Buy Now</a></div>
     <div class="ws-column main-comps"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t2-pricing']).'</strong></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t3-pricing']).'</strong></div>
