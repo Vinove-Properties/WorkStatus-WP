@@ -9141,7 +9141,7 @@ li.iti__country {
   overflow: hidden; }
   .mid-cta:before {
     content: "";
-    background: url(../images/cta-shape01.png) no-repeat;
+    background: url(../images/cta-shape01.webp) no-repeat;
     background-size: 100% 100%;
     width: 66px;
     height: 288px;
@@ -9150,7 +9150,7 @@ li.iti__country {
     top: 0; }
   .mid-cta:after {
     content: "";
-    background: url(../images/cta-shape02.png) no-repeat;
+    background: url(../images/cta-shape02.webp) no-repeat;
     background-size: 100% 100%;
     width: 353px;
     height: 288px;
