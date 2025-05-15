@@ -8716,7 +8716,7 @@ li.iti__country {
     width: 347px;
     height: 870px;
     bottom: 0;
-    background: url(../images/shapeft1.png) no-repeat;
+    background: url(../images/shapeft1.webp) no-repeat;
     left: 0;
     background-size: 100%; }
     @media screen and (max-width: 575px) {
@@ -9048,7 +9048,7 @@ li.iti__country {
     .banner-section .home-section:after {
       content: "";
       width: 959px;
-      background: url(../images/ftside.png) no-repeat;
+      background: url(../images/ftside.webp) no-repeat;
       position: absolute;
       right: -150px;
       top: -152px;
