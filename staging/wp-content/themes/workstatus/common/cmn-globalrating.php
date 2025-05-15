@@ -108,6 +108,16 @@
               </div>
               <i class="star"></i>
             </div>
+             <div class="award-col">
+              <div class="img-wrap">
+              <a href="#">
+                <picture>
+                  <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo09.svg" alt="Award" width="134" height="21">
+                </picture>
+               </a>      
+              </div>
+              <i class="star"></i>
+            </div>
           </div>
           <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow" style="opacity:0;">What industry analysts are saying </a>
         </div>
