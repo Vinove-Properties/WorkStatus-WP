@@ -4752,6 +4752,15 @@ li.iti__country {
               color: #05164d; }
           .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter {
             width: 100%; }
+          .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .buy-now {
+            font-weight: 500;
+            display: block;
+            min-width: 100px;
+            padding: 5px 10px;
+            color: #fff;
+            background: #5D2BFF;
+            border-radius: 5px;
+            margin: 5px 0 0; }
         .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row:nth-child(n + 7) {
           display: none; }
         .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row {
@@ -4774,15 +4783,6 @@ li.iti__country {
               display: block;
               margin: 5px 0 0;
               width: 100%; }
-            .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .buy-now {
-              font-weight: 500;
-              display: block;
-              min-width: 100px;
-              padding: 5px 10px;
-              color: #fff;
-              background: #5D2BFF;
-              border-radius: 5px;
-              margin: 5px 0 0; }
             .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:first-child strong {
               padding: 0; }
             .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong {
