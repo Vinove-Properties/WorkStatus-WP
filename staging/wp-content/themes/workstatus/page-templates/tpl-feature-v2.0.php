@@ -146,7 +146,7 @@ global $ws_ctas, $RegLink, $LogLink, $post;
                   <li>
                     <span class="aw-icon">
                       <picture>
-                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/awrd-02.svg" alt="Workstatus" width="78" height="18">
+                        <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sf-suggest.svg" alt="Workstatus" width="79" height="26">
                       </picture>
                     </span>
                     <span class="star"></span>
