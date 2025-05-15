@@ -5216,7 +5216,8 @@ li.iti__country {
 
   .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .buy-now {
     padding: 3px 8px;
-    min-width: initial; } }
+    min-width: initial;
+    font-size: 12px; } }
 .data-driving {
   padding: 0 0 180px; }
   .data-driving .data-flex {
