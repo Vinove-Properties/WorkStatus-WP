@@ -4761,6 +4761,8 @@ li.iti__country {
             background: #5D2BFF;
             border-radius: 5px;
             margin: 5px 0 0; }
+            .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .buy-now:hover {
+              background: #051441; }
         .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row:nth-child(n + 7) {
           display: none; }
         .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row {
