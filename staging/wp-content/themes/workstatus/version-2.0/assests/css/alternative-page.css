@@ -4755,6 +4755,7 @@ li.iti__country {
           .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .buy-now {
             font-weight: 500;
             display: block;
+            cursor: pointer;
             min-width: 100px;
             padding: 5px 10px;
             color: #fff;
