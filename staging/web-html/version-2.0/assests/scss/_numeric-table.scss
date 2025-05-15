@@ -553,6 +553,125 @@
   }
 }
 
+
+
+
+
+
+
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc{position:relative;}
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after{ content:'';   
+     //position: absolute;
+      //top: 5px;
+      left: 0; right:0; margin:0 auto;
+	width: 90px;
+  height: 7px;
+  display: block;  
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    #5D2BFF;
+  background-repeat: repeat-y;
+  background-size: 20px 300px;
+  background-position: 0 0;
+  animation: shine 1.5s infinite;
+	border-radius:10px;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0, 0 0;
+  }
+}
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong{background:transparent !important;}
+
+
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong{  background:#F76600 !important;}
+
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span{display:none;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-local{display:block;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-int {display:none;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after{display:none;}
+
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong{  background:#F76600 !important;}
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after{display:none;}
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-local{display:none;}
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-int {display:block;}
+
+
+
+
+
+
+
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter{position:relative;}
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after{ content:'';   
+     //position: absolute;
+      //top: 0;
+  left: 0; right:0; margin:0 auto;
+	width: 90px;
+  height: 7px;
+  display: block;  
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    #5D2BFF;
+  background-repeat: repeat-y;
+  background-size: 20px 300px;
+  background-position: 0 0;
+  animation: shine 1.5s infinite;
+	border-radius:10px;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0, 0 0;
+  }
+}
+
+
+
+
+.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span{display:none;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-local{display:block;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-int {display:none;}
+
+.locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after{display:none;}
+
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after{display:none;}
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-local{display:none;}
+
+.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-int {display:block;}
+
+
+
+
+
+
 @media (max-width: 1440px) {
   .table-tab {
     .tab-wrap {
