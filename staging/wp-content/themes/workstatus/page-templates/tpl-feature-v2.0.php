@@ -24,19 +24,19 @@ global $ws_ctas, $RegLink, $LogLink, $post;
               <div class="partwrap">
                 <div class="part-col">
                   <i class="part-logo part-logo1 wslazy"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/yellow-st01.svg" alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/yellow-st01.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo2 wslazy"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/yellow-st02.svg" alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/yellow-st02.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo3 wslazy"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/yellow-st03.svg" alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/yellow-st03.svg" alt="star" width="60" height="9"></i>
                 </div>
                 <div class="part-col">
                   <i class="part-logo part-logo4"></i>
-                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/yellow-st04.svg" alt="star" width="60" height="9"></i>
+                  <i class="star-icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/yellow-st04.svg" alt="star" width="60" height="9"></i>
                 </div>
               </div>
             </div>
