@@ -231,6 +231,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
             if( byNow ){
               byNow.innerText = "Buy Now";
               byNow.setAttribute("href", getwsPlanurl(value[elmInput.value].id, type));
+              byNow.removeAttribute("onclick");
             }  
           }else{
             curTabElm.classList.add("custom-pln");
@@ -239,6 +240,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
             if( byNow ){
               byNow.innerText = "Request Quote";
               byNow.setAttribute("href", "javascript:void(0);", type);
+              byNow.setAttribute("onclick", "call_demoEnt()");              
             }
           }
           
@@ -257,6 +259,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
             if( byNow ){
               byNow.innerText = "Buy Now";
               byNow.setAttribute("href", getwsPlanurl(value[elmInput.value].id, type));
+              byNow.removeAttribute("onclick");
             }
           }else{
             curTabElm.classList.add("custom-pln");
@@ -265,6 +268,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
             if( byNow ){
               byNow.innerText = "Request Quote";
               byNow.setAttribute("href", "javascript:void(0);", type);
+              byNow.setAttribute("onclick", "call_demoEnt()");
             }
           }  
           

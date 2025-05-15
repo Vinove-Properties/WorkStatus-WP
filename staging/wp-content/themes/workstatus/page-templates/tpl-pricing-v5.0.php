@@ -65,7 +65,7 @@
                 <span class="prio">/ user / month</span>
               </div>
               <a class="price_btn" id="bn-productivity-one" href="#">Buy Now</a>
-              <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
@@ -110,7 +110,7 @@
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="bn-project-basic" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
             <div class="price-column flex-2">
@@ -126,7 +126,7 @@
                   <span class="prio">/ user / month</span>
                 </div>
                 <a class="price_btn" id="bn-project-pro" href="#">Buy Now</a>
-                <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+                <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@
                 </div>
               </div>
               <a class="price_btn" id="bn-time-three" href="#">Buy Now</a>
-              <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
@@ -229,7 +229,7 @@
                 </div>
               </div>
               <a class="price_btn" id="bn-attendance-four" href="#">Buy Now</a>
-              <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
@@ -261,7 +261,7 @@
               </div>
               <div class="card-plan"><span class="wph" id="cst-everything-five"></span></div>
               <a class="price_btn" id="bn-everything-five" href="#">Buy Now</a>
-              <span class="tryit">or <a href="https://app.workstatus.io/auth/register">Try It Free</a></span>
+              <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
             </div>
             <div class="card-right">
@@ -313,7 +313,7 @@
           <div class="button-common">
             <div class="cmn-democta">
               <div class="ct-demo"><a href="javascript:void(0)" onclick="getCalendlyiFrame();" class="ctbtn">Set Up a Free Consultation</a></div>
-              <div class="ct-trial"><a href="javascript:void(0);" class="ctbtn ctbtn2"> Request Enterprise Pricing</a>
+              <div class="ct-trial"><a href="javascript:void(0);" onclick="call_demoEnt();" class="ctbtn ctbtn2"> Request Enterprise Pricing</a>
               </div>
             </div>
           </div>
