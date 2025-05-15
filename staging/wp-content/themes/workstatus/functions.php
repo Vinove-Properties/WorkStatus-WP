@@ -1303,7 +1303,7 @@ function _locatePricing( $str ){
 }
 
 function getAltPricingCalc( $col ){
-	$elm = '<div class="ws-column active main-comps"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><span class="buy-now">Buy Now</span></div>
+	$elm = '<div class="ws-column active main-comps"><strong class="price-setter">'._locatePricing($col['ws-pricing']).'</strong><a class="buy-now">Buy Now</a></div>
     <div class="ws-column main-comps"><strong class="price-setter">'._locatePricing($col['t1-pricing']).'</strong></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t2-pricing']).'</strong></div>
     <div class="ws-column"><strong class="price-setter">'._locatePricing($col['t3-pricing']).'</strong></div>
