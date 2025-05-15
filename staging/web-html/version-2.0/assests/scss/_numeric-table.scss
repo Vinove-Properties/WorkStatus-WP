@@ -925,6 +925,7 @@
 	.table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row{grid-template-columns: 1.2fr 1fr 1fr;
   -ms-grid-columns: 1.2fr 1fr 1fr;}
 	.table-tab .tab-wrap .tcontents .numeric-table .table-block{border-right:0;}
+  .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .buy-now{padding:3px 8px; min-width: initial;}
 
 
 }
