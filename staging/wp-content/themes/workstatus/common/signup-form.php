@@ -187,7 +187,6 @@ style="display:none;">
                            I've read and accept <a href="https://www.workstatus.io/terms-of-service" rel="noopener" target="_blank">terms and conditions</a>
                            </p>
                            <span id="supolicy" class="error" style="text-align:left; display: none;">Please tick this box if you want to proceed.</span>
-                           <small>*By signing up, you allow Workstatus to use your company’s name and logo in marketing materials and on our website.</small>
                         </div>
                      </div>
                      <div class="form-group">
