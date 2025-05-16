@@ -8734,6 +8734,16 @@ li.iti__country {
         width: 50%;
         position: relative;
         margin-top: 30px; }
+        .banner-section .home-section .flex_row .column-content h4 {
+          font-size: 25px;
+          background: #d3ccfd;
+          padding: 10px 20px;
+          color: #5624f6;
+          max-width: 360px;
+          text-align: center;
+          display: block;
+          line-height: 1.2;
+          margin: 0 0 20px; }
         .banner-section .home-section .flex_row .column-content h1 {
           color: #fff;
           margin: 0 0 20px; }
@@ -9272,6 +9282,9 @@ li.iti__country {
       .banner-section .home-section .flex_row .column-content h1 {
         font-size: 40px;
         line-height: 50px; }
+      .banner-section .home-section .flex_row .column-content h4 {
+        margin: 0 auto 20px;
+        font-size: 22px; }
       .banner-section .home-section .flex_row .column-content .actionBtn {
         justify-content: center; }
       .banner-section .home-section .flex_row .column-content .partwrap {

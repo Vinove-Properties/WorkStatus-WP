@@ -78,6 +78,13 @@
         position: relative;
         margin-top: 30px;
 
+        h4{font-size: 25px; background: #d3ccfd; padding: 10px 20px; color: #5624f6;
+        max-width: 360px;
+        text-align: center;
+        display: block;
+        line-height: 1.2;
+        margin: 0 0 20px;}
+
         h1 {
           color: $white;
           margin: 0 0 20px;
@@ -828,6 +835,7 @@
             font-size: 40px;
             line-height: 50px;
           }
+          h4{margin:0 auto 20px; font-size: 22px;}
           .actionBtn {
             justify-content: center;
           }
