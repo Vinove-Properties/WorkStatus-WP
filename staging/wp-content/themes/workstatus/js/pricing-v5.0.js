@@ -117,16 +117,16 @@ const pricingData = {
     },
     "everything":{'monthly':4.9, 'yearly':46.20, id:7022},
     "time":{
-      '50':{'monthly':65, 'yearly':600, id:7024},
-      '100':{'monthly':125, 'yearly':1176, id:7028},
-      '250':{'monthly':170, 'yearly':1500, id:7028},
+      '50':{'monthly':35, 'yearly':336, id:7024},
+      '100':{'monthly':65, 'yearly':600, id:7028},
+      '250':{'monthly':125, 'yearly':1176, id:7028},
       '500':{'monthly':210, 'yearly':2040, id:7030},
       '1000':{'monthly':350, 'yearly':3360, id:7032}
     },
     "attendance":{
-      '50':{'monthly':65, 'yearly':600, id:7034},
-      '100':{'monthly':125, 'yearly':1176, id:7036},
-      '250':{'monthly':170, 'yearly':1500, id:7038},
+      '50':{'monthly':35, 'yearly':336, id:7034},
+      '100':{'monthly':65, 'yearly':600, id:7036},
+      '250':{'monthly':125, 'yearly':1176, id:7038},
       '500':{'monthly':210, 'yearly':2040, id:7040},
       '1000':{'monthly':350, 'yearly':3360, id:7042}
     },
