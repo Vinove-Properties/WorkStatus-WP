@@ -2469,12 +2469,6 @@ if (document.getElementById("cmn-v2-testimonials")) {
 
 
 
-
-
-
-
-
-
 if (document.getElementById("testimonial-glider")) {
     window.addEventListener("load", function() {
     var gliderElement = document.querySelector(".testimonial-slider .glider");
