@@ -2394,28 +2394,44 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-if( document.getElementById("cmn-v2-testimonials") ){
-    window.addEventListener("load", function() {
+if (document.getElementById("cmn-v2-testimonials")) {
+    window.addEventListener("load", function () {
         var gliderElement = document.querySelector(".testimonial-slider .glider");
         if (gliderElement) {
-            new Glider(gliderElement, {
-                slidesToShow: 1, 
+            var glider = new Glider(gliderElement, {
+                slidesToShow: 1,
                 slidesToScroll: 1,
                 draggable: true,
                 scrollLock: false,
                 dots: ".testimonial-slider .dots",
                 dragDistance: true,
-                arrows: { prev: '#cmn-v2-testimonials .test-prev', next: '#cmn-v2-testimonials .test-next' },      
+                arrows: {
+                    prev: '#cmn-v2-testimonials .test-prev',
+                    next: '#cmn-v2-testimonials .test-next'
+                },
                 responsive: [
-                {breakpoint: 320, settings: {slidesToShow:1,slidesToScroll:1,duration: 0.25}},
-                {breakpoint: 767, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}},
-                {breakpoint: 1024, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}},
-                {breakpoint: 1400, settings: {slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25}}          
+                    { breakpoint: 320, settings: { slidesToShow: 1, slidesToScroll: 1, duration: 0.25 } },
+                    { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                    { breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } },
+                    { breakpoint: 1400, settings: { slidesToShow: 1, slidesToScroll: 1, itemWidth: 150, duration: 0.25 } }
                 ]
+            });
+
+            // Add looping behavior
+            const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
+
+            nextBtn.addEventListener('click', function () {
+                // Wait for Glider to update before checking index
+                setTimeout(() => {
+                    if (glider.slide + glider.opt.slidesToShow >= glider.slides.length) {
+                        glider.scrollItem(0);
+                    }
+                }, 10);
             });
         }
     });
 }
+
 
 if (document.getElementById("testimonial-glider")) {
     window.addEventListener("load", function() {
