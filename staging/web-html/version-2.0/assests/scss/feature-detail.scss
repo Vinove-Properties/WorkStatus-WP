@@ -78,12 +78,17 @@
         position: relative;
         margin-top: 30px;
 
-        h4{font-size: 25px; background: #d3ccfd; padding: 10px 20px; color: #5624f6;
-        max-width: 360px;
-        text-align: center;
-        display: block;
-        line-height: 1.2;
-        margin: 0 0 20px;}
+        h4 {
+          font-size: 25px;
+          background: #d3ccfd;
+          padding: 10px 20px;
+          color: #5624f6;
+          max-width: 360px;
+          text-align: center;
+          display: block;
+          line-height: 1.2;
+          margin: 0 0 20px;
+        }
 
         h1 {
           color: $white;
@@ -267,7 +272,6 @@
             border-radius: 9px;
             border: 1px solid #3f0dd3;
             background: #3f0dd3;
-      
 
             .part-logo {
               width: 80px;
@@ -723,10 +727,12 @@
           width: 900px;
         }
       }
-      .flex_row{
-        .column-content{
-          h1{font-size: 56px;
-    line-height:78px;}
+      .flex_row {
+        .column-content {
+          h1 {
+            font-size: 56px;
+            line-height: 78px;
+          }
         }
       }
       &:after {
@@ -742,6 +748,10 @@
     .home-section {
       .flex_row {
         .column-content {
+          h1 {
+            font-size: 50px;
+            line-height: 75px;
+          }
           .actionBtn {
             margin: 30px 0;
           }
@@ -843,7 +853,10 @@
             font-size: 40px;
             line-height: 50px;
           }
-          h4{margin:0 auto 20px; font-size: 22px;}
+          h4 {
+            margin: 0 auto 20px;
+            font-size: 22px;
+          }
           .actionBtn {
             justify-content: center;
           }
@@ -927,11 +940,16 @@
     .home-section {
       .flex_row {
         .column-content {
+          h1 {
+            font-size: 38px;
+            line-height: 48px;
+          }
           p {
             font-size: 16px;
             line-height: 26px;
             margin: 0 0 20px;
           }
+
           ul {
             li {
               font-size: 16px;
@@ -1010,13 +1028,8 @@
     }
   }
 
-
-
-
   .mid-cta {
-
     .dis-flex {
-
       .flex-2 {
         .button-common {
           .cmn-democta {
@@ -1034,16 +1047,12 @@
                   color: #ffffff;
                 }
               }
-              
             }
-           
           }
         }
       }
     }
   }
-
-
 }
 
 @media (max-width: 479px) {
