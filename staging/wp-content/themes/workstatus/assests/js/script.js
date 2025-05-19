@@ -2417,20 +2417,25 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 ]
             });
 
-            // Add looping behavior
             const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
 
-            nextBtn.addEventListener('click', function () {
-                // Wait for Glider to update before checking index
-                setTimeout(() => {
-                    if (glider.slide + glider.opt.slidesToShow >= glider.slides.length) {
-                        glider.scrollItem(0);
-                    }
-                }, 10);
+            nextBtn.addEventListener('click', function (e) {
+                const totalSlides = glider.slides.length;
+                const visibleSlides = glider.opt.slidesToShow;
+                const currentSlide = glider.slide;
+
+                // If current slide is the last visible slide
+                if (currentSlide + visibleSlides >= totalSlides) {
+                    e.preventDefault(); // Stop default next behavior
+                    setTimeout(() => {
+                        glider.scrollItem(0, true); // Scroll to first slide smoothly
+                    }, 100); // Allow time for click event to finish
+                }
             });
         }
     });
 }
+
 
 
 if (document.getElementById("testimonial-glider")) {
