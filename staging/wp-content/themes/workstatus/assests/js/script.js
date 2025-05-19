@@ -2396,9 +2396,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
 if (document.getElementById("cmn-v2-testimonials")) {
     window.addEventListener("load", function () {
-        var gliderElement = document.querySelector(".testimonial-slider .glider");
+        const gliderElement = document.querySelector(".testimonial-slider .glider");
         if (gliderElement) {
-            var glider = new Glider(gliderElement, {
+            const glider = new Glider(gliderElement, {
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 draggable: true,
@@ -2418,23 +2418,33 @@ if (document.getElementById("cmn-v2-testimonials")) {
             });
 
             const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
+            let loopNext = false;
 
             nextBtn.addEventListener('click', function (e) {
                 const totalSlides = glider.slides.length;
                 const visibleSlides = glider.opt.slidesToShow;
                 const currentSlide = glider.slide;
 
-                // If current slide is the last visible slide
+                // If we're already at the last fully visible slide
                 if (currentSlide + visibleSlides >= totalSlides) {
-                    e.preventDefault(); // Stop default next behavior
+                    e.preventDefault(); // prevent default scroll
+                    loopNext = true;
+                }
+            });
+
+            // Wait for animation to finish, then loop if flagged
+            gliderElement.addEventListener('glider-animated', function () {
+                if (loopNext) {
+                    loopNext = false;
                     setTimeout(() => {
-                        glider.scrollItem(0, true); // Scroll to first slide smoothly
-                    }, 100); // Allow time for click event to finish
+                        glider.scrollItem(0, true); // Smooth scroll to first
+                    }, 200); // Small delay after last slide is shown
                 }
             });
         }
     });
 }
+
 
 
 
