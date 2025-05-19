@@ -2428,14 +2428,11 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 if (currentSlide >= totalSlides - 1) {
                     e.preventDefault();
 
-                    // Clone first slide and append
                     const firstClone = glider.slides[0].cloneNode(true);
                     gliderElement.appendChild(firstClone);
 
-                    // Scroll to clone
                     glider.scrollItem(totalSlides, true);
 
-                    // After animation, remove clone and reset to real first
                     setTimeout(() => {
                         gliderElement.removeChild(firstClone);
                         glider.scrollItem(0, false);
@@ -2450,19 +2447,15 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 if (currentSlide === 0) {
                     e.preventDefault();
 
-                    // Clone last slide and insert before first
                     const lastClone = glider.slides[totalSlides - 1].cloneNode(true);
                     gliderElement.insertBefore(lastClone, glider.slides[0]);
 
-                    // Immediately jump to index 1 (real first now pushed to 1)
                     glider.scrollItem(1, false);
 
-                    // Then animate back to the cloned last slide (index 0)
                     setTimeout(() => {
                         glider.scrollItem(0, true);
                     }, 20);
 
-                    // After animation, remove the clone and reset to real last
                     setTimeout(() => {
                         gliderElement.removeChild(lastClone);
                         glider.scrollItem(totalSlides - 1, false);
@@ -2472,6 +2465,7 @@ if (document.getElementById("cmn-v2-testimonials")) {
         }
     });
 }
+
 
 
 
