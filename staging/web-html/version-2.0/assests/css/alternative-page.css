@@ -6588,6 +6588,8 @@ li.iti__country {
         left: auto;
         right: 0;
         transform: rotate(180deg); }
+    .testimonial-section .testimonial-slider .test-button .test-prev.disabled {
+      cursor: auto; }
 
 /*Media Query Start From Here*/
 @media (max-width: 767px) {

@@ -119,6 +119,9 @@
           transform: rotate(180deg);
         }
       }
+       .test-prev{
+        &.disabled{cursor:auto;}
+       }
     }
   }
 }
