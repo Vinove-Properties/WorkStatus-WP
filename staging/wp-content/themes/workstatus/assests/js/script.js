@@ -2428,27 +2428,24 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 if (currentSlide + visibleSlides >= totalSlides) {
                     e.preventDefault(); // Prevent default scrolling
 
-                    // Disable transition animation
-                    gliderElement.style.transition = 'none';
+                    // Clone the first slide
+                    const firstSlide = glider.slides[0].cloneNode(true);
+                    gliderElement.appendChild(firstSlide);
 
-                    // Jump to the first slide without animation
-                    glider.scrollItem(0, false);
+                    // Scroll to the cloned slide
+                    glider.scrollItem(totalSlides, true);
 
-                    // Force reflow to apply the change immediately
-                    void gliderElement.offsetWidth;
-
-                    // Re-enable transition animation
-                    gliderElement.style.transition = '';
-
-                    // Optional: Smoothly scroll to the first slide
+                    // After the transition, reset to the original first slide
                     setTimeout(() => {
-                        glider.scrollItem(0, true);
-                    }, 20); // Slight delay to ensure smooth transition
+                        gliderElement.removeChild(firstSlide);
+                        glider.scrollItem(0, false);
+                    }, 500); // Adjust the timeout to match the transition duration
                 }
             });
         }
     });
 }
+
 
 
 
