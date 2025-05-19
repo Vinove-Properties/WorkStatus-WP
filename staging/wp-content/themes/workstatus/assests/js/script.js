@@ -2418,32 +2418,38 @@ if (document.getElementById("cmn-v2-testimonials")) {
             });
 
             const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
-            let loopNext = false;
 
             nextBtn.addEventListener('click', function (e) {
                 const totalSlides = glider.slides.length;
                 const visibleSlides = glider.opt.slidesToShow;
                 const currentSlide = glider.slide;
 
-                // If we're already at the last fully visible slide
+                // Check if we're on the last slide
                 if (currentSlide + visibleSlides >= totalSlides) {
-                    e.preventDefault(); // prevent default scroll
-                    loopNext = true;
-                }
-            });
+                    e.preventDefault(); // Prevent default scrolling
 
-            // Wait for animation to finish, then loop if flagged
-            gliderElement.addEventListener('glider-animated', function () {
-                if (loopNext) {
-                    loopNext = false;
+                    // Disable transition animation
+                    gliderElement.style.transition = 'none';
+
+                    // Jump to the first slide without animation
+                    glider.scrollItem(0, false);
+
+                    // Force reflow to apply the change immediately
+                    void gliderElement.offsetWidth;
+
+                    // Re-enable transition animation
+                    gliderElement.style.transition = '';
+
+                    // Optional: Smoothly scroll to the first slide
                     setTimeout(() => {
-                        glider.scrollItem(0, true); // Smooth scroll to first
-                    }, 200); // Small delay after last slide is shown
+                        glider.scrollItem(0, true);
+                    }, 20); // Slight delay to ensure smooth transition
                 }
             });
         }
     });
 }
+
 
 
 
