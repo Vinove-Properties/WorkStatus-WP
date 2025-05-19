@@ -2428,13 +2428,13 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 if (currentSlide >= totalSlides - 1) {
                     e.preventDefault();
 
-                    const firstClone = glider.slides[0].cloneNode(true);
-                    gliderElement.appendChild(firstClone);
+                    const clone = glider.slides[0].cloneNode(true);
+                    gliderElement.appendChild(clone);
 
                     glider.scrollItem(totalSlides, true);
 
                     setTimeout(() => {
-                        gliderElement.removeChild(firstClone);
+                        gliderElement.removeChild(clone);
                         glider.scrollItem(0, false);
                     }, 400);
                 }
@@ -2447,24 +2447,27 @@ if (document.getElementById("cmn-v2-testimonials")) {
                 if (currentSlide === 0) {
                     e.preventDefault();
 
-                    const lastClone = glider.slides[totalSlides - 1].cloneNode(true);
-                    gliderElement.insertBefore(lastClone, glider.slides[0]);
+                    const clone = glider.slides[totalSlides - 1].cloneNode(true);
+                    gliderElement.insertBefore(clone, glider.slides[0]);
 
-                    glider.scrollItem(1, false);
+                    glider.refresh(true); // important to recalculate slides
+                    glider.scrollItem(1, false); // jump to original first (now second)
 
                     setTimeout(() => {
-                        glider.scrollItem(0, true);
+                        glider.scrollItem(0, true); // animate to cloned last
                     }, 20);
 
                     setTimeout(() => {
-                        gliderElement.removeChild(lastClone);
-                        glider.scrollItem(totalSlides - 1, false);
+                        gliderElement.removeChild(clone);
+                        glider.refresh(true);
+                        glider.scrollItem(totalSlides - 1, false); // jump to real last
                     }, 400);
                 }
             });
         }
     });
 }
+
 
 
 
