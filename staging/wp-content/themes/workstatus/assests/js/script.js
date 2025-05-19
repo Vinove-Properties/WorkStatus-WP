@@ -2421,54 +2421,62 @@ if (document.getElementById("cmn-v2-testimonials")) {
             const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
             const prevBtn = document.querySelector('#cmn-v2-testimonials .test-prev');
 
+            // Custom looping for Next button (last → first)
             nextBtn.addEventListener('click', function (e) {
+                const currentIndex = glider.slide;
                 const totalSlides = glider.slides.length;
-                const currentSlide = glider.slide;
 
-                if (currentSlide >= totalSlides - 1) {
+                if (currentIndex >= totalSlides - 1) {
                     e.preventDefault();
 
                     const clone = glider.slides[0].cloneNode(true);
                     gliderElement.appendChild(clone);
+                    glider.refresh(true);
 
                     glider.scrollItem(totalSlides, true);
 
                     setTimeout(() => {
                         gliderElement.removeChild(clone);
+                        glider.refresh(true);
                         glider.scrollItem(0, false);
                     }, 400);
                 }
             });
 
+            // ✅ Custom looping for Prev button (first → last)
             prevBtn.addEventListener('click', function (e) {
+                const currentIndex = glider.slide;
                 const totalSlides = glider.slides.length;
-                const currentSlide = glider.slide;
 
-                if (currentSlide === 0) {
+                if (currentIndex === 0) {
                     e.preventDefault();
 
-                    const clone = glider.slides[totalSlides - 1].cloneNode(true);
-                    gliderElement.insertBefore(clone, glider.slides[0]);
+                    const lastRealSlide = gliderElement.children[totalSlides - 1]; // get last slide
+                    const clone = lastRealSlide.cloneNode(true);
 
-                    glider.refresh(true); // important to recalculate slides
-                    glider.scrollItem(1, false); // jump to original first (now second)
+                    // Insert cloned last at beginning
+                    gliderElement.insertBefore(clone, gliderElement.firstElementChild);
+                    glider.refresh(true);
 
+                    // Jump forward to original first (now second)
+                    glider.scrollItem(1, false);
+
+                    // After DOM update, scroll back to clone
                     setTimeout(() => {
-                        glider.scrollItem(0, true); // animate to cloned last
+                        glider.scrollItem(0, true);
                     }, 20);
 
+                    // After animation ends, remove clone and jump to real last
                     setTimeout(() => {
                         gliderElement.removeChild(clone);
                         glider.refresh(true);
-                        glider.scrollItem(totalSlides - 1, false); // jump to real last
+                        glider.scrollItem(totalSlides - 1, false);
                     }, 400);
                 }
             });
         }
     });
 }
-
-
 
 
 
