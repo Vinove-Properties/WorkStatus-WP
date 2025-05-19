@@ -2423,52 +2423,56 @@ if (document.getElementById("cmn-v2-testimonials")) {
 
             nextBtn.addEventListener('click', function (e) {
                 const totalSlides = glider.slides.length;
-                const visibleSlides = glider.opt.slidesToShow;
                 const currentSlide = glider.slide;
 
-                if (currentSlide + visibleSlides >= totalSlides) {
+                if (currentSlide >= totalSlides - 1) {
                     e.preventDefault();
 
+                    // Clone first slide and append
                     const firstClone = glider.slides[0].cloneNode(true);
                     gliderElement.appendChild(firstClone);
 
+                    // Scroll to clone
                     glider.scrollItem(totalSlides, true);
 
+                    // After animation, remove clone and reset to real first
                     setTimeout(() => {
                         gliderElement.removeChild(firstClone);
                         glider.scrollItem(0, false);
-                    }, 500);
+                    }, 400);
                 }
             });
 
             prevBtn.addEventListener('click', function (e) {
+                const totalSlides = glider.slides.length;
                 const currentSlide = glider.slide;
 
                 if (currentSlide === 0) {
                     e.preventDefault();
 
-                    // Clone last slide and insert at the beginning
-                    const lastClone = glider.slides[glider.slides.length - 1].cloneNode(true);
+                    // Clone last slide and insert before first
+                    const lastClone = glider.slides[totalSlides - 1].cloneNode(true);
                     gliderElement.insertBefore(lastClone, glider.slides[0]);
 
-                    // Jump to the clone (which is now at index 0 + 1 = index 1)
+                    // Immediately jump to index 1 (real first now pushed to 1)
                     glider.scrollItem(1, false);
 
-                    // Then animate back to 0 (the clone)
+                    // Then animate back to the cloned last slide (index 0)
                     setTimeout(() => {
                         glider.scrollItem(0, true);
                     }, 20);
 
-                    // After the animation, remove the clone and jump to real last
+                    // After animation, remove the clone and reset to real last
                     setTimeout(() => {
                         gliderElement.removeChild(lastClone);
-                        glider.scrollItem(glider.slides.length - 1, false);
-                    }, 500);
+                        glider.scrollItem(totalSlides - 1, false);
+                    }, 400);
                 }
             });
         }
     });
 }
+
 
 
 
