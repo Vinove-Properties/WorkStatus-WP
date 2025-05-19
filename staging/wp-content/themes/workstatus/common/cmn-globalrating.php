@@ -110,7 +110,7 @@
             </div>
              <div class="award-col">
               <div class="img-wrap">
-              <a href="#">
+              <a href="https://www.techimply.com/profile/workstatus" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo09.svg" alt="Award" width="134" height="21">
                 </picture>
