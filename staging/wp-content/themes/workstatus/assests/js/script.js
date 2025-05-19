@@ -2397,6 +2397,7 @@ document.addEventListener("DOMContentLoaded", function(){
 if (document.getElementById("cmn-v2-testimonials")) {
     window.addEventListener("load", function () {
         const gliderElement = document.querySelector(".testimonial-slider .glider");
+
         if (gliderElement) {
             const glider = new Glider(gliderElement, {
                 slidesToShow: 1,
@@ -2418,33 +2419,60 @@ if (document.getElementById("cmn-v2-testimonials")) {
             });
 
             const nextBtn = document.querySelector('#cmn-v2-testimonials .test-next');
+            const prevBtn = document.querySelector('#cmn-v2-testimonials .test-prev');
 
             nextBtn.addEventListener('click', function (e) {
                 const totalSlides = glider.slides.length;
                 const visibleSlides = glider.opt.slidesToShow;
                 const currentSlide = glider.slide;
 
-                // Check if we're on the last slide
                 if (currentSlide + visibleSlides >= totalSlides) {
-                    e.preventDefault(); // Prevent default scrolling
+                    e.preventDefault();
 
-                    // Clone the first slide
-                    const firstSlide = glider.slides[0].cloneNode(true);
-                    gliderElement.appendChild(firstSlide);
+                    // Clone first slide and append
+                    const firstClone = glider.slides[0].cloneNode(true);
+                    gliderElement.appendChild(firstClone);
 
-                    // Scroll to the cloned slide
+                    // Go to clone
                     glider.scrollItem(totalSlides, true);
 
-                    // After the transition, reset to the original first slide
+                    // After animation, jump to real first slide
                     setTimeout(() => {
-                        gliderElement.removeChild(firstSlide);
+                        gliderElement.removeChild(firstClone);
                         glider.scrollItem(0, false);
-                    }, 500); // Adjust the timeout to match the transition duration
+                    }, 500);
+                }
+            });
+
+            prevBtn.addEventListener('click', function (e) {
+                const currentSlide = glider.slide;
+
+                if (currentSlide === 0) {
+                    e.preventDefault();
+
+                    // Clone last slide and insert at beginning
+                    const lastClone = glider.slides[glider.slides.length - 1].cloneNode(true);
+                    gliderElement.insertBefore(lastClone, glider.slides[0]);
+
+                    // Jump immediately to clone
+                    glider.scrollItem(1, false);
+
+                    // Then scroll smoothly to it
+                    setTimeout(() => {
+                        glider.scrollItem(0, true);
+                    }, 20);
+
+                    // Cleanup after animation
+                    setTimeout(() => {
+                        gliderElement.removeChild(lastClone);
+                        glider.scrollItem(glider.slides.length - 1, false);
+                    }, 500);
                 }
             });
         }
     });
 }
+
 
 
 
