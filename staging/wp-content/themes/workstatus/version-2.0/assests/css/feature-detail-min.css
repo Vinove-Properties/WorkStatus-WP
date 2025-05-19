@@ -8746,7 +8746,9 @@ li.iti__country {
           margin: 0 0 20px; }
         .banner-section .home-section .flex_row .column-content h1 {
           color: #fff;
-          margin: 0 0 20px; }
+          margin: 0 0 20px;
+          font-size: 60px;
+          line-height: 80px; }
         .banner-section .home-section .flex_row .column-content p {
           color: #fff;
           font-size: 18px;
@@ -9220,6 +9222,9 @@ li.iti__country {
     .banner-section .home-section .videoSc .popup-content {
       height: 450px;
       width: 900px; }
+  .banner-section .home-section .flex_row .column-content h1 {
+    font-size: 56px;
+    line-height: 78px; }
   .banner-section .home-section:after {
     width: 820px; } }
 @media (max-width: 1280px) {

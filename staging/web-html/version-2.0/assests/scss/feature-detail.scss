@@ -88,6 +88,8 @@
         h1 {
           color: $white;
           margin: 0 0 20px;
+          font-size: 60px;
+          line-height: 80px;
         }
         p {
           color: #fff;
@@ -719,6 +721,12 @@
         .popup-content {
           height: 450px;
           width: 900px;
+        }
+      }
+      .flex_row{
+        .column-content{
+          h1{font-size: 56px;
+    line-height:78px;}
         }
       }
       &:after {
