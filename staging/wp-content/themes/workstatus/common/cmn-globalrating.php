@@ -13,14 +13,14 @@
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sitebaz.svg" alt="Workstatus" width="155" height="36">
             </picture>
             <p>Workstatus is a Leader in the 2024 Gartner® Magic Quadrant™ for DevOps Platforms</p>
-            <a href="https://www.sitejabber.com/reviews/workstatus.io" class="is-arrow">Explore More</a>
+            <a href="https://www.sitejabber.com/reviews/workstatus.io" target="_blank" class="is-arrow">Explore More</a>
           </div>
           <div class="rate-box">
             <picture>
               <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/trustpiolet.svg" alt="Workstatus" width="127" height="31">
             </picture>
             <p>Workstatus is a Leader in the 2024 Gartner® Magic Quadrant™ for DevOps Platforms</p>
-            <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow">Explore More</a>
+            <a href="https://www.trustpilot.com/review/www.workstatus.io" target="_blank" class="is-arrow">Explore More</a>
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
           <div class="award-row">
             <div class="award-col">
               <div class="img-wrap">
-                <a href="https://sourceforge.net/software/product/Workstatus/">
+                <a href="https://sourceforge.net/software/product/Workstatus/" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo01.svg" alt="Award" width="119" height="19">
                 </picture>
@@ -40,7 +40,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://www.goodfirms.co/software/workstatus">
+              <a href="https://www.goodfirms.co/software/workstatus" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo02.svg" alt="Award" width="113" height="17">
                 </picture>
@@ -50,7 +50,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://www.g2.com/products/valuecoders-workstatus/reviews">
+              <a href="https://www.g2.com/products/valuecoders-workstatus/reviews" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo03.svg" alt="Award" width="26" height="26">
                 </picture>
@@ -60,7 +60,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://www.producthunt.com/products/workstatus">
+              <a href="https://www.producthunt.com/products/workstatus" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo04.svg" alt="Award" width="117" height="41">
                 </picture>
@@ -70,7 +70,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://cloudfindr.co/software/workstatus-review/">
+              <a href="https://cloudfindr.co/software/workstatus-review/" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo05.svg" alt="Award" width="117" height="41">
                 </picture>
@@ -80,7 +80,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://www.saashub.com/workstatus-io-alternatives">
+              <a href="https://www.saashub.com/workstatus-io-alternatives" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo06.svg" alt="Award" width="136" height="21">
                 </picture>
@@ -89,8 +89,8 @@
               <i class="star"></i>
             </div>
             <div class="award-col">
-              <div class="img-wrap">
-              <a href="https://www.techjockey.com/detail/workstatus">
+              <div class="img-wrap"> 
+              <a href="https://www.techjockey.com/detail/workstatus" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo07.svg" alt="Award" width="124" height="23">
                 </picture>
@@ -100,7 +100,7 @@
             </div>
             <div class="award-col">
               <div class="img-wrap">
-              <a href="https://www.wesuggestsoftware.com/project-management/workstatus/">
+              <a href="https://www.wesuggestsoftware.com/project-management/workstatus/" target="_blank">
                 <picture>
                   <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/award-logo08.svg" alt="Award" width="134" height="21">
                 </picture>
@@ -119,7 +119,7 @@
               <i class="star"></i>
             </div>
           </div>
-          <a href="https://www.trustpilot.com/review/www.workstatus.io" class="is-arrow" style="opacity:0;">What industry analysts are saying </a>
+          <a href="https://www.trustpilot.com/review/www.workstatus.io" target="_blank" class="is-arrow" style="opacity:0;">What industry analysts are saying </a>
         </div>
       </div>
     </div>
