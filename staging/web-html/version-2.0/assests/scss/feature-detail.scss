@@ -302,11 +302,11 @@
             .star-icon {
               display: block;
               line-height: 8px;
-              opacity: 0.8;
+              opacity: 1;
             }
             &:hover {
               .part-logo {
-                opacity: 1;
+                //opacity: 1;
               }
               .star-icon {
                 opacity: 1;
