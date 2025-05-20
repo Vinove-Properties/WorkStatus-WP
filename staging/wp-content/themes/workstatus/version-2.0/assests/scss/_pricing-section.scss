@@ -152,7 +152,7 @@
   .price-contents {
     flex-basis: 100%;
     width: 85%;
-    margin:40px auto 0;
+    margin:0 auto;
     .tab-contents {
       display: none;
       text-align: center;
@@ -178,13 +178,18 @@
               color: #2f3a5e;
               font-weight: 600;
               margin: 0 0 15px;
+              //padding:0 0 20px;
               line-height: 35px;
+              display:none;
             }
             h4 {
               font-size: 22px;
               font-weight: 600;
               color: #2f3a5e;
               margin: 0 0 20px;
+              padding: 0 0 20px;
+              border-bottom: 2px solid #e7edf6;
+              display:none;
             }
             .total {
               background: $white;
@@ -213,14 +218,15 @@
             font-size: 42px;
             color: #2f3a5e;
             font-weight: 700;
-            padding: 20px 0 0;
+            padding: 20px 0;
             border-top: 2px solid #e7edf6;
             display: flex;
             align-items: baseline;
             text-align: center;
             justify-content: center;
+            .card-plan{border-top:0; margin:0;}
             span {
-              display: block;
+              display: inline-block; 
             }
             .wph {
               line-height: 1;
@@ -232,6 +238,7 @@
               display: inline-block;
               text-decoration: line-through;
               font-weight: 400;
+              margin-left: 5px;
             }
             .prio {
               color: rgba(47, 58, 94, 0.6);
@@ -256,7 +263,7 @@
             font-size: 18px;
             font-weight: 600;
             border-radius: 100px;
-            margin: 20px auto 12px;
+            margin: 0 auto 12px;
             &:hover {
               background: #051441;
               color: #fff;
@@ -343,6 +350,19 @@
           .card-left {
             .card-plan {
               justify-content: left;
+              border-bottom: 2px solid #e7edf6;
+              border-top: 0;
+              padding-top: 0;
+            }
+          }
+        }
+        &.time-pricing {
+          .card-left {
+            .card-plan {
+              justify-content: left;
+              border-bottom: 2px solid #e7edf6;
+              border-top: 0;
+              padding-top: 0;
             }
           }
         }
@@ -372,6 +392,7 @@
             height: 6px;
             border-radius: 4px;
             background: #5d2bff;
+            position: relative;
 
             &::-webkit-slider-thumb {
               -webkit-appearance: none;
@@ -383,6 +404,8 @@
               cursor: pointer;
               position: relative;
               z-index: 2;
+              transform: translateX(-50%);
+             
             }
 
             &::-moz-range-thumb {
@@ -394,13 +417,19 @@
               cursor: pointer;
               position: relative;
               z-index: 2;
+              margin-left:-8px;
             }
+            &::-webkit-slider-thumb:focus,
+&::-moz-range-thumb:focus {
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4);
+}
           }
 
           .slider-labels {
             display: flex;
             justify-content: space-between;
-            margin-top: 15px;
+            margin: 15px 0 30px;
             position: relative;
 
             .label {
@@ -409,6 +438,16 @@
               cursor: pointer;
               font-size: 12px;
               font-weight: 500;
+              position: absolute;
+              left: 0;
+              transform: translateX(-50%);
+
+              &:nth-child(1) { left: 0%; }
+              &:nth-child(2) {left: 18.5%; }
+              &:nth-child(3) { left: 38%;}
+              &:nth-child(4) {   left: 57%;}
+              &:nth-child(5) {    left: 76%;}
+              &:nth-child(6) {left: 95%;}
 
               &:before {
                 content: "";
@@ -445,6 +484,7 @@
                 z-index: 10;
               }
             }
+           
           }
         }
       }
@@ -452,7 +492,7 @@
       .price-flex {
         display: flex;
         justify-content: center;
-        margin: 80px 0 0;
+        margin: 40px 0 0;
         .price-column {
           text-align: left;
           padding: 0 10px;
@@ -489,6 +529,7 @@
                 font-weight: 600;
                 margin: 0 0 15px;
                 line-height: 35px;
+
               }
 
               .op0 {
@@ -542,7 +583,7 @@
               font-size: 42px;
               color: #2f3a5e;
               font-weight: 700;
-              padding: 20px 0 0;
+              padding: 20px 0;
               border-top: 2px solid #e7edf6;
               display: flex;
               align-items: end;
@@ -599,7 +640,7 @@
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 20px auto 10px;
+              margin: 0 auto 10px;
               &:hover {
                 background: #051441;
                 color: #fff;
@@ -847,6 +888,14 @@
     }
   }
 }
+
+
+
+.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan{display:none;}
+.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan .pr-plan h4{display:block;}
+.ws-pricing .price-contents .tab-contents.custom-pln .tryit{display:none;}
+.tab-contents h4.for-custom{display: none;}
+.tab-contents.custom-pln h4.for-custom{display: block !important;}
 
 .ps-monthly
   .ws-pricing
@@ -1156,12 +1205,27 @@
             .plan-include {
               flex-wrap: wrap;
               gap: 0;
+              &.column-two{
+                ul {
+                  width: 100%;
+                  padding: 0;
+                  li {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin:0 0 10px;
+                    &:before {
+                      top: 9px;
+                    }
+                  }
+                }
+              }
               ul {
                 width: 100%;
                 padding: 0;
                 li {
                   font-size: 14px;
                   line-height: 24px;
+                  margin:0 0 10px;
                   &:before {
                     top: 9px;
                   }
@@ -1187,7 +1251,7 @@
 
         .price-flex {
           flex-wrap: wrap;
-          margin:40px 0 0;
+          margin:20px 0 0;
           .price-column {
             flex-basis: 100%;
             margin: 0 0 30px;
