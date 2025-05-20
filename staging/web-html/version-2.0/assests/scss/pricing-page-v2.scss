@@ -314,7 +314,7 @@
           display: block;
           color: #2f3a5e;
           margin-bottom: 15px;
-          min-height: 60px;
+          min-height: 40px;
         }
         .button {
           color: #5d2bff;
@@ -921,6 +921,7 @@
       tr {
         th {
           font-size: 12px;
+          .plan-label{min-height: 60px;}
           .button {
             padding: 11px 15px;
             font-size: 13px;
@@ -969,6 +970,8 @@
       }
     }
   }
+
+ 
 
   .comp-table-sticky.sticky {
     top: 68px;

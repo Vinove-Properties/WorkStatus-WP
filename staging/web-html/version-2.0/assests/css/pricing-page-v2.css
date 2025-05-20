@@ -6660,7 +6660,7 @@ li.iti__country {
         display: block;
         color: #2f3a5e;
         margin-bottom: 15px;
-        min-height: 60px; }
+        min-height: 40px; }
       .comparison-panel .comp-table tr th .button {
         color: #5d2bff;
         background-color: #ffffff;
@@ -7094,6 +7094,8 @@ li.iti__country {
     padding-top: 0; }
     .comparison-panel .comp-table tr th {
       font-size: 12px; }
+      .comparison-panel .comp-table tr th .plan-label {
+        min-height: 60px; }
       .comparison-panel .comp-table tr th .button {
         padding: 11px 15px;
         font-size: 13px;
