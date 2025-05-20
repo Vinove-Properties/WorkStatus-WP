@@ -2155,7 +2155,7 @@ a.mst-link:before {
       padding: 5px 10px;
       border-radius: 4px;
       top: -70%;
-      left: 216px;
+      left: 262px;
       transform: translateX(-50%);
       white-space: nowrap;
       transition: opacity 0.3s;
@@ -2793,7 +2793,11 @@ a.mst-link:before {
     left: -15px;
     top: -40px; }
   .ws-pricing .tab-nav .info-text {
-    left: 225px; } }
+    left: 10%;
+    top: -100%; }
+    .ws-pricing .tab-nav .info-text:before {
+      left: auto;
+      right: -10px; } }
 @media (max-width: 1280px) {
   .ws-pricing {
     margin: 30px 0 0; }
