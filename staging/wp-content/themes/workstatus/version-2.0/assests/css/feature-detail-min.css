@@ -8273,7 +8273,7 @@ li.iti__country {
               background: url(../images/button-arwhover.png) no-repeat; }
           @media screen and (max-width: 575px) {
             .start-journey .ws-flex .jour-col .actionBtn a.primary_btn1 {
-              padding: 6px 12px;
+              padding: 6px 10px;
               font-size: 12px; } }
         .start-journey .ws-flex .jour-col .actionBtn a.primary_btn2 {
           border: 1px solid #ffffff;
@@ -8295,7 +8295,7 @@ li.iti__country {
             border-color: #051441; }
           @media screen and (max-width: 575px) {
             .start-journey .ws-flex .jour-col .actionBtn a.primary_btn2 {
-              padding: 6px 12px;
+              padding: 6px 10px;
               font-size: 12px; } }
         .start-journey .ws-flex .jour-col .actionBtn small {
           display: block;
