@@ -80,6 +80,9 @@
             background-size: 24px !important;
             vertical-align: middle;
             background: url(../images/button-arw.png) no-repeat;
+             @media screen and (max-width: ($smscreen-size - 1)) {
+             margin-left: 5px;
+              }
           }
           &:hover {
             background: #051441;
@@ -110,6 +113,9 @@
             background-size: 24px !important;
             vertical-align: middle;
             background: url(../images/clock-icon.png) no-repeat;
+              @media screen and (max-width: ($smscreen-size - 1)) {
+             margin-left: 5px;
+              }
           }
 
           &:hover {

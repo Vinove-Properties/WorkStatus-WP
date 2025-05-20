@@ -8106,6 +8106,9 @@ li.iti__country {
             background-size: 24px !important;
             vertical-align: middle;
             background: url(../images/button-arw.png) no-repeat; }
+            @media screen and (max-width: 575px) {
+              .start-journey .ws-flex .jour-col .actionBtn a.primary_btn1:after {
+                margin-left: 5px; } }
           .start-journey .ws-flex .jour-col .actionBtn a.primary_btn1:hover {
             background: #051441;
             color: #fff;
@@ -8130,6 +8133,9 @@ li.iti__country {
             background-size: 24px !important;
             vertical-align: middle;
             background: url(../images/clock-icon.png) no-repeat; }
+            @media screen and (max-width: 575px) {
+              .start-journey .ws-flex .jour-col .actionBtn a.primary_btn2:after {
+                margin-left: 5px; } }
           .start-journey .ws-flex .jour-col .actionBtn a.primary_btn2:hover {
             background: #051441;
             color: #fff;
