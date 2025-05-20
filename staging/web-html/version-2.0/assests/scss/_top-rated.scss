@@ -162,12 +162,13 @@
     .award-grid {
       .award-column {
         .award-logo {
-          .award-row {justify-content: space-between; gap:15px;
+          .award-row {justify-content: center; gap:15px;
             .award-col {
               flex-basis: 46%;
               .star{width:70px; background-size: contain;}
             }
           }
+          .is-arrow{display:none;}
         }
       }
     }

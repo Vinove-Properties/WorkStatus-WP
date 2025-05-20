@@ -8026,13 +8026,15 @@ li.iti__country {
               margin: 0 0 10px; } }
 @media (max-width: 479px) {
   .top-rated .award-grid .award-column .award-logo .award-row {
-    justify-content: space-between;
+    justify-content: center;
     gap: 15px; }
     .top-rated .award-grid .award-column .award-logo .award-row .award-col {
       flex-basis: 46%; }
       .top-rated .award-grid .award-column .award-logo .award-row .award-col .star {
         width: 70px;
-        background-size: contain; } }
+        background-size: contain; }
+  .top-rated .award-grid .award-column .award-logo .is-arrow {
+    display: none; } }
 /*Media Query Ends Here*/
 .start-journey {
   background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
