@@ -4673,8 +4673,8 @@ li.iti__country {
           background: url(../images/button-arwhover.png) no-repeat; }
       @media screen and (max-width: 575px) {
         .trusted-by .actionBtn a.primary_btn1 {
-          padding: 10px 10px 8px !important;
-          font-size: 12px !important; } }
+          padding: 8px 10px 6px !important;
+          font-size: 11px !important; } }
     .trusted-by .actionBtn a.primary_btn2 {
       border: 1px solid #05164d;
       cursor: pointer;
@@ -4697,8 +4697,8 @@ li.iti__country {
           background: url(../images/clock-icon.png) no-repeat; }
       @media screen and (max-width: 575px) {
         .trusted-by .actionBtn a.primary_btn2 {
-          padding: 10px 10px 8px !important;
-          font-size: 12px !important; } }
+          padding: 8px 10px 6px !important;
+          font-size: 11px !important; } }
     .trusted-by .actionBtn small {
       display: block;
       text-align: center;
