@@ -2679,6 +2679,8 @@ a.mst-link:before {
               border-color: #5d2bff;
               border-width: 2px;
               position: relative; }
+              .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box .pr-plan h3 {
+                padding: 35px 0 0; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column:nth-child(2) .price-box .pr-plan .total {
                 background: #fff;
                 border: 1.5px solid rgba(98, 77, 227, 0.1); }

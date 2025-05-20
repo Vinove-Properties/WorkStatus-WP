@@ -116,7 +116,7 @@
             <div class="price-column flex-2">
               <div class="price-box">
                 <div class="pr-plan">
-                  <h3>Pro Unlimited<br><span class="op0">Pro Unlimited</span></h3>
+                  <h3>Pro Unlimited</h3>
                   <div class="total">NO USER MINIMUM</div>
                   <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
                   </p>
