@@ -57,7 +57,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Productivity Management</h3>
-                <div class="total">NO USER MINIMUM</div>
+                <div class="total">2 USER MINIMUM</div>
                 <p>Maximize team output with time tracking, app usage analysis &amp; productivity reports.</p>
               </div>
               <div class="card-plan">
