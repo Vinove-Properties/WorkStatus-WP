@@ -960,7 +960,7 @@
        .info-text {
         left: 10%;
         top:-100%;
-        &:before{left:auto; right:-10px;}
+        &:before{left:auto;         right: 53px;}
       }
     }
     .price-contents {
@@ -982,9 +982,9 @@
         }
       }
       .info-text {
-        left: 10%;
+        left: 0%;
         top:-100%;
-        &:before{left:auto; right:-10px;}
+        &:before{left:auto; right: 40px;}
       }
     }
     .price-contents {
@@ -1166,7 +1166,8 @@
         }
       }
       .info-text {
-        left: 100px;
+        left: 140px; top: -80%;
+        &:before{right:80px;}
       }
     }
     .price-contents {
