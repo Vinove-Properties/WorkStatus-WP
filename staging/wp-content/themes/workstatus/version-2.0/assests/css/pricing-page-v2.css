@@ -2149,17 +2149,26 @@ a.mst-link:before {
       opacity: 0;
       position: absolute;
       font-size: 11px;
-      background: #525f7f;
+      background: #464646;
       color: #fff;
       text-align: center;
       padding: 5px 10px;
       border-radius: 4px;
-      top: 100%;
-      left: 50%;
+      top: -70%;
+      left: 216px;
       transform: translateX(-50%);
       white-space: nowrap;
       transition: opacity 0.3s;
-      z-index: 999; }
+      z-index: 9; }
+      .ws-pricing .tab-nav .info-text:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        bottom: -9px;
+        width: 12px;
+        height: 11px;
+        vertical-align: middle;
+        background: url(../images/polygon.svg) no-repeat; }
     .ws-pricing .tab-nav .tooltip-icon:hover + .info-text {
       visibility: visible;
       opacity: 1; }
@@ -2782,7 +2791,9 @@ a.mst-link:before {
     width: 60%; }
   .ws-pricing .tab-nav:before {
     left: -15px;
-    top: -40px; } }
+    top: -40px; }
+  .ws-pricing .tab-nav .info-text {
+    left: 225px; } }
 @media (max-width: 1280px) {
   .ws-pricing {
     margin: 30px 0 0; }
@@ -2790,6 +2801,8 @@ a.mst-link:before {
       width: 70%; }
       .ws-pricing .tab-nav ul li a {
         padding: 10px; }
+    .ws-pricing .tab-nav .info-text {
+      left: 233px; }
     .ws-pricing .price-contents {
       width: 90%; } }
 @media (max-width: 1024px) {
@@ -2799,7 +2812,11 @@ a.mst-link:before {
     .ws-pricing .tab-nav ul li a {
       height: 55px; }
   .ws-pricing .tab-nav .info-text {
-    left: 10%; }
+    left: 10%;
+    top: -100%; }
+    .ws-pricing .tab-nav .info-text:before {
+      left: auto;
+      right: -10px; }
   .ws-pricing .price-contents {
     width: 100%; }
     .ws-pricing .price-contents .tab-contents .pricing-card .card-left {

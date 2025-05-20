@@ -34,7 +34,7 @@
           <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03"><a data-plan="wsp-time" href="#tab03">Time</a></li>
           <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04"><a data-plan="wsp-attendance" href="#tab04">Attendance</a></li>
           <li class="<?php echo ($activePlan == "everything") ? 'active' : ''; ?>" data-tab="#tab05"><a href="#tab04">Everything<img  alt="info" class="tooltip-icon" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/info-icon.svg"  width="12" height="12">
-            <span class="info-text">This is the tooltip info about Everything.</span></a>
+            <span class="info-text">Our most powerful plan - Includes all Workstatus features</span></a>
           </li>
         </ul>
       </nav>

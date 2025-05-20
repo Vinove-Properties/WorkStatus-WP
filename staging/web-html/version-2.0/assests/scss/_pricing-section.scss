@@ -118,17 +118,26 @@
       opacity: 0;
       position: absolute;
       font-size: 11px;
-      background: #525f7f;
+      background: #464646;
       color: #fff;
       text-align: center;
       padding: 5px 10px;
       border-radius: 4px;
-      top: 100%;
-      left: 50%;
+        top: -70%;
+       left: 216px;
       transform: translateX(-50%);
       white-space: nowrap;
       transition: opacity 0.3s;
-      z-index: 999;
+      z-index: 9; 
+  &:before{content: "";
+      position: absolute;
+         left: 10px;
+    bottom: -9px;
+      width: 12px;
+      height: 11px;
+      vertical-align: middle;
+      background: url(../images/polygon.svg) no-repeat;}
+     
     }
 
     .tooltip-icon:hover + .info-text {
@@ -928,6 +937,7 @@
         left: -15px;
         top: -40px;
       }
+      .info-text{left: 225px;}
     }
   }
 }
@@ -947,6 +957,7 @@
           }
         }
       }
+      .info-text{left: 233px;}
     }
     .price-contents {
       width: 90%;
@@ -968,6 +979,8 @@
       }
       .info-text {
         left: 10%;
+        top:-100%;
+        &:before{left:auto; right:-10px;}
       }
     }
     .price-contents {
