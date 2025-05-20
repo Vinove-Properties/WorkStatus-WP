@@ -6654,12 +6654,13 @@ li.iti__country {
       color: #253053;
       font-size: 15px;
       font-weight: 600;
-      padding: 0 2px; }
+      padding: 0 2px;
+      line-height: 26px; }
       .comparison-panel .comp-table tr th .plan-label {
         display: block;
         color: #2f3a5e;
         margin-bottom: 15px;
-        min-height: 40px; }
+        min-height: 60px; }
       .comparison-panel .comp-table tr th .button {
         color: #5d2bff;
         background-color: #ffffff;
