@@ -624,14 +624,17 @@
   .award-grid {
     .award-column {
       background: $white;
+      border-radius: 15px;
       &:first-child {
         background: transparent;
       }
       .rate-desp {
-        box-shadow: none;
-        background: $white;
+      box-shadow: none;
+      background: none;
         .rate-box {
           background: $white;
+              background: #fff;
+              box-shadow: none
         }
       }
     }
@@ -1039,6 +1042,20 @@
       }
     }
   }
+
+  .top-rated {background: #faf8fe;
+  .award-grid {
+    .award-column {
+      background: $white;
+      border-radius: 15px;
+      
+     .award-logo{box-shadow: none;
+      .is-arrow{display:none;}
+     }
+      
+    }
+  }
+}
 
 
 }
