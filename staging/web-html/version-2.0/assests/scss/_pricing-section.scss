@@ -937,11 +937,7 @@
         left: -15px;
         top: -40px;
       }
-       .info-text {
-        left: 10%;
-        top:-100%;
-        &:before{left:auto; right:-10px;}
-      }
+      .info-text{left: 271px;}
     }
   }
 }
@@ -961,7 +957,11 @@
           }
         }
       }
-      .info-text{left: 233px;}
+       .info-text {
+        left: 10%;
+        top:-100%;
+        &:before{left:auto; right:-10px;}
+      }
     }
     .price-contents {
       width: 90%;

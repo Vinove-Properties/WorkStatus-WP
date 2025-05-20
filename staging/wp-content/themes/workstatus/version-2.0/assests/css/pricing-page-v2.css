@@ -2793,11 +2793,7 @@ a.mst-link:before {
     left: -15px;
     top: -40px; }
   .ws-pricing .tab-nav .info-text {
-    left: 10%;
-    top: -100%; }
-    .ws-pricing .tab-nav .info-text:before {
-      left: auto;
-      right: -10px; } }
+    left: 271px; } }
 @media (max-width: 1280px) {
   .ws-pricing {
     margin: 30px 0 0; }
@@ -2806,7 +2802,11 @@ a.mst-link:before {
       .ws-pricing .tab-nav ul li a {
         padding: 10px; }
     .ws-pricing .tab-nav .info-text {
-      left: 233px; }
+      left: 10%;
+      top: -100%; }
+      .ws-pricing .tab-nav .info-text:before {
+        left: auto;
+        right: -10px; }
     .ws-pricing .price-contents {
       width: 90%; } }
 @media (max-width: 1024px) {
