@@ -5024,16 +5024,16 @@ li.iti__country {
 .locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column:nth-child(2) strong {
   background: #5D2BFF !important; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .prloc:after {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-local {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-local {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-int {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row.price-table-row .ws-column .prloc span.spn-int {
   display: block; }
 
 .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter {
@@ -5069,13 +5069,13 @@ li.iti__country {
 .locate-ind .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter:after {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-local {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-local {
   display: none; }
 
-.locate-international .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-int {
+.locate-int .table-tab .tab-wrap .tcontents .numeric-table .table-block .table-row .ws-column .price-setter span.spn-int {
   display: block; }
 
 @media (max-width: 1440px) {
