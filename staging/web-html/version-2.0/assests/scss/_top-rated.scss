@@ -137,7 +137,7 @@
           }
 
           .award-row {
-            flex-basis: 45%;
+           gap: 13px;
             margin: 25px 0 0;
 
             .award-col {
@@ -162,9 +162,10 @@
     .award-grid {
       .award-column {
         .award-logo {
-          .award-row {
+          .award-row {justify-content: space-between; gap:15px;
             .award-col {
-              flex-basis: 48%;
+              flex-basis: 46%;
+              .star{width:70px; background-size: contain;}
             }
           }
         }

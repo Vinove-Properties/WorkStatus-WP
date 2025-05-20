@@ -2750,10 +2750,22 @@ a.mst-link:before {
     .ws-pricing .price-contents .tab-contents.active {
       display: block; }
 
-.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan {
+.ws-pricing
+.price-contents
+.tab-contents.custom-pln
+.pricing-card
+.card-left
+.card-plan {
   display: none; }
 
-.ws-pricing .price-contents .tab-contents.custom-pln .pricing-card .card-left .card-plan .pr-plan h4 {
+.ws-pricing
+.price-contents
+.tab-contents.custom-pln
+.pricing-card
+.card-left
+.card-plan
+.pr-plan
+h4 {
   display: block; }
 
 .ws-pricing .price-contents .tab-contents.custom-pln .tryit {
@@ -5905,15 +5917,21 @@ li.iti__country {
         .top-rated .award-grid .award-column .award-logo h3 {
           line-height: 33px; }
         .top-rated .award-grid .award-column .award-logo .award-row {
-          flex-basis: 45%;
+          gap: 13px;
           margin: 25px 0 0; }
           .top-rated .award-grid .award-column .award-logo .award-row .award-col {
             padding: 15px; }
             .top-rated .award-grid .award-column .award-logo .award-row .award-col .img-wrap img {
               margin: 0 0 10px; } }
 @media (max-width: 479px) {
-  .top-rated .award-grid .award-column .award-logo .award-row .award-col {
-    flex-basis: 48%; } }
+  .top-rated .award-grid .award-column .award-logo .award-row {
+    justify-content: space-between;
+    gap: 15px; }
+    .top-rated .award-grid .award-column .award-logo .award-row .award-col {
+      flex-basis: 46%; }
+      .top-rated .award-grid .award-column .award-logo .award-row .award-col .star {
+        width: 70px;
+        background-size: contain; } }
 /*Media Query Ends Here*/
 .start-journey {
   background: linear-gradient(180deg, #5D2BFF 0%, #251686 100%);
