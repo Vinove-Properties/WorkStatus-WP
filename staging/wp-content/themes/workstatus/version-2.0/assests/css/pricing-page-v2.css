@@ -2115,8 +2115,6 @@ a.mst-link:before {
           border-radius: 0 15px 15px 0; }
         .ws-pricing .tab-nav ul li:last-child.active a {
           border-radius: 0 15px 15px 0; }
-        .ws-pricing .tab-nav ul li:last-child.active.hover a {
-          border-radius: 0 15px 15px 0; }
         .ws-pricing .tab-nav ul li:nth-child(2).active a {
           border-radius: 0; }
         .ws-pricing .tab-nav ul li:nth-child(3).active a {
@@ -2124,6 +2122,10 @@ a.mst-link:before {
         .ws-pricing .tab-nav ul li:nth-child(4).active a {
           border-radius: 0; }
       .ws-pricing .tab-nav ul li.active a {
+        background: #5d2bff;
+        border-radius: 15px 0 0 15px;
+        color: #fff; }
+      .ws-pricing .tab-nav ul li.hover a {
         background: #5d2bff;
         border-radius: 15px 0 0 15px;
         color: #fff; }
