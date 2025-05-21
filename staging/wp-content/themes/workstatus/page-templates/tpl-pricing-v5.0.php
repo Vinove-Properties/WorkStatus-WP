@@ -47,7 +47,7 @@
             <input id="ps-switcher" type="checkbox">
             <span class="slider"></span>
             </label>
-            <span class="annualy">Annual </span>
+            <span class="annualy">Annual</span>
           </div>
         </div>
       </div>
