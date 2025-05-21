@@ -339,7 +339,9 @@
                   <a class="button" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
                   href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a>
                 </th>
-                <th><span class="plan-label">Everything</span><a class="button higlit" id="ws-coplan-productivity-pro" href="#">Try For Free</a></th>
+                <th><span class="plan-label">Everything</span>
+                  <a class="button higlit" id="ws-coplan-productivity-pro" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
+                  href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a></th>
                 <th>
                   <span class="plan-label">Enterprise</span>
                   <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
