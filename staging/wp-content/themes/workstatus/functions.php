@@ -122,29 +122,38 @@ function workstatus_scripts() {
     wp_dequeue_style( 'wp-block-library-theme' );
     wp_enqueue_script( 'ws-glidermin', get_stylesheet_directory_uri() .'/assests/js/glider.min.js', array(), _S_VERSION, 
     true );
+    
     wp_enqueue_script( 'ws-script', get_stylesheet_directory_uri() . '/assests/js/script.js', array(), _S_VERSION, true );
+    wp_localize_script( 'ws-script', 'wsObj', [
+	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
+	: site_url('/wp-json/ws-api/v1/ipinfo'),
+	'app_url' 		=> ( isBetaVersion() ) ? 'app.staging.workstatus.io' : 'app.workstatus.io',
+	'admin_ajax' 	=> admin_url( 'admin-ajax.php' ),
+	'site_url' 		=> get_bloginfo('url'),
+	'_env' 			=> (isBetaVersion()) ? 'staging' : 'production'
+	]);	
+
     global $post;
 	if( 
 	is_page_template([
-	'page-templates/time-tracking.php',
-	'page-templates/tpl-industries.php',
-	'page-templates/products.php', 
-	'page-templates/field-service-management-software.php',
-	'page-templates/tpl-field-service-management-software.php',	
-	'page-templates/tpl-geofence-time-clock-software-online.php',
-	'page-templates/tpl-usecase.php',
-	'page-templates/tpl-usecase-block.php',
-	'page-templates/tpl-time.php',
-	'page-templates/tpl-task.php',
-	'page-templates/tpl-features.php',
-	'page-templates/tpl-best-employee.php'
+		'page-templates/time-tracking.php',
+		'page-templates/tpl-industries.php',
+		'page-templates/products.php', 
+		'page-templates/field-service-management-software.php',
+		'page-templates/tpl-field-service-management-software.php',	
+		'page-templates/tpl-geofence-time-clock-software-online.php',
+		'page-templates/tpl-usecase.php',
+		'page-templates/tpl-usecase-block.php',
+		'page-templates/tpl-time.php',
+		'page-templates/tpl-task.php',
+		'page-templates/tpl-features.php',
+		'page-templates/tpl-best-employee.php'
 	])
 	){
 	wp_enqueue_style('features', get_stylesheet_directory_uri().'/version-2.0/assests/css/featureDetail-new.css', array(), 
 	_S_VERSION );
 	wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION);
 	wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
-	//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);		
 	}elseif(
 	is_page_template(['page-templates/tpl-platform.php','page-templates/tpl-ebook.php']) 
 	){
@@ -280,7 +289,6 @@ function workstatus_scripts() {
   	elseif( is_page_template(['page-templates/tpl-solution.php']) ){
 		wp_enqueue_style('ws-solution', get_stylesheet_directory_uri().'/version-2.0/assests/css/solution.css', array(), _S_VERSION);
 		wp_enqueue_style('ws-pricing-fltr', get_stylesheet_directory_uri().'/pricing-filter.css', array(), _S_VERSION );
-		//wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/ws-pricing.js', ['ws-script'], _S_VERSION, true);
 		wp_enqueue_script('ws-pricing', get_stylesheet_directory_uri().'/js/pricing-v4.0.js', ['ws-script'], _S_VERSION, true);
 	}
 	elseif( is_page_template(['page-templates/tpl-data-retention.php']) ){
@@ -325,14 +333,7 @@ function workstatus_scripts() {
 	}
 	//wp_enqueue_script( 'ws-intlTelInput', get_stylesheet_directory_uri() . '/assests/js/intlTelInput.min.js', array(), _S_VERSION, true );		
 	
-	wp_localize_script('ws-script', 'wsObj', [
-	'ipinfo' => (isset($_GET['ip']) && !empty($_GET['ip'])) ? site_url('/wp-json/ws-api/v1/ipinfo?ip='.$_GET['ip']) 
-	: site_url('/wp-json/ws-api/v1/ipinfo'),
-	'app_url' 		=> ( isBetaVersion() ) ? 'app.staging.workstatus.io' : 'app.workstatus.io',
-	'admin_ajax' 	=> admin_url( 'admin-ajax.php' ),
-	'site_url' 		=> get_bloginfo('url'),
-	'_env' 			=> ( isBetaVersion() ) ? 'staging' : 'production'
-	]);	
+	
 	wp_enqueue_script( 'nice-select2','https://bluzky.github.io/nice-select2/dist/js/nice-select2.js', array(), 
 	_S_VERSION, true );
 	wp_enqueue_style( 'nice-select2', 'https://bluzky.github.io/nice-select2/dist/css/nice-select2.css');

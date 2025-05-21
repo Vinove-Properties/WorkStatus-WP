@@ -1435,7 +1435,12 @@ function selectOptionByDataCode(code, selInput) {
         }
     }
 }
-window.addEventListener("load", function (){
+window.addEventListener("load", function (){ 
+    const psCheckBox = document.getElementById('ps-switcher');
+    if(psCheckBox){
+    psCheckBox.checked = false;
+    }
+    
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", wsObj.ipinfo, true); 
     xhttp.setRequestHeader("Content-Type", "application/json");
