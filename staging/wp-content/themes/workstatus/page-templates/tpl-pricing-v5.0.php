@@ -179,26 +179,24 @@
               <div class="plan-include column-two">
                 <ul>
                   <li>Unlimited tracking</li>
-                  <li>Mobile & desktop App</li>
                   <li>Time tracker</li>
-                  <li>Idle detection & reminders</li>
                   <li>Timesheet</li>
-                  <li>Reports</li>
                   <li>Auto tracker</li>
-                  <li>Export & share data</li>
+                  <li>Attendance</li>
                   <li>Manual Timesheet</li>
+                  <li>Bulk Timesheet</li>
+                  <li>Team activity</li>
+                  <li>Timesheet Approval</li>
+                  <li>Breaks</li>
+                  <li>Web Tracker App</li>
                 </ul>
                 <ul>
+                  <li>Mobile & desktop App</li>
+                  <li>Idle detection & reminders</li>
+                  <li>Reports</li>
+                  <li>Export & share data</li>
                   <li>1:1 onboarding tour</li>
-                  <li>Bulk Timesheet</li>
                   <li>24x5 Customer support</li>
-                  <li>Team activity</li>
-                  <li></li>
-                  <li>Timesheet Approval</li>
-                  <li></li>
-                  <li>Breaks</li>
-                  <li></li>
-                  <li>Web Tracker App</li>
                 </ul>
               </div>
             </div>
