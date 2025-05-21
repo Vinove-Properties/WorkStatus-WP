@@ -58,7 +58,7 @@
               <div class="pr-plan">
                 <h3>Productivity Management</h3>
                 <div class="total">2 USER MINIMUM</div>
-                <p>Maximize team output with time tracking, app usage analysis &amp; productivity reports.</p>
+                <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
               </div>
               <div class="card-plan">
                 <span class="wph" id="cst-productivity-one"></span>
@@ -102,8 +102,8 @@
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Project Management</h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Maximize team output with time tracking, app usage analysis & productivity reports.</p>
+                  <div class="total">2 Users Minimum</div>
+                  <p>Ideal for small teams, pay only for the users you need and scale effortlessly.</p>
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="cst-project-basic"></span>
@@ -117,9 +117,8 @@
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Pro Unlimited</h3>
-                  <div class="total">NO USER MINIMUM</div>
-                  <p>Stay on top of projects with seamless time tracking, task management, and budgeting.
-                  </p>
+                  <div class="total">unlimited Users & Projects</div>
+                  <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.</p>
                 </div>
                 <div class="card-plan">
                   <span class="wph" id="cst-project-pro"></span>
@@ -243,7 +242,7 @@
                   <li>Attendance Reports & Analytics</li>
                   <li>Shift Management & Scheduling</li>
                   <li>Late Coming Management & Alerts</li>
-                  <li>Leave & Overtime Management </li>
+                  <li>Leave & Overtime Management</li>
                   <li>1:1 onboarding tour</li>
                   <li>24x5 Customer support</li>
                 </ul>
