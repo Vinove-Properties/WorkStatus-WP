@@ -2275,7 +2275,7 @@ a.mst-link:before {
             font-size: 18px;
             font-weight: 600;
             border-radius: 100px;
-            margin: 0 auto 12px; }
+            margin: 20px auto 12px; }
             .ws-pricing .price-contents .tab-contents .pricing-card .card-left .price_btn:hover {
               background: #051441;
               color: #fff;
@@ -2570,7 +2570,7 @@ a.mst-link:before {
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 20px auto 10px; }
+              margin: 0 auto 10px; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price_btn:hover {
                 background: #051441;
                 color: #fff;
