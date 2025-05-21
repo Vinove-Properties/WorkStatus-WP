@@ -2347,7 +2347,8 @@ a.mst-link:before {
           border-top: 0;
           padding-top: 0; }
         .ws-pricing .price-contents .tab-contents .pricing-card .price-slider {
-          margin: 20px 0 0; }
+          margin: 20px 0 0;
+          position: relative; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider.margin-0 {
             margin: 0; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider label {
@@ -2362,11 +2363,9 @@ a.mst-link:before {
               color: #5D2BFF; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"] {
             width: 100%;
-            -webkit-appearance: none;
-            height: 6px;
-            border-radius: 4px;
-            background: #5d2bff;
-            position: relative; }
+            margin-top: 25px;
+            background: transparent;
+            appearance: none; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-thumb {
               -webkit-appearance: none;
               width: 18px;
@@ -2375,19 +2374,22 @@ a.mst-link:before {
               border: 2px solid #fff;
               border-radius: 50%;
               cursor: pointer;
-              position: relative;
-              z-index: 2;
-              transform: translateX(-50%); }
+              margin-top: -6px; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-moz-range-thumb {
               width: 18px;
               height: 18px;
               background: #5d2bff;
               border: 2px solid #fff;
               border-radius: 50%;
-              cursor: pointer;
-              position: relative;
-              z-index: 2;
-              margin-left: -8px; }
+              cursor: pointer; }
+            .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-runnable-track {
+              height: 6px;
+              background: #5d2bff;
+              border-radius: 4px; }
+            .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-moz-range-track {
+              height: 6px;
+              background: #5d2bff;
+              border-radius: 4px; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-thumb:focus, .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-moz-range-thumb:focus {
               outline: 2px solid #fff;
               box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4); }
@@ -2406,17 +2408,17 @@ a.mst-link:before {
               left: 0;
               transform: translateX(-50%); }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(1) {
-                left: 0%; }
+                left: 2%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(2) {
-                left: 18.5%; }
+                left: 20.5%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(3) {
-                left: 38%; }
+                left: 40%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(4) {
-                left: 57%; }
+                left: 59%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(5) {
-                left: 76%; }
+                left: 78%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:nth-child(6) {
-                left: 95%; }
+                left: 97%; }
               .ws-pricing .price-contents .tab-contents .pricing-card .price-slider .slider-labels .label:before {
                 content: "";
                 width: 1.5px;
@@ -2568,7 +2570,7 @@ a.mst-link:before {
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 0 auto 10px; }
+              margin: 20px auto 10px; }
               .ws-pricing .price-contents .tab-contents .price-flex .price-column .price-box .price_btn:hover {
                 background: #051441;
                 color: #fff;

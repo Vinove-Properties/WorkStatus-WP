@@ -381,7 +381,7 @@
         }
 
         .price-slider {
-          margin: 20px 0 0;
+          margin: 20px 0 0; position: relative;
           &.margin-0 {
             margin: 0;
           }
@@ -399,44 +399,58 @@
             }
           }
 
+        
+
+
+
+
           input[type="range"] {
-            width: 100%;
-            -webkit-appearance: none;
-            height: 6px;
-            border-radius: 4px;
-            background: #5d2bff;
-            position: relative;
+    width: 100%;
+    margin-top: 25px; // pushes range down so dots show above
+    background: transparent;
+    appearance: none;
 
-            &::-webkit-slider-thumb {
-              -webkit-appearance: none;
-              width: 18px;
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
               height: 18px;
               background: #5d2bff;
               border: 2px solid #fff;
-              border-radius: 50%;
-              cursor: pointer;
-              position: relative;
-              z-index: 2;
-              transform: translateX(-50%);
-            }
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -6px; // align with track
+    }
 
-            &::-moz-range-thumb {
-              width: 18px;
+    &::-moz-range-thumb {
+    width: 18px;
               height: 18px;
               background: #5d2bff;
               border: 2px solid #fff;
-              border-radius: 50%;
-              cursor: pointer;
-              position: relative;
-              z-index: 2;
-              margin-left: -8px;
-            }
-            &::-webkit-slider-thumb:focus,
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &::-webkit-slider-runnable-track {
+      height: 6px;
+      background: #5d2bff;
+      border-radius: 4px;
+    }
+
+    &::-moz-range-track {
+      height: 6px;
+      background: #5d2bff;
+      border-radius: 4px;
+    }
+
+        &::-webkit-slider-thumb:focus,
             &::-moz-range-thumb:focus {
               outline: 2px solid #fff;
               box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4);
+              
             }
-          }
+
+  }
+
 
           .slider-labels {
             display: flex;
@@ -455,22 +469,22 @@
               transform: translateX(-50%);
 
               &:nth-child(1) {
-                left: 0%;
+                left: 2%;
               }
               &:nth-child(2) {
-                left: 18.5%;
+                left: 20.5%;
               }
               &:nth-child(3) {
-                left: 38%;
+                left: 40%;
               }
               &:nth-child(4) {
-                left: 57%;
+                left: 59%;
               }
               &:nth-child(5) {
-                left: 76%;
+                left: 78%;
               }
               &:nth-child(6) {
-                left: 95%;
+                left: 97%;
               }
 
               &:before {
@@ -662,7 +676,7 @@
               font-size: 18px;
               font-weight: 600;
               border-radius: 100px;
-              margin: 0 auto 10px;
+              margin: 20px auto 10px;
               &:hover {
                 background: #051441;
                 color: #fff;
@@ -910,6 +924,11 @@
   }
 }
 
+
+
+
+
+
 .ws-pricing
   .price-contents
   .tab-contents.custom-pln
@@ -959,6 +978,13 @@
   .max-price {
   display: inline-block;
 }
+
+
+
+
+
+
+
 
 //Section hide CSS Ends/
 

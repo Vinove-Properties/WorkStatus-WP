@@ -1217,6 +1217,8 @@
       const activeTabs = document.querySelectorAll(".tab-contents.active");
       activeTabs.forEach(tab => updateSlider(tab));
       }
+
+      
       
       // Initial load
       initAllVisibleSliders();
