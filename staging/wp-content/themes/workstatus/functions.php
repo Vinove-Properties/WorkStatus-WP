@@ -1281,12 +1281,12 @@ function getAlternatePricing( $col ){
 	$colThr = '<strong class="prloc">'.locatePricing($col['t3-pricing']).'</strong>';
 	$colFor = '<strong class="prloc">'.locatePricing($col['t4-pricing']).'</strong>';
 	
-	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p></div>	
-	<div class="ws-column main-comps" id="wspriceelm" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.$postFix.'</div>
-	<div class="ws-column main-comps" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.$postFix.'</div>
-	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t2-pricing']).'">'.$colTwo.$postFix.'</div>
-	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t3-pricing']).'">'.$colThr.$postFix.'</div>
-	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t4-pricing']).'">'.$colFor.$postFix.'</div>';	
+	$elm = '<div class="ws-column ws-lftcolumn"><p>'.$lstPricing.'</p>'.$postFix.'</div>	
+	<div class="ws-column main-comps" id="wspriceelm" data-amt="'.replaceCrSymbols($col['ws-pricing']).'">'.$colWs.'</div>
+	<div class="ws-column main-comps" data-amt="'.replaceCrSymbols($col['t1-pricing']).'">'.$colOne.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t2-pricing']).'">'.$colTwo.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t3-pricing']).'">'.$colThr.'</div>
+	<div class="ws-column" data-amt="'.replaceCrSymbols($col['t4-pricing']).'">'.$colFor.'</div>';	
     return $elm;
 }
 
