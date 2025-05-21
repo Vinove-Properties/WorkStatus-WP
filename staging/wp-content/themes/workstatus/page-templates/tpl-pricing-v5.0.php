@@ -143,7 +143,7 @@
               <li>Project Management Integrations</li>
               <li>1:1 onboarding tour with our team</li>
               <li>Multiple Filters & Custom Views </li>
-              <li>First-in-line 24/5 priority support</li>
+              <li>First-in-line 24x5 priority support</li>
             </ul>
           </div>
         </div>
