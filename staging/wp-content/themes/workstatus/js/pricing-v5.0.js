@@ -193,7 +193,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         const value     = plans[key];
         let elmBasic    = document.getElementById("cst-"+key+"-one");
         if( elmBasic ){
-          elmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+value['monthly']+'</small>' : currency+value[type];
+          elmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+currency+value['monthly']+'</small>' : currency+value[type];
           let byNow = document.getElementById("bn-"+key+"-one");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value.id, type));
@@ -202,7 +202,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmPmBasic    = document.getElementById("cst-"+key+"-basic");
         if( elmPmBasic ){
-          elmPmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['basic']['yearly'])+'<small class="max-price">'+value['basic']['monthly']+'</small>' : currency+value['basic'][type];
+          elmPmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['basic']['yearly'])+'<small class="max-price">'+currency+value['basic']['monthly']+'</small>' : currency+value['basic'][type];
           let byNow = document.getElementById("bn-"+key+"-basic");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value['basic'].id, type));
@@ -211,7 +211,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmPmPro    = document.getElementById("cst-"+key+"-pro");
         if( elmPmPro ){
-          elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<small class="max-price">'+value['pro']['monthly']+'</small>' : currency+value['pro'][type];
+          elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<small class="max-price">'+currency+value['pro']['monthly']+'</small>' : currency+value['pro'][type];
 
           let byNow = document.getElementById("bn-"+key+"-pro");
           if( byNow ){
@@ -225,9 +225,9 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
           let elmInput = document.getElementById("elm-time-hd");
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
-            elmTime.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
-            //elmTime.innerHTML += '<span class="prio">/'+type+'</span>';
-            elmTime.innerHTML += '<span class="prio">/monthly</span>';
+            elmTime.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+currency+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
+            elmTime.innerHTML += '<span class="prio">/'+type+'</span>';
+            //elmTime.innerHTML += '<span class="prio">/monthly</span>';
             let byNow = document.getElementById("bn-"+key+"-three");
             if( byNow ){
               byNow.innerText = "Buy Now";
@@ -254,9 +254,9 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
-            elmAttendance.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
-            //elmAttendance.innerHTML += '<span class="prio">/'+type+'</span>';
-            elmAttendance.innerHTML += '<span class="prio">/monthly</span>';
+            elmAttendance.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+currency+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
+            elmAttendance.innerHTML += '<span class="prio">/'+type+'</span>';
+            //elmAttendance.innerHTML += '<span class="prio">/monthly</span>';
             let byNow = document.getElementById("bn-"+key+"-four");
             if( byNow ){
               byNow.innerText = "Buy Now";
@@ -278,9 +278,9 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
         let elmEverything    = document.getElementById("cst-"+key+"-five");
         if( elmEverything ){
-          elmEverything.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+value['monthly']+'</small>' : currency+value[type];
-          //elmEverything.innerHTML += '<span class="prio">/'+type+'</span>';
-          elmEverything.innerHTML += '<span class="prio">/monthly</span>';
+          elmEverything.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+currency+value['monthly']+'</small>' : currency+value[type];
+          elmEverything.innerHTML += '<span class="prio">/'+type+'</span>';
+          //elmEverything.innerHTML += '<span class="prio">/monthly</span>';
           let byNow = document.getElementById("bn-"+key+"-five");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value.id, type));
