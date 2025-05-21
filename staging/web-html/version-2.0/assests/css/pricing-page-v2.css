@@ -2126,9 +2126,7 @@ a.mst-link:before {
         border-radius: 15px 0 0 15px;
         color: #fff; }
       .ws-pricing .tab-nav ul li:hover a {
-        background: #5d2bff;
-        border-radius: 15px 0 0 15px;
-        color: #fff; }
+        border-radius: 15px 0 0 15px; }
     .ws-pricing .tab-nav:before {
       content: "";
       position: absolute;
