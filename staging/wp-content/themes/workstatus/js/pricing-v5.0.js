@@ -36,7 +36,7 @@ pricingTabs.forEach(function(tab){
 const laCountries   = [ "AR", "BO", "BR", "CL", "CO", "CR", "CU", "DO", "EC", "SV", "GT", "HN", "MX", "NI", "PA", "PY", "PE", "UY", "VE" ];
 const eurCountries  = [ "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE" ];
 const afCountries   = [ "DZ", "AO", "BJ", "BW", "BF", "BI", "CV", "CM", "CF", "TD", "KM", "CD", "CG", "DJ", "EG", "GQ", "ER", "SZ", "ET", "GA", "GM", "GH", "GN", "GW", "CI", "KE", "LS", "LR", "LY", "MG", "MW", "ML", "MR", "MU", "MA", "MZ", "NA", "NE", "NG", "RW", "ST", "SN", "SC", "SL", "SO", "ZA", "SS", "SD", "TZ", "TG", "TN", "UG", "ZM", "ZW" ];
-const usRegion = ["BG", "NZ", "AU", "CA", "SG", "US", "AT", "BE", "HR", "CY", "EE", "FI", "FR", "DE", "GR", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PT", "SK", "SI", "ES", "LI", 
+const usRegion      = ["BG", "NZ", "AU", "CA", "SG", "US", "AT", "BE", "HR", "CY", "EE", "FI", "FR", "DE", "GR", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PT", "SK", "SI", "ES", "LI", 
 "CH", "GI", "GB"];
 
 function wsGetCookieVal(cookieName){
@@ -110,12 +110,12 @@ const pricingData = {
     'meta':{"currency":'$', "location":69, "pm":99, "insights":99}
   },
   "OT":{
-    "productivity":{'monthly':3.5, 'yearly':33.6,id:7016},
+    "productivity":{'monthly':4, 'yearly':36,id:7016},
     "project":{
-      'basic':{'monthly':2.1, 'yearly':20.16, id:7018},
-      'pro':{'monthly':105, 'yearly':1008, id:7020}
+      'basic':{'monthly':2.5, 'yearly':24, id:7018},
+      'pro':{'monthly':100, 'yearly':960, id:7020}
     },
-    "everything":{'monthly':4.9, 'yearly':46.20, id:7022},
+    "everything":{'monthly':5, 'yearly':48, id:7022},
     "time":{
       '50':{'monthly':35, 'yearly':336, id:7024},
       '100':{'monthly':65, 'yearly':600, id:7026},
@@ -226,7 +226,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
             elmTime.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
-            elmTime.innerHTML += '<span class="prio">/'+type+'</span>';
+            //elmTime.innerHTML += '<span class="prio">/'+type+'</span>';
+            elmTime.innerHTML += '<span class="prio">/monthly</span>';
             let byNow = document.getElementById("bn-"+key+"-three");
             if( byNow ){
               byNow.innerText = "Buy Now";
@@ -254,7 +255,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
           if( elmInput.value !== "custom" ){
             curTabElm.classList.remove("custom-pln");
             elmAttendance.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value[elmInput.value]['yearly'])+'<small class="max-price">'+value[elmInput.value]['monthly']+'</small>' : currency+value[elmInput.value][type];
-            elmAttendance.innerHTML += '<span class="prio">/'+type+'</span>';
+            //elmAttendance.innerHTML += '<span class="prio">/'+type+'</span>';
+            elmAttendance.innerHTML += '<span class="prio">/monthly</span>';
             let byNow = document.getElementById("bn-"+key+"-four");
             if( byNow ){
               byNow.innerText = "Buy Now";
@@ -277,8 +279,8 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmEverything    = document.getElementById("cst-"+key+"-five");
         if( elmEverything ){
           elmEverything.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+value['monthly']+'</small>' : currency+value[type];
-          elmEverything.innerHTML += '<span class="prio">/'+type+'</span>';
-
+          //elmEverything.innerHTML += '<span class="prio">/'+type+'</span>';
+          elmEverything.innerHTML += '<span class="prio">/monthly</span>';
           let byNow = document.getElementById("bn-"+key+"-five");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value.id, type));
