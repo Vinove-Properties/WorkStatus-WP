@@ -2363,7 +2363,7 @@ a.mst-link:before {
               color: #5D2BFF; }
           .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"] {
             width: 100%;
-            margin-top: 25px;
+            margin-top: 5px;
             background: transparent;
             appearance: none; }
             .ws-pricing .price-contents .tab-contents .pricing-card .price-slider input[type="range"]::-webkit-slider-thumb {
