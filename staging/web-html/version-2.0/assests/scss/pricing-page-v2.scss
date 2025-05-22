@@ -1150,7 +1150,7 @@
   }
 
   .right-plan-section {
-    .plan-wrap {
+    .plan-wrap {padding: 25px 20px;
       h2 {
         font-size: 25px;
       }
@@ -1163,7 +1163,8 @@
           flex-direction: column;
           row-gap: 10px;
           .ctbtn {
-            min-width: 250px;
+           width: 230px;
+           padding: 17px 14px;
             &.ctbtn2 {
               margin-left: 0;
             }
