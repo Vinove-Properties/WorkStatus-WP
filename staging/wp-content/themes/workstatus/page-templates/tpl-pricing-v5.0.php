@@ -297,6 +297,7 @@
       </div>
     </div>
   </section>
+</div>  
   <section class="right-plan-section post-animation">
     <div class="container">
       <div class="plan-wrap">

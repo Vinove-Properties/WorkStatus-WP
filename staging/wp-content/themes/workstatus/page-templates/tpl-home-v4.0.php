@@ -575,7 +575,7 @@
     }
     
     //get_template_part('common/ws', 'pricing');  
-    get_template_part('common/pricing', 'v4.0', ['elm-class' => "bg-light padding-b-120"]);
+    get_template_part('common/pricing', 'v5.0', ['elm-class' => "bg-light padding-b-120"]);
     ?>
   <?php  
     $faq = get_field('faq');    

@@ -740,7 +740,7 @@ $thisPostID = $post->ID;
 		<?php  
     //get_template_part('common/ws', 'pricing');
     $planCategory = get_post_meta( $post->ID, 'ws-pcat', true );
-    get_template_part('common/pricing', 'v4.0', ['plan' => $planCategory]);
+    get_template_part('common/pricing', 'v5.0', ['plan' => $planCategory]);
     
 		$use_cases_section = get_field('use_cases_section');
 		
