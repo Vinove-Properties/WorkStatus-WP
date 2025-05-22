@@ -170,19 +170,19 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
     var currency    = plans['meta']['currency'];
 
-    // let elmLocation = document.getElementById("pl-location");
-    // let elmPm       = document.getElementById("pl-pm");
-    // let elmInsights = document.getElementById("pl-insights");
+    let elmLocation = document.getElementById("pl-location");
+    let elmPm       = document.getElementById("pl-pm");
+    let elmInsights = document.getElementById("pl-insights");
 
-    // if( elmLocation ){
-    // elmLocation.innerHTML    = currency + plans['meta']['location'];  
-    // }
-    // if( elmPm ){
-    // elmPm.innerHTML         = currency + plans['meta']['pm'];  
-    // }
-    // if( elmInsights ){
-    // elmInsights.innerHTML   = currency + plans['meta']['insights'];  
-    // }
+    if( elmLocation ){
+    elmLocation.innerHTML    = currency + plans['meta']['location'];  
+    }
+    if( elmPm ){
+    elmPm.innerHTML         = currency + plans['meta']['pm'];  
+    }
+    if( elmInsights ){
+    elmInsights.innerHTML   = currency + plans['meta']['insights'];  
+    }
     
     // var plan_meta =  WS_PLAN_ID[conCode];
     // console.log(plans);
