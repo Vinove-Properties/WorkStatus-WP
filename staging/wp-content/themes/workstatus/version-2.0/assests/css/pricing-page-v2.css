@@ -7304,7 +7304,8 @@ li.iti__country {
       .right-plan-section .plan-wrap .button-common .cmn-democta {
         flex-wrap: wrap;
         flex-direction: column;
-        row-gap: 10px; }
+        row-gap: 10px;
+        align-content: center; }
         .right-plan-section .plan-wrap .button-common .cmn-democta .ctbtn {
           width: 230px;
           padding: 17px 14px; }
