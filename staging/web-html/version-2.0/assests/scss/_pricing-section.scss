@@ -1314,6 +1314,14 @@
             }
           }
 
+          &.every-card{
+            .card-right{
+              .plan-include{
+                ul{width:100%; padding:0;}
+              }
+            }
+          }
+
           &.is-visible {
             .card-left {
               .price-accordion {

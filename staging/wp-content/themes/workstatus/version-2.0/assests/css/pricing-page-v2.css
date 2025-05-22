@@ -2992,6 +2992,9 @@ h4 {
               margin: 0 0 10px; }
               .ws-pricing .price-contents .tab-contents .pricing-card .card-right .plan-include ul li:before {
                 top: 9px; }
+      .ws-pricing .price-contents .tab-contents .pricing-card.every-card .card-right .plan-include ul {
+        width: 100%;
+        padding: 0; }
       .ws-pricing .price-contents .tab-contents .pricing-card.is-visible .card-left .price-accordion:after {
         transform: rotateX(0);
         top: 18px; }
