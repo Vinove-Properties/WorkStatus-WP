@@ -10,8 +10,6 @@
 @import "_start-journey";
 @import "_footer-section";
 
-
-
 .hero-banner {
   text-align: center;
   background: #fff;
@@ -578,7 +576,7 @@
         .ctbtn {
           background: transparent;
           border: 1px solid $blue;
-          padding:15px 20px;
+          padding: 15px 20px;
           color: $blue;
           &.ctbtn2 {
             border-color: rgba(43, 46, 74, 0.2);
@@ -622,7 +620,8 @@
   }
 }
 
-.top-rated {background: #faf8fe;
+.top-rated {
+  background: #faf8fe;
   .award-grid {
     .award-column {
       background: $white;
@@ -631,12 +630,12 @@
         background: transparent;
       }
       .rate-desp {
-      box-shadow: none;
-      background: none;
+        box-shadow: none;
+        background: none;
         .rate-box {
           background: $white;
-              background: #fff;
-              box-shadow: none
+          background: #fff;
+          box-shadow: none;
         }
       }
     }
@@ -922,7 +921,9 @@
       tr {
         th {
           font-size: 12px;
-          .plan-label{min-height: 60px;}
+          .plan-label {
+            min-height: 60px;
+          }
           .button {
             padding: 11px 15px;
             font-size: 13px;
@@ -971,8 +972,6 @@
       }
     }
   }
-
- 
 
   .comp-table-sticky.sticky {
     top: 68px;
@@ -1041,28 +1040,29 @@
         margin: 25px 0 0;
         justify-content: center;
       }
-  
+
       &:after {
         display: none;
       }
     }
   }
 
-  .top-rated {background: #faf8fe;
-  .award-grid {
-    .award-column {
-      background: $white;
-      border-radius: 15px;
-      
-     .award-logo{box-shadow: none;
-      .is-arrow{display:none;}
-     }
-      
+  .top-rated {
+    background: #faf8fe;
+    .award-grid {
+      .award-column {
+        background: $white;
+        border-radius: 15px;
+
+        .award-logo {
+          box-shadow: none;
+          .is-arrow {
+            display: none;
+          }
+        }
+      }
     }
   }
-}
-
-
 }
 
 @media (max-width: 767px) {
@@ -1151,29 +1151,26 @@
 
   .right-plan-section {
     .plan-wrap {
-      
       h2 {
         font-size: 25px;
       }
       .button-common {
         margin: 20px 0 0;
         justify-content: center;
-  
+
         .cmn-democta {
-    
           flex-wrap: wrap;
           flex-direction: column;
           row-gap: 10px;
           .ctbtn {
-           min-width: 250px;
+            min-width: 250px;
             &.ctbtn2 {
-              margin-left:0;
+              margin-left: 0;
             }
-           
           }
         }
       }
-  
+
       &:after {
         display: none;
       }

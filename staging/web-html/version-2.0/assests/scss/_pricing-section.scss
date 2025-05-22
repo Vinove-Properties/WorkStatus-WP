@@ -56,7 +56,6 @@
             a {
               border-radius: 0 15px 15px 0;
             }
-            
           }
         }
         &:nth-child(2) {
@@ -88,7 +87,7 @@
           color: #fff;
         }
       }
-       li:first-child:hover {
+      li:first-child:hover {
         a {
           border-radius: 15px 0 0 15px;
         }
@@ -388,7 +387,8 @@
         }
 
         .price-slider {
-          margin: 20px 0 0; position: relative;
+          margin: 20px 0 0;
+          position: relative;
           &.margin-0 {
             margin: 0;
           }
@@ -406,58 +406,50 @@
             }
           }
 
-        
-
-
-
-
           input[type="range"] {
-    width: 100%;
-    margin-top: 5px; // pushes range down so dots show above
-    background: transparent;
-    appearance: none;
+            width: 100%;
+            margin-top: 5px; // pushes range down so dots show above
+            background: transparent;
+            appearance: none;
 
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      width: 18px;
+            &::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              width: 18px;
               height: 18px;
               background: #5d2bff;
               border: 2px solid #fff;
-      border-radius: 50%;
-      cursor: pointer;
-      margin-top: -6px; // align with track
-    }
+              border-radius: 50%;
+              cursor: pointer;
+              margin-top: -6px; // align with track
+            }
 
-    &::-moz-range-thumb {
-    width: 18px;
+            &::-moz-range-thumb {
+              width: 18px;
               height: 18px;
               background: #5d2bff;
               border: 2px solid #fff;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+              border-radius: 50%;
+              cursor: pointer;
+            }
 
-    &::-webkit-slider-runnable-track {
-      height: 6px;
-      background: #5d2bff;
-      border-radius: 4px;
-    }
+            &::-webkit-slider-runnable-track {
+              height: 6px;
+              background: #5d2bff;
+              border-radius: 4px;
+            }
 
-    &::-moz-range-track {
-      height: 6px;
-      background: #5d2bff;
-      border-radius: 4px;
-    }
+            &::-moz-range-track {
+              height: 6px;
+              background: #5d2bff;
+              border-radius: 4px;
+            }
 
-        &::-webkit-slider-thumb:focus,
+            &::-webkit-slider-thumb:focus,
             &::-moz-range-thumb:focus {
               outline: 2px solid #fff;
               box-shadow: 0 0 0 4px rgba(93, 43, 255, 0.4);
-              
             }
-
-  }
-
+          }
 
           .slider-labels {
             display: flex;
@@ -932,11 +924,6 @@
   }
 }
 
-
-
-
-
-
 .ws-pricing
   .price-contents
   .tab-contents.custom-pln
@@ -986,13 +973,6 @@
   .max-price {
   display: inline-block;
 }
-
-
-
-
-
-
-
 
 //Section hide CSS Ends/
 
