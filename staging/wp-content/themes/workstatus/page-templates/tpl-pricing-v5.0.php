@@ -253,7 +253,7 @@
               <div class="pr-plan">
                 <h3>Everything</h3>
                 <div class="total">2 Users Minimum</div>
-                <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
+                <p>Stay on top of projects with seamless time tracking, task management, and budgeting.</p>
               </div>
               <div class="card-plan"><span class="wph" id="cst-everything-five"></span></div>
               <a class="price_btn" id="bn-everything-five" href="#">Buy Now</a>
