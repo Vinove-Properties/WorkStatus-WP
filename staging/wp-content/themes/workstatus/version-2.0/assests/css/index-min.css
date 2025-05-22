@@ -8002,7 +8002,7 @@ li.iti__country {
 /*Media Query Start From Here*/
 @media (max-width: 1024px) {
   .top-rated .award-grid .award-column .rate-desp .rate-box {
-    padding: 20px; }
+    padding: 34px 20px; }
   .top-rated .award-grid .award-column .award-logo {
     padding: 20px; }
     .top-rated .award-grid .award-column .award-logo .award-row {
