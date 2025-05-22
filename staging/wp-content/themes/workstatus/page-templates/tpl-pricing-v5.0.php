@@ -62,7 +62,6 @@
               </div>
               <div class="card-plan">
                 <span class="wph" id="cst-productivity-one"></span>
-                <span class="prio">/ user / month</span>
               </div>
               <a class="price_btn" id="bn-productivity-one" href="#">Buy Now</a>
               <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
@@ -106,8 +105,7 @@
                   <p>Ideal for small teams, pay only for the users you need and scale effortlessly.</p>
                 </div>
                 <div class="card-plan">
-                  <span class="wph" id="cst-project-basic"></span>
-                  <span class="prio">/ user / month</span>
+                  <span class="wph" id="cst-project-basic"></span><span class="prio"></span>
                 </div>
                 <a class="price_btn" id="bn-project-basic" href="#">Buy Now</a>
                 <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
@@ -121,8 +119,7 @@
                   <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.</p>
                 </div>
                 <div class="card-plan">
-                  <span class="wph" id="cst-project-pro"></span>
-                  <span class="prio">/ user / month</span>
+                  <span class="wph" id="cst-project-pro"></span><span class="prio"></span>
                 </div>
                 <a class="price_btn" id="bn-project-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
@@ -151,7 +148,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Time Tracking</h3>
-                <div class="total">2 Users Minimum</div>
+                <div class="total">50 Users Minimum</div>
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
@@ -206,7 +203,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Attendance Management</h3>
-                <div class="total">2 Users Minimum</div>
+                <div class="total">50 Users Minimum</div>
                 <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-attendance-four"></span></div>

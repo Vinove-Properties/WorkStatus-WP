@@ -194,6 +194,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmBasic    = document.getElementById("cst-"+key+"-one");
         if( elmBasic ){
           elmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['yearly'])+'<small class="max-price">'+currency+value['monthly']+'</small>' : currency+value[type];
+          elmBasic.innerHTML += '<span class="prio">/user/'+type+'</span>';
           let byNow = document.getElementById("bn-"+key+"-one");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value.id, type));
@@ -203,6 +204,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmPmBasic    = document.getElementById("cst-"+key+"-basic");
         if( elmPmBasic ){
           elmPmBasic.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['basic']['yearly'])+'<small class="max-price">'+currency+value['basic']['monthly']+'</small>' : currency+value['basic'][type];
+          elmPmBasic.nextElementSibling.textContent = '/user/'+type;
           let byNow = document.getElementById("bn-"+key+"-basic");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value['basic'].id, type));
@@ -212,7 +214,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmPmPro    = document.getElementById("cst-"+key+"-pro");
         if( elmPmPro ){
           elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<small class="max-price">'+currency+value['pro']['monthly']+'</small>' : currency+value['pro'][type];
-
+          elmPmPro.nextElementSibling.textContent = '/user/'+type;
           let byNow = document.getElementById("bn-"+key+"-pro");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value['pro'].id, type));
