@@ -20,7 +20,7 @@
         <div class="left">
           <h1>Simple, Flexible Pricing for Every Business</h1>
           <p><span class="no-hidden">No hidden fees</span>—just simple, affordable pricing for teams of all sizes.</p>
-         <!-- <p> Can't find what you are looking for?  <span class="conbtn" onclick="getCalendlyiFrame();"><span>Setup a consulting call</span></span></p>-->
+          <!-- <p> Can't find what you are looking for?  <span class="conbtn" onclick="getCalendlyiFrame();"><span>Setup a consulting call</span></span></p>-->
         </div>
       </div>
     </div>
@@ -81,10 +81,9 @@
                   <li>Teams</li>
                   <li>Time off & holidays</li>
                   <li>Scheduling & attendance</li>
-                 
                 </ul>
                 <ul>
-                   <li>Timesheet approvals</li>
+                  <li>Timesheet approvals</li>
                   <li>Daily & weekly limits</li>
                   <li>Reports</li>
                   <li>Quiet (Stealth) Mode</li>
@@ -134,17 +133,16 @@
             <h3>Included in Every Plan:</h3>
             <ul>
               <li>Unlimited Projects & Tasks</li>
-              <li>Gantt Chart</li>
               <li>Budgeting</li>
-              <li>Kanban Board</li>
               <li>Invoicing</li>
-              <li>Invoicing Integrations</li>
               <li>Project & Task Time Tracking</li>
-              <li>Customer Service Integrations</li>
               <li>Project Management Integrations</li>
-              <li>1:1 onboarding tour with our team</li>
               <li>Multiple Filters & Custom Views </li>
-              <li>First-in-line 24x5 priority support</li>
+              <li>Gantt Chart</li>
+              <li>Kanban Board</li>
+              <li>Invoicing Integrations</li>
+              <li>1:1 onboarding tour with our team</li>
+              <li>24x5 Customer support</li>
             </ul>
           </div>
         </div>
@@ -157,7 +155,7 @@
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
-              </div>              
+              </div>
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-time-hd" value="50" />
@@ -212,7 +210,7 @@
                 <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-attendance-four"></span></div>
-              </div>              
+              </div>
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-attendance-hd" value="50" />
@@ -335,11 +333,12 @@
                 </th>
                 <th><span class="plan-label">Productivity Management</span>
                   <a class="button" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
-                  href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a>
+                    href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a>
                 </th>
                 <th><span class="plan-label">Everything</span>
                   <a class="button higlit" id="ws-coplan-productivity-pro" data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" 
-                  href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a></th>
+                    href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try For Free</a>
+                </th>
                 <th>
                   <span class="plan-label">Enterprise</span>
                   <a class="button" onclick="call_demoEnt('<h2>Get a Tailored Quote for Enterprise Solutions</h2>');" id="ws-plan-ent-temp" href="javascript:void(0);">Request a Quote</a>
