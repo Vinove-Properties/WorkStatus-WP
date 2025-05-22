@@ -169,6 +169,11 @@
     
       .business-growth-section .content-wrapper .column.with-workstatus ul li a{color:#00234b;}
       .compare-projects .features-container .compare-column .tool-col.comp-logo .price.active{margin-top: 20px;}
+      
+      .ws-pricing .price-contents span.prio{position: relative;}
+      body.ps-monthly span.prio span.billed{display:none !important;}
+      .ws-pricing .price-contents span.prio.cw span.billed{width:150%;}
+      .ws-pricing .price-contents span.prio span.billed{font-size: 10px; position:absolute; bottom:-20px; width:100%; right: -6px;}
     </style>
     
     <?php if( isBetaVersion() === false ) : ?>

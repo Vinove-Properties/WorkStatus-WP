@@ -62,7 +62,7 @@
               </div>
               <div class="card-plan">
                 <span class="wph" id="cst-productivity-one"></span>
-              </div>
+              </div>              
               <a class="price_btn" id="bn-productivity-one" href="#">Buy Now</a>
               <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>
               <button onclick="togglePrice()" class="price-accordion" type="button" aria-expanded="false">Features</button>
