@@ -2261,7 +2261,8 @@ a.mst-link:before {
               color: rgba(47, 58, 94, 0.6);
               font-weight: 400;
               font-size: 14px;
-              margin-left: 5px; }
+              margin-left: 5px;
+              line-height: 24px; }
           .ws-pricing .price-contents .tab-contents .pricing-card .card-left .price_btn {
             color: #fff;
             background-color: #27c26c;

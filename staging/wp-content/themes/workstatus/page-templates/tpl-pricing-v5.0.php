@@ -20,7 +20,7 @@
         <div class="left">
           <h1>Simple, Flexible Pricing for Every Business</h1>
           <p><span class="no-hidden">No hidden fees</span>—just simple, affordable pricing for teams of all sizes.</p>
-          <p> Can't find what you are looking for?  <span class="conbtn" onclick="getCalendlyiFrame();"><span>Setup a consulting call</span></span></p>
+         <!-- <p> Can't find what you are looking for?  <span class="conbtn" onclick="getCalendlyiFrame();"><span>Setup a consulting call</span></span></p>-->
         </div>
       </div>
     </div>
@@ -81,9 +81,10 @@
                   <li>Teams</li>
                   <li>Time off & holidays</li>
                   <li>Scheduling & attendance</li>
-                  <li>Timesheet approvals</li>
+                 
                 </ul>
                 <ul>
+                   <li>Timesheet approvals</li>
                   <li>Daily & weekly limits</li>
                   <li>Reports</li>
                   <li>Quiet (Stealth) Mode</li>
