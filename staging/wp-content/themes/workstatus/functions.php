@@ -167,10 +167,7 @@ function workstatus_scripts() {
 			['page-templates/tpl-faqs.php']) 
 		){
 		wp_enqueue_style('faqs', get_stylesheet_directory_uri().'/version-2.0/assests/css/faq.css', array(), _S_VERSION );
-	}elseif( 
-		is_page_template(
-			['page-templates/tpl-about.php']) 
-		){
+	}elseif( is_page_template(['page-templates/tpl-about.php']) ){
 		wp_enqueue_style('about-us', get_stylesheet_directory_uri().'/version-2.0/assests/css/about.css', array(), _S_VERSION );
 	}elseif( 
 		is_page_template(
