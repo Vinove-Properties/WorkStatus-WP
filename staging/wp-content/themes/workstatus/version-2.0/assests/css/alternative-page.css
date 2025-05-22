@@ -6679,6 +6679,21 @@ li.iti__country {
           text-align: center; }
 
 /*Media Query Start From Here*/
+@media (max-width: 1024px) {
+  .top-rated .award-grid .award-column .rate-desp .rate-box {
+    padding: 20px; }
+  .top-rated .award-grid .award-column .award-logo {
+    padding: 20px; }
+    .top-rated .award-grid .award-column .award-logo .award-row {
+      justify-content: center;
+      gap: 15px; }
+      .top-rated .award-grid .award-column .award-logo .award-row .award-col {
+        flex-basis: 45%; }
+        .top-rated .award-grid .award-column .award-logo .award-row .award-col .star {
+          width: 70px;
+          background-size: contain; }
+    .top-rated .award-grid .award-column .award-logo .is-arrow {
+      display: none; } }
 @media (max-width: 767px) {
   .top-rated .award-grid {
     grid-template-columns: repeat(1, 1fr); }

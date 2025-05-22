@@ -106,6 +106,24 @@
 }
 
 @media (max-width: 1024px) {
+   .top-rated {
+    .award-grid {
+      .award-column {
+        .rate-desp{
+          .rate-box{padding:20px;}
+        }
+        .award-logo {padding:20px;
+          .award-row {justify-content: center; gap:15px;
+            .award-col {
+              flex-basis: 45%;
+              .star{width:70px; background-size: contain;}
+            }
+          }
+          .is-arrow{display:none;}
+        }
+      }
+    }
+  }
 }
 @media (max-width: 979px) {
 }
