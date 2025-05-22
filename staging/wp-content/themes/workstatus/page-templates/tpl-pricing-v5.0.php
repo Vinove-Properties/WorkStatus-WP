@@ -156,7 +156,7 @@
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-time-hd" value="50" />
-                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" />
+                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" id="slider"/>
                 <div class="slider-labels">
                   <div class="label" data-users="50">50<span class="tooltip">50 Users</span></div>
                   <div class="label" data-users="100">100<span class="tooltip">100 Users</span></div>
@@ -211,7 +211,7 @@
               <div class="price-slider">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-attendance-hd" value="50" />
-                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" />
+                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" id="slider"/>
                 <div class="slider-labels">
                   <div class="label" data-users="50">50<span class="tooltip">50 Users</span></div>
                   <div class="label" data-users="100">100<span class="tooltip">100 Users</span></div>

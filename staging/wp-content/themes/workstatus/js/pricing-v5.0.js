@@ -421,66 +421,92 @@ function closeCalendlyiFrame(){
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  function updateSlider(tabContent){
+
+  // ✅ Update background gradient of slider
+  function updateSliderBackground(slider) {
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const value = parseFloat(slider.value) || 0;
+
+    const val = ((value - min) / (max - min)) * 100;
+    const filledColor = '#5d2bff';
+    const unfilledColor = 'rgba(93, 43, 255, 0.2)';
+
+    slider.style.background = `linear-gradient(to right, ${filledColor} 0%, ${filledColor} ${val}%, ${unfilledColor} ${val}%, ${unfilledColor} 100%)`;
+    console.log("Slider background updated:", slider.value);
+  }
+
+  // ✅ Handle individual slider section
+  function updateSlider(tabContent) {
     const rangeInput = tabContent.querySelector(".pricingRange");
     const userCountDisplay = tabContent.querySelector(".userCount");
     const sliderLabels = tabContent.querySelectorAll(".slider-labels .label");
 
     if (!rangeInput || !userCountDisplay || !sliderLabels.length) return;
 
-    const userValues = Array.from(sliderLabels).map(label =>
-      label.dataset.users
-    );
+    const userValues = Array.from(sliderLabels).map(label => label.dataset.users);
     const crPlan = tabContent.getAttribute("data-plan");
+
     function setUserCount(index) {
       const value = userValues[index];
       userCountDisplay.textContent = value;
-      
+
       const userCount = [50, 100, 250, 500, 1000, "custom"];
-      const inputLoc  = document.getElementById("current-geo");
-      const elmInput  = document.getElementById("elm-"+crPlan+"-hd");
-      elmInput.value  = userCount[index];
-      const plnIn     = (document.body.classList.contains('ps-monthly')) ? "monthly" : "yearly";
-      setPlanPricing( inputLoc.value, plnIn );
+      const inputLoc = document.getElementById("current-geo");
+      const elmInput = document.getElementById("elm-" + crPlan + "-hd");
+      elmInput.value = userCount[index];
+
+      const plnIn = document.body.classList.contains('ps-monthly') ? "monthly" : "yearly";
+      setPlanPricing(inputLoc.value, plnIn);
+
+      // ✅ Update slider background
+      updateSliderBackground(rangeInput);
     }
 
-    // Initial load
+    // ✅ Initial load
     setUserCount(parseInt(rangeInput.value, 10));
+    updateSliderBackground(rangeInput); // Ensure background updates on load
 
-    // Range input update
+    // ✅ Range input update
     rangeInput.addEventListener("input", function () {
-    setUserCount(parseInt(this.value, 10));
+      setUserCount(parseInt(this.value, 10));
+      updateSliderBackground(this); // Update background on move
     });
 
-    // Label click update
+    // ✅ Label click update
     sliderLabels.forEach((label, index) => {
-    label.addEventListener("click", function(){
-      rangeInput.value = index;
-      setUserCount(index);
-    });
+      label.addEventListener("click", function () {
+        rangeInput.value = index;
+        setUserCount(index);
+        updateSliderBackground(rangeInput); // Update background on label click
+      });
     });
   }
 
-  function initAllVisibleSliders(){
+  // ✅ Initialize all visible tab sliders
+  function initAllVisibleSliders() {
     const activeTabs = document.querySelectorAll(".tab-contents.active");
     activeTabs.forEach(tab => updateSlider(tab));
   }
+
+  // ✅ Initial call
   initAllVisibleSliders();
 
-  // Re-initialize on tab switch
+  // ✅ Re-initialize on tab switch
   const tabs = document.querySelectorAll("#pricing-Tabs li");
   tabs.forEach(tab => {
-  tab.addEventListener("click", function (e) {
-  e.preventDefault();
-  tabs.forEach(t => t.classList.remove("active"));
-  document.querySelectorAll(".tab-contents").forEach(c => c.classList.remove("active"));
-  this.classList.add("active");
-  const tabId = this.dataset.tab;
-  const activeContent = document.querySelector(tabId);
-  if (activeContent) {
-    activeContent.classList.add("active");
-    initAllVisibleSliders(); // reinitialize
-  }
-  });
+    tab.addEventListener("click", function (e) {
+      e.preventDefault();
+      tabs.forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".tab-contents").forEach(c => c.classList.remove("active"));
+
+      this.classList.add("active");
+      const tabId = this.dataset.tab;
+      const activeContent = document.querySelector(tabId);
+      if (activeContent) {
+        activeContent.classList.add("active");
+        initAllVisibleSliders(); // Re-initialize visible sliders
+      }
+    });
   });
 });

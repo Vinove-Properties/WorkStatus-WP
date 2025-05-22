@@ -202,7 +202,7 @@
               </div>
               <div class="price-slider margin-0">
                 <label for="pricingRange">Users: <span class="userCount">50</span></label>
-                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" />
+                <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" id="slider" />
                 <div class="slider-labels">
                   <div class="label" data-users="50">50<span class="tooltip">50 Users</span></div>
                   <div class="label" data-users="100">100<span class="tooltip">100 Users</span></div>
@@ -1178,71 +1178,87 @@
     <?php require_once 'common/footer.php';?>
     <script>
       //Script for pricing slider
-      
-      document.addEventListener("DOMContentLoaded", function () {
-      function updateSlider(tabContent) {
-      const rangeInput = tabContent.querySelector(".pricingRange");
-      const userCountDisplay = tabContent.querySelector(".userCount");
-      const sliderLabels = tabContent.querySelectorAll(".slider-labels .label");
-      
-      if (!rangeInput || !userCountDisplay || !sliderLabels.length) return;
-      
-      const userValues = Array.from(sliderLabels).map(label =>
-      label.dataset.users
-      );
-      
-      function setUserCount(index) {
+     document.addEventListener("DOMContentLoaded", function () {
+
+  // Update background gradient of slider
+  function updateSliderBackground(slider) {
+    const min = parseFloat(slider.min) || 0;
+    const max = parseFloat(slider.max) || 100;
+    const value = parseFloat(slider.value) || 0;
+
+    const val = ((value - min) / (max - min)) * 100;
+    const filledColor = '#5d2bff';
+    const unfilledColor = 'rgba(93, 43, 255, 0.2)';
+
+    slider.style.background = `linear-gradient(to right, ${filledColor} 0%, ${filledColor} ${val}%, ${unfilledColor} ${val}%, ${unfilledColor} 100%)`;
+    console.log("Slider background updated:", slider.value);
+  }
+
+  // Initialize single slider block
+  function updateSlider(tabContent) {
+    const rangeInput = tabContent.querySelector(".pricingRange");
+    const userCountDisplay = tabContent.querySelector(".userCount");
+    const sliderLabels = tabContent.querySelectorAll(".slider-labels .label");
+
+    if (!rangeInput || !userCountDisplay || !sliderLabels.length) return;
+
+    const userValues = Array.from(sliderLabels).map(label => label.dataset.users);
+
+    function setUserCount(index) {
       const value = userValues[index];
       userCountDisplay.textContent = value;
-      }
-      
-      // Initial load
-      setUserCount(parseInt(rangeInput.value, 10));
-      
-      // Range input update
-      rangeInput.addEventListener("input", function () {
+      rangeInput.value = index;
+      updateSliderBackground(rangeInput);
+    }
+
+    // Initial set
+    setUserCount(parseInt(rangeInput.value, 10));
+
+    // On slider move
+    rangeInput.addEventListener("input", function () {
       setUserCount(parseInt(this.value, 10));
-      });
-      
-      // Label click update
-      sliderLabels.forEach((label, index) => {
+    });
+
+    // On label click
+    sliderLabels.forEach((label, index) => {
       label.addEventListener("click", function () {
-        rangeInput.value = index;
         setUserCount(index);
       });
-      });
-      }
-      
-      function initAllVisibleSliders() {
-      const activeTabs = document.querySelectorAll(".tab-contents.active");
-      activeTabs.forEach(tab => updateSlider(tab));
-      }
+    });
+  }
 
-      
-      
-      // Initial load
-      initAllVisibleSliders();
-      
-      // Re-initialize on tab switch
-      const tabs = document.querySelectorAll("#pricing-Tabs li");
-      tabs.forEach(tab => {
-      tab.addEventListener("click", function (e) {
+  // Initialize all active tabs
+  function initAllVisibleSliders() {
+    const activeTabs = document.querySelectorAll(".tab-contents.active");
+    activeTabs.forEach(tab => updateSlider(tab));
+  }
+
+  // Initial load
+  initAllVisibleSliders();
+
+  // Handle tab switch
+  const tabs = document.querySelectorAll("#pricing-Tabs li");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", function (e) {
       e.preventDefault();
-      // Remove active class from all
+
+      // Deactivate all
       tabs.forEach(t => t.classList.remove("active"));
       document.querySelectorAll(".tab-contents").forEach(c => c.classList.remove("active"));
-      
-      // Add active class to clicked
+
+      // Activate clicked
       this.classList.add("active");
       const tabId = this.dataset.tab;
       const activeContent = document.querySelector(tabId);
       if (activeContent) {
         activeContent.classList.add("active");
-        initAllVisibleSliders(); // reinitialize
+        initAllVisibleSliders(); // Re-init sliders
       }
-      });
-      });
-      });
+    });
+  });
+
+});
+
       
       
       
