@@ -1747,7 +1747,7 @@ function passCheckc_sufu(event){
 
 su_name.addEventListener("keyup", nameCheck_su);
 su_name.addEventListener("keypress", nameCheck_su);
-su_name.addEventListener("keydown", ws_validateStr);
+su_name.addEventListener("keydown", nameCheck_su);
 su_name.addEventListener("focusout", nameCheck_su);
 
 su_email.addEventListener("keyup", emailCheck_su);
