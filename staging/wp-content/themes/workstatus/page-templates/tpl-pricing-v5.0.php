@@ -119,7 +119,7 @@
                   <p>Manage unlimited users and projects with no restrictions, perfect for small to mid-sized enterprises.</p>
                 </div>
                 <div class="card-plan">
-                  <span class="wph" id="cst-project-pro"></span><span class="prio"></span>
+                  <span class="wph" id="cst-project-pro"></span><span class="prio cw"></span>
                 </div>
                 <a class="price_btn" id="bn-project-pro" href="#">Buy Now</a>
                 <span class="tryit">or <a data-href="https://app.workstatus.io/auth/register/?pid=42&type=monthly" href="javascript:void(0);" onclick="return get_ws_signupform(this);">Try It Free</a></span>

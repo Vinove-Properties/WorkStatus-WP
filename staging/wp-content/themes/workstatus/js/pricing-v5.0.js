@@ -215,7 +215,7 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
         let elmPmPro    = document.getElementById("cst-"+key+"-pro");
         if( elmPmPro ){
           elmPmPro.innerHTML = (type == "yearly") ? currency+getMonthlyCost(value['pro']['yearly'])+'<small class="max-price">'+currency+value['pro']['monthly']+'</small>' : currency+value['pro'][type];
-          elmPmPro.nextElementSibling.innerHTML = '/user/month<span class="billed">Billed Annually</span>';
+          elmPmPro.nextElementSibling.innerHTML = '/month<span class="billed">Billed Annually</span>';
           let byNow = document.getElementById("bn-"+key+"-pro");
           if( byNow ){
             byNow.setAttribute("href", getwsPlanurl(value['pro'].id, type));
