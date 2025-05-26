@@ -107,7 +107,7 @@ const pricingData = {
       '500':{'monthly':300, 'yearly':2880, id:7039},
       '1000':{'monthly':500, 'yearly':4800, id:7041}
     },
-    'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
+    'meta':{"currency":'$', "location":1, "pm":1, "insights":2}
   },
   "OT":{
     "productivity":{'monthly':4, 'yearly':36,id:7016},
@@ -130,7 +130,7 @@ const pricingData = {
       '500':{'monthly':210, 'yearly':2040, id:7040},
       '1000':{'monthly':350, 'yearly':3360, id:7042}
     },
-    'meta':{"currency":'$', "location":1, "pm":2, "insights":2}
+    'meta':{"currency":'$', "location":1, "pm":1, "insights":2}
   }
 };
 

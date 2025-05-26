@@ -1147,6 +1147,7 @@
             </div>
           </div>
         </div>
+        
         <div class="addond-col" style="display:none;">
           <div class="add-box">
             <div class="topDiv">
