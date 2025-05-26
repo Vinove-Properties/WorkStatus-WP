@@ -148,7 +148,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Time Tracking</h3>
-                <div class="total">50 Users Minimum</div>
+                <!-- <div class="total">50 Users Minimum</div> -->
                 <p>Unlimited time tracking for all teams, suitable for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
@@ -203,7 +203,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Attendance Management</h3>
-                <div class="total">50 Users Minimum</div>
+                <!-- <div class="total">50 Users Minimum</div> -->
                 <p>Unlimited attendance tracking for all employees, perfect for businesses of any size.</p>
                 <h4 class="for-custom">Fit your needs</h4>
                 <div class="card-plan"><span class="wph" id="cst-attendance-four"></span></div>
@@ -1090,7 +1090,7 @@
       </div>
     </div>
   </div>
-  <section id="ws-pr-addon" class="option-data padding-t-120  padding-b-120" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?> >
+  <section id="ws-pr-addon" class="option-data padding-t-120 padding-b-120" <?php echo ( $activePlan !== "productivity" ) ? 'style="display: none;"' : ''; ?> >
     <div class="container">
       <div class="top-section">
         <h2>Optional add-ons</h2>
