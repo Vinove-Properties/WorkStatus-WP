@@ -101,7 +101,7 @@
               <div class="price-box">
                 <div class="pr-plan">
                   <h3>Project Management</h3>
-                  <div class="total">2 Users Minimum</div>
+                  <!-- <div class="total">2 Users Minimum</div> -->
                   <p>Ideal for small teams, pay only for the users you need and scale effortlessly.</p>
                 </div>
                 <div class="card-plan">
@@ -249,7 +249,7 @@
             <div class="card-left">
               <div class="pr-plan">
                 <h3>Everything</h3>
-                <div class="total">2 Users Minimum</div>
+                <!-- <div class="total">2 Users Minimum</div> -->
                 <p>Stay on top of projects with seamless time tracking, task management, and budgeting.</p>
               </div>
               <div class="card-plan"><span class="wph" id="cst-everything-five"></span></div>
