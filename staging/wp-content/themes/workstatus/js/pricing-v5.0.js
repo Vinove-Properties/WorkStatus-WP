@@ -22,7 +22,7 @@ function pricingActiveTaber(e){
           console.error("No element found for the selector: " + clickedTab);
         }
     }
-    const plans = ['wsp-productivity', 'wsp-project', 'wsp-time', 'wsp-attendance'];
+    const plans = ['wsp-productivity', 'wsp-project', 'wsp-time', 'wsp-attendance', 'wsp-everything'];
     plans.forEach((elm) => {
       document.body.classList.remove(elm);
     });
@@ -84,7 +84,7 @@ const pricingData = {
       '500':{'monthly':15000, 'yearly':144000, id:7013},
       '1000':{'monthly':20000, 'yearly':192000, id:7014}
     },
-    'meta':{"currency":'₹', "location":69, "pm":60, "insights":99}
+    'meta':{"currency":'₹', "tracking":99, "insights":99, "attendance":60}
   },
   "UR":{
     "productivity":{'monthly':5, 'yearly':48,id:7015},
@@ -107,7 +107,7 @@ const pricingData = {
       '500':{'monthly':300, 'yearly':2880, id:7039},
       '1000':{'monthly':500, 'yearly':4800, id:7041}
     },
-    'meta':{"currency":'$', "location":1, "pm":1, "insights":2}
+    'meta':{"currency":'$', "tracking":2, "insights":2, "attendance":1}
   },
   "OT":{
     "productivity":{'monthly':4, 'yearly':36,id:7016},
@@ -130,7 +130,7 @@ const pricingData = {
       '500':{'monthly':210, 'yearly':2040, id:7040},
       '1000':{'monthly':350, 'yearly':3360, id:7042}
     },
-    'meta':{"currency":'$', "location":1, "pm":1, "insights":2}
+    'meta':{"currency":'$', "tracking":2, "insights":2, "attendance":1}
   }
 };
 
@@ -170,18 +170,21 @@ function setPlanPricing( conCode, type = 'yearly', isAjax = false ){
 
     var currency    = plans['meta']['currency'];
 
-    let elmLocation = document.getElementById("pl-location");
-    let elmPm       = document.getElementById("pl-pm");
+    
+    
+
+    let elmAtn = document.getElementById("pl-tracking-atn");
+    let elmPm       = document.getElementById("pl-tracking");
     let elmInsights = document.getElementById("pl-insights");
 
-    if( elmLocation ){
-    elmLocation.innerHTML    = currency + plans['meta']['location'];  
+    if( elmAtn ){
+      elmAtn.innerHTML    = currency + plans['meta']['attendance'];  
     }
     if( elmPm ){
-    elmPm.innerHTML         = currency + plans['meta']['pm'];  
+      elmPm.innerHTML         = currency + plans['meta']['tracking'];  
     }
     if( elmInsights ){
-    elmInsights.innerHTML   = currency + plans['meta']['insights'];  
+      elmInsights.innerHTML   = currency + plans['meta']['insights'];  
     }
     
     // var plan_meta =  WS_PLAN_ID[conCode];
@@ -497,7 +500,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Re-initialize on tab switch
   const tabs = document.querySelectorAll("#pricing-Tabs li");
   tabs.forEach(tab => {
-    tab.addEventListener("click", function (e) {
+    tab.addEventListener("click", function (e){
       e.preventDefault();
       tabs.forEach(t => t.classList.remove("active"));
       document.querySelectorAll(".tab-contents").forEach(c => c.classList.remove("active"));

@@ -174,6 +174,10 @@
       body.ps-monthly span.prio span.billed{display:none !important;}
       .ws-pricing .price-contents span.prio.cw span.billed{width:150%;}
       .ws-pricing .price-contents span.prio span.billed{font-size: 10px; position:absolute; bottom:-20px; width:100%; right: -6px;}
+      
+      body.wsp-productivity .addond-col.elm-tracking-atn,
+      body.wsp-everything .addond-col.elm-tracking-atn,
+      body.wsp-attendance .addond-col.elm-tracking{display: none;}
     </style>
     
     <?php if( isBetaVersion() === false ) : ?>

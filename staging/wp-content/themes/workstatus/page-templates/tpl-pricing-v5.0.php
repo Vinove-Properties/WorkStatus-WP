@@ -33,7 +33,7 @@
           <li class="<?php echo ($activePlan == "project") ? 'active' : ''; ?>" data-tab="#tab02"><a data-plan="wsp-project" href="#tab02">Project</a></li>
           <li class="<?php echo ($activePlan == "time") ? 'active' : ''; ?>" data-tab="#tab03"><a data-plan="wsp-time" href="#tab03">Time</a></li>
           <li class="<?php echo ($activePlan == "attendance") ? 'active' : ''; ?>" data-tab="#tab04"><a data-plan="wsp-attendance" href="#tab04">Attendance</a></li>
-          <li class="<?php echo ($activePlan == "everything") ? 'active' : ''; ?>" data-tab="#tab05"><a href="#tab04">Everything<img  alt="info" class="tooltip-icon" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/info-icon.svg"  width="12" height="12">
+          <li class="<?php echo ($activePlan == "everything") ? 'active' : ''; ?>" data-tab="#tab05"><a data-plan="wsp-everything" href="#tab05">Everything<img  alt="info" class="tooltip-icon" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/info-icon.svg"  width="12" height="12">
             <span class="info-text">Our most powerful plan - Includes all Workstatus features</span></a>
           </li>
         </ul>
@@ -1098,17 +1098,15 @@
           Features marked with * can be added via add-ons below.
         </p>
       </div>
-      <div class="addons-row">
+      <div class="addons-row">        
         
-        <div class="addond-col">
+        <div class="addond-col elm-tracking">
           <div class="add-box">
             <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-02.svg"
-                alt="ws" width="45" height="45">
-              </div>
+              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-02.svg" alt="ws" width="45" height="45"></div>
               <div class="tcon">
                 <h4>Field Force Tracking</h4>
-                <span class="price">Starts at <span id="pl-pm">$2</span></span>
+                <span class="price">Starts at <span id="pl-tracking"></span></span>
                 <span class="unit">/ user / mo</span>
               </div>
             </div>
@@ -1122,15 +1120,13 @@
           </div>
         </div>
 
-        <div class="addond-col">
+        <div class="addond-col elm-insights">
           <div class="add-box">
             <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-03.svg"
-                alt="ws" width="45" height="45">
-              </div>
+              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-03.svg" alt="ws" width="45" height="45"></div>
               <div class="tcon">
                 <h4>Insights</h4>
-                <span class="price">Starts at <span id="pl-insights">$2</span> </span>
+                <span class="price">Starts at <span id="pl-insights"></span></span>
                 <span class="unit">/ user / mo</span>
               </div>
             </div>
@@ -1143,29 +1139,25 @@
                 <li>Behavioral Highlights</li>
                 <li>Work Time Classification</li>
               </ul>
-              <!--<a href="<?php echo site_url('/data-retention#ans_3'); ?>">View More </a>-->
             </div>
           </div>
         </div>
-        
-        <div class="addond-col" style="display:none;">
+
+        <div class="addond-col elm-tracking-atn">
           <div class="add-box">
             <div class="topDiv">
-              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-01.svg"
-                alt="ws" width="45" height="45">
-              </div>
+              <div class="icon"><img loading="lazy" src="<?php bloginfo('template_url'); ?>/assests/images/add-02.svg" alt="ws" width="45" height="45"></div>
               <div class="tcon">
-                <h4>Invoicing</h4>
-                <span class="price">Starts at <span id="pl-location">$1</span></span>
+                <h4>Field Force Tracking</h4>
+                <span class="price">Starts at <span id="pl-tracking-atn"></span></span>
                 <span class="unit">/ user / mo</span>
               </div>
             </div>
             <div class="bottomDiv">
               <ul>
-                <li>Geo-fenced Jobsites</li>
-                <li>Selfie Based Attendance</li>
-                <li>Work Orders</li>
-                <li>Jobs</li>
+                <li>Live Location tracking</li>
+                <li>Route Tracking</li>
+                <li>Mileage Tracking</li>
               </ul>
             </div>
           </div>
