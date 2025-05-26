@@ -71,8 +71,7 @@ $catBlockThree  = get_field('row-c3', 'option');
         echo '<div class="blog-posts-list postid-'.get_the_ID().'">
           <div class="blog-post-col">
             <div class="blog-image">
-              <a href="">
-              <img width="1024" height="462" src="'.$stkThumb.'" alt="workstatus" loading="lazy"></a>              
+            <a href="'.get_permalink().'"><img width="1024" height="462" src="'.$stkThumb.'" alt="workstatus" loading="lazy"></a>
             </div>
             <div class="blog-content">
               <span class="category">'.$cat.'</span>

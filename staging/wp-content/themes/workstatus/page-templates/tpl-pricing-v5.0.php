@@ -1099,6 +1099,7 @@
         </p>
       </div>
       <div class="addons-row">
+        
         <div class="addond-col">
           <div class="add-box">
             <div class="topDiv">
@@ -1120,6 +1121,7 @@
             </div>
           </div>
         </div>
+
         <div class="addond-col">
           <div class="add-box">
             <div class="topDiv">
