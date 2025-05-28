@@ -958,6 +958,22 @@
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
+                  <td>GDPR</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>
+                <tr>
+                  <td>ISO</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                </tr>  
+                <tr>
                   <td>Single Sign-on</td>
                   <td>-</td>
                   <td>-</td>
