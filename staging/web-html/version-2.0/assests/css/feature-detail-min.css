@@ -8861,7 +8861,7 @@ h4 {
             opacity: 0.8; }
     .footer .footer-bottom .copyright {
       flex-basis: 15%;
-      margin: 15px 0 0; }
+      margin: 35px 0 0; }
     .footer .footer-bottom .seals {
       flex-basis: 18%;
       display: flex;
@@ -9028,6 +9028,8 @@ h4 {
       .footer .footer-bottom .copyright .dis-flex {
         gap: 10px;
         justify-content: center; }
+    .footer .footer-bottom .copyright {
+      margin: 20px  0 0; }
     .footer .footer-bottom .seals {
       flex-basis: 100%;
       justify-content: center; }

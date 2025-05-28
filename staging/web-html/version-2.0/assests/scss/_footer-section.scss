@@ -160,7 +160,7 @@
 
     .copyright {
       flex-basis: 15%;
-      margin: 15px 0 0;
+         margin: 35px 0 0;
     }
 
     .seals {
@@ -420,12 +420,13 @@
       .copyright {
         flex-basis: 100%;
         text-align: center;
+     
         .dis-flex {
           gap: 10px;
           justify-content: center;
         }
       }
-
+   .copyright {   margin:20px  0 0;}
       .seals {
         flex-basis: 100%;
         justify-content: center;
