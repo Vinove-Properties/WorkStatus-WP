@@ -59,8 +59,8 @@
           <li><a href="<?php echo $site_url; ?>/ubstaff-vs-insightful-vs-workstatus'">Hubstaff vs Insightful</a></li>
           <li><a href="<?php echo $site_url; ?>/activtrak-vs-desktime-vs-workstatus">ActivTrak vs DeskTime</a></li>
           <li><a href="<?php echo $site_url; ?>/clockify-vs-monitask-vs-workstatus">Clockify vs MoniTask</a></li>
-          <li><a href="<?php echo $site_url; ?>/nsightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
-          <li><a href="<?php echo $site_url; ?>/activtrak-vs-timedoctor-vs-workstatus">Activtrak vs Timedoctor</a></li>
+          <li><a href="<?php echo $site_url; ?>/insightful-vs-timedoctor-vs-workstatus">Insightful vs Timedoctor</a></li>
+          <li><a href="<?php echo $site_url; ?>/timedoctor-vs-everhour-vs-workstatus">Timedoctor VS Everhour</a></li>
         </ul>
       </div>
       <div class="flex-5">
