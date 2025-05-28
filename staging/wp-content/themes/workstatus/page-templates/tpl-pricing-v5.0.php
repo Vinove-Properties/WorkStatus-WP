@@ -943,18 +943,18 @@
               <tbody>
                 <tr>
                   <td>HIPAA compliance</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
                   <td>SOC-2 Type II Compliance</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
@@ -975,18 +975,18 @@
                 </tr>  
                 <tr>
                   <td>Single Sign-on</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
                   <td>Two-factor Authentication</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
               </tbody>
