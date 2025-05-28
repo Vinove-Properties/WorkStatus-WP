@@ -220,6 +220,28 @@
           Trusted by 1000+ Businesses
         </div>
       </div>
+      <div class="seals">
+        <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-01.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+          <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-02.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+            <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-03.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+            <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-04.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+      </div>
       <div class="flex-3 copyright">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=033f5497-a539-424f-88e5-b7aebd427e03" title="DMCA.com Protection Status" 
         class="dmca-badge" target="_blank"> 

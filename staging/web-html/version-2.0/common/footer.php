@@ -278,9 +278,33 @@
           4.9 out of 5.0 by
         </div>
         <div class="client-outer">
-          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> 1218 Businesses for Workforce Management
+          <a href="javascript:void(0);" class="rate-us" onclick="ratenow()" id="ratebtn">Rate us</a> Trusted by 1000+ Businesses
         </div>
       </div>
+      <div class="seals">
+        <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/seal-01.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+          <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/seal-02.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+            <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/seal-03.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+            <a href="#" target="_blank">
+            <picture>
+              <img loading="lazy" src="./assests/footer-images/seal-04.svg" width="63" height="63" alt="workstatus">
+            </picture>
+          </a>
+      </div>
+
+
       <div class="flex-3 copyright">
         <a href="//www.dmca.com/Protection/Status.aspx?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625" title="DMCA.com Protection Status" style="margin-left:0;margin-top: 20px; display:block" class="dmca-badge">
         <img src ="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=9f4af2d1-a5c5-4031-903c-b6dfb2c56625"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
