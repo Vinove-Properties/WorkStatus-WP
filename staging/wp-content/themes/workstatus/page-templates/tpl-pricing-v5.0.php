@@ -958,7 +958,7 @@
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>GDPR</td>
+                  <td>GDPR Compliance</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -966,7 +966,7 @@
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
-                  <td>ISO</td>
+                  <td>ISO Certified</td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
