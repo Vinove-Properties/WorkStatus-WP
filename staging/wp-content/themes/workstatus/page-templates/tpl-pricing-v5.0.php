@@ -557,7 +557,7 @@
                 </tr>
                 <tr>
                   <td>Overtime</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
@@ -565,25 +565,25 @@
                 </tr>
                 <tr>
                   <td>Work Breaks</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
                   <td>Teams</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
                 <tr>
                   <td>Clients</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>-</td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
+                  <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                   <td><i class="chkicon"></i></td>
                 </tr>
