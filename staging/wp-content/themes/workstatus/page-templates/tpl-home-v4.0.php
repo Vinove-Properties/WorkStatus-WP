@@ -627,7 +627,7 @@
                 <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png">
                 <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png">
                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png"
-                  alt="Workstatus" width="131" height="129">
+                  alt="Workstatus" width="130" height="129">
               </picture>
               <h3>SOC2 TYPE II
               </h3>
@@ -638,7 +638,7 @@
                 <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png">
                 <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png">
                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png"
-                  alt="Workstatus" width="131" height="129">
+                  alt="Workstatus" width="130" height="129">
               </picture>
               <h3>GDPR
               </h3>
@@ -649,7 +649,7 @@
                 <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png">
                 <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png">
                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png"
-                  alt="Workstatus" width="131" height="129">
+                  alt="Workstatus" width="130" height="129">
               </picture>
               <h3>ISO 
               </h3>
@@ -660,7 +660,7 @@
                 <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png">
                 <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png">
                 <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png"
-                  alt="Workstatus" width="131" height="129">
+                  alt="Workstatus" width="130" height="129">
               </picture>
               <h3>HIPAA
               </h3>
