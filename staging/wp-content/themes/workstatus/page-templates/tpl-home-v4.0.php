@@ -614,6 +614,61 @@
   <?php //get_template_part('common/blog', '', ['elm-class' => 'margin-b-120 margin-t-120']); ?>
   <?php get_template_part('common/cmn', 'testimonial'); ?>
   <?php get_template_part('common/cmn', 'globalrating'); ?>
+   <section class="sealed-security bg-light padding-t-120 padding-b-120">
+        <div class="container">
+          <div class="top-section text-center">
+            <h6><span class="bg-purple">Security & Compliance</span></h6>
+            <h2>Built for Enterprise IT Secure, Compliant, and Scalable</h2>
+            <p>Ensures privacy and security with encrypted data, secure connections, and multi-standard compliance</p>
+          </div>
+          <div class="solution-grid">
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png">
+                <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-01.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>SOC2 TYPE II
+              </h3>
+              <p>Demonstrating our commitment to security, availability, processing integrity, confidentiality, and privacy.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png">
+                <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-02.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>GDPR
+              </h3>
+              <p>Ensuring compliance with European Union data protection and privacy regulations.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png">
+                <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-03.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>ISO 
+              </h3>
+              <p>Certified adherence to international standards for information security management.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png">
+                <source type="image/png" srcset="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png">
+                <img loading="lazy" src="<?php bloginfo('template_url'); ?>/version-2.0/assests/images/sealed-04.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>HIPAA
+              </h3>
+              <p>Demonstrating our commitment to health data privacy, security, and HIPAA compliance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
   <?php get_template_part('common/cmn', 'journey'); ?>
 </main>
 <?php get_footer(); ?>

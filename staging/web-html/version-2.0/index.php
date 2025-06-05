@@ -113,36 +113,36 @@
               <nav id="tabs" class="tab-nav">
                 <ul>
                   <li class="active"><a href="#tab01">
-                  <span class="background-fill"></span>
+                    <span class="background-fill"></span>
                     <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Time Tracking
                     <span class="autoprogress-bar"></span>
-                  </a>
+                    </a>
                   </li>
                   <li><a href="#tab02">  <span class="background-fill"></span> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Productivity Management
                     <span class="autoprogress-bar"></span>
-                  </a>
+                    </a>
                   </li>
                   <li><a href="#tab03"> <span class="background-fill"></span><span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Project & Task Management
                     <span class="autoprogress-bar"></span>
-                  </a>
+                    </a>
                   </li>
                   <li><a href="#tab04"> <span class="background-fill"></span><span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Attendance Tracking
                     <span class="autoprogress-bar"></span>
-                  </a>
+                    </a>
                   </li>
                   <li><a href="#tab05"><span class="background-fill"></span> <span class="icon"><img class="show"  loading="lazy" src="./assests/images/tb01.svg" alt="Icon" width="16" height="18"><img class="hide"  loading="lazy" src="./assests/images/tb01-hover.svg" alt="Icon" width="16" height="18">
                     </span>
                     Attendance Tracking
                     <span class="autoprogress-bar"></span>
-                  </a>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -1779,6 +1779,61 @@
           </div>
         </div>
       </section>
+      <section class="sealed-security bg-light padding-t-120 padding-b-120">
+        <div class="container">
+          <div class="top-section text-center">
+            <h6><span class="bg-purple">Security & Compliance</span></h6>
+            <h2>Built for Enterprise IT Secure, Compliant, and Scalable</h2>
+            <p>Ensures privacy and security with encrypted data, secure connections, and multi-standard compliance</p>
+          </div>
+          <div class="solution-grid">
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="./assests/images/sealed-01.png">
+                <source type="image/png" srcset="./assests/images/sealed-01.png">
+                <img loading="lazy" src="./assests/images/sealed-01.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>SOC2 TYPE II
+              </h3>
+              <p>Demonstrating our commitment to security, availability, processing integrity, confidentiality, and privacy.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="./assests/images/sealed-02.png">
+                <source type="image/png" srcset="./assests/images/sealed-02.png">
+                <img loading="lazy" src="./assests/images/sealed-02.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>GDPR
+              </h3>
+              <p>Ensuring compliance with European Union data protection and privacy regulations.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="./assests/images/sealed-03.png">
+                <source type="image/png" srcset="./assests/images/sealed-03.png">
+                <img loading="lazy" src="./assests/images/sealed-03.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>ISO 
+              </h3>
+              <p>Certified adherence to international standards for information security management.</p>
+            </div>
+            <div class="solution-card">
+              <picture>
+                <source type="image/webp" srcset="./assests/images/sealed-04.png">
+                <source type="image/png" srcset="./assests/images/sealed-04.png">
+                <img loading="lazy" src="./assests/images/sealed-04.png"
+                  alt="Workstatus" width="131" height="129">
+              </picture>
+              <h3>HIPAA
+              </h3>
+              <p>Demonstrating our commitment to health data privacy, security, and HIPAA compliance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="start-journey bg-blue padding-t-100 padding-b-100">
         <div class="container">
           <div class="ws-flex">
@@ -1916,83 +1971,83 @@
       
       
       
-const tabs = document.querySelectorAll('#tabs ul li');
-const tabContents = document.querySelectorAll('.tab-contents');
-let currentTab = 0;
-let tabTimer;
-const intervalTime = 2000; // 2 seconds
-
-// Function to activate the tab by index
-function activateTab(index) {
-  // Remove active class from all tabs and tab contents
-  tabs.forEach(tab => tab.classList.remove('active'));
-  tabContents.forEach(content => content.classList.remove('active'));
-
-  // Add active class to the current tab and tab content
-  tabs[index].classList.add('active');
-  tabContents[index].classList.add('active');
-
-  // Reset animations (if applicable)
-  resetAnimations();
-}
-
-// Start the auto-tab switching after the specified interval
-function startAutoTabs() {
-  // Set an interval to auto-change tabs every 5 seconds
-  tabTimer = setInterval(() => {
-    currentTab = (currentTab + 1) % tabs.length; // Loop back to the first tab after the last one
-    activateTab(currentTab);
-  }, intervalTime);
-}
-
-// Reset any animations on tabs
-function resetAnimations() {
-  tabs.forEach(tab => {
-    const progress = tab.querySelector('.progress-bar');
-    const background = tab.querySelector('.background-fill');
-
-    if (progress) {
+      const tabs = document.querySelectorAll('#tabs ul li');
+      const tabContents = document.querySelectorAll('.tab-contents');
+      let currentTab = 0;
+      let tabTimer;
+      const intervalTime = 2000; // 2 seconds
+      
+      // Function to activate the tab by index
+      function activateTab(index) {
+      // Remove active class from all tabs and tab contents
+      tabs.forEach(tab => tab.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+      
+      // Add active class to the current tab and tab content
+      tabs[index].classList.add('active');
+      tabContents[index].classList.add('active');
+      
+      // Reset animations (if applicable)
+      resetAnimations();
+      }
+      
+      // Start the auto-tab switching after the specified interval
+      function startAutoTabs() {
+      // Set an interval to auto-change tabs every 5 seconds
+      tabTimer = setInterval(() => {
+      currentTab = (currentTab + 1) % tabs.length; // Loop back to the first tab after the last one
+      activateTab(currentTab);
+      }, intervalTime);
+      }
+      
+      // Reset any animations on tabs
+      function resetAnimations() {
+      tabs.forEach(tab => {
+      const progress = tab.querySelector('.progress-bar');
+      const background = tab.querySelector('.background-fill');
+      
+      if (progress) {
       progress.style.animation = 'none'; // Remove animation
       progress.offsetHeight; // Force reflow
       progress.style.animation = ''; // Reset animation
-    }
-
-    if (background) {
+      }
+      
+      if (background) {
       background.style.animation = 'none'; // Remove animation
       background.offsetHeight; // Force reflow
       background.style.animation = ''; // Reset animation
-    }
-  });
-}
-
-// Add event listener for click to change tabs manually
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', (e) => {
-    e.preventDefault();  // Prevent default behavior (useful for links)
-
-    // Stop the auto-tab switching when user manually clicks a tab
-    clearInterval(tabTimer);
-
-    // Activate the clicked tab
-    activateTab(index);
-
-    // Update the current tab index
-    currentTab = index;
-
-    // Restart the auto-tab switching
-    startAutoTabs();
-  });
-});
-
-// Initial activation of the first tab
-activateTab(currentTab);
-
-// Start auto tabs on page load
-startAutoTabs();  // This starts the auto-change every 5 seconds
-
-
-
-
+      }
+      });
+      }
+      
+      // Add event listener for click to change tabs manually
+      tabs.forEach((tab, index) => {
+      tab.addEventListener('click', (e) => {
+      e.preventDefault();  // Prevent default behavior (useful for links)
+      
+      // Stop the auto-tab switching when user manually clicks a tab
+      clearInterval(tabTimer);
+      
+      // Activate the clicked tab
+      activateTab(index);
+      
+      // Update the current tab index
+      currentTab = index;
+      
+      // Restart the auto-tab switching
+      startAutoTabs();
+      });
+      });
+      
+      // Initial activation of the first tab
+      activateTab(currentTab);
+      
+      // Start auto tabs on page load
+      startAutoTabs();  // This starts the auto-change every 5 seconds
+      
+      
+      
+      
       
       
       
