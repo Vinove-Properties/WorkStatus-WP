@@ -25,6 +25,7 @@ require 'PHPMailer/src/SMTP.php';
 require_once __DIR__ . '/envloader.php';
 loadEnv();
 
+//echo getenv('CRM_DB_USER'); die;
 
 function configureMySQLi(){
     $servername = getenv('CRM_DB_HOST');
@@ -1542,7 +1543,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $body .= "UTM Medium : ".$utm_medium.$varDeliminator;
     $body .= "UTM Campaign : ".$utm_campaign.$varDeliminator;
 
-    clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
+    //clSendMail( "hello@workstatus.io", "Demo request - Workstatus", $body, "lead", $email, [], ['nitin.baluni@mail.vinove.com'], [], $json['payload']['name'] );
 
     $file       = fopen(CL_LOGFILE,"a");
     fwrite( $file, PHP_EOL."Debugger : #1"  );
@@ -1584,7 +1585,6 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     }
 
     /*Zoho CRM Code Starts Here*/
-   
     $CLIENT_ID      = getenv('ZOHO_CLIENT_ID');
     $CLIENT_SECRET  = getenv('ZOHO_CLIENT_SECRET');
     $REFRESH_TOKEN  = getenv('ZOHO_REFRESH_TOKEN');
