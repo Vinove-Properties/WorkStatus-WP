@@ -1508,14 +1508,21 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
 
     $leadSource = (empty($utm_source)) ? $defLeadSrc : $utm_source;
 
-
     $flds       = $json['payload']['questions_and_answers'];
     $phone      = $flds[0]['answer'];
     $company    = $flds[1]['answer'];
     $teamSize   = $flds[2]['answer'];
-    $comment    = $flds[3]['answer'];
-    $email      = $json['payload']['email'];
+    $wsFet      = isset($flds[3]['answer']) && !empty($flds[3]['answer']) ? $flds[3]['answer'] : false;
+    $comment    = $flds[4]['answer'];
+    $crmRequirement = $comment;
+    $clFeatures = false;
+    if($wsFet !== false){
+    $answersArray   = array_map( 'trim', explode("\n", $wsFet) );
+    $clFeatures     = implode(', ', $answersArray);
+    $crmRequirement = "Requirement : ".$comment."\nFeatures : ".$clFeatures
+    }
 
+    $email      = $json['payload']['email'];
     $phoneFld   = preg_match('/^\+(\d+)/', $phone, $matches);
     $pcode      = (isset($matches[1])&& !empty($matches[1]) ) ? $matches[1] : false;
     $country    = "";
@@ -1569,6 +1576,9 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     );
     if( $lastName ){
         $apiRequest['last_name'] = $lastName;
+    }
+    if( $clFeatures !== false ){
+      $apiRequest['features'] = $clFeatures;
     }
     
     /*
@@ -1627,7 +1637,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     'IP_Address1'   => get_visitor_ip(),
     'IP_Address'    => get_visitor_ip(),
     'UTM_Source'    => $utm_source,
-    'Description'   => $comment,
+    'Description'   => $crmRequirement,
     'UTM_Medium'    => $utm_medium,
     'UTM_Campaign'  => $utm_campaign,
     'Website_URL'   => $pageUrl,
@@ -1680,7 +1690,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                 'Sales_Qualified_Lead' => "Yes",
                 'Phone'             => $phone,
                 'Company_Headcount' => $teamSize,
-                'Description'       => $comment
+                'Description'       => $crmRequirement
                 );
 
                 $curl   = curl_init();        
@@ -1711,7 +1721,7 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
                     $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, PHP_EOL.$email.":".print_r($response,1) );
                     fclose( $file );
-                    dupLeadNote( $varAccessToken, $lead_id, $comment );
+                    dupLeadNote( $varAccessToken, $lead_id, $crmRequirement );
                 }else{
                     $file       = fopen(CL_LOGFILE,"a");
                     fwrite( $file, "Error in Zoho Entry :".$err );
