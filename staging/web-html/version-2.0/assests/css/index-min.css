@@ -8629,16 +8629,7 @@ h4 {
     gap: 20px; } }
 @media (max-width: 767px) {
   .sealed-security .solution-grid {
-    grid-template-columns: repeat(1, 1fr); }
-    .sealed-security .solution-grid .solution-card ul {
-      margin: 15px 0 0; }
-      .sealed-security .solution-grid .solution-card ul li {
-        padding-left: 28px; }
-        .sealed-security .solution-grid .solution-card ul li:before {
-          content: "";
-          width: 18px;
-          height: 18px;
-          top: 3px; } }
+    grid-template-columns: repeat(1, 1fr); } }
 .footer {
   width: 100%;
   background: #05164d;
