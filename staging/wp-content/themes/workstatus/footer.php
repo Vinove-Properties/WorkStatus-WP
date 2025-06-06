@@ -221,7 +221,7 @@
         </div>
       </div>
       <div class="seals">
-          <a href="<?php bloginfo('template_url'); ?>/dev-images/HIPAA_Certification_26 May 2025.pdf" target="_blank">
+          <a href="<?php bloginfo('template_url'); ?>/dev-images/HIPAA_Certification.pdf" target="_blank">
             <picture>
               <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-01.svg" width="63" height="63" alt="workstatus">
             </picture>
@@ -236,7 +236,7 @@
               <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-03.svg" width="63" height="63" alt="workstatus">
             </picture>
           </a>
-            <a href="<?php bloginfo('template_url'); ?>/dev-images/SOC 2_TYPE 2_Certification_26 May 2025.pdf" target="_blank">
+            <a href="<?php bloginfo('template_url'); ?>/dev-images/SOC_Certification.pdf" target="_blank">
             <picture>
               <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assests/footer-images/seal-04.svg" width="63" height="63" alt="workstatus">
             </picture>
