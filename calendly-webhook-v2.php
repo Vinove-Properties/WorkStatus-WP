@@ -1516,10 +1516,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
     $comment    = $flds[4]['answer'];
     $crmRequirement = $comment;
     $clFeatures = false;
-    if($wsFet !== false){
-    $answersArray   = array_map( 'trim', explode("\n", $wsFet) );
-    $clFeatures     = implode(', ', $answersArray);
-    $crmRequirement = "Requirement : ".$comment."\nFeatures : ".$clFeatures
+    if( $wsFet !== false ){
+      $answersArray   = array_map( 'trim', explode("\n", $wsFet) );
+      $clFeatures     = implode(', ', $answersArray);
+      $crmRequirement = "Requirement : ".$comment."\nFeatures : ".$clFeatures;
     }
 
     $email      = $json['payload']['email'];
