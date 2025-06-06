@@ -1591,7 +1591,10 @@ if( isset( $json['event'] ) && $json['event'] == "invitee.created" ){
         $apiRequest['id'] = $hasDataID;
         curl_setopt($ch, CURLOPT_URL, "https://sa.workstatus.io/api/v1/updatedemorequest");
     }else{
-        curl_setopt($ch, CURLOPT_URL, "https://sa.workstatus.io/api/v1/getDemoRequest");        
+        curl_setopt($ch, CURLOPT_URL, "https://sa.staging.workstatus.io/api/v1/getDemoRequest");        
+        //Live : https://sa.workstatus.io/api/v1/getDemoRequest
+        //STaging : https://sa.staging.workstatus.io/api/v1/getDemoRequest
+
     }
 
     /*Zoho CRM Code Starts Here*/
