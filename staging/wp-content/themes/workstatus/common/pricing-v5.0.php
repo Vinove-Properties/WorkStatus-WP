@@ -148,7 +148,7 @@ $activePlan =  'productivity';
                 <div class="card-plan"><span class="wph" id="cst-time-three"></span></div>
               </div>
               <div class="price-slider">
-                <label for="pricingRange">Users: <span class="userCount">50</span></label>
+                <label>Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-time-hd" value="50" />
                 <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" id="slider"/>
                 <div class="slider-labels">
@@ -203,7 +203,7 @@ $activePlan =  'productivity';
                 <div class="card-plan"><span class="wph" id="cst-attendance-four"></span></div>
               </div>
               <div class="price-slider">
-                <label for="pricingRange">Users: <span class="userCount">50</span></label>
+                <label>Users: <span class="userCount">50</span></label>
                 <input type="hidden" id="elm-attendance-hd" value="50" />
                 <input type="range" class="pricingRange" min="0" max="5" value="0" step="1" id="slider"/>
                 <div class="slider-labels">
